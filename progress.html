@@ -838,6 +838,7 @@
       </div>
       <div class="nav-links">
         <a href="index.html"     class="nav-link">Archive</a>
+        <a href="cabinet.html"   class="nav-link">Cabinet</a>
         <a href="completed.html" class="nav-link">Completed</a>
         <a href="progress.html"  class="nav-link active">Progress</a>
         <a href="about.html"     class="nav-link">About</a>
@@ -984,182 +985,244 @@
     </div>
   </footer>
 
-  <script src="js/storage.js"></script>
   <script src="js/vault-config.js"></script>
-  <script src="js/collectibles.js"></script>
   <script>
   (function () {
+    var season = SEASONS_CONFIG[0];
 
-    const season = SEASONS_CONFIG[0];
-    const progress = Storage.getProgress();
-    const stats = Storage.getStats();
-    const vaultState = Storage.getVaultState(season.id);
+    // ── READ SOLVED STATE — same key case.html writes ──────────────────────
+    var solved = [];
+    try { solved = JSON.parse(localStorage.getItem('av_solved') || '[]'); } catch(e) {}
+
+    var numSolved  = season.cases.filter(function(c) { return solved.indexOf(c.id) !== -1; }).length;
+    var totalCases = season.cases.length;
+    var allRevealed = numSolved === totalCases;
 
     // ── STAT GRID ──────────────────────────────────────────────────────────
-    const statDefs = [
-      { label: "Cases Solved",      value: `${stats.casesSolved} / ${season.totalCases}` },
-      { label: "Files Recovered",   value: stats.filesRecovered > 0 ? String(stats.filesRecovered) : "0" },
-      { label: "Evidence Collected",value: stats.objectsFound > 0 ? String(stats.objectsFound) : "0" },
-      { label: "Season",            value: "One" },
-      { label: "Vault Status",      value: vaultState.vaultOpened ? "Open" : "Locked" },
-      { label: "Badges Earned",     value: String(vaultState.earnedBadges.length) }
+    var statDefs = [
+      { label: 'Cases Solved',       value: numSolved + ' / ' + totalCases },
+      { label: 'Files Recovered',    value: String(numSolved) },
+      { label: 'Evidence Collected', value: '…' },  // filled async below
+      { label: 'Season',             value: 'One' },
+      { label: 'Vault Status',       value: allRevealed ? 'Open' : 'Locked' },
+      { label: 'Active Cases',       value: String(Math.max(0, season.cases.filter(function(c){ return c.released; }).length - numSolved)) }
     ];
 
-    const grid = document.getElementById('statGrid');
-    statDefs.forEach(s => {
-      const cell = document.createElement('div');
+    var grid = document.getElementById('statGrid');
+    statDefs.forEach(function(s) {
+      var cell = document.createElement('div');
       cell.className = 'stat-cell';
-      cell.innerHTML = `<span class="stat-label">${s.label}</span><span class="stat-value">${s.value}</span>`;
+      cell.innerHTML = '<span class="stat-label">' + s.label + '</span><span class="stat-value" data-stat="' + s.label + '">' + s.value + '</span>';
       grid.appendChild(cell);
     });
 
     // ── PROGRESS BAR ───────────────────────────────────────────────────────
-    const pct = Math.round((stats.casesSolved / season.totalCases) * 100);
-    const fill = document.getElementById('progressFill');
-    const pctEl = document.getElementById('progressPct');
+    var pct  = totalCases > 0 ? Math.round((numSolved / totalCases) * 100) : 0;
+    var fill = document.getElementById('progressFill');
+    var pctEl = document.getElementById('progressPct');
     pctEl.textContent = pct + '%';
-    setTimeout(() => {
+    setTimeout(function() {
       fill.style.width = pct + '%';
       if (pct === 100) fill.classList.add('complete');
     }, 100);
 
     // ── CASE LIST ──────────────────────────────────────────────────────────
-    const caseList = document.getElementById('caseList');
-    season.cases.forEach((c, i) => {
-      const solved = progress.solvedCases.includes(c.id);
-      const num = String(i + 1).padStart(3, '0');
-      const row = document.createElement('div');
-      row.className = 'case-row ' + (solved ? 'solved' : 'pending');
+    var caseList = document.getElementById('caseList');
+    season.cases.forEach(function(c, i) {
+      var isSolved   = solved.indexOf(c.id) !== -1;
+      var isReleased = c.released;
+      var num = String(i + 1).padStart(3, '0');
+      var row = document.createElement('div');
+      row.className = 'case-row ' + (isSolved ? 'solved' : 'pending');
 
-      const titleClass = solved ? '' : 'pending-title';
-      const statusTag = solved
-        ? `<span class="case-row-status solved-tag">Solved</span>`
-        : `<span class="case-row-status locked-tag">Locked</span>`;
+      var statusTag = isSolved
+        ? '<span class="case-row-status solved-tag">Solved</span>'
+        : (isReleased
+            ? '<span class="case-row-status locked-tag">Active</span>'
+            : '<span class="case-row-status locked-tag">Upcoming</span>');
 
-      const linkEl = (solved && c.url && c.url !== '#')
-        ? `<a class="case-row-link" href="${c.url}">Open File →</a>`
+      var titleText = isSolved
+        ? c.title
+        : (isReleased ? c.title : '— ' + c.title + ' —');
+
+      var titleClass = isSolved ? '' : 'pending-title';
+
+      var linkEl = isSolved && c.url && c.url !== '#'
+        ? '<a class="case-row-link" href="' + c.url + '">Open File →</a>'
         : '';
 
-      row.innerHTML = `
-        <span class="case-row-num">Case ${num}</span>
-        <span class="case-row-title ${titleClass}">${solved ? c.title : '— Classified —'}</span>
-        ${statusTag}
-        ${linkEl}
-      `;
+      row.innerHTML =
+        '<span class="case-row-num">Case ' + num + '</span>' +
+        '<span class="case-row-title ' + titleClass + '">' + titleText + '</span>' +
+        statusTag +
+        linkEl;
+
       caseList.appendChild(row);
     });
 
-    // ── VAULT ──────────────────────────────────────────────────────────────
-    const vaultDials   = document.getElementById('vaultDials');
-    const vaultStatus  = document.getElementById('vaultStatusLabel');
-    const vaultHint    = document.getElementById('vaultHint');
-    const digits       = season.digits;
-    const solvedIds    = progress.solvedCases;
-    const allRevealed  = season.cases.every(c => solvedIds.includes(c.id));
+    // ── VAULT DIALS ────────────────────────────────────────────────────────
+    var vaultDials  = document.getElementById('vaultDials');
+    var vaultStatus = document.getElementById('vaultStatusLabel');
+    var vaultHint   = document.getElementById('vaultHint');
+    var digits      = season.digits || [];
 
-    season.cases.forEach((c, i) => {
-      const isSolved = solvedIds.includes(c.id);
-      const dial = document.createElement('div');
+    season.cases.forEach(function(c, i) {
+      var isSolved = solved.indexOf(c.id) !== -1;
+      var dial = document.createElement('div');
       dial.className = 'vault-dial' + (isSolved ? (allRevealed ? ' all-unlocked' : ' revealed') : ' hidden');
       dial.innerHTML =
-        '<span class="vault-dial-num">' + (isSolved ? String(digits[i]).padStart(2, '0') : '??') + '</span>' +
-        '<span class="vault-dial-case">' + String(i + 1).padStart(3, '0') + '</span>';
+        '<span class="vault-dial-num">' + (isSolved && digits[i] != null ? String(digits[i]).padStart(2,'0') : '??') + '</span>' +
+        '<span class="vault-dial-case">' + String(i + 1).padStart(3,'0') + '</span>';
       vaultDials.appendChild(dial);
     });
 
     if (allRevealed) {
       vaultStatus.textContent = 'Unlocked';
-      vaultStatus.classList.replace('locked', 'unlocked');
+      vaultStatus.classList.remove('locked');
+      vaultStatus.classList.add('unlocked');
       vaultHint.textContent = 'All twelve digits recovered. The vault stands open.';
       document.getElementById('vaultReward').classList.add('visible');
     } else {
-      const revealedCount = season.cases.filter(c => solvedIds.includes(c.id)).length;
-      vaultHint.textContent = revealedCount + ' of 12 digits recovered. Solve more cases to continue.';
+      vaultHint.textContent = numSolved + ' of ' + totalCases + ' digits recovered. Solve more cases to continue.';
     }
 
-    // ── EVIDENCE CABINET ───────────────────────────────────────────────────
-    const evidenceGrid = document.getElementById('evidenceGrid');
-    const REGISTRY = Collectibles.REGISTRY;
-    const collected = progress.collectedObjects;
-    const allIds = Object.keys(REGISTRY);
+    // ── EVIDENCE CABINET — load from solved song files ─────────────────────
+    var evidenceGrid   = document.getElementById('evidenceGrid');
+    var modal          = document.getElementById('objectModal');
+    var modalBody      = document.getElementById('modalBody');
+    var collectibles   = [];
+    var loadedCount    = 0;
+    var solvedCount    = solved.length;
 
-    allIds.forEach(id => {
-      const item = REGISTRY[id];
-      const earned = collected.includes(id);
-      const card = document.createElement('div');
-      card.className = 'evidence-card ' + (earned ? 'earned' : 'mystery');
-      card.innerHTML = `
-        <div class="card-symbol">${earned ? item.symbol : '?'}</div>
-        <div class="card-name">${earned ? item.name : 'Unknown'}</div>
-        ${earned ? `<div class="card-case">— ${item.discovered} —</div>` : ''}
-      `;
-      if (earned) {
-        card.addEventListener('click', () => openModal(item));
+    function finishEvidence() {
+      // Update evidence stat
+      var statEl = document.querySelector('[data-stat="Evidence Collected"]');
+      if (statEl) statEl.textContent = String(collectibles.length);
+
+      evidenceGrid.innerHTML = '';
+
+      if (collectibles.length === 0) {
+        evidenceGrid.innerHTML =
+          '<div class="evidence-card mystery" style="grid-column:1/-1;text-align:center;padding:2rem;">' +
+            '<div class="card-symbol">🗄</div>' +
+            '<div class="card-name">No Evidence Yet</div>' +
+            '<div class="card-case">— solve a case to recover evidence —</div>' +
+          '</div>';
+        return;
       }
-      evidenceGrid.appendChild(card);
-    });
 
-    // Locked placeholders
-    const lockCount = Math.max(0, 10 - allIds.length);
-    for (let i = 0; i < lockCount; i++) {
-      const card = document.createElement('div');
-      card.className = 'evidence-card mystery';
-      card.innerHTML = `
-        <div class="card-symbol">?</div>
-        <div class="card-name">Unrecovered</div>
-        <div class="card-case">— solve more cases —</div>
-      `;
-      evidenceGrid.appendChild(card);
+      collectibles.forEach(function(item) {
+        var card = document.createElement('div');
+        card.className = 'evidence-card earned';
+        card.innerHTML =
+          '<div class="card-symbol">' + (item.symbol || '🔍') + '</div>' +
+          '<div class="card-name">' + item.name + '</div>' +
+          '<div class="card-case">— Case ' + item.caseFile + ' —</div>';
+        card.addEventListener('click', function() { openModal(item); });
+        evidenceGrid.appendChild(card);
+      });
+
+      // Placeholder mystery slots
+      var placeholders = Math.max(0, Math.min(6, totalCases - solved.length));
+      for (var p = 0; p < placeholders; p++) {
+        var ph = document.createElement('div');
+        ph.className = 'evidence-card mystery';
+        ph.innerHTML =
+          '<div class="card-symbol">?</div>' +
+          '<div class="card-name">Unrecovered</div>' +
+          '<div class="card-case">— solve more cases —</div>';
+        evidenceGrid.appendChild(ph);
+      }
     }
 
-    // ── BADGES ─────────────────────────────────────────────────────────────
-    const badgeGrid = document.getElementById('badgeGrid');
-    const earnedBadges = vaultState.earnedBadges || [];
-
-    season.badges.forEach(badge => {
-      const earned = earnedBadges.includes(badge.id);
-      const card = document.createElement('div');
-      card.className = 'badge-card ' + (earned ? 'earned-badge' : 'locked-badge');
-      card.innerHTML = `
-        <div class="badge-symbol">${earned ? badge.symbol : '?'}</div>
-        <div class="badge-name">${earned ? badge.name : 'Locked'}</div>
-        <div class="badge-desc">${earned ? badge.description : 'Complete more of the investigation to unlock this badge.'}</div>
-      `;
-      badgeGrid.appendChild(card);
-    });
+    if (solvedCount === 0) {
+      finishEvidence();
+    } else {
+      solved.forEach(function(id) {
+        var padded = String(parseInt(id, 10) || 1).padStart(3, '0');
+        var s = document.createElement('script');
+        s.src = 'data/songs/song' + padded + '.js';
+        s.onload = function() {
+          if (window.SONG_DATA && window.SONG_DATA.collectible) {
+            var c = window.SONG_DATA.collectible;
+            if (c.name && c.name.indexOf('//') === -1) {
+              collectibles.push({
+                caseId:   id,
+                caseFile: window.SONG_DATA.caseFile || id,
+                name:     c.name,
+                symbol:   c.symbol || '🔍',
+                description:  c.description || '',
+                discovered:   c.discovered || ('Case File ' + (window.SONG_DATA.caseFile || id)),
+                firstAppearance: c.firstAppearance || window.SONG_DATA.title || '',
+                unknownInfo: c.unknownInfo || ''
+              });
+            }
+          }
+          window.SONG_DATA = null;
+          loadedCount++;
+          if (loadedCount === solvedCount) finishEvidence();
+        };
+        s.onerror = function() {
+          loadedCount++;
+          if (loadedCount === solvedCount) finishEvidence();
+        };
+        document.head.appendChild(s);
+      });
+    }
 
     // ── OBJECT MODAL ───────────────────────────────────────────────────────
-    const modal = document.getElementById('objectModal');
-    const modalBody = document.getElementById('modalBody');
-
     function openModal(item) {
-      modalBody.innerHTML = `
-        <div class="modal-symbol">${item.symbol}</div>
-        <div class="modal-name">${item.name}</div>
-        <div class="modal-divider">— — — — — — — —</div>
-        <p class="modal-label">Description</p>
-        <p class="modal-text">${item.description}</p>
-        <p class="modal-label">First Discovered</p>
-        <p class="modal-text">${item.discovered} — ${item.firstAppearance}</p>
-        <p class="modal-label">Unknown</p>
-        <p class="modal-text modal-unknown">${item.unknownInfo}</p>
-      `;
+      modalBody.innerHTML =
+        '<div class="modal-symbol">' + item.symbol + '</div>' +
+        '<div class="modal-name">' + item.name + '</div>' +
+        '<div class="modal-divider">— — — — — — — —</div>' +
+        '<p class="modal-label">Description</p>' +
+        '<p class="modal-text">' + item.description + '</p>' +
+        '<p class="modal-label">First Discovered</p>' +
+        '<p class="modal-text">' + item.discovered + (item.firstAppearance ? ' — ' + item.firstAppearance : '') + '</p>' +
+        (item.unknownInfo
+          ? '<p class="modal-label">Unknown</p><p class="modal-text modal-unknown">' + item.unknownInfo + '</p>'
+          : '');
       modal.classList.add('visible');
     }
 
-    document.getElementById('modalClose').addEventListener('click', () => {
+    document.getElementById('modalClose').addEventListener('click', function() {
       modal.classList.remove('visible');
     });
-
-    modal.addEventListener('click', (e) => {
+    modal.addEventListener('click', function(e) {
       if (e.target === modal) modal.classList.remove('visible');
     });
 
+    // ── BADGES ─────────────────────────────────────────────────────────────
+    var badgeGrid = document.getElementById('badgeGrid');
+    var badges = season.badges || [];
+    if (badges.length === 0) {
+      badgeGrid.innerHTML =
+        '<div style="font-family:var(--font-type);font-size:0.78rem;color:rgba(60,30,10,0.4);font-style:italic;padding:0.5rem 0;">' +
+          'Badges unlock as the season progresses. Keep investigating.' +
+        '</div>';
+    } else {
+      badges.forEach(function(badge) {
+        var card = document.createElement('div');
+        card.className = 'badge-card earned-badge';
+        card.innerHTML =
+          '<div class="badge-symbol">' + badge.symbol + '</div>' +
+          '<div class="badge-name">' + badge.name + '</div>' +
+          '<div class="badge-desc">' + badge.description + '</div>';
+        badgeGrid.appendChild(card);
+      });
+    }
+
     // ── RESET ──────────────────────────────────────────────────────────────
-    document.getElementById('btnReset').addEventListener('click', () => {
+    document.getElementById('btnReset').addEventListener('click', function() {
       if (confirm('Reset all progress? This cannot be undone.')) {
-        Storage.saveProgress({ solvedCases: [], collectedObjects: [], recoveredFiles: [], visitedPages: [], timelineProgress: 0 });
-        Storage.saveVaultState(season.id, { vaultOpened: false, rewardClaimed: false, earnedBadges: [], viewedBonuses: [] });
+        // Clear all av_ keys
+        var keysToRemove = [];
+        for (var i = 0; i < localStorage.length; i++) {
+          var k = localStorage.key(i);
+          if (k && (k.indexOf('av_') === 0 || k.indexOf('ava_') === 0)) keysToRemove.push(k);
+        }
+        keysToRemove.forEach(function(k) { localStorage.removeItem(k); });
         location.reload();
       }
     });
