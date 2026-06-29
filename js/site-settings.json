@@ -10,6 +10,7 @@
     "monthDay": 1,
     "nextDate": "2026-07-05T12:00:00.000Z"
   },
+  "streamingSheetUrl": "https://docs.google.com/spreadsheets/d/e/2PACX-1vR1lN7dxScXihZSpJ4jUe-k6u-Z4NKu9UOwnu5ULio9G0oxRjb7SsST7GlFHTxlrK2t0NnmWPPq-767/pub?output=csv",
   "streaming": {
     "spotify": "#",
     "appleMusic": "#",

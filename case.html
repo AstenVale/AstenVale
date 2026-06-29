@@ -1049,6 +1049,42 @@ document.title = 'Case File ' + d.caseFile + ' — The Asten Vale Archives';
   </script>
 
   <script>
+  // Load streaming links from Google Sheet
+  (function() {
+    var params = new URLSearchParams(window.location.search);
+    var caseId = String(parseInt(params.get('id') || '1', 10)).padStart(3, '0');
+    fetch('js/site-settings.json')
+      .then(function(r){ return r.json(); })
+      .then(function(s) {
+        var sheetUrl = s.streamingSheetUrl;
+        if (!sheetUrl) return;
+        return fetch(sheetUrl).then(function(r){ return r.text(); }).then(function(csv) {
+          var rows = csv.trim().split('\n').map(function(r){ return r.split(','); });
+          var headers = rows[0].map(function(h){ return h.trim().toLowerCase(); });
+          var idCol      = headers.indexOf('id');
+          var spotifyCol = headers.indexOf('spotify');
+          var appleCol   = headers.indexOf('apple');
+          var ytCol      = headers.indexOf('youtube');
+          var amazonCol  = headers.indexOf('amazon');
+          var row = rows.slice(1).find(function(r){
+            return r[idCol] && r[idCol].trim().padStart(3,'0') === caseId;
+          });
+          if (!row) return;
+          function setLink(elId, col) {
+            var el = document.getElementById(elId);
+            var val = col >= 0 && row[col] ? row[col].trim() : '';
+            if (el) { if (val && val !== '#') { el.href = val; el.style.display = ''; } else { el.style.display = 'none'; } }
+          }
+          setLink('stream-spotify', spotifyCol);
+          setLink('stream-apple',   appleCol);
+          setLink('stream-youtube', ytCol);
+          setLink('stream-amazon',  amazonCol);
+        });
+      }).catch(function(){});
+  })();
+  </script>
+
+  <script>
   fetch('js/site-settings.json').then(function(r){return r.json();}).then(function(s){
     var pg = s.pages && s.pages.case; if(!pg) return;
     var bg = document.querySelector('.hero-bg');
