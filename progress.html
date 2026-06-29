@@ -893,36 +893,8 @@
 
       <hr class="section-divider" />
 
-      <!-- ── VAULT ── -->
-      <div class="section-head" style="padding-top:0">
-        <p class="section-label">Season One</p>
-        <h2 class="section-title">The Vault</h2>
-        <div class="section-rule"></div>
-      </div>
-
-      <div class="vault-wrap">
-        <div class="vault-label-row">
-          <span class="vault-label">12-Digit Combination</span>
-          <span class="vault-status locked" id="vaultStatusLabel">Locked</span>
-        </div>
-        <div class="vault-dials" id="vaultDials"></div>
-        <p class="vault-hint" id="vaultHint">Solve each case to reveal its digit. Complete all twelve to open the vault.</p>
-
-        <div class="vault-reward" id="vaultReward">
-          <div class="vault-reward-stamp">Vault Open</div>
-          <h3 class="vault-reward-title">Investigator Reward</h3>
-          <p class="vault-reward-msg">
-            You followed every trail. Recovered every file.<br>
-            The archive recognizes what you've done.<br>
-            Consider this a small token of gratitude.
-          </p>
-          <span class="vault-coupon-label">Your discount code</span>
-          <div class="vault-coupon" id="vaultCoupon">BLACKPINE</div>
-          <br><br>
-          <a href="#" class="vault-btn" id="vaultStoreBtn">Claim Your Reward →</a>
-          <p style="margin-top:0.85rem;font-family:var(--font-type);font-size:0.62rem;letter-spacing:0.12em;color:rgba(201,169,122,0.25);text-transform:uppercase;">Store coming soon</p>
-        </div>
-      </div>
+      <!-- ── VAULTS (one per season, populated by JS) ── -->
+      <div id="vaultsContainer"></div>
 
       <hr class="section-divider" />
 
@@ -1061,30 +1033,95 @@
       caseList.appendChild(row);
     });
 
-    // ── VAULT DIALS ────────────────────────────────────────────────────────
-    var vaultDials  = document.getElementById('vaultDials');
-    var vaultStatus = document.getElementById('vaultStatusLabel');
-    var vaultHint   = document.getElementById('vaultHint');
-    var digits      = season.digits || [];
+    // ── VAULTS — one per season that the player has reached ───────────────
+    var vaultsContainer = document.getElementById('vaultsContainer');
 
-    season.cases.forEach(function(c, i) {
-      var isSolved = solved.indexOf(c.id) !== -1;
-      var dial = document.createElement('div');
-      dial.className = 'vault-dial' + (isSolved ? (allRevealed ? ' all-unlocked' : ' revealed') : ' hidden');
-      dial.innerHTML =
-        '<span class="vault-dial-num">' + (isSolved && digits[i] != null ? String(digits[i]).padStart(2,'0') : '??') + '</span>' +
-        '<span class="vault-dial-case">' + String(i + 1).padStart(3,'0') + '</span>';
-      vaultDials.appendChild(dial);
-    });
+    // Determine which seasons to show: all seasons up to and including the active one
+    var activeSeasonIdx = 0;
+    for (var si = 0; si < SEASONS_CONFIG.length; si++) {
+      var s = SEASONS_CONFIG[si];
+      var sAllSolved = s.cases.every(function(c) { return solved.indexOf(c.id) !== -1; });
+      if (!sAllSolved) { activeSeasonIdx = si; break; }
+      activeSeasonIdx = si; // keep advancing if complete
+    }
 
-    if (allRevealed) {
-      vaultStatus.textContent = 'Unlocked';
-      vaultStatus.classList.remove('locked');
-      vaultStatus.classList.add('unlocked');
-      vaultHint.textContent = 'All twelve digits recovered. The vault stands open.';
-      document.getElementById('vaultReward').classList.add('visible');
-    } else {
-      vaultHint.textContent = numSolved + ' of ' + totalCases + ' digits recovered. Solve more cases to continue.';
+    for (var vi = 0; vi <= activeSeasonIdx; vi++) {
+      var vs       = SEASONS_CONFIG[vi];
+      var vDigits  = vs.digits || [];
+      var vCases   = vs.cases;
+      var vSolved  = vCases.filter(function(c) { return solved.indexOf(c.id) !== -1; });
+      var vComplete = vSolved.length === vCases.length && vCases.length > 0;
+      var vCoupon  = vs.vaultCode || (vs.title.replace(/\s+/g,'').toUpperCase());
+
+      // Section head
+      var vHead = document.createElement('div');
+      vHead.className = 'section-head';
+      vHead.style.paddingTop = vi === 0 ? '0' : '';
+      vHead.innerHTML =
+        '<p class="section-label">' + vs.title + '</p>' +
+        '<h2 class="section-title">The Vault</h2>' +
+        '<div class="section-rule"></div>';
+      vaultsContainer.appendChild(vHead);
+
+      // Vault wrap
+      var vWrap = document.createElement('div');
+      vWrap.className = 'vault-wrap';
+
+      var labelRow = document.createElement('div');
+      labelRow.className = 'vault-label-row';
+      labelRow.innerHTML =
+        '<span class="vault-label">12-Digit Combination</span>' +
+        '<span class="vault-status ' + (vComplete ? 'unlocked' : 'locked') + '">' + (vComplete ? 'Unlocked' : 'Locked') + '</span>';
+      vWrap.appendChild(labelRow);
+
+      var dialsEl = document.createElement('div');
+      dialsEl.className = 'vault-dials';
+      vCases.forEach(function(c, i) {
+        var isSolved = solved.indexOf(c.id) !== -1;
+        var dial = document.createElement('div');
+        dial.className = 'vault-dial' + (isSolved ? (vComplete ? ' all-unlocked' : ' revealed') : ' hidden');
+        dial.innerHTML =
+          '<span class="vault-dial-num">' + (isSolved && vDigits[i] != null ? String(vDigits[i]).padStart(2,'0') : '??') + '</span>' +
+          '<span class="vault-dial-case">' + String(i + 1).padStart(3,'0') + '</span>';
+        dialsEl.appendChild(dial);
+      });
+      vWrap.appendChild(dialsEl);
+
+      var hintEl = document.createElement('p');
+      hintEl.className = 'vault-hint';
+      hintEl.textContent = vComplete
+        ? 'All twelve digits recovered. The vault stands open.'
+        : vSolved.length + ' of ' + vCases.length + ' digits recovered. Solve more cases to continue.';
+      vWrap.appendChild(hintEl);
+
+      // Reward — only show when complete
+      if (vComplete) {
+        var reward = document.createElement('div');
+        reward.className = 'vault-reward visible';
+        reward.innerHTML =
+          '<div class="vault-reward-stamp">Vault Open</div>' +
+          '<h3 class="vault-reward-title">Investigator Reward — ' + vs.title + '</h3>' +
+          '<p class="vault-reward-msg">' +
+            'You followed every trail. Recovered every file.<br>' +
+            'The archive recognizes what you\'ve done.<br>' +
+            'Consider this a small token of gratitude.' +
+          '</p>' +
+          '<span class="vault-coupon-label">Your discount code</span>' +
+          '<div class="vault-coupon">' + vCoupon + '</div>' +
+          '<br><br>' +
+          '<a href="#" class="vault-btn">Claim Your Reward →</a>' +
+          '<p style="margin-top:0.85rem;font-family:var(--font-type);font-size:0.62rem;letter-spacing:0.12em;color:rgba(201,169,122,0.25);text-transform:uppercase;">Store coming soon</p>';
+        vWrap.appendChild(reward);
+      }
+
+      vaultsContainer.appendChild(vWrap);
+
+      // Divider between seasons
+      if (vi < activeSeasonIdx) {
+        var div = document.createElement('hr');
+        div.className = 'section-divider';
+        vaultsContainer.appendChild(div);
+      }
     }
 
     // ── EVIDENCE CABINET — load from solved song files ─────────────────────
