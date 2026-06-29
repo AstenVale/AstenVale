@@ -916,10 +916,13 @@
       <hr class="section-divider" />
 
       <!-- ── BADGES ── -->
-      <div class="section-head" style="padding-top:0">
-        <p class="section-label">Achievements</p>
-        <h2 class="section-title">Earned Badges</h2>
-        <div class="section-rule"></div>
+      <div class="section-head" style="padding-top:0;display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:0.75rem;">
+        <div>
+          <p class="section-label">Achievements</p>
+          <h2 class="section-title">Earned Badges</h2>
+          <div class="section-rule"></div>
+        </div>
+        <a href="badges.html" id="badgesPageLink" style="font-family:var(--font-type);font-size:0.68rem;letter-spacing:0.18em;color:rgba(60,30,10,0.5);border:1px solid rgba(60,30,10,0.2);padding:0.4rem 0.85rem;text-decoration:none;align-self:center;text-transform:uppercase;transition:all 0.2s;" onmouseover="this.style.color='rgba(60,30,10,0.85)';this.style.borderColor='rgba(60,30,10,0.45)'" onmouseout="this.style.color='rgba(60,30,10,0.5)';this.style.borderColor='rgba(60,30,10,0.2)'">View All →</a>
       </div>
 
       <div class="badge-grid" id="badgeGrid">
@@ -955,6 +958,7 @@
   </footer>
 
   <script src="js/vault-config.js"></script>
+  <script src="js/badges.js"></script>
   <script>
   (function () {
     var season = SEASONS_CONFIG[0];
@@ -1133,15 +1137,22 @@
     }
 
     // ── BADGES ─────────────────────────────────────────────────────────────
+    var earnedBadges = [];
+    try { earnedBadges = JSON.parse(localStorage.getItem('av_badges') || '[]'); } catch(e) {}
+
     var badgeGrid = document.getElementById('badgeGrid');
-    var badges = season.badges || [];
-    if (badges.length === 0) {
+    var badgeTotal = (typeof BADGES_CONFIG !== 'undefined') ? BADGES_CONFIG.length : 13;
+
+    if (earnedBadges.length === 0) {
       badgeGrid.innerHTML =
         '<div style="font-family:var(--font-type);font-size:0.78rem;color:rgba(60,30,10,0.4);font-style:italic;padding:0.5rem 0;">' +
-          'Badges unlock as the season progresses. Keep investigating.' +
+          'No badges earned yet. Keep investigating.' +
         '</div>';
-    } else {
-      badges.forEach(function(badge) {
+    } else if (typeof BADGES_CONFIG !== 'undefined') {
+      var shown = 0;
+      BADGES_CONFIG.forEach(function(badge) {
+        if (earnedBadges.indexOf(badge.id) === -1 || shown >= 4) return;
+        shown++;
         var card = document.createElement('div');
         card.className = 'badge-card earned-badge';
         card.innerHTML =
@@ -1150,7 +1161,18 @@
           '<div class="badge-desc">' + badge.description + '</div>';
         badgeGrid.appendChild(card);
       });
+      if (earnedBadges.length > 4) {
+        var more = document.createElement('div');
+        more.className = 'badge-card';
+        more.style.cssText = 'justify-content:center;opacity:0.6;font-style:italic;font-size:0.72rem;';
+        more.textContent = '+ ' + (earnedBadges.length - 4) + ' more';
+        badgeGrid.appendChild(more);
+      }
     }
+
+    // Link to full badges page
+    var badgesLink = document.getElementById('badgesPageLink');
+    if (badgesLink) badgesLink.textContent = earnedBadges.length + ' / ' + badgeTotal + ' Earned — View All →';
 
     // ── RESET ──────────────────────────────────────────────────────────────
     document.getElementById('btnReset').addEventListener('click', function() {

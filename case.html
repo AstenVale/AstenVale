@@ -725,6 +725,9 @@ body.unlocked::before{
       localStorage.setItem('av_solved', JSON.stringify(solved));
     } catch(e) {}
 
+    // Award badges
+    try { markLateNightIfNeeded(); checkAndAwardBadges(); } catch(e) {}
+
     // Show first collectible popup only the first time the case is solved
     var firstC = (d.collectibles && d.collectibles[0]) || d.collectible;
     if (firstC && firstC.name && firstC.name.indexOf('//') === -1) {
@@ -1257,6 +1260,7 @@ document.title = 'Case File ' + d.caseFile + ' — The Ashton Vale Archives';
     if(pg.heroTitleText){ var t=document.querySelector('.case-hero-title'); if(t) t.textContent=pg.heroTitleText; }
   }).catch(function(){});
   </script>
+  <script src="js/badges.js"></script>
 
 </body>
 </html>
