@@ -19,6 +19,16 @@ body {
   padding-top: 72px !important;
 }
 
+/* Pages with a hero image handle nav spacing themselves */
+body.has-hero-image {
+  padding-top: 0 !important;
+}
+body.has-hero-image .hero {
+  padding-top: 72px;
+  min-height: 45vh;
+  box-sizing: border-box;
+}
+
 
 /* ── MOBILE: fixed bottom bar ─────────────────────────────────────────── */
 @media (max-width: 768px) {
