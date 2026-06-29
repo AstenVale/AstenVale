@@ -1240,6 +1240,7 @@ document.title = 'Case File ' + d.caseFile + ' — The Asten Vale Archives';
           function setLink(elId, col) {
             var el = document.getElementById(elId);
             var val = col >= 0 && row[col] ? row[col].trim() : '';
+            if (val && val !== '#' && !/^https?:\/\//i.test(val)) val = 'https://' + val;
             if (el) { if (val && val !== '#') { el.href = val; el.style.display = ''; } else { el.style.display = 'none'; } }
           }
           setLink('stream-spotify', spotifyCol);
