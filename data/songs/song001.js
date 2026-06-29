@@ -214,19 +214,65 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "001_lantern",
-    "name": "Lantern",
-    "image": "data/images/lantern.png",
-    "symbol": "*",
-    "description": "Lantern was recovered from Black Pine in Case File 001. It is tied to Stranger, 3:30, and marker 17.",
-    "discovered": "Case File 001",
-    "firstAppearance": "Lantern at Black Pine",
-    "connectedSongs": [
-      "001"
-    ],
-    "unknownInfo": "West and Crow Call suggest this object matters beyond the first reading."
-  },
+  "collectibles": [
+    {
+      "id": "001_lantern",
+      "type": "Object",
+      "name": "The Lantern",
+      "image": "data/images/lantern.png",
+      "symbol": "🏮",
+      "description": "A lantern recovered from the Black Pine scene. Still faintly warm when found. No fuel remaining.",
+      "unknownInfo": "Who carried it there — and why they left it burning."
+    },
+    {
+      "id": "001_location",
+      "type": "Location",
+      "name": "Black Pine",
+      "symbol": "📍",
+      "description": "A remote wooded area outside the valley. The reported scene of the original incident.",
+      "unknownInfo": "Whether the lantern was placed before or after the disappearance."
+    },
+    {
+      "id": "001_witness",
+      "type": "Witness",
+      "name": "The Stranger",
+      "symbol": "👤",
+      "description": "An unidentified individual reported at the Black Pine location. No name on file.",
+      "unknownInfo": "Their connection to Marker 17 and whether they returned West."
+    },
+    {
+      "id": "001_time",
+      "type": "Time",
+      "name": "3:30",
+      "symbol": "⌚",
+      "description": "The confirmed time of the Crow Call recording embedded in the case audio. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this was AM or PM — and what changed in the intervening hours."
+    },
+    {
+      "id": "001_marker",
+      "type": "Marker",
+      "name": "Marker 17",
+      "symbol": "◆",
+      "description": "A numbered field marker left at the Black Pine site. Indexed to the Public Archive.",
+      "unknownInfo": "What Marker 17 was meant to point toward — and who placed it."
+    },
+    {
+      "id": "001_direction",
+      "type": "Direction",
+      "name": "West",
+      "symbol": "🧭",
+      "description": "The direction indicated by Marker 17. Repeated in the final line of the recovered field note.",
+      "unknownInfo": "West was never a direction. It was permission."
+    },
+    {
+      "id": "001_sound",
+      "type": "Sound",
+      "name": "Crow Call",
+      "symbol": "🪶",
+      "description": "An audio event captured at 3:30 in the case recording. Identified as a crow call by the archive.",
+      "unknownInfo": "Whether the call was natural or a signal — and who else heard it."
+    }
+  ],
   "lore": {
     "title": "Lantern at Black Pine - Recovered Case File",
     "fileId": "001A",

@@ -256,16 +256,16 @@
       var s = document.createElement('script');
       s.src = 'data/songs/song' + padded + '.js';
       s.onload = function() {
-        if (window.SONG_DATA && window.SONG_DATA.collectible) {
-          var c = window.SONG_DATA.collectible;
-          if (c.name && c.name.indexOf('//') === -1) {
-            collectibles.push({
-              caseId:    id,
-              caseFile:  window.SONG_DATA.caseFile || id,
-              caseTitle: window.SONG_DATA.title || ('Case ' + id),
-              collectible: c
-            });
-          }
+        if (window.SONG_DATA) {
+          var caseFile  = window.SONG_DATA.caseFile || id;
+          var caseTitle = window.SONG_DATA.title || ('Case ' + id);
+          // Support both new collectibles[] array and legacy collectible{}
+          var arr = window.SONG_DATA.collectibles || (window.SONG_DATA.collectible ? [window.SONG_DATA.collectible] : []);
+          arr.forEach(function(c) {
+            if (c && c.name && c.name.indexOf('//') === -1) {
+              collectibles.push({ caseId: id, caseFile: caseFile, caseTitle: caseTitle, collectible: c });
+            }
+          });
         }
         window.SONG_DATA = null;
         loaded++;
@@ -387,7 +387,7 @@
 
             // Card body
             html +=   '<div class="artifact-card-body">';
-            html +=     '<span class="artifact-card-stamp">Recovered — Case ' + caseNum + '</span>';
+            html +=     '<span class="artifact-card-stamp">' + (c.type || 'Evidence') + ' — Case ' + caseNum + '</span>';
             html +=     '<div class="artifact-card-name">' + c.name + '</div>';
             html +=     '<div class="artifact-card-case">' + cg.caseTitle + ' &nbsp;·&nbsp; ' + sg.title + '</div>';
             if (c.description) {

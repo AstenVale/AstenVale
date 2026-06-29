@@ -725,12 +725,13 @@ body.unlocked::before{
       localStorage.setItem('av_solved', JSON.stringify(solved));
     } catch(e) {}
 
-    // Show collectible only the first time it is discovered
-    if (d.collectible && d.collectible.name && d.collectible.name.indexOf('//') === -1) {
-      var seenKey = 'av_seen_collectible_' + (d.collectible.id || d.collectible.name);
+    // Show first collectible popup only the first time the case is solved
+    var firstC = (d.collectibles && d.collectibles[0]) || d.collectible;
+    if (firstC && firstC.name && firstC.name.indexOf('//') === -1) {
+      var seenKey = 'av_seen_collectible_' + (firstC.id || firstC.name);
       if (!localStorage.getItem(seenKey)) {
         localStorage.setItem(seenKey, '1');
-        setTimeout(function() { showCollectible(d.collectible); }, 400);
+        setTimeout(function() { showCollectible(firstC); }, 400);
       }
     }
     setTimeout(function() { renderPostUnlock(d); }, 1400);
@@ -759,7 +760,7 @@ body.unlocked::before{
 
     var lore = d.lore || {};
     var story = d.story || {};
-    var collectible = d.collectible || {};
+    var collectible = (d.collectibles && d.collectibles[0]) || d.collectible || {};
 
     var loreLines = (lore.lines || []).filter(function(l) { return l && l.indexOf('//') === -1 && l.trim() !== ''; });
     var hasRealLore = loreLines.length > 0;

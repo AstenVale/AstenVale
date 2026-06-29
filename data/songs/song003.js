@@ -215,18 +215,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "003_rusted_key",
-    "name": "Rusted Key",
-    "symbol": "*",
-    "description": "Rusted Key was recovered from Ash Creek in Case File 003. It is tied to Sheriff, 11:17, and marker 43.",
-    "discovered": "Case File 003",
-    "firstAppearance": "The Rusted Key",
-    "connectedSongs": [
-      "003"
-    ],
-    "unknownInfo": "West and Crow Call suggest this object matters beyond the first reading."
-  },
+  "collectibles": [
+    {
+      "id": "003_rusted_key",
+      "type": "Object",
+      "name": "Rusted Key",
+      "symbol": "🗝",
+      "description": "A heavily corroded iron key recovered from the Ash Creek embankment. Lock unknown. Too rusted to date precisely.",
+      "unknownInfo": "What it opens — and why it was buried rather than discarded."
+    },
+    {
+      "id": "003_location",
+      "type": "Location",
+      "name": "Ash Creek",
+      "symbol": "📍",
+      "description": "A dry creek bed south of the valley. The key was found partially buried under ash deposits near the bank.",
+      "unknownInfo": "Whether the ash is from a fire at the scene or carried downstream."
+    },
+    {
+      "id": "003_witness",
+      "type": "Witness",
+      "name": "The Sheriff",
+      "symbol": "👤",
+      "description": "A local authority figure identified in the case notes. Present at Ash Creek. Testimony contradicts the field report.",
+      "unknownInfo": "Why the Sheriff's account of the creek differs from the archived photographs."
+    },
+    {
+      "id": "003_time",
+      "type": "Time",
+      "name": "11:17",
+      "symbol": "⌚",
+      "description": "The time stamp on the Crow Call audio captured at Ash Creek. Also the time on the Sheriff's written report.",
+      "unknownInfo": "Whether both recordings were made simultaneously — or hours apart."
+    },
+    {
+      "id": "003_marker",
+      "type": "Marker",
+      "name": "Marker 43",
+      "symbol": "◆",
+      "description": "A field marker discovered at Ash Creek. Third in the sequence. Points West. Archived under Case 003A.",
+      "unknownInfo": "Whether the marker sequence is a map or a countdown."
+    },
+    {
+      "id": "003_direction",
+      "type": "Direction",
+      "name": "West",
+      "symbol": "🧭",
+      "description": "For the third consecutive case, the field marker points West. The pattern is no longer coincidental.",
+      "unknownInfo": "What — or who — is at the end of the Western line."
+    },
+    {
+      "id": "003_sound",
+      "type": "Sound",
+      "name": "Crow Call",
+      "symbol": "🪶",
+      "description": "A crow call captured again at 11:17 — the same audio signature as Case 001. Identical cadence. Different location.",
+      "unknownInfo": "Whether the same crow was recorded twice — or whether this is a signal being repeated."
+    }
+  ],
   "lore": {
     "title": "The Rusted Key - Recovered Case File",
     "fileId": "003A",

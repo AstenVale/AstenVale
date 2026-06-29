@@ -214,18 +214,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "002_crow_feather",
-    "name": "Crow Feather",
-    "symbol": "*",
-    "description": "Crow Feather was recovered from Pine Hollow River in Case File 002. It is tied to Widow, 8:00, and marker 27.",
-    "discovered": "Case File 002",
-    "firstAppearance": "The Hollow Letter",
-    "connectedSongs": [
-      "002"
-    ],
-    "unknownInfo": "West and CREEEAK suggest this object matters beyond the first reading."
-  },
+  "collectibles": [
+    {
+      "id": "002_crow_feather",
+      "type": "Object",
+      "name": "Crow Feather",
+      "symbol": "🪶",
+      "description": "A single crow feather recovered from the riverbank at Pine Hollow. Found pressed inside the hollow letter.",
+      "unknownInfo": "Whether it was left deliberately — and by the same hand that wrote the letter."
+    },
+    {
+      "id": "002_location",
+      "type": "Location",
+      "name": "Pine Hollow River",
+      "symbol": "📍",
+      "description": "A river crossing east of the valley. The hollow letter was found wedged beneath a stone on the bank.",
+      "unknownInfo": "Whether the river has been searched below the crossing."
+    },
+    {
+      "id": "002_witness",
+      "type": "Witness",
+      "name": "The Widow",
+      "symbol": "👤",
+      "description": "A woman identified only as The Widow. Present at Pine Hollow River. Has not given a formal statement.",
+      "unknownInfo": "Her relationship to the letter's author and why she was there."
+    },
+    {
+      "id": "002_time",
+      "type": "Time",
+      "name": "8:00",
+      "symbol": "⌚",
+      "description": "The time at which the CREEEAK audio event is recorded in the case file. The hollow letter was dated the same hour.",
+      "unknownInfo": "Whether 8:00 marks when the letter was written or when it was found."
+    },
+    {
+      "id": "002_marker",
+      "type": "Marker",
+      "name": "Marker 27",
+      "symbol": "◆",
+      "description": "A field marker left at the Pine Hollow site. Connects to the Public Archive. Written in a different hand than Marker 17.",
+      "unknownInfo": "Whether Marker 27 was placed before or after the hollow letter was written."
+    },
+    {
+      "id": "002_direction",
+      "type": "Direction",
+      "name": "West",
+      "symbol": "🧭",
+      "description": "The direction indicated again. Marker 27 points West — same as Marker 17 before it.",
+      "unknownInfo": "Do not follow West unless you are prepared to meet everyone who followed it before you."
+    },
+    {
+      "id": "002_sound",
+      "type": "Sound",
+      "name": "CREEEAK",
+      "symbol": "🔊",
+      "description": "An unidentified structural sound captured at 8:00 in the case audio. Possibly a door. Possibly a floorboard.",
+      "unknownInfo": "What structure it came from — and whether anyone was inside."
+    }
+  ],
   "lore": {
     "title": "The Hollow Letter - Recovered Case File",
     "fileId": "002A",

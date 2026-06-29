@@ -214,18 +214,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "004_wedding_ring",
-    "name": "Wedding Ring",
-    "symbol": "*",
-    "description": "Wedding Ring was recovered from Church in Case File 004. It is tied to Widow, 6:45, and marker 12.",
-    "discovered": "Case File 004",
-    "firstAppearance": "The Widow Knows",
-    "connectedSongs": [
-      "004"
-    ],
-    "unknownInfo": "East and Bell Toll suggest this object matters beyond the first reading."
-  },
+  "collectibles": [
+    {
+      "id": "004_wedding_ring",
+      "type": "Object",
+      "name": "Wedding Ring",
+      "symbol": "💍",
+      "description": "A plain gold band recovered from the Church floor. Engraved inside: a date that predates the church's construction.",
+      "unknownInfo": "Whose name was removed from the inscription — and when."
+    },
+    {
+      "id": "004_location",
+      "type": "Location",
+      "name": "The Church",
+      "symbol": "📍",
+      "description": "A small stone church at the edge of the valley. Unconsecrated. No congregation on record since 1943.",
+      "unknownInfo": "Who has been maintaining it — the windows were recently cleaned."
+    },
+    {
+      "id": "004_witness",
+      "type": "Witness",
+      "name": "The Widow",
+      "symbol": "👤",
+      "description": "The same Widow from Case 002. Found inside the church at 6:45. She did not speak. She was already leaving.",
+      "unknownInfo": "Whether The Widow placed the ring — or was there to retrieve it."
+    },
+    {
+      "id": "004_time",
+      "type": "Time",
+      "name": "6:45",
+      "symbol": "⌚",
+      "description": "The time of the Bell Toll audio captured inside the Church. The bell has no bell tower. No mechanism was found.",
+      "unknownInfo": "Where the sound originated — and whether it can be heard from outside."
+    },
+    {
+      "id": "004_marker",
+      "type": "Marker",
+      "name": "Marker 12",
+      "symbol": "◆",
+      "description": "Found scratched into the church doorframe. Marker 12 — the lowest number yet. The sequence is not ascending.",
+      "unknownInfo": "Whether the markers form a sequence with a known start — or whether 12 is the end."
+    },
+    {
+      "id": "004_direction",
+      "type": "Direction",
+      "name": "East",
+      "symbol": "🧭",
+      "description": "For the first time, the marker points East. Not West. Something at the Church broke the pattern.",
+      "unknownInfo": "Whether East is a correction, a contradiction, or a trap."
+    },
+    {
+      "id": "004_sound",
+      "type": "Sound",
+      "name": "Bell Toll",
+      "symbol": "🔔",
+      "description": "A single bell toll recorded at 6:45 inside the Church. No physical bell was found on the property.",
+      "unknownInfo": "Whether the toll marks the hour — or an event."
+    }
+  ],
   "lore": {
     "title": "The Widow Knows - Recovered Case File",
     "fileId": "004A",

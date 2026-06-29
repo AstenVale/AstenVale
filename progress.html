@@ -1144,20 +1144,23 @@
         var s = document.createElement('script');
         s.src = 'data/songs/song' + padded + '.js';
         s.onload = function() {
-          if (window.SONG_DATA && window.SONG_DATA.collectible) {
-            var c = window.SONG_DATA.collectible;
-            if (c.name && c.name.indexOf('//') === -1) {
-              collectibles.push({
-                caseId:   id,
-                caseFile: window.SONG_DATA.caseFile || id,
-                name:     c.name,
-                symbol:   c.symbol || '🔍',
-                description:  c.description || '',
-                discovered:   c.discovered || ('Case File ' + (window.SONG_DATA.caseFile || id)),
-                firstAppearance: c.firstAppearance || window.SONG_DATA.title || '',
-                unknownInfo: c.unknownInfo || ''
-              });
-            }
+          if (window.SONG_DATA) {
+            var caseFile2 = window.SONG_DATA.caseFile || id;
+            var arr2 = window.SONG_DATA.collectibles || (window.SONG_DATA.collectible ? [window.SONG_DATA.collectible] : []);
+            arr2.forEach(function(c) {
+              if (c && c.name && c.name.indexOf('//') === -1) {
+                collectibles.push({
+                  caseId:      id,
+                  caseFile:    caseFile2,
+                  name:        c.name,
+                  symbol:      c.symbol || '🔍',
+                  description: c.description || '',
+                  discovered:  c.discovered || ('Case File ' + caseFile2),
+                  firstAppearance: c.firstAppearance || window.SONG_DATA.title || '',
+                  unknownInfo: c.unknownInfo || ''
+                });
+              }
+            });
           }
           window.SONG_DATA = null;
           loadedCount++;
