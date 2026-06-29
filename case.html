@@ -308,7 +308,9 @@ body.unlocked::before{
 .artifact-display{display:flex;gap:1.5rem;align-items:flex-start;padding:1.5rem;background:rgba(0,0,0,0.06);border:1px solid rgba(100,60,20,0.25);position:relative;border-radius:1px;}
 .artifact-display::before{content:"";position:absolute;top:0;left:0;width:4px;bottom:0;background:var(--gold);opacity:0.5;}
 .artifact-evidence-tag{position:absolute;top:-0.55rem;left:1.25rem;background:var(--stamp-red);color:rgba(255,215,175,0.95);font-family:var(--font-header);font-size:0.55rem;letter-spacing:0.25em;padding:0.12rem 0.55rem;text-transform:uppercase;}
-.artifact-symbol{font-size:3.2rem;filter:drop-shadow(0 2px 12px rgba(245,166,35,0.45));animation:float-item 3s ease-in-out infinite alternate;flex-shrink:0;margin-top:0.25rem;}
+.artifact-img-box{width:100px;height:100px;flex-shrink:0;background:rgba(0,0,0,0.15);border:1px solid rgba(100,60,20,0.25);display:flex;align-items:center;justify-content:center;overflow:hidden;}
+.artifact-img-box img{width:100%;height:100%;object-fit:cover;display:block;}
+.artifact-symbol{font-size:3.2rem;filter:drop-shadow(0 2px 12px rgba(245,166,35,0.45));animation:float-item 3s ease-in-out infinite alternate;}
 .artifact-body{flex:1;}
 .artifact-name{font-family:var(--font-header);font-size:1.05rem;letter-spacing:0.1em;color:var(--ink);margin-bottom:0.1rem;}
 .artifact-file-id{font-size:0.62rem;letter-spacing:0.2em;color:var(--stamp-red);text-transform:uppercase;margin-bottom:0.6rem;}
@@ -820,10 +822,20 @@ body.unlocked::before{
       tag.textContent = 'Case ' + (caseData.caseFile || caseData.id) + ' — Evidence Recovered';
       artWrap.appendChild(tag);
 
-      var sym = document.createElement('span');
-      sym.className = 'artifact-symbol';
-      sym.textContent = collectible.symbol || '🔍';
-      artWrap.appendChild(sym);
+      var imgBox = document.createElement('div');
+      imgBox.className = 'artifact-img-box';
+      if (collectible.image) {
+        var img = document.createElement('img');
+        img.src = collectible.image;
+        img.alt = collectible.name || '';
+        imgBox.appendChild(img);
+      } else {
+        var sym = document.createElement('span');
+        sym.className = 'artifact-symbol';
+        sym.textContent = collectible.symbol || '🔍';
+        imgBox.appendChild(sym);
+      }
+      artWrap.appendChild(imgBox);
 
       var abody = document.createElement('div');
       abody.className = 'artifact-body';
