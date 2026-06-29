@@ -18,7 +18,7 @@
   },
   "pages": {
     "home": {
-      "heroImage": "",
+      "heroImage": "https://astenvale.github.io/AstenVale/images/Archives.png",
       "heroOverlay": 0.5,
       "showTitle": false,
       "showSubtitle": false,
