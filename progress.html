@@ -1195,7 +1195,7 @@
   fetch('js/site-settings.json').then(function(r){return r.json();}).then(function(s){
     var pg = s.pages && s.pages.progress; if(!pg) return;
     var bg = document.querySelector('.hero-bg');
-    if(bg && pg.heroImage){ bg.style.backgroundImage='url("'+pg.heroImage+'")'; bg.style.backgroundSize='cover'; bg.style.backgroundPosition='center'; bg.style.opacity=pg.heroOverlay!=null?(1-pg.heroOverlay):1; var heroEl=bg.closest('.hero'); if(heroEl){ heroEl.style.marginTop='-72px'; heroEl.style.overflow='visible'; } }
+    if(bg && pg.heroImage){ bg.style.backgroundImage='url("'+pg.heroImage+'")'; bg.style.backgroundSize='cover'; bg.style.backgroundPosition='center'; bg.style.opacity=pg.heroOverlay!=null?(1-pg.heroOverlay):1; var heroEl=bg.closest('.hero'); if(heroEl){ heroEl.style.marginTop='-72px'; heroEl.style.overflow='visible'; heroEl.style.minHeight='45vh'; } }
     if(pg.showTitle===false||pg.heroImage){ document.querySelectorAll('.hero-title,.hero-diamond').forEach(function(e){e.style.display='none';}); }
     if(pg.showSubtitle===false){ var el=document.querySelector('.hero-tagline,.hero-subtitle'); if(el) el.style.display='none'; }
     if(pg.heroTitleText){ var t=document.querySelector('.hero-title'); if(t) t.textContent=pg.heroTitleText; }
