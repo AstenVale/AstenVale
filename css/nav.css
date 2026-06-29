@@ -19,10 +19,10 @@ body {
   padding-top: 72px !important;
 }
 
-/* Hero sections with images extend behind the fixed nav */
-.hero.has-image {
-  margin-top: -72px;
-  padding-top: 72px;
+/* Hero bg extends behind fixed nav when image is set */
+.hero.has-image .hero-bg {
+  top: -72px;
+  height: calc(100% + 72px);
 }
 
 /* ── MOBILE: fixed bottom bar ─────────────────────────────────────────── */
