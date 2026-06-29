@@ -1,15 +1,15 @@
 {
-  "releaseSchedule": {
-    "type": "weekly",
-    "weekday": 0,
-    "monthDay": 1,
-    "nextDate": null
-  },
   "buyMeCoffeeUrl": "https://buymeacoffee.com/YOUR_USERNAME",
   "storeUrl": "#",
   "vaultCouponCode": "BLACKPINE",
   "vaultStoreUrl": "#",
   "vaultMessage": "You followed every trail. Recovered every file.\nThe archive recognizes what you've done.\nConsider this a small token of gratitude.",
+  "releaseSchedule": {
+    "type": "weekly",
+    "weekday": 0,
+    "monthDay": 1,
+    "nextDate": "2026-07-05T12:00:00.000Z"
+  },
   "streaming": {
     "spotify": "#",
     "appleMusic": "#",
@@ -17,12 +17,54 @@
     "amazonMusic": "#"
   },
   "pages": {
-    "home":       { "heroImage": "", "heroOverlay": 0.5, "showTitle": true, "showSubtitle": true, "heroTitleText": "" },
-    "about":      { "heroImage": "", "heroOverlay": 0.5, "showTitle": true, "showSubtitle": true, "heroTitleText": "" },
-    "join":       { "heroImage": "", "heroOverlay": 0.5, "showTitle": true, "showSubtitle": true, "heroTitleText": "" },
-    "progress":   { "heroImage": "", "heroOverlay": 0.5, "showTitle": true, "showSubtitle": true, "heroTitleText": "" },
-    "completed":  { "heroImage": "", "heroOverlay": 0.5, "showTitle": true, "showSubtitle": true, "heroTitleText": "" },
-    "classified": { "heroImage": "", "heroOverlay": 0.5, "showTitle": true, "showSubtitle": true, "heroTitleText": "" },
-    "case":       { "heroImage": "", "heroOverlay": 0.5, "showTitle": true, "showSubtitle": true, "heroTitleText": "" }
+    "home": {
+      "heroImage": "",
+      "heroOverlay": 0.5,
+      "showTitle": false,
+      "showSubtitle": false,
+      "heroTitleText": ""
+    },
+    "about": {
+      "heroImage": "",
+      "heroOverlay": 0.5,
+      "showTitle": true,
+      "showSubtitle": true,
+      "heroTitleText": ""
+    },
+    "join": {
+      "heroImage": "",
+      "heroOverlay": 0.5,
+      "showTitle": true,
+      "showSubtitle": true,
+      "heroTitleText": ""
+    },
+    "progress": {
+      "heroImage": "",
+      "heroOverlay": 0.5,
+      "showTitle": true,
+      "showSubtitle": true,
+      "heroTitleText": ""
+    },
+    "completed": {
+      "heroImage": "",
+      "heroOverlay": 0.5,
+      "showTitle": true,
+      "showSubtitle": true,
+      "heroTitleText": ""
+    },
+    "classified": {
+      "heroImage": "",
+      "heroOverlay": 0.5,
+      "showTitle": true,
+      "showSubtitle": true,
+      "heroTitleText": ""
+    },
+    "case": {
+      "heroImage": "",
+      "heroOverlay": 0.5,
+      "showTitle": true,
+      "showSubtitle": true,
+      "heroTitleText": ""
+    }
   }
 }
