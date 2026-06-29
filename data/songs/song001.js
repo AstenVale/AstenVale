@@ -217,6 +217,7 @@ window.SONG_DATA = {
   "collectible": {
     "id": "001_lantern",
     "name": "Lantern",
+    "image": "data/images/lantern.png",
     "symbol": "*",
     "description": "Lantern was recovered from Black Pine in Case File 001. It is tied to Stranger, 3:30, and marker 17.",
     "discovered": "Case File 001",
