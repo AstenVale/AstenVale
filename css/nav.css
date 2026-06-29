@@ -19,8 +19,8 @@ body {
   padding-top: 72px !important;
 }
 
-/* Hero sections extend behind the fixed nav so no black gap shows */
-.hero {
+/* Hero sections with images extend behind the fixed nav */
+.hero.has-image {
   margin-top: -72px;
   padding-top: 72px;
 }
