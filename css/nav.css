@@ -19,6 +19,12 @@ body {
   padding-top: 72px !important;
 }
 
+/* Hero sections extend behind the fixed nav so no black gap shows */
+.hero {
+  margin-top: -72px;
+  padding-top: 72px;
+}
+
 /* ── MOBILE: fixed bottom bar ─────────────────────────────────────────── */
 @media (max-width: 768px) {
   /* No top padding needed — nav moves to bottom */
