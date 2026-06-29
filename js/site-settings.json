@@ -62,8 +62,8 @@
     "case": {
       "heroImage": "https://astenvale.github.io/AstenVale/images/Case.png",
       "heroOverlay": 0.5,
-      "showTitle": false,
-      "showSubtitle": false,
+      "showTitle": true,
+      "showSubtitle": true,
       "heroTitleText": ""
     }
   }
