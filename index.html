@@ -1029,6 +1029,7 @@
   </footer>
 
   <script src="js/vault-config.js"></script>
+  <script src="js/sheet-released.js"></script>
   <script>
   // Apply hero image from site-settings.json
   fetch('js/site-settings.json')
@@ -1052,6 +1053,7 @@
     }).catch(function(){});
   </script>
   <script>
+  applySheetReleased(function() {
   (function () {
     var season = SEASONS_CONFIG[0];
     var solved = [];
@@ -1268,7 +1270,7 @@
     seasonHeader.appendChild(seasonHeaderRight);
     list.appendChild(seasonHeader);
 
-    // Render all 12 cases — solved, active, locked, or unreleased
+    // Render only cases the player has reached: solved + active case
     allCases.forEach(function(c) {
       var num    = parseInt(c.id, 10);
       var numPad = String(num).padStart(3,'0');
@@ -1277,6 +1279,9 @@
       var isSolved   = solved.indexOf(c.id) !== -1;
       var isActive   = active && active.id === c.id;
       var isReleased = c.released;
+
+      // Hide future cases — player hasn't reached them yet
+      if (!isSolved && !isActive) return;
 
       var card = document.createElement('a');
       var sceneSVG = makeSceneSVG(c.scene || 'files', c.gradient || ['#3a3a2a','#0c0a06'], !isActive && !isSolved);
@@ -1345,6 +1350,7 @@
     }
 
   })();
+  }); // applySheetReleased
   </script>
 
   <!-- ── COUNTDOWN ──────────────────────────────────────────── -->
