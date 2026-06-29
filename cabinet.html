@@ -298,20 +298,26 @@
       count.textContent = items.length + ' Item' + (items.length === 1 ? '' : 's') + ' Recovered';
 
       // Group items by season, then case using SEASONS_CONFIG
-      // Build lookup: caseId → { season, caseObj }
+      // Build lookup: caseId → { season, caseObj } — index by multiple formats
       var caseMap = {};
       SEASONS_CONFIG.forEach(function(season) {
         season.cases.forEach(function(c) {
-          caseMap[c.id] = { season: season, caseObj: c };
+          var num = parseInt(c.id, 10);
+          caseMap[c.id]                             = { season: season, caseObj: c };
+          caseMap[String(num)]                      = { season: season, caseObj: c };
+          caseMap[String(num).padStart(3, '0')]     = { season: season, caseObj: c };
         });
       });
 
       // Group items by seasonId → caseId
-      var seasonGroups = {}; // seasonId → { season, cases: { caseId → { caseObj, items[] } } }
+      var seasonGroups = {};
       var seasonOrder  = [];
 
       items.forEach(function(item) {
-        var match = caseMap[item.caseId];
+        var id  = String(item.caseId);
+        var match = caseMap[id] ||
+                    caseMap[String(parseInt(id, 10)).padStart(3, '0')] ||
+                    caseMap[String(parseInt(id, 10))];
         var seasonId    = match ? match.season.id    : 'unknown';
         var seasonTitle = match ? match.season.title : 'Unknown Season';
         var caseObj     = match ? match.caseObj      : { id: item.caseId, title: item.caseTitle };
