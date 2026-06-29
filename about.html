@@ -459,6 +459,7 @@
     if(pg.heroTitleText){ var t=document.querySelector('.hero-title'); if(t) t.textContent=pg.heroTitleText; }
   }).catch(function(){});
   </script>
-  <script>try { localStorage.setItem('av_visited_about','1'); } catch(e) {}</script>
+  <script src="js/badges.js"></script>
+  <script>try { localStorage.setItem('av_visited_about','1'); checkAndAwardBadges(); } catch(e) {}</script>
 </body>
 </html>
