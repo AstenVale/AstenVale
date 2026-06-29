@@ -25,7 +25,7 @@ function applySheetReleased(callback) {
         if (typeof SEASONS_CONFIG !== 'undefined') {
           SEASONS_CONFIG.forEach(function(season) {
             season.cases.forEach(function(c) {
-              if (releasedIds.indexOf(c.id) !== -1) c.released = true;
+              c.released = releasedIds.indexOf(c.id) !== -1;
             });
           });
         }
