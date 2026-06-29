@@ -72,12 +72,16 @@
     .season-rule { flex: 1; height: 1px; background: rgba(60,30,10,0.15); }
     .season-badge { font-family: var(--font-type); font-size: 0.58rem; letter-spacing: 0.2em; color: rgba(60,30,10,0.5); text-transform: uppercase; border: 1px solid rgba(60,30,10,0.25); padding: 0.2rem 0.6rem; white-space: nowrap; }
 
-    /* ── CASE GROUP ── */
-    .case-group { margin-bottom: 2rem; }
-    .case-group-header { display: flex; align-items: baseline; gap: 0.75rem; margin-bottom: 1rem; }
+    /* ── CASE GROUP ACCORDION ── */
+    .case-group { margin-bottom: 0.5rem; border: 1px solid rgba(60,30,10,0.18); background: rgba(0,0,0,0.04); }
+    .case-group-toggle { display: flex; align-items: center; gap: 0.75rem; padding: 0.85rem 1rem; cursor: pointer; user-select: none; list-style: none; transition: background 0.15s; }
+    .case-group-toggle:hover { background: rgba(0,0,0,0.06); }
     .case-group-num { font-family: var(--font-type); font-size: 0.6rem; letter-spacing: 0.28em; color: var(--stamp-red); text-transform: uppercase; padding: 0.15rem 0.5rem; background: rgba(139,26,26,0.08); border: 1px solid rgba(139,26,26,0.2); flex-shrink: 0; }
-    .case-group-title { font-family: var(--font-header); font-size: 0.88rem; letter-spacing: 0.12em; color: rgba(60,30,10,0.75); text-transform: uppercase; }
-    .case-group-rule { flex: 1; height: 1px; background: rgba(60,30,10,0.12); }
+    .case-group-title { font-family: var(--font-header); font-size: 0.88rem; letter-spacing: 0.12em; color: rgba(60,30,10,0.75); text-transform: uppercase; flex: 1; }
+    .case-group-chevron { font-size: 0.65rem; color: rgba(60,30,10,0.4); transition: transform 0.25s; flex-shrink: 0; }
+    .case-group.open .case-group-chevron { transform: rotate(180deg); }
+    .case-group-body { display: none; padding: 1rem; border-top: 1px solid rgba(60,30,10,0.12); }
+    .case-group.open .case-group-body { display: block; }
 
     /* ── ARTIFACT GRID ── */
     .artifact-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1.25rem; }
@@ -318,6 +322,9 @@
         seasonGroups[seasonId].cases[item.caseId].items.push(item);
       });
 
+      // Figure out the most recently solved case id
+      var mostRecentCaseId = solved[solved.length - 1];
+
       // Render
       var html = '';
       var globalIdx = 0;
@@ -334,21 +341,23 @@
         html +=   '</div>';
 
         sg.caseOrder.forEach(function(caseId) {
-          var cg = sg.cases[caseId];
+          var cg      = sg.cases[caseId];
           var caseNum = cg.caseObj.id || caseId;
+          var isOpen  = (caseId === mostRecentCaseId);
 
-          html += '<div class="case-group">';
-          html +=   '<div class="case-group-header">';
+          html += '<div class="case-group' + (isOpen ? ' open' : '') + '" data-case="' + caseId + '">';
+          html +=   '<div class="case-group-toggle">';
           html +=     '<span class="case-group-num">Case File ' + caseNum + '</span>';
           html +=     '<span class="case-group-title">' + cg.caseTitle + '</span>';
-          html +=     '<span class="case-group-rule"></span>';
+          html +=     '<span class="case-group-chevron">▼</span>';
           html +=   '</div>';
-          html +=   '<div class="artifact-grid">';
+          html +=   '<div class="case-group-body">';
+          html +=     '<div class="artifact-grid">';
 
           cg.items.forEach(function(item) {
             var c   = item.collectible;
             var img = c.image || '';
-            var delay = (globalIdx * 0.07) + 's';
+            var delay = isOpen ? (globalIdx * 0.07) + 's' : '0s';
             globalIdx++;
 
             html += '<div class="artifact-card" style="animation:fade-up 0.5s ease both;animation-delay:' + delay + '">';
@@ -381,7 +390,8 @@
             html += '</div>'; // .artifact-card
           });
 
-          html +=   '</div>'; // .artifact-grid
+          html +=     '</div>'; // .artifact-grid
+          html +=   '</div>'; // .case-group-body
           html += '</div>'; // .case-group
         });
 
@@ -389,6 +399,14 @@
       });
 
       body.innerHTML = html;
+
+      // Wire up accordion toggles
+      body.querySelectorAll('.case-group-toggle').forEach(function(toggle) {
+        toggle.addEventListener('click', function() {
+          var group = toggle.parentElement;
+          group.classList.toggle('open');
+        });
+      });
     }
   })();
   </script>
