@@ -10,7 +10,6 @@
     "monthDay": 1,
     "nextDate": "2026-07-05T12:00:00.000Z"
   },
-  "streamingSheetUrl": "https://docs.google.com/spreadsheets/d/e/2PACX-1vR1lN7dxScXihZSpJ4jUe-k6u-Z4NKu9UOwnu5ULio9G0oxRjb7SsST7GlFHTxlrK2t0NnmWPPq-767/pub?output=csv",
   "streaming": {
     "spotify": "#",
     "appleMusic": "#",
@@ -26,42 +25,42 @@
       "heroTitleText": ""
     },
     "about": {
-      "heroImage": "https://astenvale.github.io/AstenVale/images/About.png",
+      "heroImage": "",
       "heroOverlay": 0.5,
-      "showTitle": false,
-      "showSubtitle": false,
+      "showTitle": true,
+      "showSubtitle": true,
       "heroTitleText": ""
     },
     "join": {
-      "heroImage": "https://astenvale.github.io/AstenVale/images/Join.png",
+      "heroImage": "",
       "heroOverlay": 0.5,
-      "showTitle": false,
-      "showSubtitle": false,
+      "showTitle": true,
+      "showSubtitle": true,
       "heroTitleText": ""
     },
     "progress": {
-      "heroImage": "https://astenvale.github.io/AstenVale/images/Progress.png",
+      "heroImage": "",
       "heroOverlay": 0.5,
       "showTitle": true,
       "showSubtitle": true,
       "heroTitleText": ""
     },
     "completed": {
-      "heroImage": "https://astenvale.github.io/AstenVale/images/Completed.png",
+      "heroImage": "",
       "heroOverlay": 0.5,
-      "showTitle": false,
-      "showSubtitle": false,
+      "showTitle": true,
+      "showSubtitle": true,
       "heroTitleText": ""
     },
     "classified": {
-      "heroImage": "https://astenvale.github.io/AstenVale/images/Classified.png",
+      "heroImage": "",
       "heroOverlay": 0.5,
-      "showTitle": false,
-      "showSubtitle": false,
+      "showTitle": true,
+      "showSubtitle": true,
       "heroTitleText": ""
     },
     "case": {
-      "heroImage": "https://astenvale.github.io/AstenVale/images/Case.png",
+      "heroImage": "",
       "heroOverlay": 0.5,
       "showTitle": true,
       "showSubtitle": true,
