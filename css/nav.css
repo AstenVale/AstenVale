@@ -1,9 +1,12 @@
-/* ── SHARED NAV — sticky desktop, bottom-bar mobile ─────────────────── */
+/* ── SHARED NAV — fixed desktop top, fixed mobile bottom ─────────────── */
 
-/* Desktop: stick to top */
+/* Desktop: fixed at top — works even inside overflow:hidden parents */
 .site-nav {
-  position: sticky !important;
+  position: fixed !important;
   top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  width: 100% !important;
   z-index: 200 !important;
   background: rgba(8, 5, 2, 0.92);
   backdrop-filter: blur(12px);
@@ -11,21 +14,22 @@
   border-bottom: 1px solid rgba(201, 169, 122, 0.12);
 }
 
+/* Push body down so content doesn't hide behind the fixed nav */
+body {
+  padding-top: 72px !important;
+}
+
 /* ── MOBILE: fixed bottom bar ─────────────────────────────────────────── */
 @media (max-width: 768px) {
-  /* Reserve space so content isn't hidden behind the bottom bar */
+  /* No top padding needed — nav moves to bottom */
   body {
+    padding-top: 0 !important;
     padding-bottom: calc(64px + env(safe-area-inset-bottom, 0px)) !important;
   }
 
-  /* Hide the top nav entirely — bottom bar replaces it */
   .site-nav {
-    position: fixed !important;
     top: auto !important;
     bottom: 0 !important;
-    left: 0 !important;
-    right: 0 !important;
-    width: 100% !important;
     padding: 0 !important;
     flex-direction: row !important;
     justify-content: space-around !important;
@@ -37,7 +41,7 @@
     box-shadow: 0 -4px 24px rgba(0, 0, 0, 0.5);
   }
 
-  /* Hide brand and logo on mobile — bottom bar has no room */
+  /* Hide brand and logo on mobile */
   .nav-brand,
   .nav-logo {
     display: none !important;
