@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Case File — The Ashton Vale Archives</title>
+  <title>Case File — The Asten Vale Archives</title>
   <style>
-/* ASHTON VALE ARCHIVES — Main Stylesheet */
+/* ASTEN VALE ARCHIVES — Main Stylesheet */
 @import url('https://fonts.googleapis.com/css2?family=Special+Elite&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap');
 
 :root {
@@ -348,7 +348,7 @@ body.unlocked::before{
 
   <nav class="site-nav">
     <a href="index.html" class="nav-brand">
-      <span>Ashton Vale</span>
+      <span>Asten Vale</span>
       <span>Archives</span>
     </a>
 
@@ -385,7 +385,7 @@ body.unlocked::before{
   <div class="site-wrapper">
 
     <div class="file-jacket">
-      <span class="jacket-label" id="jacket-label">Ashton Vale Sheriff's Dept.</span>
+      <span class="jacket-label" id="jacket-label">Asten Vale Sheriff's Dept.</span>
       <span class="jacket-status" id="case-status">OPEN INVESTIGATION</span>
     </div>
 
@@ -394,7 +394,7 @@ body.unlocked::before{
 
 
       <header class="case-header">
-        <div class="archive-title">The Ashton Vale Archives</div>
+        <div class="archive-title">The Asten Vale Archives</div>
         <div class="case-number" id="case-number">CASE FILE —</div>
         <hr class="case-divider" />
         <div class="case-song-title" id="case-title">Loading case file...</div>
@@ -408,7 +408,7 @@ body.unlocked::before{
         <div class="player-artwork">🎵</div>
         <div class="player-controls">
           <div class="player-title" id="player-title">—</div>
-          <div class="player-sub">Ashton Vale &nbsp;·&nbsp; 2026</div>
+          <div class="player-sub">Asten Vale &nbsp;·&nbsp; 2026</div>
           <div class="player-btns">
             <button class="player-btn" onclick="openModal('streaming-modal')">▶ Play</button>
             <button class="player-btn" id="btn-lyrics" onclick="openLockedModal('lyrics-modal')">Lyrics</button>
@@ -437,7 +437,7 @@ body.unlocked::before{
           <div class="lyrics-header">
             <div class="lyrics-stamp">Official Lyrics</div>
             <div class="lyrics-song-title" id="lyr-title">—</div>
-            <div class="lyrics-artist">Ashton Vale</div>
+            <div class="lyrics-artist">Asten Vale</div>
           </div>
           <div class="lyrics-scroll">
             <div id="lyrics-body"></div>
@@ -533,7 +533,7 @@ body.unlocked::before{
       </svg>
       <span style="font-family:var(--font-header);font-size:0.68rem;letter-spacing:0.18em;color:rgba(201,169,122,0.45);text-transform:uppercase;line-height:1.4;">Truth is not given.<br>It is discovered.</span>
     </div>
-    <span style="font-family:var(--font-type);font-size:0.65rem;letter-spacing:0.1em;color:rgba(201,169,122,0.3);text-transform:uppercase;">© 2026 Ashton Vale Archives</span>
+    <span style="font-family:var(--font-type);font-size:0.65rem;letter-spacing:0.1em;color:rgba(201,169,122,0.3);text-transform:uppercase;">© 2026 Asten Vale Archives</span>
     <a href="index.html" style="font-family:var(--font-type);font-size:0.68rem;letter-spacing:0.15em;color:rgba(201,169,122,0.55);text-transform:uppercase;text-decoration:underline;text-underline-offset:3px;">Back to Archive</a>
   </footer>
 
@@ -1172,9 +1172,9 @@ body.unlocked::before{
     var padded  = String(parseInt(raw, 10) || 1).padStart(3, '0');
 
     function applyMeta(d) {
-document.title = 'Case File ' + d.caseFile + ' — The Ashton Vale Archives';
+document.title = 'Case File ' + d.caseFile + ' — The Asten Vale Archives';
       document.body.setAttribute('data-case-id', d.id);
-      document.getElementById('jacket-label').textContent    = 'Ashton Vale Sheriff\'s Dept.  ·  Case File ' + d.caseFile;
+      document.getElementById('jacket-label').textContent    = 'Asten Vale Sheriff\'s Dept.  ·  Case File ' + d.caseFile;
       document.getElementById('case-status').textContent     = d.status || 'OPEN INVESTIGATION';
       document.getElementById('case-number').textContent     = 'CASE FILE ' + d.caseFile;
       document.getElementById('case-title').textContent      = d.title;

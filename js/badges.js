@@ -1,4 +1,4 @@
-// badges.js — Badge definitions and award logic for Ashton Vale
+// badges.js — Badge definitions and award logic for Asten Vale
 
 var BADGES_CONFIG = [
 
@@ -58,7 +58,7 @@ var BADGES_CONFIG = [
     name:        'Every Corner',
     symbol:      '🗺',
     category:    'Discovery',
-    description: 'Visited every section of the Ashton Vale Archives.',
+    description: 'Visited every section of the Asten Vale Archives.',
     hint:        'Visit the Archive, Cabinet, Progress, About, and Join pages.',
     check: function(s) {
       return s.visitedCabinet && s.visitedAbout && s.visitedJoin && s.visitedCompleted;
