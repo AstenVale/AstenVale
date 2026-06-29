@@ -1040,7 +1040,10 @@
         bg.style.backgroundPosition = 'center';
         bg.style.opacity = pg.heroOverlay != null ? (1 - pg.heroOverlay) : 1;
       }
-      if (pg.showTitle === false) { var t = document.querySelector('.hero-title-main'); if(t) t.style.display='none'; }
+      if (pg.showTitle === false) {
+        var els = document.querySelectorAll('.hero-title-main, .hero-title-sub, .hero-diamond');
+        els.forEach(function(e){ e.style.display='none'; });
+      }
       if (pg.showSubtitle === false) { var st = document.querySelector('.hero-tagline'); if(st) st.style.display='none'; }
       if (pg.heroTitleText) { var tm = document.querySelector('.hero-title-main'); if(tm) tm.textContent = pg.heroTitleText; }
     }).catch(function(){});
