@@ -905,8 +905,12 @@
         <div class="section-rule"></div>
       </div>
 
-      <div class="evidence-grid" id="evidenceGrid">
-        <!-- Populated by JS -->
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:2rem;padding:1.25rem 1.5rem;background:rgba(0,0,0,0.06);border:1px solid rgba(60,30,10,0.15);">
+        <div>
+          <div style="font-family:var(--font-header);font-size:0.9rem;letter-spacing:0.15em;color:var(--ink);text-transform:uppercase;" id="evidenceSummaryTitle">Evidence Recovered</div>
+          <div style="font-family:var(--font-type);font-size:0.72rem;color:rgba(60,30,10,0.5);margin-top:0.25rem;font-style:italic;" id="evidenceSummaryCount">Loading…</div>
+        </div>
+        <a href="cabinet.html" style="font-family:var(--font-header);font-size:0.7rem;letter-spacing:0.2em;color:rgba(220,190,140,0.9);background:rgba(60,30,10,0.55);border:1px solid rgba(60,30,10,0.4);padding:0.6rem 1.25rem;text-decoration:none;text-transform:uppercase;transition:background 0.2s;" onmouseover="this.style.background='rgba(60,30,10,0.75)'" onmouseout="this.style.background='rgba(60,30,10,0.55)'">Open Cabinet →</a>
       </div>
 
       <hr class="section-divider" />
@@ -928,14 +932,6 @@
 
     </div>
   </section>
-
-  <!-- ── OBJECT DETAIL MODAL ── -->
-  <div class="modal-overlay" id="objectModal">
-    <div class="modal-box">
-      <button class="modal-close" id="modalClose">✕ Close</button>
-      <div id="modalBody"></div>
-    </div>
-  </div>
 
   <!-- ── FOOTER ── -->
   <footer class="site-footer">
@@ -1124,115 +1120,17 @@
       }
     }
 
-    // ── EVIDENCE CABINET — load from solved song files ─────────────────────
-    var evidenceGrid   = document.getElementById('evidenceGrid');
-    var modal          = document.getElementById('objectModal');
-    var modalBody      = document.getElementById('modalBody');
-    var collectibles   = [];
-    var loadedCount    = 0;
-    var solvedCount    = solved.length;
+    // ── EVIDENCE SUMMARY — just count, link to cabinet page ──────────────
+    var evidenceCount = numSolved * 7; // 7 items per solved case
+    var statEl = document.querySelector('[data-stat="Evidence Collected"]');
+    if (statEl) statEl.textContent = String(evidenceCount);
 
-    function finishEvidence() {
-      // Update evidence stat
-      var statEl = document.querySelector('[data-stat="Evidence Collected"]');
-      if (statEl) statEl.textContent = String(collectibles.length);
-
-      evidenceGrid.innerHTML = '';
-
-      if (collectibles.length === 0) {
-        evidenceGrid.innerHTML =
-          '<div class="evidence-card mystery" style="grid-column:1/-1;text-align:center;padding:2rem;">' +
-            '<div class="card-symbol">🗄</div>' +
-            '<div class="card-name">No Evidence Yet</div>' +
-            '<div class="card-case">— solve a case to recover evidence —</div>' +
-          '</div>';
-        return;
-      }
-
-      collectibles.forEach(function(item) {
-        var card = document.createElement('div');
-        card.className = 'evidence-card earned';
-        card.innerHTML =
-          '<div class="card-symbol">' + (item.symbol || '🔍') + '</div>' +
-          '<div class="card-name">' + item.name + '</div>' +
-          '<div class="card-case">— Case ' + item.caseFile + ' —</div>';
-        card.addEventListener('click', function() { openModal(item); });
-        evidenceGrid.appendChild(card);
-      });
-
-      // Placeholder mystery slots
-      var placeholders = Math.max(0, Math.min(6, totalCases - solved.length));
-      for (var p = 0; p < placeholders; p++) {
-        var ph = document.createElement('div');
-        ph.className = 'evidence-card mystery';
-        ph.innerHTML =
-          '<div class="card-symbol">?</div>' +
-          '<div class="card-name">Unrecovered</div>' +
-          '<div class="card-case">— solve more cases —</div>';
-        evidenceGrid.appendChild(ph);
-      }
+    var summaryCount = document.getElementById('evidenceSummaryCount');
+    if (summaryCount) {
+      summaryCount.textContent = evidenceCount > 0
+        ? evidenceCount + ' items recovered across ' + numSolved + ' case' + (numSolved === 1 ? '' : 's') + ' — grouped by season and case.'
+        : 'No evidence recovered yet. Solve a case to begin.';
     }
-
-    if (solvedCount === 0) {
-      finishEvidence();
-    } else {
-      solved.forEach(function(id) {
-        var padded = String(parseInt(id, 10) || 1).padStart(3, '0');
-        var s = document.createElement('script');
-        s.src = 'data/songs/song' + padded + '.js';
-        s.onload = function() {
-          if (window.SONG_DATA) {
-            var caseFile2 = window.SONG_DATA.caseFile || id;
-            var arr2 = window.SONG_DATA.collectibles || (window.SONG_DATA.collectible ? [window.SONG_DATA.collectible] : []);
-            arr2.forEach(function(c) {
-              if (c && c.name && c.name.indexOf('//') === -1) {
-                collectibles.push({
-                  caseId:      id,
-                  caseFile:    caseFile2,
-                  name:        c.name,
-                  symbol:      c.symbol || '🔍',
-                  description: c.description || '',
-                  discovered:  c.discovered || ('Case File ' + caseFile2),
-                  firstAppearance: c.firstAppearance || window.SONG_DATA.title || '',
-                  unknownInfo: c.unknownInfo || ''
-                });
-              }
-            });
-          }
-          window.SONG_DATA = null;
-          loadedCount++;
-          if (loadedCount === solvedCount) finishEvidence();
-        };
-        s.onerror = function() {
-          loadedCount++;
-          if (loadedCount === solvedCount) finishEvidence();
-        };
-        document.head.appendChild(s);
-      });
-    }
-
-    // ── OBJECT MODAL ───────────────────────────────────────────────────────
-    function openModal(item) {
-      modalBody.innerHTML =
-        '<div class="modal-symbol">' + item.symbol + '</div>' +
-        '<div class="modal-name">' + item.name + '</div>' +
-        '<div class="modal-divider">— — — — — — — —</div>' +
-        '<p class="modal-label">Description</p>' +
-        '<p class="modal-text">' + item.description + '</p>' +
-        '<p class="modal-label">First Discovered</p>' +
-        '<p class="modal-text">' + item.discovered + (item.firstAppearance ? ' — ' + item.firstAppearance : '') + '</p>' +
-        (item.unknownInfo
-          ? '<p class="modal-label">Unknown</p><p class="modal-text modal-unknown">' + item.unknownInfo + '</p>'
-          : '');
-      modal.classList.add('visible');
-    }
-
-    document.getElementById('modalClose').addEventListener('click', function() {
-      modal.classList.remove('visible');
-    });
-    modal.addEventListener('click', function(e) {
-      if (e.target === modal) modal.classList.remove('visible');
-    });
 
     // ── BADGES ─────────────────────────────────────────────────────────────
     var badgeGrid = document.getElementById('badgeGrid');
