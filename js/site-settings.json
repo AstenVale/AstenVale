@@ -25,31 +25,31 @@
       "heroTitleText": ""
     },
     "about": {
-      "heroImage": "",
+      "heroImage": "https://astenvale.github.io/AstenVale/images/About.png",
       "heroOverlay": 0.5,
-      "showTitle": true,
-      "showSubtitle": true,
+      "showTitle": false,
+      "showSubtitle": false,
       "heroTitleText": ""
     },
     "join": {
-      "heroImage": "",
+      "heroImage": "https://astenvale.github.io/AstenVale/images/Join.png",
       "heroOverlay": 0.5,
-      "showTitle": true,
-      "showSubtitle": true,
+      "showTitle": false,
+      "showSubtitle": false,
       "heroTitleText": ""
     },
     "progress": {
-      "heroImage": "",
+      "heroImage": "https://astenvale.github.io/AstenVale/images/Progress.png",
       "heroOverlay": 0.5,
       "showTitle": true,
       "showSubtitle": true,
       "heroTitleText": ""
     },
     "completed": {
-      "heroImage": "",
+      "heroImage": "https://astenvale.github.io/AstenVale/images/Completed.png",
       "heroOverlay": 0.5,
-      "showTitle": true,
-      "showSubtitle": true,
+      "showTitle": false,
+      "showSubtitle": false,
       "heroTitleText": ""
     },
     "classified": {
