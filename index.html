@@ -1253,27 +1253,51 @@
         '<line x1="50" y1="30" x2="56" y2="30" stroke="currentColor" stroke-width="1" stroke-opacity="0.6"/>' +
       '</svg>';
 
-    // Render every case in order — active, classified-locked, or classified-unreleased
+    // ── Season header above the case list ──
+    var seasonHeader = document.createElement('div');
+    seasonHeader.style.cssText = 'display:flex;align-items:center;gap:1rem;margin-bottom:1.5rem;padding-bottom:0.75rem;border-bottom:1px solid rgba(60,30,10,0.15);';
+    var seasonHeaderLeft = document.createElement('div');
+    seasonHeaderLeft.innerHTML =
+      '<div style="font-family:var(--font-header);font-size:1rem;letter-spacing:0.22em;color:rgba(60,30,10,0.8);text-transform:uppercase;">' + activeSeason.title + '</div>' +
+      '<div style="font-family:var(--font-type);font-size:0.7rem;color:rgba(60,30,10,0.45);margin-top:0.2rem;">' + numSolved + ' of ' + allCases.length + ' cases solved</div>';
+    var seasonHeaderRight = document.createElement('div');
+    seasonHeaderRight.style.cssText = 'margin-left:auto;font-family:var(--font-type);font-size:0.6rem;letter-spacing:0.2em;color:rgba(60,30,10,0.4);text-transform:uppercase;border:1px solid rgba(60,30,10,0.18);padding:0.3rem 0.7rem;';
+    seasonHeaderRight.textContent = numSolved === allCases.length ? 'Season Complete' : (numSolved + '/' + allCases.length + ' Complete');
+    seasonHeader.appendChild(seasonHeaderLeft);
+    seasonHeader.appendChild(seasonHeaderRight);
+    list.appendChild(seasonHeader);
+
+    // Render all 12 cases — solved, active, locked, or unreleased
     allCases.forEach(function(c) {
-      var num   = parseInt(c.id, 10);
+      var num    = parseInt(c.id, 10);
       var numPad = String(num).padStart(3,'0');
-      var desc1 = (c.desc && c.desc[0]) || '';
-      var desc2 = (c.desc && c.desc[1]) || '';
+      var desc1  = (c.desc && c.desc[0]) || '';
+      var desc2  = (c.desc && c.desc[1]) || '';
       var isSolved   = solved.indexOf(c.id) !== -1;
       var isActive   = active && active.id === c.id;
       var isReleased = c.released;
 
       var card = document.createElement('a');
-
-      if (isSolved) {
-        // Solved — show on completed page, skip here
-        return;
-      }
-
-      var sceneSVG = makeSceneSVG(c.scene || 'files', c.gradient || ['#3a3a2a','#0c0a06'], !isActive);
+      var sceneSVG = makeSceneSVG(c.scene || 'files', c.gradient || ['#3a3a2a','#0c0a06'], !isActive && !isSolved);
       var seriesBadge = '<span style="display:inline-block;background:rgba(60,30,10,0.18);border:1px solid rgba(60,30,10,0.18);font-size:0.55rem;letter-spacing:0.18em;padding:0.1rem 0.35rem;margin-right:0.5rem;vertical-align:middle;text-transform:uppercase;">' + seasonLabel + '</span>';
 
-      if (isActive) {
+      if (isSolved) {
+        // Solved — show as a reviewable completed card
+        card.className = 'case-card solved';
+        card.href = c.url || ('case.html?id=' + num);
+        card.innerHTML =
+          '<div class="case-img-placeholder">' + sceneSVG + '</div>' +
+          '<div class="case-body">' +
+            '<p class="case-number-label">' + seriesBadge + 'Case ' + numPad + ' &nbsp;·&nbsp; <span style="color:rgba(74,124,78,0.9);letter-spacing:0.1em">Solved</span></p>' +
+            '<h3 class="case-title">' + c.title + '</h3>' +
+            '<p class="case-desc" style="opacity:0.55;">Case closed. File available for review.</p>' +
+          '</div>' +
+          '<div class="case-divider-v"></div>' +
+          '<div class="case-status" style="opacity:0.6;">' +
+            '<div class="status-icon" style="color:rgba(74,124,78,0.8);">' + COMPASS_SVG + '</div>' +
+            '<span class="status-label" style="color:rgba(74,124,78,0.8);">Solved</span>' +
+          '</div>';
+      } else if (isActive) {
         card.className = 'case-card';
         card.href = c.url;
         card.innerHTML =
@@ -1296,7 +1320,7 @@
           '<div class="case-body">' +
             '<p class="case-number-label">' + seriesBadge + 'Case ' + numPad + ' &nbsp;·&nbsp; <span style="color:rgba(120,20,20,0.7);letter-spacing:0.1em">Classified</span></p>' +
             '<h3 class="case-title" style="opacity:0.45">' + c.title + '</h3>' +
-            '<p class="case-desc" style="opacity:0.28">' + (isReleased ? 'Complete the active case to access this file.' : 'This file has not yet been released.') + '</p>' +
+            '<p class="case-desc" style="opacity:0.28">' + (isReleased ? 'Solve the active case to access this file.' : 'This file has not yet been released.') + '</p>' +
           '</div>' +
           '<div class="case-divider-v"></div>' +
           '<div class="case-status locked">' +
@@ -1308,12 +1332,15 @@
       list.appendChild(card);
     });
 
-    // If all released cases solved
-    if (active === null && numSolved === released.length && released.length > 0) {
+    // Season complete banner — only if all 12 are solved and a next season exists
+    if (numSolved === allCases.length && allCases.length > 0) {
+      var nextSeason = SEASONS_CONFIG[activeSeasonIndex + 1];
       var done = document.createElement('div');
-      done.style.cssText = 'text-align:center;padding:1.5rem 1rem;font-family:var(--font-type);font-size:0.82rem;color:rgba(60,30,10,0.45);font-style:italic;';
-      done.textContent = 'All released cases completed. More files coming soon.';
-      list.insertBefore(done, list.firstChild);
+      done.style.cssText = 'text-align:center;padding:1.5rem 1rem;font-family:var(--font-type);font-size:0.82rem;color:rgba(60,30,10,0.5);font-style:italic;border-top:1px solid rgba(60,30,10,0.12);margin-top:0.5rem;';
+      done.textContent = nextSeason
+        ? activeSeason.title + ' complete. ' + nextSeason.title + ' begins now.'
+        : activeSeason.title + ' complete. Next season coming soon.';
+      list.appendChild(done);
     }
 
   })();
