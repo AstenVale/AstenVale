@@ -113,7 +113,7 @@ body.unlocked::before{
 
 .paper-panel{background:var(--paper);position:relative;padding:2.5rem 2.5rem 2rem;box-shadow:0 2px 0 var(--paper-dark),0 6px 30px rgba(0,0,0,0.6),inset 0 0 60px rgba(0,0,0,0.06);}
 .paper-panel::before{content:"";position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");pointer-events:none;border-radius:inherit;}
-.paper-panel::after{content:"";position:absolute;top:1.2rem;right:2rem;width:70px;height:70px;border-radius:50%;background:radial-gradient(circle,rgba(101,62,18,0.18) 30%,rgba(101,62,18,0.06) 60%,transparent 75%);pointer-events:none;}
+.paper-panel::after{display:none;}
 .paper-panel .margin-line{position:absolute;top:0;bottom:0;left:3.5rem;width:1px;background:rgba(180,100,80,0.3);}
 
 .case-header{text-align:center;margin-bottom:2rem;position:relative;}
