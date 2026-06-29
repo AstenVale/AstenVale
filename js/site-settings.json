@@ -53,17 +53,17 @@
       "heroTitleText": ""
     },
     "classified": {
-      "heroImage": "",
+      "heroImage": "https://astenvale.github.io/AstenVale/images/Classified.png",
       "heroOverlay": 0.5,
-      "showTitle": true,
-      "showSubtitle": true,
+      "showTitle": false,
+      "showSubtitle": false,
       "heroTitleText": ""
     },
     "case": {
-      "heroImage": "",
+      "heroImage": "https://astenvale.github.io/AstenVale/images/Case.png",
       "heroOverlay": 0.5,
-      "showTitle": true,
-      "showSubtitle": true,
+      "showTitle": false,
+      "showSubtitle": false,
       "heroTitleText": ""
     }
   }
