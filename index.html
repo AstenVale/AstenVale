@@ -1027,6 +1027,25 @@
 
   <script src="js/vault-config.js"></script>
   <script>
+  // Apply hero image from site-settings.json
+  fetch('js/site-settings.json')
+    .then(function(r){ return r.json(); })
+    .then(function(s){
+      var pg = s.pages && s.pages.home;
+      if (!pg || !pg.heroImage) return;
+      var bg = document.querySelector('.hero-bg');
+      if (bg) {
+        bg.style.backgroundImage = 'url("' + pg.heroImage + '")';
+        bg.style.backgroundSize = 'cover';
+        bg.style.backgroundPosition = 'center';
+        bg.style.opacity = pg.heroOverlay != null ? (1 - pg.heroOverlay) : 1;
+      }
+      if (pg.showTitle === false) { var t = document.querySelector('.hero-title-main'); if(t) t.style.display='none'; }
+      if (pg.showSubtitle === false) { var st = document.querySelector('.hero-tagline'); if(st) st.style.display='none'; }
+      if (pg.heroTitleText) { var tm = document.querySelector('.hero-title-main'); if(tm) tm.textContent = pg.heroTitleText; }
+    }).catch(function(){});
+  </script>
+  <script>
   (function () {
     var season = SEASONS_CONFIG[0];
     var solved = [];
