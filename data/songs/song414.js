@@ -225,18 +225,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "414_brooch",
-    "name": "Brooch",
-    "symbol": "*",
-    "description": "Brooch was recovered from The Ravine in Case File 414. It is tied to Quarry Foreman, 12:44, and marker 3552.",
-    "discovered": "Case File 414",
-    "firstAppearance": "The Restricted Section",
-    "connectedSongs": [
-      "414"
-    ],
-    "unknownInfo": "Toward and Footsteps suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "414_brooch",
+      "type": "Object",
+      "name": "Brooch",
+      "symbol": "🔍",
+      "description": "Brooch was recovered from The Ravine in Case File 414. It is tied to Quarry Foreman, 12:44, and marker 3552.",
+      "unknownInfo": "Toward and Footsteps suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "414_location",
+      "type": "Location",
+      "name": "Ravine",
+      "symbol": "📍",
+      "description": "The active scene for Case File 414. Recovered field notes place the primary event at Ravine.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "414_witness",
+      "type": "Witness",
+      "name": "Quarryforeman",
+      "symbol": "👤",
+      "description": "Quarryforeman, identified in the case notes for Case File 414. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "414_time",
+      "type": "Time",
+      "name": "1244",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 414. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "414_marker",
+      "type": "Marker",
+      "name": "Marker 3552",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 414.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "414_direction",
+      "type": "Direction",
+      "name": "Toward",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 414.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "414_sound",
+      "type": "Sound",
+      "name": "Footsteps",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 414. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Restricted Section - Recovered Case File",
     "fileId": "S35-006A",

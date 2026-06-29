@@ -226,18 +226,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "567_badge",
-    "name": "Badge",
-    "symbol": "*",
-    "description": "Badge was recovered from North Gate in Case File 567. It is tied to Harness Maker, 3:30, and marker 4825.",
-    "discovered": "Case File 567",
-    "firstAppearance": "The Gap",
-    "connectedSongs": [
-      "567"
-    ],
-    "unknownInfo": "Into the Dark and River Ice suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "567_badge",
+      "type": "Object",
+      "name": "Badge",
+      "symbol": "🔍",
+      "description": "Badge was recovered from North Gate in Case File 567. It is tied to Harness Maker, 3:30, and marker 4825.",
+      "unknownInfo": "Into the Dark and River Ice suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "567_location",
+      "type": "Location",
+      "name": "Northgate",
+      "symbol": "📍",
+      "description": "The active scene for Case File 567. Recovered field notes place the primary event at Northgate.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "567_witness",
+      "type": "Witness",
+      "name": "Harnessmaker",
+      "symbol": "👤",
+      "description": "Harnessmaker, identified in the case notes for Case File 567. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "567_time",
+      "type": "Time",
+      "name": "330",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 567. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "567_marker",
+      "type": "Marker",
+      "name": "Marker 4825",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 567.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "567_direction",
+      "type": "Direction",
+      "name": "Intothedark",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 567.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "567_sound",
+      "type": "Sound",
+      "name": "Riverice",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 567. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Gap - Recovered Case File",
     "fileId": "S48-003A",

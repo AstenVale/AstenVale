@@ -226,18 +226,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "454_receipt",
-    "name": "Receipt",
-    "symbol": "*",
-    "description": "Receipt was recovered from Ice House in Case File 454. It is tied to Night Porter, 4:29, and marker 3888.",
-    "discovered": "Case File 454",
-    "firstAppearance": "What Came After",
-    "connectedSongs": [
-      "454"
-    ],
-    "unknownInfo": "Away and Wind Through a Crack suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "454_receipt",
+      "type": "Object",
+      "name": "Receipt",
+      "symbol": "🔍",
+      "description": "Receipt was recovered from Ice House in Case File 454. It is tied to Night Porter, 4:29, and marker 3888.",
+      "unknownInfo": "Away and Wind Through a Crack suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "454_location",
+      "type": "Location",
+      "name": "Icehouse",
+      "symbol": "📍",
+      "description": "The active scene for Case File 454. Recovered field notes place the primary event at Icehouse.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "454_witness",
+      "type": "Witness",
+      "name": "Nightporter",
+      "symbol": "👤",
+      "description": "Nightporter, identified in the case notes for Case File 454. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "454_time",
+      "type": "Time",
+      "name": "429",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 454. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "454_marker",
+      "type": "Marker",
+      "name": "Marker 3888",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 454.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "454_direction",
+      "type": "Direction",
+      "name": "Away",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 454.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "454_sound",
+      "type": "Sound",
+      "name": "Windthroughacrack",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 454. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "What Came After - Recovered Case File",
     "fileId": "S38-010A",

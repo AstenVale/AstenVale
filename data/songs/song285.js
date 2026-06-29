@@ -226,18 +226,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "285_pocket_watch",
-    "name": "Pocket Watch",
-    "symbol": "*",
-    "description": "Pocket Watch was recovered from Telegraph Office in Case File 285. It is tied to Peddler, 5:09, and marker 2479.",
-    "discovered": "Case File 285",
-    "firstAppearance": "The Window",
-    "connectedSongs": [
-      "285"
-    ],
-    "unknownInfo": "Around and Tree Fall suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "285_pocketwatch",
+      "type": "Object",
+      "name": "Pocketwatch",
+      "symbol": "🔍",
+      "description": "Pocket Watch was recovered from Telegraph Office in Case File 285. It is tied to Peddler, 5:09, and marker 2479.",
+      "unknownInfo": "Around and Tree Fall suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "285_location",
+      "type": "Location",
+      "name": "Telegraphoffice",
+      "symbol": "📍",
+      "description": "The active scene for Case File 285. Recovered field notes place the primary event at Telegraphoffice.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "285_witness",
+      "type": "Witness",
+      "name": "Peddler",
+      "symbol": "👤",
+      "description": "Peddler, identified in the case notes for Case File 285. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "285_time",
+      "type": "Time",
+      "name": "509",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 285. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "285_marker",
+      "type": "Marker",
+      "name": "Marker 2479",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 285.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "285_direction",
+      "type": "Direction",
+      "name": "Around",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 285.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "285_sound",
+      "type": "Sound",
+      "name": "Treefall",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 285. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Window - Recovered Case File",
     "fileId": "S24-009A",

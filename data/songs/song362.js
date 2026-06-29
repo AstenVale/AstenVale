@@ -224,18 +224,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "362_spool_of_thread",
-    "name": "Spool of Thread",
-    "symbol": "*",
-    "description": "Spool of Thread was recovered from Schoolhouse in Case File 362. It is tied to Blacksmith, 2:38, and marker 3116.",
-    "discovered": "Case File 362",
-    "firstAppearance": "What Grows Where",
-    "connectedSongs": [
-      "362"
-    ],
-    "unknownInfo": "Forward and Fog Horn suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "362_spoolofthread",
+      "type": "Object",
+      "name": "Spoolofthread",
+      "symbol": "🔍",
+      "description": "Spool of Thread was recovered from Schoolhouse in Case File 362. It is tied to Blacksmith, 2:38, and marker 3116.",
+      "unknownInfo": "Forward and Fog Horn suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "362_location",
+      "type": "Location",
+      "name": "Schoolhouse",
+      "symbol": "📍",
+      "description": "The active scene for Case File 362. Recovered field notes place the primary event at Schoolhouse.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "362_witness",
+      "type": "Witness",
+      "name": "Blacksmith",
+      "symbol": "👤",
+      "description": "Blacksmith, identified in the case notes for Case File 362. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "362_time",
+      "type": "Time",
+      "name": "238",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 362. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "362_marker",
+      "type": "Marker",
+      "name": "Marker 3116",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 362.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "362_direction",
+      "type": "Direction",
+      "name": "Forward",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 362.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "362_sound",
+      "type": "Sound",
+      "name": "Foghorn",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 362. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "What Grows Where - Recovered Case File",
     "fileId": "S31-002A",

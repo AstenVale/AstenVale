@@ -228,18 +228,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "156_axle_pin",
-    "name": "Axle Pin",
-    "symbol": "*",
-    "description": "Axle Pin was recovered from The Bluff in Case File 156. It is tied to The Handless Man, 3:17, and marker 1406.",
-    "discovered": "Case File 156",
-    "firstAppearance": "The Twin's Word",
-    "connectedSongs": [
-      "156"
-    ],
-    "unknownInfo": "East and Moth Wings suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "156_axlepin",
+      "type": "Object",
+      "name": "Axlepin",
+      "symbol": "🔍",
+      "description": "Axle Pin was recovered from The Bluff in Case File 156. It is tied to The Handless Man, 3:17, and marker 1406.",
+      "unknownInfo": "East and Moth Wings suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "156_location",
+      "type": "Location",
+      "name": "Bluff",
+      "symbol": "📍",
+      "description": "The active scene for Case File 156. Recovered field notes place the primary event at Bluff.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "156_witness",
+      "type": "Witness",
+      "name": "Handless Man",
+      "symbol": "👤",
+      "description": "Handless Man, identified in the case notes for Case File 156. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "156_time",
+      "type": "Time",
+      "name": "317",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 156. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "156_marker",
+      "type": "Marker",
+      "name": "Marker 1406",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 156.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "156_direction",
+      "type": "Direction",
+      "name": "East",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 156.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "156_sound",
+      "type": "Sound",
+      "name": "Mothwings",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 156. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Twin's Word - Recovered Case File",
     "fileId": "S13-012A",

@@ -224,18 +224,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "019_unopened_mail",
-    "name": "Unopened Mail",
-    "symbol": "*",
-    "description": "Unopened Mail was recovered from Mailbox in Case File 019. It is tied to Postman, 2:34, and marker 176.",
-    "discovered": "Case File 019",
-    "firstAppearance": "The Letters",
-    "connectedSongs": [
-      "019"
-    ],
-    "unknownInfo": "Out and Footsteps suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "019_unopenedmail",
+      "type": "Object",
+      "name": "Unopenedmail",
+      "symbol": "🔍",
+      "description": "Unopened Mail was recovered from Mailbox in Case File 019. It is tied to Postman, 2:34, and marker 176.",
+      "unknownInfo": "Out and Footsteps suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "019_location",
+      "type": "Location",
+      "name": "Mailbox",
+      "symbol": "📍",
+      "description": "The active scene for Case File 019. Recovered field notes place the primary event at Mailbox.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "019_witness",
+      "type": "Witness",
+      "name": "Postman",
+      "symbol": "👤",
+      "description": "Postman, identified in the case notes for Case File 019. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "019_time",
+      "type": "Time",
+      "name": "234",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 019. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "019_marker",
+      "type": "Marker",
+      "name": "Marker 176",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 019.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "019_direction",
+      "type": "Direction",
+      "name": "Out",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 019.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "019_sound",
+      "type": "Sound",
+      "name": "Footsteps",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 019. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Letters - Recovered Case File",
     "fileId": "S2-007A",

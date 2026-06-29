@@ -214,18 +214,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "316_lantern",
-    "name": "Lantern",
-    "symbol": "*",
-    "description": "Lantern was recovered from Millpond in Case File 316. It is tied to Schoolteacher, 4:03, and marker 2734.",
-    "discovered": "Case File 316",
-    "firstAppearance": "No Cover",
-    "connectedSongs": [
-      "316"
-    ],
-    "unknownInfo": "Into the Pines and Match Strike suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "316_lantern",
+      "type": "Object",
+      "name": "Lantern",
+      "symbol": "🔍",
+      "description": "Lantern was recovered from Millpond in Case File 316. It is tied to Schoolteacher, 4:03, and marker 2734.",
+      "unknownInfo": "Into the Pines and Match Strike suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "316_location",
+      "type": "Location",
+      "name": "Millpond",
+      "symbol": "📍",
+      "description": "The active scene for Case File 316. Recovered field notes place the primary event at Millpond.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "316_witness",
+      "type": "Witness",
+      "name": "Schoolteacher",
+      "symbol": "👤",
+      "description": "Schoolteacher, identified in the case notes for Case File 316. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "316_time",
+      "type": "Time",
+      "name": "403",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 316. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "316_marker",
+      "type": "Marker",
+      "name": "Marker 2734",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 316.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "316_direction",
+      "type": "Direction",
+      "name": "Intothepines",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 316.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "316_sound",
+      "type": "Sound",
+      "name": "Matchstrike",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 316. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "No Cover - Recovered Case File",
     "fileId": "S27-004A",

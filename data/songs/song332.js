@@ -227,18 +227,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "332_ship_manifest",
-    "name": "Ship Manifest",
-    "symbol": "*",
-    "description": "Ship Manifest was recovered from The Bluff in Case File 332. It is tied to Banker, 6:53, and marker 2870.",
-    "discovered": "Case File 332",
-    "firstAppearance": "The Receiver",
-    "connectedSongs": [
-      "332"
-    ],
-    "unknownInfo": "North and Saw Cutting suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "332_shipmanifest",
+      "type": "Object",
+      "name": "Shipmanifest",
+      "symbol": "🔍",
+      "description": "Ship Manifest was recovered from The Bluff in Case File 332. It is tied to Banker, 6:53, and marker 2870.",
+      "unknownInfo": "North and Saw Cutting suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "332_location",
+      "type": "Location",
+      "name": "Bluff",
+      "symbol": "📍",
+      "description": "The active scene for Case File 332. Recovered field notes place the primary event at Bluff.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "332_witness",
+      "type": "Witness",
+      "name": "Banker",
+      "symbol": "👤",
+      "description": "Banker, identified in the case notes for Case File 332. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "332_time",
+      "type": "Time",
+      "name": "653",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 332. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "332_marker",
+      "type": "Marker",
+      "name": "Marker 2870",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 332.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "332_direction",
+      "type": "Direction",
+      "name": "North",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 332.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "332_sound",
+      "type": "Sound",
+      "name": "Sawcutting",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 332. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Receiver - Recovered Case File",
     "fileId": "S28-008A",

@@ -224,18 +224,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "587_trade_token",
-    "name": "Trade Token",
-    "symbol": "*",
-    "description": "Trade Token was recovered from Barn in Case File 587. It is tied to Gravedigger, 6:06, and marker 4997.",
-    "discovered": "Case File 587",
-    "firstAppearance": "What Changed",
-    "connectedSongs": [
-      "587"
-    ],
-    "unknownInfo": "Around and Knife Scrape suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "587_tradetoken",
+      "type": "Object",
+      "name": "Tradetoken",
+      "symbol": "🔍",
+      "description": "Trade Token was recovered from Barn in Case File 587. It is tied to Gravedigger, 6:06, and marker 4997.",
+      "unknownInfo": "Around and Knife Scrape suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "587_location",
+      "type": "Location",
+      "name": "Barn",
+      "symbol": "📍",
+      "description": "The active scene for Case File 587. Recovered field notes place the primary event at Barn.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "587_witness",
+      "type": "Witness",
+      "name": "Gravedigger",
+      "symbol": "👤",
+      "description": "Gravedigger, identified in the case notes for Case File 587. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "587_time",
+      "type": "Time",
+      "name": "606",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 587. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "587_marker",
+      "type": "Marker",
+      "name": "Marker 4997",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 587.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "587_direction",
+      "type": "Direction",
+      "name": "Around",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 587.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "587_sound",
+      "type": "Sound",
+      "name": "Knifescrape",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 587. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "What Changed - Recovered Case File",
     "fileId": "S49-011A",

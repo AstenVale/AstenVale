@@ -226,18 +226,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "433_badge",
-    "name": "Badge",
-    "symbol": "*",
-    "description": "Badge was recovered from Potter's Field in Case File 433. It is tied to Librarian, 11:03, and marker 3707.",
-    "discovered": "Case File 433",
-    "firstAppearance": "The Outpost",
-    "connectedSongs": [
-      "433"
-    ],
-    "unknownInfo": "Up the Ridge and Wheel on Gravel suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "433_badge",
+      "type": "Object",
+      "name": "Badge",
+      "symbol": "🔍",
+      "description": "Badge was recovered from Potter's Field in Case File 433. It is tied to Librarian, 11:03, and marker 3707.",
+      "unknownInfo": "Up the Ridge and Wheel on Gravel suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "433_location",
+      "type": "Location",
+      "name": "Potter'Sfield",
+      "symbol": "📍",
+      "description": "The active scene for Case File 433. Recovered field notes place the primary event at Potter'Sfield.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "433_witness",
+      "type": "Witness",
+      "name": "Librarian",
+      "symbol": "👤",
+      "description": "Librarian, identified in the case notes for Case File 433. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "433_time",
+      "type": "Time",
+      "name": "1103",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 433. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "433_marker",
+      "type": "Marker",
+      "name": "Marker 3707",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 433.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "433_direction",
+      "type": "Direction",
+      "name": "Uptheridge",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 433.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "433_sound",
+      "type": "Sound",
+      "name": "Wheelongravel",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 433. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Outpost - Recovered Case File",
     "fileId": "S37-001A",

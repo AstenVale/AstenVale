@@ -213,18 +213,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "467_badge",
-    "name": "Badge",
-    "symbol": "*",
-    "description": "Badge was recovered from Schoolhouse in Case File 467. It is tied to Rag Picker, 5:13, and marker 3997.",
-    "discovered": "Case File 467",
-    "firstAppearance": "The Unridden",
-    "connectedSongs": [
-      "467"
-    ],
-    "unknownInfo": "In and Thunder suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "467_badge",
+      "type": "Object",
+      "name": "Badge",
+      "symbol": "🔍",
+      "description": "Badge was recovered from Schoolhouse in Case File 467. It is tied to Rag Picker, 5:13, and marker 3997.",
+      "unknownInfo": "In and Thunder suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "467_location",
+      "type": "Location",
+      "name": "Schoolhouse",
+      "symbol": "📍",
+      "description": "The active scene for Case File 467. Recovered field notes place the primary event at Schoolhouse.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "467_witness",
+      "type": "Witness",
+      "name": "Ragpicker",
+      "symbol": "👤",
+      "description": "Ragpicker, identified in the case notes for Case File 467. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "467_time",
+      "type": "Time",
+      "name": "513",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 467. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "467_marker",
+      "type": "Marker",
+      "name": "Marker 3997",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 467.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "467_direction",
+      "type": "Direction",
+      "name": "In",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 467.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "467_sound",
+      "type": "Sound",
+      "name": "Thunder",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 467. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Unridden - Recovered Case File",
     "fileId": "S39-011A",

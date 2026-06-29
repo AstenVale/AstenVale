@@ -227,18 +227,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "393_surveyor_s_pin",
-    "name": "Surveyor's Pin",
-    "symbol": "*",
-    "description": "Surveyor's Pin was recovered from Feed Store in Case File 393. It is tied to Wool Sorter, 2:55, and marker 3379.",
-    "discovered": "Case File 393",
-    "firstAppearance": "The Pallor",
-    "connectedSongs": [
-      "393"
-    ],
-    "unknownInfo": "Across and Fire Crackling suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "393_surveyorspin",
+      "type": "Object",
+      "name": "Surveyor'Spin",
+      "symbol": "🔍",
+      "description": "Surveyor's Pin was recovered from Feed Store in Case File 393. It is tied to Wool Sorter, 2:55, and marker 3379.",
+      "unknownInfo": "Across and Fire Crackling suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "393_location",
+      "type": "Location",
+      "name": "Feedstore",
+      "symbol": "📍",
+      "description": "The active scene for Case File 393. Recovered field notes place the primary event at Feedstore.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "393_witness",
+      "type": "Witness",
+      "name": "Woolsorter",
+      "symbol": "👤",
+      "description": "Woolsorter, identified in the case notes for Case File 393. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "393_time",
+      "type": "Time",
+      "name": "255",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 393. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "393_marker",
+      "type": "Marker",
+      "name": "Marker 3379",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 393.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "393_direction",
+      "type": "Direction",
+      "name": "Across",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 393.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "393_sound",
+      "type": "Sound",
+      "name": "Firecrackling",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 393. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Pallor - Recovered Case File",
     "fileId": "S33-009A",

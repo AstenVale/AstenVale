@@ -214,18 +214,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "359_seal",
-    "name": "Seal",
-    "symbol": "*",
-    "description": "Seal was recovered from Cooperage in Case File 359. It is tied to Harness Maker, 9:55, and marker 3097.",
-    "discovered": "Case File 359",
-    "firstAppearance": "The Destination",
-    "connectedSongs": [
-      "359"
-    ],
-    "unknownInfo": "West and Lid of a Tin suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "359_seal",
+      "type": "Object",
+      "name": "Seal",
+      "symbol": "🔍",
+      "description": "Seal was recovered from Cooperage in Case File 359. It is tied to Harness Maker, 9:55, and marker 3097.",
+      "unknownInfo": "West and Lid of a Tin suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "359_location",
+      "type": "Location",
+      "name": "Cooperage",
+      "symbol": "📍",
+      "description": "The active scene for Case File 359. Recovered field notes place the primary event at Cooperage.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "359_witness",
+      "type": "Witness",
+      "name": "Harnessmaker",
+      "symbol": "👤",
+      "description": "Harnessmaker, identified in the case notes for Case File 359. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "359_time",
+      "type": "Time",
+      "name": "955",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 359. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "359_marker",
+      "type": "Marker",
+      "name": "Marker 3097",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 359.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "359_direction",
+      "type": "Direction",
+      "name": "West",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 359.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "359_sound",
+      "type": "Sound",
+      "name": "Lidofatin",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 359. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Destination - Recovered Case File",
     "fileId": "S30-011A",

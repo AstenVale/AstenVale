@@ -216,18 +216,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "094_pocket_watch",
-    "name": "Pocket Watch",
-    "symbol": "*",
-    "description": "Pocket Watch was recovered from Mill House in Case File 094. It is tied to Lamplighter, 6:06, and marker 888.",
-    "discovered": "Case File 094",
-    "firstAppearance": "What Fire Does to Memory",
-    "connectedSongs": [
-      "094"
-    ],
-    "unknownInfo": "Past the Tree Line and Broken String suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "094_pocketwatch",
+      "type": "Object",
+      "name": "Pocketwatch",
+      "symbol": "🔍",
+      "description": "Pocket Watch was recovered from Mill House in Case File 094. It is tied to Lamplighter, 6:06, and marker 888.",
+      "unknownInfo": "Past the Tree Line and Broken String suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "094_location",
+      "type": "Location",
+      "name": "Millhouse",
+      "symbol": "📍",
+      "description": "The active scene for Case File 094. Recovered field notes place the primary event at Millhouse.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "094_witness",
+      "type": "Witness",
+      "name": "Lamplighter",
+      "symbol": "👤",
+      "description": "Lamplighter, identified in the case notes for Case File 094. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "094_time",
+      "type": "Time",
+      "name": "606",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 094. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "094_marker",
+      "type": "Marker",
+      "name": "Marker 888",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 094.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "094_direction",
+      "type": "Direction",
+      "name": "Pastthetreeline",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 094.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "094_sound",
+      "type": "Sound",
+      "name": "Brokenstring",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 094. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "What Fire Does to Memory - Recovered Case File",
     "fileId": "S8-010A",

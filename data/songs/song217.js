@@ -226,18 +226,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "217_oil_rag",
-    "name": "Oil Rag",
-    "symbol": "*",
-    "description": "Oil Rag was recovered from Loom House in Case File 217. It is tied to Caretaker, 10:05, and marker 1907.",
-    "discovered": "Case File 217",
-    "firstAppearance": "Before the Crossing",
-    "connectedSongs": [
-      "217"
-    ],
-    "unknownInfo": "West and Axe on Wood suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "217_oilrag",
+      "type": "Object",
+      "name": "Oilrag",
+      "symbol": "🔍",
+      "description": "Oil Rag was recovered from Loom House in Case File 217. It is tied to Caretaker, 10:05, and marker 1907.",
+      "unknownInfo": "West and Axe on Wood suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "217_location",
+      "type": "Location",
+      "name": "Loomhouse",
+      "symbol": "📍",
+      "description": "The active scene for Case File 217. Recovered field notes place the primary event at Loomhouse.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "217_witness",
+      "type": "Witness",
+      "name": "Caretaker",
+      "symbol": "👤",
+      "description": "Caretaker, identified in the case notes for Case File 217. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "217_time",
+      "type": "Time",
+      "name": "1005",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 217. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "217_marker",
+      "type": "Marker",
+      "name": "Marker 1907",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 217.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "217_direction",
+      "type": "Direction",
+      "name": "West",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 217.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "217_sound",
+      "type": "Sound",
+      "name": "Axeonwood",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 217. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "Before the Crossing - Recovered Case File",
     "fileId": "S19-001A",

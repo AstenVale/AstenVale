@@ -217,18 +217,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "481_oil_rag",
-    "name": "Oil Rag",
-    "symbol": "*",
-    "description": "Oil Rag was recovered from Lumber Camp in Case File 481. It is tied to Night Porter, 4:38, and marker 4107.",
-    "discovered": "Case File 481",
-    "firstAppearance": "The Road That Isn't There",
-    "connectedSongs": [
-      "481"
-    ],
-    "unknownInfo": "Off the Road and Hammer on Anvil suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "481_oilrag",
+      "type": "Object",
+      "name": "Oilrag",
+      "symbol": "🔍",
+      "description": "Oil Rag was recovered from Lumber Camp in Case File 481. It is tied to Night Porter, 4:38, and marker 4107.",
+      "unknownInfo": "Off the Road and Hammer on Anvil suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "481_location",
+      "type": "Location",
+      "name": "Lumbercamp",
+      "symbol": "📍",
+      "description": "The active scene for Case File 481. Recovered field notes place the primary event at Lumbercamp.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "481_witness",
+      "type": "Witness",
+      "name": "Nightporter",
+      "symbol": "👤",
+      "description": "Nightporter, identified in the case notes for Case File 481. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "481_time",
+      "type": "Time",
+      "name": "438",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 481. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "481_marker",
+      "type": "Marker",
+      "name": "Marker 4107",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 481.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "481_direction",
+      "type": "Direction",
+      "name": "Offtheroad",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 481.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "481_sound",
+      "type": "Sound",
+      "name": "Hammeronanvil",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 481. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Road That Isn't There - Recovered Case File",
     "fileId": "S41-001A",

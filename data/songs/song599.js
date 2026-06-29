@@ -215,18 +215,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "599_candle",
-    "name": "Candle",
-    "symbol": "*",
-    "description": "Candle was recovered from Undertaker's Hall in Case File 599. It is tied to River Pilot, 7:37, and marker 5097.",
-    "discovered": "Case File 599",
-    "firstAppearance": "What Was Saved",
-    "connectedSongs": [
-      "599"
-    ],
-    "unknownInfo": "Below and Pen on Paper suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "599_candle",
+      "type": "Object",
+      "name": "Candle",
+      "symbol": "🔍",
+      "description": "Candle was recovered from Undertaker's Hall in Case File 599. It is tied to River Pilot, 7:37, and marker 5097.",
+      "unknownInfo": "Below and Pen on Paper suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "599_location",
+      "type": "Location",
+      "name": "Undertaker'Shall",
+      "symbol": "📍",
+      "description": "The active scene for Case File 599. Recovered field notes place the primary event at Undertaker'Shall.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "599_witness",
+      "type": "Witness",
+      "name": "Riverpilot",
+      "symbol": "👤",
+      "description": "Riverpilot, identified in the case notes for Case File 599. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "599_time",
+      "type": "Time",
+      "name": "737",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 599. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "599_marker",
+      "type": "Marker",
+      "name": "Marker 5097",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 599.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "599_direction",
+      "type": "Direction",
+      "name": "Below",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 599.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "599_sound",
+      "type": "Sound",
+      "name": "Penonpaper",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 599. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "What Was Saved - Recovered Case File",
     "fileId": "S50-011A",

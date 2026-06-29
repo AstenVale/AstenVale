@@ -215,18 +215,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "275_map",
-    "name": "Map",
-    "symbol": "*",
-    "description": "Map was recovered from The Quarry Pool in Case File 275. It is tied to Schoolgirl, 1:58, and marker 2397.",
-    "discovered": "Case File 275",
-    "firstAppearance": "Watermark",
-    "connectedSongs": [
-      "275"
-    ],
-    "unknownInfo": "Left and Crow Call suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "275_map",
+      "type": "Object",
+      "name": "Map",
+      "symbol": "🔍",
+      "description": "Map was recovered from The Quarry Pool in Case File 275. It is tied to Schoolgirl, 1:58, and marker 2397.",
+      "unknownInfo": "Left and Crow Call suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "275_location",
+      "type": "Location",
+      "name": "Quarry Pool",
+      "symbol": "📍",
+      "description": "The active scene for Case File 275. Recovered field notes place the primary event at Quarry Pool.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "275_witness",
+      "type": "Witness",
+      "name": "Schoolgirl",
+      "symbol": "👤",
+      "description": "Schoolgirl, identified in the case notes for Case File 275. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "275_time",
+      "type": "Time",
+      "name": "158",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 275. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "275_marker",
+      "type": "Marker",
+      "name": "Marker 2397",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 275.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "275_direction",
+      "type": "Direction",
+      "name": "Left",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 275.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "275_sound",
+      "type": "Sound",
+      "name": "Crowcall",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 275. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "Watermark - Recovered Case File",
     "fileId": "S23-011A",

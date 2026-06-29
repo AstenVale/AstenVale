@@ -225,18 +225,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "284_iron_nail",
-    "name": "Iron Nail",
-    "symbol": "*",
-    "description": "Iron Nail was recovered from Cabin in Case File 284. It is tied to Auctioneer, 6:06, and marker 2470.",
-    "discovered": "Case File 284",
-    "firstAppearance": "Who Was Where",
-    "connectedSongs": [
-      "284"
-    ],
-    "unknownInfo": "Below and Mud Suction suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "284_ironnail",
+      "type": "Object",
+      "name": "Ironnail",
+      "symbol": "🔍",
+      "description": "Iron Nail was recovered from Cabin in Case File 284. It is tied to Auctioneer, 6:06, and marker 2470.",
+      "unknownInfo": "Below and Mud Suction suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "284_location",
+      "type": "Location",
+      "name": "Cabin",
+      "symbol": "📍",
+      "description": "The active scene for Case File 284. Recovered field notes place the primary event at Cabin.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "284_witness",
+      "type": "Witness",
+      "name": "Auctioneer",
+      "symbol": "👤",
+      "description": "Auctioneer, identified in the case notes for Case File 284. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "284_time",
+      "type": "Time",
+      "name": "606",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 284. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "284_marker",
+      "type": "Marker",
+      "name": "Marker 2470",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 284.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "284_direction",
+      "type": "Direction",
+      "name": "Below",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 284.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "284_sound",
+      "type": "Sound",
+      "name": "Mudsuction",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 284. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "Who Was Where - Recovered Case File",
     "fileId": "S24-008A",

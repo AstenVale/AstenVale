@@ -225,18 +225,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "196_shard_of_mirror",
-    "name": "Shard of Mirror",
-    "symbol": "*",
-    "description": "Shard of Mirror was recovered from Stone Step in Case File 196. It is tied to Preacher, 3:58, and marker 1734.",
-    "discovered": "Case File 196",
-    "firstAppearance": "What Cold Preserves",
-    "connectedSongs": [
-      "196"
-    ],
-    "unknownInfo": "South and Cannon Bolt suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "196_shardofmirror",
+      "type": "Object",
+      "name": "Shardofmirror",
+      "symbol": "🔍",
+      "description": "Shard of Mirror was recovered from Stone Step in Case File 196. It is tied to Preacher, 3:58, and marker 1734.",
+      "unknownInfo": "South and Cannon Bolt suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "196_location",
+      "type": "Location",
+      "name": "Stonestep",
+      "symbol": "📍",
+      "description": "The active scene for Case File 196. Recovered field notes place the primary event at Stonestep.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "196_witness",
+      "type": "Witness",
+      "name": "Preacher",
+      "symbol": "👤",
+      "description": "Preacher, identified in the case notes for Case File 196. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "196_time",
+      "type": "Time",
+      "name": "358",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 196. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "196_marker",
+      "type": "Marker",
+      "name": "Marker 1734",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 196.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "196_direction",
+      "type": "Direction",
+      "name": "South",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 196.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "196_sound",
+      "type": "Sound",
+      "name": "Cannonbolt",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 196. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "What Cold Preserves - Recovered Case File",
     "fileId": "S17-004A",

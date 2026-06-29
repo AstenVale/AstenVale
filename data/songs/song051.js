@@ -213,18 +213,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "051_photograph",
-    "name": "Photograph",
-    "symbol": "*",
-    "description": "Photograph was recovered from Forge in Case File 051. It is tied to Apothecary, 12:44, and marker 525.",
-    "discovered": "Case File 051",
-    "firstAppearance": "Snow on the Roof",
-    "connectedSongs": [
-      "051"
-    ],
-    "unknownInfo": "Out and Broken String suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "051_photograph",
+      "type": "Object",
+      "name": "Photograph",
+      "symbol": "🔍",
+      "description": "Photograph was recovered from Forge in Case File 051. It is tied to Apothecary, 12:44, and marker 525.",
+      "unknownInfo": "Out and Broken String suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "051_location",
+      "type": "Location",
+      "name": "Forge",
+      "symbol": "📍",
+      "description": "The active scene for Case File 051. Recovered field notes place the primary event at Forge.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "051_witness",
+      "type": "Witness",
+      "name": "Apothecary",
+      "symbol": "👤",
+      "description": "Apothecary, identified in the case notes for Case File 051. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "051_time",
+      "type": "Time",
+      "name": "1244",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 051. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "051_marker",
+      "type": "Marker",
+      "name": "Marker 525",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 051.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "051_direction",
+      "type": "Direction",
+      "name": "Out",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 051.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "051_sound",
+      "type": "Sound",
+      "name": "Brokenstring",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 051. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "Snow on the Roof - Recovered Case File",
     "fileId": "S5-003A",

@@ -216,18 +216,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "060_ledger_page",
-    "name": "Ledger Page",
-    "symbol": "*",
-    "description": "Ledger Page was recovered from Fulling Mill in Case File 060. It is tied to Lock Keeper, 7:14, and marker 606.",
-    "discovered": "Case File 060",
-    "firstAppearance": "Spring Without Him",
-    "connectedSongs": [
-      "060"
-    ],
-    "unknownInfo": "Back and Lantern Flicker suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "060_ledgerpage",
+      "type": "Object",
+      "name": "Ledgerpage",
+      "symbol": "🔍",
+      "description": "Ledger Page was recovered from Fulling Mill in Case File 060. It is tied to Lock Keeper, 7:14, and marker 606.",
+      "unknownInfo": "Back and Lantern Flicker suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "060_location",
+      "type": "Location",
+      "name": "Fullingmill",
+      "symbol": "📍",
+      "description": "The active scene for Case File 060. Recovered field notes place the primary event at Fullingmill.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "060_witness",
+      "type": "Witness",
+      "name": "Lockkeeper",
+      "symbol": "👤",
+      "description": "Lockkeeper, identified in the case notes for Case File 060. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "060_time",
+      "type": "Time",
+      "name": "714",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 060. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "060_marker",
+      "type": "Marker",
+      "name": "Marker 606",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 060.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "060_direction",
+      "type": "Direction",
+      "name": "Back",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 060.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "060_sound",
+      "type": "Sound",
+      "name": "Lanternflicker",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 060. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "Spring Without Him - Recovered Case File",
     "fileId": "S5-012A",

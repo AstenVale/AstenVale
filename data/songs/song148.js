@@ -227,18 +227,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "148_dried_blood_on_cloth",
-    "name": "Dried Blood on Cloth",
-    "symbol": "*",
-    "description": "Dried Blood on Cloth was recovered from Cider House in Case File 148. It is tied to The Handless Man, 9:27, and marker 1334.",
-    "discovered": "Case File 148",
-    "firstAppearance": "The Difference",
-    "connectedSongs": [
-      "148"
-    ],
-    "unknownInfo": "Behind and Shovel on Earth suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "148_driedbloodoncloth",
+      "type": "Object",
+      "name": "Driedbloodoncloth",
+      "symbol": "🔍",
+      "description": "Dried Blood on Cloth was recovered from Cider House in Case File 148. It is tied to The Handless Man, 9:27, and marker 1334.",
+      "unknownInfo": "Behind and Shovel on Earth suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "148_location",
+      "type": "Location",
+      "name": "Ciderhouse",
+      "symbol": "📍",
+      "description": "The active scene for Case File 148. Recovered field notes place the primary event at Ciderhouse.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "148_witness",
+      "type": "Witness",
+      "name": "Handless Man",
+      "symbol": "👤",
+      "description": "Handless Man, identified in the case notes for Case File 148. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "148_time",
+      "type": "Time",
+      "name": "927",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 148. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "148_marker",
+      "type": "Marker",
+      "name": "Marker 1334",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 148.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "148_direction",
+      "type": "Direction",
+      "name": "Behind",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 148.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "148_sound",
+      "type": "Sound",
+      "name": "Shovelonearth",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 148. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Difference - Recovered Case File",
     "fileId": "S13-004A",

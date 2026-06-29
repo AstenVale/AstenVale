@@ -226,18 +226,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "525_button",
-    "name": "Button",
-    "symbol": "*",
-    "description": "Button was recovered from The Quarry Pool in Case File 525. It is tied to Sheriff, 6:53, and marker 4479.",
-    "discovered": "Case File 525",
-    "firstAppearance": "The Copy",
-    "connectedSongs": [
-      "525"
-    ],
-    "unknownInfo": "Toward the River and Cannon Bolt suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "525_button",
+      "type": "Object",
+      "name": "Button",
+      "symbol": "🔍",
+      "description": "Button was recovered from The Quarry Pool in Case File 525. It is tied to Sheriff, 6:53, and marker 4479.",
+      "unknownInfo": "Toward the River and Cannon Bolt suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "525_location",
+      "type": "Location",
+      "name": "Quarry Pool",
+      "symbol": "📍",
+      "description": "The active scene for Case File 525. Recovered field notes place the primary event at Quarry Pool.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "525_witness",
+      "type": "Witness",
+      "name": "Sheriff",
+      "symbol": "👤",
+      "description": "Sheriff, identified in the case notes for Case File 525. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "525_time",
+      "type": "Time",
+      "name": "653",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 525. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "525_marker",
+      "type": "Marker",
+      "name": "Marker 4479",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 525.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "525_direction",
+      "type": "Direction",
+      "name": "Towardtheriver",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 525.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "525_sound",
+      "type": "Sound",
+      "name": "Cannonbolt",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 525. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Copy - Recovered Case File",
     "fileId": "S44-009A",

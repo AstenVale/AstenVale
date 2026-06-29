@@ -216,18 +216,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "052_dried_flower",
-    "name": "Dried Flower",
-    "symbol": "*",
-    "description": "Dried Flower was recovered from Fulling Mill in Case File 052. It is tied to Typesetter, 3:49, and marker 534.",
-    "discovered": "Case File 052",
-    "firstAppearance": "The Long Night",
-    "connectedSongs": [
-      "052"
-    ],
-    "unknownInfo": "Past the Tree Line and Forge Breath suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "052_driedflower",
+      "type": "Object",
+      "name": "Driedflower",
+      "symbol": "🔍",
+      "description": "Dried Flower was recovered from Fulling Mill in Case File 052. It is tied to Typesetter, 3:49, and marker 534.",
+      "unknownInfo": "Past the Tree Line and Forge Breath suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "052_location",
+      "type": "Location",
+      "name": "Fullingmill",
+      "symbol": "📍",
+      "description": "The active scene for Case File 052. Recovered field notes place the primary event at Fullingmill.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "052_witness",
+      "type": "Witness",
+      "name": "Typesetter",
+      "symbol": "👤",
+      "description": "Typesetter, identified in the case notes for Case File 052. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "052_time",
+      "type": "Time",
+      "name": "349",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 052. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "052_marker",
+      "type": "Marker",
+      "name": "Marker 534",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 052.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "052_direction",
+      "type": "Direction",
+      "name": "Pastthetreeline",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 052.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "052_sound",
+      "type": "Sound",
+      "name": "Forgebreath",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 052. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Long Night - Recovered Case File",
     "fileId": "S5-004A",

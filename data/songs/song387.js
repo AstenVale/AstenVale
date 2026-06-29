@@ -227,18 +227,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "387_bone_button",
-    "name": "Bone Button",
-    "symbol": "*",
-    "description": "Bone Button was recovered from Sheriff's Office in Case File 387. It is tied to Salt Seller, 9:55, and marker 3325.",
-    "discovered": "Case File 387",
-    "firstAppearance": "What Fades",
-    "connectedSongs": [
-      "387"
-    ],
-    "unknownInfo": "Down and Latch Drop suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "387_bonebutton",
+      "type": "Object",
+      "name": "Bonebutton",
+      "symbol": "🔍",
+      "description": "Bone Button was recovered from Sheriff's Office in Case File 387. It is tied to Salt Seller, 9:55, and marker 3325.",
+      "unknownInfo": "Down and Latch Drop suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "387_location",
+      "type": "Location",
+      "name": "Sheriff'Soffice",
+      "symbol": "📍",
+      "description": "The active scene for Case File 387. Recovered field notes place the primary event at Sheriff'Soffice.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "387_witness",
+      "type": "Witness",
+      "name": "Saltseller",
+      "symbol": "👤",
+      "description": "Saltseller, identified in the case notes for Case File 387. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "387_time",
+      "type": "Time",
+      "name": "955",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 387. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "387_marker",
+      "type": "Marker",
+      "name": "Marker 3325",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 387.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "387_direction",
+      "type": "Direction",
+      "name": "Down",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 387.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "387_sound",
+      "type": "Sound",
+      "name": "Latchdrop",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 387. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "What Fades - Recovered Case File",
     "fileId": "S33-003A",

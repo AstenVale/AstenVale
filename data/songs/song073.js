@@ -214,18 +214,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "073_inkwell",
-    "name": "Inkwell",
-    "symbol": "*",
-    "description": "Inkwell was recovered from Undertaker's Hall in Case File 073. It is tied to Driver, 6:53, and marker 707.",
-    "discovered": "Case File 073",
-    "firstAppearance": "The Other House",
-    "connectedSongs": [
-      "073"
-    ],
-    "unknownInfo": "West and Rope Strain suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "073_inkwell",
+      "type": "Object",
+      "name": "Inkwell",
+      "symbol": "🔍",
+      "description": "Inkwell was recovered from Undertaker's Hall in Case File 073. It is tied to Driver, 6:53, and marker 707.",
+      "unknownInfo": "West and Rope Strain suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "073_location",
+      "type": "Location",
+      "name": "Undertaker'Shall",
+      "symbol": "📍",
+      "description": "The active scene for Case File 073. Recovered field notes place the primary event at Undertaker'Shall.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "073_witness",
+      "type": "Witness",
+      "name": "Driver",
+      "symbol": "👤",
+      "description": "Driver, identified in the case notes for Case File 073. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "073_time",
+      "type": "Time",
+      "name": "653",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 073. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "073_marker",
+      "type": "Marker",
+      "name": "Marker 707",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 073.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "073_direction",
+      "type": "Direction",
+      "name": "West",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 073.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "073_sound",
+      "type": "Sound",
+      "name": "Ropestrain",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 073. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Other House - Recovered Case File",
     "fileId": "S7-001A",

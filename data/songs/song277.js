@@ -225,18 +225,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "277_seal",
-    "name": "Seal",
-    "symbol": "*",
-    "description": "Seal was recovered from Cemetery in Case File 277. It is tied to Widow, 5:09, and marker 2407.",
-    "discovered": "Case File 277",
-    "firstAppearance": "11 PM",
-    "connectedSongs": [
-      "277"
-    ],
-    "unknownInfo": "Away from Town and Distant Church Bell suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "277_seal",
+      "type": "Object",
+      "name": "Seal",
+      "symbol": "🔍",
+      "description": "Seal was recovered from Cemetery in Case File 277. It is tied to Widow, 5:09, and marker 2407.",
+      "unknownInfo": "Away from Town and Distant Church Bell suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "277_location",
+      "type": "Location",
+      "name": "Cemetery",
+      "symbol": "📍",
+      "description": "The active scene for Case File 277. Recovered field notes place the primary event at Cemetery.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "277_witness",
+      "type": "Witness",
+      "name": "Widow",
+      "symbol": "👤",
+      "description": "Widow, identified in the case notes for Case File 277. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "277_time",
+      "type": "Time",
+      "name": "509",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 277. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "277_marker",
+      "type": "Marker",
+      "name": "Marker 2407",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 277.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "277_direction",
+      "type": "Direction",
+      "name": "Awayfromtown",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 277.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "277_sound",
+      "type": "Sound",
+      "name": "Distantchurchbell",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 277. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "11 PM - Recovered Case File",
     "fileId": "S24-001A",

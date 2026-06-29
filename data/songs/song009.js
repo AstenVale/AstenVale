@@ -214,18 +214,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "009_cabin_key",
-    "name": "Cabin Key",
-    "symbol": "*",
-    "description": "Cabin Key was recovered from Cabin in Case File 009. It is tied to Mechanic, 10:22, and marker 72.",
-    "discovered": "Case File 009",
-    "firstAppearance": "Cabin Without Smoke",
-    "connectedSongs": [
-      "009"
-    ],
-    "unknownInfo": "North and Wind in Pines suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "009_cabinkey",
+      "type": "Object",
+      "name": "Cabinkey",
+      "symbol": "🔍",
+      "description": "Cabin Key was recovered from Cabin in Case File 009. It is tied to Mechanic, 10:22, and marker 72.",
+      "unknownInfo": "North and Wind in Pines suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "009_location",
+      "type": "Location",
+      "name": "Cabin",
+      "symbol": "📍",
+      "description": "The active scene for Case File 009. Recovered field notes place the primary event at Cabin.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "009_witness",
+      "type": "Witness",
+      "name": "Mechanic",
+      "symbol": "👤",
+      "description": "Mechanic, identified in the case notes for Case File 009. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "009_time",
+      "type": "Time",
+      "name": "1022",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 009. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "009_marker",
+      "type": "Marker",
+      "name": "Marker 72",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 009.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "009_direction",
+      "type": "Direction",
+      "name": "North",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 009.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "009_sound",
+      "type": "Sound",
+      "name": "Windinpines",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 009. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "Cabin Without Smoke - Recovered Case File",
     "fileId": "009A",

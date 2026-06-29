@@ -215,18 +215,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "533_empty_tin",
-    "name": "Empty Tin",
-    "symbol": "*",
-    "description": "Empty Tin was recovered from Chandler's Row in Case File 533. It is tied to Cooper, 4:29, and marker 4543.",
-    "discovered": "Case File 533",
-    "firstAppearance": "The Cracks",
-    "connectedSongs": [
-      "533"
-    ],
-    "unknownInfo": "In and Swamp Gas suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "533_emptytin",
+      "type": "Object",
+      "name": "Emptytin",
+      "symbol": "🔍",
+      "description": "Empty Tin was recovered from Chandler's Row in Case File 533. It is tied to Cooper, 4:29, and marker 4543.",
+      "unknownInfo": "In and Swamp Gas suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "533_location",
+      "type": "Location",
+      "name": "Chandler'Srow",
+      "symbol": "📍",
+      "description": "The active scene for Case File 533. Recovered field notes place the primary event at Chandler'Srow.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "533_witness",
+      "type": "Witness",
+      "name": "Cooper",
+      "symbol": "👤",
+      "description": "Cooper, identified in the case notes for Case File 533. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "533_time",
+      "type": "Time",
+      "name": "429",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 533. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "533_marker",
+      "type": "Marker",
+      "name": "Marker 4543",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 533.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "533_direction",
+      "type": "Direction",
+      "name": "In",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 533.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "533_sound",
+      "type": "Sound",
+      "name": "Swampgas",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 533. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Cracks - Recovered Case File",
     "fileId": "S45-005A",

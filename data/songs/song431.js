@@ -216,18 +216,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "431_glove",
-    "name": "Glove",
-    "symbol": "*",
-    "description": "Glove was recovered from The Gully in Case File 431. It is tied to Driver, 1:58, and marker 3697.",
-    "discovered": "Case File 431",
-    "firstAppearance": "The Response",
-    "connectedSongs": [
-      "431"
-    ],
-    "unknownInfo": "South and The Silence After suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "431_glove",
+      "type": "Object",
+      "name": "Glove",
+      "symbol": "🔍",
+      "description": "Glove was recovered from The Gully in Case File 431. It is tied to Driver, 1:58, and marker 3697.",
+      "unknownInfo": "South and The Silence After suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "431_location",
+      "type": "Location",
+      "name": "Gully",
+      "symbol": "📍",
+      "description": "The active scene for Case File 431. Recovered field notes place the primary event at Gully.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "431_witness",
+      "type": "Witness",
+      "name": "Driver",
+      "symbol": "👤",
+      "description": "Driver, identified in the case notes for Case File 431. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "431_time",
+      "type": "Time",
+      "name": "158",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 431. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "431_marker",
+      "type": "Marker",
+      "name": "Marker 3697",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 431.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "431_direction",
+      "type": "Direction",
+      "name": "South",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 431.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "431_sound",
+      "type": "Sound",
+      "name": "Silence After",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 431. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Response - Recovered Case File",
     "fileId": "S36-011A",

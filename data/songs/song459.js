@@ -226,18 +226,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "459_ship_manifest",
-    "name": "Ship Manifest",
-    "symbol": "*",
-    "description": "Ship Manifest was recovered from Brick Kiln in Case File 459. It is tied to Station Master, 4:47, and marker 3925.",
-    "discovered": "Case File 459",
-    "firstAppearance": "What It Carried",
-    "connectedSongs": [
-      "459"
-    ],
-    "unknownInfo": "Through and Lock Click suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "459_shipmanifest",
+      "type": "Object",
+      "name": "Shipmanifest",
+      "symbol": "🔍",
+      "description": "Ship Manifest was recovered from Brick Kiln in Case File 459. It is tied to Station Master, 4:47, and marker 3925.",
+      "unknownInfo": "Through and Lock Click suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "459_location",
+      "type": "Location",
+      "name": "Brickkiln",
+      "symbol": "📍",
+      "description": "The active scene for Case File 459. Recovered field notes place the primary event at Brickkiln.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "459_witness",
+      "type": "Witness",
+      "name": "Stationmaster",
+      "symbol": "👤",
+      "description": "Stationmaster, identified in the case notes for Case File 459. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "459_time",
+      "type": "Time",
+      "name": "447",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 459. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "459_marker",
+      "type": "Marker",
+      "name": "Marker 3925",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 459.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "459_direction",
+      "type": "Direction",
+      "name": "Through",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 459.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "459_sound",
+      "type": "Sound",
+      "name": "Lockclick",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 459. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "What It Carried - Recovered Case File",
     "fileId": "S39-003A",

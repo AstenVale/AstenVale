@@ -217,18 +217,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "189_journal",
-    "name": "Journal",
-    "symbol": "*",
-    "description": "Journal was recovered from The Cistern in Case File 189. It is tied to Salt Seller, 6:17, and marker 1679.",
-    "discovered": "Case File 189",
-    "firstAppearance": "The Blind Spot",
-    "connectedSongs": [
-      "189"
-    ],
-    "unknownInfo": "Past the Tree Line and Cannon Bolt suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "189_journal",
+      "type": "Object",
+      "name": "Journal",
+      "symbol": "🔍",
+      "description": "Journal was recovered from The Cistern in Case File 189. It is tied to Salt Seller, 6:17, and marker 1679.",
+      "unknownInfo": "Past the Tree Line and Cannon Bolt suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "189_location",
+      "type": "Location",
+      "name": "Cistern",
+      "symbol": "📍",
+      "description": "The active scene for Case File 189. Recovered field notes place the primary event at Cistern.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "189_witness",
+      "type": "Witness",
+      "name": "Saltseller",
+      "symbol": "👤",
+      "description": "Saltseller, identified in the case notes for Case File 189. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "189_time",
+      "type": "Time",
+      "name": "617",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 189. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "189_marker",
+      "type": "Marker",
+      "name": "Marker 1679",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 189.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "189_direction",
+      "type": "Direction",
+      "name": "Pastthetreeline",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 189.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "189_sound",
+      "type": "Sound",
+      "name": "Cannonbolt",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 189. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Blind Spot - Recovered Case File",
     "fileId": "S16-009A",

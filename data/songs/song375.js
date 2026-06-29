@@ -214,18 +214,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "375_leather_strap",
-    "name": "Leather Strap",
-    "symbol": "*",
-    "description": "Leather Strap was recovered from Library in Case File 375. It is tied to Preacher, 4:38, and marker 3225.",
-    "discovered": "Case File 375",
-    "firstAppearance": "What the Depth Holds",
-    "connectedSongs": [
-      "375"
-    ],
-    "unknownInfo": "Up and Latch Drop suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "375_leatherstrap",
+      "type": "Object",
+      "name": "Leatherstrap",
+      "symbol": "🔍",
+      "description": "Leather Strap was recovered from Library in Case File 375. It is tied to Preacher, 4:38, and marker 3225.",
+      "unknownInfo": "Up and Latch Drop suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "375_location",
+      "type": "Location",
+      "name": "Library",
+      "symbol": "📍",
+      "description": "The active scene for Case File 375. Recovered field notes place the primary event at Library.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "375_witness",
+      "type": "Witness",
+      "name": "Preacher",
+      "symbol": "👤",
+      "description": "Preacher, identified in the case notes for Case File 375. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "375_time",
+      "type": "Time",
+      "name": "438",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 375. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "375_marker",
+      "type": "Marker",
+      "name": "Marker 3225",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 375.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "375_direction",
+      "type": "Direction",
+      "name": "Up",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 375.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "375_sound",
+      "type": "Sound",
+      "name": "Latchdrop",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 375. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "What the Depth Holds - Recovered Case File",
     "fileId": "S32-003A",

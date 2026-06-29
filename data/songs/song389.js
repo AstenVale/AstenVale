@@ -227,18 +227,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "389_glove",
-    "name": "Glove",
-    "symbol": "*",
-    "description": "Glove was recovered from The Root Cellar in Case File 389. It is tied to Night Porter, 8:33, and marker 3343.",
-    "discovered": "Case File 389",
-    "firstAppearance": "Washed Out",
-    "connectedSongs": [
-      "389"
-    ],
-    "unknownInfo": "Somewhere and Hammer Strike suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "389_glove",
+      "type": "Object",
+      "name": "Glove",
+      "symbol": "🔍",
+      "description": "Glove was recovered from The Root Cellar in Case File 389. It is tied to Night Porter, 8:33, and marker 3343.",
+      "unknownInfo": "Somewhere and Hammer Strike suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "389_location",
+      "type": "Location",
+      "name": "Root Cellar",
+      "symbol": "📍",
+      "description": "The active scene for Case File 389. Recovered field notes place the primary event at Root Cellar.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "389_witness",
+      "type": "Witness",
+      "name": "Nightporter",
+      "symbol": "👤",
+      "description": "Nightporter, identified in the case notes for Case File 389. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "389_time",
+      "type": "Time",
+      "name": "833",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 389. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "389_marker",
+      "type": "Marker",
+      "name": "Marker 3343",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 389.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "389_direction",
+      "type": "Direction",
+      "name": "Somewhere",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 389.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "389_sound",
+      "type": "Sound",
+      "name": "Hammerstrike",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 389. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "Washed Out - Recovered Case File",
     "fileId": "S33-005A",

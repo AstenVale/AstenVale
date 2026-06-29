@@ -224,18 +224,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "090_glove",
-    "name": "Glove",
-    "symbol": "*",
-    "description": "Glove was recovered from Stone Step in Case File 090. It is tied to Gravedigger, 5:13, and marker 852.",
-    "discovered": "Case File 090",
-    "firstAppearance": "What Didn't Burn",
-    "connectedSongs": [
-      "090"
-    ],
-    "unknownInfo": "Toward and Lantern Glass suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "090_glove",
+      "type": "Object",
+      "name": "Glove",
+      "symbol": "🔍",
+      "description": "Glove was recovered from Stone Step in Case File 090. It is tied to Gravedigger, 5:13, and marker 852.",
+      "unknownInfo": "Toward and Lantern Glass suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "090_location",
+      "type": "Location",
+      "name": "Stonestep",
+      "symbol": "📍",
+      "description": "The active scene for Case File 090. Recovered field notes place the primary event at Stonestep.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "090_witness",
+      "type": "Witness",
+      "name": "Gravedigger",
+      "symbol": "👤",
+      "description": "Gravedigger, identified in the case notes for Case File 090. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "090_time",
+      "type": "Time",
+      "name": "513",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 090. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "090_marker",
+      "type": "Marker",
+      "name": "Marker 852",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 090.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "090_direction",
+      "type": "Direction",
+      "name": "Toward",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 090.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "090_sound",
+      "type": "Sound",
+      "name": "Lanternglass",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 090. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "What Didn't Burn - Recovered Case File",
     "fileId": "S8-006A",

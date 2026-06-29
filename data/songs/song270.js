@@ -215,18 +215,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "270_trade_token",
-    "name": "Trade Token",
-    "symbol": "*",
-    "description": "Trade Token was recovered from Pharmacy in Case File 270. It is tied to Apothecary, 12:00, and marker 2352.",
-    "discovered": "Case File 270",
-    "firstAppearance": "The Missing Document",
-    "connectedSongs": [
-      "270"
-    ],
-    "unknownInfo": "Into the Pines and Crow Wings suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "270_tradetoken",
+      "type": "Object",
+      "name": "Tradetoken",
+      "symbol": "🔍",
+      "description": "Trade Token was recovered from Pharmacy in Case File 270. It is tied to Apothecary, 12:00, and marker 2352.",
+      "unknownInfo": "Into the Pines and Crow Wings suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "270_location",
+      "type": "Location",
+      "name": "Pharmacy",
+      "symbol": "📍",
+      "description": "The active scene for Case File 270. Recovered field notes place the primary event at Pharmacy.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "270_witness",
+      "type": "Witness",
+      "name": "Apothecary",
+      "symbol": "👤",
+      "description": "Apothecary, identified in the case notes for Case File 270. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "270_time",
+      "type": "Time",
+      "name": "1200",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 270. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "270_marker",
+      "type": "Marker",
+      "name": "Marker 2352",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 270.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "270_direction",
+      "type": "Direction",
+      "name": "Intothepines",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 270.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "270_sound",
+      "type": "Sound",
+      "name": "Crowwings",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 270. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Missing Document - Recovered Case File",
     "fileId": "S23-006A",

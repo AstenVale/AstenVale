@@ -216,18 +216,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "405_notebook",
-    "name": "Notebook",
-    "symbol": "*",
-    "description": "Notebook was recovered from The Depot in Case File 405. It is tied to Postman, 6:17, and marker 3479.",
-    "discovered": "Case File 405",
-    "firstAppearance": "The Missing Week",
-    "connectedSongs": [
-      "405"
-    ],
-    "unknownInfo": "Into the Pines and Dry Grass suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "405_notebook",
+      "type": "Object",
+      "name": "Notebook",
+      "symbol": "🔍",
+      "description": "Notebook was recovered from The Depot in Case File 405. It is tied to Postman, 6:17, and marker 3479.",
+      "unknownInfo": "Into the Pines and Dry Grass suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "405_location",
+      "type": "Location",
+      "name": "Depot",
+      "symbol": "📍",
+      "description": "The active scene for Case File 405. Recovered field notes place the primary event at Depot.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "405_witness",
+      "type": "Witness",
+      "name": "Postman",
+      "symbol": "👤",
+      "description": "Postman, identified in the case notes for Case File 405. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "405_time",
+      "type": "Time",
+      "name": "617",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 405. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "405_marker",
+      "type": "Marker",
+      "name": "Marker 3479",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 405.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "405_direction",
+      "type": "Direction",
+      "name": "Intothepines",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 405.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "405_sound",
+      "type": "Sound",
+      "name": "Drygrass",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 405. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Missing Week - Recovered Case File",
     "fileId": "S34-009A",

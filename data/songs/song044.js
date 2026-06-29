@@ -224,18 +224,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "044_watch",
-    "name": "Watch",
-    "symbol": "*",
-    "description": "Watch was recovered from Cemetery in Case File 044. It is tied to Midwife, 12:33, and marker 470.",
-    "discovered": "Case File 044",
-    "firstAppearance": "Underneath",
-    "connectedSongs": [
-      "044"
-    ],
-    "unknownInfo": "Down the Hollow and Knife Scrape suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "044_watch",
+      "type": "Object",
+      "name": "Watch",
+      "symbol": "🔍",
+      "description": "Watch was recovered from Cemetery in Case File 044. It is tied to Midwife, 12:33, and marker 470.",
+      "unknownInfo": "Down the Hollow and Knife Scrape suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "044_location",
+      "type": "Location",
+      "name": "Cemetery",
+      "symbol": "📍",
+      "description": "The active scene for Case File 044. Recovered field notes place the primary event at Cemetery.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "044_witness",
+      "type": "Witness",
+      "name": "Midwife",
+      "symbol": "👤",
+      "description": "Midwife, identified in the case notes for Case File 044. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "044_time",
+      "type": "Time",
+      "name": "1233",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 044. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "044_marker",
+      "type": "Marker",
+      "name": "Marker 470",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 044.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "044_direction",
+      "type": "Direction",
+      "name": "Downthehollow",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 044.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "044_sound",
+      "type": "Sound",
+      "name": "Knifescrape",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 044. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "Underneath - Recovered Case File",
     "fileId": "S4-008A",

@@ -226,18 +226,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "363_torn_label",
-    "name": "Torn Label",
-    "symbol": "*",
-    "description": "Torn Label was recovered from Cider House in Case File 363. It is tied to Lime Burner, 2:38, and marker 3125.",
-    "discovered": "Case File 363",
-    "firstAppearance": "The Code in the Planting",
-    "connectedSongs": [
-      "363"
-    ],
-    "unknownInfo": "Nowhere and Crow on Wire suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "363_tornlabel",
+      "type": "Object",
+      "name": "Tornlabel",
+      "symbol": "🔍",
+      "description": "Torn Label was recovered from Cider House in Case File 363. It is tied to Lime Burner, 2:38, and marker 3125.",
+      "unknownInfo": "Nowhere and Crow on Wire suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "363_location",
+      "type": "Location",
+      "name": "Ciderhouse",
+      "symbol": "📍",
+      "description": "The active scene for Case File 363. Recovered field notes place the primary event at Ciderhouse.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "363_witness",
+      "type": "Witness",
+      "name": "Limeburner",
+      "symbol": "👤",
+      "description": "Limeburner, identified in the case notes for Case File 363. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "363_time",
+      "type": "Time",
+      "name": "238",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 363. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "363_marker",
+      "type": "Marker",
+      "name": "Marker 3125",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 363.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "363_direction",
+      "type": "Direction",
+      "name": "Nowhere",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 363.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "363_sound",
+      "type": "Sound",
+      "name": "Crowonwire",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 363. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Code in the Planting - Recovered Case File",
     "fileId": "S31-003A",

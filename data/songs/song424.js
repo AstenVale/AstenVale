@@ -214,18 +214,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "424_thimble",
-    "name": "Thimble",
-    "symbol": "*",
-    "description": "Thimble was recovered from Chandler's Row in Case File 424. It is tied to Wainwright, 3:58, and marker 3634.",
-    "discovered": "Case File 424",
-    "firstAppearance": "The Voice",
-    "connectedSongs": [
-      "424"
-    ],
-    "unknownInfo": "Nowhere and Cellar Stairs suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "424_thimble",
+      "type": "Object",
+      "name": "Thimble",
+      "symbol": "🔍",
+      "description": "Thimble was recovered from Chandler's Row in Case File 424. It is tied to Wainwright, 3:58, and marker 3634.",
+      "unknownInfo": "Nowhere and Cellar Stairs suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "424_location",
+      "type": "Location",
+      "name": "Chandler'Srow",
+      "symbol": "📍",
+      "description": "The active scene for Case File 424. Recovered field notes place the primary event at Chandler'Srow.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "424_witness",
+      "type": "Witness",
+      "name": "Wainwright",
+      "symbol": "👤",
+      "description": "Wainwright, identified in the case notes for Case File 424. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "424_time",
+      "type": "Time",
+      "name": "358",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 424. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "424_marker",
+      "type": "Marker",
+      "name": "Marker 3634",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 424.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "424_direction",
+      "type": "Direction",
+      "name": "Nowhere",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 424.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "424_sound",
+      "type": "Sound",
+      "name": "Cellarstairs",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 424. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Voice - Recovered Case File",
     "fileId": "S36-004A",

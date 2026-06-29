@@ -226,18 +226,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "437_matchbook",
-    "name": "Matchbook",
-    "symbol": "*",
-    "description": "Matchbook was recovered from Quarry Edge in Case File 437. It is tied to Circuit Rider, 5:13, and marker 3743.",
-    "discovered": "Case File 437",
-    "firstAppearance": "The Equipment",
-    "connectedSongs": [
-      "437"
-    ],
-    "unknownInfo": "West and River Water suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "437_matchbook",
+      "type": "Object",
+      "name": "Matchbook",
+      "symbol": "🔍",
+      "description": "Matchbook was recovered from Quarry Edge in Case File 437. It is tied to Circuit Rider, 5:13, and marker 3743.",
+      "unknownInfo": "West and River Water suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "437_location",
+      "type": "Location",
+      "name": "Quarryedge",
+      "symbol": "📍",
+      "description": "The active scene for Case File 437. Recovered field notes place the primary event at Quarryedge.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "437_witness",
+      "type": "Witness",
+      "name": "Circuitrider",
+      "symbol": "👤",
+      "description": "Circuitrider, identified in the case notes for Case File 437. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "437_time",
+      "type": "Time",
+      "name": "513",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 437. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "437_marker",
+      "type": "Marker",
+      "name": "Marker 3743",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 437.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "437_direction",
+      "type": "Direction",
+      "name": "West",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 437.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "437_sound",
+      "type": "Sound",
+      "name": "Riverwater",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 437. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Equipment - Recovered Case File",
     "fileId": "S37-005A",

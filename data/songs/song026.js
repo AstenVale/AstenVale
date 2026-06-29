@@ -214,18 +214,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "026_iron_nail",
-    "name": "Iron Nail",
-    "symbol": "*",
-    "description": "Iron Nail was recovered from Cabin in Case File 026. It is tied to Ferryman, 2:19, and marker 316.",
-    "discovered": "Case File 026",
-    "firstAppearance": "The Empty Bed",
-    "connectedSongs": [
-      "026"
-    ],
-    "unknownInfo": "Right and Lid of a Tin suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "026_ironnail",
+      "type": "Object",
+      "name": "Ironnail",
+      "symbol": "🔍",
+      "description": "Iron Nail was recovered from Cabin in Case File 026. It is tied to Ferryman, 2:19, and marker 316.",
+      "unknownInfo": "Right and Lid of a Tin suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "026_location",
+      "type": "Location",
+      "name": "Cabin",
+      "symbol": "📍",
+      "description": "The active scene for Case File 026. Recovered field notes place the primary event at Cabin.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "026_witness",
+      "type": "Witness",
+      "name": "Ferryman",
+      "symbol": "👤",
+      "description": "Ferryman, identified in the case notes for Case File 026. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "026_time",
+      "type": "Time",
+      "name": "219",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 026. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "026_marker",
+      "type": "Marker",
+      "name": "Marker 316",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 026.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "026_direction",
+      "type": "Direction",
+      "name": "Right",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 026.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "026_sound",
+      "type": "Sound",
+      "name": "Lidofatin",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 026. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Empty Bed - Recovered Case File",
     "fileId": "S3-002A",

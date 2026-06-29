@@ -225,18 +225,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "200_stamp",
-    "name": "Stamp",
-    "symbol": "*",
-    "description": "Stamp was recovered from Sheep Fold in Case File 200. It is tied to Lamplighter, 9:55, and marker 1770.",
-    "discovered": "Case File 200",
-    "firstAppearance": "The Ice",
-    "connectedSongs": [
-      "200"
-    ],
-    "unknownInfo": "Toward the River and Paper Rustle suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "200_stamp",
+      "type": "Object",
+      "name": "Stamp",
+      "symbol": "🔍",
+      "description": "Stamp was recovered from Sheep Fold in Case File 200. It is tied to Lamplighter, 9:55, and marker 1770.",
+      "unknownInfo": "Toward the River and Paper Rustle suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "200_location",
+      "type": "Location",
+      "name": "Sheepfold",
+      "symbol": "📍",
+      "description": "The active scene for Case File 200. Recovered field notes place the primary event at Sheepfold.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "200_witness",
+      "type": "Witness",
+      "name": "Lamplighter",
+      "symbol": "👤",
+      "description": "Lamplighter, identified in the case notes for Case File 200. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "200_time",
+      "type": "Time",
+      "name": "955",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 200. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "200_marker",
+      "type": "Marker",
+      "name": "Marker 1770",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 200.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "200_direction",
+      "type": "Direction",
+      "name": "Towardtheriver",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 200.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "200_sound",
+      "type": "Sound",
+      "name": "Paperrustle",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 200. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Ice - Recovered Case File",
     "fileId": "S17-008A",

@@ -227,18 +227,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "392_chain",
-    "name": "Chain",
-    "symbol": "*",
-    "description": "Chain was recovered from Print Shop in Case File 392. It is tied to Cider Presser, 10:19, and marker 3370.",
-    "discovered": "Case File 392",
-    "firstAppearance": "What the Light Did",
-    "connectedSongs": [
-      "392"
-    ],
-    "unknownInfo": "Out of Sight and Dog Bark at Nothing suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "392_chain",
+      "type": "Object",
+      "name": "Chain",
+      "symbol": "🔍",
+      "description": "Chain was recovered from Print Shop in Case File 392. It is tied to Cider Presser, 10:19, and marker 3370.",
+      "unknownInfo": "Out of Sight and Dog Bark at Nothing suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "392_location",
+      "type": "Location",
+      "name": "Printshop",
+      "symbol": "📍",
+      "description": "The active scene for Case File 392. Recovered field notes place the primary event at Printshop.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "392_witness",
+      "type": "Witness",
+      "name": "Ciderpresser",
+      "symbol": "👤",
+      "description": "Ciderpresser, identified in the case notes for Case File 392. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "392_time",
+      "type": "Time",
+      "name": "1019",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 392. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "392_marker",
+      "type": "Marker",
+      "name": "Marker 3370",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 392.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "392_direction",
+      "type": "Direction",
+      "name": "Outofsight",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 392.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "392_sound",
+      "type": "Sound",
+      "name": "Dogbarkatnothing",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 392. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "What the Light Did - Recovered Case File",
     "fileId": "S33-008A",

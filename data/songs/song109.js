@@ -213,18 +213,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "109_compass",
-    "name": "Compass",
-    "symbol": "*",
-    "description": "Compass was recovered from Tunnel in Case File 109. It is tied to Surveyor, 6:32, and marker 1007.",
-    "discovered": "Case File 109",
-    "firstAppearance": "The Unmapped Mile",
-    "connectedSongs": [
-      "109"
-    ],
-    "unknownInfo": "Below and Boot Heel suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "109_compass",
+      "type": "Object",
+      "name": "Compass",
+      "symbol": "🔍",
+      "description": "Compass was recovered from Tunnel in Case File 109. It is tied to Surveyor, 6:32, and marker 1007.",
+      "unknownInfo": "Below and Boot Heel suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "109_location",
+      "type": "Location",
+      "name": "Tunnel",
+      "symbol": "📍",
+      "description": "The active scene for Case File 109. Recovered field notes place the primary event at Tunnel.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "109_witness",
+      "type": "Witness",
+      "name": "Surveyor",
+      "symbol": "👤",
+      "description": "Surveyor, identified in the case notes for Case File 109. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "109_time",
+      "type": "Time",
+      "name": "632",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 109. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "109_marker",
+      "type": "Marker",
+      "name": "Marker 1007",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 109.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "109_direction",
+      "type": "Direction",
+      "name": "Below",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 109.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "109_sound",
+      "type": "Sound",
+      "name": "Bootheel",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 109. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Unmapped Mile - Recovered Case File",
     "fileId": "S10-001A",

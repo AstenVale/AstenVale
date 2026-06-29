@@ -224,18 +224,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "312_wax_tablet",
-    "name": "Wax Tablet",
-    "symbol": "*",
-    "description": "Wax Tablet was recovered from Cooperage in Case File 312. It is tied to Cartographer, 3:49, and marker 2706.",
-    "discovered": "Case File 312",
-    "firstAppearance": "The Door Stays Locked",
-    "connectedSongs": [
-      "312"
-    ],
-    "unknownInfo": "South and Distant Gunshot suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "312_waxtablet",
+      "type": "Object",
+      "name": "Waxtablet",
+      "symbol": "🔍",
+      "description": "Wax Tablet was recovered from Cooperage in Case File 312. It is tied to Cartographer, 3:49, and marker 2706.",
+      "unknownInfo": "South and Distant Gunshot suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "312_location",
+      "type": "Location",
+      "name": "Cooperage",
+      "symbol": "📍",
+      "description": "The active scene for Case File 312. Recovered field notes place the primary event at Cooperage.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "312_witness",
+      "type": "Witness",
+      "name": "Cartographer",
+      "symbol": "👤",
+      "description": "Cartographer, identified in the case notes for Case File 312. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "312_time",
+      "type": "Time",
+      "name": "349",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 312. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "312_marker",
+      "type": "Marker",
+      "name": "Marker 2706",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 312.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "312_direction",
+      "type": "Direction",
+      "name": "South",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 312.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "312_sound",
+      "type": "Sound",
+      "name": "Distantgunshot",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 312. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Door Stays Locked - Recovered Case File",
     "fileId": "S26-012A",

@@ -225,18 +225,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "105_dried_ink_blot",
-    "name": "Dried Ink Blot",
-    "symbol": "*",
-    "description": "Dried Ink Blot was recovered from Hotel in Case File 105. It is tied to Station Master, 7:02, and marker 979.",
-    "discovered": "Case File 105",
-    "firstAppearance": "Cross Reference",
-    "connectedSongs": [
-      "105"
-    ],
-    "unknownInfo": "Back and Wind Through a Crack suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "105_driedinkblot",
+      "type": "Object",
+      "name": "Driedinkblot",
+      "symbol": "🔍",
+      "description": "Dried Ink Blot was recovered from Hotel in Case File 105. It is tied to Station Master, 7:02, and marker 979.",
+      "unknownInfo": "Back and Wind Through a Crack suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "105_location",
+      "type": "Location",
+      "name": "Hotel",
+      "symbol": "📍",
+      "description": "The active scene for Case File 105. Recovered field notes place the primary event at Hotel.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "105_witness",
+      "type": "Witness",
+      "name": "Stationmaster",
+      "symbol": "👤",
+      "description": "Stationmaster, identified in the case notes for Case File 105. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "105_time",
+      "type": "Time",
+      "name": "702",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 105. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "105_marker",
+      "type": "Marker",
+      "name": "Marker 979",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 105.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "105_direction",
+      "type": "Direction",
+      "name": "Back",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 105.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "105_sound",
+      "type": "Sound",
+      "name": "Windthroughacrack",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 105. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "Cross Reference - Recovered Case File",
     "fileId": "S9-009A",

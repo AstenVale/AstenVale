@@ -216,18 +216,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "597_copper_fitting",
-    "name": "Copper Fitting",
-    "symbol": "*",
-    "description": "Copper Fitting was recovered from North Pasture in Case File 597. It is tied to Lamplighter, 7:00, and marker 5079.",
-    "discovered": "Case File 597",
-    "firstAppearance": "The Before and After",
-    "connectedSongs": [
-      "597"
-    ],
-    "unknownInfo": "Toward the River and River Water suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "597_copperfitting",
+      "type": "Object",
+      "name": "Copperfitting",
+      "symbol": "🔍",
+      "description": "Copper Fitting was recovered from North Pasture in Case File 597. It is tied to Lamplighter, 7:00, and marker 5079.",
+      "unknownInfo": "Toward the River and River Water suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "597_location",
+      "type": "Location",
+      "name": "Northpasture",
+      "symbol": "📍",
+      "description": "The active scene for Case File 597. Recovered field notes place the primary event at Northpasture.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "597_witness",
+      "type": "Witness",
+      "name": "Lamplighter",
+      "symbol": "👤",
+      "description": "Lamplighter, identified in the case notes for Case File 597. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "597_time",
+      "type": "Time",
+      "name": "700",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 597. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "597_marker",
+      "type": "Marker",
+      "name": "Marker 5079",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 597.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "597_direction",
+      "type": "Direction",
+      "name": "Towardtheriver",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 597.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "597_sound",
+      "type": "Sound",
+      "name": "Riverwater",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 597. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Before and After - Recovered Case File",
     "fileId": "S50-009A",

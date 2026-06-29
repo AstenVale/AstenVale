@@ -226,18 +226,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "125_bone_button",
-    "name": "Bone Button",
-    "symbol": "*",
-    "description": "Bone Button was recovered from North Pasture in Case File 125. It is tied to Blacksmith, 7:00, and marker 1143.",
-    "discovered": "Case File 125",
-    "firstAppearance": "The Corner Stone",
-    "connectedSongs": [
-      "125"
-    ],
-    "unknownInfo": "Forward and Dry Grass suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "125_bonebutton",
+      "type": "Object",
+      "name": "Bonebutton",
+      "symbol": "🔍",
+      "description": "Bone Button was recovered from North Pasture in Case File 125. It is tied to Blacksmith, 7:00, and marker 1143.",
+      "unknownInfo": "Forward and Dry Grass suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "125_location",
+      "type": "Location",
+      "name": "Northpasture",
+      "symbol": "📍",
+      "description": "The active scene for Case File 125. Recovered field notes place the primary event at Northpasture.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "125_witness",
+      "type": "Witness",
+      "name": "Blacksmith",
+      "symbol": "👤",
+      "description": "Blacksmith, identified in the case notes for Case File 125. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "125_time",
+      "type": "Time",
+      "name": "700",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 125. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "125_marker",
+      "type": "Marker",
+      "name": "Marker 1143",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 125.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "125_direction",
+      "type": "Direction",
+      "name": "Forward",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 125.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "125_sound",
+      "type": "Sound",
+      "name": "Drygrass",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 125. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Corner Stone - Recovered Case File",
     "fileId": "S11-005A",

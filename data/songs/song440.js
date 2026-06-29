@@ -224,18 +224,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "440_locket",
-    "name": "Locket",
-    "symbol": "*",
-    "description": "Locket was recovered from Stables in Case File 440. It is tied to Glazier, 9:44, and marker 3770.",
-    "discovered": "Case File 440",
-    "firstAppearance": "The Discovery",
-    "connectedSongs": [
-      "440"
-    ],
-    "unknownInfo": "Through and Mud Suction suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "440_locket",
+      "type": "Object",
+      "name": "Locket",
+      "symbol": "🔍",
+      "description": "Locket was recovered from Stables in Case File 440. It is tied to Glazier, 9:44, and marker 3770.",
+      "unknownInfo": "Through and Mud Suction suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "440_location",
+      "type": "Location",
+      "name": "Stables",
+      "symbol": "📍",
+      "description": "The active scene for Case File 440. Recovered field notes place the primary event at Stables.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "440_witness",
+      "type": "Witness",
+      "name": "Glazier",
+      "symbol": "👤",
+      "description": "Glazier, identified in the case notes for Case File 440. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "440_time",
+      "type": "Time",
+      "name": "944",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 440. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "440_marker",
+      "type": "Marker",
+      "name": "Marker 3770",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 440.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "440_direction",
+      "type": "Direction",
+      "name": "Through",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 440.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "440_sound",
+      "type": "Sound",
+      "name": "Mudsuction",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 440. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Discovery - Recovered Case File",
     "fileId": "S37-008A",

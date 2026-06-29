@@ -226,18 +226,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "497_trade_token",
-    "name": "Trade Token",
-    "symbol": "*",
-    "description": "Trade Token was recovered from Sheriff's Office in Case File 497. It is tied to Typesetter, 8:42, and marker 4243.",
-    "discovered": "Case File 497",
-    "firstAppearance": "The Thirst",
-    "connectedSongs": [
-      "497"
-    ],
-    "unknownInfo": "Left and Empty Wagon suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "497_tradetoken",
+      "type": "Object",
+      "name": "Tradetoken",
+      "symbol": "🔍",
+      "description": "Trade Token was recovered from Sheriff's Office in Case File 497. It is tied to Typesetter, 8:42, and marker 4243.",
+      "unknownInfo": "Left and Empty Wagon suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "497_location",
+      "type": "Location",
+      "name": "Sheriff'Soffice",
+      "symbol": "📍",
+      "description": "The active scene for Case File 497. Recovered field notes place the primary event at Sheriff'Soffice.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "497_witness",
+      "type": "Witness",
+      "name": "Typesetter",
+      "symbol": "👤",
+      "description": "Typesetter, identified in the case notes for Case File 497. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "497_time",
+      "type": "Time",
+      "name": "842",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 497. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "497_marker",
+      "type": "Marker",
+      "name": "Marker 4243",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 497.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "497_direction",
+      "type": "Direction",
+      "name": "Left",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 497.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "497_sound",
+      "type": "Sound",
+      "name": "Emptywagon",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 497. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Thirst - Recovered Case File",
     "fileId": "S42-005A",

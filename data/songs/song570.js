@@ -223,18 +223,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "570_ribbon",
-    "name": "Ribbon",
-    "symbol": "*",
-    "description": "Ribbon was recovered from Cooper's Yard in Case File 570. It is tied to Schoolteacher, 2:55, and marker 4852.",
-    "discovered": "Case File 570",
-    "firstAppearance": "What Was Lost",
-    "connectedSongs": [
-      "570"
-    ],
-    "unknownInfo": "Forward and Millstone suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "570_ribbon",
+      "type": "Object",
+      "name": "Ribbon",
+      "symbol": "🔍",
+      "description": "Ribbon was recovered from Cooper's Yard in Case File 570. It is tied to Schoolteacher, 2:55, and marker 4852.",
+      "unknownInfo": "Forward and Millstone suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "570_location",
+      "type": "Location",
+      "name": "Cooper'Syard",
+      "symbol": "📍",
+      "description": "The active scene for Case File 570. Recovered field notes place the primary event at Cooper'Syard.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "570_witness",
+      "type": "Witness",
+      "name": "Schoolteacher",
+      "symbol": "👤",
+      "description": "Schoolteacher, identified in the case notes for Case File 570. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "570_time",
+      "type": "Time",
+      "name": "255",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 570. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "570_marker",
+      "type": "Marker",
+      "name": "Marker 4852",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 570.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "570_direction",
+      "type": "Direction",
+      "name": "Forward",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 570.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "570_sound",
+      "type": "Sound",
+      "name": "Millstone",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 570. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "What Was Lost - Recovered Case File",
     "fileId": "S48-006A",

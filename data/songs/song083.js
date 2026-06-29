@@ -226,18 +226,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "083_charcoal_sketch",
-    "name": "Charcoal Sketch",
-    "symbol": "*",
-    "description": "Charcoal Sketch was recovered from Grain Mill in Case File 083. It is tied to Miller, 1:58, and marker 797.",
-    "discovered": "Case File 083",
-    "firstAppearance": "Recognition",
-    "connectedSongs": [
-      "083"
-    ],
-    "unknownInfo": "Beyond and Knife Scrape suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "083_charcoalsketch",
+      "type": "Object",
+      "name": "Charcoalsketch",
+      "symbol": "🔍",
+      "description": "Charcoal Sketch was recovered from Grain Mill in Case File 083. It is tied to Miller, 1:58, and marker 797.",
+      "unknownInfo": "Beyond and Knife Scrape suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "083_location",
+      "type": "Location",
+      "name": "Grainmill",
+      "symbol": "📍",
+      "description": "The active scene for Case File 083. Recovered field notes place the primary event at Grainmill.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "083_witness",
+      "type": "Witness",
+      "name": "Miller",
+      "symbol": "👤",
+      "description": "Miller, identified in the case notes for Case File 083. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "083_time",
+      "type": "Time",
+      "name": "158",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 083. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "083_marker",
+      "type": "Marker",
+      "name": "Marker 797",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 083.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "083_direction",
+      "type": "Direction",
+      "name": "Beyond",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 083.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "083_sound",
+      "type": "Sound",
+      "name": "Knifescrape",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 083. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "Recognition - Recovered Case File",
     "fileId": "S7-011A",

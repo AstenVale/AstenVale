@@ -227,18 +227,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "586_oil_rag",
-    "name": "Oil Rag",
-    "symbol": "*",
-    "description": "Oil Rag was recovered from The Weir in Case File 586. It is tied to Salt Seller, 1:11, and marker 4988.",
-    "discovered": "Case File 586",
-    "firstAppearance": "The Deathbed Word",
-    "connectedSongs": [
-      "586"
-    ],
-    "unknownInfo": "Beyond and Bone on Stone suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "586_oilrag",
+      "type": "Object",
+      "name": "Oilrag",
+      "symbol": "🔍",
+      "description": "Oil Rag was recovered from The Weir in Case File 586. It is tied to Salt Seller, 1:11, and marker 4988.",
+      "unknownInfo": "Beyond and Bone on Stone suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "586_location",
+      "type": "Location",
+      "name": "Weir",
+      "symbol": "📍",
+      "description": "The active scene for Case File 586. Recovered field notes place the primary event at Weir.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "586_witness",
+      "type": "Witness",
+      "name": "Saltseller",
+      "symbol": "👤",
+      "description": "Saltseller, identified in the case notes for Case File 586. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "586_time",
+      "type": "Time",
+      "name": "111",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 586. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "586_marker",
+      "type": "Marker",
+      "name": "Marker 4988",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 586.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "586_direction",
+      "type": "Direction",
+      "name": "Beyond",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 586.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "586_sound",
+      "type": "Sound",
+      "name": "Boneonstone",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 586. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Deathbed Word - Recovered Case File",
     "fileId": "S49-010A",

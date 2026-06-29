@@ -214,18 +214,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "137_ribbon",
-    "name": "Ribbon",
-    "symbol": "*",
-    "description": "Ribbon was recovered from Tannery in Case File 137. It is tied to Wool Sorter, 12:33, and marker 1243.",
-    "discovered": "Case File 137",
-    "firstAppearance": "The Estate",
-    "connectedSongs": [
-      "137"
-    ],
-    "unknownInfo": "Toward and Tree Fall suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "137_ribbon",
+      "type": "Object",
+      "name": "Ribbon",
+      "symbol": "🔍",
+      "description": "Ribbon was recovered from Tannery in Case File 137. It is tied to Wool Sorter, 12:33, and marker 1243.",
+      "unknownInfo": "Toward and Tree Fall suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "137_location",
+      "type": "Location",
+      "name": "Tannery",
+      "symbol": "📍",
+      "description": "The active scene for Case File 137. Recovered field notes place the primary event at Tannery.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "137_witness",
+      "type": "Witness",
+      "name": "Woolsorter",
+      "symbol": "👤",
+      "description": "Woolsorter, identified in the case notes for Case File 137. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "137_time",
+      "type": "Time",
+      "name": "1233",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 137. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "137_marker",
+      "type": "Marker",
+      "name": "Marker 1243",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 137.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "137_direction",
+      "type": "Direction",
+      "name": "Toward",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 137.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "137_sound",
+      "type": "Sound",
+      "name": "Treefall",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 137. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Estate - Recovered Case File",
     "fileId": "S12-005A",

@@ -215,18 +215,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "513_spool_of_thread",
-    "name": "Spool of Thread",
-    "symbol": "*",
-    "description": "Spool of Thread was recovered from Canning Factory in Case File 513. It is tied to Doctor, 3:30, and marker 4379.",
-    "discovered": "Case File 513",
-    "firstAppearance": "Who Knew",
-    "connectedSongs": [
-      "513"
-    ],
-    "unknownInfo": "Right and Moth Wings suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "513_spoolofthread",
+      "type": "Object",
+      "name": "Spoolofthread",
+      "symbol": "🔍",
+      "description": "Spool of Thread was recovered from Canning Factory in Case File 513. It is tied to Doctor, 3:30, and marker 4379.",
+      "unknownInfo": "Right and Moth Wings suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "513_location",
+      "type": "Location",
+      "name": "Canningfactory",
+      "symbol": "📍",
+      "description": "The active scene for Case File 513. Recovered field notes place the primary event at Canningfactory.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "513_witness",
+      "type": "Witness",
+      "name": "Doctor",
+      "symbol": "👤",
+      "description": "Doctor, identified in the case notes for Case File 513. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "513_time",
+      "type": "Time",
+      "name": "330",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 513. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "513_marker",
+      "type": "Marker",
+      "name": "Marker 4379",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 513.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "513_direction",
+      "type": "Direction",
+      "name": "Right",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 513.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "513_sound",
+      "type": "Sound",
+      "name": "Mothwings",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 513. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "Who Knew - Recovered Case File",
     "fileId": "S43-009A",

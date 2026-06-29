@@ -227,18 +227,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "503_empty_tin",
-    "name": "Empty Tin",
-    "symbol": "*",
-    "description": "Empty Tin was recovered from The Bluff in Case File 503. It is tied to Chandler, 12:00, and marker 4297.",
-    "discovered": "Case File 503",
-    "firstAppearance": "The Break",
-    "connectedSongs": [
-      "503"
-    ],
-    "unknownInfo": "Up the Ridge and Footsteps suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "503_emptytin",
+      "type": "Object",
+      "name": "Emptytin",
+      "symbol": "🔍",
+      "description": "Empty Tin was recovered from The Bluff in Case File 503. It is tied to Chandler, 12:00, and marker 4297.",
+      "unknownInfo": "Up the Ridge and Footsteps suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "503_location",
+      "type": "Location",
+      "name": "Bluff",
+      "symbol": "📍",
+      "description": "The active scene for Case File 503. Recovered field notes place the primary event at Bluff.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "503_witness",
+      "type": "Witness",
+      "name": "Chandler",
+      "symbol": "👤",
+      "description": "Chandler, identified in the case notes for Case File 503. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "503_time",
+      "type": "Time",
+      "name": "1200",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 503. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "503_marker",
+      "type": "Marker",
+      "name": "Marker 4297",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 503.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "503_direction",
+      "type": "Direction",
+      "name": "Uptheridge",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 503.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "503_sound",
+      "type": "Sound",
+      "name": "Footsteps",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 503. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Break - Recovered Case File",
     "fileId": "S42-011A",

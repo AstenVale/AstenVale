@@ -215,18 +215,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "092_rope",
-    "name": "Rope",
-    "symbol": "*",
-    "description": "Rope was recovered from Harness Shop in Case File 092. It is tied to Mechanic, 7:14, and marker 870.",
-    "discovered": "Case File 092",
-    "firstAppearance": "The Investigation",
-    "connectedSongs": [
-      "092"
-    ],
-    "unknownInfo": "Along the Creek and Kettle Boil suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "092_rope",
+      "type": "Object",
+      "name": "Rope",
+      "symbol": "🔍",
+      "description": "Rope was recovered from Harness Shop in Case File 092. It is tied to Mechanic, 7:14, and marker 870.",
+      "unknownInfo": "Along the Creek and Kettle Boil suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "092_location",
+      "type": "Location",
+      "name": "Harnessshop",
+      "symbol": "📍",
+      "description": "The active scene for Case File 092. Recovered field notes place the primary event at Harnessshop.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "092_witness",
+      "type": "Witness",
+      "name": "Mechanic",
+      "symbol": "👤",
+      "description": "Mechanic, identified in the case notes for Case File 092. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "092_time",
+      "type": "Time",
+      "name": "714",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 092. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "092_marker",
+      "type": "Marker",
+      "name": "Marker 870",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 092.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "092_direction",
+      "type": "Direction",
+      "name": "Alongthecreek",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 092.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "092_sound",
+      "type": "Sound",
+      "name": "Kettleboil",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 092. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Investigation - Recovered Case File",
     "fileId": "S8-008A",

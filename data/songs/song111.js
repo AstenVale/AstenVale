@@ -215,18 +215,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "111_tin_star",
-    "name": "Tin Star",
-    "symbol": "*",
-    "description": "Tin Star was recovered from Calico Alley in Case File 111. It is tied to Judge, 1:11, and marker 1025.",
-    "discovered": "Case File 111",
-    "firstAppearance": "The Overgrown Path",
-    "connectedSongs": [
-      "111"
-    ],
-    "unknownInfo": "Toward and Cellar Stairs suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "111_tinstar",
+      "type": "Object",
+      "name": "Tinstar",
+      "symbol": "🔍",
+      "description": "Tin Star was recovered from Calico Alley in Case File 111. It is tied to Judge, 1:11, and marker 1025.",
+      "unknownInfo": "Toward and Cellar Stairs suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "111_location",
+      "type": "Location",
+      "name": "Calicoalley",
+      "symbol": "📍",
+      "description": "The active scene for Case File 111. Recovered field notes place the primary event at Calicoalley.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "111_witness",
+      "type": "Witness",
+      "name": "Judge",
+      "symbol": "👤",
+      "description": "Judge, identified in the case notes for Case File 111. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "111_time",
+      "type": "Time",
+      "name": "111",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 111. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "111_marker",
+      "type": "Marker",
+      "name": "Marker 1025",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 111.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "111_direction",
+      "type": "Direction",
+      "name": "Toward",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 111.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "111_sound",
+      "type": "Sound",
+      "name": "Cellarstairs",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 111. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Overgrown Path - Recovered Case File",
     "fileId": "S10-003A",

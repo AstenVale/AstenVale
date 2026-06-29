@@ -214,18 +214,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "468_coin",
-    "name": "Coin",
-    "symbol": "*",
-    "description": "Coin was recovered from Sheep Fold in Case File 468. It is tied to Drifter, 1:11, and marker 4006.",
-    "discovered": "Case File 468",
-    "firstAppearance": "The Finding",
-    "connectedSongs": [
-      "468"
-    ],
-    "unknownInfo": "Ahead and Saw Cutting suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "468_coin",
+      "type": "Object",
+      "name": "Coin",
+      "symbol": "🔍",
+      "description": "Coin was recovered from Sheep Fold in Case File 468. It is tied to Drifter, 1:11, and marker 4006.",
+      "unknownInfo": "Ahead and Saw Cutting suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "468_location",
+      "type": "Location",
+      "name": "Sheepfold",
+      "symbol": "📍",
+      "description": "The active scene for Case File 468. Recovered field notes place the primary event at Sheepfold.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "468_witness",
+      "type": "Witness",
+      "name": "Drifter",
+      "symbol": "👤",
+      "description": "Drifter, identified in the case notes for Case File 468. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "468_time",
+      "type": "Time",
+      "name": "111",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 468. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "468_marker",
+      "type": "Marker",
+      "name": "Marker 4006",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 468.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "468_direction",
+      "type": "Direction",
+      "name": "Ahead",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 468.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "468_sound",
+      "type": "Sound",
+      "name": "Sawcutting",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 468. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Finding - Recovered Case File",
     "fileId": "S39-012A",

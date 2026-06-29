@@ -214,18 +214,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "449_folded_cloth",
-    "name": "Folded Cloth",
-    "symbol": "*",
-    "description": "Folded Cloth was recovered from Library in Case File 449. It is tied to Furrier, 11:40, and marker 3843.",
-    "discovered": "Case File 449",
-    "firstAppearance": "The Code",
-    "connectedSongs": [
-      "449"
-    ],
-    "unknownInfo": "Beyond and Axe on Wood suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "449_foldedcloth",
+      "type": "Object",
+      "name": "Foldedcloth",
+      "symbol": "🔍",
+      "description": "Folded Cloth was recovered from Library in Case File 449. It is tied to Furrier, 11:40, and marker 3843.",
+      "unknownInfo": "Beyond and Axe on Wood suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "449_location",
+      "type": "Location",
+      "name": "Library",
+      "symbol": "📍",
+      "description": "The active scene for Case File 449. Recovered field notes place the primary event at Library.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "449_witness",
+      "type": "Witness",
+      "name": "Furrier",
+      "symbol": "👤",
+      "description": "Furrier, identified in the case notes for Case File 449. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "449_time",
+      "type": "Time",
+      "name": "1140",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 449. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "449_marker",
+      "type": "Marker",
+      "name": "Marker 3843",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 449.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "449_direction",
+      "type": "Direction",
+      "name": "Beyond",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 449.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "449_sound",
+      "type": "Sound",
+      "name": "Axeonwood",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 449. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Code - Recovered Case File",
     "fileId": "S38-005A",

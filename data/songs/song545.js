@@ -226,18 +226,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "545_charred_paper",
-    "name": "Charred Paper",
-    "symbol": "*",
-    "description": "Charred Paper was recovered from South Fork in Case File 545. It is tied to Furrier, 10:05, and marker 4643.",
-    "discovered": "Case File 545",
-    "firstAppearance": "The Damage",
-    "connectedSongs": [
-      "545"
-    ],
-    "unknownInfo": "Right and Pen on Paper suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "545_charredpaper",
+      "type": "Object",
+      "name": "Charredpaper",
+      "symbol": "🔍",
+      "description": "Charred Paper was recovered from South Fork in Case File 545. It is tied to Furrier, 10:05, and marker 4643.",
+      "unknownInfo": "Right and Pen on Paper suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "545_location",
+      "type": "Location",
+      "name": "Southfork",
+      "symbol": "📍",
+      "description": "The active scene for Case File 545. Recovered field notes place the primary event at Southfork.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "545_witness",
+      "type": "Witness",
+      "name": "Furrier",
+      "symbol": "👤",
+      "description": "Furrier, identified in the case notes for Case File 545. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "545_time",
+      "type": "Time",
+      "name": "1005",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 545. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "545_marker",
+      "type": "Marker",
+      "name": "Marker 4643",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 545.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "545_direction",
+      "type": "Direction",
+      "name": "Right",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 545.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "545_sound",
+      "type": "Sound",
+      "name": "Penonpaper",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 545. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Damage - Recovered Case File",
     "fileId": "S46-005A",

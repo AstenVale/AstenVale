@@ -225,18 +225,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "178_stamp",
-    "name": "Stamp",
-    "symbol": "*",
-    "description": "Stamp was recovered from Banker's House in Case File 178. It is tied to Groundskeeper, 5:13, and marker 1588.",
-    "discovered": "Case File 178",
-    "firstAppearance": "Someone Moved the Light",
-    "connectedSongs": [
-      "178"
-    ],
-    "unknownInfo": "Down and Moth Wings suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "178_stamp",
+      "type": "Object",
+      "name": "Stamp",
+      "symbol": "🔍",
+      "description": "Stamp was recovered from Banker's House in Case File 178. It is tied to Groundskeeper, 5:13, and marker 1588.",
+      "unknownInfo": "Down and Moth Wings suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "178_location",
+      "type": "Location",
+      "name": "Banker'Shouse",
+      "symbol": "📍",
+      "description": "The active scene for Case File 178. Recovered field notes place the primary event at Banker'Shouse.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "178_witness",
+      "type": "Witness",
+      "name": "Groundskeeper",
+      "symbol": "👤",
+      "description": "Groundskeeper, identified in the case notes for Case File 178. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "178_time",
+      "type": "Time",
+      "name": "513",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 178. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "178_marker",
+      "type": "Marker",
+      "name": "Marker 1588",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 178.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "178_direction",
+      "type": "Direction",
+      "name": "Down",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 178.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "178_sound",
+      "type": "Sound",
+      "name": "Mothwings",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 178. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "Someone Moved the Light - Recovered Case File",
     "fileId": "S15-010A",

@@ -214,18 +214,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "515_boot",
-    "name": "Boot",
-    "symbol": "*",
-    "description": "Boot was recovered from Silo Row in Case File 515. It is tied to Wool Sorter, 6:06, and marker 4397.",
-    "discovered": "Case File 515",
-    "firstAppearance": "The Old Record",
-    "connectedSongs": [
-      "515"
-    ],
-    "unknownInfo": "Beyond and Floorboard suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "515_boot",
+      "type": "Object",
+      "name": "Boot",
+      "symbol": "🔍",
+      "description": "Boot was recovered from Silo Row in Case File 515. It is tied to Wool Sorter, 6:06, and marker 4397.",
+      "unknownInfo": "Beyond and Floorboard suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "515_location",
+      "type": "Location",
+      "name": "Silorow",
+      "symbol": "📍",
+      "description": "The active scene for Case File 515. Recovered field notes place the primary event at Silorow.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "515_witness",
+      "type": "Witness",
+      "name": "Woolsorter",
+      "symbol": "👤",
+      "description": "Woolsorter, identified in the case notes for Case File 515. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "515_time",
+      "type": "Time",
+      "name": "606",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 515. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "515_marker",
+      "type": "Marker",
+      "name": "Marker 4397",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 515.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "515_direction",
+      "type": "Direction",
+      "name": "Beyond",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 515.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "515_sound",
+      "type": "Sound",
+      "name": "Floorboard",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 515. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Old Record - Recovered Case File",
     "fileId": "S43-011A",

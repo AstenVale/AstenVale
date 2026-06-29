@@ -228,18 +228,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "326_hollow_acorn",
-    "name": "Hollow Acorn",
-    "symbol": "*",
-    "description": "Hollow Acorn was recovered from Barn in Case File 326. It is tied to The Handless Man, 3:58, and marker 2816.",
-    "discovered": "Case File 326",
-    "firstAppearance": "The Old Transmitter",
-    "connectedSongs": [
-      "326"
-    ],
-    "unknownInfo": "Further In and Nail Pulled from Wood suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "326_hollowacorn",
+      "type": "Object",
+      "name": "Hollowacorn",
+      "symbol": "🔍",
+      "description": "Hollow Acorn was recovered from Barn in Case File 326. It is tied to The Handless Man, 3:58, and marker 2816.",
+      "unknownInfo": "Further In and Nail Pulled from Wood suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "326_location",
+      "type": "Location",
+      "name": "Barn",
+      "symbol": "📍",
+      "description": "The active scene for Case File 326. Recovered field notes place the primary event at Barn.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "326_witness",
+      "type": "Witness",
+      "name": "Handless Man",
+      "symbol": "👤",
+      "description": "Handless Man, identified in the case notes for Case File 326. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "326_time",
+      "type": "Time",
+      "name": "358",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 326. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "326_marker",
+      "type": "Marker",
+      "name": "Marker 2816",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 326.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "326_direction",
+      "type": "Direction",
+      "name": "Furtherin",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 326.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "326_sound",
+      "type": "Sound",
+      "name": "Nailpulledfromwood",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 326. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Old Transmitter - Recovered Case File",
     "fileId": "S28-002A",

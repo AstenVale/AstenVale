@@ -227,18 +227,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "543_straight_razor",
-    "name": "Straight Razor",
-    "symbol": "*",
-    "description": "Straight Razor was recovered from Clock Tower in Case File 543. It is tied to Retired Soldier, 11:17, and marker 4625.",
-    "discovered": "Case File 543",
-    "firstAppearance": "What the Storm Did",
-    "connectedSongs": [
-      "543"
-    ],
-    "unknownInfo": "East and Fence Wire Hum suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "543_straightrazor",
+      "type": "Object",
+      "name": "Straightrazor",
+      "symbol": "🔍",
+      "description": "Straight Razor was recovered from Clock Tower in Case File 543. It is tied to Retired Soldier, 11:17, and marker 4625.",
+      "unknownInfo": "East and Fence Wire Hum suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "543_location",
+      "type": "Location",
+      "name": "Clocktower",
+      "symbol": "📍",
+      "description": "The active scene for Case File 543. Recovered field notes place the primary event at Clocktower.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "543_witness",
+      "type": "Witness",
+      "name": "Retiredsoldier",
+      "symbol": "👤",
+      "description": "Retiredsoldier, identified in the case notes for Case File 543. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "543_time",
+      "type": "Time",
+      "name": "1117",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 543. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "543_marker",
+      "type": "Marker",
+      "name": "Marker 4625",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 543.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "543_direction",
+      "type": "Direction",
+      "name": "East",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 543.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "543_sound",
+      "type": "Sound",
+      "name": "Fencewirehum",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 543. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "What the Storm Did - Recovered Case File",
     "fileId": "S46-003A",

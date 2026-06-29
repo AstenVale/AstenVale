@@ -215,18 +215,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "593_photograph",
-    "name": "Photograph",
-    "symbol": "*",
-    "description": "Photograph was recovered from Doctor's Office in Case File 593. It is tied to Fisherman, 1:33, and marker 5043.",
-    "discovered": "Case File 593",
-    "firstAppearance": "The Vault Opens",
-    "connectedSongs": [
-      "593"
-    ],
-    "unknownInfo": "Straight Down and Dog Bark at Nothing suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "593_photograph",
+      "type": "Object",
+      "name": "Photograph",
+      "symbol": "🔍",
+      "description": "Photograph was recovered from Doctor's Office in Case File 593. It is tied to Fisherman, 1:33, and marker 5043.",
+      "unknownInfo": "Straight Down and Dog Bark at Nothing suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "593_location",
+      "type": "Location",
+      "name": "Doctor'Soffice",
+      "symbol": "📍",
+      "description": "The active scene for Case File 593. Recovered field notes place the primary event at Doctor'Soffice.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "593_witness",
+      "type": "Witness",
+      "name": "Fisherman",
+      "symbol": "👤",
+      "description": "Fisherman, identified in the case notes for Case File 593. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "593_time",
+      "type": "Time",
+      "name": "133",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 593. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "593_marker",
+      "type": "Marker",
+      "name": "Marker 5043",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 593.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "593_direction",
+      "type": "Direction",
+      "name": "Straightdown",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 593.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "593_sound",
+      "type": "Sound",
+      "name": "Dogbarkatnothing",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 593. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Vault Opens - Recovered Case File",
     "fileId": "S50-005A",

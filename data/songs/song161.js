@@ -216,18 +216,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "161_wax_seal",
-    "name": "Wax Seal",
-    "symbol": "*",
-    "description": "Wax Seal was recovered from Saloon in Case File 161. It is tied to Census Taker, 2:38, and marker 1443.",
-    "discovered": "Case File 161",
-    "firstAppearance": "What the Flood Took",
-    "connectedSongs": [
-      "161"
-    ],
-    "unknownInfo": "Into the Dark and Lid of a Tin suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "161_waxseal",
+      "type": "Object",
+      "name": "Waxseal",
+      "symbol": "🔍",
+      "description": "Wax Seal was recovered from Saloon in Case File 161. It is tied to Census Taker, 2:38, and marker 1443.",
+      "unknownInfo": "Into the Dark and Lid of a Tin suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "161_location",
+      "type": "Location",
+      "name": "Saloon",
+      "symbol": "📍",
+      "description": "The active scene for Case File 161. Recovered field notes place the primary event at Saloon.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "161_witness",
+      "type": "Witness",
+      "name": "Censustaker",
+      "symbol": "👤",
+      "description": "Censustaker, identified in the case notes for Case File 161. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "161_time",
+      "type": "Time",
+      "name": "238",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 161. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "161_marker",
+      "type": "Marker",
+      "name": "Marker 1443",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 161.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "161_direction",
+      "type": "Direction",
+      "name": "Intothedark",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 161.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "161_sound",
+      "type": "Sound",
+      "name": "Lidofatin",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 161. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "What the Flood Took - Recovered Case File",
     "fileId": "S14-005A",

@@ -215,18 +215,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "376_leather_strap",
-    "name": "Leather Strap",
-    "symbol": "*",
-    "description": "Leather Strap was recovered from Birch Stand in Case File 376. It is tied to Schoolteacher, 10:22, and marker 3234.",
-    "discovered": "Case File 376",
-    "firstAppearance": "The Dive",
-    "connectedSongs": [
-      "376"
-    ],
-    "unknownInfo": "Under and Lantern Glass suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "376_leatherstrap",
+      "type": "Object",
+      "name": "Leatherstrap",
+      "symbol": "🔍",
+      "description": "Leather Strap was recovered from Birch Stand in Case File 376. It is tied to Schoolteacher, 10:22, and marker 3234.",
+      "unknownInfo": "Under and Lantern Glass suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "376_location",
+      "type": "Location",
+      "name": "Birchstand",
+      "symbol": "📍",
+      "description": "The active scene for Case File 376. Recovered field notes place the primary event at Birchstand.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "376_witness",
+      "type": "Witness",
+      "name": "Schoolteacher",
+      "symbol": "👤",
+      "description": "Schoolteacher, identified in the case notes for Case File 376. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "376_time",
+      "type": "Time",
+      "name": "1022",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 376. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "376_marker",
+      "type": "Marker",
+      "name": "Marker 3234",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 376.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "376_direction",
+      "type": "Direction",
+      "name": "Under",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 376.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "376_sound",
+      "type": "Sound",
+      "name": "Lanternglass",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 376. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Dive - Recovered Case File",
     "fileId": "S32-004A",

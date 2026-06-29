@@ -217,18 +217,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "140_string_of_beads",
-    "name": "String of Beads",
-    "symbol": "*",
-    "description": "String of Beads was recovered from The Ridge in Case File 140. It is tied to Rope Maker, 6:53, and marker 1270.",
-    "discovered": "Case File 140",
-    "firstAppearance": "The Deed",
-    "connectedSongs": [
-      "140"
-    ],
-    "unknownInfo": "Off the Road and Millstone suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "140_stringofbeads",
+      "type": "Object",
+      "name": "Stringofbeads",
+      "symbol": "🔍",
+      "description": "String of Beads was recovered from The Ridge in Case File 140. It is tied to Rope Maker, 6:53, and marker 1270.",
+      "unknownInfo": "Off the Road and Millstone suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "140_location",
+      "type": "Location",
+      "name": "Ridge",
+      "symbol": "📍",
+      "description": "The active scene for Case File 140. Recovered field notes place the primary event at Ridge.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "140_witness",
+      "type": "Witness",
+      "name": "Ropemaker",
+      "symbol": "👤",
+      "description": "Ropemaker, identified in the case notes for Case File 140. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "140_time",
+      "type": "Time",
+      "name": "653",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 140. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "140_marker",
+      "type": "Marker",
+      "name": "Marker 1270",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 140.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "140_direction",
+      "type": "Direction",
+      "name": "Offtheroad",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 140.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "140_sound",
+      "type": "Sound",
+      "name": "Millstone",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 140. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Deed - Recovered Case File",
     "fileId": "S12-008A",

@@ -225,18 +225,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "588_receipt",
-    "name": "Receipt",
-    "symbol": "*",
-    "description": "Receipt was recovered from The Pit in Case File 588. It is tied to Barber, 8:17, and marker 5006.",
-    "discovered": "Case File 588",
-    "firstAppearance": "The Complete Account",
-    "connectedSongs": [
-      "588"
-    ],
-    "unknownInfo": "Down and Mud Suction suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "588_receipt",
+      "type": "Object",
+      "name": "Receipt",
+      "symbol": "🔍",
+      "description": "Receipt was recovered from The Pit in Case File 588. It is tied to Barber, 8:17, and marker 5006.",
+      "unknownInfo": "Down and Mud Suction suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "588_location",
+      "type": "Location",
+      "name": "Pit",
+      "symbol": "📍",
+      "description": "The active scene for Case File 588. Recovered field notes place the primary event at Pit.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "588_witness",
+      "type": "Witness",
+      "name": "Barber",
+      "symbol": "👤",
+      "description": "Barber, identified in the case notes for Case File 588. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "588_time",
+      "type": "Time",
+      "name": "817",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 588. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "588_marker",
+      "type": "Marker",
+      "name": "Marker 5006",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 588.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "588_direction",
+      "type": "Direction",
+      "name": "Down",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 588.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "588_sound",
+      "type": "Sound",
+      "name": "Mudsuction",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 588. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Complete Account - Recovered Case File",
     "fileId": "S49-012A",

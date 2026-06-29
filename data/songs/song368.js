@@ -224,18 +224,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "368_prayer_card",
-    "name": "Prayer Card",
-    "symbol": "*",
-    "description": "Prayer Card was recovered from Cabin in Case File 368. It is tied to Weaver, 12:17, and marker 3170.",
-    "discovered": "Case File 368",
-    "firstAppearance": "The Arrangement",
-    "connectedSongs": [
-      "368"
-    ],
-    "unknownInfo": "Right and Cellar Door suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "368_prayercard",
+      "type": "Object",
+      "name": "Prayercard",
+      "symbol": "🔍",
+      "description": "Prayer Card was recovered from Cabin in Case File 368. It is tied to Weaver, 12:17, and marker 3170.",
+      "unknownInfo": "Right and Cellar Door suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "368_location",
+      "type": "Location",
+      "name": "Cabin",
+      "symbol": "📍",
+      "description": "The active scene for Case File 368. Recovered field notes place the primary event at Cabin.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "368_witness",
+      "type": "Witness",
+      "name": "Weaver",
+      "symbol": "👤",
+      "description": "Weaver, identified in the case notes for Case File 368. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "368_time",
+      "type": "Time",
+      "name": "1217",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 368. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "368_marker",
+      "type": "Marker",
+      "name": "Marker 3170",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 368.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "368_direction",
+      "type": "Direction",
+      "name": "Right",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 368.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "368_sound",
+      "type": "Sound",
+      "name": "Cellardoor",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 368. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Arrangement - Recovered Case File",
     "fileId": "S31-008A",

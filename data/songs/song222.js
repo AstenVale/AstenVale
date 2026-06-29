@@ -216,18 +216,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "222_signet_ring",
-    "name": "Signet Ring",
-    "symbol": "*",
-    "description": "Signet Ring was recovered from Grain Mill in Case File 222. It is tied to Station Master, 2:19, and marker 1952.",
-    "discovered": "Case File 222",
-    "firstAppearance": "Cut Off",
-    "connectedSongs": [
-      "222"
-    ],
-    "unknownInfo": "Toward and Clock Ticking suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "222_signetring",
+      "type": "Object",
+      "name": "Signetring",
+      "symbol": "🔍",
+      "description": "Signet Ring was recovered from Grain Mill in Case File 222. It is tied to Station Master, 2:19, and marker 1952.",
+      "unknownInfo": "Toward and Clock Ticking suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "222_location",
+      "type": "Location",
+      "name": "Grainmill",
+      "symbol": "📍",
+      "description": "The active scene for Case File 222. Recovered field notes place the primary event at Grainmill.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "222_witness",
+      "type": "Witness",
+      "name": "Stationmaster",
+      "symbol": "👤",
+      "description": "Stationmaster, identified in the case notes for Case File 222. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "222_time",
+      "type": "Time",
+      "name": "219",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 222. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "222_marker",
+      "type": "Marker",
+      "name": "Marker 1952",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 222.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "222_direction",
+      "type": "Direction",
+      "name": "Toward",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 222.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "222_sound",
+      "type": "Sound",
+      "name": "Clockticking",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 222. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "Cut Off - Recovered Case File",
     "fileId": "S19-006A",

@@ -224,18 +224,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "172_ribbon",
-    "name": "Ribbon",
-    "symbol": "*",
-    "description": "Ribbon was recovered from Saloon in Case File 172. It is tied to Groundskeeper, 3:49, and marker 1534.",
-    "discovered": "Case File 172",
-    "firstAppearance": "What the Lantern Showed",
-    "connectedSongs": [
-      "172"
-    ],
-    "unknownInfo": "Away and Shutter Bang suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "172_ribbon",
+      "type": "Object",
+      "name": "Ribbon",
+      "symbol": "🔍",
+      "description": "Ribbon was recovered from Saloon in Case File 172. It is tied to Groundskeeper, 3:49, and marker 1534.",
+      "unknownInfo": "Away and Shutter Bang suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "172_location",
+      "type": "Location",
+      "name": "Saloon",
+      "symbol": "📍",
+      "description": "The active scene for Case File 172. Recovered field notes place the primary event at Saloon.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "172_witness",
+      "type": "Witness",
+      "name": "Groundskeeper",
+      "symbol": "👤",
+      "description": "Groundskeeper, identified in the case notes for Case File 172. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "172_time",
+      "type": "Time",
+      "name": "349",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 172. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "172_marker",
+      "type": "Marker",
+      "name": "Marker 1534",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 172.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "172_direction",
+      "type": "Direction",
+      "name": "Away",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 172.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "172_sound",
+      "type": "Sound",
+      "name": "Shutterbang",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 172. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "What the Lantern Showed - Recovered Case File",
     "fileId": "S15-004A",

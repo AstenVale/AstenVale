@@ -224,18 +224,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "370_flint_stone",
-    "name": "Flint Stone",
-    "symbol": "*",
-    "description": "Flint Stone was recovered from Print Shop in Case File 370. It is tied to Barber, 2:55, and marker 3188.",
-    "discovered": "Case File 370",
-    "firstAppearance": "What the Garden Hides",
-    "connectedSongs": [
-      "370"
-    ],
-    "unknownInfo": "Away and Thunder suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "370_flintstone",
+      "type": "Object",
+      "name": "Flintstone",
+      "symbol": "🔍",
+      "description": "Flint Stone was recovered from Print Shop in Case File 370. It is tied to Barber, 2:55, and marker 3188.",
+      "unknownInfo": "Away and Thunder suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "370_location",
+      "type": "Location",
+      "name": "Printshop",
+      "symbol": "📍",
+      "description": "The active scene for Case File 370. Recovered field notes place the primary event at Printshop.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "370_witness",
+      "type": "Witness",
+      "name": "Barber",
+      "symbol": "👤",
+      "description": "Barber, identified in the case notes for Case File 370. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "370_time",
+      "type": "Time",
+      "name": "255",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 370. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "370_marker",
+      "type": "Marker",
+      "name": "Marker 3188",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 370.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "370_direction",
+      "type": "Direction",
+      "name": "Away",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 370.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "370_sound",
+      "type": "Sound",
+      "name": "Thunder",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 370. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "What the Garden Hides - Recovered Case File",
     "fileId": "S31-010A",

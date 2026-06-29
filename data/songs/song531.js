@@ -215,18 +215,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "531_journal",
-    "name": "Journal",
-    "symbol": "*",
-    "description": "Journal was recovered from The Quarry Pool in Case File 531. It is tied to Widow, 4:03, and marker 4525.",
-    "discovered": "Case File 531",
-    "firstAppearance": "The Followers",
-    "connectedSongs": [
-      "531"
-    ],
-    "unknownInfo": "Ahead and Shutter Bang suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "531_journal",
+      "type": "Object",
+      "name": "Journal",
+      "symbol": "🔍",
+      "description": "Journal was recovered from The Quarry Pool in Case File 531. It is tied to Widow, 4:03, and marker 4525.",
+      "unknownInfo": "Ahead and Shutter Bang suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "531_location",
+      "type": "Location",
+      "name": "Quarry Pool",
+      "symbol": "📍",
+      "description": "The active scene for Case File 531. Recovered field notes place the primary event at Quarry Pool.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "531_witness",
+      "type": "Witness",
+      "name": "Widow",
+      "symbol": "👤",
+      "description": "Widow, identified in the case notes for Case File 531. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "531_time",
+      "type": "Time",
+      "name": "403",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 531. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "531_marker",
+      "type": "Marker",
+      "name": "Marker 4525",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 531.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "531_direction",
+      "type": "Direction",
+      "name": "Ahead",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 531.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "531_sound",
+      "type": "Sound",
+      "name": "Shutterbang",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 531. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Followers - Recovered Case File",
     "fileId": "S45-003A",

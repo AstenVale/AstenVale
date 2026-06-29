@@ -224,18 +224,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "417_wax_seal",
-    "name": "Wax Seal",
-    "symbol": "*",
-    "description": "Wax Seal was recovered from Sawmill in Case File 417. It is tied to Stranger, 7:02, and marker 3579.",
-    "discovered": "Case File 417",
-    "firstAppearance": "The Burn Order",
-    "connectedSongs": [
-      "417"
-    ],
-    "unknownInfo": "Left and Dog Bark at Nothing suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "417_waxseal",
+      "type": "Object",
+      "name": "Waxseal",
+      "symbol": "🔍",
+      "description": "Wax Seal was recovered from Sawmill in Case File 417. It is tied to Stranger, 7:02, and marker 3579.",
+      "unknownInfo": "Left and Dog Bark at Nothing suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "417_location",
+      "type": "Location",
+      "name": "Sawmill",
+      "symbol": "📍",
+      "description": "The active scene for Case File 417. Recovered field notes place the primary event at Sawmill.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "417_witness",
+      "type": "Witness",
+      "name": "Stranger",
+      "symbol": "👤",
+      "description": "Stranger, identified in the case notes for Case File 417. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "417_time",
+      "type": "Time",
+      "name": "702",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 417. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "417_marker",
+      "type": "Marker",
+      "name": "Marker 3579",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 417.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "417_direction",
+      "type": "Direction",
+      "name": "Left",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 417.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "417_sound",
+      "type": "Sound",
+      "name": "Dogbarkatnothing",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 417. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Burn Order - Recovered Case File",
     "fileId": "S35-009A",

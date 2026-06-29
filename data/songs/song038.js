@@ -226,18 +226,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "038_spool_of_thread",
-    "name": "Spool of Thread",
-    "symbol": "*",
-    "description": "Spool of Thread was recovered from The Weir in Case File 038. It is tied to Conductor, 5:21, and marker 416.",
-    "discovered": "Case File 038",
-    "firstAppearance": "The Drowned Watch",
-    "connectedSongs": [
-      "038"
-    ],
-    "unknownInfo": "Toward and Ash Settling suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "038_spoolofthread",
+      "type": "Object",
+      "name": "Spoolofthread",
+      "symbol": "🔍",
+      "description": "Spool of Thread was recovered from The Weir in Case File 038. It is tied to Conductor, 5:21, and marker 416.",
+      "unknownInfo": "Toward and Ash Settling suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "038_location",
+      "type": "Location",
+      "name": "Weir",
+      "symbol": "📍",
+      "description": "The active scene for Case File 038. Recovered field notes place the primary event at Weir.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "038_witness",
+      "type": "Witness",
+      "name": "Conductor",
+      "symbol": "👤",
+      "description": "Conductor, identified in the case notes for Case File 038. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "038_time",
+      "type": "Time",
+      "name": "521",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 038. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "038_marker",
+      "type": "Marker",
+      "name": "Marker 416",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 038.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "038_direction",
+      "type": "Direction",
+      "name": "Toward",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 038.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "038_sound",
+      "type": "Sound",
+      "name": "Ashsettling",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 038. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Drowned Watch - Recovered Case File",
     "fileId": "S4-002A",

@@ -227,18 +227,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "590_hollow_acorn",
-    "name": "Hollow Acorn",
-    "symbol": "*",
-    "description": "Hollow Acorn was recovered from Undertaker's Hall in Case File 590. It is tied to Stranger, 11:40, and marker 5016.",
-    "discovered": "Case File 590",
-    "firstAppearance": "The Connection",
-    "connectedSongs": [
-      "590"
-    ],
-    "unknownInfo": "Toward the River and Bell Toll suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "590_hollowacorn",
+      "type": "Object",
+      "name": "Hollowacorn",
+      "symbol": "🔍",
+      "description": "Hollow Acorn was recovered from Undertaker's Hall in Case File 590. It is tied to Stranger, 11:40, and marker 5016.",
+      "unknownInfo": "Toward the River and Bell Toll suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "590_location",
+      "type": "Location",
+      "name": "Undertaker'Shall",
+      "symbol": "📍",
+      "description": "The active scene for Case File 590. Recovered field notes place the primary event at Undertaker'Shall.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "590_witness",
+      "type": "Witness",
+      "name": "Stranger",
+      "symbol": "👤",
+      "description": "Stranger, identified in the case notes for Case File 590. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "590_time",
+      "type": "Time",
+      "name": "1140",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 590. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "590_marker",
+      "type": "Marker",
+      "name": "Marker 5016",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 590.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "590_direction",
+      "type": "Direction",
+      "name": "Towardtheriver",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 590.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "590_sound",
+      "type": "Sound",
+      "name": "Belltoll",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 590. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Connection - Recovered Case File",
     "fileId": "S50-002A",

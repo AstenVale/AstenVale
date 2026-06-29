@@ -226,18 +226,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "180_string_of_beads",
-    "name": "String of Beads",
-    "symbol": "*",
-    "description": "String of Beads was recovered from Courthouse in Case File 180. It is tied to Woodsman, 11:29, and marker 1606.",
-    "discovered": "Case File 180",
-    "firstAppearance": "The Last Flame",
-    "connectedSongs": [
-      "180"
-    ],
-    "unknownInfo": "Into the Dark and Shutter Bang suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "180_stringofbeads",
+      "type": "Object",
+      "name": "Stringofbeads",
+      "symbol": "🔍",
+      "description": "String of Beads was recovered from Courthouse in Case File 180. It is tied to Woodsman, 11:29, and marker 1606.",
+      "unknownInfo": "Into the Dark and Shutter Bang suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "180_location",
+      "type": "Location",
+      "name": "Courthouse",
+      "symbol": "📍",
+      "description": "The active scene for Case File 180. Recovered field notes place the primary event at Courthouse.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "180_witness",
+      "type": "Witness",
+      "name": "Woodsman",
+      "symbol": "👤",
+      "description": "Woodsman, identified in the case notes for Case File 180. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "180_time",
+      "type": "Time",
+      "name": "1129",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 180. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "180_marker",
+      "type": "Marker",
+      "name": "Marker 1606",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 180.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "180_direction",
+      "type": "Direction",
+      "name": "Intothedark",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 180.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "180_sound",
+      "type": "Sound",
+      "name": "Shutterbang",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 180. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Last Flame - Recovered Case File",
     "fileId": "S15-012A",

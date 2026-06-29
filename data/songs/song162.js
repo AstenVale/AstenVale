@@ -215,18 +215,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "162_charred_paper",
-    "name": "Charred Paper",
-    "symbol": "*",
-    "description": "Charred Paper was recovered from Cider House in Case File 162. It is tied to Sheriff, 11:29, and marker 1452.",
-    "discovered": "Case File 162",
-    "firstAppearance": "What It Left",
-    "connectedSongs": [
-      "162"
-    ],
-    "unknownInfo": "Left and Latch Drop suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "162_charredpaper",
+      "type": "Object",
+      "name": "Charredpaper",
+      "symbol": "🔍",
+      "description": "Charred Paper was recovered from Cider House in Case File 162. It is tied to Sheriff, 11:29, and marker 1452.",
+      "unknownInfo": "Left and Latch Drop suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "162_location",
+      "type": "Location",
+      "name": "Ciderhouse",
+      "symbol": "📍",
+      "description": "The active scene for Case File 162. Recovered field notes place the primary event at Ciderhouse.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "162_witness",
+      "type": "Witness",
+      "name": "Sheriff",
+      "symbol": "👤",
+      "description": "Sheriff, identified in the case notes for Case File 162. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "162_time",
+      "type": "Time",
+      "name": "1129",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 162. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "162_marker",
+      "type": "Marker",
+      "name": "Marker 1452",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 162.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "162_direction",
+      "type": "Direction",
+      "name": "Left",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 162.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "162_sound",
+      "type": "Sound",
+      "name": "Latchdrop",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 162. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "What It Left - Recovered Case File",
     "fileId": "S14-006A",

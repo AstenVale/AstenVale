@@ -225,18 +225,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "478_telegram",
-    "name": "Telegram",
-    "symbol": "*",
-    "description": "Telegram was recovered from Schoolhouse in Case File 478. It is tied to Census Taker, 4:47, and marker 4088.",
-    "discovered": "Case File 478",
-    "firstAppearance": "The Decoder",
-    "connectedSongs": [
-      "478"
-    ],
-    "unknownInfo": "Along the Creek and Cannon Bolt suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "478_telegram",
+      "type": "Object",
+      "name": "Telegram",
+      "symbol": "🔍",
+      "description": "Telegram was recovered from Schoolhouse in Case File 478. It is tied to Census Taker, 4:47, and marker 4088.",
+      "unknownInfo": "Along the Creek and Cannon Bolt suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "478_location",
+      "type": "Location",
+      "name": "Schoolhouse",
+      "symbol": "📍",
+      "description": "The active scene for Case File 478. Recovered field notes place the primary event at Schoolhouse.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "478_witness",
+      "type": "Witness",
+      "name": "Censustaker",
+      "symbol": "👤",
+      "description": "Censustaker, identified in the case notes for Case File 478. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "478_time",
+      "type": "Time",
+      "name": "447",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 478. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "478_marker",
+      "type": "Marker",
+      "name": "Marker 4088",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 478.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "478_direction",
+      "type": "Direction",
+      "name": "Alongthecreek",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 478.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "478_sound",
+      "type": "Sound",
+      "name": "Cannonbolt",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 478. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Decoder - Recovered Case File",
     "fileId": "S40-010A",

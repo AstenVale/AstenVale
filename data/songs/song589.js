@@ -227,18 +227,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "589_belt_buckle",
-    "name": "Belt Buckle",
-    "symbol": "*",
-    "description": "Belt Buckle was recovered from Pine Hollow in Case File 589. It is tied to Judge, 9:15, and marker 5007.",
-    "discovered": "Case File 589",
-    "firstAppearance": "All Roads Lead",
-    "connectedSongs": [
-      "589"
-    ],
-    "unknownInfo": "Further In and Dry Grass suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "589_beltbuckle",
+      "type": "Object",
+      "name": "Beltbuckle",
+      "symbol": "🔍",
+      "description": "Belt Buckle was recovered from Pine Hollow in Case File 589. It is tied to Judge, 9:15, and marker 5007.",
+      "unknownInfo": "Further In and Dry Grass suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "589_location",
+      "type": "Location",
+      "name": "Pinehollow",
+      "symbol": "📍",
+      "description": "The active scene for Case File 589. Recovered field notes place the primary event at Pinehollow.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "589_witness",
+      "type": "Witness",
+      "name": "Judge",
+      "symbol": "👤",
+      "description": "Judge, identified in the case notes for Case File 589. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "589_time",
+      "type": "Time",
+      "name": "915",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 589. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "589_marker",
+      "type": "Marker",
+      "name": "Marker 5007",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 589.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "589_direction",
+      "type": "Direction",
+      "name": "Furtherin",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 589.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "589_sound",
+      "type": "Sound",
+      "name": "Drygrass",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 589. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "All Roads Lead - Recovered Case File",
     "fileId": "S50-001A",

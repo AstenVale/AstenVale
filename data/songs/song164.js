@@ -216,18 +216,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "164_candle",
-    "name": "Candle",
-    "symbol": "*",
-    "description": "Candle was recovered from Stone Step in Case File 164. It is tied to Quarry Foreman, 11:03, and marker 1470.",
-    "discovered": "Case File 164",
-    "firstAppearance": "After the Water",
-    "connectedSongs": [
-      "164"
-    ],
-    "unknownInfo": "Further In and Fog Horn suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "164_candle",
+      "type": "Object",
+      "name": "Candle",
+      "symbol": "🔍",
+      "description": "Candle was recovered from Stone Step in Case File 164. It is tied to Quarry Foreman, 11:03, and marker 1470.",
+      "unknownInfo": "Further In and Fog Horn suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "164_location",
+      "type": "Location",
+      "name": "Stonestep",
+      "symbol": "📍",
+      "description": "The active scene for Case File 164. Recovered field notes place the primary event at Stonestep.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "164_witness",
+      "type": "Witness",
+      "name": "Quarryforeman",
+      "symbol": "👤",
+      "description": "Quarryforeman, identified in the case notes for Case File 164. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "164_time",
+      "type": "Time",
+      "name": "1103",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 164. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "164_marker",
+      "type": "Marker",
+      "name": "Marker 1470",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 164.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "164_direction",
+      "type": "Direction",
+      "name": "Furtherin",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 164.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "164_sound",
+      "type": "Sound",
+      "name": "Foghorn",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 164. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "After the Water - Recovered Case File",
     "fileId": "S14-008A",

@@ -214,18 +214,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "539_locket",
-    "name": "Locket",
-    "symbol": "*",
-    "description": "Locket was recovered from Harness Shop in Case File 539. It is tied to Librarian, 5:13, and marker 4597.",
-    "discovered": "Case File 539",
-    "firstAppearance": "The Reckoning",
-    "connectedSongs": [
-      "539"
-    ],
-    "unknownInfo": "Up the Ridge and Millstone suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "539_locket",
+      "type": "Object",
+      "name": "Locket",
+      "symbol": "🔍",
+      "description": "Locket was recovered from Harness Shop in Case File 539. It is tied to Librarian, 5:13, and marker 4597.",
+      "unknownInfo": "Up the Ridge and Millstone suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "539_location",
+      "type": "Location",
+      "name": "Harnessshop",
+      "symbol": "📍",
+      "description": "The active scene for Case File 539. Recovered field notes place the primary event at Harnessshop.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "539_witness",
+      "type": "Witness",
+      "name": "Librarian",
+      "symbol": "👤",
+      "description": "Librarian, identified in the case notes for Case File 539. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "539_time",
+      "type": "Time",
+      "name": "513",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 539. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "539_marker",
+      "type": "Marker",
+      "name": "Marker 4597",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 539.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "539_direction",
+      "type": "Direction",
+      "name": "Uptheridge",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 539.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "539_sound",
+      "type": "Sound",
+      "name": "Millstone",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 539. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Reckoning - Recovered Case File",
     "fileId": "S45-011A",

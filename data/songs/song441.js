@@ -225,18 +225,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "441_spectacles",
-    "name": "Spectacles",
-    "symbol": "*",
-    "description": "Spectacles was recovered from North Gate in Case File 441. It is tied to Caretaker, 7:37, and marker 3779.",
-    "discovered": "Case File 441",
-    "firstAppearance": "What Still Works",
-    "connectedSongs": [
-      "441"
-    ],
-    "unknownInfo": "Behind and Broken String suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "441_spectacles",
+      "type": "Object",
+      "name": "Spectacles",
+      "symbol": "🔍",
+      "description": "Spectacles was recovered from North Gate in Case File 441. It is tied to Caretaker, 7:37, and marker 3779.",
+      "unknownInfo": "Behind and Broken String suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "441_location",
+      "type": "Location",
+      "name": "Northgate",
+      "symbol": "📍",
+      "description": "The active scene for Case File 441. Recovered field notes place the primary event at Northgate.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "441_witness",
+      "type": "Witness",
+      "name": "Caretaker",
+      "symbol": "👤",
+      "description": "Caretaker, identified in the case notes for Case File 441. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "441_time",
+      "type": "Time",
+      "name": "737",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 441. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "441_marker",
+      "type": "Marker",
+      "name": "Marker 3779",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 441.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "441_direction",
+      "type": "Direction",
+      "name": "Behind",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 441.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "441_sound",
+      "type": "Sound",
+      "name": "Brokenstring",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 441. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "What Still Works - Recovered Case File",
     "fileId": "S37-009A",

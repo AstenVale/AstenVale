@@ -215,18 +215,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "138_dried_blood_on_cloth",
-    "name": "Dried Blood on Cloth",
-    "symbol": "*",
-    "description": "Dried Blood on Cloth was recovered from North Gate in Case File 138. It is tied to Blacksmith, 8:33, and marker 1252.",
-    "discovered": "Case File 138",
-    "firstAppearance": "What She Found",
-    "connectedSongs": [
-      "138"
-    ],
-    "unknownInfo": "Straight Down and Footsteps suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "138_driedbloodoncloth",
+      "type": "Object",
+      "name": "Driedbloodoncloth",
+      "symbol": "🔍",
+      "description": "Dried Blood on Cloth was recovered from North Gate in Case File 138. It is tied to Blacksmith, 8:33, and marker 1252.",
+      "unknownInfo": "Straight Down and Footsteps suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "138_location",
+      "type": "Location",
+      "name": "Northgate",
+      "symbol": "📍",
+      "description": "The active scene for Case File 138. Recovered field notes place the primary event at Northgate.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "138_witness",
+      "type": "Witness",
+      "name": "Blacksmith",
+      "symbol": "👤",
+      "description": "Blacksmith, identified in the case notes for Case File 138. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "138_time",
+      "type": "Time",
+      "name": "833",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 138. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "138_marker",
+      "type": "Marker",
+      "name": "Marker 1252",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 138.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "138_direction",
+      "type": "Direction",
+      "name": "Straightdown",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 138.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "138_sound",
+      "type": "Sound",
+      "name": "Footsteps",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 138. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "What She Found - Recovered Case File",
     "fileId": "S12-006A",

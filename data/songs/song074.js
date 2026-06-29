@@ -216,18 +216,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "074_tin_star",
-    "name": "Tin Star",
-    "symbol": "*",
-    "description": "Tin Star was recovered from Old Wharf in Case File 074. It is tied to Surveyor, 10:51, and marker 716.",
-    "discovered": "Case File 074",
-    "firstAppearance": "A Different Name",
-    "connectedSongs": [
-      "074"
-    ],
-    "unknownInfo": "Along the Creek and Wind in Pines suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "074_tinstar",
+      "type": "Object",
+      "name": "Tinstar",
+      "symbol": "🔍",
+      "description": "Tin Star was recovered from Old Wharf in Case File 074. It is tied to Surveyor, 10:51, and marker 716.",
+      "unknownInfo": "Along the Creek and Wind in Pines suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "074_location",
+      "type": "Location",
+      "name": "Oldwharf",
+      "symbol": "📍",
+      "description": "The active scene for Case File 074. Recovered field notes place the primary event at Oldwharf.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "074_witness",
+      "type": "Witness",
+      "name": "Surveyor",
+      "symbol": "👤",
+      "description": "Surveyor, identified in the case notes for Case File 074. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "074_time",
+      "type": "Time",
+      "name": "1051",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 074. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "074_marker",
+      "type": "Marker",
+      "name": "Marker 716",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 074.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "074_direction",
+      "type": "Direction",
+      "name": "Alongthecreek",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 074.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "074_sound",
+      "type": "Sound",
+      "name": "Windinpines",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 074. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "A Different Name - Recovered Case File",
     "fileId": "S7-002A",

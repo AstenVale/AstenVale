@@ -215,18 +215,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "358_prayer_card",
-    "name": "Prayer Card",
-    "symbol": "*",
-    "description": "Prayer Card was recovered from Sheep Fold in Case File 358. It is tied to Deputy, 5:21, and marker 3088.",
-    "discovered": "Case File 358",
-    "firstAppearance": "The Last Car",
-    "connectedSongs": [
-      "358"
-    ],
-    "unknownInfo": "Left and Fire Crackling suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "358_prayercard",
+      "type": "Object",
+      "name": "Prayercard",
+      "symbol": "🔍",
+      "description": "Prayer Card was recovered from Sheep Fold in Case File 358. It is tied to Deputy, 5:21, and marker 3088.",
+      "unknownInfo": "Left and Fire Crackling suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "358_location",
+      "type": "Location",
+      "name": "Sheepfold",
+      "symbol": "📍",
+      "description": "The active scene for Case File 358. Recovered field notes place the primary event at Sheepfold.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "358_witness",
+      "type": "Witness",
+      "name": "Deputy",
+      "symbol": "👤",
+      "description": "Deputy, identified in the case notes for Case File 358. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "358_time",
+      "type": "Time",
+      "name": "521",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 358. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "358_marker",
+      "type": "Marker",
+      "name": "Marker 3088",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 358.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "358_direction",
+      "type": "Direction",
+      "name": "Left",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 358.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "358_sound",
+      "type": "Sound",
+      "name": "Firecrackling",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 358. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Last Car - Recovered Case File",
     "fileId": "S30-010A",

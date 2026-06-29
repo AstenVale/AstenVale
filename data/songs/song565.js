@@ -225,18 +225,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "565_inkwell",
-    "name": "Inkwell",
-    "symbol": "*",
-    "description": "Inkwell was recovered from Birch Stand in Case File 565. It is tied to Farmer, 4:12, and marker 4807.",
-    "discovered": "Case File 565",
-    "firstAppearance": "The Interruption",
-    "connectedSongs": [
-      "565"
-    ],
-    "unknownInfo": "Back the Way You Came and Rope on Pulley suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "565_inkwell",
+      "type": "Object",
+      "name": "Inkwell",
+      "symbol": "🔍",
+      "description": "Inkwell was recovered from Birch Stand in Case File 565. It is tied to Farmer, 4:12, and marker 4807.",
+      "unknownInfo": "Back the Way You Came and Rope on Pulley suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "565_location",
+      "type": "Location",
+      "name": "Birchstand",
+      "symbol": "📍",
+      "description": "The active scene for Case File 565. Recovered field notes place the primary event at Birchstand.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "565_witness",
+      "type": "Witness",
+      "name": "Farmer",
+      "symbol": "👤",
+      "description": "Farmer, identified in the case notes for Case File 565. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "565_time",
+      "type": "Time",
+      "name": "412",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 565. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "565_marker",
+      "type": "Marker",
+      "name": "Marker 4807",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 565.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "565_direction",
+      "type": "Direction",
+      "name": "Backthewayyoucame",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 565.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "565_sound",
+      "type": "Sound",
+      "name": "Ropeonpulley",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 565. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Interruption - Recovered Case File",
     "fileId": "S48-001A",

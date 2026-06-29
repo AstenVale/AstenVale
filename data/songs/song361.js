@@ -226,18 +226,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "361_locket",
-    "name": "Locket",
-    "symbol": "*",
-    "description": "Locket was recovered from The Quarry Pool in Case File 361. It is tied to Blacksmith, 12:00, and marker 3107.",
-    "discovered": "Case File 361",
-    "firstAppearance": "The Pattern",
-    "connectedSongs": [
-      "361"
-    ],
-    "unknownInfo": "Past the Tree Line and Axe on Wood suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "361_locket",
+      "type": "Object",
+      "name": "Locket",
+      "symbol": "🔍",
+      "description": "Locket was recovered from The Quarry Pool in Case File 361. It is tied to Blacksmith, 12:00, and marker 3107.",
+      "unknownInfo": "Past the Tree Line and Axe on Wood suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "361_location",
+      "type": "Location",
+      "name": "Quarry Pool",
+      "symbol": "📍",
+      "description": "The active scene for Case File 361. Recovered field notes place the primary event at Quarry Pool.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "361_witness",
+      "type": "Witness",
+      "name": "Blacksmith",
+      "symbol": "👤",
+      "description": "Blacksmith, identified in the case notes for Case File 361. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "361_time",
+      "type": "Time",
+      "name": "1200",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 361. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "361_marker",
+      "type": "Marker",
+      "name": "Marker 3107",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 361.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "361_direction",
+      "type": "Direction",
+      "name": "Pastthetreeline",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 361.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "361_sound",
+      "type": "Sound",
+      "name": "Axeonwood",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 361. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Pattern - Recovered Case File",
     "fileId": "S31-001A",

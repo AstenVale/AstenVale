@@ -217,18 +217,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "110_ship_manifest",
-    "name": "Ship Manifest",
-    "symbol": "*",
-    "description": "Ship Manifest was recovered from The Ridge in Case File 110. It is tied to Librarian, 1:26, and marker 1016.",
-    "discovered": "Case File 110",
-    "firstAppearance": "What the Road Remembers",
-    "connectedSongs": [
-      "110"
-    ],
-    "unknownInfo": "Further In and Moth Wings suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "110_shipmanifest",
+      "type": "Object",
+      "name": "Shipmanifest",
+      "symbol": "🔍",
+      "description": "Ship Manifest was recovered from The Ridge in Case File 110. It is tied to Librarian, 1:26, and marker 1016.",
+      "unknownInfo": "Further In and Moth Wings suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "110_location",
+      "type": "Location",
+      "name": "Ridge",
+      "symbol": "📍",
+      "description": "The active scene for Case File 110. Recovered field notes place the primary event at Ridge.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "110_witness",
+      "type": "Witness",
+      "name": "Librarian",
+      "symbol": "👤",
+      "description": "Librarian, identified in the case notes for Case File 110. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "110_time",
+      "type": "Time",
+      "name": "126",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 110. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "110_marker",
+      "type": "Marker",
+      "name": "Marker 1016",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 110.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "110_direction",
+      "type": "Direction",
+      "name": "Furtherin",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 110.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "110_sound",
+      "type": "Sound",
+      "name": "Mothwings",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 110. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "What the Road Remembers - Recovered Case File",
     "fileId": "S10-002A",

@@ -216,18 +216,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "080_spool_of_thread",
-    "name": "Spool of Thread",
-    "symbol": "*",
-    "description": "Spool of Thread was recovered from Potter's Field in Case File 080. It is tied to Schoolteacher, 2:19, and marker 770.",
-    "discovered": "Case File 080",
-    "firstAppearance": "The Sunday Pattern",
-    "connectedSongs": [
-      "080"
-    ],
-    "unknownInfo": "Into the Dark and Saw Cutting suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "080_spoolofthread",
+      "type": "Object",
+      "name": "Spoolofthread",
+      "symbol": "🔍",
+      "description": "Spool of Thread was recovered from Potter's Field in Case File 080. It is tied to Schoolteacher, 2:19, and marker 770.",
+      "unknownInfo": "Into the Dark and Saw Cutting suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "080_location",
+      "type": "Location",
+      "name": "Potter'Sfield",
+      "symbol": "📍",
+      "description": "The active scene for Case File 080. Recovered field notes place the primary event at Potter'Sfield.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "080_witness",
+      "type": "Witness",
+      "name": "Schoolteacher",
+      "symbol": "👤",
+      "description": "Schoolteacher, identified in the case notes for Case File 080. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "080_time",
+      "type": "Time",
+      "name": "219",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 080. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "080_marker",
+      "type": "Marker",
+      "name": "Marker 770",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 080.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "080_direction",
+      "type": "Direction",
+      "name": "Intothedark",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 080.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "080_sound",
+      "type": "Sound",
+      "name": "Sawcutting",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 080. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Sunday Pattern - Recovered Case File",
     "fileId": "S7-008A",

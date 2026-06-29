@@ -215,18 +215,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "036_pocket_watch",
-    "name": "Pocket Watch",
-    "symbol": "*",
-    "description": "Pocket Watch was recovered from Cooper's Yard in Case File 036. It is tied to Banker, 7:37, and marker 406.",
-    "discovered": "Case File 036",
-    "firstAppearance": "The Closed Case",
-    "connectedSongs": [
-      "036"
-    ],
-    "unknownInfo": "Home and Saw Cutting suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "036_pocketwatch",
+      "type": "Object",
+      "name": "Pocketwatch",
+      "symbol": "🔍",
+      "description": "Pocket Watch was recovered from Cooper's Yard in Case File 036. It is tied to Banker, 7:37, and marker 406.",
+      "unknownInfo": "Home and Saw Cutting suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "036_location",
+      "type": "Location",
+      "name": "Cooper'Syard",
+      "symbol": "📍",
+      "description": "The active scene for Case File 036. Recovered field notes place the primary event at Cooper'Syard.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "036_witness",
+      "type": "Witness",
+      "name": "Banker",
+      "symbol": "👤",
+      "description": "Banker, identified in the case notes for Case File 036. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "036_time",
+      "type": "Time",
+      "name": "737",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 036. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "036_marker",
+      "type": "Marker",
+      "name": "Marker 406",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 036.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "036_direction",
+      "type": "Direction",
+      "name": "Home",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 036.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "036_sound",
+      "type": "Sound",
+      "name": "Sawcutting",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 036. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Closed Case - Recovered Case File",
     "fileId": "S3-012A",

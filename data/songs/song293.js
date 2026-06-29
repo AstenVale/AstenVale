@@ -215,18 +215,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "293_knife",
-    "name": "Knife",
-    "symbol": "*",
-    "description": "Knife was recovered from Calico Alley in Case File 293. It is tied to Sexton, 3:49, and marker 2543.",
-    "discovered": "Case File 293",
-    "firstAppearance": "Why She Keeps Telling",
-    "connectedSongs": [
-      "293"
-    ],
-    "unknownInfo": "Toward the River and Knife Scrape suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "293_knife",
+      "type": "Object",
+      "name": "Knife",
+      "symbol": "🔍",
+      "description": "Knife was recovered from Calico Alley in Case File 293. It is tied to Sexton, 3:49, and marker 2543.",
+      "unknownInfo": "Toward the River and Knife Scrape suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "293_location",
+      "type": "Location",
+      "name": "Calicoalley",
+      "symbol": "📍",
+      "description": "The active scene for Case File 293. Recovered field notes place the primary event at Calicoalley.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "293_witness",
+      "type": "Witness",
+      "name": "Sexton",
+      "symbol": "👤",
+      "description": "Sexton, identified in the case notes for Case File 293. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "293_time",
+      "type": "Time",
+      "name": "349",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 293. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "293_marker",
+      "type": "Marker",
+      "name": "Marker 2543",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 293.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "293_direction",
+      "type": "Direction",
+      "name": "Towardtheriver",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 293.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "293_sound",
+      "type": "Sound",
+      "name": "Knifescrape",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 293. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "Why She Keeps Telling - Recovered Case File",
     "fileId": "S25-005A",

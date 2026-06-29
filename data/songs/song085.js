@@ -225,18 +225,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "085_dried_flower",
-    "name": "Dried Flower",
-    "symbol": "*",
-    "description": "Dried Flower was recovered from East Field in Case File 085. It is tied to Schoolgirl, 7:48, and marker 807.",
-    "discovered": "Case File 085",
-    "firstAppearance": "The First Smoke",
-    "connectedSongs": [
-      "085"
-    ],
-    "unknownInfo": "Across and Train Whistle suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "085_driedflower",
+      "type": "Object",
+      "name": "Driedflower",
+      "symbol": "🔍",
+      "description": "Dried Flower was recovered from East Field in Case File 085. It is tied to Schoolgirl, 7:48, and marker 807.",
+      "unknownInfo": "Across and Train Whistle suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "085_location",
+      "type": "Location",
+      "name": "Eastfield",
+      "symbol": "📍",
+      "description": "The active scene for Case File 085. Recovered field notes place the primary event at Eastfield.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "085_witness",
+      "type": "Witness",
+      "name": "Schoolgirl",
+      "symbol": "👤",
+      "description": "Schoolgirl, identified in the case notes for Case File 085. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "085_time",
+      "type": "Time",
+      "name": "748",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 085. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "085_marker",
+      "type": "Marker",
+      "name": "Marker 807",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 085.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "085_direction",
+      "type": "Direction",
+      "name": "Across",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 085.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "085_sound",
+      "type": "Sound",
+      "name": "Trainwhistle",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 085. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The First Smoke - Recovered Case File",
     "fileId": "S8-001A",

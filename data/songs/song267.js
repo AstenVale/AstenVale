@@ -215,18 +215,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "267_wax_tablet",
-    "name": "Wax Tablet",
-    "symbol": "*",
-    "description": "Wax Tablet was recovered from Church in Case File 267. It is tied to Midwife, 9:08, and marker 2325.",
-    "discovered": "Case File 267",
-    "firstAppearance": "Cross-Reference",
-    "connectedSongs": [
-      "267"
-    ],
-    "unknownInfo": "Along the Creek and Crow Wings suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "267_waxtablet",
+      "type": "Object",
+      "name": "Waxtablet",
+      "symbol": "🔍",
+      "description": "Wax Tablet was recovered from Church in Case File 267. It is tied to Midwife, 9:08, and marker 2325.",
+      "unknownInfo": "Along the Creek and Crow Wings suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "267_location",
+      "type": "Location",
+      "name": "Church",
+      "symbol": "📍",
+      "description": "The active scene for Case File 267. Recovered field notes place the primary event at Church.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "267_witness",
+      "type": "Witness",
+      "name": "Midwife",
+      "symbol": "👤",
+      "description": "Midwife, identified in the case notes for Case File 267. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "267_time",
+      "type": "Time",
+      "name": "908",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 267. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "267_marker",
+      "type": "Marker",
+      "name": "Marker 2325",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 267.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "267_direction",
+      "type": "Direction",
+      "name": "Alongthecreek",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 267.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "267_sound",
+      "type": "Sound",
+      "name": "Crowwings",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 267. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "Cross-Reference - Recovered Case File",
     "fileId": "S23-003A",

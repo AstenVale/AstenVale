@@ -226,18 +226,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "236_ribbon",
-    "name": "Ribbon",
-    "symbol": "*",
-    "description": "Ribbon was recovered from Ash Hollow in Case File 236. It is tied to Schoolgirl, 8:06, and marker 2070.",
-    "discovered": "Case File 236",
-    "firstAppearance": "What Wakes",
-    "connectedSongs": [
-      "236"
-    ],
-    "unknownInfo": "Away from Town and Empty Wagon suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "236_ribbon",
+      "type": "Object",
+      "name": "Ribbon",
+      "symbol": "🔍",
+      "description": "Ribbon was recovered from Ash Hollow in Case File 236. It is tied to Schoolgirl, 8:06, and marker 2070.",
+      "unknownInfo": "Away from Town and Empty Wagon suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "236_location",
+      "type": "Location",
+      "name": "Ashhollow",
+      "symbol": "📍",
+      "description": "The active scene for Case File 236. Recovered field notes place the primary event at Ashhollow.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "236_witness",
+      "type": "Witness",
+      "name": "Schoolgirl",
+      "symbol": "👤",
+      "description": "Schoolgirl, identified in the case notes for Case File 236. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "236_time",
+      "type": "Time",
+      "name": "806",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 236. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "236_marker",
+      "type": "Marker",
+      "name": "Marker 2070",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 236.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "236_direction",
+      "type": "Direction",
+      "name": "Awayfromtown",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 236.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "236_sound",
+      "type": "Sound",
+      "name": "Emptywagon",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 236. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "What Wakes - Recovered Case File",
     "fileId": "S20-008A",

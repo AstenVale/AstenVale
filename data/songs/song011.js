@@ -213,18 +213,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "011_photograph",
-    "name": "Photograph",
-    "symbol": "*",
-    "description": "Photograph was recovered from Cemetery in Case File 011. It is tied to Caretaker, 4:12, and marker 91.",
-    "discovered": "Case File 011",
-    "firstAppearance": "Name in the Snow",
-    "connectedSongs": [
-      "011"
-    ],
-    "unknownInfo": "North and Night Insects suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "011_photograph",
+      "type": "Object",
+      "name": "Photograph",
+      "symbol": "🔍",
+      "description": "Photograph was recovered from Cemetery in Case File 011. It is tied to Caretaker, 4:12, and marker 91.",
+      "unknownInfo": "North and Night Insects suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "011_location",
+      "type": "Location",
+      "name": "Cemetery",
+      "symbol": "📍",
+      "description": "The active scene for Case File 011. Recovered field notes place the primary event at Cemetery.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "011_witness",
+      "type": "Witness",
+      "name": "Caretaker",
+      "symbol": "👤",
+      "description": "Caretaker, identified in the case notes for Case File 011. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "011_time",
+      "type": "Time",
+      "name": "412",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 011. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "011_marker",
+      "type": "Marker",
+      "name": "Marker 91",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 011.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "011_direction",
+      "type": "Direction",
+      "name": "North",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 011.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "011_sound",
+      "type": "Sound",
+      "name": "Nightinsects",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 011. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "Name in the Snow - Recovered Case File",
     "fileId": "011A",

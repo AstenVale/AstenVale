@@ -224,18 +224,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "150_flask",
-    "name": "Flask",
-    "symbol": "*",
-    "description": "Flask was recovered from Loom House in Case File 150. It is tied to Stranger, 2:38, and marker 1352.",
-    "discovered": "Case File 150",
-    "firstAppearance": "What Changed",
-    "connectedSongs": [
-      "150"
-    ],
-    "unknownInfo": "Out and Distant Church Bell suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "150_flask",
+      "type": "Object",
+      "name": "Flask",
+      "symbol": "🔍",
+      "description": "Flask was recovered from Loom House in Case File 150. It is tied to Stranger, 2:38, and marker 1352.",
+      "unknownInfo": "Out and Distant Church Bell suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "150_location",
+      "type": "Location",
+      "name": "Loomhouse",
+      "symbol": "📍",
+      "description": "The active scene for Case File 150. Recovered field notes place the primary event at Loomhouse.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "150_witness",
+      "type": "Witness",
+      "name": "Stranger",
+      "symbol": "👤",
+      "description": "Stranger, identified in the case notes for Case File 150. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "150_time",
+      "type": "Time",
+      "name": "238",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 150. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "150_marker",
+      "type": "Marker",
+      "name": "Marker 1352",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 150.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "150_direction",
+      "type": "Direction",
+      "name": "Out",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 150.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "150_sound",
+      "type": "Sound",
+      "name": "Distantchurchbell",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 150. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "What Changed - Recovered Case File",
     "fileId": "S13-006A",

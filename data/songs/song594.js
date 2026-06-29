@@ -214,18 +214,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "594_watch",
-    "name": "Watch",
-    "symbol": "*",
-    "description": "Watch was recovered from Butcher's Row in Case File 594. It is tied to Apothecary, 3:30, and marker 5052.",
-    "discovered": "Case File 594",
-    "firstAppearance": "What Was In It",
-    "connectedSongs": [
-      "594"
-    ],
-    "unknownInfo": "Nowhere and Rope on Pulley suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "594_watch",
+      "type": "Object",
+      "name": "Watch",
+      "symbol": "🔍",
+      "description": "Watch was recovered from Butcher's Row in Case File 594. It is tied to Apothecary, 3:30, and marker 5052.",
+      "unknownInfo": "Nowhere and Rope on Pulley suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "594_location",
+      "type": "Location",
+      "name": "Butcher'Srow",
+      "symbol": "📍",
+      "description": "The active scene for Case File 594. Recovered field notes place the primary event at Butcher'Srow.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "594_witness",
+      "type": "Witness",
+      "name": "Apothecary",
+      "symbol": "👤",
+      "description": "Apothecary, identified in the case notes for Case File 594. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "594_time",
+      "type": "Time",
+      "name": "330",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 594. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "594_marker",
+      "type": "Marker",
+      "name": "Marker 5052",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 594.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "594_direction",
+      "type": "Direction",
+      "name": "Nowhere",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 594.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "594_sound",
+      "type": "Sound",
+      "name": "Ropeonpulley",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 594. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "What Was In It - Recovered Case File",
     "fileId": "S50-006A",

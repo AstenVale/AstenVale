@@ -215,18 +215,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "445_belt_buckle",
-    "name": "Belt Buckle",
-    "symbol": "*",
-    "description": "Belt Buckle was recovered from Post Office in Case File 445. It is tied to Chandler, 8:17, and marker 3807.",
-    "discovered": "Case File 445",
-    "firstAppearance": "Who Lit It",
-    "connectedSongs": [
-      "445"
-    ],
-    "unknownInfo": "In and Clock Ticking suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "445_beltbuckle",
+      "type": "Object",
+      "name": "Beltbuckle",
+      "symbol": "🔍",
+      "description": "Belt Buckle was recovered from Post Office in Case File 445. It is tied to Chandler, 8:17, and marker 3807.",
+      "unknownInfo": "In and Clock Ticking suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "445_location",
+      "type": "Location",
+      "name": "Postoffice",
+      "symbol": "📍",
+      "description": "The active scene for Case File 445. Recovered field notes place the primary event at Postoffice.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "445_witness",
+      "type": "Witness",
+      "name": "Chandler",
+      "symbol": "👤",
+      "description": "Chandler, identified in the case notes for Case File 445. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "445_time",
+      "type": "Time",
+      "name": "817",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 445. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "445_marker",
+      "type": "Marker",
+      "name": "Marker 3807",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 445.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "445_direction",
+      "type": "Direction",
+      "name": "In",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 445.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "445_sound",
+      "type": "Sound",
+      "name": "Clockticking",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 445. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "Who Lit It - Recovered Case File",
     "fileId": "S38-001A",

@@ -215,18 +215,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "160_charred_paper",
-    "name": "Charred Paper",
-    "symbol": "*",
-    "description": "Charred Paper was recovered from Candlemaker's Alley in Case File 160. It is tied to Station Master, 5:40, and marker 1434.",
-    "discovered": "Case File 160",
-    "firstAppearance": "The Last Dry Hour",
-    "connectedSongs": [
-      "160"
-    ],
-    "unknownInfo": "Out and Rain suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "160_charredpaper",
+      "type": "Object",
+      "name": "Charredpaper",
+      "symbol": "🔍",
+      "description": "Charred Paper was recovered from Candlemaker's Alley in Case File 160. It is tied to Station Master, 5:40, and marker 1434.",
+      "unknownInfo": "Out and Rain suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "160_location",
+      "type": "Location",
+      "name": "Candlemaker'Salley",
+      "symbol": "📍",
+      "description": "The active scene for Case File 160. Recovered field notes place the primary event at Candlemaker'Salley.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "160_witness",
+      "type": "Witness",
+      "name": "Stationmaster",
+      "symbol": "👤",
+      "description": "Stationmaster, identified in the case notes for Case File 160. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "160_time",
+      "type": "Time",
+      "name": "540",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 160. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "160_marker",
+      "type": "Marker",
+      "name": "Marker 1434",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 160.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "160_direction",
+      "type": "Direction",
+      "name": "Out",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 160.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "160_sound",
+      "type": "Sound",
+      "name": "Rain",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 160. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Last Dry Hour - Recovered Case File",
     "fileId": "S14-004A",

@@ -216,18 +216,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "450_bone_button",
-    "name": "Bone Button",
-    "symbol": "*",
-    "description": "Bone Button was recovered from Chandler's Row in Case File 450. It is tied to Peddler, 1:58, and marker 3852.",
-    "discovered": "Case File 450",
-    "firstAppearance": "The Night of the Fire",
-    "connectedSongs": [
-      "450"
-    ],
-    "unknownInfo": "Up the Ridge and Match Strike suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "450_bonebutton",
+      "type": "Object",
+      "name": "Bonebutton",
+      "symbol": "🔍",
+      "description": "Bone Button was recovered from Chandler's Row in Case File 450. It is tied to Peddler, 1:58, and marker 3852.",
+      "unknownInfo": "Up the Ridge and Match Strike suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "450_location",
+      "type": "Location",
+      "name": "Chandler'Srow",
+      "symbol": "📍",
+      "description": "The active scene for Case File 450. Recovered field notes place the primary event at Chandler'Srow.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "450_witness",
+      "type": "Witness",
+      "name": "Peddler",
+      "symbol": "👤",
+      "description": "Peddler, identified in the case notes for Case File 450. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "450_time",
+      "type": "Time",
+      "name": "158",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 450. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "450_marker",
+      "type": "Marker",
+      "name": "Marker 3852",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 450.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "450_direction",
+      "type": "Direction",
+      "name": "Uptheridge",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 450.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "450_sound",
+      "type": "Sound",
+      "name": "Matchstrike",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 450. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Night of the Fire - Recovered Case File",
     "fileId": "S38-006A",

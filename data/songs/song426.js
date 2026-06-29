@@ -215,18 +215,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "426_flask",
-    "name": "Flask",
-    "symbol": "*",
-    "description": "Flask was recovered from The Ravine in Case File 426. It is tied to Ferryman, 4:12, and marker 3652.",
-    "discovered": "Case File 426",
-    "firstAppearance": "Who Was Calling",
-    "connectedSongs": [
-      "426"
-    ],
-    "unknownInfo": "West and Hammer on Anvil suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "426_flask",
+      "type": "Object",
+      "name": "Flask",
+      "symbol": "🔍",
+      "description": "Flask was recovered from The Ravine in Case File 426. It is tied to Ferryman, 4:12, and marker 3652.",
+      "unknownInfo": "West and Hammer on Anvil suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "426_location",
+      "type": "Location",
+      "name": "Ravine",
+      "symbol": "📍",
+      "description": "The active scene for Case File 426. Recovered field notes place the primary event at Ravine.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "426_witness",
+      "type": "Witness",
+      "name": "Ferryman",
+      "symbol": "👤",
+      "description": "Ferryman, identified in the case notes for Case File 426. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "426_time",
+      "type": "Time",
+      "name": "412",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 426. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "426_marker",
+      "type": "Marker",
+      "name": "Marker 3652",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 426.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "426_direction",
+      "type": "Direction",
+      "name": "West",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 426.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "426_sound",
+      "type": "Sound",
+      "name": "Hammeronanvil",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 426. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "Who Was Calling - Recovered Case File",
     "fileId": "S36-006A",

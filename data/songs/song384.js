@@ -218,18 +218,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "384_torn_label",
-    "name": "Torn Label",
-    "symbol": "*",
-    "description": "Torn Label was recovered from The Ravine in Case File 384. It is tied to Census Taker, 5:21, and marker 3306.",
-    "discovered": "Case File 384",
-    "firstAppearance": "What Rose",
-    "connectedSongs": [
-      "384"
-    ],
-    "unknownInfo": "Away from Town and Lock Click suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "384_tornlabel",
+      "type": "Object",
+      "name": "Tornlabel",
+      "symbol": "🔍",
+      "description": "Torn Label was recovered from The Ravine in Case File 384. It is tied to Census Taker, 5:21, and marker 3306.",
+      "unknownInfo": "Away from Town and Lock Click suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "384_location",
+      "type": "Location",
+      "name": "Ravine",
+      "symbol": "📍",
+      "description": "The active scene for Case File 384. Recovered field notes place the primary event at Ravine.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "384_witness",
+      "type": "Witness",
+      "name": "Censustaker",
+      "symbol": "👤",
+      "description": "Censustaker, identified in the case notes for Case File 384. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "384_time",
+      "type": "Time",
+      "name": "521",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 384. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "384_marker",
+      "type": "Marker",
+      "name": "Marker 3306",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 384.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "384_direction",
+      "type": "Direction",
+      "name": "Awayfromtown",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 384.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "384_sound",
+      "type": "Sound",
+      "name": "Lockclick",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 384. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "What Rose - Recovered Case File",
     "fileId": "S32-012A",

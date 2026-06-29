@@ -214,18 +214,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "057_journal",
-    "name": "Journal",
-    "symbol": "*",
-    "description": "Journal was recovered from Cooper's Yard in Case File 057. It is tied to Chandler, 8:42, and marker 579.",
-    "discovered": "Case File 057",
-    "firstAppearance": "What He Left Behind",
-    "connectedSongs": [
-      "057"
-    ],
-    "unknownInfo": "Back and Pen on Paper suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "057_journal",
+      "type": "Object",
+      "name": "Journal",
+      "symbol": "🔍",
+      "description": "Journal was recovered from Cooper's Yard in Case File 057. It is tied to Chandler, 8:42, and marker 579.",
+      "unknownInfo": "Back and Pen on Paper suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "057_location",
+      "type": "Location",
+      "name": "Cooper'Syard",
+      "symbol": "📍",
+      "description": "The active scene for Case File 057. Recovered field notes place the primary event at Cooper'Syard.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "057_witness",
+      "type": "Witness",
+      "name": "Chandler",
+      "symbol": "👤",
+      "description": "Chandler, identified in the case notes for Case File 057. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "057_time",
+      "type": "Time",
+      "name": "842",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 057. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "057_marker",
+      "type": "Marker",
+      "name": "Marker 579",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 057.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "057_direction",
+      "type": "Direction",
+      "name": "Back",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 057.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "057_sound",
+      "type": "Sound",
+      "name": "Penonpaper",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 057. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "What He Left Behind - Recovered Case File",
     "fileId": "S5-009A",

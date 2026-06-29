@@ -225,18 +225,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "305_torn_label",
-    "name": "Torn Label",
-    "symbol": "*",
-    "description": "Torn Label was recovered from Feed Store in Case File 305. It is tied to Stranger, 1:11, and marker 2643.",
-    "discovered": "Case File 305",
-    "firstAppearance": "The Door Before",
-    "connectedSongs": [
-      "305"
-    ],
-    "unknownInfo": "Forward and Dog Bark at Nothing suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "305_tornlabel",
+      "type": "Object",
+      "name": "Tornlabel",
+      "symbol": "🔍",
+      "description": "Torn Label was recovered from Feed Store in Case File 305. It is tied to Stranger, 1:11, and marker 2643.",
+      "unknownInfo": "Forward and Dog Bark at Nothing suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "305_location",
+      "type": "Location",
+      "name": "Feedstore",
+      "symbol": "📍",
+      "description": "The active scene for Case File 305. Recovered field notes place the primary event at Feedstore.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "305_witness",
+      "type": "Witness",
+      "name": "Stranger",
+      "symbol": "👤",
+      "description": "Stranger, identified in the case notes for Case File 305. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "305_time",
+      "type": "Time",
+      "name": "111",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 305. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "305_marker",
+      "type": "Marker",
+      "name": "Marker 2643",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 305.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "305_direction",
+      "type": "Direction",
+      "name": "Forward",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 305.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "305_sound",
+      "type": "Sound",
+      "name": "Dogbarkatnothing",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 305. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Door Before - Recovered Case File",
     "fileId": "S26-005A",

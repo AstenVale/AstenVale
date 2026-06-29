@@ -218,18 +218,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "206_hollow_acorn",
-    "name": "Hollow Acorn",
-    "symbol": "*",
-    "description": "Hollow Acorn was recovered from The Depot in Case File 206. It is tied to Lock Keeper, 8:06, and marker 1816.",
-    "discovered": "Case File 206",
-    "firstAppearance": "The Alias",
-    "connectedSongs": [
-      "206"
-    ],
-    "unknownInfo": "Out of Sight and Crow on Wire suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "206_hollowacorn",
+      "type": "Object",
+      "name": "Hollowacorn",
+      "symbol": "🔍",
+      "description": "Hollow Acorn was recovered from The Depot in Case File 206. It is tied to Lock Keeper, 8:06, and marker 1816.",
+      "unknownInfo": "Out of Sight and Crow on Wire suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "206_location",
+      "type": "Location",
+      "name": "Depot",
+      "symbol": "📍",
+      "description": "The active scene for Case File 206. Recovered field notes place the primary event at Depot.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "206_witness",
+      "type": "Witness",
+      "name": "Lockkeeper",
+      "symbol": "👤",
+      "description": "Lockkeeper, identified in the case notes for Case File 206. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "206_time",
+      "type": "Time",
+      "name": "806",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 206. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "206_marker",
+      "type": "Marker",
+      "name": "Marker 1816",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 206.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "206_direction",
+      "type": "Direction",
+      "name": "Outofsight",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 206.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "206_sound",
+      "type": "Sound",
+      "name": "Crowonwire",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 206. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Alias - Recovered Case File",
     "fileId": "S18-002A",

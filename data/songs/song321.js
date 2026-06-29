@@ -214,18 +214,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "321_dried_blood_on_cloth",
-    "name": "Dried Blood on Cloth",
-    "symbol": "*",
-    "description": "Dried Blood on Cloth was recovered from Smithy in Case File 321. It is tied to Fisherman, 3:03, and marker 2779.",
-    "discovered": "Case File 321",
-    "firstAppearance": "The Figure",
-    "connectedSongs": [
-      "321"
-    ],
-    "unknownInfo": "Below and Clock Ticking suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "321_driedbloodoncloth",
+      "type": "Object",
+      "name": "Driedbloodoncloth",
+      "symbol": "🔍",
+      "description": "Dried Blood on Cloth was recovered from Smithy in Case File 321. It is tied to Fisherman, 3:03, and marker 2779.",
+      "unknownInfo": "Below and Clock Ticking suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "321_location",
+      "type": "Location",
+      "name": "Smithy",
+      "symbol": "📍",
+      "description": "The active scene for Case File 321. Recovered field notes place the primary event at Smithy.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "321_witness",
+      "type": "Witness",
+      "name": "Fisherman",
+      "symbol": "👤",
+      "description": "Fisherman, identified in the case notes for Case File 321. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "321_time",
+      "type": "Time",
+      "name": "303",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 321. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "321_marker",
+      "type": "Marker",
+      "name": "Marker 2779",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 321.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "321_direction",
+      "type": "Direction",
+      "name": "Below",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 321.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "321_sound",
+      "type": "Sound",
+      "name": "Clockticking",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 321. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Figure - Recovered Case File",
     "fileId": "S27-009A",

@@ -225,18 +225,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "171_badge",
-    "name": "Badge",
-    "symbol": "*",
-    "description": "Badge was recovered from River's Edge in Case File 171. It is tied to Fence Mender, 11:44, and marker 1525.",
-    "discovered": "Case File 171",
-    "firstAppearance": "The Dark Night",
-    "connectedSongs": [
-      "171"
-    ],
-    "unknownInfo": "Out and Chains suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "171_badge",
+      "type": "Object",
+      "name": "Badge",
+      "symbol": "🔍",
+      "description": "Badge was recovered from River's Edge in Case File 171. It is tied to Fence Mender, 11:44, and marker 1525.",
+      "unknownInfo": "Out and Chains suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "171_location",
+      "type": "Location",
+      "name": "River'Sedge",
+      "symbol": "📍",
+      "description": "The active scene for Case File 171. Recovered field notes place the primary event at River'Sedge.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "171_witness",
+      "type": "Witness",
+      "name": "Fencemender",
+      "symbol": "👤",
+      "description": "Fencemender, identified in the case notes for Case File 171. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "171_time",
+      "type": "Time",
+      "name": "1144",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 171. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "171_marker",
+      "type": "Marker",
+      "name": "Marker 1525",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 171.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "171_direction",
+      "type": "Direction",
+      "name": "Out",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 171.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "171_sound",
+      "type": "Sound",
+      "name": "Chains",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 171. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Dark Night - Recovered Case File",
     "fileId": "S15-003A",

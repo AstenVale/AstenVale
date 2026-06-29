@@ -215,18 +215,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "563_badge",
-    "name": "Badge",
-    "symbol": "*",
-    "description": "Badge was recovered from Ash Creek in Case File 563. It is tied to The Mute, 3:58, and marker 4797.",
-    "discovered": "Case File 563",
-    "firstAppearance": "What the Long Way Showed",
-    "connectedSongs": [
-      "563"
-    ],
-    "unknownInfo": "Across and Breathing suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "563_badge",
+      "type": "Object",
+      "name": "Badge",
+      "symbol": "🔍",
+      "description": "Badge was recovered from Ash Creek in Case File 563. It is tied to The Mute, 3:58, and marker 4797.",
+      "unknownInfo": "Across and Breathing suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "563_location",
+      "type": "Location",
+      "name": "Ashcreek",
+      "symbol": "📍",
+      "description": "The active scene for Case File 563. Recovered field notes place the primary event at Ashcreek.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "563_witness",
+      "type": "Witness",
+      "name": "Mute",
+      "symbol": "👤",
+      "description": "Mute, identified in the case notes for Case File 563. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "563_time",
+      "type": "Time",
+      "name": "358",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 563. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "563_marker",
+      "type": "Marker",
+      "name": "Marker 4797",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 563.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "563_direction",
+      "type": "Direction",
+      "name": "Across",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 563.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "563_sound",
+      "type": "Sound",
+      "name": "Breathing",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 563. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "What the Long Way Showed - Recovered Case File",
     "fileId": "S47-011A",

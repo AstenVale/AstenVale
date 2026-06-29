@@ -224,18 +224,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "146_lantern",
-    "name": "Lantern",
-    "symbol": "*",
-    "description": "Lantern was recovered from Post Office in Case File 146. It is tied to Postman, 10:22, and marker 1316.",
-    "discovered": "Case File 146",
-    "firstAppearance": "Two of Everything",
-    "connectedSongs": [
-      "146"
-    ],
-    "unknownInfo": "Around and Cellar Stairs suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "146_lantern",
+      "type": "Object",
+      "name": "Lantern",
+      "symbol": "🔍",
+      "description": "Lantern was recovered from Post Office in Case File 146. It is tied to Postman, 10:22, and marker 1316.",
+      "unknownInfo": "Around and Cellar Stairs suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "146_location",
+      "type": "Location",
+      "name": "Postoffice",
+      "symbol": "📍",
+      "description": "The active scene for Case File 146. Recovered field notes place the primary event at Postoffice.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "146_witness",
+      "type": "Witness",
+      "name": "Postman",
+      "symbol": "👤",
+      "description": "Postman, identified in the case notes for Case File 146. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "146_time",
+      "type": "Time",
+      "name": "1022",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 146. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "146_marker",
+      "type": "Marker",
+      "name": "Marker 1316",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 146.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "146_direction",
+      "type": "Direction",
+      "name": "Around",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 146.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "146_sound",
+      "type": "Sound",
+      "name": "Cellarstairs",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 146. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "Two of Everything - Recovered Case File",
     "fileId": "S13-002A",

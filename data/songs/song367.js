@@ -226,18 +226,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "367_oil_rag",
-    "name": "Oil Rag",
-    "symbol": "*",
-    "description": "Oil Rag was recovered from Water Tower in Case File 367. It is tied to Circuit Rider, 11:40, and marker 3161.",
-    "discovered": "Case File 367",
-    "firstAppearance": "What Blooms When",
-    "connectedSongs": [
-      "367"
-    ],
-    "unknownInfo": "North and Rope on Pulley suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "367_oilrag",
+      "type": "Object",
+      "name": "Oilrag",
+      "symbol": "🔍",
+      "description": "Oil Rag was recovered from Water Tower in Case File 367. It is tied to Circuit Rider, 11:40, and marker 3161.",
+      "unknownInfo": "North and Rope on Pulley suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "367_location",
+      "type": "Location",
+      "name": "Watertower",
+      "symbol": "📍",
+      "description": "The active scene for Case File 367. Recovered field notes place the primary event at Watertower.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "367_witness",
+      "type": "Witness",
+      "name": "Circuitrider",
+      "symbol": "👤",
+      "description": "Circuitrider, identified in the case notes for Case File 367. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "367_time",
+      "type": "Time",
+      "name": "1140",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 367. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "367_marker",
+      "type": "Marker",
+      "name": "Marker 3161",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 367.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "367_direction",
+      "type": "Direction",
+      "name": "North",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 367.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "367_sound",
+      "type": "Sound",
+      "name": "Ropeonpulley",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 367. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "What Blooms When - Recovered Case File",
     "fileId": "S31-007A",

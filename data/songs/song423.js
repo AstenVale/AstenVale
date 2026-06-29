@@ -216,18 +216,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "423_rope",
-    "name": "Rope",
-    "symbol": "*",
-    "description": "Rope was recovered from The Narrow Road in Case File 423. It is tied to Station Master, 12:00, and marker 3625.",
-    "discovered": "Case File 423",
-    "firstAppearance": "2 AM",
-    "connectedSongs": [
-      "423"
-    ],
-    "unknownInfo": "Below and Moth Wings suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "423_rope",
+      "type": "Object",
+      "name": "Rope",
+      "symbol": "🔍",
+      "description": "Rope was recovered from The Narrow Road in Case File 423. It is tied to Station Master, 12:00, and marker 3625.",
+      "unknownInfo": "Below and Moth Wings suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "423_location",
+      "type": "Location",
+      "name": "Narrow Road",
+      "symbol": "📍",
+      "description": "The active scene for Case File 423. Recovered field notes place the primary event at Narrow Road.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "423_witness",
+      "type": "Witness",
+      "name": "Stationmaster",
+      "symbol": "👤",
+      "description": "Stationmaster, identified in the case notes for Case File 423. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "423_time",
+      "type": "Time",
+      "name": "1200",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 423. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "423_marker",
+      "type": "Marker",
+      "name": "Marker 3625",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 423.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "423_direction",
+      "type": "Direction",
+      "name": "Below",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 423.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "423_sound",
+      "type": "Sound",
+      "name": "Mothwings",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 423. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "2 AM - Recovered Case File",
     "fileId": "S36-003A",

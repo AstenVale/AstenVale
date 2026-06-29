@@ -215,18 +215,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "297_wool_scarf",
-    "name": "Wool Scarf",
-    "symbol": "*",
-    "description": "Wool Scarf was recovered from Birch Stand in Case File 297. It is tied to Tanner, 11:03, and marker 2579.",
-    "discovered": "Case File 297",
-    "firstAppearance": "The Source Story",
-    "connectedSongs": [
-      "297"
-    ],
-    "unknownInfo": "Below and Stones in a Tin suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "297_woolscarf",
+      "type": "Object",
+      "name": "Woolscarf",
+      "symbol": "🔍",
+      "description": "Wool Scarf was recovered from Birch Stand in Case File 297. It is tied to Tanner, 11:03, and marker 2579.",
+      "unknownInfo": "Below and Stones in a Tin suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "297_location",
+      "type": "Location",
+      "name": "Birchstand",
+      "symbol": "📍",
+      "description": "The active scene for Case File 297. Recovered field notes place the primary event at Birchstand.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "297_witness",
+      "type": "Witness",
+      "name": "Tanner",
+      "symbol": "👤",
+      "description": "Tanner, identified in the case notes for Case File 297. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "297_time",
+      "type": "Time",
+      "name": "1103",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 297. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "297_marker",
+      "type": "Marker",
+      "name": "Marker 2579",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 297.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "297_direction",
+      "type": "Direction",
+      "name": "Below",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 297.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "297_sound",
+      "type": "Sound",
+      "name": "Stonesinatin",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 297. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Source Story - Recovered Case File",
     "fileId": "S25-009A",

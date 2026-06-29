@@ -226,18 +226,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "443_bent_nail",
-    "name": "Bent Nail",
-    "symbol": "*",
-    "description": "Bent Nail was recovered from Grain Mill in Case File 443. It is tied to Miller, 5:21, and marker 3797.",
-    "discovered": "Case File 443",
-    "firstAppearance": "Who Sent It",
-    "connectedSongs": [
-      "443"
-    ],
-    "unknownInfo": "Sideways and River Water suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "443_bentnail",
+      "type": "Object",
+      "name": "Bentnail",
+      "symbol": "🔍",
+      "description": "Bent Nail was recovered from Grain Mill in Case File 443. It is tied to Miller, 5:21, and marker 3797.",
+      "unknownInfo": "Sideways and River Water suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "443_location",
+      "type": "Location",
+      "name": "Grainmill",
+      "symbol": "📍",
+      "description": "The active scene for Case File 443. Recovered field notes place the primary event at Grainmill.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "443_witness",
+      "type": "Witness",
+      "name": "Miller",
+      "symbol": "👤",
+      "description": "Miller, identified in the case notes for Case File 443. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "443_time",
+      "type": "Time",
+      "name": "521",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 443. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "443_marker",
+      "type": "Marker",
+      "name": "Marker 3797",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 443.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "443_direction",
+      "type": "Direction",
+      "name": "Sideways",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 443.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "443_sound",
+      "type": "Sound",
+      "name": "Riverwater",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 443. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "Who Sent It - Recovered Case File",
     "fileId": "S37-011A",

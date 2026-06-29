@@ -225,18 +225,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "311_handkerchief",
-    "name": "Handkerchief",
-    "symbol": "*",
-    "description": "Handkerchief was recovered from The Quarry Pool in Case File 311. It is tied to Weaver, 4:38, and marker 2697.",
-    "discovered": "Case File 311",
-    "firstAppearance": "What Left",
-    "connectedSongs": [
-      "311"
-    ],
-    "unknownInfo": "Across and Empty Wagon suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "311_handkerchief",
+      "type": "Object",
+      "name": "Handkerchief",
+      "symbol": "🔍",
+      "description": "Handkerchief was recovered from The Quarry Pool in Case File 311. It is tied to Weaver, 4:38, and marker 2697.",
+      "unknownInfo": "Across and Empty Wagon suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "311_location",
+      "type": "Location",
+      "name": "Quarry Pool",
+      "symbol": "📍",
+      "description": "The active scene for Case File 311. Recovered field notes place the primary event at Quarry Pool.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "311_witness",
+      "type": "Witness",
+      "name": "Weaver",
+      "symbol": "👤",
+      "description": "Weaver, identified in the case notes for Case File 311. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "311_time",
+      "type": "Time",
+      "name": "438",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 311. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "311_marker",
+      "type": "Marker",
+      "name": "Marker 2697",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 311.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "311_direction",
+      "type": "Direction",
+      "name": "Across",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 311.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "311_sound",
+      "type": "Sound",
+      "name": "Emptywagon",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 311. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "What Left - Recovered Case File",
     "fileId": "S26-011A",

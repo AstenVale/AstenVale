@@ -216,18 +216,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "035_shard_of_mirror",
-    "name": "Shard of Mirror",
-    "symbol": "*",
-    "description": "Shard of Mirror was recovered from South Fork in Case File 035. It is tied to Lime Burner, 9:55, and marker 397.",
-    "discovered": "Case File 035",
-    "firstAppearance": "The Hollow Tree",
-    "connectedSongs": [
-      "035"
-    ],
-    "unknownInfo": "North and Lid of a Tin suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "035_shardofmirror",
+      "type": "Object",
+      "name": "Shardofmirror",
+      "symbol": "🔍",
+      "description": "Shard of Mirror was recovered from South Fork in Case File 035. It is tied to Lime Burner, 9:55, and marker 397.",
+      "unknownInfo": "North and Lid of a Tin suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "035_location",
+      "type": "Location",
+      "name": "Southfork",
+      "symbol": "📍",
+      "description": "The active scene for Case File 035. Recovered field notes place the primary event at Southfork.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "035_witness",
+      "type": "Witness",
+      "name": "Limeburner",
+      "symbol": "👤",
+      "description": "Limeburner, identified in the case notes for Case File 035. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "035_time",
+      "type": "Time",
+      "name": "955",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 035. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "035_marker",
+      "type": "Marker",
+      "name": "Marker 397",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 035.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "035_direction",
+      "type": "Direction",
+      "name": "North",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 035.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "035_sound",
+      "type": "Sound",
+      "name": "Lidofatin",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 035. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Hollow Tree - Recovered Case File",
     "fileId": "S3-011A",

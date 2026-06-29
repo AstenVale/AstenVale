@@ -217,18 +217,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "422_numbered_disk",
-    "name": "Numbered Disk",
-    "symbol": "*",
-    "description": "Numbered Disk was recovered from Ice House in Case File 422. It is tied to Bone Collector, 9:27, and marker 3616.",
-    "discovered": "Case File 422",
-    "firstAppearance": "What Was Said",
-    "connectedSongs": [
-      "422"
-    ],
-    "unknownInfo": "Into the Dark and Water Drip suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "422_numbereddisk",
+      "type": "Object",
+      "name": "Numbereddisk",
+      "symbol": "🔍",
+      "description": "Numbered Disk was recovered from Ice House in Case File 422. It is tied to Bone Collector, 9:27, and marker 3616.",
+      "unknownInfo": "Into the Dark and Water Drip suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "422_location",
+      "type": "Location",
+      "name": "Icehouse",
+      "symbol": "📍",
+      "description": "The active scene for Case File 422. Recovered field notes place the primary event at Icehouse.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "422_witness",
+      "type": "Witness",
+      "name": "Bonecollector",
+      "symbol": "👤",
+      "description": "Bonecollector, identified in the case notes for Case File 422. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "422_time",
+      "type": "Time",
+      "name": "927",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 422. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "422_marker",
+      "type": "Marker",
+      "name": "Marker 3616",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 422.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "422_direction",
+      "type": "Direction",
+      "name": "Intothedark",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 422.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "422_sound",
+      "type": "Sound",
+      "name": "Waterdrip",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 422. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "What Was Said - Recovered Case File",
     "fileId": "S36-002A",

@@ -214,18 +214,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "559_flask",
-    "name": "Flask",
-    "symbol": "*",
-    "description": "Flask was recovered from East Field in Case File 559. It is tied to Orphan, 11:40, and marker 4761.",
-    "discovered": "Case File 559",
-    "firstAppearance": "The Junction",
-    "connectedSongs": [
-      "559"
-    ],
-    "unknownInfo": "Out of Sight and Thunder suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "559_flask",
+      "type": "Object",
+      "name": "Flask",
+      "symbol": "🔍",
+      "description": "Flask was recovered from East Field in Case File 559. It is tied to Orphan, 11:40, and marker 4761.",
+      "unknownInfo": "Out of Sight and Thunder suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "559_location",
+      "type": "Location",
+      "name": "Eastfield",
+      "symbol": "📍",
+      "description": "The active scene for Case File 559. Recovered field notes place the primary event at Eastfield.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "559_witness",
+      "type": "Witness",
+      "name": "Orphan",
+      "symbol": "👤",
+      "description": "Orphan, identified in the case notes for Case File 559. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "559_time",
+      "type": "Time",
+      "name": "1140",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 559. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "559_marker",
+      "type": "Marker",
+      "name": "Marker 4761",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 559.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "559_direction",
+      "type": "Direction",
+      "name": "Outofsight",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 559.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "559_sound",
+      "type": "Sound",
+      "name": "Thunder",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 559. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Junction - Recovered Case File",
     "fileId": "S47-007A",

@@ -224,18 +224,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "102_lantern",
-    "name": "Lantern",
-    "symbol": "*",
-    "description": "Lantern was recovered from Doctor's Office in Case File 102. It is tied to Land Agent, 5:21, and marker 952.",
-    "discovered": "Case File 102",
-    "firstAppearance": "The Missing Page",
-    "connectedSongs": [
-      "102"
-    ],
-    "unknownInfo": "Over and Thunder suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "102_lantern",
+      "type": "Object",
+      "name": "Lantern",
+      "symbol": "🔍",
+      "description": "Lantern was recovered from Doctor's Office in Case File 102. It is tied to Land Agent, 5:21, and marker 952.",
+      "unknownInfo": "Over and Thunder suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "102_location",
+      "type": "Location",
+      "name": "Doctor'Soffice",
+      "symbol": "📍",
+      "description": "The active scene for Case File 102. Recovered field notes place the primary event at Doctor'Soffice.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "102_witness",
+      "type": "Witness",
+      "name": "Landagent",
+      "symbol": "👤",
+      "description": "Landagent, identified in the case notes for Case File 102. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "102_time",
+      "type": "Time",
+      "name": "521",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 102. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "102_marker",
+      "type": "Marker",
+      "name": "Marker 952",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 102.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "102_direction",
+      "type": "Direction",
+      "name": "Over",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 102.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "102_sound",
+      "type": "Sound",
+      "name": "Thunder",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 102. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Missing Page - Recovered Case File",
     "fileId": "S9-006A",

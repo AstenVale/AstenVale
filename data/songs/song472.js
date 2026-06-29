@@ -228,18 +228,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "472_scratched_initials_in_wood",
-    "name": "Scratched Initials in Wood",
-    "symbol": "*",
-    "description": "Scratched Initials in Wood was recovered from The Widow's Porch in Case File 472. It is tied to Salt Seller, 6:17, and marker 4034.",
-    "discovered": "Case File 472",
-    "firstAppearance": "Who Received It",
-    "connectedSongs": [
-      "472"
-    ],
-    "unknownInfo": "Back the Way You Came and Dog Bark at Nothing suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "472_scratchedinitialsinwood",
+      "type": "Object",
+      "name": "Scratchedinitialsinwood",
+      "symbol": "🔍",
+      "description": "Scratched Initials in Wood was recovered from The Widow's Porch in Case File 472. It is tied to Salt Seller, 6:17, and marker 4034.",
+      "unknownInfo": "Back the Way You Came and Dog Bark at Nothing suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "472_location",
+      "type": "Location",
+      "name": "Widow'S Porch",
+      "symbol": "📍",
+      "description": "The active scene for Case File 472. Recovered field notes place the primary event at Widow'S Porch.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "472_witness",
+      "type": "Witness",
+      "name": "Saltseller",
+      "symbol": "👤",
+      "description": "Saltseller, identified in the case notes for Case File 472. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "472_time",
+      "type": "Time",
+      "name": "617",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 472. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "472_marker",
+      "type": "Marker",
+      "name": "Marker 4034",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 472.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "472_direction",
+      "type": "Direction",
+      "name": "Backthewayyoucame",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 472.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "472_sound",
+      "type": "Sound",
+      "name": "Dogbarkatnothing",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 472. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "Who Received It - Recovered Case File",
     "fileId": "S40-004A",

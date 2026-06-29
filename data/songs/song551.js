@@ -226,18 +226,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "551_cufflink",
-    "name": "Cufflink",
-    "symbol": "*",
-    "description": "Cufflink was recovered from The Weir in Case File 551. It is tied to Innkeeper, 7:37, and marker 4697.",
-    "discovered": "Case File 551",
-    "firstAppearance": "What the Storm Took",
-    "connectedSongs": [
-      "551"
-    ],
-    "unknownInfo": "West and Empty Wagon suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "551_cufflink",
+      "type": "Object",
+      "name": "Cufflink",
+      "symbol": "🔍",
+      "description": "Cufflink was recovered from The Weir in Case File 551. It is tied to Innkeeper, 7:37, and marker 4697.",
+      "unknownInfo": "West and Empty Wagon suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "551_location",
+      "type": "Location",
+      "name": "Weir",
+      "symbol": "📍",
+      "description": "The active scene for Case File 551. Recovered field notes place the primary event at Weir.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "551_witness",
+      "type": "Witness",
+      "name": "Innkeeper",
+      "symbol": "👤",
+      "description": "Innkeeper, identified in the case notes for Case File 551. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "551_time",
+      "type": "Time",
+      "name": "737",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 551. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "551_marker",
+      "type": "Marker",
+      "name": "Marker 4697",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 551.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "551_direction",
+      "type": "Direction",
+      "name": "West",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 551.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "551_sound",
+      "type": "Sound",
+      "name": "Emptywagon",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 551. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "What the Storm Took - Recovered Case File",
     "fileId": "S46-011A",

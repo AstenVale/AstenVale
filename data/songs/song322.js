@@ -215,18 +215,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "322_compass",
-    "name": "Compass",
-    "symbol": "*",
-    "description": "Compass was recovered from Harness Shop in Case File 322. It is tied to Lime Burner, 10:51, and marker 2788.",
-    "discovered": "Case File 322",
-    "firstAppearance": "What Dissolves",
-    "connectedSongs": [
-      "322"
-    ],
-    "unknownInfo": "Behind and Stones in a Tin suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "322_compass",
+      "type": "Object",
+      "name": "Compass",
+      "symbol": "🔍",
+      "description": "Compass was recovered from Harness Shop in Case File 322. It is tied to Lime Burner, 10:51, and marker 2788.",
+      "unknownInfo": "Behind and Stones in a Tin suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "322_location",
+      "type": "Location",
+      "name": "Harnessshop",
+      "symbol": "📍",
+      "description": "The active scene for Case File 322. Recovered field notes place the primary event at Harnessshop.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "322_witness",
+      "type": "Witness",
+      "name": "Limeburner",
+      "symbol": "👤",
+      "description": "Limeburner, identified in the case notes for Case File 322. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "322_time",
+      "type": "Time",
+      "name": "1051",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 322. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "322_marker",
+      "type": "Marker",
+      "name": "Marker 2788",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 322.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "322_direction",
+      "type": "Direction",
+      "name": "Behind",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 322.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "322_sound",
+      "type": "Sound",
+      "name": "Stonesinatin",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 322. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "What Dissolves - Recovered Case File",
     "fileId": "S27-010A",

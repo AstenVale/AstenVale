@@ -224,18 +224,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "409_button",
-    "name": "Button",
-    "symbol": "*",
-    "description": "Button was recovered from Telegraph Office in Case File 409. It is tied to Barber, 5:09, and marker 3507.",
-    "discovered": "Case File 409",
-    "firstAppearance": "The Collection",
-    "connectedSongs": [
-      "409"
-    ],
-    "unknownInfo": "Back and Stones in a Tin suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "409_button",
+      "type": "Object",
+      "name": "Button",
+      "symbol": "🔍",
+      "description": "Button was recovered from Telegraph Office in Case File 409. It is tied to Barber, 5:09, and marker 3507.",
+      "unknownInfo": "Back and Stones in a Tin suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "409_location",
+      "type": "Location",
+      "name": "Telegraphoffice",
+      "symbol": "📍",
+      "description": "The active scene for Case File 409. Recovered field notes place the primary event at Telegraphoffice.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "409_witness",
+      "type": "Witness",
+      "name": "Barber",
+      "symbol": "👤",
+      "description": "Barber, identified in the case notes for Case File 409. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "409_time",
+      "type": "Time",
+      "name": "509",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 409. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "409_marker",
+      "type": "Marker",
+      "name": "Marker 3507",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 409.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "409_direction",
+      "type": "Direction",
+      "name": "Back",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 409.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "409_sound",
+      "type": "Sound",
+      "name": "Stonesinatin",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 409. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Collection - Recovered Case File",
     "fileId": "S35-001A",

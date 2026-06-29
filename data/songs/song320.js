@@ -214,18 +214,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "320_hollow_acorn",
-    "name": "Hollow Acorn",
-    "symbol": "*",
-    "description": "Hollow Acorn was recovered from Grist Mill in Case File 320. It is tied to Peddler, 11:44, and marker 2770.",
-    "discovered": "Case File 320",
-    "firstAppearance": "The White Expanse",
-    "connectedSongs": [
-      "320"
-    ],
-    "unknownInfo": "Across and Floorboard suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "320_hollowacorn",
+      "type": "Object",
+      "name": "Hollowacorn",
+      "symbol": "🔍",
+      "description": "Hollow Acorn was recovered from Grist Mill in Case File 320. It is tied to Peddler, 11:44, and marker 2770.",
+      "unknownInfo": "Across and Floorboard suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "320_location",
+      "type": "Location",
+      "name": "Gristmill",
+      "symbol": "📍",
+      "description": "The active scene for Case File 320. Recovered field notes place the primary event at Gristmill.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "320_witness",
+      "type": "Witness",
+      "name": "Peddler",
+      "symbol": "👤",
+      "description": "Peddler, identified in the case notes for Case File 320. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "320_time",
+      "type": "Time",
+      "name": "1144",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 320. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "320_marker",
+      "type": "Marker",
+      "name": "Marker 2770",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 320.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "320_direction",
+      "type": "Direction",
+      "name": "Across",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 320.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "320_sound",
+      "type": "Sound",
+      "name": "Floorboard",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 320. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The White Expanse - Recovered Case File",
     "fileId": "S27-008A",

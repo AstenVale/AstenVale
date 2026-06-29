@@ -218,18 +218,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "269_surveyor_s_pin",
-    "name": "Surveyor's Pin",
-    "symbol": "*",
-    "description": "Surveyor's Pin was recovered from The Pit in Case File 269. It is tied to Station Master, 1:11, and marker 2343.",
-    "discovered": "Case File 269",
-    "firstAppearance": "What the Paper Proves",
-    "connectedSongs": [
-      "269"
-    ],
-    "unknownInfo": "Out of Sight and Cellar Stairs suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "269_surveyorspin",
+      "type": "Object",
+      "name": "Surveyor'Spin",
+      "symbol": "🔍",
+      "description": "Surveyor's Pin was recovered from The Pit in Case File 269. It is tied to Station Master, 1:11, and marker 2343.",
+      "unknownInfo": "Out of Sight and Cellar Stairs suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "269_location",
+      "type": "Location",
+      "name": "Pit",
+      "symbol": "📍",
+      "description": "The active scene for Case File 269. Recovered field notes place the primary event at Pit.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "269_witness",
+      "type": "Witness",
+      "name": "Stationmaster",
+      "symbol": "👤",
+      "description": "Stationmaster, identified in the case notes for Case File 269. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "269_time",
+      "type": "Time",
+      "name": "111",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 269. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "269_marker",
+      "type": "Marker",
+      "name": "Marker 2343",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 269.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "269_direction",
+      "type": "Direction",
+      "name": "Outofsight",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 269.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "269_sound",
+      "type": "Sound",
+      "name": "Cellarstairs",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 269. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "What the Paper Proves - Recovered Case File",
     "fileId": "S23-005A",

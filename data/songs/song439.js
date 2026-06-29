@@ -225,18 +225,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "439_canteen",
-    "name": "Canteen",
-    "symbol": "*",
-    "description": "Canteen was recovered from Freight Yard in Case File 439. It is tied to Cartographer, 10:19, and marker 3761.",
-    "discovered": "Case File 439",
-    "firstAppearance": "The Last Entry",
-    "connectedSongs": [
-      "439"
-    ],
-    "unknownInfo": "Away and Fence Wire Hum suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "439_canteen",
+      "type": "Object",
+      "name": "Canteen",
+      "symbol": "🔍",
+      "description": "Canteen was recovered from Freight Yard in Case File 439. It is tied to Cartographer, 10:19, and marker 3761.",
+      "unknownInfo": "Away and Fence Wire Hum suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "439_location",
+      "type": "Location",
+      "name": "Freightyard",
+      "symbol": "📍",
+      "description": "The active scene for Case File 439. Recovered field notes place the primary event at Freightyard.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "439_witness",
+      "type": "Witness",
+      "name": "Cartographer",
+      "symbol": "👤",
+      "description": "Cartographer, identified in the case notes for Case File 439. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "439_time",
+      "type": "Time",
+      "name": "1019",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 439. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "439_marker",
+      "type": "Marker",
+      "name": "Marker 3761",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 439.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "439_direction",
+      "type": "Direction",
+      "name": "Away",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 439.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "439_sound",
+      "type": "Sound",
+      "name": "Fencewirehum",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 439. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Last Entry - Recovered Case File",
     "fileId": "S37-007A",

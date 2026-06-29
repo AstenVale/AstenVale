@@ -224,18 +224,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "256_inkwell",
-    "name": "Inkwell",
-    "symbol": "*",
-    "description": "Inkwell was recovered from Quarry Edge in Case File 256. It is tied to Wainwright, 1:26, and marker 2234.",
-    "discovered": "Case File 256",
-    "firstAppearance": "The Old Burial",
-    "connectedSongs": [
-      "256"
-    ],
-    "unknownInfo": "South and Lantern Flicker suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "256_inkwell",
+      "type": "Object",
+      "name": "Inkwell",
+      "symbol": "🔍",
+      "description": "Inkwell was recovered from Quarry Edge in Case File 256. It is tied to Wainwright, 1:26, and marker 2234.",
+      "unknownInfo": "South and Lantern Flicker suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "256_location",
+      "type": "Location",
+      "name": "Quarryedge",
+      "symbol": "📍",
+      "description": "The active scene for Case File 256. Recovered field notes place the primary event at Quarryedge.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "256_witness",
+      "type": "Witness",
+      "name": "Wainwright",
+      "symbol": "👤",
+      "description": "Wainwright, identified in the case notes for Case File 256. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "256_time",
+      "type": "Time",
+      "name": "126",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 256. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "256_marker",
+      "type": "Marker",
+      "name": "Marker 2234",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 256.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "256_direction",
+      "type": "Direction",
+      "name": "South",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 256.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "256_sound",
+      "type": "Sound",
+      "name": "Lanternflicker",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 256. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Old Burial - Recovered Case File",
     "fileId": "S22-004A",

@@ -225,18 +225,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "235_key",
-    "name": "Key",
-    "symbol": "*",
-    "description": "Key was recovered from Sheep Fold in Case File 235. It is tied to Woodsman, 4:12, and marker 2061.",
-    "discovered": "Case File 235",
-    "firstAppearance": "The Night Evidence",
-    "connectedSongs": [
-      "235"
-    ],
-    "unknownInfo": "Away and Kettle Boil suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "235_key",
+      "type": "Object",
+      "name": "Key",
+      "symbol": "🔍",
+      "description": "Key was recovered from Sheep Fold in Case File 235. It is tied to Woodsman, 4:12, and marker 2061.",
+      "unknownInfo": "Away and Kettle Boil suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "235_location",
+      "type": "Location",
+      "name": "Sheepfold",
+      "symbol": "📍",
+      "description": "The active scene for Case File 235. Recovered field notes place the primary event at Sheepfold.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "235_witness",
+      "type": "Witness",
+      "name": "Woodsman",
+      "symbol": "👤",
+      "description": "Woodsman, identified in the case notes for Case File 235. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "235_time",
+      "type": "Time",
+      "name": "412",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 235. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "235_marker",
+      "type": "Marker",
+      "name": "Marker 2061",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 235.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "235_direction",
+      "type": "Direction",
+      "name": "Away",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 235.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "235_sound",
+      "type": "Sound",
+      "name": "Kettleboil",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 235. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Night Evidence - Recovered Case File",
     "fileId": "S20-007A",

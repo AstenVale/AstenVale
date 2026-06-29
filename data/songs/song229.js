@@ -217,18 +217,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "229_dried_ink_blot",
-    "name": "Dried Ink Blot",
-    "symbol": "*",
-    "description": "Dried Ink Blot was recovered from Market Square in Case File 229. It is tied to Circuit Rider, 6:53, and marker 2007.",
-    "discovered": "Case File 229",
-    "firstAppearance": "The Night Route",
-    "connectedSongs": [
-      "229"
-    ],
-    "unknownInfo": "Into the Dark and Match Strike suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "229_driedinkblot",
+      "type": "Object",
+      "name": "Driedinkblot",
+      "symbol": "🔍",
+      "description": "Dried Ink Blot was recovered from Market Square in Case File 229. It is tied to Circuit Rider, 6:53, and marker 2007.",
+      "unknownInfo": "Into the Dark and Match Strike suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "229_location",
+      "type": "Location",
+      "name": "Marketsquare",
+      "symbol": "📍",
+      "description": "The active scene for Case File 229. Recovered field notes place the primary event at Marketsquare.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "229_witness",
+      "type": "Witness",
+      "name": "Circuitrider",
+      "symbol": "👤",
+      "description": "Circuitrider, identified in the case notes for Case File 229. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "229_time",
+      "type": "Time",
+      "name": "653",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 229. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "229_marker",
+      "type": "Marker",
+      "name": "Marker 2007",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 229.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "229_direction",
+      "type": "Direction",
+      "name": "Intothedark",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 229.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "229_sound",
+      "type": "Sound",
+      "name": "Matchstrike",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 229. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Night Route - Recovered Case File",
     "fileId": "S20-001A",

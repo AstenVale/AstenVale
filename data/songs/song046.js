@@ -225,18 +225,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "046_torn_label",
-    "name": "Torn Label",
-    "symbol": "*",
-    "description": "Torn Label was recovered from Banker's House in Case File 046. It is tied to Librarian, 10:19, and marker 488.",
-    "discovered": "Case File 046",
-    "firstAppearance": "The Far Bank",
-    "connectedSongs": [
-      "046"
-    ],
-    "unknownInfo": "Around and Child's Laugh (far off) suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "046_tornlabel",
+      "type": "Object",
+      "name": "Tornlabel",
+      "symbol": "🔍",
+      "description": "Torn Label was recovered from Banker's House in Case File 046. It is tied to Librarian, 10:19, and marker 488.",
+      "unknownInfo": "Around and Child's Laugh (far off) suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "046_location",
+      "type": "Location",
+      "name": "Banker'Shouse",
+      "symbol": "📍",
+      "description": "The active scene for Case File 046. Recovered field notes place the primary event at Banker'Shouse.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "046_witness",
+      "type": "Witness",
+      "name": "Librarian",
+      "symbol": "👤",
+      "description": "Librarian, identified in the case notes for Case File 046. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "046_time",
+      "type": "Time",
+      "name": "1019",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 046. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "046_marker",
+      "type": "Marker",
+      "name": "Marker 488",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 046.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "046_direction",
+      "type": "Direction",
+      "name": "Around",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 046.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "046_sound",
+      "type": "Sound",
+      "name": "Child'Slaugh(Faroff)",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 046. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Far Bank - Recovered Case File",
     "fileId": "S4-010A",

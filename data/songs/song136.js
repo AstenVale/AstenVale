@@ -215,18 +215,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "136_wax_tablet",
-    "name": "Wax Tablet",
-    "symbol": "*",
-    "description": "Wax Tablet was recovered from Undertaker's Hall in Case File 136. It is tied to Apothecary, 3:30, and marker 1234.",
-    "discovered": "Case File 136",
-    "firstAppearance": "Contested",
-    "connectedSongs": [
-      "136"
-    ],
-    "unknownInfo": "Under and Crow Call suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "136_waxtablet",
+      "type": "Object",
+      "name": "Waxtablet",
+      "symbol": "🔍",
+      "description": "Wax Tablet was recovered from Undertaker's Hall in Case File 136. It is tied to Apothecary, 3:30, and marker 1234.",
+      "unknownInfo": "Under and Crow Call suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "136_location",
+      "type": "Location",
+      "name": "Undertaker'Shall",
+      "symbol": "📍",
+      "description": "The active scene for Case File 136. Recovered field notes place the primary event at Undertaker'Shall.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "136_witness",
+      "type": "Witness",
+      "name": "Apothecary",
+      "symbol": "👤",
+      "description": "Apothecary, identified in the case notes for Case File 136. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "136_time",
+      "type": "Time",
+      "name": "330",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 136. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "136_marker",
+      "type": "Marker",
+      "name": "Marker 1234",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 136.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "136_direction",
+      "type": "Direction",
+      "name": "Under",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 136.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "136_sound",
+      "type": "Sound",
+      "name": "Crowcall",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 136. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "Contested - Recovered Case File",
     "fileId": "S12-004A",

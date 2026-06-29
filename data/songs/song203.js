@@ -224,18 +224,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "203_flask",
-    "name": "Flask",
-    "symbol": "*",
-    "description": "Flask was recovered from Black Pine in Case File 203. It is tied to Postman, 11:03, and marker 1797.",
-    "discovered": "Case File 203",
-    "firstAppearance": "What Cold Distorts",
-    "connectedSongs": [
-      "203"
-    ],
-    "unknownInfo": "Right and Match Strike suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "203_flask",
+      "type": "Object",
+      "name": "Flask",
+      "symbol": "🔍",
+      "description": "Flask was recovered from Black Pine in Case File 203. It is tied to Postman, 11:03, and marker 1797.",
+      "unknownInfo": "Right and Match Strike suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "203_location",
+      "type": "Location",
+      "name": "Blackpine",
+      "symbol": "📍",
+      "description": "The active scene for Case File 203. Recovered field notes place the primary event at Blackpine.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "203_witness",
+      "type": "Witness",
+      "name": "Postman",
+      "symbol": "👤",
+      "description": "Postman, identified in the case notes for Case File 203. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "203_time",
+      "type": "Time",
+      "name": "1103",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 203. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "203_marker",
+      "type": "Marker",
+      "name": "Marker 1797",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 203.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "203_direction",
+      "type": "Direction",
+      "name": "Right",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 203.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "203_sound",
+      "type": "Sound",
+      "name": "Matchstrike",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 203. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "What Cold Distorts - Recovered Case File",
     "fileId": "S17-011A",

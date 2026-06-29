@@ -217,18 +217,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "509_ship_manifest",
-    "name": "Ship Manifest",
-    "symbol": "*",
-    "description": "Ship Manifest was recovered from The Weir in Case File 509. It is tied to Wainwright, 5:13, and marker 4343.",
-    "discovered": "Case File 509",
-    "firstAppearance": "The Life Built",
-    "connectedSongs": [
-      "509"
-    ],
-    "unknownInfo": "Back the Way You Came and Mud Suction suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "509_shipmanifest",
+      "type": "Object",
+      "name": "Shipmanifest",
+      "symbol": "🔍",
+      "description": "Ship Manifest was recovered from The Weir in Case File 509. It is tied to Wainwright, 5:13, and marker 4343.",
+      "unknownInfo": "Back the Way You Came and Mud Suction suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "509_location",
+      "type": "Location",
+      "name": "Weir",
+      "symbol": "📍",
+      "description": "The active scene for Case File 509. Recovered field notes place the primary event at Weir.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "509_witness",
+      "type": "Witness",
+      "name": "Wainwright",
+      "symbol": "👤",
+      "description": "Wainwright, identified in the case notes for Case File 509. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "509_time",
+      "type": "Time",
+      "name": "513",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 509. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "509_marker",
+      "type": "Marker",
+      "name": "Marker 4343",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 509.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "509_direction",
+      "type": "Direction",
+      "name": "Backthewayyoucame",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 509.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "509_sound",
+      "type": "Sound",
+      "name": "Mudsuction",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 509. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Life Built - Recovered Case File",
     "fileId": "S43-005A",

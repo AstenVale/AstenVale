@@ -225,18 +225,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "018_handkerchief",
-    "name": "Handkerchief",
-    "symbol": "*",
-    "description": "Handkerchief was recovered from Window Seat in Case File 018. It is tied to Sister, 8:00, and marker 165.",
-    "discovered": "Case File 018",
-    "firstAppearance": "The Vigil",
-    "connectedSongs": [
-      "018"
-    ],
-    "unknownInfo": "In and Clock Ticking suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "018_handkerchief",
+      "type": "Object",
+      "name": "Handkerchief",
+      "symbol": "🔍",
+      "description": "Handkerchief was recovered from Window Seat in Case File 018. It is tied to Sister, 8:00, and marker 165.",
+      "unknownInfo": "In and Clock Ticking suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "018_location",
+      "type": "Location",
+      "name": "Windowseat",
+      "symbol": "📍",
+      "description": "The active scene for Case File 018. Recovered field notes place the primary event at Windowseat.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "018_witness",
+      "type": "Witness",
+      "name": "Sister",
+      "symbol": "👤",
+      "description": "Sister, identified in the case notes for Case File 018. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "018_time",
+      "type": "Time",
+      "name": "800",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 018. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "018_marker",
+      "type": "Marker",
+      "name": "Marker 165",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 018.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "018_direction",
+      "type": "Direction",
+      "name": "In",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 018.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "018_sound",
+      "type": "Sound",
+      "name": "Clockticking",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 018. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Vigil - Recovered Case File",
     "fileId": "S2-006A",

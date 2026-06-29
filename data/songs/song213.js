@@ -224,18 +224,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "213_stamp",
-    "name": "Stamp",
-    "symbol": "*",
-    "description": "Stamp was recovered from Chandler's Row in Case File 213. It is tied to Gravedigger, 10:19, and marker 1879.",
-    "discovered": "Case File 213",
-    "firstAppearance": "What Records Say",
-    "connectedSongs": [
-      "213"
-    ],
-    "unknownInfo": "South and Latch Drop suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "213_stamp",
+      "type": "Object",
+      "name": "Stamp",
+      "symbol": "🔍",
+      "description": "Stamp was recovered from Chandler's Row in Case File 213. It is tied to Gravedigger, 10:19, and marker 1879.",
+      "unknownInfo": "South and Latch Drop suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "213_location",
+      "type": "Location",
+      "name": "Chandler'Srow",
+      "symbol": "📍",
+      "description": "The active scene for Case File 213. Recovered field notes place the primary event at Chandler'Srow.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "213_witness",
+      "type": "Witness",
+      "name": "Gravedigger",
+      "symbol": "👤",
+      "description": "Gravedigger, identified in the case notes for Case File 213. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "213_time",
+      "type": "Time",
+      "name": "1019",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 213. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "213_marker",
+      "type": "Marker",
+      "name": "Marker 1879",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 213.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "213_direction",
+      "type": "Direction",
+      "name": "South",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 213.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "213_sound",
+      "type": "Sound",
+      "name": "Latchdrop",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 213. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "What Records Say - Recovered Case File",
     "fileId": "S18-009A",

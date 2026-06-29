@@ -214,18 +214,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "448_inkwell",
-    "name": "Inkwell",
-    "symbol": "*",
-    "description": "Inkwell was recovered from River's Edge in Case File 448. It is tied to Cartographer, 1:33, and marker 3834.",
-    "discovered": "Case File 448",
-    "firstAppearance": "What It Meant",
-    "connectedSongs": [
-      "448"
-    ],
-    "unknownInfo": "South and Distant Church Bell suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "448_inkwell",
+      "type": "Object",
+      "name": "Inkwell",
+      "symbol": "🔍",
+      "description": "Inkwell was recovered from River's Edge in Case File 448. It is tied to Cartographer, 1:33, and marker 3834.",
+      "unknownInfo": "South and Distant Church Bell suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "448_location",
+      "type": "Location",
+      "name": "River'Sedge",
+      "symbol": "📍",
+      "description": "The active scene for Case File 448. Recovered field notes place the primary event at River'Sedge.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "448_witness",
+      "type": "Witness",
+      "name": "Cartographer",
+      "symbol": "👤",
+      "description": "Cartographer, identified in the case notes for Case File 448. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "448_time",
+      "type": "Time",
+      "name": "133",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 448. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "448_marker",
+      "type": "Marker",
+      "name": "Marker 3834",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 448.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "448_direction",
+      "type": "Direction",
+      "name": "South",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 448.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "448_sound",
+      "type": "Sound",
+      "name": "Distantchurchbell",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 448. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "What It Meant - Recovered Case File",
     "fileId": "S38-004A",

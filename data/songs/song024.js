@@ -226,18 +226,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "024_suitcase_latch",
-    "name": "Suitcase Latch",
-    "symbol": "*",
-    "description": "Suitcase Latch was recovered from Pine Road in Case File 024. It is tied to Child, 5:30, and marker 231.",
-    "discovered": "Case File 024",
-    "firstAppearance": "The Pine Road Home",
-    "connectedSongs": [
-      "024"
-    ],
-    "unknownInfo": "Home and Wind in Pines suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "024_suitcaselatch",
+      "type": "Object",
+      "name": "Suitcaselatch",
+      "symbol": "🔍",
+      "description": "Suitcase Latch was recovered from Pine Road in Case File 024. It is tied to Child, 5:30, and marker 231.",
+      "unknownInfo": "Home and Wind in Pines suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "024_location",
+      "type": "Location",
+      "name": "Pineroad",
+      "symbol": "📍",
+      "description": "The active scene for Case File 024. Recovered field notes place the primary event at Pineroad.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "024_witness",
+      "type": "Witness",
+      "name": "Child",
+      "symbol": "👤",
+      "description": "Child, identified in the case notes for Case File 024. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "024_time",
+      "type": "Time",
+      "name": "530",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 024. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "024_marker",
+      "type": "Marker",
+      "name": "Marker 231",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 024.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "024_direction",
+      "type": "Direction",
+      "name": "Home",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 024.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "024_sound",
+      "type": "Sound",
+      "name": "Windinpines",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 024. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Pine Road Home - Recovered Case File",
     "fileId": "S2-012A",

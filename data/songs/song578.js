@@ -213,18 +213,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "578_coin",
-    "name": "Coin",
-    "symbol": "*",
-    "description": "Coin was recovered from Saloon in Case File 578. It is tied to Driver, 9:55, and marker 4916.",
-    "discovered": "Case File 578",
-    "firstAppearance": "What She Remembers",
-    "connectedSongs": [
-      "578"
-    ],
-    "unknownInfo": "South and Cannon Bolt suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "578_coin",
+      "type": "Object",
+      "name": "Coin",
+      "symbol": "🔍",
+      "description": "Coin was recovered from Saloon in Case File 578. It is tied to Driver, 9:55, and marker 4916.",
+      "unknownInfo": "South and Cannon Bolt suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "578_location",
+      "type": "Location",
+      "name": "Saloon",
+      "symbol": "📍",
+      "description": "The active scene for Case File 578. Recovered field notes place the primary event at Saloon.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "578_witness",
+      "type": "Witness",
+      "name": "Driver",
+      "symbol": "👤",
+      "description": "Driver, identified in the case notes for Case File 578. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "578_time",
+      "type": "Time",
+      "name": "955",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 578. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "578_marker",
+      "type": "Marker",
+      "name": "Marker 4916",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 578.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "578_direction",
+      "type": "Direction",
+      "name": "South",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 578.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "578_sound",
+      "type": "Sound",
+      "name": "Cannonbolt",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 578. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "What She Remembers - Recovered Case File",
     "fileId": "S49-002A",

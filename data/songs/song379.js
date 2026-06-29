@@ -215,18 +215,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "379_notebook",
-    "name": "Notebook",
-    "symbol": "*",
-    "description": "Notebook was recovered from Crow's Nest Ridge in Case File 379. It is tied to Stranger, 10:47, and marker 3261.",
-    "discovered": "Case File 379",
-    "firstAppearance": "The Bottom",
-    "connectedSongs": [
-      "379"
-    ],
-    "unknownInfo": "Into the Pines and Dry Grass suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "379_notebook",
+      "type": "Object",
+      "name": "Notebook",
+      "symbol": "🔍",
+      "description": "Notebook was recovered from Crow's Nest Ridge in Case File 379. It is tied to Stranger, 10:47, and marker 3261.",
+      "unknownInfo": "Into the Pines and Dry Grass suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "379_location",
+      "type": "Location",
+      "name": "Crow'Snestridge",
+      "symbol": "📍",
+      "description": "The active scene for Case File 379. Recovered field notes place the primary event at Crow'Snestridge.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "379_witness",
+      "type": "Witness",
+      "name": "Stranger",
+      "symbol": "👤",
+      "description": "Stranger, identified in the case notes for Case File 379. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "379_time",
+      "type": "Time",
+      "name": "1047",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 379. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "379_marker",
+      "type": "Marker",
+      "name": "Marker 3261",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 379.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "379_direction",
+      "type": "Direction",
+      "name": "Intothepines",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 379.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "379_sound",
+      "type": "Sound",
+      "name": "Drygrass",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 379. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Bottom - Recovered Case File",
     "fileId": "S32-007A",

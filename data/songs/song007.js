@@ -213,18 +213,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "007_matchbook",
-    "name": "Matchbook",
-    "symbol": "*",
-    "description": "Matchbook was recovered from Diner in Case File 007. It is tied to Stranger, 9:15, and marker 61.",
-    "discovered": "Case File 007",
-    "firstAppearance": "Stranger's Matchbook",
-    "connectedSongs": [
-      "007"
-    ],
-    "unknownInfo": "South and Match Strike suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "007_matchbook",
+      "type": "Object",
+      "name": "Matchbook",
+      "symbol": "🔍",
+      "description": "Matchbook was recovered from Diner in Case File 007. It is tied to Stranger, 9:15, and marker 61.",
+      "unknownInfo": "South and Match Strike suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "007_location",
+      "type": "Location",
+      "name": "Diner",
+      "symbol": "📍",
+      "description": "The active scene for Case File 007. Recovered field notes place the primary event at Diner.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "007_witness",
+      "type": "Witness",
+      "name": "Stranger",
+      "symbol": "👤",
+      "description": "Stranger, identified in the case notes for Case File 007. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "007_time",
+      "type": "Time",
+      "name": "915",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 007. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "007_marker",
+      "type": "Marker",
+      "name": "Marker 61",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 007.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "007_direction",
+      "type": "Direction",
+      "name": "South",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 007.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "007_sound",
+      "type": "Sound",
+      "name": "Matchstrike",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 007. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "Stranger's Matchbook - Recovered Case File",
     "fileId": "007A",

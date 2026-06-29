@@ -213,18 +213,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "400_map",
-    "name": "Map",
-    "symbol": "*",
-    "description": "Map was recovered from Pharmacy in Case File 400. It is tied to Stranger, 9:08, and marker 3434.",
-    "discovered": "Case File 400",
-    "firstAppearance": "The Doctor's Note",
-    "connectedSongs": [
-      "400"
-    ],
-    "unknownInfo": "Down and Knife Scrape suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "400_map",
+      "type": "Object",
+      "name": "Map",
+      "symbol": "🔍",
+      "description": "Map was recovered from Pharmacy in Case File 400. It is tied to Stranger, 9:08, and marker 3434.",
+      "unknownInfo": "Down and Knife Scrape suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "400_location",
+      "type": "Location",
+      "name": "Pharmacy",
+      "symbol": "📍",
+      "description": "The active scene for Case File 400. Recovered field notes place the primary event at Pharmacy.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "400_witness",
+      "type": "Witness",
+      "name": "Stranger",
+      "symbol": "👤",
+      "description": "Stranger, identified in the case notes for Case File 400. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "400_time",
+      "type": "Time",
+      "name": "908",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 400. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "400_marker",
+      "type": "Marker",
+      "name": "Marker 3434",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 400.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "400_direction",
+      "type": "Direction",
+      "name": "Down",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 400.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "400_sound",
+      "type": "Sound",
+      "name": "Knifescrape",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 400. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Doctor's Note - Recovered Case File",
     "fileId": "S34-004A",

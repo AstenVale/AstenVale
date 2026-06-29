@@ -227,18 +227,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "287_wax_tablet",
-    "name": "Wax Tablet",
-    "symbol": "*",
-    "description": "Wax Tablet was recovered from Water Tower in Case File 287. It is tied to Rag Picker, 5:55, and marker 2497.",
-    "discovered": "Case File 287",
-    "firstAppearance": "The Reconstruction",
-    "connectedSongs": [
-      "287"
-    ],
-    "unknownInfo": "Back and River Ice suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "287_waxtablet",
+      "type": "Object",
+      "name": "Waxtablet",
+      "symbol": "🔍",
+      "description": "Wax Tablet was recovered from Water Tower in Case File 287. It is tied to Rag Picker, 5:55, and marker 2497.",
+      "unknownInfo": "Back and River Ice suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "287_location",
+      "type": "Location",
+      "name": "Watertower",
+      "symbol": "📍",
+      "description": "The active scene for Case File 287. Recovered field notes place the primary event at Watertower.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "287_witness",
+      "type": "Witness",
+      "name": "Ragpicker",
+      "symbol": "👤",
+      "description": "Ragpicker, identified in the case notes for Case File 287. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "287_time",
+      "type": "Time",
+      "name": "555",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 287. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "287_marker",
+      "type": "Marker",
+      "name": "Marker 2497",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 287.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "287_direction",
+      "type": "Direction",
+      "name": "Back",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 287.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "287_sound",
+      "type": "Sound",
+      "name": "Riverice",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 287. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Reconstruction - Recovered Case File",
     "fileId": "S24-011A",

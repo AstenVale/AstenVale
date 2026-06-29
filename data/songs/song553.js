@@ -214,18 +214,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "553_chain",
-    "name": "Chain",
-    "symbol": "*",
-    "description": "Chain was recovered from Fulling Mill in Case File 553. It is tied to Innkeeper, 9:08, and marker 4707.",
-    "discovered": "Case File 553",
-    "firstAppearance": "The Detour",
-    "connectedSongs": [
-      "553"
-    ],
-    "unknownInfo": "Home and Hammer on Anvil suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "553_chain",
+      "type": "Object",
+      "name": "Chain",
+      "symbol": "🔍",
+      "description": "Chain was recovered from Fulling Mill in Case File 553. It is tied to Innkeeper, 9:08, and marker 4707.",
+      "unknownInfo": "Home and Hammer on Anvil suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "553_location",
+      "type": "Location",
+      "name": "Fullingmill",
+      "symbol": "📍",
+      "description": "The active scene for Case File 553. Recovered field notes place the primary event at Fullingmill.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "553_witness",
+      "type": "Witness",
+      "name": "Innkeeper",
+      "symbol": "👤",
+      "description": "Innkeeper, identified in the case notes for Case File 553. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "553_time",
+      "type": "Time",
+      "name": "908",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 553. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "553_marker",
+      "type": "Marker",
+      "name": "Marker 4707",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 553.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "553_direction",
+      "type": "Direction",
+      "name": "Home",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 553.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "553_sound",
+      "type": "Sound",
+      "name": "Hammeronanvil",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 553. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Detour - Recovered Case File",
     "fileId": "S47-001A",

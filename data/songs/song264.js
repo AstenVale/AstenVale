@@ -223,18 +223,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "264_photograph",
-    "name": "Photograph",
-    "symbol": "*",
-    "description": "Photograph was recovered from Hotel in Case File 264. It is tied to Furrier, 9:44, and marker 2306.",
-    "discovered": "Case File 264",
-    "firstAppearance": "The Living",
-    "connectedSongs": [
-      "264"
-    ],
-    "unknownInfo": "Across and Distant Gunshot suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "264_photograph",
+      "type": "Object",
+      "name": "Photograph",
+      "symbol": "🔍",
+      "description": "Photograph was recovered from Hotel in Case File 264. It is tied to Furrier, 9:44, and marker 2306.",
+      "unknownInfo": "Across and Distant Gunshot suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "264_location",
+      "type": "Location",
+      "name": "Hotel",
+      "symbol": "📍",
+      "description": "The active scene for Case File 264. Recovered field notes place the primary event at Hotel.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "264_witness",
+      "type": "Witness",
+      "name": "Furrier",
+      "symbol": "👤",
+      "description": "Furrier, identified in the case notes for Case File 264. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "264_time",
+      "type": "Time",
+      "name": "944",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 264. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "264_marker",
+      "type": "Marker",
+      "name": "Marker 2306",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 264.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "264_direction",
+      "type": "Direction",
+      "name": "Across",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 264.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "264_sound",
+      "type": "Sound",
+      "name": "Distantgunshot",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 264. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Living - Recovered Case File",
     "fileId": "S22-012A",

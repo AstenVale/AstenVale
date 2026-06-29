@@ -226,18 +226,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "327_dried_ink_blot",
-    "name": "Dried Ink Blot",
-    "symbol": "*",
-    "description": "Dried Ink Blot was recovered from Schoolhouse in Case File 327. It is tied to Apothecary, 7:02, and marker 2825.",
-    "discovered": "Case File 327",
-    "firstAppearance": "What the Signal Said",
-    "connectedSongs": [
-      "327"
-    ],
-    "unknownInfo": "Along the Creek and Cellar Door suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "327_driedinkblot",
+      "type": "Object",
+      "name": "Driedinkblot",
+      "symbol": "🔍",
+      "description": "Dried Ink Blot was recovered from Schoolhouse in Case File 327. It is tied to Apothecary, 7:02, and marker 2825.",
+      "unknownInfo": "Along the Creek and Cellar Door suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "327_location",
+      "type": "Location",
+      "name": "Schoolhouse",
+      "symbol": "📍",
+      "description": "The active scene for Case File 327. Recovered field notes place the primary event at Schoolhouse.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "327_witness",
+      "type": "Witness",
+      "name": "Apothecary",
+      "symbol": "👤",
+      "description": "Apothecary, identified in the case notes for Case File 327. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "327_time",
+      "type": "Time",
+      "name": "702",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 327. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "327_marker",
+      "type": "Marker",
+      "name": "Marker 2825",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 327.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "327_direction",
+      "type": "Direction",
+      "name": "Alongthecreek",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 327.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "327_sound",
+      "type": "Sound",
+      "name": "Cellardoor",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 327. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "What the Signal Said - Recovered Case File",
     "fileId": "S28-003A",

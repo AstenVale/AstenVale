@@ -213,18 +213,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "536_journal",
-    "name": "Journal",
-    "symbol": "*",
-    "description": "Journal was recovered from Cooperage in Case File 536. It is tied to Wainwright, 12:17, and marker 4570.",
-    "discovered": "Case File 536",
-    "firstAppearance": "Who Stayed",
-    "connectedSongs": [
-      "536"
-    ],
-    "unknownInfo": "Across and Distant Church Bell suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "536_journal",
+      "type": "Object",
+      "name": "Journal",
+      "symbol": "🔍",
+      "description": "Journal was recovered from Cooperage in Case File 536. It is tied to Wainwright, 12:17, and marker 4570.",
+      "unknownInfo": "Across and Distant Church Bell suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "536_location",
+      "type": "Location",
+      "name": "Cooperage",
+      "symbol": "📍",
+      "description": "The active scene for Case File 536. Recovered field notes place the primary event at Cooperage.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "536_witness",
+      "type": "Witness",
+      "name": "Wainwright",
+      "symbol": "👤",
+      "description": "Wainwright, identified in the case notes for Case File 536. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "536_time",
+      "type": "Time",
+      "name": "1217",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 536. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "536_marker",
+      "type": "Marker",
+      "name": "Marker 4570",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 536.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "536_direction",
+      "type": "Direction",
+      "name": "Across",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 536.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "536_sound",
+      "type": "Sound",
+      "name": "Distantchurchbell",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 536. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "Who Stayed - Recovered Case File",
     "fileId": "S45-008A",

@@ -227,18 +227,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "234_bone_button",
-    "name": "Bone Button",
-    "symbol": "*",
-    "description": "Bone Button was recovered from Cooper's Yard in Case File 234. It is tied to Cider Presser, 7:00, and marker 2052.",
-    "discovered": "Case File 234",
-    "firstAppearance": "Graveyard Hours",
-    "connectedSongs": [
-      "234"
-    ],
-    "unknownInfo": "Behind and Hammer on Anvil suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "234_bonebutton",
+      "type": "Object",
+      "name": "Bonebutton",
+      "symbol": "🔍",
+      "description": "Bone Button was recovered from Cooper's Yard in Case File 234. It is tied to Cider Presser, 7:00, and marker 2052.",
+      "unknownInfo": "Behind and Hammer on Anvil suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "234_location",
+      "type": "Location",
+      "name": "Cooper'Syard",
+      "symbol": "📍",
+      "description": "The active scene for Case File 234. Recovered field notes place the primary event at Cooper'Syard.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "234_witness",
+      "type": "Witness",
+      "name": "Ciderpresser",
+      "symbol": "👤",
+      "description": "Ciderpresser, identified in the case notes for Case File 234. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "234_time",
+      "type": "Time",
+      "name": "700",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 234. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "234_marker",
+      "type": "Marker",
+      "name": "Marker 2052",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 234.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "234_direction",
+      "type": "Direction",
+      "name": "Behind",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 234.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "234_sound",
+      "type": "Sound",
+      "name": "Hammeronanvil",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 234. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "Graveyard Hours - Recovered Case File",
     "fileId": "S20-006A",

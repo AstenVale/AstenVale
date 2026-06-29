@@ -224,18 +224,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "526_scratched_initials_in_wood",
-    "name": "Scratched Initials in Wood",
-    "symbol": "*",
-    "description": "Scratched Initials in Wood was recovered from Forge in Case File 526. It is tied to Typesetter, 7:48, and marker 4488.",
-    "discovered": "Case File 526",
-    "firstAppearance": "What the Mirror Says",
-    "connectedSongs": [
-      "526"
-    ],
-    "unknownInfo": "Nowhere and Tree Fall suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "526_scratchedinitialsinwood",
+      "type": "Object",
+      "name": "Scratchedinitialsinwood",
+      "symbol": "🔍",
+      "description": "Scratched Initials in Wood was recovered from Forge in Case File 526. It is tied to Typesetter, 7:48, and marker 4488.",
+      "unknownInfo": "Nowhere and Tree Fall suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "526_location",
+      "type": "Location",
+      "name": "Forge",
+      "symbol": "📍",
+      "description": "The active scene for Case File 526. Recovered field notes place the primary event at Forge.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "526_witness",
+      "type": "Witness",
+      "name": "Typesetter",
+      "symbol": "👤",
+      "description": "Typesetter, identified in the case notes for Case File 526. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "526_time",
+      "type": "Time",
+      "name": "748",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 526. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "526_marker",
+      "type": "Marker",
+      "name": "Marker 4488",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 526.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "526_direction",
+      "type": "Direction",
+      "name": "Nowhere",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 526.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "526_sound",
+      "type": "Sound",
+      "name": "Treefall",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 526. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "What the Mirror Says - Recovered Case File",
     "fileId": "S44-010A",

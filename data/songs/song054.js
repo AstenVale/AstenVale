@@ -213,18 +213,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "054_flask",
-    "name": "Flask",
-    "symbol": "*",
-    "description": "Flask was recovered from Feed Store in Case File 054. It is tied to Conductor, 3:03, and marker 552.",
-    "discovered": "Case File 054",
-    "firstAppearance": "The Fire Went Out",
-    "connectedSongs": [
-      "054"
-    ],
-    "unknownInfo": "Over and Floorboard suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "054_flask",
+      "type": "Object",
+      "name": "Flask",
+      "symbol": "🔍",
+      "description": "Flask was recovered from Feed Store in Case File 054. It is tied to Conductor, 3:03, and marker 552.",
+      "unknownInfo": "Over and Floorboard suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "054_location",
+      "type": "Location",
+      "name": "Feedstore",
+      "symbol": "📍",
+      "description": "The active scene for Case File 054. Recovered field notes place the primary event at Feedstore.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "054_witness",
+      "type": "Witness",
+      "name": "Conductor",
+      "symbol": "👤",
+      "description": "Conductor, identified in the case notes for Case File 054. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "054_time",
+      "type": "Time",
+      "name": "303",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 054. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "054_marker",
+      "type": "Marker",
+      "name": "Marker 552",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 054.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "054_direction",
+      "type": "Direction",
+      "name": "Over",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 054.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "054_sound",
+      "type": "Sound",
+      "name": "Floorboard",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 054. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Fire Went Out - Recovered Case File",
     "fileId": "S5-006A",

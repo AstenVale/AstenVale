@@ -216,18 +216,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "290_ear_of_corn",
-    "name": "Ear of Corn",
-    "symbol": "*",
-    "description": "Ear of Corn was recovered from Iron Bridge in Case File 290. It is tied to River Pilot, 8:42, and marker 2516.",
-    "discovered": "Case File 290",
-    "firstAppearance": "What Changed",
-    "connectedSongs": [
-      "290"
-    ],
-    "unknownInfo": "Somewhere and Knife Scrape suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "290_earofcorn",
+      "type": "Object",
+      "name": "Earofcorn",
+      "symbol": "🔍",
+      "description": "Ear of Corn was recovered from Iron Bridge in Case File 290. It is tied to River Pilot, 8:42, and marker 2516.",
+      "unknownInfo": "Somewhere and Knife Scrape suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "290_location",
+      "type": "Location",
+      "name": "Ironbridge",
+      "symbol": "📍",
+      "description": "The active scene for Case File 290. Recovered field notes place the primary event at Ironbridge.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "290_witness",
+      "type": "Witness",
+      "name": "Riverpilot",
+      "symbol": "👤",
+      "description": "Riverpilot, identified in the case notes for Case File 290. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "290_time",
+      "type": "Time",
+      "name": "842",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 290. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "290_marker",
+      "type": "Marker",
+      "name": "Marker 2516",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 290.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "290_direction",
+      "type": "Direction",
+      "name": "Somewhere",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 290.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "290_sound",
+      "type": "Sound",
+      "name": "Knifescrape",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 290. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "What Changed - Recovered Case File",
     "fileId": "S25-002A",

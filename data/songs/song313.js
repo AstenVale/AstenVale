@@ -214,18 +214,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "313_boot",
-    "name": "Boot",
-    "symbol": "*",
-    "description": "Boot was recovered from Collapsed Mine in Case File 313. It is tied to Census Taker, 12:33, and marker 2707.",
-    "discovered": "Case File 313",
-    "firstAppearance": "The Open Ground",
-    "connectedSongs": [
-      "313"
-    ],
-    "unknownInfo": "Somewhere and Chains suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "313_boot",
+      "type": "Object",
+      "name": "Boot",
+      "symbol": "🔍",
+      "description": "Boot was recovered from Collapsed Mine in Case File 313. It is tied to Census Taker, 12:33, and marker 2707.",
+      "unknownInfo": "Somewhere and Chains suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "313_location",
+      "type": "Location",
+      "name": "Collapsedmine",
+      "symbol": "📍",
+      "description": "The active scene for Case File 313. Recovered field notes place the primary event at Collapsedmine.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "313_witness",
+      "type": "Witness",
+      "name": "Censustaker",
+      "symbol": "👤",
+      "description": "Censustaker, identified in the case notes for Case File 313. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "313_time",
+      "type": "Time",
+      "name": "1233",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 313. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "313_marker",
+      "type": "Marker",
+      "name": "Marker 2707",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 313.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "313_direction",
+      "type": "Direction",
+      "name": "Somewhere",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 313.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "313_sound",
+      "type": "Sound",
+      "name": "Chains",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 313. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Open Ground - Recovered Case File",
     "fileId": "S27-001A",

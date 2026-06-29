@@ -215,18 +215,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "381_torn_map",
-    "name": "Torn Map",
-    "symbol": "*",
-    "description": "Torn Map was recovered from Diner in Case File 381. It is tied to Quarry Foreman, 4:03, and marker 3279.",
-    "discovered": "Case File 381",
-    "firstAppearance": "The Depth Mark",
-    "connectedSongs": [
-      "381"
-    ],
-    "unknownInfo": "Nowhere and Pages Turning suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "381_tornmap",
+      "type": "Object",
+      "name": "Tornmap",
+      "symbol": "🔍",
+      "description": "Torn Map was recovered from Diner in Case File 381. It is tied to Quarry Foreman, 4:03, and marker 3279.",
+      "unknownInfo": "Nowhere and Pages Turning suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "381_location",
+      "type": "Location",
+      "name": "Diner",
+      "symbol": "📍",
+      "description": "The active scene for Case File 381. Recovered field notes place the primary event at Diner.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "381_witness",
+      "type": "Witness",
+      "name": "Quarryforeman",
+      "symbol": "👤",
+      "description": "Quarryforeman, identified in the case notes for Case File 381. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "381_time",
+      "type": "Time",
+      "name": "403",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 381. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "381_marker",
+      "type": "Marker",
+      "name": "Marker 3279",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 381.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "381_direction",
+      "type": "Direction",
+      "name": "Nowhere",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 381.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "381_sound",
+      "type": "Sound",
+      "name": "Pagesturning",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 381. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Depth Mark - Recovered Case File",
     "fileId": "S32-009A",

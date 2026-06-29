@@ -224,18 +224,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "193_lock_of_hair",
-    "name": "Lock of Hair",
-    "symbol": "*",
-    "description": "Lock of Hair was recovered from Smithy in Case File 193. It is tied to Driver, 5:55, and marker 1707.",
-    "discovered": "Case File 193",
-    "firstAppearance": "September's End",
-    "connectedSongs": [
-      "193"
-    ],
-    "unknownInfo": "Around and Crow Wings suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "193_lockofhair",
+      "type": "Object",
+      "name": "Lockofhair",
+      "symbol": "🔍",
+      "description": "Lock of Hair was recovered from Smithy in Case File 193. It is tied to Driver, 5:55, and marker 1707.",
+      "unknownInfo": "Around and Crow Wings suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "193_location",
+      "type": "Location",
+      "name": "Smithy",
+      "symbol": "📍",
+      "description": "The active scene for Case File 193. Recovered field notes place the primary event at Smithy.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "193_witness",
+      "type": "Witness",
+      "name": "Driver",
+      "symbol": "👤",
+      "description": "Driver, identified in the case notes for Case File 193. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "193_time",
+      "type": "Time",
+      "name": "555",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 193. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "193_marker",
+      "type": "Marker",
+      "name": "Marker 1707",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 193.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "193_direction",
+      "type": "Direction",
+      "name": "Around",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 193.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "193_sound",
+      "type": "Sound",
+      "name": "Crowwings",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 193. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "September's End - Recovered Case File",
     "fileId": "S17-001A",

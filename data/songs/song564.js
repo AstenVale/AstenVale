@@ -216,18 +216,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "564_ribbon",
-    "name": "Ribbon",
-    "symbol": "*",
-    "description": "Ribbon was recovered from Black Pine in Case File 564. It is tied to Retired Soldier, 2:55, and marker 4806.",
-    "discovered": "Case File 564",
-    "firstAppearance": "Arrival",
-    "connectedSongs": [
-      "564"
-    ],
-    "unknownInfo": "Into the Pines and Crow Wings suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "564_ribbon",
+      "type": "Object",
+      "name": "Ribbon",
+      "symbol": "🔍",
+      "description": "Ribbon was recovered from Black Pine in Case File 564. It is tied to Retired Soldier, 2:55, and marker 4806.",
+      "unknownInfo": "Into the Pines and Crow Wings suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "564_location",
+      "type": "Location",
+      "name": "Blackpine",
+      "symbol": "📍",
+      "description": "The active scene for Case File 564. Recovered field notes place the primary event at Blackpine.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "564_witness",
+      "type": "Witness",
+      "name": "Retiredsoldier",
+      "symbol": "👤",
+      "description": "Retiredsoldier, identified in the case notes for Case File 564. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "564_time",
+      "type": "Time",
+      "name": "255",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 564. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "564_marker",
+      "type": "Marker",
+      "name": "Marker 4806",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 564.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "564_direction",
+      "type": "Direction",
+      "name": "Intothepines",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 564.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "564_sound",
+      "type": "Sound",
+      "name": "Crowwings",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 564. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "Arrival - Recovered Case File",
     "fileId": "S47-012A",

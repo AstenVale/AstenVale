@@ -227,18 +227,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "126_signet_ring",
-    "name": "Signet Ring",
-    "symbol": "*",
-    "description": "Signet Ring was recovered from Ash Creek in Case File 126. It is tied to Circuit Rider, 6:17, and marker 1152.",
-    "discovered": "Case File 126",
-    "firstAppearance": "What's Not on the Map",
-    "connectedSongs": [
-      "126"
-    ],
-    "unknownInfo": "Sideways and Shovel on Earth suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "126_signetring",
+      "type": "Object",
+      "name": "Signetring",
+      "symbol": "🔍",
+      "description": "Signet Ring was recovered from Ash Creek in Case File 126. It is tied to Circuit Rider, 6:17, and marker 1152.",
+      "unknownInfo": "Sideways and Shovel on Earth suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "126_location",
+      "type": "Location",
+      "name": "Ashcreek",
+      "symbol": "📍",
+      "description": "The active scene for Case File 126. Recovered field notes place the primary event at Ashcreek.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "126_witness",
+      "type": "Witness",
+      "name": "Circuitrider",
+      "symbol": "👤",
+      "description": "Circuitrider, identified in the case notes for Case File 126. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "126_time",
+      "type": "Time",
+      "name": "617",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 126. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "126_marker",
+      "type": "Marker",
+      "name": "Marker 1152",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 126.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "126_direction",
+      "type": "Direction",
+      "name": "Sideways",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 126.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "126_sound",
+      "type": "Sound",
+      "name": "Shovelonearth",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 126. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "What's Not on the Map - Recovered Case File",
     "fileId": "S11-006A",

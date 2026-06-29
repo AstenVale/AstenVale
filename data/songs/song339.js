@@ -215,18 +215,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "339_telegram",
-    "name": "Telegram",
-    "symbol": "*",
-    "description": "Telegram was recovered from Birch Stand in Case File 339. It is tied to Schoolteacher, 2:55, and marker 2925.",
-    "discovered": "Case File 339",
-    "firstAppearance": "The Digger",
-    "connectedSongs": [
-      "339"
-    ],
-    "unknownInfo": "Out of Sight and Lantern Glass suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "339_telegram",
+      "type": "Object",
+      "name": "Telegram",
+      "symbol": "🔍",
+      "description": "Telegram was recovered from Birch Stand in Case File 339. It is tied to Schoolteacher, 2:55, and marker 2925.",
+      "unknownInfo": "Out of Sight and Lantern Glass suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "339_location",
+      "type": "Location",
+      "name": "Birchstand",
+      "symbol": "📍",
+      "description": "The active scene for Case File 339. Recovered field notes place the primary event at Birchstand.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "339_witness",
+      "type": "Witness",
+      "name": "Schoolteacher",
+      "symbol": "👤",
+      "description": "Schoolteacher, identified in the case notes for Case File 339. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "339_time",
+      "type": "Time",
+      "name": "255",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 339. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "339_marker",
+      "type": "Marker",
+      "name": "Marker 2925",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 339.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "339_direction",
+      "type": "Direction",
+      "name": "Outofsight",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 339.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "339_sound",
+      "type": "Sound",
+      "name": "Lanternglass",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 339. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Digger - Recovered Case File",
     "fileId": "S29-003A",

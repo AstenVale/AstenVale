@@ -215,18 +215,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "466_pocket_watch",
-    "name": "Pocket Watch",
-    "symbol": "*",
-    "description": "Pocket Watch was recovered from Lake Shore in Case File 466. It is tied to Weaver, 3:03, and marker 3988.",
-    "discovered": "Case File 466",
-    "firstAppearance": "The Rider",
-    "connectedSongs": [
-      "466"
-    ],
-    "unknownInfo": "Beyond and Wind Through a Crack suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "466_pocketwatch",
+      "type": "Object",
+      "name": "Pocketwatch",
+      "symbol": "🔍",
+      "description": "Pocket Watch was recovered from Lake Shore in Case File 466. It is tied to Weaver, 3:03, and marker 3988.",
+      "unknownInfo": "Beyond and Wind Through a Crack suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "466_location",
+      "type": "Location",
+      "name": "Lakeshore",
+      "symbol": "📍",
+      "description": "The active scene for Case File 466. Recovered field notes place the primary event at Lakeshore.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "466_witness",
+      "type": "Witness",
+      "name": "Weaver",
+      "symbol": "👤",
+      "description": "Weaver, identified in the case notes for Case File 466. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "466_time",
+      "type": "Time",
+      "name": "303",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 466. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "466_marker",
+      "type": "Marker",
+      "name": "Marker 3988",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 466.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "466_direction",
+      "type": "Direction",
+      "name": "Beyond",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 466.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "466_sound",
+      "type": "Sound",
+      "name": "Windthroughacrack",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 466. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Rider - Recovered Case File",
     "fileId": "S39-010A",

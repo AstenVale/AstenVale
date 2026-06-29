@@ -214,18 +214,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "134_straight_razor",
-    "name": "Straight Razor",
-    "symbol": "*",
-    "description": "Straight Razor was recovered from Sawmill in Case File 134. It is tied to Sexton, 3:49, and marker 1216.",
-    "discovered": "Case File 134",
-    "firstAppearance": "What Was Left",
-    "connectedSongs": [
-      "134"
-    ],
-    "unknownInfo": "Somewhere and Saw Cutting suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "134_straightrazor",
+      "type": "Object",
+      "name": "Straightrazor",
+      "symbol": "🔍",
+      "description": "Straight Razor was recovered from Sawmill in Case File 134. It is tied to Sexton, 3:49, and marker 1216.",
+      "unknownInfo": "Somewhere and Saw Cutting suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "134_location",
+      "type": "Location",
+      "name": "Sawmill",
+      "symbol": "📍",
+      "description": "The active scene for Case File 134. Recovered field notes place the primary event at Sawmill.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "134_witness",
+      "type": "Witness",
+      "name": "Sexton",
+      "symbol": "👤",
+      "description": "Sexton, identified in the case notes for Case File 134. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "134_time",
+      "type": "Time",
+      "name": "349",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 134. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "134_marker",
+      "type": "Marker",
+      "name": "Marker 1216",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 134.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "134_direction",
+      "type": "Direction",
+      "name": "Somewhere",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 134.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "134_sound",
+      "type": "Sound",
+      "name": "Sawcutting",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 134. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "What Was Left - Recovered Case File",
     "fileId": "S12-002A",

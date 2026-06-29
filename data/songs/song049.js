@@ -215,18 +215,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "049_axle_pin",
-    "name": "Axle Pin",
-    "symbol": "*",
-    "description": "Axle Pin was recovered from North Pasture in Case File 049. It is tied to Postman, 8:33, and marker 507.",
-    "discovered": "Case File 049",
-    "firstAppearance": "First Frost",
-    "connectedSongs": [
-      "049"
-    ],
-    "unknownInfo": "Below and Water Drip suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "049_axlepin",
+      "type": "Object",
+      "name": "Axlepin",
+      "symbol": "🔍",
+      "description": "Axle Pin was recovered from North Pasture in Case File 049. It is tied to Postman, 8:33, and marker 507.",
+      "unknownInfo": "Below and Water Drip suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "049_location",
+      "type": "Location",
+      "name": "Northpasture",
+      "symbol": "📍",
+      "description": "The active scene for Case File 049. Recovered field notes place the primary event at Northpasture.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "049_witness",
+      "type": "Witness",
+      "name": "Postman",
+      "symbol": "👤",
+      "description": "Postman, identified in the case notes for Case File 049. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "049_time",
+      "type": "Time",
+      "name": "833",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 049. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "049_marker",
+      "type": "Marker",
+      "name": "Marker 507",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 049.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "049_direction",
+      "type": "Direction",
+      "name": "Below",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 049.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "049_sound",
+      "type": "Sound",
+      "name": "Waterdrip",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 049. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "First Frost - Recovered Case File",
     "fileId": "S5-001A",

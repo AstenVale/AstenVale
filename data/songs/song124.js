@@ -227,18 +227,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "124_inkwell",
-    "name": "Inkwell",
-    "symbol": "*",
-    "description": "Inkwell was recovered from Banker's House in Case File 124. It is tied to Lime Burner, 7:14, and marker 1134.",
-    "discovered": "Case File 124",
-    "firstAppearance": "Disputed Land",
-    "connectedSongs": [
-      "124"
-    ],
-    "unknownInfo": "Past the Tree Line and Lantern Glass suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "124_inkwell",
+      "type": "Object",
+      "name": "Inkwell",
+      "symbol": "🔍",
+      "description": "Inkwell was recovered from Banker's House in Case File 124. It is tied to Lime Burner, 7:14, and marker 1134.",
+      "unknownInfo": "Past the Tree Line and Lantern Glass suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "124_location",
+      "type": "Location",
+      "name": "Banker'Shouse",
+      "symbol": "📍",
+      "description": "The active scene for Case File 124. Recovered field notes place the primary event at Banker'Shouse.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "124_witness",
+      "type": "Witness",
+      "name": "Limeburner",
+      "symbol": "👤",
+      "description": "Limeburner, identified in the case notes for Case File 124. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "124_time",
+      "type": "Time",
+      "name": "714",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 124. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "124_marker",
+      "type": "Marker",
+      "name": "Marker 1134",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 124.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "124_direction",
+      "type": "Direction",
+      "name": "Pastthetreeline",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 124.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "124_sound",
+      "type": "Sound",
+      "name": "Lanternglass",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 124. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "Disputed Land - Recovered Case File",
     "fileId": "S11-004A",

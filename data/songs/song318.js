@@ -217,18 +217,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "318_belt_buckle",
-    "name": "Belt Buckle",
-    "symbol": "*",
-    "description": "Belt Buckle was recovered from The Dry Gulch in Case File 318. It is tied to Orphan, 6:17, and marker 2752.",
-    "discovered": "Case File 318",
-    "firstAppearance": "What Crossed It",
-    "connectedSongs": [
-      "318"
-    ],
-    "unknownInfo": "Down the Hollow and Horse Hooves suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "318_beltbuckle",
+      "type": "Object",
+      "name": "Beltbuckle",
+      "symbol": "🔍",
+      "description": "Belt Buckle was recovered from The Dry Gulch in Case File 318. It is tied to Orphan, 6:17, and marker 2752.",
+      "unknownInfo": "Down the Hollow and Horse Hooves suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "318_location",
+      "type": "Location",
+      "name": "Dry Gulch",
+      "symbol": "📍",
+      "description": "The active scene for Case File 318. Recovered field notes place the primary event at Dry Gulch.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "318_witness",
+      "type": "Witness",
+      "name": "Orphan",
+      "symbol": "👤",
+      "description": "Orphan, identified in the case notes for Case File 318. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "318_time",
+      "type": "Time",
+      "name": "617",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 318. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "318_marker",
+      "type": "Marker",
+      "name": "Marker 2752",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 318.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "318_direction",
+      "type": "Direction",
+      "name": "Downthehollow",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 318.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "318_sound",
+      "type": "Sound",
+      "name": "Horsehooves",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 318. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "What Crossed It - Recovered Case File",
     "fileId": "S27-006A",

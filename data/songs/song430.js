@@ -215,18 +215,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "430_inkwell",
-    "name": "Inkwell",
-    "symbol": "*",
-    "description": "Inkwell was recovered from Crow's Nest Ridge in Case File 430. It is tied to Child, 2:38, and marker 3688.",
-    "discovered": "Case File 430",
-    "firstAppearance": "What the Calls Mean",
-    "connectedSongs": [
-      "430"
-    ],
-    "unknownInfo": "Into the Dark and Knife Scrape suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "430_inkwell",
+      "type": "Object",
+      "name": "Inkwell",
+      "symbol": "🔍",
+      "description": "Inkwell was recovered from Crow's Nest Ridge in Case File 430. It is tied to Child, 2:38, and marker 3688.",
+      "unknownInfo": "Into the Dark and Knife Scrape suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "430_location",
+      "type": "Location",
+      "name": "Crow'Snestridge",
+      "symbol": "📍",
+      "description": "The active scene for Case File 430. Recovered field notes place the primary event at Crow'Snestridge.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "430_witness",
+      "type": "Witness",
+      "name": "Child",
+      "symbol": "👤",
+      "description": "Child, identified in the case notes for Case File 430. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "430_time",
+      "type": "Time",
+      "name": "238",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 430. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "430_marker",
+      "type": "Marker",
+      "name": "Marker 3688",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 430.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "430_direction",
+      "type": "Direction",
+      "name": "Intothedark",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 430.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "430_sound",
+      "type": "Sound",
+      "name": "Knifescrape",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 430. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "What the Calls Mean - Recovered Case File",
     "fileId": "S36-010A",

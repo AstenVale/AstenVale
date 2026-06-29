@@ -227,18 +227,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "231_trade_token",
-    "name": "Trade Token",
-    "symbol": "*",
-    "description": "Trade Token was recovered from Doctor's Office in Case File 231. It is tied to Driver, 7:14, and marker 2025.",
-    "discovered": "Case File 231",
-    "firstAppearance": "What Runs at Midnight",
-    "connectedSongs": [
-      "231"
-    ],
-    "unknownInfo": "Up the Ridge and River Ice suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "231_tradetoken",
+      "type": "Object",
+      "name": "Tradetoken",
+      "symbol": "🔍",
+      "description": "Trade Token was recovered from Doctor's Office in Case File 231. It is tied to Driver, 7:14, and marker 2025.",
+      "unknownInfo": "Up the Ridge and River Ice suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "231_location",
+      "type": "Location",
+      "name": "Doctor'Soffice",
+      "symbol": "📍",
+      "description": "The active scene for Case File 231. Recovered field notes place the primary event at Doctor'Soffice.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "231_witness",
+      "type": "Witness",
+      "name": "Driver",
+      "symbol": "👤",
+      "description": "Driver, identified in the case notes for Case File 231. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "231_time",
+      "type": "Time",
+      "name": "714",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 231. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "231_marker",
+      "type": "Marker",
+      "name": "Marker 2025",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 231.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "231_direction",
+      "type": "Direction",
+      "name": "Uptheridge",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 231.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "231_sound",
+      "type": "Sound",
+      "name": "Riverice",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 231. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "What Runs at Midnight - Recovered Case File",
     "fileId": "S20-003A",

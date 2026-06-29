@@ -215,18 +215,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "167_flask",
-    "name": "Flask",
-    "symbol": "*",
-    "description": "Flask was recovered from Watchmaker's Shop in Case File 167. It is tied to Preacher, 9:27, and marker 1497.",
-    "discovered": "Case File 167",
-    "firstAppearance": "The Count",
-    "connectedSongs": [
-      "167"
-    ],
-    "unknownInfo": "Past the Tree Line and Dog Bark at Nothing suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "167_flask",
+      "type": "Object",
+      "name": "Flask",
+      "symbol": "🔍",
+      "description": "Flask was recovered from Watchmaker's Shop in Case File 167. It is tied to Preacher, 9:27, and marker 1497.",
+      "unknownInfo": "Past the Tree Line and Dog Bark at Nothing suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "167_location",
+      "type": "Location",
+      "name": "Watchmaker'Sshop",
+      "symbol": "📍",
+      "description": "The active scene for Case File 167. Recovered field notes place the primary event at Watchmaker'Sshop.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "167_witness",
+      "type": "Witness",
+      "name": "Preacher",
+      "symbol": "👤",
+      "description": "Preacher, identified in the case notes for Case File 167. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "167_time",
+      "type": "Time",
+      "name": "927",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 167. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "167_marker",
+      "type": "Marker",
+      "name": "Marker 1497",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 167.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "167_direction",
+      "type": "Direction",
+      "name": "Pastthetreeline",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 167.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "167_sound",
+      "type": "Sound",
+      "name": "Dogbarkatnothing",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 167. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Count - Recovered Case File",
     "fileId": "S14-011A",

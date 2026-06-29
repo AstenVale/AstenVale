@@ -214,18 +214,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "427_axle_pin",
-    "name": "Axle Pin",
-    "symbol": "*",
-    "description": "Axle Pin was recovered from Stables in Case File 427. It is tied to Furrier, 2:38, and marker 3661.",
-    "discovered": "Case File 427",
-    "firstAppearance": "The Recording",
-    "connectedSongs": [
-      "427"
-    ],
-    "unknownInfo": "Nowhere and Kettle Boil suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "427_axlepin",
+      "type": "Object",
+      "name": "Axlepin",
+      "symbol": "🔍",
+      "description": "Axle Pin was recovered from Stables in Case File 427. It is tied to Furrier, 2:38, and marker 3661.",
+      "unknownInfo": "Nowhere and Kettle Boil suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "427_location",
+      "type": "Location",
+      "name": "Stables",
+      "symbol": "📍",
+      "description": "The active scene for Case File 427. Recovered field notes place the primary event at Stables.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "427_witness",
+      "type": "Witness",
+      "name": "Furrier",
+      "symbol": "👤",
+      "description": "Furrier, identified in the case notes for Case File 427. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "427_time",
+      "type": "Time",
+      "name": "238",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 427. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "427_marker",
+      "type": "Marker",
+      "name": "Marker 3661",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 427.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "427_direction",
+      "type": "Direction",
+      "name": "Nowhere",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 427.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "427_sound",
+      "type": "Sound",
+      "name": "Kettleboil",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 427. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Recording - Recovered Case File",
     "fileId": "S36-007A",

@@ -216,18 +216,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "534_spool_of_thread",
-    "name": "Spool of Thread",
-    "symbol": "*",
-    "description": "Spool of Thread was recovered from Iron Bridge in Case File 534. It is tied to Quarry Foreman, 12:00, and marker 4552.",
-    "discovered": "Case File 534",
-    "firstAppearance": "The Leaving",
-    "connectedSongs": [
-      "534"
-    ],
-    "unknownInfo": "Home and Broken String suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "534_spoolofthread",
+      "type": "Object",
+      "name": "Spoolofthread",
+      "symbol": "🔍",
+      "description": "Spool of Thread was recovered from Iron Bridge in Case File 534. It is tied to Quarry Foreman, 12:00, and marker 4552.",
+      "unknownInfo": "Home and Broken String suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "534_location",
+      "type": "Location",
+      "name": "Ironbridge",
+      "symbol": "📍",
+      "description": "The active scene for Case File 534. Recovered field notes place the primary event at Ironbridge.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "534_witness",
+      "type": "Witness",
+      "name": "Quarryforeman",
+      "symbol": "👤",
+      "description": "Quarryforeman, identified in the case notes for Case File 534. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "534_time",
+      "type": "Time",
+      "name": "1200",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 534. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "534_marker",
+      "type": "Marker",
+      "name": "Marker 4552",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 534.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "534_direction",
+      "type": "Direction",
+      "name": "Home",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 534.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "534_sound",
+      "type": "Sound",
+      "name": "Brokenstring",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 534. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Leaving - Recovered Case File",
     "fileId": "S45-006A",

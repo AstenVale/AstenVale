@@ -227,18 +227,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "496_signet_ring",
-    "name": "Signet Ring",
-    "symbol": "*",
-    "description": "Signet Ring was recovered from The Ridge in Case File 496. It is tied to Deputy, 6:53, and marker 4234.",
-    "discovered": "Case File 496",
-    "firstAppearance": "The Cracked Earth",
-    "connectedSongs": [
-      "496"
-    ],
-    "unknownInfo": "Under and Bell Toll suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "496_signetring",
+      "type": "Object",
+      "name": "Signetring",
+      "symbol": "🔍",
+      "description": "Signet Ring was recovered from The Ridge in Case File 496. It is tied to Deputy, 6:53, and marker 4234.",
+      "unknownInfo": "Under and Bell Toll suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "496_location",
+      "type": "Location",
+      "name": "Ridge",
+      "symbol": "📍",
+      "description": "The active scene for Case File 496. Recovered field notes place the primary event at Ridge.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "496_witness",
+      "type": "Witness",
+      "name": "Deputy",
+      "symbol": "👤",
+      "description": "Deputy, identified in the case notes for Case File 496. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "496_time",
+      "type": "Time",
+      "name": "653",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 496. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "496_marker",
+      "type": "Marker",
+      "name": "Marker 4234",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 496.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "496_direction",
+      "type": "Direction",
+      "name": "Under",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 496.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "496_sound",
+      "type": "Sound",
+      "name": "Belltoll",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 496. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Cracked Earth - Recovered Case File",
     "fileId": "S42-004A",

@@ -215,18 +215,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "562_torn_map",
-    "name": "Torn Map",
-    "symbol": "*",
-    "description": "Torn Map was recovered from Barn in Case File 562. It is tied to Cartographer, 7:48, and marker 4788.",
-    "discovered": "Case File 562",
-    "firstAppearance": "Why It Mattered",
-    "connectedSongs": [
-      "562"
-    ],
-    "unknownInfo": "Back the Way You Came and Rope on Pulley suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "562_tornmap",
+      "type": "Object",
+      "name": "Tornmap",
+      "symbol": "🔍",
+      "description": "Torn Map was recovered from Barn in Case File 562. It is tied to Cartographer, 7:48, and marker 4788.",
+      "unknownInfo": "Back the Way You Came and Rope on Pulley suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "562_location",
+      "type": "Location",
+      "name": "Barn",
+      "symbol": "📍",
+      "description": "The active scene for Case File 562. Recovered field notes place the primary event at Barn.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "562_witness",
+      "type": "Witness",
+      "name": "Cartographer",
+      "symbol": "👤",
+      "description": "Cartographer, identified in the case notes for Case File 562. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "562_time",
+      "type": "Time",
+      "name": "748",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 562. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "562_marker",
+      "type": "Marker",
+      "name": "Marker 4788",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 562.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "562_direction",
+      "type": "Direction",
+      "name": "Backthewayyoucame",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 562.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "562_sound",
+      "type": "Sound",
+      "name": "Ropeonpulley",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 562. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "Why It Mattered - Recovered Case File",
     "fileId": "S47-010A",

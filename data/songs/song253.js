@@ -225,18 +225,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "253_pocket_watch",
-    "name": "Pocket Watch",
-    "symbol": "*",
-    "description": "Pocket Watch was recovered from Print Shop in Case File 253. It is tied to Lamplighter, 5:09, and marker 2207.",
-    "discovered": "Case File 253",
-    "firstAppearance": "What the Ground Gives",
-    "connectedSongs": [
-      "253"
-    ],
-    "unknownInfo": "Forward and Crow Wings suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "253_pocketwatch",
+      "type": "Object",
+      "name": "Pocketwatch",
+      "symbol": "🔍",
+      "description": "Pocket Watch was recovered from Print Shop in Case File 253. It is tied to Lamplighter, 5:09, and marker 2207.",
+      "unknownInfo": "Forward and Crow Wings suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "253_location",
+      "type": "Location",
+      "name": "Printshop",
+      "symbol": "📍",
+      "description": "The active scene for Case File 253. Recovered field notes place the primary event at Printshop.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "253_witness",
+      "type": "Witness",
+      "name": "Lamplighter",
+      "symbol": "👤",
+      "description": "Lamplighter, identified in the case notes for Case File 253. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "253_time",
+      "type": "Time",
+      "name": "509",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 253. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "253_marker",
+      "type": "Marker",
+      "name": "Marker 2207",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 253.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "253_direction",
+      "type": "Direction",
+      "name": "Forward",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 253.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "253_sound",
+      "type": "Sound",
+      "name": "Crowwings",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 253. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "What the Ground Gives - Recovered Case File",
     "fileId": "S22-001A",

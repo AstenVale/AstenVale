@@ -216,18 +216,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "093_wool_scarf",
-    "name": "Wool Scarf",
-    "symbol": "*",
-    "description": "Wool Scarf was recovered from Sheriff's Office in Case File 093. It is tied to Judge, 9:08, and marker 879.",
-    "discovered": "Case File 093",
-    "firstAppearance": "The Survivor",
-    "connectedSongs": [
-      "093"
-    ],
-    "unknownInfo": "Straight Down and Telegraph Click suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "093_woolscarf",
+      "type": "Object",
+      "name": "Woolscarf",
+      "symbol": "🔍",
+      "description": "Wool Scarf was recovered from Sheriff's Office in Case File 093. It is tied to Judge, 9:08, and marker 879.",
+      "unknownInfo": "Straight Down and Telegraph Click suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "093_location",
+      "type": "Location",
+      "name": "Sheriff'Soffice",
+      "symbol": "📍",
+      "description": "The active scene for Case File 093. Recovered field notes place the primary event at Sheriff'Soffice.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "093_witness",
+      "type": "Witness",
+      "name": "Judge",
+      "symbol": "👤",
+      "description": "Judge, identified in the case notes for Case File 093. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "093_time",
+      "type": "Time",
+      "name": "908",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 093. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "093_marker",
+      "type": "Marker",
+      "name": "Marker 879",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 093.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "093_direction",
+      "type": "Direction",
+      "name": "Straightdown",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 093.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "093_sound",
+      "type": "Sound",
+      "name": "Telegraphclick",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 093. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Survivor - Recovered Case File",
     "fileId": "S8-009A",

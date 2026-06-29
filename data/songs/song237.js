@@ -226,18 +226,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "237_boot",
-    "name": "Boot",
-    "symbol": "*",
-    "description": "Boot was recovered from River's Edge in Case File 237. It is tied to Rope Maker, 5:13, and marker 2079.",
-    "discovered": "Case File 237",
-    "firstAppearance": "The Circuit",
-    "connectedSongs": [
-      "237"
-    ],
-    "unknownInfo": "Beyond and Lantern Glass suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "237_boot",
+      "type": "Object",
+      "name": "Boot",
+      "symbol": "🔍",
+      "description": "Boot was recovered from River's Edge in Case File 237. It is tied to Rope Maker, 5:13, and marker 2079.",
+      "unknownInfo": "Beyond and Lantern Glass suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "237_location",
+      "type": "Location",
+      "name": "River'Sedge",
+      "symbol": "📍",
+      "description": "The active scene for Case File 237. Recovered field notes place the primary event at River'Sedge.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "237_witness",
+      "type": "Witness",
+      "name": "Ropemaker",
+      "symbol": "👤",
+      "description": "Ropemaker, identified in the case notes for Case File 237. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "237_time",
+      "type": "Time",
+      "name": "513",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 237. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "237_marker",
+      "type": "Marker",
+      "name": "Marker 2079",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 237.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "237_direction",
+      "type": "Direction",
+      "name": "Beyond",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 237.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "237_sound",
+      "type": "Sound",
+      "name": "Lanternglass",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 237. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Circuit - Recovered Case File",
     "fileId": "S20-009A",

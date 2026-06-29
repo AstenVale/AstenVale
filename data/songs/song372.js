@@ -224,18 +224,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "372_wire_coil",
-    "name": "Wire Coil",
-    "symbol": "*",
-    "description": "Wire Coil was recovered from Watchmaker's Shop in Case File 372. It is tied to Sheriff, 1:11, and marker 3206.",
-    "discovered": "Case File 372",
-    "firstAppearance": "Reading the Garden",
-    "connectedSongs": [
-      "372"
-    ],
-    "unknownInfo": "North and Chains suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "372_wirecoil",
+      "type": "Object",
+      "name": "Wirecoil",
+      "symbol": "🔍",
+      "description": "Wire Coil was recovered from Watchmaker's Shop in Case File 372. It is tied to Sheriff, 1:11, and marker 3206.",
+      "unknownInfo": "North and Chains suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "372_location",
+      "type": "Location",
+      "name": "Watchmaker'Sshop",
+      "symbol": "📍",
+      "description": "The active scene for Case File 372. Recovered field notes place the primary event at Watchmaker'Sshop.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "372_witness",
+      "type": "Witness",
+      "name": "Sheriff",
+      "symbol": "👤",
+      "description": "Sheriff, identified in the case notes for Case File 372. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "372_time",
+      "type": "Time",
+      "name": "111",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 372. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "372_marker",
+      "type": "Marker",
+      "name": "Marker 3206",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 372.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "372_direction",
+      "type": "Direction",
+      "name": "North",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 372.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "372_sound",
+      "type": "Sound",
+      "name": "Chains",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 372. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "Reading the Garden - Recovered Case File",
     "fileId": "S31-012A",

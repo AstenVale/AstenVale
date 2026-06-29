@@ -227,18 +227,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "084_charcoal_sketch",
-    "name": "Charcoal Sketch",
-    "symbol": "*",
-    "description": "Charcoal Sketch was recovered from Black Pine in Case File 084. It is tied to Census Taker, 5:40, and marker 806.",
-    "discovered": "Case File 084",
-    "firstAppearance": "The Confrontation",
-    "connectedSongs": [
-      "084"
-    ],
-    "unknownInfo": "Below and Broken String suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "084_charcoalsketch",
+      "type": "Object",
+      "name": "Charcoalsketch",
+      "symbol": "🔍",
+      "description": "Charcoal Sketch was recovered from Black Pine in Case File 084. It is tied to Census Taker, 5:40, and marker 806.",
+      "unknownInfo": "Below and Broken String suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "084_location",
+      "type": "Location",
+      "name": "Blackpine",
+      "symbol": "📍",
+      "description": "The active scene for Case File 084. Recovered field notes place the primary event at Blackpine.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "084_witness",
+      "type": "Witness",
+      "name": "Censustaker",
+      "symbol": "👤",
+      "description": "Censustaker, identified in the case notes for Case File 084. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "084_time",
+      "type": "Time",
+      "name": "540",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 084. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "084_marker",
+      "type": "Marker",
+      "name": "Marker 806",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 084.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "084_direction",
+      "type": "Direction",
+      "name": "Below",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 084.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "084_sound",
+      "type": "Sound",
+      "name": "Brokenstring",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 084. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Confrontation - Recovered Case File",
     "fileId": "S7-012A",

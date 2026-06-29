@@ -214,18 +214,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "356_lantern",
-    "name": "Lantern",
-    "symbol": "*",
-    "description": "Lantern was recovered from Rope Walk in Case File 356. It is tied to Glazier, 4:29, and marker 3070.",
-    "discovered": "Case File 356",
-    "firstAppearance": "The Stop That Wasn't",
-    "connectedSongs": [
-      "356"
-    ],
-    "unknownInfo": "Around and Clock Ticking suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "356_lantern",
+      "type": "Object",
+      "name": "Lantern",
+      "symbol": "🔍",
+      "description": "Lantern was recovered from Rope Walk in Case File 356. It is tied to Glazier, 4:29, and marker 3070.",
+      "unknownInfo": "Around and Clock Ticking suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "356_location",
+      "type": "Location",
+      "name": "Ropewalk",
+      "symbol": "📍",
+      "description": "The active scene for Case File 356. Recovered field notes place the primary event at Ropewalk.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "356_witness",
+      "type": "Witness",
+      "name": "Glazier",
+      "symbol": "👤",
+      "description": "Glazier, identified in the case notes for Case File 356. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "356_time",
+      "type": "Time",
+      "name": "429",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 356. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "356_marker",
+      "type": "Marker",
+      "name": "Marker 3070",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 356.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "356_direction",
+      "type": "Direction",
+      "name": "Around",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 356.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "356_sound",
+      "type": "Sound",
+      "name": "Clockticking",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 356. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Stop That Wasn't - Recovered Case File",
     "fileId": "S30-008A",

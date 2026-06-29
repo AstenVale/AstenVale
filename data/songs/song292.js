@@ -214,18 +214,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "292_journal",
-    "name": "Journal",
-    "symbol": "*",
-    "description": "Journal was recovered from Forge in Case File 292. It is tied to Preacher, 2:38, and marker 2534.",
-    "discovered": "Case File 292",
-    "firstAppearance": "The Third Version",
-    "connectedSongs": [
-      "292"
-    ],
-    "unknownInfo": "South and The Silence After suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "292_journal",
+      "type": "Object",
+      "name": "Journal",
+      "symbol": "🔍",
+      "description": "Journal was recovered from Forge in Case File 292. It is tied to Preacher, 2:38, and marker 2534.",
+      "unknownInfo": "South and The Silence After suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "292_location",
+      "type": "Location",
+      "name": "Forge",
+      "symbol": "📍",
+      "description": "The active scene for Case File 292. Recovered field notes place the primary event at Forge.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "292_witness",
+      "type": "Witness",
+      "name": "Preacher",
+      "symbol": "👤",
+      "description": "Preacher, identified in the case notes for Case File 292. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "292_time",
+      "type": "Time",
+      "name": "238",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 292. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "292_marker",
+      "type": "Marker",
+      "name": "Marker 2534",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 292.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "292_direction",
+      "type": "Direction",
+      "name": "South",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 292.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "292_sound",
+      "type": "Sound",
+      "name": "Silence After",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 292. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Third Version - Recovered Case File",
     "fileId": "S25-004A",

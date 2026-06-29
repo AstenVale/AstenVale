@@ -226,18 +226,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "385_wool_scarf",
-    "name": "Wool Scarf",
-    "symbol": "*",
-    "description": "Wool Scarf was recovered from Banker's House in Case File 385. It is tied to Preacher, 7:14, and marker 3307.",
-    "discovered": "Case File 385",
-    "firstAppearance": "Bleached",
-    "connectedSongs": [
-      "385"
-    ],
-    "unknownInfo": "Nowhere and Saw Cutting suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "385_woolscarf",
+      "type": "Object",
+      "name": "Woolscarf",
+      "symbol": "🔍",
+      "description": "Wool Scarf was recovered from Banker's House in Case File 385. It is tied to Preacher, 7:14, and marker 3307.",
+      "unknownInfo": "Nowhere and Saw Cutting suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "385_location",
+      "type": "Location",
+      "name": "Banker'Shouse",
+      "symbol": "📍",
+      "description": "The active scene for Case File 385. Recovered field notes place the primary event at Banker'Shouse.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "385_witness",
+      "type": "Witness",
+      "name": "Preacher",
+      "symbol": "👤",
+      "description": "Preacher, identified in the case notes for Case File 385. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "385_time",
+      "type": "Time",
+      "name": "714",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 385. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "385_marker",
+      "type": "Marker",
+      "name": "Marker 3307",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 385.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "385_direction",
+      "type": "Direction",
+      "name": "Nowhere",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 385.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "385_sound",
+      "type": "Sound",
+      "name": "Sawcutting",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 385. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "Bleached - Recovered Case File",
     "fileId": "S33-001A",

@@ -227,18 +227,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "123_compass",
-    "name": "Compass",
-    "symbol": "*",
-    "description": "Compass was recovered from Clock Tower in Case File 123. It is tied to Fence Mender, 10:51, and marker 1125.",
-    "discovered": "Case File 123",
-    "firstAppearance": "The Boundary",
-    "connectedSongs": [
-      "123"
-    ],
-    "unknownInfo": "Into the Dark and Child's Laugh (far off) suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "123_compass",
+      "type": "Object",
+      "name": "Compass",
+      "symbol": "🔍",
+      "description": "Compass was recovered from Clock Tower in Case File 123. It is tied to Fence Mender, 10:51, and marker 1125.",
+      "unknownInfo": "Into the Dark and Child's Laugh (far off) suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "123_location",
+      "type": "Location",
+      "name": "Clocktower",
+      "symbol": "📍",
+      "description": "The active scene for Case File 123. Recovered field notes place the primary event at Clocktower.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "123_witness",
+      "type": "Witness",
+      "name": "Fencemender",
+      "symbol": "👤",
+      "description": "Fencemender, identified in the case notes for Case File 123. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "123_time",
+      "type": "Time",
+      "name": "1051",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 123. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "123_marker",
+      "type": "Marker",
+      "name": "Marker 1125",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 123.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "123_direction",
+      "type": "Direction",
+      "name": "Intothedark",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 123.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "123_sound",
+      "type": "Sound",
+      "name": "Child'Slaugh(Faroff)",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 123. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Boundary - Recovered Case File",
     "fileId": "S11-003A",

@@ -224,18 +224,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "255_copper_fitting",
-    "name": "Copper Fitting",
-    "symbol": "*",
-    "description": "Copper Fitting was recovered from Barn in Case File 255. It is tied to Glazier, 4:47, and marker 2225.",
-    "discovered": "Case File 255",
-    "firstAppearance": "Identification",
-    "connectedSongs": [
-      "255"
-    ],
-    "unknownInfo": "Through and Old Hinge suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "255_copperfitting",
+      "type": "Object",
+      "name": "Copperfitting",
+      "symbol": "🔍",
+      "description": "Copper Fitting was recovered from Barn in Case File 255. It is tied to Glazier, 4:47, and marker 2225.",
+      "unknownInfo": "Through and Old Hinge suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "255_location",
+      "type": "Location",
+      "name": "Barn",
+      "symbol": "📍",
+      "description": "The active scene for Case File 255. Recovered field notes place the primary event at Barn.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "255_witness",
+      "type": "Witness",
+      "name": "Glazier",
+      "symbol": "👤",
+      "description": "Glazier, identified in the case notes for Case File 255. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "255_time",
+      "type": "Time",
+      "name": "447",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 255. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "255_marker",
+      "type": "Marker",
+      "name": "Marker 2225",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 255.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "255_direction",
+      "type": "Direction",
+      "name": "Through",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 255.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "255_sound",
+      "type": "Sound",
+      "name": "Oldhinge",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 255. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "Identification - Recovered Case File",
     "fileId": "S22-003A",

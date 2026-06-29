@@ -214,18 +214,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "463_iron_nail",
-    "name": "Iron Nail",
-    "symbol": "*",
-    "description": "Iron Nail was recovered from Library in Case File 463. It is tied to Surveyor, 2:22, and marker 3961.",
-    "discovered": "Case File 463",
-    "firstAppearance": "The Stable",
-    "connectedSongs": [
-      "463"
-    ],
-    "unknownInfo": "West and Empty Wagon suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "463_ironnail",
+      "type": "Object",
+      "name": "Ironnail",
+      "symbol": "🔍",
+      "description": "Iron Nail was recovered from Library in Case File 463. It is tied to Surveyor, 2:22, and marker 3961.",
+      "unknownInfo": "West and Empty Wagon suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "463_location",
+      "type": "Location",
+      "name": "Library",
+      "symbol": "📍",
+      "description": "The active scene for Case File 463. Recovered field notes place the primary event at Library.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "463_witness",
+      "type": "Witness",
+      "name": "Surveyor",
+      "symbol": "👤",
+      "description": "Surveyor, identified in the case notes for Case File 463. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "463_time",
+      "type": "Time",
+      "name": "222",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 463. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "463_marker",
+      "type": "Marker",
+      "name": "Marker 3961",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 463.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "463_direction",
+      "type": "Direction",
+      "name": "West",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 463.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "463_sound",
+      "type": "Sound",
+      "name": "Emptywagon",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 463. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Stable - Recovered Case File",
     "fileId": "S39-007A",

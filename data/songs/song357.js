@@ -215,18 +215,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "357_ledger_page",
-    "name": "Ledger Page",
-    "symbol": "*",
-    "description": "Ledger Page was recovered from Smithy in Case File 357. It is tied to Chandler, 5:55, and marker 3079.",
-    "discovered": "Case File 357",
-    "firstAppearance": "What Got Off",
-    "connectedSongs": [
-      "357"
-    ],
-    "unknownInfo": "Past the Tree Line and Match Strike suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "357_ledgerpage",
+      "type": "Object",
+      "name": "Ledgerpage",
+      "symbol": "🔍",
+      "description": "Ledger Page was recovered from Smithy in Case File 357. It is tied to Chandler, 5:55, and marker 3079.",
+      "unknownInfo": "Past the Tree Line and Match Strike suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "357_location",
+      "type": "Location",
+      "name": "Smithy",
+      "symbol": "📍",
+      "description": "The active scene for Case File 357. Recovered field notes place the primary event at Smithy.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "357_witness",
+      "type": "Witness",
+      "name": "Chandler",
+      "symbol": "👤",
+      "description": "Chandler, identified in the case notes for Case File 357. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "357_time",
+      "type": "Time",
+      "name": "555",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 357. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "357_marker",
+      "type": "Marker",
+      "name": "Marker 3079",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 357.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "357_direction",
+      "type": "Direction",
+      "name": "Pastthetreeline",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 357.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "357_sound",
+      "type": "Sound",
+      "name": "Matchstrike",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 357. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "What Got Off - Recovered Case File",
     "fileId": "S30-009A",

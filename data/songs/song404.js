@@ -215,18 +215,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "404_copper_fitting",
-    "name": "Copper Fitting",
-    "symbol": "*",
-    "description": "Copper Fitting was recovered from Butcher's Row in Case File 404. It is tied to Census Taker, 7:02, and marker 3470.",
-    "discovered": "Case File 404",
-    "firstAppearance": "The Other Patient",
-    "connectedSongs": [
-      "404"
-    ],
-    "unknownInfo": "Under and Breathing suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "404_copperfitting",
+      "type": "Object",
+      "name": "Copperfitting",
+      "symbol": "🔍",
+      "description": "Copper Fitting was recovered from Butcher's Row in Case File 404. It is tied to Census Taker, 7:02, and marker 3470.",
+      "unknownInfo": "Under and Breathing suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "404_location",
+      "type": "Location",
+      "name": "Butcher'Srow",
+      "symbol": "📍",
+      "description": "The active scene for Case File 404. Recovered field notes place the primary event at Butcher'Srow.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "404_witness",
+      "type": "Witness",
+      "name": "Censustaker",
+      "symbol": "👤",
+      "description": "Censustaker, identified in the case notes for Case File 404. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "404_time",
+      "type": "Time",
+      "name": "702",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 404. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "404_marker",
+      "type": "Marker",
+      "name": "Marker 3470",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 404.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "404_direction",
+      "type": "Direction",
+      "name": "Under",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 404.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "404_sound",
+      "type": "Sound",
+      "name": "Breathing",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 404. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Other Patient - Recovered Case File",
     "fileId": "S34-008A",

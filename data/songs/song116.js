@@ -215,18 +215,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "116_dried_ink_blot",
-    "name": "Dried Ink Blot",
-    "symbol": "*",
-    "description": "Dried Ink Blot was recovered from Post Office in Case File 116. It is tied to Midwife, 2:22, and marker 1070.",
-    "discovered": "Case File 116",
-    "firstAppearance": "Abandoned",
-    "connectedSongs": [
-      "116"
-    ],
-    "unknownInfo": "Behind and Bone on Stone suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "116_driedinkblot",
+      "type": "Object",
+      "name": "Driedinkblot",
+      "symbol": "🔍",
+      "description": "Dried Ink Blot was recovered from Post Office in Case File 116. It is tied to Midwife, 2:22, and marker 1070.",
+      "unknownInfo": "Behind and Bone on Stone suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "116_location",
+      "type": "Location",
+      "name": "Postoffice",
+      "symbol": "📍",
+      "description": "The active scene for Case File 116. Recovered field notes place the primary event at Postoffice.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "116_witness",
+      "type": "Witness",
+      "name": "Midwife",
+      "symbol": "👤",
+      "description": "Midwife, identified in the case notes for Case File 116. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "116_time",
+      "type": "Time",
+      "name": "222",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 116. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "116_marker",
+      "type": "Marker",
+      "name": "Marker 1070",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 116.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "116_direction",
+      "type": "Direction",
+      "name": "Behind",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 116.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "116_sound",
+      "type": "Sound",
+      "name": "Boneonstone",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 116. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "Abandoned - Recovered Case File",
     "fileId": "S10-008A",

@@ -226,18 +226,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "127_wax_seal",
-    "name": "Wax Seal",
-    "symbol": "*",
-    "description": "Wax Seal was recovered from Ash Hollow in Case File 127. It is tied to Child, 11:03, and marker 1161.",
-    "discovered": "Case File 127",
-    "firstAppearance": "The Other Map",
-    "connectedSongs": [
-      "127"
-    ],
-    "unknownInfo": "Toward and Stones in a Tin suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "127_waxseal",
+      "type": "Object",
+      "name": "Waxseal",
+      "symbol": "🔍",
+      "description": "Wax Seal was recovered from Ash Hollow in Case File 127. It is tied to Child, 11:03, and marker 1161.",
+      "unknownInfo": "Toward and Stones in a Tin suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "127_location",
+      "type": "Location",
+      "name": "Ashhollow",
+      "symbol": "📍",
+      "description": "The active scene for Case File 127. Recovered field notes place the primary event at Ashhollow.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "127_witness",
+      "type": "Witness",
+      "name": "Child",
+      "symbol": "👤",
+      "description": "Child, identified in the case notes for Case File 127. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "127_time",
+      "type": "Time",
+      "name": "1103",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 127. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "127_marker",
+      "type": "Marker",
+      "name": "Marker 1161",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 127.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "127_direction",
+      "type": "Direction",
+      "name": "Toward",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 127.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "127_sound",
+      "type": "Sound",
+      "name": "Stonesinatin",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 127. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Other Map - Recovered Case File",
     "fileId": "S11-007A",

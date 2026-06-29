@@ -225,18 +225,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "130_trade_token",
-    "name": "Trade Token",
-    "symbol": "*",
-    "description": "Trade Token was recovered from Stables in Case File 130. It is tied to Tanner, 1:26, and marker 1188.",
-    "discovered": "Case File 130",
-    "firstAppearance": "The Compass Rose",
-    "connectedSongs": [
-      "130"
-    ],
-    "unknownInfo": "Below and Train Whistle suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "130_tradetoken",
+      "type": "Object",
+      "name": "Tradetoken",
+      "symbol": "🔍",
+      "description": "Trade Token was recovered from Stables in Case File 130. It is tied to Tanner, 1:26, and marker 1188.",
+      "unknownInfo": "Below and Train Whistle suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "130_location",
+      "type": "Location",
+      "name": "Stables",
+      "symbol": "📍",
+      "description": "The active scene for Case File 130. Recovered field notes place the primary event at Stables.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "130_witness",
+      "type": "Witness",
+      "name": "Tanner",
+      "symbol": "👤",
+      "description": "Tanner, identified in the case notes for Case File 130. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "130_time",
+      "type": "Time",
+      "name": "126",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 130. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "130_marker",
+      "type": "Marker",
+      "name": "Marker 1188",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 130.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "130_direction",
+      "type": "Direction",
+      "name": "Below",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 130.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "130_sound",
+      "type": "Sound",
+      "name": "Trainwhistle",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 130. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Compass Rose - Recovered Case File",
     "fileId": "S11-010A",

@@ -214,18 +214,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "032_wool_scarf",
-    "name": "Wool Scarf",
-    "symbol": "*",
-    "description": "Wool Scarf was recovered from Tannery in Case File 032. It is tied to Wainwright, 11:51, and marker 370.",
-    "discovered": "Case File 032",
-    "firstAppearance": "The Missing Hours",
-    "connectedSongs": [
-      "032"
-    ],
-    "unknownInfo": "Under and Wheel on Gravel suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "032_woolscarf",
+      "type": "Object",
+      "name": "Woolscarf",
+      "symbol": "🔍",
+      "description": "Wool Scarf was recovered from Tannery in Case File 032. It is tied to Wainwright, 11:51, and marker 370.",
+      "unknownInfo": "Under and Wheel on Gravel suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "032_location",
+      "type": "Location",
+      "name": "Tannery",
+      "symbol": "📍",
+      "description": "The active scene for Case File 032. Recovered field notes place the primary event at Tannery.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "032_witness",
+      "type": "Witness",
+      "name": "Wainwright",
+      "symbol": "👤",
+      "description": "Wainwright, identified in the case notes for Case File 032. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "032_time",
+      "type": "Time",
+      "name": "1151",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 032. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "032_marker",
+      "type": "Marker",
+      "name": "Marker 370",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 032.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "032_direction",
+      "type": "Direction",
+      "name": "Under",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 032.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "032_sound",
+      "type": "Sound",
+      "name": "Wheelongravel",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 032. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Missing Hours - Recovered Case File",
     "fileId": "S3-008A",

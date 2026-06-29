@@ -226,18 +226,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "541_belt_buckle",
-    "name": "Belt Buckle",
-    "symbol": "*",
-    "description": "Belt Buckle was recovered from Cooper's Yard in Case File 541. It is tied to Auctioneer, 3:17, and marker 4607.",
-    "discovered": "Case File 541",
-    "firstAppearance": "Before the Storm",
-    "connectedSongs": [
-      "541"
-    ],
-    "unknownInfo": "Beyond and Hammer Strike suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "541_beltbuckle",
+      "type": "Object",
+      "name": "Beltbuckle",
+      "symbol": "🔍",
+      "description": "Belt Buckle was recovered from Cooper's Yard in Case File 541. It is tied to Auctioneer, 3:17, and marker 4607.",
+      "unknownInfo": "Beyond and Hammer Strike suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "541_location",
+      "type": "Location",
+      "name": "Cooper'Syard",
+      "symbol": "📍",
+      "description": "The active scene for Case File 541. Recovered field notes place the primary event at Cooper'Syard.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "541_witness",
+      "type": "Witness",
+      "name": "Auctioneer",
+      "symbol": "👤",
+      "description": "Auctioneer, identified in the case notes for Case File 541. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "541_time",
+      "type": "Time",
+      "name": "317",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 541. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "541_marker",
+      "type": "Marker",
+      "name": "Marker 4607",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 541.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "541_direction",
+      "type": "Direction",
+      "name": "Beyond",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 541.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "541_sound",
+      "type": "Sound",
+      "name": "Hammerstrike",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 541. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "Before the Storm - Recovered Case File",
     "fileId": "S46-001A",

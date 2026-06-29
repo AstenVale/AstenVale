@@ -226,18 +226,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "198_shard_of_mirror",
-    "name": "Shard of Mirror",
-    "symbol": "*",
-    "description": "Shard of Mirror was recovered from East Field in Case File 198. It is tied to River Pilot, 12:44, and marker 1752.",
-    "discovered": "Case File 198",
-    "firstAppearance": "What the Ground Held",
-    "connectedSongs": [
-      "198"
-    ],
-    "unknownInfo": "Across and Rope Strain suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "198_shardofmirror",
+      "type": "Object",
+      "name": "Shardofmirror",
+      "symbol": "🔍",
+      "description": "Shard of Mirror was recovered from East Field in Case File 198. It is tied to River Pilot, 12:44, and marker 1752.",
+      "unknownInfo": "Across and Rope Strain suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "198_location",
+      "type": "Location",
+      "name": "Eastfield",
+      "symbol": "📍",
+      "description": "The active scene for Case File 198. Recovered field notes place the primary event at Eastfield.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "198_witness",
+      "type": "Witness",
+      "name": "Riverpilot",
+      "symbol": "👤",
+      "description": "Riverpilot, identified in the case notes for Case File 198. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "198_time",
+      "type": "Time",
+      "name": "1244",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 198. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "198_marker",
+      "type": "Marker",
+      "name": "Marker 1752",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 198.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "198_direction",
+      "type": "Direction",
+      "name": "Across",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 198.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "198_sound",
+      "type": "Sound",
+      "name": "Ropestrain",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 198. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "What the Ground Held - Recovered Case File",
     "fileId": "S17-006A",

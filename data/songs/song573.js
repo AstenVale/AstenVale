@@ -224,18 +224,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "573_handkerchief",
-    "name": "Handkerchief",
-    "symbol": "*",
-    "description": "Handkerchief was recovered from Church in Case File 573. It is tied to Schoolgirl, 12:44, and marker 4879.",
-    "discovered": "Case File 573",
-    "firstAppearance": "What Got Through",
-    "connectedSongs": [
-      "573"
-    ],
-    "unknownInfo": "Toward the River and Paper Rustle suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "573_handkerchief",
+      "type": "Object",
+      "name": "Handkerchief",
+      "symbol": "🔍",
+      "description": "Handkerchief was recovered from Church in Case File 573. It is tied to Schoolgirl, 12:44, and marker 4879.",
+      "unknownInfo": "Toward the River and Paper Rustle suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "573_location",
+      "type": "Location",
+      "name": "Church",
+      "symbol": "📍",
+      "description": "The active scene for Case File 573. Recovered field notes place the primary event at Church.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "573_witness",
+      "type": "Witness",
+      "name": "Schoolgirl",
+      "symbol": "👤",
+      "description": "Schoolgirl, identified in the case notes for Case File 573. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "573_time",
+      "type": "Time",
+      "name": "1244",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 573. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "573_marker",
+      "type": "Marker",
+      "name": "Marker 4879",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 573.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "573_direction",
+      "type": "Direction",
+      "name": "Towardtheriver",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 573.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "573_sound",
+      "type": "Sound",
+      "name": "Paperrustle",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 573. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "What Got Through - Recovered Case File",
     "fileId": "S48-009A",

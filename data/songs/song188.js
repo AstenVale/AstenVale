@@ -213,18 +213,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "188_candle",
-    "name": "Candle",
-    "symbol": "*",
-    "description": "Candle was recovered from Forge in Case File 188. It is tied to Wainwright, 5:13, and marker 1670.",
-    "discovered": "Case File 188",
-    "firstAppearance": "The Window",
-    "connectedSongs": [
-      "188"
-    ],
-    "unknownInfo": "Forward and Latch Drop suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "188_candle",
+      "type": "Object",
+      "name": "Candle",
+      "symbol": "🔍",
+      "description": "Candle was recovered from Forge in Case File 188. It is tied to Wainwright, 5:13, and marker 1670.",
+      "unknownInfo": "Forward and Latch Drop suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "188_location",
+      "type": "Location",
+      "name": "Forge",
+      "symbol": "📍",
+      "description": "The active scene for Case File 188. Recovered field notes place the primary event at Forge.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "188_witness",
+      "type": "Witness",
+      "name": "Wainwright",
+      "symbol": "👤",
+      "description": "Wainwright, identified in the case notes for Case File 188. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "188_time",
+      "type": "Time",
+      "name": "513",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 188. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "188_marker",
+      "type": "Marker",
+      "name": "Marker 1670",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 188.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "188_direction",
+      "type": "Direction",
+      "name": "Forward",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 188.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "188_sound",
+      "type": "Sound",
+      "name": "Latchdrop",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 188. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Window - Recovered Case File",
     "fileId": "S16-008A",

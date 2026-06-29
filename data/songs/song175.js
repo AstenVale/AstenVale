@@ -224,18 +224,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "175_thimble",
-    "name": "Thimble",
-    "symbol": "*",
-    "description": "Thimble was recovered from Schoolhouse in Case File 175. It is tied to Sheriff, 7:48, and marker 1561.",
-    "discovered": "Case File 175",
-    "firstAppearance": "The Keeper's Log",
-    "connectedSongs": [
-      "175"
-    ],
-    "unknownInfo": "Out and Crow on Wire suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "175_thimble",
+      "type": "Object",
+      "name": "Thimble",
+      "symbol": "🔍",
+      "description": "Thimble was recovered from Schoolhouse in Case File 175. It is tied to Sheriff, 7:48, and marker 1561.",
+      "unknownInfo": "Out and Crow on Wire suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "175_location",
+      "type": "Location",
+      "name": "Schoolhouse",
+      "symbol": "📍",
+      "description": "The active scene for Case File 175. Recovered field notes place the primary event at Schoolhouse.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "175_witness",
+      "type": "Witness",
+      "name": "Sheriff",
+      "symbol": "👤",
+      "description": "Sheriff, identified in the case notes for Case File 175. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "175_time",
+      "type": "Time",
+      "name": "748",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 175. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "175_marker",
+      "type": "Marker",
+      "name": "Marker 1561",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 175.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "175_direction",
+      "type": "Direction",
+      "name": "Out",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 175.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "175_sound",
+      "type": "Sound",
+      "name": "Crowonwire",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 175. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Keeper's Log - Recovered Case File",
     "fileId": "S15-007A",

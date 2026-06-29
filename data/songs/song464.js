@@ -215,18 +215,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "464_thimble",
-    "name": "Thimble",
-    "symbol": "*",
-    "description": "Thimble was recovered from Sheep Fold in Case File 464. It is tied to Schoolgirl, 7:37, and marker 3970.",
-    "discovered": "Case File 464",
-    "firstAppearance": "Where It Came From",
-    "connectedSongs": [
-      "464"
-    ],
-    "unknownInfo": "Off the Road and Mud Suction suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "464_thimble",
+      "type": "Object",
+      "name": "Thimble",
+      "symbol": "🔍",
+      "description": "Thimble was recovered from Sheep Fold in Case File 464. It is tied to Schoolgirl, 7:37, and marker 3970.",
+      "unknownInfo": "Off the Road and Mud Suction suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "464_location",
+      "type": "Location",
+      "name": "Sheepfold",
+      "symbol": "📍",
+      "description": "The active scene for Case File 464. Recovered field notes place the primary event at Sheepfold.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "464_witness",
+      "type": "Witness",
+      "name": "Schoolgirl",
+      "symbol": "👤",
+      "description": "Schoolgirl, identified in the case notes for Case File 464. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "464_time",
+      "type": "Time",
+      "name": "737",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 464. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "464_marker",
+      "type": "Marker",
+      "name": "Marker 3970",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 464.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "464_direction",
+      "type": "Direction",
+      "name": "Offtheroad",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 464.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "464_sound",
+      "type": "Sound",
+      "name": "Mudsuction",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 464. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "Where It Came From - Recovered Case File",
     "fileId": "S39-008A",

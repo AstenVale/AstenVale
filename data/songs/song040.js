@@ -224,18 +224,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "040_brooch",
-    "name": "Brooch",
-    "symbol": "*",
-    "description": "Brooch was recovered from Fulling Mill in Case File 040. It is tied to Blacksmith, 10:19, and marker 434.",
-    "discovered": "Case File 040",
-    "firstAppearance": "The Current Knows",
-    "connectedSongs": [
-      "040"
-    ],
-    "unknownInfo": "Left and Telegraph Click suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "040_brooch",
+      "type": "Object",
+      "name": "Brooch",
+      "symbol": "🔍",
+      "description": "Brooch was recovered from Fulling Mill in Case File 040. It is tied to Blacksmith, 10:19, and marker 434.",
+      "unknownInfo": "Left and Telegraph Click suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "040_location",
+      "type": "Location",
+      "name": "Fullingmill",
+      "symbol": "📍",
+      "description": "The active scene for Case File 040. Recovered field notes place the primary event at Fullingmill.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "040_witness",
+      "type": "Witness",
+      "name": "Blacksmith",
+      "symbol": "👤",
+      "description": "Blacksmith, identified in the case notes for Case File 040. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "040_time",
+      "type": "Time",
+      "name": "1019",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 040. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "040_marker",
+      "type": "Marker",
+      "name": "Marker 434",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 040.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "040_direction",
+      "type": "Direction",
+      "name": "Left",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 040.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "040_sound",
+      "type": "Sound",
+      "name": "Telegraphclick",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 040. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Current Knows - Recovered Case File",
     "fileId": "S4-004A",

@@ -215,18 +215,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "141_charred_paper",
-    "name": "Charred Paper",
-    "symbol": "*",
-    "description": "Charred Paper was recovered from Tannery in Case File 141. It is tied to Land Agent, 6:06, and marker 1279.",
-    "discovered": "Case File 141",
-    "firstAppearance": "Family Claim",
-    "connectedSongs": [
-      "141"
-    ],
-    "unknownInfo": "Under and Train Whistle suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "141_charredpaper",
+      "type": "Object",
+      "name": "Charredpaper",
+      "symbol": "🔍",
+      "description": "Charred Paper was recovered from Tannery in Case File 141. It is tied to Land Agent, 6:06, and marker 1279.",
+      "unknownInfo": "Under and Train Whistle suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "141_location",
+      "type": "Location",
+      "name": "Tannery",
+      "symbol": "📍",
+      "description": "The active scene for Case File 141. Recovered field notes place the primary event at Tannery.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "141_witness",
+      "type": "Witness",
+      "name": "Landagent",
+      "symbol": "👤",
+      "description": "Landagent, identified in the case notes for Case File 141. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "141_time",
+      "type": "Time",
+      "name": "606",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 141. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "141_marker",
+      "type": "Marker",
+      "name": "Marker 1279",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 141.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "141_direction",
+      "type": "Direction",
+      "name": "Under",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 141.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "141_sound",
+      "type": "Sound",
+      "name": "Trainwhistle",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 141. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "Family Claim - Recovered Case File",
     "fileId": "S12-009A",

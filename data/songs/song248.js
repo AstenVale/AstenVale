@@ -217,18 +217,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "248_prayer_card",
-    "name": "Prayer Card",
-    "symbol": "*",
-    "description": "Prayer Card was recovered from The Hollow Road in Case File 248. It is tied to Schoolgirl, 11:40, and marker 2170.",
-    "discovered": "Case File 248",
-    "firstAppearance": "The Hollow",
-    "connectedSongs": [
-      "248"
-    ],
-    "unknownInfo": "Down the Hollow and Telegraph Click suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "248_prayercard",
+      "type": "Object",
+      "name": "Prayercard",
+      "symbol": "🔍",
+      "description": "Prayer Card was recovered from The Hollow Road in Case File 248. It is tied to Schoolgirl, 11:40, and marker 2170.",
+      "unknownInfo": "Down the Hollow and Telegraph Click suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "248_location",
+      "type": "Location",
+      "name": "Hollow Road",
+      "symbol": "📍",
+      "description": "The active scene for Case File 248. Recovered field notes place the primary event at Hollow Road.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "248_witness",
+      "type": "Witness",
+      "name": "Schoolgirl",
+      "symbol": "👤",
+      "description": "Schoolgirl, identified in the case notes for Case File 248. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "248_time",
+      "type": "Time",
+      "name": "1140",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 248. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "248_marker",
+      "type": "Marker",
+      "name": "Marker 2170",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 248.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "248_direction",
+      "type": "Direction",
+      "name": "Downthehollow",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 248.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "248_sound",
+      "type": "Sound",
+      "name": "Telegraphclick",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 248. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Hollow - Recovered Case File",
     "fileId": "S21-008A",

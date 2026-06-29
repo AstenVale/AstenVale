@@ -225,18 +225,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "455_numbered_disk",
-    "name": "Numbered Disk",
-    "symbol": "*",
-    "description": "Numbered Disk was recovered from Cemetery in Case File 455. It is tied to Orphan, 2:22, and marker 3897.",
-    "discovered": "Case File 455",
-    "firstAppearance": "The Second Signal",
-    "connectedSongs": [
-      "455"
-    ],
-    "unknownInfo": "Ahead and Crow on Wire suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "455_numbereddisk",
+      "type": "Object",
+      "name": "Numbereddisk",
+      "symbol": "🔍",
+      "description": "Numbered Disk was recovered from Cemetery in Case File 455. It is tied to Orphan, 2:22, and marker 3897.",
+      "unknownInfo": "Ahead and Crow on Wire suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "455_location",
+      "type": "Location",
+      "name": "Cemetery",
+      "symbol": "📍",
+      "description": "The active scene for Case File 455. Recovered field notes place the primary event at Cemetery.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "455_witness",
+      "type": "Witness",
+      "name": "Orphan",
+      "symbol": "👤",
+      "description": "Orphan, identified in the case notes for Case File 455. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "455_time",
+      "type": "Time",
+      "name": "222",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 455. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "455_marker",
+      "type": "Marker",
+      "name": "Marker 3897",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 455.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "455_direction",
+      "type": "Direction",
+      "name": "Ahead",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 455.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "455_sound",
+      "type": "Sound",
+      "name": "Crowonwire",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 455. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Second Signal - Recovered Case File",
     "fileId": "S38-011A",

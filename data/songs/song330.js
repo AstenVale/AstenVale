@@ -227,18 +227,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "330_spool_of_thread",
-    "name": "Spool of Thread",
-    "symbol": "*",
-    "description": "Spool of Thread was recovered from Lake Shore in Case File 330. It is tied to Fisherman, 2:55, and marker 2852.",
-    "discovered": "Case File 330",
-    "firstAppearance": "Who Was Listening",
-    "connectedSongs": [
-      "330"
-    ],
-    "unknownInfo": "Over and The Silence After suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "330_spoolofthread",
+      "type": "Object",
+      "name": "Spoolofthread",
+      "symbol": "🔍",
+      "description": "Spool of Thread was recovered from Lake Shore in Case File 330. It is tied to Fisherman, 2:55, and marker 2852.",
+      "unknownInfo": "Over and The Silence After suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "330_location",
+      "type": "Location",
+      "name": "Lakeshore",
+      "symbol": "📍",
+      "description": "The active scene for Case File 330. Recovered field notes place the primary event at Lakeshore.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "330_witness",
+      "type": "Witness",
+      "name": "Fisherman",
+      "symbol": "👤",
+      "description": "Fisherman, identified in the case notes for Case File 330. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "330_time",
+      "type": "Time",
+      "name": "255",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 330. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "330_marker",
+      "type": "Marker",
+      "name": "Marker 2852",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 330.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "330_direction",
+      "type": "Direction",
+      "name": "Over",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 330.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "330_sound",
+      "type": "Sound",
+      "name": "Silence After",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 330. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "Who Was Listening - Recovered Case File",
     "fileId": "S28-006A",

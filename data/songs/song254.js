@@ -225,18 +225,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "254_string_of_beads",
-    "name": "String of Beads",
-    "symbol": "*",
-    "description": "String of Beads was recovered from Post Office in Case File 254. It is tied to Preacher, 7:37, and marker 2216.",
-    "discovered": "Case File 254",
-    "firstAppearance": "The Excavation",
-    "connectedSongs": [
-      "254"
-    ],
-    "unknownInfo": "South and River Ice suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "254_stringofbeads",
+      "type": "Object",
+      "name": "Stringofbeads",
+      "symbol": "🔍",
+      "description": "String of Beads was recovered from Post Office in Case File 254. It is tied to Preacher, 7:37, and marker 2216.",
+      "unknownInfo": "South and River Ice suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "254_location",
+      "type": "Location",
+      "name": "Postoffice",
+      "symbol": "📍",
+      "description": "The active scene for Case File 254. Recovered field notes place the primary event at Postoffice.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "254_witness",
+      "type": "Witness",
+      "name": "Preacher",
+      "symbol": "👤",
+      "description": "Preacher, identified in the case notes for Case File 254. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "254_time",
+      "type": "Time",
+      "name": "737",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 254. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "254_marker",
+      "type": "Marker",
+      "name": "Marker 2216",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 254.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "254_direction",
+      "type": "Direction",
+      "name": "South",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 254.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "254_sound",
+      "type": "Sound",
+      "name": "Riverice",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 254. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Excavation - Recovered Case File",
     "fileId": "S22-002A",

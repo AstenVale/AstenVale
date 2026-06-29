@@ -224,18 +224,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "262_compass",
-    "name": "Compass",
-    "symbol": "*",
-    "description": "Compass was recovered from River's Edge in Case File 262. It is tied to Driver, 6:06, and marker 2288.",
-    "discovered": "Case File 262",
-    "firstAppearance": "The Connection",
-    "connectedSongs": [
-      "262"
-    ],
-    "unknownInfo": "Beyond and Cellar Door suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "262_compass",
+      "type": "Object",
+      "name": "Compass",
+      "symbol": "🔍",
+      "description": "Compass was recovered from River's Edge in Case File 262. It is tied to Driver, 6:06, and marker 2288.",
+      "unknownInfo": "Beyond and Cellar Door suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "262_location",
+      "type": "Location",
+      "name": "River'Sedge",
+      "symbol": "📍",
+      "description": "The active scene for Case File 262. Recovered field notes place the primary event at River'Sedge.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "262_witness",
+      "type": "Witness",
+      "name": "Driver",
+      "symbol": "👤",
+      "description": "Driver, identified in the case notes for Case File 262. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "262_time",
+      "type": "Time",
+      "name": "606",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 262. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "262_marker",
+      "type": "Marker",
+      "name": "Marker 2288",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 262.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "262_direction",
+      "type": "Direction",
+      "name": "Beyond",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 262.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "262_sound",
+      "type": "Sound",
+      "name": "Cellardoor",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 262. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Connection - Recovered Case File",
     "fileId": "S22-010A",

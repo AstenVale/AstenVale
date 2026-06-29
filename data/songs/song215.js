@@ -225,18 +225,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "215_broken_clasp",
-    "name": "Broken Clasp",
-    "symbol": "*",
-    "description": "Broken Clasp was recovered from Jail in Case File 215. It is tied to Woodsman, 3:49, and marker 1897.",
-    "discovered": "Case File 215",
-    "firstAppearance": "Who Answered",
-    "connectedSongs": [
-      "215"
-    ],
-    "unknownInfo": "Down the Hollow and Paper Rustle suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "215_brokenclasp",
+      "type": "Object",
+      "name": "Brokenclasp",
+      "symbol": "🔍",
+      "description": "Broken Clasp was recovered from Jail in Case File 215. It is tied to Woodsman, 3:49, and marker 1897.",
+      "unknownInfo": "Down the Hollow and Paper Rustle suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "215_location",
+      "type": "Location",
+      "name": "Jail",
+      "symbol": "📍",
+      "description": "The active scene for Case File 215. Recovered field notes place the primary event at Jail.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "215_witness",
+      "type": "Witness",
+      "name": "Woodsman",
+      "symbol": "👤",
+      "description": "Woodsman, identified in the case notes for Case File 215. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "215_time",
+      "type": "Time",
+      "name": "349",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 215. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "215_marker",
+      "type": "Marker",
+      "name": "Marker 1897",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 215.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "215_direction",
+      "type": "Direction",
+      "name": "Downthehollow",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 215.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "215_sound",
+      "type": "Sound",
+      "name": "Paperrustle",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 215. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "Who Answered - Recovered Case File",
     "fileId": "S18-011A",

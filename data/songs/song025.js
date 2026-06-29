@@ -216,18 +216,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "025_charcoal_sketch",
-    "name": "Charcoal Sketch",
-    "symbol": "*",
-    "description": "Charcoal Sketch was recovered from Quarry Edge in Case File 025. It is tied to Station Master, 9:55, and marker 307.",
-    "discovered": "Case File 025",
-    "firstAppearance": "The Last Sighting",
-    "connectedSongs": [
-      "025"
-    ],
-    "unknownInfo": "Toward and Coal Shifting suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "025_charcoalsketch",
+      "type": "Object",
+      "name": "Charcoalsketch",
+      "symbol": "🔍",
+      "description": "Charcoal Sketch was recovered from Quarry Edge in Case File 025. It is tied to Station Master, 9:55, and marker 307.",
+      "unknownInfo": "Toward and Coal Shifting suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "025_location",
+      "type": "Location",
+      "name": "Quarryedge",
+      "symbol": "📍",
+      "description": "The active scene for Case File 025. Recovered field notes place the primary event at Quarryedge.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "025_witness",
+      "type": "Witness",
+      "name": "Stationmaster",
+      "symbol": "👤",
+      "description": "Stationmaster, identified in the case notes for Case File 025. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "025_time",
+      "type": "Time",
+      "name": "955",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 025. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "025_marker",
+      "type": "Marker",
+      "name": "Marker 307",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 025.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "025_direction",
+      "type": "Direction",
+      "name": "Toward",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 025.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "025_sound",
+      "type": "Sound",
+      "name": "Coalshifting",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 025. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Last Sighting - Recovered Case File",
     "fileId": "S3-001A",

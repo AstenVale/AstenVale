@@ -225,18 +225,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "301_watch",
-    "name": "Watch",
-    "symbol": "*",
-    "description": "Watch was recovered from The Weir in Case File 301. It is tied to Deputy, 9:55, and marker 2607.",
-    "discovered": "Case File 301",
-    "firstAppearance": "The House on Mill Road",
-    "connectedSongs": [
-      "301"
-    ],
-    "unknownInfo": "Left and Shutter Bang suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "301_watch",
+      "type": "Object",
+      "name": "Watch",
+      "symbol": "🔍",
+      "description": "Watch was recovered from The Weir in Case File 301. It is tied to Deputy, 9:55, and marker 2607.",
+      "unknownInfo": "Left and Shutter Bang suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "301_location",
+      "type": "Location",
+      "name": "Weir",
+      "symbol": "📍",
+      "description": "The active scene for Case File 301. Recovered field notes place the primary event at Weir.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "301_witness",
+      "type": "Witness",
+      "name": "Deputy",
+      "symbol": "👤",
+      "description": "Deputy, identified in the case notes for Case File 301. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "301_time",
+      "type": "Time",
+      "name": "955",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 301. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "301_marker",
+      "type": "Marker",
+      "name": "Marker 2607",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 301.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "301_direction",
+      "type": "Direction",
+      "name": "Left",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 301.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "301_sound",
+      "type": "Sound",
+      "name": "Shutterbang",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 301. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The House on Mill Road - Recovered Case File",
     "fileId": "S26-001A",

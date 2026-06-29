@@ -216,18 +216,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "561_belt_buckle",
-    "name": "Belt Buckle",
-    "symbol": "*",
-    "description": "Belt Buckle was recovered from Chandler's Row in Case File 561. It is tied to Auctioneer, 4:38, and marker 4779.",
-    "discovered": "Case File 561",
-    "firstAppearance": "The Time Lost",
-    "connectedSongs": [
-      "561"
-    ],
-    "unknownInfo": "Off the Road and River Water suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "561_beltbuckle",
+      "type": "Object",
+      "name": "Beltbuckle",
+      "symbol": "🔍",
+      "description": "Belt Buckle was recovered from Chandler's Row in Case File 561. It is tied to Auctioneer, 4:38, and marker 4779.",
+      "unknownInfo": "Off the Road and River Water suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "561_location",
+      "type": "Location",
+      "name": "Chandler'Srow",
+      "symbol": "📍",
+      "description": "The active scene for Case File 561. Recovered field notes place the primary event at Chandler'Srow.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "561_witness",
+      "type": "Witness",
+      "name": "Auctioneer",
+      "symbol": "👤",
+      "description": "Auctioneer, identified in the case notes for Case File 561. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "561_time",
+      "type": "Time",
+      "name": "438",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 561. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "561_marker",
+      "type": "Marker",
+      "name": "Marker 4779",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 561.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "561_direction",
+      "type": "Direction",
+      "name": "Offtheroad",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 561.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "561_sound",
+      "type": "Sound",
+      "name": "Riverwater",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 561. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Time Lost - Recovered Case File",
     "fileId": "S47-009A",

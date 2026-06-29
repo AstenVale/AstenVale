@@ -227,18 +227,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "568_pipe",
-    "name": "Pipe",
-    "symbol": "*",
-    "description": "Pipe was recovered from The Hollow Road in Case File 568. It is tied to Cider Presser, 7:14, and marker 4834.",
-    "discovered": "Case File 568",
-    "firstAppearance": "Who Noticed",
-    "connectedSongs": [
-      "568"
-    ],
-    "unknownInfo": "Back the Way You Came and Cellar Stairs suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "568_pipe",
+      "type": "Object",
+      "name": "Pipe",
+      "symbol": "🔍",
+      "description": "Pipe was recovered from The Hollow Road in Case File 568. It is tied to Cider Presser, 7:14, and marker 4834.",
+      "unknownInfo": "Back the Way You Came and Cellar Stairs suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "568_location",
+      "type": "Location",
+      "name": "Hollow Road",
+      "symbol": "📍",
+      "description": "The active scene for Case File 568. Recovered field notes place the primary event at Hollow Road.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "568_witness",
+      "type": "Witness",
+      "name": "Ciderpresser",
+      "symbol": "👤",
+      "description": "Ciderpresser, identified in the case notes for Case File 568. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "568_time",
+      "type": "Time",
+      "name": "714",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 568. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "568_marker",
+      "type": "Marker",
+      "name": "Marker 4834",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 568.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "568_direction",
+      "type": "Direction",
+      "name": "Backthewayyoucame",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 568.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "568_sound",
+      "type": "Sound",
+      "name": "Cellarstairs",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 568. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "Who Noticed - Recovered Case File",
     "fileId": "S48-004A",

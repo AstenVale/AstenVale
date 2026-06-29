@@ -227,18 +227,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "495_broken_clasp",
-    "name": "Broken Clasp",
-    "symbol": "*",
-    "description": "Broken Clasp was recovered from Hill Road in Case File 495. It is tied to Caretaker, 8:42, and marker 4225.",
-    "discovered": "Case File 495",
-    "firstAppearance": "What the Drought Revealed",
-    "connectedSongs": [
-      "495"
-    ],
-    "unknownInfo": "Out of Sight and Lantern Glass suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "495_brokenclasp",
+      "type": "Object",
+      "name": "Brokenclasp",
+      "symbol": "🔍",
+      "description": "Broken Clasp was recovered from Hill Road in Case File 495. It is tied to Caretaker, 8:42, and marker 4225.",
+      "unknownInfo": "Out of Sight and Lantern Glass suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "495_location",
+      "type": "Location",
+      "name": "Hillroad",
+      "symbol": "📍",
+      "description": "The active scene for Case File 495. Recovered field notes place the primary event at Hillroad.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "495_witness",
+      "type": "Witness",
+      "name": "Caretaker",
+      "symbol": "👤",
+      "description": "Caretaker, identified in the case notes for Case File 495. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "495_time",
+      "type": "Time",
+      "name": "842",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 495. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "495_marker",
+      "type": "Marker",
+      "name": "Marker 4225",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 495.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "495_direction",
+      "type": "Direction",
+      "name": "Outofsight",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 495.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "495_sound",
+      "type": "Sound",
+      "name": "Lanternglass",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 495. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "What the Drought Revealed - Recovered Case File",
     "fileId": "S42-003A",

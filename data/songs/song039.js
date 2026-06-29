@@ -226,18 +226,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "039_empty_tin",
-    "name": "Empty Tin",
-    "symbol": "*",
-    "description": "Empty Tin was recovered from The Quarry Pool in Case File 039. It is tied to Miller, 8:42, and marker 425.",
-    "discovered": "Case File 039",
-    "firstAppearance": "What Surfaces",
-    "connectedSongs": [
-      "039"
-    ],
-    "unknownInfo": "Sideways and Moth Wings suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "039_emptytin",
+      "type": "Object",
+      "name": "Emptytin",
+      "symbol": "🔍",
+      "description": "Empty Tin was recovered from The Quarry Pool in Case File 039. It is tied to Miller, 8:42, and marker 425.",
+      "unknownInfo": "Sideways and Moth Wings suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "039_location",
+      "type": "Location",
+      "name": "Quarry Pool",
+      "symbol": "📍",
+      "description": "The active scene for Case File 039. Recovered field notes place the primary event at Quarry Pool.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "039_witness",
+      "type": "Witness",
+      "name": "Miller",
+      "symbol": "👤",
+      "description": "Miller, identified in the case notes for Case File 039. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "039_time",
+      "type": "Time",
+      "name": "842",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 039. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "039_marker",
+      "type": "Marker",
+      "name": "Marker 425",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 039.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "039_direction",
+      "type": "Direction",
+      "name": "Sideways",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 039.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "039_sound",
+      "type": "Sound",
+      "name": "Mothwings",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 039. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "What Surfaces - Recovered Case File",
     "fileId": "S4-003A",

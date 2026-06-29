@@ -226,18 +226,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "435_bone_button",
-    "name": "Bone Button",
-    "symbol": "*",
-    "description": "Bone Button was recovered from Cooper's Yard in Case File 435. It is tied to Weaver, 10:22, and marker 3725.",
-    "discovered": "Case File 435",
-    "firstAppearance": "Why It Closed",
-    "connectedSongs": [
-      "435"
-    ],
-    "unknownInfo": "Across and Knife Scrape suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "435_bonebutton",
+      "type": "Object",
+      "name": "Bonebutton",
+      "symbol": "🔍",
+      "description": "Bone Button was recovered from Cooper's Yard in Case File 435. It is tied to Weaver, 10:22, and marker 3725.",
+      "unknownInfo": "Across and Knife Scrape suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "435_location",
+      "type": "Location",
+      "name": "Cooper'Syard",
+      "symbol": "📍",
+      "description": "The active scene for Case File 435. Recovered field notes place the primary event at Cooper'Syard.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "435_witness",
+      "type": "Witness",
+      "name": "Weaver",
+      "symbol": "👤",
+      "description": "Weaver, identified in the case notes for Case File 435. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "435_time",
+      "type": "Time",
+      "name": "1022",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 435. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "435_marker",
+      "type": "Marker",
+      "name": "Marker 3725",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 435.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "435_direction",
+      "type": "Direction",
+      "name": "Across",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 435.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "435_sound",
+      "type": "Sound",
+      "name": "Knifescrape",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 435. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "Why It Closed - Recovered Case File",
     "fileId": "S37-003A",

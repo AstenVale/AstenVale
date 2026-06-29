@@ -215,18 +215,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "034_straight_razor",
-    "name": "Straight Razor",
-    "symbol": "*",
-    "description": "Straight Razor was recovered from Watchmaker's Shop in Case File 034. It is tied to Preacher, 9:27, and marker 388.",
-    "discovered": "Case File 034",
-    "firstAppearance": "The Turned Earth",
-    "connectedSongs": [
-      "034"
-    ],
-    "unknownInfo": "Ahead and River Ice suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "034_straightrazor",
+      "type": "Object",
+      "name": "Straightrazor",
+      "symbol": "🔍",
+      "description": "Straight Razor was recovered from Watchmaker's Shop in Case File 034. It is tied to Preacher, 9:27, and marker 388.",
+      "unknownInfo": "Ahead and River Ice suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "034_location",
+      "type": "Location",
+      "name": "Watchmaker'Sshop",
+      "symbol": "📍",
+      "description": "The active scene for Case File 034. Recovered field notes place the primary event at Watchmaker'Sshop.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "034_witness",
+      "type": "Witness",
+      "name": "Preacher",
+      "symbol": "👤",
+      "description": "Preacher, identified in the case notes for Case File 034. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "034_time",
+      "type": "Time",
+      "name": "927",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 034. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "034_marker",
+      "type": "Marker",
+      "name": "Marker 388",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 034.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "034_direction",
+      "type": "Direction",
+      "name": "Ahead",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 034.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "034_sound",
+      "type": "Sound",
+      "name": "Riverice",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 034. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Turned Earth - Recovered Case File",
     "fileId": "S3-010A",

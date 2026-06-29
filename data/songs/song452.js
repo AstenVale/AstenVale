@@ -216,18 +216,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "452_spool_of_thread",
-    "name": "Spool of Thread",
-    "symbol": "*",
-    "description": "Spool of Thread was recovered from Lumber Camp in Case File 452. It is tied to Doctor, 4:12, and marker 3870.",
-    "discovered": "Case File 452",
-    "firstAppearance": "The Distance",
-    "connectedSongs": [
-      "452"
-    ],
-    "unknownInfo": "Past the Tree Line and Distant Gunshot suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "452_spoolofthread",
+      "type": "Object",
+      "name": "Spoolofthread",
+      "symbol": "🔍",
+      "description": "Spool of Thread was recovered from Lumber Camp in Case File 452. It is tied to Doctor, 4:12, and marker 3870.",
+      "unknownInfo": "Past the Tree Line and Distant Gunshot suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "452_location",
+      "type": "Location",
+      "name": "Lumbercamp",
+      "symbol": "📍",
+      "description": "The active scene for Case File 452. Recovered field notes place the primary event at Lumbercamp.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "452_witness",
+      "type": "Witness",
+      "name": "Doctor",
+      "symbol": "👤",
+      "description": "Doctor, identified in the case notes for Case File 452. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "452_time",
+      "type": "Time",
+      "name": "412",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 452. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "452_marker",
+      "type": "Marker",
+      "name": "Marker 3870",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 452.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "452_direction",
+      "type": "Direction",
+      "name": "Pastthetreeline",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 452.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "452_sound",
+      "type": "Sound",
+      "name": "Distantgunshot",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 452. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Distance - Recovered Case File",
     "fileId": "S38-008A",

@@ -214,18 +214,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "271_seal",
-    "name": "Seal",
-    "symbol": "*",
-    "description": "Seal was recovered from Millpond in Case File 271. It is tied to Salt Seller, 6:06, and marker 2361.",
-    "discovered": "Case File 271",
-    "firstAppearance": "The Copy",
-    "connectedSongs": [
-      "271"
-    ],
-    "unknownInfo": "Up and Kettle Boil suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "271_seal",
+      "type": "Object",
+      "name": "Seal",
+      "symbol": "🔍",
+      "description": "Seal was recovered from Millpond in Case File 271. It is tied to Salt Seller, 6:06, and marker 2361.",
+      "unknownInfo": "Up and Kettle Boil suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "271_location",
+      "type": "Location",
+      "name": "Millpond",
+      "symbol": "📍",
+      "description": "The active scene for Case File 271. Recovered field notes place the primary event at Millpond.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "271_witness",
+      "type": "Witness",
+      "name": "Saltseller",
+      "symbol": "👤",
+      "description": "Saltseller, identified in the case notes for Case File 271. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "271_time",
+      "type": "Time",
+      "name": "606",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 271. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "271_marker",
+      "type": "Marker",
+      "name": "Marker 2361",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 271.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "271_direction",
+      "type": "Direction",
+      "name": "Up",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 271.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "271_sound",
+      "type": "Sound",
+      "name": "Kettleboil",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 271. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Copy - Recovered Case File",
     "fileId": "S23-007A",

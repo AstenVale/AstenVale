@@ -216,18 +216,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "273_wool_scarf",
-    "name": "Wool Scarf",
-    "symbol": "*",
-    "description": "Wool Scarf was recovered from South Fork in Case File 273. It is tied to Widow, 5:13, and marker 2379.",
-    "discovered": "Case File 273",
-    "firstAppearance": "Filed Wrong",
-    "connectedSongs": [
-      "273"
-    ],
-    "unknownInfo": "Out of Sight and Crow Call suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "273_woolscarf",
+      "type": "Object",
+      "name": "Woolscarf",
+      "symbol": "🔍",
+      "description": "Wool Scarf was recovered from South Fork in Case File 273. It is tied to Widow, 5:13, and marker 2379.",
+      "unknownInfo": "Out of Sight and Crow Call suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "273_location",
+      "type": "Location",
+      "name": "Southfork",
+      "symbol": "📍",
+      "description": "The active scene for Case File 273. Recovered field notes place the primary event at Southfork.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "273_witness",
+      "type": "Witness",
+      "name": "Widow",
+      "symbol": "👤",
+      "description": "Widow, identified in the case notes for Case File 273. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "273_time",
+      "type": "Time",
+      "name": "513",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 273. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "273_marker",
+      "type": "Marker",
+      "name": "Marker 2379",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 273.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "273_direction",
+      "type": "Direction",
+      "name": "Outofsight",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 273.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "273_sound",
+      "type": "Sound",
+      "name": "Crowcall",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 273. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "Filed Wrong - Recovered Case File",
     "fileId": "S23-009A",

@@ -216,18 +216,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "097_ring",
-    "name": "Ring",
-    "symbol": "*",
-    "description": "Ring was recovered from The Weir in Case File 097. It is tied to Banker, 8:00, and marker 907.",
-    "discovered": "Case File 097",
-    "firstAppearance": "The Archive",
-    "connectedSongs": [
-      "097"
-    ],
-    "unknownInfo": "Further In and Knife Scrape suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "097_ring",
+      "type": "Object",
+      "name": "Ring",
+      "symbol": "🔍",
+      "description": "Ring was recovered from The Weir in Case File 097. It is tied to Banker, 8:00, and marker 907.",
+      "unknownInfo": "Further In and Knife Scrape suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "097_location",
+      "type": "Location",
+      "name": "Weir",
+      "symbol": "📍",
+      "description": "The active scene for Case File 097. Recovered field notes place the primary event at Weir.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "097_witness",
+      "type": "Witness",
+      "name": "Banker",
+      "symbol": "👤",
+      "description": "Banker, identified in the case notes for Case File 097. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "097_time",
+      "type": "Time",
+      "name": "800",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 097. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "097_marker",
+      "type": "Marker",
+      "name": "Marker 907",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 097.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "097_direction",
+      "type": "Direction",
+      "name": "Furtherin",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 097.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "097_sound",
+      "type": "Sound",
+      "name": "Knifescrape",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 097. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Archive - Recovered Case File",
     "fileId": "S9-001A",

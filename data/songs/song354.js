@@ -215,18 +215,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "354_wax_seal",
-    "name": "Wax Seal",
-    "symbol": "*",
-    "description": "Wax Seal was recovered from Old Bridge in Case File 354. It is tied to Barber, 5:09, and marker 3052.",
-    "discovered": "Case File 354",
-    "firstAppearance": "The Conductor's Memory",
-    "connectedSongs": [
-      "354"
-    ],
-    "unknownInfo": "Sideways and Swamp Gas suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "354_waxseal",
+      "type": "Object",
+      "name": "Waxseal",
+      "symbol": "🔍",
+      "description": "Wax Seal was recovered from Old Bridge in Case File 354. It is tied to Barber, 5:09, and marker 3052.",
+      "unknownInfo": "Sideways and Swamp Gas suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "354_location",
+      "type": "Location",
+      "name": "Oldbridge",
+      "symbol": "📍",
+      "description": "The active scene for Case File 354. Recovered field notes place the primary event at Oldbridge.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "354_witness",
+      "type": "Witness",
+      "name": "Barber",
+      "symbol": "👤",
+      "description": "Barber, identified in the case notes for Case File 354. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "354_time",
+      "type": "Time",
+      "name": "509",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 354. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "354_marker",
+      "type": "Marker",
+      "name": "Marker 3052",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 354.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "354_direction",
+      "type": "Direction",
+      "name": "Sideways",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 354.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "354_sound",
+      "type": "Sound",
+      "name": "Swampgas",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 354. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Conductor's Memory - Recovered Case File",
     "fileId": "S30-006A",

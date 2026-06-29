@@ -215,18 +215,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "031_chain",
-    "name": "Chain",
-    "symbol": "*",
-    "description": "Chain was recovered from Potter's Field in Case File 031. It is tied to Census Taker, 10:22, and marker 361.",
-    "discovered": "Case File 031",
-    "firstAppearance": "The Other Name",
-    "connectedSongs": [
-      "031"
-    ],
-    "unknownInfo": "Toward and Hammer Strike suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "031_chain",
+      "type": "Object",
+      "name": "Chain",
+      "symbol": "🔍",
+      "description": "Chain was recovered from Potter's Field in Case File 031. It is tied to Census Taker, 10:22, and marker 361.",
+      "unknownInfo": "Toward and Hammer Strike suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "031_location",
+      "type": "Location",
+      "name": "Potter'Sfield",
+      "symbol": "📍",
+      "description": "The active scene for Case File 031. Recovered field notes place the primary event at Potter'Sfield.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "031_witness",
+      "type": "Witness",
+      "name": "Censustaker",
+      "symbol": "👤",
+      "description": "Censustaker, identified in the case notes for Case File 031. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "031_time",
+      "type": "Time",
+      "name": "1022",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 031. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "031_marker",
+      "type": "Marker",
+      "name": "Marker 361",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 031.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "031_direction",
+      "type": "Direction",
+      "name": "Toward",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 031.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "031_sound",
+      "type": "Sound",
+      "name": "Hammerstrike",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 031. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Other Name - Recovered Case File",
     "fileId": "S3-007A",

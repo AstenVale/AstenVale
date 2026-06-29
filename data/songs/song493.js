@@ -226,18 +226,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "493_comb",
-    "name": "Comb",
-    "symbol": "*",
-    "description": "Comb was recovered from Post Office in Case File 493. It is tied to Salt Seller, 12:33, and marker 4207.",
-    "discovered": "Case File 493",
-    "firstAppearance": "The Water Gone",
-    "connectedSongs": [
-      "493"
-    ],
-    "unknownInfo": "Beyond and Saw Cutting suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "493_comb",
+      "type": "Object",
+      "name": "Comb",
+      "symbol": "🔍",
+      "description": "Comb was recovered from Post Office in Case File 493. It is tied to Salt Seller, 12:33, and marker 4207.",
+      "unknownInfo": "Beyond and Saw Cutting suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "493_location",
+      "type": "Location",
+      "name": "Postoffice",
+      "symbol": "📍",
+      "description": "The active scene for Case File 493. Recovered field notes place the primary event at Postoffice.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "493_witness",
+      "type": "Witness",
+      "name": "Saltseller",
+      "symbol": "👤",
+      "description": "Saltseller, identified in the case notes for Case File 493. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "493_time",
+      "type": "Time",
+      "name": "1233",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 493. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "493_marker",
+      "type": "Marker",
+      "name": "Marker 4207",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 493.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "493_direction",
+      "type": "Direction",
+      "name": "Beyond",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 493.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "493_sound",
+      "type": "Sound",
+      "name": "Sawcutting",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 493. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Water Gone - Recovered Case File",
     "fileId": "S42-001A",

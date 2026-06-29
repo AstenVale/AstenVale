@@ -216,18 +216,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "076_receipt",
-    "name": "Receipt",
-    "symbol": "*",
-    "description": "Receipt was recovered from The Pit in Case File 076. It is tied to Census Taker, 5:13, and marker 734.",
-    "discovered": "Case File 076",
-    "firstAppearance": "What She Didn't Tell",
-    "connectedSongs": [
-      "076"
-    ],
-    "unknownInfo": "Out and Bell Toll suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "076_receipt",
+      "type": "Object",
+      "name": "Receipt",
+      "symbol": "🔍",
+      "description": "Receipt was recovered from The Pit in Case File 076. It is tied to Census Taker, 5:13, and marker 734.",
+      "unknownInfo": "Out and Bell Toll suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "076_location",
+      "type": "Location",
+      "name": "Pit",
+      "symbol": "📍",
+      "description": "The active scene for Case File 076. Recovered field notes place the primary event at Pit.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "076_witness",
+      "type": "Witness",
+      "name": "Censustaker",
+      "symbol": "👤",
+      "description": "Censustaker, identified in the case notes for Case File 076. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "076_time",
+      "type": "Time",
+      "name": "513",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 076. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "076_marker",
+      "type": "Marker",
+      "name": "Marker 734",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 076.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "076_direction",
+      "type": "Direction",
+      "name": "Out",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 076.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "076_sound",
+      "type": "Sound",
+      "name": "Belltoll",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 076. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "What She Didn't Tell - Recovered Case File",
     "fileId": "S7-004A",

@@ -224,18 +224,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "195_watch",
-    "name": "Watch",
-    "symbol": "*",
-    "description": "Watch was recovered from Potter's Field in Case File 195. It is tied to Blacksmith, 11:51, and marker 1725.",
-    "discovered": "Case File 195",
-    "firstAppearance": "The Last Warm Day",
-    "connectedSongs": [
-      "195"
-    ],
-    "unknownInfo": "Under and Empty Wagon suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "195_watch",
+      "type": "Object",
+      "name": "Watch",
+      "symbol": "🔍",
+      "description": "Watch was recovered from Potter's Field in Case File 195. It is tied to Blacksmith, 11:51, and marker 1725.",
+      "unknownInfo": "Under and Empty Wagon suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "195_location",
+      "type": "Location",
+      "name": "Potter'Sfield",
+      "symbol": "📍",
+      "description": "The active scene for Case File 195. Recovered field notes place the primary event at Potter'Sfield.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "195_witness",
+      "type": "Witness",
+      "name": "Blacksmith",
+      "symbol": "👤",
+      "description": "Blacksmith, identified in the case notes for Case File 195. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "195_time",
+      "type": "Time",
+      "name": "1151",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 195. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "195_marker",
+      "type": "Marker",
+      "name": "Marker 1725",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 195.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "195_direction",
+      "type": "Direction",
+      "name": "Under",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 195.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "195_sound",
+      "type": "Sound",
+      "name": "Emptywagon",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 195. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Last Warm Day - Recovered Case File",
     "fileId": "S17-003A",

@@ -226,18 +226,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "461_dried_flower",
-    "name": "Dried Flower",
-    "symbol": "*",
-    "description": "Dried Flower was recovered from Pine Hollow in Case File 461. It is tied to Quarry Foreman, 11:29, and marker 3943.",
-    "discovered": "Case File 461",
-    "firstAppearance": "The Night Ride",
-    "connectedSongs": [
-      "461"
-    ],
-    "unknownInfo": "Under and Saw Cutting suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "461_driedflower",
+      "type": "Object",
+      "name": "Driedflower",
+      "symbol": "🔍",
+      "description": "Dried Flower was recovered from Pine Hollow in Case File 461. It is tied to Quarry Foreman, 11:29, and marker 3943.",
+      "unknownInfo": "Under and Saw Cutting suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "461_location",
+      "type": "Location",
+      "name": "Pinehollow",
+      "symbol": "📍",
+      "description": "The active scene for Case File 461. Recovered field notes place the primary event at Pinehollow.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "461_witness",
+      "type": "Witness",
+      "name": "Quarryforeman",
+      "symbol": "👤",
+      "description": "Quarryforeman, identified in the case notes for Case File 461. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "461_time",
+      "type": "Time",
+      "name": "1129",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 461. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "461_marker",
+      "type": "Marker",
+      "name": "Marker 3943",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 461.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "461_direction",
+      "type": "Direction",
+      "name": "Under",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 461.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "461_sound",
+      "type": "Sound",
+      "name": "Sawcutting",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 461. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Night Ride - Recovered Case File",
     "fileId": "S39-005A",

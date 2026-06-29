@@ -228,18 +228,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "547_dried_ink_blot",
-    "name": "Dried Ink Blot",
-    "symbol": "*",
-    "description": "Dried Ink Blot was recovered from Ash Hollow in Case File 547. It is tied to River Pilot, 7:48, and marker 4661.",
-    "discovered": "Case File 547",
-    "firstAppearance": "The Storm Witness",
-    "connectedSongs": [
-      "547"
-    ],
-    "unknownInfo": "Up the Ridge and Boot Heel suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "547_driedinkblot",
+      "type": "Object",
+      "name": "Driedinkblot",
+      "symbol": "🔍",
+      "description": "Dried Ink Blot was recovered from Ash Hollow in Case File 547. It is tied to River Pilot, 7:48, and marker 4661.",
+      "unknownInfo": "Up the Ridge and Boot Heel suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "547_location",
+      "type": "Location",
+      "name": "Ashhollow",
+      "symbol": "📍",
+      "description": "The active scene for Case File 547. Recovered field notes place the primary event at Ashhollow.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "547_witness",
+      "type": "Witness",
+      "name": "Riverpilot",
+      "symbol": "👤",
+      "description": "Riverpilot, identified in the case notes for Case File 547. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "547_time",
+      "type": "Time",
+      "name": "748",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 547. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "547_marker",
+      "type": "Marker",
+      "name": "Marker 4661",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 547.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "547_direction",
+      "type": "Direction",
+      "name": "Uptheridge",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 547.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "547_sound",
+      "type": "Sound",
+      "name": "Bootheel",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 547. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Storm Witness - Recovered Case File",
     "fileId": "S46-007A",

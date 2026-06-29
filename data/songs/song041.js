@@ -223,18 +223,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "041_signet_ring",
-    "name": "Signet Ring",
-    "symbol": "*",
-    "description": "Signet Ring was recovered from Library in Case File 041. It is tied to Orphan, 12:00, and marker 443.",
-    "discovered": "Case File 041",
-    "firstAppearance": "Low Water Mark",
-    "connectedSongs": [
-      "041"
-    ],
-    "unknownInfo": "Out and Floorboard suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "041_signetring",
+      "type": "Object",
+      "name": "Signetring",
+      "symbol": "🔍",
+      "description": "Signet Ring was recovered from Library in Case File 041. It is tied to Orphan, 12:00, and marker 443.",
+      "unknownInfo": "Out and Floorboard suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "041_location",
+      "type": "Location",
+      "name": "Library",
+      "symbol": "📍",
+      "description": "The active scene for Case File 041. Recovered field notes place the primary event at Library.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "041_witness",
+      "type": "Witness",
+      "name": "Orphan",
+      "symbol": "👤",
+      "description": "Orphan, identified in the case notes for Case File 041. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "041_time",
+      "type": "Time",
+      "name": "1200",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 041. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "041_marker",
+      "type": "Marker",
+      "name": "Marker 443",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 041.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "041_direction",
+      "type": "Direction",
+      "name": "Out",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 041.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "041_sound",
+      "type": "Sound",
+      "name": "Floorboard",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 041. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "Low Water Mark - Recovered Case File",
     "fileId": "S4-005A",

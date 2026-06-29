@@ -225,18 +225,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "549_bottle",
-    "name": "Bottle",
-    "symbol": "*",
-    "description": "Bottle was recovered from Water Tower in Case File 549. It is tied to Cooper, 4:29, and marker 4679.",
-    "discovered": "Case File 549",
-    "firstAppearance": "What the Storm Moved",
-    "connectedSongs": [
-      "549"
-    ],
-    "unknownInfo": "Over and Cannon Bolt suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "549_bottle",
+      "type": "Object",
+      "name": "Bottle",
+      "symbol": "🔍",
+      "description": "Bottle was recovered from Water Tower in Case File 549. It is tied to Cooper, 4:29, and marker 4679.",
+      "unknownInfo": "Over and Cannon Bolt suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "549_location",
+      "type": "Location",
+      "name": "Watertower",
+      "symbol": "📍",
+      "description": "The active scene for Case File 549. Recovered field notes place the primary event at Watertower.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "549_witness",
+      "type": "Witness",
+      "name": "Cooper",
+      "symbol": "👤",
+      "description": "Cooper, identified in the case notes for Case File 549. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "549_time",
+      "type": "Time",
+      "name": "429",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 549. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "549_marker",
+      "type": "Marker",
+      "name": "Marker 4679",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 549.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "549_direction",
+      "type": "Direction",
+      "name": "Over",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 549.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "549_sound",
+      "type": "Sound",
+      "name": "Cannonbolt",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 549. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "What the Storm Moved - Recovered Case File",
     "fileId": "S46-009A",

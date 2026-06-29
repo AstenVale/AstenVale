@@ -226,18 +226,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "566_canteen",
-    "name": "Canteen",
-    "symbol": "*",
-    "description": "Canteen was recovered from The Bluff in Case File 566. It is tied to Census Taker, 6:32, and marker 4816.",
-    "discovered": "Case File 566",
-    "firstAppearance": "What Was Being Sent",
-    "connectedSongs": [
-      "566"
-    ],
-    "unknownInfo": "Forward and Wind in Pines suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "566_canteen",
+      "type": "Object",
+      "name": "Canteen",
+      "symbol": "🔍",
+      "description": "Canteen was recovered from The Bluff in Case File 566. It is tied to Census Taker, 6:32, and marker 4816.",
+      "unknownInfo": "Forward and Wind in Pines suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "566_location",
+      "type": "Location",
+      "name": "Bluff",
+      "symbol": "📍",
+      "description": "The active scene for Case File 566. Recovered field notes place the primary event at Bluff.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "566_witness",
+      "type": "Witness",
+      "name": "Censustaker",
+      "symbol": "👤",
+      "description": "Censustaker, identified in the case notes for Case File 566. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "566_time",
+      "type": "Time",
+      "name": "632",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 566. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "566_marker",
+      "type": "Marker",
+      "name": "Marker 4816",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 566.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "566_direction",
+      "type": "Direction",
+      "name": "Forward",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 566.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "566_sound",
+      "type": "Sound",
+      "name": "Windinpines",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 566. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "What Was Being Sent - Recovered Case File",
     "fileId": "S48-002A",

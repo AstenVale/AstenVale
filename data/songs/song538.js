@@ -216,18 +216,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "538_leather_strap",
-    "name": "Leather Strap",
-    "symbol": "*",
-    "description": "Leather Strap was recovered from Sawmill in Case File 538. It is tied to Quarry Foreman, 3:17, and marker 4588.",
-    "discovered": "Case File 538",
-    "firstAppearance": "The Record",
-    "connectedSongs": [
-      "538"
-    ],
-    "unknownInfo": "Straight Down and Hammer Strike suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "538_leatherstrap",
+      "type": "Object",
+      "name": "Leatherstrap",
+      "symbol": "🔍",
+      "description": "Leather Strap was recovered from Sawmill in Case File 538. It is tied to Quarry Foreman, 3:17, and marker 4588.",
+      "unknownInfo": "Straight Down and Hammer Strike suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "538_location",
+      "type": "Location",
+      "name": "Sawmill",
+      "symbol": "📍",
+      "description": "The active scene for Case File 538. Recovered field notes place the primary event at Sawmill.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "538_witness",
+      "type": "Witness",
+      "name": "Quarryforeman",
+      "symbol": "👤",
+      "description": "Quarryforeman, identified in the case notes for Case File 538. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "538_time",
+      "type": "Time",
+      "name": "317",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 538. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "538_marker",
+      "type": "Marker",
+      "name": "Marker 4588",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 538.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "538_direction",
+      "type": "Direction",
+      "name": "Straightdown",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 538.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "538_sound",
+      "type": "Sound",
+      "name": "Hammerstrike",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 538. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Record - Recovered Case File",
     "fileId": "S45-010A",

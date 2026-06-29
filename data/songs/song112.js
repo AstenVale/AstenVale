@@ -213,18 +213,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "112_receipt",
-    "name": "Receipt",
-    "symbol": "*",
-    "description": "Receipt was recovered from Saloon in Case File 112. It is tied to Apothecary, 10:51, and marker 1034.",
-    "discovered": "Case File 112",
-    "firstAppearance": "Mile Marker",
-    "connectedSongs": [
-      "112"
-    ],
-    "unknownInfo": "West and Lid of a Tin suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "112_receipt",
+      "type": "Object",
+      "name": "Receipt",
+      "symbol": "🔍",
+      "description": "Receipt was recovered from Saloon in Case File 112. It is tied to Apothecary, 10:51, and marker 1034.",
+      "unknownInfo": "West and Lid of a Tin suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "112_location",
+      "type": "Location",
+      "name": "Saloon",
+      "symbol": "📍",
+      "description": "The active scene for Case File 112. Recovered field notes place the primary event at Saloon.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "112_witness",
+      "type": "Witness",
+      "name": "Apothecary",
+      "symbol": "👤",
+      "description": "Apothecary, identified in the case notes for Case File 112. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "112_time",
+      "type": "Time",
+      "name": "1051",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 112. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "112_marker",
+      "type": "Marker",
+      "name": "Marker 1034",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 112.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "112_direction",
+      "type": "Direction",
+      "name": "West",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 112.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "112_sound",
+      "type": "Sound",
+      "name": "Lidofatin",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 112. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "Mile Marker - Recovered Case File",
     "fileId": "S10-004A",

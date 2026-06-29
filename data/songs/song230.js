@@ -224,18 +224,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "230_thimble",
-    "name": "Thimble",
-    "symbol": "*",
-    "description": "Thimble was recovered from Orchard in Case File 230. It is tied to Deputy, 7:00, and marker 2016.",
-    "discovered": "Case File 230",
-    "firstAppearance": "The 12 AM Stop",
-    "connectedSongs": [
-      "230"
-    ],
-    "unknownInfo": "Ahead and Crow on Wire suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "230_thimble",
+      "type": "Object",
+      "name": "Thimble",
+      "symbol": "🔍",
+      "description": "Thimble was recovered from Orchard in Case File 230. It is tied to Deputy, 7:00, and marker 2016.",
+      "unknownInfo": "Ahead and Crow on Wire suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "230_location",
+      "type": "Location",
+      "name": "Orchard",
+      "symbol": "📍",
+      "description": "The active scene for Case File 230. Recovered field notes place the primary event at Orchard.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "230_witness",
+      "type": "Witness",
+      "name": "Deputy",
+      "symbol": "👤",
+      "description": "Deputy, identified in the case notes for Case File 230. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "230_time",
+      "type": "Time",
+      "name": "700",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 230. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "230_marker",
+      "type": "Marker",
+      "name": "Marker 2016",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 230.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "230_direction",
+      "type": "Direction",
+      "name": "Ahead",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 230.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "230_sound",
+      "type": "Sound",
+      "name": "Crowonwire",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 230. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The 12 AM Stop - Recovered Case File",
     "fileId": "S20-002A",

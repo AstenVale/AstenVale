@@ -214,18 +214,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "143_lantern",
-    "name": "Lantern",
-    "symbol": "*",
-    "description": "Lantern was recovered from Undertaker's Hall in Case File 143. It is tied to Fisherman, 12:00, and marker 1297.",
-    "discovered": "Case File 143",
-    "firstAppearance": "The Vault Contents",
-    "connectedSongs": [
-      "143"
-    ],
-    "unknownInfo": "Sideways and Cannon Bolt suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "143_lantern",
+      "type": "Object",
+      "name": "Lantern",
+      "symbol": "🔍",
+      "description": "Lantern was recovered from Undertaker's Hall in Case File 143. It is tied to Fisherman, 12:00, and marker 1297.",
+      "unknownInfo": "Sideways and Cannon Bolt suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "143_location",
+      "type": "Location",
+      "name": "Undertaker'Shall",
+      "symbol": "📍",
+      "description": "The active scene for Case File 143. Recovered field notes place the primary event at Undertaker'Shall.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "143_witness",
+      "type": "Witness",
+      "name": "Fisherman",
+      "symbol": "👤",
+      "description": "Fisherman, identified in the case notes for Case File 143. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "143_time",
+      "type": "Time",
+      "name": "1200",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 143. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "143_marker",
+      "type": "Marker",
+      "name": "Marker 1297",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 143.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "143_direction",
+      "type": "Direction",
+      "name": "Sideways",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 143.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "143_sound",
+      "type": "Sound",
+      "name": "Cannonbolt",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 143. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Vault Contents - Recovered Case File",
     "fileId": "S12-011A",

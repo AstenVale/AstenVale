@@ -225,18 +225,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "086_tin_star",
-    "name": "Tin Star",
-    "symbol": "*",
-    "description": "Tin Star was recovered from Post Office in Case File 086. It is tied to Fence Mender, 12:33, and marker 816.",
-    "discovered": "Case File 086",
-    "firstAppearance": "What Started It",
-    "connectedSongs": [
-      "086"
-    ],
-    "unknownInfo": "Behind and Rain suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "086_tinstar",
+      "type": "Object",
+      "name": "Tinstar",
+      "symbol": "🔍",
+      "description": "Tin Star was recovered from Post Office in Case File 086. It is tied to Fence Mender, 12:33, and marker 816.",
+      "unknownInfo": "Behind and Rain suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "086_location",
+      "type": "Location",
+      "name": "Postoffice",
+      "symbol": "📍",
+      "description": "The active scene for Case File 086. Recovered field notes place the primary event at Postoffice.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "086_witness",
+      "type": "Witness",
+      "name": "Fencemender",
+      "symbol": "👤",
+      "description": "Fencemender, identified in the case notes for Case File 086. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "086_time",
+      "type": "Time",
+      "name": "1233",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 086. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "086_marker",
+      "type": "Marker",
+      "name": "Marker 816",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 086.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "086_direction",
+      "type": "Direction",
+      "name": "Behind",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 086.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "086_sound",
+      "type": "Sound",
+      "name": "Rain",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 086. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "What Started It - Recovered Case File",
     "fileId": "S8-002A",

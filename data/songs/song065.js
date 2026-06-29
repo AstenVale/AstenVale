@@ -225,18 +225,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "065_bottle",
-    "name": "Bottle",
-    "symbol": "*",
-    "description": "Bottle was recovered from Covered Bridge in Case File 065. It is tied to Deputy, 6:53, and marker 643.",
-    "discovered": "Case File 065",
-    "firstAppearance": "What They Buried",
-    "connectedSongs": [
-      "065"
-    ],
-    "unknownInfo": "Ahead and Ice Crack suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "065_bottle",
+      "type": "Object",
+      "name": "Bottle",
+      "symbol": "🔍",
+      "description": "Bottle was recovered from Covered Bridge in Case File 065. It is tied to Deputy, 6:53, and marker 643.",
+      "unknownInfo": "Ahead and Ice Crack suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "065_location",
+      "type": "Location",
+      "name": "Coveredbridge",
+      "symbol": "📍",
+      "description": "The active scene for Case File 065. Recovered field notes place the primary event at Coveredbridge.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "065_witness",
+      "type": "Witness",
+      "name": "Deputy",
+      "symbol": "👤",
+      "description": "Deputy, identified in the case notes for Case File 065. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "065_time",
+      "type": "Time",
+      "name": "653",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 065. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "065_marker",
+      "type": "Marker",
+      "name": "Marker 643",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 065.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "065_direction",
+      "type": "Direction",
+      "name": "Ahead",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 065.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "065_sound",
+      "type": "Sound",
+      "name": "Icecrack",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 065. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "What They Buried - Recovered Case File",
     "fileId": "S6-005A",

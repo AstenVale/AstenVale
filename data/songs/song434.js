@@ -225,18 +225,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "434_boot",
-    "name": "Boot",
-    "symbol": "*",
-    "description": "Boot was recovered from Forge in Case File 434. It is tied to Rag Picker, 6:06, and marker 3716.",
-    "discovered": "Case File 434",
-    "firstAppearance": "Who Staffed It",
-    "connectedSongs": [
-      "434"
-    ],
-    "unknownInfo": "South and Fire Crackling suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "434_boot",
+      "type": "Object",
+      "name": "Boot",
+      "symbol": "🔍",
+      "description": "Boot was recovered from Forge in Case File 434. It is tied to Rag Picker, 6:06, and marker 3716.",
+      "unknownInfo": "South and Fire Crackling suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "434_location",
+      "type": "Location",
+      "name": "Forge",
+      "symbol": "📍",
+      "description": "The active scene for Case File 434. Recovered field notes place the primary event at Forge.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "434_witness",
+      "type": "Witness",
+      "name": "Ragpicker",
+      "symbol": "👤",
+      "description": "Ragpicker, identified in the case notes for Case File 434. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "434_time",
+      "type": "Time",
+      "name": "606",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 434. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "434_marker",
+      "type": "Marker",
+      "name": "Marker 3716",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 434.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "434_direction",
+      "type": "Direction",
+      "name": "South",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 434.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "434_sound",
+      "type": "Sound",
+      "name": "Firecrackling",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 434. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "Who Staffed It - Recovered Case File",
     "fileId": "S37-002A",

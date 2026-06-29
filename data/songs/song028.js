@@ -213,18 +213,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "028_candle",
-    "name": "Candle",
-    "symbol": "*",
-    "description": "Candle was recovered from Cabin in Case File 028. It is tied to Chandler, 2:19, and marker 334.",
-    "discovered": "Case File 028",
-    "firstAppearance": "Three Days Gone",
-    "connectedSongs": [
-      "028"
-    ],
-    "unknownInfo": "Under and Water Drip suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "028_candle",
+      "type": "Object",
+      "name": "Candle",
+      "symbol": "🔍",
+      "description": "Candle was recovered from Cabin in Case File 028. It is tied to Chandler, 2:19, and marker 334.",
+      "unknownInfo": "Under and Water Drip suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "028_location",
+      "type": "Location",
+      "name": "Cabin",
+      "symbol": "📍",
+      "description": "The active scene for Case File 028. Recovered field notes place the primary event at Cabin.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "028_witness",
+      "type": "Witness",
+      "name": "Chandler",
+      "symbol": "👤",
+      "description": "Chandler, identified in the case notes for Case File 028. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "028_time",
+      "type": "Time",
+      "name": "219",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 028. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "028_marker",
+      "type": "Marker",
+      "name": "Marker 334",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 028.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "028_direction",
+      "type": "Direction",
+      "name": "Under",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 028.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "028_sound",
+      "type": "Sound",
+      "name": "Waterdrip",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 028. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "Three Days Gone - Recovered Case File",
     "fileId": "S3-004A",

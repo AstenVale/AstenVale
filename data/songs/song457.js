@@ -226,18 +226,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "457_bent_nail",
-    "name": "Bent Nail",
-    "symbol": "*",
-    "description": "Bent Nail was recovered from Banker's House in Case File 457. It is tied to Census Taker, 7:00, and marker 3907.",
-    "discovered": "Case File 457",
-    "firstAppearance": "The Animal",
-    "connectedSongs": [
-      "457"
-    ],
-    "unknownInfo": "Behind and Night Insects suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "457_bentnail",
+      "type": "Object",
+      "name": "Bentnail",
+      "symbol": "🔍",
+      "description": "Bent Nail was recovered from Banker's House in Case File 457. It is tied to Census Taker, 7:00, and marker 3907.",
+      "unknownInfo": "Behind and Night Insects suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "457_location",
+      "type": "Location",
+      "name": "Banker'Shouse",
+      "symbol": "📍",
+      "description": "The active scene for Case File 457. Recovered field notes place the primary event at Banker'Shouse.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "457_witness",
+      "type": "Witness",
+      "name": "Censustaker",
+      "symbol": "👤",
+      "description": "Censustaker, identified in the case notes for Case File 457. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "457_time",
+      "type": "Time",
+      "name": "700",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 457. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "457_marker",
+      "type": "Marker",
+      "name": "Marker 3907",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 457.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "457_direction",
+      "type": "Direction",
+      "name": "Behind",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 457.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "457_sound",
+      "type": "Sound",
+      "name": "Nightinsects",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 457. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Animal - Recovered Case File",
     "fileId": "S39-001A",

@@ -213,18 +213,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "010_compass",
-    "name": "Compass",
-    "symbol": "*",
-    "description": "Compass was recovered from Highway in Case File 010. It is tied to Driver, 11:40, and marker 81.",
-    "discovered": "Case File 010",
-    "firstAppearance": "Westbound Shadows",
-    "connectedSongs": [
-      "010"
-    ],
-    "unknownInfo": "West and Horse Hooves suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "010_compass",
+      "type": "Object",
+      "name": "Compass",
+      "symbol": "🔍",
+      "description": "Compass was recovered from Highway in Case File 010. It is tied to Driver, 11:40, and marker 81.",
+      "unknownInfo": "West and Horse Hooves suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "010_location",
+      "type": "Location",
+      "name": "Highway",
+      "symbol": "📍",
+      "description": "The active scene for Case File 010. Recovered field notes place the primary event at Highway.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "010_witness",
+      "type": "Witness",
+      "name": "Driver",
+      "symbol": "👤",
+      "description": "Driver, identified in the case notes for Case File 010. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "010_time",
+      "type": "Time",
+      "name": "1140",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 010. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "010_marker",
+      "type": "Marker",
+      "name": "Marker 81",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 010.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "010_direction",
+      "type": "Direction",
+      "name": "West",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 010.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "010_sound",
+      "type": "Sound",
+      "name": "Horsehooves",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 010. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "Westbound Shadows - Recovered Case File",
     "fileId": "010A",

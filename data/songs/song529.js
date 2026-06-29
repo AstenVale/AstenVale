@@ -217,18 +217,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "529_pocket_watch",
-    "name": "Pocket Watch",
-    "symbol": "*",
-    "description": "Pocket Watch was recovered from Banker's House in Case File 529. It is tied to Census Taker, 2:55, and marker 4507.",
-    "discovered": "Case File 529",
-    "firstAppearance": "The Leader",
-    "connectedSongs": [
-      "529"
-    ],
-    "unknownInfo": "Out of Sight and Glass Break suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "529_pocketwatch",
+      "type": "Object",
+      "name": "Pocketwatch",
+      "symbol": "🔍",
+      "description": "Pocket Watch was recovered from Banker's House in Case File 529. It is tied to Census Taker, 2:55, and marker 4507.",
+      "unknownInfo": "Out of Sight and Glass Break suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "529_location",
+      "type": "Location",
+      "name": "Banker'Shouse",
+      "symbol": "📍",
+      "description": "The active scene for Case File 529. Recovered field notes place the primary event at Banker'Shouse.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "529_witness",
+      "type": "Witness",
+      "name": "Censustaker",
+      "symbol": "👤",
+      "description": "Censustaker, identified in the case notes for Case File 529. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "529_time",
+      "type": "Time",
+      "name": "255",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 529. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "529_marker",
+      "type": "Marker",
+      "name": "Marker 4507",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 529.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "529_direction",
+      "type": "Direction",
+      "name": "Outofsight",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 529.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "529_sound",
+      "type": "Sound",
+      "name": "Glassbreak",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 529. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Leader - Recovered Case File",
     "fileId": "S45-001A",

@@ -216,18 +216,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "245_stamp",
-    "name": "Stamp",
-    "symbol": "*",
-    "description": "Stamp was recovered from The Gully in Case File 245. It is tied to Night Porter, 6:17, and marker 2143.",
-    "discovered": "Case File 245",
-    "firstAppearance": "Growing Over",
-    "connectedSongs": [
-      "245"
-    ],
-    "unknownInfo": "Nowhere and Latch Drop suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "245_stamp",
+      "type": "Object",
+      "name": "Stamp",
+      "symbol": "🔍",
+      "description": "Stamp was recovered from The Gully in Case File 245. It is tied to Night Porter, 6:17, and marker 2143.",
+      "unknownInfo": "Nowhere and Latch Drop suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "245_location",
+      "type": "Location",
+      "name": "Gully",
+      "symbol": "📍",
+      "description": "The active scene for Case File 245. Recovered field notes place the primary event at Gully.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "245_witness",
+      "type": "Witness",
+      "name": "Nightporter",
+      "symbol": "👤",
+      "description": "Nightporter, identified in the case notes for Case File 245. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "245_time",
+      "type": "Time",
+      "name": "617",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 245. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "245_marker",
+      "type": "Marker",
+      "name": "Marker 2143",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 245.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "245_direction",
+      "type": "Direction",
+      "name": "Nowhere",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 245.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "245_sound",
+      "type": "Sound",
+      "name": "Latchdrop",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 245. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "Growing Over - Recovered Case File",
     "fileId": "S21-005A",

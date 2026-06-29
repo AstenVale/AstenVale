@@ -225,18 +225,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "462_key",
-    "name": "Key",
-    "symbol": "*",
-    "description": "Key was recovered from Water Tower in Case File 462. It is tied to Auctioneer, 11:51, and marker 3952.",
-    "discovered": "Case File 462",
-    "firstAppearance": "What the Horse Knew",
-    "connectedSongs": [
-      "462"
-    ],
-    "unknownInfo": "Back the Way You Came and Broken String suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "462_key",
+      "type": "Object",
+      "name": "Key",
+      "symbol": "🔍",
+      "description": "Key was recovered from Water Tower in Case File 462. It is tied to Auctioneer, 11:51, and marker 3952.",
+      "unknownInfo": "Back the Way You Came and Broken String suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "462_location",
+      "type": "Location",
+      "name": "Watertower",
+      "symbol": "📍",
+      "description": "The active scene for Case File 462. Recovered field notes place the primary event at Watertower.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "462_witness",
+      "type": "Witness",
+      "name": "Auctioneer",
+      "symbol": "👤",
+      "description": "Auctioneer, identified in the case notes for Case File 462. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "462_time",
+      "type": "Time",
+      "name": "1151",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 462. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "462_marker",
+      "type": "Marker",
+      "name": "Marker 3952",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 462.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "462_direction",
+      "type": "Direction",
+      "name": "Backthewayyoucame",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 462.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "462_sound",
+      "type": "Sound",
+      "name": "Brokenstring",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 462. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "What the Horse Knew - Recovered Case File",
     "fileId": "S39-006A",

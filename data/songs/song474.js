@@ -225,18 +225,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "474_lock_of_hair",
-    "name": "Lock of Hair",
-    "symbol": "*",
-    "description": "Lock of Hair was recovered from Crow's Nest Ridge in Case File 474. It is tied to Fisherman, 8:17, and marker 4052.",
-    "discovered": "Case File 474",
-    "firstAppearance": "What It Said",
-    "connectedSongs": [
-      "474"
-    ],
-    "unknownInfo": "Below and Shutter Bang suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "474_lockofhair",
+      "type": "Object",
+      "name": "Lockofhair",
+      "symbol": "🔍",
+      "description": "Lock of Hair was recovered from Crow's Nest Ridge in Case File 474. It is tied to Fisherman, 8:17, and marker 4052.",
+      "unknownInfo": "Below and Shutter Bang suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "474_location",
+      "type": "Location",
+      "name": "Crow'Snestridge",
+      "symbol": "📍",
+      "description": "The active scene for Case File 474. Recovered field notes place the primary event at Crow'Snestridge.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "474_witness",
+      "type": "Witness",
+      "name": "Fisherman",
+      "symbol": "👤",
+      "description": "Fisherman, identified in the case notes for Case File 474. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "474_time",
+      "type": "Time",
+      "name": "817",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 474. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "474_marker",
+      "type": "Marker",
+      "name": "Marker 4052",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 474.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "474_direction",
+      "type": "Direction",
+      "name": "Below",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 474.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "474_sound",
+      "type": "Sound",
+      "name": "Shutterbang",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 474. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "What It Said - Recovered Case File",
     "fileId": "S40-006A",

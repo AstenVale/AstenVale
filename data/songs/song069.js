@@ -227,18 +227,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "069_tin_star",
-    "name": "Tin Star",
-    "symbol": "*",
-    "description": "Tin Star was recovered from The Hollow Road in Case File 069. It is tied to Conductor, 2:55, and marker 679.",
-    "discovered": "Case File 069",
-    "firstAppearance": "Underground Water",
-    "connectedSongs": [
-      "069"
-    ],
-    "unknownInfo": "Nowhere and River Water suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "069_tinstar",
+      "type": "Object",
+      "name": "Tinstar",
+      "symbol": "🔍",
+      "description": "Tin Star was recovered from The Hollow Road in Case File 069. It is tied to Conductor, 2:55, and marker 679.",
+      "unknownInfo": "Nowhere and River Water suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "069_location",
+      "type": "Location",
+      "name": "Hollow Road",
+      "symbol": "📍",
+      "description": "The active scene for Case File 069. Recovered field notes place the primary event at Hollow Road.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "069_witness",
+      "type": "Witness",
+      "name": "Conductor",
+      "symbol": "👤",
+      "description": "Conductor, identified in the case notes for Case File 069. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "069_time",
+      "type": "Time",
+      "name": "255",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 069. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "069_marker",
+      "type": "Marker",
+      "name": "Marker 679",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 069.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "069_direction",
+      "type": "Direction",
+      "name": "Nowhere",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 069.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "069_sound",
+      "type": "Sound",
+      "name": "Riverwater",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 069. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "Underground Water - Recovered Case File",
     "fileId": "S6-009A",

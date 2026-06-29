@@ -216,18 +216,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "489_boot",
-    "name": "Boot",
-    "symbol": "*",
-    "description": "Boot was recovered from The Root Cellar in Case File 489. It is tied to Widow, 9:08, and marker 4179.",
-    "discovered": "Case File 489",
-    "firstAppearance": "What the Road Remembers",
-    "connectedSongs": [
-      "489"
-    ],
-    "unknownInfo": "Off the Road and Match Strike suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "489_boot",
+      "type": "Object",
+      "name": "Boot",
+      "symbol": "🔍",
+      "description": "Boot was recovered from The Root Cellar in Case File 489. It is tied to Widow, 9:08, and marker 4179.",
+      "unknownInfo": "Off the Road and Match Strike suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "489_location",
+      "type": "Location",
+      "name": "Root Cellar",
+      "symbol": "📍",
+      "description": "The active scene for Case File 489. Recovered field notes place the primary event at Root Cellar.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "489_witness",
+      "type": "Witness",
+      "name": "Widow",
+      "symbol": "👤",
+      "description": "Widow, identified in the case notes for Case File 489. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "489_time",
+      "type": "Time",
+      "name": "908",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 489. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "489_marker",
+      "type": "Marker",
+      "name": "Marker 4179",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 489.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "489_direction",
+      "type": "Direction",
+      "name": "Offtheroad",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 489.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "489_sound",
+      "type": "Sound",
+      "name": "Matchstrike",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 489. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "What the Road Remembers - Recovered Case File",
     "fileId": "S41-009A",

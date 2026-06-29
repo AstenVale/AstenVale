@@ -224,18 +224,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "480_bottle",
-    "name": "Bottle",
-    "symbol": "*",
-    "description": "Bottle was recovered from Sheriff's Office in Case File 480. It is tied to Child, 4:29, and marker 4106.",
-    "discovered": "Case File 480",
-    "firstAppearance": "The Final Message",
-    "connectedSongs": [
-      "480"
-    ],
-    "unknownInfo": "Beyond and Child's Laugh (far off) suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "480_bottle",
+      "type": "Object",
+      "name": "Bottle",
+      "symbol": "🔍",
+      "description": "Bottle was recovered from Sheriff's Office in Case File 480. It is tied to Child, 4:29, and marker 4106.",
+      "unknownInfo": "Beyond and Child's Laugh (far off) suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "480_location",
+      "type": "Location",
+      "name": "Sheriff'Soffice",
+      "symbol": "📍",
+      "description": "The active scene for Case File 480. Recovered field notes place the primary event at Sheriff'Soffice.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "480_witness",
+      "type": "Witness",
+      "name": "Child",
+      "symbol": "👤",
+      "description": "Child, identified in the case notes for Case File 480. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "480_time",
+      "type": "Time",
+      "name": "429",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 480. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "480_marker",
+      "type": "Marker",
+      "name": "Marker 4106",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 480.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "480_direction",
+      "type": "Direction",
+      "name": "Beyond",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 480.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "480_sound",
+      "type": "Sound",
+      "name": "Child'Slaugh(Faroff)",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 480. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Final Message - Recovered Case File",
     "fileId": "S40-012A",

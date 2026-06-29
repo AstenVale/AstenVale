@@ -214,18 +214,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "082_charred_paper",
-    "name": "Charred Paper",
-    "symbol": "*",
-    "description": "Charred Paper was recovered from Boatyard in Case File 082. It is tied to Midwife, 2:19, and marker 788.",
-    "discovered": "Case File 082",
-    "firstAppearance": "The Other Town",
-    "connectedSongs": [
-      "082"
-    ],
-    "unknownInfo": "Beyond and Forge Breath suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "082_charredpaper",
+      "type": "Object",
+      "name": "Charredpaper",
+      "symbol": "🔍",
+      "description": "Charred Paper was recovered from Boatyard in Case File 082. It is tied to Midwife, 2:19, and marker 788.",
+      "unknownInfo": "Beyond and Forge Breath suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "082_location",
+      "type": "Location",
+      "name": "Boatyard",
+      "symbol": "📍",
+      "description": "The active scene for Case File 082. Recovered field notes place the primary event at Boatyard.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "082_witness",
+      "type": "Witness",
+      "name": "Midwife",
+      "symbol": "👤",
+      "description": "Midwife, identified in the case notes for Case File 082. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "082_time",
+      "type": "Time",
+      "name": "219",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 082. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "082_marker",
+      "type": "Marker",
+      "name": "Marker 788",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 082.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "082_direction",
+      "type": "Direction",
+      "name": "Beyond",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 082.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "082_sound",
+      "type": "Sound",
+      "name": "Forgebreath",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 082. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Other Town - Recovered Case File",
     "fileId": "S7-010A",

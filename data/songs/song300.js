@@ -216,18 +216,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "300_ledger_page",
-    "name": "Ledger Page",
-    "symbol": "*",
-    "description": "Ledger Page was recovered from Potter's Field in Case File 300. It is tied to Rope Maker, 3:17, and marker 2606.",
-    "discovered": "Case File 300",
-    "firstAppearance": "The Original",
-    "connectedSongs": [
-      "300"
-    ],
-    "unknownInfo": "Past the Tree Line and Floorboard suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "300_ledgerpage",
+      "type": "Object",
+      "name": "Ledgerpage",
+      "symbol": "🔍",
+      "description": "Ledger Page was recovered from Potter's Field in Case File 300. It is tied to Rope Maker, 3:17, and marker 2606.",
+      "unknownInfo": "Past the Tree Line and Floorboard suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "300_location",
+      "type": "Location",
+      "name": "Potter'Sfield",
+      "symbol": "📍",
+      "description": "The active scene for Case File 300. Recovered field notes place the primary event at Potter'Sfield.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "300_witness",
+      "type": "Witness",
+      "name": "Ropemaker",
+      "symbol": "👤",
+      "description": "Ropemaker, identified in the case notes for Case File 300. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "300_time",
+      "type": "Time",
+      "name": "317",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 300. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "300_marker",
+      "type": "Marker",
+      "name": "Marker 2606",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 300.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "300_direction",
+      "type": "Direction",
+      "name": "Pastthetreeline",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 300.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "300_sound",
+      "type": "Sound",
+      "name": "Floorboard",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 300. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Original - Recovered Case File",
     "fileId": "S25-012A",

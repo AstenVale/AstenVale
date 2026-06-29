@@ -213,18 +213,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "241_flask",
-    "name": "Flask",
-    "symbol": "*",
-    "description": "Flask was recovered from Crossroads in Case File 241. It is tied to Tanner, 1:26, and marker 2107.",
-    "discovered": "Case File 241",
-    "firstAppearance": "The Old Oak",
-    "connectedSongs": [
-      "241"
-    ],
-    "unknownInfo": "Down and Empty Wagon suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "241_flask",
+      "type": "Object",
+      "name": "Flask",
+      "symbol": "🔍",
+      "description": "Flask was recovered from Crossroads in Case File 241. It is tied to Tanner, 1:26, and marker 2107.",
+      "unknownInfo": "Down and Empty Wagon suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "241_location",
+      "type": "Location",
+      "name": "Crossroads",
+      "symbol": "📍",
+      "description": "The active scene for Case File 241. Recovered field notes place the primary event at Crossroads.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "241_witness",
+      "type": "Witness",
+      "name": "Tanner",
+      "symbol": "👤",
+      "description": "Tanner, identified in the case notes for Case File 241. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "241_time",
+      "type": "Time",
+      "name": "126",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 241. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "241_marker",
+      "type": "Marker",
+      "name": "Marker 2107",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 241.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "241_direction",
+      "type": "Direction",
+      "name": "Down",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 241.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "241_sound",
+      "type": "Sound",
+      "name": "Emptywagon",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 241. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Old Oak - Recovered Case File",
     "fileId": "S21-001A",

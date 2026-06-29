@@ -225,18 +225,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "045_chain",
-    "name": "Chain",
-    "symbol": "*",
-    "description": "Chain was recovered from Cider House in Case File 045. It is tied to Rope Maker, 7:14, and marker 479.",
-    "discovered": "Case File 045",
-    "firstAppearance": "The Fisherman's Truth",
-    "connectedSongs": [
-      "045"
-    ],
-    "unknownInfo": "Over and Dry Grass suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "045_chain",
+      "type": "Object",
+      "name": "Chain",
+      "symbol": "🔍",
+      "description": "Chain was recovered from Cider House in Case File 045. It is tied to Rope Maker, 7:14, and marker 479.",
+      "unknownInfo": "Over and Dry Grass suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "045_location",
+      "type": "Location",
+      "name": "Ciderhouse",
+      "symbol": "📍",
+      "description": "The active scene for Case File 045. Recovered field notes place the primary event at Ciderhouse.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "045_witness",
+      "type": "Witness",
+      "name": "Ropemaker",
+      "symbol": "👤",
+      "description": "Ropemaker, identified in the case notes for Case File 045. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "045_time",
+      "type": "Time",
+      "name": "714",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 045. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "045_marker",
+      "type": "Marker",
+      "name": "Marker 479",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 045.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "045_direction",
+      "type": "Direction",
+      "name": "Over",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 045.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "045_sound",
+      "type": "Sound",
+      "name": "Drygrass",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 045. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Fisherman's Truth - Recovered Case File",
     "fileId": "S4-009A",

@@ -213,18 +213,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "340_notebook",
-    "name": "Notebook",
-    "symbol": "*",
-    "description": "Notebook was recovered from Church in Case File 340. It is tied to Cartographer, 8:00, and marker 2934.",
-    "discovered": "Case File 340",
-    "firstAppearance": "When It Was Made",
-    "connectedSongs": [
-      "340"
-    ],
-    "unknownInfo": "Home and Bone on Stone suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "340_notebook",
+      "type": "Object",
+      "name": "Notebook",
+      "symbol": "🔍",
+      "description": "Notebook was recovered from Church in Case File 340. It is tied to Cartographer, 8:00, and marker 2934.",
+      "unknownInfo": "Home and Bone on Stone suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "340_location",
+      "type": "Location",
+      "name": "Church",
+      "symbol": "📍",
+      "description": "The active scene for Case File 340. Recovered field notes place the primary event at Church.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "340_witness",
+      "type": "Witness",
+      "name": "Cartographer",
+      "symbol": "👤",
+      "description": "Cartographer, identified in the case notes for Case File 340. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "340_time",
+      "type": "Time",
+      "name": "800",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 340. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "340_marker",
+      "type": "Marker",
+      "name": "Marker 2934",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 340.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "340_direction",
+      "type": "Direction",
+      "name": "Home",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 340.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "340_sound",
+      "type": "Sound",
+      "name": "Boneonstone",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 340. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "When It Was Made - Recovered Case File",
     "fileId": "S29-004A",

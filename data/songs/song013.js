@@ -224,18 +224,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "013_wedding_ring",
-    "name": "Wedding Ring",
-    "symbol": "*",
-    "description": "Wedding Ring was recovered from Church in Case File 013. It is tied to Preacher, 6:45, and marker 110.",
-    "discovered": "Case File 013",
-    "firstAppearance": "The Wedding Dance",
-    "connectedSongs": [
-      "013"
-    ],
-    "unknownInfo": "North and Bells suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "013_weddingring",
+      "type": "Object",
+      "name": "Weddingring",
+      "symbol": "🔍",
+      "description": "Wedding Ring was recovered from Church in Case File 013. It is tied to Preacher, 6:45, and marker 110.",
+      "unknownInfo": "North and Bells suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "013_location",
+      "type": "Location",
+      "name": "Church",
+      "symbol": "📍",
+      "description": "The active scene for Case File 013. Recovered field notes place the primary event at Church.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "013_witness",
+      "type": "Witness",
+      "name": "Preacher",
+      "symbol": "👤",
+      "description": "Preacher, identified in the case notes for Case File 013. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "013_time",
+      "type": "Time",
+      "name": "645",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 013. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "013_marker",
+      "type": "Marker",
+      "name": "Marker 110",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 013.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "013_direction",
+      "type": "Direction",
+      "name": "North",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 013.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "013_sound",
+      "type": "Sound",
+      "name": "Bells",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 013. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Wedding Dance - Recovered Case File",
     "fileId": "S2-001A",

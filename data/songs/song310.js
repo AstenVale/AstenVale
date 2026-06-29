@@ -225,18 +225,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "310_notebook",
-    "name": "Notebook",
-    "symbol": "*",
-    "description": "Notebook was recovered from Harness Shop in Case File 310. It is tied to Fence Mender, 5:55, and marker 2688.",
-    "discovered": "Case File 310",
-    "firstAppearance": "Entry",
-    "connectedSongs": [
-      "310"
-    ],
-    "unknownInfo": "Beyond and Kettle Boil suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "310_notebook",
+      "type": "Object",
+      "name": "Notebook",
+      "symbol": "🔍",
+      "description": "Notebook was recovered from Harness Shop in Case File 310. It is tied to Fence Mender, 5:55, and marker 2688.",
+      "unknownInfo": "Beyond and Kettle Boil suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "310_location",
+      "type": "Location",
+      "name": "Harnessshop",
+      "symbol": "📍",
+      "description": "The active scene for Case File 310. Recovered field notes place the primary event at Harnessshop.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "310_witness",
+      "type": "Witness",
+      "name": "Fencemender",
+      "symbol": "👤",
+      "description": "Fencemender, identified in the case notes for Case File 310. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "310_time",
+      "type": "Time",
+      "name": "555",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 310. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "310_marker",
+      "type": "Marker",
+      "name": "Marker 2688",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 310.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "310_direction",
+      "type": "Direction",
+      "name": "Beyond",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 310.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "310_sound",
+      "type": "Sound",
+      "name": "Kettleboil",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 310. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "Entry - Recovered Case File",
     "fileId": "S26-010A",

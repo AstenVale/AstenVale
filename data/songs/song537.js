@@ -215,18 +215,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "537_candle",
-    "name": "Candle",
-    "symbol": "*",
-    "description": "Candle was recovered from Feed Store in Case File 537. It is tied to Cooper, 9:08, and marker 4579.",
-    "discovered": "Case File 537",
-    "firstAppearance": "What Was Left",
-    "connectedSongs": [
-      "537"
-    ],
-    "unknownInfo": "Away from Town and Distant Gunshot suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "537_candle",
+      "type": "Object",
+      "name": "Candle",
+      "symbol": "🔍",
+      "description": "Candle was recovered from Feed Store in Case File 537. It is tied to Cooper, 9:08, and marker 4579.",
+      "unknownInfo": "Away from Town and Distant Gunshot suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "537_location",
+      "type": "Location",
+      "name": "Feedstore",
+      "symbol": "📍",
+      "description": "The active scene for Case File 537. Recovered field notes place the primary event at Feedstore.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "537_witness",
+      "type": "Witness",
+      "name": "Cooper",
+      "symbol": "👤",
+      "description": "Cooper, identified in the case notes for Case File 537. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "537_time",
+      "type": "Time",
+      "name": "908",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 537. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "537_marker",
+      "type": "Marker",
+      "name": "Marker 4579",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 537.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "537_direction",
+      "type": "Direction",
+      "name": "Awayfromtown",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 537.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "537_sound",
+      "type": "Sound",
+      "name": "Distantgunshot",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 537. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "What Was Left - Recovered Case File",
     "fileId": "S45-009A",

@@ -215,18 +215,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "421_compass",
-    "name": "Compass",
-    "symbol": "*",
-    "description": "Compass was recovered from Water Tower in Case File 421. It is tied to Station Master, 10:19, and marker 3607.",
-    "discovered": "Case File 421",
-    "firstAppearance": "The First Call",
-    "connectedSongs": [
-      "421"
-    ],
-    "unknownInfo": "Right and Distant Church Bell suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "421_compass",
+      "type": "Object",
+      "name": "Compass",
+      "symbol": "🔍",
+      "description": "Compass was recovered from Water Tower in Case File 421. It is tied to Station Master, 10:19, and marker 3607.",
+      "unknownInfo": "Right and Distant Church Bell suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "421_location",
+      "type": "Location",
+      "name": "Watertower",
+      "symbol": "📍",
+      "description": "The active scene for Case File 421. Recovered field notes place the primary event at Watertower.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "421_witness",
+      "type": "Witness",
+      "name": "Stationmaster",
+      "symbol": "👤",
+      "description": "Stationmaster, identified in the case notes for Case File 421. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "421_time",
+      "type": "Time",
+      "name": "1019",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 421. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "421_marker",
+      "type": "Marker",
+      "name": "Marker 3607",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 421.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "421_direction",
+      "type": "Direction",
+      "name": "Right",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 421.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "421_sound",
+      "type": "Sound",
+      "name": "Distantchurchbell",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 421. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The First Call - Recovered Case File",
     "fileId": "S36-001A",

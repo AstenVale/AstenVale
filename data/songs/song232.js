@@ -226,18 +226,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "232_handkerchief",
-    "name": "Handkerchief",
-    "symbol": "*",
-    "description": "Handkerchief was recovered from The Widow's Porch in Case File 232. It is tied to Stranger, 11:44, and marker 2034.",
-    "discovered": "Case File 232",
-    "firstAppearance": "The Night Worker",
-    "connectedSongs": [
-      "232"
-    ],
-    "unknownInfo": "Across and Fire Crackling suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "232_handkerchief",
+      "type": "Object",
+      "name": "Handkerchief",
+      "symbol": "🔍",
+      "description": "Handkerchief was recovered from The Widow's Porch in Case File 232. It is tied to Stranger, 11:44, and marker 2034.",
+      "unknownInfo": "Across and Fire Crackling suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "232_location",
+      "type": "Location",
+      "name": "Widow'S Porch",
+      "symbol": "📍",
+      "description": "The active scene for Case File 232. Recovered field notes place the primary event at Widow'S Porch.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "232_witness",
+      "type": "Witness",
+      "name": "Stranger",
+      "symbol": "👤",
+      "description": "Stranger, identified in the case notes for Case File 232. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "232_time",
+      "type": "Time",
+      "name": "1144",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 232. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "232_marker",
+      "type": "Marker",
+      "name": "Marker 2034",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 232.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "232_direction",
+      "type": "Direction",
+      "name": "Across",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 232.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "232_sound",
+      "type": "Sound",
+      "name": "Firecrackling",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 232. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Night Worker - Recovered Case File",
     "fileId": "S20-004A",

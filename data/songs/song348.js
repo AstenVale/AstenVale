@@ -228,18 +228,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "348_wire_coil",
-    "name": "Wire Coil",
-    "symbol": "*",
-    "description": "Wire Coil was recovered from The Ridge in Case File 348. It is tied to Apothecary, 11:44, and marker 3006.",
-    "discovered": "Case File 348",
-    "firstAppearance": "The Marking",
-    "connectedSongs": [
-      "348"
-    ],
-    "unknownInfo": "Back the Way You Came and River Water suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "348_wirecoil",
+      "type": "Object",
+      "name": "Wirecoil",
+      "symbol": "🔍",
+      "description": "Wire Coil was recovered from The Ridge in Case File 348. It is tied to Apothecary, 11:44, and marker 3006.",
+      "unknownInfo": "Back the Way You Came and River Water suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "348_location",
+      "type": "Location",
+      "name": "Ridge",
+      "symbol": "📍",
+      "description": "The active scene for Case File 348. Recovered field notes place the primary event at Ridge.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "348_witness",
+      "type": "Witness",
+      "name": "Apothecary",
+      "symbol": "👤",
+      "description": "Apothecary, identified in the case notes for Case File 348. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "348_time",
+      "type": "Time",
+      "name": "1144",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 348. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "348_marker",
+      "type": "Marker",
+      "name": "Marker 3006",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 348.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "348_direction",
+      "type": "Direction",
+      "name": "Backthewayyoucame",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 348.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "348_sound",
+      "type": "Sound",
+      "name": "Riverwater",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 348. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Marking - Recovered Case File",
     "fileId": "S29-012A",

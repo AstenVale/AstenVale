@@ -215,18 +215,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "334_telegram",
-    "name": "Telegram",
-    "symbol": "*",
-    "description": "Telegram was recovered from Quarry Edge in Case File 334. It is tied to Cartographer, 9:44, and marker 2888.",
-    "discovered": "Case File 334",
-    "firstAppearance": "What It Started",
-    "connectedSongs": [
-      "334"
-    ],
-    "unknownInfo": "Up the Ridge and Crow on Wire suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "334_telegram",
+      "type": "Object",
+      "name": "Telegram",
+      "symbol": "🔍",
+      "description": "Telegram was recovered from Quarry Edge in Case File 334. It is tied to Cartographer, 9:44, and marker 2888.",
+      "unknownInfo": "Up the Ridge and Crow on Wire suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "334_location",
+      "type": "Location",
+      "name": "Quarryedge",
+      "symbol": "📍",
+      "description": "The active scene for Case File 334. Recovered field notes place the primary event at Quarryedge.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "334_witness",
+      "type": "Witness",
+      "name": "Cartographer",
+      "symbol": "👤",
+      "description": "Cartographer, identified in the case notes for Case File 334. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "334_time",
+      "type": "Time",
+      "name": "944",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 334. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "334_marker",
+      "type": "Marker",
+      "name": "Marker 2888",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 334.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "334_direction",
+      "type": "Direction",
+      "name": "Uptheridge",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 334.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "334_sound",
+      "type": "Sound",
+      "name": "Crowonwire",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 334. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "What It Started - Recovered Case File",
     "fileId": "S28-010A",

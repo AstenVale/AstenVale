@@ -225,18 +225,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "220_photograph",
-    "name": "Photograph",
-    "symbol": "*",
-    "description": "Photograph was recovered from Crossroads in Case File 220. It is tied to Wool Sorter, 9:55, and marker 1934.",
-    "discovered": "Case File 220",
-    "firstAppearance": "Who Set It",
-    "connectedSongs": [
-      "220"
-    ],
-    "unknownInfo": "Beyond and Boot Heel suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "220_photograph",
+      "type": "Object",
+      "name": "Photograph",
+      "symbol": "🔍",
+      "description": "Photograph was recovered from Crossroads in Case File 220. It is tied to Wool Sorter, 9:55, and marker 1934.",
+      "unknownInfo": "Beyond and Boot Heel suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "220_location",
+      "type": "Location",
+      "name": "Crossroads",
+      "symbol": "📍",
+      "description": "The active scene for Case File 220. Recovered field notes place the primary event at Crossroads.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "220_witness",
+      "type": "Witness",
+      "name": "Woolsorter",
+      "symbol": "👤",
+      "description": "Woolsorter, identified in the case notes for Case File 220. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "220_time",
+      "type": "Time",
+      "name": "955",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 220. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "220_marker",
+      "type": "Marker",
+      "name": "Marker 1934",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 220.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "220_direction",
+      "type": "Direction",
+      "name": "Beyond",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 220.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "220_sound",
+      "type": "Sound",
+      "name": "Bootheel",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 220. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "Who Set It - Recovered Case File",
     "fileId": "S19-004A",

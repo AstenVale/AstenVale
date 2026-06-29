@@ -214,18 +214,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "557_glove",
-    "name": "Glove",
-    "symbol": "*",
-    "description": "Glove was recovered from Birch Stand in Case File 557. It is tied to Glazier, 8:00, and marker 4743.",
-    "discovered": "Case File 557",
-    "firstAppearance": "Who Was Avoided",
-    "connectedSongs": [
-      "557"
-    ],
-    "unknownInfo": "Further In and Breathing suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "557_glove",
+      "type": "Object",
+      "name": "Glove",
+      "symbol": "🔍",
+      "description": "Glove was recovered from Birch Stand in Case File 557. It is tied to Glazier, 8:00, and marker 4743.",
+      "unknownInfo": "Further In and Breathing suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "557_location",
+      "type": "Location",
+      "name": "Birchstand",
+      "symbol": "📍",
+      "description": "The active scene for Case File 557. Recovered field notes place the primary event at Birchstand.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "557_witness",
+      "type": "Witness",
+      "name": "Glazier",
+      "symbol": "👤",
+      "description": "Glazier, identified in the case notes for Case File 557. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "557_time",
+      "type": "Time",
+      "name": "800",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 557. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "557_marker",
+      "type": "Marker",
+      "name": "Marker 4743",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 557.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "557_direction",
+      "type": "Direction",
+      "name": "Furtherin",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 557.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "557_sound",
+      "type": "Sound",
+      "name": "Breathing",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 557. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "Who Was Avoided - Recovered Case File",
     "fileId": "S47-005A",

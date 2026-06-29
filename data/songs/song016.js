@@ -226,18 +226,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "016_wedding_photo",
-    "name": "Wedding Photo",
-    "symbol": "*",
-    "description": "Wedding Photo was recovered from Old Bridge in Case File 016. It is tied to Wife, 11:52, and marker 143.",
-    "discovered": "Case File 016",
-    "firstAppearance": "The Confession",
-    "connectedSongs": [
-      "016"
-    ],
-    "unknownInfo": "South and Wind in Pines suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "016_weddingphoto",
+      "type": "Object",
+      "name": "Weddingphoto",
+      "symbol": "🔍",
+      "description": "Wedding Photo was recovered from Old Bridge in Case File 016. It is tied to Wife, 11:52, and marker 143.",
+      "unknownInfo": "South and Wind in Pines suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "016_location",
+      "type": "Location",
+      "name": "Oldbridge",
+      "symbol": "📍",
+      "description": "The active scene for Case File 016. Recovered field notes place the primary event at Oldbridge.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "016_witness",
+      "type": "Witness",
+      "name": "Wife",
+      "symbol": "👤",
+      "description": "Wife, identified in the case notes for Case File 016. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "016_time",
+      "type": "Time",
+      "name": "1152",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 016. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "016_marker",
+      "type": "Marker",
+      "name": "Marker 143",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 016.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "016_direction",
+      "type": "Direction",
+      "name": "South",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 016.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "016_sound",
+      "type": "Sound",
+      "name": "Windinpines",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 016. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Confession - Recovered Case File",
     "fileId": "S2-004A",

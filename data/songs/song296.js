@@ -215,18 +215,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "296_spool_of_thread",
-    "name": "Spool of Thread",
-    "symbol": "*",
-    "description": "Spool of Thread was recovered from Ash Hollow in Case File 296. It is tied to Apothecary, 8:17, and marker 2570.",
-    "discovered": "Case File 296",
-    "firstAppearance": "What Echo Reveals",
-    "connectedSongs": [
-      "296"
-    ],
-    "unknownInfo": "East and Bell Toll suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "296_spoolofthread",
+      "type": "Object",
+      "name": "Spoolofthread",
+      "symbol": "🔍",
+      "description": "Spool of Thread was recovered from Ash Hollow in Case File 296. It is tied to Apothecary, 8:17, and marker 2570.",
+      "unknownInfo": "East and Bell Toll suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "296_location",
+      "type": "Location",
+      "name": "Ashhollow",
+      "symbol": "📍",
+      "description": "The active scene for Case File 296. Recovered field notes place the primary event at Ashhollow.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "296_witness",
+      "type": "Witness",
+      "name": "Apothecary",
+      "symbol": "👤",
+      "description": "Apothecary, identified in the case notes for Case File 296. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "296_time",
+      "type": "Time",
+      "name": "817",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 296. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "296_marker",
+      "type": "Marker",
+      "name": "Marker 2570",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 296.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "296_direction",
+      "type": "Direction",
+      "name": "East",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 296.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "296_sound",
+      "type": "Sound",
+      "name": "Belltoll",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 296. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "What Echo Reveals - Recovered Case File",
     "fileId": "S25-008A",

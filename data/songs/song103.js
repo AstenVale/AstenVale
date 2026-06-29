@@ -226,18 +226,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "103_string_of_beads",
-    "name": "String of Beads",
-    "symbol": "*",
-    "description": "String of Beads was recovered from Chandler's Row in Case File 103. It is tied to Child, 10:47, and marker 961.",
-    "discovered": "Case File 103",
-    "firstAppearance": "The Other Keeper",
-    "connectedSongs": [
-      "103"
-    ],
-    "unknownInfo": "Past the Tree Line and Forge Breath suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "103_stringofbeads",
+      "type": "Object",
+      "name": "Stringofbeads",
+      "symbol": "🔍",
+      "description": "String of Beads was recovered from Chandler's Row in Case File 103. It is tied to Child, 10:47, and marker 961.",
+      "unknownInfo": "Past the Tree Line and Forge Breath suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "103_location",
+      "type": "Location",
+      "name": "Chandler'Srow",
+      "symbol": "📍",
+      "description": "The active scene for Case File 103. Recovered field notes place the primary event at Chandler'Srow.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "103_witness",
+      "type": "Witness",
+      "name": "Child",
+      "symbol": "👤",
+      "description": "Child, identified in the case notes for Case File 103. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "103_time",
+      "type": "Time",
+      "name": "1047",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 103. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "103_marker",
+      "type": "Marker",
+      "name": "Marker 961",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 103.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "103_direction",
+      "type": "Direction",
+      "name": "Pastthetreeline",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 103.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "103_sound",
+      "type": "Sound",
+      "name": "Forgebreath",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 103. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Other Keeper - Recovered Case File",
     "fileId": "S9-007A",

@@ -215,18 +215,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "247_canteen",
-    "name": "Canteen",
-    "symbol": "*",
-    "description": "Canteen was recovered from Print Shop in Case File 247. It is tied to Wool Sorter, 3:49, and marker 2161.",
-    "discovered": "Case File 247",
-    "firstAppearance": "The Tree Line",
-    "connectedSongs": [
-      "247"
-    ],
-    "unknownInfo": "Ahead and Distant Gunshot suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "247_canteen",
+      "type": "Object",
+      "name": "Canteen",
+      "symbol": "🔍",
+      "description": "Canteen was recovered from Print Shop in Case File 247. It is tied to Wool Sorter, 3:49, and marker 2161.",
+      "unknownInfo": "Ahead and Distant Gunshot suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "247_location",
+      "type": "Location",
+      "name": "Printshop",
+      "symbol": "📍",
+      "description": "The active scene for Case File 247. Recovered field notes place the primary event at Printshop.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "247_witness",
+      "type": "Witness",
+      "name": "Woolsorter",
+      "symbol": "👤",
+      "description": "Woolsorter, identified in the case notes for Case File 247. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "247_time",
+      "type": "Time",
+      "name": "349",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 247. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "247_marker",
+      "type": "Marker",
+      "name": "Marker 2161",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 247.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "247_direction",
+      "type": "Direction",
+      "name": "Ahead",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 247.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "247_sound",
+      "type": "Sound",
+      "name": "Distantgunshot",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 247. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Tree Line - Recovered Case File",
     "fileId": "S21-007A",

@@ -214,18 +214,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "511_knife",
-    "name": "Knife",
-    "symbol": "*",
-    "description": "Knife was recovered from Silo Row in Case File 511. It is tied to Deputy, 4:38, and marker 4361.",
-    "discovered": "Case File 511",
-    "firstAppearance": "The Discovery",
-    "connectedSongs": [
-      "511"
-    ],
-    "unknownInfo": "East and Dog Bark at Nothing suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "511_knife",
+      "type": "Object",
+      "name": "Knife",
+      "symbol": "🔍",
+      "description": "Knife was recovered from Silo Row in Case File 511. It is tied to Deputy, 4:38, and marker 4361.",
+      "unknownInfo": "East and Dog Bark at Nothing suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "511_location",
+      "type": "Location",
+      "name": "Silorow",
+      "symbol": "📍",
+      "description": "The active scene for Case File 511. Recovered field notes place the primary event at Silorow.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "511_witness",
+      "type": "Witness",
+      "name": "Deputy",
+      "symbol": "👤",
+      "description": "Deputy, identified in the case notes for Case File 511. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "511_time",
+      "type": "Time",
+      "name": "438",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 511. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "511_marker",
+      "type": "Marker",
+      "name": "Marker 4361",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 511.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "511_direction",
+      "type": "Direction",
+      "name": "East",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 511.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "511_sound",
+      "type": "Sound",
+      "name": "Dogbarkatnothing",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 511. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Discovery - Recovered Case File",
     "fileId": "S43-007A",

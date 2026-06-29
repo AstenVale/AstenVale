@@ -214,18 +214,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "244_badge",
-    "name": "Badge",
-    "symbol": "*",
-    "description": "Badge was recovered from Jail in Case File 244. It is tied to Postman, 4:47, and marker 2134.",
-    "discovered": "Case File 244",
-    "firstAppearance": "The Ring Count",
-    "connectedSongs": [
-      "244"
-    ],
-    "unknownInfo": "Away from Town and Distant Gunshot suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "244_badge",
+      "type": "Object",
+      "name": "Badge",
+      "symbol": "🔍",
+      "description": "Badge was recovered from Jail in Case File 244. It is tied to Postman, 4:47, and marker 2134.",
+      "unknownInfo": "Away from Town and Distant Gunshot suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "244_location",
+      "type": "Location",
+      "name": "Jail",
+      "symbol": "📍",
+      "description": "The active scene for Case File 244. Recovered field notes place the primary event at Jail.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "244_witness",
+      "type": "Witness",
+      "name": "Postman",
+      "symbol": "👤",
+      "description": "Postman, identified in the case notes for Case File 244. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "244_time",
+      "type": "Time",
+      "name": "447",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 244. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "244_marker",
+      "type": "Marker",
+      "name": "Marker 2134",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 244.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "244_direction",
+      "type": "Direction",
+      "name": "Awayfromtown",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 244.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "244_sound",
+      "type": "Sound",
+      "name": "Distantgunshot",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 244. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Ring Count - Recovered Case File",
     "fileId": "S21-004A",

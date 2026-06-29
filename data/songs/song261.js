@@ -225,18 +225,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "261_dried_blood_on_cloth",
-    "name": "Dried Blood on Cloth",
-    "symbol": "*",
-    "description": "Dried Blood on Cloth was recovered from Clock Tower in Case File 261. It is tied to Conductor, 5:55, and marker 2279.",
-    "discovered": "Case File 261",
-    "firstAppearance": "Cause",
-    "connectedSongs": [
-      "261"
-    ],
-    "unknownInfo": "Right and Hammer Strike suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "261_driedbloodoncloth",
+      "type": "Object",
+      "name": "Driedbloodoncloth",
+      "symbol": "🔍",
+      "description": "Dried Blood on Cloth was recovered from Clock Tower in Case File 261. It is tied to Conductor, 5:55, and marker 2279.",
+      "unknownInfo": "Right and Hammer Strike suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "261_location",
+      "type": "Location",
+      "name": "Clocktower",
+      "symbol": "📍",
+      "description": "The active scene for Case File 261. Recovered field notes place the primary event at Clocktower.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "261_witness",
+      "type": "Witness",
+      "name": "Conductor",
+      "symbol": "👤",
+      "description": "Conductor, identified in the case notes for Case File 261. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "261_time",
+      "type": "Time",
+      "name": "555",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 261. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "261_marker",
+      "type": "Marker",
+      "name": "Marker 2279",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 261.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "261_direction",
+      "type": "Direction",
+      "name": "Right",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 261.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "261_sound",
+      "type": "Sound",
+      "name": "Hammerstrike",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 261. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "Cause - Recovered Case File",
     "fileId": "S22-009A",

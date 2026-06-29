@@ -227,18 +227,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "438_dried_ink_blot",
-    "name": "Dried Ink Blot",
-    "symbol": "*",
-    "description": "Dried Ink Blot was recovered from Chandler's Row in Case File 438. It is tied to Blacksmith, 8:00, and marker 3752.",
-    "discovered": "Case File 438",
-    "firstAppearance": "The Log",
-    "connectedSongs": [
-      "438"
-    ],
-    "unknownInfo": "Back the Way You Came and Telegraph Click suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "438_driedinkblot",
+      "type": "Object",
+      "name": "Driedinkblot",
+      "symbol": "🔍",
+      "description": "Dried Ink Blot was recovered from Chandler's Row in Case File 438. It is tied to Blacksmith, 8:00, and marker 3752.",
+      "unknownInfo": "Back the Way You Came and Telegraph Click suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "438_location",
+      "type": "Location",
+      "name": "Chandler'Srow",
+      "symbol": "📍",
+      "description": "The active scene for Case File 438. Recovered field notes place the primary event at Chandler'Srow.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "438_witness",
+      "type": "Witness",
+      "name": "Blacksmith",
+      "symbol": "👤",
+      "description": "Blacksmith, identified in the case notes for Case File 438. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "438_time",
+      "type": "Time",
+      "name": "800",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 438. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "438_marker",
+      "type": "Marker",
+      "name": "Marker 3752",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 438.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "438_direction",
+      "type": "Direction",
+      "name": "Backthewayyoucame",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 438.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "438_sound",
+      "type": "Sound",
+      "name": "Telegraphclick",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 438. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Log - Recovered Case File",
     "fileId": "S37-006A",

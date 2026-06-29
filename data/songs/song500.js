@@ -225,18 +225,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "500_belt_buckle",
-    "name": "Belt Buckle",
-    "symbol": "*",
-    "description": "Belt Buckle was recovered from Rope Walk in Case File 500. It is tied to Weaver, 9:08, and marker 4270.",
-    "discovered": "Case File 500",
-    "firstAppearance": "What Was Hidden Below",
-    "connectedSongs": [
-      "500"
-    ],
-    "unknownInfo": "Toward and Thunder suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "500_beltbuckle",
+      "type": "Object",
+      "name": "Beltbuckle",
+      "symbol": "🔍",
+      "description": "Belt Buckle was recovered from Rope Walk in Case File 500. It is tied to Weaver, 9:08, and marker 4270.",
+      "unknownInfo": "Toward and Thunder suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "500_location",
+      "type": "Location",
+      "name": "Ropewalk",
+      "symbol": "📍",
+      "description": "The active scene for Case File 500. Recovered field notes place the primary event at Ropewalk.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "500_witness",
+      "type": "Witness",
+      "name": "Weaver",
+      "symbol": "👤",
+      "description": "Weaver, identified in the case notes for Case File 500. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "500_time",
+      "type": "Time",
+      "name": "908",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 500. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "500_marker",
+      "type": "Marker",
+      "name": "Marker 4270",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 500.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "500_direction",
+      "type": "Direction",
+      "name": "Toward",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 500.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "500_sound",
+      "type": "Sound",
+      "name": "Thunder",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 500. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "What Was Hidden Below - Recovered Case File",
     "fileId": "S42-008A",

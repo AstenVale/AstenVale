@@ -217,18 +217,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "165_dried_flower",
-    "name": "Dried Flower",
-    "symbol": "*",
-    "description": "Dried Flower was recovered from The Ravine in Case File 165. It is tied to Gravedigger, 1:26, and marker 1479.",
-    "discovered": "Case File 165",
-    "firstAppearance": "The Mud Below",
-    "connectedSongs": [
-      "165"
-    ],
-    "unknownInfo": "Past the Tree Line and Hammer Strike suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "165_driedflower",
+      "type": "Object",
+      "name": "Driedflower",
+      "symbol": "🔍",
+      "description": "Dried Flower was recovered from The Ravine in Case File 165. It is tied to Gravedigger, 1:26, and marker 1479.",
+      "unknownInfo": "Past the Tree Line and Hammer Strike suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "165_location",
+      "type": "Location",
+      "name": "Ravine",
+      "symbol": "📍",
+      "description": "The active scene for Case File 165. Recovered field notes place the primary event at Ravine.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "165_witness",
+      "type": "Witness",
+      "name": "Gravedigger",
+      "symbol": "👤",
+      "description": "Gravedigger, identified in the case notes for Case File 165. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "165_time",
+      "type": "Time",
+      "name": "126",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 165. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "165_marker",
+      "type": "Marker",
+      "name": "Marker 1479",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 165.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "165_direction",
+      "type": "Direction",
+      "name": "Pastthetreeline",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 165.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "165_sound",
+      "type": "Sound",
+      "name": "Hammerstrike",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 165. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Mud Below - Recovered Case File",
     "fileId": "S14-009A",

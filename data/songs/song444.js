@@ -226,18 +226,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "444_shard_of_mirror",
-    "name": "Shard of Mirror",
-    "symbol": "*",
-    "description": "Shard of Mirror was recovered from Crow's Nest Ridge in Case File 444. It is tied to Conductor, 10:51, and marker 3806.",
-    "discovered": "Case File 444",
-    "firstAppearance": "The Response",
-    "connectedSongs": [
-      "444"
-    ],
-    "unknownInfo": "Over and Boot Heel suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "444_shardofmirror",
+      "type": "Object",
+      "name": "Shardofmirror",
+      "symbol": "🔍",
+      "description": "Shard of Mirror was recovered from Crow's Nest Ridge in Case File 444. It is tied to Conductor, 10:51, and marker 3806.",
+      "unknownInfo": "Over and Boot Heel suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "444_location",
+      "type": "Location",
+      "name": "Crow'Snestridge",
+      "symbol": "📍",
+      "description": "The active scene for Case File 444. Recovered field notes place the primary event at Crow'Snestridge.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "444_witness",
+      "type": "Witness",
+      "name": "Conductor",
+      "symbol": "👤",
+      "description": "Conductor, identified in the case notes for Case File 444. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "444_time",
+      "type": "Time",
+      "name": "1051",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 444. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "444_marker",
+      "type": "Marker",
+      "name": "Marker 3806",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 444.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "444_direction",
+      "type": "Direction",
+      "name": "Over",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 444.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "444_sound",
+      "type": "Sound",
+      "name": "Bootheel",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 444. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Response - Recovered Case File",
     "fileId": "S37-012A",

@@ -215,18 +215,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "315_axle_pin",
-    "name": "Axle Pin",
-    "symbol": "*",
-    "description": "Axle Pin was recovered from Old Bridge in Case File 315. It is tied to Lime Burner, 11:51, and marker 2725.",
-    "discovered": "Case File 315",
-    "firstAppearance": "The Track",
-    "connectedSongs": [
-      "315"
-    ],
-    "unknownInfo": "Through and Floorboard suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "315_axlepin",
+      "type": "Object",
+      "name": "Axlepin",
+      "symbol": "🔍",
+      "description": "Axle Pin was recovered from Old Bridge in Case File 315. It is tied to Lime Burner, 11:51, and marker 2725.",
+      "unknownInfo": "Through and Floorboard suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "315_location",
+      "type": "Location",
+      "name": "Oldbridge",
+      "symbol": "📍",
+      "description": "The active scene for Case File 315. Recovered field notes place the primary event at Oldbridge.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "315_witness",
+      "type": "Witness",
+      "name": "Limeburner",
+      "symbol": "👤",
+      "description": "Limeburner, identified in the case notes for Case File 315. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "315_time",
+      "type": "Time",
+      "name": "1151",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 315. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "315_marker",
+      "type": "Marker",
+      "name": "Marker 2725",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 315.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "315_direction",
+      "type": "Direction",
+      "name": "Through",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 315.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "315_sound",
+      "type": "Sound",
+      "name": "Floorboard",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 315. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Track - Recovered Case File",
     "fileId": "S27-003A",

@@ -216,18 +216,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "159_wax_seal",
-    "name": "Wax Seal",
-    "symbol": "*",
-    "description": "Wax Seal was recovered from Barn in Case File 159. It is tied to Lock Keeper, 8:00, and marker 1425.",
-    "discovered": "Case File 159",
-    "firstAppearance": "Water Rising",
-    "connectedSongs": [
-      "159"
-    ],
-    "unknownInfo": "Straight Down and Moth Wings suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "159_waxseal",
+      "type": "Object",
+      "name": "Waxseal",
+      "symbol": "🔍",
+      "description": "Wax Seal was recovered from Barn in Case File 159. It is tied to Lock Keeper, 8:00, and marker 1425.",
+      "unknownInfo": "Straight Down and Moth Wings suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "159_location",
+      "type": "Location",
+      "name": "Barn",
+      "symbol": "📍",
+      "description": "The active scene for Case File 159. Recovered field notes place the primary event at Barn.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "159_witness",
+      "type": "Witness",
+      "name": "Lockkeeper",
+      "symbol": "👤",
+      "description": "Lockkeeper, identified in the case notes for Case File 159. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "159_time",
+      "type": "Time",
+      "name": "800",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 159. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "159_marker",
+      "type": "Marker",
+      "name": "Marker 1425",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 159.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "159_direction",
+      "type": "Direction",
+      "name": "Straightdown",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 159.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "159_sound",
+      "type": "Sound",
+      "name": "Mothwings",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 159. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "Water Rising - Recovered Case File",
     "fileId": "S14-003A",

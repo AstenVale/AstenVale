@@ -226,18 +226,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "345_wire_coil",
-    "name": "Wire Coil",
-    "symbol": "*",
-    "description": "Wire Coil was recovered from Fulling Mill in Case File 345. It is tied to Sexton, 3:44, and marker 2979.",
-    "discovered": "Case File 345",
-    "firstAppearance": "What Was Done Right",
-    "connectedSongs": [
-      "345"
-    ],
-    "unknownInfo": "Home and Lantern Glass suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "345_wirecoil",
+      "type": "Object",
+      "name": "Wirecoil",
+      "symbol": "🔍",
+      "description": "Wire Coil was recovered from Fulling Mill in Case File 345. It is tied to Sexton, 3:44, and marker 2979.",
+      "unknownInfo": "Home and Lantern Glass suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "345_location",
+      "type": "Location",
+      "name": "Fullingmill",
+      "symbol": "📍",
+      "description": "The active scene for Case File 345. Recovered field notes place the primary event at Fullingmill.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "345_witness",
+      "type": "Witness",
+      "name": "Sexton",
+      "symbol": "👤",
+      "description": "Sexton, identified in the case notes for Case File 345. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "345_time",
+      "type": "Time",
+      "name": "344",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 345. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "345_marker",
+      "type": "Marker",
+      "name": "Marker 2979",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 345.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "345_direction",
+      "type": "Direction",
+      "name": "Home",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 345.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "345_sound",
+      "type": "Sound",
+      "name": "Lanternglass",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 345. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "What Was Done Right - Recovered Case File",
     "fileId": "S29-009A",

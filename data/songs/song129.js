@@ -225,18 +225,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "129_map",
-    "name": "Map",
-    "symbol": "*",
-    "description": "Map was recovered from Grist Mill in Case File 129. It is tied to Cartographer, 6:06, and marker 1179.",
-    "discovered": "Case File 129",
-    "firstAppearance": "The Legend",
-    "connectedSongs": [
-      "129"
-    ],
-    "unknownInfo": "Further In and Floorboard suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "129_map",
+      "type": "Object",
+      "name": "Map",
+      "symbol": "🔍",
+      "description": "Map was recovered from Grist Mill in Case File 129. It is tied to Cartographer, 6:06, and marker 1179.",
+      "unknownInfo": "Further In and Floorboard suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "129_location",
+      "type": "Location",
+      "name": "Gristmill",
+      "symbol": "📍",
+      "description": "The active scene for Case File 129. Recovered field notes place the primary event at Gristmill.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "129_witness",
+      "type": "Witness",
+      "name": "Cartographer",
+      "symbol": "👤",
+      "description": "Cartographer, identified in the case notes for Case File 129. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "129_time",
+      "type": "Time",
+      "name": "606",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 129. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "129_marker",
+      "type": "Marker",
+      "name": "Marker 1179",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 129.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "129_direction",
+      "type": "Direction",
+      "name": "Furtherin",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 129.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "129_sound",
+      "type": "Sound",
+      "name": "Floorboard",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 129. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Legend - Recovered Case File",
     "fileId": "S11-009A",

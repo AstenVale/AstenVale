@@ -226,18 +226,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "017_suitcase",
-    "name": "Suitcase",
-    "symbol": "*",
-    "description": "Suitcase was recovered from Train Station in Case File 017. It is tied to Station Master, 5:47, and marker 154.",
-    "discovered": "Case File 017",
-    "firstAppearance": "The Leaving",
-    "connectedSongs": [
-      "017"
-    ],
-    "unknownInfo": "West and Train Whistle suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "017_suitcase",
+      "type": "Object",
+      "name": "Suitcase",
+      "symbol": "🔍",
+      "description": "Suitcase was recovered from Train Station in Case File 017. It is tied to Station Master, 5:47, and marker 154.",
+      "unknownInfo": "West and Train Whistle suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "017_location",
+      "type": "Location",
+      "name": "Trainstation",
+      "symbol": "📍",
+      "description": "The active scene for Case File 017. Recovered field notes place the primary event at Trainstation.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "017_witness",
+      "type": "Witness",
+      "name": "Stationmaster",
+      "symbol": "👤",
+      "description": "Stationmaster, identified in the case notes for Case File 017. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "017_time",
+      "type": "Time",
+      "name": "547",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 017. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "017_marker",
+      "type": "Marker",
+      "name": "Marker 154",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 017.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "017_direction",
+      "type": "Direction",
+      "name": "West",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 017.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "017_sound",
+      "type": "Sound",
+      "name": "Trainwhistle",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 017. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Leaving - Recovered Case File",
     "fileId": "S2-005A",

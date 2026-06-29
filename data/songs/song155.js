@@ -226,18 +226,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "155_candle",
-    "name": "Candle",
-    "symbol": "*",
-    "description": "Candle was recovered from The Root Cellar in Case File 155. It is tied to Child, 8:42, and marker 1397.",
-    "discovered": "Case File 155",
-    "firstAppearance": "The One Who Stayed",
-    "connectedSongs": [
-      "155"
-    ],
-    "unknownInfo": "Into the Dark and Pen on Paper suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "155_candle",
+      "type": "Object",
+      "name": "Candle",
+      "symbol": "🔍",
+      "description": "Candle was recovered from The Root Cellar in Case File 155. It is tied to Child, 8:42, and marker 1397.",
+      "unknownInfo": "Into the Dark and Pen on Paper suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "155_location",
+      "type": "Location",
+      "name": "Root Cellar",
+      "symbol": "📍",
+      "description": "The active scene for Case File 155. Recovered field notes place the primary event at Root Cellar.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "155_witness",
+      "type": "Witness",
+      "name": "Child",
+      "symbol": "👤",
+      "description": "Child, identified in the case notes for Case File 155. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "155_time",
+      "type": "Time",
+      "name": "842",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 155. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "155_marker",
+      "type": "Marker",
+      "name": "Marker 1397",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 155.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "155_direction",
+      "type": "Direction",
+      "name": "Intothedark",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 155.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "155_sound",
+      "type": "Sound",
+      "name": "Penonpaper",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 155. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The One Who Stayed - Recovered Case File",
     "fileId": "S13-011A",

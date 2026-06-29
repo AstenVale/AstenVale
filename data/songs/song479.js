@@ -226,18 +226,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "479_broken_clasp",
-    "name": "Broken Clasp",
-    "symbol": "*",
-    "description": "Broken Clasp was recovered from The Bluff in Case File 479. It is tied to Farmer, 9:15, and marker 4097.",
-    "discovered": "Case File 479",
-    "firstAppearance": "The Response",
-    "connectedSongs": [
-      "479"
-    ],
-    "unknownInfo": "Under and Train Whistle suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "479_brokenclasp",
+      "type": "Object",
+      "name": "Brokenclasp",
+      "symbol": "🔍",
+      "description": "Broken Clasp was recovered from The Bluff in Case File 479. It is tied to Farmer, 9:15, and marker 4097.",
+      "unknownInfo": "Under and Train Whistle suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "479_location",
+      "type": "Location",
+      "name": "Bluff",
+      "symbol": "📍",
+      "description": "The active scene for Case File 479. Recovered field notes place the primary event at Bluff.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "479_witness",
+      "type": "Witness",
+      "name": "Farmer",
+      "symbol": "👤",
+      "description": "Farmer, identified in the case notes for Case File 479. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "479_time",
+      "type": "Time",
+      "name": "915",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 479. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "479_marker",
+      "type": "Marker",
+      "name": "Marker 4097",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 479.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "479_direction",
+      "type": "Direction",
+      "name": "Under",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 479.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "479_sound",
+      "type": "Sound",
+      "name": "Trainwhistle",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 479. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Response - Recovered Case File",
     "fileId": "S40-011A",

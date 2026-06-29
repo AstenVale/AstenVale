@@ -214,18 +214,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "081_thimble",
-    "name": "Thimble",
-    "symbol": "*",
-    "description": "Thimble was recovered from Old Wharf in Case File 081. It is tied to Tanner, 6:06, and marker 779.",
-    "discovered": "Case File 081",
-    "firstAppearance": "What the Letter Said",
-    "connectedSongs": [
-      "081"
-    ],
-    "unknownInfo": "Out and Crow Wings suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "081_thimble",
+      "type": "Object",
+      "name": "Thimble",
+      "symbol": "🔍",
+      "description": "Thimble was recovered from Old Wharf in Case File 081. It is tied to Tanner, 6:06, and marker 779.",
+      "unknownInfo": "Out and Crow Wings suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "081_location",
+      "type": "Location",
+      "name": "Oldwharf",
+      "symbol": "📍",
+      "description": "The active scene for Case File 081. Recovered field notes place the primary event at Oldwharf.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "081_witness",
+      "type": "Witness",
+      "name": "Tanner",
+      "symbol": "👤",
+      "description": "Tanner, identified in the case notes for Case File 081. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "081_time",
+      "type": "Time",
+      "name": "606",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 081. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "081_marker",
+      "type": "Marker",
+      "name": "Marker 779",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 081.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "081_direction",
+      "type": "Direction",
+      "name": "Out",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 081.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "081_sound",
+      "type": "Sound",
+      "name": "Crowwings",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 081. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "What the Letter Said - Recovered Case File",
     "fileId": "S7-009A",

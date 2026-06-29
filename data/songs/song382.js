@@ -216,18 +216,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "382_shard_of_mirror",
-    "name": "Shard of Mirror",
-    "symbol": "*",
-    "description": "Shard of Mirror was recovered from Black Pine in Case File 382. It is tied to Mechanic, 2:22, and marker 3288.",
-    "discovered": "Case File 382",
-    "firstAppearance": "What the Current Moved",
-    "connectedSongs": [
-      "382"
-    ],
-    "unknownInfo": "Down the Hollow and Ash Settling suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "382_shardofmirror",
+      "type": "Object",
+      "name": "Shardofmirror",
+      "symbol": "🔍",
+      "description": "Shard of Mirror was recovered from Black Pine in Case File 382. It is tied to Mechanic, 2:22, and marker 3288.",
+      "unknownInfo": "Down the Hollow and Ash Settling suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "382_location",
+      "type": "Location",
+      "name": "Blackpine",
+      "symbol": "📍",
+      "description": "The active scene for Case File 382. Recovered field notes place the primary event at Blackpine.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "382_witness",
+      "type": "Witness",
+      "name": "Mechanic",
+      "symbol": "👤",
+      "description": "Mechanic, identified in the case notes for Case File 382. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "382_time",
+      "type": "Time",
+      "name": "222",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 382. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "382_marker",
+      "type": "Marker",
+      "name": "Marker 3288",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 382.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "382_direction",
+      "type": "Direction",
+      "name": "Downthehollow",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 382.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "382_sound",
+      "type": "Sound",
+      "name": "Ashsettling",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 382. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "What the Current Moved - Recovered Case File",
     "fileId": "S32-010A",

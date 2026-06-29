@@ -226,18 +226,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "364_comb",
-    "name": "Comb",
-    "symbol": "*",
-    "description": "Comb was recovered from The Bluff in Case File 364. It is tied to Schoolgirl, 1:33, and marker 3134.",
-    "discovered": "Case File 364",
-    "firstAppearance": "The Gardener",
-    "connectedSongs": [
-      "364"
-    ],
-    "unknownInfo": "Past the Tree Line and Dry Grass suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "364_comb",
+      "type": "Object",
+      "name": "Comb",
+      "symbol": "🔍",
+      "description": "Comb was recovered from The Bluff in Case File 364. It is tied to Schoolgirl, 1:33, and marker 3134.",
+      "unknownInfo": "Past the Tree Line and Dry Grass suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "364_location",
+      "type": "Location",
+      "name": "Bluff",
+      "symbol": "📍",
+      "description": "The active scene for Case File 364. Recovered field notes place the primary event at Bluff.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "364_witness",
+      "type": "Witness",
+      "name": "Schoolgirl",
+      "symbol": "👤",
+      "description": "Schoolgirl, identified in the case notes for Case File 364. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "364_time",
+      "type": "Time",
+      "name": "133",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 364. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "364_marker",
+      "type": "Marker",
+      "name": "Marker 3134",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 364.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "364_direction",
+      "type": "Direction",
+      "name": "Pastthetreeline",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 364.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "364_sound",
+      "type": "Sound",
+      "name": "Drygrass",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 364. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Gardener - Recovered Case File",
     "fileId": "S31-004A",

@@ -213,18 +213,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "516_rope",
-    "name": "Rope",
-    "symbol": "*",
-    "description": "Rope was recovered from Library in Case File 516. It is tied to Blacksmith, 8:33, and marker 4406.",
-    "discovered": "Case File 516",
-    "firstAppearance": "The True Story",
-    "connectedSongs": [
-      "516"
-    ],
-    "unknownInfo": "Left and Child's Laugh (far off) suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "516_rope",
+      "type": "Object",
+      "name": "Rope",
+      "symbol": "🔍",
+      "description": "Rope was recovered from Library in Case File 516. It is tied to Blacksmith, 8:33, and marker 4406.",
+      "unknownInfo": "Left and Child's Laugh (far off) suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "516_location",
+      "type": "Location",
+      "name": "Library",
+      "symbol": "📍",
+      "description": "The active scene for Case File 516. Recovered field notes place the primary event at Library.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "516_witness",
+      "type": "Witness",
+      "name": "Blacksmith",
+      "symbol": "👤",
+      "description": "Blacksmith, identified in the case notes for Case File 516. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "516_time",
+      "type": "Time",
+      "name": "833",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 516. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "516_marker",
+      "type": "Marker",
+      "name": "Marker 4406",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 516.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "516_direction",
+      "type": "Direction",
+      "name": "Left",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 516.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "516_sound",
+      "type": "Sound",
+      "name": "Child'Slaugh(Faroff)",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 516. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The True Story - Recovered Case File",
     "fileId": "S43-012A",

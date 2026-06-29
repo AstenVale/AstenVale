@@ -214,18 +214,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "204_oil_rag",
-    "name": "Oil Rag",
-    "symbol": "*",
-    "description": "Oil Rag was recovered from Diner in Case File 204. It is tied to Cartographer, 9:55, and marker 1806.",
-    "discovered": "Case File 204",
-    "firstAppearance": "First Spring",
-    "connectedSongs": [
-      "204"
-    ],
-    "unknownInfo": "North and Fog Horn suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "204_oilrag",
+      "type": "Object",
+      "name": "Oilrag",
+      "symbol": "🔍",
+      "description": "Oil Rag was recovered from Diner in Case File 204. It is tied to Cartographer, 9:55, and marker 1806.",
+      "unknownInfo": "North and Fog Horn suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "204_location",
+      "type": "Location",
+      "name": "Diner",
+      "symbol": "📍",
+      "description": "The active scene for Case File 204. Recovered field notes place the primary event at Diner.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "204_witness",
+      "type": "Witness",
+      "name": "Cartographer",
+      "symbol": "👤",
+      "description": "Cartographer, identified in the case notes for Case File 204. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "204_time",
+      "type": "Time",
+      "name": "955",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 204. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "204_marker",
+      "type": "Marker",
+      "name": "Marker 1806",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 204.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "204_direction",
+      "type": "Direction",
+      "name": "North",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 204.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "204_sound",
+      "type": "Sound",
+      "name": "Foghorn",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 204. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "First Spring - Recovered Case File",
     "fileId": "S17-012A",

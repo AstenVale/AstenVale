@@ -215,18 +215,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "265_brooch",
-    "name": "Brooch",
-    "symbol": "*",
-    "description": "Brooch was recovered from Lake Shore in Case File 265. It is tied to Weaver, 6:45, and marker 2307.",
-    "discovered": "Case File 265",
-    "firstAppearance": "The First Document",
-    "connectedSongs": [
-      "265"
-    ],
-    "unknownInfo": "Back the Way You Came and Fog Horn suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "265_brooch",
+      "type": "Object",
+      "name": "Brooch",
+      "symbol": "🔍",
+      "description": "Brooch was recovered from Lake Shore in Case File 265. It is tied to Weaver, 6:45, and marker 2307.",
+      "unknownInfo": "Back the Way You Came and Fog Horn suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "265_location",
+      "type": "Location",
+      "name": "Lakeshore",
+      "symbol": "📍",
+      "description": "The active scene for Case File 265. Recovered field notes place the primary event at Lakeshore.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "265_witness",
+      "type": "Witness",
+      "name": "Weaver",
+      "symbol": "👤",
+      "description": "Weaver, identified in the case notes for Case File 265. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "265_time",
+      "type": "Time",
+      "name": "645",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 265. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "265_marker",
+      "type": "Marker",
+      "name": "Marker 2307",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 265.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "265_direction",
+      "type": "Direction",
+      "name": "Backthewayyoucame",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 265.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "265_sound",
+      "type": "Sound",
+      "name": "Foghorn",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 265. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The First Document - Recovered Case File",
     "fileId": "S23-001A",

@@ -225,18 +225,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "584_dried_blood_on_cloth",
-    "name": "Dried Blood on Cloth",
-    "symbol": "*",
-    "description": "Dried Blood on Cloth was recovered from Grist Mill in Case File 584. It is tied to Lamplighter, 8:42, and marker 4970.",
-    "discovered": "Case File 584",
-    "firstAppearance": "The Truth",
-    "connectedSongs": [
-      "584"
-    ],
-    "unknownInfo": "Across and Swamp Gas suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "584_driedbloodoncloth",
+      "type": "Object",
+      "name": "Driedbloodoncloth",
+      "symbol": "🔍",
+      "description": "Dried Blood on Cloth was recovered from Grist Mill in Case File 584. It is tied to Lamplighter, 8:42, and marker 4970.",
+      "unknownInfo": "Across and Swamp Gas suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "584_location",
+      "type": "Location",
+      "name": "Gristmill",
+      "symbol": "📍",
+      "description": "The active scene for Case File 584. Recovered field notes place the primary event at Gristmill.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "584_witness",
+      "type": "Witness",
+      "name": "Lamplighter",
+      "symbol": "👤",
+      "description": "Lamplighter, identified in the case notes for Case File 584. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "584_time",
+      "type": "Time",
+      "name": "842",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 584. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "584_marker",
+      "type": "Marker",
+      "name": "Marker 4970",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 584.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "584_direction",
+      "type": "Direction",
+      "name": "Across",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 584.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "584_sound",
+      "type": "Sound",
+      "name": "Swampgas",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 584. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Truth - Recovered Case File",
     "fileId": "S49-008A",

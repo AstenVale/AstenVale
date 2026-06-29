@@ -214,18 +214,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "580_flask",
-    "name": "Flask",
-    "symbol": "*",
-    "description": "Flask was recovered from River's Edge in Case File 580. It is tied to Undertaker, 5:13, and marker 4934.",
-    "discovered": "Case File 580",
-    "firstAppearance": "Why She Waited",
-    "connectedSongs": [
-      "580"
-    ],
-    "unknownInfo": "Down and Bone on Stone suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "580_flask",
+      "type": "Object",
+      "name": "Flask",
+      "symbol": "🔍",
+      "description": "Flask was recovered from River's Edge in Case File 580. It is tied to Undertaker, 5:13, and marker 4934.",
+      "unknownInfo": "Down and Bone on Stone suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "580_location",
+      "type": "Location",
+      "name": "River'Sedge",
+      "symbol": "📍",
+      "description": "The active scene for Case File 580. Recovered field notes place the primary event at River'Sedge.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "580_witness",
+      "type": "Witness",
+      "name": "Undertaker",
+      "symbol": "👤",
+      "description": "Undertaker, identified in the case notes for Case File 580. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "580_time",
+      "type": "Time",
+      "name": "513",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 580. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "580_marker",
+      "type": "Marker",
+      "name": "Marker 4934",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 580.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "580_direction",
+      "type": "Direction",
+      "name": "Down",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 580.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "580_sound",
+      "type": "Sound",
+      "name": "Boneonstone",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 580. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "Why She Waited - Recovered Case File",
     "fileId": "S49-004A",

@@ -226,18 +226,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "475_telegram",
-    "name": "Telegram",
-    "symbol": "*",
-    "description": "Telegram was recovered from The Bluff in Case File 475. It is tied to Driver, 1:33, and marker 4061.",
-    "discovered": "Case File 475",
-    "firstAppearance": "The Key",
-    "connectedSongs": [
-      "475"
-    ],
-    "unknownInfo": "Away from Town and Broken String suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "475_telegram",
+      "type": "Object",
+      "name": "Telegram",
+      "symbol": "🔍",
+      "description": "Telegram was recovered from The Bluff in Case File 475. It is tied to Driver, 1:33, and marker 4061.",
+      "unknownInfo": "Away from Town and Broken String suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "475_location",
+      "type": "Location",
+      "name": "Bluff",
+      "symbol": "📍",
+      "description": "The active scene for Case File 475. Recovered field notes place the primary event at Bluff.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "475_witness",
+      "type": "Witness",
+      "name": "Driver",
+      "symbol": "👤",
+      "description": "Driver, identified in the case notes for Case File 475. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "475_time",
+      "type": "Time",
+      "name": "133",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 475. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "475_marker",
+      "type": "Marker",
+      "name": "Marker 4061",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 475.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "475_direction",
+      "type": "Direction",
+      "name": "Awayfromtown",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 475.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "475_sound",
+      "type": "Sound",
+      "name": "Brokenstring",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 475. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Key - Recovered Case File",
     "fileId": "S40-007A",

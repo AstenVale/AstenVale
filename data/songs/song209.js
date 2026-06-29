@@ -214,18 +214,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "209_ring",
-    "name": "Ring",
-    "symbol": "*",
-    "description": "Ring was recovered from Birch Stand in Case File 209. It is tied to Wainwright, 6:32, and marker 1843.",
-    "discovered": "Case File 209",
-    "firstAppearance": "The Wrong Name",
-    "connectedSongs": [
-      "209"
-    ],
-    "unknownInfo": "East and Stones in a Tin suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "209_ring",
+      "type": "Object",
+      "name": "Ring",
+      "symbol": "🔍",
+      "description": "Ring was recovered from Birch Stand in Case File 209. It is tied to Wainwright, 6:32, and marker 1843.",
+      "unknownInfo": "East and Stones in a Tin suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "209_location",
+      "type": "Location",
+      "name": "Birchstand",
+      "symbol": "📍",
+      "description": "The active scene for Case File 209. Recovered field notes place the primary event at Birchstand.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "209_witness",
+      "type": "Witness",
+      "name": "Wainwright",
+      "symbol": "👤",
+      "description": "Wainwright, identified in the case notes for Case File 209. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "209_time",
+      "type": "Time",
+      "name": "632",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 209. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "209_marker",
+      "type": "Marker",
+      "name": "Marker 1843",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 209.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "209_direction",
+      "type": "Direction",
+      "name": "East",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 209.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "209_sound",
+      "type": "Sound",
+      "name": "Stonesinatin",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 209. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Wrong Name - Recovered Case File",
     "fileId": "S18-005A",

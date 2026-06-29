@@ -228,18 +228,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "306_surveyor_s_pin",
-    "name": "Surveyor's Pin",
-    "symbol": "*",
-    "description": "Surveyor's Pin was recovered from The Widow's Porch in Case File 306. It is tied to Rag Picker, 4:38, and marker 2652.",
-    "discovered": "Case File 306",
-    "firstAppearance": "What Changed Inside",
-    "connectedSongs": [
-      "306"
-    ],
-    "unknownInfo": "Into the Dark and Lid of a Tin suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "306_surveyorspin",
+      "type": "Object",
+      "name": "Surveyor'Spin",
+      "symbol": "🔍",
+      "description": "Surveyor's Pin was recovered from The Widow's Porch in Case File 306. It is tied to Rag Picker, 4:38, and marker 2652.",
+      "unknownInfo": "Into the Dark and Lid of a Tin suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "306_location",
+      "type": "Location",
+      "name": "Widow'S Porch",
+      "symbol": "📍",
+      "description": "The active scene for Case File 306. Recovered field notes place the primary event at Widow'S Porch.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "306_witness",
+      "type": "Witness",
+      "name": "Ragpicker",
+      "symbol": "👤",
+      "description": "Ragpicker, identified in the case notes for Case File 306. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "306_time",
+      "type": "Time",
+      "name": "438",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 306. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "306_marker",
+      "type": "Marker",
+      "name": "Marker 2652",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 306.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "306_direction",
+      "type": "Direction",
+      "name": "Intothedark",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 306.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "306_sound",
+      "type": "Sound",
+      "name": "Lidofatin",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 306. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "What Changed Inside - Recovered Case File",
     "fileId": "S26-006A",

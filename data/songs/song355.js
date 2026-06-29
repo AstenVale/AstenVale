@@ -215,18 +215,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "355_bottle",
-    "name": "Bottle",
-    "symbol": "*",
-    "description": "Bottle was recovered from Ash Hollow in Case File 355. It is tied to Rope Maker, 2:19, and marker 3061.",
-    "discovered": "Case File 355",
-    "firstAppearance": "The Manifest",
-    "connectedSongs": [
-      "355"
-    ],
-    "unknownInfo": "Behind and Moth Wings suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "355_bottle",
+      "type": "Object",
+      "name": "Bottle",
+      "symbol": "🔍",
+      "description": "Bottle was recovered from Ash Hollow in Case File 355. It is tied to Rope Maker, 2:19, and marker 3061.",
+      "unknownInfo": "Behind and Moth Wings suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "355_location",
+      "type": "Location",
+      "name": "Ashhollow",
+      "symbol": "📍",
+      "description": "The active scene for Case File 355. Recovered field notes place the primary event at Ashhollow.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "355_witness",
+      "type": "Witness",
+      "name": "Ropemaker",
+      "symbol": "👤",
+      "description": "Ropemaker, identified in the case notes for Case File 355. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "355_time",
+      "type": "Time",
+      "name": "219",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 355. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "355_marker",
+      "type": "Marker",
+      "name": "Marker 3061",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 355.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "355_direction",
+      "type": "Direction",
+      "name": "Behind",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 355.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "355_sound",
+      "type": "Sound",
+      "name": "Mothwings",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 355. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Manifest - Recovered Case File",
     "fileId": "S30-007A",

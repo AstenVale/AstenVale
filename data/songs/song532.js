@@ -216,18 +216,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "532_signet_ring",
-    "name": "Signet Ring",
-    "symbol": "*",
-    "description": "Signet Ring was recovered from Sheep Fold in Case File 532. It is tied to Weaver, 11:03, and marker 4534.",
-    "discovered": "Case File 532",
-    "firstAppearance": "The Promise",
-    "connectedSongs": [
-      "532"
-    ],
-    "unknownInfo": "Away from Town and Night Insects suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "532_signetring",
+      "type": "Object",
+      "name": "Signetring",
+      "symbol": "🔍",
+      "description": "Signet Ring was recovered from Sheep Fold in Case File 532. It is tied to Weaver, 11:03, and marker 4534.",
+      "unknownInfo": "Away from Town and Night Insects suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "532_location",
+      "type": "Location",
+      "name": "Sheepfold",
+      "symbol": "📍",
+      "description": "The active scene for Case File 532. Recovered field notes place the primary event at Sheepfold.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "532_witness",
+      "type": "Witness",
+      "name": "Weaver",
+      "symbol": "👤",
+      "description": "Weaver, identified in the case notes for Case File 532. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "532_time",
+      "type": "Time",
+      "name": "1103",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 532. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "532_marker",
+      "type": "Marker",
+      "name": "Marker 4534",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 532.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "532_direction",
+      "type": "Direction",
+      "name": "Awayfromtown",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 532.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "532_sound",
+      "type": "Sound",
+      "name": "Nightinsects",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 532. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Promise - Recovered Case File",
     "fileId": "S45-004A",

@@ -227,18 +227,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "240_flint_stone",
-    "name": "Flint Stone",
-    "symbol": "*",
-    "description": "Flint Stone was recovered from Cider House in Case File 240. It is tied to Salt Seller, 3:03, and marker 2106.",
-    "discovered": "Case File 240",
-    "firstAppearance": "The Morning After",
-    "connectedSongs": [
-      "240"
-    ],
-    "unknownInfo": "Under and Fire Crackling suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "240_flintstone",
+      "type": "Object",
+      "name": "Flintstone",
+      "symbol": "🔍",
+      "description": "Flint Stone was recovered from Cider House in Case File 240. It is tied to Salt Seller, 3:03, and marker 2106.",
+      "unknownInfo": "Under and Fire Crackling suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "240_location",
+      "type": "Location",
+      "name": "Ciderhouse",
+      "symbol": "📍",
+      "description": "The active scene for Case File 240. Recovered field notes place the primary event at Ciderhouse.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "240_witness",
+      "type": "Witness",
+      "name": "Saltseller",
+      "symbol": "👤",
+      "description": "Saltseller, identified in the case notes for Case File 240. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "240_time",
+      "type": "Time",
+      "name": "303",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 240. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "240_marker",
+      "type": "Marker",
+      "name": "Marker 2106",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 240.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "240_direction",
+      "type": "Direction",
+      "name": "Under",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 240.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "240_sound",
+      "type": "Sound",
+      "name": "Firecrackling",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 240. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Morning After - Recovered Case File",
     "fileId": "S20-012A",

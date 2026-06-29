@@ -216,18 +216,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "575_folded_cloth",
-    "name": "Folded Cloth",
-    "symbol": "*",
-    "description": "Folded Cloth was recovered from East Field in Case File 575. It is tied to Child, 11:17, and marker 4897.",
-    "discovered": "Case File 575",
-    "firstAppearance": "The Full Message",
-    "connectedSongs": [
-      "575"
-    ],
-    "unknownInfo": "Around and The Silence After suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "575_foldedcloth",
+      "type": "Object",
+      "name": "Foldedcloth",
+      "symbol": "🔍",
+      "description": "Folded Cloth was recovered from East Field in Case File 575. It is tied to Child, 11:17, and marker 4897.",
+      "unknownInfo": "Around and The Silence After suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "575_location",
+      "type": "Location",
+      "name": "Eastfield",
+      "symbol": "📍",
+      "description": "The active scene for Case File 575. Recovered field notes place the primary event at Eastfield.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "575_witness",
+      "type": "Witness",
+      "name": "Child",
+      "symbol": "👤",
+      "description": "Child, identified in the case notes for Case File 575. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "575_time",
+      "type": "Time",
+      "name": "1117",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 575. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "575_marker",
+      "type": "Marker",
+      "name": "Marker 4897",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 575.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "575_direction",
+      "type": "Direction",
+      "name": "Around",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 575.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "575_sound",
+      "type": "Sound",
+      "name": "Silence After",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 575. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Full Message - Recovered Case File",
     "fileId": "S48-011A",

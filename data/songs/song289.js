@@ -216,18 +216,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "289_ship_manifest",
-    "name": "Ship Manifest",
-    "symbol": "*",
-    "description": "Ship Manifest was recovered from Print Shop in Case File 289. It is tied to Child, 8:06, and marker 2507.",
-    "discovered": "Case File 289",
-    "firstAppearance": "The Repeated Story",
-    "connectedSongs": [
-      "289"
-    ],
-    "unknownInfo": "Back the Way You Came and Coal Shifting suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "289_shipmanifest",
+      "type": "Object",
+      "name": "Shipmanifest",
+      "symbol": "🔍",
+      "description": "Ship Manifest was recovered from Print Shop in Case File 289. It is tied to Child, 8:06, and marker 2507.",
+      "unknownInfo": "Back the Way You Came and Coal Shifting suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "289_location",
+      "type": "Location",
+      "name": "Printshop",
+      "symbol": "📍",
+      "description": "The active scene for Case File 289. Recovered field notes place the primary event at Printshop.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "289_witness",
+      "type": "Witness",
+      "name": "Child",
+      "symbol": "👤",
+      "description": "Child, identified in the case notes for Case File 289. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "289_time",
+      "type": "Time",
+      "name": "806",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 289. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "289_marker",
+      "type": "Marker",
+      "name": "Marker 2507",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 289.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "289_direction",
+      "type": "Direction",
+      "name": "Backthewayyoucame",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 289.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "289_sound",
+      "type": "Sound",
+      "name": "Coalshifting",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 289. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Repeated Story - Recovered Case File",
     "fileId": "S25-001A",

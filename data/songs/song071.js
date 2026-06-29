@@ -226,18 +226,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "071_telegram",
-    "name": "Telegram",
-    "symbol": "*",
-    "description": "Telegram was recovered from Hotel in Case File 071. It is tied to Judge, 7:48, and marker 697.",
-    "discovered": "Case File 071",
-    "firstAppearance": "What Grows in Dark",
-    "connectedSongs": [
-      "071"
-    ],
-    "unknownInfo": "Straight Down and The Silence After suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "071_telegram",
+      "type": "Object",
+      "name": "Telegram",
+      "symbol": "🔍",
+      "description": "Telegram was recovered from Hotel in Case File 071. It is tied to Judge, 7:48, and marker 697.",
+      "unknownInfo": "Straight Down and The Silence After suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "071_location",
+      "type": "Location",
+      "name": "Hotel",
+      "symbol": "📍",
+      "description": "The active scene for Case File 071. Recovered field notes place the primary event at Hotel.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "071_witness",
+      "type": "Witness",
+      "name": "Judge",
+      "symbol": "👤",
+      "description": "Judge, identified in the case notes for Case File 071. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "071_time",
+      "type": "Time",
+      "name": "748",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 071. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "071_marker",
+      "type": "Marker",
+      "name": "Marker 697",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 071.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "071_direction",
+      "type": "Direction",
+      "name": "Straightdown",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 071.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "071_sound",
+      "type": "Sound",
+      "name": "Silence After",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 071. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "What Grows in Dark - Recovered Case File",
     "fileId": "S6-011A",

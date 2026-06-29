@@ -215,18 +215,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "598_copper_fitting",
-    "name": "Copper Fitting",
-    "symbol": "*",
-    "description": "Copper Fitting was recovered from Telegraph Office in Case File 598. It is tied to Census Taker, 4:12, and marker 5088.",
-    "discovered": "Case File 598",
-    "firstAppearance": "What It Cost",
-    "connectedSongs": [
-      "598"
-    ],
-    "unknownInfo": "Up and Footsteps suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "598_copperfitting",
+      "type": "Object",
+      "name": "Copperfitting",
+      "symbol": "🔍",
+      "description": "Copper Fitting was recovered from Telegraph Office in Case File 598. It is tied to Census Taker, 4:12, and marker 5088.",
+      "unknownInfo": "Up and Footsteps suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "598_location",
+      "type": "Location",
+      "name": "Telegraphoffice",
+      "symbol": "📍",
+      "description": "The active scene for Case File 598. Recovered field notes place the primary event at Telegraphoffice.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "598_witness",
+      "type": "Witness",
+      "name": "Censustaker",
+      "symbol": "👤",
+      "description": "Censustaker, identified in the case notes for Case File 598. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "598_time",
+      "type": "Time",
+      "name": "412",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 598. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "598_marker",
+      "type": "Marker",
+      "name": "Marker 5088",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 598.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "598_direction",
+      "type": "Direction",
+      "name": "Up",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 598.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "598_sound",
+      "type": "Sound",
+      "name": "Footsteps",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 598. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "What It Cost - Recovered Case File",
     "fileId": "S50-010A",

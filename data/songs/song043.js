@@ -225,18 +225,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "043_chain",
-    "name": "Chain",
-    "symbol": "*",
-    "description": "Chain was recovered from Grain Mill in Case File 043. It is tied to Woodsman, 5:09, and marker 461.",
-    "discovered": "Case File 043",
-    "firstAppearance": "The Stone Says",
-    "connectedSongs": [
-      "043"
-    ],
-    "unknownInfo": "Out of Sight and Dry Grass suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "043_chain",
+      "type": "Object",
+      "name": "Chain",
+      "symbol": "🔍",
+      "description": "Chain was recovered from Grain Mill in Case File 043. It is tied to Woodsman, 5:09, and marker 461.",
+      "unknownInfo": "Out of Sight and Dry Grass suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "043_location",
+      "type": "Location",
+      "name": "Grainmill",
+      "symbol": "📍",
+      "description": "The active scene for Case File 043. Recovered field notes place the primary event at Grainmill.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "043_witness",
+      "type": "Witness",
+      "name": "Woodsman",
+      "symbol": "👤",
+      "description": "Woodsman, identified in the case notes for Case File 043. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "043_time",
+      "type": "Time",
+      "name": "509",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 043. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "043_marker",
+      "type": "Marker",
+      "name": "Marker 461",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 043.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "043_direction",
+      "type": "Direction",
+      "name": "Outofsight",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 043.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "043_sound",
+      "type": "Sound",
+      "name": "Drygrass",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 043. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Stone Says - Recovered Case File",
     "fileId": "S4-007A",

@@ -226,18 +226,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "524_spool_of_thread",
-    "name": "Spool of Thread",
-    "symbol": "*",
-    "description": "Spool of Thread was recovered from The Narrow Road in Case File 524. It is tied to Auctioneer, 2:38, and marker 4470.",
-    "discovered": "Case File 524",
-    "firstAppearance": "The Link",
-    "connectedSongs": [
-      "524"
-    ],
-    "unknownInfo": "West and Horse Hooves suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "524_spoolofthread",
+      "type": "Object",
+      "name": "Spoolofthread",
+      "symbol": "🔍",
+      "description": "Spool of Thread was recovered from The Narrow Road in Case File 524. It is tied to Auctioneer, 2:38, and marker 4470.",
+      "unknownInfo": "West and Horse Hooves suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "524_location",
+      "type": "Location",
+      "name": "Narrow Road",
+      "symbol": "📍",
+      "description": "The active scene for Case File 524. Recovered field notes place the primary event at Narrow Road.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "524_witness",
+      "type": "Witness",
+      "name": "Auctioneer",
+      "symbol": "👤",
+      "description": "Auctioneer, identified in the case notes for Case File 524. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "524_time",
+      "type": "Time",
+      "name": "238",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 524. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "524_marker",
+      "type": "Marker",
+      "name": "Marker 4470",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 524.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "524_direction",
+      "type": "Direction",
+      "name": "West",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 524.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "524_sound",
+      "type": "Sound",
+      "name": "Horsehooves",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 524. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Link - Recovered Case File",
     "fileId": "S44-008A",

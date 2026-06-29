@@ -216,18 +216,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "191_handkerchief",
-    "name": "Handkerchief",
-    "symbol": "*",
-    "description": "Handkerchief was recovered from The Narrow Road in Case File 191. It is tied to Salt Seller, 2:38, and marker 1697.",
-    "discovered": "Case File 191",
-    "firstAppearance": "What Glass Remembers",
-    "connectedSongs": [
-      "191"
-    ],
-    "unknownInfo": "Somewhere and Dog Bark at Nothing suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "191_handkerchief",
+      "type": "Object",
+      "name": "Handkerchief",
+      "symbol": "🔍",
+      "description": "Handkerchief was recovered from The Narrow Road in Case File 191. It is tied to Salt Seller, 2:38, and marker 1697.",
+      "unknownInfo": "Somewhere and Dog Bark at Nothing suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "191_location",
+      "type": "Location",
+      "name": "Narrow Road",
+      "symbol": "📍",
+      "description": "The active scene for Case File 191. Recovered field notes place the primary event at Narrow Road.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "191_witness",
+      "type": "Witness",
+      "name": "Saltseller",
+      "symbol": "👤",
+      "description": "Saltseller, identified in the case notes for Case File 191. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "191_time",
+      "type": "Time",
+      "name": "238",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 191. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "191_marker",
+      "type": "Marker",
+      "name": "Marker 1697",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 191.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "191_direction",
+      "type": "Direction",
+      "name": "Somewhere",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 191.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "191_sound",
+      "type": "Sound",
+      "name": "Dogbarkatnothing",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 191. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "What Glass Remembers - Recovered Case File",
     "fileId": "S16-011A",

@@ -215,18 +215,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "560_inkwell",
-    "name": "Inkwell",
-    "symbol": "*",
-    "description": "Inkwell was recovered from South Fork in Case File 560. It is tied to Schoolgirl, 11:44, and marker 4770.",
-    "discovered": "Case File 560",
-    "firstAppearance": "The Road Back",
-    "connectedSongs": [
-      "560"
-    ],
-    "unknownInfo": "Off the Road and Dog Bark at Nothing suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "560_inkwell",
+      "type": "Object",
+      "name": "Inkwell",
+      "symbol": "🔍",
+      "description": "Inkwell was recovered from South Fork in Case File 560. It is tied to Schoolgirl, 11:44, and marker 4770.",
+      "unknownInfo": "Off the Road and Dog Bark at Nothing suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "560_location",
+      "type": "Location",
+      "name": "Southfork",
+      "symbol": "📍",
+      "description": "The active scene for Case File 560. Recovered field notes place the primary event at Southfork.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "560_witness",
+      "type": "Witness",
+      "name": "Schoolgirl",
+      "symbol": "👤",
+      "description": "Schoolgirl, identified in the case notes for Case File 560. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "560_time",
+      "type": "Time",
+      "name": "1144",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 560. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "560_marker",
+      "type": "Marker",
+      "name": "Marker 4770",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 560.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "560_direction",
+      "type": "Direction",
+      "name": "Offtheroad",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 560.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "560_sound",
+      "type": "Sound",
+      "name": "Dogbarkatnothing",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 560. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Road Back - Recovered Case File",
     "fileId": "S47-008A",

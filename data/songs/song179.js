@@ -227,18 +227,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "179_belt_buckle",
-    "name": "Belt Buckle",
-    "symbol": "*",
-    "description": "Belt Buckle was recovered from The Ravine in Case File 179. It is tied to Cooper, 11:29, and marker 1597.",
-    "discovered": "Case File 179",
-    "firstAppearance": "The Signal",
-    "connectedSongs": [
-      "179"
-    ],
-    "unknownInfo": "Around and Shovel on Earth suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "179_beltbuckle",
+      "type": "Object",
+      "name": "Beltbuckle",
+      "symbol": "🔍",
+      "description": "Belt Buckle was recovered from The Ravine in Case File 179. It is tied to Cooper, 11:29, and marker 1597.",
+      "unknownInfo": "Around and Shovel on Earth suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "179_location",
+      "type": "Location",
+      "name": "Ravine",
+      "symbol": "📍",
+      "description": "The active scene for Case File 179. Recovered field notes place the primary event at Ravine.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "179_witness",
+      "type": "Witness",
+      "name": "Cooper",
+      "symbol": "👤",
+      "description": "Cooper, identified in the case notes for Case File 179. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "179_time",
+      "type": "Time",
+      "name": "1129",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 179. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "179_marker",
+      "type": "Marker",
+      "name": "Marker 1597",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 179.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "179_direction",
+      "type": "Direction",
+      "name": "Around",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 179.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "179_sound",
+      "type": "Sound",
+      "name": "Shovelonearth",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 179. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Signal - Recovered Case File",
     "fileId": "S15-011A",

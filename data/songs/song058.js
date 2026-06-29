@@ -213,18 +213,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "058_key",
-    "name": "Key",
-    "symbol": "*",
-    "description": "Key was recovered from Diner in Case File 058. It is tied to Lamplighter, 8:00, and marker 588.",
-    "discovered": "Case File 058",
-    "firstAppearance": "The Drift",
-    "connectedSongs": [
-      "058"
-    ],
-    "unknownInfo": "Left and River Water suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "058_key",
+      "type": "Object",
+      "name": "Key",
+      "symbol": "🔍",
+      "description": "Key was recovered from Diner in Case File 058. It is tied to Lamplighter, 8:00, and marker 588.",
+      "unknownInfo": "Left and River Water suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "058_location",
+      "type": "Location",
+      "name": "Diner",
+      "symbol": "📍",
+      "description": "The active scene for Case File 058. Recovered field notes place the primary event at Diner.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "058_witness",
+      "type": "Witness",
+      "name": "Lamplighter",
+      "symbol": "👤",
+      "description": "Lamplighter, identified in the case notes for Case File 058. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "058_time",
+      "type": "Time",
+      "name": "800",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 058. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "058_marker",
+      "type": "Marker",
+      "name": "Marker 588",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 058.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "058_direction",
+      "type": "Direction",
+      "name": "Left",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 058.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "058_sound",
+      "type": "Sound",
+      "name": "Riverwater",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 058. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Drift - Recovered Case File",
     "fileId": "S5-010A",

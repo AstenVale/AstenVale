@@ -226,18 +226,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "366_surveyor_s_pin",
-    "name": "Surveyor's Pin",
-    "symbol": "*",
-    "description": "Surveyor's Pin was recovered from The Ridge in Case File 366. It is tied to Judge, 4:12, and marker 3152.",
-    "discovered": "Case File 366",
-    "firstAppearance": "The Seasonal Key",
-    "connectedSongs": [
-      "366"
-    ],
-    "unknownInfo": "Out of Sight and Thunder suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "366_surveyorspin",
+      "type": "Object",
+      "name": "Surveyor'Spin",
+      "symbol": "🔍",
+      "description": "Surveyor's Pin was recovered from The Ridge in Case File 366. It is tied to Judge, 4:12, and marker 3152.",
+      "unknownInfo": "Out of Sight and Thunder suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "366_location",
+      "type": "Location",
+      "name": "Ridge",
+      "symbol": "📍",
+      "description": "The active scene for Case File 366. Recovered field notes place the primary event at Ridge.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "366_witness",
+      "type": "Witness",
+      "name": "Judge",
+      "symbol": "👤",
+      "description": "Judge, identified in the case notes for Case File 366. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "366_time",
+      "type": "Time",
+      "name": "412",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 366. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "366_marker",
+      "type": "Marker",
+      "name": "Marker 3152",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 366.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "366_direction",
+      "type": "Direction",
+      "name": "Outofsight",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 366.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "366_sound",
+      "type": "Sound",
+      "name": "Thunder",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 366. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Seasonal Key - Recovered Case File",
     "fileId": "S31-006A",

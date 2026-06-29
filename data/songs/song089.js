@@ -225,18 +225,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "089_bullet_casing",
-    "name": "Bullet Casing",
-    "symbol": "*",
-    "description": "Bullet Casing was recovered from Potter's Field in Case File 089. It is tied to Barber, 5:09, and marker 843.",
-    "discovered": "Case File 089",
-    "firstAppearance": "After the Ash",
-    "connectedSongs": [
-      "089"
-    ],
-    "unknownInfo": "Beyond and Horse Hooves suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "089_bulletcasing",
+      "type": "Object",
+      "name": "Bulletcasing",
+      "symbol": "🔍",
+      "description": "Bullet Casing was recovered from Potter's Field in Case File 089. It is tied to Barber, 5:09, and marker 843.",
+      "unknownInfo": "Beyond and Horse Hooves suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "089_location",
+      "type": "Location",
+      "name": "Potter'Sfield",
+      "symbol": "📍",
+      "description": "The active scene for Case File 089. Recovered field notes place the primary event at Potter'Sfield.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "089_witness",
+      "type": "Witness",
+      "name": "Barber",
+      "symbol": "👤",
+      "description": "Barber, identified in the case notes for Case File 089. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "089_time",
+      "type": "Time",
+      "name": "509",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 089. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "089_marker",
+      "type": "Marker",
+      "name": "Marker 843",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 089.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "089_direction",
+      "type": "Direction",
+      "name": "Beyond",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 089.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "089_sound",
+      "type": "Sound",
+      "name": "Horsehooves",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 089. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "After the Ash - Recovered Case File",
     "fileId": "S8-005A",

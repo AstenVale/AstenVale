@@ -215,18 +215,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "398_brooch",
-    "name": "Brooch",
-    "symbol": "*",
-    "description": "Brooch was recovered from Collapsed Mine in Case File 398. It is tied to Furrier, 2:19, and marker 3416.",
-    "discovered": "Case File 398",
-    "firstAppearance": "The Record",
-    "connectedSongs": [
-      "398"
-    ],
-    "unknownInfo": "Straight Down and Cellar Stairs suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "398_brooch",
+      "type": "Object",
+      "name": "Brooch",
+      "symbol": "🔍",
+      "description": "Brooch was recovered from Collapsed Mine in Case File 398. It is tied to Furrier, 2:19, and marker 3416.",
+      "unknownInfo": "Straight Down and Cellar Stairs suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "398_location",
+      "type": "Location",
+      "name": "Collapsedmine",
+      "symbol": "📍",
+      "description": "The active scene for Case File 398. Recovered field notes place the primary event at Collapsedmine.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "398_witness",
+      "type": "Witness",
+      "name": "Furrier",
+      "symbol": "👤",
+      "description": "Furrier, identified in the case notes for Case File 398. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "398_time",
+      "type": "Time",
+      "name": "219",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 398. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "398_marker",
+      "type": "Marker",
+      "name": "Marker 3416",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 398.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "398_direction",
+      "type": "Direction",
+      "name": "Straightdown",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 398.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "398_sound",
+      "type": "Sound",
+      "name": "Cellarstairs",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 398. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Record - Recovered Case File",
     "fileId": "S34-002A",

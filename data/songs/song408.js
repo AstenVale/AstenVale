@@ -215,18 +215,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "408_watch",
-    "name": "Watch",
-    "symbol": "*",
-    "description": "Watch was recovered from Ice House in Case File 408. It is tied to Lock Keeper, 5:40, and marker 3506.",
-    "discovered": "Case File 408",
-    "firstAppearance": "What Came Out With Her",
-    "connectedSongs": [
-      "408"
-    ],
-    "unknownInfo": "West and Crow Wings suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "408_watch",
+      "type": "Object",
+      "name": "Watch",
+      "symbol": "🔍",
+      "description": "Watch was recovered from Ice House in Case File 408. It is tied to Lock Keeper, 5:40, and marker 3506.",
+      "unknownInfo": "West and Crow Wings suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "408_location",
+      "type": "Location",
+      "name": "Icehouse",
+      "symbol": "📍",
+      "description": "The active scene for Case File 408. Recovered field notes place the primary event at Icehouse.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "408_witness",
+      "type": "Witness",
+      "name": "Lockkeeper",
+      "symbol": "👤",
+      "description": "Lockkeeper, identified in the case notes for Case File 408. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "408_time",
+      "type": "Time",
+      "name": "540",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 408. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "408_marker",
+      "type": "Marker",
+      "name": "Marker 3506",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 408.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "408_direction",
+      "type": "Direction",
+      "name": "West",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 408.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "408_sound",
+      "type": "Sound",
+      "name": "Crowwings",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 408. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "What Came Out With Her - Recovered Case File",
     "fileId": "S34-012A",

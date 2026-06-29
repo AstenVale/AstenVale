@@ -215,18 +215,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "577_bottle",
-    "name": "Bottle",
-    "symbol": "*",
-    "description": "Bottle was recovered from Print Shop in Case File 577. It is tied to Sexton, 6:06, and marker 4907.",
-    "discovered": "Case File 577",
-    "firstAppearance": "The Last One Who Knows",
-    "connectedSongs": [
-      "577"
-    ],
-    "unknownInfo": "Along the Creek and Dry Grass suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "577_bottle",
+      "type": "Object",
+      "name": "Bottle",
+      "symbol": "🔍",
+      "description": "Bottle was recovered from Print Shop in Case File 577. It is tied to Sexton, 6:06, and marker 4907.",
+      "unknownInfo": "Along the Creek and Dry Grass suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "577_location",
+      "type": "Location",
+      "name": "Printshop",
+      "symbol": "📍",
+      "description": "The active scene for Case File 577. Recovered field notes place the primary event at Printshop.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "577_witness",
+      "type": "Witness",
+      "name": "Sexton",
+      "symbol": "👤",
+      "description": "Sexton, identified in the case notes for Case File 577. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "577_time",
+      "type": "Time",
+      "name": "606",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 577. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "577_marker",
+      "type": "Marker",
+      "name": "Marker 4907",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 577.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "577_direction",
+      "type": "Direction",
+      "name": "Alongthecreek",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 577.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "577_sound",
+      "type": "Sound",
+      "name": "Drygrass",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 577. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Last One Who Knows - Recovered Case File",
     "fileId": "S49-001A",

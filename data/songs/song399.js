@@ -216,18 +216,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "399_dried_flower",
-    "name": "Dried Flower",
-    "symbol": "*",
-    "description": "Dried Flower was recovered from East Field in Case File 399. It is tied to Night Watchman, 11:29, and marker 3425.",
-    "discovered": "Case File 399",
-    "firstAppearance": "What She Said Inside",
-    "connectedSongs": [
-      "399"
-    ],
-    "unknownInfo": "Back and Water Drip suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "399_driedflower",
+      "type": "Object",
+      "name": "Driedflower",
+      "symbol": "🔍",
+      "description": "Dried Flower was recovered from East Field in Case File 399. It is tied to Night Watchman, 11:29, and marker 3425.",
+      "unknownInfo": "Back and Water Drip suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "399_location",
+      "type": "Location",
+      "name": "Eastfield",
+      "symbol": "📍",
+      "description": "The active scene for Case File 399. Recovered field notes place the primary event at Eastfield.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "399_witness",
+      "type": "Witness",
+      "name": "Nightwatchman",
+      "symbol": "👤",
+      "description": "Nightwatchman, identified in the case notes for Case File 399. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "399_time",
+      "type": "Time",
+      "name": "1129",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 399. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "399_marker",
+      "type": "Marker",
+      "name": "Marker 3425",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 399.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "399_direction",
+      "type": "Direction",
+      "name": "Back",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 399.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "399_sound",
+      "type": "Sound",
+      "name": "Waterdrip",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 399. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "What She Said Inside - Recovered Case File",
     "fileId": "S34-003A",

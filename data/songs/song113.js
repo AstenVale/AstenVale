@@ -213,18 +213,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "113_watch",
-    "name": "Watch",
-    "symbol": "*",
-    "description": "Watch was recovered from Tannery in Case File 113. It is tied to Glazier, 10:05, and marker 1043.",
-    "discovered": "Case File 113",
-    "firstAppearance": "The Old Route",
-    "connectedSongs": [
-      "113"
-    ],
-    "unknownInfo": "Forward and Bone on Stone suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "113_watch",
+      "type": "Object",
+      "name": "Watch",
+      "symbol": "🔍",
+      "description": "Watch was recovered from Tannery in Case File 113. It is tied to Glazier, 10:05, and marker 1043.",
+      "unknownInfo": "Forward and Bone on Stone suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "113_location",
+      "type": "Location",
+      "name": "Tannery",
+      "symbol": "📍",
+      "description": "The active scene for Case File 113. Recovered field notes place the primary event at Tannery.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "113_witness",
+      "type": "Witness",
+      "name": "Glazier",
+      "symbol": "👤",
+      "description": "Glazier, identified in the case notes for Case File 113. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "113_time",
+      "type": "Time",
+      "name": "1005",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 113. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "113_marker",
+      "type": "Marker",
+      "name": "Marker 1043",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 113.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "113_direction",
+      "type": "Direction",
+      "name": "Forward",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 113.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "113_sound",
+      "type": "Sound",
+      "name": "Boneonstone",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 113. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Old Route - Recovered Case File",
     "fileId": "S10-005A",

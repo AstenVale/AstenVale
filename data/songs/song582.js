@@ -217,18 +217,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "582_pocket_watch",
-    "name": "Pocket Watch",
-    "symbol": "*",
-    "description": "Pocket Watch was recovered from Cooper's Yard in Case File 582. It is tied to Cattle Driver, 2:47, and marker 4952.",
-    "discovered": "Case File 582",
-    "firstAppearance": "What She Left Out",
-    "connectedSongs": [
-      "582"
-    ],
-    "unknownInfo": "Into the Dark and Rope Strain suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "582_pocketwatch",
+      "type": "Object",
+      "name": "Pocketwatch",
+      "symbol": "🔍",
+      "description": "Pocket Watch was recovered from Cooper's Yard in Case File 582. It is tied to Cattle Driver, 2:47, and marker 4952.",
+      "unknownInfo": "Into the Dark and Rope Strain suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "582_location",
+      "type": "Location",
+      "name": "Cooper'Syard",
+      "symbol": "📍",
+      "description": "The active scene for Case File 582. Recovered field notes place the primary event at Cooper'Syard.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "582_witness",
+      "type": "Witness",
+      "name": "Cattledriver",
+      "symbol": "👤",
+      "description": "Cattledriver, identified in the case notes for Case File 582. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "582_time",
+      "type": "Time",
+      "name": "247",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 582. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "582_marker",
+      "type": "Marker",
+      "name": "Marker 4952",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 582.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "582_direction",
+      "type": "Direction",
+      "name": "Intothedark",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 582.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "582_sound",
+      "type": "Sound",
+      "name": "Ropestrain",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 582. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "What She Left Out - Recovered Case File",
     "fileId": "S49-006A",

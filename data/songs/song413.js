@@ -225,18 +225,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "413_ship_manifest",
-    "name": "Ship Manifest",
-    "symbol": "*",
-    "description": "Ship Manifest was recovered from Smithy in Case File 413. It is tied to Judge, 5:09, and marker 3543.",
-    "discovered": "Case File 413",
-    "firstAppearance": "Access Denied",
-    "connectedSongs": [
-      "413"
-    ],
-    "unknownInfo": "Back the Way You Came and Old Hinge suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "413_shipmanifest",
+      "type": "Object",
+      "name": "Shipmanifest",
+      "symbol": "🔍",
+      "description": "Ship Manifest was recovered from Smithy in Case File 413. It is tied to Judge, 5:09, and marker 3543.",
+      "unknownInfo": "Back the Way You Came and Old Hinge suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "413_location",
+      "type": "Location",
+      "name": "Smithy",
+      "symbol": "📍",
+      "description": "The active scene for Case File 413. Recovered field notes place the primary event at Smithy.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "413_witness",
+      "type": "Witness",
+      "name": "Judge",
+      "symbol": "👤",
+      "description": "Judge, identified in the case notes for Case File 413. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "413_time",
+      "type": "Time",
+      "name": "509",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 413. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "413_marker",
+      "type": "Marker",
+      "name": "Marker 3543",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 413.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "413_direction",
+      "type": "Direction",
+      "name": "Backthewayyoucame",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 413.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "413_sound",
+      "type": "Sound",
+      "name": "Oldhinge",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 413. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "Access Denied - Recovered Case File",
     "fileId": "S35-005A",

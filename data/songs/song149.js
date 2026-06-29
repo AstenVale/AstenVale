@@ -224,18 +224,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "149_trade_token",
-    "name": "Trade Token",
-    "symbol": "*",
-    "description": "Trade Token was recovered from Sawmill in Case File 149. It is tied to Weaver, 6:17, and marker 1343.",
-    "discovered": "Case File 149",
-    "firstAppearance": "Same Face",
-    "connectedSongs": [
-      "149"
-    ],
-    "unknownInfo": "West and Wind Through a Crack suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "149_tradetoken",
+      "type": "Object",
+      "name": "Tradetoken",
+      "symbol": "🔍",
+      "description": "Trade Token was recovered from Sawmill in Case File 149. It is tied to Weaver, 6:17, and marker 1343.",
+      "unknownInfo": "West and Wind Through a Crack suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "149_location",
+      "type": "Location",
+      "name": "Sawmill",
+      "symbol": "📍",
+      "description": "The active scene for Case File 149. Recovered field notes place the primary event at Sawmill.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "149_witness",
+      "type": "Witness",
+      "name": "Weaver",
+      "symbol": "👤",
+      "description": "Weaver, identified in the case notes for Case File 149. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "149_time",
+      "type": "Time",
+      "name": "617",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 149. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "149_marker",
+      "type": "Marker",
+      "name": "Marker 1343",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 149.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "149_direction",
+      "type": "Direction",
+      "name": "West",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 149.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "149_sound",
+      "type": "Sound",
+      "name": "Windthroughacrack",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 149. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "Same Face - Recovered Case File",
     "fileId": "S13-005A",

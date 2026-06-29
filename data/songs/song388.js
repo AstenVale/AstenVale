@@ -228,18 +228,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "388_chain",
-    "name": "Chain",
-    "symbol": "*",
-    "description": "Chain was recovered from The Gully in Case File 388. It is tied to Land Agent, 11:29, and marker 3334.",
-    "discovered": "Case File 388",
-    "firstAppearance": "The Color That Left",
-    "connectedSongs": [
-      "388"
-    ],
-    "unknownInfo": "Toward the River and Lid of a Tin suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "388_chain",
+      "type": "Object",
+      "name": "Chain",
+      "symbol": "🔍",
+      "description": "Chain was recovered from The Gully in Case File 388. It is tied to Land Agent, 11:29, and marker 3334.",
+      "unknownInfo": "Toward the River and Lid of a Tin suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "388_location",
+      "type": "Location",
+      "name": "Gully",
+      "symbol": "📍",
+      "description": "The active scene for Case File 388. Recovered field notes place the primary event at Gully.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "388_witness",
+      "type": "Witness",
+      "name": "Landagent",
+      "symbol": "👤",
+      "description": "Landagent, identified in the case notes for Case File 388. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "388_time",
+      "type": "Time",
+      "name": "1129",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 388. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "388_marker",
+      "type": "Marker",
+      "name": "Marker 3334",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 388.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "388_direction",
+      "type": "Direction",
+      "name": "Towardtheriver",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 388.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "388_sound",
+      "type": "Sound",
+      "name": "Lidofatin",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 388. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Color That Left - Recovered Case File",
     "fileId": "S33-004A",

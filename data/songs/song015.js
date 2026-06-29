@@ -225,18 +225,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "015_empty_bottle",
-    "name": "Empty Bottle",
-    "symbol": "*",
-    "description": "Empty Bottle was recovered from Kitchen Table in Case File 015. It is tied to Neighbor, 4:15, and marker 132.",
-    "discovered": "Case File 015",
-    "firstAppearance": "The First Crack",
-    "connectedSongs": [
-      "015"
-    ],
-    "unknownInfo": "Down and Silence suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "015_emptybottle",
+      "type": "Object",
+      "name": "Emptybottle",
+      "symbol": "🔍",
+      "description": "Empty Bottle was recovered from Kitchen Table in Case File 015. It is tied to Neighbor, 4:15, and marker 132.",
+      "unknownInfo": "Down and Silence suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "015_location",
+      "type": "Location",
+      "name": "Kitchentable",
+      "symbol": "📍",
+      "description": "The active scene for Case File 015. Recovered field notes place the primary event at Kitchentable.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "015_witness",
+      "type": "Witness",
+      "name": "Neighbor",
+      "symbol": "👤",
+      "description": "Neighbor, identified in the case notes for Case File 015. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "015_time",
+      "type": "Time",
+      "name": "415",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 015. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "015_marker",
+      "type": "Marker",
+      "name": "Marker 132",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 015.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "015_direction",
+      "type": "Direction",
+      "name": "Down",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 015.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "015_sound",
+      "type": "Sound",
+      "name": "Silence",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 015. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The First Crack - Recovered Case File",
     "fileId": "S2-003A",

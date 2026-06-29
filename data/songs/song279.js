@@ -227,18 +227,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "279_wool_scarf",
-    "name": "Wool Scarf",
-    "symbol": "*",
-    "description": "Wool Scarf was recovered from Iron Bridge in Case File 279. It is tied to Harness Maker, 10:22, and marker 2425.",
-    "discovered": "Case File 279",
-    "firstAppearance": "The Hour Nobody Saw",
-    "connectedSongs": [
-      "279"
-    ],
-    "unknownInfo": "Out and Lantern Flicker suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "279_woolscarf",
+      "type": "Object",
+      "name": "Woolscarf",
+      "symbol": "🔍",
+      "description": "Wool Scarf was recovered from Iron Bridge in Case File 279. It is tied to Harness Maker, 10:22, and marker 2425.",
+      "unknownInfo": "Out and Lantern Flicker suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "279_location",
+      "type": "Location",
+      "name": "Ironbridge",
+      "symbol": "📍",
+      "description": "The active scene for Case File 279. Recovered field notes place the primary event at Ironbridge.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "279_witness",
+      "type": "Witness",
+      "name": "Harnessmaker",
+      "symbol": "👤",
+      "description": "Harnessmaker, identified in the case notes for Case File 279. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "279_time",
+      "type": "Time",
+      "name": "1022",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 279. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "279_marker",
+      "type": "Marker",
+      "name": "Marker 2425",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 279.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "279_direction",
+      "type": "Direction",
+      "name": "Out",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 279.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "279_sound",
+      "type": "Sound",
+      "name": "Lanternflicker",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 279. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Hour Nobody Saw - Recovered Case File",
     "fileId": "S24-003A",

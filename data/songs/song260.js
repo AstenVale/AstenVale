@@ -226,18 +226,64 @@ window.SONG_DATA = {
       ]
     }
   ],
-  "collectible": {
-    "id": "260_prayer_card",
-    "name": "Prayer Card",
-    "symbol": "*",
-    "description": "Prayer Card was recovered from Stables in Case File 260. It is tied to The Girl with No Shoes, 3:58, and marker 2270.",
-    "discovered": "Case File 260",
-    "firstAppearance": "The Coroner's Note",
-    "connectedSongs": [
-      "260"
-    ],
-    "unknownInfo": "Around and Ash Settling suggest this object matters beyond the first reading."
-  },
+    "collectibles": [
+    {
+      "id": "260_prayercard",
+      "type": "Object",
+      "name": "Prayercard",
+      "symbol": "🔍",
+      "description": "Prayer Card was recovered from Stables in Case File 260. It is tied to The Girl with No Shoes, 3:58, and marker 2270.",
+      "unknownInfo": "Around and Ash Settling suggest this object matters beyond the first reading."
+    },
+    {
+      "id": "260_location",
+      "type": "Location",
+      "name": "Stables",
+      "symbol": "📍",
+      "description": "The active scene for Case File 260. Recovered field notes place the primary event at Stables.",
+      "unknownInfo": "Whether the scene matches the original report."
+    },
+    {
+      "id": "260_witness",
+      "type": "Witness",
+      "name": "Girl With No Shoes",
+      "symbol": "👤",
+      "description": "Girl With No Shoes, identified in the case notes for Case File 260. Has not given a formal statement.",
+      "unknownInfo": "Their connection to the recovered object and whether they returned."
+    },
+    {
+      "id": "260_time",
+      "type": "Time",
+      "name": "358",
+      "symbol": "⌚",
+      "description": "The time recorded in the case audio for Case File 260. Cross-referenced with field notes.",
+      "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
+    },
+    {
+      "id": "260_marker",
+      "type": "Marker",
+      "name": "Marker 2270",
+      "symbol": "◆",
+      "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 260.",
+      "unknownInfo": "Whether this marker connects to others in the sequence — and what the sequence is counting toward."
+    },
+    {
+      "id": "260_direction",
+      "type": "Direction",
+      "name": "Around",
+      "symbol": "🧭",
+      "description": "The direction indicated by the field marker in Case File 260.",
+      "unknownInfo": "What — or who — lies at the end of this bearing."
+    },
+    {
+      "id": "260_sound",
+      "type": "Sound",
+      "name": "Ashsettling",
+      "symbol": "🔊",
+      "description": "An audio event captured in the case recording for Case File 260. Identified and logged by the archive.",
+      "unknownInfo": "Whether this sound was natural — or a signal."
+    }
+  ],
   "lore": {
     "title": "The Coroner's Note - Recovered Case File",
     "fileId": "S22-008A",
