@@ -248,9 +248,13 @@ body.unlocked::before{
 .cn-progress-label{font-size:0.65rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--ink-faded);}
 .cn-progress-value{font-family:var(--font-header);font-size:0.75rem;letter-spacing:0.1em;color:var(--stamp-red);}
 
-#lyrics-modal{position:fixed;inset:0;background:rgba(5,4,2,0.88);display:flex;align-items:center;justify-content:center;z-index:950;opacity:0;transition:opacity 0.28s ease;backdrop-filter:blur(3px);padding:1.5rem;}
-#lyrics-modal.hidden{display:none;}
-#lyrics-modal.visible{opacity:1;}
+#lyrics-modal,#classified-lock-modal{position:fixed;inset:0;background:rgba(5,4,2,0.88);display:flex;align-items:center;justify-content:center;z-index:950;opacity:0;transition:opacity 0.28s ease;backdrop-filter:blur(3px);padding:1.5rem;}
+#lyrics-modal.hidden,#classified-lock-modal.hidden{display:none;}
+#lyrics-modal.visible,#classified-lock-modal.visible{opacity:1;}
+.classified-lock-box{background:var(--paper);width:100%;max-width:380px;padding:3rem 2.5rem;text-align:center;position:relative;box-shadow:0 0 0 1px rgba(100,60,20,0.25),0 24px 70px rgba(0,0,0,0.7);}
+.classified-lock-stamp{display:inline-block;font-family:var(--font-header);font-size:1.8rem;letter-spacing:0.25em;color:var(--stamp-red);border:3px solid var(--stamp-red);padding:0.3rem 1.2rem;text-transform:uppercase;transform:rotate(-4deg);opacity:0.85;margin-bottom:1.5rem;}
+.classified-lock-title{font-family:var(--font-header);font-size:1rem;letter-spacing:0.18em;color:var(--ink);text-transform:uppercase;margin-bottom:0.75rem;}
+.classified-lock-body{font-family:var(--font-type);font-size:0.8rem;color:var(--ink-faded);line-height:1.8;}
 .lyrics-box{background:var(--paper);width:100%;max-width:520px;max-height:85vh;display:flex;flex-direction:column;position:relative;box-shadow:0 0 0 1px rgba(100,60,20,0.25),0 24px 70px rgba(0,0,0,0.7);animation:streaming-drop 0.3s ease;}
 .lyrics-close{position:absolute;top:0.6rem;right:0.75rem;font-family:var(--font-type);font-size:0.65rem;letter-spacing:0.1em;color:var(--ink-faded);background:none;border:1px solid rgba(100,60,20,0.25);padding:0.2rem 0.5rem;cursor:pointer;z-index:2;transition:border-color 0.2s,color 0.2s;}
 .lyrics-close:hover{color:var(--ink);border-color:rgba(100,60,20,0.5);}
@@ -412,8 +416,8 @@ body.unlocked::before{
           <div class="player-sub">Ashton Vale &nbsp;·&nbsp; 2026</div>
           <div class="player-btns">
             <button class="player-btn" onclick="openModal('streaming-modal')">▶ Play</button>
-            <button class="player-btn" onclick="openModal('lyrics-modal')">Lyrics</button>
-            <button class="player-btn" onclick="openModal('casenotes-modal')">Case Notes</button>
+            <button class="player-btn" id="btn-lyrics" onclick="openLockedModal('lyrics-modal')">Lyrics</button>
+            <button class="player-btn" id="btn-casenotes" onclick="openLockedModal('casenotes-modal')">Case Notes</button>
           </div>
         </div>
       </div>
@@ -443,6 +447,16 @@ body.unlocked::before{
           <div class="lyrics-scroll">
             <div id="lyrics-body"></div>
           </div>
+        </div>
+      </div>
+
+      <!-- ── CLASSIFIED LOCK MODAL ── -->
+      <div id="classified-lock-modal" class="hidden" role="dialog" aria-modal="true">
+        <div class="classified-lock-box">
+          <button class="lyrics-close" onclick="closeModal('classified-lock-modal')">✕ Close</button>
+          <div class="classified-lock-stamp">Classified</div>
+          <div class="classified-lock-title">Access Denied</div>
+          <div class="classified-lock-body">This file is sealed pending case resolution.<br>Solve the case to unlock lyrics and investigator notes.</div>
         </div>
       </div>
 
@@ -536,6 +550,15 @@ body.unlocked::before{
     el.classList.remove('hidden');
     // Defer adding .visible so the opacity transition fires
     requestAnimationFrame(function() { el.classList.add('visible'); });
+  }
+
+  function openLockedModal(id) {
+    var solved = [];
+    try { solved = JSON.parse(localStorage.getItem('av_solved') || '[]'); } catch(e) {}
+    var currentId = new URLSearchParams(window.location.search).get('id') || '';
+    var padded = String(parseInt(currentId, 10) || 1).padStart(3, '0');
+    var isSolved = solved.indexOf(padded) !== -1 || solved.indexOf(currentId) !== -1;
+    openModal(isSolved ? id : 'classified-lock-modal');
   }
 
   function closeModal(id) {
