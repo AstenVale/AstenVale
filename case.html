@@ -1048,5 +1048,15 @@ document.title = 'Case File ' + d.caseFile + ' — The Asten Vale Archives';
   })();
   </script>
 
+  <script>
+  fetch('js/site-settings.json').then(function(r){return r.json();}).then(function(s){
+    var pg = s.pages && s.pages.case; if(!pg) return;
+    var bg = document.querySelector('.hero-bg');
+    if(bg && pg.heroImage){ bg.style.backgroundImage='url("'+pg.heroImage+'")'; bg.style.backgroundSize='cover'; bg.style.backgroundPosition='center'; bg.style.opacity=pg.heroOverlay!=null?(1-pg.heroOverlay):1; }
+    if(pg.showTitle===false){ document.querySelectorAll('.case-hero-eyebrow,.case-hero-title,.case-hero-rule').forEach(function(e){e.style.display='none';}); }
+    if(pg.heroTitleText){ var t=document.querySelector('.case-hero-title'); if(t) t.textContent=pg.heroTitleText; }
+  }).catch(function(){});
+  </script>
+
 </body>
 </html>

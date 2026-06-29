@@ -447,5 +447,15 @@
     </div>
   </footer>
 
+  <script>
+  fetch('js/site-settings.json').then(function(r){return r.json();}).then(function(s){
+    var pg = s.pages && s.pages.about; if(!pg) return;
+    var bg = document.querySelector('.hero-bg');
+    if(bg && pg.heroImage){ bg.style.backgroundImage='url("'+pg.heroImage+'")'; bg.style.backgroundSize='cover'; bg.style.backgroundPosition='center'; bg.style.opacity=pg.heroOverlay!=null?(1-pg.heroOverlay):1; }
+    if(pg.showTitle===false){ document.querySelectorAll('.hero-title,.hero-title-sub,.hero-diamond').forEach(function(e){e.style.display='none';}); }
+    if(pg.showSubtitle===false){ var el=document.querySelector('.hero-tagline,.hero-subtitle'); if(el) el.style.display='none'; }
+    if(pg.heroTitleText){ var t=document.querySelector('.hero-title'); if(t) t.textContent=pg.heroTitleText; }
+  }).catch(function(){});
+  </script>
 </body>
 </html>
