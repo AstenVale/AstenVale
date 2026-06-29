@@ -313,14 +313,32 @@
       var seasonGroups = {};
       var seasonOrder  = [];
 
+      // Build season size map so we can infer season from case number
+      var seasonSizes = SEASONS_CONFIG.map(function(s) { return s.totalCases || s.cases.length; });
+
+      function inferSeason(caseId) {
+        var num = parseInt(caseId, 10);
+        var start = 1;
+        for (var i = 0; i < SEASONS_CONFIG.length; i++) {
+          var size = seasonSizes[i];
+          if (num >= start && num < start + size) return SEASONS_CONFIG[i];
+          start += size;
+        }
+        // Beyond known seasons — synthesise a label
+        var seasonNum = Math.ceil(num / 12);
+        var ordinals = ['One','Two','Three','Four','Five','Six','Seven','Eight','Nine','Ten'];
+        return { id: 'season' + seasonNum, title: 'Season ' + (ordinals[seasonNum - 1] || seasonNum) };
+      }
+
       items.forEach(function(item) {
         var id  = String(item.caseId);
         var match = caseMap[id] ||
                     caseMap[String(parseInt(id, 10)).padStart(3, '0')] ||
                     caseMap[String(parseInt(id, 10))];
-        var seasonId    = match ? match.season.id    : 'unknown';
-        var seasonTitle = match ? match.season.title : 'Unknown Season';
-        var caseObj     = match ? match.caseObj      : { id: item.caseId, title: item.caseTitle };
+        var season      = match ? match.season    : inferSeason(item.caseId);
+        var seasonId    = season.id;
+        var seasonTitle = season.title;
+        var caseObj     = match ? match.caseObj   : { id: item.caseId, title: item.caseTitle };
 
         if (!seasonGroups[seasonId]) {
           seasonGroups[seasonId] = { title: seasonTitle, cases: {}, caseOrder: [] };
