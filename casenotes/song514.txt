@@ -1,0 +1,14 @@
+[CLUE] What To Listen For
+The location is Sheriff's Office; it appears as the active scene, not just background.
+Handkerchief is the physical evidence. Treat it as the object that should not be there.
+Fog Horn is the sensory clue. It often arrives before the answer does.
+
+[CASE] Witness And Timeline
+Peddler is the primary witness and is withholding context.
+12:44 is the anchor time. Do not confuse it with song runtime or release order.
+Back the Way You Came is an instruction inside the case, not scenery.
+
+[LOCK] Marker Lock
+Marker 4388 is the key number for this file.
+Marker 4388 accepts the case and points Back the Way You Came.
+Marker 4388 opens nothing for people who think it is only a number.

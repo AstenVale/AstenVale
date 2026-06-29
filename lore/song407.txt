@@ -1,0 +1,15 @@
+title: Release - Recovered Case File
+fileId: S34-011A
+date: Series 34 / Chapter 11
+author: Ashton Vale Archive Engine
+department: Ashton Vale Archives / Clinical Vault
+
+Case S34-011 was recovered from The Locked Ward. The active scene is Canning Factory.
+By 3:49, Canning Factory had already started lying to me.
+Sexton is tied to Map, and the testimony does not resolve cleanly.
+When you hear Horse Hooves, stop looking at the door and look at the thing nearest your hand.
+At 3:49, Horse Hooves becomes part of the evidence record.
+Marker 3497 indexes the case and connects it to Clinical Vault.
+Marker 3497 accepts the case and points Nowhere.
+Marker 3497 is not the clue.
+It is the lock.

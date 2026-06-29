@@ -1,0 +1,15 @@
+title: Cause - Recovered Case File
+fileId: S22-009A
+date: Series 22 / Chapter 09
+author: Ashton Vale Archive Engine
+department: Ashton Vale Archives / Excavation Vault
+
+Case S22-009 was recovered from The Bone Road. The active scene is Clock Tower.
+The first record of Dried Blood on Cloth was not in the archive. It was in the wall.
+Conductor is tied to Dried Blood on Cloth, and the testimony does not resolve cleanly.
+When you hear Hammer Strike, stop looking at the door and look at the thing nearest your hand.
+At 5:55, Hammer Strike becomes part of the evidence record.
+Marker 2279 indexes the case and connects it to Excavation Vault.
+Marker 2279 accepts the case and points Right.
+Marker 2279 is not the clue.
+It is the lock.

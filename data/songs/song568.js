@@ -1,0 +1,345 @@
+window.SONG_DATA = {
+  "id": "568",
+  "caseFile": "568",
+  "series": 48,
+  "seriesName": "The Broken Signal",
+  "sequentialNum": 568,
+  "chapter": 4,
+  "chapterTitle": "Who Noticed",
+  "title": "Who Noticed",
+  "difficulty": "Open Investigation",
+  "status": "OPEN INVESTIGATION",
+  "artwork": null,
+  "audioSrc": null,
+  "streamingLinks": {
+    "spotify": "",
+    "apple": "",
+    "youtube": "",
+    "amazon": ""
+  },
+  "fields": [
+    {
+      "id": "location",
+      "label": "Location",
+      "placeholder": "Where did this happen?",
+      "icon": "LOC"
+    },
+    {
+      "id": "object",
+      "label": "Object",
+      "placeholder": "What item keeps appearing?",
+      "icon": "OBJ"
+    },
+    {
+      "id": "witness",
+      "label": "Witness",
+      "placeholder": "Who gave testimony?",
+      "icon": "WIT"
+    },
+    {
+      "id": "time",
+      "label": "Time",
+      "placeholder": "What time anchors the case?",
+      "icon": "TIME"
+    },
+    {
+      "id": "marker",
+      "label": "Marker",
+      "placeholder": "What marker number appears?",
+      "icon": "MARK"
+    },
+    {
+      "id": "direction",
+      "label": "Direction",
+      "placeholder": "Which direction matters?",
+      "icon": "DIR"
+    },
+    {
+      "id": "sound",
+      "label": "Sound",
+      "placeholder": "What sound repeats?",
+      "icon": "SND"
+    }
+  ],
+  "answers": {
+    "location": [
+      "the hollow road",
+      "hollow road",
+      "thehollowroad"
+    ],
+    "object": [
+      "pipe"
+    ],
+    "witness": [
+      "cider presser",
+      "ciderpresser"
+    ],
+    "time": [
+      "7:14",
+      "714"
+    ],
+    "marker": [
+      "4834",
+      "marker 4834",
+      "road marker 4834",
+      "mile marker 4834",
+      "mile 4834"
+    ],
+    "direction": [
+      "back the way you came",
+      "backthewayyoucame"
+    ],
+    "sound": [
+      "cellar stairs",
+      "cellarstairs"
+    ]
+  },
+  "caseNotes": [
+    {
+      "icon": "CLUE",
+      "label": "What To Listen For",
+      "entries": [
+        "The location is The Hollow Road; it appears as the active scene, not just background.",
+        "Pipe is the physical evidence. Treat it as the object that should not be there.",
+        "Cellar Stairs is the sensory clue. It often arrives before the answer does."
+      ]
+    },
+    {
+      "icon": "CASE",
+      "label": "Witness And Timeline",
+      "entries": [
+        "Cider Presser is the primary witness and is withholding context.",
+        "7:14 is the anchor time. Do not confuse it with song runtime or release order.",
+        "Back the Way You Came is an instruction inside the case, not scenery."
+      ]
+    },
+    {
+      "icon": "LOCK",
+      "label": "Marker Lock",
+      "entries": [
+        "Marker 4834 is the key number for this file.",
+        "Marker 4834 accepts the case and points Back the Way You Came.",
+        "Marker 4834 opens nothing for people who think it is only a number."
+      ]
+    }
+  ],
+  "lyrics": [
+    {
+      "type": "style",
+      "label": "Style",
+      "lines": [
+        "midnight folk ballad; vocal confessional; one room mic; leave space for the clue lines to land."
+      ]
+    },
+    {
+      "type": "intro",
+      "label": "Intro",
+      "lines": [
+        "Cellar Stairs",
+        "Two beats",
+        "Then The Hollow Road",
+        "Breathing in the dark"
+      ]
+    },
+    {
+      "type": "verse-1",
+      "label": "Verse 1",
+      "lines": [
+        "Cider Presser kept their coat on",
+        "Like they did not plan to stay",
+        "Pipe sat between us",
+        "With the dust pushed clean away",
+        "I asked about 7:14",
+        "They asked who taught me fear",
+        "The answer moved across the room",
+        "And would not come near"
+      ]
+    },
+    {
+      "type": "pre-chorus",
+      "label": "Pre-Chorus",
+      "lines": [
+        "The number 4834 waited under somebody's thumb",
+        "Small enough to miss",
+        "Back the Way You Came was not a road",
+        "It was a sentence after this"
+      ]
+    },
+    {
+      "type": "chorus",
+      "label": "Chorus",
+      "lines": [
+        "I heard it before I saw it",
+        "Do not make the number tame",
+        "The cellar stairs started calling",
+        "Though nobody spoke my name",
+        "Cider Presser held the silence",
+        "Pipe held the stain",
+        "I came looking for an answer",
+        "And left carrying the blame"
+      ]
+    },
+    {
+      "type": "verse-2",
+      "label": "Verse 2",
+      "lines": [
+        "There was a cracked cup by the threshold",
+        "There was rain inside the wall",
+        "There was one chair turned backward",
+        "Like it had heard it all",
+        "At 7:14, The Hollow Road",
+        "Leaned closer than a room",
+        "Cider Presser said, \"Go back the way you came\"",
+        "Like they were naming doom"
+      ]
+    },
+    {
+      "type": "bridge",
+      "label": "Bridge",
+      "lines": [
+        "This was a debt passed from one pair of hands to another",
+        "Not a symbol, not a sign",
+        "Just a thing somebody touched once",
+        "And could not leave behind"
+      ]
+    },
+    {
+      "type": "final-chorus",
+      "label": "Final Chorus",
+      "lines": [
+        "I heard it before I saw it",
+        "But now I know the frame",
+        "Marker 4834 under my hand",
+        "Cellar Stairs in my name",
+        "Pipe in the lamplight",
+        "Cider Presser in the rain",
+        "I left the door unlocked",
+        "And came back changed again"
+      ]
+    },
+    {
+      "type": "outro",
+      "label": "Outro",
+      "lines": [
+        "Cellar Stairs",
+        "Back the Way You Came",
+        "Marker 4834"
+      ]
+    }
+  ],
+  "collectible": {
+    "id": "568_pipe",
+    "name": "Pipe",
+    "symbol": "*",
+    "description": "Pipe was recovered from The Hollow Road in Case File 568. It is tied to Cider Presser, 7:14, and marker 4834.",
+    "discovered": "Case File 568",
+    "firstAppearance": "Who Noticed",
+    "connectedSongs": [
+      "568"
+    ],
+    "unknownInfo": "Back the Way You Came and Cellar Stairs suggest this object matters beyond the first reading."
+  },
+  "lore": {
+    "title": "Who Noticed - Recovered Case File",
+    "fileId": "S48-004A",
+    "date": "Series 48 / Chapter 04",
+    "author": "Ashton Vale Archive Engine",
+    "department": "Ashton Vale Archives / Static Vault",
+    "lines": [
+      "Case S48-004 was recovered from The Broken Signal. The active scene is The Hollow Road.",
+      "Cider Presser sent for me, then denied sending. That was how the chapter began.",
+      "Cider Presser is tied to Pipe, and the testimony does not resolve cleanly.",
+      "When you hear Cellar Stairs, stop looking at the door and look at the thing nearest your hand.",
+      "At 7:14, Cellar Stairs becomes part of the evidence record.",
+      "Marker 4834 indexes the case and connects it to Static Vault.",
+      "Marker 4834 accepts the case and points Back the Way You Came.",
+      "Marker 4834 is not the clue.",
+      "It is the lock."
+    ],
+    "cta": {
+      "label": "Continue The Archive",
+      "sub": "Move to the next recovered Ashton Vale case file.",
+      "buttonText": "Return To Cases",
+      "buttonUrl": "series.html"
+    }
+  },
+  "game": {
+    "missionId": "S48C04",
+    "puzzleId": "S48C04-marker-lock",
+    "dialogueId": "S48C04-cider-presser",
+    "locationId": "the-hollow-road",
+    "objective": "Investigate The Hollow Road, question Cider Presser, recover Pipe, and learn why marker 4834 is tied to Static Vault.",
+    "missionFlow": [
+      {
+        "step": "arrive",
+        "objective": "Enter The Hollow Road.",
+        "clue": "Cellar Stairs"
+      },
+      {
+        "step": "inspect",
+        "objective": "Inspect Pipe.",
+        "clue": "Pipe"
+      },
+      {
+        "step": "interview",
+        "objective": "Question Cider Presser.",
+        "clue": "7:14"
+      },
+      {
+        "step": "decode",
+        "objective": "Find and enter marker 4834.",
+        "clue": "4834"
+      },
+      {
+        "step": "choose",
+        "objective": "Follow the Back the Way You Came instruction.",
+        "clue": "Back the Way You Came"
+      }
+    ],
+    "interactables": [
+      {
+        "id": "S48C04-location",
+        "type": "location",
+        "name": "The Hollow Road",
+        "inspectText": "The Hollow Road looks ordinary until Cellar Stairs moves through it."
+      },
+      {
+        "id": "S48C04-object",
+        "type": "evidence",
+        "name": "Pipe",
+        "inspectText": "Pipe is present, specific, and wrong enough to matter."
+      },
+      {
+        "id": "S48C04-marker",
+        "type": "marker",
+        "name": "Marker 4834",
+        "inspectText": "Marker 4834 is not the answer. It is the lock."
+      },
+      {
+        "id": "S48C04-sound",
+        "type": "audio_clue",
+        "name": "Cellar Stairs",
+        "inspectText": "Cellar Stairs repeats near 7:14."
+      }
+    ],
+    "sourceFiles": {
+      "prompt": "story/series/Series48-The-Broken-Signal/chapter04.md",
+      "novel": "generated/novels/Series48-The-Broken-Signal/chapter04.md",
+      "song": "generated/songs/Series48-The-Broken-Signal/song04.md"
+    }
+  },
+  "story": {
+    "novel": "generated/novels/Series48-The-Broken-Signal/chapter04.md",
+    "prompt": "story/series/Series48-The-Broken-Signal/chapter04.md",
+    "opening": [
+      "Cider Presser sent for me, then denied sending. That was how the chapter began.",
+      "The weather was white sun, the kind that made every surface confess a little. The Hollow Road smelled of iron filings. I had written the name of the place in my notebook before I arrived, but seeing it on the page did not help. Ashton Vale has a habit of making written things look childish.",
+      "Cider Presser stood where the light thinned out. They were not waiting for me exactly. They were waiting for someone to make the mistake of asking the first question."
+    ],
+    "ending": [
+      "I wrote the last line before the page went damp:",
+      "Marker 4834 is not the clue.",
+      "It is the lock."
+    ]
+  }
+};

@@ -1,0 +1,15 @@
+title: Refraction - Recovered Case File
+fileId: S16-010A
+date: Series 16 / Chapter 10
+author: Ashton Vale Archive Engine
+department: Ashton Vale Archives / Transparent Vault
+
+Case S16-010 was recovered from The Glass House. The active scene is The Quarry Pool.
+I came back to The Quarry Pool because the map said Out, and the map had been wrong before.
+Glazier is tied to Spool of Thread, and the testimony does not resolve cleanly.
+When you hear Shutter Bang, stop looking at the door and look at the thing nearest your hand.
+At 10:19, Shutter Bang becomes part of the evidence record.
+Marker 1688 indexes the case and connects it to Transparent Vault.
+Marker 1688 accepts the case and points Out.
+Marker 1688 is not the clue.
+It is the lock.

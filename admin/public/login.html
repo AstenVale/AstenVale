@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin — Ashton Vale Archives</title>
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet"/>
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --ink:#1c120a;--paper:#c9a97a;--paper-bg:#c4a472;
+      --bg:#0c0a06;--red:#7a1f1f;
+      --font-type:'Courier Prime',monospace;--font-header:'Special Elite',serif;
+    }
+    body{background:var(--bg);min-height:100vh;display:flex;align-items:center;justify-content:center;font-family:var(--font-type);}
+    body::before{content:"";position:fixed;inset:0;background:radial-gradient(ellipse 60% 50% at 50% 50%,rgba(120,20,20,0.06) 0%,transparent 70%);pointer-events:none;}
+
+    .login-box{
+      background:var(--paper-bg);width:100%;max-width:400px;
+      padding:2.5rem 2rem 2rem;position:relative;
+      box-shadow:0 8px 60px rgba(0,0,0,0.7);
+    }
+    .login-box::after{content:"";position:absolute;top:0;bottom:0;left:3rem;width:1px;background:rgba(180,100,80,0.22);pointer-events:none;}
+
+    .login-logo{text-align:center;margin-bottom:1.5rem;}
+    .login-logo svg{width:48px;height:48px;opacity:0.7;}
+
+    .login-title{font-family:var(--font-header);font-size:1.1rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--ink);text-align:center;margin-bottom:0.3rem;}
+    .login-sub{font-size:0.68rem;letter-spacing:0.2em;text-transform:uppercase;color:rgba(60,30,10,0.45);text-align:center;margin-bottom:2rem;}
+
+    .field{margin-bottom:1.1rem;position:relative;z-index:1;}
+    .field label{display:block;font-size:0.62rem;letter-spacing:0.22em;text-transform:uppercase;color:rgba(60,30,10,0.5);margin-bottom:0.4rem;}
+    .field input{
+      width:100%;padding:0.65rem 0.85rem;
+      background:rgba(28,18,10,0.08);border:1px solid rgba(60,30,10,0.25);
+      font-family:var(--font-type);font-size:0.9rem;color:var(--ink);
+      outline:none;transition:border-color 0.2s;
+    }
+    .field input:focus{border-color:rgba(60,30,10,0.55);}
+
+    .btn-login{
+      width:100%;padding:0.8rem;margin-top:0.5rem;
+      background:rgba(28,18,10,0.88);border:1px solid rgba(201,169,122,0.3);
+      color:rgba(201,169,122,0.9);font-family:var(--font-header);
+      font-size:0.82rem;letter-spacing:0.25em;text-transform:uppercase;
+      cursor:pointer;transition:background 0.2s;position:relative;z-index:1;
+    }
+    .btn-login:hover{background:rgba(40,25,10,0.98);}
+    .btn-login:disabled{opacity:0.5;cursor:not-allowed;}
+
+    .error{
+      display:none;margin-top:1rem;padding:0.6rem 0.85rem;
+      background:rgba(120,20,20,0.15);border:1px solid rgba(120,20,20,0.3);
+      font-size:0.72rem;color:rgba(120,20,20,0.85);letter-spacing:0.1em;
+      text-align:center;position:relative;z-index:1;
+    }
+    .error.visible{display:block;}
+  </style>
+</head>
+<body>
+  <div class="login-box">
+    <div class="login-logo">
+      <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="30" cy="30" r="28" stroke="rgba(60,30,10,0.5)" stroke-width="1.2"/>
+        <circle cx="30" cy="30" r="22" stroke="rgba(60,30,10,0.3)" stroke-width="0.8"/>
+        <line x1="30" y1="4" x2="30" y2="10" stroke="rgba(60,30,10,0.6)" stroke-width="1.5"/>
+        <polygon points="30,13 23,26 37,26" fill="rgba(60,30,10,0.7)"/>
+        <polygon points="30,18 21,33 39,33" fill="rgba(60,30,10,0.7)"/>
+        <rect x="27" y="33" width="6" height="5" fill="rgba(60,30,10,0.6)"/>
+        <line x1="30" y1="50" x2="30" y2="56" stroke="rgba(60,30,10,0.4)" stroke-width="1"/>
+        <line x1="4" y1="30" x2="10" y2="30" stroke="rgba(60,30,10,0.4)" stroke-width="1"/>
+        <line x1="50" y1="30" x2="56" y2="30" stroke="rgba(60,30,10,0.4)" stroke-width="1"/>
+      </svg>
+    </div>
+    <h1 class="login-title">Archive Admin</h1>
+    <p class="login-sub">Restricted Access</p>
+
+    <form id="loginForm">
+      <div class="field">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" autocomplete="username" required/>
+      </div>
+      <div class="field">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" autocomplete="current-password" required/>
+      </div>
+      <button type="submit" class="btn-login" id="loginBtn">Enter the Archive</button>
+      <div class="error" id="errorMsg">Invalid credentials. Access denied.</div>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById('loginForm').addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const btn = document.getElementById('loginBtn');
+      const err = document.getElementById('errorMsg');
+      btn.disabled = true;
+      btn.textContent = 'Verifying…';
+      err.classList.remove('visible');
+
+      const res = await fetch('/login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          username: document.getElementById('username').value,
+          password: document.getElementById('password').value
+        })
+      });
+      const data = await res.json();
+      if (data.ok) {
+        window.location.href = '/dashboard';
+      } else {
+        err.classList.add('visible');
+        btn.disabled = false;
+        btn.textContent = 'Enter the Archive';
+      }
+    });
+  </script>
+</body>
+</html>

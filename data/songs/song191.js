@@ -1,0 +1,334 @@
+window.SONG_DATA = {
+  "id": "191",
+  "caseFile": "191",
+  "series": 16,
+  "seriesName": "The Glass House",
+  "sequentialNum": 191,
+  "chapter": 11,
+  "chapterTitle": "What Glass Remembers",
+  "title": "What Glass Remembers",
+  "difficulty": "Vault-Level",
+  "status": "OPEN INVESTIGATION",
+  "artwork": null,
+  "audioSrc": null,
+  "streamingLinks": {
+    "spotify": "",
+    "apple": "",
+    "youtube": "",
+    "amazon": ""
+  },
+  "fields": [
+    {
+      "id": "location",
+      "label": "Location",
+      "placeholder": "Where did this happen?",
+      "icon": "LOC"
+    },
+    {
+      "id": "object",
+      "label": "Object",
+      "placeholder": "What item keeps appearing?",
+      "icon": "OBJ"
+    },
+    {
+      "id": "witness",
+      "label": "Witness",
+      "placeholder": "Who gave testimony?",
+      "icon": "WIT"
+    },
+    {
+      "id": "time",
+      "label": "Time",
+      "placeholder": "What time anchors the case?",
+      "icon": "TIME"
+    },
+    {
+      "id": "marker",
+      "label": "Marker",
+      "placeholder": "What marker number appears?",
+      "icon": "MARK"
+    },
+    {
+      "id": "direction",
+      "label": "Direction",
+      "placeholder": "Which direction matters?",
+      "icon": "DIR"
+    },
+    {
+      "id": "sound",
+      "label": "Sound",
+      "placeholder": "What sound repeats?",
+      "icon": "SND"
+    }
+  ],
+  "answers": {
+    "location": [
+      "the narrow road",
+      "narrow road",
+      "thenarrowroad"
+    ],
+    "object": [
+      "handkerchief"
+    ],
+    "witness": [
+      "salt seller",
+      "saltseller"
+    ],
+    "time": [
+      "2:38",
+      "238"
+    ],
+    "marker": [
+      "1697",
+      "marker 1697",
+      "road marker 1697",
+      "mile marker 1697",
+      "mile 1697"
+    ],
+    "direction": [
+      "somewhere"
+    ],
+    "sound": [
+      "dog bark at nothing",
+      "dogbarkatnothing"
+    ]
+  },
+  "caseNotes": [
+    {
+      "icon": "CLUE",
+      "label": "What To Listen For",
+      "entries": [
+        "The location is The Narrow Road; it appears as the active scene, not just background.",
+        "Handkerchief is the physical evidence. Treat it as the object that should not be there.",
+        "Dog Bark at Nothing is the sensory clue. It often arrives before the answer does."
+      ]
+    },
+    {
+      "icon": "CASE",
+      "label": "Witness And Timeline",
+      "entries": [
+        "Salt Seller is the primary witness and is withholding context.",
+        "2:38 is the anchor time. Do not confuse it with song runtime or release order.",
+        "Somewhere is an instruction inside the case, not scenery."
+      ]
+    },
+    {
+      "icon": "LOCK",
+      "label": "Marker Lock",
+      "entries": [
+        "Marker 1697 is the key number for this file.",
+        "Marker 1697 accepts the case and points Somewhere.",
+        "Marker 1697 opens nothing for people who think it is only a number."
+      ]
+    }
+  ],
+  "lyrics": [
+    {
+      "type": "style",
+      "label": "Style",
+      "lines": [
+        "slow 6/8 dirge; vocal dry-eyed; bowed bass; noir country pulse with a chorus built for repeat listens."
+      ]
+    },
+    {
+      "type": "intro",
+      "label": "Intro",
+      "lines": [
+        "Dog Bark at Nothing on the left",
+        "Boots on the right",
+        "Somebody leaving The Narrow Road",
+        "In the middle of the night"
+      ]
+    },
+    {
+      "type": "verse-1",
+      "label": "Verse 1",
+      "lines": [
+        "Salt Seller had a story",
+        "But the story would not sing",
+        "Handkerchief caught the window light",
+        "Like a borrowed wedding ring",
+        "I asked about 2:38",
+        "They asked who sent me here",
+        "The answer passed between us",
+        "And disappeared"
+      ]
+    },
+    {
+      "type": "chorus",
+      "label": "Chorus",
+      "lines": [
+        "Do not turn the marker over",
+        "Do not ask the road its name",
+        "The dog bark at nothing started calling",
+        "Though nobody struck a flame",
+        "Salt Seller held Handkerchief",
+        "Like a rosary of rain",
+        "I came looking for an answer",
+        "And left carrying the stain"
+      ]
+    },
+    {
+      "type": "verse-2",
+      "label": "Verse 2",
+      "lines": [
+        "There was dust around the handle",
+        "There was ash below the chair",
+        "There was a cracked cup on the table",
+        "Like a warning left with care",
+        "At 2:38 the room leaned closer",
+        "At 2:38 the glass went gray",
+        "Salt Seller said, \"Go somewhere\"",
+        "But would not point the way"
+      ]
+    },
+    {
+      "type": "middle-eight",
+      "label": "Middle Eight",
+      "lines": [
+        "This was a family secret nobody wanted inherited",
+        "This was not a sign",
+        "Marker 1697 under the paint",
+        "And Dog Bark at Nothing under mine"
+      ]
+    },
+    {
+      "type": "final-chorus",
+      "label": "Final Chorus",
+      "lines": [
+        "Do not turn the marker over",
+        "Do not ask the road its name",
+        "The dog bark at nothing started calling",
+        "And the room forgot the flame",
+        "Handkerchief in the lamplight",
+        "Salt Seller in the rain",
+        "I stopped using my own name",
+        "And left carrying the stain"
+      ]
+    },
+    {
+      "type": "outro",
+      "label": "Outro",
+      "lines": [
+        "Dog Bark at Nothing",
+        "Then Somewhere",
+        "Then nothing"
+      ]
+    }
+  ],
+  "collectible": {
+    "id": "191_handkerchief",
+    "name": "Handkerchief",
+    "symbol": "*",
+    "description": "Handkerchief was recovered from The Narrow Road in Case File 191. It is tied to Salt Seller, 2:38, and marker 1697.",
+    "discovered": "Case File 191",
+    "firstAppearance": "What Glass Remembers",
+    "connectedSongs": [
+      "191"
+    ],
+    "unknownInfo": "Somewhere and Dog Bark at Nothing suggest this object matters beyond the first reading."
+  },
+  "lore": {
+    "title": "What Glass Remembers - Recovered Case File",
+    "fileId": "S16-011A",
+    "date": "Series 16 / Chapter 11",
+    "author": "Ashton Vale Archive Engine",
+    "department": "Ashton Vale Archives / Transparent Vault",
+    "lines": [
+      "Case S16-011 was recovered from The Glass House. The active scene is The Narrow Road.",
+      "I had been to The Narrow Road once before, though the archive insisted I had not.",
+      "Salt Seller is tied to Handkerchief, and the testimony does not resolve cleanly.",
+      "When you hear Dog Bark at Nothing, stop looking at the door and look at the thing nearest your hand.",
+      "At 2:38, Dog Bark at Nothing becomes part of the evidence record.",
+      "Marker 1697 indexes the case and connects it to Transparent Vault.",
+      "Marker 1697 accepts the case and points Somewhere.",
+      "Below it, in smaller letters:",
+      "paid."
+    ],
+    "cta": {
+      "label": "Continue The Archive",
+      "sub": "Move to the next recovered Ashton Vale case file.",
+      "buttonText": "Return To Cases",
+      "buttonUrl": "series.html"
+    }
+  },
+  "game": {
+    "missionId": "S16C11",
+    "puzzleId": "S16C11-marker-lock",
+    "dialogueId": "S16C11-salt-seller",
+    "locationId": "the-narrow-road",
+    "objective": "Investigate The Narrow Road, question Salt Seller, recover Handkerchief, and learn why marker 1697 is tied to Transparent Vault.",
+    "missionFlow": [
+      {
+        "step": "arrive",
+        "objective": "Enter The Narrow Road.",
+        "clue": "Dog Bark at Nothing"
+      },
+      {
+        "step": "inspect",
+        "objective": "Inspect Handkerchief.",
+        "clue": "Handkerchief"
+      },
+      {
+        "step": "interview",
+        "objective": "Question Salt Seller.",
+        "clue": "2:38"
+      },
+      {
+        "step": "decode",
+        "objective": "Find and enter marker 1697.",
+        "clue": "1697"
+      },
+      {
+        "step": "choose",
+        "objective": "Follow the Somewhere instruction.",
+        "clue": "Somewhere"
+      }
+    ],
+    "interactables": [
+      {
+        "id": "S16C11-location",
+        "type": "location",
+        "name": "The Narrow Road",
+        "inspectText": "The Narrow Road looks ordinary until Dog Bark at Nothing moves through it."
+      },
+      {
+        "id": "S16C11-object",
+        "type": "evidence",
+        "name": "Handkerchief",
+        "inspectText": "Handkerchief is present, specific, and wrong enough to matter."
+      },
+      {
+        "id": "S16C11-marker",
+        "type": "marker",
+        "name": "Marker 1697",
+        "inspectText": "Marker 1697 is not the answer. It is the lock."
+      },
+      {
+        "id": "S16C11-sound",
+        "type": "audio_clue",
+        "name": "Dog Bark at Nothing",
+        "inspectText": "Dog Bark at Nothing repeats near 2:38."
+      }
+    ],
+    "sourceFiles": {
+      "prompt": "story/series/Series16-The-Glass-House/chapter11.md",
+      "novel": "generated/novels/Series16-The-Glass-House/chapter11.md",
+      "song": "generated/songs/Series16-The-Glass-House/song11.md"
+    }
+  },
+  "story": {
+    "novel": "generated/novels/Series16-The-Glass-House/chapter11.md",
+    "prompt": "story/series/Series16-The-Glass-House/chapter11.md",
+    "opening": [
+      "I had been to The Narrow Road once before, though the archive insisted I had not.",
+      "That was the first wrong thing.",
+      "The second was Handkerchief, sitting in plain view where no one could have missed it. Dust had gathered around it, not on it. The shape was too clean. A thing recently absent. A thing returned while the room looked away."
+    ],
+    "ending": [
+      "At the bend, someone had scratched marker 1697 into a stone.",
+      "Below it, in smaller letters:",
+      "paid."
+    ]
+  }
+};

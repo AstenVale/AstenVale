@@ -1,0 +1,14 @@
+[CLUE] What To Listen For
+The location is Ash Hollow; it appears as the active scene, not just background.
+Dried Blood on Cloth is the physical evidence. Treat it as the object that should not be there.
+Horse Hooves is the sensory clue. It often arrives before the answer does.
+
+[CASE] Witness And Timeline
+Fisherman is the primary witness and is withholding context.
+8:00 is the anchor time. Do not confuse it with song runtime or release order.
+Away from Town is an instruction inside the case, not scenery.
+
+[LOCK] Marker Lock
+Marker 1407 is the key number for this file.
+Marker 1407 accepts the case and points Away from Town.
+Marker 1407 opens nothing for people who think it is only a number.

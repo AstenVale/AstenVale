@@ -1,0 +1,333 @@
+window.SONG_DATA = {
+  "id": "265",
+  "caseFile": "265",
+  "series": 23,
+  "seriesName": "The Paper Trail",
+  "sequentialNum": 265,
+  "chapter": 1,
+  "chapterTitle": "The First Document",
+  "title": "The First Document",
+  "difficulty": "Archive Entry",
+  "status": "OPEN INVESTIGATION",
+  "artwork": null,
+  "audioSrc": null,
+  "streamingLinks": {
+    "spotify": "",
+    "apple": "",
+    "youtube": "",
+    "amazon": ""
+  },
+  "fields": [
+    {
+      "id": "location",
+      "label": "Location",
+      "placeholder": "Where did this happen?",
+      "icon": "LOC"
+    },
+    {
+      "id": "object",
+      "label": "Object",
+      "placeholder": "What item keeps appearing?",
+      "icon": "OBJ"
+    },
+    {
+      "id": "witness",
+      "label": "Witness",
+      "placeholder": "Who gave testimony?",
+      "icon": "WIT"
+    },
+    {
+      "id": "time",
+      "label": "Time",
+      "placeholder": "What time anchors the case?",
+      "icon": "TIME"
+    },
+    {
+      "id": "marker",
+      "label": "Marker",
+      "placeholder": "What marker number appears?",
+      "icon": "MARK"
+    },
+    {
+      "id": "direction",
+      "label": "Direction",
+      "placeholder": "Which direction matters?",
+      "icon": "DIR"
+    },
+    {
+      "id": "sound",
+      "label": "Sound",
+      "placeholder": "What sound repeats?",
+      "icon": "SND"
+    }
+  ],
+  "answers": {
+    "location": [
+      "lake shore",
+      "lakeshore"
+    ],
+    "object": [
+      "brooch"
+    ],
+    "witness": [
+      "weaver"
+    ],
+    "time": [
+      "6:45",
+      "645"
+    ],
+    "marker": [
+      "2307",
+      "marker 2307",
+      "road marker 2307",
+      "mile marker 2307",
+      "mile 2307"
+    ],
+    "direction": [
+      "back the way you came",
+      "backthewayyoucame"
+    ],
+    "sound": [
+      "fog horn",
+      "foghorn"
+    ]
+  },
+  "caseNotes": [
+    {
+      "icon": "CLUE",
+      "label": "What To Listen For",
+      "entries": [
+        "The location is Lake Shore; it appears as the active scene, not just background.",
+        "Brooch is the physical evidence. Treat it as the object that should not be there.",
+        "Fog Horn is the sensory clue. It often arrives before the answer does."
+      ]
+    },
+    {
+      "icon": "CASE",
+      "label": "Witness And Timeline",
+      "entries": [
+        "Weaver is the primary witness and is withholding context.",
+        "6:45 is the anchor time. Do not confuse it with song runtime or release order.",
+        "Back the Way You Came is an instruction inside the case, not scenery."
+      ]
+    },
+    {
+      "icon": "LOCK",
+      "label": "Marker Lock",
+      "entries": [
+        "Marker 2307 is the key number for this file.",
+        "Marker 2307 accepts the case and points Back the Way You Came.",
+        "Marker 2307 opens nothing for people who think it is only a number."
+      ]
+    }
+  ],
+  "lyrics": [
+    {
+      "type": "style",
+      "label": "Style",
+      "lines": [
+        "stark piano hymn; vocal ritual and restrained; soft tape hiss; chorus should feel singable before it feels solvable."
+      ]
+    },
+    {
+      "type": "cold-open",
+      "label": "Cold Open",
+      "lines": [
+        "\"6:45,\" said Weaver",
+        "Then fog horn",
+        "Then the floor went still"
+      ]
+    },
+    {
+      "type": "verse-1",
+      "label": "Verse 1",
+      "lines": [
+        "I saw Brooch before I saw the trouble",
+        "I saw Lake Shore through a dirty pane",
+        "Some places keep your secrets",
+        "Some places learn your name",
+        "Weaver would not touch it",
+        "Would not say who brought it down",
+        "Only looked toward the doorway",
+        "Like the doorway might leave town"
+      ]
+    },
+    {
+      "type": "chorus",
+      "label": "Chorus",
+      "lines": [
+        "Do not ask the road its name",
+        "Do not turn the marker clean",
+        "Fog Horn in Lake Shore",
+        "Like a hand behind the screen",
+        "Brooch on the table",
+        "Weaver looking worn",
+        "Marker 2307 kept waiting",
+        "Like a debt before it is born"
+      ]
+    },
+    {
+      "type": "verse-2",
+      "label": "Verse 2",
+      "lines": [
+        "At 6:45 the room went colder",
+        "And the window showed no sky",
+        "I said, \"Tell me where this points to\"",
+        "They said, \"Back the Way You Came, if you know why\"",
+        "There was a porch nail in the corner",
+        "There was mud along the grain",
+        "I could hear a promise made too young and kept too long",
+        "Trying not to use my name"
+      ]
+    },
+    {
+      "type": "breakdown",
+      "label": "Breakdown",
+      "lines": [
+        "2307",
+        "Written small",
+        "Behind the paint",
+        "A number learning",
+        "How to wait"
+      ]
+    },
+    {
+      "type": "final-chorus",
+      "label": "Final Chorus",
+      "lines": [
+        "Do not ask the road its name",
+        "Do not make the warning small",
+        "Fog Horn came through Lake Shore",
+        "And leaned against the wall",
+        "Brooch was not evidence",
+        "Weaver was not free",
+        "Marker 2307 kept waiting",
+        "For someone else to look like me"
+      ]
+    },
+    {
+      "type": "outro",
+      "label": "Outro",
+      "lines": [
+        "I carried the sound home",
+        "Fog Horn",
+        "Then nothing"
+      ]
+    }
+  ],
+  "collectible": {
+    "id": "265_brooch",
+    "name": "Brooch",
+    "symbol": "*",
+    "description": "Brooch was recovered from Lake Shore in Case File 265. It is tied to Weaver, 6:45, and marker 2307.",
+    "discovered": "Case File 265",
+    "firstAppearance": "The First Document",
+    "connectedSongs": [
+      "265"
+    ],
+    "unknownInfo": "Back the Way You Came and Fog Horn suggest this object matters beyond the first reading."
+  },
+  "lore": {
+    "title": "The First Document - Recovered Case File",
+    "fileId": "S23-001A",
+    "date": "Series 23 / Chapter 01",
+    "author": "Ashton Vale Archive Engine",
+    "department": "Ashton Vale Archives / Document Vault",
+    "lines": [
+      "Case S23-001 was recovered from The Paper Trail. The active scene is Lake Shore.",
+      "Case note recovered from Lake Shore. The paper is water-marked. The final paragraph appears to have been written after the rest.",
+      "Weaver is tied to Brooch, and the testimony does not resolve cleanly.",
+      "When you hear Fog Horn, stop looking at the door and look at the thing nearest your hand.",
+      "At 6:45, Fog Horn becomes part of the evidence record.",
+      "Marker 2307 indexes the case and connects it to Document Vault.",
+      "Marker 2307 accepts the case and points Back the Way You Came.",
+      "\"Because after this, everybody who tells it becomes part of it.\"",
+      "The final paragraph was written in a different hand:"
+    ],
+    "cta": {
+      "label": "Continue The Archive",
+      "sub": "Move to the next recovered Ashton Vale case file.",
+      "buttonText": "Return To Cases",
+      "buttonUrl": "series.html"
+    }
+  },
+  "game": {
+    "missionId": "S23C01",
+    "puzzleId": "S23C01-marker-lock",
+    "dialogueId": "S23C01-weaver",
+    "locationId": "lake-shore",
+    "objective": "Investigate Lake Shore, question Weaver, recover Brooch, and learn why marker 2307 is tied to Document Vault.",
+    "missionFlow": [
+      {
+        "step": "arrive",
+        "objective": "Enter Lake Shore.",
+        "clue": "Fog Horn"
+      },
+      {
+        "step": "inspect",
+        "objective": "Inspect Brooch.",
+        "clue": "Brooch"
+      },
+      {
+        "step": "interview",
+        "objective": "Question Weaver.",
+        "clue": "6:45"
+      },
+      {
+        "step": "decode",
+        "objective": "Find and enter marker 2307.",
+        "clue": "2307"
+      },
+      {
+        "step": "choose",
+        "objective": "Follow the Back the Way You Came instruction.",
+        "clue": "Back the Way You Came"
+      }
+    ],
+    "interactables": [
+      {
+        "id": "S23C01-location",
+        "type": "location",
+        "name": "Lake Shore",
+        "inspectText": "Lake Shore looks ordinary until Fog Horn moves through it."
+      },
+      {
+        "id": "S23C01-object",
+        "type": "evidence",
+        "name": "Brooch",
+        "inspectText": "Brooch is present, specific, and wrong enough to matter."
+      },
+      {
+        "id": "S23C01-marker",
+        "type": "marker",
+        "name": "Marker 2307",
+        "inspectText": "Marker 2307 is not the answer. It is the lock."
+      },
+      {
+        "id": "S23C01-sound",
+        "type": "audio_clue",
+        "name": "Fog Horn",
+        "inspectText": "Fog Horn repeats near 6:45."
+      }
+    ],
+    "sourceFiles": {
+      "prompt": "story/series/Series23-The-Paper-Trail/chapter01.md",
+      "novel": "generated/novels/Series23-The-Paper-Trail/chapter01.md",
+      "song": "generated/songs/Series23-The-Paper-Trail/song01.md"
+    }
+  },
+  "story": {
+    "novel": "generated/novels/Series23-The-Paper-Trail/chapter01.md",
+    "prompt": "story/series/Series23-The-Paper-Trail/chapter01.md",
+    "opening": [
+      "Case note recovered from Lake Shore. The paper is water-marked. The final paragraph appears to have been written after the rest.",
+      "1. Object present: Brooch.\n2. Witness present: Weaver.\n3. Time recorded: 6:45.\n4. Sound recorded: Fog Horn.\n5. Direction indicated: Back the Way You Came.\n6. Marker: 2307.",
+      "The list should have made the matter simple. It did the opposite."
+    ],
+    "ending": [
+      "\"Because after this, everybody who tells it becomes part of it.\"",
+      "The final paragraph was written in a different hand:",
+      "Do not file Brooch under evidence. File it under invitation. Do not follow Back the Way You Came unless you are prepared to meet everyone who followed it before you. Marker 2307 opens nothing by itself. It waits for a witness."
+    ]
+  }
+};

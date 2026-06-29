@@ -1,0 +1,15 @@
+title: The Message Sent - Recovered Case File
+fileId: S38-009A
+date: Series 38 / Chapter 09
+author: Ashton Vale Archive Engine
+department: Ashton Vale Archives / Beacon Vault
+
+Case S38-009 was recovered from The Signal Fire. The active scene is Ash Hollow.
+The first record of Flint Stone was not in the archive. It was in the wall.
+Lamplighter is tied to Flint Stone, and the testimony does not resolve cleanly.
+When you hear Swamp Gas, stop looking at the door and look at the thing nearest your hand.
+At 9:27, Swamp Gas becomes part of the evidence record.
+Marker 3879 indexes the case and connects it to Beacon Vault.
+Marker 3879 accepts the case and points Across.
+Marker 3879 is not the clue.
+It is the lock.

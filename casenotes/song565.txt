@@ -1,0 +1,14 @@
+[CLUE] What To Listen For
+The location is Birch Stand; it appears as the active scene, not just background.
+Inkwell is the physical evidence. Treat it as the object that should not be there.
+Rope on Pulley is the sensory clue. It often arrives before the answer does.
+
+[CASE] Witness And Timeline
+Farmer is the primary witness and is withholding context.
+4:12 is the anchor time. Do not confuse it with song runtime or release order.
+Back the Way You Came is an instruction inside the case, not scenery.
+
+[LOCK] Marker Lock
+Marker 4807 is the key number for this file.
+Marker 4807 accepts the case and points Back the Way You Came.
+Marker 4807 opens nothing for people who think it is only a number.

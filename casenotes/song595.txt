@@ -1,0 +1,14 @@
+[CLUE] What To Listen For
+The location is River's Edge; it appears as the active scene, not just background.
+Wool Scarf is the physical evidence. Treat it as the object that should not be there.
+Kettle Boil is the sensory clue. It often arrives before the answer does.
+
+[CASE] Witness And Timeline
+Deputy is the primary witness and is withholding context.
+11:51 is the anchor time. Do not confuse it with song runtime or release order.
+Off the Road is an instruction inside the case, not scenery.
+
+[LOCK] Marker Lock
+Marker 5061 is the key number for this file.
+Marker 5061 accepts the case and points Off the Road.
+Marker 5061 opens nothing for people who think it is only a number.

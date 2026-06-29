@@ -1,0 +1,14 @@
+[CLUE] What To Listen For
+The location is Depot; it appears as the active scene, not just background.
+Silver Watch is the physical evidence. Treat it as the object that should not be there.
+Train Whistle is the sensory clue. It often arrives before the answer does.
+
+[CASE] Witness And Timeline
+Station Master is the primary witness and is withholding context.
+3:03 is the anchor time. Do not confuse it with song runtime or release order.
+North is an instruction inside the case, not scenery.
+
+[LOCK] Marker Lock
+Marker 55 is the key number for this file.
+Marker 55 accepts the case and points North.
+Marker 55 opens nothing for people who think it is only a number.

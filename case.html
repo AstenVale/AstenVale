@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Case File — The Asten Vale Archives</title>
+  <style>
+/* ASHTON VALE ARCHIVES — Main Stylesheet */
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+  --ink:         #1c120a;
+  --ink-faded:   #4a3728;
+  --paper:       #c9a97a;
+  --paper-dark:  #b8935e;
+  --paper-light: #ddc49a;
+  --folder-red:  #7a1f1f;
+  --stamp-red:   #8b1a1a;
+  --gold:        #c9960c;
+  --glow:        #f5a623;
+  --glow-dim:    rgba(245,166,35,0.15);
+  --bg:          #0c0a06;
+  --bg-mid:      #16120b;
+  --shadow:      rgba(0,0,0,0.7);
+  --font-type:   'Courier Prime','Courier New',Courier,monospace;
+  --font-header: 'Special Elite','Courier New',serif;
+}
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--ink);font-family:var(--font-type);font-size:15px;line-height:1.7;min-height:100vh;overflow-x:hidden;}
+
+body::before{
+  content:"";position:fixed;inset:0;
+  background:
+    radial-gradient(ellipse 60% 40% at 50% 0%, rgba(245,166,35,0.04) 0%, transparent 70%),
+    radial-gradient(ellipse 80% 60% at 50% 100%, rgba(12,8,4,0.8) 0%, transparent 70%),
+    linear-gradient(160deg, #0e0a06 0%, #1a130a 40%, #0c0a06 100%);
+  pointer-events:none;z-index:0;
+}
+body.unlocked::before{
+  background:
+    radial-gradient(ellipse 60% 40% at 50% 0%,rgba(245,166,35,0.12) 0%,transparent 70%),
+    radial-gradient(ellipse 80% 60% at 50% 100%,rgba(12,8,4,0.8) 0%,transparent 70%),
+    linear-gradient(160deg, #0e0a06 0%, #1a130a 40%, #0c0a06 100%);
+  transition:background 2s ease;
+}
+
+.site-wrapper{position:relative;z-index:1;max-width:900px;margin:0 auto;padding:0 1.25rem 4rem;}
+
+/* ── GLOBAL NAV — full-width, outside wrapper ── */
+.site-nav{
+  position:relative;z-index:10;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:1.25rem 2.5rem;
+}
+.nav-brand{
+  font-family:var(--font-header);font-size:0.75rem;letter-spacing:0.22em;
+  color:rgba(201,169,122,0.75);text-decoration:none;text-transform:uppercase;
+  line-height:1.3;
+}
+.nav-brand span{display:block;}
+.nav-logo{position:absolute;left:50%;transform:translateX(-50%);}
+.nav-logo svg{width:46px;height:46px;opacity:0.9;}
+.nav-links{display:flex;gap:2rem;align-items:center;}
+.nav-link{
+  font-family:var(--font-type);font-size:0.72rem;letter-spacing:0.18em;
+  color:rgba(201,169,122,0.7);text-decoration:none;text-transform:uppercase;
+  transition:color 0.2s;position:relative;
+}
+.nav-link:hover{color:var(--paper);}
+.nav-link.active{color:rgba(201,169,122,0.95);}
+.nav-link.active::after{
+  content:"";position:absolute;bottom:-3px;left:0;right:0;
+  height:1px;background:rgba(201,169,122,0.6);
+}
+#nav-progress{font-size:0.65rem;letter-spacing:0.1em;color:rgba(201,169,122,0.45);}
+
+/* ── CASE HERO ── */
+.case-hero{
+  position:relative;min-height:28vh;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  text-align:center;padding:2.5rem 2rem 3.5rem;overflow:hidden;
+}
+.case-hero::before{
+  content:"";position:absolute;inset:0;
+  background:
+    radial-gradient(ellipse 50% 70% at 50% 50%, rgba(245,166,35,0.04) 0%, transparent 70%),
+    linear-gradient(to bottom, rgba(12,8,4,0) 0%, rgba(12,8,4,0.3) 100%);
+  pointer-events:none;
+}
+.case-hero-eyebrow{
+  font-family:var(--font-type);font-size:0.68rem;letter-spacing:0.32em;
+  color:rgba(201,169,122,0.45);text-transform:uppercase;margin-bottom:0.5rem;
+  position:relative;
+}
+.case-hero-title{
+  font-family:var(--font-header);font-size:clamp(1.8rem,6vw,3.5rem);
+  letter-spacing:0.12em;color:rgba(220,190,140,0.95);text-transform:uppercase;
+  text-shadow:0 2px 30px rgba(0,0,0,0.8);margin-bottom:0.9rem;
+  position:relative;
+}
+.case-hero-rule{
+  width:50px;height:1px;background:rgba(201,169,122,0.3);margin:0 auto;
+  position:relative;
+}
+
+.file-jacket{background:var(--folder-red);border-radius:2px;padding:0.6rem 1.2rem 0.5rem;display:flex;align-items:center;justify-content:space-between;margin-bottom:0;position:relative;box-shadow:0 4px 20px rgba(0,0,0,0.5);}
+.file-jacket::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:rgba(255,255,255,0.08);}
+.jacket-label{font-family:var(--font-header);font-size:0.75rem;letter-spacing:0.2em;color:rgba(255,225,185,0.92);text-transform:uppercase;}
+.jacket-status{font-size:0.7rem;letter-spacing:0.15em;color:rgba(255,210,160,0.8);font-style:italic;}
+.jacket-status.solved{color:rgba(140,220,140,0.85);}
+
+.paper-panel{background:var(--paper);position:relative;padding:2.5rem 2.5rem 2rem;box-shadow:0 2px 0 var(--paper-dark),0 6px 30px rgba(0,0,0,0.6),inset 0 0 60px rgba(0,0,0,0.06);}
+.paper-panel::before{content:"";position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");pointer-events:none;border-radius:inherit;}
+.paper-panel::after{content:"";position:absolute;top:1.2rem;right:2rem;width:70px;height:70px;border-radius:50%;background:radial-gradient(circle,rgba(101,62,18,0.18) 30%,rgba(101,62,18,0.06) 60%,transparent 75%);pointer-events:none;}
+.paper-panel .margin-line{position:absolute;top:0;bottom:0;left:3.5rem;width:1px;background:rgba(180,100,80,0.3);}
+
+.case-header{text-align:center;margin-bottom:2rem;position:relative;}
+.archive-title{font-family:var(--font-header);font-size:clamp(1.2rem,4vw,1.8rem);letter-spacing:0.22em;color:var(--ink);text-transform:uppercase;line-height:1.2;}
+.case-number{font-family:var(--font-type);font-size:0.8rem;letter-spacing:0.25em;color:var(--ink-faded);margin:0.25rem 0;}
+.case-divider{border:none;border-top:1px solid var(--ink-faded);margin:0.75rem auto;width:70%;opacity:0.4;}
+.case-song-title{font-family:var(--font-header);font-size:clamp(1rem,3vw,1.3rem);letter-spacing:0.1em;color:var(--ink);font-style:italic;}
+.case-meta{font-size:0.72rem;letter-spacing:0.15em;color:var(--ink-faded);margin-top:0.3rem;}
+
+.wax-seal-wrap{position:absolute;top:-1rem;right:2rem;z-index:10;}
+#wax-seal{width:60px;height:60px;background:radial-gradient(circle,#a31c1c 40%,#6b1111 100%);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.4rem;box-shadow:0 2px 8px rgba(0,0,0,0.5);transition:transform 0.3s ease,opacity 0.5s ease;}
+#wax-seal.breaking{animation:seal-shake 0.5s ease;}
+#wax-seal.broken{transform:scale(1.1) rotate(15deg);opacity:0.4;filter:blur(0.5px);}
+@keyframes seal-shake{0%,100%{transform:rotate(0deg);}20%{transform:rotate(-8deg) scale(1.05);}40%{transform:rotate(6deg) scale(1.08);}60%{transform:rotate(-4deg) scale(1.04);}80%{transform:rotate(3deg) scale(1.06);}}
+
+#lantern-glow{position:fixed;top:0;left:50%;transform:translateX(-50%);width:400px;height:200px;background:radial-gradient(ellipse,rgba(245,166,35,0.0) 0%,transparent 70%);pointer-events:none;z-index:0;transition:background 2s ease;}
+#lantern-glow.bright{background:radial-gradient(ellipse,rgba(245,166,35,0.18) 0%,transparent 70%);}
+
+.song-player{background:rgba(0,0,0,0.08);border:1px dashed rgba(100,60,20,0.4);border-radius:2px;padding:1.5rem;margin-bottom:2rem;display:flex;gap:1.5rem;align-items:center;}
+.player-artwork{width:80px;height:80px;background:rgba(0,0,0,0.15);border:1px solid rgba(100,60,20,0.3);border-radius:2px;display:flex;align-items:center;justify-content:center;font-size:2rem;flex-shrink:0;color:rgba(100,60,20,0.4);}
+.player-controls{display:flex;flex-direction:column;gap:0.5rem;flex:1;}
+.player-title{font-family:var(--font-header);font-size:0.95rem;letter-spacing:0.1em;color:var(--ink);}
+.player-sub{font-size:0.7rem;letter-spacing:0.12em;color:var(--ink-faded);}
+.player-btns{display:flex;gap:0.75rem;margin-top:0.25rem;}
+.player-btn{font-family:var(--font-type);font-size:0.68rem;letter-spacing:0.12em;color:var(--ink-faded);background:rgba(0,0,0,0.08);border:1px solid rgba(100,60,20,0.35);padding:0.3rem 0.75rem;cursor:pointer;text-transform:uppercase;transition:background 0.2s,color 0.2s;}
+.player-btn:hover{background:rgba(0,0,0,0.14);color:var(--ink);}
+
+.investigation-panel{margin-bottom:1.5rem;}
+.panel-heading{font-family:var(--font-header);font-size:1rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--ink);margin-bottom:0.3rem;border-bottom:1px solid rgba(100,60,20,0.3);padding-bottom:0.4rem;}
+.panel-subtext{font-size:0.78rem;color:var(--ink-faded);font-style:italic;margin-bottom:1.5rem;line-height:1.6;}
+
+#fields-container{display:grid;grid-template-columns:1fr 1fr;gap:1rem 2rem;}
+@media(max-width:580px){#fields-container{grid-template-columns:1fr;}.paper-panel{padding:1.75rem 1.25rem 1.5rem;}}
+.field-group{display:flex;flex-direction:column;gap:0.3rem;}
+.field-label{font-size:0.68rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--ink-faded);display:flex;align-items:center;gap:0.4rem;}
+.field-number{color:var(--stamp-red);font-size:0.6rem;}
+.field-input{font-family:var(--font-type);font-size:0.9rem;color:var(--ink);background:rgba(255,255,255,0.25);border:none;border-bottom:1px solid rgba(100,60,20,0.5);padding:0.4rem 0.5rem 0.35rem;width:100%;outline:none;transition:border-color 0.2s,background 0.2s;letter-spacing:0.04em;}
+.field-input::placeholder{color:rgba(100,60,20,0.4);font-style:italic;font-size:0.8rem;}
+.field-input:focus{border-bottom-color:var(--ink);background:rgba(255,255,255,0.35);}
+.field-input:disabled{opacity:0.55;cursor:not-allowed;}
+.field-input.solved-input{border-bottom-color:rgba(60,100,60,0.4);}
+
+.cabinet-anim-wrap{display:flex;justify-content:center;margin:1.5rem 0;}
+.cabinet-anim{font-size:2.5rem;transition:transform 0.3s ease;display:inline-block;}
+.cabinet-anim.searching{animation:cabinet-rattle 0.4s ease infinite alternate;}
+.cabinet-anim.open{animation:cabinet-open 0.6s ease forwards;}
+.cabinet-anim.closed{transform:none;}
+@keyframes cabinet-rattle{from{transform:translateX(-3px) rotate(-1deg);}to{transform:translateX(3px) rotate(1deg);}}
+@keyframes cabinet-open{0%{transform:scaleY(1);}30%{transform:scaleY(0.9) scaleX(1.05);}60%{transform:scaleY(1.05) scaleX(0.97);}100%{transform:scaleY(1) translateY(-6px);filter:drop-shadow(0 0 12px rgba(245,166,35,0.5));}}
+
+.submit-wrap{display:flex;justify-content:center;margin-top:2rem;margin-bottom:1rem;}
+#submit-btn{font-family:var(--font-header);font-size:0.9rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--paper-light);background:var(--folder-red);border:2px solid rgba(255,200,150,0.2);padding:0.85rem 2.5rem;cursor:pointer;transition:background 0.2s,border-color 0.2s,transform 0.15s;box-shadow:0 3px 12px rgba(0,0,0,0.4);}
+#submit-btn:hover:not(:disabled){background:#8b2323;border-color:rgba(255,200,150,0.35);transform:translateY(-1px);box-shadow:0 5px 16px rgba(0,0,0,0.5);}
+#submit-btn:active:not(:disabled){transform:translateY(0);}
+#submit-btn:disabled{opacity:0.4;cursor:not-allowed;}
+
+.response-panel{display:none;text-align:center;padding:1.25rem 1rem;margin-top:1rem;border-top:1px solid rgba(100,60,20,0.3);animation:fade-in 0.4s ease;}
+.response-panel.visible{display:block;}
+.response-panel.fail .response-headline{color:var(--ink-faded);}
+.response-panel.success .response-headline{color:#2c5a2c;}
+.response-panel.searching .response-headline{color:var(--ink-faded);font-style:italic;}
+.response-icon{font-size:1.8rem;margin-bottom:0.5rem;display:block;}
+.unlock-icon{color:var(--gold);text-shadow:0 0 20px rgba(245,166,35,0.6);animation:pulse-glow 1.5s ease infinite alternate;}
+@keyframes pulse-glow{from{text-shadow:0 0 10px rgba(245,166,35,0.4);}to{text-shadow:0 0 30px rgba(245,166,35,0.9);}}
+.response-headline{font-family:var(--font-header);font-size:1rem;letter-spacing:0.18em;text-transform:uppercase;margin-bottom:0.3rem;}
+.response-sub{font-size:0.78rem;color:var(--ink-faded);font-style:italic;margin-bottom:0.15rem;}
+
+#lore-panel{margin-top:2.5rem;border-top:2px solid rgba(100,60,20,0.3);padding-top:2rem;}
+#lore-panel.hidden{display:none;}
+.lore-header{text-align:center;margin-bottom:1.5rem;}
+.recovered-stamp{display:inline-block;font-family:var(--font-header);font-size:0.75rem;letter-spacing:0.25em;color:var(--stamp-red);border:2px solid var(--stamp-red);padding:0.3rem 0.9rem;text-transform:uppercase;transform:rotate(-1.5deg);margin-bottom:0.75rem;opacity:0.85;}
+.lore-title{font-family:var(--font-header);font-size:1.15rem;letter-spacing:0.12em;color:var(--ink);margin-top:0.5rem;margin-bottom:0.2rem;}
+.lore-date{font-size:0.72rem;letter-spacing:0.12em;color:var(--ink-faded);margin-top:0.25rem;}
+.lore-dept{font-size:0.72rem;letter-spacing:0.12em;color:var(--ink-faded);margin-top:0.15rem;margin-bottom:0.5rem;}
+.lore-body{font-family:var(--font-type);font-size:0.88rem;line-height:2;color:var(--ink);}
+.lore-separator{text-align:center;color:rgba(100,60,20,0.35);font-size:0.7rem;letter-spacing:0.1em;margin-bottom:1rem;}
+.lore-line{display:block;margin-bottom:1.1em;}
+.lore-footer{text-align:center;margin-top:1.5rem;}
+.lore-end-marker{font-size:0.7rem;letter-spacing:0.2em;color:rgba(100,60,20,0.45);text-transform:uppercase;}
+
+.lore-cta{margin-top:2.5rem;border-top:1px solid rgba(100,60,20,0.25);padding-top:2rem;animation:fade-in 0.6s ease;}
+.lore-cta-inner{background:rgba(0,0,0,0.06);border:1px solid rgba(100,60,20,0.25);padding:1.75rem 2rem;text-align:center;position:relative;}
+.lore-cta-inner::before,.lore-cta-inner::after{content:"✦";position:absolute;font-size:0.5rem;color:rgba(100,60,20,0.3);}
+.lore-cta-inner::before{top:0.5rem;left:0.75rem;}
+.lore-cta-inner::after{bottom:0.5rem;right:0.75rem;}
+.lore-cta-label{font-family:var(--font-header);font-size:1rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--ink);margin-bottom:0.4rem;}
+.lore-cta-sub{font-size:0.8rem;color:var(--ink-faded);font-style:italic;margin-bottom:1.25rem;line-height:1.6;}
+.lore-cta-btn{display:inline-block;font-family:var(--font-header);font-size:0.8rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--paper-light);background:var(--folder-red);border:2px solid rgba(255,200,150,0.2);padding:0.75rem 2rem;text-decoration:none;transition:background 0.2s,border-color 0.2s,transform 0.15s,box-shadow 0.2s;box-shadow:0 3px 12px rgba(0,0,0,0.35);}
+.lore-cta-btn:hover{background:#8b2323;border-color:rgba(255,200,150,0.35);transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,0,0,0.45);}
+
+#collectible-overlay{position:fixed;inset:0;background:rgba(5,4,2,0.92);display:flex;align-items:center;justify-content:center;z-index:1000;opacity:0;transition:opacity 0.4s ease;}
+#collectible-overlay.hidden{display:none;}
+#collectible-overlay.visible{opacity:1;}
+#collectible-content{background:var(--paper);max-width:400px;width:90%;padding:2.5rem 2rem;text-align:center;position:relative;box-shadow:0 0 60px rgba(245,166,35,0.2),0 0 0 1px rgba(201,150,12,0.3);animation:reward-appear 0.5s ease;}
+@keyframes reward-appear{from{transform:scale(0.85) translateY(20px);opacity:0;}to{transform:scale(1) translateY(0);opacity:1;}}
+.reward-pre{font-size:0.65rem;letter-spacing:0.3em;text-transform:uppercase;color:var(--ink-faded);margin-bottom:1rem;}
+.reward-symbol{font-size:4rem;margin-bottom:0.75rem;display:block;filter:drop-shadow(0 0 20px rgba(245,166,35,0.6));animation:float-item 2s ease-in-out infinite alternate;}
+@keyframes float-item{from{transform:translateY(0) rotate(-2deg);}to{transform:translateY(-8px) rotate(2deg);}}
+.reward-name{font-family:var(--font-header);font-size:1.3rem;letter-spacing:0.1em;color:var(--ink);margin-bottom:0.5rem;}
+.reward-divider{color:rgba(100,60,20,0.4);font-size:0.7rem;letter-spacing:0.1em;margin-bottom:1rem;}
+.reward-desc{font-size:0.82rem;color:var(--ink-faded);line-height:1.7;font-style:italic;margin-bottom:1.5rem;}
+.reward-close{font-family:var(--font-header);font-size:0.75rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--paper-light);background:var(--folder-red);border:none;padding:0.7rem 1.5rem;cursor:pointer;transition:background 0.2s;}
+.reward-close:hover{background:#8b2323;}
+
+#object-modal{position:fixed;inset:0;background:rgba(5,4,2,0.88);display:flex;align-items:center;justify-content:center;z-index:900;opacity:0;transition:opacity 0.3s ease;}
+#object-modal.hidden{display:none;}
+#object-modal.visible{opacity:1;}
+.modal-box{background:var(--paper);max-width:440px;width:90%;padding:2rem;position:relative;box-shadow:0 0 40px rgba(0,0,0,0.6);}
+.modal-close{position:absolute;top:0.75rem;right:0.75rem;font-size:0.7rem;letter-spacing:0.15em;color:var(--ink-faded);background:none;border:1px solid rgba(100,60,20,0.3);padding:0.2rem 0.5rem;cursor:pointer;text-transform:uppercase;font-family:var(--font-type);}
+
+#casenotes-modal{position:fixed;inset:0;background:rgba(5,4,2,0.88);display:flex;align-items:center;justify-content:center;z-index:950;opacity:0;transition:opacity 0.28s ease;backdrop-filter:blur(3px);padding:1.5rem;}
+#casenotes-modal.hidden{display:none;}
+#casenotes-modal.visible{opacity:1;}
+.casenotes-box{background:var(--paper);width:100%;max-width:540px;max-height:88vh;display:flex;flex-direction:column;position:relative;box-shadow:0 0 0 1px rgba(100,60,20,0.25),0 24px 70px rgba(0,0,0,0.7);animation:streaming-drop 0.3s ease;}
+.casenotes-close{position:absolute;top:0.6rem;right:0.75rem;font-family:var(--font-type);font-size:0.65rem;letter-spacing:0.1em;color:var(--ink-faded);background:none;border:1px solid rgba(100,60,20,0.25);padding:0.2rem 0.5rem;cursor:pointer;z-index:2;transition:border-color 0.2s,color 0.2s;}
+.casenotes-close:hover{color:var(--ink);border-color:rgba(100,60,20,0.5);}
+.casenotes-header{padding:1.5rem 1.75rem 1rem;text-align:center;border-bottom:1px solid rgba(100,60,20,0.2);flex-shrink:0;position:relative;z-index:1;}
+.casenotes-stamp{display:inline-block;font-family:var(--font-header);font-size:0.62rem;letter-spacing:0.28em;color:var(--stamp-red);border:1px solid var(--stamp-red);padding:0.15rem 0.6rem;text-transform:uppercase;transform:rotate(1deg);opacity:0.8;margin-bottom:0.6rem;}
+.casenotes-title{font-family:var(--font-header);font-size:1.05rem;letter-spacing:0.1em;color:var(--ink);margin-bottom:0.15rem;}
+.casenotes-sub{font-size:0.72rem;letter-spacing:0.14em;color:var(--ink-faded);font-style:italic;}
+.casenotes-scroll{overflow-y:auto;padding:1.5rem 1.75rem 1.75rem;flex:1;position:relative;z-index:1;}
+.casenotes-scroll::-webkit-scrollbar{width:4px;}
+.casenotes-scroll::-webkit-scrollbar-thumb{background:rgba(100,60,20,0.25);border-radius:2px;}
+.cn-section{margin-bottom:1.75rem;padding-bottom:1.5rem;border-bottom:1px dashed rgba(100,60,20,0.2);}
+.cn-section:last-of-type{border-bottom:none;margin-bottom:1rem;}
+.cn-heading{font-family:var(--font-header);font-size:0.78rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--ink);margin-bottom:0.75rem;display:flex;align-items:center;gap:0.5rem;}
+.cn-icon{font-size:1rem;}
+.cn-list{list-style:none;display:flex;flex-direction:column;gap:0.75rem;}
+.cn-entry{font-family:var(--font-type);font-size:0.84rem;color:var(--ink-faded);line-height:1.75;padding-left:1.1rem;position:relative;}
+.cn-entry::before{content:"›";position:absolute;left:0;color:rgba(100,60,20,0.4);font-size:0.75rem;}
+.cn-progress-note{display:flex;justify-content:space-between;align-items:center;padding:0.75rem 1rem;background:rgba(0,0,0,0.06);border:1px solid rgba(100,60,20,0.18);margin-top:0.5rem;}
+.cn-progress-label{font-size:0.65rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--ink-faded);}
+.cn-progress-value{font-family:var(--font-header);font-size:0.75rem;letter-spacing:0.1em;color:var(--stamp-red);}
+
+#lyrics-modal{position:fixed;inset:0;background:rgba(5,4,2,0.88);display:flex;align-items:center;justify-content:center;z-index:950;opacity:0;transition:opacity 0.28s ease;backdrop-filter:blur(3px);padding:1.5rem;}
+#lyrics-modal.hidden{display:none;}
+#lyrics-modal.visible{opacity:1;}
+.lyrics-box{background:var(--paper);width:100%;max-width:520px;max-height:85vh;display:flex;flex-direction:column;position:relative;box-shadow:0 0 0 1px rgba(100,60,20,0.25),0 24px 70px rgba(0,0,0,0.7);animation:streaming-drop 0.3s ease;}
+.lyrics-close{position:absolute;top:0.6rem;right:0.75rem;font-family:var(--font-type);font-size:0.65rem;letter-spacing:0.1em;color:var(--ink-faded);background:none;border:1px solid rgba(100,60,20,0.25);padding:0.2rem 0.5rem;cursor:pointer;z-index:2;transition:border-color 0.2s,color 0.2s;}
+.lyrics-close:hover{color:var(--ink);border-color:rgba(100,60,20,0.5);}
+.lyrics-header{padding:1.5rem 1.75rem 1rem;text-align:center;border-bottom:1px solid rgba(100,60,20,0.2);flex-shrink:0;position:relative;z-index:1;}
+.lyrics-stamp{display:inline-block;font-family:var(--font-header);font-size:0.62rem;letter-spacing:0.28em;color:var(--stamp-red);border:1px solid var(--stamp-red);padding:0.15rem 0.6rem;text-transform:uppercase;transform:rotate(-1deg);opacity:0.8;margin-bottom:0.6rem;}
+.lyrics-song-title{font-family:var(--font-header);font-size:1.05rem;letter-spacing:0.1em;color:var(--ink);margin-bottom:0.15rem;}
+.lyrics-artist{font-size:0.72rem;letter-spacing:0.14em;color:var(--ink-faded);text-transform:uppercase;}
+.lyrics-scroll{overflow-y:auto;padding:1.5rem 2rem 2rem;flex:1;position:relative;z-index:1;}
+.lyrics-scroll::-webkit-scrollbar{width:4px;}
+.lyrics-scroll::-webkit-scrollbar-thumb{background:rgba(100,60,20,0.25);border-radius:2px;}
+.lyrics-section{margin-bottom:2.25rem;}
+.lyrics-section-label{font-size:0.62rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--stamp-red);margin-bottom:0.65rem;opacity:0.75;}
+.lyrics-line{font-family:var(--font-type);font-size:0.9rem;color:var(--ink);line-height:2;letter-spacing:0.01em;margin-bottom:0.15em;}
+.lyrics-chorus .lyrics-line{font-weight:700;}
+.lyrics-bridge .lyrics-line{font-style:italic;color:var(--ink-faded);}
+.lyrics-outro .lyrics-line{color:var(--ink-faded);}
+
+#streaming-modal{position:fixed;inset:0;background:rgba(5,4,2,0.85);display:flex;align-items:center;justify-content:center;z-index:950;opacity:0;transition:opacity 0.28s ease;backdrop-filter:blur(3px);}
+#streaming-modal.hidden{display:none;}
+#streaming-modal.visible{opacity:1;}
+.streaming-box{background:var(--paper);width:90%;max-width:360px;padding:2.25rem 2rem 2rem;position:relative;text-align:center;box-shadow:0 0 0 1px rgba(100,60,20,0.25),0 20px 60px rgba(0,0,0,0.65),inset 0 0 40px rgba(0,0,0,0.04);animation:streaming-drop 0.3s ease;}
+@keyframes streaming-drop{from{transform:translateY(-16px) scale(0.96);opacity:0;}to{transform:translateY(0) scale(1);opacity:1;}}
+.streaming-close{position:absolute;top:0.6rem;right:0.75rem;font-family:var(--font-type);font-size:0.65rem;letter-spacing:0.1em;color:var(--ink-faded);background:none;border:1px solid rgba(100,60,20,0.25);padding:0.2rem 0.45rem;cursor:pointer;transition:border-color 0.2s,color 0.2s;}
+.streaming-close:hover{color:var(--ink);border-color:rgba(100,60,20,0.5);}
+.streaming-icon{font-size:2.4rem;display:block;margin-bottom:0.6rem;filter:drop-shadow(0 0 10px rgba(245,166,35,0.4));}
+.streaming-title{font-family:var(--font-header);font-size:1rem;letter-spacing:0.1em;color:var(--ink);margin-bottom:0.2rem;}
+.streaming-sub{font-size:0.7rem;letter-spacing:0.14em;color:var(--ink-faded);text-transform:uppercase;margin-bottom:1.5rem;}
+.streaming-links{display:flex;flex-direction:column;gap:0.6rem;}
+.streaming-btn{display:flex;align-items:center;gap:0.85rem;padding:0.7rem 1.1rem;font-family:var(--font-header);font-size:0.78rem;letter-spacing:0.14em;text-decoration:none;border:1px solid transparent;transition:transform 0.15s ease,filter 0.15s ease,border-color 0.15s;text-align:left;position:relative;}
+.streaming-btn:hover{transform:translateX(3px);filter:brightness(1.08);}
+.sb-icon{width:22px;height:22px;flex-shrink:0;display:flex;align-items:center;justify-content:center;}
+.sb-icon svg{width:100%;height:100%;}
+.streaming-btn.spotify{background:#1a3a1a;color:#7dc47d;border-color:rgba(125,196,125,0.2);}
+.streaming-btn.apple{background:#2a1a1a;color:#c47d7d;border-color:rgba(196,125,125,0.2);}
+.streaming-btn.youtube{background:#2a1a1a;color:#c47d7d;border-color:rgba(196,125,125,0.2);}
+.streaming-btn.amazon{background:#1a2a2a;color:#7dc4c4;border-color:rgba(125,196,196,0.2);}
+
+.hidden{display:none !important;}
+@keyframes fade-in{from{opacity:0;transform:translateY(4px);}to{opacity:1;transform:translateY(0);}}
+::-webkit-scrollbar{width:6px;}
+::-webkit-scrollbar-track{background:#0d0b07;}
+::-webkit-scrollbar-thumb{background:rgba(201,169,122,0.2);border-radius:3px;}
+::-webkit-scrollbar-thumb:hover{background:rgba(201,169,122,0.35);}
+  </style>
+</head>
+<body data-page="investigation">
+
+  <div id="lantern-glow" aria-hidden="true"></div>
+
+  <nav class="site-nav">
+    <a href="index.html" class="nav-brand">
+      <span>Asten Vale</span>
+      <span>Archives</span>
+    </a>
+
+    <div class="nav-logo">
+      <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="30" cy="30" r="28" stroke="rgba(201,169,122,0.6)" stroke-width="1.2"/>
+        <circle cx="30" cy="30" r="22" stroke="rgba(201,169,122,0.35)" stroke-width="0.8"/>
+        <line x1="30" y1="4" x2="30" y2="10" stroke="rgba(201,169,122,0.7)" stroke-width="1.5"/>
+        <polygon points="30,13 23,26 37,26" fill="rgba(201,169,122,0.82)"/>
+        <polygon points="30,18 21,33 39,33" fill="rgba(201,169,122,0.82)"/>
+        <rect x="27" y="33" width="6" height="5" fill="rgba(201,169,122,0.7)"/>
+        <line x1="30" y1="50" x2="30" y2="56" stroke="rgba(201,169,122,0.5)" stroke-width="1"/>
+        <line x1="4" y1="30" x2="10" y2="30" stroke="rgba(201,169,122,0.5)" stroke-width="1"/>
+        <line x1="50" y1="30" x2="56" y2="30" stroke="rgba(201,169,122,0.5)" stroke-width="1"/>
+      </svg>
+    </div>
+
+    <div class="nav-links">
+      <a href="index.html"     class="nav-link active">Archive</a>
+      <a href="completed.html" class="nav-link">Completed</a>
+      <a href="progress.html"  class="nav-link">Progress</a>
+      <a href="about.html"     class="nav-link">About</a>
+      <a href="join.html"      class="nav-link">Join</a>
+    </div>
+  </nav>
+
+  <div class="case-hero">
+    <p class="case-hero-eyebrow" id="hero-case-number">Case File</p>
+    <h1 class="case-hero-title" id="hero-case-title">Loading…</h1>
+    <div class="case-hero-rule"></div>
+  </div>
+
+  <div class="site-wrapper">
+
+    <div class="file-jacket">
+      <span class="jacket-label" id="jacket-label">Asten Vale Sheriff's Dept.</span>
+      <span class="jacket-status" id="case-status">OPEN INVESTIGATION</span>
+    </div>
+
+    <div class="paper-panel">
+      <div class="margin-line" aria-hidden="true"></div>
+
+      <div class="wax-seal-wrap" aria-hidden="true">
+        <div id="wax-seal">🎯</div>
+      </div>
+
+      <header class="case-header">
+        <div class="archive-title">The Asten Vale Archives</div>
+        <div class="case-number" id="case-number">CASE FILE —</div>
+        <hr class="case-divider" />
+        <div class="case-song-title" id="case-title">Loading case file...</div>
+        <div class="case-meta">
+          DIFFICULTY: <span id="case-difficulty">—</span> &nbsp;|&nbsp; PROGRESS:
+          <span id="header-progress">0%</span>
+        </div>
+      </header>
+
+      <div class="song-player">
+        <div class="player-artwork">🎵</div>
+        <div class="player-controls">
+          <div class="player-title" id="player-title">—</div>
+          <div class="player-sub">Asten Vale &nbsp;·&nbsp; 2024</div>
+          <div class="player-btns">
+            <button class="player-btn" onclick="openModal('streaming-modal')">▶ Play</button>
+            <button class="player-btn" onclick="openModal('lyrics-modal')">Lyrics</button>
+            <button class="player-btn" onclick="openModal('casenotes-modal')">Case Notes</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── CASE NOTES MODAL ── -->
+      <div id="casenotes-modal" class="hidden" role="dialog" aria-modal="true" aria-label="Case notes">
+        <div class="casenotes-box">
+          <button class="casenotes-close" onclick="closeModal('casenotes-modal')">✕ Close</button>
+          <div class="casenotes-header">
+            <div class="casenotes-stamp">Investigator Notes</div>
+            <div class="casenotes-title" id="cn-title">Case File</div>
+            <div class="casenotes-sub"   id="cn-sub">—</div>
+          </div>
+          <div class="casenotes-scroll" id="casenotes-body"></div>
+        </div>
+      </div>
+
+      <!-- ── LYRICS MODAL ── -->
+      <div id="lyrics-modal" class="hidden" role="dialog" aria-modal="true" aria-label="Song lyrics">
+        <div class="lyrics-box">
+          <button class="lyrics-close" onclick="closeModal('lyrics-modal')">✕ Close</button>
+          <div class="lyrics-header">
+            <div class="lyrics-stamp">Official Lyrics</div>
+            <div class="lyrics-song-title" id="lyr-title">—</div>
+            <div class="lyrics-artist">Asten Vale</div>
+          </div>
+          <div class="lyrics-scroll">
+            <div id="lyrics-body"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── STREAMING MODAL ── -->
+      <div id="streaming-modal" class="hidden" role="dialog" aria-modal="true" aria-label="Listen on streaming">
+        <div class="streaming-box">
+          <button class="streaming-close" onclick="closeModal('streaming-modal')">✕</button>
+          <span class="streaming-icon">🎪</span>
+          <div class="streaming-title" id="stream-title">—</div>
+          <div class="streaming-sub">Choose where to listen</div>
+          <div class="streaming-links">
+            <a class="streaming-btn spotify" id="stream-spotify" href="https://open.spotify.com" target="_blank" rel="noopener">
+              <span class="sb-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.516 17.318c-.22.356-.676.47-1.032.25-2.828-1.727-6.39-2.117-10.586-1.16-.405.094-.808-.16-.9-.564-.094-.405.16-.808.564-.9 4.59-1.05 8.523-.598 11.7 1.342.356.22.47.676.25 1.032zm1.47-3.27c-.275.445-.857.585-1.302.31-3.236-1.988-8.167-2.564-11.99-1.404-.496.15-1.02-.13-1.17-.625-.15-.496.13-1.02.625-1.17 4.37-1.326 9.8-.683 13.528 1.6.445.275.585.857.31 1.302zm.127-3.405c-3.88-2.304-10.28-2.516-13.984-1.392-.593.18-1.22-.154-1.4-.747-.18-.593.154-1.22.747-1.4 4.254-1.29 11.328-1.042 15.798 1.61.534.317.71 1.004.393 1.538-.317.534-1.004.71-1.538.393l-.016-.002z"/></svg></span>
+              Spotify
+            </a>
+            <a class="streaming-btn apple" id="stream-apple" href="https://music.apple.com" target="_blank" rel="noopener">
+              <span class="sb-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.994 6.124a9.23 9.23 0 0 0-.24-2.19c-.317-1.31-1.062-2.31-2.18-3.043a5.022 5.022 0 0 0-1.877-.726 10.496 10.496 0 0 0-1.564-.15c-.04-.003-.083-.01-.124-.013H5.986c-.152.01-.303.017-.455.026C4.786.07 4.043.15 3.34.428 2.004.958 1.04 1.88.475 3.208A7.37 7.37 0 0 0 .09 4.858a10.278 10.278 0 0 0-.09 1.399v11.486c.01.44.04.88.103 1.316.18 1.28.717 2.37 1.666 3.236a5.098 5.098 0 0 0 2.456 1.166c.48.09.968.13 1.46.15.04.003.082.006.122.006h11.94c.37-.006.742-.022 1.11-.065a5.497 5.497 0 0 0 2.026-.608c1.268-.7 2.1-1.758 2.46-3.17.14-.535.196-1.082.212-1.632.006-.14.01-.28.01-.42V6.124zm-8.056 6.507a3.04 3.04 0 0 1-1.294 2.492 2.83 2.83 0 0 1-1.683.456 2.848 2.848 0 0 1-2.848-2.848 2.848 2.848 0 0 1 2.848-2.847c.568 0 1.095.166 1.537.45l.001-.001V6.26l-5.132 1.167v6.724a2.85 2.85 0 0 1-2.848 2.847 2.848 2.848 0 0 1 0-5.695c.568 0 1.094.166 1.537.45V8.54L15.938 7v5.63z"/></svg></span>
+              Apple Music
+            </a>
+            <a class="streaming-btn youtube" id="stream-youtube" href="https://music.youtube.com" target="_blank" rel="noopener">
+              <span class="sb-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg></span>
+              YouTube Music
+            </a>
+            <a class="streaming-btn amazon" id="stream-amazon" href="https://music.amazon.com" target="_blank" rel="noopener">
+              <span class="sb-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.958 10.09c0 1.232.029 2.256-.59 3.351-.502.891-1.301 1.438-2.186 1.438-1.214 0-1.922-.924-1.922-2.292 0-2.692 2.415-3.182 4.698-3.182v.685zm3.186 7.705c-.209.189-.512.201-.745.075-1.052-.872-1.238-1.276-1.814-2.106-1.734 1.767-2.962 2.297-5.209 2.297-2.66 0-4.731-1.641-4.731-4.925 0-2.565 1.391-4.309 3.37-5.164 1.715-.754 4.11-.891 5.942-1.099v-.41c0-.753.06-1.642-.384-2.294-.385-.579-1.124-.82-1.775-.82-1.205 0-2.277.618-2.54 1.897-.054.285-.261.567-.549.582l-3.061-.333c-.259-.056-.548-.266-.472-.66C5.97 2.012 8.775 1.07 11.29 1.07c1.285 0 2.965.341 3.979 1.313 1.285 1.199 1.162 2.796 1.162 4.535v4.107c0 1.235.512 1.776.994 2.44.169.235.206.516-.01.692-.54.449-1.499 1.287-2.027 1.756l-.034-.118z"/></svg></span>
+              Amazon Music
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── INVESTIGATION FORM ── -->
+      <section class="investigation-panel">
+        <h2 class="panel-heading">Record Your Findings</h2>
+        <p class="panel-subtext">
+          Investigators often notice different details.<br>
+          Record what you believe this case contains.
+        </p>
+
+        <div id="fields-container"></div>
+
+        <div class="cabinet-anim-wrap" aria-hidden="true">
+          <span class="cabinet-anim closed" id="cabinet-anim">🗄</span>
+        </div>
+
+        <div class="submit-wrap">
+          <button id="submit-btn" onclick="checkAnswers()">Compare to Archive</button>
+        </div>
+
+        <div class="response-panel" id="response-panel" aria-live="polite"></div>
+      </section>
+
+      <section id="lore-panel" class="hidden" aria-label="Recovered File"></section>
+
+    </div><!-- /paper-panel -->
+  </div><!-- /site-wrapper -->
+
+  <!-- ── COLLECTIBLE OVERLAY ── -->
+  <div id="collectible-overlay" class="hidden" role="dialog" aria-modal="true" aria-label="Evidence Recovered">
+    <div id="collectible-content"></div>
+  </div>
+
+  <!-- ── OBJECT MODAL ── -->
+  <div id="object-modal" class="hidden" role="dialog" aria-modal="true" aria-label="Evidence Detail">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal('object-modal')">✕ Close</button>
+      <div id="object-modal-body"></div>
+    </div>
+  </div>
+
+  <!-- ── FOOTER ── -->
+  <footer style="background:var(--bg);padding:1.5rem 2.5rem;display:flex;align-items:center;justify-content:space-between;border-top:1px solid rgba(201,169,122,0.08);position:relative;z-index:1;">
+    <div style="display:flex;align-items:center;gap:0.85rem;">
+      <svg width="28" height="28" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" style="opacity:0.55;flex-shrink:0">
+        <circle cx="30" cy="30" r="27" stroke="rgba(201,169,122,0.5)" stroke-width="1.2"/>
+        <polygon points="30,10 25,22 35,22" fill="rgba(201,169,122,0.6)"/>
+        <polygon points="30,16 21,30 39,30" fill="rgba(201,169,122,0.6)"/>
+        <rect x="27" y="30" width="6" height="5" fill="rgba(201,169,122,0.55)"/>
+      </svg>
+      <span style="font-family:var(--font-header);font-size:0.68rem;letter-spacing:0.18em;color:rgba(201,169,122,0.45);text-transform:uppercase;line-height:1.4;">Truth is not given.<br>It is discovered.</span>
+    </div>
+    <span style="font-family:var(--font-type);font-size:0.65rem;letter-spacing:0.1em;color:rgba(201,169,122,0.3);text-transform:uppercase;">© 2025 Ashton Vale Archives</span>
+    <a href="index.html" style="font-family:var(--font-type);font-size:0.68rem;letter-spacing:0.15em;color:rgba(201,169,122,0.55);text-transform:uppercase;text-decoration:underline;text-underline-offset:3px;">Back to Archive</a>
+  </footer>
+
+  <script>
+  // ── MODAL OPEN / CLOSE ────────────────────────────────────────────────────
+  // CSS uses .hidden (display:none) + .visible (opacity:1) pattern
+  function openModal(id) {
+    var el = document.getElementById(id);
+    el.classList.remove('hidden');
+    // Defer adding .visible so the opacity transition fires
+    requestAnimationFrame(function() { el.classList.add('visible'); });
+  }
+
+  function closeModal(id) {
+    var el = document.getElementById(id);
+    el.classList.remove('visible');
+    // Wait for opacity transition then hide
+    el.addEventListener('transitionend', function hide() {
+      el.classList.add('hidden');
+      el.removeEventListener('transitionend', hide);
+    });
+  }
+
+  // Close on backdrop click
+  ['streaming-modal','lyrics-modal','casenotes-modal'].forEach(function(id) {
+    document.getElementById(id).addEventListener('click', function(e) {
+      if (e.target === this) closeModal(id);
+    });
+  });
+
+  // ── GAME STATE ────────────────────────────────────────────────────────────
+  var SONG = null;
+
+  // ── INIT ──────────────────────────────────────────────────────────────────
+  window.initCase = function(d) {
+    SONG = d;
+    renderFields(d);
+    renderCaseNotes(d);
+    renderLyrics(d);
+    loadSavedProgress(d);
+  };
+
+  // ── RENDER FIELDS ─────────────────────────────────────────────────────────
+  function renderFields(d) {
+    var container = document.getElementById('fields-container');
+    container.innerHTML = '';
+    (d.fields || []).forEach(function(f, i) {
+      var group = document.createElement('div');
+      group.className = 'field-group';
+
+      var label = document.createElement('label');
+      label.className = 'field-label';
+      label.setAttribute('for', 'field-' + f.id);
+      label.innerHTML =
+        '<span class="field-number">0' + (i + 1) + '</span>' +
+        (f.icon ? ' ' + f.icon + ' ' : ' ') + f.label;
+
+      var input = document.createElement('input');
+      input.className    = 'field-input';
+      input.id           = 'field-' + f.id;
+      input.type         = 'text';
+      input.placeholder  = f.placeholder || '';
+      input.autocomplete = 'off';
+      input.spellcheck   = false;
+      input.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter') checkAnswers();
+      });
+
+      group.appendChild(label);
+      group.appendChild(input);
+      container.appendChild(group);
+    });
+  }
+
+  // ── ANSWER CHECKING ───────────────────────────────────────────────────────
+  function norm(s) {
+    return String(s).toLowerCase().trim().replace(/\s+/g, ' ');
+  }
+
+  function checkAnswers() {
+    if (!SONG) return;
+    var correct = 0;
+    var total   = (SONG.fields || []).length;
+
+    // Cabinet rattle animation
+    var cab = document.getElementById('cabinet-anim');
+    cab.classList.remove('closed', 'open');
+    cab.classList.add('searching');
+
+    SONG.fields.forEach(function(f) {
+      var input = document.getElementById('field-' + f.id);
+      if (!input || !input.value.trim()) return;
+      var val      = norm(input.value);
+      var nospace  = val.replace(/\s+/g, '');
+      var accepted = (SONG.answers[f.id] || []).map(norm);
+
+      // Exact match or spaceless match
+      var isCorrect = accepted.indexOf(val) !== -1 || accepted.indexOf(nospace) !== -1;
+
+      // Word match: player typed a single meaningful word (4+ chars) that
+      // appears as a standalone word inside any accepted answer.
+      // Handles: "crow" matching "crow call", "lantern" matching "the lantern", etc.
+      if (!isCorrect && val.length >= 4 && val.indexOf(' ') === -1) {
+        var re = new RegExp('\\b' + val.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '\\b');
+        isCorrect = accepted.some(function(a) { return re.test(a); });
+      }
+      input.classList.remove('solved-input');
+      if (isCorrect) { input.classList.add('solved-input'); correct++; }
+    });
+
+    setTimeout(function() {
+      cab.classList.remove('searching');
+      cab.classList.add(correct === total && total > 0 ? 'open' : 'closed');
+    }, 500);
+
+    updateProgress(correct, total);
+    saveProgress(SONG);
+
+    if (correct === total && total > 0) {
+      setTimeout(function() { unlockCase(SONG); }, 600);
+    }
+  }
+
+  // ── PROGRESS ──────────────────────────────────────────────────────────────
+  function updateProgress(correct, total) {
+    var pct = total > 0 ? Math.round((correct / total) * 100) : 0;
+    document.getElementById('header-progress').textContent = pct + '%';
+    // Keep case notes counter in sync
+    var cnVal = document.getElementById('cn-progress-val');
+    if (cnVal) cnVal.textContent = correct + ' / ' + total;
+
+    var panel = document.getElementById('response-panel');
+    panel.classList.add('visible');
+    panel.classList.remove('fail', 'success', 'searching');
+
+    if (correct === total && total > 0) {
+      panel.classList.add('success');
+      panel.innerHTML =
+        '<span class="response-icon unlock-icon">🔓</span>' +
+        '<div class="response-headline">Case Solved</div>' +
+        '<div class="response-sub">All ' + total + ' elements confirmed. Accessing archived file...</div>';
+    } else {
+      panel.classList.add('fail');
+      var remaining = total - correct;
+      panel.innerHTML =
+        '<span class="response-icon">📋</span>' +
+        '<div class="response-headline">' + correct + ' of ' + total + ' Confirmed</div>' +
+        '<div class="response-sub">' + remaining + ' element' + (remaining === 1 ? '' : 's') + ' remain unidentified.</div>';
+    }
+  }
+
+  // ── UNLOCK ────────────────────────────────────────────────────────────────
+  function unlockCase(d) {
+    // Body atmosphere
+    document.body.classList.add('unlocked');
+    document.getElementById('lantern-glow').classList.add('bright');
+
+    // Wax seal break animation
+    var seal = document.getElementById('wax-seal');
+    seal.classList.add('breaking');
+    setTimeout(function() {
+      seal.classList.remove('breaking');
+      seal.classList.add('broken');
+    }, 500);
+
+    // Jacket status
+    var status = document.getElementById('case-status');
+    status.textContent = 'CASE SOLVED';
+    status.classList.add('solved');
+
+    // Save solved state
+    try {
+      var solved = JSON.parse(localStorage.getItem('av_solved') || '[]');
+      if (solved.indexOf(d.id) === -1) solved.push(d.id);
+      localStorage.setItem('av_solved', JSON.stringify(solved));
+    } catch(e) {}
+
+    // Show collectible only the first time it is discovered
+    if (d.collectible && d.collectible.name && d.collectible.name.indexOf('//') === -1) {
+      var seenKey = 'av_seen_collectible_' + (d.collectible.id || d.collectible.name);
+      if (!localStorage.getItem(seenKey)) {
+        localStorage.setItem(seenKey, '1');
+        setTimeout(function() { showCollectible(d.collectible); }, 400);
+      }
+    }
+    setTimeout(function() { renderLore(d); }, 1400);
+  }
+
+  // ── COLLECTIBLE ───────────────────────────────────────────────────────────
+  function showCollectible(c) {
+    var content = document.getElementById('collectible-content');
+    content.innerHTML =
+      '<div class="reward-pre">Evidence Recovered</div>' +
+      '<span class="reward-symbol">' + (c.symbol || '🔍') + '</span>' +
+      '<div class="reward-name">' + (c.name || 'Unknown Object') + '</div>' +
+      '<div class="reward-divider">— ✦ —</div>' +
+      '<div class="reward-desc">' + (c.description || '') + '</div>' +
+      (c.unknownInfo && c.unknownInfo.indexOf('//') === -1
+        ? '<div class="reward-desc" style="font-style:italic;opacity:0.75;">' + c.unknownInfo + '</div>'
+        : '') +
+      '<button class="reward-close" onclick="closeModal(\'collectible-overlay\')">Add to Evidence Cabinet</button>';
+    openModal('collectible-overlay');
+  }
+
+  // ── LORE PANEL ────────────────────────────────────────────────────────────
+  function renderLore(d) {
+    var panel = document.getElementById('lore-panel');
+    panel.classList.remove('hidden');
+
+    if (!d.lore) return;
+
+    var lore = d.lore;
+    var realLines = (lore.lines || []).filter(function(l) { return l && l.indexOf('//') === -1 && l.trim() !== ''; });
+    var isPlaceholder = realLines.length === 0;
+
+    // If lore is still placeholder, try fetching from the local server txt file
+    if (isPlaceholder) {
+      var padded = String(parseInt(d.id, 10) || 1).padStart(3, '0');
+      fetch('https://asten-vale-server.onrender.com/api/lore/' + padded)
+        .then(function(r) { return r.json(); })
+        .then(function(body) {
+          if (body.ok && body.lore) {
+            var merged = Object.assign({}, d.lore, body.lore);
+            // Keep fileId/department from JS file if txt didn't set them
+            if (!merged.fileId) merged.fileId = d.lore.fileId;
+            if (!merged.department) merged.department = d.lore.department;
+            buildLorePanel(panel, merged);
+          } else {
+            buildLorePanel(panel, lore, true);
+          }
+        })
+        .catch(function() {
+          // Server not running — show sealed message
+          buildLorePanel(panel, lore, true);
+        });
+      return;
+    }
+
+    buildLorePanel(panel, lore, false);
+  }
+
+  function buildLorePanel(panel, lore, placeholder) {
+    panel.innerHTML = '';
+    var lines = placeholder ? [] : (lore.lines || []).filter(function(l) {
+      return l && l.indexOf('//') === -1 && l.trim() !== '';
+    });
+
+    // Header
+    var header = document.createElement('div');
+    header.className = 'lore-header';
+
+    var stamp = document.createElement('div');
+    stamp.className   = 'recovered-stamp';
+    stamp.textContent = 'Recovered File — ' + (lore.fileId || '');
+    header.appendChild(stamp);
+
+    if (lore.title && lore.title.indexOf('//') === -1) {
+      var title = document.createElement('div');
+      title.className   = 'lore-title';
+      title.textContent = lore.title;
+      header.appendChild(title);
+    }
+
+    var dateParts = [lore.date, lore.author]
+      .filter(function(x) { return x && x.indexOf('//') === -1; });
+    if (dateParts.length) {
+      var dateEl = document.createElement('div');
+      dateEl.className   = 'lore-date';
+      dateEl.textContent = dateParts.join('  ·  ');
+      header.appendChild(dateEl);
+    }
+
+    if (lore.department && lore.department.indexOf('//') === -1) {
+      var dept = document.createElement('div');
+      dept.className   = 'lore-dept';
+      dept.textContent = lore.department;
+      header.appendChild(dept);
+    }
+
+    panel.appendChild(header);
+
+    // Body
+    var body = document.createElement('div');
+    body.className = 'lore-body';
+
+    if (placeholder || lines.length === 0) {
+      var ph = document.createElement('div');
+      ph.className   = 'lore-line';
+      ph.textContent = 'This file will be unsealed when the lore is written.';
+      body.appendChild(ph);
+    } else {
+      lines.forEach(function(line) {
+        var div = document.createElement('div');
+        div.className   = 'lore-line';
+        div.textContent = line;
+        body.appendChild(div);
+      });
+    }
+
+    panel.appendChild(body);
+
+    // Footer
+    var footer = document.createElement('div');
+    footer.className = 'lore-footer';
+    var endMark = document.createElement('div');
+    endMark.className   = 'lore-end-marker';
+    endMark.textContent = '— end of file ' + (lore.fileId || '') + ' —';
+    footer.appendChild(endMark);
+    panel.appendChild(footer);
+
+    // CTA
+    if (lore.cta && lore.cta.buttonUrl) {
+      var cta = document.createElement('div');
+      cta.className = 'lore-cta';
+      var inner = document.createElement('div');
+      inner.className = 'lore-cta-inner';
+      // Build next-case link dynamically from vault config
+      var nextHref = 'index.html';
+      var nextText = 'Return to Archive';
+      var nextSub  = 'Head back to the case files.';
+      if (typeof SEASONS_CONFIG !== 'undefined') {
+        var _season   = SEASONS_CONFIG[0];
+        var _solved   = [];
+        try { _solved = JSON.parse(localStorage.getItem('av_solved') || '[]'); } catch(e) {}
+        var _released = _season.cases.filter(function(c) { return c.released; });
+        var _unsolved = _released.filter(function(c) { return _solved.indexOf(c.id) === -1; });
+        var _next     = _unsolved[0];
+        if (_next) {
+          // Next released case is available
+          nextHref = _next.url;
+          nextText = 'Open Next File →';
+          nextSub  = 'Case ' + String(parseInt(_next.id,10)).padStart(3,'0') + ' — ' + _next.title + ' — is now unlocked.';
+        } else {
+          // All released cases solved — check if there are unreleased ones coming
+          var _allSolved  = _season.cases.filter(function(c) { return _solved.indexOf(c.id) !== -1; });
+          var _unreleased = _season.cases.filter(function(c) { return !c.released; });
+          var _nextLocked = _unreleased[0];
+          if (_nextLocked) {
+            var _lockedNum = String(parseInt(_nextLocked.id,10)).padStart(3,'0');
+            nextSub = 'Case ' + _lockedNum + ' is not yet available. Check back soon — the next file is coming.';
+          } else {
+            nextSub = 'All cases complete. More files coming in Season Two.';
+          }
+        }
+      }
+
+      inner.innerHTML =
+        '<div class="lore-cta-label">' + (lore.cta.label || 'Continue the Archive') + '</div>' +
+        '<div class="lore-cta-sub">'   + nextSub + '</div>' +
+        '<a class="lore-cta-btn" href="' + nextHref + '">' + nextText + '</a>' +
+        '<div style="margin-top:1rem;padding-top:1rem;border-top:1px solid rgba(60,30,10,0.15);">' +
+          '<a href="https://buymeacoffee.com/YOUR_USERNAME" target="_blank" rel="noopener" ' +
+             'style="display:inline-flex;align-items:center;gap:0.5rem;font-family:var(--font-type);font-size:0.72rem;letter-spacing:0.15em;text-transform:uppercase;color:rgba(60,30,10,0.5);text-decoration:none;transition:color 0.2s;" ' +
+             'onmouseover="this.style.color=\'rgba(60,30,10,0.85)\'" onmouseout="this.style.color=\'rgba(60,30,10,0.5)\'">' +
+            '☕ Enjoyed the case? Buy me a coffee' +
+          '</a>' +
+        '</div>';
+      cta.appendChild(inner);
+      panel.appendChild(cta);
+    }
+
+    panel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  // ── CASE NOTES ────────────────────────────────────────────────────────────
+  function renderCaseNotes(d) {
+    var body = document.getElementById('casenotes-body');
+    if (!body) return;
+    var padded = String(parseInt(d.id, 10) || 1).padStart(3, '0');
+
+    // Check if entries are empty/placeholder
+    var hasRealEntries = (d.caseNotes || []).some(function(s) {
+      return (s.entries || []).some(function(e) { return e && e.indexOf('//') === -1; });
+    });
+
+    if (!hasRealEntries) {
+      fetch('https://asten-vale-server.onrender.com/api/casenotes/' + padded)
+        .then(function(r) { return r.json(); })
+        .then(function(body2) {
+          if (body2.ok && body2.casenotes) buildCaseNotesBody(body, body2.casenotes, d);
+          else buildCaseNotesBody(body, d.caseNotes || [], d);
+        })
+        .catch(function() { buildCaseNotesBody(body, d.caseNotes || [], d); });
+      return;
+    }
+    buildCaseNotesBody(body, d.caseNotes, d);
+  }
+
+  function buildCaseNotesBody(body, sections, d) {
+    body.innerHTML = '';
+    sections.forEach(function(section) {
+      var sec = document.createElement('div');
+      sec.className = 'cn-section';
+      var heading = document.createElement('div');
+      heading.className = 'cn-heading';
+      heading.innerHTML = (section.icon ? '<span class="cn-icon">' + section.icon + '</span>' : '') + section.label;
+      sec.appendChild(heading);
+      var ul = document.createElement('ul');
+      ul.className = 'cn-list';
+      (section.entries || []).forEach(function(entry) {
+        var li = document.createElement('li');
+        li.className   = 'cn-entry';
+        li.textContent = entry;
+        ul.appendChild(li);
+      });
+      sec.appendChild(ul);
+      body.appendChild(sec);
+    });
+    var progress = document.createElement('div');
+    progress.className = 'cn-progress-note';
+    progress.innerHTML =
+      '<span class="cn-progress-label">Elements Identified</span>' +
+      '<span class="cn-progress-value" id="cn-progress-val">0 / ' + (d.fields || []).length + '</span>';
+    body.appendChild(progress);
+  }
+
+  // ── LYRICS ────────────────────────────────────────────────────────────────
+  function renderLyrics(d) {
+    var body = document.getElementById('lyrics-body');
+    if (!body) return;
+    var padded = String(parseInt(d.id, 10) || 1).padStart(3, '0');
+
+    var hasRealLyrics = (d.lyrics || []).some(function(s) {
+      return (s.lines || []).some(function(l) { return l && l.indexOf('//') === -1; });
+    });
+
+    if (!hasRealLyrics) {
+      fetch('https://asten-vale-server.onrender.com/api/lyrics/' + padded)
+        .then(function(r) { return r.json(); })
+        .then(function(body2) {
+          if (body2.ok && body2.lyrics) buildLyricsBody(body, body2.lyrics);
+          else buildLyricsBody(body, d.lyrics || []);
+        })
+        .catch(function() { buildLyricsBody(body, d.lyrics || []); });
+      return;
+    }
+    buildLyricsBody(body, d.lyrics);
+  }
+
+  function buildLyricsBody(body, sections) {
+    body.innerHTML = '';
+    sections.forEach(function(section) {
+      var sec = document.createElement('div');
+      sec.className = 'lyrics-section lyrics-' + (section.type || 'verse');
+      var lbl = document.createElement('div');
+      lbl.className   = 'lyrics-section-label';
+      lbl.textContent = section.label || '';
+      sec.appendChild(lbl);
+      (section.lines || []).forEach(function(line) {
+        var div = document.createElement('div');
+        div.className   = 'lyrics-line';
+        div.textContent = line;
+        sec.appendChild(div);
+      });
+      body.appendChild(sec);
+    });
+  }
+
+  // ── LOCALSTORAGE ──────────────────────────────────────────────────────────
+  function saveProgress(d) {
+    try {
+      var data = {};
+      (d.fields || []).forEach(function(f) {
+        var input = document.getElementById('field-' + f.id);
+        if (input) data[f.id] = input.value;
+      });
+      localStorage.setItem('av_progress_' + d.id, JSON.stringify(data));
+    } catch(e) {}
+  }
+
+  function loadSavedProgress(d) {
+    try {
+      var saved = JSON.parse(localStorage.getItem('av_progress_' + d.id) || 'null');
+      if (saved) {
+        (d.fields || []).forEach(function(f) {
+          var input = document.getElementById('field-' + f.id);
+          if (input && saved[f.id]) input.value = saved[f.id];
+        });
+      }
+      var solved = JSON.parse(localStorage.getItem('av_solved') || '[]');
+      if (solved.indexOf(d.id) !== -1) checkAnswers();
+    } catch(e) {}
+  }
+
+  // ── PROGRESSION GATE ─────────────────────────────────────────────────────
+  // Blocks access to any case that is not the current active case.
+  // Loads vault-config.js dynamically so case.html stays self-contained.
+  (function() {
+    function gateCheck() {
+      if (typeof SEASONS_CONFIG === 'undefined') return; // config not loaded yet
+      var params   = new URLSearchParams(window.location.search);
+      var rawId    = params.get('id') || '1';
+      var paddedId = String(parseInt(rawId, 10) || 1).padStart(3, '0');
+
+      var season   = SEASONS_CONFIG[0];
+      var solved   = [];
+      try { solved = JSON.parse(localStorage.getItem('av_solved') || '[]'); } catch(e) {}
+
+      var released = season.cases.filter(function(c) { return c.released; });
+      var unsolved = released.filter(function(c)  { return solved.indexOf(c.id) === -1; });
+      var active   = unsolved[0];
+
+      // If this case is already solved, allow viewing (re-read completed files)
+      if (solved.indexOf(paddedId) !== -1) return;
+
+      // If this is the active case, allow through
+      if (active && active.id === paddedId) return;
+
+      // Otherwise redirect to classified page
+      window.location.replace('classified.html?id=' + paddedId);
+    }
+
+    var s = document.createElement('script');
+    s.src = 'js/vault-config.js';
+    s.onload = gateCheck;
+    document.head.appendChild(s);
+  })();
+
+  // ── DYNAMIC SONG LOADER ───────────────────────────────────────────────────
+  (function() {
+    var params  = new URLSearchParams(window.location.search);
+    var raw     = params.get('id') || '001';
+    var padded  = String(parseInt(raw, 10) || 1).padStart(3, '0');
+
+    function applyMeta(d) {
+document.title = 'Case File ' + d.caseFile + ' — The Asten Vale Archives';
+      document.body.setAttribute('data-case-id', d.id);
+      document.getElementById('jacket-label').textContent    = 'Asten Vale Sheriff\'s Dept.  ·  Case File ' + d.caseFile;
+      document.getElementById('case-status').textContent     = d.status || 'OPEN INVESTIGATION';
+      document.getElementById('case-number').textContent     = 'CASE FILE ' + d.caseFile;
+      document.getElementById('case-title').textContent      = d.title;
+      document.getElementById('hero-case-number').textContent = 'Case File ' + d.caseFile;
+      document.getElementById('hero-case-title').textContent  = d.title;
+      document.getElementById('case-difficulty').textContent = d.difficulty || '—';
+      document.getElementById('player-title').textContent    = d.title;
+      document.getElementById('stream-title').textContent    = d.title;
+      document.getElementById('cn-title').textContent        = 'Case File ' + d.caseFile;
+      document.getElementById('cn-sub').textContent          = d.title;
+      document.getElementById('lyr-title').textContent       = d.title;
+
+      if (d.streamingLinks) {
+        if (d.streamingLinks.spotify)  document.getElementById('stream-spotify').href  = d.streamingLinks.spotify;
+        if (d.streamingLinks.apple)    document.getElementById('stream-apple').href    = d.streamingLinks.apple;
+        if (d.streamingLinks.youtube)  document.getElementById('stream-youtube').href  = d.streamingLinks.youtube;
+        if (d.streamingLinks.amazon)   document.getElementById('stream-amazon').href   = d.streamingLinks.amazon;
+      }
+
+      window.initCase(d);
+    }
+
+    var script   = document.createElement('script');
+    script.src   = 'data/songs/song' + padded + '.js';
+    script.async = false;
+    script.onload = function() {
+      if (window.SONG_DATA) {
+        applyMeta(window.SONG_DATA);
+      } else {
+        document.getElementById('case-title').textContent = 'Error: SONG_DATA not found.';
+      }
+    };
+    script.onerror = function() {
+      document.getElementById('case-title').textContent  = 'Case file ' + padded + ' not found.';
+      document.getElementById('case-status').textContent = 'FILE NOT FOUND';
+    };
+    document.body.appendChild(script);
+  })();
+  </script>
+
+</body>
+</html>

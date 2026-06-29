@@ -1,0 +1,15 @@
+title: What It Cost - Recovered Case File
+fileId: S50-010A
+date: Series 50 / Chapter 10
+author: Ashton Vale Archive Engine
+department: Ashton Vale Archives / Full Archive
+
+Case S50-010 was recovered from The Resolution. The active scene is Telegraph Office.
+I had been to Telegraph Office once before, though the archive insisted I had not.
+Census Taker is tied to Copper Fitting, and the testimony does not resolve cleanly.
+When you hear Footsteps, stop looking at the door and look at the thing nearest your hand.
+At 4:12, Footsteps becomes part of the evidence record.
+Marker 5088 indexes the case and connects it to Full Archive.
+Marker 5088 accepts the case and points Up.
+Below it, in smaller letters:
+paid.

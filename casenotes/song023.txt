@@ -1,0 +1,14 @@
+[CLUE] What To Listen For
+The location is Empty Kitchen; it appears as the active scene, not just background.
+Photograph is the physical evidence. Treat it as the object that should not be there.
+Clock Ticking is the sensory clue. It often arrives before the answer does.
+
+[CASE] Witness And Timeline
+Neighbor is the primary witness and is withholding context.
+9:45 is the anchor time. Do not confuse it with song runtime or release order.
+Away is an instruction inside the case, not scenery.
+
+[LOCK] Marker Lock
+Marker 220 is the key number for this file.
+Marker 220 accepts the case and points Away.
+Marker 220 opens nothing for people who think it is only a number.

@@ -1,0 +1,15 @@
+title: The Doctor's Note - Recovered Case File
+fileId: S34-004A
+date: Series 34 / Chapter 04
+author: Ashton Vale Archive Engine
+department: Ashton Vale Archives / Clinical Vault
+
+Case S34-004 was recovered from The Locked Ward. The active scene is Pharmacy.
+I had been to Pharmacy once before, though the archive insisted I had not.
+Stranger is tied to Map, and the testimony does not resolve cleanly.
+When you hear Knife Scrape, stop looking at the door and look at the thing nearest your hand.
+At 9:08, Knife Scrape becomes part of the evidence record.
+Marker 3434 indexes the case and connects it to Clinical Vault.
+Marker 3434 accepts the case and points Down.
+Below it, in smaller letters:
+paid.

@@ -1,0 +1,14 @@
+[CLUE] What To Listen For
+The location is Jail; it appears as the active scene, not just background.
+Key is the physical evidence. Treat it as the object that should not be there.
+Boot Heel is the sensory clue. It often arrives before the answer does.
+
+[CASE] Witness And Timeline
+Tailor is the primary witness and is withholding context.
+11:17 is the anchor time. Do not confuse it with song runtime or release order.
+Under is an instruction inside the case, not scenery.
+
+[LOCK] Marker Lock
+Marker 4188 is the key number for this file.
+Marker 4188 accepts the case and points Under.
+Marker 4188 opens nothing for people who think it is only a number.

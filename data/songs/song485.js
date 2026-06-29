@@ -1,0 +1,334 @@
+window.SONG_DATA = {
+  "id": "485",
+  "caseFile": "485",
+  "series": 41,
+  "seriesName": "The Ghost Road",
+  "sequentialNum": 485,
+  "chapter": 5,
+  "chapterTitle": "The Old Name",
+  "title": "The Old Name",
+  "difficulty": "Open Investigation",
+  "status": "OPEN INVESTIGATION",
+  "artwork": null,
+  "audioSrc": null,
+  "streamingLinks": {
+    "spotify": "",
+    "apple": "",
+    "youtube": "",
+    "amazon": ""
+  },
+  "fields": [
+    {
+      "id": "location",
+      "label": "Location",
+      "placeholder": "Where did this happen?",
+      "icon": "LOC"
+    },
+    {
+      "id": "object",
+      "label": "Object",
+      "placeholder": "What item keeps appearing?",
+      "icon": "OBJ"
+    },
+    {
+      "id": "witness",
+      "label": "Witness",
+      "placeholder": "Who gave testimony?",
+      "icon": "WIT"
+    },
+    {
+      "id": "time",
+      "label": "Time",
+      "placeholder": "What time anchors the case?",
+      "icon": "TIME"
+    },
+    {
+      "id": "marker",
+      "label": "Marker",
+      "placeholder": "What marker number appears?",
+      "icon": "MARK"
+    },
+    {
+      "id": "direction",
+      "label": "Direction",
+      "placeholder": "Which direction matters?",
+      "icon": "DIR"
+    },
+    {
+      "id": "sound",
+      "label": "Sound",
+      "placeholder": "What sound repeats?",
+      "icon": "SND"
+    }
+  ],
+  "answers": {
+    "location": [
+      "stone step",
+      "stonestep"
+    ],
+    "object": [
+      "wire coil",
+      "wirecoil"
+    ],
+    "witness": [
+      "lime burner",
+      "limeburner"
+    ],
+    "time": [
+      "5:40",
+      "540"
+    ],
+    "marker": [
+      "4143",
+      "marker 4143",
+      "road marker 4143",
+      "mile marker 4143",
+      "mile 4143"
+    ],
+    "direction": [
+      "out"
+    ],
+    "sound": [
+      "pages turning",
+      "pagesturning"
+    ]
+  },
+  "caseNotes": [
+    {
+      "icon": "CLUE",
+      "label": "What To Listen For",
+      "entries": [
+        "The location is Stone Step; it appears as the active scene, not just background.",
+        "Wire Coil is the physical evidence. Treat it as the object that should not be there.",
+        "Pages Turning is the sensory clue. It often arrives before the answer does."
+      ]
+    },
+    {
+      "icon": "CASE",
+      "label": "Witness And Timeline",
+      "entries": [
+        "Lime Burner is the primary witness and is withholding context.",
+        "5:40 is the anchor time. Do not confuse it with song runtime or release order.",
+        "Out is an instruction inside the case, not scenery."
+      ]
+    },
+    {
+      "icon": "LOCK",
+      "label": "Marker Lock",
+      "entries": [
+        "Marker 4143 is the key number for this file.",
+        "Marker 4143 accepts the case and points Out.",
+        "Marker 4143 opens nothing for people who think it is only a number."
+      ]
+    }
+  ],
+  "lyrics": [
+    {
+      "type": "style",
+      "label": "Style",
+      "lines": [
+        "spoken indie noir; vocal low and intimate; low harmonium; chorus should feel singable before it feels solvable."
+      ]
+    },
+    {
+      "type": "cold-open",
+      "label": "Cold Open",
+      "lines": [
+        "\"5:40,\" said Lime Burner",
+        "Then pages turning",
+        "Then the floor went still"
+      ]
+    },
+    {
+      "type": "verse-1",
+      "label": "Verse 1",
+      "lines": [
+        "I saw Wire Coil before I saw the trouble",
+        "I saw Stone Step through a dirty pane",
+        "Some places keep your secrets",
+        "Some places learn your name",
+        "Lime Burner would not touch it",
+        "Would not say who brought it down",
+        "Only looked toward the doorway",
+        "Like the doorway might leave town"
+      ]
+    },
+    {
+      "type": "chorus",
+      "label": "Chorus",
+      "lines": [
+        "Do not ask the road its name",
+        "Do not turn the marker clean",
+        "Pages Turning in Stone Step",
+        "Like a hand behind the screen",
+        "Wire Coil on the table",
+        "Lime Burner looking worn",
+        "Marker 4143 kept waiting",
+        "Like a debt before it is born"
+      ]
+    },
+    {
+      "type": "verse-2",
+      "label": "Verse 2",
+      "lines": [
+        "At 5:40 the room went colder",
+        "And the window showed no sky",
+        "I said, \"Tell me where this points to\"",
+        "They said, \"Out, if you know why\"",
+        "There was a cracked cup in the corner",
+        "There was mud along the grain",
+        "I could hear a witness protecting someone already gone",
+        "Trying not to use my name"
+      ]
+    },
+    {
+      "type": "breakdown",
+      "label": "Breakdown",
+      "lines": [
+        "4143",
+        "Written small",
+        "Behind the paint",
+        "A number learning",
+        "How to wait"
+      ]
+    },
+    {
+      "type": "final-chorus",
+      "label": "Final Chorus",
+      "lines": [
+        "Do not ask the road its name",
+        "Do not make the warning small",
+        "Pages Turning came through Stone Step",
+        "And leaned against the wall",
+        "Wire Coil was not evidence",
+        "Lime Burner was not free",
+        "Marker 4143 kept waiting",
+        "For someone else to look like me"
+      ]
+    },
+    {
+      "type": "outro",
+      "label": "Outro",
+      "lines": [
+        "I learned what silence costs",
+        "Pages Turning",
+        "Then nothing"
+      ]
+    }
+  ],
+  "collectible": {
+    "id": "485_wire_coil",
+    "name": "Wire Coil",
+    "symbol": "*",
+    "description": "Wire Coil was recovered from Stone Step in Case File 485. It is tied to Lime Burner, 5:40, and marker 4143.",
+    "discovered": "Case File 485",
+    "firstAppearance": "The Old Name",
+    "connectedSongs": [
+      "485"
+    ],
+    "unknownInfo": "Out and Pages Turning suggest this object matters beyond the first reading."
+  },
+  "lore": {
+    "title": "The Old Name - Recovered Case File",
+    "fileId": "S41-005A",
+    "date": "Series 41 / Chapter 05",
+    "author": "Ashton Vale Archive Engine",
+    "department": "Ashton Vale Archives / Phantom Vault",
+    "lines": [
+      "Case S41-005 was recovered from The Ghost Road. The active scene is Stone Step.",
+      "The discovery did not happen where the file said it happened.",
+      "Lime Burner is tied to Wire Coil, and the testimony does not resolve cleanly.",
+      "When you hear Pages Turning, stop looking at the door and look at the thing nearest your hand.",
+      "At 5:40, Pages Turning becomes part of the evidence record.",
+      "Marker 4143 indexes the case and connects it to Phantom Vault.",
+      "Marker 4143 accepts the case and points Out.",
+      "And beneath it, a line written for whoever made it this far:",
+      "Out was never a direction. It was permission."
+    ],
+    "cta": {
+      "label": "Continue The Archive",
+      "sub": "Move to the next recovered Ashton Vale case file.",
+      "buttonText": "Return To Cases",
+      "buttonUrl": "series.html"
+    }
+  },
+  "game": {
+    "missionId": "S41C05",
+    "puzzleId": "S41C05-marker-lock",
+    "dialogueId": "S41C05-lime-burner",
+    "locationId": "stone-step",
+    "objective": "Investigate Stone Step, question Lime Burner, recover Wire Coil, and learn why marker 4143 is tied to Phantom Vault.",
+    "missionFlow": [
+      {
+        "step": "arrive",
+        "objective": "Enter Stone Step.",
+        "clue": "Pages Turning"
+      },
+      {
+        "step": "inspect",
+        "objective": "Inspect Wire Coil.",
+        "clue": "Wire Coil"
+      },
+      {
+        "step": "interview",
+        "objective": "Question Lime Burner.",
+        "clue": "5:40"
+      },
+      {
+        "step": "decode",
+        "objective": "Find and enter marker 4143.",
+        "clue": "4143"
+      },
+      {
+        "step": "choose",
+        "objective": "Follow the Out instruction.",
+        "clue": "Out"
+      }
+    ],
+    "interactables": [
+      {
+        "id": "S41C05-location",
+        "type": "location",
+        "name": "Stone Step",
+        "inspectText": "Stone Step looks ordinary until Pages Turning moves through it."
+      },
+      {
+        "id": "S41C05-object",
+        "type": "evidence",
+        "name": "Wire Coil",
+        "inspectText": "Wire Coil is present, specific, and wrong enough to matter."
+      },
+      {
+        "id": "S41C05-marker",
+        "type": "marker",
+        "name": "Marker 4143",
+        "inspectText": "Marker 4143 is not the answer. It is the lock."
+      },
+      {
+        "id": "S41C05-sound",
+        "type": "audio_clue",
+        "name": "Pages Turning",
+        "inspectText": "Pages Turning repeats near 5:40."
+      }
+    ],
+    "sourceFiles": {
+      "prompt": "story/series/Series41-The-Ghost-Road/chapter05.md",
+      "novel": "generated/novels/Series41-The-Ghost-Road/chapter05.md",
+      "song": "generated/songs/Series41-The-Ghost-Road/song05.md"
+    }
+  },
+  "story": {
+    "novel": "generated/novels/Series41-The-Ghost-Road/chapter05.md",
+    "prompt": "story/series/Series41-The-Ghost-Road/chapter05.md",
+    "opening": [
+      "The discovery did not happen where the file said it happened.",
+      "That was why I trusted it.",
+      "Officially, Wire Coil was found at Stone Step. Officially, Lime Burner gave a clean statement at 5:40. Officially, Pages Turning was background, unrelated, not entered as evidence. The official version had all the confidence of a locked door."
+    ],
+    "ending": [
+      "The next one.",
+      "And beneath it, a line written for whoever made it this far:",
+      "Out was never a direction. It was permission."
+    ]
+  }
+};

@@ -1,0 +1,15 @@
+title: Admission - Recovered Case File
+fileId: S34-001A
+date: Series 34 / Chapter 01
+author: Ashton Vale Archive Engine
+department: Ashton Vale Archives / Clinical Vault
+
+Case S34-001 was recovered from The Locked Ward. The active scene is The Bluff.
+The first record of Dried Ink Blot was not in the archive. It was in the wall.
+Wainwright is tied to Dried Ink Blot, and the testimony does not resolve cleanly.
+When you hear Paper Rustle, stop looking at the door and look at the thing nearest your hand.
+At 6:06, Paper Rustle becomes part of the evidence record.
+Marker 3407 indexes the case and connects it to Clinical Vault.
+Marker 3407 accepts the case and points Straight Down.
+Marker 3407 is not the clue.
+It is the lock.

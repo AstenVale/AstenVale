@@ -1,0 +1,332 @@
+window.SONG_DATA = {
+  "id": "468",
+  "caseFile": "468",
+  "series": 39,
+  "seriesName": "The Pale Horse",
+  "sequentialNum": 468,
+  "chapter": 12,
+  "chapterTitle": "The Finding",
+  "title": "The Finding",
+  "difficulty": "Vault-Level",
+  "status": "OPEN INVESTIGATION",
+  "artwork": null,
+  "audioSrc": null,
+  "streamingLinks": {
+    "spotify": "",
+    "apple": "",
+    "youtube": "",
+    "amazon": ""
+  },
+  "fields": [
+    {
+      "id": "location",
+      "label": "Location",
+      "placeholder": "Where did this happen?",
+      "icon": "LOC"
+    },
+    {
+      "id": "object",
+      "label": "Object",
+      "placeholder": "What item keeps appearing?",
+      "icon": "OBJ"
+    },
+    {
+      "id": "witness",
+      "label": "Witness",
+      "placeholder": "Who gave testimony?",
+      "icon": "WIT"
+    },
+    {
+      "id": "time",
+      "label": "Time",
+      "placeholder": "What time anchors the case?",
+      "icon": "TIME"
+    },
+    {
+      "id": "marker",
+      "label": "Marker",
+      "placeholder": "What marker number appears?",
+      "icon": "MARK"
+    },
+    {
+      "id": "direction",
+      "label": "Direction",
+      "placeholder": "Which direction matters?",
+      "icon": "DIR"
+    },
+    {
+      "id": "sound",
+      "label": "Sound",
+      "placeholder": "What sound repeats?",
+      "icon": "SND"
+    }
+  ],
+  "answers": {
+    "location": [
+      "sheep fold",
+      "sheepfold"
+    ],
+    "object": [
+      "coin"
+    ],
+    "witness": [
+      "drifter"
+    ],
+    "time": [
+      "1:11",
+      "111"
+    ],
+    "marker": [
+      "4006",
+      "marker 4006",
+      "road marker 4006",
+      "mile marker 4006",
+      "mile 4006"
+    ],
+    "direction": [
+      "ahead"
+    ],
+    "sound": [
+      "saw cutting",
+      "sawcutting"
+    ]
+  },
+  "caseNotes": [
+    {
+      "icon": "CLUE",
+      "label": "What To Listen For",
+      "entries": [
+        "The location is Sheep Fold; it appears as the active scene, not just background.",
+        "Coin is the physical evidence. Treat it as the object that should not be there.",
+        "Saw Cutting is the sensory clue. It often arrives before the answer does."
+      ]
+    },
+    {
+      "icon": "CASE",
+      "label": "Witness And Timeline",
+      "entries": [
+        "Drifter is the primary witness and is withholding context.",
+        "1:11 is the anchor time. Do not confuse it with song runtime or release order.",
+        "Ahead is an instruction inside the case, not scenery."
+      ]
+    },
+    {
+      "icon": "LOCK",
+      "label": "Marker Lock",
+      "entries": [
+        "Marker 4006 is the key number for this file.",
+        "Marker 4006 accepts the case and points Ahead.",
+        "Marker 4006 opens nothing for people who think it is only a number."
+      ]
+    }
+  ],
+  "lyrics": [
+    {
+      "type": "style",
+      "label": "Style",
+      "lines": [
+        "front-porch murder ballad; vocal half-whispered; brushed snare; noir country pulse with a chorus built for repeat listens."
+      ]
+    },
+    {
+      "type": "intro",
+      "label": "Intro",
+      "lines": [
+        "Saw Cutting on the left",
+        "Boots on the right",
+        "Somebody leaving Sheep Fold",
+        "In the middle of the night"
+      ]
+    },
+    {
+      "type": "verse-1",
+      "label": "Verse 1",
+      "lines": [
+        "Drifter had a story",
+        "But the story would not sing",
+        "Coin caught the window light",
+        "Like a borrowed wedding ring",
+        "I asked about 1:11",
+        "They asked who sent me here",
+        "The answer passed between us",
+        "And disappeared"
+      ]
+    },
+    {
+      "type": "chorus",
+      "label": "Chorus",
+      "lines": [
+        "Do not turn the marker over",
+        "Do not ask the road its name",
+        "The saw cutting started calling",
+        "Though nobody struck a flame",
+        "Drifter held Coin",
+        "Like a rosary of rain",
+        "I came looking for an answer",
+        "And left carrying the stain"
+      ]
+    },
+    {
+      "type": "verse-2",
+      "label": "Verse 2",
+      "lines": [
+        "There was dust around the handle",
+        "There was ash below the chair",
+        "There was a kitchen match on the table",
+        "Like a warning left with care",
+        "At 1:11 the room leaned closer",
+        "At 1:11 the glass went gray",
+        "Drifter said, \"Go ahead\"",
+        "But would not point the way"
+      ]
+    },
+    {
+      "type": "middle-eight",
+      "label": "Middle Eight",
+      "lines": [
+        "This was a small mercy that arrived too late",
+        "This was not a sign",
+        "Marker 4006 under the paint",
+        "And Saw Cutting under mine"
+      ]
+    },
+    {
+      "type": "final-chorus",
+      "label": "Final Chorus",
+      "lines": [
+        "Do not turn the marker over",
+        "Do not ask the road its name",
+        "The saw cutting started calling",
+        "And the room forgot the flame",
+        "Coin in the lamplight",
+        "Drifter in the rain",
+        "I slept with the light on",
+        "And left carrying the stain"
+      ]
+    },
+    {
+      "type": "outro",
+      "label": "Outro",
+      "lines": [
+        "Saw Cutting",
+        "Then Ahead",
+        "Then nothing"
+      ]
+    }
+  ],
+  "collectible": {
+    "id": "468_coin",
+    "name": "Coin",
+    "symbol": "*",
+    "description": "Coin was recovered from Sheep Fold in Case File 468. It is tied to Drifter, 1:11, and marker 4006.",
+    "discovered": "Case File 468",
+    "firstAppearance": "The Finding",
+    "connectedSongs": [
+      "468"
+    ],
+    "unknownInfo": "Ahead and Saw Cutting suggest this object matters beyond the first reading."
+  },
+  "lore": {
+    "title": "The Finding - Recovered Case File",
+    "fileId": "S39-012A",
+    "date": "Series 39 / Chapter 12",
+    "author": "Ashton Vale Archive Engine",
+    "department": "Ashton Vale Archives / Rider Vault",
+    "lines": [
+      "Case S39-012 was recovered from The Pale Horse. The active scene is Sheep Fold.",
+      "The discovery did not happen where the file said it happened.",
+      "Drifter is tied to Coin, and the testimony does not resolve cleanly.",
+      "When you hear Saw Cutting, stop looking at the door and look at the thing nearest your hand.",
+      "At 1:11, Saw Cutting becomes part of the evidence record.",
+      "Marker 4006 indexes the case and connects it to Rider Vault.",
+      "Marker 4006 accepts the case and points Ahead.",
+      "And beneath it, a line written for whoever made it this far:",
+      "Ahead was never a direction. It was permission."
+    ],
+    "cta": {
+      "label": "Continue The Archive",
+      "sub": "Move to the next recovered Ashton Vale case file.",
+      "buttonText": "Return To Cases",
+      "buttonUrl": "series.html"
+    }
+  },
+  "game": {
+    "missionId": "S39C12",
+    "puzzleId": "S39C12-marker-lock",
+    "dialogueId": "S39C12-drifter",
+    "locationId": "sheep-fold",
+    "objective": "Investigate Sheep Fold, question Drifter, recover Coin, and learn why marker 4006 is tied to Rider Vault.",
+    "missionFlow": [
+      {
+        "step": "arrive",
+        "objective": "Enter Sheep Fold.",
+        "clue": "Saw Cutting"
+      },
+      {
+        "step": "inspect",
+        "objective": "Inspect Coin.",
+        "clue": "Coin"
+      },
+      {
+        "step": "interview",
+        "objective": "Question Drifter.",
+        "clue": "1:11"
+      },
+      {
+        "step": "decode",
+        "objective": "Find and enter marker 4006.",
+        "clue": "4006"
+      },
+      {
+        "step": "choose",
+        "objective": "Follow the Ahead instruction.",
+        "clue": "Ahead"
+      }
+    ],
+    "interactables": [
+      {
+        "id": "S39C12-location",
+        "type": "location",
+        "name": "Sheep Fold",
+        "inspectText": "Sheep Fold looks ordinary until Saw Cutting moves through it."
+      },
+      {
+        "id": "S39C12-object",
+        "type": "evidence",
+        "name": "Coin",
+        "inspectText": "Coin is present, specific, and wrong enough to matter."
+      },
+      {
+        "id": "S39C12-marker",
+        "type": "marker",
+        "name": "Marker 4006",
+        "inspectText": "Marker 4006 is not the answer. It is the lock."
+      },
+      {
+        "id": "S39C12-sound",
+        "type": "audio_clue",
+        "name": "Saw Cutting",
+        "inspectText": "Saw Cutting repeats near 1:11."
+      }
+    ],
+    "sourceFiles": {
+      "prompt": "story/series/Series39-The-Pale-Horse/chapter12.md",
+      "novel": "generated/novels/Series39-The-Pale-Horse/chapter12.md",
+      "song": "generated/songs/Series39-The-Pale-Horse/song12.md"
+    }
+  },
+  "story": {
+    "novel": "generated/novels/Series39-The-Pale-Horse/chapter12.md",
+    "prompt": "story/series/Series39-The-Pale-Horse/chapter12.md",
+    "opening": [
+      "The discovery did not happen where the file said it happened.",
+      "That was why I trusted it.",
+      "Officially, Coin was found at Sheep Fold. Officially, Drifter gave a clean statement at 1:11. Officially, Saw Cutting was background, unrelated, not entered as evidence. The official version had all the confidence of a locked door."
+    ],
+    "ending": [
+      "The next one.",
+      "And beneath it, a line written for whoever made it this far:",
+      "Ahead was never a direction. It was permission."
+    ]
+  }
+};

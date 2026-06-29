@@ -1,0 +1,15 @@
+title: The Estate - Recovered Case File
+fileId: S12-005A
+date: Series 12 / Chapter 05
+author: Ashton Vale Archive Engine
+department: Ashton Vale Archives / Estate Vault
+
+Case S12-005 was recovered from The Inheritance. The active scene is Tannery.
+I had been to Tannery once before, though the archive insisted I had not.
+Wool Sorter is tied to Ribbon, and the testimony does not resolve cleanly.
+When you hear Tree Fall, stop looking at the door and look at the thing nearest your hand.
+At 12:33, Tree Fall becomes part of the evidence record.
+Marker 1243 indexes the case and connects it to Estate Vault.
+Marker 1243 accepts the case and points Toward.
+Below it, in smaller letters:
+paid.

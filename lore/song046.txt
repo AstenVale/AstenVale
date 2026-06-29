@@ -1,0 +1,15 @@
+title: The Far Bank - Recovered Case File
+fileId: S4-010A
+date: Series 04 / Chapter 10
+author: Ashton Vale Archive Engine
+department: Ashton Vale Archives / Current Vault
+
+Case S4-010 was recovered from The River Speaks. The active scene is Banker's House.
+I came back to Banker's House because the map said Around, and the map had been wrong before.
+Librarian is tied to Torn Label, and the testimony does not resolve cleanly.
+When you hear Child's Laugh (far off), stop looking at the door and look at the thing nearest your hand.
+At 10:19, Child's Laugh (far off) becomes part of the evidence record.
+Marker 488 indexes the case and connects it to Current Vault.
+Marker 488 accepts the case and points Around.
+Marker 488 is not the clue.
+It is the lock.

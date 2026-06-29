@@ -1,0 +1,14 @@
+[CLUE] What To Listen For
+The location is Diner; it appears as the active scene, not just background.
+Matchbook is the physical evidence. Treat it as the object that should not be there.
+Match Strike is the sensory clue. It often arrives before the answer does.
+
+[CASE] Witness And Timeline
+Stranger is the primary witness and is withholding context.
+9:15 is the anchor time. Do not confuse it with song runtime or release order.
+South is an instruction inside the case, not scenery.
+
+[LOCK] Marker Lock
+Marker 61 is the key number for this file.
+Marker 61 accepts the case and points South.
+Marker 61 opens nothing for people who think it is only a number.

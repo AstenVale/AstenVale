@@ -1,0 +1,1369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Ashton Vale Archives</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <style>
+    /* ── RESET & VARIABLES ──────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    :root {
+      --ink:          #1c120a;
+      --ink-faded:    #4a3728;
+      --paper:        #c9a97a;
+      --paper-dark:   #b8935e;
+      --paper-light:  #ddc49a;
+      --paper-bg:     #c4a472;
+      --folder-red:   #7a1f1f;
+      --gold:         #c9960c;
+      --green-pine:   #4a7c4e;
+      --green-light:  #5a9c5e;
+      --glow:         #f5a623;
+      --bg:           #0c0a06;
+      --bg-mid:       #16120b;
+      --font-type:    'Courier Prime', 'Courier New', Courier, monospace;
+      --font-header:  'Special Elite', 'Courier New', serif;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: var(--font-type);
+      font-size: 15px;
+      line-height: 1.7;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    a { text-decoration: none; color: inherit; }
+
+    /* ── HERO SECTION ───────────────────────────────────────── */
+    .hero {
+      position: relative;
+      min-height: 55vh;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(to bottom, rgba(12,8,4,0.55) 0%, rgba(12,8,4,0.3) 40%, rgba(12,8,4,0.75) 80%, rgba(12,8,4,0.98) 100%),
+        linear-gradient(135deg, #1a130a 0%, #0c0a06 50%, #111008 100%);
+      z-index: 0;
+    }
+
+    /* Atmospheric dark vignette overlay */
+    .hero-bg::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 70% 50% at 20% 50%, rgba(180,130,60,0.06) 0%, transparent 60%),
+        radial-gradient(ellipse 50% 60% at 80% 40%, rgba(100,80,40,0.08) 0%, transparent 60%);
+    }
+
+    /* Simulated lamp glow left side */
+    .hero-lamp-glow {
+      position: absolute;
+      left: -2%;
+      top: 15%;
+      width: 320px;
+      height: 320px;
+      background: radial-gradient(circle at 40% 40%, rgba(240,160,40,0.22) 0%, rgba(200,120,20,0.10) 35%, transparent 70%);
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    /* ── NAV ────────────────────────────────────────────────── */
+    .site-nav {
+      position: relative;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.25rem 2.5rem;
+    }
+
+    .nav-brand {
+      font-family: var(--font-header);
+      font-size: 0.75rem;
+      letter-spacing: 0.22em;
+      color: rgba(201,169,122,0.75);
+      text-transform: uppercase;
+      line-height: 1.3;
+    }
+
+    .nav-brand span { display: block; }
+
+    .nav-logo {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .nav-logo svg {
+      width: 46px;
+      height: 46px;
+      opacity: 0.9;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .nav-link {
+      font-family: var(--font-type);
+      font-size: 0.72rem;
+      letter-spacing: 0.18em;
+      color: rgba(201,169,122,0.7);
+      text-transform: uppercase;
+      transition: color 0.2s;
+      position: relative;
+    }
+
+    .nav-link:hover { color: var(--paper); }
+
+    .nav-link.active {
+      color: rgba(201,169,122,0.95);
+    }
+
+    .nav-link.active::after {
+      content: "";
+      position: absolute;
+      bottom: -3px;
+      left: 0; right: 0;
+      height: 1px;
+      background: rgba(201,169,122,0.6);
+    }
+
+    /* ── HERO CONTENT ───────────────────────────────────────── */
+    .hero-content {
+      position: relative;
+      z-index: 5;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 3rem 2rem 5rem;
+    }
+
+    .hero-title-sub {
+      font-family: var(--font-header);
+      font-size: clamp(1rem, 2.5vw, 1.25rem);
+      letter-spacing: 0.35em;
+      color: rgba(201,169,122,0.75);
+      text-transform: uppercase;
+      margin-bottom: 0.3rem;
+    }
+
+    .hero-title-main {
+      font-family: var(--font-header);
+      font-size: clamp(3rem, 10vw, 6.5rem);
+      letter-spacing: 0.08em;
+      color: rgba(220,190,140,0.97);
+      text-transform: uppercase;
+      line-height: 0.9;
+      text-shadow:
+        0 2px 30px rgba(0,0,0,0.8),
+        0 0 80px rgba(200,150,60,0.12);
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-diamond {
+      width: 12px;
+      height: 12px;
+      background: rgba(201,169,122,0.5);
+      transform: rotate(45deg);
+      margin: 0 auto 1.5rem;
+    }
+
+    .hero-tagline {
+      font-family: var(--font-type);
+      font-size: clamp(0.85rem, 2vw, 1.05rem);
+      color: rgba(201,169,122,0.7);
+      font-style: italic;
+      line-height: 1.8;
+      letter-spacing: 0.04em;
+    }
+
+    /* ── CASE FILES SECTION ─────────────────────────────────── */
+    .cases-section {
+      position: relative;
+      background: var(--paper-bg);
+      padding: 0 0 3rem;
+    }
+
+    /* Torn paper top edge */
+    .cases-section::before {
+      content: "";
+      display: block;
+      height: 28px;
+      background: var(--paper-bg);
+      clip-path: polygon(
+        0% 100%, 1% 20%, 2.5% 90%, 4% 10%, 5.5% 80%, 7% 5%,
+        8.5% 85%, 10% 15%, 11.5% 75%, 13% 25%, 14.5% 70%,
+        16% 30%, 17.5% 65%, 19% 20%, 20.5% 80%, 22% 10%,
+        23.5% 90%, 25% 15%, 26.5% 75%, 28% 35%, 29.5% 60%,
+        31% 25%, 32.5% 70%, 34% 10%, 35.5% 85%, 37% 20%,
+        38.5% 75%, 40% 30%, 41.5% 65%, 43% 15%, 44.5% 80%,
+        46% 20%, 47.5% 70%, 49% 10%, 50.5% 90%, 52% 25%,
+        53.5% 60%, 55% 15%, 56.5% 80%, 58% 30%, 59.5% 65%,
+        61% 10%, 62.5% 85%, 64% 20%, 65.5% 75%, 67% 35%,
+        68.5% 60%, 70% 15%, 71.5% 80%, 73% 25%, 74.5% 70%,
+        76% 10%, 77.5% 90%, 79% 20%, 80.5% 65%, 82% 30%,
+        83.5% 75%, 85% 15%, 86.5% 80%, 88% 25%, 89.5% 60%,
+        91% 10%, 92.5% 85%, 94% 20%, 95.5% 70%, 97% 30%,
+        98.5% 80%, 100% 0%, 100% 100%
+      );
+    }
+
+    /* Paper texture grain */
+    .cases-section-inner {
+      position: relative;
+      padding: 0 2rem 2rem;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    .cases-section-inner::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23noise)' opacity='0.035'/%3E%3C/svg%3E");
+      pointer-events: none;
+    }
+
+    /* ── SECTION HEADER ─────────────────────────────────────── */
+    .section-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding-top: 2.5rem;
+      padding-bottom: 1.75rem;
+      position: relative;
+    }
+
+    .section-title-group {}
+
+    .section-title {
+      font-family: var(--font-header);
+      font-size: clamp(1.4rem, 4vw, 2rem);
+      letter-spacing: 0.18em;
+      color: var(--ink);
+      text-transform: uppercase;
+      line-height: 1;
+    }
+
+    .section-title-rule {
+      width: 48px;
+      height: 2px;
+      background: rgba(60,30,10,0.35);
+      margin-top: 0.5rem;
+    }
+
+    .section-subtitle {
+      font-family: var(--font-type);
+      font-size: 0.82rem;
+      color: rgba(60,30,10,0.6);
+      margin-top: 0.6rem;
+      font-style: italic;
+      line-height: 1.5;
+    }
+
+    .btn-progress {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(28,18,10,0.88);
+      color: rgba(201,169,122,0.85);
+      border: 1px solid rgba(201,169,122,0.2);
+      padding: 0.6rem 1.1rem;
+      font-family: var(--font-type);
+      font-size: 0.7rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s;
+      white-space: nowrap;
+      flex-shrink: 0;
+      margin-top: 0.25rem;
+    }
+
+    .btn-progress:hover {
+      background: rgba(40,28,14,0.95);
+      color: var(--paper);
+    }
+
+    .btn-progress svg { opacity: 0.8; }
+    a.btn-progress { display: inline-flex; }
+
+    /* ── CASE CARDS ─────────────────────────────────────────── */
+    .case-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .case-card {
+      display: flex;
+      align-items: stretch;
+      background: rgba(220,195,155,0.55);
+      border: 1px solid rgba(160,120,60,0.25);
+      border-radius: 2px;
+      overflow: hidden;
+      transition: box-shadow 0.2s, transform 0.2s;
+      position: relative;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.12), inset 0 1px 0 rgba(255,255,255,0.15);
+    }
+
+    a.case-card {
+      display: flex;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .case-card:hover {
+      box-shadow: 0 4px 16px rgba(0,0,0,0.18), inset 0 1px 0 rgba(255,255,255,0.15);
+      transform: translateY(-1px);
+    }
+
+    .case-card.locked {
+      opacity: 0.82;
+    }
+
+    /* Paper clip decoration */
+    .case-card::before {
+      content: "";
+      position: absolute;
+      top: -2px;
+      left: 22px;
+      width: 18px;
+      height: 28px;
+      border: 2px solid rgba(120,100,60,0.5);
+      border-bottom: none;
+      border-radius: 8px 8px 0 0;
+      pointer-events: none;
+      z-index: 2;
+    }
+
+    .case-img {
+      width: 190px;
+      min-width: 190px;
+      height: 130px;
+      object-fit: cover;
+      display: block;
+      filter: sepia(0.5) contrast(0.9);
+      flex-shrink: 0;
+    }
+
+    /* Placeholder image when no real image */
+    .case-img-placeholder {
+      width: 190px;
+      min-width: 190px;
+      height: 130px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .case-img-placeholder svg {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      inset: 0;
+    }
+
+    .case-body {
+      flex: 1;
+      padding: 1.1rem 1.4rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-width: 0;
+    }
+
+    .case-number-label {
+      font-family: var(--font-type);
+      font-size: 0.68rem;
+      letter-spacing: 0.2em;
+      color: rgba(60,30,10,0.55);
+      text-transform: uppercase;
+      margin-bottom: 0.2rem;
+    }
+
+    .case-title {
+      font-family: var(--font-header);
+      font-size: clamp(1rem, 2.5vw, 1.3rem);
+      letter-spacing: 0.06em;
+      color: var(--ink);
+      text-transform: uppercase;
+      line-height: 1.2;
+      margin-bottom: 0.5rem;
+    }
+
+    .case-desc {
+      font-family: var(--font-type);
+      font-size: 0.8rem;
+      color: rgba(60,30,10,0.65);
+      font-style: italic;
+      line-height: 1.55;
+    }
+
+    /* Card divider */
+    .case-divider-v {
+      width: 1px;
+      background: rgba(140,100,40,0.2);
+      align-self: stretch;
+      margin: 0.75rem 0;
+    }
+
+    .case-status {
+      width: 130px;
+      min-width: 130px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      padding: 1rem;
+      flex-shrink: 0;
+    }
+
+    /* Unlocked state */
+    .case-status.unlocked .status-icon {
+      color: var(--green-pine);
+    }
+
+    .case-status.unlocked .status-label {
+      color: var(--green-pine);
+      font-weight: 700;
+      letter-spacing: 0.2em;
+    }
+
+    /* Locked state */
+    .case-status.locked .status-icon {
+      color: rgba(60,40,20,0.4);
+    }
+
+    .case-status.locked .status-label {
+      color: rgba(60,40,20,0.45);
+      letter-spacing: 0.2em;
+    }
+
+    .status-icon svg {
+      display: block;
+    }
+
+    .status-label {
+      font-family: var(--font-type);
+      font-size: 0.65rem;
+      text-transform: uppercase;
+    }
+
+    /* ── MORE CASES FOOTER ──────────────────────────────────── */
+    .more-cases {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+      padding: 2rem 0 0.5rem;
+      font-family: var(--font-type);
+      font-size: 0.7rem;
+      letter-spacing: 0.25em;
+      color: rgba(60,30,10,0.45);
+      text-transform: uppercase;
+    }
+
+    .more-cases-rule {
+      flex: 1;
+      max-width: 120px;
+      height: 1px;
+      background: rgba(60,30,10,0.2);
+    }
+
+    /* ── SEASON INDICATOR ───────────────────────────────────── */
+    .season-indicator {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 1.25rem;
+      flex-wrap: wrap;
+    }
+    .season-pill {
+      display: flex;
+      align-items: center;
+      gap: 0.45rem;
+      padding: 0.35rem 0.8rem;
+      border: 1px solid rgba(60,30,10,0.2);
+      background: rgba(60,30,10,0.06);
+      font-family: var(--font-type);
+      font-size: 0.63rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: rgba(60,30,10,0.4);
+      cursor: default;
+    }
+    .season-pill.active {
+      border-color: rgba(60,30,10,0.45);
+      background: rgba(60,30,10,0.12);
+      color: rgba(60,30,10,0.75);
+    }
+    .season-pill.complete {
+      border-color: rgba(74,124,78,0.4);
+      background: rgba(74,124,78,0.08);
+      color: rgba(74,124,78,0.7);
+    }
+    .season-pill-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: currentColor;
+      opacity: 0.7;
+      flex-shrink: 0;
+    }
+    .season-pill-progress {
+      font-size: 0.55rem;
+      opacity: 0.65;
+      margin-left: 0.1rem;
+    }
+    .season-indicator-arrow {
+      font-size: 0.6rem;
+      color: rgba(60,30,10,0.25);
+      flex-shrink: 0;
+    }
+
+    /* ── COUNTDOWN ──────────────────────────────────────────── */
+    .countdown-wrap {
+      margin: 1rem 0 1.5rem;
+      padding: 1.75rem 2rem;
+      background: rgba(0,0,0,0.45);
+      border: 1px solid rgba(201,169,122,0.2);
+      border-top: 2px solid rgba(201,169,122,0.35);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.25rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .countdown-wrap::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 80% 60% at 50% 100%, rgba(201,169,122,0.04) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .countdown-header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.35rem;
+    }
+    .countdown-label {
+      font-size: 0.58rem;
+      letter-spacing: 0.35em;
+      text-transform: uppercase;
+      color: rgba(201,169,122,0.4);
+    }
+    .countdown-case {
+      font-family: var(--font-header);
+      font-size: 1.1rem;
+      letter-spacing: 0.12em;
+      color: rgba(201,169,122,0.85);
+      text-align: center;
+    }
+    .countdown-rule {
+      width: 40px;
+      height: 1px;
+      background: rgba(201,169,122,0.2);
+    }
+    .countdown-dials {
+      display: flex;
+      gap: 0;
+      align-items: flex-start;
+    }
+    .countdown-unit {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.4rem;
+      min-width: 72px;
+    }
+    .countdown-num {
+      font-family: var(--font-header);
+      font-size: 3rem;
+      line-height: 1;
+      color: rgba(201,169,122,0.92);
+      text-shadow: 0 0 30px rgba(201,169,122,0.15);
+      min-width: 2ch;
+      text-align: center;
+    }
+    .countdown-unit-label {
+      font-size: 0.52rem;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: rgba(201,169,122,0.35);
+    }
+    .countdown-sep {
+      font-family: var(--font-header);
+      font-size: 2.4rem;
+      color: rgba(201,169,122,0.2);
+      padding: 0 0.1rem;
+      line-height: 1;
+      margin-top: 0.05rem;
+    }
+    .countdown-sub {
+      font-size: 0.6rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: rgba(201,169,122,0.25);
+    }
+    @media (max-width: 500px) {
+      .countdown-num { font-size: 2.2rem; }
+      .countdown-unit { min-width: 54px; }
+      .countdown-sep { font-size: 1.8rem; }
+    }
+
+    /* ── COMPLETED BANNER ───────────────────────────────────── */
+    .completed-banner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.7rem 1rem;
+      margin-bottom: 0.75rem;
+      background: rgba(74,124,78,0.1);
+      border: 1px solid rgba(74,124,78,0.25);
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    .completed-banner:hover { background: rgba(74,124,78,0.18); }
+    .completed-banner-count {
+      font-family: var(--font-type);
+      font-size: 0.72rem;
+      letter-spacing: 0.18em;
+      color: rgba(74,124,78,0.85);
+      text-transform: uppercase;
+    }
+    .completed-banner-link {
+      font-family: var(--font-type);
+      font-size: 0.68rem;
+      letter-spacing: 0.15em;
+      color: rgba(74,124,78,0.7);
+      text-transform: uppercase;
+    }
+
+    /* ── STREAMING BAR ──────────────────────────────────────── */
+    .streaming-bar {
+      background: rgba(10,7,4,0.97);
+      border-top: 1px solid rgba(201,169,122,0.1);
+      border-bottom: 1px solid rgba(201,169,122,0.06);
+      display: flex;
+      align-items: center;
+      padding: 0.85rem 2.5rem;
+      gap: 1.5rem;
+    }
+
+    .streaming-label {
+      font-family: var(--font-type);
+      font-size: 0.65rem;
+      letter-spacing: 0.22em;
+      color: rgba(201,169,122,0.35);
+      text-transform: uppercase;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .streaming-platforms {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      flex: 1;
+    }
+
+    .platform-link {
+      display: flex;
+      align-items: center;
+      gap: 0.45rem;
+      color: rgba(201,169,122,0.55);
+      font-family: var(--font-type);
+      font-size: 0.72rem;
+      letter-spacing: 0.1em;
+      transition: color 0.2s;
+      white-space: nowrap;
+    }
+
+    .platform-link:hover { color: rgba(201,169,122,0.92); }
+
+    .platform-sep {
+      color: rgba(201,169,122,0.2);
+      font-size: 0.8rem;
+      user-select: none;
+    }
+
+    .btn-view-more {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      flex-shrink: 0;
+      background: rgba(201,169,122,0.1);
+      border: 1px solid rgba(201,169,122,0.25);
+      padding: 0.5rem 1rem;
+      font-family: var(--font-type);
+      font-size: 0.68rem;
+      letter-spacing: 0.15em;
+      color: rgba(201,169,122,0.8);
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: background 0.2s, color 0.2s, border-color 0.2s;
+      white-space: nowrap;
+    }
+
+    .btn-view-more:hover {
+      background: rgba(201,169,122,0.18);
+      color: var(--paper);
+      border-color: rgba(201,169,122,0.45);
+    }
+
+    /* ── SITE FOOTER ────────────────────────────────────────── */
+    .site-footer {
+      background: var(--bg);
+      padding: 1.5rem 2.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid rgba(201,169,122,0.08);
+    }
+
+    .footer-motto {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+    }
+
+    .footer-motto svg { opacity: 0.55; flex-shrink: 0; }
+
+    .footer-motto-text {
+      font-family: var(--font-header);
+      font-size: 0.68rem;
+      letter-spacing: 0.18em;
+      color: rgba(201,169,122,0.45);
+      text-transform: uppercase;
+      line-height: 1.4;
+    }
+
+    .footer-copy {
+      font-family: var(--font-type);
+      font-size: 0.65rem;
+      letter-spacing: 0.1em;
+      color: rgba(201,169,122,0.3);
+      text-transform: uppercase;
+    }
+
+    .footer-right {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+    }
+
+    .footer-join {
+      font-family: var(--font-type);
+      font-size: 0.68rem;
+      letter-spacing: 0.15em;
+      color: rgba(201,169,122,0.55);
+      text-transform: uppercase;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      transition: color 0.2s;
+    }
+
+    .footer-join:hover { color: var(--paper); }
+
+    .footer-email svg { opacity: 0.45; }
+
+    /* ── RESPONSIVE ─────────────────────────────────────────── */
+    @media (max-width: 640px) {
+      .site-nav { padding: 1rem 1.25rem; }
+      .cases-section-inner { padding: 0 1rem 2rem; }
+      .section-header { flex-direction: column; gap: 1rem; }
+      .btn-progress { align-self: flex-end; }
+      .case-img-placeholder, .case-img { width: 110px; min-width: 110px; height: 100px; }
+      .case-status { width: 90px; min-width: 90px; }
+      .hero-title-main { letter-spacing: 0.04em; }
+      .streaming-bar { flex-wrap: wrap; gap: 0.75rem; padding: 0.85rem 1.25rem; }
+      .streaming-platforms { flex-wrap: wrap; }
+      .streaming-label { display: none; }
+      .btn-view-more { margin-left: auto; }
+      .site-footer { flex-direction: column; gap: 1rem; text-align: center; }
+      .footer-motto { justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── HERO ──────────────────────────────────────────────── -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-lamp-glow"></div>
+
+    <nav class="site-nav">
+      <a href="index.html" class="nav-brand">
+        <span>Asten Vale</span>
+        <span>Archives</span>
+      </a>
+
+      <div class="nav-logo">
+        <!-- Pine tree compass logo -->
+        <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="30" cy="30" r="28" stroke="rgba(201,169,122,0.6)" stroke-width="1.2"/>
+          <circle cx="30" cy="30" r="22" stroke="rgba(201,169,122,0.35)" stroke-width="0.8"/>
+          <!-- North tick -->
+          <line x1="30" y1="4" x2="30" y2="10" stroke="rgba(201,169,122,0.7)" stroke-width="1.5"/>
+          <!-- Pine tree -->
+          <polygon points="30,13 23,26 37,26" fill="rgba(201,169,122,0.82)"/>
+          <polygon points="30,18 21,33 39,33" fill="rgba(201,169,122,0.82)"/>
+          <rect x="27" y="33" width="6" height="5" fill="rgba(201,169,122,0.7)"/>
+          <!-- Cardinal ticks -->
+          <line x1="30" y1="50" x2="30" y2="56" stroke="rgba(201,169,122,0.5)" stroke-width="1"/>
+          <line x1="4" y1="30" x2="10" y2="30" stroke="rgba(201,169,122,0.5)" stroke-width="1"/>
+          <line x1="50" y1="30" x2="56" y2="30" stroke="rgba(201,169,122,0.5)" stroke-width="1"/>
+        </svg>
+      </div>
+
+      <div class="nav-links">
+        <a href="index.html"     class="nav-link active">Archive</a>
+        <a href="completed.html" class="nav-link">Completed</a>
+        <a href="progress.html"  class="nav-link">Progress</a>
+        <a href="about.html"     class="nav-link">About</a>
+        <a href="join.html"      class="nav-link">Join</a>
+      </div>
+    </nav>
+
+    <div class="hero-content">
+      <p class="hero-title-sub">The Ashton Vale</p>
+      <h1 class="hero-title-main">Archives</h1>
+      <div class="hero-diamond"></div>
+      <p class="hero-tagline">
+        Uncover the truth.<br>
+        One case at a time.
+      </p>
+    </div>
+  </section>
+
+  <!-- ── CASE FILES ─────────────────────────────────────────── -->
+  <section class="cases-section" id="cases">
+    <div class="cases-section-inner">
+
+      <div class="section-header">
+        <div class="section-title-group">
+          <h2 class="section-title">Case Files</h2>
+          <div class="section-title-rule"></div>
+          <p class="section-subtitle">
+            Browse the declassified files.<br>
+            Some truths are hidden for a reason.
+          </p>
+        </div>
+        <a href="progress.html" class="btn-progress">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="1" y="8" width="3" height="5" fill="currentColor"/>
+            <rect x="5.5" y="5" width="3" height="8" fill="currentColor"/>
+            <rect x="10" y="2" width="3" height="11" fill="currentColor"/>
+          </svg>
+          View Progress
+        </a>
+      </div>
+
+      <!-- Season indicator — populated by JS -->
+      <div class="season-indicator" id="seasonIndicator"></div>
+
+      <!-- Countdown — populated by JS, hidden if no date set -->
+      <div class="countdown-wrap" id="countdownWrap" style="display:none;">
+        <div class="countdown-header">
+          <span class="countdown-label">Next Case File Drops In</span>
+          <span class="countdown-case" id="countdownCase"></span>
+          <div class="countdown-rule"></div>
+        </div>
+        <div class="countdown-dials">
+          <div class="countdown-unit">
+            <span class="countdown-num" id="cd-d">--</span>
+            <span class="countdown-unit-label">Days</span>
+          </div>
+          <span class="countdown-sep">:</span>
+          <div class="countdown-unit">
+            <span class="countdown-num" id="cd-h">--</span>
+            <span class="countdown-unit-label">Hours</span>
+          </div>
+          <span class="countdown-sep">:</span>
+          <div class="countdown-unit">
+            <span class="countdown-num" id="cd-m">--</span>
+            <span class="countdown-unit-label">Minutes</span>
+          </div>
+          <span class="countdown-sep">:</span>
+          <div class="countdown-unit">
+            <span class="countdown-num" id="cd-s">--</span>
+            <span class="countdown-unit-label">Seconds</span>
+          </div>
+        </div>
+        <span class="countdown-sub">The archive does not wait — but it does keep records</span>
+      </div>
+
+      <div class="case-list" id="caseList">
+
+      </div><!-- /case-list (populated by JS) -->
+
+      <!-- More cases coming soon -->
+      <div class="more-cases">
+        <span class="more-cases-rule"></span>
+        More Cases
+        <svg width="14" height="14" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <polygon points="30,8 24,22 36,22" fill="rgba(60,30,10,0.4)"/>
+          <polygon points="30,14 20,30 40,30" fill="rgba(60,30,10,0.4)"/>
+          <rect x="27" y="30" width="6" height="5" fill="rgba(60,30,10,0.35)"/>
+        </svg>
+        Coming Soon
+        <span class="more-cases-rule"></span>
+      </div>
+
+    </div><!-- /cases-section-inner -->
+  </section>
+
+  <!-- ── STREAMING BAR ────────────────────────────────────────── -->
+  <div class="streaming-bar">
+    <span class="streaming-label">Listen on</span>
+    <div class="streaming-platforms">
+
+      <!-- Spotify -->
+      <a href="#" class="platform-link" aria-label="Spotify">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.498 17.306a.75.75 0 01-1.032.25c-2.824-1.725-6.38-2.115-10.567-1.158a.75.75 0 01-.334-1.462c4.584-1.047 8.514-.596 11.684 1.338a.75.75 0 01.249 1.032zm1.468-3.261a.937.937 0 01-1.288.308c-3.23-1.985-8.147-2.56-11.97-1.4a.937.937 0 01-.574-1.787c4.363-1.403 9.786-.723 13.524 1.592a.937.937 0 01.308 1.287zm.126-3.396C15.32 8.39 9.316 8.19 5.975 9.215a1.124 1.124 0 01-.69-2.14c3.826-1.233 10.187-1 14.201 1.422a1.125 1.125 0 01-1.394 1.752z"/>
+        </svg>
+        <span>Spotify</span>
+      </a>
+
+      <span class="platform-sep">·</span>
+
+      <!-- Apple Music -->
+      <a href="#" class="platform-link" aria-label="Apple Music">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path d="M23.994 6.124a9.23 9.23 0 00-.24-2.19c-.317-1.31-1.062-2.31-2.18-3.043a5.022 5.022 0 00-1.877-.726 10.496 10.496 0 00-1.564-.15c-.04-.003-.083-.01-.124-.013H5.986c-.152.01-.303.017-.455.026C4.786.07 4.043.15 3.34.428 2.004.958 1.04 1.88.475 3.208a5.485 5.485 0 00-.36 1.582c-.06.483-.073.97-.074 1.455v9.51c.002.506.015 1.01.085 1.515.138 1.003.502 1.912 1.152 2.69.96 1.14 2.19 1.748 3.668 1.876.396.034.795.045 1.195.047l.164.003h12.11c.524-.003 1.045-.02 1.563-.11 1.333-.235 2.41-.874 3.228-1.95.54-.718.857-1.536.993-2.415.07-.47.09-.946.09-1.42V6.124zm-5.546 9.33c-.002.024-.006.048-.008.072-.084.736-.54 1.184-1.264 1.258-.342.035-.668-.01-.972-.17-.458-.238-.927-.457-1.39-.683-.164-.08-.335-.15-.5-.233-.17-.085-.25-.045-.25.148.002.558.002 1.116 0 1.674-.003.714-.003 1.427-.008 2.14-.003.375-.105.718-.34.992-.356.414-.83.577-1.37.52-.64-.068-1.13-.44-1.345-1.06a1.77 1.77 0 01-.102-.617c-.004-2.085-.002-4.17-.002-6.254v-.14c-.012-.636.424-1.14 1.052-1.246.33-.056.65-.007.956.128.69.305 1.376.615 2.065.923.343.154.686.306 1.03.456.175.077.26.038.26-.158v-4.36c0-.403.142-.734.47-.977.232-.17.498-.232.784-.216.538.03.978.33 1.12.85.05.183.068.374.07.562.003 2.082.002 4.164 0 6.246v.094z"/>
+        </svg>
+        <span>Apple Music</span>
+      </a>
+
+      <span class="platform-sep">·</span>
+
+      <!-- YouTube Music -->
+      <a href="#" class="platform-link" aria-label="YouTube Music">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 0C5.376 0 0 5.376 0 12s5.376 12 12 12 12-5.376 12-12S18.624 0 12 0zm0 19.2c-3.978 0-7.2-3.222-7.2-7.2S8.022 4.8 12 4.8s7.2 3.222 7.2 7.2-3.222 7.2-7.2 7.2zm0-11.4c-2.32 0-4.2 1.88-4.2 4.2S9.68 16.2 12 16.2s4.2-1.88 4.2-4.2S14.32 7.8 12 7.8zm0 5.9a1.7 1.7 0 110-3.4 1.7 1.7 0 010 3.4z"/>
+          <path d="M9.6 12l5.04-2.91v5.82L9.6 12z"/>
+        </svg>
+        <span>YouTube Music</span>
+      </a>
+
+      <span class="platform-sep">·</span>
+
+      <!-- Amazon Music -->
+      <a href="#" class="platform-link" aria-label="Amazon Music">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13.958 10.09c0 1.232.03 2.256-.59 3.351-.502.891-1.301 1.438-2.186 1.438-1.214 0-1.922-.924-1.922-2.292 0-2.692 2.415-3.182 4.698-3.182v.685zm3.186 7.705a.66.66 0 01-.745.074c-1.047-.869-1.234-1.271-1.807-2.098-1.728 1.763-2.95 2.288-5.19 2.288-2.652 0-4.715-1.636-4.715-4.909 0-2.557 1.387-4.299 3.362-5.149 1.714-.752 4.11-.886 5.942-1.092v-.406c0-.748.058-1.632-.38-2.276-.381-.576-1.11-.814-1.755-.814-1.193 0-2.253.613-2.514 1.882-.053.282-.261.559-.548.573l-3.069-.33c-.259-.058-.547-.266-.472-.66C5.97 2.516 8.806 1.6 11.348 1.6c1.3 0 2.998.346 4.025 1.33C16.7 4.176 16.57 6.3 16.57 8.596v4.979c0 1.498.622 2.156 1.208 2.964.206.288.251.633-.01.846l-2.622 2.41zM21.4 18.9c-2.522 1.71-6.176 2.62-9.326 2.62-4.41 0-8.377-1.63-11.38-4.342-.236-.213-.025-.504.258-.338 3.24 1.887 7.24 3.02 11.38 3.02 2.79 0 5.862-.578 8.687-1.776.427-.18.786.28.381.816z"/>
+        </svg>
+        <span>Amazon Music</span>
+      </a>
+
+    </div>
+
+    <a href="index.html#cases" class="btn-view-more">
+      View More Cases
+      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M2 6h8M7 3l3 3-3 3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a>
+  </div>
+
+  <!-- ── FOOTER ─────────────────────────────────────────────── -->
+  <footer class="site-footer">
+    <div class="footer-motto">
+      <svg width="28" height="28" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="30" cy="30" r="27" stroke="rgba(201,169,122,0.5)" stroke-width="1.2"/>
+        <polygon points="30,10 25,22 35,22" fill="rgba(201,169,122,0.6)"/>
+        <polygon points="30,16 21,30 39,30" fill="rgba(201,169,122,0.6)"/>
+        <rect x="27" y="30" width="6" height="5" fill="rgba(201,169,122,0.55)"/>
+      </svg>
+      <span class="footer-motto-text">
+        Truth is not given.<br>
+        It is discovered.
+      </span>
+    </div>
+
+    <span class="footer-copy">© 2025 Ashton Vale Archives</span>
+
+    <a href="https://buymeacoffee.com/YOUR_USERNAME" target="_blank" rel="noopener" class="footer-copy" style="text-decoration:none;opacity:0.7;transition:opacity 0.2s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.7'">☕ Buy Me a Coffee</a>
+
+    <div class="footer-right">
+      <a href="join.html" class="footer-join">Join the Archive</a>
+      <a href="join.html" class="footer-email">
+        <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="1" y="1" width="18" height="14" rx="2" stroke="rgba(201,169,122,0.5)" stroke-width="1.2"/>
+          <path d="M1 3L10 9L19 3" stroke="rgba(201,169,122,0.5)" stroke-width="1.2"/>
+        </svg>
+      </a>
+    </div>
+  </footer>
+
+  <script src="js/vault-config.js"></script>
+  <script>
+  (function () {
+    var season = SEASONS_CONFIG[0];
+    var solved = [];
+    try { solved = JSON.parse(localStorage.getItem('av_solved') || '[]'); } catch(e) {}
+
+    var PADLOCK_SVG =
+      '<svg width="42" height="48" viewBox="0 0 42 48" fill="none" xmlns="http://www.w3.org/2000/svg">' +
+        '<rect x="3" y="22" width="36" height="24" rx="3" fill="currentColor" fill-opacity="0.35" stroke="currentColor" stroke-opacity="0.5" stroke-width="1.5"/>' +
+        '<path d="M10 22V15C10 8.37 31 8.37 31 15V22" stroke="currentColor" stroke-opacity="0.55" stroke-width="3" stroke-linecap="round" fill="none"/>' +
+        '<circle cx="21" cy="34" r="4" fill="currentColor" fill-opacity="0.5"/>' +
+        '<rect x="19.5" y="34" width="3" height="6" rx="1.5" fill="currentColor" fill-opacity="0.45"/>' +
+      '</svg>';
+
+    function makeSceneSVG(scene, gradient, dim) {
+      var accent = gradient[0], dark = gradient[1];
+      var id = 'sg' + Math.random().toString(36).slice(2, 7);
+      var fog = dim ? 'rgba(0,0,0,0.55)' : 'rgba(0,0,0,0)';
+      var base =
+        '<svg viewBox="0 0 190 130" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">' +
+        '<defs>' +
+          '<radialGradient id="' + id + 'bg" cx="50%" cy="45%" r="65%">' +
+            '<stop offset="0%" stop-color="' + accent + '" stop-opacity="0.9"/>' +
+            '<stop offset="100%" stop-color="' + dark + '" stop-opacity="1"/>' +
+          '</radialGradient>' +
+        '</defs>' +
+        '<rect width="190" height="130" fill="' + dark + '"/>' +
+        '<rect width="190" height="130" fill="url(#' + id + 'bg)"/>';
+
+      var scenes = {
+        lantern:
+          // pine trees silhouette + glowing lantern
+          '<path d="M0 100 L18 60 L36 100 M20 100 L44 40 L68 100 M55 100 L78 55 L101 100 M130 100 L154 45 L178 100 M160 100 L175 68 L190 100" fill="rgba(0,0,0,0.5)"/>' +
+          '<ellipse cx="95" cy="52" rx="18" ry="24" fill="rgba(245,166,35,0.12)"/>' +
+          '<ellipse cx="95" cy="52" rx="8" ry="11" fill="rgba(245,166,35,0.22)"/>' +
+          '<rect x="91" y="48" width="8" height="12" rx="1" fill="rgba(245,166,35,0.7)"/>' +
+          '<line x1="95" y1="36" x2="95" y2="42" stroke="rgba(180,120,40,0.6)" stroke-width="1.5"/>' +
+          '<path d="M88 48 Q95 38 102 48" stroke="rgba(180,120,40,0.5)" stroke-width="1" fill="none"/>',
+
+        letter:
+          '<rect x="38" y="35" width="114" height="76" rx="2" fill="rgba(220,195,150,0.15)" stroke="rgba(220,195,150,0.4)" stroke-width="1.5"/>' +
+          '<path d="M38 38 L95 78 L152 38" stroke="rgba(220,195,150,0.35)" stroke-width="1.5" fill="none"/>' +
+          '<path d="M38 111 L72 80 M152 111 L118 80" stroke="rgba(220,195,150,0.25)" stroke-width="1" fill="none"/>' +
+          '<circle cx="95" cy="73" r="9" fill="rgba(120,20,20,0.55)" stroke="rgba(180,50,50,0.4)" stroke-width="1"/>',
+
+        key:
+          '<circle cx="75" cy="65" r="22" fill="none" stroke="rgba(180,150,60,0.6)" stroke-width="4"/>' +
+          '<circle cx="75" cy="65" r="12" fill="none" stroke="rgba(180,150,60,0.4)" stroke-width="2"/>' +
+          '<line x1="97" y1="65" x2="148" y2="65" stroke="rgba(180,150,60,0.6)" stroke-width="4" stroke-linecap="round"/>' +
+          '<line x1="135" y1="65" x2="135" y2="78" stroke="rgba(180,150,60,0.5)" stroke-width="3.5" stroke-linecap="round"/>' +
+          '<line x1="148" y1="65" x2="148" y2="75" stroke="rgba(180,150,60,0.5)" stroke-width="3.5" stroke-linecap="round"/>',
+
+        church:
+          '<rect x="65" y="55" width="60" height="55" fill="rgba(60,40,80,0.4)" stroke="rgba(140,110,180,0.3)" stroke-width="1"/>' +
+          '<polygon points="95,20 65,55 125,55" fill="rgba(60,40,80,0.5)" stroke="rgba(140,110,180,0.3)" stroke-width="1"/>' +
+          '<line x1="95" y1="5" x2="95" y2="22" stroke="rgba(180,160,210,0.5)" stroke-width="2"/>' +
+          '<line x1="87" y1="12" x2="103" y2="12" stroke="rgba(180,160,210,0.5)" stroke-width="2"/>' +
+          '<rect x="83" y="80" width="24" height="30" fill="rgba(30,20,50,0.6)"/>' +
+          '<ellipse cx="95" cy="42" rx="4" ry="5" fill="rgba(180,160,210,0.2)" stroke="rgba(180,160,210,0.4)" stroke-width="1"/>',
+
+        clock:
+          '<circle cx="95" cy="65" r="38" fill="rgba(30,40,40,0.4)" stroke="rgba(140,170,170,0.4)" stroke-width="2"/>' +
+          '<circle cx="95" cy="65" r="30" fill="none" stroke="rgba(140,170,170,0.2)" stroke-width="1"/>' +
+          '<line x1="95" y1="35" x2="95" y2="42" stroke="rgba(180,200,200,0.5)" stroke-width="2"/>' +
+          '<line x1="95" y1="88" x2="95" y2="95" stroke="rgba(180,200,200,0.5)" stroke-width="2"/>' +
+          '<line x1="65" y1="65" x2="72" y2="65" stroke="rgba(180,200,200,0.5)" stroke-width="2"/>' +
+          '<line x1="118" y1="65" x2="125" y2="65" stroke="rgba(180,200,200,0.5)" stroke-width="2"/>' +
+          '<line x1="95" y1="65" x2="95" y2="42" stroke="rgba(220,230,230,0.7)" stroke-width="2" stroke-linecap="round"/>' +
+          '<line x1="95" y1="65" x2="113" y2="68" stroke="rgba(220,230,230,0.6)" stroke-width="1.5" stroke-linecap="round"/>' +
+          '<circle cx="95" cy="65" r="3" fill="rgba(220,230,230,0.8)"/>',
+
+        forest:
+          '<path d="M0 110 L15 70 L30 110 M12 110 L30 55 L48 110 M35 110 L55 60 L75 110 M65 110 L88 48 L111 110 M100 110 L122 58 L144 110 M135 110 L157 65 L179 110 M162 110 L176 75 L190 110" fill="rgba(0,0,0,0.55)"/>' +
+          '<ellipse cx="95" cy="85" rx="60" ry="18" fill="rgba(10,30,10,0.35)"/>',
+
+        matchbook:
+          '<rect x="58" y="38" width="74" height="58" rx="3" fill="rgba(180,60,30,0.4)" stroke="rgba(220,100,50,0.4)" stroke-width="1.5"/>' +
+          '<rect x="68" y="48" width="54" height="38" rx="2" fill="rgba(220,180,100,0.12)" stroke="rgba(220,180,100,0.25)" stroke-width="1"/>' +
+          '<line x1="68" y1="60" x2="122" y2="60" stroke="rgba(220,180,100,0.2)" stroke-width="1"/>' +
+          '<line x1="68" y1="68" x2="122" y2="68" stroke="rgba(220,180,100,0.2)" stroke-width="1"/>' +
+          '<line x1="68" y1="76" x2="122" y2="76" stroke="rgba(220,180,100,0.2)" stroke-width="1"/>' +
+          '<line x1="118" y1="38" x2="118" y2="24" stroke="rgba(180,140,60,0.5)" stroke-width="1.5"/>' +
+          '<ellipse cx="118" cy="21" rx="4" ry="6" fill="rgba(245,166,35,0.6)"/>' +
+          '<ellipse cx="118" cy="18" rx="2" ry="4" fill="rgba(255,200,80,0.5)"/>',
+
+        bell:
+          '<path d="M95 20 L95 30" stroke="rgba(180,160,100,0.6)" stroke-width="2"/>' +
+          '<path d="M68 90 Q68 45 95 45 Q122 45 122 90 Z" fill="rgba(140,120,60,0.35)" stroke="rgba(180,160,100,0.4)" stroke-width="1.5"/>' +
+          '<line x1="62" y1="90" x2="128" y2="90" stroke="rgba(180,160,100,0.45)" stroke-width="2"/>' +
+          '<ellipse cx="95" cy="97" rx="7" ry="4" fill="rgba(140,120,60,0.5)" stroke="rgba(180,160,100,0.3)" stroke-width="1"/>' +
+          '<line x1="95" y1="93" x2="95" y2="101" stroke="rgba(180,160,100,0.5)" stroke-width="1.5"/>',
+
+        cabin:
+          '<polygon points="30,70 95,30 160,70" fill="rgba(60,30,15,0.5)" stroke="rgba(120,80,40,0.35)" stroke-width="1"/>' +
+          '<rect x="50" y="70" width="90" height="50" fill="rgba(60,30,15,0.4)" stroke="rgba(120,80,40,0.35)" stroke-width="1"/>' +
+          '<rect x="80" y="85" width="30" height="35" fill="rgba(30,15,8,0.6)"/>' +
+          '<rect x="58" y="78" width="18" height="16" fill="rgba(30,15,8,0.5)"/>' +
+          '<rect x="114" y="78" width="18" height="16" fill="rgba(30,15,8,0.5)"/>',
+
+        road:
+          '<path d="M0 130 L190 130 L190 110 L0 110 Z" fill="rgba(20,20,30,0.4)"/>' +
+          '<path d="M50 130 Q75 90 95 60 Q115 30 130 5" stroke="rgba(140,130,100,0.4)" stroke-width="16" fill="none"/>' +
+          '<path d="M50 130 Q75 90 95 60 Q115 30 130 5" stroke="rgba(20,20,30,0.5)" stroke-width="14" fill="none"/>' +
+          '<path d="M90 130 Q94 100 96 70 Q98 40 105 5" stroke="rgba(200,190,140,0.25)" stroke-width="2" stroke-dasharray="8 6" fill="none"/>' +
+          '<path d="M0 85 L50 85 M140 40 L190 20" stroke="rgba(60,50,80,0.4)" stroke-width="20" fill="none"/>',
+
+        snow:
+          '<rect width="190" height="130" fill="rgba(20,22,35,0.3)"/>' +
+          '<ellipse cx="95" cy="110" rx="80" ry="15" fill="rgba(200,210,230,0.15)"/>' +
+          '<path d="M0 95 Q48 85 95 90 Q142 95 190 88" fill="rgba(200,210,230,0.12)" stroke="none"/>' +
+          '<text x="95" y="62" text-anchor="middle" font-family="serif" font-size="22" letter-spacing="6" fill="rgba(200,210,230,0.35)" font-style="italic">SARAH</text>' +
+          '<circle cx="30" cy="25" r="1.5" fill="rgba(220,230,245,0.4)"/>' +
+          '<circle cx="70" cy="15" r="1" fill="rgba(220,230,245,0.3)"/>' +
+          '<circle cx="120" cy="20" r="1.5" fill="rgba(220,230,245,0.4)"/>' +
+          '<circle cx="160" cy="10" r="1" fill="rgba(220,230,245,0.3)"/>' +
+          '<circle cx="50" cy="35" r="1" fill="rgba(220,230,245,0.25)"/>' +
+          '<circle cx="145" cy="30" r="1.5" fill="rgba(220,230,245,0.3)"/>',
+
+        files:
+          '<rect x="30" y="55" width="75" height="58" rx="2" fill="rgba(80,50,20,0.45)" stroke="rgba(140,100,40,0.4)" stroke-width="1"/>' +
+          '<rect x="30" y="48" width="50" height="12" rx="2" fill="rgba(100,60,20,0.5)" stroke="rgba(140,100,40,0.3)" stroke-width="1"/>' +
+          '<rect x="45" y="65" width="75" height="58" rx="2" fill="rgba(90,55,20,0.4)" stroke="rgba(140,100,40,0.35)" stroke-width="1"/>' +
+          '<rect x="45" y="58" width="50" height="12" rx="2" fill="rgba(110,65,20,0.45)" stroke="rgba(140,100,40,0.3)" stroke-width="1"/>' +
+          '<rect x="60" y="75" width="75" height="42" rx="2" fill="rgba(100,60,20,0.45)" stroke="rgba(140,100,40,0.4)" stroke-width="1"/>' +
+          '<line x1="68" y1="88" x2="120" y2="88" stroke="rgba(180,140,70,0.25)" stroke-width="1"/>' +
+          '<line x1="68" y1="96" x2="120" y2="96" stroke="rgba(180,140,70,0.25)" stroke-width="1"/>' +
+          '<line x1="68" y1="104" x2="100" y2="104" stroke="rgba(180,140,70,0.25)" stroke-width="1"/>'
+      };
+
+      var sceneEl = scenes[scene] || scenes['files'];
+      return base + sceneEl + (dim ? '<rect width="190" height="130" fill="' + fog + '"/>' : '') + '</svg>';
+    }
+
+    // Find the current active season — first season that has unsolved released cases
+    var activeSeason = null;
+    var activeSeasonIndex = 0;
+    for (var si = 0; si < SEASONS_CONFIG.length; si++) {
+      var s = SEASONS_CONFIG[si];
+      var sRel = s.cases.filter(function(c) { return c.released; });
+      var sUnsolved = sRel.filter(function(c) { return solved.indexOf(c.id) === -1; });
+      if (sUnsolved.length > 0) { activeSeason = s; activeSeasonIndex = si; break; }
+    }
+    // Fall back to last season if all done
+    if (!activeSeason) { activeSeason = SEASONS_CONFIG[SEASONS_CONFIG.length - 1]; activeSeasonIndex = SEASONS_CONFIG.length - 1; }
+
+    var allCases    = activeSeason.cases;
+    var released    = allCases.filter(function(c) { return c.released; });
+    var numSolved   = released.filter(function(c) { return solved.indexOf(c.id) !== -1; }).length;
+    var unsolved    = released.filter(function(c) { return solved.indexOf(c.id) === -1; });
+    var active      = unsolved[0] || null;
+    var seasonLabel = 'S' + (activeSeasonIndex + 1);
+
+    var list = document.getElementById('caseList');
+
+    // ── Season indicator ──
+    var indicator = document.getElementById('seasonIndicator');
+    SEASONS_CONFIG.forEach(function(s, i) {
+      var sCases    = s.cases;
+      var sReleased = sCases.filter(function(c) { return c.released; });
+      var sSolved   = sReleased.filter(function(c) { return solved.indexOf(c.id) !== -1; });
+      var isComplete = sSolved.length === sCases.length && sCases.length > 0;
+      var isCurrent  = !isComplete && (activeSeason.id === s.id);
+
+      if (i > 0) {
+        var arrow = document.createElement('span');
+        arrow.className = 'season-indicator-arrow';
+        arrow.textContent = '›';
+        indicator.appendChild(arrow);
+      }
+
+      var pill = document.createElement('div');
+      pill.className = 'season-pill' + (isCurrent ? ' active' : '') + (isComplete ? ' complete' : '');
+      pill.innerHTML =
+        '<span class="season-pill-dot"></span>' +
+        'Season ' + (i + 1) +
+        '<span class="season-pill-progress">(' + sSolved.length + '/' + sCases.length + ')</span>';
+      indicator.appendChild(pill);
+    });
+
+    // Completed banner
+    if (numSolved > 0) {
+      var banner = document.createElement('a');
+      banner.href = 'completed.html';
+      banner.className = 'completed-banner';
+      banner.innerHTML =
+        '<span class="completed-banner-count">' + numSolved + ' case' + (numSolved === 1 ? '' : 's') + ' completed</span>' +
+        '<span class="completed-banner-link">View Completed Files →</span>';
+      list.parentNode.insertBefore(banner, list);
+    }
+
+    var COMPASS_SVG =
+      '<svg width="44" height="44" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">' +
+        '<circle cx="30" cy="30" r="27" stroke="currentColor" stroke-width="1.5" stroke-opacity="0.7"/>' +
+        '<circle cx="30" cy="30" r="21" stroke="currentColor" stroke-width="0.8" stroke-opacity="0.4"/>' +
+        '<line x1="30" y1="4" x2="30" y2="10" stroke="currentColor" stroke-width="1.5"/>' +
+        '<polygon points="30,12 24,24 36,24" fill="currentColor"/>' +
+        '<polygon points="30,17 20,31 40,31" fill="currentColor"/>' +
+        '<rect x="27" y="31" width="6" height="5" fill="currentColor"/>' +
+        '<line x1="30" y1="50" x2="30" y2="56" stroke="currentColor" stroke-width="1" stroke-opacity="0.6"/>' +
+        '<line x1="4" y1="30" x2="10" y2="30" stroke="currentColor" stroke-width="1" stroke-opacity="0.6"/>' +
+        '<line x1="50" y1="30" x2="56" y2="30" stroke="currentColor" stroke-width="1" stroke-opacity="0.6"/>' +
+      '</svg>';
+
+    // Render every case in order — active, classified-locked, or classified-unreleased
+    allCases.forEach(function(c) {
+      var num   = parseInt(c.id, 10);
+      var numPad = String(num).padStart(3,'0');
+      var desc1 = (c.desc && c.desc[0]) || '';
+      var desc2 = (c.desc && c.desc[1]) || '';
+      var isSolved   = solved.indexOf(c.id) !== -1;
+      var isActive   = active && active.id === c.id;
+      var isReleased = c.released;
+
+      var card = document.createElement('a');
+
+      if (isSolved) {
+        // Solved — show on completed page, skip here
+        return;
+      }
+
+      var sceneSVG = makeSceneSVG(c.scene || 'files', c.gradient || ['#3a3a2a','#0c0a06'], !isActive);
+      var seriesBadge = '<span style="display:inline-block;background:rgba(60,30,10,0.18);border:1px solid rgba(60,30,10,0.18);font-size:0.55rem;letter-spacing:0.18em;padding:0.1rem 0.35rem;margin-right:0.5rem;vertical-align:middle;text-transform:uppercase;">' + seasonLabel + '</span>';
+
+      if (isActive) {
+        card.className = 'case-card';
+        card.href = c.url;
+        card.innerHTML =
+          '<div class="case-img-placeholder">' + sceneSVG + '</div>' +
+          '<div class="case-body">' +
+            '<p class="case-number-label">' + seriesBadge + 'Case ' + numPad + ' &nbsp;·&nbsp; <span style="color:rgba(74,124,78,0.9);letter-spacing:0.1em">Active</span></p>' +
+            '<h3 class="case-title">' + c.title + '</h3>' +
+            '<p class="case-desc">' + desc1 + (desc2 ? '<br>' + desc2 : '') + '</p>' +
+          '</div>' +
+          '<div class="case-divider-v"></div>' +
+          '<div class="case-status unlocked">' +
+            '<div class="status-icon">' + COMPASS_SVG + '</div>' +
+            '<span class="status-label">Open</span>' +
+          '</div>';
+      } else {
+        card.className = 'case-card locked';
+        card.href = 'classified.html?id=' + c.id;
+        card.innerHTML =
+          '<div class="case-img-placeholder">' + sceneSVG + '</div>' +
+          '<div class="case-body">' +
+            '<p class="case-number-label">' + seriesBadge + 'Case ' + numPad + ' &nbsp;·&nbsp; <span style="color:rgba(120,20,20,0.7);letter-spacing:0.1em">Classified</span></p>' +
+            '<h3 class="case-title" style="opacity:0.45">' + c.title + '</h3>' +
+            '<p class="case-desc" style="opacity:0.28">' + (isReleased ? 'Complete the active case to access this file.' : 'This file has not yet been released.') + '</p>' +
+          '</div>' +
+          '<div class="case-divider-v"></div>' +
+          '<div class="case-status locked">' +
+            '<div class="status-icon">' + PADLOCK_SVG + '</div>' +
+            '<span class="status-label">Classified</span>' +
+          '</div>';
+      }
+
+      list.appendChild(card);
+    });
+
+    // If all released cases solved
+    if (active === null && numSolved === released.length && released.length > 0) {
+      var done = document.createElement('div');
+      done.style.cssText = 'text-align:center;padding:1.5rem 1rem;font-family:var(--font-type);font-size:0.82rem;color:rgba(60,30,10,0.45);font-style:italic;';
+      done.textContent = 'All released cases completed. More files coming soon.';
+      list.insertBefore(done, list.firstChild);
+    }
+
+  })();
+  </script>
+
+  <!-- ── COUNTDOWN ──────────────────────────────────────────── -->
+  <script>
+  (function() {
+    function startCountdown(sched) {
+      if (!sched || sched.type === 'off') return;
+
+      // Find next unreleased case title from vault config
+      var nextTitle = '';
+      if (typeof SEASONS_CONFIG !== 'undefined') {
+        for (var si = 0; si < SEASONS_CONFIG.length; si++) {
+          var unreleased = SEASONS_CONFIG[si].cases.filter(function(c) { return !c.released; });
+          if (unreleased.length > 0) { nextTitle = unreleased[0].title; break; }
+        }
+      }
+
+      // Compute target date from schedule type
+      var target = null;
+      var now = new Date();
+      if (sched.type === 'manual' && sched.nextDate) {
+        target = new Date(sched.nextDate);
+      } else if (sched.type === 'weekly' || sched.type === 'biweekly') {
+        var dow  = sched.weekday != null ? parseInt(sched.weekday) : 0;
+        var diff = (dow - now.getDay() + 7) % 7 || 7;
+        if (sched.type === 'biweekly') diff += 7;
+        target = new Date(now);
+        target.setDate(now.getDate() + diff);
+        target.setHours(8, 0, 0, 0);
+      } else if (sched.type === 'monthly') {
+        var mday = parseInt(sched.monthDay) || 1;
+        target = new Date(now.getFullYear(), now.getMonth(), mday, 8, 0, 0);
+        if (target <= now) target = new Date(now.getFullYear(), now.getMonth() + 1, mday, 8, 0, 0);
+      }
+
+      if (!target || isNaN(target.getTime()) || target <= now) return;
+
+      var wrap   = document.getElementById('countdownWrap');
+      var caseEl = document.getElementById('countdownCase');
+      if (!wrap) return;
+      wrap.style.display = 'flex';
+      if (caseEl) caseEl.textContent = nextTitle ? nextTitle : 'Next case file incoming';
+
+      function pad(n) { return n < 10 ? '0' + n : '' + n; }
+      function tick() {
+        var rem = target - new Date();
+        if (rem <= 0) { wrap.style.display = 'none'; return; }
+        var d = Math.floor(rem / 86400000);
+        var h = Math.floor((rem % 86400000) / 3600000);
+        var m = Math.floor((rem % 3600000) / 60000);
+        var s = Math.floor((rem % 60000) / 1000);
+        document.getElementById('cd-d').textContent = pad(d);
+        document.getElementById('cd-h').textContent = pad(h);
+        document.getElementById('cd-m').textContent = pad(m);
+        document.getElementById('cd-s').textContent = pad(s);
+      }
+      tick();
+      setInterval(tick, 1000);
+    }
+
+    // Try fetch first (works on server), fall back to a hardcoded default
+    if (window.location.protocol !== 'file:') {
+      fetch('js/site-settings.json')
+        .then(function(r) { return r.json(); })
+        .then(function(s) { startCountdown(s.releaseSchedule); })
+        .catch(function() {});
+    } else {
+      // file:// — fetch blocked, use weekly Sunday as default so countdown is always visible locally
+      startCountdown({ type: 'weekly', weekday: 0 });
+    }
+  })();
+  </script>
+</body>
+</html>
