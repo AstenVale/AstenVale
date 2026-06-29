@@ -269,7 +269,12 @@
         }
         window.SONG_DATA = null;
         loaded++;
-        if (loaded === solved.length) renderCabinet(collectibles);
+        if (loaded === solved.length) {
+          collectibles.sort(function(a, b) {
+            return parseInt(a.caseId, 10) - parseInt(b.caseId, 10);
+          });
+          renderCabinet(collectibles);
+        }
       };
       s.onerror = function() {
         loaded++;
