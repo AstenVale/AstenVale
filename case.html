@@ -735,12 +735,7 @@ body.unlocked .archive-player,body.unlocked #fields-container,body.unlocked .pan
 
   // -- ARCHIVE AUDIO PLAYER --------------------------------------------------
   function getCaseAudioPath(d) {
-    var id   = String(parseInt(d.id, 10) || 1).padStart(3, '0');
-    var slug = (d.title || '').toLowerCase()
-      .replace(/['’]/g, '')
-      .replace(/[^a-z0-9]+/g, '-')
-      .replace(/^-|-$/g, '');
-    return 'audio/season-01/case-' + id + '/' + slug + '.mp3';
+    return d.audioSrc || null;
   }
 
   function initArchivePlayer(d) {
@@ -762,10 +757,10 @@ body.unlocked .archive-player,body.unlocked #fields-container,body.unlocked .pan
     if (titleEl) titleEl.textContent = d.title || ('Case ' + id);
     if (metaEl)  metaEl.textContent  = 'Archive ID: AVA-' + id + '  |  Season 01';
 
-    // Derive and set audio source; also store on d so Recovered Music picks it up
-    var src = getCaseAudioPath(d);
-    d.audioSrc  = src;
-    audio.src   = src;
+    // Use audioSrc from song data; store back so Recovered Music section picks it up
+    var src = d.audioSrc || getCaseAudioPath(d);
+    if (src) { audio.src = src; }
+    d.audioSrc = src;
 
     var playing = false;
     var lastVol = 1;
