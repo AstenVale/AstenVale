@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Evidence Recordings &mdash; The Asten Vale Archives</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    :root {
+      --ink:         #1c120a;
+      --ink-faded:   #4a3728;
+      --paper:       #c9a97a;
+      --paper-dark:  #b8935e;
+      --paper-light: #ddc49a;
+      --paper-bg:    #c4a472;
+      --folder-red:  #7a1f1f;
+      --stamp-red:   #8b1a1a;
+      --gold:        #c9960c;
+      --glow:        #f5a623;
+      --bg:          #0c0a06;
+      --bg-mid:      #16120b;
+      --font-type:   'Courier Prime', 'Courier New', Courier, monospace;
+      --font-header: 'Special Elite', 'Courier New', serif;
+    }
+
+    body { background: var(--bg); color: var(--ink); font-family: var(--font-type); font-size: 15px; line-height: 1.7; min-height: 100vh; overflow-x: hidden; }
+    a { text-decoration: none; color: inherit; }
+
+    /* NAV */
+    .site-nav { position: relative; z-index: 10; display: flex; align-items: center; justify-content: space-between; padding: 1.25rem 2.5rem; }
+    .nav-brand { font-family: var(--font-header); font-size: 0.75rem; letter-spacing: 0.22em; color: rgba(201,169,122,0.75); text-decoration: none; text-transform: uppercase; line-height: 1.3; }
+    .nav-brand span { display: block; }
+    .nav-logo { position: absolute; left: 50%; transform: translateX(-50%); }
+    .nav-logo svg { width: 46px; height: 46px; opacity: 0.9; }
+    .nav-links { display: flex; gap: 2rem; align-items: center; }
+    .nav-link { font-family: var(--font-type); font-size: 0.72rem; letter-spacing: 0.18em; color: rgba(201,169,122,0.7); text-decoration: none; text-transform: uppercase; transition: color 0.2s; position: relative; }
+    .nav-link:hover { color: var(--paper); }
+    .nav-link.active { color: rgba(201,169,122,0.95); }
+    .nav-link.active::after { content: ""; position: absolute; bottom: -3px; left: 0; right: 0; height: 1px; background: rgba(201,169,122,0.6); }
+
+    /* HERO */
+    .page-hero { position: relative; min-height: 28vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 2rem 2rem 2.5rem; }
+    .page-hero::before { content: ""; position: absolute; inset: 0; background: radial-gradient(ellipse 60% 80% at 50% 50%, rgba(245,166,35,0.04) 0%, transparent 70%); pointer-events: none; }
+    .page-eyebrow { font-family: var(--font-type); font-size: 0.65rem; letter-spacing: 0.32em; color: rgba(201,169,122,0.4); text-transform: uppercase; margin-bottom: 0.4rem; position: relative; }
+    .page-title { font-family: var(--font-header); font-size: clamp(1.8rem, 5vw, 3rem); letter-spacing: 0.12em; color: rgba(220,190,140,0.95); text-transform: uppercase; text-shadow: 0 2px 30px rgba(0,0,0,0.8); margin-bottom: 0.75rem; position: relative; }
+    .page-rule { width: 40px; height: 1px; background: rgba(201,169,122,0.3); margin: 0 auto 0.75rem; }
+    .page-sub { font-family: var(--font-type); font-size: 0.82rem; color: rgba(201,169,122,0.5); font-style: italic; position: relative; }
+
+    /* CABINET SECTION */
+    .cabinet-section { background: var(--paper-bg); position: relative; }
+    .cabinet-section::before { content: ""; display: block; height: 28px; background: var(--paper-bg); clip-path: polygon(0% 100%, 1% 20%, 2.5% 90%, 4% 10%, 5.5% 80%, 7% 5%, 8.5% 85%, 10% 15%, 11.5% 75%, 13% 25%, 14.5% 70%, 16% 30%, 17.5% 65%, 19% 20%, 20.5% 80%, 22% 10%, 23.5% 90%, 25% 15%, 26.5% 75%, 28% 35%, 29.5% 60%, 31% 25%, 32.5% 70%, 34% 10%, 35.5% 85%, 37% 20%, 38.5% 75%, 40% 30%, 41.5% 65%, 43% 15%, 44.5% 80%, 46% 20%, 47.5% 70%, 49% 10%, 50.5% 90%, 52% 25%, 53.5% 60%, 55% 15%, 56.5% 80%, 58% 30%, 59.5% 65%, 61% 10%, 62.5% 85%, 64% 20%, 65.5% 75%, 67% 35%, 68.5% 60%, 70% 15%, 71.5% 80%, 73% 25%, 74.5% 70%, 76% 10%, 77.5% 90%, 79% 20%, 80.5% 65%, 82% 30%, 83.5% 75%, 85% 15%, 86.5% 80%, 88% 25%, 89.5% 60%, 91% 10%, 92.5% 85%, 94% 20%, 95.5% 70%, 97% 30%, 98.5% 80%, 100% 0%, 100% 100%); }
+
+    .cabinet-inner { position: relative; max-width: 980px; margin: 0 auto; padding: 0 2rem 3rem; }
+    .cabinet-inner::before { content: ""; position: absolute; inset: 0; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23noise)' opacity='0.035'/%3E%3C/svg%3E"); pointer-events: none; }
+
+    /* CABINET HEADER */
+    .cabinet-header { display: flex; align-items: flex-start; justify-content: space-between; padding-top: 2rem; padding-bottom: 1.25rem; position: relative; }
+    .cabinet-title { font-family: var(--font-header); font-size: clamp(1.1rem, 3vw, 1.6rem); letter-spacing: 0.18em; color: var(--ink); text-transform: uppercase; }
+    .cabinet-title-rule { width: 40px; height: 2px; background: rgba(60,30,10,0.35); margin-top: 0.4rem; }
+    .cabinet-subtitle { font-family: var(--font-type); font-size: 0.78rem; color: rgba(60,30,10,0.6); margin-top: 0.4rem; font-style: italic; }
+    .cabinet-count { font-family: var(--font-header); font-size: 0.68rem; letter-spacing: 0.18em; color: rgba(60,30,10,0.5); text-transform: uppercase; padding: 0.4rem 0.85rem; border: 1px solid rgba(60,30,10,0.2); background: rgba(0,0,0,0.04); white-space: nowrap; margin-top: 0.25rem; }
+
+    /* SEARCH & FILTER BAR */
+    .cabinet-controls { display: flex; flex-direction: column; gap: 0.7rem; padding-bottom: 1.25rem; border-bottom: 1px solid rgba(60,30,10,0.18); margin-bottom: 1.25rem; }
+    .cabinet-search-row { display: flex; gap: 0.65rem; align-items: center; }
+    .cabinet-search { flex: 1; font-family: var(--font-type); font-size: 0.76rem; letter-spacing: 0.06em; color: var(--ink); background: rgba(0,0,0,0.08); border: 1px solid rgba(60,30,10,0.25); padding: 0.5rem 0.8rem; outline: none; }
+    .cabinet-search::placeholder { color: rgba(60,30,10,0.38); font-style: italic; }
+    .cabinet-search:focus { border-color: rgba(60,30,10,0.5); background: rgba(0,0,0,0.12); }
+    .cabinet-sort { font-family: var(--font-type); font-size: 0.7rem; letter-spacing: 0.1em; color: var(--ink); background: rgba(0,0,0,0.08); border: 1px solid rgba(60,30,10,0.25); padding: 0.5rem 0.7rem; outline: none; cursor: pointer; flex-shrink: 0; }
+    .cabinet-sort option { background: var(--paper-bg); }
+    .filter-row { display: flex; flex-wrap: wrap; gap: 0.35rem; }
+    .filter-btn { font-family: var(--font-type); font-size: 0.58rem; letter-spacing: 0.18em; color: rgba(60,30,10,0.65); text-transform: uppercase; border: 1px solid rgba(60,30,10,0.22); background: rgba(0,0,0,0.05); padding: 0.2rem 0.6rem; cursor: pointer; transition: background 0.15s, color 0.15s, border-color 0.15s; }
+    .filter-btn:hover { background: rgba(0,0,0,0.1); color: var(--ink); }
+    .filter-btn.active { background: rgba(60,30,10,0.18); border-color: rgba(60,30,10,0.5); color: var(--ink); }
+
+    /* CATEGORY ACCORDION */
+    .category-group { margin-bottom: 0.5rem; border: 1px solid rgba(60,30,10,0.18); background: rgba(0,0,0,0.04); }
+    .category-toggle { display: flex; align-items: center; gap: 0.75rem; padding: 0.75rem 1rem; cursor: pointer; user-select: none; transition: background 0.15s; }
+    .category-toggle:hover { background: rgba(0,0,0,0.06); }
+    .category-icon { font-size: 0.85rem; flex-shrink: 0; }
+    .category-label { font-family: var(--font-header); font-size: 0.85rem; letter-spacing: 0.14em; color: rgba(60,30,10,0.75); text-transform: uppercase; flex: 1; }
+    .category-badge { font-family: var(--font-type); font-size: 0.56rem; letter-spacing: 0.2em; color: rgba(60,30,10,0.45); text-transform: uppercase; border: 1px solid rgba(60,30,10,0.2); padding: 0.15rem 0.5rem; white-space: nowrap; }
+    .category-chevron { font-size: 0.6rem; color: rgba(60,30,10,0.4); transition: transform 0.25s; flex-shrink: 0; }
+    .category-group.open .category-chevron { transform: rotate(180deg); }
+    .category-body { display: none; padding: 0.75rem; border-top: 1px solid rgba(60,30,10,0.12); }
+    .category-group.open .category-body { display: block; }
+
+    /* SOUND LIST (compact row layout) */
+    .sound-list { display: flex; flex-direction: column; gap: 0.5rem; }
+
+    /* Sound row card */
+    .sound-card { background: rgba(220,195,155,0.5); border: 1px solid rgba(160,120,60,0.28); border-radius: 2px; position: relative; box-shadow: 0 1px 6px rgba(0,0,0,0.1), inset 0 1px 0 rgba(255,255,255,0.12); transition: transform 0.15s, box-shadow 0.15s; overflow: hidden; }
+    .sound-card:hover { transform: translateY(-1px); box-shadow: 0 4px 14px rgba(0,0,0,0.15), inset 0 1px 0 rgba(255,255,255,0.12); }
+    /* Paper clip */
+    .sound-card::before { content: ""; position: absolute; top: -2px; left: 14px; width: 12px; height: 20px; border: 1.5px solid rgba(120,100,60,0.45); border-bottom: none; border-radius: 6px 6px 0 0; pointer-events: none; z-index: 2; }
+
+    .sound-card-inner { display: flex; align-items: center; gap: 0.85rem; padding: 0.65rem 0.9rem 0.65rem 1.1rem; }
+
+    /* Left: category symbol */
+    .sound-symbol { font-size: 1.4rem; flex-shrink: 0; width: 2rem; text-align: center; filter: drop-shadow(0 1px 6px rgba(245,166,35,0.3)); }
+
+    /* Middle: metadata */
+    .sound-meta { flex: 1; min-width: 0; }
+    .sound-meta-top { display: flex; align-items: baseline; gap: 0.6rem; flex-wrap: wrap; }
+    .sound-name { font-family: var(--font-header); font-size: 0.88rem; letter-spacing: 0.1em; color: var(--ink); text-transform: uppercase; line-height: 1.2; }
+    .sound-stamp { font-family: var(--font-header); font-size: 0.46rem; letter-spacing: 0.26em; color: var(--stamp-red); border: 1px solid var(--stamp-red); padding: 0.08rem 0.35rem; text-transform: uppercase; opacity: 0.8; transform: rotate(-1deg); display: inline-block; }
+    .sound-desc { font-family: var(--font-type); font-size: 0.7rem; color: rgba(60,30,10,0.65); line-height: 1.5; font-style: italic; margin-top: 0.15rem; }
+    .sound-cases-row { font-size: 0.56rem; letter-spacing: 0.14em; color: rgba(60,30,10,0.45); text-transform: uppercase; margin-top: 0.2rem; }
+    .sound-case-link { color: var(--folder-red); text-underline-offset: 2px; text-decoration: underline; opacity: 0.8; transition: opacity 0.15s; }
+    .sound-case-link:hover { opacity: 1; }
+    .sound-recurring { display: inline-block; font-family: var(--font-type); font-size: 0.46rem; letter-spacing: 0.18em; color: rgba(60,30,10,0.45); border: 1px solid rgba(60,30,10,0.2); padding: 0.06rem 0.35rem; text-transform: uppercase; vertical-align: middle; margin-left: 0.25rem; }
+
+    /* Right: audio player or locked */
+    .sound-player-col { flex-shrink: 0; width: 200px; }
+    .sound-audio { width: 100%; height: 28px; opacity: 0.85; display: block; }
+    .sound-audio:focus { outline: 1px solid rgba(60,30,10,0.4); }
+    .sound-locked-col { flex-shrink: 0; display: flex; flex-direction: column; align-items: flex-end; gap: 0.15rem; }
+    .sound-locked-text { font-family: var(--font-header); font-size: 0.52rem; letter-spacing: 0.24em; color: rgba(60,30,10,0.38); text-transform: uppercase; }
+    .sound-locked-icon { font-size: 0.9rem; opacity: 0.3; }
+
+    /* EMPTY STATE */
+    .cabinet-empty { text-align: center; padding: 2.5rem 2rem; }
+    .cabinet-empty-icon { font-size: 2.5rem; display: block; margin-bottom: 0.85rem; opacity: 0.4; }
+    .cabinet-empty-title { font-family: var(--font-header); font-size: 1rem; letter-spacing: 0.15em; color: var(--ink); margin-bottom: 0.4rem; }
+    .cabinet-empty-sub { font-size: 0.78rem; color: rgba(60,30,10,0.55); font-style: italic; line-height: 1.7; max-width: 360px; margin: 0 auto 1.25rem; }
+    .cabinet-empty-btn { display: inline-block; font-family: var(--font-header); font-size: 0.72rem; letter-spacing: 0.2em; color: var(--paper-light); background: var(--folder-red); border: none; padding: 0.6rem 1.4rem; text-decoration: none; text-transform: uppercase; }
+
+    /* LOCKED TALLY */
+    .locked-tally { display: flex; align-items: center; gap: 0.75rem; padding: 0.8rem 1rem; border: 1px solid rgba(60,30,10,0.15); background: rgba(0,0,0,0.03); margin-top: 0.5rem; }
+    .locked-tally-icon { font-size: 0.85rem; opacity: 0.4; }
+    .locked-tally-text { font-family: var(--font-type); font-size: 0.68rem; letter-spacing: 0.14em; color: rgba(60,30,10,0.5); text-transform: uppercase; font-style: italic; }
+
+    /* MORE SOON */
+    .cabinet-more { display: flex; align-items: center; justify-content: center; gap: 0.75rem; padding: 1.75rem 0 0.5rem; font-family: var(--font-type); font-size: 0.68rem; letter-spacing: 0.25em; color: rgba(60,30,10,0.4); text-transform: uppercase; }
+    .cabinet-more-rule { flex: 1; max-width: 100px; height: 1px; background: rgba(60,30,10,0.2); }
+
+    /* FOOTER */
+    .site-footer { background: var(--bg); padding: 1.5rem 2.5rem; display: flex; align-items: center; justify-content: space-between; border-top: 1px solid rgba(201,169,122,0.08); }
+    .footer-motto { display: flex; align-items: center; gap: 0.85rem; }
+    .footer-motto svg { opacity: 0.55; flex-shrink: 0; }
+    .footer-motto-text { font-family: var(--font-header); font-size: 0.68rem; letter-spacing: 0.18em; color: rgba(201,169,122,0.45); text-transform: uppercase; line-height: 1.4; }
+    .footer-copy { font-family: var(--font-type); font-size: 0.65rem; letter-spacing: 0.1em; color: rgba(201,169,122,0.3); text-transform: uppercase; }
+
+    @keyframes fade-up { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+
+    @media (max-width: 640px) {
+      .site-nav { padding: 1rem 1.25rem; }
+      .cabinet-inner { padding: 0 1rem 2rem; }
+      .cabinet-header { flex-direction: column; gap: 0.65rem; }
+      .sound-card-inner { flex-wrap: wrap; }
+      .sound-player-col { width: 100%; }
+      .cabinet-search-row { flex-direction: column; align-items: stretch; }
+      .site-footer { flex-direction: column; gap: 1rem; text-align: center; }
+      .footer-motto { justify-content: center; }
+    }
+  </style>
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/sounds-archive.css">
+  <link rel="stylesheet" href="css/polish.css">
+</head>
+<body>
+
+  <nav class="site-nav">
+    <a href="index.html" class="nav-brand">
+      <span>Asten Vale</span>
+      <span>Archives</span>
+    </a>
+
+    <div class="nav-logo">
+      <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="30" cy="30" r="28" stroke="rgba(201,169,122,0.6)" stroke-width="1.2"/>
+        <circle cx="30" cy="30" r="22" stroke="rgba(201,169,122,0.35)" stroke-width="0.8"/>
+        <line x1="30" y1="4" x2="30" y2="10" stroke="rgba(201,169,122,0.7)" stroke-width="1.5"/>
+        <polygon points="30,13 23,26 37,26" fill="rgba(201,169,122,0.82)"/>
+        <polygon points="30,18 21,33 39,33" fill="rgba(201,169,122,0.82)"/>
+        <rect x="27" y="33" width="6" height="5" fill="rgba(201,169,122,0.7)"/>
+        <line x1="30" y1="50" x2="30" y2="56" stroke="rgba(201,169,122,0.5)" stroke-width="1"/>
+        <line x1="4" y1="30" x2="10" y2="30" stroke="rgba(201,169,122,0.5)" stroke-width="1"/>
+        <line x1="50" y1="30" x2="56" y2="30" stroke="rgba(201,169,122,0.5)" stroke-width="1"/>
+      </svg>
+    </div>
+
+    <div class="nav-links">
+      <a href="index.html"     class="nav-link"        data-icon="&#128452;">Archive</a>
+      <a href="cabinet.html"   class="nav-link"        data-icon="&#128269;">Cabinet</a>
+      <a href="sounds.html"    class="nav-link active" data-icon="&#128266;">Sounds</a>
+      <a href="completed.html" class="nav-link"        data-icon="&#10022;">Completed</a>
+      <a href="progress.html"  class="nav-link"        data-icon="&#9678;">Progress</a>
+      <a href="about.html"     class="nav-link"        data-icon="&#9673;">About</a>
+      <a href="join.html"      class="nav-link"        data-icon="&#9993;">Join</a>
+    </div>
+  </nav>
+
+  <div class="page-hero">
+    <p class="page-eyebrow">Asten Vale Archives &nbsp;&middot;&nbsp; Audio Evidence Database</p>
+    <h1 class="page-title">Evidence Recordings</h1>
+    <div class="page-rule"></div>
+    <p class="page-sub recording-intro">Recovered environmental recordings collected during active investigations. Every recording was preserved as evidence. Some sounds return in multiple cases. Listen carefully.</p>
+  </div>
+
+  <section class="cabinet-section">
+    <div class="cabinet-inner">
+
+      <div class="cabinet-header">
+        <div class="cabinet-title-group">
+          <h2 class="cabinet-title">Archive Audio Evidence</h2>
+          <div class="cabinet-title-rule"></div>
+          <p class="cabinet-subtitle">Field recordings recovered from investigations you have closed.<br>Relationships between recordings may become clearer as more Case Files are declassified.</p>
+        </div>
+        <div class="cabinet-count" id="soundCount">0 Recordings</div>
+      </div>
+
+      <div class="archive-summary" id="archiveSummary"></div>
+
+      <div class="cabinet-controls">
+        <div class="cabinet-search-row">
+          <input
+            type="search"
+            class="cabinet-search"
+            id="soundSearch"
+            placeholder="Search by recording, category, case, location, description, or season..."
+            aria-label="Search evidence recordings"
+          />
+          <select class="cabinet-sort" id="soundSort" aria-label="Sort recordings">
+            <option value="alpha">A-Z</option>
+            <option value="newest">Newest</option>
+            <option value="oldest">Oldest</option>
+            <option value="most-referenced">Most Referenced</option>
+            <option value="case-number">Case Number</option>
+          </select>
+        </div>
+        <div class="filter-row" id="filterRow" role="group" aria-label="Filter recordings">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="Animal">Animal</button>
+          <button class="filter-btn" data-filter="Human">Human</button>
+          <button class="filter-btn" data-filter="Mechanical">Mechanical</button>
+          <button class="filter-btn" data-filter="Nature">Nature</button>
+          <button class="filter-btn" data-filter="Weather">Weather</button>
+          <button class="filter-btn" data-filter="Structure">Structure</button>
+          <button class="filter-btn" data-filter="recurring">Recurring</button>
+          <button class="filter-btn" data-filter="Verified">Verified</button>
+          <button class="filter-btn" data-filter="Unverified">Unverified</button>
+          <button class="filter-btn" data-filter="Unknown Source">Unknown Source</button>
+        </div>
+      </div>
+
+      <div id="soundBody"></div>
+
+      <div class="cabinet-more">
+        <span class="cabinet-more-rule"></span>
+        More Evidence Recordings
+        <svg width="14" height="14" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <polygon points="30,8 24,22 36,22" fill="rgba(60,30,10,0.4)"/>
+          <polygon points="30,14 20,30 40,30" fill="rgba(60,30,10,0.4)"/>
+          <rect x="27" y="30" width="6" height="5" fill="rgba(60,30,10,0.35)"/>
+        </svg>
+        Awaiting Recovery
+        <span class="cabinet-more-rule"></span>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-motto">
+      <svg width="28" height="28" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="30" cy="30" r="27" stroke="rgba(201,169,122,0.5)" stroke-width="1.2"/>
+        <polygon points="30,10 25,22 35,22" fill="rgba(201,169,122,0.6)"/>
+        <polygon points="30,16 21,30 39,30" fill="rgba(201,169,122,0.6)"/>
+        <rect x="27" y="30" width="6" height="5" fill="rgba(201,169,122,0.55)"/>
+      </svg>
+      <span class="footer-motto-text">Truth is not given.<br>It is discovered.</span>
+    </div>
+    <span class="footer-copy">&copy; 2026 Asten Vale Archives</span>
+    <a href="index.html" class="footer-copy" style="opacity:0.7;transition:opacity 0.2s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.7'">Back to Archive</a>
+  </footer>
+
+  <script src="data/sounds.js"></script>
+  <script src="js/sounds-archive.js"></script>
+  <script src="js/badges.js"></script>
+  <script>try { localStorage.setItem('av_visited_sounds','1'); if(typeof checkAndAwardBadges==='function') checkAndAwardBadges(); } catch(e) {}</script>
+
+  <script src="js/polish.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Closed Case Files - The Asten Vale Archives</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    :root {
+      --ink: #1c120a;
+      --ink-faded: #4a3728;
+      --paper: #c9a97a;
+      --paper-dark: #b8935e;
+      --paper-bg: #c4a472;
+      --folder-red: #7a1f1f;
+      --stamp-red: #8b1a1a;
+      --green-pine: #4a7c4e;
+      --bg: #0c0a06;
+      --font-type: 'Courier Prime', 'Courier New', Courier, monospace;
+      --font-header: 'Special Elite', 'Courier New', serif;
+    }
+    body { background: var(--bg); color: var(--ink); font-family: var(--font-type); font-size: 15px; line-height: 1.7; min-height: 100vh; overflow-x: hidden; }
+    a { text-decoration: none; color: inherit; }
+
+    .hero { position: relative; min-height: auto; display: flex; flex-direction: column; overflow: hidden; }
+    .hero-bg { position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(12,8,4,0.5) 0%, rgba(12,8,4,0.25) 40%, rgba(12,8,4,0.92) 100%), linear-gradient(135deg, #0a0e0a 0%, #0c0a06 60%, #0a0c08 100%); z-index: 0; }
+    .hero-glow { position: absolute; left: 8%; top: 10%; width: 280px; height: 200px; background: radial-gradient(ellipse at 40% 50%, rgba(74,124,78,0.07) 0%, transparent 70%); pointer-events: none; z-index: 1; }
+    .site-nav { position: relative; z-index: 10; display: flex; align-items: center; justify-content: space-between; padding: 1.25rem 2.5rem; }
+    .nav-brand { font-family: var(--font-header); font-size: 0.75rem; letter-spacing: 0.22em; color: rgba(201,169,122,0.75); text-transform: uppercase; line-height: 1.3; }
+    .nav-brand span { display: block; }
+    .nav-logo { position: absolute; left: 50%; transform: translateX(-50%); }
+    .nav-logo svg { width: 46px; height: 46px; opacity: 0.9; }
+    .nav-links { display: flex; gap: 2rem; align-items: center; }
+    .nav-link { font-family: var(--font-type); font-size: 0.72rem; letter-spacing: 0.18em; color: rgba(201,169,122,0.7); text-transform: uppercase; transition: color 0.2s; position: relative; }
+    .nav-link:hover { color: var(--paper); }
+    .nav-link.active { color: rgba(201,169,122,0.95); }
+    .nav-link.active::after { content: ""; position: absolute; bottom: -3px; left: 0; right: 0; height: 1px; background: rgba(201,169,122,0.6); }
+    .hero-content { position: relative; z-index: 5; flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 1.5rem 2rem 2.5rem; }
+    .hero-label { font-family: var(--font-type); font-size: 0.72rem; letter-spacing: 0.3em; color: rgba(201,169,122,0.5); text-transform: uppercase; margin-bottom: 0.6rem; }
+    .hero-title { font-family: var(--font-header); font-size: clamp(2rem, 7vw, 4rem); letter-spacing: 0.12em; color: rgba(220,190,140,0.95); text-transform: uppercase; text-shadow: 0 2px 30px rgba(0,0,0,0.8); margin-bottom: 1rem; }
+    .hero-rule { width: 60px; height: 1px; background: rgba(201,169,122,0.35); margin: 0 auto; }
+
+    .paper-section { position: relative; background: var(--paper-bg); padding-bottom: 4rem; }
+    .paper-section::before { content: ""; display: block; height: 28px; background: var(--paper-bg); clip-path: polygon(0% 100%,1% 20%,2.5% 90%,4% 10%,5.5% 80%,7% 5%,8.5% 85%,10% 15%,11.5% 75%,13% 25%,14.5% 70%,16% 30%,17.5% 65%,19% 20%,20.5% 80%,22% 10%,23.5% 90%,25% 15%,26.5% 75%,28% 35%,29.5% 60%,31% 25%,32.5% 70%,34% 10%,35.5% 85%,37% 20%,38.5% 75%,40% 30%,41.5% 65%,43% 15%,44.5% 80%,46% 20%,47.5% 70%,49% 10%,50.5% 90%,52% 25%,53.5% 60%,55% 15%,56.5% 80%,58% 30%,59.5% 65%,61% 10%,62.5% 85%,64% 20%,65.5% 75%,67% 35%,68.5% 60%,70% 15%,71.5% 80%,73% 25%,74.5% 70%,76% 10%,77.5% 90%,79% 20%,80.5% 65%,82% 30%,83.5% 75%,85% 15%,86.5% 80%,88% 25%,89.5% 60%,91% 10%,92.5% 85%,94% 20%,95.5% 70%,97% 30%,98.5% 80%,100% 0%,100% 100%); }
+    .paper-inner { position: relative; max-width: 1060px; margin: 0 auto; padding: 1rem 2.5rem 2rem; }
+    .paper-inner::before { content: ""; position: absolute; inset: 0; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23noise)' opacity='0.035'/%3E%3C/svg%3E"); pointer-events: none; }
+    .paper-inner::after { content: ""; position: absolute; top: 0; bottom: 0; left: 4rem; width: 1px; background: rgba(180,100,80,0.22); pointer-events: none; }
+
+    .section-head { position: relative; padding-top: 2.5rem; margin-bottom: 1.25rem; display: flex; align-items: flex-start; justify-content: space-between; gap: 1.5rem; }
+    .section-label { font-family: var(--font-type); font-size: 0.65rem; letter-spacing: 0.28em; color: rgba(60,30,10,0.45); text-transform: uppercase; margin-bottom: 0.35rem; }
+    .section-title { font-family: var(--font-header); font-size: clamp(1.25rem, 3.5vw, 1.8rem); letter-spacing: 0.13em; color: var(--ink); text-transform: uppercase; }
+    .section-rule { width: 36px; height: 1px; background: rgba(60,30,10,0.3); margin-top: 0.5rem; }
+    .season-indicator { min-width: 260px; padding: 0.85rem 1rem; border: 1px solid rgba(60,30,10,0.18); background: rgba(0,0,0,0.04); }
+    .season-indicator-title { font-family: var(--font-header); font-size: 0.85rem; letter-spacing: 0.14em; color: var(--ink); text-transform: uppercase; }
+    .season-indicator-copy { font-size: 0.72rem; letter-spacing: 0.08em; color: rgba(60,30,10,0.55); text-transform: uppercase; margin-top: 0.15rem; }
+    .archive-progress { height: 7px; background: rgba(60,30,10,0.16); border: 1px solid rgba(60,30,10,0.14); margin-top: 0.7rem; overflow: hidden; }
+    .archive-progress-fill { height: 100%; background: linear-gradient(90deg, rgba(122,31,31,0.76), rgba(201,150,12,0.5)); }
+
+    .archive-controls { position: relative; display: grid; grid-template-columns: minmax(220px, 1fr) auto; gap: 1rem; align-items: end; margin: 1.35rem 0 1.1rem; }
+    .archive-search-label, .archive-tabs-label { display: block; font-size: 0.58rem; letter-spacing: 0.24em; color: rgba(60,30,10,0.46); text-transform: uppercase; margin-bottom: 0.3rem; }
+    .archive-search { width: 100%; font-family: var(--font-type); font-size: 0.88rem; color: var(--ink); background: rgba(255,255,255,0.18); border: none; border-bottom: 1px solid rgba(60,30,10,0.45); padding: 0.55rem 0.25rem 0.45rem; outline: none; }
+    .archive-search::placeholder { color: rgba(60,30,10,0.42); font-style: italic; }
+    .archive-tabs { display: flex; flex-wrap: wrap; gap: 0.2rem 0.85rem; justify-content: flex-end; max-width: 520px; }
+    .archive-tab { font-family: var(--font-type); font-size: 0.62rem; letter-spacing: 0.16em; color: rgba(60,30,10,0.58); text-transform: uppercase; background: transparent; border: none; border-bottom: 1px solid rgba(60,30,10,0.22); padding: 0.22rem 0; cursor: pointer; }
+    .archive-tab:hover, .archive-tab.active { color: var(--ink); border-bottom-color: rgba(60,30,10,0.72); }
+
+    .season-group { position: relative; margin-bottom: 2rem; }
+    .season-header { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 1rem; align-items: center; margin-bottom: 0.85rem; padding-bottom: 0.65rem; border-bottom: 1px solid rgba(60,30,10,0.18); }
+    .season-header-label { font-family: var(--font-header); font-size: 0.8rem; letter-spacing: 0.22em; text-transform: uppercase; color: rgba(60,30,10,0.58); }
+    .season-header-title { font-family: var(--font-header); font-size: 0.98rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink); margin-top: 0.1rem; }
+    .season-records { display: flex; flex-wrap: wrap; gap: 0.65rem 1rem; align-items: center; justify-content: flex-end; color: rgba(60,30,10,0.58); }
+    .season-record { font-size: 0.62rem; letter-spacing: 0.16em; text-transform: uppercase; }
+    .season-card-list { display: grid; gap: 0.7rem; }
+
+    .case-card { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 1rem; align-items: stretch; background: rgba(220,195,155,0.55); border: 1px solid rgba(160,120,60,0.25); border-left: 3px solid rgba(122,31,31,0.45); border-radius: 2px; overflow: hidden; text-decoration: none; transition: box-shadow 0.2s, transform 0.2s, background 0.2s; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    .case-card:hover { background: rgba(225,202,164,0.67); box-shadow: 0 6px 18px rgba(0,0,0,0.18); transform: translateY(-1px); }
+    .case-main { padding: 1rem 1.15rem; min-width: 0; }
+    .case-row { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: 0.35rem; }
+    .case-number-label { font-family: var(--font-type); font-size: 0.64rem; letter-spacing: 0.2em; color: rgba(60,30,10,0.5); text-transform: uppercase; }
+    .case-title { font-family: var(--font-header); font-size: clamp(0.98rem, 2.5vw, 1.22rem); letter-spacing: 0.06em; color: var(--ink); text-transform: uppercase; margin-bottom: 0.35rem; }
+    .case-desc { font-family: var(--font-type); font-size: 0.78rem; color: rgba(60,30,10,0.6); font-style: italic; line-height: 1.5; margin-bottom: 0.75rem; }
+    .evidence-line { display: flex; flex-wrap: wrap; gap: 0.35rem 0.5rem; align-items: center; }
+    .evidence-label { font-size: 0.58rem; letter-spacing: 0.2em; color: rgba(60,30,10,0.45); text-transform: uppercase; margin-right: 0.2rem; }
+    .evidence-token { border: 1px solid rgba(60,30,10,0.18); background: rgba(0,0,0,0.035); padding: 0.12rem 0.42rem; font-size: 0.65rem; letter-spacing: 0.08em; color: rgba(60,30,10,0.72); text-transform: uppercase; }
+    .case-meta { display: flex; flex-wrap: wrap; gap: 0.35rem 1rem; margin-top: 0.7rem; font-size: 0.62rem; letter-spacing: 0.16em; color: rgba(60,30,10,0.5); text-transform: uppercase; }
+    .case-side { border-left: 1px solid rgba(140,100,40,0.2); min-width: 145px; padding: 1rem; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.65rem; }
+    .closed-stamp { display: inline-block; font-family: var(--font-header); font-size: 0.58rem; letter-spacing: 0.24em; color: var(--stamp-red); border: 1px solid var(--stamp-red); padding: 0.26rem 0.55rem 0.2rem; text-transform: uppercase; transform: rotate(-1deg); opacity: 0.8; transition: transform 0.2s, opacity 0.2s; }
+    .case-card:hover .closed-stamp { transform: rotate(-2deg) scale(1.03); opacity: 0.95; }
+    .archive-status { font-size: 0.62rem; letter-spacing: 0.18em; color: rgba(60,30,10,0.55); text-transform: uppercase; text-align: center; }
+    .reopen-link { font-family: var(--font-type); font-size: 0.64rem; letter-spacing: 0.14em; color: rgba(60,30,10,0.64); text-transform: uppercase; text-decoration: underline; text-underline-offset: 3px; text-align: center; }
+
+    .locked-season { border: 1px dashed rgba(60,30,10,0.22); color: rgba(60,30,10,0.52); font-size: 0.8rem; font-style: italic; padding: 1rem; text-align: center; }
+    .empty-state { text-align: center; padding: 3rem 1rem; color: rgba(60,30,10,0.54); line-height: 2; }
+    .empty-title { font-family: var(--font-header); font-size: 1.2rem; letter-spacing: 0.2em; color: var(--ink); text-transform: uppercase; margin-bottom: 0.4rem; }
+    .empty-action { display: inline-block; margin-top: 1rem; font-family: var(--font-header); font-size: 0.75rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--ink); border: 2px solid rgba(60,30,10,0.38); padding: 0.7rem 1.5rem; }
+    .return-row { text-align: center; padding: 2.5rem 0 1rem; }
+    .return-link { display: inline-block; font-family: var(--font-header); font-size: 0.75rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--ink); background: transparent; border: 2px solid rgba(60,30,10,0.4); padding: 0.75rem 2rem; transition: border-color 0.2s, color 0.2s; }
+    .return-link:hover { border-color: rgba(60,30,10,0.8); }
+
+    .site-footer { background: var(--bg); padding: 1.5rem 2.5rem; display: flex; align-items: center; justify-content: space-between; border-top: 1px solid rgba(201,169,122,0.08); }
+    .footer-motto { display: flex; align-items: center; gap: 0.85rem; }
+    .footer-motto svg { opacity: 0.55; flex-shrink: 0; }
+    .footer-motto-text { font-family: var(--font-header); font-size: 0.68rem; letter-spacing: 0.18em; color: rgba(201,169,122,0.45); text-transform: uppercase; line-height: 1.4; }
+    .footer-copy { font-family: var(--font-type); font-size: 0.65rem; letter-spacing: 0.1em; color: rgba(201,169,122,0.3); text-transform: uppercase; }
+    .footer-link { font-family: var(--font-type); font-size: 0.68rem; letter-spacing: 0.15em; color: rgba(201,169,122,0.55); text-transform: uppercase; text-decoration: underline; text-underline-offset: 3px; transition: color 0.2s; }
+    .footer-link:hover { color: var(--paper); }
+
+    @media (max-width: 760px) {
+      .site-nav { padding: 1rem 1.25rem; }
+      .paper-inner { padding: 1rem 1.25rem 2rem; }
+      .paper-inner::after { left: 2rem; }
+      .section-head, .archive-controls, .season-header, .case-card { grid-template-columns: 1fr; }
+      .archive-tabs { justify-content: flex-start; }
+      .season-indicator { min-width: 0; width: 100%; }
+      .case-side { border-left: none; border-top: 1px solid rgba(140,100,40,0.2); min-width: 0; align-items: flex-start; }
+      .site-footer { flex-direction: column; gap: 1rem; text-align: center; }
+    }
+  </style>
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/polish.css">
+</head>
+<body>
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-glow"></div>
+    <nav class="site-nav">
+      <a href="index.html" class="nav-brand"><span>Asten Vale</span><span>Archives</span></a>
+      <div class="nav-logo">
+        <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="30" cy="30" r="28" stroke="rgba(201,169,122,0.6)" stroke-width="1.2"/><circle cx="30" cy="30" r="22" stroke="rgba(201,169,122,0.35)" stroke-width="0.8"/><line x1="30" y1="4" x2="30" y2="10" stroke="rgba(201,169,122,0.7)" stroke-width="1.5"/><polygon points="30,13 23,26 37,26" fill="rgba(201,169,122,0.82)"/><polygon points="30,18 21,33 39,33" fill="rgba(201,169,122,0.82)"/><rect x="27" y="33" width="6" height="5" fill="rgba(201,169,122,0.7)"/><line x1="30" y1="50" x2="30" y2="56" stroke="rgba(201,169,122,0.5)" stroke-width="1"/><line x1="4" y1="30" x2="10" y2="30" stroke="rgba(201,169,122,0.5)" stroke-width="1"/><line x1="50" y1="30" x2="56" y2="30" stroke="rgba(201,169,122,0.5)" stroke-width="1"/></svg>
+      </div>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link" data-icon="&#128452;">Archive</a>
+        <a href="cabinet.html" class="nav-link" data-icon="&#128269;">Cabinet</a>
+        <a href="completed.html" class="nav-link active" data-icon="&#10022;">Completed</a>
+        <a href="progress.html" class="nav-link" data-icon="&#9678;">Progress</a>
+        <a href="about.html" class="nav-link" data-icon="&#9673;">About</a>
+        <a href="join.html" class="nav-link" data-icon="&#9993;">Join</a>
+      </div>
+    </nav>
+    <div class="hero-content">
+      <p class="hero-label">Closed Files - Investigator Record</p>
+      <h1 class="hero-title">Completed</h1>
+      <div class="hero-rule"></div>
+    </div>
+  </section>
+
+  <section class="paper-section">
+    <div class="paper-inner">
+      <div class="section-head">
+        <div class="section-title-group">
+          <p class="section-label">Your Record</p>
+          <h2 class="section-title">Closed Case Files</h2>
+          <div class="section-rule"></div>
+        </div>
+        <div class="season-indicator" id="seasonIndicator"></div>
+      </div>
+
+      <div class="archive-controls" id="archiveControls">
+        <label><span class="archive-search-label">Search</span><input class="archive-search" id="archiveSearch" type="search" placeholder="Search closed investigations..." autocomplete="off"></label>
+        <div><span class="archive-tabs-label">Archive Order</span><div class="archive-tabs" id="archiveTabs">
+          <button class="archive-tab active" data-filter="all" type="button">All</button>
+          <button class="archive-tab" data-filter="season" type="button">Season</button>
+          <button class="archive-tab" data-filter="date" type="button">Solved Date</button>
+          <button class="archive-tab" data-filter="complete" type="button">100% Complete</button>
+          <button class="archive-tab" data-filter="newest" type="button">Newest</button>
+          <button class="archive-tab" data-filter="oldest" type="button">Oldest</button>
+          <button class="archive-tab" data-filter="alpha" type="button">Alphabetical</button>
+        </div></div>
+      </div>
+
+      <div id="completedList"></div>
+      <div class="return-row"><a href="index.html" class="return-link">&larr; Return to Archive</a></div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-motto"><svg width="28" height="28" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="30" cy="30" r="27" stroke="rgba(201,169,122,0.5)" stroke-width="1.2"/><polygon points="30,10 25,22 35,22" fill="rgba(201,169,122,0.6)"/><polygon points="30,16 21,30 39,30" fill="rgba(201,169,122,0.6)"/><rect x="27" y="30" width="6" height="5" fill="rgba(201,169,122,0.55)"/></svg><span class="footer-motto-text">Truth is not given.<br>It is discovered.</span></div>
+    <span class="footer-copy">&copy; 2026 Asten Vale Archives</span>
+    <a href="https://buymeacoffee.com/YOUR_USERNAME" target="_blank" rel="noopener" class="footer-copy" style="text-decoration:none;opacity:0.7;transition:opacity 0.2s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.7'">&#9749; Buy Me a Coffee</a>
+    <a href="index.html" class="footer-link">Back to Archive</a>
+  </footer>
+
+  <script src="js/vault-config.js"></script>
+  <script>
+  (function () {
+    var state = { filter: 'all', query: '', records: [], visible: [] };
+    var completedList = document.getElementById('completedList');
+    var archiveSearch = document.getElementById('archiveSearch');
+    var archiveTabs = document.getElementById('archiveTabs');
+
+    function esc(value) { return String(value == null ? '' : value).replace(/[&<>"']/g, function(ch) { return ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[ch]; }); }
+    function pad(value) { return String(parseInt(value, 10) || 0).padStart(3, '0'); }
+    function firstAnswer(song, key) { var values = song && song.answers && song.answers[key]; return values && values.length ? values[0] : ''; }
+    function readProgress() {
+      var solved = [], objects = [], files = [];
+      try { var p = JSON.parse(localStorage.getItem('ava_progress') || '{}'); solved = Array.isArray(p.solvedCases) ? p.solvedCases : []; objects = Array.isArray(p.collectedObjects) ? p.collectedObjects : []; files = Array.isArray(p.recoveredFiles) ? p.recoveredFiles : []; } catch(e) {}
+      try { var legacy = JSON.parse(localStorage.getItem('av_solved') || '[]'); if (Array.isArray(legacy)) legacy.forEach(function(id) { var p = pad(id); if (solved.indexOf(p) === -1) solved.push(p); }); } catch(e) {}
+      return { solved: solved.map(pad), objects: objects, files: files };
+    }
+    function loadSongData(id) {
+      return new Promise(function(resolve) {
+        var script = document.createElement('script');
+        var previous = window.SONG_DATA;
+        window.SONG_DATA = null;
+        script.src = 'data/songs/song' + pad(id) + '.js';
+        script.onload = function() { var data = window.SONG_DATA || null; window.SONG_DATA = previous; script.remove(); resolve(data); };
+        script.onerror = function() { window.SONG_DATA = previous; script.remove(); resolve(null); };
+        document.head.appendChild(script);
+      });
+    }
+    function findSeasonForCase(id) {
+      for (var si = 0; si < SEASONS_CONFIG.length; si++) {
+        var season = SEASONS_CONFIG[si];
+        for (var ci = 0; ci < season.cases.length; ci++) if (season.cases[ci].id === id) return { season: season, seasonIndex: si, caseConfig: season.cases[ci] };
+      }
+      var num = parseInt(id, 10) || 1;
+      var seasonIndex = Math.max(0, Math.floor((num - 1) / 12));
+      return { season: { title: 'Season ' + (seasonIndex + 1), subtitle: '', totalCases: 12, cases: [] }, seasonIndex: seasonIndex, caseConfig: null };
+    }
+    function buildSearchText(record) {
+      return [record.id, 'case ' + pad(record.id), record.title, record.seasonTitle, record.witness, record.object, record.location, record.marker, record.sound].join(' ').toLowerCase();
+    }
+    function buildRecord(id, song) {
+      var found = findSeasonForCase(id) || {};
+      var c = found.caseConfig || {};
+      var season = found.season || { title: 'Season ' + Math.ceil((parseInt(id, 10) || 1) / 12), subtitle: '' };
+      var collectibles = (song && song.collectibles) || [];
+      function collectibleName(type, fallbackKey) { var hit = collectibles.find(function(item) { return (item.type || '').toLowerCase() === type; }); return (hit && hit.name) || firstAnswer(song, fallbackKey); }
+      var record = {
+        id: id,
+        number: parseInt(id, 10) || 0,
+        title: (song && song.title) || c.title || ('Case ' + id),
+        url: c.url || ('case.html?id=' + parseInt(id, 10)),
+        seasonIndex: found.seasonIndex,
+        seasonTitle: season.title || ('Season ' + (found.seasonIndex + 1)),
+        seasonSubtitle: season.subtitle || (song && song.seriesName) || '',
+        seasonTotal: season.totalCases || season.cases && season.cases.length || 12,
+        location: collectibleName('location', 'location'),
+        object: collectibleName('object', 'object'),
+        witness: collectibleName('witness', 'witness'),
+        marker: collectibleName('marker', 'marker'),
+        sound: collectibleName('sound', 'sound'),
+        summary: (c.desc && c.desc.join(' ')) || (song && song.game && song.game.objective) || 'Official closed investigation record.',
+        complete: true,
+        solvedDate: ''
+      };
+      record.searchText = buildSearchText(record);
+      return record;
+    }
+    function renderSeasonIndicator(progress) {
+      var season = SEASONS_CONFIG[0] || { title: 'Season One', cases: [], totalCases: 12 };
+      var solvedInSeason = season.cases.filter(function(c) { return progress.solved.indexOf(c.id) !== -1; }).length;
+      var total = season.totalCases || season.cases.length || 12;
+      var percent = total ? Math.round((solvedInSeason / total) * 100) : 0;
+      document.getElementById('seasonIndicator').innerHTML = '<div class="season-indicator-title">' + esc(season.title || 'Season One') + '</div><div class="season-indicator-copy">' + solvedInSeason + ' of ' + total + ' Investigations Closed</div><div class="archive-progress"><div class="archive-progress-fill" style="width:' + percent + '%"></div></div>';
+    }
+    function sortedRecords(records) {
+      var list = records.slice();
+      if (state.filter === 'newest' || state.filter === 'date') list.sort(function(a, b) { return b.number - a.number; });
+      else if (state.filter === 'oldest') list.sort(function(a, b) { return a.number - b.number; });
+      else if (state.filter === 'alpha') list.sort(function(a, b) { return a.title.localeCompare(b.title); });
+      else list.sort(function(a, b) { return a.seasonIndex - b.seasonIndex || a.number - b.number; });
+      return list;
+    }
+    function filteredRecords() {
+      var q = state.query.trim().toLowerCase();
+      var records = state.records.filter(function(r) { return state.filter !== 'complete' || r.complete; });
+      if (q) records = records.filter(function(r) { return r.searchText.indexOf(q) !== -1; });
+      return sortedRecords(records);
+    }
+    function renderCard(record) {
+      var evidence = [record.object, record.witness, record.sound, record.location, record.marker].filter(Boolean).slice(0, 5);
+      return '<a class="case-card" href="' + esc(record.url) + '"><div class="case-main"><div class="case-row"><span class="case-number-label">' + esc(record.seasonTitle) + ' / Case ' + pad(record.id) + '</span></div><h3 class="case-title">' + esc(record.title) + '</h3><p class="case-desc">' + esc(record.summary) + '</p><div class="evidence-line"><span class="evidence-label">Recovered</span>' + evidence.map(function(e) { return '<span class="evidence-token">' + esc(e) + '</span>'; }).join('') + '</div><div class="case-meta"><span>Archive Status: Closed</span>' + (record.solvedDate ? '<span>Closed: ' + esc(record.solvedDate) + '</span>' : '') + '</div></div><div class="case-side"><span class="closed-stamp">Recovered</span><span class="archive-status">Closed</span><span class="reopen-link">Re-open Case &rarr;</span></div></a>';
+    }
+    function renderLockedSeason(season, index) {
+      return '<div class="season-group"><div class="season-header"><div><div class="season-header-label">Season ' + (index + 1) + '</div><div class="season-header-title">' + esc(season.title || '') + '</div></div><div class="season-records"><span class="season-record">Vault Status: Locked</span></div></div><div class="locked-season">Locked until Season ' + index + ' is completed.</div></div>';
+    }
+    function renderRecords() {
+      var records = filteredRecords();
+      state.visible = records;
+      if (!state.records.length) {
+        completedList.innerHTML = '<div class="empty-state"><div class="empty-title">No Closed Files</div><p>Your archive is empty.</p><p>Begin your first investigation.</p><a class="empty-action" href="case.html?id=1">Begin Case 001 &rarr;</a></div>';
+        return;
+      }
+      if (!records.length) { completedList.innerHTML = '<div class="empty-state"><div class="empty-title">No Matching Files</div><p>No closed investigation matches the current archive search.</p></div>'; return; }
+      var bySeason = {};
+      records.forEach(function(r) { var key = r.seasonIndex; if (!bySeason[key]) bySeason[key] = []; bySeason[key].push(r); });
+      var html = Object.keys(bySeason).sort(function(a, b) { return parseInt(a, 10) - parseInt(b, 10); }).map(function(key) {
+        var group = bySeason[key];
+        var first = group[0];
+        var percent = Math.round((group.length / first.seasonTotal) * 100);
+        return '<div class="season-group"><div class="season-header"><div><div class="season-header-label">' + esc(first.seasonTitle) + '</div><div class="season-header-title">' + esc(first.seasonSubtitle || 'Closed Investigations') + '</div></div><div class="season-records"><span class="season-record">Solved: ' + group.length + ' / ' + first.seasonTotal + '</span><span class="season-record">Vault Status: ' + (percent >= 100 ? 'Vault Open' : 'Locked') + '</span></div></div><div class="season-card-list">' + group.map(renderCard).join('') + '</div></div>';
+      }).join('');
+      if (state.filter === 'season') {
+        if (SEASONS_CONFIG.length > 1) html += SEASONS_CONFIG.slice(1).map(renderLockedSeason).join('');
+        else html += renderLockedSeason({ title: 'Season Two' }, 1) + renderLockedSeason({ title: 'Season Three' }, 2);
+      }
+      completedList.innerHTML = html;
+    }
+    function bindControls() {
+      archiveSearch.addEventListener('input', function(e) { state.query = e.target.value; renderRecords(); });
+      archiveTabs.addEventListener('click', function(e) { var btn = e.target.closest('.archive-tab'); if (!btn) return; state.filter = btn.dataset.filter; archiveTabs.querySelectorAll('.archive-tab').forEach(function(tab) { tab.classList.toggle('active', tab === btn); }); renderRecords(); });
+    }
+    async function init() {
+      var progress = readProgress();
+      renderSeasonIndicator(progress);
+      var records = [];
+      for (var i = 0; i < progress.solved.length; i++) records.push(buildRecord(progress.solved[i], await loadSongData(progress.solved[i])));
+      state.records = records;
+      bindControls();
+      renderRecords();
+    }
+    init();
+  })();
+  </script>
+
+  <script>
+  fetch('js/site-settings.json').then(function(r){return r.json();}).then(function(s){
+    var pg = s.pages && s.pages.completed; if(!pg) return;
+    var bg = document.querySelector('.hero-bg');
+    if(bg && pg.heroImage){ bg.style.backgroundImage='url("'+pg.heroImage+'")'; bg.style.backgroundSize='cover'; bg.style.backgroundPosition='center'; bg.style.opacity=pg.heroOverlay!=null?(1-pg.heroOverlay):1; document.body.classList.add('has-hero-image'); }
+    if(pg.showTitle===false||pg.heroImage){ document.querySelectorAll('.hero-title,.hero-diamond').forEach(function(e){e.style.display='none';}); }
+    if(pg.showSubtitle===false){ var el=document.querySelector('.hero-tagline,.hero-subtitle'); if(el) el.style.display='none'; }
+    if(pg.heroTitleText){ var t=document.querySelector('.hero-title'); if(t) t.textContent=pg.heroTitleText; }
+  }).catch(function(){});
+  </script>
+  <script src="js/polish.js" defer></script>
+</body>
+</html>

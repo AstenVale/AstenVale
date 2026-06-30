@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Evidence Cabinet ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â The Asten Vale Archives</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    :root {
+      --ink:         #1c120a;
+      --ink-faded:   #4a3728;
+      --paper:       #c9a97a;
+      --paper-dark:  #b8935e;
+      --paper-light: #ddc49a;
+      --paper-bg:    #c4a472;
+      --folder-red:  #7a1f1f;
+      --stamp-red:   #8b1a1a;
+      --gold:        #c9960c;
+      --glow:        #f5a623;
+      --bg:          #0c0a06;
+      --bg-mid:      #16120b;
+      --font-type:   'Courier Prime', 'Courier New', Courier, monospace;
+      --font-header: 'Special Elite', 'Courier New', serif;
+    }
+
+    body { background: var(--bg); color: var(--ink); font-family: var(--font-type); font-size: 15px; line-height: 1.7; min-height: 100vh; overflow-x: hidden; }
+    a { text-decoration: none; color: inherit; }
+
+    /* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ NAV ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */
+    .site-nav { position: relative; z-index: 10; display: flex; align-items: center; justify-content: space-between; padding: 1.25rem 2.5rem; }
+    .nav-brand { font-family: var(--font-header); font-size: 0.75rem; letter-spacing: 0.22em; color: rgba(201,169,122,0.75); text-decoration: none; text-transform: uppercase; line-height: 1.3; }
+    .nav-brand span { display: block; }
+    .nav-logo { position: absolute; left: 50%; transform: translateX(-50%); }
+    .nav-logo svg { width: 46px; height: 46px; opacity: 0.9; }
+    .nav-links { display: flex; gap: 2rem; align-items: center; }
+    .nav-link { font-family: var(--font-type); font-size: 0.72rem; letter-spacing: 0.18em; color: rgba(201,169,122,0.7); text-decoration: none; text-transform: uppercase; transition: color 0.2s; position: relative; }
+    .nav-link:hover { color: var(--paper); }
+    .nav-link.active { color: rgba(201,169,122,0.95); }
+    .nav-link.active::after { content: ""; position: absolute; bottom: -3px; left: 0; right: 0; height: 1px; background: rgba(201,169,122,0.6); }
+
+    /* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ HERO ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */
+    .page-hero { position: relative; min-height: 30vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 2rem 2rem 3rem; }
+    .page-hero::before { content: ""; position: absolute; inset: 0; background: radial-gradient(ellipse 60% 80% at 50% 50%, rgba(245,166,35,0.04) 0%, transparent 70%); pointer-events: none; }
+    .page-eyebrow { font-family: var(--font-type); font-size: 0.65rem; letter-spacing: 0.32em; color: rgba(201,169,122,0.4); text-transform: uppercase; margin-bottom: 0.4rem; position: relative; }
+    .page-title { font-family: var(--font-header); font-size: clamp(1.8rem, 5vw, 3rem); letter-spacing: 0.12em; color: rgba(220,190,140,0.95); text-transform: uppercase; text-shadow: 0 2px 30px rgba(0,0,0,0.8); margin-bottom: 0.75rem; position: relative; }
+    .page-rule { width: 40px; height: 1px; background: rgba(201,169,122,0.3); margin: 0 auto 0.75rem; }
+    .page-sub { font-family: var(--font-type); font-size: 0.82rem; color: rgba(201,169,122,0.5); font-style: italic; position: relative; }
+
+    /* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ CABINET SECTION ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */
+    .cabinet-section { background: var(--paper-bg); position: relative; }
+    .cabinet-section::before { content: ""; display: block; height: 28px; background: var(--paper-bg); clip-path: polygon(0% 100%, 1% 20%, 2.5% 90%, 4% 10%, 5.5% 80%, 7% 5%, 8.5% 85%, 10% 15%, 11.5% 75%, 13% 25%, 14.5% 70%, 16% 30%, 17.5% 65%, 19% 20%, 20.5% 80%, 22% 10%, 23.5% 90%, 25% 15%, 26.5% 75%, 28% 35%, 29.5% 60%, 31% 25%, 32.5% 70%, 34% 10%, 35.5% 85%, 37% 20%, 38.5% 75%, 40% 30%, 41.5% 65%, 43% 15%, 44.5% 80%, 46% 20%, 47.5% 70%, 49% 10%, 50.5% 90%, 52% 25%, 53.5% 60%, 55% 15%, 56.5% 80%, 58% 30%, 59.5% 65%, 61% 10%, 62.5% 85%, 64% 20%, 65.5% 75%, 67% 35%, 68.5% 60%, 70% 15%, 71.5% 80%, 73% 25%, 74.5% 70%, 76% 10%, 77.5% 90%, 79% 20%, 80.5% 65%, 82% 30%, 83.5% 75%, 85% 15%, 86.5% 80%, 88% 25%, 89.5% 60%, 91% 10%, 92.5% 85%, 94% 20%, 95.5% 70%, 97% 30%, 98.5% 80%, 100% 0%, 100% 100%); }
+
+    .cabinet-inner { position: relative; max-width: 1020px; margin: 0 auto; padding: 0 2rem 3rem; }
+    .cabinet-inner::before { content: ""; position: absolute; inset: 0; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23noise)' opacity='0.035'/%3E%3C/svg%3E"); pointer-events: none; }
+
+    /* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ CABINET HEADER ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */
+    .cabinet-header { display: flex; align-items: flex-start; justify-content: space-between; padding-top: 2.5rem; padding-bottom: 1.75rem; position: relative; }
+    .cabinet-title { font-family: var(--font-header); font-size: clamp(1.2rem, 3vw, 1.8rem); letter-spacing: 0.18em; color: var(--ink); text-transform: uppercase; }
+    .cabinet-title-rule { width: 40px; height: 2px; background: rgba(60,30,10,0.35); margin-top: 0.4rem; }
+    .cabinet-subtitle { font-family: var(--font-type); font-size: 0.8rem; color: rgba(60,30,10,0.6); margin-top: 0.5rem; font-style: italic; }
+    .cabinet-count { font-family: var(--font-header); font-size: 0.7rem; letter-spacing: 0.18em; color: rgba(60,30,10,0.5); text-transform: uppercase; padding: 0.45rem 0.9rem; border: 1px solid rgba(60,30,10,0.2); background: rgba(0,0,0,0.04); white-space: nowrap; margin-top: 0.25rem; }
+
+    /* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ SEASON GROUP ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */
+    .season-group { margin-bottom: 3rem; }
+    .season-header { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.75rem; padding-bottom: 0.75rem; border-bottom: 2px solid rgba(60,30,10,0.25); }
+    .season-label { font-family: var(--font-header); font-size: 1rem; letter-spacing: 0.22em; color: var(--ink); text-transform: uppercase; white-space: nowrap; }
+    .season-rule { flex: 1; height: 1px; background: rgba(60,30,10,0.15); }
+    .season-badge { font-family: var(--font-type); font-size: 0.58rem; letter-spacing: 0.2em; color: rgba(60,30,10,0.5); text-transform: uppercase; border: 1px solid rgba(60,30,10,0.25); padding: 0.2rem 0.6rem; white-space: nowrap; }
+
+    /* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ CASE GROUP ACCORDION ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */
+    .case-group { margin-bottom: 0.5rem; border: 1px solid rgba(60,30,10,0.18); background: rgba(0,0,0,0.04); }
+    .case-group-toggle { display: flex; align-items: center; gap: 0.75rem; padding: 0.85rem 1rem; cursor: pointer; user-select: none; list-style: none; transition: background 0.15s; }
+    .case-group-toggle:hover { background: rgba(0,0,0,0.06); }
+    .case-group-num { font-family: var(--font-type); font-size: 0.6rem; letter-spacing: 0.28em; color: var(--stamp-red); text-transform: uppercase; padding: 0.15rem 0.5rem; background: rgba(139,26,26,0.08); border: 1px solid rgba(139,26,26,0.2); flex-shrink: 0; }
+    .case-group-title { font-family: var(--font-header); font-size: 0.88rem; letter-spacing: 0.12em; color: rgba(60,30,10,0.75); text-transform: uppercase; flex: 1; }
+    .case-group-chevron { font-size: 0.65rem; color: rgba(60,30,10,0.4); transition: transform 0.25s; flex-shrink: 0; }
+    .case-group.open .case-group-chevron { transform: rotate(180deg); }
+    .case-group-body { display: none; padding: 1rem; border-top: 1px solid rgba(60,30,10,0.12); }
+    .case-group.open .case-group-body { display: block; }
+
+    /* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ ARTIFACT GRID ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */
+    .artifact-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1.25rem; }
+
+    /* Artifact card */
+    .artifact-card { background: rgba(220,195,155,0.55); border: 1px solid rgba(160,120,60,0.3); border-radius: 2px; display: flex; flex-direction: column; position: relative; box-shadow: 0 2px 10px rgba(0,0,0,0.12), inset 0 1px 0 rgba(255,255,255,0.15); transition: transform 0.2s, box-shadow 0.2s; overflow: hidden; }
+    .artifact-card:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.18), inset 0 1px 0 rgba(255,255,255,0.15); }
+    /* Paper clip */
+    .artifact-card::before { content: ""; position: absolute; top: -2px; left: 20px; width: 16px; height: 26px; border: 2px solid rgba(120,100,60,0.5); border-bottom: none; border-radius: 7px 7px 0 0; pointer-events: none; z-index: 2; }
+
+    /* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ IMAGE BOX ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */
+    .artifact-img-box { width: 100%; aspect-ratio: 4/3; background: rgba(0,0,0,0.25); border-bottom: 1px solid rgba(160,120,60,0.25); display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 0.4rem; position: relative; overflow: hidden; }
+    .artifact-img-box img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .artifact-img-placeholder { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.5rem; width: 100%; height: 100%; }
+    .artifact-img-symbol { font-size: 2.8rem; filter: drop-shadow(0 2px 12px rgba(245,166,35,0.45)); animation: float-artifact 3s ease-in-out infinite alternate; }
+    @keyframes float-artifact { from { transform: translateY(0) rotate(-2deg); } to { transform: translateY(-6px) rotate(2deg); } }
+    .artifact-img-label { font-family: var(--font-type); font-size: 0.52rem; letter-spacing: 0.22em; color: rgba(201,169,122,0.3); text-transform: uppercase; }
+    /* Scan lines effect */
+    .artifact-img-box::after { content: ""; position: absolute; inset: 0; background: repeating-linear-gradient(0deg, transparent, transparent 3px, rgba(0,0,0,0.04) 3px, rgba(0,0,0,0.04) 4px); pointer-events: none; }
+
+    /* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ CARD BODY ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */
+    .artifact-card-body { padding: 1.1rem 1.25rem 1.1rem; display: flex; flex-direction: column; gap: 0.5rem; }
+    .artifact-card-stamp { display: inline-block; font-family: var(--font-header); font-size: 0.5rem; letter-spacing: 0.28em; color: var(--stamp-red); border: 1px solid var(--stamp-red); padding: 0.1rem 0.4rem; text-transform: uppercase; transform: rotate(-1.5deg); opacity: 0.8; align-self: flex-start; }
+    .artifact-card-name { font-family: var(--font-header); font-size: 0.95rem; letter-spacing: 0.1em; color: var(--ink); text-transform: uppercase; line-height: 1.3; }
+    .artifact-card-case { font-size: 0.6rem; letter-spacing: 0.16em; color: rgba(60,30,10,0.5); text-transform: uppercase; }
+    .artifact-card-desc { font-family: var(--font-type); font-size: 0.76rem; color: rgba(60,30,10,0.7); line-height: 1.6; font-style: italic; }
+    .artifact-card-unknown { font-family: var(--font-type); font-size: 0.72rem; color: rgba(60,30,10,0.5); line-height: 1.6; padding-top: 0.5rem; border-top: 1px dashed rgba(60,30,10,0.2); }
+
+    /* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ EMPTY STATE ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */
+    .cabinet-empty { text-align: center; padding: 3rem 2rem; grid-column: 1 / -1; }
+    .cabinet-empty-icon { font-size: 3rem; display: block; margin-bottom: 1rem; opacity: 0.4; }
+    .cabinet-empty-title { font-family: var(--font-header); font-size: 1.1rem; letter-spacing: 0.15em; color: var(--ink); margin-bottom: 0.5rem; }
+    .cabinet-empty-sub { font-size: 0.8rem; color: rgba(60,30,10,0.55); font-style: italic; line-height: 1.7; max-width: 380px; margin: 0 auto 1.5rem; }
+    .cabinet-empty-btn { display: inline-block; font-family: var(--font-header); font-size: 0.75rem; letter-spacing: 0.2em; color: var(--paper-light); background: var(--folder-red); border: none; padding: 0.65rem 1.5rem; text-decoration: none; text-transform: uppercase; }
+
+    /* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ MORE SOON ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */
+    .cabinet-more { display: flex; align-items: center; justify-content: center; gap: 0.75rem; padding: 2rem 0 0.5rem; font-family: var(--font-type); font-size: 0.7rem; letter-spacing: 0.25em; color: rgba(60,30,10,0.4); text-transform: uppercase; }
+    .cabinet-more-rule { flex: 1; max-width: 100px; height: 1px; background: rgba(60,30,10,0.2); }
+
+    /* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ FOOTER ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */
+    .site-footer { background: var(--bg); padding: 1.5rem 2.5rem; display: flex; align-items: center; justify-content: space-between; border-top: 1px solid rgba(201,169,122,0.08); }
+    .footer-motto { display: flex; align-items: center; gap: 0.85rem; }
+    .footer-motto svg { opacity: 0.55; flex-shrink: 0; }
+    .footer-motto-text { font-family: var(--font-header); font-size: 0.68rem; letter-spacing: 0.18em; color: rgba(201,169,122,0.45); text-transform: uppercase; line-height: 1.4; }
+    .footer-copy { font-family: var(--font-type); font-size: 0.65rem; letter-spacing: 0.1em; color: rgba(201,169,122,0.3); text-transform: uppercase; }
+
+    @keyframes fade-up { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+    /* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ SOUND EVIDENCE BLOCK ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */
+    .artifact-sound-block { padding-top: 0.6rem; border-top: 1px dashed rgba(60,30,10,0.2); display: flex; flex-direction: column; gap: 0.4rem; }
+    .artifact-sound-player { display: none; }
+    .cab-player{border:1px solid rgba(100,60,20,0.25);background:rgba(0,0,0,0.05);padding:0.45rem 0.7rem;margin-bottom:0.3rem;}
+    .cab-player-label{font-size:0.5rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--ink-faded,#888);margin-bottom:0.35rem;}
+    .cab-controls{display:flex;align-items:center;gap:0.45rem;}
+    .cab-play{width:20px;height:20px;flex-shrink:0;background:rgba(0,0,0,0.1);border:1px solid rgba(100,60,20,0.35);border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:0.5rem;color:inherit;transition:background 0.15s;}
+    .cab-play:hover{background:rgba(0,0,0,0.18);}
+    .cab-track{flex:1;position:relative;height:2px;background:rgba(100,60,20,0.14);cursor:pointer;}
+    .cab-filled{position:absolute;top:0;left:0;height:100%;background:rgba(100,60,20,0.45);pointer-events:none;width:0%;}
+    .cab-time{font-size:0.52rem;color:var(--ink-faded,#888);white-space:nowrap;flex-shrink:0;}
+    .cab-vol-row{display:flex;align-items:center;gap:0.3rem;margin-top:0.35rem;}
+    .cab-vol-btn{background:none;border:none;cursor:pointer;color:var(--ink-faded,#888);font-size:0.62rem;padding:0;line-height:1;}
+    .cab-vol{width:50px;accent-color:rgba(100,60,20,0.6);}
+    .artifact-sound-link { font-family: var(--font-type); font-size: 0.58rem; letter-spacing: 0.16em; color: var(--folder-red); text-transform: uppercase; text-decoration: underline; text-underline-offset: 2px; opacity: 0.8; transition: opacity 0.15s; align-self: flex-start; }
+    .artifact-sound-link:hover { opacity: 1; }
+
+    @media (max-width: 640px) {
+      .site-nav { padding: 1rem 1.25rem; }
+      .cabinet-inner { padding: 0 1rem 2rem; }
+      .cabinet-header { flex-direction: column; gap: 0.75rem; }
+      .artifact-grid { grid-template-columns: 1fr 1fr; gap: 0.75rem; }
+      .site-footer { flex-direction: column; gap: 1rem; text-align: center; }
+      .footer-motto { justify-content: center; }
+    }
+    @media (max-width: 440px) {
+      .artifact-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/polish.css">
+</head>
+<body>
+
+  <nav class="site-nav">
+    <a href="index.html" class="nav-brand">
+      <span>Asten Vale</span>
+      <span>Archives</span>
+    </a>
+
+    <div class="nav-logo">
+      <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="30" cy="30" r="28" stroke="rgba(201,169,122,0.6)" stroke-width="1.2"/>
+        <circle cx="30" cy="30" r="22" stroke="rgba(201,169,122,0.35)" stroke-width="0.8"/>
+        <line x1="30" y1="4" x2="30" y2="10" stroke="rgba(201,169,122,0.7)" stroke-width="1.5"/>
+        <polygon points="30,13 23,26 37,26" fill="rgba(201,169,122,0.82)"/>
+        <polygon points="30,18 21,33 39,33" fill="rgba(201,169,122,0.82)"/>
+        <rect x="27" y="33" width="6" height="5" fill="rgba(201,169,122,0.7)"/>
+        <line x1="30" y1="50" x2="30" y2="56" stroke="rgba(201,169,122,0.5)" stroke-width="1"/>
+        <line x1="4" y1="30" x2="10" y2="30" stroke="rgba(201,169,122,0.5)" stroke-width="1"/>
+        <line x1="50" y1="30" x2="56" y2="30" stroke="rgba(201,169,122,0.5)" stroke-width="1"/>
+      </svg>
+    </div>
+
+    <div class="nav-links">
+      <a href="index.html"     class="nav-link"        data-icon="ÃƒÂ°Ã…Â¸Ã¢â‚¬â€Ã¢â‚¬Å¾">Archive</a>
+      <a href="cabinet.html"   class="nav-link active" data-icon="ÃƒÂ°Ã…Â¸Ã¢â‚¬ÂÃ‚Â">Cabinet</a>
+      <a href="sounds.html"    class="nav-link"        data-icon="ÃƒÂ°Ã…Â¸Ã¢â‚¬ÂÃ…Â ">Sounds</a>
+      <a href="completed.html" class="nav-link"        data-icon="ÃƒÂ¢Ã…â€œÃ‚Â¦">Completed</a>
+      <a href="progress.html"  class="nav-link"        data-icon="ÃƒÂ¢Ã¢â‚¬â€Ã…Â½">Progress</a>
+      <a href="about.html"     class="nav-link"        data-icon="ÃƒÂ¢Ã¢â‚¬â€Ã¢â‚¬Â°">About</a>
+      <a href="join.html"      class="nav-link"        data-icon="ÃƒÂ¢Ã…â€œÃ¢â‚¬Â°">Join</a>
+    </div>
+  </nav>
+
+  <div class="page-hero">
+    <p class="page-eyebrow">Asten Vale Archives &nbsp;Ãƒâ€šÃ‚Â·&nbsp; Investigator Record</p>
+    <h1 class="page-title">Evidence Cabinet</h1>
+    <div class="page-rule"></div>
+    <p class="page-sub">Objects recovered across all Asten Vale investigations.</p>
+  </div>
+
+  <section class="cabinet-section">
+    <div class="cabinet-inner">
+
+      <div class="cabinet-header">
+        <div class="cabinet-title-group">
+          <h2 class="cabinet-title">Recovered Evidence</h2>
+          <div class="cabinet-title-rule"></div>
+          <p class="cabinet-subtitle">Each item was found during an active investigation.<br>Some still carry open questions.</p>
+        </div>
+        <div class="cabinet-count" id="cabinetCount">0 Items Recovered</div>
+      </div>
+
+      <div id="cabinetBody"></div>
+
+      <div class="cabinet-more">
+        <span class="cabinet-more-rule"></span>
+        More Evidence
+        <svg width="14" height="14" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <polygon points="30,8 24,22 36,22" fill="rgba(60,30,10,0.4)"/>
+          <polygon points="30,14 20,30 40,30" fill="rgba(60,30,10,0.4)"/>
+          <rect x="27" y="30" width="6" height="5" fill="rgba(60,30,10,0.35)"/>
+        </svg>
+        Pending Recovery
+        <span class="cabinet-more-rule"></span>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-motto">
+      <svg width="28" height="28" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="30" cy="30" r="27" stroke="rgba(201,169,122,0.5)" stroke-width="1.2"/>
+        <polygon points="30,10 25,22 35,22" fill="rgba(201,169,122,0.6)"/>
+        <polygon points="30,16 21,30 39,30" fill="rgba(201,169,122,0.6)"/>
+        <rect x="27" y="30" width="6" height="5" fill="rgba(201,169,122,0.55)"/>
+      </svg>
+      <span class="footer-motto-text">Truth is not given.<br>It is discovered.</span>
+    </div>
+    <span class="footer-copy">Ãƒâ€šÃ‚Â© 2026 Asten Vale Archives</span>
+    <a href="index.html" class="footer-copy" style="opacity:0.7;transition:opacity 0.2s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.7'">Back to Archive</a>
+  </footer>
+
+  <script src="js/vault-config.js"></script>
+  <script src="data/sounds.js"></script>
+  <script>
+  (function() {
+    // Build a quick lookup: sound name (lowercase) ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ sound object
+    var soundLookup = {};
+    (window.SOUNDS_DATA || []).forEach(function(s) {
+      soundLookup[s.name.toLowerCase()] = s;
+    });
+
+    var solved = [];
+    try { solved = JSON.parse(localStorage.getItem('av_solved') || '[]'); } catch(e) {}
+
+    var body  = document.getElementById('cabinetBody');
+    var count = document.getElementById('cabinetCount');
+
+    if (solved.length === 0) {
+      body.innerHTML =
+        '<div class="cabinet-empty">' +
+          '<span class="cabinet-empty-icon">ÃƒÂ°Ã…Â¸Ã¢â‚¬â€Ã¢â‚¬Å¾</span>' +
+          '<div class="cabinet-empty-title">Cabinet Empty</div>' +
+          '<div class="cabinet-empty-sub">No evidence has been recovered yet. Solve a case to add the first artifact to your cabinet.</div>' +
+          '<a href="index.html" class="cabinet-empty-btn">Begin Investigation</a>' +
+        '</div>';
+      count.textContent = '0 Items Recovered';
+      return;
+    }
+
+    // Load collectible data from each solved song file
+    var loaded      = 0;
+    var collectibles = [];
+
+    solved.forEach(function(id) {
+      var padded = String(parseInt(id, 10) || 1).padStart(3, '0');
+      var s = document.createElement('script');
+      s.src = 'data/songs/song' + padded + '.js';
+      s.onload = function() {
+        if (window.SONG_DATA) {
+          var caseFile  = window.SONG_DATA.caseFile || id;
+          var caseTitle = window.SONG_DATA.title || ('Case ' + id);
+          // Support both new collectibles[] array and legacy collectible{}
+          var arr = window.SONG_DATA.collectibles || (window.SONG_DATA.collectible ? [window.SONG_DATA.collectible] : []);
+          arr.forEach(function(c) {
+            if (c && c.name && c.name.indexOf('//') === -1) {
+              collectibles.push({ caseId: id, caseFile: caseFile, caseTitle: caseTitle, collectible: c });
+            }
+          });
+        }
+        window.SONG_DATA = null;
+        loaded++;
+        if (loaded === solved.length) {
+          collectibles.sort(function(a, b) {
+            return parseInt(a.caseId, 10) - parseInt(b.caseId, 10);
+          });
+          renderCabinet(collectibles);
+        }
+      };
+      s.onerror = function() {
+        loaded++;
+        if (loaded === solved.length) renderCabinet(collectibles);
+      };
+      document.head.appendChild(s);
+    });
+
+    function renderCabinet(items) {
+      if (items.length === 0) {
+        body.innerHTML =
+          '<div class="cabinet-empty">' +
+            '<span class="cabinet-empty-icon">ÃƒÂ°Ã…Â¸Ã¢â‚¬ÂÃ‚Â</span>' +
+            '<div class="cabinet-empty-title">No Artifacts Found</div>' +
+            '<div class="cabinet-empty-sub">Cases solved but no artifacts loaded. Check your data files.</div>' +
+          '</div>';
+        count.textContent = '0 Items Recovered';
+        return;
+      }
+
+      count.textContent = items.length + ' Item' + (items.length === 1 ? '' : 's') + ' Recovered';
+
+      // Group items by season, then case using SEASONS_CONFIG
+      // Build lookup: caseId ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ { season, caseObj } ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â index by multiple formats
+      var caseMap = {};
+      SEASONS_CONFIG.forEach(function(season) {
+        season.cases.forEach(function(c) {
+          var num = parseInt(c.id, 10);
+          caseMap[c.id]                             = { season: season, caseObj: c };
+          caseMap[String(num)]                      = { season: season, caseObj: c };
+          caseMap[String(num).padStart(3, '0')]     = { season: season, caseObj: c };
+        });
+      });
+
+      // Group items by seasonId ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ caseId
+      var seasonGroups = {};
+      var seasonOrder  = [];
+
+      // Build season size map so we can infer season from case number
+      var seasonSizes = SEASONS_CONFIG.map(function(s) { return s.totalCases || s.cases.length; });
+
+      function inferSeason(caseId) {
+        var num = parseInt(caseId, 10);
+        var start = 1;
+        for (var i = 0; i < SEASONS_CONFIG.length; i++) {
+          var size = seasonSizes[i];
+          if (num >= start && num < start + size) return SEASONS_CONFIG[i];
+          start += size;
+        }
+        // Beyond known seasons ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â synthesise a label
+        var seasonNum = Math.ceil(num / 12);
+        var ordinals = ['One','Two','Three','Four','Five','Six','Seven','Eight','Nine','Ten'];
+        return { id: 'season' + seasonNum, title: 'Season ' + (ordinals[seasonNum - 1] || seasonNum) };
+      }
+
+      items.forEach(function(item) {
+        var id  = String(item.caseId);
+        var match = caseMap[id] ||
+                    caseMap[String(parseInt(id, 10)).padStart(3, '0')] ||
+                    caseMap[String(parseInt(id, 10))];
+        var season      = match ? match.season    : inferSeason(item.caseId);
+        var seasonId    = season.id;
+        var seasonTitle = season.title;
+        var caseObj     = match ? match.caseObj   : { id: item.caseId, title: item.caseTitle };
+
+        if (!seasonGroups[seasonId]) {
+          seasonGroups[seasonId] = { title: seasonTitle, cases: {}, caseOrder: [] };
+          seasonOrder.push(seasonId);
+        }
+        if (!seasonGroups[seasonId].cases[item.caseId]) {
+          seasonGroups[seasonId].cases[item.caseId] = { caseObj: caseObj, caseTitle: item.caseTitle, caseFile: item.caseFile, items: [] };
+          seasonGroups[seasonId].caseOrder.push(item.caseId);
+        }
+        seasonGroups[seasonId].cases[item.caseId].items.push(item);
+      });
+
+      // Figure out the most recently solved case id
+      var mostRecentCaseId = solved[solved.length - 1];
+
+      // Render
+      var html = '';
+      var globalIdx = 0;
+
+      seasonOrder.forEach(function(seasonId) {
+        var sg = seasonGroups[seasonId];
+        var totalInSeason = sg.caseOrder.reduce(function(n, cid) { return n + sg.cases[cid].items.length; }, 0);
+
+        html += '<div class="season-group">';
+        html +=   '<div class="season-header">';
+        html +=     '<span class="season-label">' + sg.title + '</span>';
+        html +=     '<span class="season-rule"></span>';
+        html +=     '<span class="season-badge">' + totalInSeason + ' artifact' + (totalInSeason === 1 ? '' : 's') + ' recovered</span>';
+        html +=   '</div>';
+
+        sg.caseOrder.forEach(function(caseId) {
+          var cg      = sg.cases[caseId];
+          var caseNum = cg.caseObj.id || caseId;
+          var isOpen  = (caseId === mostRecentCaseId);
+
+          html += '<div class="case-group' + (isOpen ? ' open' : '') + '" data-case="' + caseId + '">';
+          html +=   '<div class="case-group-toggle">';
+          html +=     '<span class="case-group-num">Case File ' + caseNum + '</span>';
+          html +=     '<span class="case-group-title">' + cg.caseTitle + '</span>';
+          html +=     '<span class="case-group-chevron">ÃƒÂ¢Ã¢â‚¬â€œÃ‚Â¼</span>';
+          html +=   '</div>';
+          html +=   '<div class="case-group-body">';
+          html +=     '<div class="artifact-grid">';
+
+          cg.items.forEach(function(item) {
+            var c   = item.collectible;
+            var img = c.image || (c.type === 'Sound' ? 'images/tape.png' : '');
+            var delay = isOpen ? (globalIdx * 0.07) + 's' : '0s';
+            globalIdx++;
+
+            html += '<div class="artifact-card" style="animation:fade-up 0.5s ease both;animation-delay:' + delay + '">';
+
+            // Image box
+            html +=   '<div class="artifact-img-box">';
+            if (img) {
+              html += '<img src="' + img + '" alt="' + c.name + '">';
+            } else {
+              html += '<div class="artifact-img-placeholder">';
+              html +=   '<span class="artifact-img-symbol">' + (c.symbol || 'ÃƒÂ°Ã…Â¸Ã¢â‚¬ÂÃ‚Â') + '</span>';
+              html +=   '<span class="artifact-img-label">No Image on File</span>';
+              html += '</div>';
+            }
+            html +=   '</div>';
+
+            // Card body
+            html +=   '<div class="artifact-card-body">';
+            html +=     '<span class="artifact-card-stamp">' + (c.type || 'Evidence') + ' ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Case ' + caseNum + '</span>';
+            html +=     '<div class="artifact-card-name">' + c.name + '</div>';
+            html +=     '<div class="artifact-card-case">' + cg.caseTitle + ' &nbsp;Ãƒâ€šÃ‚Â·&nbsp; ' + sg.title + '</div>';
+            if (c.description) {
+              html +=   '<div class="artifact-card-desc">' + c.description + '</div>';
+            }
+            if (c.unknownInfo && c.unknownInfo.indexOf('//') === -1) {
+              html +=   '<div class="artifact-card-unknown">' + c.unknownInfo + '</div>';
+            }
+            // Sound evidence: inline player + cabinet link
+            if (c.type === 'Sound') {
+              var snd = soundLookup[c.name.toLowerCase()];
+              if (snd && snd.audioFile) {
+                html += '<div class="artifact-sound-block">';
+                html +=   '<audio class="artifact-sound-player" preload="none" data-src="' + snd.audioFile.replace(/"/g,'&quot;') + '"><source src="' + snd.audioFile + '" type="audio/mpeg"></audio>';
+                html +=   '<div class="cab-player">';
+                html +=     '<div class="cab-player-label">Audio Evidence</div>';
+                html +=     '<div class="cab-controls">';
+                html +=       '<button class="cab-play" aria-label="Play recording">&#9654;</button>';
+                html +=       '<div class="cab-track"><div class="cab-filled"></div></div>';
+                html +=       '<span class="cab-time cab-cur">0:00</span>';
+                html +=       '<span class="cab-time cab-dur">--:--</span>';
+                html +=     '</div>';
+                html +=     '<div class="cab-vol-row">';
+                html +=       '<button class="cab-vol-btn">&#128266;</button>';
+                html +=       '<input class="cab-vol" type="range" min="0" max="1" step="0.05" value="1">';
+                html +=     '</div>';
+                html +=   '</div>';
+                html +=   '<a href="sounds.html" class="artifact-sound-link">View in Sound Cabinet</a>';
+                html += '</div>';
+              } else {
+                html += '<div class="artifact-sound-block">';
+                html +=   '<a href="sounds.html" class="artifact-sound-link">View in Sound Cabinet</a>';
+                html += '</div>';
+              }
+            }
+            html +=   '</div>';
+
+            html += '</div>'; // .artifact-card
+          });
+
+          html +=     '</div>'; // .artifact-grid
+          html +=   '</div>'; // .case-group-body
+          html += '</div>'; // .case-group
+        });
+
+        html += '</div>'; // .season-group
+      });
+
+      body.innerHTML = html;
+
+      // Wire up accordion toggles
+      body.querySelectorAll('.case-group-toggle').forEach(function(toggle) {
+        toggle.addEventListener('click', function() {
+          var group = toggle.parentElement;
+          group.classList.toggle('open');
+        });
+      });
+    }
+  })();
+  </script>
+  <script src="js/badges.js"></script>
+  <script>try { localStorage.setItem('av_visited_cabinet','1'); checkAndAwardBadges(); } catch(e) {}</script>
+  <script>
+  (function() {
+    function cabFmt(s) { if(!isFinite(s)||isNaN(s)) return '--:--'; return Math.floor(s/60)+':'+(Math.floor(s%60)<10?'0':'')+Math.floor(s%60); }
+    document.addEventListener('click', function(e) {
+      var btn = e.target.closest('.cab-play');
+      if (!btn) { var vb = e.target.closest('.cab-vol-btn'); if(vb) handleVolBtn(vb); return; }
+      var wrap = btn.closest('.artifact-sound-block');
+      if (!wrap) return;
+      var audio = wrap.querySelector('.artifact-sound-player');
+      var fill  = wrap.querySelector('.cab-filled');
+      var cur   = wrap.querySelector('.cab-cur');
+      var dur   = wrap.querySelector('.cab-dur');
+      if (!audio._cabInit) {
+        audio._cabInit = true; audio._cabPlaying = false; audio._cabLastVol = 1;
+        audio.addEventListener('loadedmetadata', function() { dur.textContent = cabFmt(audio.duration); });
+        audio.addEventListener('timeupdate', function() {
+          if(!audio.duration) return;
+          cur.textContent = cabFmt(audio.currentTime);
+          fill.style.width = (audio.currentTime/audio.duration*100)+'%';
+        });
+        audio.addEventListener('ended', function() { audio._cabPlaying=false; btn.innerHTML='&#9654;'; fill.style.width='0%'; });
+        wrap.querySelector('.cab-track').addEventListener('click', function(ev) {
+          if(!audio.duration) return;
+          var r = this.getBoundingClientRect();
+          audio.currentTime = Math.max(0,Math.min(1,(ev.clientX-r.left)/r.width))*audio.duration;
+        });
+        var volEl = wrap.querySelector('.cab-vol');
+        var volBtn = wrap.querySelector('.cab-vol-btn');
+        volEl.addEventListener('input', function() {
+          audio.volume = parseFloat(volEl.value);
+          volBtn.innerHTML = audio.volume===0?'&#128263;':'&#128266;';
+        });
+        volBtn._audio = audio; volBtn._vol = volEl;
+      }
+      if (audio._cabPlaying) { audio.pause(); audio._cabPlaying=false; btn.innerHTML='&#9654;'; }
+      else { audio.play().catch(function(){}); audio._cabPlaying=true; btn.innerHTML='&#9646;&#9646;'; }
+    });
+    function handleVolBtn(vb) {
+      var audio = vb._audio; var volEl = vb._vol;
+      if(!audio) return;
+      if(audio.volume>0) { audio._cabLastVol=audio.volume; audio.volume=0; volEl.value=0; vb.innerHTML='&#128263;'; }
+      else { audio.volume=audio._cabLastVol||1; volEl.value=audio.volume; vb.innerHTML='&#128266;'; }
+    }
+  })();
+  </script>
+
+  <script src="js/polish.js" defer></script>
+</body>
+</html>

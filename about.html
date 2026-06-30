@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Ã¢â‚¬â€ The Asten Vale Archives</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    :root {
+      --ink:         #1c120a;
+      --ink-faded:   #4a3728;
+      --paper:       #c9a97a;
+      --paper-dark:  #b8935e;
+      --paper-bg:    #c4a472;
+      --gold:        #c9960c;
+      --bg:          #0c0a06;
+      --font-type:   'Courier Prime', 'Courier New', Courier, monospace;
+      --font-header: 'Special Elite', 'Courier New', serif;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: var(--font-type);
+      font-size: 15px;
+      line-height: 1.7;
+      min-height: auto;
+      overflow-x: hidden;
+    }
+
+    a { text-decoration: none; color: inherit; }
+
+    /* Ã¢â€â‚¬Ã¢â€â‚¬ HERO Ã¢â€â‚¬Ã¢â€â‚¬ */
+    .hero {
+      position: relative;
+      min-height: auto;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(to bottom, rgba(12,8,4,0.5) 0%, rgba(12,8,4,0.25) 40%, rgba(12,8,4,0.92) 100%),
+        linear-gradient(135deg, #1a130a 0%, #0c0a06 60%, #111008 100%);
+      z-index: 0;
+    }
+
+    .hero-glow {
+      position: absolute;
+      right: 5%;
+      top: 10%;
+      width: 280px;
+      height: 280px;
+      background: radial-gradient(circle at 60% 40%, rgba(200,140,40,0.08) 0%, transparent 70%);
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    /* Ã¢â€â‚¬Ã¢â€â‚¬ NAV Ã¢â€â‚¬Ã¢â€â‚¬ */
+    .site-nav {
+      position: relative;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.25rem 2.5rem;
+    }
+
+    .nav-brand {
+      font-family: var(--font-header);
+      font-size: 0.75rem;
+      letter-spacing: 0.22em;
+      color: rgba(201,169,122,0.75);
+      text-transform: uppercase;
+      line-height: 1.3;
+    }
+    .nav-brand span { display: block; }
+
+    .nav-logo { position: absolute; left: 50%; transform: translateX(-50%); }
+    .nav-logo svg { width: 46px; height: 46px; opacity: 0.9; }
+
+    .nav-links { display: flex; gap: 2rem; align-items: center; }
+
+    .nav-link {
+      font-family: var(--font-type);
+      font-size: 0.72rem;
+      letter-spacing: 0.18em;
+      color: rgba(201,169,122,0.7);
+      text-transform: uppercase;
+      transition: color 0.2s;
+      position: relative;
+    }
+    .nav-link:hover { color: var(--paper); }
+    .nav-link.active { color: rgba(201,169,122,0.95); }
+    .nav-link.active::after {
+      content: "";
+      position: absolute;
+      bottom: -3px; left: 0; right: 0;
+      height: 1px;
+      background: rgba(201,169,122,0.6);
+    }
+
+    /* Ã¢â€â‚¬Ã¢â€â‚¬ HERO CONTENT Ã¢â€â‚¬Ã¢â€â‚¬ */
+    .hero-content {
+      position: relative;
+      z-index: 5;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 1.5rem 2rem 2.5rem;
+    }
+
+    .hero-label {
+      font-family: var(--font-type);
+      font-size: 0.72rem;
+      letter-spacing: 0.3em;
+      color: rgba(201,169,122,0.5);
+      text-transform: uppercase;
+      margin-bottom: 0.6rem;
+    }
+
+    .hero-title {
+      font-family: var(--font-header);
+      font-size: clamp(2rem, 7vw, 4rem);
+      letter-spacing: 0.12em;
+      color: rgba(220,190,140,0.95);
+      text-transform: uppercase;
+      text-shadow: 0 2px 30px rgba(0,0,0,0.8);
+      margin-bottom: 1rem;
+    }
+
+    .hero-rule {
+      width: 60px;
+      height: 1px;
+      background: rgba(201,169,122,0.35);
+      margin: 0 auto;
+    }
+
+    /* Ã¢â€â‚¬Ã¢â€â‚¬ PAPER SECTION Ã¢â€â‚¬Ã¢â€â‚¬ */
+    .paper-section {
+      position: relative;
+      background: var(--paper-bg);
+    }
+
+    .paper-section::before {
+      content: "";
+      display: block;
+      height: 28px;
+      background: var(--paper-bg);
+      clip-path: polygon(
+        0% 100%, 1% 20%, 2.5% 90%, 4% 10%, 5.5% 80%, 7% 5%,
+        8.5% 85%, 10% 15%, 11.5% 75%, 13% 25%, 14.5% 70%,
+        16% 30%, 17.5% 65%, 19% 20%, 20.5% 80%, 22% 10%,
+        23.5% 90%, 25% 15%, 26.5% 75%, 28% 35%, 29.5% 60%,
+        31% 25%, 32.5% 70%, 34% 10%, 35.5% 85%, 37% 20%,
+        38.5% 75%, 40% 30%, 41.5% 65%, 43% 15%, 44.5% 80%,
+        46% 20%, 47.5% 70%, 49% 10%, 50.5% 90%, 52% 25%,
+        53.5% 60%, 55% 15%, 56.5% 80%, 58% 30%, 59.5% 65%,
+        61% 10%, 62.5% 85%, 64% 20%, 65.5% 75%, 67% 35%,
+        68.5% 60%, 70% 15%, 71.5% 80%, 73% 25%, 74.5% 70%,
+        76% 10%, 77.5% 90%, 79% 20%, 80.5% 65%, 82% 30%,
+        83.5% 75%, 85% 15%, 86.5% 80%, 88% 25%, 89.5% 60%,
+        91% 10%, 92.5% 85%, 94% 20%, 95.5% 70%, 97% 30%,
+        98.5% 80%, 100% 0%, 100% 100%
+      );
+    }
+
+    .paper-inner {
+      position: relative;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 1rem 2.5rem 4rem;
+    }
+
+    /* Grain texture */
+    .paper-inner::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23noise)' opacity='0.035'/%3E%3C/svg%3E");
+      pointer-events: none;
+    }
+
+    /* Left margin rule */
+    .paper-inner::after {
+      content: "";
+      position: absolute;
+      top: 0; bottom: 0;
+      left: 4rem;
+      width: 1px;
+      background: rgba(180,100,80,0.22);
+      pointer-events: none;
+    }
+
+    /* Ã¢â€â‚¬Ã¢â€â‚¬ CONTENT BLOCKS Ã¢â€â‚¬Ã¢â€â‚¬ */
+    .content-block {
+      position: relative;
+      margin-bottom: 2.5rem;
+    }
+
+    .content-block:last-child { margin-bottom: 0; }
+
+    .block-label {
+      font-family: var(--font-type);
+      font-size: 0.65rem;
+      letter-spacing: 0.28em;
+      color: rgba(60,30,10,0.45);
+      text-transform: uppercase;
+      margin-bottom: 0.4rem;
+    }
+
+    .block-title {
+      font-family: var(--font-header);
+      font-size: clamp(1rem, 3vw, 1.35rem);
+      letter-spacing: 0.1em;
+      color: var(--ink);
+      text-transform: uppercase;
+      margin-bottom: 0.75rem;
+    }
+
+    .block-rule {
+      width: 36px;
+      height: 1px;
+      background: rgba(60,30,10,0.3);
+      margin-bottom: 0.9rem;
+    }
+
+    .block-text {
+      font-family: var(--font-type);
+      font-size: 0.88rem;
+      color: rgba(28,18,10,0.78);
+      line-height: 1.85;
+    }
+
+    .block-text + .block-text { margin-top: 0.9rem; }
+
+    /* Divider between blocks */
+    .section-divider {
+      border: none;
+      border-top: 1px solid rgba(60,30,10,0.15);
+      margin: 2.5rem 0;
+    }
+
+    /* Stamp */
+    .stamp {
+      display: inline-block;
+      border: 2px solid rgba(60,30,10,0.3);
+      padding: 0.35rem 0.75rem;
+      font-family: var(--font-header);
+      font-size: 0.65rem;
+      letter-spacing: 0.22em;
+      color: rgba(60,30,10,0.4);
+      text-transform: uppercase;
+      transform: rotate(-2deg);
+      margin-top: 1rem;
+    }
+
+    /* Redacted line effect */
+    .redacted {
+      background: rgba(28,18,10,0.75);
+      color: transparent;
+      user-select: none;
+      border-radius: 1px;
+      padding: 0 0.15em;
+    }
+
+    /* Pull quote */
+    .pull-quote {
+      border-left: 3px solid rgba(60,30,10,0.25);
+      padding: 0.5rem 1rem;
+      margin: 1.5rem 0;
+      font-family: var(--font-header);
+      font-size: 0.95rem;
+      font-style: italic;
+      color: rgba(28,18,10,0.65);
+      letter-spacing: 0.04em;
+      line-height: 1.6;
+    }
+
+    .archive-note {
+      border: 1px solid rgba(60,30,10,0.2);
+      border-left: 3px solid rgba(60,30,10,0.32);
+      background: rgba(255,255,255,0.11);
+      padding: 0.85rem 1rem;
+      margin: 1.25rem 0 0;
+      color: rgba(28,18,10,0.68);
+    }
+
+    .archive-note-label {
+      display: block;
+      font-family: var(--font-header);
+      font-size: 0.62rem;
+      letter-spacing: 0.22em;
+      color: rgba(60,30,10,0.48);
+      text-transform: uppercase;
+      margin-bottom: 0.25rem;
+    }
+
+    .workflow-list { display: grid; gap: 0.65rem; margin-top: 1rem; }
+
+    .workflow-step {
+      position: relative;
+      border: 1px solid rgba(60,30,10,0.17);
+      background: rgba(220,195,155,0.38);
+      padding: 0.8rem 1rem 0.8rem 3.2rem;
+    }
+
+    .workflow-step::before {
+      content: attr(data-step);
+      position: absolute;
+      left: 0.85rem;
+      top: 0.85rem;
+      width: 1.35rem;
+      height: 1.35rem;
+      border: 1px solid rgba(60,30,10,0.32);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-header);
+      font-size: 0.62rem;
+      color: rgba(60,30,10,0.62);
+    }
+
+    .workflow-step + .workflow-step::after {
+      content: "";
+      position: absolute;
+      left: 1.5rem;
+      top: -0.55rem;
+      width: 1px;
+      height: 0.55rem;
+      background: rgba(60,30,10,0.22);
+    }
+
+    .workflow-title,
+    .evidence-title,
+    .faq-question {
+      font-family: var(--font-header);
+      font-size: 0.82rem;
+      letter-spacing: 0.12em;
+      color: var(--ink);
+      text-transform: uppercase;
+    }
+
+    .workflow-copy,
+    .evidence-copy,
+    .faq-answer {
+      font-size: 0.82rem;
+      color: rgba(28,18,10,0.68);
+      line-height: 1.65;
+      margin-top: 0.2rem;
+    }
+
+    .evidence-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.75rem;
+      margin-top: 1rem;
+    }
+
+    .evidence-card,
+    .faq-item {
+      border: 1px solid rgba(60,30,10,0.16);
+      background: rgba(0,0,0,0.035);
+      padding: 0.85rem 1rem;
+    }
+
+    .faq-list { display: grid; gap: 0.75rem; margin-top: 1rem; }
+
+    .briefing-actions { display: flex; flex-wrap: wrap; gap: 0.8rem; margin-top: 1.4rem; }
+
+    .briefing-link {
+      display: inline-block;
+      font-family: var(--font-header);
+      font-size: 0.72rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--ink);
+      border: 2px solid rgba(60,30,10,0.36);
+      padding: 0.7rem 1rem;
+      transition: border-color 0.2s, color 0.2s;
+    }
+
+    .briefing-link:hover { border-color: rgba(60,30,10,0.78); }
+
+    /* Ã¢â€â‚¬Ã¢â€â‚¬ FOOTER Ã¢â€â‚¬Ã¢â€â‚¬ */
+    .site-footer {
+      background: var(--bg);
+      padding: 1.5rem 2.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid rgba(201,169,122,0.08);
+    }
+
+    .footer-motto { display: flex; align-items: center; gap: 0.85rem; }
+    .footer-motto svg { opacity: 0.55; flex-shrink: 0; }
+    .footer-motto-text {
+      font-family: var(--font-header);
+      font-size: 0.68rem;
+      letter-spacing: 0.18em;
+      color: rgba(201,169,122,0.45);
+      text-transform: uppercase;
+      line-height: 1.4;
+    }
+    .footer-copy {
+      font-family: var(--font-type);
+      font-size: 0.65rem;
+      letter-spacing: 0.1em;
+      color: rgba(201,169,122,0.3);
+      text-transform: uppercase;
+    }
+    .footer-right { display: flex; align-items: center; gap: 1.25rem; }
+    .footer-join {
+      font-family: var(--font-type);
+      font-size: 0.68rem;
+      letter-spacing: 0.15em;
+      color: rgba(201,169,122,0.55);
+      text-transform: uppercase;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      transition: color 0.2s;
+    }
+    .footer-join:hover { color: var(--paper); }
+
+    @media (max-width: 640px) {
+      .site-nav { padding: 1rem 1.25rem; }
+      .paper-inner { padding: 1rem 1.25rem 3rem; }
+      .paper-inner::after { left: 2rem; }
+      .evidence-grid { grid-template-columns: 1fr; }
+      .briefing-actions { flex-direction: column; }
+      .briefing-link { text-align: center; }
+      .site-footer { flex-direction: column; gap: 1rem; text-align: center; }
+      .footer-motto { justify-content: center; }
+    }
+  </style>
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/polish.css">
+</head>
+<body>
+
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-glow"></div>
+
+    <nav class="site-nav">
+      <a href="index.html" class="nav-brand">
+        <span>Asten Vale</span>
+        <span>Archives</span>
+      </a>
+      <div class="nav-logo">
+        <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="30" cy="30" r="28" stroke="rgba(201,169,122,0.6)" stroke-width="1.2"/>
+          <circle cx="30" cy="30" r="22" stroke="rgba(201,169,122,0.35)" stroke-width="0.8"/>
+          <line x1="30" y1="4" x2="30" y2="10" stroke="rgba(201,169,122,0.7)" stroke-width="1.5"/>
+          <polygon points="30,13 23,26 37,26" fill="rgba(201,169,122,0.82)"/>
+          <polygon points="30,18 21,33 39,33" fill="rgba(201,169,122,0.82)"/>
+          <rect x="27" y="33" width="6" height="5" fill="rgba(201,169,122,0.7)"/>
+          <line x1="30" y1="50" x2="30" y2="56" stroke="rgba(201,169,122,0.5)" stroke-width="1"/>
+          <line x1="4" y1="30" x2="10" y2="30" stroke="rgba(201,169,122,0.5)" stroke-width="1"/>
+          <line x1="50" y1="30" x2="56" y2="30" stroke="rgba(201,169,122,0.5)" stroke-width="1"/>
+        </svg>
+      </div>
+      <div class="nav-links">
+        <a href="index.html"     class="nav-link"        data-icon="Ã°Å¸â€”â€ž">Archive</a>
+        <a href="cabinet.html"   class="nav-link"        data-icon="Ã°Å¸â€Â">Cabinet</a>
+        <a href="completed.html" class="nav-link"        data-icon="Ã¢Å“Â¦">Completed</a>
+        <a href="progress.html"  class="nav-link"        data-icon="Ã¢â€”Å½">Progress</a>
+        <a href="about.html"     class="nav-link active" data-icon="Ã¢â€”â€°">About</a>
+        <a href="join.html"      class="nav-link"        data-icon="Ã¢Å“â€°">Join</a>
+      </div>
+    </nav>
+
+    <div class="hero-content">
+      <p class="hero-label">Classified Ã¢â‚¬â€ Internal Dossier</p>
+      <h1 class="hero-title">Briefing</h1>
+      <div class="hero-rule"></div>
+    </div>
+  </section>
+
+  <section class="paper-section">
+    <div class="paper-inner">
+
+      <div class="content-block">
+        <p class="block-label">Briefing 01</p>
+        <h2 class="block-title">What Is the Asten Vale Archives?</h2>
+        <div class="block-rule"></div>
+        <p class="block-text">The Asten Vale Archives is an ongoing mystery told through music, recovered case files, and evidence hidden in plain hearing.</p>
+        <p class="block-text">Every case begins with a song. Every song contains fragments the official record missed. When an investigation is solved, additional archive material becomes available.</p>
+        <div class="pull-quote">"The truth is recovered, not revealed."</div>
+      </div>
+
+      <hr class="section-divider" />
+
+      <div class="content-block">
+        <p class="block-label">Briefing 02</p>
+        <h2 class="block-title">How Investigations Work</h2>
+        <div class="block-rule"></div>
+        <p class="block-text">Each file asks you to listen carefully, identify evidence, and confirm your findings before the archive opens the next layer.</p>
+        <div class="workflow-list">
+          <div class="workflow-step" data-step="1"><div class="workflow-title">Listen to the Song</div><p class="workflow-copy">Begin with the recording and treat every lyric, sound, and repeated phrase as part of the record.</p></div>
+          <div class="workflow-step" data-step="2"><div class="workflow-title">Recover Seven Pieces of Evidence</div><p class="workflow-copy">Find the location, object, witness, time, marker, direction, and sound hidden inside the case.</p></div>
+          <div class="workflow-step" data-step="3"><div class="workflow-title">Confirm Your Findings</div><p class="workflow-copy">Submit the evidence to the archive system and let the file verify what you recovered.</p></div>
+          <div class="workflow-step" data-step="4"><div class="workflow-title">Unlock the Case File</div><p class="workflow-copy">A solved investigation opens the closed record and reveals additional material without spoiling future cases.</p></div>
+          <div class="workflow-step" data-step="5"><div class="workflow-title">Continue the Investigation</div><p class="workflow-copy">Return as new files are declassified and older evidence begins to point somewhere else.</p></div>
+        </div>
+        <div class="archive-note"><span class="archive-note-label">Archive Note</span>The official report rarely tells the whole story.</div>
+      </div>
+
+      <hr class="section-divider" />
+
+      <div class="content-block">
+        <p class="block-label">Briefing 03</p>
+        <h2 class="block-title">The Seven Evidence Types</h2>
+        <div class="block-rule"></div>
+        <div class="evidence-grid">
+          <div class="evidence-card"><div class="evidence-title">Location</div><p class="evidence-copy">Where the events of the investigation occurred.</p></div>
+          <div class="evidence-card"><div class="evidence-title">Object</div><p class="evidence-copy">A recovered artifact connected to the case.</p></div>
+          <div class="evidence-card"><div class="evidence-title">Witness</div><p class="evidence-copy">Someone connected to the investigation or its aftermath.</p></div>
+          <div class="evidence-card"><div class="evidence-title">Time</div><p class="evidence-copy">A significant recorded moment in the file.</p></div>
+          <div class="evidence-card"><div class="evidence-title">Marker</div><p class="evidence-copy">A numbered clue that can link one investigation to another.</p></div>
+          <div class="evidence-card"><div class="evidence-title">Direction</div><p class="evidence-copy">A route, instruction, or movement hidden inside the archive.</p></div>
+          <div class="evidence-card"><div class="evidence-title">Sound</div><p class="evidence-copy">An environmental recording recovered from the investigation.</p></div>
+        </div>
+      </div>
+
+      <hr class="section-divider" />
+
+      <div class="content-block">
+        <p class="block-label">Briefing 04</p>
+        <h2 class="block-title">The Archivist</h2>
+        <div class="block-rule"></div>
+        <p class="block-text">The archive and the Archivist are not the same thing. The archive is the collection; the Archivist is the unknown hand that assembled it.</p>
+        <p class="block-text">The handwriting appears throughout the files, sometimes years apart. No official record identifies who wrote the notes, why they preserved the songs, or where the remaining files were kept.</p>
+        <div class="stamp">Identity: Unconfirmed</div>
+      </div>
+
+      <hr class="section-divider" />
+
+      <div class="content-block">
+        <p class="block-label">Briefing 05</p>
+        <h2 class="block-title">Why Music?</h2>
+        <div class="block-rule"></div>
+        <p class="block-text">The recordings survived when formal reports did not. Songs carried details that paperwork ignored, softened, or removed.</p>
+        <p class="block-text">Listening closely reveals names, places, sounds, and patterns hidden in plain sight. In Asten Vale, music is not decoration; it is evidence.</p>
+        <div class="archive-note"><span class="archive-note-label">Internal Memo</span>Some evidence only becomes meaningful after later investigations.</div>
+      </div>
+
+      <hr class="section-divider" />
+
+      <div class="content-block">
+        <p class="block-label">Briefing 06</p>
+        <h2 class="block-title">Archive Releases</h2>
+        <div class="block-rule"></div>
+        <p class="block-text">New investigations are declassified one at a time. Each completed case expands the archive and prepares the next file for review.</p>
+        <p class="block-text">Subscribers receive notice whenever a new investigation becomes available or a sealed record changes status.</p>
+        <div class="archive-note"><span class="archive-note-label">Classified</span>Several records remain sealed.</div>
+      </div>
+
+      <hr class="section-divider" />
+
+      <div class="content-block">
+        <p class="block-label">Briefing 07</p>
+        <h2 class="block-title">Frequently Asked Questions</h2>
+        <div class="block-rule"></div>
+        <div class="faq-list">
+          <div class="faq-item"><div class="faq-question">What is Asten Vale?</div><p class="faq-answer">Asten Vale is an ongoing mystery archive where songs act as case files and listeners recover the evidence inside them.</p></div>
+          <div class="faq-item"><div class="faq-question">Do I have to solve every case?</div><p class="faq-answer">No, but each solved file gives you a clearer view of the archive and the patterns connecting it.</p></div>
+          <div class="faq-item"><div class="faq-question">Can I replay investigations?</div><p class="faq-answer">Yes. Closed cases can be revisited, replayed, and reviewed for details you may have missed.</p></div>
+          <div class="faq-item"><div class="faq-question">Are clues shared between cases?</div><p class="faq-answer">Some clues stand alone; others become more important as later records are declassified.</p></div>
+          <div class="faq-item"><div class="faq-question">What happens when I complete a season?</div><p class="faq-answer">The archive marks the season complete and prepares the next sealed group of investigations for release.</p></div>
+        </div>
+        <div class="briefing-actions"><a class="briefing-link" href="case.html?id=1">Begin Case 001</a><a class="briefing-link" href="join.html">Join the Archive</a></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-motto">
+      <svg width="28" height="28" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="30" cy="30" r="27" stroke="rgba(201,169,122,0.5)" stroke-width="1.2"/>
+        <polygon points="30,10 25,22 35,22" fill="rgba(201,169,122,0.6)"/>
+        <polygon points="30,16 21,30 39,30" fill="rgba(201,169,122,0.6)"/>
+        <rect x="27" y="30" width="6" height="5" fill="rgba(201,169,122,0.55)"/>
+      </svg>
+      <span class="footer-motto-text">
+        Truth is not given.<br>
+        It is discovered.
+      </span>
+    </div>
+    <span class="footer-copy">Ã‚Â© 2026 Asten Vale Archives</span>
+    <a href="https://buymeacoffee.com/YOUR_USERNAME" target="_blank" rel="noopener" class="footer-copy" style="text-decoration:none;opacity:0.7;transition:opacity 0.2s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.7'">Ã¢Ëœâ€¢ Buy Me a Coffee</a>
+    <div class="footer-right">
+      <a href="join.html" class="footer-join">Join the Archive</a>
+    </div>
+  </footer>
+
+  <script>
+  fetch('js/site-settings.json').then(function(r){return r.json();}).then(function(s){
+    var pg = s.pages && s.pages.about; if(!pg) return;
+    var bg = document.querySelector('.hero-bg');
+    if(bg && pg.heroImage){ bg.style.backgroundImage='url("'+pg.heroImage+'")'; bg.style.backgroundSize='cover'; bg.style.backgroundPosition='center'; bg.style.opacity=pg.heroOverlay!=null?(1-pg.heroOverlay):1; document.body.classList.add('has-hero-image'); }
+    if(pg.showTitle===false||pg.heroImage){ document.querySelectorAll('.hero-title,.hero-title-sub,.hero-diamond').forEach(function(e){e.style.display='none';}); }
+    if(pg.showSubtitle===false){ var el=document.querySelector('.hero-tagline,.hero-subtitle'); if(el) el.style.display='none'; }
+    if(pg.heroTitleText){ var t=document.querySelector('.hero-title'); if(t) t.textContent=pg.heroTitleText; }
+  }).catch(function(){});
+  </script>
+  <script src="js/badges.js"></script>
+  <script>try { localStorage.setItem('av_visited_about','1'); checkAndAwardBadges(); } catch(e) {}</script>
+  <script src="js/polish.js" defer></script>
+</body>
+</html>

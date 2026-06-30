@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Join the Archive &mdash; The Asten Vale Archives</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    :root {
+      --ink:         #1c120a;
+      --ink-faded:   #4a3728;
+      --paper:       #c9a97a;
+      --paper-dark:  #b8935e;
+      --paper-bg:    #c4a472;
+      --gold:        #c9960c;
+      --bg:          #0c0a06;
+      --font-type:   'Courier Prime', 'Courier New', Courier, monospace;
+      --font-header: 'Special Elite', 'Courier New', serif;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: var(--font-type);
+      font-size: 15px;
+      line-height: 1.7;
+      min-height: auto;
+      overflow-x: hidden;
+    }
+
+    a { text-decoration: none; color: inherit; }
+
+    /* Ã¢â€â‚¬Ã¢â€â‚¬ HERO Ã¢â€â‚¬Ã¢â€â‚¬ */
+    .hero {
+      position: relative;
+      min-height: auto;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(to bottom, rgba(12,8,4,0.5) 0%, rgba(12,8,4,0.25) 40%, rgba(12,8,4,0.92) 100%),
+        linear-gradient(160deg, #0e0a06 0%, #1a130a 40%, #0c0a06 100%);
+      z-index: 0;
+    }
+
+    .hero-glow {
+      position: absolute;
+      left: 10%;
+      bottom: 10%;
+      width: 350px;
+      height: 200px;
+      background: radial-gradient(ellipse at 40% 60%, rgba(200,140,40,0.06) 0%, transparent 70%);
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    /* Ã¢â€â‚¬Ã¢â€â‚¬ NAV Ã¢â€â‚¬Ã¢â€â‚¬ */
+    .site-nav {
+      position: relative;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.25rem 2.5rem;
+    }
+
+    .nav-brand {
+      font-family: var(--font-header);
+      font-size: 0.75rem;
+      letter-spacing: 0.22em;
+      color: rgba(201,169,122,0.75);
+      text-transform: uppercase;
+      line-height: 1.3;
+    }
+    .nav-brand span { display: block; }
+
+    .nav-logo { position: absolute; left: 50%; transform: translateX(-50%); }
+    .nav-logo svg { width: 46px; height: 46px; opacity: 0.9; }
+
+    .nav-links { display: flex; gap: 2rem; align-items: center; }
+
+    .nav-link {
+      font-family: var(--font-type);
+      font-size: 0.72rem;
+      letter-spacing: 0.18em;
+      color: rgba(201,169,122,0.7);
+      text-transform: uppercase;
+      transition: color 0.2s;
+      position: relative;
+    }
+    .nav-link:hover { color: var(--paper); }
+    .nav-link.active { color: rgba(201,169,122,0.95); }
+    .nav-link.active::after {
+      content: "";
+      position: absolute;
+      bottom: -3px; left: 0; right: 0;
+      height: 1px;
+      background: rgba(201,169,122,0.6);
+    }
+
+    /* Ã¢â€â‚¬Ã¢â€â‚¬ HERO CONTENT Ã¢â€â‚¬Ã¢â€â‚¬ */
+    .hero-content {
+      position: relative;
+      z-index: 5;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 1.5rem 2rem 2.5rem;
+    }
+
+    .hero-label {
+      font-family: var(--font-type);
+      font-size: 0.72rem;
+      letter-spacing: 0.3em;
+      color: rgba(201,169,122,0.5);
+      text-transform: uppercase;
+      margin-bottom: 0.6rem;
+    }
+
+    .hero-title {
+      font-family: var(--font-header);
+      font-size: clamp(1.8rem, 6vw, 3.5rem);
+      letter-spacing: 0.12em;
+      color: rgba(220,190,140,0.95);
+      text-transform: uppercase;
+      text-shadow: 0 2px 30px rgba(0,0,0,0.8);
+      margin-bottom: 0.75rem;
+      line-height: 1.15;
+    }
+
+    .hero-sub {
+      font-family: var(--font-type);
+      font-size: 0.85rem;
+      color: rgba(201,169,122,0.55);
+      font-style: italic;
+      margin-top: 0.5rem;
+    }
+
+    .hero-rule {
+      width: 60px;
+      height: 1px;
+      background: rgba(201,169,122,0.35);
+      margin: 1rem auto 0;
+    }
+
+    /* Ã¢â€â‚¬Ã¢â€â‚¬ PAPER SECTION Ã¢â€â‚¬Ã¢â€â‚¬ */
+    .paper-section {
+      position: relative;
+      background: var(--paper-bg);
+    }
+
+    .paper-section::before {
+      content: "";
+      display: block;
+      height: 28px;
+      background: var(--paper-bg);
+      clip-path: polygon(
+        0% 100%, 1% 20%, 2.5% 90%, 4% 10%, 5.5% 80%, 7% 5%,
+        8.5% 85%, 10% 15%, 11.5% 75%, 13% 25%, 14.5% 70%,
+        16% 30%, 17.5% 65%, 19% 20%, 20.5% 80%, 22% 10%,
+        23.5% 90%, 25% 15%, 26.5% 75%, 28% 35%, 29.5% 60%,
+        31% 25%, 32.5% 70%, 34% 10%, 35.5% 85%, 37% 20%,
+        38.5% 75%, 40% 30%, 41.5% 65%, 43% 15%, 44.5% 80%,
+        46% 20%, 47.5% 70%, 49% 10%, 50.5% 90%, 52% 25%,
+        53.5% 60%, 55% 15%, 56.5% 80%, 58% 30%, 59.5% 65%,
+        61% 10%, 62.5% 85%, 64% 20%, 65.5% 75%, 67% 35%,
+        68.5% 60%, 70% 15%, 71.5% 80%, 73% 25%, 74.5% 70%,
+        76% 10%, 77.5% 90%, 79% 20%, 80.5% 65%, 82% 30%,
+        83.5% 75%, 85% 15%, 86.5% 80%, 88% 25%, 89.5% 60%,
+        91% 10%, 92.5% 85%, 94% 20%, 95.5% 70%, 97% 30%,
+        98.5% 80%, 100% 0%, 100% 100%
+      );
+    }
+
+    .paper-inner {
+      position: relative;
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 1rem 2.5rem 4.5rem;
+    }
+
+    .paper-inner::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23noise)' opacity='0.035'/%3E%3C/svg%3E");
+      pointer-events: none;
+    }
+
+    .paper-inner::after {
+      content: "";
+      position: absolute;
+      top: 0; bottom: 0;
+      left: 4rem;
+      width: 1px;
+      background: rgba(180,100,80,0.22);
+      pointer-events: none;
+    }
+
+    /* Ã¢â€â‚¬Ã¢â€â‚¬ FORM HEADER Ã¢â€â‚¬Ã¢â€â‚¬ */
+    .form-header {
+      margin-bottom: 2rem;
+    }
+
+    .form-label-top {
+      font-family: var(--font-type);
+      font-size: 0.65rem;
+      letter-spacing: 0.28em;
+      color: rgba(60,30,10,0.45);
+      text-transform: uppercase;
+      margin-bottom: 0.4rem;
+    }
+
+    .form-title {
+      font-family: var(--font-header);
+      font-size: clamp(1rem, 3vw, 1.35rem);
+      letter-spacing: 0.1em;
+      color: var(--ink);
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    .form-rule {
+      width: 36px;
+      height: 1px;
+      background: rgba(60,30,10,0.3);
+      margin-bottom: 0.9rem;
+    }
+
+    .form-desc {
+      font-family: var(--font-type);
+      font-size: 0.83rem;
+      color: rgba(28,18,10,0.65);
+      font-style: italic;
+      line-height: 1.7;
+    }
+    .access-brief {
+      margin: 1.35rem 0 2rem;
+      padding: 1rem 1.1rem;
+      border: 1px solid rgba(60,30,10,0.18);
+      border-left: 3px solid rgba(60,30,10,0.32);
+      background: rgba(220,195,155,0.34);
+    }
+
+    .access-title {
+      font-family: var(--font-header);
+      font-size: 0.78rem;
+      letter-spacing: 0.16em;
+      color: var(--ink);
+      text-transform: uppercase;
+      margin-bottom: 0.65rem;
+    }
+
+    .access-list {
+      list-style: none;
+      display: grid;
+      gap: 0.35rem;
+      font-family: var(--font-type);
+      font-size: 0.82rem;
+      color: rgba(28,18,10,0.7);
+      line-height: 1.5;
+    }
+
+    .access-list li::before {
+      content: "\2713";
+      display: inline-block;
+      margin-right: 0.55rem;
+      color: rgba(60,30,10,0.62);
+    }
+
+    .access-closing {
+      margin-top: 0.8rem;
+      font-family: var(--font-header);
+      font-size: 0.68rem;
+      letter-spacing: 0.16em;
+      color: rgba(60,30,10,0.62);
+      text-transform: uppercase;
+    }
+
+    .archive-stamp {
+      display: inline-block;
+      border: 2px solid rgba(60,30,10,0.28);
+      padding: 0.28rem 0.65rem;
+      font-family: var(--font-header);
+      font-size: 0.58rem;
+      letter-spacing: 0.2em;
+      color: rgba(60,30,10,0.42);
+      text-transform: uppercase;
+      transform: rotate(-1.5deg);
+      margin: 1rem 0 0;
+    }
+    .archive-stamp:hover,
+    .archive-status-stamp:hover,
+    .success-stamp:hover {
+      border-color: rgba(60,30,10,0.46);
+      color: rgba(60,30,10,0.62);
+    }
+
+    .archive-status-stamp {
+      display: inline-flex;
+      flex-direction: column;
+      gap: 0.08rem;
+      border: 2px solid rgba(60,30,10,0.28);
+      padding: 0.34rem 0.7rem 0.3rem;
+      font-family: var(--font-header);
+      color: rgba(60,30,10,0.42);
+      text-transform: uppercase;
+      transform: rotate(-1.5deg);
+      margin: 1rem 0 0;
+      transition: color 0.2s, border-color 0.2s;
+    }
+
+    .archive-status-stamp span {
+      font-size: 0.55rem;
+      letter-spacing: 0.2em;
+    }
+
+    .archive-status-stamp strong {
+      font-size: 0.68rem;
+      letter-spacing: 0.14em;
+      font-weight: 400;
+    }
+
+    .document-heading {
+      font-family: var(--font-header);
+      font-size: 0.62rem;
+      letter-spacing: 0.22em;
+      color: rgba(60,30,10,0.48);
+      text-transform: uppercase;
+      border-bottom: 1px solid rgba(60,30,10,0.15);
+      padding-bottom: 0.4rem;
+      margin-bottom: 0.55rem;
+    }
+
+    /* Ã¢â€â‚¬Ã¢â€â‚¬ FORM Ã¢â€â‚¬Ã¢â€â‚¬ */
+    .archive-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    .field-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+
+    .field-label {
+      font-family: var(--font-type);
+      font-size: 0.67rem;
+      letter-spacing: 0.2em;
+      color: rgba(60,30,10,0.55);
+      text-transform: uppercase;
+    }
+
+    .field-input,
+    .field-select,
+    .field-textarea {
+      background: rgba(210,180,120,0.35);
+      border: 1px solid rgba(100,65,20,0.3);
+      border-bottom: 2px solid rgba(100,65,20,0.4);
+      padding: 0.65rem 0.85rem;
+      font-family: var(--font-type);
+      font-size: 0.85rem;
+      color: var(--ink);
+      outline: none;
+      transition: border-color 0.2s, background 0.2s;
+      width: 100%;
+      border-radius: 0;
+      -webkit-appearance: none;
+      appearance: none;
+    }
+
+    .field-input::placeholder,
+    .field-textarea::placeholder {
+      color: rgba(60,30,10,0.35);
+      font-style: italic;
+    }
+
+    .field-input:focus,
+    .field-select:focus,
+    .field-textarea:focus {
+      background: rgba(220,195,145,0.5);
+      border-color: rgba(100,65,20,0.6);
+      border-bottom-color: rgba(60,30,10,0.7);
+    }
+
+    .field-textarea {
+      resize: vertical;
+      min-height: 90px;
+    }
+
+    .field-select {
+      cursor: pointer;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='rgba(60,30,10,0.5)' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 0.85rem center;
+      padding-right: 2rem;
+    }
+
+    .field-select option {
+      background: #c4a472;
+      color: var(--ink);
+    }
+
+    /* Checkbox row */
+    .check-group {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.65rem;
+      cursor: pointer;
+    }
+
+    .check-group input[type="checkbox"] {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 16px;
+      height: 16px;
+      min-width: 16px;
+      border: 1px solid rgba(60,30,10,0.4);
+      background: rgba(210,180,120,0.3);
+      cursor: pointer;
+      margin-top: 2px;
+      position: relative;
+      transition: background 0.15s;
+    }
+
+    .check-group input[type="checkbox"]:checked {
+      background: rgba(60,30,10,0.75);
+    }
+
+    .check-group input[type="checkbox"]:checked::after {
+      content: "\2713";
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(210,180,120,0.9);
+      font-size: 11px;
+      line-height: 16px;
+      text-align: center;
+    }
+
+    .check-label {
+      font-family: var(--font-type);
+      font-size: 0.78rem;
+      color: rgba(60,30,10,0.65);
+      line-height: 1.5;
+      font-style: italic;
+    }
+
+    /* Submit */
+    .btn-submit {
+      margin-top: 0.5rem;
+      padding: 0.85rem 1.5rem;
+      background: rgba(28,18,10,0.88);
+      border: 1px solid rgba(201,169,122,0.3);
+      color: rgba(201,169,122,0.88);
+      font-family: var(--font-header);
+      font-size: 0.85rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s, border-color 0.2s;
+      align-self: flex-start;
+    }
+
+    .btn-submit:hover {
+      background: rgba(44,30,15,0.98);
+      color: rgba(226,196,145,0.96);
+      border-color: rgba(226,196,145,0.7);
+    }
+
+    /* Success state */
+    .form-success {
+      display: none;
+      text-align: center;
+      padding: 2.5rem 1rem;
+    }
+
+    .form-success.visible { display: block; }
+
+    .success-icon {
+      margin: 0 auto 1rem;
+      width: 56px;
+      height: 56px;
+      opacity: 0.7;
+    }
+
+    .success-title {
+      font-family: var(--font-header);
+      font-size: 1.2rem;
+      letter-spacing: 0.15em;
+      color: var(--ink);
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    .success-text {
+      font-family: var(--font-type);
+      font-size: 0.83rem;
+      color: rgba(60,30,10,0.6);
+      font-style: italic;
+      line-height: 1.7;
+    }
+    .success-stamp {
+      display: inline-block;
+      border: 2px solid rgba(60,30,10,0.28);
+      padding: 0.28rem 0.65rem;
+      font-family: var(--font-header);
+      font-size: 0.58rem;
+      letter-spacing: 0.2em;
+      color: rgba(60,30,10,0.42);
+      text-transform: uppercase;
+      transform: rotate(-1.5deg);
+      margin-bottom: 1.1rem;
+      transition: color 0.2s, border-color 0.2s;
+    }
+
+    .confirmation-ledger {
+      margin: 1.25rem auto 1.2rem;
+      border-top: 1px solid rgba(60,30,10,0.16);
+      border-bottom: 1px solid rgba(60,30,10,0.16);
+      max-width: 420px;
+      text-align: left;
+    }
+
+    .confirmation-ledger div {
+      display: grid;
+      grid-template-columns: minmax(130px, 0.8fr) minmax(0, 1fr);
+      gap: 1rem;
+      padding: 0.55rem 0;
+      border-bottom: 1px solid rgba(60,30,10,0.1);
+    }
+
+    .confirmation-ledger div:last-child { border-bottom: none; }
+
+    .confirmation-ledger dt {
+      font-family: var(--font-type);
+      font-size: 0.62rem;
+      letter-spacing: 0.18em;
+      color: rgba(60,30,10,0.48);
+      text-transform: uppercase;
+    }
+
+    .confirmation-ledger dd {
+      font-family: var(--font-header);
+      font-size: 0.76rem;
+      letter-spacing: 0.12em;
+      color: rgba(28,18,10,0.78);
+      text-transform: uppercase;
+      margin: 0;
+    }
+
+    .success-return {
+      display: inline-block;
+      margin-top: 0.2rem;
+      padding: 0.75rem 1.15rem;
+      border: 2px solid rgba(60,30,10,0.36);
+      font-family: var(--font-header);
+      font-size: 0.72rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--ink);
+      transition: border-color 0.2s, color 0.2s;
+    }
+
+    .success-return:hover {
+      border-color: rgba(60,30,10,0.65);
+      color: rgba(28,18,10,0.9);
+    }
+
+    .success-listen {
+      margin-top: 1rem;
+      font-family: var(--font-header);
+      font-size: 0.82rem;
+      letter-spacing: 0.12em;
+      color: rgba(60,30,10,0.58);
+      text-transform: uppercase;
+    }
+
+    /* Small note below form */
+    .form-note {
+      margin-top: 1.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(60,30,10,0.12);
+      font-family: var(--font-type);
+      font-size: 0.72rem;
+      color: rgba(60,30,10,0.4);
+      font-style: italic;
+      line-height: 1.6;
+    }
+
+    /* Ã¢â€â‚¬Ã¢â€â‚¬ FOOTER Ã¢â€â‚¬Ã¢â€â‚¬ */
+    .site-footer {
+      background: var(--bg);
+      padding: 1.5rem 2.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid rgba(201,169,122,0.08);
+    }
+
+    .footer-motto { display: flex; align-items: center; gap: 0.85rem; }
+    .footer-motto svg { opacity: 0.55; flex-shrink: 0; }
+    .footer-motto-text {
+      font-family: var(--font-header);
+      font-size: 0.68rem;
+      letter-spacing: 0.18em;
+      color: rgba(201,169,122,0.45);
+      text-transform: uppercase;
+      line-height: 1.4;
+    }
+    .footer-copy {
+      font-family: var(--font-type);
+      font-size: 0.65rem;
+      letter-spacing: 0.1em;
+      color: rgba(201,169,122,0.3);
+      text-transform: uppercase;
+    }
+    .footer-right { display: flex; align-items: center; gap: 1.25rem; }
+    .footer-archive {
+      font-family: var(--font-type);
+      font-size: 0.68rem;
+      letter-spacing: 0.15em;
+      color: rgba(201,169,122,0.55);
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+    .footer-archive:hover { color: var(--paper); }
+
+    @media (max-width: 640px) {
+      .site-nav { padding: 1rem 1.25rem; }
+      .paper-inner { padding: 1rem 1.25rem 3rem; }
+      .paper-inner::after { left: 2rem; }
+      .btn-submit, .success-return { align-self: stretch; text-align: center; }
+      .confirmation-ledger div { grid-template-columns: 1fr; gap: 0.15rem; }
+      .site-footer { flex-direction: column; gap: 1rem; text-align: center; }
+      .footer-motto { justify-content: center; }
+    }
+  </style>
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/polish.css">
+</head>
+<body>
+
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-glow"></div>
+
+    <nav class="site-nav">
+      <a href="index.html" class="nav-brand">
+        <span>Asten Vale</span>
+        <span>Archives</span>
+      </a>
+      <div class="nav-logo">
+        <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="30" cy="30" r="28" stroke="rgba(201,169,122,0.6)" stroke-width="1.2"/>
+          <circle cx="30" cy="30" r="22" stroke="rgba(201,169,122,0.35)" stroke-width="0.8"/>
+          <line x1="30" y1="4" x2="30" y2="10" stroke="rgba(201,169,122,0.7)" stroke-width="1.5"/>
+          <polygon points="30,13 23,26 37,26" fill="rgba(201,169,122,0.82)"/>
+          <polygon points="30,18 21,33 39,33" fill="rgba(201,169,122,0.82)"/>
+          <rect x="27" y="33" width="6" height="5" fill="rgba(201,169,122,0.7)"/>
+          <line x1="30" y1="50" x2="30" y2="56" stroke="rgba(201,169,122,0.5)" stroke-width="1"/>
+          <line x1="4" y1="30" x2="10" y2="30" stroke="rgba(201,169,122,0.5)" stroke-width="1"/>
+          <line x1="50" y1="30" x2="56" y2="30" stroke="rgba(201,169,122,0.5)" stroke-width="1"/>
+        </svg>
+      </div>
+      <div class="nav-links">
+        <a href="index.html"     class="nav-link"        data-icon="Ã°Å¸â€”â€ž">Archive</a>
+        <a href="cabinet.html"   class="nav-link"        data-icon="Ã°Å¸â€Â">Cabinet</a>
+        <a href="completed.html" class="nav-link"        data-icon="Ã¢Å“Â¦">Completed</a>
+        <a href="progress.html"  class="nav-link"        data-icon="Ã¢â€”Å½">Progress</a>
+        <a href="about.html"     class="nav-link"        data-icon="Ã¢â€”â€°">About</a>
+        <a href="join.html"      class="nav-link active" data-icon="Ã¢Å“â€°">Join</a>
+      </div>
+    </nav>
+
+    <div class="hero-content">
+      <p class="hero-label">Restricted Access &mdash; Application Required</p>
+      <h1 class="hero-title">Join the<br>Archive</h1>
+      <p class="hero-sub">Leave your name on record.</p>
+      <div class="hero-rule"></div>
+    </div>
+  </section>
+
+  <section class="paper-section">
+    <div class="paper-inner">
+
+      <div class="form-header">
+        <p class="form-label-top">Investigator Record</p>
+        <h2 class="form-title">Archive Registration</h2>
+        <div class="form-rule"></div>
+        <p class="form-desc">
+          Become part of the Archive. Registered investigators receive notice whenever new Case Files are declassified. Some investigations become public immediately. Others remain restricted until the Archive authorizes release. Your registration places your name on record.
+        </p>
+        <div class="archive-status-stamp"><span>Archive Access</span><strong>Registration Open</strong></div>
+      </div>
+
+      <div class="access-brief">
+        <p class="document-heading">Archive Access</p>
+        <h3 class="access-title">Registered Investigators Receive:</h3>
+        <ul class="access-list">
+          <li>Notification when new investigations open</li>
+          <li>Early notice of declassified Case Files</li>
+          <li>Archive updates and recovered evidence</li>
+          <li>Occasional internal archive notices</li>
+          <li>Future vault release announcements</li>
+        </ul>
+        <p class="access-closing">No spam. Only official Archive correspondence.</p>
+      </div>
+
+      <form class="archive-form" id="archiveForm" novalidate>
+
+        <div class="field-group">
+          <label class="field-label" for="field-name">Full Name</label>
+          <input
+            class="field-input"
+            type="text"
+            id="field-name"
+            name="name"
+            placeholder="First and last name"
+            autocomplete="name"
+          />
+        </div>
+
+        <div class="field-group">
+          <label class="field-label" for="field-email">Email Address</label>
+          <input
+            class="field-input"
+            type="email"
+            id="field-email"
+            name="email"
+            placeholder="Where we can reach you"
+            autocomplete="email"
+          />
+        </div>
+
+        <div class="field-group">
+          <label class="field-label" for="field-note">Investigator Notes <span style="opacity:0.5;font-style:italic;text-transform:none;letter-spacing:0">(optional)</span></label>
+          <textarea
+            class="field-textarea"
+            id="field-note"
+            name="note"
+            placeholder="Observed anything unusual? A theory. A clue. Something you noticed. Leave it here."
+          ></textarea>
+        </div>
+
+        <label class="check-group">
+          <input type="checkbox" name="consent" id="field-consent" />
+          <span class="check-label">
+            I understand this investigation is ongoing and wish to receive future Archive notifications.
+          </span>
+        </label>
+
+        <button type="submit" class="btn-submit">Register With The Archive &rarr;</button>
+
+      </form>
+
+      <div class="form-success" id="formSuccess">
+        <p class="success-stamp">Investigator Record</p>
+        <p class="success-title">Archive Registration Complete</p>
+        <p class="success-text">Your Investigator Record has been created.</p>
+        <dl class="confirmation-ledger">
+          <div><dt>Status</dt><dd>Registered</dd></div>
+          <div><dt>Archive Access</dt><dd>Public Records</dd></div>
+          <div><dt>Notification Status</dt><dd>Active</dd></div>
+          <div><dt>Next Investigation</dt><dd>Awaiting Declassification</dd></div>
+        </dl>
+        <a class="success-return" href="index.html">Return to Archive &rarr;</a>
+        <p class="success-listen">Keep Listening.</p>
+      </div>
+
+      <div class="form-note">
+        <span class="archive-stamp">Confidential</span><br><br>
+        <strong>ARCHIVE NOTICE</strong><br>
+        Registration does not grant immediate access to restricted investigations.<br><br>
+        Additional records become available only after official declassification.<br><br>
+        Your Investigator Record has been securely filed within the Ashton Vale Archives.<br><br>
+        Keep Listening.
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-motto">
+      <svg width="28" height="28" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="30" cy="30" r="27" stroke="rgba(201,169,122,0.5)" stroke-width="1.2"/>
+        <polygon points="30,10 25,22 35,22" fill="rgba(201,169,122,0.6)"/>
+        <polygon points="30,16 21,30 39,30" fill="rgba(201,169,122,0.6)"/>
+        <rect x="27" y="30" width="6" height="5" fill="rgba(201,169,122,0.55)"/>
+      </svg>
+      <span class="footer-motto-text">
+        Truth is not given.<br>
+        It is discovered.
+      </span>
+    </div>
+    <span class="footer-copy">Ã‚Â© 2026 Asten Vale Archives</span>
+    <a href="https://buymeacoffee.com/YOUR_USERNAME" target="_blank" rel="noopener" class="footer-copy" style="text-decoration:none;opacity:0.7;transition:opacity 0.2s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.7'">Ã¢Ëœâ€¢ Buy Me a Coffee</a>
+    <div class="footer-right">
+      <a href="index.html" class="footer-archive">Browse the Archive</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('archiveForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      this.style.display = 'none';
+      document.getElementById('formSuccess').classList.add('visible');
+    });
+  </script>
+
+  <script>
+  fetch('js/site-settings.json').then(function(r){return r.json();}).then(function(s){
+    var pg = s.pages && s.pages.join; if(!pg) return;
+    var bg = document.querySelector('.hero-bg');
+    if(bg && pg.heroImage){ bg.style.backgroundImage='url("'+pg.heroImage+'")'; bg.style.backgroundSize='cover'; bg.style.backgroundPosition='center'; bg.style.opacity=pg.heroOverlay!=null?(1-pg.heroOverlay):1; document.body.classList.add('has-hero-image'); }
+    if(pg.showTitle===false||pg.heroImage){ document.querySelectorAll('.hero-title,.hero-diamond').forEach(function(e){e.style.display='none';}); }
+    if(pg.showSubtitle===false){ var el=document.querySelector('.hero-tagline,.hero-subtitle'); if(el) el.style.display='none'; }
+    if(pg.heroTitleText){ var t=document.querySelector('.hero-title'); if(t) t.textContent=pg.heroTitleText; }
+  }).catch(function(){});
+  </script>
+  <script src="js/badges.js"></script>
+  <script>try { localStorage.setItem('av_visited_join','1'); checkAndAwardBadges(); } catch(e) {}</script>
+
+  <script src="js/polish.js" defer></script>
+</body>
+</html>
