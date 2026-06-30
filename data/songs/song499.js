@@ -10,7 +10,7 @@ window.SONG_DATA = {
   "difficulty": "Deep File",
   "status": "OPEN INVESTIGATION",
   "artwork": null,
-  "audioSrc": null,
+  "audioSrc": "audio/songs/Season-42-the-dry-season/499.mp3",
   "streamingLinks": {
     "spotify": "",
     "apple": "",

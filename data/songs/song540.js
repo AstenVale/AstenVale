@@ -10,7 +10,7 @@ window.SONG_DATA = {
   "difficulty": "Vault-Level",
   "status": "OPEN INVESTIGATION",
   "artwork": null,
-  "audioSrc": null,
+  "audioSrc": "audio/songs/Season-45-the-hollow-crown/540.mp3",
   "streamingLinks": {
     "spotify": "",
     "apple": "",

@@ -10,7 +10,7 @@ window.SONG_DATA = {
   "difficulty": "Archive Entry",
   "status": "OPEN INVESTIGATION",
   "artwork": null,
-  "audioSrc": null,
+  "audioSrc": "audio/songs/Season-20-the-midnight-circuit/230.mp3",
   "streamingLinks": {
     "spotify": "",
     "apple": "",

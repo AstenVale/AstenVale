@@ -10,7 +10,7 @@ window.SONG_DATA = {
   "difficulty": "Open Investigation",
   "status": "OPEN INVESTIGATION",
   "artwork": null,
-  "audioSrc": null,
+  "audioSrc": "audio/songs/Season-24-the-missing-hours/281.mp3",
   "streamingLinks": {
     "spotify": "",
     "apple": "",

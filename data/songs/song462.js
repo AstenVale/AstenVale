@@ -10,7 +10,7 @@ window.SONG_DATA = {
   "difficulty": "Open Investigation",
   "status": "OPEN INVESTIGATION",
   "artwork": null,
-  "audioSrc": null,
+  "audioSrc": "audio/songs/Season-39-the-pale-horse/462.mp3",
   "streamingLinks": {
     "spotify": "",
     "apple": "",

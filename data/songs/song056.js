@@ -10,7 +10,7 @@ window.SONG_DATA = {
   "difficulty": "Deep File",
   "status": "OPEN INVESTIGATION",
   "artwork": null,
-  "audioSrc": null,
+  "audioSrc": "audio/songs/Season-05-the-last-winter/056.mp3",
   "streamingLinks": {
     "spotify": "",
     "apple": "",
