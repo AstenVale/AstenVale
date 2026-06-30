@@ -163,6 +163,27 @@ body.unlocked::before{
 .rm-track{flex:1;position:relative;height:3px;background:rgba(100,60,20,0.14);cursor:pointer;}
 .rm-filled{position:absolute;top:0;left:0;height:100%;background:rgba(100,60,20,0.45);pointer-events:none;width:0%;}
 .rm-times{display:flex;justify-content:space-between;font-size:0.58rem;color:var(--ink-faded);letter-spacing:0.06em;}
+/* Witness Testimony Player */
+.wt-player{border:1px solid rgba(100,60,20,0.3);background:rgba(0,0,0,0.06);padding:1rem 1.1rem;margin-top:1rem;}
+.wt-player-label{font-size:0.58rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--ink-faded);margin-bottom:0.65rem;}
+.wt-controls{display:flex;align-items:center;gap:0.75rem;margin-bottom:0.5rem;}
+.wt-play{width:30px;height:30px;flex-shrink:0;background:rgba(0,0,0,0.1);border:1px solid rgba(100,60,20,0.35);border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:0.7rem;color:var(--ink);transition:background 0.15s;}
+.wt-play:hover:not(:disabled){background:rgba(0,0,0,0.18);}
+.wt-play:disabled{opacity:0.35;cursor:not-allowed;}
+.wt-track{flex:1;position:relative;height:3px;background:rgba(100,60,20,0.14);cursor:pointer;}
+.wt-track.locked{cursor:not-allowed;opacity:0.4;}
+.wt-filled{position:absolute;top:0;left:0;height:100%;background:rgba(100,60,20,0.45);pointer-events:none;width:0%;}
+.wt-times{display:flex;justify-content:space-between;font-size:0.58rem;color:var(--ink-faded);letter-spacing:0.06em;margin-bottom:0.75rem;}
+.wt-vol-row{display:flex;align-items:center;gap:0.5rem;}
+.wt-vol-btn{background:none;border:none;cursor:pointer;color:var(--ink-faded);font-size:0.75rem;padding:0;line-height:1;}
+.wt-vol{width:70px;accent-color:rgba(100,60,20,0.6);}
+.wt-meta{display:grid;grid-template-columns:1fr 1fr;gap:0.3rem 1rem;margin-top:0.85rem;border-top:1px solid rgba(100,60,20,0.15);padding-top:0.75rem;}
+.wt-meta-row{display:contents;}
+.wt-meta-label{font-size:0.56rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--ink-faded);}
+.wt-meta-value{font-size:0.68rem;color:var(--ink);font-family:var(--font-type);}
+.wt-locked-notice{padding:0.85rem 1rem;background:rgba(0,0,0,0.08);border:1px solid rgba(100,60,20,0.2);border-left:3px solid rgba(100,60,20,0.35);margin-top:1rem;}
+.wt-locked-heading{font-family:var(--font-header);font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--ink-faded);margin-bottom:0.35rem;}
+.wt-locked-text{font-size:0.7rem;color:var(--ink-faded);font-style:italic;line-height:1.55;}
 
 .investigation-panel{margin-bottom:1.5rem;}
 .panel-heading{font-family:var(--font-header);font-size:1rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--ink);margin-bottom:0.3rem;border-bottom:1px solid rgba(100,60,20,0.3);padding-bottom:0.4rem;}
@@ -1487,14 +1508,152 @@ body.unlocked::before{
 
       var witBody = document.createElement('div');
       witBody.className = 'artifact-body';
-      witBody.innerHTML =
-        '<div class="artifact-name">' + witC.name + '</div>' +
-        '<div class="artifact-file-id">Case ' + caseNum2 + ' Ã¢â‚¬â€ Witness</div>' +
-        '<div class="artifact-desc">' + (witC.description || '') + '</div>' +
-        (witC.unknownInfo && witC.unknownInfo.indexOf('//') === -1
-          ? '<div class="artifact-unknown">' + witC.unknownInfo + '</div>'
-          : '') +
-        '<a href="cabinet.html" class="artifact-view-link">View Witness Ã¢â€ â€™</a>';
+
+      var witNameEl = document.createElement('div');
+      witNameEl.className = 'artifact-name';
+      witNameEl.textContent = witC.name;
+      witBody.appendChild(witNameEl);
+
+      var witFileId = document.createElement('div');
+      witFileId.className = 'artifact-file-id';
+      witFileId.textContent = 'Case ' + caseNum2 + ' — Witness';
+      witBody.appendChild(witFileId);
+
+      var witDesc = document.createElement('div');
+      witDesc.className = 'artifact-desc';
+      witDesc.textContent = witC.description || '';
+      witBody.appendChild(witDesc);
+
+      if (witC.unknownInfo && witC.unknownInfo.indexOf('//') === -1) {
+        var witUnk = document.createElement('div');
+        witUnk.className = 'artifact-unknown';
+        witUnk.textContent = witC.unknownInfo;
+        witBody.appendChild(witUnk);
+      }
+
+      // Witness Testimony Audio Player
+      (function() {
+        var tid = String(parseInt(caseData.id, 10) || 1).padStart(3, '0');
+        var tslug = (caseData.title || '').toLowerCase()
+          .replace(/['‘’]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+        var tSrc = 'audio/testimony/case-' + tid + '-' + tslug + '.mp3';
+        var tSolved = (function() {
+          try { return JSON.parse(localStorage.getItem('av_solved') || '[]').indexOf(caseData.id) !== -1; } catch(e) { return false; }
+        })();
+
+        if (!tSolved) {
+          var wtLocked = document.createElement('div');
+          wtLocked.className = 'wt-locked-notice';
+          wtLocked.innerHTML = '<div class="wt-locked-heading">&#x1F512; Locked</div>' +
+            '<div class="wt-locked-text">Witness testimony has not yet been recovered.<br>Complete this investigation to unlock the archived interview.</div>';
+          witBody.appendChild(wtLocked);
+          return;
+        }
+
+        var wtWrap = document.createElement('div');
+        wtWrap.className = 'wt-player';
+
+        var wtLbl = document.createElement('div');
+        wtLbl.className = 'wt-player-label';
+        wtLbl.textContent = 'Witness Statement';
+        wtWrap.appendChild(wtLbl);
+
+        var wtAudio = document.createElement('audio');
+        wtAudio.preload = 'none';
+        wtAudio.src = tSrc;
+        wtWrap.appendChild(wtAudio);
+
+        var wtCtrl = document.createElement('div');
+        wtCtrl.className = 'wt-controls';
+        var wtBtn = document.createElement('button');
+        wtBtn.className = 'wt-play';
+        wtBtn.innerHTML = '&#9654;';
+        wtBtn.setAttribute('aria-label', 'Play witness testimony');
+        wtCtrl.appendChild(wtBtn);
+        var wtTrack = document.createElement('div');
+        wtTrack.className = 'wt-track';
+        var wtFilled = document.createElement('div');
+        wtFilled.className = 'wt-filled';
+        wtTrack.appendChild(wtFilled);
+        wtCtrl.appendChild(wtTrack);
+        wtWrap.appendChild(wtCtrl);
+
+        var wtTimes = document.createElement('div');
+        wtTimes.className = 'wt-times';
+        var wtCur = document.createElement('span'); wtCur.textContent = '0:00';
+        var wtDur = document.createElement('span'); wtDur.textContent = '--:--';
+        wtTimes.appendChild(wtCur); wtTimes.appendChild(wtDur);
+        wtWrap.appendChild(wtTimes);
+
+        var wtVolRow = document.createElement('div');
+        wtVolRow.className = 'wt-vol-row';
+        var wtVolBtn = document.createElement('button');
+        wtVolBtn.className = 'wt-vol-btn';
+        wtVolBtn.innerHTML = '&#128266;';
+        var wtVol = document.createElement('input');
+        wtVol.className = 'wt-vol'; wtVol.type = 'range';
+        wtVol.min = '0'; wtVol.max = '1'; wtVol.step = '0.05'; wtVol.value = '1';
+        wtVolRow.appendChild(wtVolBtn); wtVolRow.appendChild(wtVol);
+        wtWrap.appendChild(wtVolRow);
+
+        var wtMeta = document.createElement('div');
+        wtMeta.className = 'wt-meta';
+        function wtRow(lbl, val) {
+          var l = document.createElement('div'); l.className = 'wt-meta-label'; l.textContent = lbl;
+          var v = document.createElement('div'); v.className = 'wt-meta-value'; v.textContent = val;
+          wtMeta.appendChild(l); wtMeta.appendChild(v);
+        }
+        wtRow('Recording Status', 'Recovered');
+        wtRow('Recorded During', 'Case ' + tid);
+        var wtDurMeta = document.createElement('div'); wtDurMeta.className = 'wt-meta-value'; wtDurMeta.textContent = '--:--';
+        var wtDurLbl  = document.createElement('div'); wtDurLbl.className  = 'wt-meta-label'; wtDurLbl.textContent  = 'Duration';
+        wtMeta.appendChild(wtDurLbl); wtMeta.appendChild(wtDurMeta);
+        wtRow('Voice', 'Witness Interview');
+        wtWrap.appendChild(wtMeta);
+
+        var wtPlaying = false; var wtLastVol = 1;
+        function wtFmt(s) { if (!isFinite(s)||isNaN(s)) return '--:--'; return Math.floor(s/60)+':'+(Math.floor(s%60)<10?'0':'')+Math.floor(s%60); }
+        function wtPct(p) { wtFilled.style.width = p + '%'; }
+
+        wtAudio.addEventListener('loadedmetadata', function() {
+          var d = wtFmt(wtAudio.duration); wtDur.textContent = d; wtDurMeta.textContent = d;
+        });
+        wtAudio.addEventListener('timeupdate', function() {
+          if (!wtAudio.duration) return;
+          wtCur.textContent = wtFmt(wtAudio.currentTime);
+          wtPct((wtAudio.currentTime / wtAudio.duration) * 100);
+        });
+        wtAudio.addEventListener('ended', function() { wtPlaying=false; wtBtn.innerHTML='&#9654;'; wtPct(0); });
+        wtAudio.addEventListener('error', function() { wtLbl.textContent = 'Witness Statement — Recording pending upload'; });
+
+        wtBtn.addEventListener('click', function() {
+          if (wtPlaying) { wtAudio.pause(); wtPlaying=false; wtBtn.innerHTML='&#9654;'; }
+          else { wtAudio.play().catch(function(){}); wtPlaying=true; wtBtn.innerHTML='&#9646;&#9646;'; }
+        });
+        wtTrack.addEventListener('click', function(e) {
+          if (!wtAudio.duration) return;
+          var r = wtTrack.getBoundingClientRect();
+          wtAudio.currentTime = Math.max(0, Math.min(1,(e.clientX-r.left)/r.width)) * wtAudio.duration;
+        });
+        wtVol.addEventListener('input', function() {
+          wtAudio.volume = parseFloat(wtVol.value);
+          if (wtAudio.volume>0) wtLastVol=wtAudio.volume;
+          wtVolBtn.innerHTML = wtAudio.volume===0?'&#128263;':'&#128266;';
+        });
+        wtVolBtn.addEventListener('click', function() {
+          if (wtAudio.volume>0) { wtLastVol=wtAudio.volume; wtAudio.volume=0; wtVol.value=0; wtVolBtn.innerHTML='&#128263;'; }
+          else { wtAudio.volume=wtLastVol||1; wtVol.value=wtAudio.volume; wtVolBtn.innerHTML='&#128266;'; }
+        });
+
+        witBody.appendChild(wtWrap);
+      })();
+
+      var witViewLink = document.createElement('a');
+      witViewLink.href = 'cabinet.html';
+      witViewLink.className = 'artifact-view-link';
+      witViewLink.textContent = 'View Witness ›';
+      witBody.appendChild(witViewLink);
+
       witWrap.appendChild(witBody);
 
       secWit.appendChild(witWrap);
