@@ -120,6 +120,9 @@ body.unlocked::before{
 .archive-title{font-family:var(--font-header);font-size:clamp(1.2rem,4vw,1.8rem);letter-spacing:0.22em;color:var(--ink);text-transform:uppercase;line-height:1.2;}
 .case-number{font-family:var(--font-type);font-size:0.8rem;letter-spacing:0.25em;color:var(--ink-faded);margin:0.25rem 0;}
 .case-divider{border:none;border-top:1px solid var(--ink-faded);margin:0.75rem auto;width:70%;opacity:0.4;}
+.case-location-img-wrap{margin:1.25rem auto 0;max-width:680px;width:100%;position:relative;overflow:hidden;border:1px solid rgba(100,60,20,0.3);box-shadow:0 4px 24px rgba(0,0,0,0.45);}
+.case-location-img-wrap::after{content:"";position:absolute;inset:0;background:linear-gradient(to bottom,rgba(201,169,122,0.04) 0%,rgba(12,8,4,0.18) 100%);pointer-events:none;}
+.case-location-img{width:100%;display:block;max-height:360px;object-fit:cover;filter:sepia(0.18) contrast(1.05);}
 .case-song-title{font-family:var(--font-header);font-size:clamp(1rem,3vw,1.3rem);letter-spacing:0.1em;color:var(--ink);font-style:italic;}
 .case-meta{font-size:0.72rem;letter-spacing:0.15em;color:var(--ink-faded);margin-top:0.3rem;}
 
@@ -525,6 +528,9 @@ body.unlocked .archive-player,body.unlocked #fields-container,body.unlocked .pan
         <div class="archive-title">The Asten Vale Archives</div>
         <div class="case-number" id="case-number">CASE FILE Ã¢â‚¬â€</div>
         <hr class="case-divider" />
+        <div class="case-location-img-wrap" id="case-location-wrap" style="display:none">
+          <img class="case-location-img" id="case-location-img" src="" alt="Case location" loading="lazy" decoding="async" />
+        </div>
         <div class="case-song-title" id="case-title">Loading case file...</div>
         <div class="case-meta">
           DIFFICULTY: <span id="case-difficulty">Ã¢â‚¬â€</span> &nbsp;|&nbsp; PROGRESS:
@@ -1933,6 +1939,17 @@ document.title = 'Case File ' + d.caseFile + ' Ã¢â‚¬â€ The Asten Vale
       document.getElementById('case-status').textContent     = d.status || 'OPEN INVESTIGATION';
       document.getElementById('case-number').textContent     = 'CASE FILE ' + d.caseFile;
       document.getElementById('case-title').textContent      = d.title;
+      // Location image
+      (function() {
+        var imgSrc = window.CASE_LOCATION_MAP && window.CASE_LOCATION_MAP[String(parseInt(d.id,10)||1).padStart(3,'0')];
+        if (!imgSrc) return;
+        var wrap = document.getElementById('case-location-wrap');
+        var img  = document.getElementById('case-location-img');
+        if (!wrap || !img) return;
+        img.src = imgSrc;
+        img.alt = d.title || 'Case location';
+        wrap.style.display = '';
+      })();
       document.getElementById('hero-case-number').textContent = 'Case File ' + d.caseFile;
       document.getElementById('hero-case-title').textContent  = d.title;
       document.getElementById('case-difficulty').textContent = d.difficulty || 'Ã¢â‚¬â€';
@@ -2019,6 +2036,7 @@ document.title = 'Case File ' + d.caseFile + ' Ã¢â‚¬â€ The Asten Vale
   <script src="data/sounds.js"></script>
   <script src="js/testimony-map.js"></script>
   <script src="js/novel-audio-map.js"></script>
+  <script src="js/case-location-map.js"></script>
   <script src="js/badges.js"></script>
 
   <script src="js/polish.js" defer></script>
