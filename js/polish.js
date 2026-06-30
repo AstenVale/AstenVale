@@ -179,7 +179,10 @@
     var mo = new MutationObserver(function(records) {
       records.forEach(function(record) {
         record.addedNodes.forEach(function(node) {
-          if (node.nodeType === 1) polish(node);
+          if (node.nodeType === 1) {
+            if (node.tagName === 'AUDIO') enhanceAudio(node);
+            else polish(node);
+          }
         });
       });
     });
