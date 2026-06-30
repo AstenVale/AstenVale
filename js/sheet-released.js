@@ -9,8 +9,7 @@ function applySheetReleased(callback) {
     if (typeof SEASONS_CONFIG !== 'undefined') {
       SEASONS_CONFIG.forEach(function(season) {
         season.cases.forEach(function(c) {
-          // Sheet adds releases on top of vault-config; never removes a vault-config true
-          c.released = c.released || releasedIds.indexOf(c.id) !== -1;
+          c.released = releasedIds.indexOf(c.id) !== -1;
         });
       });
     }
