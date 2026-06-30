@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -128,14 +128,41 @@ body.unlocked::before{
 #lantern-glow{position:fixed;top:0;left:50%;transform:translateX(-50%);width:400px;height:200px;background:radial-gradient(ellipse,rgba(245,166,35,0.0) 0%,transparent 70%);pointer-events:none;z-index:0;transition:background 2s ease;}
 #lantern-glow.bright{background:radial-gradient(ellipse,rgba(245,166,35,0.18) 0%,transparent 70%);}
 
-.song-player{background:rgba(0,0,0,0.08);border:1px dashed rgba(100,60,20,0.4);border-radius:2px;padding:1.5rem;margin-bottom:2rem;display:flex;gap:1.5rem;align-items:center;}
-.player-artwork{width:80px;height:80px;background:rgba(0,0,0,0.15);border:1px solid rgba(100,60,20,0.3);border-radius:2px;display:flex;align-items:center;justify-content:center;font-size:2rem;flex-shrink:0;color:rgba(100,60,20,0.4);}
-.player-controls{display:flex;flex-direction:column;gap:0.5rem;flex:1;}
-.player-title{font-family:var(--font-header);font-size:0.95rem;letter-spacing:0.1em;color:var(--ink);}
-.player-sub{font-size:0.7rem;letter-spacing:0.12em;color:var(--ink-faded);}
-.player-btns{display:flex;gap:0.75rem;margin-top:0.25rem;}
+/* ── ARCHIVE PLAYER ── */
+.archive-player{border:1px solid rgba(100,60,20,0.38);background:rgba(0,0,0,0.07);padding:1.5rem;margin-bottom:2rem;}
+.ap-eyebrow{font-size:0.58rem;letter-spacing:0.32em;text-transform:uppercase;color:var(--stamp-red);opacity:0.8;margin-bottom:0.55rem;display:flex;align-items:center;gap:0.5rem;}
+.ap-eyebrow::before,.ap-eyebrow::after{content:"";flex:1;height:1px;background:rgba(139,26,26,0.2);}
+.ap-title{font-family:var(--font-header);font-size:0.97rem;letter-spacing:0.1em;color:var(--ink);margin-bottom:0.2rem;}
+.ap-sub{font-size:0.66rem;letter-spacing:0.12em;color:var(--ink-faded);font-style:italic;margin-bottom:1.15rem;}
+.ap-controls{display:flex;align-items:center;gap:0.85rem;}
+.ap-play{width:36px;height:36px;flex-shrink:0;background:rgba(0,0,0,0.12);border:1px solid rgba(100,60,20,0.4);border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:0.82rem;color:var(--ink);transition:background 0.18s;line-height:1;}
+.ap-play:hover{background:rgba(0,0,0,0.2);}
+.ap-progress-wrap{flex:1;display:flex;flex-direction:column;gap:0.35rem;}
+.ap-track{position:relative;height:4px;background:rgba(100,60,20,0.16);cursor:pointer;touch-action:none;}
+.ap-filled{position:absolute;top:0;left:0;height:100%;background:rgba(100,60,20,0.52);pointer-events:none;width:0%;}
+.ap-thumb{position:absolute;top:50%;width:10px;height:10px;border-radius:50%;background:var(--ink);border:1.5px solid var(--paper);transform:translate(-50%,-50%);pointer-events:none;opacity:0;transition:opacity 0.15s;left:0%;}
+.ap-track:hover .ap-thumb,.ap-track:active .ap-thumb{opacity:1;}
+.ap-times{display:flex;justify-content:space-between;font-size:0.6rem;letter-spacing:0.07em;color:var(--ink-faded);}
+.ap-right{display:flex;flex-direction:column;gap:0.4rem;align-items:flex-end;flex-shrink:0;}
+.ap-vol-wrap{display:flex;align-items:center;gap:0.3rem;}
+.ap-vol-btn{background:none;border:none;cursor:pointer;font-size:0.7rem;color:var(--ink-faded);padding:0;line-height:1;transition:color 0.15s;}
+.ap-vol-btn:hover{color:var(--ink);}
+.ap-vol{-webkit-appearance:none;appearance:none;width:58px;height:3px;background:rgba(100,60,20,0.2);outline:none;cursor:pointer;border:none;}
+.ap-vol::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:10px;height:10px;border-radius:50%;background:var(--ink-faded);cursor:pointer;}
+.ap-speed{font-family:var(--font-type);font-size:0.58rem;letter-spacing:0.08em;color:var(--ink-faded);background:rgba(0,0,0,0.07);border:1px solid rgba(100,60,20,0.22);padding:0.1rem 0.2rem;cursor:pointer;outline:none;}
+.ap-bottom{margin-top:1rem;padding-top:0.9rem;border-top:1px dashed rgba(100,60,20,0.2);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:0.6rem;}
+.ap-actions{display:flex;gap:0.65rem;}
+.ap-meta{font-size:0.58rem;letter-spacing:0.1em;color:rgba(100,60,20,0.38);font-style:italic;}
 .player-btn{font-family:var(--font-type);font-size:0.68rem;letter-spacing:0.12em;color:var(--ink-faded);background:rgba(0,0,0,0.08);border:1px solid rgba(100,60,20,0.35);padding:0.3rem 0.75rem;cursor:pointer;text-transform:uppercase;transition:background 0.2s,color 0.2s;}
 .player-btn:hover{background:rgba(0,0,0,0.14);color:var(--ink);}
+/* Recovered Music Player (post-solve) */
+.rm-player{border:1px solid rgba(100,60,20,0.3);background:rgba(0,0,0,0.06);padding:1rem 1.1rem;margin-top:0.9rem;}
+.rm-player-controls{display:flex;align-items:center;gap:0.75rem;margin-bottom:0.6rem;}
+.rm-play{width:30px;height:30px;flex-shrink:0;background:rgba(0,0,0,0.1);border:1px solid rgba(100,60,20,0.35);border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:0.7rem;color:var(--ink);transition:background 0.15s;}
+.rm-play:hover{background:rgba(0,0,0,0.18);}
+.rm-track{flex:1;position:relative;height:3px;background:rgba(100,60,20,0.14);cursor:pointer;}
+.rm-filled{position:absolute;top:0;left:0;height:100%;background:rgba(100,60,20,0.45);pointer-events:none;width:0%;}
+.rm-times{display:flex;justify-content:space-between;font-size:0.58rem;color:var(--ink-faded);letter-spacing:0.06em;}
 
 .investigation-panel{margin-bottom:1.5rem;}
 .panel-heading{font-family:var(--font-header);font-size:1rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--ink);margin-bottom:0.3rem;border-bottom:1px solid rgba(100,60,20,0.3);padding-bottom:0.4rem;}
@@ -267,6 +294,9 @@ body.unlocked::before{
 .lyrics-chorus .lyrics-line{font-weight:700;}
 .lyrics-bridge .lyrics-line{font-style:italic;color:var(--ink-faded);}
 .lyrics-outro .lyrics-line{color:var(--ink-faded);}
+.lyrics-archived-notice{padding:2rem 0.5rem;text-align:center;display:flex;flex-direction:column;gap:1rem;}
+.lyrics-archived-heading{font-family:var(--font-header);font-size:1rem;letter-spacing:0.12em;color:var(--ink);text-transform:uppercase;}
+.lyrics-archived-text{font-family:var(--font-type);font-size:0.82rem;color:var(--ink-faded);font-style:italic;line-height:1.75;max-width:340px;margin:0 auto;}
 
 #streaming-modal{position:fixed;inset:0;background:rgba(5,4,2,0.85);display:flex;align-items:center;justify-content:center;z-index:950;opacity:0;transition:opacity 0.28s ease;backdrop-filter:blur(3px);}
 #streaming-modal.hidden{display:none;}
@@ -275,7 +305,7 @@ body.unlocked::before{
 @keyframes streaming-drop{from{transform:translateY(-16px) scale(0.96);opacity:0;}to{transform:translateY(0) scale(1);opacity:1;}}
 .streaming-close{position:absolute;top:0.6rem;right:0.75rem;font-family:var(--font-type);font-size:0.65rem;letter-spacing:0.1em;color:var(--ink-faded);background:none;border:1px solid rgba(100,60,20,0.25);padding:0.2rem 0.45rem;cursor:pointer;transition:border-color 0.2s,color 0.2s;}
 .streaming-close:hover{color:var(--ink);border-color:rgba(100,60,20,0.5);}
-.streaming-icon{font-size:2.4rem;display:block;margin-bottom:0.6rem;filter:drop-shadow(0 0 10px rgba(245,166,35,0.4));}
+
 .streaming-title{font-family:var(--font-header);font-size:1rem;letter-spacing:0.1em;color:var(--ink);margin-bottom:0.2rem;}
 .streaming-sub{font-size:0.7rem;letter-spacing:0.14em;color:var(--ink-faded);text-transform:uppercase;margin-bottom:1.5rem;}
 .streaming-links{display:flex;flex-direction:column;gap:0.6rem;}
@@ -478,16 +508,45 @@ body.unlocked::before{
         </div>
       </header>
 
-      <div class="song-player">
-        <div class="player-artwork">Ã°Å¸Å½Âµ</div>
-        <div class="player-controls">
-          <div class="player-title" id="player-title">Ã¢â‚¬â€</div>
-          <div class="player-sub">Asten Vale &nbsp;Ã‚Â·&nbsp; 2026</div>
-          <div class="player-btns">
-            <button class="player-btn" onclick="openModal('streaming-modal')">Ã¢â€“Â¶ Play</button>
-            <button class="player-btn" id="btn-lyrics" onclick="openLockedModal('lyrics-modal')">Lyrics</button>
+      <div class="archive-player" id="archive-player">
+        <div class="ap-eyebrow">Case Song</div>
+        <div class="ap-title" id="ap-title">&#8212;</div>
+        <div class="ap-sub" id="ap-sub">Recovered Investigation Recording</div>
+
+        <audio id="ap-audio" preload="none"></audio>
+
+        <div class="ap-controls">
+          <button class="ap-play" id="ap-play" aria-label="Play recording" title="Play / Pause (Space)">&#9654;</button>
+          <div class="ap-progress-wrap">
+            <div class="ap-track" id="ap-track" role="slider" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Seek">
+              <div class="ap-filled" id="ap-filled"></div>
+              <div class="ap-thumb"  id="ap-thumb"></div>
+            </div>
+            <div class="ap-times">
+              <span id="ap-cur">0:00</span>
+              <span id="ap-dur">&#8212;:&#8212;&#8212;</span>
+            </div>
+          </div>
+          <div class="ap-right">
+            <div class="ap-vol-wrap">
+              <button class="ap-vol-btn" id="ap-vol-btn" title="Mute (M)">&#128266;</button>
+              <input class="ap-vol" id="ap-vol" type="range" min="0" max="1" step="0.05" value="1" aria-label="Volume">
+            </div>
+            <select class="ap-speed" id="ap-speed" aria-label="Playback speed">
+              <option value="0.75">0.75x</option>
+              <option value="1" selected>1x</option>
+              <option value="1.25">1.25x</option>
+              <option value="1.5">1.5x</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="ap-bottom">
+          <div class="ap-actions">
+            <button class="player-btn" id="btn-lyrics" onclick="openModal('lyrics-modal')">Lyrics</button>
             <button class="player-btn" id="btn-casenotes" onclick="openLockedModal('casenotes-modal')">Case Notes</button>
           </div>
+          <span class="ap-meta" id="ap-meta">Archive ID: &#8212;</span>
         </div>
       </div>
 
@@ -533,9 +592,8 @@ body.unlocked::before{
       <div id="streaming-modal" class="hidden" role="dialog" aria-modal="true" aria-label="Listen on streaming">
         <div class="streaming-box">
           <button class="streaming-close" onclick="closeModal('streaming-modal')">Ã¢Å“â€¢</button>
-          <span class="streaming-icon">Ã°Å¸Å½Âª</span>
           <div class="streaming-title" id="stream-title">Ã¢â‚¬â€</div>
-          <div class="streaming-sub">Choose where to listen</div>
+          <div class="streaming-sub">Streaming Links</div>
           <div class="streaming-links">
             <a class="streaming-btn spotify" id="stream-spotify" href="https://open.spotify.com" target="_blank" rel="noopener">
               <span class="sb-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.516 17.318c-.22.356-.676.47-1.032.25-2.828-1.727-6.39-2.117-10.586-1.16-.405.094-.808-.16-.9-.564-.094-.405.16-.808.564-.9 4.59-1.05 8.523-.598 11.7 1.342.356.22.47.676.25 1.032zm1.47-3.27c-.275.445-.857.585-1.302.31-3.236-1.988-8.167-2.564-11.99-1.404-.496.15-1.02-.13-1.17-.625-.15-.496.13-1.02.625-1.17 4.37-1.326 9.8-.683 13.528 1.6.445.275.585.857.31 1.302zm.127-3.405c-3.88-2.304-10.28-2.516-13.984-1.392-.593.18-1.22-.154-1.4-.747-.18-.593.154-1.22.747-1.4 4.254-1.29 11.328-1.042 15.798 1.61.534.317.71 1.004.393 1.538-.317.534-1.004.71-1.538.393l-.016-.002z"/></svg></span>
@@ -650,17 +708,265 @@ body.unlocked::before{
   // Ã¢â€â‚¬Ã¢â€â‚¬ GAME STATE Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
   var SONG = null;
 
+  // -- ARCHIVE AUDIO PLAYER --------------------------------------------------
+  function getCaseAudioPath(d) {
+    var id   = String(parseInt(d.id, 10) || 1).padStart(3, '0');
+    var slug = (d.title || '').toLowerCase()
+      .replace(/['’]/g, '')
+      .replace(/[^a-z0-9]+/g, '-')
+      .replace(/^-|-$/g, '');
+    return 'audio/season-01/case-' + id + '/' + slug + '.mp3';
+  }
+
+  function initArchivePlayer(d) {
+    var id       = String(parseInt(d.id, 10) || 1).padStart(3, '0');
+    var audio    = document.getElementById('ap-audio');
+    var btnPlay  = document.getElementById('ap-play');
+    var trackEl  = document.getElementById('ap-track');
+    var filledEl = document.getElementById('ap-filled');
+    var thumbEl  = document.getElementById('ap-thumb');
+    var curEl    = document.getElementById('ap-cur');
+    var durEl    = document.getElementById('ap-dur');
+    var volSlider= document.getElementById('ap-vol');
+    var volBtn   = document.getElementById('ap-vol-btn');
+    var speedSel = document.getElementById('ap-speed');
+
+    // Title and metadata
+    var titleEl  = document.getElementById('ap-title');
+    var metaEl   = document.getElementById('ap-meta');
+    if (titleEl) titleEl.textContent = d.title || ('Case ' + id);
+    if (metaEl)  metaEl.textContent  = 'Archive ID: AVA-' + id + '  |  Season 01';
+
+    // Derive and set audio source; also store on d so Recovered Music picks it up
+    var src = getCaseAudioPath(d);
+    d.audioSrc  = src;
+    audio.src   = src;
+
+    var playing = false;
+    var lastVol = 1;
+    var dragging = false;
+
+    function fmt(s) {
+      if (!isFinite(s) || isNaN(s)) return '--:--';
+      var m = Math.floor(s / 60);
+      var sec = Math.floor(s % 60);
+      return m + ':' + (sec < 10 ? '0' : '') + sec;
+    }
+
+    function setPct(pct) {
+      filledEl.style.width = pct + '%';
+      thumbEl.style.left   = pct + '%';
+      if (trackEl) trackEl.setAttribute('aria-valuenow', Math.round(pct));
+    }
+
+    audio.addEventListener('loadedmetadata', function() {
+      durEl.textContent = fmt(audio.duration);
+      restorePosition();
+    });
+
+    audio.addEventListener('timeupdate', function() {
+      if (dragging || !audio.duration) return;
+      var pct = (audio.currentTime / audio.duration) * 100;
+      setPct(pct);
+      curEl.textContent = fmt(audio.currentTime);
+    });
+
+    audio.addEventListener('ended', function() {
+      playing = false;
+      btnPlay.innerHTML = '&#9654;';
+      btnPlay.setAttribute('aria-label', 'Play recording');
+      setPct(0);
+      try { sessionStorage.removeItem('av_pos_' + d.id); } catch(e) {}
+    });
+
+    audio.addEventListener('error', function() {
+      var sub = document.getElementById('ap-sub');
+      if (sub) sub.textContent = 'Recording pending upload';
+    });
+
+    function togglePlay() {
+      if (playing) {
+        audio.pause();
+        playing = false;
+        btnPlay.innerHTML = '&#9654;';
+        btnPlay.setAttribute('aria-label', 'Play recording');
+      } else {
+        audio.play().catch(function() {});
+        playing = true;
+        btnPlay.innerHTML = '&#9646;&#9646;';
+        btnPlay.setAttribute('aria-label', 'Pause recording');
+      }
+    }
+
+    btnPlay.addEventListener('click', togglePlay);
+
+    // Seek by click or drag
+    function seekTo(clientX) {
+      var rect = trackEl.getBoundingClientRect();
+      var pct  = Math.max(0, Math.min(1, (clientX - rect.left) / rect.width));
+      if (audio.duration) {
+        audio.currentTime = pct * audio.duration;
+        setPct(pct * 100);
+        curEl.textContent = fmt(audio.currentTime);
+      }
+    }
+
+    trackEl.addEventListener('mousedown', function(e) {
+      dragging = true;
+      seekTo(e.clientX);
+      function onMove(e2) { seekTo(e2.clientX); }
+      function onUp() {
+        dragging = false;
+        document.removeEventListener('mousemove', onMove);
+        document.removeEventListener('mouseup', onUp);
+      }
+      document.addEventListener('mousemove', onMove);
+      document.addEventListener('mouseup', onUp);
+    });
+
+    trackEl.addEventListener('touchstart', function(e) {
+      dragging = true; seekTo(e.touches[0].clientX);
+    }, {passive:true});
+    trackEl.addEventListener('touchmove', function(e) {
+      if (dragging) seekTo(e.touches[0].clientX);
+    }, {passive:true});
+    trackEl.addEventListener('touchend', function() { dragging = false; });
+
+    // Volume
+    volSlider.addEventListener('input', function() {
+      audio.volume = parseFloat(volSlider.value);
+      if (audio.volume > 0) lastVol = audio.volume;
+      volBtn.innerHTML = audio.volume === 0 ? '&#128263;' : '&#128266;';
+    });
+
+    volBtn.addEventListener('click', function() {
+      if (audio.volume > 0) {
+        lastVol = audio.volume;
+        audio.volume = 0;
+        volSlider.value = 0;
+        volBtn.innerHTML = '&#128263;';
+      } else {
+        audio.volume = lastVol || 1;
+        volSlider.value = audio.volume;
+        volBtn.innerHTML = '&#128266;';
+      }
+    });
+
+    // Speed
+    speedSel.addEventListener('change', function() {
+      audio.playbackRate = parseFloat(speedSel.value);
+    });
+
+    // Keyboard shortcuts
+    document.addEventListener('keydown', function(e) {
+      var tag = document.activeElement && document.activeElement.tagName;
+      if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT') return;
+      if (e.code === 'Space')      { e.preventDefault(); togglePlay(); }
+      if (e.code === 'ArrowRight') { if (audio.duration) audio.currentTime = Math.min(audio.duration, audio.currentTime + 10); }
+      if (e.code === 'ArrowLeft')  { audio.currentTime = Math.max(0, audio.currentTime - 10); }
+      if (e.code === 'KeyM')       { volBtn.click(); }
+    });
+
+    // Session position memory
+    var POS_KEY = 'av_pos_' + d.id;
+
+    function savePosition() {
+      try { sessionStorage.setItem(POS_KEY, String(Math.floor(audio.currentTime))); } catch(e) {}
+    }
+
+    function restorePosition() {
+      try {
+        var saved = parseInt(sessionStorage.getItem(POS_KEY) || '0', 10);
+        if (saved > 0 && audio.duration && saved < audio.duration) {
+          audio.currentTime = saved;
+          setPct((saved / audio.duration) * 100);
+          curEl.textContent = fmt(saved);
+        }
+      } catch(e) {}
+    }
+
+    // Save position periodically and on pause
+    setInterval(savePosition, 5000);
+    audio.addEventListener('pause', savePosition);
+  }
+
+  // Build a minimal inline player for Recovered Music section
+  function buildRecoveredMusicPlayer(audioSrc, label) {
+    var wrap = document.createElement('div');
+    wrap.className = 'rm-player';
+    var audio = document.createElement('audio');
+    audio.preload = 'none';
+    audio.src = audioSrc;
+    wrap.appendChild(audio);
+
+    var ctrl = document.createElement('div');
+    ctrl.className = 'rm-player-controls';
+
+    var btn = document.createElement('button');
+    btn.className = 'rm-play';
+    btn.innerHTML = '&#9654;';
+    btn.setAttribute('aria-label', 'Play ' + label);
+    var playing = false;
+    btn.addEventListener('click', function() {
+      if (playing) {
+        audio.pause(); playing = false; btn.innerHTML = '&#9654;';
+      } else {
+        audio.play().catch(function() {}); playing = true; btn.innerHTML = '&#9646;&#9646;';
+      }
+    });
+    audio.addEventListener('ended', function() { playing = false; btn.innerHTML = '&#9654;'; });
+
+    var trkWrap = document.createElement('div');
+    trkWrap.style.flex = '1';
+    var trk = document.createElement('div');
+    trk.className = 'rm-track';
+    var filled = document.createElement('div');
+    filled.className = 'rm-filled';
+    trk.appendChild(filled);
+    trk.addEventListener('click', function(e) {
+      if (!audio.duration) return;
+      var r = trk.getBoundingClientRect();
+      audio.currentTime = Math.max(0, Math.min(1, (e.clientX - r.left) / r.width)) * audio.duration;
+    });
+    audio.addEventListener('timeupdate', function() {
+      if (audio.duration) filled.style.width = (audio.currentTime / audio.duration * 100) + '%';
+    });
+
+    var times = document.createElement('div');
+    times.className = 'rm-times';
+    var cur = document.createElement('span'); cur.textContent = '0:00';
+    var dur = document.createElement('span'); dur.textContent = '--:--';
+    audio.addEventListener('loadedmetadata', function() {
+      var m = Math.floor(audio.duration/60);
+      var s = Math.floor(audio.duration%60);
+      dur.textContent = m + ':' + (s<10?'0':'') + s;
+    });
+    audio.addEventListener('timeupdate', function() {
+      var m = Math.floor(audio.currentTime/60);
+      var s = Math.floor(audio.currentTime%60);
+      cur.textContent = m + ':' + (s<10?'0':'') + s;
+    });
+    times.appendChild(cur); times.appendChild(dur);
+    trkWrap.appendChild(trk); trkWrap.appendChild(times);
+    ctrl.appendChild(btn); ctrl.appendChild(trkWrap);
+    wrap.appendChild(ctrl);
+    return wrap;
+  }
+
+
   // Ã¢â€â‚¬Ã¢â€â‚¬ INIT Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
+
   window.initCase = function(d) {
     SONG = d;
+    initArchivePlayer(d);
     renderFields(d);
     renderCaseNotes(d);
     renderLyrics(d);
     loadSavedProgress(d);
   };
 
-  // Ã¢â€â‚¬Ã¢â€â‚¬ RENDER FIELDS Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
   function renderFields(d) {
+
     var container = document.getElementById('fields-container');
     container.innerHTML = '';
     (d.fields || []).forEach(function(f, i) {
@@ -760,7 +1066,7 @@ body.unlocked::before{
       panel.innerHTML =
         '<span class="response-icon unlock-icon">Ã°Å¸â€â€œ</span>' +
         '<div class="response-headline">Case Solved</div>' +
-        '<div class="response-sub">All ' + total + ' elements confirmed. Accessing archived file...</div>';
+        '<div class="response-sub">Investigation Report, Recovered Artifact, Witness Record, Evidence Recording, Archived Journal, and Recovered Music unlocked.</div>';
     } else {
       panel.classList.add('fail');
       var remaining = total - correct;
@@ -796,10 +1102,16 @@ body.unlocked::before{
       var solved = JSON.parse(localStorage.getItem('av_solved') || '[]');
       if (solved.indexOf(d.id) === -1) solved.push(d.id);
       localStorage.setItem('av_solved', JSON.stringify(solved));
+      var dates = JSON.parse(localStorage.getItem('av_completed_dates') || '{}');
+      if (!dates[d.id]) dates[d.id] = new Date().toISOString();
+      localStorage.setItem('av_completed_dates', JSON.stringify(dates));
     } catch(e) {}
 
     // Hide investigation panel Ã¢â‚¬â€ Evidence Summary is the sole evidence record
     freezeInvestigationPanel();
+
+    // Replace lyrics with archive notice — lyrics stay investigation-only
+    lockLyricsForArchive();
 
     // Award badges
     try { markLateNightIfNeeded(); checkAndAwardBadges(); } catch(e) {}
@@ -833,6 +1145,27 @@ body.unlocked::before{
   }
 
   // Ã¢â€â‚¬Ã¢â€â‚¬ POST-UNLOCK REVEAL Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
+
+  function getCompletionDate(caseId) {
+    try {
+      var dates = JSON.parse(localStorage.getItem('av_completed_dates') || '{}');
+      var iso = dates[caseId];
+      if (!iso) return 'Completion date on file';
+      return new Date(iso).toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' });
+    } catch(e) { return 'Completion date on file'; }
+  }
+
+  function renderOfficialReleaseLinks(links) {
+    links = links || {};
+    var order = [['spotify', 'Spotify'], ['apple', 'Apple Music'], ['amazon', 'Amazon Music'], ['youtube', 'YouTube Music']];
+    var out = order.map(function(item) {
+      var href = links[item[0]];
+      if (!href || href === '#') return '';
+      return '<a href="' + href + '" target="_blank" rel="noopener" class="artifact-view-link">' + item[1] + '</a>';
+    }).filter(Boolean).join('');
+    return out ? '<div class="music-release-links"><span class="ledger-label">Official Releases</span>' + out + '</div>' : '';
+  }
+
   function renderPostUnlock(d) {
     var panel = document.getElementById('lore-panel');
     panel.classList.remove('hidden');
@@ -1059,7 +1392,53 @@ body.unlocked::before{
       panel.appendChild(secS);
     })();
 
-    // Ã¢â€â‚¬Ã¢â€â‚¬ WITNESS RECORD Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
+    // Recovered Music
+    (function() {
+      var caseNumM = String(parseInt(caseData.id, 10) || 1).padStart(3, '0');
+      var secM = document.createElement('div');
+      secM.className = 'recovered-music-section unlock-section';
+      secM.style.animationDelay = '0.72s';
+
+      var lblM = document.createElement('div');
+      lblM.className = 'unlock-section-label';
+      lblM.textContent = 'Recovered Music';
+      secM.appendChild(lblM);
+
+      var hM = document.createElement('div');
+      hM.className = 'unlock-section-heading';
+      hM.textContent = caseData.title || ('Case ' + caseNumM);
+      secM.appendChild(hM);
+
+      var musicDoc = document.createElement('div');
+      musicDoc.className = 'sound-ev-block recovered-music-block';
+      musicDoc.innerHTML =
+        '<div class="sound-ev-name">' + (caseData.title || ('Case ' + caseNumM)) + '</div>' +
+        '<div class="sound-ev-category">Official archive recording</div>' +
+        '<div class="case-summary-fields">' +
+          '<div class="case-summary-row"><span class="case-summary-label">Recovered During</span><span class="case-summary-value">Case ' + caseNumM + '</span></div>' +
+          '<div class="case-summary-row"><span class="case-summary-label">Archive Status</span><span class="case-summary-value">Recovered</span></div>' +
+          '<div class="case-summary-row"><span class="case-summary-label">Duration</span><span class="case-summary-value">Auto detected</span></div>' +
+          '<div class="case-summary-row"><span class="case-summary-label">Recovered Date</span><span class="case-summary-value">' + getCompletionDate(caseData.id) + '</span></div>' +
+        '</div>';
+
+      if (caseData.audioSrc) {
+      var rmAudioSrc = caseData.audioSrc || getCaseAudioPath(caseData);
+      musicDoc.appendChild(buildRecoveredMusicPlayer(rmAudioSrc, caseData.title || ('Case ' + caseNumM)));
+
+      var noteM = document.createElement('div');
+      noteM.className = 'artifact-desc';
+      noteM.textContent = 'This recording has been entered into the Ashton Vale Archives following successful completion of the investigation.';
+      musicDoc.appendChild(noteM);
+
+      var releasesM = document.createElement('div');
+      releasesM.innerHTML = renderOfficialReleaseLinks(caseData.streamingLinks);
+      musicDoc.appendChild(releasesM);
+
+      secM.appendChild(musicDoc);
+      panel.appendChild(secM);
+    })();
+
+    // WITNESS RECORD Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
     (function() {
       var witC = (caseData.collectibles || []).find(function(c) {
         return c && c.type === 'Witness' && c.name && c.name.indexOf('//') === -1;
@@ -1363,9 +1742,30 @@ body.unlocked::before{
   }
 
   // Ã¢â€â‚¬Ã¢â€â‚¬ LYRICS Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
+  function lockLyricsForArchive() {
+    var stamp = document.querySelector('#lyrics-modal .lyrics-stamp');
+    if (stamp) stamp.textContent = 'Lyric File';
+    var body = document.getElementById('lyrics-body');
+    if (body) {
+      body.innerHTML =
+        '<div class="lyrics-archived-notice">' +
+          '<div class="lyrics-archived-heading">Investigation Complete</div>' +
+          '<p class="lyrics-archived-text">The original recording has been archived.</p>' +
+          '<p class="lyrics-archived-text">To preserve the integrity of future investigations, lyrics are no longer displayed from the archive.</p>' +
+          '<p class="lyrics-archived-text">Listen to the recovered recording instead.</p>' +
+        '</div>';
+    }
+  }
+
   function renderLyrics(d) {
     var body = document.getElementById('lyrics-body');
     if (!body) return;
+
+    // If already solved, show archive notice — never reveal lyrics post-completion
+    var solved = [];
+    try { solved = JSON.parse(localStorage.getItem('av_solved') || '[]'); } catch(e) {}
+    if (solved.indexOf(d.id) !== -1) { lockLyricsForArchive(); return; }
+
     var padded = String(parseInt(d.id, 10) || 1).padStart(3, '0');
 
     var hasRealLyrics = (d.lyrics || []).some(function(s) {
@@ -1524,7 +1924,7 @@ document.title = 'Case File ' + d.caseFile + ' Ã¢â‚¬â€ The Asten Vale
       document.getElementById('hero-case-number').textContent = 'Case File ' + d.caseFile;
       document.getElementById('hero-case-title').textContent  = d.title;
       document.getElementById('case-difficulty').textContent = d.difficulty || 'Ã¢â‚¬â€';
-      document.getElementById('player-title').textContent    = d.title;
+      // ap-title is set by initArchivePlayer(d)
       document.getElementById('stream-title').textContent    = d.title;
       document.getElementById('cn-title').textContent        = 'Case File ' + d.caseFile;
       document.getElementById('cn-sub').textContent          = d.title;
