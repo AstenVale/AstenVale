@@ -399,7 +399,7 @@
 
           cg.items.forEach(function(item) {
             var c   = item.collectible;
-            var img = c.image || '';
+            var img = c.image || (c.type === 'Sound' ? 'images/tape.png' : '');
             var delay = isOpen ? (globalIdx * 0.07) + 's' : '0s';
             globalIdx++;
 
