@@ -1384,16 +1384,73 @@ body.unlocked::before{
       blk.appendChild(recovInEl);
 
       if (soundData && soundData.audioFile) {
-        var audio = document.createElement('audio');
-        audio.className = 'sound-ev-player';
-        audio.controls  = true;
-        audio.preload   = 'none';
-        audio.setAttribute('aria-label', 'Play recording: ' + soundCollectible.name);
-        var src = document.createElement('source');
-        src.src  = soundData.audioFile;
-        src.type = 'audio/mpeg';
-        audio.appendChild(src);
-        blk.appendChild(audio);
+        (function() {
+          var sevAudio = document.createElement('audio');
+          sevAudio.preload = 'none';
+          sevAudio.style.display = 'none';
+          var sevSrc = document.createElement('source');
+          sevSrc.src = soundData.audioFile; sevSrc.type = 'audio/mpeg';
+          sevAudio.appendChild(sevSrc);
+
+          var sevWrap = document.createElement('div');
+          sevWrap.className = 'wt-player';
+          sevWrap.appendChild(sevAudio);
+
+          var sevLbl = document.createElement('div');
+          sevLbl.className = 'wt-player-label';
+          sevLbl.textContent = 'Audio Evidence';
+          sevWrap.appendChild(sevLbl);
+
+          var sevCtrl = document.createElement('div');
+          sevCtrl.className = 'wt-controls';
+          var sevBtn = document.createElement('button');
+          sevBtn.className = 'wt-play'; sevBtn.innerHTML = '&#9654;';
+          sevCtrl.appendChild(sevBtn);
+          var sevTrack = document.createElement('div'); sevTrack.className = 'wt-track';
+          var sevFill = document.createElement('div'); sevFill.className = 'wt-filled';
+          sevTrack.appendChild(sevFill); sevCtrl.appendChild(sevTrack);
+          var sevCur = document.createElement('span'); sevCur.className = 'wt-time'; sevCur.textContent = '0:00';
+          var sevDur = document.createElement('span'); sevDur.className = 'wt-time'; sevDur.textContent = '--:--';
+          sevCtrl.appendChild(sevCur); sevCtrl.appendChild(sevDur);
+          sevWrap.appendChild(sevCtrl);
+
+          var sevVolRow = document.createElement('div'); sevVolRow.className = 'wt-vol-row';
+          var sevVolBtn = document.createElement('button'); sevVolBtn.className = 'wt-vol-btn'; sevVolBtn.innerHTML = '&#128266;';
+          var sevVol = document.createElement('input'); sevVol.className = 'wt-vol'; sevVol.type = 'range';
+          sevVol.min = '0'; sevVol.max = '1'; sevVol.step = '0.05'; sevVol.value = '1';
+          sevVolRow.appendChild(sevVolBtn); sevVolRow.appendChild(sevVol);
+          sevWrap.appendChild(sevVolRow);
+
+          var sevPlaying = false; var sevLastVol = 1;
+          function sevFmt(s) { if (!isFinite(s)||isNaN(s)) return '--:--'; return Math.floor(s/60)+':'+(Math.floor(s%60)<10?'0':'')+Math.floor(s%60); }
+
+          sevAudio.addEventListener('loadedmetadata', function() { sevDur.textContent = sevFmt(sevAudio.duration); });
+          sevAudio.addEventListener('timeupdate', function() {
+            if (!sevAudio.duration) return;
+            sevCur.textContent = sevFmt(sevAudio.currentTime);
+            sevFill.style.width = (sevAudio.currentTime / sevAudio.duration * 100) + '%';
+          });
+          sevAudio.addEventListener('ended', function() { sevPlaying=false; sevBtn.innerHTML='&#9654;'; sevFill.style.width='0%'; });
+          sevBtn.addEventListener('click', function() {
+            if (sevPlaying) { sevAudio.pause(); sevPlaying=false; sevBtn.innerHTML='&#9654;'; }
+            else { sevAudio.play().catch(function(){}); sevPlaying=true; sevBtn.innerHTML='&#9646;&#9646;'; }
+          });
+          sevTrack.addEventListener('click', function(e) {
+            if (!sevAudio.duration) return;
+            var r = sevTrack.getBoundingClientRect();
+            sevAudio.currentTime = Math.max(0,Math.min(1,(e.clientX-r.left)/r.width))*sevAudio.duration;
+          });
+          sevVol.addEventListener('input', function() {
+            sevAudio.volume = parseFloat(sevVol.value);
+            sevVolBtn.innerHTML = sevAudio.volume===0?'&#128263;':'&#128266;';
+          });
+          sevVolBtn.addEventListener('click', function() {
+            if (sevAudio.volume>0) { sevLastVol=sevAudio.volume; sevAudio.volume=0; sevVol.value=0; sevVolBtn.innerHTML='&#128263;'; }
+            else { sevAudio.volume=sevLastVol||1; sevVol.value=sevAudio.volume; sevVolBtn.innerHTML='&#128266;'; }
+          });
+
+          blk.appendChild(sevWrap);
+        })();
       }
 
       var metaRow = document.createElement('div');

@@ -132,7 +132,18 @@
 
     /* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ SOUND EVIDENCE BLOCK ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */
     .artifact-sound-block { padding-top: 0.6rem; border-top: 1px dashed rgba(60,30,10,0.2); display: flex; flex-direction: column; gap: 0.4rem; }
-    .artifact-sound-player { width: 100%; height: 28px; opacity: 0.82; display: block; }
+    .artifact-sound-player { display: none; }
+    .cab-player{border:1px solid rgba(100,60,20,0.25);background:rgba(0,0,0,0.05);padding:0.45rem 0.7rem;margin-bottom:0.3rem;}
+    .cab-player-label{font-size:0.5rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--ink-faded,#888);margin-bottom:0.35rem;}
+    .cab-controls{display:flex;align-items:center;gap:0.45rem;}
+    .cab-play{width:20px;height:20px;flex-shrink:0;background:rgba(0,0,0,0.1);border:1px solid rgba(100,60,20,0.35);border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:0.5rem;color:inherit;transition:background 0.15s;}
+    .cab-play:hover{background:rgba(0,0,0,0.18);}
+    .cab-track{flex:1;position:relative;height:2px;background:rgba(100,60,20,0.14);cursor:pointer;}
+    .cab-filled{position:absolute;top:0;left:0;height:100%;background:rgba(100,60,20,0.45);pointer-events:none;width:0%;}
+    .cab-time{font-size:0.52rem;color:var(--ink-faded,#888);white-space:nowrap;flex-shrink:0;}
+    .cab-vol-row{display:flex;align-items:center;gap:0.3rem;margin-top:0.35rem;}
+    .cab-vol-btn{background:none;border:none;cursor:pointer;color:var(--ink-faded,#888);font-size:0.62rem;padding:0;line-height:1;}
+    .cab-vol{width:50px;accent-color:rgba(100,60,20,0.6);}
     .artifact-sound-link { font-family: var(--font-type); font-size: 0.58rem; letter-spacing: 0.16em; color: var(--folder-red); text-transform: uppercase; text-decoration: underline; text-underline-offset: 2px; opacity: 0.8; transition: opacity 0.15s; align-self: flex-start; }
     .artifact-sound-link:hover { opacity: 1; }
 
@@ -434,9 +445,20 @@
               var snd = soundLookup[c.name.toLowerCase()];
               if (snd && snd.audioFile) {
                 html += '<div class="artifact-sound-block">';
-                html +=   '<audio class="artifact-sound-player" controls preload="none" aria-label="Play recording: ' + c.name + '">';
-                html +=     '<source src="' + snd.audioFile + '" type="audio/mpeg">';
-                html +=   '</audio>';
+                html +=   '<audio class="artifact-sound-player" preload="none" data-src="' + snd.audioFile.replace(/"/g,'&quot;') + '"><source src="' + snd.audioFile + '" type="audio/mpeg"></audio>';
+                html +=   '<div class="cab-player">';
+                html +=     '<div class="cab-player-label">Audio Evidence</div>';
+                html +=     '<div class="cab-controls">';
+                html +=       '<button class="cab-play" aria-label="Play recording">&#9654;</button>';
+                html +=       '<div class="cab-track"><div class="cab-filled"></div></div>';
+                html +=       '<span class="cab-time cab-cur">0:00</span>';
+                html +=       '<span class="cab-time cab-dur">--:--</span>';
+                html +=     '</div>';
+                html +=     '<div class="cab-vol-row">';
+                html +=       '<button class="cab-vol-btn">&#128266;</button>';
+                html +=       '<input class="cab-vol" type="range" min="0" max="1" step="0.05" value="1">';
+                html +=     '</div>';
+                html +=   '</div>';
                 html +=   '<a href="sounds.html" class="artifact-sound-link">View in Sound Cabinet</a>';
                 html += '</div>';
               } else {
@@ -472,6 +494,51 @@
   </script>
   <script src="js/badges.js"></script>
   <script>try { localStorage.setItem('av_visited_cabinet','1'); checkAndAwardBadges(); } catch(e) {}</script>
+  <script>
+  (function() {
+    function cabFmt(s) { if(!isFinite(s)||isNaN(s)) return '--:--'; return Math.floor(s/60)+':'+(Math.floor(s%60)<10?'0':'')+Math.floor(s%60); }
+    document.addEventListener('click', function(e) {
+      var btn = e.target.closest('.cab-play');
+      if (!btn) { var vb = e.target.closest('.cab-vol-btn'); if(vb) handleVolBtn(vb); return; }
+      var wrap = btn.closest('.artifact-sound-block');
+      if (!wrap) return;
+      var audio = wrap.querySelector('.artifact-sound-player');
+      var fill  = wrap.querySelector('.cab-filled');
+      var cur   = wrap.querySelector('.cab-cur');
+      var dur   = wrap.querySelector('.cab-dur');
+      if (!audio._cabInit) {
+        audio._cabInit = true; audio._cabPlaying = false; audio._cabLastVol = 1;
+        audio.addEventListener('loadedmetadata', function() { dur.textContent = cabFmt(audio.duration); });
+        audio.addEventListener('timeupdate', function() {
+          if(!audio.duration) return;
+          cur.textContent = cabFmt(audio.currentTime);
+          fill.style.width = (audio.currentTime/audio.duration*100)+'%';
+        });
+        audio.addEventListener('ended', function() { audio._cabPlaying=false; btn.innerHTML='&#9654;'; fill.style.width='0%'; });
+        wrap.querySelector('.cab-track').addEventListener('click', function(ev) {
+          if(!audio.duration) return;
+          var r = this.getBoundingClientRect();
+          audio.currentTime = Math.max(0,Math.min(1,(ev.clientX-r.left)/r.width))*audio.duration;
+        });
+        var volEl = wrap.querySelector('.cab-vol');
+        var volBtn = wrap.querySelector('.cab-vol-btn');
+        volEl.addEventListener('input', function() {
+          audio.volume = parseFloat(volEl.value);
+          volBtn.innerHTML = audio.volume===0?'&#128263;':'&#128266;';
+        });
+        volBtn._audio = audio; volBtn._vol = volEl;
+      }
+      if (audio._cabPlaying) { audio.pause(); audio._cabPlaying=false; btn.innerHTML='&#9654;'; }
+      else { audio.play().catch(function(){}); audio._cabPlaying=true; btn.innerHTML='&#9646;&#9646;'; }
+    });
+    function handleVolBtn(vb) {
+      var audio = vb._audio; var volEl = vb._vol;
+      if(!audio) return;
+      if(audio.volume>0) { audio._cabLastVol=audio.volume; audio.volume=0; volEl.value=0; vb.innerHTML='&#128263;'; }
+      else { audio.volume=audio._cabLastVol||1; volEl.value=audio.volume; vb.innerHTML='&#128266;'; }
+    }
+  })();
+  </script>
 
   <script src="js/polish.js" defer></script>
 </body>
