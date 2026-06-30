@@ -236,7 +236,7 @@ window.SONG_DATA = {
     {
       "id": "102_location",
       "type": "Location",
-      "image": "images/Location/case-102-ice-house-location.png",
+      "image": "images/Location/case-102-ice-house-location.jpg",
       "name": "Doctor'Soffice",
       "symbol": "📍",
       "description": "The active scene for Case File 102. Recovered field notes place the primary event at Doctor'Soffice.",
@@ -261,7 +261,7 @@ window.SONG_DATA = {
     {
       "id": "102_marker",
       "type": "Marker",
-      "image": "images/Markers/102_The_Missing_Page.png",
+      "image": "images/Markers/102_The_Missing_Page.jpg",
       "name": "Marker 952",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 102.",

@@ -224,12 +224,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Shard of Mirror was recovered from South Fork in Case File 035. It is tied to Lime Burner, 9:55, and marker 397.",
       "unknownInfo": "North and Lid of a Tin suggest this object matters beyond the first reading.",
-      "image": "images/Objects/035 - empty tin.png"
+      "image": "images/Objects/035 - empty tin.jpg"
     },
     {
       "id": "035_location",
       "type": "Location",
-      "image": "images/Location/case-035-fulling-mill-location.png",
+      "image": "images/Location/case-035-fulling-mill-location.jpg",
       "name": "Southfork",
       "symbol": "📍",
       "description": "The active scene for Case File 035. Recovered field notes place the primary event at Southfork.",
@@ -242,12 +242,12 @@ window.SONG_DATA = {
       "symbol": "👤",
       "description": "Limeburner, identified in the case notes for Case File 035. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
-      "image": "images/Witness/Case 035 - apothecary.png"
+      "image": "images/Witness/Case 035 - apothecary.jpg"
     },
     {
       "id": "035_time",
       "type": "Time",
-      "image": "images/5 Time/035_lantern_5-09.png",
+      "image": "images/5 Time/035_lantern_5-09.jpg",
       "name": "955",
       "symbol": "⌚",
       "description": "The time recorded in the case audio for Case File 035. Cross-referenced with field notes.",
@@ -256,7 +256,7 @@ window.SONG_DATA = {
     {
       "id": "035_marker",
       "type": "Marker",
-      "image": "images/Markers/035_The_Hollow_Tree.png",
+      "image": "images/Markers/035_The_Hollow_Tree.jpg",
       "name": "Marker 397",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 035.",

@@ -262,7 +262,7 @@ window.SONG_DATA = {
     {
       "id": "369_marker",
       "type": "Marker",
-      "image": "images/Markers/369_The_Dead_Section.png",
+      "image": "images/Markers/369_The_Dead_Section.jpg",
       "name": "Marker 3179",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 369.",

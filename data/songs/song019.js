@@ -232,12 +232,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Unopened Mail was recovered from Mailbox in Case File 019. It is tied to Postman, 2:34, and marker 176.",
       "unknownInfo": "Out and Footsteps suggest this object matters beyond the first reading.",
-      "image": "images/Objects/019 - headstone.png"
+      "image": "images/Objects/019 - headstone.jpg"
     },
     {
       "id": "019_location",
       "type": "Location",
-      "image": "images/Location/case-019-old-house-location.png",
+      "image": "images/Location/case-019-old-house-location.jpg",
       "name": "Mailbox",
       "symbol": "📍",
       "description": "The active scene for Case File 019. Recovered field notes place the primary event at Mailbox.",
@@ -250,12 +250,12 @@ window.SONG_DATA = {
       "symbol": "👤",
       "description": "Postman, identified in the case notes for Case File 019. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
-      "image": "images/Witness/Case 019 - night-watchman.png"
+      "image": "images/Witness/Case 019 - night-watchman.jpg"
     },
     {
       "id": "019_time",
       "type": "Time",
-      "image": "images/5 Time/019_lantern_7-22.png",
+      "image": "images/5 Time/019_lantern_7-22.jpg",
       "name": "234",
       "symbol": "⌚",
       "description": "The time recorded in the case audio for Case File 019. Cross-referenced with field notes.",
@@ -264,7 +264,7 @@ window.SONG_DATA = {
     {
       "id": "019_marker",
       "type": "Marker",
-      "image": "images/Markers/019_The_Letters.png",
+      "image": "images/Markers/019_The_Letters.jpg",
       "name": "Marker 176",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 019.",

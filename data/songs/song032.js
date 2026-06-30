@@ -222,12 +222,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Wool Scarf was recovered from Tannery in Case File 032. It is tied to Wainwright, 11:51, and marker 370.",
       "unknownInfo": "Under and Wheel on Gravel suggest this object matters beyond the first reading.",
-      "image": "images/Objects/032 - pocket watch.png"
+      "image": "images/Objects/032 - pocket watch.jpg"
     },
     {
       "id": "032_location",
       "type": "Location",
-      "image": "images/Location/case-032-stables-location.png",
+      "image": "images/Location/case-032-stables-location.jpg",
       "name": "Tannery",
       "symbol": "📍",
       "description": "The active scene for Case File 032. Recovered field notes place the primary event at Tannery.",
@@ -240,12 +240,12 @@ window.SONG_DATA = {
       "symbol": "👤",
       "description": "Wainwright, identified in the case notes for Case File 032. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
-      "image": "images/Witness/Case 032 - woodsman.png"
+      "image": "images/Witness/Case 032 - woodsman.jpg"
     },
     {
       "id": "032_time",
       "type": "Time",
-      "image": "images/5 Time/032_lantern_5-21.png",
+      "image": "images/5 Time/032_lantern_5-21.jpg",
       "name": "1151",
       "symbol": "⌚",
       "description": "The time recorded in the case audio for Case File 032. Cross-referenced with field notes.",
@@ -254,7 +254,7 @@ window.SONG_DATA = {
     {
       "id": "032_marker",
       "type": "Marker",
-      "image": "images/Markers/032_The_Missing_Hours.png",
+      "image": "images/Markers/032_The_Missing_Hours.jpg",
       "name": "Marker 370",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 032.",

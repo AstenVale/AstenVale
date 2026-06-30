@@ -233,12 +233,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Torn Label was recovered from Banker's House in Case File 046. It is tied to Librarian, 10:19, and marker 488.",
       "unknownInfo": "Around and Child's Laugh (far off) suggest this object matters beyond the first reading.",
-      "image": "images/Objects/046 - charred paper.png"
+      "image": "images/Objects/046 - charred paper.jpg"
     },
     {
       "id": "046_location",
       "type": "Location",
-      "image": "images/Location/case-046-loom-house-location.png",
+      "image": "images/Location/case-046-loom-house-location.jpg",
       "name": "Banker'Shouse",
       "symbol": "📍",
       "description": "The active scene for Case File 046. Recovered field notes place the primary event at Banker'Shouse.",
@@ -251,12 +251,12 @@ window.SONG_DATA = {
       "symbol": "👤",
       "description": "Librarian, identified in the case notes for Case File 046. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
-      "image": "images/Witness/Case 046 - land-agent.png"
+      "image": "images/Witness/Case 046 - land-agent.jpg"
     },
     {
       "id": "046_time",
       "type": "Time",
-      "image": "images/5 Time/046_lantern_1-26.png",
+      "image": "images/5 Time/046_lantern_1-26.jpg",
       "name": "1019",
       "symbol": "⌚",
       "description": "The time recorded in the case audio for Case File 046. Cross-referenced with field notes.",
@@ -265,7 +265,7 @@ window.SONG_DATA = {
     {
       "id": "046_marker",
       "type": "Marker",
-      "image": "images/Markers/046_The_Far_Bank.png",
+      "image": "images/Markers/046_The_Far_Bank.jpg",
       "name": "Marker 488",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 046.",

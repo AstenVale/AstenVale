@@ -222,12 +222,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Inkwell was recovered from Undertaker's Hall in Case File 073. It is tied to Driver, 6:53, and marker 707.",
       "unknownInfo": "West and Rope Strain suggest this object matters beyond the first reading.",
-      "image": "images/Objects/073 - notebook.png"
+      "image": "images/Objects/073 - notebook.jpg"
     },
     {
       "id": "073_location",
       "type": "Location",
-      "image": "images/Location/case-073-crossroads-location.png",
+      "image": "images/Location/case-073-crossroads-location.jpg",
       "name": "Undertaker'Shall",
       "symbol": "📍",
       "description": "The active scene for Case File 073. Recovered field notes place the primary event at Undertaker'Shall.",
@@ -240,7 +240,7 @@ window.SONG_DATA = {
       "symbol": "👤",
       "description": "Driver, identified in the case notes for Case File 073. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
-      "image": "images/Witness/Case 073 - the-girl-with-no-shoes.png"
+      "image": "images/Witness/Case 073 - the-girl-with-no-shoes.jpg"
     },
     {
       "id": "073_time",
@@ -253,7 +253,7 @@ window.SONG_DATA = {
     {
       "id": "073_marker",
       "type": "Marker",
-      "image": "images/Markers/073_The_Other_House.png",
+      "image": "images/Markers/073_The_Other_House.jpg",
       "name": "Marker 707",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 073.",

@@ -223,12 +223,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Straight Razor was recovered from Water Tower in Case File 033. It is tied to Fisherman, 8:17, and marker 379.",
       "unknownInfo": "Beyond and Lantern Glass suggest this object matters beyond the first reading.",
-      "image": "images/Objects/033 - string of beads.png"
+      "image": "images/Objects/033 - string of beads.jpg"
     },
     {
       "id": "033_location",
       "type": "Location",
-      "image": "images/Location/case-033-the-weir-location.png",
+      "image": "images/Location/case-033-the-weir-location.jpg",
       "name": "Watertower",
       "symbol": "📍",
       "description": "The active scene for Case File 033. Recovered field notes place the primary event at Watertower.",
@@ -241,12 +241,12 @@ window.SONG_DATA = {
       "symbol": "👤",
       "description": "Fisherman, identified in the case notes for Case File 033. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
-      "image": "images/Witness/Case 033 - rope-maker.png"
+      "image": "images/Witness/Case 033 - rope-maker.jpg"
     },
     {
       "id": "033_time",
       "type": "Time",
-      "image": "images/5 Time/033_lantern_8-42.png",
+      "image": "images/5 Time/033_lantern_8-42.jpg",
       "name": "817",
       "symbol": "⌚",
       "description": "The time recorded in the case audio for Case File 033. Cross-referenced with field notes.",
@@ -255,7 +255,7 @@ window.SONG_DATA = {
     {
       "id": "033_marker",
       "type": "Marker",
-      "image": "images/Markers/033_What_the_Neighbor_Saw.png",
+      "image": "images/Markers/033_What_the_Neighbor_Saw.jpg",
       "name": "Marker 379",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 033.",

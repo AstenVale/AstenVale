@@ -260,7 +260,7 @@ window.SONG_DATA = {
     {
       "id": "526_marker",
       "type": "Marker",
-      "image": "images/Markers/526_What_the_Mirror_Says.png",
+      "image": "images/Markers/526_What_the_Mirror_Says.jpg",
       "name": "Marker 4488",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 526.",

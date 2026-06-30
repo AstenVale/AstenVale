@@ -222,12 +222,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Church Key was recovered from Church in Case File 008. It is tied to Preacher, 7:00, and marker 09.",
       "unknownInfo": "East and Bell Toll suggest this object matters beyond the first reading.",
-      "image": "images/Objects/008 - church key.png"
+      "image": "images/Objects/008 - church key.jpg"
     },
     {
       "id": "008_location",
       "type": "Location",
-      "image": "images/Location/case-008-cabin-location.png",
+      "image": "images/Location/case-008-cabin-location.jpg",
       "name": "Church",
       "symbol": "📍",
       "description": "The active scene for Case File 008. Recovered field notes place the primary event at Church.",
@@ -240,12 +240,12 @@ window.SONG_DATA = {
       "symbol": "👤",
       "description": "Preacher, identified in the case notes for Case File 008. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
-      "image": "images/Witness/Case 008 - driver.png"
+      "image": "images/Witness/Case 008 - driver.jpg"
     },
     {
       "id": "008_time",
       "type": "Time",
-      "image": "images/5 Time/008_lantern_7-00.png",
+      "image": "images/5 Time/008_lantern_7-00.jpg",
       "name": "700",
       "symbol": "⌚",
       "description": "The time recorded in the case audio for Case File 008. Cross-referenced with field notes.",
@@ -254,7 +254,7 @@ window.SONG_DATA = {
     {
       "id": "008_marker",
       "type": "Marker",
-      "image": "images/Markers/008_Church_Bell_Never_Rang.png",
+      "image": "images/Markers/008_Church_Bell_Never_Rang.jpg",
       "name": "Marker 09",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 008.",

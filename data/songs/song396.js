@@ -263,7 +263,7 @@ window.SONG_DATA = {
     {
       "id": "396_marker",
       "type": "Marker",
-      "image": "images/Markers/396_Return_of_Color.png",
+      "image": "images/Markers/396_Return_of_Color.jpg",
       "name": "Marker 3406",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 396.",

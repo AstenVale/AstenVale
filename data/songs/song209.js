@@ -250,7 +250,7 @@ window.SONG_DATA = {
     {
       "id": "209_marker",
       "type": "Marker",
-      "image": "images/Markers/209_The_Wrong_Name.png",
+      "image": "images/Markers/209_The_Wrong_Name.jpg",
       "name": "Marker 1843",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 209.",

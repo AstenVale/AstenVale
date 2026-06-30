@@ -221,12 +221,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Photograph was recovered from Cemetery in Case File 011. It is tied to Caretaker, 4:12, and marker 91.",
       "unknownInfo": "North and Night Insects suggest this object matters beyond the first reading.",
-      "image": "images/Objects/011 - photograph.png"
+      "image": "images/Objects/011 - photograph.jpg"
     },
     {
       "id": "011_location",
       "type": "Location",
-      "image": "images/Location/case-011-sheriff-archive-location.png",
+      "image": "images/Location/case-011-sheriff-archive-location.jpg",
       "name": "Cemetery",
       "symbol": "📍",
       "description": "The active scene for Case File 011. Recovered field notes place the primary event at Cemetery.",
@@ -239,12 +239,12 @@ window.SONG_DATA = {
       "symbol": "👤",
       "description": "Caretaker, identified in the case notes for Case File 011. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
-      "image": "images/Witness/Case 011 - neighbor.png"
+      "image": "images/Witness/Case 011 - neighbor.jpg"
     },
     {
       "id": "011_time",
       "type": "Time",
-      "image": "images/5 Time/011_lantern_4-12.png",
+      "image": "images/5 Time/011_lantern_4-12.jpg",
       "name": "412",
       "symbol": "⌚",
       "description": "The time recorded in the case audio for Case File 011. Cross-referenced with field notes.",
@@ -253,7 +253,7 @@ window.SONG_DATA = {
     {
       "id": "011_marker",
       "type": "Marker",
-      "image": "images/Markers/011_Name_in_the_Snow.png",
+      "image": "images/Markers/011_Name_in_the_Snow.jpg",
       "name": "Marker 91",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 011.",

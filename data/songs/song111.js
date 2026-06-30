@@ -251,7 +251,7 @@ window.SONG_DATA = {
     {
       "id": "111_marker",
       "type": "Marker",
-      "image": "images/Markers/111_The_Overgrown_Path.png",
+      "image": "images/Markers/111_The_Overgrown_Path.jpg",
       "name": "Marker 1025",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 111.",

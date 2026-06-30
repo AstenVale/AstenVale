@@ -264,7 +264,7 @@ window.SONG_DATA = {
     {
       "id": "156_marker",
       "type": "Marker",
-      "image": "images/Markers/156_The_Twins_Word.png",
+      "image": "images/Markers/156_The_Twins_Word.jpg",
       "name": "Marker 1406",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 156.",

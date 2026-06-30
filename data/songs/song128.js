@@ -261,7 +261,7 @@ window.SONG_DATA = {
     {
       "id": "128_marker",
       "type": "Marker",
-      "image": "images/Markers/128_Scale.png",
+      "image": "images/Markers/128_Scale.jpg",
       "name": "Marker 1170",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 128.",

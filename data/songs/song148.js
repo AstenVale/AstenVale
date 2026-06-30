@@ -263,7 +263,7 @@ window.SONG_DATA = {
     {
       "id": "148_marker",
       "type": "Marker",
-      "image": "images/Markers/148_The_Difference.png",
+      "image": "images/Markers/148_The_Difference.jpg",
       "name": "Marker 1334",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 148.",

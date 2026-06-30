@@ -233,12 +233,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Tin Star was recovered from Post Office in Case File 086. It is tied to Fence Mender, 12:33, and marker 816.",
       "unknownInfo": "Behind and Rain suggest this object matters beyond the first reading.",
-      "image": "images/Objects/086 - oil rag.png"
+      "image": "images/Objects/086 - oil rag.jpg"
     },
     {
       "id": "086_location",
       "type": "Location",
-      "image": "images/Location/case-086-sheep-fold-location.png",
+      "image": "images/Location/case-086-sheep-fold-location.jpg",
       "name": "Postoffice",
       "symbol": "📍",
       "description": "The active scene for Case File 086. Recovered field notes place the primary event at Postoffice.",
@@ -263,7 +263,7 @@ window.SONG_DATA = {
     {
       "id": "086_marker",
       "type": "Marker",
-      "image": "images/Markers/086_What_Started_It.png",
+      "image": "images/Markers/086_What_Started_It.jpg",
       "name": "Marker 816",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 086.",

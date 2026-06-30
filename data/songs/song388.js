@@ -264,7 +264,7 @@ window.SONG_DATA = {
     {
       "id": "388_marker",
       "type": "Marker",
-      "image": "images/Markers/388_The_Color_That_Left.png",
+      "image": "images/Markers/388_The_Color_That_Left.jpg",
       "name": "Marker 3334",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 388.",

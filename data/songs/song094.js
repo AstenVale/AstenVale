@@ -224,12 +224,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Pocket Watch was recovered from Mill House in Case File 094. It is tied to Lamplighter, 6:06, and marker 888.",
       "unknownInfo": "Past the Tree Line and Broken String suggest this object matters beyond the first reading.",
-      "image": "images/Objects/094 - numbered disk.png"
+      "image": "images/Objects/094 - numbered disk.jpg"
     },
     {
       "id": "094_location",
       "type": "Location",
-      "image": "images/Location/case-094-the-widows-porch-location.png",
+      "image": "images/Location/case-094-the-widows-porch-location.jpg",
       "name": "Millhouse",
       "symbol": "📍",
       "description": "The active scene for Case File 094. Recovered field notes place the primary event at Millhouse.",
@@ -254,7 +254,7 @@ window.SONG_DATA = {
     {
       "id": "094_marker",
       "type": "Marker",
-      "image": "images/Markers/094_What_Fire_Does_to_Memory.png",
+      "image": "images/Markers/094_What_Fire_Does_to_Memory.jpg",
       "name": "Marker 888",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 094.",

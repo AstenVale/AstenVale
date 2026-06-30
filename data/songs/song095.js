@@ -224,12 +224,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Dried Flower was recovered from Mill House in Case File 095. It is tied to Deputy, 5:09, and marker 897.",
       "unknownInfo": "Past the Tree Line and Cellar Door suggest this object matters beyond the first reading.",
-      "image": "images/Objects/095 - wire coil.png"
+      "image": "images/Objects/095 - wire coil.jpg"
     },
     {
       "id": "095_location",
       "type": "Location",
-      "image": "images/Location/case-095-canning-factory-location.png",
+      "image": "images/Location/case-095-canning-factory-location.jpg",
       "name": "Millhouse",
       "symbol": "📍",
       "description": "The active scene for Case File 095. Recovered field notes place the primary event at Millhouse.",
@@ -254,7 +254,7 @@ window.SONG_DATA = {
     {
       "id": "095_marker",
       "type": "Marker",
-      "image": "images/Markers/095_Rebuilt.png",
+      "image": "images/Markers/095_Rebuilt.jpg",
       "name": "Marker 897",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 095.",

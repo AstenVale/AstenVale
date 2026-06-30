@@ -263,7 +263,7 @@ window.SONG_DATA = {
     {
       "id": "279_marker",
       "type": "Marker",
-      "image": "images/Markers/279_The_Hour_Nobody_Saw.png",
+      "image": "images/Markers/279_The_Hour_Nobody_Saw.jpg",
       "name": "Marker 2425",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 279.",

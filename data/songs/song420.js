@@ -261,7 +261,7 @@ window.SONG_DATA = {
     {
       "id": "420_marker",
       "type": "Marker",
-      "image": "images/Markers/420_The_Sealed_Box.png",
+      "image": "images/Markers/420_The_Sealed_Box.jpg",
       "name": "Marker 3606",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 420.",

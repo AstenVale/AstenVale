@@ -250,7 +250,7 @@ window.SONG_DATA = {
     {
       "id": "356_marker",
       "type": "Marker",
-      "image": "images/Markers/356_The_Stop_That_Wasnt.png",
+      "image": "images/Markers/356_The_Stop_That_Wasnt.jpg",
       "name": "Marker 3070",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 356.",

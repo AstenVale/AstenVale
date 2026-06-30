@@ -224,12 +224,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Ledger Page was recovered from Fulling Mill in Case File 060. It is tied to Lock Keeper, 7:14, and marker 606.",
       "unknownInfo": "Back and Lantern Flicker suggest this object matters beyond the first reading.",
-      "image": "images/Objects/060 - receipt.png"
+      "image": "images/Objects/060 - receipt.jpg"
     },
     {
       "id": "060_location",
       "type": "Location",
-      "image": "images/Location/case-060-stone-step-location.png",
+      "image": "images/Location/case-060-stone-step-location.jpg",
       "name": "Fullingmill",
       "symbol": "📍",
       "description": "The active scene for Case File 060. Recovered field notes place the primary event at Fullingmill.",
@@ -242,12 +242,12 @@ window.SONG_DATA = {
       "symbol": "👤",
       "description": "Lockkeeper, identified in the case notes for Case File 060. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
-      "image": "images/Witness/Case 060 - sexton.png"
+      "image": "images/Witness/Case 060 - sexton.jpg"
     },
     {
       "id": "060_time",
       "type": "Time",
-      "image": "images/5 Time/060_lantern_4-29.png",
+      "image": "images/5 Time/060_lantern_4-29.jpg",
       "name": "714",
       "symbol": "⌚",
       "description": "The time recorded in the case audio for Case File 060. Cross-referenced with field notes.",
@@ -256,7 +256,7 @@ window.SONG_DATA = {
     {
       "id": "060_marker",
       "type": "Marker",
-      "image": "images/Markers/060_Spring_Without_Him.png",
+      "image": "images/Markers/060_Spring_Without_Him.jpg",
       "name": "Marker 606",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 060.",

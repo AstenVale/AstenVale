@@ -234,12 +234,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Wax Seal was recovered from North Gate in Case File 087. It is tied to Fence Mender, 10:19, and marker 825.",
       "unknownInfo": "Down and Ash Settling suggest this object matters beyond the first reading.",
-      "image": "images/Objects/087 - lock of hair.png"
+      "image": "images/Objects/087 - lock of hair.jpg"
     },
     {
       "id": "087_location",
       "type": "Location",
-      "image": "images/Location/case-087-schoolhouse-location.png",
+      "image": "images/Location/case-087-schoolhouse-location.jpg",
       "name": "Northgate",
       "symbol": "📍",
       "description": "The active scene for Case File 087. Recovered field notes place the primary event at Northgate.",
@@ -264,7 +264,7 @@ window.SONG_DATA = {
     {
       "id": "087_marker",
       "type": "Marker",
-      "image": "images/Markers/087_The_Running.png",
+      "image": "images/Markers/087_The_Running.jpg",
       "name": "Marker 825",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 087.",

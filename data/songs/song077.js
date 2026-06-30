@@ -223,12 +223,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Inkwell was recovered from The Gully in Case File 077. It is tied to Glazier, 6:17, and marker 743.",
       "unknownInfo": "Home and Cannon Bolt suggest this object matters beyond the first reading.",
-      "image": "images/Objects/077 - wax tablet.png"
+      "image": "images/Objects/077 - wax tablet.jpg"
     },
     {
       "id": "077_location",
       "type": "Location",
-      "image": "images/Location/case-077-the-bluff-location.png",
+      "image": "images/Location/case-077-the-bluff-location.jpg",
       "name": "Gully",
       "symbol": "📍",
       "description": "The active scene for Case File 077. Recovered field notes place the primary event at Gully.",
@@ -253,7 +253,7 @@ window.SONG_DATA = {
     {
       "id": "077_marker",
       "type": "Marker",
-      "image": "images/Markers/077_The_Children.png",
+      "image": "images/Markers/077_The_Children.jpg",
       "name": "Marker 743",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 077.",

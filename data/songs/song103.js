@@ -238,7 +238,7 @@ window.SONG_DATA = {
     {
       "id": "103_location",
       "type": "Location",
-      "image": "images/Location/case-103-hill-road-location.png",
+      "image": "images/Location/case-103-hill-road-location.jpg",
       "name": "Chandler'Srow",
       "symbol": "📍",
       "description": "The active scene for Case File 103. Recovered field notes place the primary event at Chandler'Srow.",
@@ -263,7 +263,7 @@ window.SONG_DATA = {
     {
       "id": "103_marker",
       "type": "Marker",
-      "image": "images/Markers/103_The_Other_Keeper.png",
+      "image": "images/Markers/103_The_Other_Keeper.jpg",
       "name": "Marker 961",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 103.",

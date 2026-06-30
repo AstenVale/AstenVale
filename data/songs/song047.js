@@ -231,12 +231,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Seal was recovered from Grain Mill in Case File 047. It is tied to Blacksmith, 8:00, and marker 497.",
       "unknownInfo": "Down and Millstone suggest this object matters beyond the first reading.",
-      "image": "images/Objects/047 - locket.png"
+      "image": "images/Objects/047 - locket.jpg"
     },
     {
       "id": "047_location",
       "type": "Location",
-      "image": "images/Location/case-047-lumber-camp-location.png",
+      "image": "images/Location/case-047-lumber-camp-location.jpg",
       "name": "Grainmill",
       "symbol": "📍",
       "description": "The active scene for Case File 047. Recovered field notes place the primary event at Grainmill.",
@@ -249,12 +249,12 @@ window.SONG_DATA = {
       "symbol": "👤",
       "description": "Blacksmith, identified in the case notes for Case File 047. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
-      "image": "images/Witness/Case 047 - gravedigger.png"
+      "image": "images/Witness/Case 047 - gravedigger.jpg"
     },
     {
       "id": "047_time",
       "type": "Time",
-      "image": "images/5 Time/047_lantern_7-02.png",
+      "image": "images/5 Time/047_lantern_7-02.jpg",
       "name": "800",
       "symbol": "⌚",
       "description": "The time recorded in the case audio for Case File 047. Cross-referenced with field notes.",
@@ -263,7 +263,7 @@ window.SONG_DATA = {
     {
       "id": "047_marker",
       "type": "Marker",
-      "image": "images/Markers/047_High_Water.png",
+      "image": "images/Markers/047_High_Water.jpg",
       "name": "Marker 497",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 047.",

@@ -232,12 +232,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "String of Beads was recovered from Stables in Case File 037. It is tied to Midwife, 10:05, and marker 407.",
       "unknownInfo": "Toward and Kettle Boil suggest this object matters beyond the first reading.",
-      "image": "images/Objects/037 - signet ring.png"
+      "image": "images/Objects/037 - signet ring.jpg"
     },
     {
       "id": "037_location",
       "type": "Location",
-      "image": "images/Location/case-037-the-root-cellar-location.png",
+      "image": "images/Location/case-037-the-root-cellar-location.jpg",
       "name": "Stables",
       "symbol": "📍",
       "description": "The active scene for Case File 037. Recovered field notes place the primary event at Stables.",
@@ -250,12 +250,12 @@ window.SONG_DATA = {
       "symbol": "👤",
       "description": "Midwife, identified in the case notes for Case File 037. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
-      "image": "images/Witness/Case 037 - doctor.png"
+      "image": "images/Witness/Case 037 - doctor.jpg"
     },
     {
       "id": "037_time",
       "type": "Time",
-      "image": "images/5 Time/037_lantern_7-14.png",
+      "image": "images/5 Time/037_lantern_7-14.jpg",
       "name": "1005",
       "symbol": "⌚",
       "description": "The time recorded in the case audio for Case File 037. Cross-referenced with field notes.",
@@ -264,7 +264,7 @@ window.SONG_DATA = {
     {
       "id": "037_marker",
       "type": "Marker",
-      "image": "images/Markers/037_Before_the_Flood.png",
+      "image": "images/Markers/037_Before_the_Flood.jpg",
       "name": "Marker 407",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 037.",

@@ -253,7 +253,7 @@ window.SONG_DATA = {
     {
       "id": "229_marker",
       "type": "Marker",
-      "image": "images/Markers/229_The_Night_Route.png",
+      "image": "images/Markers/229_The_Night_Route.jpg",
       "name": "Marker 2007",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 229.",

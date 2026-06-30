@@ -251,7 +251,7 @@ window.SONG_DATA = {
     {
       "id": "492_marker",
       "type": "Marker",
-      "image": "images/Markers/492_The_Road_Returns.png",
+      "image": "images/Markers/492_The_Road_Returns.jpg",
       "name": "Marker 4206",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 492.",

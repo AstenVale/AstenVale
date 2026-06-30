@@ -234,12 +234,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Journal was recovered from The Root Cellar in Case File 091. It is tied to Land Agent, 9:15, and marker 861.",
       "unknownInfo": "Through and Mud Suction suggest this object matters beyond the first reading.",
-      "image": "images/Objects/091 - letter.png"
+      "image": "images/Objects/091 - letter.jpg"
     },
     {
       "id": "091_location",
       "type": "Location",
-      "image": "images/Location/case-091-the-narrow-road-location.png",
+      "image": "images/Location/case-091-the-narrow-road-location.jpg",
       "name": "Root Cellar",
       "symbol": "📍",
       "description": "The active scene for Case File 091. Recovered field notes place the primary event at Root Cellar.",
@@ -264,7 +264,7 @@ window.SONG_DATA = {
     {
       "id": "091_marker",
       "type": "Marker",
-      "image": "images/Markers/091_The_Cause.png",
+      "image": "images/Markers/091_The_Cause.jpg",
       "name": "Marker 861",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 091.",

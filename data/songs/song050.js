@@ -225,12 +225,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Empty Tin was recovered from The Root Cellar in Case File 050. It is tied to Lock Keeper, 8:06, and marker 516.",
       "unknownInfo": "Down the Hollow and Chains suggest this object matters beyond the first reading.",
-      "image": "images/Objects/050 - telegram.png"
+      "image": "images/Objects/050 - telegram.jpg"
     },
     {
       "id": "050_location",
       "type": "Location",
-      "image": "images/Location/case-050-mill-house-location.png",
+      "image": "images/Location/case-050-mill-house-location.jpg",
       "name": "Root Cellar",
       "symbol": "📍",
       "description": "The active scene for Case File 050. Recovered field notes place the primary event at Root Cellar.",
@@ -243,12 +243,12 @@ window.SONG_DATA = {
       "symbol": "👤",
       "description": "Lockkeeper, identified in the case notes for Case File 050. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
-      "image": "images/Witness/Case 050 - schoolgirl.png"
+      "image": "images/Witness/Case 050 - schoolgirl.jpg"
     },
     {
       "id": "050_time",
       "type": "Time",
-      "image": "images/5 Time/050_lantern_6-53.png",
+      "image": "images/5 Time/050_lantern_6-53.jpg",
       "name": "806",
       "symbol": "⌚",
       "description": "The time recorded in the case audio for Case File 050. Cross-referenced with field notes.",
@@ -257,7 +257,7 @@ window.SONG_DATA = {
     {
       "id": "050_marker",
       "type": "Marker",
-      "image": "images/Markers/050_The_Cold_House.png",
+      "image": "images/Markers/050_The_Cold_House.jpg",
       "name": "Marker 516",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 050.",

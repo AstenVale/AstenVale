@@ -233,12 +233,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Empty Bottle was recovered from Kitchen Table in Case File 015. It is tied to Neighbor, 4:15, and marker 132.",
       "unknownInfo": "Down and Silence suggest this object matters beyond the first reading.",
-      "image": "images/Objects/015 - wedding photo.png"
+      "image": "images/Objects/015 - wedding photo.jpg"
     },
     {
       "id": "015_location",
       "type": "Location",
-      "image": "images/Location/case-015-train-station-location.png",
+      "image": "images/Location/case-015-train-station-location.jpg",
       "name": "Kitchentable",
       "symbol": "📍",
       "description": "The active scene for Case File 015. Recovered field notes place the primary event at Kitchentable.",
@@ -251,12 +251,12 @@ window.SONG_DATA = {
       "symbol": "👤",
       "description": "Neighbor, identified in the case notes for Case File 015. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
-      "image": "images/Witness/Case 015 - groundskeeper.png"
+      "image": "images/Witness/Case 015 - groundskeeper.jpg"
     },
     {
       "id": "015_time",
       "type": "Time",
-      "image": "images/5 Time/015_lantern_11-52.png",
+      "image": "images/5 Time/015_lantern_11-52.jpg",
       "name": "415",
       "symbol": "⌚",
       "description": "The time recorded in the case audio for Case File 015. Cross-referenced with field notes.",
@@ -265,7 +265,7 @@ window.SONG_DATA = {
     {
       "id": "015_marker",
       "type": "Marker",
-      "image": "images/Markers/015_The_First_Crack.png",
+      "image": "images/Markers/015_The_First_Crack.jpg",
       "name": "Marker 132",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 015.",

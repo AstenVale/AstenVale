@@ -260,7 +260,7 @@ window.SONG_DATA = {
     {
       "id": "145_marker",
       "type": "Marker",
-      "image": "images/Markers/145_The_Mirror_Road.png",
+      "image": "images/Markers/145_The_Mirror_Road.jpg",
       "name": "Marker 1307",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 145.",

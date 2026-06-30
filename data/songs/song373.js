@@ -252,7 +252,7 @@ window.SONG_DATA = {
     {
       "id": "373_marker",
       "type": "Marker",
-      "image": "images/Markers/373_Below_the_Surface.png",
+      "image": "images/Markers/373_Below_the_Surface.jpg",
       "name": "Marker 3207",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 373.",

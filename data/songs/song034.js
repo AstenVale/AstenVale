@@ -223,12 +223,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Straight Razor was recovered from Watchmaker's Shop in Case File 034. It is tied to Preacher, 9:27, and marker 388.",
       "unknownInfo": "Ahead and River Ice suggest this object matters beyond the first reading.",
-      "image": "images/Objects/034 - spool of thread.png"
+      "image": "images/Objects/034 - spool of thread.jpg"
     },
     {
       "id": "034_location",
       "type": "Location",
-      "image": "images/Location/case-034-the-quarry-pool-location.png",
+      "image": "images/Location/case-034-the-quarry-pool-location.jpg",
       "name": "Watchmaker'Sshop",
       "symbol": "📍",
       "description": "The active scene for Case File 034. Recovered field notes place the primary event at Watchmaker'Sshop.",
@@ -241,12 +241,12 @@ window.SONG_DATA = {
       "symbol": "👤",
       "description": "Preacher, identified in the case notes for Case File 034. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
-      "image": "images/Witness/Case 034 - librarian.png"
+      "image": "images/Witness/Case 034 - librarian.jpg"
     },
     {
       "id": "034_time",
       "type": "Time",
-      "image": "images/5 Time/034_lantern_10-19.png",
+      "image": "images/5 Time/034_lantern_10-19.jpg",
       "name": "927",
       "symbol": "⌚",
       "description": "The time recorded in the case audio for Case File 034. Cross-referenced with field notes.",
@@ -255,7 +255,7 @@ window.SONG_DATA = {
     {
       "id": "034_marker",
       "type": "Marker",
-      "image": "images/Markers/034_The_Turned_Earth.png",
+      "image": "images/Markers/034_The_Turned_Earth.jpg",
       "name": "Marker 388",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 034.",

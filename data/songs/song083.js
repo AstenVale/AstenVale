@@ -234,12 +234,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Charcoal Sketch was recovered from Grain Mill in Case File 083. It is tied to Miller, 1:58, and marker 797.",
       "unknownInfo": "Beyond and Knife Scrape suggest this object matters beyond the first reading.",
-      "image": "images/Objects/083 - boot.png"
+      "image": "images/Objects/083 - boot.jpg"
     },
     {
       "id": "083_location",
       "type": "Location",
-      "image": "images/Location/case-083-collapsed-mine-location.png",
+      "image": "images/Location/case-083-collapsed-mine-location.jpg",
       "name": "Grainmill",
       "symbol": "📍",
       "description": "The active scene for Case File 083. Recovered field notes place the primary event at Grainmill.",
@@ -264,7 +264,7 @@ window.SONG_DATA = {
     {
       "id": "083_marker",
       "type": "Marker",
-      "image": "images/Markers/083_Recognition.png",
+      "image": "images/Markers/083_Recognition.jpg",
       "name": "Marker 797",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 083.",

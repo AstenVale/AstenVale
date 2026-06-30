@@ -263,7 +263,7 @@ window.SONG_DATA = {
     {
       "id": "392_marker",
       "type": "Marker",
-      "image": "images/Markers/392_What_the_Light_Did.png",
+      "image": "images/Markers/392_What_the_Light_Did.jpg",
       "name": "Marker 3370",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 392.",

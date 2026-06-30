@@ -262,7 +262,7 @@ window.SONG_DATA = {
     {
       "id": "435_marker",
       "type": "Marker",
-      "image": "images/Markers/435_Why_It_Closed.png",
+      "image": "images/Markers/435_Why_It_Closed.jpg",
       "name": "Marker 3725",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 435.",

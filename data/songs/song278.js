@@ -262,7 +262,7 @@ window.SONG_DATA = {
     {
       "id": "278_marker",
       "type": "Marker",
-      "image": "images/Markers/278_What_Happened_at_Midnight.png",
+      "image": "images/Markers/278_What_Happened_at_Midnight.jpg",
       "name": "Marker 2416",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 278.",

@@ -234,12 +234,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Love Letter was recovered from Riverside Cabin in Case File 014. It is tied to Husband, 9:30, and marker 121.",
       "unknownInfo": "East and River Water suggest this object matters beyond the first reading.",
-      "image": "images/Objects/014 - empty bottle.png"
+      "image": "images/Objects/014 - empty bottle.jpg"
     },
     {
       "id": "014_location",
       "type": "Location",
-      "image": "images/Location/case-014-old-bridge-location.png",
+      "image": "images/Location/case-014-old-bridge-location.jpg",
       "name": "Riversidecabin",
       "symbol": "📍",
       "description": "The active scene for Case File 014. Recovered field notes place the primary event at Riversidecabin.",
@@ -252,12 +252,12 @@ window.SONG_DATA = {
       "symbol": "👤",
       "description": "Husband, identified in the case notes for Case File 014. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
-      "image": "images/Witness/Case 014 - postman.png"
+      "image": "images/Witness/Case 014 - postman.jpg"
     },
     {
       "id": "014_time",
       "type": "Time",
-      "image": "images/5 Time/014_lantern_4-15.png",
+      "image": "images/5 Time/014_lantern_4-15.jpg",
       "name": "930",
       "symbol": "⌚",
       "description": "The time recorded in the case audio for Case File 014. Cross-referenced with field notes.",
@@ -266,7 +266,7 @@ window.SONG_DATA = {
     {
       "id": "014_marker",
       "type": "Marker",
-      "image": "images/Markers/014_The_Promise.png",
+      "image": "images/Markers/014_The_Promise.jpg",
       "name": "Marker 121",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 014.",

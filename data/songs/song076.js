@@ -224,12 +224,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Receipt was recovered from The Pit in Case File 076. It is tied to Census Taker, 5:13, and marker 734.",
       "unknownInfo": "Out and Bell Toll suggest this object matters beyond the first reading.",
-      "image": "images/Objects/076 - trade token.png"
+      "image": "images/Objects/076 - trade token.jpg"
     },
     {
       "id": "076_location",
       "type": "Location",
-      "image": "images/Location/case-076-market-square-location.png",
+      "image": "images/Location/case-076-market-square-location.jpg",
       "name": "Pit",
       "symbol": "📍",
       "description": "The active scene for Case File 076. Recovered field notes place the primary event at Pit.",
@@ -254,7 +254,7 @@ window.SONG_DATA = {
     {
       "id": "076_marker",
       "type": "Marker",
-      "image": "images/Markers/076_What_She_Didnt_Tell.png",
+      "image": "images/Markers/076_What_She_Didnt_Tell.jpg",
       "name": "Marker 734",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 076.",

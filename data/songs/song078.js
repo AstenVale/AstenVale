@@ -225,12 +225,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Empty Tin was recovered from Banker's House in Case File 078. It is tied to Land Agent, 3:58, and marker 752.",
       "unknownInfo": "Further In and Nail Pulled from Wood suggest this object matters beyond the first reading.",
-      "image": "images/Objects/078 - ribbon.png"
+      "image": "images/Objects/078 - ribbon.jpg"
     },
     {
       "id": "078_location",
       "type": "Location",
-      "image": "images/Location/case-078-barn-location.png",
+      "image": "images/Location/case-078-barn-location.jpg",
       "name": "Banker'Shouse",
       "symbol": "📍",
       "description": "The active scene for Case File 078. Recovered field notes place the primary event at Banker'Shouse.",
@@ -255,7 +255,7 @@ window.SONG_DATA = {
     {
       "id": "078_marker",
       "type": "Marker",
-      "image": "images/Markers/078_The_Other_Witness.png",
+      "image": "images/Markers/078_The_Other_Witness.jpg",
       "name": "Marker 752",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 078.",

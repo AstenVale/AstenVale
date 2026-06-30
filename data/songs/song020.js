@@ -231,12 +231,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Headstone was recovered from Cemetery in Case File 020. It is tied to Groundskeeper, 12:15, and marker 187.",
       "unknownInfo": "Down and Rain suggest this object matters beyond the first reading.",
-      "image": "images/Objects/020 - ash.png"
+      "image": "images/Objects/020 - ash.jpg"
     },
     {
       "id": "020_location",
       "type": "Location",
-      "image": "images/Location/case-020-empty-kitchen-location.png",
+      "image": "images/Location/case-020-empty-kitchen-location.jpg",
       "name": "Cemetery",
       "symbol": "📍",
       "description": "The active scene for Case File 020. Recovered field notes place the primary event at Cemetery.",
@@ -249,12 +249,12 @@ window.SONG_DATA = {
       "symbol": "👤",
       "description": "Groundskeeper, identified in the case notes for Case File 020. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
-      "image": "images/Witness/Case 020 - lock-keeper.png"
+      "image": "images/Witness/Case 020 - lock-keeper.jpg"
     },
     {
       "id": "020_time",
       "type": "Time",
-      "image": "images/5 Time/020_lantern_3-13.png",
+      "image": "images/5 Time/020_lantern_3-13.jpg",
       "name": "1215",
       "symbol": "⌚",
       "description": "The time recorded in the case audio for Case File 020. Cross-referenced with field notes.",
@@ -263,7 +263,7 @@ window.SONG_DATA = {
     {
       "id": "020_marker",
       "type": "Marker",
-      "image": "images/Markers/020_The_Year_Passed.png",
+      "image": "images/Markers/020_The_Year_Passed.jpg",
       "name": "Marker 187",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 020.",

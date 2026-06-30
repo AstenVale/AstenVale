@@ -222,12 +222,12 @@ window.SONG_DATA = {
       "symbol": "💍",
       "description": "A plain gold band recovered from the Church floor. Engraved inside: a date that predates the church's construction.",
       "unknownInfo": "Whose name was removed from the inscription — and when.",
-      "image": "images/Objects/004 - wedding ring.png"
+      "image": "images/Objects/004 - wedding ring.jpg"
     },
     {
       "id": "004_location",
       "type": "Location",
-      "image": "images/Location/case-004-church-location.png",
+      "image": "images/Location/case-004-church-location.jpg",
       "name": "The Church",
       "symbol": "📍",
       "description": "A small stone church at the edge of the valley. Unconsecrated. No congregation on record since 1943.",
@@ -240,12 +240,12 @@ window.SONG_DATA = {
       "symbol": "👤",
       "description": "The same Widow from Case 002. Found inside the church at 6:45. She did not speak. She was already leaving.",
       "unknownInfo": "Whether The Widow placed the ring — or was there to retrieve it.",
-      "image": "images/Witness/Case 004 - station-master.png"
+      "image": "images/Witness/Case 004 - station-master.jpg"
     },
     {
       "id": "004_time",
       "type": "Time",
-      "image": "images/5 Time/004_lantern_6-45.png",
+      "image": "images/5 Time/004_lantern_6-45.jpg",
       "name": "6:45",
       "symbol": "⌚",
       "description": "The time of the Bell Toll audio captured inside the Church. The bell has no bell tower. No mechanism was found.",
@@ -254,7 +254,7 @@ window.SONG_DATA = {
     {
       "id": "004_marker",
       "type": "Marker",
-      "image": "images/Markers/004_The_Widow_Knows.png",
+      "image": "images/Markers/004_The_Widow_Knows.jpg",
       "name": "Marker 12",
       "symbol": "◆",
       "description": "Found scratched into the church doorframe. Marker 12 — the lowest number yet. The sequence is not ascending.",

@@ -251,7 +251,7 @@ window.SONG_DATA = {
     {
       "id": "445_marker",
       "type": "Marker",
-      "image": "images/Markers/445_Who_Lit_It.png",
+      "image": "images/Markers/445_Who_Lit_It.jpg",
       "name": "Marker 3807",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 445.",

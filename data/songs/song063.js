@@ -234,12 +234,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Wax Seal was recovered from Lumber Camp in Case File 063. It is tied to Blacksmith, 3:44, and marker 625.",
       "unknownInfo": "Sideways and River Water suggest this object matters beyond the first reading.",
-      "image": "images/Objects/063 - rope.png"
+      "image": "images/Objects/063 - rope.jpg"
     },
     {
       "id": "063_location",
       "type": "Location",
-      "image": "images/Location/case-063-sawmill-location.png",
+      "image": "images/Location/case-063-sawmill-location.jpg",
       "name": "Lumbercamp",
       "symbol": "📍",
       "description": "The active scene for Case File 063. Recovered field notes place the primary event at Lumbercamp.",
@@ -252,12 +252,12 @@ window.SONG_DATA = {
       "symbol": "👤",
       "description": "Blacksmith, identified in the case notes for Case File 063. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
-      "image": "images/Witness/Case 063 - innkeeper.png"
+      "image": "images/Witness/Case 063 - innkeeper.jpg"
     },
     {
       "id": "063_time",
       "type": "Time",
-      "image": "images/5 Time/063_lantern_1-11.png",
+      "image": "images/5 Time/063_lantern_1-11.jpg",
       "name": "344",
       "symbol": "⌚",
       "description": "The time recorded in the case audio for Case File 063. Cross-referenced with field notes.",
@@ -266,7 +266,7 @@ window.SONG_DATA = {
     {
       "id": "063_marker",
       "type": "Marker",
-      "image": "images/Markers/063_The_Echo.png",
+      "image": "images/Markers/063_The_Echo.jpg",
       "name": "Marker 625",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 063.",

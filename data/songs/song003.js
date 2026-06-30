@@ -223,12 +223,12 @@ window.SONG_DATA = {
       "symbol": "🗝",
       "description": "A heavily corroded iron key recovered from the Ash Creek embankment. Lock unknown. Too rusted to date precisely.",
       "unknownInfo": "What it opens — and why it was buried rather than discarded.",
-      "image": "images/Objects/003 - rusted key.png"
+      "image": "images/Objects/003 - rusted key.jpg"
     },
     {
       "id": "003_location",
       "type": "Location",
-      "image": "images/Location/case-003-ash-creek-location.png",
+      "image": "images/Location/case-003-ash-creek-location.jpg",
       "name": "Ash Creek",
       "symbol": "📍",
       "description": "A dry creek bed south of the valley. The key was found partially buried under ash deposits near the bank.",
@@ -241,12 +241,12 @@ window.SONG_DATA = {
       "symbol": "👤",
       "description": "A local authority figure identified in the case notes. Present at Ash Creek. Testimony contradicts the field report.",
       "unknownInfo": "Why the Sheriff's account of the creek differs from the archived photographs.",
-      "image": "images/Witness/Case 003 - sheriff.png"
+      "image": "images/Witness/Case 003 - sheriff.jpg"
     },
     {
       "id": "003_time",
       "type": "Time",
-      "image": "images/5 Time/003_lantern_11-17.png",
+      "image": "images/5 Time/003_lantern_11-17.jpg",
       "name": "11:17",
       "symbol": "⌚",
       "description": "The time stamp on the Crow Call audio captured at Ash Creek. Also the time on the Sheriff's written report.",
@@ -255,7 +255,7 @@ window.SONG_DATA = {
     {
       "id": "003_marker",
       "type": "Marker",
-      "image": "images/Markers/003_The_Rusted_Key.png",
+      "image": "images/Markers/003_The_Rusted_Key.jpg",
       "name": "Marker 43",
       "symbol": "◆",
       "description": "A field marker discovered at Ash Creek. Third in the sequence. Points West. Archived under Case 003A.",

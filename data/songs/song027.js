@@ -222,12 +222,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Leather Strap was recovered from Courthouse in Case File 027. It is tied to Widow, 2:47, and marker 325.",
       "unknownInfo": "Somewhere and Empty Wagon suggest this object matters beyond the first reading.",
-      "image": "images/Objects/027 - comb.png"
+      "image": "images/Objects/027 - comb.jpg"
     },
     {
       "id": "027_location",
       "type": "Location",
-      "image": "images/Location/case-027-tannery-location.png",
+      "image": "images/Location/case-027-tannery-location.jpg",
       "name": "Courthouse",
       "symbol": "📍",
       "description": "The active scene for Case File 027. Recovered field notes place the primary event at Courthouse.",
@@ -240,12 +240,12 @@ window.SONG_DATA = {
       "symbol": "👤",
       "description": "Widow, identified in the case notes for Case File 027. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
-      "image": "images/Witness/Case 027 - conductor.png"
+      "image": "images/Witness/Case 027 - conductor.jpg"
     },
     {
       "id": "027_time",
       "type": "Time",
-      "image": "images/5 Time/027_lantern_11-51.png",
+      "image": "images/5 Time/027_lantern_11-51.jpg",
       "name": "247",
       "symbol": "⌚",
       "description": "The time recorded in the case audio for Case File 027. Cross-referenced with field notes.",
@@ -254,7 +254,7 @@ window.SONG_DATA = {
     {
       "id": "027_marker",
       "type": "Marker",
-      "image": "images/Markers/027_The_Unlocked_Door.png",
+      "image": "images/Markers/027_The_Unlocked_Door.jpg",
       "name": "Marker 325",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 027.",

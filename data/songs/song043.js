@@ -233,12 +233,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Chain was recovered from Grain Mill in Case File 043. It is tied to Woodsman, 5:09, and marker 461.",
       "unknownInfo": "Out of Sight and Dry Grass suggest this object matters beyond the first reading.",
-      "image": "images/Objects/043 - dried flower.png"
+      "image": "images/Objects/043 - dried flower.jpg"
     },
     {
       "id": "043_location",
       "type": "Location",
-      "image": "images/Location/case-043-smithy-location.png",
+      "image": "images/Location/case-043-smithy-location.jpg",
       "name": "Grainmill",
       "symbol": "📍",
       "description": "The active scene for Case File 043. Recovered field notes place the primary event at Grainmill.",
@@ -251,12 +251,12 @@ window.SONG_DATA = {
       "symbol": "👤",
       "description": "Woodsman, identified in the case notes for Case File 043. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
-      "image": "images/Witness/Case 043 - surveyor.png"
+      "image": "images/Witness/Case 043 - surveyor.jpg"
     },
     {
       "id": "043_time",
       "type": "Time",
-      "image": "images/5 Time/043_lantern_9-44.png",
+      "image": "images/5 Time/043_lantern_9-44.jpg",
       "name": "509",
       "symbol": "⌚",
       "description": "The time recorded in the case audio for Case File 043. Cross-referenced with field notes.",
@@ -265,7 +265,7 @@ window.SONG_DATA = {
     {
       "id": "043_marker",
       "type": "Marker",
-      "image": "images/Markers/043_The_Stone_Says.png",
+      "image": "images/Markers/043_The_Stone_Says.jpg",
       "name": "Marker 461",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 043.",

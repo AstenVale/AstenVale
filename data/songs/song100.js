@@ -237,7 +237,7 @@ window.SONG_DATA = {
     {
       "id": "100_location",
       "type": "Location",
-      "image": "images/Location/case-100-crows-nest-ridge-location.png",
+      "image": "images/Location/case-100-crows-nest-ridge-location.jpg",
       "name": "Saloon",
       "symbol": "📍",
       "description": "The active scene for Case File 100. Recovered field notes place the primary event at Saloon.",
@@ -262,7 +262,7 @@ window.SONG_DATA = {
     {
       "id": "100_marker",
       "type": "Marker",
-      "image": "images/Markers/100_The_Locked_Cabinet.png",
+      "image": "images/Markers/100_The_Locked_Cabinet.jpg",
       "name": "Marker 934",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 100.",

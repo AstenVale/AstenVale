@@ -262,7 +262,7 @@ window.SONG_DATA = {
     {
       "id": "214_marker",
       "type": "Marker",
-      "image": "images/Markers/214_Named_and_Unnamed.png",
+      "image": "images/Markers/214_Named_and_Unnamed.jpg",
       "name": "Marker 1888",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 214.",

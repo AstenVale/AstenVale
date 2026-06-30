@@ -221,12 +221,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Key was recovered from Diner in Case File 058. It is tied to Lamplighter, 8:00, and marker 588.",
       "unknownInfo": "Left and River Water suggest this object matters beyond the first reading.",
-      "image": "images/Objects/058 - inkwell.png"
+      "image": "images/Objects/058 - inkwell.jpg"
     },
     {
       "id": "058_location",
       "type": "Location",
-      "image": "images/Location/case-058-east-field-location.png",
+      "image": "images/Location/case-058-east-field-location.jpg",
       "name": "Diner",
       "symbol": "📍",
       "description": "The active scene for Case File 058. Recovered field notes place the primary event at Diner.",
@@ -239,12 +239,12 @@ window.SONG_DATA = {
       "symbol": "👤",
       "description": "Lamplighter, identified in the case notes for Case File 058. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
-      "image": "images/Witness/Case 058 - cartographer.png"
+      "image": "images/Witness/Case 058 - cartographer.jpg"
     },
     {
       "id": "058_time",
       "type": "Time",
-      "image": "images/5 Time/058_lantern_6-06.png",
+      "image": "images/5 Time/058_lantern_6-06.jpg",
       "name": "800",
       "symbol": "⌚",
       "description": "The time recorded in the case audio for Case File 058. Cross-referenced with field notes.",
@@ -253,7 +253,7 @@ window.SONG_DATA = {
     {
       "id": "058_marker",
       "type": "Marker",
-      "image": "images/Markers/058_The_Drift.png",
+      "image": "images/Markers/058_The_Drift.jpg",
       "name": "Marker 588",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 058.",

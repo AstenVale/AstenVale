@@ -252,7 +252,7 @@ window.SONG_DATA = {
     {
       "id": "383_marker",
       "type": "Marker",
-      "image": "images/Markers/383_The_Surface_Break.png",
+      "image": "images/Markers/383_The_Surface_Break.jpg",
       "name": "Marker 3297",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 383.",

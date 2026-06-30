@@ -221,12 +221,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Flask was recovered from Feed Store in Case File 054. It is tied to Conductor, 3:03, and marker 552.",
       "unknownInfo": "Over and Floorboard suggest this object matters beyond the first reading.",
-      "image": "images/Objects/054 - thimble.png"
+      "image": "images/Objects/054 - thimble.jpg"
     },
     {
       "id": "054_location",
       "type": "Location",
-      "image": "images/Location/case-054-old-wharf-location.png",
+      "image": "images/Location/case-054-old-wharf-location.jpg",
       "name": "Feedstore",
       "symbol": "📍",
       "description": "The active scene for Case File 054. Recovered field notes place the primary event at Feedstore.",
@@ -239,12 +239,12 @@ window.SONG_DATA = {
       "symbol": "👤",
       "description": "Conductor, identified in the case notes for Case File 054. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
-      "image": "images/Witness/Case 054 - the-mute.png"
+      "image": "images/Witness/Case 054 - the-mute.jpg"
     },
     {
       "id": "054_time",
       "type": "Time",
-      "image": "images/5 Time/054_lantern_10-51.png",
+      "image": "images/5 Time/054_lantern_10-51.jpg",
       "name": "303",
       "symbol": "⌚",
       "description": "The time recorded in the case audio for Case File 054. Cross-referenced with field notes.",
@@ -253,7 +253,7 @@ window.SONG_DATA = {
     {
       "id": "054_marker",
       "type": "Marker",
-      "image": "images/Markers/054_The_Fire_Went_Out.png",
+      "image": "images/Markers/054_The_Fire_Went_Out.jpg",
       "name": "Marker 552",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 054.",

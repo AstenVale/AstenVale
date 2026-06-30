@@ -222,12 +222,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Coin was recovered from Smithy in Case File 053. It is tied to Banker, 9:44, and marker 543.",
       "unknownInfo": "Away from Town and Nail Pulled from Wood suggest this object matters beyond the first reading.",
-      "image": "images/Objects/053 - canteen.png"
+      "image": "images/Objects/053 - canteen.jpg"
     },
     {
       "id": "053_location",
       "type": "Location",
-      "image": "images/Location/case-053-undertakers-hall-location.png",
+      "image": "images/Location/case-053-undertakers-hall-location.jpg",
       "name": "Smithy",
       "symbol": "📍",
       "description": "The active scene for Case File 053. Recovered field notes place the primary event at Smithy.",
@@ -240,12 +240,12 @@ window.SONG_DATA = {
       "symbol": "👤",
       "description": "Banker, identified in the case notes for Case File 053. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
-      "image": "images/Witness/Case 053 - peddler.png"
+      "image": "images/Witness/Case 053 - peddler.jpg"
     },
     {
       "id": "053_time",
       "type": "Time",
-      "image": "images/5 Time/053_lantern_6-32.png",
+      "image": "images/5 Time/053_lantern_6-32.jpg",
       "name": "944",
       "symbol": "⌚",
       "description": "The time recorded in the case audio for Case File 053. Cross-referenced with field notes.",
@@ -254,7 +254,7 @@ window.SONG_DATA = {
     {
       "id": "053_marker",
       "type": "Marker",
-      "image": "images/Markers/053_What_Didnt_Freeze.png",
+      "image": "images/Markers/053_What_Didnt_Freeze.jpg",
       "name": "Marker 543",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 053.",

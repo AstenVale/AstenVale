@@ -234,12 +234,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Key was recovered from Old House in Case File 022. It is tied to Ghost Child, 3:13, and marker 209.",
       "unknownInfo": "Home and Door Creak suggest this object matters beyond the first reading.",
-      "image": "images/Objects/022 - suitcase latch.png"
+      "image": "images/Objects/022 - suitcase latch.jpg"
     },
     {
       "id": "022_location",
       "type": "Location",
-      "image": "images/Location/case-022-quarry-edge-location.png",
+      "image": "images/Location/case-022-quarry-edge-location.jpg",
       "name": "Oldhouse",
       "symbol": "📍",
       "description": "The active scene for Case File 022. Recovered field notes place the primary event at Oldhouse.",
@@ -252,12 +252,12 @@ window.SONG_DATA = {
       "symbol": "👤",
       "description": "Ghostchild, identified in the case notes for Case File 022. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
-      "image": "images/Witness/Case 022 - wainwright.png"
+      "image": "images/Witness/Case 022 - wainwright.jpg"
     },
     {
       "id": "022_time",
       "type": "Time",
-      "image": "images/5 Time/022_lantern_5-30.png",
+      "image": "images/5 Time/022_lantern_5-30.jpg",
       "name": "313",
       "symbol": "⌚",
       "description": "The time recorded in the case audio for Case File 022. Cross-referenced with field notes.",
@@ -266,7 +266,7 @@ window.SONG_DATA = {
     {
       "id": "022_marker",
       "type": "Marker",
-      "image": "images/Markers/022_The_Return_to_Black_Pine.png",
+      "image": "images/Markers/022_The_Return_to_Black_Pine.jpg",
       "name": "Marker 209",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 022.",

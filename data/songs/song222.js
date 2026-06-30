@@ -252,7 +252,7 @@ window.SONG_DATA = {
     {
       "id": "222_marker",
       "type": "Marker",
-      "image": "images/Markers/222_Cut_Off.png",
+      "image": "images/Markers/222_Cut_Off.jpg",
       "name": "Marker 1952",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 222.",

@@ -222,12 +222,12 @@ window.SONG_DATA = {
       "symbol": "🪶",
       "description": "A single crow feather recovered from the riverbank at Pine Hollow. Found pressed inside the hollow letter.",
       "unknownInfo": "Whether it was left deliberately — and by the same hand that wrote the letter.",
-      "image": "images/Objects/002 - crow feather.png"
+      "image": "images/Objects/002 - crow feather.jpg"
     },
     {
       "id": "002_location",
       "type": "Location",
-      "image": "images/Location/case-002-pine-hollow-river-location.png",
+      "image": "images/Location/case-002-pine-hollow-river-location.jpg",
       "name": "Pine Hollow River",
       "symbol": "📍",
       "description": "A river crossing east of the valley. The hollow letter was found wedged beneath a stone on the bank.",
@@ -240,12 +240,12 @@ window.SONG_DATA = {
       "symbol": "👤",
       "description": "A woman identified only as The Widow. Present at Pine Hollow River. Has not given a formal statement.",
       "unknownInfo": "Her relationship to the letter's author and why she was there.",
-      "image": "images/Witness/Case 002 - widow.png"
+      "image": "images/Witness/Case 002 - widow.jpg"
     },
     {
       "id": "002_time",
       "type": "Time",
-      "image": "images/5 Time/002_lantern_8-00.png",
+      "image": "images/5 Time/002_lantern_8-00.jpg",
       "name": "8:00",
       "symbol": "⌚",
       "description": "The time at which the CREEEAK audio event is recorded in the case file. The hollow letter was dated the same hour.",
@@ -254,7 +254,7 @@ window.SONG_DATA = {
     {
       "id": "002_marker",
       "type": "Marker",
-      "image": "images/Markers/002_The_Hollow_Letter.png",
+      "image": "images/Markers/002_The_Hollow_Letter.jpg",
       "name": "Marker 27",
       "symbol": "◆",
       "description": "A field marker left at the Pine Hollow site. Connects to the Public Archive. Written in a different hand than Marker 17.",

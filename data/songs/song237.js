@@ -262,7 +262,7 @@ window.SONG_DATA = {
     {
       "id": "237_marker",
       "type": "Marker",
-      "image": "images/Markers/237_The_Circuit.png",
+      "image": "images/Markers/237_The_Circuit.jpg",
       "name": "Marker 2079",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 237.",

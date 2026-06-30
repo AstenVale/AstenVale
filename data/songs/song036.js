@@ -223,12 +223,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Pocket Watch was recovered from Cooper's Yard in Case File 036. It is tied to Banker, 7:37, and marker 406.",
       "unknownInfo": "Home and Saw Cutting suggest this object matters beyond the first reading.",
-      "image": "images/Objects/036 - brooch.png"
+      "image": "images/Objects/036 - brooch.jpg"
     },
     {
       "id": "036_location",
       "type": "Location",
-      "image": "images/Location/case-036-library-location.png",
+      "image": "images/Location/case-036-library-location.jpg",
       "name": "Cooper'Syard",
       "symbol": "📍",
       "description": "The active scene for Case File 036. Recovered field notes place the primary event at Cooper'Syard.",
@@ -241,12 +241,12 @@ window.SONG_DATA = {
       "symbol": "👤",
       "description": "Banker, identified in the case notes for Case File 036. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
-      "image": "images/Witness/Case 036 - typesetter.png"
+      "image": "images/Witness/Case 036 - typesetter.jpg"
     },
     {
       "id": "036_time",
       "type": "Time",
-      "image": "images/5 Time/036_lantern_12-33.png",
+      "image": "images/5 Time/036_lantern_12-33.jpg",
       "name": "737",
       "symbol": "⌚",
       "description": "The time recorded in the case audio for Case File 036. Cross-referenced with field notes.",
@@ -255,7 +255,7 @@ window.SONG_DATA = {
     {
       "id": "036_marker",
       "type": "Marker",
-      "image": "images/Markers/036_The_Closed_Case.png",
+      "image": "images/Markers/036_The_Closed_Case.jpg",
       "name": "Marker 406",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 036.",

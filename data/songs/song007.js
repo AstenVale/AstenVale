@@ -221,12 +221,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Matchbook was recovered from Diner in Case File 007. It is tied to Stranger, 9:15, and marker 61.",
       "unknownInfo": "South and Match Strike suggest this object matters beyond the first reading.",
-      "image": "images/Objects/007 - matchbook.png"
+      "image": "images/Objects/007 - matchbook.jpg"
     },
     {
       "id": "007_location",
       "type": "Location",
-      "image": "images/Location/case-007-diner-location.png",
+      "image": "images/Location/case-007-diner-location.jpg",
       "name": "Diner",
       "symbol": "📍",
       "description": "The active scene for Case File 007. Recovered field notes place the primary event at Diner.",
@@ -239,12 +239,12 @@ window.SONG_DATA = {
       "symbol": "👤",
       "description": "Stranger, identified in the case notes for Case File 007. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
-      "image": "images/Witness/Case 007 - mechanic.png"
+      "image": "images/Witness/Case 007 - mechanic.jpg"
     },
     {
       "id": "007_time",
       "type": "Time",
-      "image": "images/5 Time/007_lantern_9-15.png",
+      "image": "images/5 Time/007_lantern_9-15.jpg",
       "name": "915",
       "symbol": "⌚",
       "description": "The time recorded in the case audio for Case File 007. Cross-referenced with field notes.",
@@ -253,7 +253,7 @@ window.SONG_DATA = {
     {
       "id": "007_marker",
       "type": "Marker",
-      "image": "images/Markers/007_Strangers_Matchbook.png",
+      "image": "images/Markers/007_Strangers_Matchbook.jpg",
       "name": "Marker 61",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 007.",

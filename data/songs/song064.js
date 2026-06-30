@@ -234,12 +234,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Spool of Thread was recovered from Forge in Case File 064. It is tied to Lamplighter, 12:17, and marker 634.",
       "unknownInfo": "Further In and Cellar Door suggest this object matters beyond the first reading.",
-      "image": "images/Objects/064 - ring.png"
+      "image": "images/Objects/064 - ring.jpg"
     },
     {
       "id": "064_location",
       "type": "Location",
-      "image": "images/Location/case-064-saloon-location.png",
+      "image": "images/Location/case-064-saloon-location.jpg",
       "name": "Forge",
       "symbol": "📍",
       "description": "The active scene for Case File 064. Recovered field notes place the primary event at Forge.",
@@ -252,12 +252,12 @@ window.SONG_DATA = {
       "symbol": "👤",
       "description": "Lamplighter, identified in the case notes for Case File 064. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
-      "image": "images/Witness/Case 064 - the-handless-man.png"
+      "image": "images/Witness/Case 064 - the-handless-man.jpg"
     },
     {
       "id": "064_time",
       "type": "Time",
-      "image": "images/5 Time/064_lantern_2-38.png",
+      "image": "images/5 Time/064_lantern_2-38.jpg",
       "name": "1217",
       "symbol": "⌚",
       "description": "The time recorded in the case audio for Case File 064. Cross-referenced with field notes.",
@@ -266,7 +266,7 @@ window.SONG_DATA = {
     {
       "id": "064_marker",
       "type": "Marker",
-      "image": "images/Markers/064_Below_the_Church.png",
+      "image": "images/Markers/064_Below_the_Church.jpg",
       "name": "Marker 634",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 064.",

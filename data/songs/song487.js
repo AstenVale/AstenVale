@@ -254,7 +254,7 @@ window.SONG_DATA = {
     {
       "id": "487_marker",
       "type": "Marker",
-      "image": "images/Markers/487_The_Night_Road.png",
+      "image": "images/Markers/487_The_Night_Road.jpg",
       "name": "Marker 4161",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 487.",

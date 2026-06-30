@@ -252,7 +252,7 @@ window.SONG_DATA = {
     {
       "id": "184_marker",
       "type": "Marker",
-      "image": "images/Markers/184_What_Shattered.png",
+      "image": "images/Markers/184_What_Shattered.jpg",
       "name": "Marker 1634",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 184.",

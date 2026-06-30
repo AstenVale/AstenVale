@@ -221,12 +221,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Comb was recovered from Millpond in Case File 029. It is tied to Night Watchman, 4:03, and marker 343.",
       "unknownInfo": "Below and Breathing suggest this object matters beyond the first reading.",
-      "image": "images/Objects/029 - wool scarf.png"
+      "image": "images/Objects/029 - wool scarf.jpg"
     },
     {
       "id": "029_location",
       "type": "Location",
-      "image": "images/Location/case-029-watchmakers-shop-location.png",
+      "image": "images/Location/case-029-watchmakers-shop-location.jpg",
       "name": "Millpond",
       "symbol": "📍",
       "description": "The active scene for Case File 029. Recovered field notes place the primary event at Millpond.",
@@ -239,12 +239,12 @@ window.SONG_DATA = {
       "symbol": "👤",
       "description": "Nightwatchman, identified in the case notes for Case File 029. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
-      "image": "images/Witness/Case 029 - blacksmith.png"
+      "image": "images/Witness/Case 029 - blacksmith.jpg"
     },
     {
       "id": "029_time",
       "type": "Time",
-      "image": "images/5 Time/029_lantern_9-27.png",
+      "image": "images/5 Time/029_lantern_9-27.jpg",
       "name": "403",
       "symbol": "⌚",
       "description": "The time recorded in the case audio for Case File 029. Cross-referenced with field notes.",
@@ -253,7 +253,7 @@ window.SONG_DATA = {
     {
       "id": "029_marker",
       "type": "Marker",
-      "image": "images/Markers/029_The_Search_Party.png",
+      "image": "images/Markers/029_The_Search_Party.jpg",
       "name": "Marker 343",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 029.",

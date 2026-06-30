@@ -235,12 +235,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Dried Blood on Cloth was recovered from North Gate in Case File 072. It is tied to Fisherman, 6:32, and marker 706.",
       "unknownInfo": "Away from Town and Old Hinge suggest this object matters beyond the first reading.",
-      "image": "images/Objects/072 - button.png"
+      "image": "images/Objects/072 - button.jpg"
     },
     {
       "id": "072_location",
       "type": "Location",
-      "image": "images/Location/case-072-freight-yard-location.png",
+      "image": "images/Location/case-072-freight-yard-location.jpg",
       "name": "Northgate",
       "symbol": "📍",
       "description": "The active scene for Case File 072. Recovered field notes place the primary event at Northgate.",
@@ -253,7 +253,7 @@ window.SONG_DATA = {
       "symbol": "👤",
       "description": "Fisherman, identified in the case notes for Case File 072. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
-      "image": "images/Witness/Case 072 - night-porter.png"
+      "image": "images/Witness/Case 072 - night-porter.jpg"
     },
     {
       "id": "072_time",
@@ -266,7 +266,7 @@ window.SONG_DATA = {
     {
       "id": "072_marker",
       "type": "Marker",
-      "image": "images/Markers/072_Surface.png",
+      "image": "images/Markers/072_Surface.jpg",
       "name": "Marker 706",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 072.",

@@ -221,12 +221,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Candle was recovered from Cabin in Case File 028. It is tied to Chandler, 2:19, and marker 334.",
       "unknownInfo": "Under and Water Drip suggest this object matters beyond the first reading.",
-      "image": "images/Objects/028 - chain.png"
+      "image": "images/Objects/028 - chain.jpg"
     },
     {
       "id": "028_location",
       "type": "Location",
-      "image": "images/Location/case-028-water-tower-location.png",
+      "image": "images/Location/case-028-water-tower-location.jpg",
       "name": "Cabin",
       "symbol": "📍",
       "description": "The active scene for Case File 028. Recovered field notes place the primary event at Cabin.",
@@ -239,12 +239,12 @@ window.SONG_DATA = {
       "symbol": "👤",
       "description": "Chandler, identified in the case notes for Case File 028. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
-      "image": "images/Witness/Case 028 - miller.png"
+      "image": "images/Witness/Case 028 - miller.jpg"
     },
     {
       "id": "028_time",
       "type": "Time",
-      "image": "images/5 Time/028_lantern_8-17.png",
+      "image": "images/5 Time/028_lantern_8-17.jpg",
       "name": "219",
       "symbol": "⌚",
       "description": "The time recorded in the case audio for Case File 028. Cross-referenced with field notes.",
@@ -253,7 +253,7 @@ window.SONG_DATA = {
     {
       "id": "028_marker",
       "type": "Marker",
-      "image": "images/Markers/028_Three_Days_Gone.png",
+      "image": "images/Markers/028_Three_Days_Gone.jpg",
       "name": "Marker 334",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 028.",

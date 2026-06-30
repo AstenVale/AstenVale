@@ -228,7 +228,7 @@ window.SONG_DATA = {
     {
       "id": "097_location",
       "type": "Location",
-      "image": "images/Location/case-097-telegraph-office-location.png",
+      "image": "images/Location/case-097-telegraph-office-location.jpg",
       "name": "Weir",
       "symbol": "📍",
       "description": "The active scene for Case File 097. Recovered field notes place the primary event at Weir.",
@@ -253,7 +253,7 @@ window.SONG_DATA = {
     {
       "id": "097_marker",
       "type": "Marker",
-      "image": "images/Markers/097_The_Archive.png",
+      "image": "images/Markers/097_The_Archive.jpg",
       "name": "Marker 907",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 097.",

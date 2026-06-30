@@ -252,7 +252,7 @@ window.SONG_DATA = {
     {
       "id": "289_marker",
       "type": "Marker",
-      "image": "images/Markers/289_The_Repeated_Story.png",
+      "image": "images/Markers/289_The_Repeated_Story.jpg",
       "name": "Marker 2507",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 289.",

@@ -264,7 +264,7 @@ window.SONG_DATA = {
     {
       "id": "547_marker",
       "type": "Marker",
-      "image": "images/Markers/547_The_Storm_Witness.png",
+      "image": "images/Markers/547_The_Storm_Witness.jpg",
       "name": "Marker 4661",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 547.",

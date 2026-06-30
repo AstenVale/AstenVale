@@ -233,12 +233,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Bottle was recovered from Covered Bridge in Case File 065. It is tied to Deputy, 6:53, and marker 643.",
       "unknownInfo": "Ahead and Ice Crack suggest this object matters beyond the first reading.",
-      "image": "images/Objects/065 - hollow acorn.png"
+      "image": "images/Objects/065 - hollow acorn.jpg"
     },
     {
       "id": "065_location",
       "type": "Location",
-      "image": "images/Location/case-065-brick-kiln-location.png",
+      "image": "images/Location/case-065-brick-kiln-location.jpg",
       "name": "Coveredbridge",
       "symbol": "📍",
       "description": "The active scene for Case File 065. Recovered field notes place the primary event at Coveredbridge.",
@@ -251,12 +251,12 @@ window.SONG_DATA = {
       "symbol": "👤",
       "description": "Deputy, identified in the case notes for Case File 065. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
-      "image": "images/Witness/Case 065 - weaver.png"
+      "image": "images/Witness/Case 065 - weaver.jpg"
     },
     {
       "id": "065_time",
       "type": "Time",
-      "image": "images/5 Time/065_lantern_11-29.png",
+      "image": "images/5 Time/065_lantern_11-29.jpg",
       "name": "653",
       "symbol": "⌚",
       "description": "The time recorded in the case audio for Case File 065. Cross-referenced with field notes.",
@@ -265,7 +265,7 @@ window.SONG_DATA = {
     {
       "id": "065_marker",
       "type": "Marker",
-      "image": "images/Markers/065_What_They_Buried.png",
+      "image": "images/Markers/065_What_They_Buried.jpg",
       "name": "Marker 643",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 065.",

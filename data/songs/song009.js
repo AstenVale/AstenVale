@@ -222,12 +222,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Cabin Key was recovered from Cabin in Case File 009. It is tied to Mechanic, 10:22, and marker 72.",
       "unknownInfo": "North and Wind in Pines suggest this object matters beyond the first reading.",
-      "image": "images/Objects/009 - cabin key.png"
+      "image": "images/Objects/009 - cabin key.jpg"
     },
     {
       "id": "009_location",
       "type": "Location",
-      "image": "images/Location/case-009-highway-location.png",
+      "image": "images/Location/case-009-highway-location.jpg",
       "name": "Cabin",
       "symbol": "📍",
       "description": "The active scene for Case File 009. Recovered field notes place the primary event at Cabin.",
@@ -240,12 +240,12 @@ window.SONG_DATA = {
       "symbol": "👤",
       "description": "Mechanic, identified in the case notes for Case File 009. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
-      "image": "images/Witness/Case 009 - caretaker.png"
+      "image": "images/Witness/Case 009 - caretaker.jpg"
     },
     {
       "id": "009_time",
       "type": "Time",
-      "image": "images/5 Time/009_lantern_10-22.png",
+      "image": "images/5 Time/009_lantern_10-22.jpg",
       "name": "1022",
       "symbol": "⌚",
       "description": "The time recorded in the case audio for Case File 009. Cross-referenced with field notes.",
@@ -254,7 +254,7 @@ window.SONG_DATA = {
     {
       "id": "009_marker",
       "type": "Marker",
-      "image": "images/Markers/009_Cabin_Without_Smoke.png",
+      "image": "images/Markers/009_Cabin_Without_Smoke.jpg",
       "name": "Marker 72",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 009.",

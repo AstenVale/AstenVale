@@ -233,12 +233,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Bullet Casing was recovered from Potter's Field in Case File 089. It is tied to Barber, 5:09, and marker 843.",
       "unknownInfo": "Beyond and Horse Hooves suggest this object matters beyond the first reading.",
-      "image": "images/Objects/089 - broken clasp.png"
+      "image": "images/Objects/089 - broken clasp.jpg"
     },
     {
       "id": "089_location",
       "type": "Location",
-      "image": "images/Location/case-089-iron-bridge-location.png",
+      "image": "images/Location/case-089-iron-bridge-location.jpg",
       "name": "Potter'Sfield",
       "symbol": "📍",
       "description": "The active scene for Case File 089. Recovered field notes place the primary event at Potter'Sfield.",
@@ -263,7 +263,7 @@ window.SONG_DATA = {
     {
       "id": "089_marker",
       "type": "Marker",
-      "image": "images/Markers/089_After_the_Ash.png",
+      "image": "images/Markers/089_After_the_Ash.jpg",
       "name": "Marker 843",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 089.",

@@ -233,12 +233,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Photograph was recovered from Empty Kitchen in Case File 023. It is tied to Neighbor, 9:45, and marker 220.",
       "unknownInfo": "Away and Clock Ticking suggest this object matters beyond the first reading.",
-      "image": "images/Objects/023 - charcoal sketch.png"
+      "image": "images/Objects/023 - charcoal sketch.jpg"
     },
     {
       "id": "023_location",
       "type": "Location",
-      "image": "images/Location/case-023-courthouse-location.png",
+      "image": "images/Location/case-023-courthouse-location.jpg",
       "name": "Emptykitchen",
       "symbol": "📍",
       "description": "The active scene for Case File 023. Recovered field notes place the primary event at Emptykitchen.",
@@ -251,12 +251,12 @@ window.SONG_DATA = {
       "symbol": "👤",
       "description": "Neighbor, identified in the case notes for Case File 023. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
-      "image": "images/Witness/Case 023 - fisherman.png"
+      "image": "images/Witness/Case 023 - fisherman.jpg"
     },
     {
       "id": "023_time",
       "type": "Time",
-      "image": "images/5 Time/023_lantern_9-55.png",
+      "image": "images/5 Time/023_lantern_9-55.jpg",
       "name": "945",
       "symbol": "⌚",
       "description": "The time recorded in the case audio for Case File 023. Cross-referenced with field notes.",
@@ -265,7 +265,7 @@ window.SONG_DATA = {
     {
       "id": "023_marker",
       "type": "Marker",
-      "image": "images/Markers/023_The_Empty_Chair.png",
+      "image": "images/Markers/023_The_Empty_Chair.jpg",
       "name": "Marker 220",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 023.",

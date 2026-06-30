@@ -261,7 +261,7 @@ window.SONG_DATA = {
     {
       "id": "386_marker",
       "type": "Marker",
-      "image": "images/Markers/386_The_White_Month.png",
+      "image": "images/Markers/386_The_White_Month.jpg",
       "name": "Marker 3316",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 386.",
