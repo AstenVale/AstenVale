@@ -536,7 +536,7 @@ body.unlocked::before{
         <div class="ap-title" id="ap-title">&#8212;</div>
         <div class="ap-sub" id="ap-sub">Recovered Investigation Recording</div>
 
-        <audio id="ap-audio" preload="none"></audio>
+        <audio id="ap-audio" preload="none" class="native-audio"></audio>
 
         <div class="ap-controls">
           <button class="ap-play" id="ap-play" aria-label="Play recording" title="Play / Pause (Space)">&#9654;</button>
@@ -919,6 +919,7 @@ body.unlocked::before{
     wrap.className = 'rm-player';
     var audio = document.createElement('audio');
     audio.preload = 'none';
+    audio.className = 'native-audio';
     audio.src = audioSrc;
     wrap.appendChild(audio);
 
@@ -1392,6 +1393,7 @@ body.unlocked::before{
         (function() {
           var sevAudio = document.createElement('audio');
           sevAudio.preload = 'none';
+          sevAudio.className = 'native-audio';
           sevAudio.style.display = 'none';
           var sevSrc = document.createElement('source');
           sevSrc.src = soundData.audioFile; sevSrc.type = 'audio/mpeg';
@@ -1634,6 +1636,7 @@ body.unlocked::before{
 
         var wtAudio = document.createElement('audio');
         wtAudio.preload = 'none';
+        wtAudio.className = 'native-audio';
         wtAudio.src = tSrc;
         wtAudio.style.display = 'none';
         wtWrap.appendChild(wtAudio);
