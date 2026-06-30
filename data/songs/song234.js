@@ -263,6 +263,7 @@ window.SONG_DATA = {
     {
       "id": "234_marker",
       "type": "Marker",
+      "image": "images/Markers/234_Graveyard_Hours.png",
       "name": "Marker 2052",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 234.",

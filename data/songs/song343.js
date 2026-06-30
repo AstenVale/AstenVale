@@ -262,6 +262,7 @@ window.SONG_DATA = {
     {
       "id": "343_marker",
       "type": "Marker",
+      "image": "images/Markers/343_The_Second_Grave.png",
       "name": "Marker 2961",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 343.",

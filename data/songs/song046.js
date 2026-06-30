@@ -253,6 +253,7 @@ window.SONG_DATA = {
     {
       "id": "046_time",
       "type": "Time",
+      "image": "images/5 Time/046_lantern_1-26.png",
       "name": "1019",
       "symbol": "⌚",
       "description": "The time recorded in the case audio for Case File 046. Cross-referenced with field notes.",
@@ -261,6 +262,7 @@ window.SONG_DATA = {
     {
       "id": "046_marker",
       "type": "Marker",
+      "image": "images/Markers/046_The_Far_Bank.png",
       "name": "Marker 488",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 046.",

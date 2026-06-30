@@ -263,6 +263,7 @@ window.SONG_DATA = {
     {
       "id": "389_marker",
       "type": "Marker",
+      "image": "images/Markers/389_Washed_Out.png",
       "name": "Marker 3343",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 389.",

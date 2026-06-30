@@ -262,6 +262,7 @@ window.SONG_DATA = {
     {
       "id": "493_marker",
       "type": "Marker",
+      "image": "images/Markers/493_The_Water_Gone.png",
       "name": "Marker 4207",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 493.",

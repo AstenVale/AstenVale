@@ -252,6 +252,7 @@ window.SONG_DATA = {
     {
       "id": "080_marker",
       "type": "Marker",
+      "image": "images/Markers/080_The_Sunday_Pattern.png",
       "name": "Marker 770",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 080.",

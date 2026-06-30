@@ -260,6 +260,7 @@ window.SONG_DATA = {
     {
       "id": "350_marker",
       "type": "Marker",
+      "image": "images/Markers/350_The_Ticket.png",
       "name": "Marker 3016",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 350.",

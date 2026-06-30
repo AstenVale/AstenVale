@@ -262,6 +262,7 @@ window.SONG_DATA = {
     {
       "id": "504_marker",
       "type": "Marker",
+      "image": "images/Markers/504_The_Rain_Returns.png",
       "name": "Marker 4306",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 504.",

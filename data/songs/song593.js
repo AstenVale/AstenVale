@@ -251,6 +251,7 @@ window.SONG_DATA = {
     {
       "id": "593_marker",
       "type": "Marker",
+      "image": "images/Markers/593_The_Vault_Opens.png",
       "name": "Marker 5043",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 593.",

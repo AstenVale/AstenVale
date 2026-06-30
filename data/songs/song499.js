@@ -262,6 +262,7 @@ window.SONG_DATA = {
     {
       "id": "499_marker",
       "type": "Marker",
+      "image": "images/Markers/499_The_Dry_Record.png",
       "name": "Marker 4261",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 499.",

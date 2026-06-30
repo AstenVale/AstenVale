@@ -260,6 +260,7 @@ window.SONG_DATA = {
     {
       "id": "175_marker",
       "type": "Marker",
+      "image": "images/Markers/175_The_Keepers_Log.png",
       "name": "Marker 1561",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 175.",

@@ -251,6 +251,7 @@ window.SONG_DATA = {
     {
       "id": "210_marker",
       "type": "Marker",
+      "image": "images/Markers/210_The_Changed_Identity.png",
       "name": "Marker 1852",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 210.",

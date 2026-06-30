@@ -262,6 +262,7 @@ window.SONG_DATA = {
     {
       "id": "233_marker",
       "type": "Marker",
+      "image": "images/Markers/233_The_Shift.png",
       "name": "Marker 2043",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 233.",

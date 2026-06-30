@@ -262,6 +262,7 @@ window.SONG_DATA = {
     {
       "id": "174_marker",
       "type": "Marker",
+      "image": "images/Markers/174_Oil_and_Flame.png",
       "name": "Marker 1552",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 174.",

@@ -263,6 +263,7 @@ window.SONG_DATA = {
     {
       "id": "288_marker",
       "type": "Marker",
+      "image": "images/Markers/288_What_the_Hours_Say.png",
       "name": "Marker 2506",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 288.",

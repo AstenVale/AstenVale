@@ -251,6 +251,7 @@ window.SONG_DATA = {
     {
       "id": "293_marker",
       "type": "Marker",
+      "image": "images/Markers/293_Why_She_Keeps_Telling.png",
       "name": "Marker 2543",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 293.",

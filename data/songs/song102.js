@@ -260,6 +260,7 @@ window.SONG_DATA = {
     {
       "id": "102_marker",
       "type": "Marker",
+      "image": "images/Markers/102_The_Missing_Page.png",
       "name": "Marker 952",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 102.",

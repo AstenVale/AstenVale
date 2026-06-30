@@ -261,6 +261,7 @@ window.SONG_DATA = {
     {
       "id": "523_marker",
       "type": "Marker",
+      "image": "images/Markers/523_The_Other_Victim.png",
       "name": "Marker 4461",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 523.",

@@ -263,6 +263,7 @@ window.SONG_DATA = {
     {
       "id": "496_marker",
       "type": "Marker",
+      "image": "images/Markers/496_The_Cracked_Earth.png",
       "name": "Marker 4234",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 496.",

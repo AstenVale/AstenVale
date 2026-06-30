@@ -262,6 +262,7 @@ window.SONG_DATA = {
     {
       "id": "282_marker",
       "type": "Marker",
+      "image": "images/Markers/282_What_the_Clock_Proves.png",
       "name": "Marker 2452",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 282.",

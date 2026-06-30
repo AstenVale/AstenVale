@@ -261,6 +261,7 @@ window.SONG_DATA = {
     {
       "id": "301_marker",
       "type": "Marker",
+      "image": "images/Markers/301_The_House_on_Mill_Road.png",
       "name": "Marker 2607",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 301.",

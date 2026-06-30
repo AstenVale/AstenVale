@@ -254,6 +254,7 @@ window.SONG_DATA = {
     {
       "id": "022_time",
       "type": "Time",
+      "image": "images/5 Time/022_lantern_5-30.png",
       "name": "313",
       "symbol": "⌚",
       "description": "The time recorded in the case audio for Case File 022. Cross-referenced with field notes.",
@@ -262,6 +263,7 @@ window.SONG_DATA = {
     {
       "id": "022_marker",
       "type": "Marker",
+      "image": "images/Markers/022_The_Return_to_Black_Pine.png",
       "name": "Marker 209",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 022.",

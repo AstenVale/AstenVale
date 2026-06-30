@@ -243,6 +243,7 @@ window.SONG_DATA = {
     {
       "id": "003_time",
       "type": "Time",
+      "image": "images/5 Time/003_lantern_11-17.png",
       "name": "11:17",
       "symbol": "⌚",
       "description": "The time stamp on the Crow Call audio captured at Ash Creek. Also the time on the Sheriff's written report.",
@@ -251,6 +252,7 @@ window.SONG_DATA = {
     {
       "id": "003_marker",
       "type": "Marker",
+      "image": "images/Markers/003_The_Rusted_Key.png",
       "name": "Marker 43",
       "symbol": "◆",
       "description": "A field marker discovered at Ash Creek. Third in the sequence. Points West. Archived under Case 003A.",

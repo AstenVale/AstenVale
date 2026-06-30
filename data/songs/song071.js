@@ -262,6 +262,7 @@ window.SONG_DATA = {
     {
       "id": "071_marker",
       "type": "Marker",
+      "image": "images/Markers/071_What_Grows_in_Dark.png",
       "name": "Marker 697",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 071.",

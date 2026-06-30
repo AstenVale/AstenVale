@@ -251,6 +251,7 @@ window.SONG_DATA = {
     {
       "id": "249_marker",
       "type": "Marker",
+      "image": "images/Markers/249_Evidence_in_Wood.png",
       "name": "Marker 2179",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 249.",

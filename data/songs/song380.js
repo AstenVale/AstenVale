@@ -252,6 +252,7 @@ window.SONG_DATA = {
     {
       "id": "380_marker",
       "type": "Marker",
+      "image": "images/Markers/380_What_Sank.png",
       "name": "Marker 3270",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 380.",

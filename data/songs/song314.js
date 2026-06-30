@@ -253,6 +253,7 @@ window.SONG_DATA = {
     {
       "id": "314_marker",
       "type": "Marker",
+      "image": "images/Markers/314_What_the_Salt_Preserves.png",
       "name": "Marker 2716",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 314.",

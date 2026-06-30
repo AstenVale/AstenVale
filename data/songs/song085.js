@@ -261,6 +261,7 @@ window.SONG_DATA = {
     {
       "id": "085_marker",
       "type": "Marker",
+      "image": "images/Markers/085_The_First_Smoke.png",
       "name": "Marker 807",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 085.",

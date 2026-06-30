@@ -251,6 +251,7 @@ window.SONG_DATA = {
     {
       "id": "020_time",
       "type": "Time",
+      "image": "images/5 Time/020_lantern_3-13.png",
       "name": "1215",
       "symbol": "⌚",
       "description": "The time recorded in the case audio for Case File 020. Cross-referenced with field notes.",
@@ -259,6 +260,7 @@ window.SONG_DATA = {
     {
       "id": "020_marker",
       "type": "Marker",
+      "image": "images/Markers/020_The_Year_Passed.png",
       "name": "Marker 187",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 020.",

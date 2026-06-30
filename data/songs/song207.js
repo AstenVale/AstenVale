@@ -250,6 +250,7 @@ window.SONG_DATA = {
     {
       "id": "207_marker",
       "type": "Marker",
+      "image": "images/Markers/207_What_They_Called_Themselves.png",
       "name": "Marker 1825",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 207.",

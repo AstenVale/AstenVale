@@ -252,6 +252,7 @@ window.SONG_DATA = {
     {
       "id": "561_marker",
       "type": "Marker",
+      "image": "images/Markers/561_The_Time_Lost.png",
       "name": "Marker 4779",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 561.",

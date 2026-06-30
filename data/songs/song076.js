@@ -252,6 +252,7 @@ window.SONG_DATA = {
     {
       "id": "076_marker",
       "type": "Marker",
+      "image": "images/Markers/076_What_She_Didnt_Tell.png",
       "name": "Marker 734",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 076.",

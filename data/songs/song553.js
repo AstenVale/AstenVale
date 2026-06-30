@@ -250,6 +250,7 @@ window.SONG_DATA = {
     {
       "id": "553_marker",
       "type": "Marker",
+      "image": "images/Markers/553_The_Detour.png",
       "name": "Marker 4707",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 553.",

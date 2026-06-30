@@ -261,6 +261,7 @@ window.SONG_DATA = {
     {
       "id": "571_marker",
       "type": "Marker",
+      "image": "images/Markers/571_The_Interference.png",
       "name": "Marker 4861",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 571.",

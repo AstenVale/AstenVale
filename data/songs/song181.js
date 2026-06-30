@@ -251,6 +251,7 @@ window.SONG_DATA = {
     {
       "id": "181_marker",
       "type": "Marker",
+      "image": "images/Markers/181_What_Everyone_Saw.png",
       "name": "Marker 1607",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 181.",

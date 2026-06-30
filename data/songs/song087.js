@@ -262,6 +262,7 @@ window.SONG_DATA = {
     {
       "id": "087_marker",
       "type": "Marker",
+      "image": "images/Markers/087_The_Running.png",
       "name": "Marker 825",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 087.",

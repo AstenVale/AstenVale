@@ -259,6 +259,7 @@ window.SONG_DATA = {
     {
       "id": "517_marker",
       "type": "Marker",
+      "image": "images/Markers/517_The_Reflection.png",
       "name": "Marker 4407",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 517.",

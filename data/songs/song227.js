@@ -252,6 +252,7 @@ window.SONG_DATA = {
     {
       "id": "227_marker",
       "type": "Marker",
+      "image": "images/Markers/227_The_Gap.png",
       "name": "Marker 1997",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 227.",

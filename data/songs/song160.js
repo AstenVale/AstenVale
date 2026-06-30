@@ -251,6 +251,7 @@ window.SONG_DATA = {
     {
       "id": "160_marker",
       "type": "Marker",
+      "image": "images/Markers/160_The_Last_Dry_Hour.png",
       "name": "Marker 1434",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 160.",

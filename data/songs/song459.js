@@ -262,6 +262,7 @@ window.SONG_DATA = {
     {
       "id": "459_marker",
       "type": "Marker",
+      "image": "images/Markers/459_What_It_Carried.png",
       "name": "Marker 3925",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 459.",

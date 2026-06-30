@@ -263,6 +263,7 @@ window.SONG_DATA = {
     {
       "id": "084_marker",
       "type": "Marker",
+      "image": "images/Markers/084_The_Confrontation.png",
       "name": "Marker 806",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 084.",

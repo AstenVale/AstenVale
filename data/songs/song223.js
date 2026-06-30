@@ -249,6 +249,7 @@ window.SONG_DATA = {
     {
       "id": "223_marker",
       "type": "Marker",
+      "image": "images/Markers/223_The_Other_Side.png",
       "name": "Marker 1961",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 223.",

@@ -250,6 +250,7 @@ window.SONG_DATA = {
     {
       "id": "580_marker",
       "type": "Marker",
+      "image": "images/Markers/580_Why_She_Waited.png",
       "name": "Marker 4934",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 580.",

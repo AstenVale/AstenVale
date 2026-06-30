@@ -252,6 +252,7 @@ window.SONG_DATA = {
     {
       "id": "094_marker",
       "type": "Marker",
+      "image": "images/Markers/094_What_Fire_Does_to_Memory.png",
       "name": "Marker 888",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 094.",

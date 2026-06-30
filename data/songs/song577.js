@@ -251,6 +251,7 @@ window.SONG_DATA = {
     {
       "id": "577_marker",
       "type": "Marker",
+      "image": "images/Markers/577_The_Last_One_Who_Knows.png",
       "name": "Marker 4907",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 577.",

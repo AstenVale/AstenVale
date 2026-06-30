@@ -260,6 +260,7 @@ window.SONG_DATA = {
     {
       "id": "172_marker",
       "type": "Marker",
+      "image": "images/Markers/172_What_the_Lantern_Showed.png",
       "name": "Marker 1534",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 172.",

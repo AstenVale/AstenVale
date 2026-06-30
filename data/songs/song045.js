@@ -253,6 +253,7 @@ window.SONG_DATA = {
     {
       "id": "045_time",
       "type": "Time",
+      "image": "images/5 Time/045_lantern_10-47.png",
       "name": "714",
       "symbol": "⌚",
       "description": "The time recorded in the case audio for Case File 045. Cross-referenced with field notes.",
@@ -261,6 +262,7 @@ window.SONG_DATA = {
     {
       "id": "045_marker",
       "type": "Marker",
+      "image": "images/Markers/045_The_Fishermans_Truth.png",
       "name": "Marker 479",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 045.",

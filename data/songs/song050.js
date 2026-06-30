@@ -245,6 +245,7 @@ window.SONG_DATA = {
     {
       "id": "050_time",
       "type": "Time",
+      "image": "images/5 Time/050_lantern_6-53.png",
       "name": "806",
       "symbol": "⌚",
       "description": "The time recorded in the case audio for Case File 050. Cross-referenced with field notes.",
@@ -253,6 +254,7 @@ window.SONG_DATA = {
     {
       "id": "050_marker",
       "type": "Marker",
+      "image": "images/Markers/050_The_Cold_House.png",
       "name": "Marker 516",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 050.",

@@ -261,6 +261,7 @@ window.SONG_DATA = {
     {
       "id": "201_marker",
       "type": "Marker",
+      "image": "images/Markers/201_The_Cold_Case.png",
       "name": "Marker 1779",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 201.",

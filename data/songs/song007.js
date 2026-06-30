@@ -241,6 +241,7 @@ window.SONG_DATA = {
     {
       "id": "007_time",
       "type": "Time",
+      "image": "images/5 Time/007_lantern_9-15.png",
       "name": "915",
       "symbol": "⌚",
       "description": "The time recorded in the case audio for Case File 007. Cross-referenced with field notes.",
@@ -249,6 +250,7 @@ window.SONG_DATA = {
     {
       "id": "007_marker",
       "type": "Marker",
+      "image": "images/Markers/007_Strangers_Matchbook.png",
       "name": "Marker 61",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 007.",

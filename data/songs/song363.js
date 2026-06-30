@@ -262,6 +262,7 @@ window.SONG_DATA = {
     {
       "id": "363_marker",
       "type": "Marker",
+      "image": "images/Markers/363_The_Code_in_the_Planting.png",
       "name": "Marker 3125",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 363.",

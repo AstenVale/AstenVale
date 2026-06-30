@@ -261,6 +261,7 @@ window.SONG_DATA = {
     {
       "id": "130_marker",
       "type": "Marker",
+      "image": "images/Markers/130_The_Compass_Rose.png",
       "name": "Marker 1188",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 130.",

@@ -249,6 +249,7 @@ window.SONG_DATA = {
     {
       "id": "135_marker",
       "type": "Marker",
+      "image": "images/Markers/135_The_Other_Name_in_the_Will.png",
       "name": "Marker 1225",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 135.",

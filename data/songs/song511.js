@@ -250,6 +250,7 @@ window.SONG_DATA = {
     {
       "id": "511_marker",
       "type": "Marker",
+      "image": "images/Markers/511_The_Discovery.png",
       "name": "Marker 4361",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 511.",

@@ -263,6 +263,7 @@ window.SONG_DATA = {
     {
       "id": "591_marker",
       "type": "Marker",
+      "image": "images/Markers/591_What_Was_Always_There.png",
       "name": "Marker 5025",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 591.",

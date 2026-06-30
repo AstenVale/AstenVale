@@ -253,6 +253,7 @@ window.SONG_DATA = {
     {
       "id": "165_marker",
       "type": "Marker",
+      "image": "images/Markers/165_The_Mud_Below.png",
       "name": "Marker 1479",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 165.",

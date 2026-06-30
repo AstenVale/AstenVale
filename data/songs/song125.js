@@ -262,6 +262,7 @@ window.SONG_DATA = {
     {
       "id": "125_marker",
       "type": "Marker",
+      "image": "images/Markers/125_The_Corner_Stone.png",
       "name": "Marker 1143",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 125.",

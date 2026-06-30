@@ -261,6 +261,7 @@ window.SONG_DATA = {
     {
       "id": "281_marker",
       "type": "Marker",
+      "image": "images/Markers/281_The_Alibi_Gap.png",
       "name": "Marker 2443",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 281.",

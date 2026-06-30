@@ -262,6 +262,7 @@ window.SONG_DATA = {
     {
       "id": "103_marker",
       "type": "Marker",
+      "image": "images/Markers/103_The_Other_Keeper.png",
       "name": "Marker 961",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 103.",

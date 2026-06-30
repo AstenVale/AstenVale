@@ -263,6 +263,7 @@ window.SONG_DATA = {
     {
       "id": "390_marker",
       "type": "Marker",
+      "image": "images/Markers/390_The_Pale_Witness.png",
       "name": "Marker 3352",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 390.",

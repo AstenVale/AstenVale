@@ -242,6 +242,7 @@ window.SONG_DATA = {
     {
       "id": "004_time",
       "type": "Time",
+      "image": "images/5 Time/004_lantern_6-45.png",
       "name": "6:45",
       "symbol": "⌚",
       "description": "The time of the Bell Toll audio captured inside the Church. The bell has no bell tower. No mechanism was found.",
@@ -250,6 +251,7 @@ window.SONG_DATA = {
     {
       "id": "004_marker",
       "type": "Marker",
+      "image": "images/Markers/004_The_Widow_Knows.png",
       "name": "Marker 12",
       "symbol": "◆",
       "description": "Found scratched into the church doorframe. Marker 12 — the lowest number yet. The sequence is not ascending.",

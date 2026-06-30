@@ -251,6 +251,7 @@ window.SONG_DATA = {
     {
       "id": "354_marker",
       "type": "Marker",
+      "image": "images/Markers/354_The_Conductors_Memory.png",
       "name": "Marker 3052",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 354.",

@@ -251,6 +251,7 @@ window.SONG_DATA = {
     {
       "id": "098_marker",
       "type": "Marker",
+      "image": "images/Markers/098_What_She_Saved.png",
       "name": "Marker 916",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 098.",

@@ -262,6 +262,7 @@ window.SONG_DATA = {
     {
       "id": "461_marker",
       "type": "Marker",
+      "image": "images/Markers/461_The_Night_Ride.png",
       "name": "Marker 3943",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 461.",

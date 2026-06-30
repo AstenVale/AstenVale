@@ -262,6 +262,7 @@ window.SONG_DATA = {
     {
       "id": "331_marker",
       "type": "Marker",
+      "image": "images/Markers/331_The_Coded_Transmission.png",
       "name": "Marker 2861",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 331.",

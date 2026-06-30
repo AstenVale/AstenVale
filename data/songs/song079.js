@@ -250,6 +250,7 @@ window.SONG_DATA = {
     {
       "id": "079_marker",
       "type": "Marker",
+      "image": "images/Markers/079_The_Parallel_Life.png",
       "name": "Marker 761",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 079.",

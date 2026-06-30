@@ -261,6 +261,7 @@ window.SONG_DATA = {
     {
       "id": "305_marker",
       "type": "Marker",
+      "image": "images/Markers/305_The_Door_Before.png",
       "name": "Marker 2643",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 305.",

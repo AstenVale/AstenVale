@@ -243,6 +243,7 @@ window.SONG_DATA = {
     {
       "id": "034_time",
       "type": "Time",
+      "image": "images/5 Time/034_lantern_10-19.png",
       "name": "927",
       "symbol": "⌚",
       "description": "The time recorded in the case audio for Case File 034. Cross-referenced with field notes.",
@@ -251,6 +252,7 @@ window.SONG_DATA = {
     {
       "id": "034_marker",
       "type": "Marker",
+      "image": "images/Markers/034_The_Turned_Earth.png",
       "name": "Marker 388",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 034.",

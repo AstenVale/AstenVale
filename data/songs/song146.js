@@ -260,6 +260,7 @@ window.SONG_DATA = {
     {
       "id": "146_marker",
       "type": "Marker",
+      "image": "images/Markers/146_Two_of_Everything.png",
       "name": "Marker 1316",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 146.",

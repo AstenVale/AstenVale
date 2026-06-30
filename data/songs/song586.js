@@ -263,6 +263,7 @@ window.SONG_DATA = {
     {
       "id": "586_marker",
       "type": "Marker",
+      "image": "images/Markers/586_The_Deathbed_Word.png",
       "name": "Marker 4988",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 586.",

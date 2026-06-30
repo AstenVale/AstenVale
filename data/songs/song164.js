@@ -252,6 +252,7 @@ window.SONG_DATA = {
     {
       "id": "164_marker",
       "type": "Marker",
+      "image": "images/Markers/164_After_the_Water.png",
       "name": "Marker 1470",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 164.",

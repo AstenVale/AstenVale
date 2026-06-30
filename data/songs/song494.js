@@ -262,6 +262,7 @@ window.SONG_DATA = {
     {
       "id": "494_marker",
       "type": "Marker",
+      "image": "images/Markers/494_The_Dried_Bed.png",
       "name": "Marker 4216",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 494.",

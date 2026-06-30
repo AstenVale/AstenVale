@@ -260,6 +260,7 @@ window.SONG_DATA = {
     {
       "id": "417_marker",
       "type": "Marker",
+      "image": "images/Markers/417_The_Burn_Order.png",
       "name": "Marker 3579",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 417.",

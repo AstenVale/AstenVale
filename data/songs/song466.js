@@ -251,6 +251,7 @@ window.SONG_DATA = {
     {
       "id": "466_marker",
       "type": "Marker",
+      "image": "images/Markers/466_The_Rider.png",
       "name": "Marker 3988",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 466.",

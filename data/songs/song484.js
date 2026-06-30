@@ -252,6 +252,7 @@ window.SONG_DATA = {
     {
       "id": "484_marker",
       "type": "Marker",
+      "image": "images/Markers/484_Who_Traveled_It.png",
       "name": "Marker 4134",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 484.",

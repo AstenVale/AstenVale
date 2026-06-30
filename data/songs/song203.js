@@ -260,6 +260,7 @@ window.SONG_DATA = {
     {
       "id": "203_marker",
       "type": "Marker",
+      "image": "images/Markers/203_What_Cold_Distorts.png",
       "name": "Marker 1797",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 203.",

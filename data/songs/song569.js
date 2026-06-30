@@ -262,6 +262,7 @@ window.SONG_DATA = {
     {
       "id": "569_marker",
       "type": "Marker",
+      "image": "images/Markers/569_The_Partial_Message.png",
       "name": "Marker 4843",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 569.",

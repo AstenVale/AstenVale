@@ -263,6 +263,7 @@ window.SONG_DATA = {
     {
       "id": "543_marker",
       "type": "Marker",
+      "image": "images/Markers/543_What_the_Storm_Did.png",
       "name": "Marker 4625",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 543.",

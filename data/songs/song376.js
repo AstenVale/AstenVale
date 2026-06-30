@@ -251,6 +251,7 @@ window.SONG_DATA = {
     {
       "id": "376_marker",
       "type": "Marker",
+      "image": "images/Markers/376_The_Dive.png",
       "name": "Marker 3234",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 376.",

@@ -250,6 +250,7 @@ window.SONG_DATA = {
     {
       "id": "319_marker",
       "type": "Marker",
+      "image": "images/Markers/319_The_Marker_in_Salt.png",
       "name": "Marker 2761",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 319.",

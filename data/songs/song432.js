@@ -252,6 +252,7 @@ window.SONG_DATA = {
     {
       "id": "432_marker",
       "type": "Marker",
+      "image": "images/Markers/432_The_Last_Call.png",
       "name": "Marker 3706",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 432.",

@@ -251,6 +251,7 @@ window.SONG_DATA = {
     {
       "id": "600_marker",
       "type": "Marker",
+      "image": "images/Markers/600_Black_Pine_Closes.png",
       "name": "Marker 5106",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 600.",

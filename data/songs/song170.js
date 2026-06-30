@@ -263,6 +263,7 @@ window.SONG_DATA = {
     {
       "id": "170_marker",
       "type": "Marker",
+      "image": "images/Markers/170_The_Light_Schedule.png",
       "name": "Marker 1516",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 170.",

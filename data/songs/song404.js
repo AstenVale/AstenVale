@@ -251,6 +251,7 @@ window.SONG_DATA = {
     {
       "id": "404_marker",
       "type": "Marker",
+      "image": "images/Markers/404_The_Other_Patient.png",
       "name": "Marker 3470",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 404.",

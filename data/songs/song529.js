@@ -253,6 +253,7 @@ window.SONG_DATA = {
     {
       "id": "529_marker",
       "type": "Marker",
+      "image": "images/Markers/529_The_Leader.png",
       "name": "Marker 4507",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 529.",

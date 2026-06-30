@@ -252,6 +252,7 @@ window.SONG_DATA = {
     {
       "id": "115_marker",
       "type": "Marker",
+      "image": "images/Markers/115_The_Crossroads_Again.png",
       "name": "Marker 1061",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 115.",

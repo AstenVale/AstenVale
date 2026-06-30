@@ -242,6 +242,7 @@ window.SONG_DATA = {
     {
       "id": "002_time",
       "type": "Time",
+      "image": "images/5 Time/002_lantern_8-00.png",
       "name": "8:00",
       "symbol": "⌚",
       "description": "The time at which the CREEEAK audio event is recorded in the case file. The hollow letter was dated the same hour.",
@@ -250,6 +251,7 @@ window.SONG_DATA = {
     {
       "id": "002_marker",
       "type": "Marker",
+      "image": "images/Markers/002_The_Hollow_Letter.png",
       "name": "Marker 27",
       "symbol": "◆",
       "description": "A field marker left at the Pine Hollow site. Connects to the Public Archive. Written in a different hand than Marker 17.",

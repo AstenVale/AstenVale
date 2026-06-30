@@ -250,6 +250,7 @@ window.SONG_DATA = {
     {
       "id": "073_marker",
       "type": "Marker",
+      "image": "images/Markers/073_The_Other_House.png",
       "name": "Marker 707",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 073.",

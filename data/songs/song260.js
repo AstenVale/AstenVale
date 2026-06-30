@@ -262,6 +262,7 @@ window.SONG_DATA = {
     {
       "id": "260_marker",
       "type": "Marker",
+      "image": "images/Markers/260_The_Coroners_Note.png",
       "name": "Marker 2270",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 260.",

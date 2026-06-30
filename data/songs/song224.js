@@ -251,6 +251,7 @@ window.SONG_DATA = {
     {
       "id": "224_marker",
       "type": "Marker",
+      "image": "images/Markers/224_Smoke_on_the_Water.png",
       "name": "Marker 1970",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 224.",

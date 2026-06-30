@@ -252,6 +252,7 @@ window.SONG_DATA = {
     {
       "id": "243_marker",
       "type": "Marker",
+      "image": "images/Markers/243_Carved_in_Bark.png",
       "name": "Marker 2125",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 243.",

@@ -251,6 +251,7 @@ window.SONG_DATA = {
     {
       "id": "246_marker",
       "type": "Marker",
+      "image": "images/Markers/246_What_the_Roots_Hold.png",
       "name": "Marker 2152",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 246.",

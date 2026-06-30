@@ -243,6 +243,7 @@ window.SONG_DATA = {
     {
       "id": "001_time",
       "type": "Time",
+      "image": "images/5 Time/001_lantern_3-30.png",
       "name": "3:30",
       "symbol": "⌚",
       "description": "The confirmed time of the Crow Call recording embedded in the case audio. Cross-referenced with field notes.",
@@ -251,6 +252,7 @@ window.SONG_DATA = {
     {
       "id": "001_marker",
       "type": "Marker",
+      "image": "images/Markers/001_Lantern_at_Black_Pine.png",
       "name": "Marker 17",
       "symbol": "◆",
       "description": "A numbered field marker left at the Black Pine site. Indexed to the Public Archive.",

@@ -249,6 +249,7 @@ window.SONG_DATA = {
     {
       "id": "467_marker",
       "type": "Marker",
+      "image": "images/Markers/467_The_Unridden.png",
       "name": "Marker 3997",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 467.",

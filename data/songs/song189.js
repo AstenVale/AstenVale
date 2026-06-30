@@ -253,6 +253,7 @@ window.SONG_DATA = {
     {
       "id": "189_marker",
       "type": "Marker",
+      "image": "images/Markers/189_The_Blind_Spot.png",
       "name": "Marker 1679",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 189.",

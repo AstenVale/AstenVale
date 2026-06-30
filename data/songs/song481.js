@@ -253,6 +253,7 @@ window.SONG_DATA = {
     {
       "id": "481_marker",
       "type": "Marker",
+      "image": "images/Markers/481_The_Road_That_Isnt_There.png",
       "name": "Marker 4107",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 481.",
