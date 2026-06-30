@@ -1487,14 +1487,8 @@ body.unlocked::before{
       // Witness Testimony Audio Player
       (function() {
         var tid = String(parseInt(caseData.id, 10) || 1).padStart(3, '0');
-        // Derive witness slug from the witness image path: "images/Witness/Case 001 - stranger.jpg" -> "stranger"
-        var witImg = '';
-        var ev = (caseData.evidence || []).find(function(e) { return e.type === 'Witness'; });
-        if (ev && ev.image) witImg = ev.image;
-        var tslug = witImg
-          ? witImg.replace(/.*Case \d+ - /, '').replace(/\.jpg$/i, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')
-          : (caseData.title || '').toLowerCase().replace(/[''']/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
-        var tSrc = 'Testimonies/case-' + tid + '-' + tslug + '-testimony.mp3';
+        var tslug = window.TESTIMONY_MAP && window.TESTIMONY_MAP[parseInt(caseData.id, 10)];
+        var tSrc = tslug ? 'Testimonies/case-' + tid + '-' + tslug + '-testimony.mp3' : '';
         var tSolved = (function() {
           try { return JSON.parse(localStorage.getItem('av_solved') || '[]').indexOf(caseData.id) !== -1; } catch(e) { return false; }
         })();
@@ -1508,6 +1502,7 @@ body.unlocked::before{
           return;
         }
 
+        if (!tSrc) return;
         var wtAudio = document.createElement('audio');
         wtAudio.preload = 'none';
         wtAudio.src = tSrc;
@@ -2032,6 +2027,7 @@ document.title = 'Case File ' + d.caseFile + ' Ã¢â‚¬â€ The Asten Vale
   }).catch(function(){});
   </script>
   <script src="data/sounds.js"></script>
+  <script src="js/testimony-map.js"></script>
   <script src="js/badges.js"></script>
 
   <script src="js/polish.js" defer></script>
