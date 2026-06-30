@@ -164,24 +164,25 @@ body.unlocked::before{
 .rm-filled{position:absolute;top:0;left:0;height:100%;background:rgba(100,60,20,0.45);pointer-events:none;width:0%;}
 .rm-times{display:flex;justify-content:space-between;font-size:0.58rem;color:var(--ink-faded);letter-spacing:0.06em;}
 /* Witness Testimony Player */
-.wt-player{border:1px solid rgba(100,60,20,0.25);background:rgba(0,0,0,0.05);padding:0.55rem 0.75rem;margin-top:0.75rem;}
-.wt-player-label{font-size:0.54rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--ink-faded);margin-bottom:0.4rem;}
-.wt-controls{display:flex;align-items:center;gap:0.5rem;margin-bottom:0.3rem;}
-.wt-play{width:22px;height:22px;flex-shrink:0;background:rgba(0,0,0,0.1);border:1px solid rgba(100,60,20,0.35);border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:0.55rem;color:var(--ink);transition:background 0.15s;}
+.wt-player{border:1px solid rgba(100,60,20,0.25);background:rgba(0,0,0,0.05);padding:0.45rem 0.7rem;margin-top:0.65rem;}
+.wt-player-label{font-size:0.5rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--ink-faded);margin-bottom:0.35rem;}
+.wt-controls{display:flex;align-items:center;gap:0.45rem;}
+.wt-play{width:20px;height:20px;flex-shrink:0;background:rgba(0,0,0,0.1);border:1px solid rgba(100,60,20,0.35);border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:0.5rem;color:var(--ink);transition:background 0.15s;}
 .wt-play:hover:not(:disabled){background:rgba(0,0,0,0.18);}
 .wt-play:disabled{opacity:0.35;cursor:not-allowed;}
 .wt-track{flex:1;position:relative;height:2px;background:rgba(100,60,20,0.14);cursor:pointer;}
 .wt-track.locked{cursor:not-allowed;opacity:0.4;}
 .wt-filled{position:absolute;top:0;left:0;height:100%;background:rgba(100,60,20,0.45);pointer-events:none;width:0%;}
-.wt-times{display:flex;justify-content:space-between;font-size:0.54rem;color:var(--ink-faded);letter-spacing:0.04em;margin-bottom:0.4rem;}
-.wt-vol-row{display:flex;align-items:center;gap:0.35rem;}
-.wt-vol-btn{background:none;border:none;cursor:pointer;color:var(--ink-faded);font-size:0.65rem;padding:0;line-height:1;}
-.wt-vol{width:55px;accent-color:rgba(100,60,20,0.6);}
-.wt-meta{display:flex;flex-wrap:wrap;gap:0.2rem 1.2rem;margin-top:0.5rem;border-top:1px solid rgba(100,60,20,0.12);padding-top:0.45rem;}
-.wt-meta-label{font-size:0.5rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--ink-faded);}
-.wt-meta-value{font-size:0.6rem;color:var(--ink);font-family:var(--font-type);}
+.wt-time{font-size:0.52rem;color:var(--ink-faded);white-space:nowrap;flex-shrink:0;}
+.wt-times{display:none;}
+.wt-vol-row{display:flex;align-items:center;gap:0.3rem;margin-top:0.35rem;}
+.wt-vol-btn{background:none;border:none;cursor:pointer;color:var(--ink-faded);font-size:0.62rem;padding:0;line-height:1;}
+.wt-vol{width:50px;accent-color:rgba(100,60,20,0.6);}
+.wt-meta{display:flex;flex-wrap:wrap;gap:0.15rem 1rem;margin-top:0.4rem;border-top:1px solid rgba(100,60,20,0.12);padding-top:0.35rem;}
+.wt-meta-label{font-size:0.48rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--ink-faded);}
+.wt-meta-value{font-size:0.58rem;color:var(--ink);font-family:var(--font-type);}
 .wt-meta-label,.wt-meta-value{display:inline;}
-.wt-meta-pair{margin-right:0.8rem;white-space:nowrap;}
+.wt-meta-pair{margin-right:0.7rem;white-space:nowrap;}
 .wt-locked-notice{padding:0.5rem 0.75rem;background:rgba(0,0,0,0.06);border-left:2px solid rgba(100,60,20,0.3);margin-top:0.75rem;}
 .wt-locked-heading{font-family:var(--font-header);font-size:0.6rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--ink-faded);margin-bottom:0.2rem;}
 .wt-locked-text{font-size:0.64rem;color:var(--ink-faded);font-style:italic;line-height:1.45;}
@@ -1562,6 +1563,7 @@ body.unlocked::before{
         var wtAudio = document.createElement('audio');
         wtAudio.preload = 'none';
         wtAudio.src = tSrc;
+        wtAudio.style.display = 'none';
         wtWrap.appendChild(wtAudio);
 
         var wtCtrl = document.createElement('div');
@@ -1577,14 +1579,10 @@ body.unlocked::before{
         wtFilled.className = 'wt-filled';
         wtTrack.appendChild(wtFilled);
         wtCtrl.appendChild(wtTrack);
+        var wtCur = document.createElement('span'); wtCur.className = 'wt-time'; wtCur.textContent = '0:00';
+        var wtDur = document.createElement('span'); wtDur.className = 'wt-time'; wtDur.textContent = '--:--';
+        wtCtrl.appendChild(wtCur); wtCtrl.appendChild(wtDur);
         wtWrap.appendChild(wtCtrl);
-
-        var wtTimes = document.createElement('div');
-        wtTimes.className = 'wt-times';
-        var wtCur = document.createElement('span'); wtCur.textContent = '0:00';
-        var wtDur = document.createElement('span'); wtDur.textContent = '--:--';
-        wtTimes.appendChild(wtCur); wtTimes.appendChild(wtDur);
-        wtWrap.appendChild(wtTimes);
 
         var wtVolRow = document.createElement('div');
         wtVolRow.className = 'wt-vol-row';
