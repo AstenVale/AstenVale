@@ -1,0 +1,46 @@
+.recording-intro { max-width: 560px; }
+.archive-summary { position: relative; display: grid; grid-template-columns: repeat(4, minmax(120px, 1fr)); gap: 0.5rem; margin-bottom: 1.15rem; }
+.summary-item { border: 1px solid rgba(60,30,10,0.14); background: rgba(0,0,0,0.035); padding: 0.65rem 0.75rem; }
+.summary-label { display: block; font-size: 0.55rem; letter-spacing: 0.18em; color: rgba(60,30,10,0.45); text-transform: uppercase; }
+.summary-value { display: block; font-family: var(--font-header); font-size: 0.95rem; letter-spacing: 0.09em; color: rgba(60,30,10,0.82); text-transform: uppercase; margin-top: 0.1rem; }
+.sound-list { display: grid; gap: 0.8rem; }
+.recording-card { background: rgba(220,195,155,0.52); border: 1px solid rgba(160,120,60,0.28); border-left: 3px solid rgba(122,31,31,0.42); border-radius: 2px; position: relative; box-shadow: 0 1px 6px rgba(0,0,0,0.1), inset 0 1px 0 rgba(255,255,255,0.12); transition: transform 0.15s, box-shadow 0.15s, background 0.15s; overflow: hidden; }
+.recording-card:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(0,0,0,0.18), inset 0 1px 0 rgba(255,255,255,0.14); background: rgba(226,202,164,0.62); }
+.recording-card::before { content: ""; position: absolute; top: -2px; left: 14px; width: 12px; height: 20px; border: 1.5px solid rgba(120,100,60,0.45); border-bottom: none; border-radius: 6px 6px 0 0; pointer-events: none; z-index: 2; }
+.recording-grid { display: grid; grid-template-columns: 230px minmax(0, 1fr); gap: 1rem; padding: 1rem 1.1rem 1rem 1.2rem; }
+.cassette { border: 1px solid rgba(60,30,10,0.28); background: linear-gradient(160deg, rgba(60,30,10,0.22), rgba(210,180,120,0.42)); min-height: 150px; padding: 0.85rem; display: flex; flex-direction: column; justify-content: space-between; transition: filter 0.15s; }
+.recording-card:hover .cassette { filter: brightness(1.08); }
+.cassette-label { background: rgba(230,208,168,0.82); border: 1px solid rgba(60,30,10,0.25); padding: 0.55rem; min-height: 72px; }
+.cassette-kicker { display: block; font-size: 0.5rem; letter-spacing: 0.2em; color: rgba(60,30,10,0.48); text-transform: uppercase; }
+.cassette-name { display: block; font-family: var(--font-header); font-size: 0.84rem; letter-spacing: 0.08em; color: var(--ink); text-transform: uppercase; margin-top: 0.18rem; line-height: 1.25; }
+.cassette-meta { display: flex; justify-content: space-between; gap: 0.6rem; font-size: 0.55rem; letter-spacing: 0.13em; color: rgba(60,30,10,0.6); text-transform: uppercase; }
+.cassette-reels { display: flex; justify-content: space-around; align-items: center; padding: 0.5rem 0; }
+.cassette-reel { width: 38px; height: 38px; border-radius: 50%; border: 2px solid rgba(60,30,10,0.3); box-shadow: inset 0 0 0 8px rgba(0,0,0,0.08); position: relative; }
+.cassette-reel::after { content: ""; position: absolute; inset: 14px; border-radius: 50%; background: rgba(60,30,10,0.35); }
+.recording-head { display: flex; flex-wrap: wrap; gap: 0.45rem 0.75rem; align-items: center; margin-bottom: 0.65rem; }
+.recording-name { font-family: var(--font-header); font-size: 1.05rem; letter-spacing: 0.1em; color: var(--ink); text-transform: uppercase; line-height: 1.2; }
+.sound-stamp, .status-stamp, .recurring-stamp { font-family: var(--font-header); font-size: 0.48rem; letter-spacing: 0.22em; color: var(--stamp-red); border: 1px solid rgba(139,26,26,0.68); padding: 0.08rem 0.35rem; text-transform: uppercase; opacity: 0.86; transform: rotate(-1deg); display: inline-block; }
+.recurring-stamp { color: rgba(60,30,10,0.58); border-color: rgba(60,30,10,0.28); }
+.recording-card:hover .sound-stamp, .recording-card:hover .status-stamp { color: rgba(122,31,31,0.95); border-color: rgba(122,31,31,0.75); }
+.recording-metadata { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.5rem 0.75rem; margin-bottom: 0.85rem; }
+.meta-field { border-bottom: 1px solid rgba(60,30,10,0.12); padding-bottom: 0.25rem; }
+.meta-label { display: block; font-size: 0.52rem; letter-spacing: 0.18em; color: rgba(60,30,10,0.42); text-transform: uppercase; }
+.meta-value { display: block; font-size: 0.72rem; letter-spacing: 0.06em; color: rgba(28,18,10,0.74); text-transform: uppercase; margin-top: 0.1rem; }
+.archive-copy { display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem; margin-bottom: 0.85rem; }
+.archive-copy-block { border: 1px solid rgba(60,30,10,0.13); background: rgba(0,0,0,0.03); padding: 0.7rem 0.8rem; }
+.copy-label { display: block; font-family: var(--font-header); font-size: 0.62rem; letter-spacing: 0.16em; color: rgba(60,30,10,0.55); text-transform: uppercase; margin-bottom: 0.25rem; }
+.copy-text { font-size: 0.76rem; color: rgba(60,30,10,0.68); font-style: italic; line-height: 1.55; }
+.appears-row { font-size: 0.6rem; letter-spacing: 0.14em; color: rgba(60,30,10,0.48); text-transform: uppercase; margin: 0.35rem 0 0.75rem; }
+.archive-player { border-top: 1px dashed rgba(60,30,10,0.2); padding-top: 0.75rem; }
+.waveform { display: flex; align-items: center; gap: 2px; height: 42px; margin-bottom: 0.55rem; border: 1px solid rgba(60,30,10,0.14); background: rgba(0,0,0,0.035); padding: 0.35rem; overflow: hidden; }
+.wave-bar { flex: 1; min-width: 2px; background: rgba(122,31,31,0.48); opacity: 0.76; }
+.player-row { display: grid; grid-template-columns: auto minmax(110px, 1fr) auto 88px; gap: 0.65rem; align-items: center; }
+.play-btn { font-family: var(--font-header); font-size: 0.62rem; letter-spacing: 0.2em; color: rgba(201,169,122,0.88); background: rgba(28,18,10,0.88); border: 1px solid rgba(201,169,122,0.28); padding: 0.42rem 0.7rem; text-transform: uppercase; cursor: pointer; }
+.play-btn:hover { color: var(--paper); border-color: rgba(201,169,122,0.55); }
+.progress-track, .volume-track { height: 8px; background: rgba(60,30,10,0.16); border: 1px solid rgba(60,30,10,0.18); cursor: pointer; position: relative; }
+.progress-fill, .volume-fill { height: 100%; background: rgba(122,31,31,0.6); width: 0%; }
+.time-readout { font-size: 0.62rem; letter-spacing: 0.08em; color: rgba(60,30,10,0.62); white-space: nowrap; }
+.native-audio { display: none; }
+.locked-tally-text { font-family: var(--font-type); font-size: 0.68rem; letter-spacing: 0.14em; color: rgba(60,30,10,0.5); text-transform: uppercase; font-style: italic; }
+@media (max-width: 820px) { .recording-grid { grid-template-columns: 1fr; } .recording-metadata, .archive-copy, .archive-summary { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 640px) { .recording-metadata, .archive-copy, .archive-summary, .player-row { grid-template-columns: 1fr; } }

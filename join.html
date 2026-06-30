@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Join the Archive — The Asten Vale Archives</title>
+  <title>Join the Archive &mdash; The Asten Vale Archives</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
@@ -35,7 +35,7 @@
 
     a { text-decoration: none; color: inherit; }
 
-    /* ── HERO ── */
+    /* â”€â”€ HERO â”€â”€ */
     .hero {
       position: relative;
       min-height: auto;
@@ -64,7 +64,7 @@
       z-index: 1;
     }
 
-    /* ── NAV ── */
+    /* â”€â”€ NAV â”€â”€ */
     .site-nav {
       position: relative;
       z-index: 10;
@@ -108,7 +108,7 @@
       background: rgba(201,169,122,0.6);
     }
 
-    /* ── HERO CONTENT ── */
+    /* â”€â”€ HERO CONTENT â”€â”€ */
     .hero-content {
       position: relative;
       z-index: 5;
@@ -156,7 +156,7 @@
       margin: 1rem auto 0;
     }
 
-    /* ── PAPER SECTION ── */
+    /* â”€â”€ PAPER SECTION â”€â”€ */
     .paper-section {
       position: relative;
       background: var(--paper-bg);
@@ -210,7 +210,7 @@
       pointer-events: none;
     }
 
-    /* ── FORM HEADER ── */
+    /* â”€â”€ FORM HEADER â”€â”€ */
     .form-header {
       margin-bottom: 2rem;
     }
@@ -247,8 +247,105 @@
       font-style: italic;
       line-height: 1.7;
     }
+    .access-brief {
+      margin: 1.35rem 0 2rem;
+      padding: 1rem 1.1rem;
+      border: 1px solid rgba(60,30,10,0.18);
+      border-left: 3px solid rgba(60,30,10,0.32);
+      background: rgba(220,195,155,0.34);
+    }
 
-    /* ── FORM ── */
+    .access-title {
+      font-family: var(--font-header);
+      font-size: 0.78rem;
+      letter-spacing: 0.16em;
+      color: var(--ink);
+      text-transform: uppercase;
+      margin-bottom: 0.65rem;
+    }
+
+    .access-list {
+      list-style: none;
+      display: grid;
+      gap: 0.35rem;
+      font-family: var(--font-type);
+      font-size: 0.82rem;
+      color: rgba(28,18,10,0.7);
+      line-height: 1.5;
+    }
+
+    .access-list li::before {
+      content: "\2713";
+      display: inline-block;
+      margin-right: 0.55rem;
+      color: rgba(60,30,10,0.62);
+    }
+
+    .access-closing {
+      margin-top: 0.8rem;
+      font-family: var(--font-header);
+      font-size: 0.68rem;
+      letter-spacing: 0.16em;
+      color: rgba(60,30,10,0.62);
+      text-transform: uppercase;
+    }
+
+    .archive-stamp {
+      display: inline-block;
+      border: 2px solid rgba(60,30,10,0.28);
+      padding: 0.28rem 0.65rem;
+      font-family: var(--font-header);
+      font-size: 0.58rem;
+      letter-spacing: 0.2em;
+      color: rgba(60,30,10,0.42);
+      text-transform: uppercase;
+      transform: rotate(-1.5deg);
+      margin: 1rem 0 0;
+    }
+    .archive-stamp:hover,
+    .archive-status-stamp:hover,
+    .success-stamp:hover {
+      border-color: rgba(60,30,10,0.46);
+      color: rgba(60,30,10,0.62);
+    }
+
+    .archive-status-stamp {
+      display: inline-flex;
+      flex-direction: column;
+      gap: 0.08rem;
+      border: 2px solid rgba(60,30,10,0.28);
+      padding: 0.34rem 0.7rem 0.3rem;
+      font-family: var(--font-header);
+      color: rgba(60,30,10,0.42);
+      text-transform: uppercase;
+      transform: rotate(-1.5deg);
+      margin: 1rem 0 0;
+      transition: color 0.2s, border-color 0.2s;
+    }
+
+    .archive-status-stamp span {
+      font-size: 0.55rem;
+      letter-spacing: 0.2em;
+    }
+
+    .archive-status-stamp strong {
+      font-size: 0.68rem;
+      letter-spacing: 0.14em;
+      font-weight: 400;
+    }
+
+    .document-heading {
+      font-family: var(--font-header);
+      font-size: 0.62rem;
+      letter-spacing: 0.22em;
+      color: rgba(60,30,10,0.48);
+      text-transform: uppercase;
+      border-bottom: 1px solid rgba(60,30,10,0.15);
+      padding-bottom: 0.4rem;
+      margin-bottom: 0.55rem;
+    }
+
+    /* â”€â”€ FORM â”€â”€ */
     .archive-form {
       display: flex;
       flex-direction: column;
@@ -346,7 +443,7 @@
     }
 
     .check-group input[type="checkbox"]:checked::after {
-      content: "✓";
+      content: "\2713";
       position: absolute;
       inset: 0;
       display: flex;
@@ -383,9 +480,9 @@
     }
 
     .btn-submit:hover {
-      background: rgba(40,28,14,0.98);
-      color: var(--paper);
-      border-color: rgba(201,169,122,0.55);
+      background: rgba(44,30,15,0.98);
+      color: rgba(226,196,145,0.96);
+      border-color: rgba(226,196,145,0.7);
     }
 
     /* Success state */
@@ -420,6 +517,81 @@
       font-style: italic;
       line-height: 1.7;
     }
+    .success-stamp {
+      display: inline-block;
+      border: 2px solid rgba(60,30,10,0.28);
+      padding: 0.28rem 0.65rem;
+      font-family: var(--font-header);
+      font-size: 0.58rem;
+      letter-spacing: 0.2em;
+      color: rgba(60,30,10,0.42);
+      text-transform: uppercase;
+      transform: rotate(-1.5deg);
+      margin-bottom: 1.1rem;
+      transition: color 0.2s, border-color 0.2s;
+    }
+
+    .confirmation-ledger {
+      margin: 1.25rem auto 1.2rem;
+      border-top: 1px solid rgba(60,30,10,0.16);
+      border-bottom: 1px solid rgba(60,30,10,0.16);
+      max-width: 420px;
+      text-align: left;
+    }
+
+    .confirmation-ledger div {
+      display: grid;
+      grid-template-columns: minmax(130px, 0.8fr) minmax(0, 1fr);
+      gap: 1rem;
+      padding: 0.55rem 0;
+      border-bottom: 1px solid rgba(60,30,10,0.1);
+    }
+
+    .confirmation-ledger div:last-child { border-bottom: none; }
+
+    .confirmation-ledger dt {
+      font-family: var(--font-type);
+      font-size: 0.62rem;
+      letter-spacing: 0.18em;
+      color: rgba(60,30,10,0.48);
+      text-transform: uppercase;
+    }
+
+    .confirmation-ledger dd {
+      font-family: var(--font-header);
+      font-size: 0.76rem;
+      letter-spacing: 0.12em;
+      color: rgba(28,18,10,0.78);
+      text-transform: uppercase;
+      margin: 0;
+    }
+
+    .success-return {
+      display: inline-block;
+      margin-top: 0.2rem;
+      padding: 0.75rem 1.15rem;
+      border: 2px solid rgba(60,30,10,0.36);
+      font-family: var(--font-header);
+      font-size: 0.72rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--ink);
+      transition: border-color 0.2s, color 0.2s;
+    }
+
+    .success-return:hover {
+      border-color: rgba(60,30,10,0.65);
+      color: rgba(28,18,10,0.9);
+    }
+
+    .success-listen {
+      margin-top: 1rem;
+      font-family: var(--font-header);
+      font-size: 0.82rem;
+      letter-spacing: 0.12em;
+      color: rgba(60,30,10,0.58);
+      text-transform: uppercase;
+    }
 
     /* Small note below form */
     .form-note {
@@ -433,7 +605,7 @@
       line-height: 1.6;
     }
 
-    /* ── FOOTER ── */
+    /* â”€â”€ FOOTER â”€â”€ */
     .site-footer {
       background: var(--bg);
       padding: 1.5rem 2.5rem;
@@ -475,7 +647,8 @@
       .site-nav { padding: 1rem 1.25rem; }
       .paper-inner { padding: 1rem 1.25rem 3rem; }
       .paper-inner::after { left: 2rem; }
-      .btn-submit { align-self: stretch; text-align: center; }
+      .btn-submit, .success-return { align-self: stretch; text-align: center; }
+      .confirmation-ledger div { grid-template-columns: 1fr; gap: 0.15rem; }
       .site-footer { flex-direction: column; gap: 1rem; text-align: center; }
       .footer-motto { justify-content: center; }
     }
@@ -507,17 +680,17 @@
         </svg>
       </div>
       <div class="nav-links">
-        <a href="index.html"     class="nav-link"        data-icon="🗄">Archive</a>
-        <a href="cabinet.html"   class="nav-link"        data-icon="🔍">Cabinet</a>
-        <a href="completed.html" class="nav-link"        data-icon="✦">Completed</a>
-        <a href="progress.html"  class="nav-link"        data-icon="◎">Progress</a>
-        <a href="about.html"     class="nav-link"        data-icon="◉">About</a>
-        <a href="join.html"      class="nav-link active" data-icon="✉">Join</a>
+        <a href="index.html"     class="nav-link"        data-icon="ðŸ—„">Archive</a>
+        <a href="cabinet.html"   class="nav-link"        data-icon="ðŸ”">Cabinet</a>
+        <a href="completed.html" class="nav-link"        data-icon="âœ¦">Completed</a>
+        <a href="progress.html"  class="nav-link"        data-icon="â—Ž">Progress</a>
+        <a href="about.html"     class="nav-link"        data-icon="â—‰">About</a>
+        <a href="join.html"      class="nav-link active" data-icon="âœ‰">Join</a>
       </div>
     </nav>
 
     <div class="hero-content">
-      <p class="hero-label">Restricted Access — Application Required</p>
+      <p class="hero-label">Restricted Access &mdash; Application Required</p>
       <h1 class="hero-title">Join the<br>Archive</h1>
       <p class="hero-sub">Leave your name on record.</p>
       <div class="hero-rule"></div>
@@ -528,18 +701,32 @@
     <div class="paper-inner">
 
       <div class="form-header">
-        <p class="form-label-top">Registration</p>
-        <h2 class="form-title">File Your Name</h2>
+        <p class="form-label-top">Investigator Record</p>
+        <h2 class="form-title">Archive Registration</h2>
         <div class="form-rule"></div>
         <p class="form-desc">
-          Members of the Archive are notified when new cases are declassified — before they're made available to the public. Some files are only accessible to those on record.
+          Become part of the Archive. Registered investigators receive notice whenever new Case Files are declassified. Some investigations become public immediately. Others remain restricted until the Archive authorizes release. Your registration places your name on record.
         </p>
+        <div class="archive-status-stamp"><span>Archive Access</span><strong>Registration Open</strong></div>
+      </div>
+
+      <div class="access-brief">
+        <p class="document-heading">Archive Access</p>
+        <h3 class="access-title">Registered Investigators Receive:</h3>
+        <ul class="access-list">
+          <li>Notification when new investigations open</li>
+          <li>Early notice of declassified Case Files</li>
+          <li>Archive updates and recovered evidence</li>
+          <li>Occasional internal archive notices</li>
+          <li>Future vault release announcements</li>
+        </ul>
+        <p class="access-closing">No spam. Only official Archive correspondence.</p>
       </div>
 
       <form class="archive-form" id="archiveForm" novalidate>
 
         <div class="field-group">
-          <label class="field-label" for="field-name">Your Name</label>
+          <label class="field-label" for="field-name">Full Name</label>
           <input
             class="field-input"
             type="text"
@@ -563,55 +750,48 @@
         </div>
 
         <div class="field-group">
-          <label class="field-label" for="field-how">How Did You Find the Archive?</label>
-          <select class="field-select" id="field-how" name="how">
-            <option value="" disabled selected>Select one</option>
-            <option value="music">Through the music</option>
-            <option value="social">Social media</option>
-            <option value="friend">A friend or contact</option>
-            <option value="search">I was looking for something</option>
-            <option value="other">Other</option>
-          </select>
-        </div>
-
-        <div class="field-group">
-          <label class="field-label" for="field-note">Anything Else? <span style="opacity:0.5;font-style:italic;text-transform:none;letter-spacing:0">(optional)</span></label>
+          <label class="field-label" for="field-note">Investigator Notes <span style="opacity:0.5;font-style:italic;text-transform:none;letter-spacing:0">(optional)</span></label>
           <textarea
             class="field-textarea"
             id="field-note"
             name="note"
-            placeholder="A tip. A theory. Something you noticed."
+            placeholder="Observed anything unusual? A theory. A clue. Something you noticed. Leave it here."
           ></textarea>
         </div>
 
         <label class="check-group">
           <input type="checkbox" name="consent" id="field-consent" />
           <span class="check-label">
-            I understand this is an ongoing investigation. I agree to be contacted when new cases are opened.
+            I understand this investigation is ongoing and wish to receive future Archive notifications.
           </span>
         </label>
 
-        <button type="submit" class="btn-submit">Submit Your File</button>
+        <button type="submit" class="btn-submit">Register With The Archive &rarr;</button>
 
       </form>
 
       <div class="form-success" id="formSuccess">
-        <svg class="success-icon" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="30" cy="30" r="27" stroke="rgba(60,30,10,0.5)" stroke-width="1.5"/>
-          <polygon points="30,10 25,22 35,22" fill="rgba(60,30,10,0.6)"/>
-          <polygon points="30,16 21,30 39,30" fill="rgba(60,30,10,0.6)"/>
-          <rect x="27" y="30" width="6" height="5" fill="rgba(60,30,10,0.55)"/>
-        </svg>
-        <p class="success-title">File Received</p>
-        <p class="success-text">
-          Your name is on record.<br>
-          You'll be contacted when the next case opens.
-        </p>
+        <p class="success-stamp">Investigator Record</p>
+        <p class="success-title">Archive Registration Complete</p>
+        <p class="success-text">Your Investigator Record has been created.</p>
+        <dl class="confirmation-ledger">
+          <div><dt>Status</dt><dd>Registered</dd></div>
+          <div><dt>Archive Access</dt><dd>Public Records</dd></div>
+          <div><dt>Notification Status</dt><dd>Active</dd></div>
+          <div><dt>Next Investigation</dt><dd>Awaiting Declassification</dd></div>
+        </dl>
+        <a class="success-return" href="index.html">Return to Archive &rarr;</a>
+        <p class="success-listen">Keep Listening.</p>
       </div>
 
-      <p class="form-note">
-        Your information is kept confidential. It will not be shared, sold, or disclosed. The Archive keeps its own records.
-      </p>
+      <div class="form-note">
+        <span class="archive-stamp">Confidential</span><br><br>
+        <strong>ARCHIVE NOTICE</strong><br>
+        Registration does not grant immediate access to restricted investigations.<br><br>
+        Additional records become available only after official declassification.<br><br>
+        Your Investigator Record has been securely filed within the Ashton Vale Archives.<br><br>
+        Keep Listening.
+      </div>
 
     </div>
   </section>
@@ -629,8 +809,8 @@
         It is discovered.
       </span>
     </div>
-    <span class="footer-copy">© 2026 Asten Vale Archives</span>
-    <a href="https://buymeacoffee.com/YOUR_USERNAME" target="_blank" rel="noopener" class="footer-copy" style="text-decoration:none;opacity:0.7;transition:opacity 0.2s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.7'">☕ Buy Me a Coffee</a>
+    <span class="footer-copy">Â© 2026 Asten Vale Archives</span>
+    <a href="https://buymeacoffee.com/YOUR_USERNAME" target="_blank" rel="noopener" class="footer-copy" style="text-decoration:none;opacity:0.7;transition:opacity 0.2s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.7'">â˜• Buy Me a Coffee</a>
     <div class="footer-right">
       <a href="index.html" class="footer-archive">Browse the Archive</a>
     </div>
