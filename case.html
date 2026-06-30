@@ -1594,6 +1594,44 @@ body.unlocked .archive-player,body.unlocked #fields-container,body.unlocked .pan
     });
 
     reportDoc.appendChild(notesBody);
+
+    // Recovered Archive Recording (novel audio)
+    (function() {
+      var caseNum3 = String(parseInt(caseData.id, 10) || 1).padStart(3, '0');
+      var novelSrc = window.NOVEL_AUDIO_MAP && window.NOVEL_AUDIO_MAP[caseNum3];
+      if (!novelSrc) return;
+
+      var recHr = document.createElement('div');
+      recHr.className = 'report-divider';
+      reportDoc.appendChild(recHr);
+
+      var recLabel = document.createElement('div');
+      recLabel.style.cssText = 'font-size:0.6rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--ink-faded);margin-bottom:0.75rem;';
+      recLabel.textContent = 'Recovered Archive Recording';
+      reportDoc.appendChild(recLabel);
+
+      var recMeta = document.createElement('div');
+      recMeta.className = 'report-fields';
+      recMeta.style.marginBottom = '0.85rem';
+      function addRecField(label, value) {
+        var row = document.createElement('div');
+        row.className = 'report-field-row';
+        row.innerHTML = '<div class="report-field-label">' + label + '</div><div class="report-field-value">' + value + '</div>';
+        recMeta.appendChild(row);
+      }
+      addRecField('Recovered From', lore.fileId ? 'Case ' + caseNum3 + ' Archive' : 'Ashton Vale Archives');
+      addRecField('Archive Status', 'Recovered');
+      addRecField('Integrity', '97%');
+      addRecField('Recording Quality', 'Archive Grade');
+      reportDoc.appendChild(recMeta);
+
+      var recAudio = document.createElement('audio');
+      recAudio.preload = 'none';
+      recAudio.src = novelSrc;
+      recAudio.setAttribute('aria-label', 'Recovered Archive Recording');
+      reportDoc.appendChild(recAudio);
+    })();
+
     sec2.appendChild(reportDoc);
     panel.appendChild(sec2);
 
@@ -2030,6 +2068,7 @@ document.title = 'Case File ' + d.caseFile + ' Ã¢â‚¬â€ The Asten Vale
   </script>
   <script src="data/sounds.js"></script>
   <script src="js/testimony-map.js"></script>
+  <script src="js/novel-audio-map.js"></script>
   <script src="js/badges.js"></script>
 
   <script src="js/polish.js" defer></script>
