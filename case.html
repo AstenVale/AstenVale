@@ -1631,51 +1631,6 @@ body.unlocked .archive-player,body.unlocked #fields-container,body.unlocked .pan
     panel.appendChild(sec2);
 
     // Ã¢â€â‚¬Ã¢â€â‚¬ SECTION 3: STORY CHAPTER Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
-    var openingLines = (story.opening || []).filter(function(l) { return l && l.indexOf('//') === -1; });
-    var endingLines  = (story.ending  || []).filter(function(l) { return l && l.indexOf('//') === -1; });
-
-    if (openingLines.length > 0 || endingLines.length > 0) {
-      var sec3 = document.createElement('div');
-      sec3.className = 'story-chapter-section unlock-section';
-      sec3.style.animationDelay = '0.9s';
-
-      var lbl3 = document.createElement('div');
-      lbl3.className = 'unlock-section-label';
-      lbl3.textContent = 'Archived Journal Entry';
-      sec3.appendChild(lbl3);
-
-      var h3 = document.createElement('div');
-      h3.className = 'unlock-section-heading';
-      h3.textContent = 'Chapter ' + String(parseInt(caseData.id, 10) || 1).padStart(2,'0') + ' Ã¢â‚¬â€ ' + (caseData.title || '');
-      sec3.appendChild(h3);
-
-      var chapterDoc = document.createElement('div');
-      chapterDoc.className = 'chapter-doc';
-
-      openingLines.forEach(function(line) {
-        var p = document.createElement('p');
-        p.className = 'chapter-prose';
-        p.textContent = line;
-        chapterDoc.appendChild(p);
-      });
-
-      if (openingLines.length > 0 && endingLines.length > 0) {
-        var sep = document.createElement('div');
-        sep.className = 'chapter-sep';
-        sep.textContent = 'Ã¢â‚¬â€ Ã¢Å“Â¦ Ã¢â‚¬â€';
-        chapterDoc.appendChild(sep);
-      }
-
-      endingLines.forEach(function(line) {
-        var p = document.createElement('p');
-        p.className = 'chapter-ending-prose';
-        p.textContent = line;
-        chapterDoc.appendChild(p);
-      });
-
-      sec3.appendChild(chapterDoc);
-      panel.appendChild(sec3);
-    }
 
 
     // Ã¢â€â‚¬Ã¢â€â‚¬ CONTINUE INVESTIGATION Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
