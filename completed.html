@@ -244,6 +244,8 @@
         witness: collectibleName('witness', 'witness'),
         marker: collectibleName('marker', 'marker'),
         sound: collectibleName('sound', 'sound'),
+        time: collectibleName('time', 'time'),
+        direction: collectibleName('direction', 'direction'),
         summary: (c.desc && c.desc.join(' ')) || (song && song.game && song.game.objective) || 'Official closed investigation record.',
         complete: true,
         solvedDate: ''
@@ -273,7 +275,7 @@
       return sortedRecords(records);
     }
     function renderCard(record) {
-      var evidence = [record.object, record.witness, record.sound, record.location, record.marker].filter(Boolean).slice(0, 5);
+      var evidence = [record.object, record.witness, record.sound, record.location, record.marker, record.time, record.direction].filter(Boolean);
       return '<a class="case-card" href="' + esc(record.url) + '"><div class="case-main"><div class="case-row"><span class="case-number-label">' + esc(record.seasonTitle) + ' / Case ' + pad(record.id) + '</span></div><h3 class="case-title">' + esc(record.title) + '</h3><p class="case-desc">' + esc(record.summary) + '</p><div class="evidence-line"><span class="evidence-label">Recovered</span>' + evidence.map(function(e) { return '<span class="evidence-token">' + esc(e) + '</span>'; }).join('') + '</div><div class="case-meta"><span>Archive Status: Closed</span>' + (record.solvedDate ? '<span>Closed: ' + esc(record.solvedDate) + '</span>' : '') + '</div></div><div class="case-side"><span class="closed-stamp">Recovered</span><span class="archive-status">Closed</span><span class="reopen-link">Re-open Case &rarr;</span></div></a>';
     }
     function renderLockedSeason(season, index) {
