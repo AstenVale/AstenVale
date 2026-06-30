@@ -241,7 +241,7 @@ window.SONG_DATA = {
       "symbol": "👤",
       "description": "Sheriff, identified in the case notes for Case File 012. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
-      "image": "images/Witness/Case 012 - wife.jpg"
+      "image": "images/Witness/Case 012 - sheriff.jpg"
     },
     {
       "id": "012_time",

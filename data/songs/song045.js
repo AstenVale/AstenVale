@@ -251,7 +251,7 @@ window.SONG_DATA = {
       "symbol": "👤",
       "description": "Ropemaker, identified in the case notes for Case File 045. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
-      "image": "images/Witness/Case 045 - glazier.jpg"
+      "image": "images/Witness/Case 045 - rope maker.jpg"
     },
     {
       "id": "045_time",

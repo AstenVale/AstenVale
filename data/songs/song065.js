@@ -251,7 +251,7 @@ window.SONG_DATA = {
       "symbol": "👤",
       "description": "Deputy, identified in the case notes for Case File 065. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
-      "image": "images/Witness/Case 065 - weaver.jpg"
+      "image": "images/Witness/Case 065 - deputy.jpg"
     },
     {
       "id": "065_time",

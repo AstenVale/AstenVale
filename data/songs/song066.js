@@ -253,7 +253,7 @@ window.SONG_DATA = {
       "symbol": "👤",
       "description": "Drifter, identified in the case notes for Case File 066. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
-      "image": "images/Witness/Case 066 - quarry-foreman.jpg"
+      "image": "images/Witness/Case 066 - drifter.jpg"
     },
     {
       "id": "066_time",

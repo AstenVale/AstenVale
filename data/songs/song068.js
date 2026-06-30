@@ -251,7 +251,7 @@ window.SONG_DATA = {
       "symbol": "👤",
       "description": "Retiredsoldier, identified in the case notes for Case File 068. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
-      "image": "images/Witness/Case 068 - harness-maker.jpg"
+      "image": "images/Witness/Case 068 - retired soldier.jpg"
     },
     {
       "id": "068_time",

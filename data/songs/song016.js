@@ -252,7 +252,7 @@ window.SONG_DATA = {
       "symbol": "👤",
       "description": "Wife, identified in the case notes for Case File 016. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
-      "image": "images/Witness/Case 016 - ghost-child.jpg"
+      "image": "images/Witness/Case 016 - wife.jpg"
     },
     {
       "id": "016_time",

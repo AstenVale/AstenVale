@@ -239,7 +239,7 @@ window.SONG_DATA = {
       "symbol": "👤",
       "description": "Chandler, identified in the case notes for Case File 028. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
-      "image": "images/Witness/Case 028 - miller.jpg"
+      "image": "images/Witness/Case 028 - chandler.jpg"
     },
     {
       "id": "028_time",

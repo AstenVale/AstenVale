@@ -251,7 +251,7 @@ window.SONG_DATA = {
       "symbol": "👤",
       "description": "Neighbor, identified in the case notes for Case File 023. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
-      "image": "images/Witness/Case 023 - fisherman.jpg"
+      "image": "images/Witness/Case 023 - neighbor.jpg"
     },
     {
       "id": "023_time",
