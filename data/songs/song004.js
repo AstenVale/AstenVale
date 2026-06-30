@@ -240,7 +240,7 @@ window.SONG_DATA = {
       "symbol": "👤",
       "description": "The same Widow from Case 002. Found inside the church at 6:45. She did not speak. She was already leaving.",
       "unknownInfo": "Whether The Widow placed the ring — or was there to retrieve it.",
-      "image": "images/Witness/Case 004 - station-master.jpg"
+      "image": "images/Witness/Case 004 - widow.jpg"
     },
     {
       "id": "004_time",

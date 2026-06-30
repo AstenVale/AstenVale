@@ -1309,12 +1309,18 @@ body.unlocked::before{
         var img = document.createElement('img');
         img.src = collectible.image;
         img.alt = collectible.name || '';
+        img.onerror = function() {
+          this.style.display = 'none';
+          var fb = document.createElement('span'); fb.className = 'artifact-symbol'; fb.textContent = collectible.symbol || '?';
+          imgBox.appendChild(fb);
+        };
         imgBox.appendChild(img);
       } else {
         var sym = document.createElement('span');
         sym.className = 'artifact-symbol';
-        sym.textContent = collectible.symbol || 'Ã°Å¸â€Â';
+        sym.textContent = collectible.symbol || '?';
         imgBox.appendChild(sym);
+      }
       }
       artWrap.appendChild(imgBox);
 
@@ -1556,12 +1562,18 @@ body.unlocked::before{
         var witImg = document.createElement('img');
         witImg.src = witC.image;
         witImg.alt = witC.name || '';
+        witImg.onerror = function() {
+          this.style.display = 'none';
+          var fb = document.createElement('span'); fb.className = 'artifact-symbol'; fb.textContent = witC.symbol || '?';
+          witImgBox.appendChild(fb);
+        };
         witImgBox.appendChild(witImg);
       } else {
         var witSym = document.createElement('span');
         witSym.className = 'artifact-symbol';
-        witSym.textContent = witC.symbol || 'Ã°Å¸â€˜Â¤';
+        witSym.textContent = witC.symbol || '?';
         witImgBox.appendChild(witSym);
+      }
       }
       witWrap.appendChild(witImgBox);
 
@@ -1592,10 +1604,15 @@ body.unlocked::before{
 
       // Witness Testimony Audio Player
       (function() {
-        var tid = String(parseInt(caseData.id, 10) || 1).padStart(3, '0');
-        var tslug = (caseData.title || '').toLowerCase()
-          .replace(/['‘’]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
-        var tSrc = 'audio/testimony/case-' + tid + '-' + tslug + '.mp3';
+        var tid = String(parseInt(caseData.id, 10) || 1).padStart(3, ‘0’);
+        // Derive witness slug from the witness image path: "images/Witness/Case 001 - stranger.jpg" -> "stranger"
+        var witImg = ‘’;
+        var ev = (caseData.evidence || []).find(function(e) { return e.type === ‘Witness’; });
+        if (ev && ev.image) witImg = ev.image;
+        var tslug = witImg
+          ? witImg.replace(/.*Case \d+ - /, ‘’).replace(/\.jpg$/i, ‘’).toLowerCase().replace(/[^a-z0-9]+/g, ‘-’).replace(/^-|-$/g, ‘’)
+          : (caseData.title || ‘’).toLowerCase().replace(/[‘’’]/g, ‘’).replace(/[^a-z0-9]+/g, ‘-’).replace(/^-|-$/g, ‘’);
+        var tSrc = ‘Testimonies/case-’ + tid + ‘-’ + tslug + ‘-testimony.mp3’;
         var tSolved = (function() {
           try { return JSON.parse(localStorage.getItem('av_solved') || '[]').indexOf(caseData.id) !== -1; } catch(e) { return false; }
         })();

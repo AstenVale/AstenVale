@@ -241,7 +241,7 @@ window.SONG_DATA = {
       "symbol": "👤",
       "description": "Censustaker, identified in the case notes for Case File 031. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
-      "image": "images/Witness/Case 031 - lamplighter.jpg"
+      "image": "images/Witness/Case 031 - census taker.jpg"
     },
     {
       "id": "031_time",

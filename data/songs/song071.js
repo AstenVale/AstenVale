@@ -252,7 +252,7 @@ window.SONG_DATA = {
       "symbol": "👤",
       "description": "Judge, identified in the case notes for Case File 071. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
-      "image": "images/Witness/Case 071 - undertaker.jpg"
+      "image": "images/Witness/Case 071 - judge.jpg"
     },
     {
       "id": "071_time",

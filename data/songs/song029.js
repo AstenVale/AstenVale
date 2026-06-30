@@ -239,7 +239,7 @@ window.SONG_DATA = {
       "symbol": "👤",
       "description": "Nightwatchman, identified in the case notes for Case File 029. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
-      "image": "images/Witness/Case 029 - blacksmith.jpg"
+      "image": "images/Witness/Case 029 - night watchman.jpg"
     },
     {
       "id": "029_time",

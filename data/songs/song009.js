@@ -240,7 +240,7 @@ window.SONG_DATA = {
       "symbol": "👤",
       "description": "Mechanic, identified in the case notes for Case File 009. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
-      "image": "images/Witness/Case 009 - caretaker.jpg"
+      "image": "images/Witness/Case 009 - mechanic.jpg"
     },
     {
       "id": "009_time",

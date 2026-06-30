@@ -242,7 +242,7 @@ window.SONG_DATA = {
       "symbol": "👤",
       "description": "Typesetter, identified in the case notes for Case File 052. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
-      "image": "images/Witness/Case 052 - circuit-rider.jpg"
+      "image": "images/Witness/Case 052 - typesetter.jpg"
     },
     {
       "id": "052_time",

@@ -240,7 +240,7 @@ window.SONG_DATA = {
       "symbol": "👤",
       "description": "Driver, identified in the case notes for Case File 073. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
-      "image": "images/Witness/Case 073 - the-girl-with-no-shoes.jpg"
+      "image": "images/Witness/Case 073 - driver.jpg"
     },
     {
       "id": "073_time",

@@ -252,7 +252,7 @@ window.SONG_DATA = {
       "symbol": "👤",
       "description": "Lamplighter, identified in the case notes for Case File 042. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
-      "image": "images/Witness/Case 042 - judge.jpg"
+      "image": "images/Witness/Case 042 - lamplighter.jpg"
     },
     {
       "id": "042_time",

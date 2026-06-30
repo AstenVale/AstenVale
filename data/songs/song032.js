@@ -240,7 +240,7 @@ window.SONG_DATA = {
       "symbol": "👤",
       "description": "Wainwright, identified in the case notes for Case File 032. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
-      "image": "images/Witness/Case 032 - woodsman.jpg"
+      "image": "images/Witness/Case 032 - wainwright.jpg"
     },
     {
       "id": "032_time",

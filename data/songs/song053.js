@@ -240,7 +240,7 @@ window.SONG_DATA = {
       "symbol": "👤",
       "description": "Banker, identified in the case notes for Case File 053. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
-      "image": "images/Witness/Case 053 - peddler.jpg"
+      "image": "images/Witness/Case 053 - banker.jpg"
     },
     {
       "id": "053_time",

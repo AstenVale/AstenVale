@@ -253,7 +253,7 @@ window.SONG_DATA = {
       "symbol": "👤",
       "description": "Fisherman, identified in the case notes for Case File 072. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
-      "image": "images/Witness/Case 072 - night-porter.jpg"
+      "image": "images/Witness/Case 072 - fisherman.jpg"
     },
     {
       "id": "072_time",

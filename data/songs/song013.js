@@ -250,7 +250,7 @@ window.SONG_DATA = {
       "symbol": "👤",
       "description": "Preacher, identified in the case notes for Case File 013. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
-      "image": "images/Witness/Case 013 - sister.jpg"
+      "image": "images/Witness/Case 013 - preacher.jpg"
     },
     {
       "id": "013_time",

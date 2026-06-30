@@ -239,7 +239,7 @@ window.SONG_DATA = {
       "symbol": "👤",
       "description": "Conductor, identified in the case notes for Case File 054. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
-      "image": "images/Witness/Case 054 - the-mute.jpg"
+      "image": "images/Witness/Case 054 - conductor.jpg"
     },
     {
       "id": "054_time",

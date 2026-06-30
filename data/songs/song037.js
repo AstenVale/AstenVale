@@ -250,7 +250,7 @@ window.SONG_DATA = {
       "symbol": "👤",
       "description": "Midwife, identified in the case notes for Case File 037. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
-      "image": "images/Witness/Case 037 - doctor.jpg"
+      "image": "images/Witness/Case 037 - midwife.jpg"
     },
     {
       "id": "037_time",

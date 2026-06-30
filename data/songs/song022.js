@@ -252,7 +252,7 @@ window.SONG_DATA = {
       "symbol": "👤",
       "description": "Ghostchild, identified in the case notes for Case File 022. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
-      "image": "images/Witness/Case 022 - wainwright.jpg"
+      "image": "images/Witness/Case 022 - ghost child.jpg"
     },
     {
       "id": "022_time",
