@@ -913,68 +913,13 @@ body.unlocked::before{
     audio.addEventListener('pause', savePosition);
   }
 
-  // Build a minimal inline player for Recovered Music section
+  // Build player for Recovered Music section — polish.js handles the fancy UI
   function buildRecoveredMusicPlayer(audioSrc, label) {
-    var wrap = document.createElement('div');
-    wrap.className = 'rm-player';
     var audio = document.createElement('audio');
     audio.preload = 'none';
-    audio.className = 'native-audio';
     audio.src = audioSrc;
-    wrap.appendChild(audio);
-
-    var ctrl = document.createElement('div');
-    ctrl.className = 'rm-player-controls';
-
-    var btn = document.createElement('button');
-    btn.className = 'rm-play';
-    btn.innerHTML = '&#9654;';
-    btn.setAttribute('aria-label', 'Play ' + label);
-    var playing = false;
-    btn.addEventListener('click', function() {
-      if (playing) {
-        audio.pause(); playing = false; btn.innerHTML = '&#9654;';
-      } else {
-        audio.play().catch(function() {}); playing = true; btn.innerHTML = '&#9646;&#9646;';
-      }
-    });
-    audio.addEventListener('ended', function() { playing = false; btn.innerHTML = '&#9654;'; });
-
-    var trkWrap = document.createElement('div');
-    trkWrap.style.flex = '1';
-    var trk = document.createElement('div');
-    trk.className = 'rm-track';
-    var filled = document.createElement('div');
-    filled.className = 'rm-filled';
-    trk.appendChild(filled);
-    trk.addEventListener('click', function(e) {
-      if (!audio.duration) return;
-      var r = trk.getBoundingClientRect();
-      audio.currentTime = Math.max(0, Math.min(1, (e.clientX - r.left) / r.width)) * audio.duration;
-    });
-    audio.addEventListener('timeupdate', function() {
-      if (audio.duration) filled.style.width = (audio.currentTime / audio.duration * 100) + '%';
-    });
-
-    var times = document.createElement('div');
-    times.className = 'rm-times';
-    var cur = document.createElement('span'); cur.textContent = '0:00';
-    var dur = document.createElement('span'); dur.textContent = '--:--';
-    audio.addEventListener('loadedmetadata', function() {
-      var m = Math.floor(audio.duration/60);
-      var s = Math.floor(audio.duration%60);
-      dur.textContent = m + ':' + (s<10?'0':'') + s;
-    });
-    audio.addEventListener('timeupdate', function() {
-      var m = Math.floor(audio.currentTime/60);
-      var s = Math.floor(audio.currentTime%60);
-      cur.textContent = m + ':' + (s<10?'0':'') + s;
-    });
-    times.appendChild(cur); times.appendChild(dur);
-    trkWrap.appendChild(trk); trkWrap.appendChild(times);
-    ctrl.appendChild(btn); ctrl.appendChild(trkWrap);
-    wrap.appendChild(ctrl);
-    return wrap;
+    audio.setAttribute('aria-label', label || 'Recovered Music');
+    return audio;
   }
 
 
@@ -1390,74 +1335,11 @@ body.unlocked::before{
       blk.appendChild(recovInEl);
 
       if (soundData && soundData.audioFile) {
-        (function() {
-          var sevAudio = document.createElement('audio');
-          sevAudio.preload = 'none';
-          sevAudio.className = 'native-audio';
-          sevAudio.style.display = 'none';
-          var sevSrc = document.createElement('source');
-          sevSrc.src = soundData.audioFile; sevSrc.type = 'audio/mpeg';
-          sevAudio.appendChild(sevSrc);
-
-          var sevWrap = document.createElement('div');
-          sevWrap.className = 'wt-player';
-          sevWrap.appendChild(sevAudio);
-
-          var sevLbl = document.createElement('div');
-          sevLbl.className = 'wt-player-label';
-          sevLbl.textContent = 'Audio Evidence';
-          sevWrap.appendChild(sevLbl);
-
-          var sevCtrl = document.createElement('div');
-          sevCtrl.className = 'wt-controls';
-          var sevBtn = document.createElement('button');
-          sevBtn.className = 'wt-play'; sevBtn.innerHTML = '&#9654;';
-          sevCtrl.appendChild(sevBtn);
-          var sevTrack = document.createElement('div'); sevTrack.className = 'wt-track';
-          var sevFill = document.createElement('div'); sevFill.className = 'wt-filled';
-          sevTrack.appendChild(sevFill); sevCtrl.appendChild(sevTrack);
-          var sevCur = document.createElement('span'); sevCur.className = 'wt-time'; sevCur.textContent = '0:00';
-          var sevDur = document.createElement('span'); sevDur.className = 'wt-time'; sevDur.textContent = '--:--';
-          sevCtrl.appendChild(sevCur); sevCtrl.appendChild(sevDur);
-          sevWrap.appendChild(sevCtrl);
-
-          var sevVolRow = document.createElement('div'); sevVolRow.className = 'wt-vol-row';
-          var sevVolBtn = document.createElement('button'); sevVolBtn.className = 'wt-vol-btn'; sevVolBtn.innerHTML = '&#128266;';
-          var sevVol = document.createElement('input'); sevVol.className = 'wt-vol'; sevVol.type = 'range';
-          sevVol.min = '0'; sevVol.max = '1'; sevVol.step = '0.05'; sevVol.value = '1';
-          sevVolRow.appendChild(sevVolBtn); sevVolRow.appendChild(sevVol);
-          sevWrap.appendChild(sevVolRow);
-
-          var sevPlaying = false; var sevLastVol = 1;
-          function sevFmt(s) { if (!isFinite(s)||isNaN(s)) return '--:--'; return Math.floor(s/60)+':'+(Math.floor(s%60)<10?'0':'')+Math.floor(s%60); }
-
-          sevAudio.addEventListener('loadedmetadata', function() { sevDur.textContent = sevFmt(sevAudio.duration); });
-          sevAudio.addEventListener('timeupdate', function() {
-            if (!sevAudio.duration) return;
-            sevCur.textContent = sevFmt(sevAudio.currentTime);
-            sevFill.style.width = (sevAudio.currentTime / sevAudio.duration * 100) + '%';
-          });
-          sevAudio.addEventListener('ended', function() { sevPlaying=false; sevBtn.innerHTML='&#9654;'; sevFill.style.width='0%'; });
-          sevBtn.addEventListener('click', function() {
-            if (sevPlaying) { sevAudio.pause(); sevPlaying=false; sevBtn.innerHTML='&#9654;'; }
-            else { sevAudio.play().catch(function(){}); sevPlaying=true; sevBtn.innerHTML='&#9646;&#9646;'; }
-          });
-          sevTrack.addEventListener('click', function(e) {
-            if (!sevAudio.duration) return;
-            var r = sevTrack.getBoundingClientRect();
-            sevAudio.currentTime = Math.max(0,Math.min(1,(e.clientX-r.left)/r.width))*sevAudio.duration;
-          });
-          sevVol.addEventListener('input', function() {
-            sevAudio.volume = parseFloat(sevVol.value);
-            sevVolBtn.innerHTML = sevAudio.volume===0?'&#128263;':'&#128266;';
-          });
-          sevVolBtn.addEventListener('click', function() {
-            if (sevAudio.volume>0) { sevLastVol=sevAudio.volume; sevAudio.volume=0; sevVol.value=0; sevVolBtn.innerHTML='&#128263;'; }
-            else { sevAudio.volume=sevLastVol||1; sevVol.value=sevAudio.volume; sevVolBtn.innerHTML='&#128266;'; }
-          });
-
-          blk.appendChild(sevWrap);
-        })();
+        var sevAudio = document.createElement('audio');
+        sevAudio.preload = 'none';
+        sevAudio.src = soundData.audioFile;
+        sevAudio.setAttribute('aria-label', 'Audio Evidence');
+        blk.appendChild(sevAudio);
       }
 
       var metaRow = document.createElement('div');
@@ -1626,102 +1508,11 @@ body.unlocked::before{
           return;
         }
 
-        var wtWrap = document.createElement('div');
-        wtWrap.className = 'wt-player';
-
-        var wtLbl = document.createElement('div');
-        wtLbl.className = 'wt-player-label';
-        wtLbl.textContent = 'Witness Statement';
-        wtWrap.appendChild(wtLbl);
-
         var wtAudio = document.createElement('audio');
         wtAudio.preload = 'none';
-        wtAudio.className = 'native-audio';
         wtAudio.src = tSrc;
-        wtAudio.style.display = 'none';
-        wtWrap.appendChild(wtAudio);
-
-        var wtCtrl = document.createElement('div');
-        wtCtrl.className = 'wt-controls';
-        var wtBtn = document.createElement('button');
-        wtBtn.className = 'wt-play';
-        wtBtn.innerHTML = '&#9654;';
-        wtBtn.setAttribute('aria-label', 'Play witness testimony');
-        wtCtrl.appendChild(wtBtn);
-        var wtTrack = document.createElement('div');
-        wtTrack.className = 'wt-track';
-        var wtFilled = document.createElement('div');
-        wtFilled.className = 'wt-filled';
-        wtTrack.appendChild(wtFilled);
-        wtCtrl.appendChild(wtTrack);
-        var wtCur = document.createElement('span'); wtCur.className = 'wt-time'; wtCur.textContent = '0:00';
-        var wtDur = document.createElement('span'); wtDur.className = 'wt-time'; wtDur.textContent = '--:--';
-        wtCtrl.appendChild(wtCur); wtCtrl.appendChild(wtDur);
-        wtWrap.appendChild(wtCtrl);
-
-        var wtVolRow = document.createElement('div');
-        wtVolRow.className = 'wt-vol-row';
-        var wtVolBtn = document.createElement('button');
-        wtVolBtn.className = 'wt-vol-btn';
-        wtVolBtn.innerHTML = '&#128266;';
-        var wtVol = document.createElement('input');
-        wtVol.className = 'wt-vol'; wtVol.type = 'range';
-        wtVol.min = '0'; wtVol.max = '1'; wtVol.step = '0.05'; wtVol.value = '1';
-        wtVolRow.appendChild(wtVolBtn); wtVolRow.appendChild(wtVol);
-        wtWrap.appendChild(wtVolRow);
-
-        var wtMeta = document.createElement('div');
-        wtMeta.className = 'wt-meta';
-        function wtRow(lbl, val) {
-          var p = document.createElement('span'); p.className = 'wt-meta-pair';
-          p.innerHTML = '<span class="wt-meta-label">' + lbl + '</span> <span class="wt-meta-value">' + val + '</span>';
-          wtMeta.appendChild(p);
-        }
-        wtRow('Status', 'Recovered');
-        wtRow('Case', tid);
-        var wtDurPair = document.createElement('span'); wtDurPair.className = 'wt-meta-pair';
-        var wtDurMeta = document.createElement('span'); wtDurMeta.className = 'wt-meta-value'; wtDurMeta.textContent = '--:--';
-        wtDurPair.innerHTML = '<span class="wt-meta-label">Duration</span> ';
-        wtDurPair.appendChild(wtDurMeta);
-        wtMeta.appendChild(wtDurPair);
-        wtRow('Voice', 'Witness Interview');
-        wtWrap.appendChild(wtMeta);
-
-        var wtPlaying = false; var wtLastVol = 1;
-        function wtFmt(s) { if (!isFinite(s)||isNaN(s)) return '--:--'; return Math.floor(s/60)+':'+(Math.floor(s%60)<10?'0':'')+Math.floor(s%60); }
-        function wtPct(p) { wtFilled.style.width = p + '%'; }
-
-        wtAudio.addEventListener('loadedmetadata', function() {
-          var d = wtFmt(wtAudio.duration); wtDur.textContent = d; wtDurMeta.textContent = d;
-        });
-        wtAudio.addEventListener('timeupdate', function() {
-          if (!wtAudio.duration) return;
-          wtCur.textContent = wtFmt(wtAudio.currentTime);
-          wtPct((wtAudio.currentTime / wtAudio.duration) * 100);
-        });
-        wtAudio.addEventListener('ended', function() { wtPlaying=false; wtBtn.innerHTML='&#9654;'; wtPct(0); });
-        wtAudio.addEventListener('error', function() { wtLbl.textContent = 'Witness Statement — Recording pending upload'; });
-
-        wtBtn.addEventListener('click', function() {
-          if (wtPlaying) { wtAudio.pause(); wtPlaying=false; wtBtn.innerHTML='&#9654;'; }
-          else { wtAudio.play().catch(function(){}); wtPlaying=true; wtBtn.innerHTML='&#9646;&#9646;'; }
-        });
-        wtTrack.addEventListener('click', function(e) {
-          if (!wtAudio.duration) return;
-          var r = wtTrack.getBoundingClientRect();
-          wtAudio.currentTime = Math.max(0, Math.min(1,(e.clientX-r.left)/r.width)) * wtAudio.duration;
-        });
-        wtVol.addEventListener('input', function() {
-          wtAudio.volume = parseFloat(wtVol.value);
-          if (wtAudio.volume>0) wtLastVol=wtAudio.volume;
-          wtVolBtn.innerHTML = wtAudio.volume===0?'&#128263;':'&#128266;';
-        });
-        wtVolBtn.addEventListener('click', function() {
-          if (wtAudio.volume>0) { wtLastVol=wtAudio.volume; wtAudio.volume=0; wtVol.value=0; wtVolBtn.innerHTML='&#128263;'; }
-          else { wtAudio.volume=wtLastVol||1; wtVol.value=wtAudio.volume; wtVolBtn.innerHTML='&#128266;'; }
-        });
-
-        witBody.appendChild(wtWrap);
+        wtAudio.setAttribute('aria-label', 'Witness Statement');
+        witBody.appendChild(wtAudio);
       })();
 
       var witViewLink = document.createElement('a');
