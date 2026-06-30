@@ -216,18 +216,20 @@ window.SONG_DATA = {
       ]
     }
   ],
-    "collectibles": [
+  "collectibles": [
     {
       "id": "094_pocketwatch",
       "type": "Object",
       "name": "Pocketwatch",
       "symbol": "🔍",
       "description": "Pocket Watch was recovered from Mill House in Case File 094. It is tied to Lamplighter, 6:06, and marker 888.",
-      "unknownInfo": "Past the Tree Line and Broken String suggest this object matters beyond the first reading."
+      "unknownInfo": "Past the Tree Line and Broken String suggest this object matters beyond the first reading.",
+      "image": "images/Objects/094 - numbered disk.png"
     },
     {
       "id": "094_location",
       "type": "Location",
+      "image": "images/Location/case-094-the-widows-porch-location.png",
       "name": "Millhouse",
       "symbol": "📍",
       "description": "The active scene for Case File 094. Recovered field notes place the primary event at Millhouse.",

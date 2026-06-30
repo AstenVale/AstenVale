@@ -216,18 +216,20 @@ window.SONG_DATA = {
       ]
     }
   ],
-    "collectibles": [
+  "collectibles": [
     {
       "id": "025_charcoalsketch",
       "type": "Object",
       "name": "Charcoalsketch",
       "symbol": "🔍",
       "description": "Charcoal Sketch was recovered from Quarry Edge in Case File 025. It is tied to Station Master, 9:55, and marker 307.",
-      "unknownInfo": "Toward and Coal Shifting suggest this object matters beyond the first reading."
+      "unknownInfo": "Toward and Coal Shifting suggest this object matters beyond the first reading.",
+      "image": "images/Objects/025 - leather strap.png"
     },
     {
       "id": "025_location",
       "type": "Location",
+      "image": "images/Location/case-025-grist-mill-location.png",
       "name": "Quarryedge",
       "symbol": "📍",
       "description": "The active scene for Case File 025. Recovered field notes place the primary event at Quarryedge.",
@@ -239,7 +241,8 @@ window.SONG_DATA = {
       "name": "Stationmaster",
       "symbol": "👤",
       "description": "Stationmaster, identified in the case notes for Case File 025. Has not given a formal statement.",
-      "unknownInfo": "Their connection to the recovered object and whether they returned."
+      "unknownInfo": "Their connection to the recovered object and whether they returned.",
+      "image": "images/Witness/Case 025 - banker.png"
     },
     {
       "id": "025_time",

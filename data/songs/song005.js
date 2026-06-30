@@ -215,18 +215,20 @@ window.SONG_DATA = {
       ]
     }
   ],
-    "collectibles": [
+  "collectibles": [
     {
       "id": "005_silverwatch",
       "type": "Object",
       "name": "Silverwatch",
       "symbol": "🔍",
       "description": "Silver Watch was recovered from Depot in Case File 005. It is tied to Station Master, 3:03, and marker 55.",
-      "unknownInfo": "North and Train Whistle suggest this object matters beyond the first reading."
+      "unknownInfo": "North and Train Whistle suggest this object matters beyond the first reading.",
+      "image": "images/Objects/005 - silver watch.png"
     },
     {
       "id": "005_location",
       "type": "Location",
+      "image": "images/Location/case-005-depot-location.png",
       "name": "Depot",
       "symbol": "📍",
       "description": "The active scene for Case File 005. Recovered field notes place the primary event at Depot.",
@@ -238,7 +240,8 @@ window.SONG_DATA = {
       "name": "Stationmaster",
       "symbol": "👤",
       "description": "Stationmaster, identified in the case notes for Case File 005. Has not given a formal statement.",
-      "unknownInfo": "Their connection to the recovered object and whether they returned."
+      "unknownInfo": "Their connection to the recovered object and whether they returned.",
+      "image": "images/Witness/Case 005 - child.png"
     },
     {
       "id": "005_time",

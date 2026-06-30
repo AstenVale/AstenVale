@@ -217,18 +217,20 @@ window.SONG_DATA = {
       ]
     }
   ],
-    "collectibles": [
+  "collectibles": [
     {
       "id": "050_emptytin",
       "type": "Object",
       "name": "Emptytin",
       "symbol": "🔍",
       "description": "Empty Tin was recovered from The Root Cellar in Case File 050. It is tied to Lock Keeper, 8:06, and marker 516.",
-      "unknownInfo": "Down the Hollow and Chains suggest this object matters beyond the first reading."
+      "unknownInfo": "Down the Hollow and Chains suggest this object matters beyond the first reading.",
+      "image": "images/Objects/050 - telegram.png"
     },
     {
       "id": "050_location",
       "type": "Location",
+      "image": "images/Location/case-050-mill-house-location.png",
       "name": "Root Cellar",
       "symbol": "📍",
       "description": "The active scene for Case File 050. Recovered field notes place the primary event at Root Cellar.",
@@ -240,7 +242,8 @@ window.SONG_DATA = {
       "name": "Lockkeeper",
       "symbol": "👤",
       "description": "Lockkeeper, identified in the case notes for Case File 050. Has not given a formal statement.",
-      "unknownInfo": "Their connection to the recovered object and whether they returned."
+      "unknownInfo": "Their connection to the recovered object and whether they returned.",
+      "image": "images/Witness/Case 050 - schoolgirl.png"
     },
     {
       "id": "050_time",

@@ -215,18 +215,20 @@ window.SONG_DATA = {
       ]
     }
   ],
-    "collectibles": [
+  "collectibles": [
     {
       "id": "034_straightrazor",
       "type": "Object",
       "name": "Straightrazor",
       "symbol": "🔍",
       "description": "Straight Razor was recovered from Watchmaker's Shop in Case File 034. It is tied to Preacher, 9:27, and marker 388.",
-      "unknownInfo": "Ahead and River Ice suggest this object matters beyond the first reading."
+      "unknownInfo": "Ahead and River Ice suggest this object matters beyond the first reading.",
+      "image": "images/Objects/034 - spool of thread.png"
     },
     {
       "id": "034_location",
       "type": "Location",
+      "image": "images/Location/case-034-the-quarry-pool-location.png",
       "name": "Watchmaker'Sshop",
       "symbol": "📍",
       "description": "The active scene for Case File 034. Recovered field notes place the primary event at Watchmaker'Sshop.",
@@ -238,7 +240,8 @@ window.SONG_DATA = {
       "name": "Preacher",
       "symbol": "👤",
       "description": "Preacher, identified in the case notes for Case File 034. Has not given a formal statement.",
-      "unknownInfo": "Their connection to the recovered object and whether they returned."
+      "unknownInfo": "Their connection to the recovered object and whether they returned.",
+      "image": "images/Witness/Case 034 - librarian.png"
     },
     {
       "id": "034_time",

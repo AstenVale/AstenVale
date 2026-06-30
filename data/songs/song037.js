@@ -224,18 +224,20 @@ window.SONG_DATA = {
       ]
     }
   ],
-    "collectibles": [
+  "collectibles": [
     {
       "id": "037_stringofbeads",
       "type": "Object",
       "name": "Stringofbeads",
       "symbol": "🔍",
       "description": "String of Beads was recovered from Stables in Case File 037. It is tied to Midwife, 10:05, and marker 407.",
-      "unknownInfo": "Toward and Kettle Boil suggest this object matters beyond the first reading."
+      "unknownInfo": "Toward and Kettle Boil suggest this object matters beyond the first reading.",
+      "image": "images/Objects/037 - signet ring.png"
     },
     {
       "id": "037_location",
       "type": "Location",
+      "image": "images/Location/case-037-the-root-cellar-location.png",
       "name": "Stables",
       "symbol": "📍",
       "description": "The active scene for Case File 037. Recovered field notes place the primary event at Stables.",
@@ -247,7 +249,8 @@ window.SONG_DATA = {
       "name": "Midwife",
       "symbol": "👤",
       "description": "Midwife, identified in the case notes for Case File 037. Has not given a formal statement.",
-      "unknownInfo": "Their connection to the recovered object and whether they returned."
+      "unknownInfo": "Their connection to the recovered object and whether they returned.",
+      "image": "images/Witness/Case 037 - doctor.png"
     },
     {
       "id": "037_time",

@@ -213,18 +213,20 @@ window.SONG_DATA = {
       ]
     }
   ],
-    "collectibles": [
+  "collectibles": [
     {
       "id": "010_compass",
       "type": "Object",
       "name": "Compass",
       "symbol": "🔍",
       "description": "Compass was recovered from Highway in Case File 010. It is tied to Driver, 11:40, and marker 81.",
-      "unknownInfo": "West and Horse Hooves suggest this object matters beyond the first reading."
+      "unknownInfo": "West and Horse Hooves suggest this object matters beyond the first reading.",
+      "image": "images/Objects/010 - compass.png"
     },
     {
       "id": "010_location",
       "type": "Location",
+      "image": "images/Location/case-010-cemetery-location.png",
       "name": "Highway",
       "symbol": "📍",
       "description": "The active scene for Case File 010. Recovered field notes place the primary event at Highway.",
@@ -236,7 +238,8 @@ window.SONG_DATA = {
       "name": "Driver",
       "symbol": "👤",
       "description": "Driver, identified in the case notes for Case File 010. Has not given a formal statement.",
-      "unknownInfo": "Their connection to the recovered object and whether they returned."
+      "unknownInfo": "Their connection to the recovered object and whether they returned.",
+      "image": "images/Witness/Case 010 - husband.png"
     },
     {
       "id": "010_time",

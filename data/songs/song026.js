@@ -214,18 +214,20 @@ window.SONG_DATA = {
       ]
     }
   ],
-    "collectibles": [
+  "collectibles": [
     {
       "id": "026_ironnail",
       "type": "Object",
       "name": "Ironnail",
       "symbol": "🔍",
       "description": "Iron Nail was recovered from Cabin in Case File 026. It is tied to Ferryman, 2:19, and marker 316.",
-      "unknownInfo": "Right and Lid of a Tin suggest this object matters beyond the first reading."
+      "unknownInfo": "Right and Lid of a Tin suggest this object matters beyond the first reading.",
+      "image": "images/Objects/026 - candle.png"
     },
     {
       "id": "026_location",
       "type": "Location",
+      "image": "images/Location/case-026-potters-field-location.png",
       "name": "Cabin",
       "symbol": "📍",
       "description": "The active scene for Case File 026. Recovered field notes place the primary event at Cabin.",
@@ -237,7 +239,8 @@ window.SONG_DATA = {
       "name": "Ferryman",
       "symbol": "👤",
       "description": "Ferryman, identified in the case notes for Case File 026. Has not given a formal statement.",
-      "unknownInfo": "Their connection to the recovered object and whether they returned."
+      "unknownInfo": "Their connection to the recovered object and whether they returned.",
+      "image": "images/Witness/Case 026 - midwife.png"
     },
     {
       "id": "026_time",

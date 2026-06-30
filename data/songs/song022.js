@@ -226,18 +226,20 @@ window.SONG_DATA = {
       ]
     }
   ],
-    "collectibles": [
+  "collectibles": [
     {
       "id": "022_key",
       "type": "Object",
       "name": "Key",
       "symbol": "🔍",
       "description": "Key was recovered from Old House in Case File 022. It is tied to Ghost Child, 3:13, and marker 209.",
-      "unknownInfo": "Home and Door Creak suggest this object matters beyond the first reading."
+      "unknownInfo": "Home and Door Creak suggest this object matters beyond the first reading.",
+      "image": "images/Objects/022 - suitcase latch.png"
     },
     {
       "id": "022_location",
       "type": "Location",
+      "image": "images/Location/case-022-quarry-edge-location.png",
       "name": "Oldhouse",
       "symbol": "📍",
       "description": "The active scene for Case File 022. Recovered field notes place the primary event at Oldhouse.",
@@ -249,7 +251,8 @@ window.SONG_DATA = {
       "name": "Ghostchild",
       "symbol": "👤",
       "description": "Ghostchild, identified in the case notes for Case File 022. Has not given a formal statement.",
-      "unknownInfo": "Their connection to the recovered object and whether they returned."
+      "unknownInfo": "Their connection to the recovered object and whether they returned.",
+      "image": "images/Witness/Case 022 - wainwright.png"
     },
     {
       "id": "022_time",

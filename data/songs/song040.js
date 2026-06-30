@@ -224,18 +224,20 @@ window.SONG_DATA = {
       ]
     }
   ],
-    "collectibles": [
+  "collectibles": [
     {
       "id": "040_brooch",
       "type": "Object",
       "name": "Brooch",
       "symbol": "🔍",
       "description": "Brooch was recovered from Fulling Mill in Case File 040. It is tied to Blacksmith, 10:19, and marker 434.",
-      "unknownInfo": "Left and Telegraph Click suggest this object matters beyond the first reading."
+      "unknownInfo": "Left and Telegraph Click suggest this object matters beyond the first reading.",
+      "image": "images/Objects/040 - torn label.png"
     },
     {
       "id": "040_location",
       "type": "Location",
+      "image": "images/Location/case-040-bankers-house-location.png",
       "name": "Fullingmill",
       "symbol": "📍",
       "description": "The active scene for Case File 040. Recovered field notes place the primary event at Fullingmill.",
@@ -247,7 +249,8 @@ window.SONG_DATA = {
       "name": "Blacksmith",
       "symbol": "👤",
       "description": "Blacksmith, identified in the case notes for Case File 040. Has not given a formal statement.",
-      "unknownInfo": "Their connection to the recovered object and whether they returned."
+      "unknownInfo": "Their connection to the recovered object and whether they returned.",
+      "image": "images/Witness/Case 040 - drifter.png"
     },
     {
       "id": "040_time",

@@ -214,18 +214,20 @@ window.SONG_DATA = {
       ]
     }
   ],
-    "collectibles": [
+  "collectibles": [
     {
       "id": "027_leatherstrap",
       "type": "Object",
       "name": "Leatherstrap",
       "symbol": "🔍",
       "description": "Leather Strap was recovered from Courthouse in Case File 027. It is tied to Widow, 2:47, and marker 325.",
-      "unknownInfo": "Somewhere and Empty Wagon suggest this object matters beyond the first reading."
+      "unknownInfo": "Somewhere and Empty Wagon suggest this object matters beyond the first reading.",
+      "image": "images/Objects/027 - comb.png"
     },
     {
       "id": "027_location",
       "type": "Location",
+      "image": "images/Location/case-027-tannery-location.png",
       "name": "Courthouse",
       "symbol": "📍",
       "description": "The active scene for Case File 027. Recovered field notes place the primary event at Courthouse.",
@@ -237,7 +239,8 @@ window.SONG_DATA = {
       "name": "Widow",
       "symbol": "👤",
       "description": "Widow, identified in the case notes for Case File 027. Has not given a formal statement.",
-      "unknownInfo": "Their connection to the recovered object and whether they returned."
+      "unknownInfo": "Their connection to the recovered object and whether they returned.",
+      "image": "images/Witness/Case 027 - conductor.png"
     },
     {
       "id": "027_time",

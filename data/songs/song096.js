@@ -227,6 +227,7 @@ window.SONG_DATA = {
     {
       "id": "096_location",
       "type": "Location",
+      "image": "images/Location/case-096-print-shop-location.png",
       "name": "Ciderhouse",
       "symbol": "📍",
       "description": "The active scene for Case File 096. Recovered field notes place the primary event at Ciderhouse.",

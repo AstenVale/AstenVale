@@ -226,18 +226,20 @@ window.SONG_DATA = {
       ]
     }
   ],
-    "collectibles": [
+  "collectibles": [
     {
       "id": "038_spoolofthread",
       "type": "Object",
       "name": "Spoolofthread",
       "symbol": "🔍",
       "description": "Spool of Thread was recovered from The Weir in Case File 038. It is tied to Conductor, 5:21, and marker 416.",
-      "unknownInfo": "Toward and Ash Settling suggest this object matters beyond the first reading."
+      "unknownInfo": "Toward and Ash Settling suggest this object matters beyond the first reading.",
+      "image": "images/Objects/038 - ear of corn.png"
     },
     {
       "id": "038_location",
       "type": "Location",
+      "image": "images/Location/case-038-grain-mill-location.png",
       "name": "Weir",
       "symbol": "📍",
       "description": "The active scene for Case File 038. Recovered field notes place the primary event at Weir.",
@@ -249,7 +251,8 @@ window.SONG_DATA = {
       "name": "Conductor",
       "symbol": "👤",
       "description": "Conductor, identified in the case notes for Case File 038. Has not given a formal statement.",
-      "unknownInfo": "Their connection to the recovered object and whether they returned."
+      "unknownInfo": "Their connection to the recovered object and whether they returned.",
+      "image": "images/Witness/Case 038 - cattle-driver.png"
     },
     {
       "id": "038_time",

@@ -224,6 +224,7 @@ window.SONG_DATA = {
     {
       "id": "099_location",
       "type": "Location",
+      "image": "images/Location/case-099-rope-walk-location.png",
       "name": "Sawmill",
       "symbol": "📍",
       "description": "The active scene for Case File 099. Recovered field notes place the primary event at Sawmill.",

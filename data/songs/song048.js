@@ -225,18 +225,20 @@ window.SONG_DATA = {
       ]
     }
   ],
-    "collectibles": [
+  "collectibles": [
     {
       "id": "048_photograph",
       "type": "Object",
       "name": "Photograph",
       "symbol": "🔍",
       "description": "Photograph was recovered from Cooper's Yard in Case File 048. It is tied to Night Watchman, 7:48, and marker 506.",
-      "unknownInfo": "Around and Broken String suggest this object matters beyond the first reading."
+      "unknownInfo": "Around and Broken String suggest this object matters beyond the first reading.",
+      "image": "images/Objects/048 - journal.png"
     },
     {
       "id": "048_location",
       "type": "Location",
+      "image": "images/Location/case-048-covered-bridge-location.png",
       "name": "Cooper'Syard",
       "symbol": "📍",
       "description": "The active scene for Case File 048. Recovered field notes place the primary event at Cooper'Syard.",
@@ -248,7 +250,8 @@ window.SONG_DATA = {
       "name": "Nightwatchman",
       "symbol": "👤",
       "description": "Nightwatchman, identified in the case notes for Case File 048. Has not given a formal statement.",
-      "unknownInfo": "Their connection to the recovered object and whether they returned."
+      "unknownInfo": "Their connection to the recovered object and whether they returned.",
+      "image": "images/Witness/Case 048 - schoolteacher.png"
     },
     {
       "id": "048_time",

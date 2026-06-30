@@ -226,18 +226,20 @@ window.SONG_DATA = {
       ]
     }
   ],
-    "collectibles": [
+  "collectibles": [
     {
       "id": "064_spoolofthread",
       "type": "Object",
       "name": "Spoolofthread",
       "symbol": "🔍",
       "description": "Spool of Thread was recovered from Forge in Case File 064. It is tied to Lamplighter, 12:17, and marker 634.",
-      "unknownInfo": "Further In and Cellar Door suggest this object matters beyond the first reading."
+      "unknownInfo": "Further In and Cellar Door suggest this object matters beyond the first reading.",
+      "image": "images/Objects/064 - ring.png"
     },
     {
       "id": "064_location",
       "type": "Location",
+      "image": "images/Location/case-064-saloon-location.png",
       "name": "Forge",
       "symbol": "📍",
       "description": "The active scene for Case File 064. Recovered field notes place the primary event at Forge.",
@@ -249,7 +251,8 @@ window.SONG_DATA = {
       "name": "Lamplighter",
       "symbol": "👤",
       "description": "Lamplighter, identified in the case notes for Case File 064. Has not given a formal statement.",
-      "unknownInfo": "Their connection to the recovered object and whether they returned."
+      "unknownInfo": "Their connection to the recovered object and whether they returned.",
+      "image": "images/Witness/Case 064 - the-handless-man.png"
     },
     {
       "id": "064_time",

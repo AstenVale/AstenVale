@@ -238,6 +238,7 @@ window.SONG_DATA = {
     {
       "id": "101_location",
       "type": "Location",
+      "image": "images/Location/case-101-butchers-row-location.png",
       "name": "Brickkiln",
       "symbol": "📍",
       "description": "The active scene for Case File 101. Recovered field notes place the primary event at Brickkiln.",

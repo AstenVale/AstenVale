@@ -213,18 +213,20 @@ window.SONG_DATA = {
       ]
     }
   ],
-    "collectibles": [
+  "collectibles": [
     {
       "id": "011_photograph",
       "type": "Object",
       "name": "Photograph",
       "symbol": "🔍",
       "description": "Photograph was recovered from Cemetery in Case File 011. It is tied to Caretaker, 4:12, and marker 91.",
-      "unknownInfo": "North and Night Insects suggest this object matters beyond the first reading."
+      "unknownInfo": "North and Night Insects suggest this object matters beyond the first reading.",
+      "image": "images/Objects/011 - photograph.png"
     },
     {
       "id": "011_location",
       "type": "Location",
+      "image": "images/Location/case-011-sheriff-archive-location.png",
       "name": "Cemetery",
       "symbol": "📍",
       "description": "The active scene for Case File 011. Recovered field notes place the primary event at Cemetery.",
@@ -236,7 +238,8 @@ window.SONG_DATA = {
       "name": "Caretaker",
       "symbol": "👤",
       "description": "Caretaker, identified in the case notes for Case File 011. Has not given a formal statement.",
-      "unknownInfo": "Their connection to the recovered object and whether they returned."
+      "unknownInfo": "Their connection to the recovered object and whether they returned.",
+      "image": "images/Witness/Case 011 - neighbor.png"
     },
     {
       "id": "011_time",

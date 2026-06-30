@@ -215,18 +215,20 @@ window.SONG_DATA = {
       ]
     }
   ],
-    "collectibles": [
+  "collectibles": [
     {
       "id": "036_pocketwatch",
       "type": "Object",
       "name": "Pocketwatch",
       "symbol": "🔍",
       "description": "Pocket Watch was recovered from Cooper's Yard in Case File 036. It is tied to Banker, 7:37, and marker 406.",
-      "unknownInfo": "Home and Saw Cutting suggest this object matters beyond the first reading."
+      "unknownInfo": "Home and Saw Cutting suggest this object matters beyond the first reading.",
+      "image": "images/Objects/036 - brooch.png"
     },
     {
       "id": "036_location",
       "type": "Location",
+      "image": "images/Location/case-036-library-location.png",
       "name": "Cooper'Syard",
       "symbol": "📍",
       "description": "The active scene for Case File 036. Recovered field notes place the primary event at Cooper'Syard.",
@@ -238,7 +240,8 @@ window.SONG_DATA = {
       "name": "Banker",
       "symbol": "👤",
       "description": "Banker, identified in the case notes for Case File 036. Has not given a formal statement.",
-      "unknownInfo": "Their connection to the recovered object and whether they returned."
+      "unknownInfo": "Their connection to the recovered object and whether they returned.",
+      "image": "images/Witness/Case 036 - typesetter.png"
     },
     {
       "id": "036_time",

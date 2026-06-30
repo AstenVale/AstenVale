@@ -226,18 +226,20 @@ window.SONG_DATA = {
       ]
     }
   ],
-    "collectibles": [
+  "collectibles": [
     {
       "id": "042_earofcorn",
       "type": "Object",
       "name": "Earofcorn",
       "symbol": "🔍",
       "description": "Ear of Corn was recovered from The Root Cellar in Case File 042. It is tied to Lamplighter, 10:19, and marker 452.",
-      "unknownInfo": "Up and Lantern Glass suggest this object matters beyond the first reading."
+      "unknownInfo": "Up and Lantern Glass suggest this object matters beyond the first reading.",
+      "image": "images/Objects/042 - axle pin.png"
     },
     {
       "id": "042_location",
       "type": "Location",
+      "image": "images/Location/case-042-forge-location.png",
       "name": "Root Cellar",
       "symbol": "📍",
       "description": "The active scene for Case File 042. Recovered field notes place the primary event at Root Cellar.",
@@ -249,7 +251,8 @@ window.SONG_DATA = {
       "name": "Lamplighter",
       "symbol": "👤",
       "description": "Lamplighter, identified in the case notes for Case File 042. Has not given a formal statement.",
-      "unknownInfo": "Their connection to the recovered object and whether they returned."
+      "unknownInfo": "Their connection to the recovered object and whether they returned.",
+      "image": "images/Witness/Case 042 - judge.png"
     },
     {
       "id": "042_time",

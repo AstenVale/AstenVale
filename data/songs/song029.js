@@ -213,18 +213,20 @@ window.SONG_DATA = {
       ]
     }
   ],
-    "collectibles": [
+  "collectibles": [
     {
       "id": "029_comb",
       "type": "Object",
       "name": "Comb",
       "symbol": "🔍",
       "description": "Comb was recovered from Millpond in Case File 029. It is tied to Night Watchman, 4:03, and marker 343.",
-      "unknownInfo": "Below and Breathing suggest this object matters beyond the first reading."
+      "unknownInfo": "Below and Breathing suggest this object matters beyond the first reading.",
+      "image": "images/Objects/029 - wool scarf.png"
     },
     {
       "id": "029_location",
       "type": "Location",
+      "image": "images/Location/case-029-watchmakers-shop-location.png",
       "name": "Millpond",
       "symbol": "📍",
       "description": "The active scene for Case File 029. Recovered field notes place the primary event at Millpond.",
@@ -236,7 +238,8 @@ window.SONG_DATA = {
       "name": "Nightwatchman",
       "symbol": "👤",
       "description": "Nightwatchman, identified in the case notes for Case File 029. Has not given a formal statement.",
-      "unknownInfo": "Their connection to the recovered object and whether they returned."
+      "unknownInfo": "Their connection to the recovered object and whether they returned.",
+      "image": "images/Witness/Case 029 - blacksmith.png"
     },
     {
       "id": "029_time",

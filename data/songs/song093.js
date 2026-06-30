@@ -216,18 +216,20 @@ window.SONG_DATA = {
       ]
     }
   ],
-    "collectibles": [
+  "collectibles": [
     {
       "id": "093_woolscarf",
       "type": "Object",
       "name": "Woolscarf",
       "symbol": "🔍",
       "description": "Wool Scarf was recovered from Sheriff's Office in Case File 093. It is tied to Judge, 9:08, and marker 879.",
-      "unknownInfo": "Straight Down and Telegraph Click suggest this object matters beyond the first reading."
+      "unknownInfo": "Straight Down and Telegraph Click suggest this object matters beyond the first reading.",
+      "image": "images/Objects/093 - knife.png"
     },
     {
       "id": "093_location",
       "type": "Location",
+      "image": "images/Location/case-093-birch-stand-location.png",
       "name": "Sheriff'Soffice",
       "symbol": "📍",
       "description": "The active scene for Case File 093. Recovered field notes place the primary event at Sheriff'Soffice.",

@@ -216,18 +216,20 @@ window.SONG_DATA = {
       ]
     }
   ],
-    "collectibles": [
+  "collectibles": [
     {
       "id": "052_driedflower",
       "type": "Object",
       "name": "Driedflower",
       "symbol": "🔍",
       "description": "Dried Flower was recovered from Fulling Mill in Case File 052. It is tied to Typesetter, 3:49, and marker 534.",
-      "unknownInfo": "Past the Tree Line and Forge Breath suggest this object matters beyond the first reading."
+      "unknownInfo": "Past the Tree Line and Forge Breath suggest this object matters beyond the first reading.",
+      "image": "images/Objects/052 - bottle.png"
     },
     {
       "id": "052_location",
       "type": "Location",
+      "image": "images/Location/case-052-north-gate-location.png",
       "name": "Fullingmill",
       "symbol": "📍",
       "description": "The active scene for Case File 052. Recovered field notes place the primary event at Fullingmill.",
@@ -239,7 +241,8 @@ window.SONG_DATA = {
       "name": "Typesetter",
       "symbol": "👤",
       "description": "Typesetter, identified in the case notes for Case File 052. Has not given a formal statement.",
-      "unknownInfo": "Their connection to the recovered object and whether they returned."
+      "unknownInfo": "Their connection to the recovered object and whether they returned.",
+      "image": "images/Witness/Case 052 - circuit-rider.png"
     },
     {
       "id": "052_time",

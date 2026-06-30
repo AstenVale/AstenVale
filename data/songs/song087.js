@@ -226,18 +226,20 @@ window.SONG_DATA = {
       ]
     }
   ],
-    "collectibles": [
+  "collectibles": [
     {
       "id": "087_waxseal",
       "type": "Object",
       "name": "Waxseal",
       "symbol": "🔍",
       "description": "Wax Seal was recovered from North Gate in Case File 087. It is tied to Fence Mender, 10:19, and marker 825.",
-      "unknownInfo": "Down and Ash Settling suggest this object matters beyond the first reading."
+      "unknownInfo": "Down and Ash Settling suggest this object matters beyond the first reading.",
+      "image": "images/Objects/087 - lock of hair.png"
     },
     {
       "id": "087_location",
       "type": "Location",
+      "image": "images/Location/case-087-schoolhouse-location.png",
       "name": "Northgate",
       "symbol": "📍",
       "description": "The active scene for Case File 087. Recovered field notes place the primary event at Northgate.",

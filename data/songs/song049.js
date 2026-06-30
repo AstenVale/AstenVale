@@ -215,18 +215,20 @@ window.SONG_DATA = {
       ]
     }
   ],
-    "collectibles": [
+  "collectibles": [
     {
       "id": "049_axlepin",
       "type": "Object",
       "name": "Axlepin",
       "symbol": "🔍",
       "description": "Axle Pin was recovered from North Pasture in Case File 049. It is tied to Postman, 8:33, and marker 507.",
-      "unknownInfo": "Below and Water Drip suggest this object matters beyond the first reading."
+      "unknownInfo": "Below and Water Drip suggest this object matters beyond the first reading.",
+      "image": "images/Objects/049 - ledger page.png"
     },
     {
       "id": "049_location",
       "type": "Location",
+      "image": "images/Location/case-049-the-hollow-road-location.png",
       "name": "Northpasture",
       "symbol": "📍",
       "description": "The active scene for Case File 049. Recovered field notes place the primary event at Northpasture.",
@@ -238,7 +240,8 @@ window.SONG_DATA = {
       "name": "Postman",
       "symbol": "👤",
       "description": "Postman, identified in the case notes for Case File 049. Has not given a formal statement.",
-      "unknownInfo": "Their connection to the recovered object and whether they returned."
+      "unknownInfo": "Their connection to the recovered object and whether they returned.",
+      "image": "images/Witness/Case 049 - tanner.png"
     },
     {
       "id": "049_time",

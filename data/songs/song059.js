@@ -213,18 +213,20 @@ window.SONG_DATA = {
       ]
     }
   ],
-    "collectibles": [
+  "collectibles": [
     {
       "id": "059_straightrazor",
       "type": "Object",
       "name": "Straightrazor",
       "symbol": "🔍",
       "description": "Straight Razor was recovered from Church in Case File 059. It is tied to Doctor, 1:26, and marker 597.",
-      "unknownInfo": "South and Floorboard suggest this object matters beyond the first reading."
+      "unknownInfo": "South and Floorboard suggest this object matters beyond the first reading.",
+      "image": "images/Objects/059 - cufflink.png"
     },
     {
       "id": "059_location",
       "type": "Location",
+      "image": "images/Location/case-059-post-office-location.png",
       "name": "Church",
       "symbol": "📍",
       "description": "The active scene for Case File 059. Recovered field notes place the primary event at Church.",
@@ -236,7 +238,8 @@ window.SONG_DATA = {
       "name": "Doctor",
       "symbol": "👤",
       "description": "Doctor, identified in the case notes for Case File 059. Has not given a formal statement.",
-      "unknownInfo": "Their connection to the recovered object and whether they returned."
+      "unknownInfo": "Their connection to the recovered object and whether they returned.",
+      "image": "images/Witness/Case 059 - cider-presser.png"
     },
     {
       "id": "059_time",

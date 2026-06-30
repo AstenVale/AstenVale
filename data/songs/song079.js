@@ -214,18 +214,20 @@ window.SONG_DATA = {
       ]
     }
   ],
-    "collectibles": [
+  "collectibles": [
     {
       "id": "079_comb",
       "type": "Object",
       "name": "Comb",
       "symbol": "🔍",
       "description": "Comb was recovered from Church in Case File 079. It is tied to Gravedigger, 2:22, and marker 761.",
-      "unknownInfo": "Into the Pines and Nail Pulled from Wood suggest this object matters beyond the first reading."
+      "unknownInfo": "Into the Pines and Nail Pulled from Wood suggest this object matters beyond the first reading.",
+      "image": "images/Objects/079 - copper fitting.png"
     },
     {
       "id": "079_location",
       "type": "Location",
+      "image": "images/Location/case-079-candlemakers-alley-location.png",
       "name": "Church",
       "symbol": "📍",
       "description": "The active scene for Case File 079. Recovered field notes place the primary event at Church.",

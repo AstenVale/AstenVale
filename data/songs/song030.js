@@ -217,18 +217,20 @@ window.SONG_DATA = {
       ]
     }
   ],
-    "collectibles": [
+  "collectibles": [
     {
       "id": "030_charcoalsketch",
       "type": "Object",
       "name": "Charcoalsketch",
       "symbol": "🔍",
       "description": "Charcoal Sketch was recovered from Grist Mill in Case File 030. It is tied to Lock Keeper, 5:40, and marker 352.",
-      "unknownInfo": "Down the Hollow and Door Creak suggest this object matters beyond the first reading."
+      "unknownInfo": "Down the Hollow and Door Creak suggest this object matters beyond the first reading.",
+      "image": "images/Objects/030 - straight razor.png"
     },
     {
       "id": "030_location",
       "type": "Location",
+      "image": "images/Location/case-030-south-fork-location.png",
       "name": "Gristmill",
       "symbol": "📍",
       "description": "The active scene for Case File 030. Recovered field notes place the primary event at Gristmill.",
@@ -240,7 +242,8 @@ window.SONG_DATA = {
       "name": "Lockkeeper",
       "symbol": "👤",
       "description": "Lockkeeper, identified in the case notes for Case File 030. Has not given a formal statement.",
-      "unknownInfo": "Their connection to the recovered object and whether they returned."
+      "unknownInfo": "Their connection to the recovered object and whether they returned.",
+      "image": "images/Witness/Case 030 - orphan.png"
     },
     {
       "id": "030_time",

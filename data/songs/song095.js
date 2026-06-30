@@ -216,18 +216,20 @@ window.SONG_DATA = {
       ]
     }
   ],
-    "collectibles": [
+  "collectibles": [
     {
       "id": "095_driedflower",
       "type": "Object",
       "name": "Driedflower",
       "symbol": "🔍",
       "description": "Dried Flower was recovered from Mill House in Case File 095. It is tied to Deputy, 5:09, and marker 897.",
-      "unknownInfo": "Past the Tree Line and Cellar Door suggest this object matters beyond the first reading."
+      "unknownInfo": "Past the Tree Line and Cellar Door suggest this object matters beyond the first reading.",
+      "image": "images/Objects/095 - wire coil.png"
     },
     {
       "id": "095_location",
       "type": "Location",
+      "image": "images/Location/case-095-canning-factory-location.png",
       "name": "Millhouse",
       "symbol": "📍",
       "description": "The active scene for Case File 095. Recovered field notes place the primary event at Millhouse.",

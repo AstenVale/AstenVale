@@ -214,18 +214,20 @@ window.SONG_DATA = {
       ]
     }
   ],
-    "collectibles": [
+  "collectibles": [
     {
       "id": "006_riverstone",
       "type": "Object",
       "name": "Riverstone",
       "symbol": "🔍",
       "description": "River Stone was recovered from River in Case File 006. It is tied to Child, 5:40, and marker 08.",
-      "unknownInfo": "West and River Water suggest this object matters beyond the first reading."
+      "unknownInfo": "West and River Water suggest this object matters beyond the first reading.",
+      "image": "images/Objects/006 - river stone.png"
     },
     {
       "id": "006_location",
       "type": "Location",
+      "image": "images/Location/case-006-river-location.png",
       "name": "River",
       "symbol": "📍",
       "description": "The active scene for Case File 006. Recovered field notes place the primary event at River.",
@@ -237,7 +239,8 @@ window.SONG_DATA = {
       "name": "Child",
       "symbol": "👤",
       "description": "Child, identified in the case notes for Case File 006. Has not given a formal statement.",
-      "unknownInfo": "Their connection to the recovered object and whether they returned."
+      "unknownInfo": "Their connection to the recovered object and whether they returned.",
+      "image": "images/Witness/Case 006 - preacher.png"
     },
     {
       "id": "006_time",

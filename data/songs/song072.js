@@ -227,18 +227,20 @@ window.SONG_DATA = {
       ]
     }
   ],
-    "collectibles": [
+  "collectibles": [
     {
       "id": "072_driedbloodoncloth",
       "type": "Object",
       "name": "Driedbloodoncloth",
       "symbol": "🔍",
       "description": "Dried Blood on Cloth was recovered from North Gate in Case File 072. It is tied to Fisherman, 6:32, and marker 706.",
-      "unknownInfo": "Away from Town and Old Hinge suggest this object matters beyond the first reading."
+      "unknownInfo": "Away from Town and Old Hinge suggest this object matters beyond the first reading.",
+      "image": "images/Objects/072 - button.png"
     },
     {
       "id": "072_location",
       "type": "Location",
+      "image": "images/Location/case-072-freight-yard-location.png",
       "name": "Northgate",
       "symbol": "📍",
       "description": "The active scene for Case File 072. Recovered field notes place the primary event at Northgate.",
@@ -250,7 +252,8 @@ window.SONG_DATA = {
       "name": "Fisherman",
       "symbol": "👤",
       "description": "Fisherman, identified in the case notes for Case File 072. Has not given a formal statement.",
-      "unknownInfo": "Their connection to the recovered object and whether they returned."
+      "unknownInfo": "Their connection to the recovered object and whether they returned.",
+      "image": "images/Witness/Case 072 - night-porter.png"
     },
     {
       "id": "072_time",

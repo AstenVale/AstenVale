@@ -215,18 +215,20 @@ window.SONG_DATA = {
       ]
     }
   ],
-    "collectibles": [
+  "collectibles": [
     {
       "id": "077_inkwell",
       "type": "Object",
       "name": "Inkwell",
       "symbol": "🔍",
       "description": "Inkwell was recovered from The Gully in Case File 077. It is tied to Glazier, 6:17, and marker 743.",
-      "unknownInfo": "Home and Cannon Bolt suggest this object matters beyond the first reading."
+      "unknownInfo": "Home and Cannon Bolt suggest this object matters beyond the first reading.",
+      "image": "images/Objects/077 - wax tablet.png"
     },
     {
       "id": "077_location",
       "type": "Location",
+      "image": "images/Location/case-077-the-bluff-location.png",
       "name": "Gully",
       "symbol": "📍",
       "description": "The active scene for Case File 077. Recovered field notes place the primary event at Gully.",

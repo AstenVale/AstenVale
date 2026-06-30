@@ -215,18 +215,20 @@ window.SONG_DATA = {
       ]
     }
   ],
-    "collectibles": [
+  "collectibles": [
     {
       "id": "031_chain",
       "type": "Object",
       "name": "Chain",
       "symbol": "🔍",
       "description": "Chain was recovered from Potter's Field in Case File 031. It is tied to Census Taker, 10:22, and marker 361.",
-      "unknownInfo": "Toward and Hammer Strike suggest this object matters beyond the first reading."
+      "unknownInfo": "Toward and Hammer Strike suggest this object matters beyond the first reading.",
+      "image": "images/Objects/031 - shard of mirror.png"
     },
     {
       "id": "031_location",
       "type": "Location",
+      "image": "images/Location/case-031-coopers-yard-location.png",
       "name": "Potter'Sfield",
       "symbol": "📍",
       "description": "The active scene for Case File 031. Recovered field notes place the primary event at Potter'Sfield.",
@@ -238,7 +240,8 @@ window.SONG_DATA = {
       "name": "Censustaker",
       "symbol": "👤",
       "description": "Censustaker, identified in the case notes for Case File 031. Has not given a formal statement.",
-      "unknownInfo": "Their connection to the recovered object and whether they returned."
+      "unknownInfo": "Their connection to the recovered object and whether they returned.",
+      "image": "images/Witness/Case 031 - lamplighter.png"
     },
     {
       "id": "031_time",

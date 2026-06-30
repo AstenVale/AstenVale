@@ -216,18 +216,20 @@ window.SONG_DATA = {
       ]
     }
   ],
-    "collectibles": [
+  "collectibles": [
     {
       "id": "035_shardofmirror",
       "type": "Object",
       "name": "Shardofmirror",
       "symbol": "🔍",
       "description": "Shard of Mirror was recovered from South Fork in Case File 035. It is tied to Lime Burner, 9:55, and marker 397.",
-      "unknownInfo": "North and Lid of a Tin suggest this object matters beyond the first reading."
+      "unknownInfo": "North and Lid of a Tin suggest this object matters beyond the first reading.",
+      "image": "images/Objects/035 - empty tin.png"
     },
     {
       "id": "035_location",
       "type": "Location",
+      "image": "images/Location/case-035-fulling-mill-location.png",
       "name": "Southfork",
       "symbol": "📍",
       "description": "The active scene for Case File 035. Recovered field notes place the primary event at Southfork.",
@@ -239,7 +241,8 @@ window.SONG_DATA = {
       "name": "Limeburner",
       "symbol": "👤",
       "description": "Limeburner, identified in the case notes for Case File 035. Has not given a formal statement.",
-      "unknownInfo": "Their connection to the recovered object and whether they returned."
+      "unknownInfo": "Their connection to the recovered object and whether they returned.",
+      "image": "images/Witness/Case 035 - apothecary.png"
     },
     {
       "id": "035_time",

@@ -216,18 +216,20 @@ window.SONG_DATA = {
       ]
     }
   ],
-    "collectibles": [
+  "collectibles": [
     {
       "id": "060_ledgerpage",
       "type": "Object",
       "name": "Ledgerpage",
       "symbol": "🔍",
       "description": "Ledger Page was recovered from Fulling Mill in Case File 060. It is tied to Lock Keeper, 7:14, and marker 606.",
-      "unknownInfo": "Back and Lantern Flicker suggest this object matters beyond the first reading."
+      "unknownInfo": "Back and Lantern Flicker suggest this object matters beyond the first reading.",
+      "image": "images/Objects/060 - receipt.png"
     },
     {
       "id": "060_location",
       "type": "Location",
+      "image": "images/Location/case-060-stone-step-location.png",
       "name": "Fullingmill",
       "symbol": "📍",
       "description": "The active scene for Case File 060. Recovered field notes place the primary event at Fullingmill.",
@@ -239,7 +241,8 @@ window.SONG_DATA = {
       "name": "Lockkeeper",
       "symbol": "👤",
       "description": "Lockkeeper, identified in the case notes for Case File 060. Has not given a formal statement.",
-      "unknownInfo": "Their connection to the recovered object and whether they returned."
+      "unknownInfo": "Their connection to the recovered object and whether they returned.",
+      "image": "images/Witness/Case 060 - sexton.png"
     },
     {
       "id": "060_time",

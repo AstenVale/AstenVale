@@ -225,18 +225,20 @@ window.SONG_DATA = {
       ]
     }
   ],
-    "collectibles": [
+  "collectibles": [
     {
       "id": "089_bulletcasing",
       "type": "Object",
       "name": "Bulletcasing",
       "symbol": "🔍",
       "description": "Bullet Casing was recovered from Potter's Field in Case File 089. It is tied to Barber, 5:09, and marker 843.",
-      "unknownInfo": "Beyond and Horse Hooves suggest this object matters beyond the first reading."
+      "unknownInfo": "Beyond and Horse Hooves suggest this object matters beyond the first reading.",
+      "image": "images/Objects/089 - broken clasp.png"
     },
     {
       "id": "089_location",
       "type": "Location",
+      "image": "images/Location/case-089-iron-bridge-location.png",
       "name": "Potter'Sfield",
       "symbol": "📍",
       "description": "The active scene for Case File 089. Recovered field notes place the primary event at Potter'Sfield.",

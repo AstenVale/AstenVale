@@ -216,18 +216,20 @@ window.SONG_DATA = {
       ]
     }
   ],
-    "collectibles": [
+  "collectibles": [
     {
       "id": "076_receipt",
       "type": "Object",
       "name": "Receipt",
       "symbol": "🔍",
       "description": "Receipt was recovered from The Pit in Case File 076. It is tied to Census Taker, 5:13, and marker 734.",
-      "unknownInfo": "Out and Bell Toll suggest this object matters beyond the first reading."
+      "unknownInfo": "Out and Bell Toll suggest this object matters beyond the first reading.",
+      "image": "images/Objects/076 - trade token.png"
     },
     {
       "id": "076_location",
       "type": "Location",
+      "image": "images/Location/case-076-market-square-location.png",
       "name": "Pit",
       "symbol": "📍",
       "description": "The active scene for Case File 076. Recovered field notes place the primary event at Pit.",

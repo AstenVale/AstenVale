@@ -217,18 +217,20 @@ window.SONG_DATA = {
       ]
     }
   ],
-    "collectibles": [
+  "collectibles": [
     {
       "id": "078_emptytin",
       "type": "Object",
       "name": "Emptytin",
       "symbol": "🔍",
       "description": "Empty Tin was recovered from Banker's House in Case File 078. It is tied to Land Agent, 3:58, and marker 752.",
-      "unknownInfo": "Further In and Nail Pulled from Wood suggest this object matters beyond the first reading."
+      "unknownInfo": "Further In and Nail Pulled from Wood suggest this object matters beyond the first reading.",
+      "image": "images/Objects/078 - ribbon.png"
     },
     {
       "id": "078_location",
       "type": "Location",
+      "image": "images/Location/case-078-barn-location.png",
       "name": "Banker'Shouse",
       "symbol": "📍",
       "description": "The active scene for Case File 078. Recovered field notes place the primary event at Banker'Shouse.",

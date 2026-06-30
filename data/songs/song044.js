@@ -224,18 +224,20 @@ window.SONG_DATA = {
       ]
     }
   ],
-    "collectibles": [
+  "collectibles": [
     {
       "id": "044_watch",
       "type": "Object",
       "name": "Watch",
       "symbol": "🔍",
       "description": "Watch was recovered from Cemetery in Case File 044. It is tied to Midwife, 12:33, and marker 470.",
-      "unknownInfo": "Down the Hollow and Knife Scrape suggest this object matters beyond the first reading."
+      "unknownInfo": "Down the Hollow and Knife Scrape suggest this object matters beyond the first reading.",
+      "image": "images/Objects/044 - coin.png"
     },
     {
       "id": "044_location",
       "type": "Location",
+      "image": "images/Location/case-044-feed-store-location.png",
       "name": "Cemetery",
       "symbol": "📍",
       "description": "The active scene for Case File 044. Recovered field notes place the primary event at Cemetery.",
@@ -247,7 +249,8 @@ window.SONG_DATA = {
       "name": "Midwife",
       "symbol": "👤",
       "description": "Midwife, identified in the case notes for Case File 044. Has not given a formal statement.",
-      "unknownInfo": "Their connection to the recovered object and whether they returned."
+      "unknownInfo": "Their connection to the recovered object and whether they returned.",
+      "image": "images/Witness/Case 044 - fence-mender.png"
     },
     {
       "id": "044_time",

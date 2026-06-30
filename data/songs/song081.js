@@ -214,18 +214,20 @@ window.SONG_DATA = {
       ]
     }
   ],
-    "collectibles": [
+  "collectibles": [
     {
       "id": "081_thimble",
       "type": "Object",
       "name": "Thimble",
       "symbol": "🔍",
       "description": "Thimble was recovered from Old Wharf in Case File 081. It is tied to Tanner, 6:06, and marker 779.",
-      "unknownInfo": "Out and Crow Wings suggest this object matters beyond the first reading."
+      "unknownInfo": "Out and Crow Wings suggest this object matters beyond the first reading.",
+      "image": "images/Objects/081 - belt buckle.png"
     },
     {
       "id": "081_location",
       "type": "Location",
+      "image": "images/Location/case-081-the-ravine-location.png",
       "name": "Oldwharf",
       "symbol": "📍",
       "description": "The active scene for Case File 081. Recovered field notes place the primary event at Oldwharf.",

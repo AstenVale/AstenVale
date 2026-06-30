@@ -216,18 +216,20 @@ window.SONG_DATA = {
       ]
     }
   ],
-    "collectibles": [
+  "collectibles": [
     {
       "id": "074_tinstar",
       "type": "Object",
       "name": "Tinstar",
       "symbol": "🔍",
       "description": "Tin Star was recovered from Old Wharf in Case File 074. It is tied to Surveyor, 10:51, and marker 716.",
-      "unknownInfo": "Along the Creek and Wind in Pines suggest this object matters beyond the first reading."
+      "unknownInfo": "Along the Creek and Wind in Pines suggest this object matters beyond the first reading.",
+      "image": "images/Objects/074 - bone button.png"
     },
     {
       "id": "074_location",
       "type": "Location",
+      "image": "images/Location/case-074-clock-tower-location.png",
       "name": "Oldwharf",
       "symbol": "📍",
       "description": "The active scene for Case File 074. Recovered field notes place the primary event at Oldwharf.",
@@ -239,7 +241,8 @@ window.SONG_DATA = {
       "name": "Surveyor",
       "symbol": "👤",
       "description": "Surveyor, identified in the case notes for Case File 074. Has not given a formal statement.",
-      "unknownInfo": "Their connection to the recovered object and whether they returned."
+      "unknownInfo": "Their connection to the recovered object and whether they returned.",
+      "image": "images/Witness/Case 074 - furrier.png"
     },
     {
       "id": "074_time",

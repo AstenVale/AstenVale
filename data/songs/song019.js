@@ -224,18 +224,20 @@ window.SONG_DATA = {
       ]
     }
   ],
-    "collectibles": [
+  "collectibles": [
     {
       "id": "019_unopenedmail",
       "type": "Object",
       "name": "Unopenedmail",
       "symbol": "🔍",
       "description": "Unopened Mail was recovered from Mailbox in Case File 019. It is tied to Postman, 2:34, and marker 176.",
-      "unknownInfo": "Out and Footsteps suggest this object matters beyond the first reading."
+      "unknownInfo": "Out and Footsteps suggest this object matters beyond the first reading.",
+      "image": "images/Objects/019 - headstone.png"
     },
     {
       "id": "019_location",
       "type": "Location",
+      "image": "images/Location/case-019-old-house-location.png",
       "name": "Mailbox",
       "symbol": "📍",
       "description": "The active scene for Case File 019. Recovered field notes place the primary event at Mailbox.",
@@ -247,7 +249,8 @@ window.SONG_DATA = {
       "name": "Postman",
       "symbol": "👤",
       "description": "Postman, identified in the case notes for Case File 019. Has not given a formal statement.",
-      "unknownInfo": "Their connection to the recovered object and whether they returned."
+      "unknownInfo": "Their connection to the recovered object and whether they returned.",
+      "image": "images/Witness/Case 019 - night-watchman.png"
     },
     {
       "id": "019_time",

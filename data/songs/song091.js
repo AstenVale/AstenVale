@@ -226,18 +226,20 @@ window.SONG_DATA = {
       ]
     }
   ],
-    "collectibles": [
+  "collectibles": [
     {
       "id": "091_journal",
       "type": "Object",
       "name": "Journal",
       "symbol": "🔍",
       "description": "Journal was recovered from The Root Cellar in Case File 091. It is tied to Land Agent, 9:15, and marker 861.",
-      "unknownInfo": "Through and Mud Suction suggest this object matters beyond the first reading."
+      "unknownInfo": "Through and Mud Suction suggest this object matters beyond the first reading.",
+      "image": "images/Objects/091 - letter.png"
     },
     {
       "id": "091_location",
       "type": "Location",
+      "image": "images/Location/case-091-the-narrow-road-location.png",
       "name": "Root Cellar",
       "symbol": "📍",
       "description": "The active scene for Case File 091. Recovered field notes place the primary event at Root Cellar.",

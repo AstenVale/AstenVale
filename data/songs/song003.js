@@ -222,11 +222,13 @@ window.SONG_DATA = {
       "name": "Rusted Key",
       "symbol": "🗝",
       "description": "A heavily corroded iron key recovered from the Ash Creek embankment. Lock unknown. Too rusted to date precisely.",
-      "unknownInfo": "What it opens — and why it was buried rather than discarded."
+      "unknownInfo": "What it opens — and why it was buried rather than discarded.",
+      "image": "images/Objects/003 - rusted key.png"
     },
     {
       "id": "003_location",
       "type": "Location",
+      "image": "images/Location/case-003-ash-creek-location.png",
       "name": "Ash Creek",
       "symbol": "📍",
       "description": "A dry creek bed south of the valley. The key was found partially buried under ash deposits near the bank.",
@@ -238,7 +240,8 @@ window.SONG_DATA = {
       "name": "The Sheriff",
       "symbol": "👤",
       "description": "A local authority figure identified in the case notes. Present at Ash Creek. Testimony contradicts the field report.",
-      "unknownInfo": "Why the Sheriff's account of the creek differs from the archived photographs."
+      "unknownInfo": "Why the Sheriff's account of the creek differs from the archived photographs.",
+      "image": "images/Witness/Case 003 - sheriff.png"
     },
     {
       "id": "003_time",

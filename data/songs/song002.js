@@ -221,11 +221,13 @@ window.SONG_DATA = {
       "name": "Crow Feather",
       "symbol": "🪶",
       "description": "A single crow feather recovered from the riverbank at Pine Hollow. Found pressed inside the hollow letter.",
-      "unknownInfo": "Whether it was left deliberately — and by the same hand that wrote the letter."
+      "unknownInfo": "Whether it was left deliberately — and by the same hand that wrote the letter.",
+      "image": "images/Objects/002 - crow feather.png"
     },
     {
       "id": "002_location",
       "type": "Location",
+      "image": "images/Location/case-002-pine-hollow-river-location.png",
       "name": "Pine Hollow River",
       "symbol": "📍",
       "description": "A river crossing east of the valley. The hollow letter was found wedged beneath a stone on the bank.",
@@ -237,7 +239,8 @@ window.SONG_DATA = {
       "name": "The Widow",
       "symbol": "👤",
       "description": "A woman identified only as The Widow. Present at Pine Hollow River. Has not given a formal statement.",
-      "unknownInfo": "Her relationship to the letter's author and why she was there."
+      "unknownInfo": "Her relationship to the letter's author and why she was there.",
+      "image": "images/Witness/Case 002 - widow.png"
     },
     {
       "id": "002_time",

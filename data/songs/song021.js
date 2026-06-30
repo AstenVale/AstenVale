@@ -224,18 +224,20 @@ window.SONG_DATA = {
       ]
     }
   ],
-    "collectibles": [
+  "collectibles": [
     {
       "id": "021_ash",
       "type": "Object",
       "name": "Ash",
       "symbol": "🔍",
       "description": "Ash was recovered from Fireplace in Case File 021. It is tied to Mechanic, 7:22, and marker 198.",
-      "unknownInfo": "Up and Fire Crackling suggest this object matters beyond the first reading."
+      "unknownInfo": "Up and Fire Crackling suggest this object matters beyond the first reading.",
+      "image": "images/Objects/021 - key.png"
     },
     {
       "id": "021_location",
       "type": "Location",
+      "image": "images/Location/case-021-pine-road-location.png",
       "name": "Fireplace",
       "symbol": "📍",
       "description": "The active scene for Case File 021. Recovered field notes place the primary event at Fireplace.",
@@ -247,7 +249,8 @@ window.SONG_DATA = {
       "name": "Mechanic",
       "symbol": "👤",
       "description": "Mechanic, identified in the case notes for Case File 021. Has not given a formal statement.",
-      "unknownInfo": "Their connection to the recovered object and whether they returned."
+      "unknownInfo": "Their connection to the recovered object and whether they returned.",
+      "image": "images/Witness/Case 021 - census-taker.png"
     },
     {
       "id": "021_time",

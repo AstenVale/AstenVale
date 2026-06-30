@@ -225,18 +225,20 @@ window.SONG_DATA = {
       ]
     }
   ],
-    "collectibles": [
+  "collectibles": [
     {
       "id": "023_photograph",
       "type": "Object",
       "name": "Photograph",
       "symbol": "🔍",
       "description": "Photograph was recovered from Empty Kitchen in Case File 023. It is tied to Neighbor, 9:45, and marker 220.",
-      "unknownInfo": "Away and Clock Ticking suggest this object matters beyond the first reading."
+      "unknownInfo": "Away and Clock Ticking suggest this object matters beyond the first reading.",
+      "image": "images/Objects/023 - charcoal sketch.png"
     },
     {
       "id": "023_location",
       "type": "Location",
+      "image": "images/Location/case-023-courthouse-location.png",
       "name": "Emptykitchen",
       "symbol": "📍",
       "description": "The active scene for Case File 023. Recovered field notes place the primary event at Emptykitchen.",
@@ -248,7 +250,8 @@ window.SONG_DATA = {
       "name": "Neighbor",
       "symbol": "👤",
       "description": "Neighbor, identified in the case notes for Case File 023. Has not given a formal statement.",
-      "unknownInfo": "Their connection to the recovered object and whether they returned."
+      "unknownInfo": "Their connection to the recovered object and whether they returned.",
+      "image": "images/Witness/Case 023 - fisherman.png"
     },
     {
       "id": "023_time",

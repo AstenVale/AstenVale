@@ -224,18 +224,20 @@ window.SONG_DATA = {
       ]
     }
   ],
-    "collectibles": [
+  "collectibles": [
     {
       "id": "090_glove",
       "type": "Object",
       "name": "Glove",
       "symbol": "🔍",
       "description": "Glove was recovered from Stone Step in Case File 090. It is tied to Gravedigger, 5:13, and marker 852.",
-      "unknownInfo": "Toward and Lantern Glass suggest this object matters beyond the first reading."
+      "unknownInfo": "Toward and Lantern Glass suggest this object matters beyond the first reading.",
+      "image": "images/Objects/090 - scratched initials in wood.png"
     },
     {
       "id": "090_location",
       "type": "Location",
+      "image": "images/Location/case-090-the-cistern-location.png",
       "name": "Stonestep",
       "symbol": "📍",
       "description": "The active scene for Case File 090. Recovered field notes place the primary event at Stonestep.",

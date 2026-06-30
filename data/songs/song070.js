@@ -226,18 +226,20 @@ window.SONG_DATA = {
       ]
     }
   ],
-    "collectibles": [
+  "collectibles": [
     {
       "id": "070_ironnail",
       "type": "Object",
       "name": "Ironnail",
       "symbol": "🔍",
       "description": "Iron Nail was recovered from Cabin in Case File 070. It is tied to Lamplighter, 9:55, and marker 688.",
-      "unknownInfo": "Toward the River and Broken String suggest this object matters beyond the first reading."
+      "unknownInfo": "Toward the River and Broken String suggest this object matters beyond the first reading.",
+      "image": "images/Objects/070 - ship manifest.png"
     },
     {
       "id": "070_location",
       "type": "Location",
+      "image": "images/Location/case-070-tunnel-location.png",
       "name": "Cabin",
       "symbol": "📍",
       "description": "The active scene for Case File 070. Recovered field notes place the primary event at Cabin.",
@@ -249,7 +251,8 @@ window.SONG_DATA = {
       "name": "Lamplighter",
       "symbol": "👤",
       "description": "Lamplighter, identified in the case notes for Case File 070. Has not given a formal statement.",
-      "unknownInfo": "Their connection to the recovered object and whether they returned."
+      "unknownInfo": "Their connection to the recovered object and whether they returned.",
+      "image": "images/Witness/Case 070 - bone-collector.png"
     },
     {
       "id": "070_time",

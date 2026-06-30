@@ -225,18 +225,20 @@ window.SONG_DATA = {
       ]
     }
   ],
-    "collectibles": [
+  "collectibles": [
     {
       "id": "068_ticket",
       "type": "Object",
       "name": "Ticket",
       "symbol": "🔍",
       "description": "Ticket was recovered from Forge in Case File 068. It is tied to Retired Soldier, 2:55, and marker 670.",
-      "unknownInfo": "Back and Old Hinge suggest this object matters beyond the first reading."
+      "unknownInfo": "Back and Old Hinge suggest this object matters beyond the first reading.",
+      "image": "images/Objects/068 - dried ink blot.png"
     },
     {
       "id": "068_location",
       "type": "Location",
+      "image": "images/Location/case-068-cooperage-location.png",
       "name": "Forge",
       "symbol": "📍",
       "description": "The active scene for Case File 068. Recovered field notes place the primary event at Forge.",
@@ -248,7 +250,8 @@ window.SONG_DATA = {
       "name": "Retiredsoldier",
       "symbol": "👤",
       "description": "Retiredsoldier, identified in the case notes for Case File 068. Has not given a formal statement.",
-      "unknownInfo": "Their connection to the recovered object and whether they returned."
+      "unknownInfo": "Their connection to the recovered object and whether they returned.",
+      "image": "images/Witness/Case 068 - harness-maker.png"
     },
     {
       "id": "068_time",

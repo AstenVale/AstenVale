@@ -238,6 +238,7 @@ window.SONG_DATA = {
     {
       "id": "103_location",
       "type": "Location",
+      "image": "images/Location/case-103-hill-road-location.png",
       "name": "Chandler'Srow",
       "symbol": "📍",
       "description": "The active scene for Case File 103. Recovered field notes place the primary event at Chandler'Srow.",

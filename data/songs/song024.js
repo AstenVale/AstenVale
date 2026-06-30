@@ -226,18 +226,20 @@ window.SONG_DATA = {
       ]
     }
   ],
-    "collectibles": [
+  "collectibles": [
     {
       "id": "024_suitcaselatch",
       "type": "Object",
       "name": "Suitcaselatch",
       "symbol": "🔍",
       "description": "Suitcase Latch was recovered from Pine Road in Case File 024. It is tied to Child, 5:30, and marker 231.",
-      "unknownInfo": "Home and Wind in Pines suggest this object matters beyond the first reading."
+      "unknownInfo": "Home and Wind in Pines suggest this object matters beyond the first reading.",
+      "image": "images/Objects/024 - iron nail.png"
     },
     {
       "id": "024_location",
       "type": "Location",
+      "image": "images/Location/case-024-millpond-location.png",
       "name": "Pineroad",
       "symbol": "📍",
       "description": "The active scene for Case File 024. Recovered field notes place the primary event at Pineroad.",
@@ -249,7 +251,8 @@ window.SONG_DATA = {
       "name": "Child",
       "symbol": "👤",
       "description": "Child, identified in the case notes for Case File 024. Has not given a formal statement.",
-      "unknownInfo": "Their connection to the recovered object and whether they returned."
+      "unknownInfo": "Their connection to the recovered object and whether they returned.",
+      "image": "images/Witness/Case 024 - lime-burner.png"
     },
     {
       "id": "024_time",

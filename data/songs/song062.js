@@ -226,18 +226,20 @@ window.SONG_DATA = {
       ]
     }
   ],
-    "collectibles": [
+  "collectibles": [
     {
       "id": "062_signetring",
       "type": "Object",
       "name": "Signetring",
       "symbol": "🔍",
       "description": "Signet Ring was recovered from Cabin in Case File 062. It is tied to Cattle Driver, 4:12, and marker 616.",
-      "unknownInfo": "Up the Ridge and Thunder suggest this object matters beyond the first reading."
+      "unknownInfo": "Up the Ridge and Thunder suggest this object matters beyond the first reading.",
+      "image": "images/Objects/062 - glove.png"
     },
     {
       "id": "062_location",
       "type": "Location",
+      "image": "images/Location/case-062-sheriffs-office-location.png",
       "name": "Cabin",
       "symbol": "📍",
       "description": "The active scene for Case File 062. Recovered field notes place the primary event at Cabin.",
@@ -249,7 +251,8 @@ window.SONG_DATA = {
       "name": "Cattledriver",
       "symbol": "👤",
       "description": "Cattledriver, identified in the case notes for Case File 062. Has not given a formal statement.",
-      "unknownInfo": "Their connection to the recovered object and whether they returned."
+      "unknownInfo": "Their connection to the recovered object and whether they returned.",
+      "image": "images/Witness/Case 062 - auctioneer.png"
     },
     {
       "id": "062_time",

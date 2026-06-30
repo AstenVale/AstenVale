@@ -215,18 +215,20 @@ window.SONG_DATA = {
       ]
     }
   ],
-    "collectibles": [
+  "collectibles": [
     {
       "id": "033_straightrazor",
       "type": "Object",
       "name": "Straightrazor",
       "symbol": "🔍",
       "description": "Straight Razor was recovered from Water Tower in Case File 033. It is tied to Fisherman, 8:17, and marker 379.",
-      "unknownInfo": "Beyond and Lantern Glass suggest this object matters beyond the first reading."
+      "unknownInfo": "Beyond and Lantern Glass suggest this object matters beyond the first reading.",
+      "image": "images/Objects/033 - string of beads.png"
     },
     {
       "id": "033_location",
       "type": "Location",
+      "image": "images/Location/case-033-the-weir-location.png",
       "name": "Watertower",
       "symbol": "📍",
       "description": "The active scene for Case File 033. Recovered field notes place the primary event at Watertower.",
@@ -238,7 +240,8 @@ window.SONG_DATA = {
       "name": "Fisherman",
       "symbol": "👤",
       "description": "Fisherman, identified in the case notes for Case File 033. Has not given a formal statement.",
-      "unknownInfo": "Their connection to the recovered object and whether they returned."
+      "unknownInfo": "Their connection to the recovered object and whether they returned.",
+      "image": "images/Witness/Case 033 - rope-maker.png"
     },
     {
       "id": "033_time",

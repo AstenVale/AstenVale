@@ -224,18 +224,20 @@ window.SONG_DATA = {
       ]
     }
   ],
-    "collectibles": [
+  "collectibles": [
     {
       "id": "013_weddingring",
       "type": "Object",
       "name": "Weddingring",
       "symbol": "🔍",
       "description": "Wedding Ring was recovered from Church in Case File 013. It is tied to Preacher, 6:45, and marker 110.",
-      "unknownInfo": "North and Bells suggest this object matters beyond the first reading."
+      "unknownInfo": "North and Bells suggest this object matters beyond the first reading.",
+      "image": "images/Objects/013 - love letter.png"
     },
     {
       "id": "013_location",
       "type": "Location",
+      "image": "images/Location/case-013-kitchen-table-location.png",
       "name": "Church",
       "symbol": "📍",
       "description": "The active scene for Case File 013. Recovered field notes place the primary event at Church.",
@@ -247,7 +249,8 @@ window.SONG_DATA = {
       "name": "Preacher",
       "symbol": "👤",
       "description": "Preacher, identified in the case notes for Case File 013. Has not given a formal statement.",
-      "unknownInfo": "Their connection to the recovered object and whether they returned."
+      "unknownInfo": "Their connection to the recovered object and whether they returned.",
+      "image": "images/Witness/Case 013 - sister.png"
     },
     {
       "id": "013_time",

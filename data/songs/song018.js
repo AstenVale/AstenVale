@@ -225,18 +225,20 @@ window.SONG_DATA = {
       ]
     }
   ],
-    "collectibles": [
+  "collectibles": [
     {
       "id": "018_handkerchief",
       "type": "Object",
       "name": "Handkerchief",
       "symbol": "🔍",
       "description": "Handkerchief was recovered from Window Seat in Case File 018. It is tied to Sister, 8:00, and marker 165.",
-      "unknownInfo": "In and Clock Ticking suggest this object matters beyond the first reading."
+      "unknownInfo": "In and Clock Ticking suggest this object matters beyond the first reading.",
+      "image": "images/Objects/018 - unopened mail.png"
     },
     {
       "id": "018_location",
       "type": "Location",
+      "image": "images/Location/case-018-fireplace-location.png",
       "name": "Windowseat",
       "symbol": "📍",
       "description": "The active scene for Case File 018. Recovered field notes place the primary event at Windowseat.",
@@ -248,7 +250,8 @@ window.SONG_DATA = {
       "name": "Sister",
       "symbol": "👤",
       "description": "Sister, identified in the case notes for Case File 018. Has not given a formal statement.",
-      "unknownInfo": "Their connection to the recovered object and whether they returned."
+      "unknownInfo": "Their connection to the recovered object and whether they returned.",
+      "image": "images/Witness/Case 018 - chandler.png"
     },
     {
       "id": "018_time",

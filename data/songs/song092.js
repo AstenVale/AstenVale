@@ -215,18 +215,20 @@ window.SONG_DATA = {
       ]
     }
   ],
-    "collectibles": [
+  "collectibles": [
     {
       "id": "092_rope",
       "type": "Object",
       "name": "Rope",
       "symbol": "🔍",
       "description": "Rope was recovered from Harness Shop in Case File 092. It is tied to Mechanic, 7:14, and marker 870.",
-      "unknownInfo": "Along the Creek and Kettle Boil suggest this object matters beyond the first reading."
+      "unknownInfo": "Along the Creek and Kettle Boil suggest this object matters beyond the first reading.",
+      "image": "images/Objects/092 - spectacles.png"
     },
     {
       "id": "092_location",
       "type": "Location",
+      "image": "images/Location/case-092-lake-shore-location.png",
       "name": "Harnessshop",
       "symbol": "📍",
       "description": "The active scene for Case File 092. Recovered field notes place the primary event at Harnessshop.",

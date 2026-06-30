@@ -225,18 +225,20 @@ window.SONG_DATA = {
       ]
     }
   ],
-    "collectibles": [
+  "collectibles": [
     {
       "id": "086_tinstar",
       "type": "Object",
       "name": "Tinstar",
       "symbol": "🔍",
       "description": "Tin Star was recovered from Post Office in Case File 086. It is tied to Fence Mender, 12:33, and marker 816.",
-      "unknownInfo": "Behind and Rain suggest this object matters beyond the first reading."
+      "unknownInfo": "Behind and Rain suggest this object matters beyond the first reading.",
+      "image": "images/Objects/086 - oil rag.png"
     },
     {
       "id": "086_location",
       "type": "Location",
+      "image": "images/Location/case-086-sheep-fold-location.png",
       "name": "Postoffice",
       "symbol": "📍",
       "description": "The active scene for Case File 086. Recovered field notes place the primary event at Postoffice.",

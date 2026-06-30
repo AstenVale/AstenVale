@@ -225,18 +225,20 @@ window.SONG_DATA = {
       ]
     }
   ],
-    "collectibles": [
+  "collectibles": [
     {
       "id": "046_tornlabel",
       "type": "Object",
       "name": "Tornlabel",
       "symbol": "🔍",
       "description": "Torn Label was recovered from Banker's House in Case File 046. It is tied to Librarian, 10:19, and marker 488.",
-      "unknownInfo": "Around and Child's Laugh (far off) suggest this object matters beyond the first reading."
+      "unknownInfo": "Around and Child's Laugh (far off) suggest this object matters beyond the first reading.",
+      "image": "images/Objects/046 - charred paper.png"
     },
     {
       "id": "046_location",
       "type": "Location",
+      "image": "images/Location/case-046-loom-house-location.png",
       "name": "Banker'Shouse",
       "symbol": "📍",
       "description": "The active scene for Case File 046. Recovered field notes place the primary event at Banker'Shouse.",
@@ -248,7 +250,8 @@ window.SONG_DATA = {
       "name": "Librarian",
       "symbol": "👤",
       "description": "Librarian, identified in the case notes for Case File 046. Has not given a formal statement.",
-      "unknownInfo": "Their connection to the recovered object and whether they returned."
+      "unknownInfo": "Their connection to the recovered object and whether they returned.",
+      "image": "images/Witness/Case 046 - land-agent.png"
     },
     {
       "id": "046_time",

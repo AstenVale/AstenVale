@@ -236,6 +236,7 @@ window.SONG_DATA = {
     {
       "id": "102_location",
       "type": "Location",
+      "image": "images/Location/case-102-ice-house-location.png",
       "name": "Doctor'Soffice",
       "symbol": "📍",
       "description": "The active scene for Case File 102. Recovered field notes place the primary event at Doctor'Soffice.",

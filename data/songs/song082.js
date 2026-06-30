@@ -214,18 +214,20 @@ window.SONG_DATA = {
       ]
     }
   ],
-    "collectibles": [
+  "collectibles": [
     {
       "id": "082_charredpaper",
       "type": "Object",
       "name": "Charredpaper",
       "symbol": "🔍",
       "description": "Charred Paper was recovered from Boatyard in Case File 082. It is tied to Midwife, 2:19, and marker 788.",
-      "unknownInfo": "Beyond and Forge Breath suggest this object matters beyond the first reading."
+      "unknownInfo": "Beyond and Forge Breath suggest this object matters beyond the first reading.",
+      "image": "images/Objects/082 - pipe.png"
     },
     {
       "id": "082_location",
       "type": "Location",
+      "image": "images/Location/case-082-the-depot-location.png",
       "name": "Boatyard",
       "symbol": "📍",
       "description": "The active scene for Case File 082. Recovered field notes place the primary event at Boatyard.",

@@ -223,18 +223,20 @@ window.SONG_DATA = {
       ]
     }
   ],
-    "collectibles": [
+  "collectibles": [
     {
       "id": "020_headstone",
       "type": "Object",
       "name": "Headstone",
       "symbol": "🔍",
       "description": "Headstone was recovered from Cemetery in Case File 020. It is tied to Groundskeeper, 12:15, and marker 187.",
-      "unknownInfo": "Down and Rain suggest this object matters beyond the first reading."
+      "unknownInfo": "Down and Rain suggest this object matters beyond the first reading.",
+      "image": "images/Objects/020 - ash.png"
     },
     {
       "id": "020_location",
       "type": "Location",
+      "image": "images/Location/case-020-empty-kitchen-location.png",
       "name": "Cemetery",
       "symbol": "📍",
       "description": "The active scene for Case File 020. Recovered field notes place the primary event at Cemetery.",
@@ -246,7 +248,8 @@ window.SONG_DATA = {
       "name": "Groundskeeper",
       "symbol": "👤",
       "description": "Groundskeeper, identified in the case notes for Case File 020. Has not given a formal statement.",
-      "unknownInfo": "Their connection to the recovered object and whether they returned."
+      "unknownInfo": "Their connection to the recovered object and whether they returned.",
+      "image": "images/Witness/Case 020 - lock-keeper.png"
     },
     {
       "id": "020_time",

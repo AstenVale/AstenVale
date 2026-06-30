@@ -223,18 +223,20 @@ window.SONG_DATA = {
       ]
     }
   ],
-    "collectibles": [
+  "collectibles": [
     {
       "id": "047_seal",
       "type": "Object",
       "name": "Seal",
       "symbol": "🔍",
       "description": "Seal was recovered from Grain Mill in Case File 047. It is tied to Blacksmith, 8:00, and marker 497.",
-      "unknownInfo": "Down and Millstone suggest this object matters beyond the first reading."
+      "unknownInfo": "Down and Millstone suggest this object matters beyond the first reading.",
+      "image": "images/Objects/047 - locket.png"
     },
     {
       "id": "047_location",
       "type": "Location",
+      "image": "images/Location/case-047-lumber-camp-location.png",
       "name": "Grainmill",
       "symbol": "📍",
       "description": "The active scene for Case File 047. Recovered field notes place the primary event at Grainmill.",
@@ -246,7 +248,8 @@ window.SONG_DATA = {
       "name": "Blacksmith",
       "symbol": "👤",
       "description": "Blacksmith, identified in the case notes for Case File 047. Has not given a formal statement.",
-      "unknownInfo": "Their connection to the recovered object and whether they returned."
+      "unknownInfo": "Their connection to the recovered object and whether they returned.",
+      "image": "images/Witness/Case 047 - gravedigger.png"
     },
     {
       "id": "047_time",

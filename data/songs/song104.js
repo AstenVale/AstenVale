@@ -236,6 +236,7 @@ window.SONG_DATA = {
     {
       "id": "104_location",
       "type": "Location",
+      "image": "images/Location/case-104-silo-row-location.png",
       "name": "Cooperage",
       "symbol": "📍",
       "description": "The active scene for Case File 104. Recovered field notes place the primary event at Cooperage.",

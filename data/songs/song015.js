@@ -225,18 +225,20 @@ window.SONG_DATA = {
       ]
     }
   ],
-    "collectibles": [
+  "collectibles": [
     {
       "id": "015_emptybottle",
       "type": "Object",
       "name": "Emptybottle",
       "symbol": "🔍",
       "description": "Empty Bottle was recovered from Kitchen Table in Case File 015. It is tied to Neighbor, 4:15, and marker 132.",
-      "unknownInfo": "Down and Silence suggest this object matters beyond the first reading."
+      "unknownInfo": "Down and Silence suggest this object matters beyond the first reading.",
+      "image": "images/Objects/015 - wedding photo.png"
     },
     {
       "id": "015_location",
       "type": "Location",
+      "image": "images/Location/case-015-train-station-location.png",
       "name": "Kitchentable",
       "symbol": "📍",
       "description": "The active scene for Case File 015. Recovered field notes place the primary event at Kitchentable.",
@@ -248,7 +250,8 @@ window.SONG_DATA = {
       "name": "Neighbor",
       "symbol": "👤",
       "description": "Neighbor, identified in the case notes for Case File 015. Has not given a formal statement.",
-      "unknownInfo": "Their connection to the recovered object and whether they returned."
+      "unknownInfo": "Their connection to the recovered object and whether they returned.",
+      "image": "images/Witness/Case 015 - groundskeeper.png"
     },
     {
       "id": "015_time",

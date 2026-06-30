@@ -216,18 +216,20 @@ window.SONG_DATA = {
       ]
     }
   ],
-    "collectibles": [
+  "collectibles": [
     {
       "id": "075_cufflink",
       "type": "Object",
       "name": "Cufflink",
       "symbol": "🔍",
       "description": "Cufflink was recovered from Water Tower in Case File 075. It is tied to Fence Mender, 12:00, and marker 725.",
-      "unknownInfo": "Off the Road and Pen on Paper suggest this object matters beyond the first reading."
+      "unknownInfo": "Off the Road and Pen on Paper suggest this object matters beyond the first reading.",
+      "image": "images/Objects/075 - map.png"
     },
     {
       "id": "075_location",
       "type": "Location",
+      "image": "images/Location/case-075-ash-hollow-location.png",
       "name": "Watertower",
       "symbol": "📍",
       "description": "The active scene for Case File 075. Recovered field notes place the primary event at Watertower.",
@@ -239,7 +241,8 @@ window.SONG_DATA = {
       "name": "Fencemender",
       "symbol": "👤",
       "description": "Fencemender, identified in the case notes for Case File 075. Has not given a formal statement.",
-      "unknownInfo": "Their connection to the recovered object and whether they returned."
+      "unknownInfo": "Their connection to the recovered object and whether they returned.",
+      "image": "images/Witness/Case 075 - tailor.png"
     },
     {
       "id": "075_time",

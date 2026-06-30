@@ -214,18 +214,20 @@ window.SONG_DATA = {
       ]
     }
   ],
-    "collectibles": [
+  "collectibles": [
     {
       "id": "009_cabinkey",
       "type": "Object",
       "name": "Cabinkey",
       "symbol": "🔍",
       "description": "Cabin Key was recovered from Cabin in Case File 009. It is tied to Mechanic, 10:22, and marker 72.",
-      "unknownInfo": "North and Wind in Pines suggest this object matters beyond the first reading."
+      "unknownInfo": "North and Wind in Pines suggest this object matters beyond the first reading.",
+      "image": "images/Objects/009 - cabin key.png"
     },
     {
       "id": "009_location",
       "type": "Location",
+      "image": "images/Location/case-009-highway-location.png",
       "name": "Cabin",
       "symbol": "📍",
       "description": "The active scene for Case File 009. Recovered field notes place the primary event at Cabin.",
@@ -237,7 +239,8 @@ window.SONG_DATA = {
       "name": "Mechanic",
       "symbol": "👤",
       "description": "Mechanic, identified in the case notes for Case File 009. Has not given a formal statement.",
-      "unknownInfo": "Their connection to the recovered object and whether they returned."
+      "unknownInfo": "Their connection to the recovered object and whether they returned.",
+      "image": "images/Witness/Case 009 - caretaker.png"
     },
     {
       "id": "009_time",

@@ -226,18 +226,20 @@ window.SONG_DATA = {
       ]
     }
   ],
-    "collectibles": [
+  "collectibles": [
     {
       "id": "017_suitcase",
       "type": "Object",
       "name": "Suitcase",
       "symbol": "🔍",
       "description": "Suitcase was recovered from Train Station in Case File 017. It is tied to Station Master, 5:47, and marker 154.",
-      "unknownInfo": "West and Train Whistle suggest this object matters beyond the first reading."
+      "unknownInfo": "West and Train Whistle suggest this object matters beyond the first reading.",
+      "image": "images/Objects/017 - handkerchief.png"
     },
     {
       "id": "017_location",
       "type": "Location",
+      "image": "images/Location/case-017-mailbox-location.png",
       "name": "Trainstation",
       "symbol": "📍",
       "description": "The active scene for Case File 017. Recovered field notes place the primary event at Trainstation.",
@@ -249,7 +251,8 @@ window.SONG_DATA = {
       "name": "Stationmaster",
       "symbol": "👤",
       "description": "Stationmaster, identified in the case notes for Case File 017. Has not given a formal statement.",
-      "unknownInfo": "Their connection to the recovered object and whether they returned."
+      "unknownInfo": "Their connection to the recovered object and whether they returned.",
+      "image": "images/Witness/Case 017 - ferryman.png"
     },
     {
       "id": "017_time",

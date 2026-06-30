@@ -225,18 +225,20 @@ window.SONG_DATA = {
       ]
     }
   ],
-    "collectibles": [
+  "collectibles": [
     {
       "id": "043_chain",
       "type": "Object",
       "name": "Chain",
       "symbol": "🔍",
       "description": "Chain was recovered from Grain Mill in Case File 043. It is tied to Woodsman, 5:09, and marker 461.",
-      "unknownInfo": "Out of Sight and Dry Grass suggest this object matters beyond the first reading."
+      "unknownInfo": "Out of Sight and Dry Grass suggest this object matters beyond the first reading.",
+      "image": "images/Objects/043 - dried flower.png"
     },
     {
       "id": "043_location",
       "type": "Location",
+      "image": "images/Location/case-043-smithy-location.png",
       "name": "Grainmill",
       "symbol": "📍",
       "description": "The active scene for Case File 043. Recovered field notes place the primary event at Grainmill.",
@@ -248,7 +250,8 @@ window.SONG_DATA = {
       "name": "Woodsman",
       "symbol": "👤",
       "description": "Woodsman, identified in the case notes for Case File 043. Has not given a formal statement.",
-      "unknownInfo": "Their connection to the recovered object and whether they returned."
+      "unknownInfo": "Their connection to the recovered object and whether they returned.",
+      "image": "images/Witness/Case 043 - surveyor.png"
     },
     {
       "id": "043_time",

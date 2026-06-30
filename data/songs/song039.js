@@ -226,18 +226,20 @@ window.SONG_DATA = {
       ]
     }
   ],
-    "collectibles": [
+  "collectibles": [
     {
       "id": "039_emptytin",
       "type": "Object",
       "name": "Emptytin",
       "symbol": "🔍",
       "description": "Empty Tin was recovered from The Quarry Pool in Case File 039. It is tied to Miller, 8:42, and marker 425.",
-      "unknownInfo": "Sideways and Moth Wings suggest this object matters beyond the first reading."
+      "unknownInfo": "Sideways and Moth Wings suggest this object matters beyond the first reading.",
+      "image": "images/Objects/039 - watch.png"
     },
     {
       "id": "039_location",
       "type": "Location",
+      "image": "images/Location/case-039-cider-house-location.png",
       "name": "Quarry Pool",
       "symbol": "📍",
       "description": "The active scene for Case File 039. Recovered field notes place the primary event at Quarry Pool.",
@@ -249,7 +251,8 @@ window.SONG_DATA = {
       "name": "Miller",
       "symbol": "👤",
       "description": "Miller, identified in the case notes for Case File 039. Has not given a formal statement.",
-      "unknownInfo": "Their connection to the recovered object and whether they returned."
+      "unknownInfo": "Their connection to the recovered object and whether they returned.",
+      "image": "images/Witness/Case 039 - deputy.png"
     },
     {
       "id": "039_time",

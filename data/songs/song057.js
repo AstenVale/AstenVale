@@ -214,18 +214,20 @@ window.SONG_DATA = {
       ]
     }
   ],
-    "collectibles": [
+  "collectibles": [
     {
       "id": "057_journal",
       "type": "Object",
       "name": "Journal",
       "symbol": "🔍",
       "description": "Journal was recovered from Cooper's Yard in Case File 057. It is tied to Chandler, 8:42, and marker 579.",
-      "unknownInfo": "Back and Pen on Paper suggest this object matters beyond the first reading."
+      "unknownInfo": "Back and Pen on Paper suggest this object matters beyond the first reading.",
+      "image": "images/Objects/057 - dried blood on cloth.png"
     },
     {
       "id": "057_location",
       "type": "Location",
+      "image": "images/Location/case-057-boatyard-location.png",
       "name": "Cooper'Syard",
       "symbol": "📍",
       "description": "The active scene for Case File 057. Recovered field notes place the primary event at Cooper'Syard.",
@@ -237,7 +239,8 @@ window.SONG_DATA = {
       "name": "Chandler",
       "symbol": "👤",
       "description": "Chandler, identified in the case notes for Case File 057. Has not given a formal statement.",
-      "unknownInfo": "Their connection to the recovered object and whether they returned."
+      "unknownInfo": "Their connection to the recovered object and whether they returned.",
+      "image": "images/Witness/Case 057 - farmer.png"
     },
     {
       "id": "057_time",

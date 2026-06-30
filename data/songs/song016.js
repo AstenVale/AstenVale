@@ -226,18 +226,20 @@ window.SONG_DATA = {
       ]
     }
   ],
-    "collectibles": [
+  "collectibles": [
     {
       "id": "016_weddingphoto",
       "type": "Object",
       "name": "Weddingphoto",
       "symbol": "🔍",
       "description": "Wedding Photo was recovered from Old Bridge in Case File 016. It is tied to Wife, 11:52, and marker 143.",
-      "unknownInfo": "South and Wind in Pines suggest this object matters beyond the first reading."
+      "unknownInfo": "South and Wind in Pines suggest this object matters beyond the first reading.",
+      "image": "images/Objects/016 - suitcase.png"
     },
     {
       "id": "016_location",
       "type": "Location",
+      "image": "images/Location/case-016-window-seat-location.png",
       "name": "Oldbridge",
       "symbol": "📍",
       "description": "The active scene for Case File 016. Recovered field notes place the primary event at Oldbridge.",
@@ -249,7 +251,8 @@ window.SONG_DATA = {
       "name": "Wife",
       "symbol": "👤",
       "description": "Wife, identified in the case notes for Case File 016. Has not given a formal statement.",
-      "unknownInfo": "Their connection to the recovered object and whether they returned."
+      "unknownInfo": "Their connection to the recovered object and whether they returned.",
+      "image": "images/Witness/Case 016 - ghost-child.png"
     },
     {
       "id": "016_time",

@@ -219,7 +219,7 @@ window.SONG_DATA = {
       "id": "001_lantern",
       "type": "Object",
       "name": "The Lantern",
-      "image": "data/images/lantern.png",
+      "image": "images/Objects/001 - lantern.png",
       "symbol": "🏮",
       "description": "A lantern recovered from the Black Pine scene. Still faintly warm when found. No fuel remaining.",
       "unknownInfo": "Who carried it there — and why they left it burning."
@@ -227,6 +227,7 @@ window.SONG_DATA = {
     {
       "id": "001_location",
       "type": "Location",
+      "image": "images/Location/case-001-black-pine-location.png",
       "name": "Black Pine",
       "symbol": "📍",
       "description": "A remote wooded area outside the valley. The reported scene of the original incident.",
@@ -238,7 +239,8 @@ window.SONG_DATA = {
       "name": "The Stranger",
       "symbol": "👤",
       "description": "An unidentified individual reported at the Black Pine location. No name on file.",
-      "unknownInfo": "Their connection to Marker 17 and whether they returned West."
+      "unknownInfo": "Their connection to Marker 17 and whether they returned West.",
+      "image": "images/Witness/Case 001 - stranger.png"
     },
     {
       "id": "001_time",

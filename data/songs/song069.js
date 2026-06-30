@@ -227,18 +227,20 @@ window.SONG_DATA = {
       ]
     }
   ],
-    "collectibles": [
+  "collectibles": [
     {
       "id": "069_tinstar",
       "type": "Object",
       "name": "Tinstar",
       "symbol": "🔍",
       "description": "Tin Star was recovered from The Hollow Road in Case File 069. It is tied to Conductor, 2:55, and marker 679.",
-      "unknownInfo": "Nowhere and River Water suggest this object matters beyond the first reading."
+      "unknownInfo": "Nowhere and River Water suggest this object matters beyond the first reading.",
+      "image": "images/Objects/069 - surveyor's pin.png"
     },
     {
       "id": "069_location",
       "type": "Location",
+      "image": "images/Location/case-069-calico-alley-location.png",
       "name": "Hollow Road",
       "symbol": "📍",
       "description": "The active scene for Case File 069. Recovered field notes place the primary event at Hollow Road.",
@@ -250,7 +252,8 @@ window.SONG_DATA = {
       "name": "Conductor",
       "symbol": "👤",
       "description": "Conductor, identified in the case notes for Case File 069. Has not given a formal statement.",
-      "unknownInfo": "Their connection to the recovered object and whether they returned."
+      "unknownInfo": "Their connection to the recovered object and whether they returned.",
+      "image": "images/Witness/Case 069 - rag-picker.png"
     },
     {
       "id": "069_time",

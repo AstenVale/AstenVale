@@ -213,18 +213,20 @@ window.SONG_DATA = {
       ]
     }
   ],
-    "collectibles": [
+  "collectibles": [
     {
       "id": "058_key",
       "type": "Object",
       "name": "Key",
       "symbol": "🔍",
       "description": "Key was recovered from Diner in Case File 058. It is tied to Lamplighter, 8:00, and marker 588.",
-      "unknownInfo": "Left and River Water suggest this object matters beyond the first reading."
+      "unknownInfo": "Left and River Water suggest this object matters beyond the first reading.",
+      "image": "images/Objects/058 - inkwell.png"
     },
     {
       "id": "058_location",
       "type": "Location",
+      "image": "images/Location/case-058-east-field-location.png",
       "name": "Diner",
       "symbol": "📍",
       "description": "The active scene for Case File 058. Recovered field notes place the primary event at Diner.",
@@ -236,7 +238,8 @@ window.SONG_DATA = {
       "name": "Lamplighter",
       "symbol": "👤",
       "description": "Lamplighter, identified in the case notes for Case File 058. Has not given a formal statement.",
-      "unknownInfo": "Their connection to the recovered object and whether they returned."
+      "unknownInfo": "Their connection to the recovered object and whether they returned.",
+      "image": "images/Witness/Case 058 - cartographer.png"
     },
     {
       "id": "058_time",

@@ -216,18 +216,20 @@ window.SONG_DATA = {
       ]
     }
   ],
-    "collectibles": [
+  "collectibles": [
     {
       "id": "080_spoolofthread",
       "type": "Object",
       "name": "Spoolofthread",
       "symbol": "🔍",
       "description": "Spool of Thread was recovered from Potter's Field in Case File 080. It is tied to Schoolteacher, 2:19, and marker 770.",
-      "unknownInfo": "Into the Dark and Saw Cutting suggest this object matters beyond the first reading."
+      "unknownInfo": "Into the Dark and Saw Cutting suggest this object matters beyond the first reading.",
+      "image": "images/Objects/080 - bent nail.png"
     },
     {
       "id": "080_location",
       "type": "Location",
+      "image": "images/Location/case-080-pine-hollow-location.png",
       "name": "Potter'Sfield",
       "symbol": "📍",
       "description": "The active scene for Case File 080. Recovered field notes place the primary event at Potter'Sfield.",

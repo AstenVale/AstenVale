@@ -215,18 +215,20 @@ window.SONG_DATA = {
       ]
     }
   ],
-    "collectibles": [
+  "collectibles": [
     {
       "id": "012_casefolder",
       "type": "Object",
       "name": "Casefolder",
       "symbol": "🔍",
       "description": "Case Folder was recovered from Sheriff Archive in Case File 012. It is tied to Sheriff, 12:00, and marker 99.",
-      "unknownInfo": "Below and Cellar Door suggest this object matters beyond the first reading."
+      "unknownInfo": "Below and Cellar Door suggest this object matters beyond the first reading.",
+      "image": "images/Objects/012 - case folder.png"
     },
     {
       "id": "012_location",
       "type": "Location",
+      "image": "images/Location/case-012-riverside-cabin-location.png",
       "name": "Sheriffarchive",
       "symbol": "📍",
       "description": "The active scene for Case File 012. Recovered field notes place the primary event at Sheriffarchive.",
@@ -238,7 +240,8 @@ window.SONG_DATA = {
       "name": "Sheriff",
       "symbol": "👤",
       "description": "Sheriff, identified in the case notes for Case File 012. Has not given a formal statement.",
-      "unknownInfo": "Their connection to the recovered object and whether they returned."
+      "unknownInfo": "Their connection to the recovered object and whether they returned.",
+      "image": "images/Witness/Case 012 - wife.png"
     },
     {
       "id": "012_time",

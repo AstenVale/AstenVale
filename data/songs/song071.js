@@ -226,18 +226,20 @@ window.SONG_DATA = {
       ]
     }
   ],
-    "collectibles": [
+  "collectibles": [
     {
       "id": "071_telegram",
       "type": "Object",
       "name": "Telegram",
       "symbol": "🔍",
       "description": "Telegram was recovered from Hotel in Case File 071. It is tied to Judge, 7:48, and marker 697.",
-      "unknownInfo": "Straight Down and The Silence After suggest this object matters beyond the first reading."
+      "unknownInfo": "Straight Down and The Silence After suggest this object matters beyond the first reading.",
+      "image": "images/Objects/071 - flint stone.png"
     },
     {
       "id": "071_location",
       "type": "Location",
+      "image": "images/Location/case-071-the-ridge-location.png",
       "name": "Hotel",
       "symbol": "📍",
       "description": "The active scene for Case File 071. Recovered field notes place the primary event at Hotel.",
@@ -249,7 +251,8 @@ window.SONG_DATA = {
       "name": "Judge",
       "symbol": "👤",
       "description": "Judge, identified in the case notes for Case File 071. Has not given a formal statement.",
-      "unknownInfo": "Their connection to the recovered object and whether they returned."
+      "unknownInfo": "Their connection to the recovered object and whether they returned.",
+      "image": "images/Witness/Case 071 - undertaker.png"
     },
     {
       "id": "071_time",

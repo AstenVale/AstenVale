@@ -225,18 +225,20 @@ window.SONG_DATA = {
       ]
     }
   ],
-    "collectibles": [
+  "collectibles": [
     {
       "id": "065_bottle",
       "type": "Object",
       "name": "Bottle",
       "symbol": "🔍",
       "description": "Bottle was recovered from Covered Bridge in Case File 065. It is tied to Deputy, 6:53, and marker 643.",
-      "unknownInfo": "Ahead and Ice Crack suggest this object matters beyond the first reading."
+      "unknownInfo": "Ahead and Ice Crack suggest this object matters beyond the first reading.",
+      "image": "images/Objects/065 - hollow acorn.png"
     },
     {
       "id": "065_location",
       "type": "Location",
+      "image": "images/Location/case-065-brick-kiln-location.png",
       "name": "Coveredbridge",
       "symbol": "📍",
       "description": "The active scene for Case File 065. Recovered field notes place the primary event at Coveredbridge.",
@@ -248,7 +250,8 @@ window.SONG_DATA = {
       "name": "Deputy",
       "symbol": "👤",
       "description": "Deputy, identified in the case notes for Case File 065. Has not given a formal statement.",
-      "unknownInfo": "Their connection to the recovered object and whether they returned."
+      "unknownInfo": "Their connection to the recovered object and whether they returned.",
+      "image": "images/Witness/Case 065 - weaver.png"
     },
     {
       "id": "065_time",

@@ -214,18 +214,20 @@ window.SONG_DATA = {
       ]
     }
   ],
-    "collectibles": [
+  "collectibles": [
     {
       "id": "008_churchkey",
       "type": "Object",
       "name": "Churchkey",
       "symbol": "🔍",
       "description": "Church Key was recovered from Church in Case File 008. It is tied to Preacher, 7:00, and marker 09.",
-      "unknownInfo": "East and Bell Toll suggest this object matters beyond the first reading."
+      "unknownInfo": "East and Bell Toll suggest this object matters beyond the first reading.",
+      "image": "images/Objects/008 - church key.png"
     },
     {
       "id": "008_location",
       "type": "Location",
+      "image": "images/Location/case-008-cabin-location.png",
       "name": "Church",
       "symbol": "📍",
       "description": "The active scene for Case File 008. Recovered field notes place the primary event at Church.",
@@ -237,7 +239,8 @@ window.SONG_DATA = {
       "name": "Preacher",
       "symbol": "👤",
       "description": "Preacher, identified in the case notes for Case File 008. Has not given a formal statement.",
-      "unknownInfo": "Their connection to the recovered object and whether they returned."
+      "unknownInfo": "Their connection to the recovered object and whether they returned.",
+      "image": "images/Witness/Case 008 - driver.png"
     },
     {
       "id": "008_time",

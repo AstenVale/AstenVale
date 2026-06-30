@@ -226,18 +226,20 @@ window.SONG_DATA = {
       ]
     }
   ],
-    "collectibles": [
+  "collectibles": [
     {
       "id": "061_telegram",
       "type": "Object",
       "name": "Telegram",
       "symbol": "🔍",
       "description": "Telegram was recovered from Loom House in Case File 061. It is tied to Night Watchman, 7:02, and marker 607.",
-      "unknownInfo": "Further In and Rain suggest this object matters beyond the first reading."
+      "unknownInfo": "Further In and Rain suggest this object matters beyond the first reading.",
+      "image": "images/Objects/061 - bullet casing.png"
     },
     {
       "id": "061_location",
       "type": "Location",
+      "image": "images/Location/case-061-harness-shop-location.png",
       "name": "Loomhouse",
       "symbol": "📍",
       "description": "The active scene for Case File 061. Recovered field notes place the primary event at Loomhouse.",
@@ -249,7 +251,8 @@ window.SONG_DATA = {
       "name": "Nightwatchman",
       "symbol": "👤",
       "description": "Nightwatchman, identified in the case notes for Case File 061. Has not given a formal statement.",
-      "unknownInfo": "Their connection to the recovered object and whether they returned."
+      "unknownInfo": "Their connection to the recovered object and whether they returned.",
+      "image": "images/Witness/Case 061 - wool-sorter.png"
     },
     {
       "id": "061_time",

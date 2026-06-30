@@ -214,18 +214,20 @@ window.SONG_DATA = {
       ]
     }
   ],
-    "collectibles": [
+  "collectibles": [
     {
       "id": "053_coin",
       "type": "Object",
       "name": "Coin",
       "symbol": "🔍",
       "description": "Coin was recovered from Smithy in Case File 053. It is tied to Banker, 9:44, and marker 543.",
-      "unknownInfo": "Away from Town and Nail Pulled from Wood suggest this object matters beyond the first reading."
+      "unknownInfo": "Away from Town and Nail Pulled from Wood suggest this object matters beyond the first reading.",
+      "image": "images/Objects/053 - canteen.png"
     },
     {
       "id": "053_location",
       "type": "Location",
+      "image": "images/Location/case-053-undertakers-hall-location.png",
       "name": "Smithy",
       "symbol": "📍",
       "description": "The active scene for Case File 053. Recovered field notes place the primary event at Smithy.",
@@ -237,7 +239,8 @@ window.SONG_DATA = {
       "name": "Banker",
       "symbol": "👤",
       "description": "Banker, identified in the case notes for Case File 053. Has not given a formal statement.",
-      "unknownInfo": "Their connection to the recovered object and whether they returned."
+      "unknownInfo": "Their connection to the recovered object and whether they returned.",
+      "image": "images/Witness/Case 053 - peddler.png"
     },
     {
       "id": "053_time",

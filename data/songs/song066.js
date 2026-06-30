@@ -227,18 +227,20 @@ window.SONG_DATA = {
       ]
     }
   ],
-    "collectibles": [
+  "collectibles": [
     {
       "id": "066_canteen",
       "type": "Object",
       "name": "Canteen",
       "symbol": "🔍",
       "description": "Canteen was recovered from The Hollow Road in Case File 066. It is tied to Drifter, 3:17, and marker 652.",
-      "unknownInfo": "Straight Down and Crow Wings suggest this object matters beyond the first reading."
+      "unknownInfo": "Straight Down and Crow Wings suggest this object matters beyond the first reading.",
+      "image": "images/Objects/066 - prayer card.png"
     },
     {
       "id": "066_location",
       "type": "Location",
+      "image": "images/Location/case-066-doctors-office-location.png",
       "name": "Hollow Road",
       "symbol": "📍",
       "description": "The active scene for Case File 066. Recovered field notes place the primary event at Hollow Road.",
@@ -250,7 +252,8 @@ window.SONG_DATA = {
       "name": "Drifter",
       "symbol": "👤",
       "description": "Drifter, identified in the case notes for Case File 066. Has not given a formal statement.",
-      "unknownInfo": "Their connection to the recovered object and whether they returned."
+      "unknownInfo": "Their connection to the recovered object and whether they returned.",
+      "image": "images/Witness/Case 066 - quarry-foreman.png"
     },
     {
       "id": "066_time",

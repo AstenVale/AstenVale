@@ -213,18 +213,20 @@ window.SONG_DATA = {
       ]
     }
   ],
-    "collectibles": [
+  "collectibles": [
     {
       "id": "007_matchbook",
       "type": "Object",
       "name": "Matchbook",
       "symbol": "🔍",
       "description": "Matchbook was recovered from Diner in Case File 007. It is tied to Stranger, 9:15, and marker 61.",
-      "unknownInfo": "South and Match Strike suggest this object matters beyond the first reading."
+      "unknownInfo": "South and Match Strike suggest this object matters beyond the first reading.",
+      "image": "images/Objects/007 - matchbook.png"
     },
     {
       "id": "007_location",
       "type": "Location",
+      "image": "images/Location/case-007-diner-location.png",
       "name": "Diner",
       "symbol": "📍",
       "description": "The active scene for Case File 007. Recovered field notes place the primary event at Diner.",
@@ -236,7 +238,8 @@ window.SONG_DATA = {
       "name": "Stranger",
       "symbol": "👤",
       "description": "Stranger, identified in the case notes for Case File 007. Has not given a formal statement.",
-      "unknownInfo": "Their connection to the recovered object and whether they returned."
+      "unknownInfo": "Their connection to the recovered object and whether they returned.",
+      "image": "images/Witness/Case 007 - mechanic.png"
     },
     {
       "id": "007_time",

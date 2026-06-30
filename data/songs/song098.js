@@ -227,6 +227,7 @@ window.SONG_DATA = {
     {
       "id": "098_location",
       "type": "Location",
+      "image": "images/Location/case-098-pharmacy-location.png",
       "name": "Southfork",
       "symbol": "📍",
       "description": "The active scene for Case File 098. Recovered field notes place the primary event at Southfork.",

@@ -225,18 +225,20 @@ window.SONG_DATA = {
       ]
     }
   ],
-    "collectibles": [
+  "collectibles": [
     {
       "id": "045_chain",
       "type": "Object",
       "name": "Chain",
       "symbol": "🔍",
       "description": "Chain was recovered from Cider House in Case File 045. It is tied to Rope Maker, 7:14, and marker 479.",
-      "unknownInfo": "Over and Dry Grass suggest this object matters beyond the first reading."
+      "unknownInfo": "Over and Dry Grass suggest this object matters beyond the first reading.",
+      "image": "images/Objects/045 - flask.png"
     },
     {
       "id": "045_location",
       "type": "Location",
+      "image": "images/Location/case-045-orchard-location.png",
       "name": "Ciderhouse",
       "symbol": "📍",
       "description": "The active scene for Case File 045. Recovered field notes place the primary event at Ciderhouse.",
@@ -248,7 +250,8 @@ window.SONG_DATA = {
       "name": "Ropemaker",
       "symbol": "👤",
       "description": "Ropemaker, identified in the case notes for Case File 045. Has not given a formal statement.",
-      "unknownInfo": "Their connection to the recovered object and whether they returned."
+      "unknownInfo": "Their connection to the recovered object and whether they returned.",
+      "image": "images/Witness/Case 045 - glazier.png"
     },
     {
       "id": "045_time",

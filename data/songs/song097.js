@@ -228,6 +228,7 @@ window.SONG_DATA = {
     {
       "id": "097_location",
       "type": "Location",
+      "image": "images/Location/case-097-telegraph-office-location.png",
       "name": "Weir",
       "symbol": "📍",
       "description": "The active scene for Case File 097. Recovered field notes place the primary event at Weir.",

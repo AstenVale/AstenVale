@@ -214,18 +214,20 @@ window.SONG_DATA = {
       ]
     }
   ],
-    "collectibles": [
+  "collectibles": [
     {
       "id": "032_woolscarf",
       "type": "Object",
       "name": "Woolscarf",
       "symbol": "🔍",
       "description": "Wool Scarf was recovered from Tannery in Case File 032. It is tied to Wainwright, 11:51, and marker 370.",
-      "unknownInfo": "Under and Wheel on Gravel suggest this object matters beyond the first reading."
+      "unknownInfo": "Under and Wheel on Gravel suggest this object matters beyond the first reading.",
+      "image": "images/Objects/032 - pocket watch.png"
     },
     {
       "id": "032_location",
       "type": "Location",
+      "image": "images/Location/case-032-stables-location.png",
       "name": "Tannery",
       "symbol": "📍",
       "description": "The active scene for Case File 032. Recovered field notes place the primary event at Tannery.",
@@ -237,7 +239,8 @@ window.SONG_DATA = {
       "name": "Wainwright",
       "symbol": "👤",
       "description": "Wainwright, identified in the case notes for Case File 032. Has not given a formal statement.",
-      "unknownInfo": "Their connection to the recovered object and whether they returned."
+      "unknownInfo": "Their connection to the recovered object and whether they returned.",
+      "image": "images/Witness/Case 032 - woodsman.png"
     },
     {
       "id": "032_time",

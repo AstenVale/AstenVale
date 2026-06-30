@@ -221,11 +221,13 @@ window.SONG_DATA = {
       "name": "Wedding Ring",
       "symbol": "💍",
       "description": "A plain gold band recovered from the Church floor. Engraved inside: a date that predates the church's construction.",
-      "unknownInfo": "Whose name was removed from the inscription — and when."
+      "unknownInfo": "Whose name was removed from the inscription — and when.",
+      "image": "images/Objects/004 - wedding ring.png"
     },
     {
       "id": "004_location",
       "type": "Location",
+      "image": "images/Location/case-004-church-location.png",
       "name": "The Church",
       "symbol": "📍",
       "description": "A small stone church at the edge of the valley. Unconsecrated. No congregation on record since 1943.",
@@ -237,7 +239,8 @@ window.SONG_DATA = {
       "name": "The Widow",
       "symbol": "👤",
       "description": "The same Widow from Case 002. Found inside the church at 6:45. She did not speak. She was already leaving.",
-      "unknownInfo": "Whether The Widow placed the ring — or was there to retrieve it."
+      "unknownInfo": "Whether The Widow placed the ring — or was there to retrieve it.",
+      "image": "images/Witness/Case 004 - station-master.png"
     },
     {
       "id": "004_time",

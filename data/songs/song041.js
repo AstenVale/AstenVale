@@ -223,18 +223,20 @@ window.SONG_DATA = {
       ]
     }
   ],
-    "collectibles": [
+  "collectibles": [
     {
       "id": "041_signetring",
       "type": "Object",
       "name": "Signetring",
       "symbol": "🔍",
       "description": "Signet Ring was recovered from Library in Case File 041. It is tied to Orphan, 12:00, and marker 443.",
-      "unknownInfo": "Out and Floorboard suggest this object matters beyond the first reading."
+      "unknownInfo": "Out and Floorboard suggest this object matters beyond the first reading.",
+      "image": "images/Objects/041 - seal.png"
     },
     {
       "id": "041_location",
       "type": "Location",
+      "image": "images/Location/case-041-north-pasture-location.png",
       "name": "Library",
       "symbol": "📍",
       "description": "The active scene for Case File 041. Recovered field notes place the primary event at Library.",
@@ -246,7 +248,8 @@ window.SONG_DATA = {
       "name": "Orphan",
       "symbol": "👤",
       "description": "Orphan, identified in the case notes for Case File 041. Has not given a formal statement.",
-      "unknownInfo": "Their connection to the recovered object and whether they returned."
+      "unknownInfo": "Their connection to the recovered object and whether they returned.",
+      "image": "images/Witness/Case 041 - retired-soldier.png"
     },
     {
       "id": "041_time",

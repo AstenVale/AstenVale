@@ -225,18 +225,20 @@ window.SONG_DATA = {
       ]
     }
   ],
-    "collectibles": [
+  "collectibles": [
     {
       "id": "085_driedflower",
       "type": "Object",
       "name": "Driedflower",
       "symbol": "🔍",
       "description": "Dried Flower was recovered from East Field in Case File 085. It is tied to Schoolgirl, 7:48, and marker 807.",
-      "unknownInfo": "Across and Train Whistle suggest this object matters beyond the first reading."
+      "unknownInfo": "Across and Train Whistle suggest this object matters beyond the first reading.",
+      "image": "images/Objects/085 - stamp.png"
     },
     {
       "id": "085_location",
       "type": "Location",
+      "image": "images/Location/case-085-rivers-edge-location.png",
       "name": "Eastfield",
       "symbol": "📍",
       "description": "The active scene for Case File 085. Recovered field notes place the primary event at Eastfield.",

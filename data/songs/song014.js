@@ -226,18 +226,20 @@ window.SONG_DATA = {
       ]
     }
   ],
-    "collectibles": [
+  "collectibles": [
     {
       "id": "014_loveletter",
       "type": "Object",
       "name": "Loveletter",
       "symbol": "🔍",
       "description": "Love Letter was recovered from Riverside Cabin in Case File 014. It is tied to Husband, 9:30, and marker 121.",
-      "unknownInfo": "East and River Water suggest this object matters beyond the first reading."
+      "unknownInfo": "East and River Water suggest this object matters beyond the first reading.",
+      "image": "images/Objects/014 - empty bottle.png"
     },
     {
       "id": "014_location",
       "type": "Location",
+      "image": "images/Location/case-014-old-bridge-location.png",
       "name": "Riversidecabin",
       "symbol": "📍",
       "description": "The active scene for Case File 014. Recovered field notes place the primary event at Riversidecabin.",
@@ -249,7 +251,8 @@ window.SONG_DATA = {
       "name": "Husband",
       "symbol": "👤",
       "description": "Husband, identified in the case notes for Case File 014. Has not given a formal statement.",
-      "unknownInfo": "Their connection to the recovered object and whether they returned."
+      "unknownInfo": "Their connection to the recovered object and whether they returned.",
+      "image": "images/Witness/Case 014 - postman.png"
     },
     {
       "id": "014_time",

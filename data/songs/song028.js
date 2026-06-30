@@ -213,18 +213,20 @@ window.SONG_DATA = {
       ]
     }
   ],
-    "collectibles": [
+  "collectibles": [
     {
       "id": "028_candle",
       "type": "Object",
       "name": "Candle",
       "symbol": "🔍",
       "description": "Candle was recovered from Cabin in Case File 028. It is tied to Chandler, 2:19, and marker 334.",
-      "unknownInfo": "Under and Water Drip suggest this object matters beyond the first reading."
+      "unknownInfo": "Under and Water Drip suggest this object matters beyond the first reading.",
+      "image": "images/Objects/028 - chain.png"
     },
     {
       "id": "028_location",
       "type": "Location",
+      "image": "images/Location/case-028-water-tower-location.png",
       "name": "Cabin",
       "symbol": "📍",
       "description": "The active scene for Case File 028. Recovered field notes place the primary event at Cabin.",
@@ -236,7 +238,8 @@ window.SONG_DATA = {
       "name": "Chandler",
       "symbol": "👤",
       "description": "Chandler, identified in the case notes for Case File 028. Has not given a formal statement.",
-      "unknownInfo": "Their connection to the recovered object and whether they returned."
+      "unknownInfo": "Their connection to the recovered object and whether they returned.",
+      "image": "images/Witness/Case 028 - miller.png"
     },
     {
       "id": "028_time",

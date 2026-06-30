@@ -215,18 +215,20 @@ window.SONG_DATA = {
       ]
     }
   ],
-    "collectibles": [
+  "collectibles": [
     {
       "id": "055_charredpaper",
       "type": "Object",
       "name": "Charredpaper",
       "symbol": "🔍",
       "description": "Charred Paper was recovered from Old Bridge in Case File 055. It is tied to Banker, 6:17, and marker 561.",
-      "unknownInfo": "Under and Crow on Wire suggest this object matters beyond the first reading."
+      "unknownInfo": "Under and Crow on Wire suggest this object matters beyond the first reading.",
+      "image": "images/Objects/055 - ticket.png"
     },
     {
       "id": "055_location",
       "type": "Location",
+      "image": "images/Location/case-055-the-pit-location.png",
       "name": "Oldbridge",
       "symbol": "📍",
       "description": "The active scene for Case File 055. Recovered field notes place the primary event at Oldbridge.",
@@ -238,7 +240,8 @@ window.SONG_DATA = {
       "name": "Banker",
       "symbol": "👤",
       "description": "Banker, identified in the case notes for Case File 055. Has not given a formal statement.",
-      "unknownInfo": "Their connection to the recovered object and whether they returned."
+      "unknownInfo": "Their connection to the recovered object and whether they returned.",
+      "image": "images/Witness/Case 055 - river-pilot.png"
     },
     {
       "id": "055_time",

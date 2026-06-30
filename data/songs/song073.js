@@ -214,18 +214,20 @@ window.SONG_DATA = {
       ]
     }
   ],
-    "collectibles": [
+  "collectibles": [
     {
       "id": "073_inkwell",
       "type": "Object",
       "name": "Inkwell",
       "symbol": "🔍",
       "description": "Inkwell was recovered from Undertaker's Hall in Case File 073. It is tied to Driver, 6:53, and marker 707.",
-      "unknownInfo": "West and Rope Strain suggest this object matters beyond the first reading."
+      "unknownInfo": "West and Rope Strain suggest this object matters beyond the first reading.",
+      "image": "images/Objects/073 - notebook.png"
     },
     {
       "id": "073_location",
       "type": "Location",
+      "image": "images/Location/case-073-crossroads-location.png",
       "name": "Undertaker'Shall",
       "symbol": "📍",
       "description": "The active scene for Case File 073. Recovered field notes place the primary event at Undertaker'Shall.",
@@ -237,7 +239,8 @@ window.SONG_DATA = {
       "name": "Driver",
       "symbol": "👤",
       "description": "Driver, identified in the case notes for Case File 073. Has not given a formal statement.",
-      "unknownInfo": "Their connection to the recovered object and whether they returned."
+      "unknownInfo": "Their connection to the recovered object and whether they returned.",
+      "image": "images/Witness/Case 073 - the-girl-with-no-shoes.png"
     },
     {
       "id": "073_time",
