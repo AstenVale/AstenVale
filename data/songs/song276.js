@@ -10,7 +10,7 @@ window.SONG_DATA = {
   "difficulty": "Vault-Level",
   "status": "OPEN INVESTIGATION",
   "artwork": null,
-  "audioSrc": "audio/songs/Season-23-the-paper-trail/276.mp3",
+  "audioSrc": "Songs/Season-23-the-paper-trail/276.mp3",
   "streamingLinks": {
     "spotify": "",
     "apple": "",

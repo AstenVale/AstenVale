@@ -10,7 +10,7 @@ window.SONG_DATA = {
   "difficulty": "Vault-Level",
   "status": "OPEN INVESTIGATION",
   "artwork": null,
-  "audioSrc": "audio/songs/Season-14-the-flood-year/168.mp3",
+  "audioSrc": "Songs/Season-14-the-flood-year/168.mp3",
   "streamingLinks": {
     "spotify": "",
     "apple": "",

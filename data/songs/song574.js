@@ -10,7 +10,7 @@ window.SONG_DATA = {
   "difficulty": "Vault-Level",
   "status": "OPEN INVESTIGATION",
   "artwork": null,
-  "audioSrc": "audio/songs/Season-48-the-broken-signal/574.mp3",
+  "audioSrc": "Songs/Season-48-the-broken-signal/574.mp3",
   "streamingLinks": {
     "spotify": "",
     "apple": "",

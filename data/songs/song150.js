@@ -10,7 +10,7 @@ window.SONG_DATA = {
   "difficulty": "Open Investigation",
   "status": "OPEN INVESTIGATION",
   "artwork": null,
-  "audioSrc": "audio/songs/Season-13-the-twin-hollows/150.mp3",
+  "audioSrc": "Songs/Season-13-the-twin-hollows/150.mp3",
   "streamingLinks": {
     "spotify": "",
     "apple": "",

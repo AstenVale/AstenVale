@@ -10,7 +10,7 @@ window.SONG_DATA = {
   "difficulty": "Archive Entry",
   "status": "OPEN INVESTIGATION",
   "artwork": null,
-  "audioSrc": "audio/songs/Season-17-the-cold-season/194.mp3",
+  "audioSrc": "Songs/Season-17-the-cold-season/194.mp3",
   "streamingLinks": {
     "spotify": "",
     "apple": "",

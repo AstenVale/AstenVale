@@ -10,7 +10,7 @@ window.SONG_DATA = {
   "difficulty": "Deep File",
   "status": "OPEN INVESTIGATION",
   "artwork": null,
-  "audioSrc": "audio/songs/Season-30-the-last-train/355.mp3",
+  "audioSrc": "Songs/Season-30-the-last-train/355.mp3",
   "streamingLinks": {
     "spotify": "",
     "apple": "",

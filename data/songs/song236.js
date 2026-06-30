@@ -10,7 +10,7 @@ window.SONG_DATA = {
   "difficulty": "Deep File",
   "status": "OPEN INVESTIGATION",
   "artwork": null,
-  "audioSrc": "audio/songs/Season-20-the-midnight-circuit/236.mp3",
+  "audioSrc": "Songs/Season-20-the-midnight-circuit/236.mp3",
   "streamingLinks": {
     "spotify": "",
     "apple": "",
