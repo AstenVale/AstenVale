@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
   <style>
-    /* ── RESET & VARIABLES ──────────────────────────────────── */
+    /* -- RESET & VARIABLES ------------------------------------ */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
 
@@ -42,7 +42,7 @@
 
     a { text-decoration: none; color: inherit; }
 
-    /* ── HERO SECTION ───────────────────────────────────────── */
+    /* -- HERO SECTION ----------------------------------------- */
     .hero {
       position: relative;
       min-height: 55vh;
@@ -82,7 +82,7 @@
       z-index: 1;
     }
 
-    /* ── NAV ────────────────────────────────────────────────── */
+    /* -- NAV -------------------------------------------------- */
     .site-nav {
       position: relative;
       z-index: 10;
@@ -146,7 +146,7 @@
       background: rgba(201,169,122,0.6);
     }
 
-    /* ── HERO CONTENT ───────────────────────────────────────── */
+    /* -- HERO CONTENT ----------------------------------------- */
     .hero-content {
       position: relative;
       z-index: 5;
@@ -198,7 +198,7 @@
       letter-spacing: 0.04em;
     }
 
-    /* ── CASE FILES SECTION ─────────────────────────────────── */
+    /* -- CASE FILES SECTION ----------------------------------- */
     .cases-section {
       position: relative;
       background: var(--paper-bg);
@@ -245,7 +245,7 @@
       pointer-events: none;
     }
 
-    /* ── SECTION HEADER ─────────────────────────────────────── */
+    /* -- SECTION HEADER --------------------------------------- */
     .section-header {
       display: flex;
       align-items: flex-start;
@@ -309,7 +309,7 @@
     .btn-progress svg { opacity: 0.8; }
     a.btn-progress { display: inline-flex; }
 
-    /* ── CASE CARDS ─────────────────────────────────────────── */
+    /* -- CASE CARDS ------------------------------------------- */
     .case-list {
       display: flex;
       flex-direction: column;
@@ -475,7 +475,47 @@
       text-transform: uppercase;
     }
 
-    /* ── MORE CASES FOOTER ──────────────────────────────────── */
+    /* -- INVESTIGATION LEDGER ------------------------------------ */
+    .archive-ledger { position: relative; display: flex; flex-direction: column; gap: 1.6rem; padding-bottom: 1rem; }
+    .ledger-section { position: relative; border-top: 1px solid rgba(60,30,10,0.22); padding-top: 1.2rem; }
+    .ledger-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; margin-bottom: 0.85rem; }
+    .ledger-title { font-family: var(--font-header); font-size: clamp(1rem, 2.8vw, 1.35rem); letter-spacing: 0.18em; color: var(--ink); text-transform: uppercase; }
+    .ledger-note { font-family: var(--font-type); font-size: 0.72rem; color: rgba(60,30,10,0.54); font-style: italic; line-height: 1.5; margin-top: 0.2rem; }
+    .ledger-stamp { display: inline-block; border: 1px solid var(--folder-red); color: var(--folder-red); font-family: var(--font-header); font-size: 0.56rem; letter-spacing: 0.24em; line-height: 1; padding: 0.28rem 0.55rem 0.22rem; text-transform: uppercase; transform: rotate(-1deg); opacity: 0.78; white-space: nowrap; }
+    .continue-card { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 1.5rem; align-items: center; background: rgba(220,195,155,0.62); border: 1px solid rgba(120,80,35,0.32); box-shadow: 0 4px 16px rgba(0,0,0,0.14), inset 0 1px 0 rgba(255,255,255,0.13); padding: 1.35rem 1.45rem; transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease; }
+    .continue-card:hover, .case-card:hover, .solved-record:hover { border-color: rgba(150,105,35,0.44); box-shadow: 0 8px 22px rgba(0,0,0,0.2), 0 0 0 1px rgba(201,150,12,0.16), inset 0 1px 0 rgba(255,255,255,0.15); transform: translateY(-2px); }
+    .continue-case { font-size: 0.72rem; letter-spacing: 0.24em; color: rgba(60,30,10,0.58); text-transform: uppercase; margin-bottom: 0.35rem; }
+    .continue-title { font-family: var(--font-header); font-size: clamp(1.35rem, 4vw, 2.05rem); letter-spacing: 0.1em; color: var(--ink); line-height: 1.15; text-transform: uppercase; }
+    .continue-sub { color: rgba(60,30,10,0.62); font-size: 0.82rem; font-style: italic; margin-top: 0.5rem; }
+    .ledger-fields { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.7rem; margin-top: 1rem; }
+    .ledger-field { border-left: 1px solid rgba(60,30,10,0.2); padding-left: 0.75rem; min-width: 0; }
+    .ledger-label { display: block; font-size: 0.58rem; letter-spacing: 0.2em; color: rgba(60,30,10,0.48); text-transform: uppercase; margin-bottom: 0.12rem; }
+    .ledger-value { display: block; font-family: var(--font-header); font-size: 0.82rem; letter-spacing: 0.1em; color: rgba(60,30,10,0.84); text-transform: uppercase; line-height: 1.35; overflow-wrap: anywhere; }
+    .continue-action { display: inline-flex; align-items: center; justify-content: center; min-width: 210px; background: var(--folder-red); color: var(--paper-light); border: 2px solid rgba(255,200,150,0.18); box-shadow: 0 3px 12px rgba(0,0,0,0.32); padding: 0.8rem 1.15rem; font-family: var(--font-header); font-size: 0.8rem; letter-spacing: 0.18em; text-transform: uppercase; text-align: center; transition: background 0.18s ease, transform 0.18s ease, box-shadow 0.18s ease; }
+    .continue-action:hover { background: #8b2323; box-shadow: 0 5px 16px rgba(0,0,0,0.42); transform: translateY(-1px); }
+    .season-record { background: rgba(0,0,0,0.045); border: 1px solid rgba(60,30,10,0.18); padding: 1rem; }
+    .season-record-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; margin-bottom: 1rem; }
+    .archive-progress { height: 8px; background: rgba(60,30,10,0.18); border: 1px solid rgba(60,30,10,0.16); overflow: hidden; }
+    .archive-progress-fill { height: 100%; background: linear-gradient(90deg, rgba(122,31,31,0.76), rgba(201,150,12,0.55)); }
+    .available-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0.75rem; }
+    .case-card.ledger-case { display: block; min-height: 164px; padding: 1rem; overflow: hidden; }
+    .case-card.ledger-case::before { left: auto; right: 18px; opacity: 0.65; }
+    .ledger-case.locked { filter: grayscale(0.15); }
+    .ledger-case.locked::after { content: ""; position: absolute; inset: 0; background: repeating-linear-gradient(-12deg, rgba(28,18,10,0.04) 0 8px, rgba(28,18,10,0.1) 8px 10px), rgba(75,48,25,0.12); pointer-events: none; }
+    .case-row { display: flex; align-items: center; justify-content: space-between; gap: 0.75rem; margin-bottom: 0.65rem; }
+    .case-mini-number { font-size: 0.68rem; letter-spacing: 0.2em; color: rgba(60,30,10,0.58); text-transform: uppercase; }
+    .case-mini-title { font-family: var(--font-header); font-size: 1rem; letter-spacing: 0.09em; text-transform: uppercase; color: var(--ink); line-height: 1.25; min-height: 2.5em; }
+    .case-mini-meta { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.45rem 0.7rem; margin-top: 0.85rem; }
+    .case-mini-meta .ledger-value { font-size: 0.72rem; }
+    .solved-list, .season-list { display: grid; gap: 0.7rem; }
+    .solved-record, .season-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 1rem; align-items: center; background: rgba(220,195,155,0.45); border: 1px solid rgba(120,80,35,0.22); padding: 0.9rem 1rem; transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease; }
+    .recovery-line { display: flex; flex-wrap: wrap; gap: 0.35rem 0.85rem; color: rgba(60,30,10,0.55); font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; margin-top: 0.35rem; }
+    .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 0.55rem; }
+    .stat-record { background: rgba(0,0,0,0.04); border: 1px solid rgba(60,30,10,0.15); padding: 0.75rem 0.85rem; }
+    .stat-record .ledger-value { font-size: 1rem; }
+    .ledger-empty { border: 1px dashed rgba(60,30,10,0.22); color: rgba(60,30,10,0.55); font-size: 0.8rem; font-style: italic; padding: 1rem; text-align: center; }
+
+    /* -- MORE CASES FOOTER ------------------------------------ */
     .more-cases {
       display: flex;
       align-items: center;
@@ -496,7 +536,7 @@
       background: rgba(60,30,10,0.2);
     }
 
-    /* ── SEASON INDICATOR ───────────────────────────────────── */
+    /* -- SEASON INDICATOR ------------------------------------- */
     .season-indicator {
       display: flex;
       align-items: center;
@@ -547,7 +587,7 @@
       flex-shrink: 0;
     }
 
-    /* ── COUNTDOWN ──────────────────────────────────────────── */
+    /* -- COUNTDOWN -------------------------------------------- */
     .countdown-wrap {
       margin: 1rem 0 1.5rem;
       padding: 1.75rem 2rem;
@@ -639,7 +679,7 @@
       .countdown-sep { font-size: 1.8rem; }
     }
 
-    /* ── COMPLETED BANNER ───────────────────────────────────── */
+    /* -- COMPLETED BANNER ------------------------------------- */
     .completed-banner {
       display: flex;
       align-items: center;
@@ -667,7 +707,7 @@
       text-transform: uppercase;
     }
 
-    /* ── STREAMING BAR ──────────────────────────────────────── */
+    /* -- STREAMING BAR ---------------------------------------- */
     .streaming-bar {
       background: rgba(10,7,4,0.97);
       border-top: 1px solid rgba(201,169,122,0.1);
@@ -739,7 +779,7 @@
       border-color: rgba(201,169,122,0.45);
     }
 
-    /* ── SITE FOOTER ────────────────────────────────────────── */
+    /* -- SITE FOOTER ------------------------------------------ */
     .site-footer {
       background: var(--bg);
       padding: 1.5rem 2.5rem;
@@ -795,12 +835,15 @@
 
     .footer-email svg { opacity: 0.45; }
 
-    /* ── RESPONSIVE ─────────────────────────────────────────── */
+    /* -- RESPONSIVE ------------------------------------------- */
     @media (max-width: 640px) {
       .site-nav { padding: 1rem 1.25rem; }
       .cases-section-inner { padding: 0 1rem 2rem; }
       .section-header { flex-direction: column; gap: 1rem; }
       .btn-progress { align-self: flex-end; }
+      .continue-card, .solved-record, .season-row { grid-template-columns: 1fr; }
+      .continue-action { min-width: 0; width: 100%; }
+      .ledger-fields, .season-record-grid { grid-template-columns: 1fr; }
       .case-img-placeholder, .case-img { width: 110px; min-width: 110px; height: 100px; }
       .case-status { width: 90px; min-width: 90px; }
       .hero-title-main { letter-spacing: 0.02em; font-size: clamp(2rem, 9vw, 3.5rem); }
@@ -817,7 +860,7 @@
 </head>
 <body>
 
-  <!-- ── HERO ──────────────────────────────────────────────── -->
+  <!-- -- HERO ------------------------------------------------ -->
   <section class="hero">
     <div class="hero-bg"></div>
     <div class="hero-lamp-glow"></div>
@@ -847,12 +890,12 @@
       </div>
 
       <div class="nav-links">
-        <a href="index.html"     class="nav-link active" data-icon="🗄">Archive</a>
-        <a href="cabinet.html"   class="nav-link"        data-icon="🔍">Cabinet</a>
-        <a href="completed.html" class="nav-link"        data-icon="✦">Completed</a>
-        <a href="progress.html"  class="nav-link"        data-icon="◎">Progress</a>
-        <a href="about.html"     class="nav-link"        data-icon="◉">About</a>
-        <a href="join.html"      class="nav-link"        data-icon="✉">Join</a>
+        <a href="index.html"     class="nav-link active" data-icon="&#128452;">Archive</a>
+        <a href="cabinet.html"   class="nav-link"        data-icon="&#128269;">Cabinet</a>
+        <a href="completed.html" class="nav-link"        data-icon="&#10022;">Completed</a>
+        <a href="progress.html"  class="nav-link"        data-icon="&#9678;">Progress</a>
+        <a href="about.html"     class="nav-link"        data-icon="&#9673;">About</a>
+        <a href="join.html"      class="nav-link"        data-icon="&#9993;">Join</a>
       </div>
     </nav>
 
@@ -867,84 +910,29 @@
     </div>
   </section>
 
-  <!-- ── CASE FILES ─────────────────────────────────────────── -->
+  <!-- Investigation Ledger -->
   <section class="cases-section" id="cases">
     <div class="cases-section-inner">
-
       <div class="section-header">
         <div class="section-title-group">
-          <h2 class="section-title">Case Files</h2>
+          <h2 class="section-title">Investigation Ledger</h2>
           <div class="section-title-rule"></div>
-          <p class="section-subtitle">
-            Browse the declassified files.<br>
-            Some truths are hidden for a reason.
-          </p>
+          <p class="section-subtitle">Open records, recovered files, and restricted case folders.<br>Return here when you need the next thread.</p>
         </div>
-        <a href="progress.html" class="btn-progress">
-          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="1" y="8" width="3" height="5" fill="currentColor"/>
-            <rect x="5.5" y="5" width="3" height="8" fill="currentColor"/>
-            <rect x="10" y="2" width="3" height="11" fill="currentColor"/>
-          </svg>
-          View Progress
-        </a>
+        <a href="progress.html" class="btn-progress"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="8" width="3" height="5" fill="currentColor"/><rect x="5.5" y="5" width="3" height="8" fill="currentColor"/><rect x="10" y="2" width="3" height="11" fill="currentColor"/></svg>View Records</a>
       </div>
-
-      <!-- Season indicator — populated by JS -->
-      <div class="season-indicator" id="seasonIndicator"></div>
-
-      <!-- Countdown — populated by JS, hidden if no date set -->
-      <div class="countdown-wrap" id="countdownWrap" style="display:none;">
-        <div class="countdown-header">
-          <span class="countdown-label">Next Case File Drops In</span>
-          <span class="countdown-case" id="countdownCase"></span>
-          <div class="countdown-rule"></div>
-        </div>
-        <div class="countdown-dials">
-          <div class="countdown-unit">
-            <span class="countdown-num" id="cd-d">--</span>
-            <span class="countdown-unit-label">Days</span>
-          </div>
-          <span class="countdown-sep">:</span>
-          <div class="countdown-unit">
-            <span class="countdown-num" id="cd-h">--</span>
-            <span class="countdown-unit-label">Hours</span>
-          </div>
-          <span class="countdown-sep">:</span>
-          <div class="countdown-unit">
-            <span class="countdown-num" id="cd-m">--</span>
-            <span class="countdown-unit-label">Minutes</span>
-          </div>
-          <span class="countdown-sep">:</span>
-          <div class="countdown-unit">
-            <span class="countdown-num" id="cd-s">--</span>
-            <span class="countdown-unit-label">Seconds</span>
-          </div>
-        </div>
-        <span class="countdown-sub">The archive does not wait — but it does keep records</span>
+      <div class="archive-ledger">
+        <section class="ledger-section" aria-labelledby="continue-title"><div class="ledger-heading"><div><h3 class="ledger-title" id="continue-title">Continue Investigation</h3><p class="ledger-note">The next open file on the sheriff's desk.</p></div><span class="ledger-stamp">Current File</span></div><div id="continueInvestigation"></div></section>
+        <section class="ledger-section" aria-labelledby="current-season-title"><div class="ledger-heading"><div><h3 class="ledger-title" id="current-season-title">Current Season</h3><p class="ledger-note">Recovery progress for the active vault.</p></div></div><div id="currentSeason"></div></section>
+        <section class="ledger-section" aria-labelledby="available-cases-title"><div class="ledger-heading"><div><h3 class="ledger-title" id="available-cases-title">Available Case Files</h3><p class="ledger-note">Released files may be opened. Restricted files remain obscured.</p></div></div><div class="available-grid" id="availableCases"></div></section>
+        <section class="ledger-section" aria-labelledby="recently-solved-title"><div class="ledger-heading"><div><h3 class="ledger-title" id="recently-solved-title">Recently Solved</h3><p class="ledger-note">Recovered files, newest records first.</p></div></div><div class="solved-list" id="recentlySolved"></div></section>
+        <section class="ledger-section" aria-labelledby="archive-statistics-title"><div class="ledger-heading"><div><h3 class="ledger-title" id="archive-statistics-title">Archive Statistics</h3><p class="ledger-note">Unadorned recovery counts from the archive record.</p></div></div><div class="stats-grid" id="archiveStats"></div></section>
+        <section class="ledger-section" aria-labelledby="previous-seasons-title"><div class="ledger-heading"><div><h3 class="ledger-title" id="previous-seasons-title">Previous Seasons</h3><p class="ledger-note">Older vault records and sealed future ledgers.</p></div></div><div class="season-list" id="previousSeasons"></div></section>
+        <div class="countdown-wrap" id="countdownWrap" style="display:none;"><div class="countdown-header"><span class="countdown-label">Recently Scheduled</span><span class="countdown-case" id="countdownCase"></span><div class="countdown-rule"></div></div><div class="countdown-dials"><div class="countdown-unit"><span class="countdown-num" id="cd-d">--</span><span class="countdown-unit-label">Days</span></div><span class="countdown-sep">:</span><div class="countdown-unit"><span class="countdown-num" id="cd-h">--</span><span class="countdown-unit-label">Hours</span></div><span class="countdown-sep">:</span><div class="countdown-unit"><span class="countdown-num" id="cd-m">--</span><span class="countdown-unit-label">Minutes</span></div><span class="countdown-sep">:</span><div class="countdown-unit"><span class="countdown-num" id="cd-s">--</span><span class="countdown-unit-label">Seconds</span></div></div><span class="countdown-sub">The archive has marked the next release in the ledger</span></div>
       </div>
-
-      <div class="case-list" id="caseList">
-
-      </div><!-- /case-list (populated by JS) -->
-
-      <!-- Season Two teaser -->
-      <div class="more-cases">
-        <span class="more-cases-rule"></span>
-        Season One Complete &nbsp;·&nbsp;
-        <svg width="14" height="14" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <polygon points="30,8 24,22 36,22" fill="rgba(60,30,10,0.4)"/>
-          <polygon points="30,14 20,30 40,30" fill="rgba(60,30,10,0.4)"/>
-          <rect x="27" y="30" width="6" height="5" fill="rgba(60,30,10,0.35)"/>
-        </svg>
-        &nbsp;Season Two Coming
-        <span class="more-cases-rule"></span>
-      </div>
-
-    </div><!-- /cases-section-inner -->
+    </div>
   </section>
-
-  <!-- ── STREAMING BAR ────────────────────────────────────────── -->
+  <!-- -- STREAMING BAR ------------------------------------------ -->
   <div class="streaming-bar">
     <span class="streaming-label">Listen on</span>
     <div class="streaming-platforms">
@@ -957,7 +945,7 @@
         <span>Spotify</span>
       </a>
 
-      <span class="platform-sep">·</span>
+      <span class="platform-sep">�</span>
 
       <!-- Apple Music -->
       <a href="#" class="platform-link" aria-label="Apple Music">
@@ -967,7 +955,7 @@
         <span>Apple Music</span>
       </a>
 
-      <span class="platform-sep">·</span>
+      <span class="platform-sep">�</span>
 
       <!-- YouTube Music -->
       <a href="#" class="platform-link" aria-label="YouTube Music">
@@ -978,7 +966,7 @@
         <span>YouTube Music</span>
       </a>
 
-      <span class="platform-sep">·</span>
+      <span class="platform-sep">�</span>
 
       <!-- Amazon Music -->
       <a href="#" class="platform-link" aria-label="Amazon Music">
@@ -998,7 +986,7 @@
     </a>
   </div>
 
-  <!-- ── FOOTER ─────────────────────────────────────────────── -->
+  <!-- -- FOOTER ----------------------------------------------- -->
   <footer class="site-footer">
     <div class="footer-motto">
       <svg width="28" height="28" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1013,9 +1001,9 @@
       </span>
     </div>
 
-    <span class="footer-copy">© 2026 Asten Vale Archives</span>
+    <span class="footer-copy">� 2026 Asten Vale Archives</span>
 
-    <a href="https://buymeacoffee.com/YOUR_USERNAME" target="_blank" rel="noopener" class="footer-copy" style="text-decoration:none;opacity:0.7;transition:opacity 0.2s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.7'">☕ Buy Me a Coffee</a>
+    <a href="https://buymeacoffee.com/YOUR_USERNAME" target="_blank" rel="noopener" class="footer-copy" style="text-decoration:none;opacity:0.7;transition:opacity 0.2s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.7'">&#9749; Buy Me a Coffee</a>
 
     <div class="footer-right">
       <a href="join.html" class="footer-join">Join the Archive</a>
@@ -1055,305 +1043,29 @@
   <script>
   applySheetReleased(function() {
   (function () {
-    var season = SEASONS_CONFIG[0];
-    var solved = [];
-    try { solved = JSON.parse(localStorage.getItem('av_solved') || '[]'); } catch(e) {}
-
-    var PADLOCK_SVG =
-      '<svg width="42" height="48" viewBox="0 0 42 48" fill="none" xmlns="http://www.w3.org/2000/svg">' +
-        '<rect x="3" y="22" width="36" height="24" rx="3" fill="currentColor" fill-opacity="0.35" stroke="currentColor" stroke-opacity="0.5" stroke-width="1.5"/>' +
-        '<path d="M10 22V15C10 8.37 31 8.37 31 15V22" stroke="currentColor" stroke-opacity="0.55" stroke-width="3" stroke-linecap="round" fill="none"/>' +
-        '<circle cx="21" cy="34" r="4" fill="currentColor" fill-opacity="0.5"/>' +
-        '<rect x="19.5" y="34" width="3" height="6" rx="1.5" fill="currentColor" fill-opacity="0.45"/>' +
-      '</svg>';
-
-    function makeSceneSVG(scene, gradient, dim) {
-      var accent = gradient[0], dark = gradient[1];
-      var id = 'sg' + Math.random().toString(36).slice(2, 7);
-      var fog = dim ? 'rgba(0,0,0,0.55)' : 'rgba(0,0,0,0)';
-      var base =
-        '<svg viewBox="0 0 190 130" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">' +
-        '<defs>' +
-          '<radialGradient id="' + id + 'bg" cx="50%" cy="45%" r="65%">' +
-            '<stop offset="0%" stop-color="' + accent + '" stop-opacity="0.9"/>' +
-            '<stop offset="100%" stop-color="' + dark + '" stop-opacity="1"/>' +
-          '</radialGradient>' +
-        '</defs>' +
-        '<rect width="190" height="130" fill="' + dark + '"/>' +
-        '<rect width="190" height="130" fill="url(#' + id + 'bg)"/>';
-
-      var scenes = {
-        lantern:
-          // pine trees silhouette + glowing lantern
-          '<path d="M0 100 L18 60 L36 100 M20 100 L44 40 L68 100 M55 100 L78 55 L101 100 M130 100 L154 45 L178 100 M160 100 L175 68 L190 100" fill="rgba(0,0,0,0.5)"/>' +
-          '<ellipse cx="95" cy="52" rx="18" ry="24" fill="rgba(245,166,35,0.12)"/>' +
-          '<ellipse cx="95" cy="52" rx="8" ry="11" fill="rgba(245,166,35,0.22)"/>' +
-          '<rect x="91" y="48" width="8" height="12" rx="1" fill="rgba(245,166,35,0.7)"/>' +
-          '<line x1="95" y1="36" x2="95" y2="42" stroke="rgba(180,120,40,0.6)" stroke-width="1.5"/>' +
-          '<path d="M88 48 Q95 38 102 48" stroke="rgba(180,120,40,0.5)" stroke-width="1" fill="none"/>',
-
-        letter:
-          '<rect x="38" y="35" width="114" height="76" rx="2" fill="rgba(220,195,150,0.15)" stroke="rgba(220,195,150,0.4)" stroke-width="1.5"/>' +
-          '<path d="M38 38 L95 78 L152 38" stroke="rgba(220,195,150,0.35)" stroke-width="1.5" fill="none"/>' +
-          '<path d="M38 111 L72 80 M152 111 L118 80" stroke="rgba(220,195,150,0.25)" stroke-width="1" fill="none"/>' +
-          '<circle cx="95" cy="73" r="9" fill="rgba(120,20,20,0.55)" stroke="rgba(180,50,50,0.4)" stroke-width="1"/>',
-
-        key:
-          '<circle cx="75" cy="65" r="22" fill="none" stroke="rgba(180,150,60,0.6)" stroke-width="4"/>' +
-          '<circle cx="75" cy="65" r="12" fill="none" stroke="rgba(180,150,60,0.4)" stroke-width="2"/>' +
-          '<line x1="97" y1="65" x2="148" y2="65" stroke="rgba(180,150,60,0.6)" stroke-width="4" stroke-linecap="round"/>' +
-          '<line x1="135" y1="65" x2="135" y2="78" stroke="rgba(180,150,60,0.5)" stroke-width="3.5" stroke-linecap="round"/>' +
-          '<line x1="148" y1="65" x2="148" y2="75" stroke="rgba(180,150,60,0.5)" stroke-width="3.5" stroke-linecap="round"/>',
-
-        church:
-          '<rect x="65" y="55" width="60" height="55" fill="rgba(60,40,80,0.4)" stroke="rgba(140,110,180,0.3)" stroke-width="1"/>' +
-          '<polygon points="95,20 65,55 125,55" fill="rgba(60,40,80,0.5)" stroke="rgba(140,110,180,0.3)" stroke-width="1"/>' +
-          '<line x1="95" y1="5" x2="95" y2="22" stroke="rgba(180,160,210,0.5)" stroke-width="2"/>' +
-          '<line x1="87" y1="12" x2="103" y2="12" stroke="rgba(180,160,210,0.5)" stroke-width="2"/>' +
-          '<rect x="83" y="80" width="24" height="30" fill="rgba(30,20,50,0.6)"/>' +
-          '<ellipse cx="95" cy="42" rx="4" ry="5" fill="rgba(180,160,210,0.2)" stroke="rgba(180,160,210,0.4)" stroke-width="1"/>',
-
-        clock:
-          '<circle cx="95" cy="65" r="38" fill="rgba(30,40,40,0.4)" stroke="rgba(140,170,170,0.4)" stroke-width="2"/>' +
-          '<circle cx="95" cy="65" r="30" fill="none" stroke="rgba(140,170,170,0.2)" stroke-width="1"/>' +
-          '<line x1="95" y1="35" x2="95" y2="42" stroke="rgba(180,200,200,0.5)" stroke-width="2"/>' +
-          '<line x1="95" y1="88" x2="95" y2="95" stroke="rgba(180,200,200,0.5)" stroke-width="2"/>' +
-          '<line x1="65" y1="65" x2="72" y2="65" stroke="rgba(180,200,200,0.5)" stroke-width="2"/>' +
-          '<line x1="118" y1="65" x2="125" y2="65" stroke="rgba(180,200,200,0.5)" stroke-width="2"/>' +
-          '<line x1="95" y1="65" x2="95" y2="42" stroke="rgba(220,230,230,0.7)" stroke-width="2" stroke-linecap="round"/>' +
-          '<line x1="95" y1="65" x2="113" y2="68" stroke="rgba(220,230,230,0.6)" stroke-width="1.5" stroke-linecap="round"/>' +
-          '<circle cx="95" cy="65" r="3" fill="rgba(220,230,230,0.8)"/>',
-
-        forest:
-          '<path d="M0 110 L15 70 L30 110 M12 110 L30 55 L48 110 M35 110 L55 60 L75 110 M65 110 L88 48 L111 110 M100 110 L122 58 L144 110 M135 110 L157 65 L179 110 M162 110 L176 75 L190 110" fill="rgba(0,0,0,0.55)"/>' +
-          '<ellipse cx="95" cy="85" rx="60" ry="18" fill="rgba(10,30,10,0.35)"/>',
-
-        matchbook:
-          '<rect x="58" y="38" width="74" height="58" rx="3" fill="rgba(180,60,30,0.4)" stroke="rgba(220,100,50,0.4)" stroke-width="1.5"/>' +
-          '<rect x="68" y="48" width="54" height="38" rx="2" fill="rgba(220,180,100,0.12)" stroke="rgba(220,180,100,0.25)" stroke-width="1"/>' +
-          '<line x1="68" y1="60" x2="122" y2="60" stroke="rgba(220,180,100,0.2)" stroke-width="1"/>' +
-          '<line x1="68" y1="68" x2="122" y2="68" stroke="rgba(220,180,100,0.2)" stroke-width="1"/>' +
-          '<line x1="68" y1="76" x2="122" y2="76" stroke="rgba(220,180,100,0.2)" stroke-width="1"/>' +
-          '<line x1="118" y1="38" x2="118" y2="24" stroke="rgba(180,140,60,0.5)" stroke-width="1.5"/>' +
-          '<ellipse cx="118" cy="21" rx="4" ry="6" fill="rgba(245,166,35,0.6)"/>' +
-          '<ellipse cx="118" cy="18" rx="2" ry="4" fill="rgba(255,200,80,0.5)"/>',
-
-        bell:
-          '<path d="M95 20 L95 30" stroke="rgba(180,160,100,0.6)" stroke-width="2"/>' +
-          '<path d="M68 90 Q68 45 95 45 Q122 45 122 90 Z" fill="rgba(140,120,60,0.35)" stroke="rgba(180,160,100,0.4)" stroke-width="1.5"/>' +
-          '<line x1="62" y1="90" x2="128" y2="90" stroke="rgba(180,160,100,0.45)" stroke-width="2"/>' +
-          '<ellipse cx="95" cy="97" rx="7" ry="4" fill="rgba(140,120,60,0.5)" stroke="rgba(180,160,100,0.3)" stroke-width="1"/>' +
-          '<line x1="95" y1="93" x2="95" y2="101" stroke="rgba(180,160,100,0.5)" stroke-width="1.5"/>',
-
-        cabin:
-          '<polygon points="30,70 95,30 160,70" fill="rgba(60,30,15,0.5)" stroke="rgba(120,80,40,0.35)" stroke-width="1"/>' +
-          '<rect x="50" y="70" width="90" height="50" fill="rgba(60,30,15,0.4)" stroke="rgba(120,80,40,0.35)" stroke-width="1"/>' +
-          '<rect x="80" y="85" width="30" height="35" fill="rgba(30,15,8,0.6)"/>' +
-          '<rect x="58" y="78" width="18" height="16" fill="rgba(30,15,8,0.5)"/>' +
-          '<rect x="114" y="78" width="18" height="16" fill="rgba(30,15,8,0.5)"/>',
-
-        road:
-          '<path d="M0 130 L190 130 L190 110 L0 110 Z" fill="rgba(20,20,30,0.4)"/>' +
-          '<path d="M50 130 Q75 90 95 60 Q115 30 130 5" stroke="rgba(140,130,100,0.4)" stroke-width="16" fill="none"/>' +
-          '<path d="M50 130 Q75 90 95 60 Q115 30 130 5" stroke="rgba(20,20,30,0.5)" stroke-width="14" fill="none"/>' +
-          '<path d="M90 130 Q94 100 96 70 Q98 40 105 5" stroke="rgba(200,190,140,0.25)" stroke-width="2" stroke-dasharray="8 6" fill="none"/>' +
-          '<path d="M0 85 L50 85 M140 40 L190 20" stroke="rgba(60,50,80,0.4)" stroke-width="20" fill="none"/>',
-
-        snow:
-          '<rect width="190" height="130" fill="rgba(20,22,35,0.3)"/>' +
-          '<ellipse cx="95" cy="110" rx="80" ry="15" fill="rgba(200,210,230,0.15)"/>' +
-          '<path d="M0 95 Q48 85 95 90 Q142 95 190 88" fill="rgba(200,210,230,0.12)" stroke="none"/>' +
-          '<text x="95" y="62" text-anchor="middle" font-family="serif" font-size="22" letter-spacing="6" fill="rgba(200,210,230,0.35)" font-style="italic">SARAH</text>' +
-          '<circle cx="30" cy="25" r="1.5" fill="rgba(220,230,245,0.4)"/>' +
-          '<circle cx="70" cy="15" r="1" fill="rgba(220,230,245,0.3)"/>' +
-          '<circle cx="120" cy="20" r="1.5" fill="rgba(220,230,245,0.4)"/>' +
-          '<circle cx="160" cy="10" r="1" fill="rgba(220,230,245,0.3)"/>' +
-          '<circle cx="50" cy="35" r="1" fill="rgba(220,230,245,0.25)"/>' +
-          '<circle cx="145" cy="30" r="1.5" fill="rgba(220,230,245,0.3)"/>',
-
-        files:
-          '<rect x="30" y="55" width="75" height="58" rx="2" fill="rgba(80,50,20,0.45)" stroke="rgba(140,100,40,0.4)" stroke-width="1"/>' +
-          '<rect x="30" y="48" width="50" height="12" rx="2" fill="rgba(100,60,20,0.5)" stroke="rgba(140,100,40,0.3)" stroke-width="1"/>' +
-          '<rect x="45" y="65" width="75" height="58" rx="2" fill="rgba(90,55,20,0.4)" stroke="rgba(140,100,40,0.35)" stroke-width="1"/>' +
-          '<rect x="45" y="58" width="50" height="12" rx="2" fill="rgba(110,65,20,0.45)" stroke="rgba(140,100,40,0.3)" stroke-width="1"/>' +
-          '<rect x="60" y="75" width="75" height="42" rx="2" fill="rgba(100,60,20,0.45)" stroke="rgba(140,100,40,0.4)" stroke-width="1"/>' +
-          '<line x1="68" y1="88" x2="120" y2="88" stroke="rgba(180,140,70,0.25)" stroke-width="1"/>' +
-          '<line x1="68" y1="96" x2="120" y2="96" stroke="rgba(180,140,70,0.25)" stroke-width="1"/>' +
-          '<line x1="68" y1="104" x2="100" y2="104" stroke="rgba(180,140,70,0.25)" stroke-width="1"/>'
-      };
-
-      var sceneEl = scenes[scene] || scenes['files'];
-      return base + sceneEl + (dim ? '<rect width="190" height="130" fill="' + fog + '"/>' : '') + '</svg>';
-    }
-
-    // Find the current active season — first season that has unsolved released cases
-    var activeSeason = null;
-    var activeSeasonIndex = 0;
-    for (var si = 0; si < SEASONS_CONFIG.length; si++) {
-      var s = SEASONS_CONFIG[si];
-      var sRel = s.cases.filter(function(c) { return c.released; });
-      var sUnsolved = sRel.filter(function(c) { return solved.indexOf(c.id) === -1; });
-      if (sUnsolved.length > 0) { activeSeason = s; activeSeasonIndex = si; break; }
-    }
-    // Fall back to last season if all done
-    if (!activeSeason) { activeSeason = SEASONS_CONFIG[SEASONS_CONFIG.length - 1]; activeSeasonIndex = SEASONS_CONFIG.length - 1; }
-
-    var allCases    = activeSeason.cases;
-    var released    = allCases.filter(function(c) { return c.released; });
-    var numSolved   = released.filter(function(c) { return solved.indexOf(c.id) !== -1; }).length;
-    var unsolved    = released.filter(function(c) { return solved.indexOf(c.id) === -1; });
-    var active      = unsolved[0] || null;
-    var seasonLabel = 'S' + (activeSeasonIndex + 1);
-
-    var list = document.getElementById('caseList');
-
-    // ── Season indicator ──
-    var indicator = document.getElementById('seasonIndicator');
-    SEASONS_CONFIG.forEach(function(s, i) {
-      var sCases    = s.cases;
-      var sReleased = sCases.filter(function(c) { return c.released; });
-      var sSolved   = sReleased.filter(function(c) { return solved.indexOf(c.id) !== -1; });
-      var isComplete = sSolved.length === sCases.length && sCases.length > 0;
-      var isCurrent  = !isComplete && (activeSeason.id === s.id);
-
-      if (i > 0) {
-        var arrow = document.createElement('span');
-        arrow.className = 'season-indicator-arrow';
-        arrow.textContent = '›';
-        indicator.appendChild(arrow);
-      }
-
-      var pill = document.createElement('div');
-      pill.className = 'season-pill' + (isCurrent ? ' active' : '') + (isComplete ? ' complete' : '');
-      pill.innerHTML =
-        '<span class="season-pill-dot"></span>' +
-        'Season ' + (i + 1) +
-        '<span class="season-pill-progress">(' + sSolved.length + '/' + sCases.length + ')</span>';
-      indicator.appendChild(pill);
-    });
-
-    // Completed banner
-    if (numSolved > 0) {
-      var banner = document.createElement('a');
-      banner.href = 'completed.html';
-      banner.className = 'completed-banner';
-      banner.innerHTML =
-        '<span class="completed-banner-count">' + numSolved + ' case' + (numSolved === 1 ? '' : 's') + ' completed</span>' +
-        '<span class="completed-banner-link">View Completed Files →</span>';
-      list.parentNode.insertBefore(banner, list);
-    }
-
-    var COMPASS_SVG =
-      '<svg width="44" height="44" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">' +
-        '<circle cx="30" cy="30" r="27" stroke="currentColor" stroke-width="1.5" stroke-opacity="0.7"/>' +
-        '<circle cx="30" cy="30" r="21" stroke="currentColor" stroke-width="0.8" stroke-opacity="0.4"/>' +
-        '<line x1="30" y1="4" x2="30" y2="10" stroke="currentColor" stroke-width="1.5"/>' +
-        '<polygon points="30,12 24,24 36,24" fill="currentColor"/>' +
-        '<polygon points="30,17 20,31 40,31" fill="currentColor"/>' +
-        '<rect x="27" y="31" width="6" height="5" fill="currentColor"/>' +
-        '<line x1="30" y1="50" x2="30" y2="56" stroke="currentColor" stroke-width="1" stroke-opacity="0.6"/>' +
-        '<line x1="4" y1="30" x2="10" y2="30" stroke="currentColor" stroke-width="1" stroke-opacity="0.6"/>' +
-        '<line x1="50" y1="30" x2="56" y2="30" stroke="currentColor" stroke-width="1" stroke-opacity="0.6"/>' +
-      '</svg>';
-
-    // ── Season header above the case list ──
-    var seasonHeader = document.createElement('div');
-    seasonHeader.style.cssText = 'display:flex;align-items:center;gap:1rem;margin-bottom:1.5rem;padding-bottom:0.75rem;border-bottom:1px solid rgba(60,30,10,0.15);';
-    var seasonHeaderLeft = document.createElement('div');
-    seasonHeaderLeft.innerHTML =
-      '<div style="font-family:var(--font-header);font-size:1rem;letter-spacing:0.22em;color:rgba(60,30,10,0.8);text-transform:uppercase;">' + activeSeason.title + '</div>' +
-      '<div style="font-family:var(--font-type);font-size:0.7rem;color:rgba(60,30,10,0.45);margin-top:0.2rem;">' + numSolved + ' of ' + allCases.length + ' cases solved</div>';
-    var seasonHeaderRight = document.createElement('div');
-    seasonHeaderRight.style.cssText = 'margin-left:auto;font-family:var(--font-type);font-size:0.6rem;letter-spacing:0.2em;color:rgba(60,30,10,0.4);text-transform:uppercase;border:1px solid rgba(60,30,10,0.18);padding:0.3rem 0.7rem;';
-    seasonHeaderRight.textContent = numSolved === allCases.length ? 'Season Complete' : (numSolved + '/' + allCases.length + ' Complete');
-    seasonHeader.appendChild(seasonHeaderLeft);
-    seasonHeader.appendChild(seasonHeaderRight);
-    list.appendChild(seasonHeader);
-
-    // Render only cases the player has reached: solved + active case
-    allCases.forEach(function(c) {
-      var num    = parseInt(c.id, 10);
-      var numPad = String(num).padStart(3,'0');
-      var desc1  = (c.desc && c.desc[0]) || '';
-      var desc2  = (c.desc && c.desc[1]) || '';
-      var isSolved   = solved.indexOf(c.id) !== -1;
-      var isActive   = active && active.id === c.id;
-      var isReleased = c.released;
-
-      // Show solved cases + the next active released case only
-      if (!isSolved && !isActive) return;
-
-      var card = document.createElement('a');
-      var sceneSVG = makeSceneSVG(c.scene || 'files', c.gradient || ['#3a3a2a','#0c0a06'], !isActive && !isSolved);
-      var seriesBadge = '<span style="display:inline-block;background:rgba(60,30,10,0.18);border:1px solid rgba(60,30,10,0.18);font-size:0.55rem;letter-spacing:0.18em;padding:0.1rem 0.35rem;margin-right:0.5rem;vertical-align:middle;text-transform:uppercase;">' + seasonLabel + '</span>';
-
-      if (isSolved) {
-        // Solved — show as a reviewable completed card
-        card.className = 'case-card solved';
-        card.href = c.url || ('case.html?id=' + num);
-        card.innerHTML =
-          '<div class="case-img-placeholder">' + sceneSVG + '</div>' +
-          '<div class="case-body">' +
-            '<p class="case-number-label">' + seriesBadge + 'Case ' + numPad + ' &nbsp;·&nbsp; <span style="color:rgba(74,124,78,0.9);letter-spacing:0.1em">Solved</span></p>' +
-            '<h3 class="case-title">' + c.title + '</h3>' +
-            '<p class="case-desc" style="opacity:0.55;">Case closed. File available for review.</p>' +
-          '</div>' +
-          '<div class="case-divider-v"></div>' +
-          '<div class="case-status" style="opacity:0.6;">' +
-            '<div class="status-icon" style="color:rgba(74,124,78,0.8);">' + COMPASS_SVG + '</div>' +
-            '<span class="status-label" style="color:rgba(74,124,78,0.8);">Solved</span>' +
-          '</div>';
-      } else if (isActive) {
-        card.className = 'case-card';
-        card.href = c.url;
-        card.innerHTML =
-          '<div class="case-img-placeholder">' + sceneSVG + '</div>' +
-          '<div class="case-body">' +
-            '<p class="case-number-label">' + seriesBadge + 'Case ' + numPad + ' &nbsp;·&nbsp; <span style="color:rgba(74,124,78,0.9);letter-spacing:0.1em">Active</span></p>' +
-            '<h3 class="case-title">' + c.title + '</h3>' +
-            '<p class="case-desc">' + desc1 + (desc2 ? '<br>' + desc2 : '') + '</p>' +
-          '</div>' +
-          '<div class="case-divider-v"></div>' +
-          '<div class="case-status unlocked">' +
-            '<div class="status-icon">' + COMPASS_SVG + '</div>' +
-            '<span class="status-label">Open</span>' +
-          '</div>';
-      } else {
-        card.className = 'case-card locked';
-        card.href = 'classified.html?id=' + c.id;
-        card.innerHTML =
-          '<div class="case-img-placeholder">' + sceneSVG + '</div>' +
-          '<div class="case-body">' +
-            '<p class="case-number-label">' + seriesBadge + 'Case ' + numPad + ' &nbsp;·&nbsp; <span style="color:rgba(120,20,20,0.7);letter-spacing:0.1em">Classified</span></p>' +
-            '<h3 class="case-title" style="opacity:0.45">' + c.title + '</h3>' +
-            '<p class="case-desc" style="opacity:0.28">' + (isReleased ? 'Solve the active case to access this file.' : 'This file has not yet been released.') + '</p>' +
-          '</div>' +
-          '<div class="case-divider-v"></div>' +
-          '<div class="case-status locked">' +
-            '<div class="status-icon">' + PADLOCK_SVG + '</div>' +
-            '<span class="status-label">Classified</span>' +
-          '</div>';
-      }
-
-      list.appendChild(card);
-    });
-
-    // Season complete banner — only if all 12 are solved and a next season exists
-    if (numSolved === allCases.length && allCases.length > 0) {
-      var nextSeason = SEASONS_CONFIG[activeSeasonIndex + 1];
-      var done = document.createElement('div');
-      done.style.cssText = 'text-align:center;padding:1.5rem 1rem;font-family:var(--font-type);font-size:0.82rem;color:rgba(60,30,10,0.5);font-style:italic;border-top:1px solid rgba(60,30,10,0.12);margin-top:0.5rem;';
-      done.textContent = nextSeason
-        ? activeSeason.title + ' complete. ' + nextSeason.title + ' begins now.'
-        : activeSeason.title + ' complete. Next season coming soon.';
-      list.appendChild(done);
-    }
-
+    function esc(value) { return String(value == null ? '' : value).replace(/[&<>"']/g, function(ch) { return ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[ch]; }); }
+    function pad(num) { return String(parseInt(num, 10) || 0).padStart(3, '0'); }
+    function pct(done, total) { return total > 0 ? Math.round((done / total) * 100) : 0; }
+    function readProgress() { var solved = [], objects = [], files = []; try { var p = JSON.parse(localStorage.getItem('ava_progress') || '{}'); solved = Array.isArray(p.solvedCases) ? p.solvedCases : []; objects = Array.isArray(p.collectedObjects) ? p.collectedObjects : []; files = Array.isArray(p.recoveredFiles) ? p.recoveredFiles : []; } catch(e) {} try { var legacy = JSON.parse(localStorage.getItem('av_solved') || '[]'); if (Array.isArray(legacy)) legacy.forEach(function(id) { if (solved.indexOf(id) === -1) solved.push(id); }); } catch(e) {} return { solved: solved, objects: objects, files: files }; }
+    function isSolved(id, solved) { return solved.indexOf(id) !== -1; }
+    function caseUrl(c) { return c.url || ('case.html?id=' + parseInt(c.id, 10)); }
+    function releasedCases(season) { return season.cases.filter(function(c) { return c.released; }); }
+    function solvedInSeason(season, solved) { return season.cases.filter(function(c) { return isSolved(c.id, solved); }); }
+    function findActiveSeason(solved) { for (var i = 0; i < SEASONS_CONFIG.length; i++) { var season = SEASONS_CONFIG[i]; var open = releasedCases(season).filter(function(c) { return !isSolved(c.id, solved); }); if (open.length || solvedInSeason(season, solved).length < season.cases.length) return { season: season, index: i, active: open[0] || null }; } var lastIndex = Math.max(SEASONS_CONFIG.length - 1, 0); return { season: SEASONS_CONFIG[lastIndex], index: lastIndex, active: null }; }
+    function renderField(label, value) { return '<div class="ledger-field"><span class="ledger-label">' + esc(label) + '</span><span class="ledger-value">' + esc(value) + '</span></div>'; }
+    function renderContinue(activeSeason, activeCase, solvedCount, totalCases) { var el = document.getElementById('continueInvestigation'); if (!el) return; var firstReleased = releasedCases(activeSeason)[0]; var c = activeCase || firstReleased || activeSeason.cases[0]; var hasActive = !!activeCase && !(solvedCount === 0 && firstReleased && activeCase.id === firstReleased.id); var title = hasActive ? c.title : 'Begin Investigation'; var button = hasActive ? 'Continue Investigation ->' : 'Start Case ' + pad(c.id) + ' ->'; var status = hasActive ? 'Ready to Investigate' : 'Open the first recovered folder'; var href = c && c.released !== false ? caseUrl(c) : 'classified.html?id=' + esc(c.id); el.innerHTML = '<div class="continue-card"><div><div class="continue-case">Case ' + pad(c.id) + '</div><h3 class="continue-title">' + esc(title) + '</h3><p class="continue-sub">' + (hasActive ? 'Current Investigation' : 'No active investigation is open yet') + '</p><div class="ledger-fields">' + renderField('Status', status) + renderField('Progress', activeSeason.title) + renderField('Record', 'Case ' + parseInt(c.id, 10) + ' of ' + totalCases) + '</div></div><a class="continue-action" href="' + esc(href) + '">' + esc(button) + '</a></div>'; }
+    function renderCurrentSeason(season, solvedCount, totalCases) { var el = document.getElementById('currentSeason'); if (!el) return; var percent = pct(solvedCount, totalCases); el.innerHTML = '<div class="season-record"><div class="season-record-grid">' + renderField('Season', season.title) + renderField('Cases Solved', solvedCount + ' / ' + totalCases) + renderField('Archive Recovery', percent + '%') + renderField('Vault Status', percent >= 100 ? 'Open' : 'Locked') + renderField('Released Records', releasedCases(season).length + ' / ' + totalCases) + renderField('Season Ledger', percent >= 100 ? 'Recovered' : 'In Progress') + '</div><div class="archive-progress" aria-label="Archive recovery ' + percent + ' percent"><div class="archive-progress-fill" style="width:' + percent + '%"></div></div></div>'; }
+    function renderAvailable(season, activeCase, solved) { var el = document.getElementById('availableCases'); if (!el) return; el.innerHTML = ''; season.cases.forEach(function(c) { var solvedCase = isSolved(c.id, solved), active = activeCase && activeCase.id === c.id, available = c.released && !solvedCase, locked = !c.released; var status = solvedCase ? 'Solved' : (available ? 'Available' : 'Access Pending'); var title = locked ? 'Restricted File' : c.title; var href = locked ? 'classified.html?id=' + esc(c.id) : caseUrl(c); var completion = solvedCase ? '100%' : (available ? '0%' : 'Restricted'); var progress = solvedCase ? 'Recovered' : (active ? 'Current' : (available ? 'Ready' : 'Restricted')); var stamp = solvedCase ? 'Recovered' : (locked ? 'Restricted' : 'Open'); var card = document.createElement('a'); card.className = 'case-card ledger-case' + (solvedCase ? ' solved' : '') + (locked ? ' locked' : ''); card.href = href; card.innerHTML = '<div class="case-row"><span class="case-mini-number">Case ' + pad(c.id) + (solvedCase ? ' -' : '') + '</span><span class="ledger-stamp">' + esc(stamp) + '</span></div><h4 class="case-mini-title">' + esc(title) + '</h4><div class="case-mini-meta">' + renderField('Status', locked ? 'Access Pending' : status) + renderField('Difficulty', locked ? 'Classified' : 'Standard') + renderField('Completion', completion) + renderField('Progress', progress) + '</div>'; el.appendChild(card); }); }
+    function renderRecentlySolved(solved) { var el = document.getElementById('recentlySolved'); if (!el) return; var lookup = {}; SEASONS_CONFIG.forEach(function(s) { s.cases.forEach(function(c) { lookup[c.id] = c; }); }); var recent = solved.slice().reverse().map(function(id) { return lookup[id]; }).filter(Boolean).slice(0, 4); if (!recent.length) { el.innerHTML = '<div class="ledger-empty">No investigations have been recovered yet. The first solved file will appear here.</div>'; return; } el.innerHTML = ''; recent.forEach(function(c) { var record = document.createElement('a'); record.className = 'solved-record'; record.href = caseUrl(c); record.innerHTML = '<div><div class="case-mini-number">Case ' + pad(c.id) + '</div><h4 class="case-mini-title" style="min-height:0;">' + esc(c.title) + '</h4><div class="recovery-line"><span>Recovered File</span><span>Witness Record</span><span>Sound Record</span><span>Object Record</span></div></div><div><span class="ledger-stamp">Completed</span><div class="ledger-value" style="margin-top:0.45rem;text-align:center;">100%</div></div>'; el.appendChild(record); }); }
+    function renderStats(progress, solvedCount, totalCases) { var el = document.getElementById('archiveStats'); if (!el) return; var overall = pct(solvedCount, totalCases); var records = [['Recovered Cases', solvedCount + ' / ' + totalCases], ['Recovered Evidence', Math.max(progress.files.length, solvedCount) + ' records'], ['Recovered Witnesses', solvedCount], ['Recovered Sounds', solvedCount], ['Recovered Locations', solvedCount], ['Recovered Objects', Math.max(progress.objects.length, solvedCount)], ['Overall Archive Completion', overall + '%']]; el.innerHTML = records.map(function(r) { return '<div class="stat-record"><span class="ledger-label">' + esc(r[0]) + '</span><span class="ledger-value">' + esc(r[1]) + '</span></div>'; }).join(''); }
+    function renderPreviousSeasons(activeIndex, solved) { var el = document.getElementById('previousSeasons'); if (!el) return; el.innerHTML = ''; var rows = []; SEASONS_CONFIG.forEach(function(season, index) { if (index === activeIndex && SEASONS_CONFIG.length > 1) return; var done = solvedInSeason(season, solved).length, total = season.cases.length, percent = pct(done, total); rows.push({ title: season.title, percent: percent, status: percent >= 100 ? 'Vault Open' : (index === activeIndex ? 'Current Vault' : (index < activeIndex ? 'Incomplete' : 'Locked')) }); }); if (SEASONS_CONFIG.length === 1) { rows.push({ title: 'Season Two', percent: 0, status: 'Locked' }); rows.push({ title: 'Season Three', percent: 0, status: 'Locked' }); } rows.forEach(function(row) { var div = document.createElement('div'); div.className = 'season-row'; div.innerHTML = '<div><div class="ledger-value">' + esc(row.title) + '</div><div class="archive-progress" style="margin-top:0.55rem;"><div class="archive-progress-fill" style="width:' + row.percent + '%"></div></div></div><div><span class="ledger-stamp">' + esc(row.status) + '</span><div class="ledger-value" style="margin-top:0.45rem;text-align:center;">' + row.percent + '%</div></div>'; el.appendChild(div); }); }
+    var progress = readProgress(), found = findActiveSeason(progress.solved), season = found.season, totalCases = season.cases.length, solvedCount = solvedInSeason(season, progress.solved).length;
+    renderContinue(season, found.active, solvedCount, totalCases); renderCurrentSeason(season, solvedCount, totalCases); renderAvailable(season, found.active, progress.solved); renderRecentlySolved(progress.solved); renderStats(progress, progress.solved.length, SEASONS_CONFIG.reduce(function(n, s) { return n + s.cases.length; }, 0)); renderPreviousSeasons(found.index, progress.solved);
   })();
-  }); // applySheetReleased
+  });
   </script>
 
-  <!-- ── COUNTDOWN ──────────────────────────────────────────── -->
+  <!-- -- COUNTDOWN -------------------------------------------- -->
   <script>
   (function() {
     function startCountdown(sched) {
@@ -1418,7 +1130,7 @@
         .then(function(s) { startCountdown(s.releaseSchedule); })
         .catch(function() {});
     } else {
-      // file:// — fetch blocked, use weekly Sunday as default so countdown is always visible locally
+      // file:// � fetch blocked, use weekly Sunday as default so countdown is always visible locally
       startCountdown({ type: 'weekly', weekday: 0 });
     }
   })();

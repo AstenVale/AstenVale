@@ -16,20 +16,45 @@ function applySheetReleased(callback) {
     callback();
   }
 
+  function parseCSVLine(line) {
+    var cells = [];
+    var cell = '';
+    var inQuotes = false;
+    for (var i = 0; i < line.length; i++) {
+      var ch = line[i];
+      var next = line[i + 1];
+      if (ch === '"' && inQuotes && next === '"') { cell += '"'; i++; continue; }
+      if (ch === '"') { inQuotes = !inQuotes; continue; }
+      if (ch === ',' && !inQuotes) { cells.push(cell); cell = ''; continue; }
+      cell += ch;
+    }
+    cells.push(cell);
+    return cells;
+  }
+
+  function cleanCell(value) {
+    return (value || '').trim();
+  }
+
   function parseCSV(csv) {
-    var rows    = csv.trim().split('\n').map(function(r) { return r.split(','); });
-    var headers = rows[0].map(function(h) { return h.trim().toLowerCase(); });
+    var lines = csv.trim().split(/\r?\n/).filter(function(line) { return line.trim(); });
+    if (!lines.length) return [];
+    var rows    = lines.map(parseCSVLine);
+    var headers = rows[0].map(function(h) { return cleanCell(h).toLowerCase(); });
     var idCol    = headers.indexOf('id');
     var linkCols = ['spotify','apple','youtube','amazon'].map(function(n) { return headers.indexOf(n); });
+    if (idCol < 0) return [];
+
     var releasedIds = [];
     rows.slice(1).forEach(function(row) {
-      var id = row[idCol] ? row[idCol].trim().padStart(3, '0') : null;
+      var rawId = cleanCell(row[idCol]);
+      var id = rawId ? rawId.padStart(3, '0') : null;
       if (!id) return;
       var hasLink = linkCols.some(function(col) {
-        var v = col >= 0 && row[col] ? row[col].trim() : '';
+        var v = col >= 0 ? cleanCell(row[col]) : '';
         return /^https?:\/\//i.test(v);
       });
-      if (hasLink) releasedIds.push(id);
+      if (hasLink && releasedIds.indexOf(id) === -1) releasedIds.push(id);
     });
     return releasedIds;
   }
