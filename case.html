@@ -1240,46 +1240,6 @@ body.unlocked::before{
       panel.appendChild(sec3);
     }
 
-    // ── RELATED EVIDENCE ─────────────────────────────────────────────────────
-    (function() {
-      var relItems = (caseData.collectibles || []).filter(function(c) {
-        return c && c.name && c.name.indexOf('//') === -1;
-      });
-      if (!relItems.length) return;
-
-      var secRel = document.createElement('div');
-      secRel.className = 'related-evidence-section unlock-section';
-      secRel.style.animationDelay = '1.05s';
-
-      var lblRel = document.createElement('div');
-      lblRel.className = 'unlock-section-label';
-      lblRel.textContent = 'Related Evidence';
-      secRel.appendChild(lblRel);
-
-      var hRel = document.createElement('div');
-      hRel.className = 'unlock-section-heading';
-      hRel.textContent = 'All Case Evidence';
-      secRel.appendChild(hRel);
-
-      var relGrid = document.createElement('div');
-      relGrid.className = 'related-ev-grid';
-
-      var _typeLinks = { Object: 'cabinet.html', Location: 'cabinet.html', Witness: 'cabinet.html', Time: 'cabinet.html', Marker: 'cabinet.html', Direction: 'cabinet.html', Sound: 'sounds.html' };
-
-      relItems.forEach(function(c) {
-        var card = document.createElement('a');
-        card.href = _typeLinks[c.type] || 'cabinet.html';
-        card.className = 'related-ev-card';
-        card.innerHTML =
-          '<span class="related-ev-symbol">' + (c.symbol || '🔍') + '</span>' +
-          '<span class="related-ev-name">' + c.name + '</span>' +
-          '<span class="related-ev-type">' + (c.type || 'Evidence') + '</span>';
-        relGrid.appendChild(card);
-      });
-
-      secRel.appendChild(relGrid);
-      panel.appendChild(secRel);
-    })();
 
     // ── CONTINUE INVESTIGATION ────────────────────────────────────────────────
     (function() {
