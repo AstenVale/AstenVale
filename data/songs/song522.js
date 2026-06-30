@@ -10,7 +10,7 @@ window.SONG_DATA = {
   "difficulty": "Open Investigation",
   "status": "OPEN INVESTIGATION",
   "artwork": null,
-  "audioSrc": null,
+  "audioSrc": "audio/songs/Season-44-the-mirror-case/522.mp3",
   "streamingLinks": {
     "spotify": "",
     "apple": "",

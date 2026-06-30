@@ -10,7 +10,7 @@ window.SONG_DATA = {
   "difficulty": "Deep File",
   "status": "OPEN INVESTIGATION",
   "artwork": null,
-  "audioSrc": null,
+  "audioSrc": "audio/songs/Season-19-the-bridge-burner/225.mp3",
   "streamingLinks": {
     "spotify": "",
     "apple": "",

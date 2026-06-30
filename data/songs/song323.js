@@ -10,7 +10,7 @@ window.SONG_DATA = {
   "difficulty": "Vault-Level",
   "status": "OPEN INVESTIGATION",
   "artwork": null,
-  "audioSrc": null,
+  "audioSrc": "audio/songs/Season-27-the-salt-flats/323.mp3",
   "streamingLinks": {
     "spotify": "",
     "apple": "",

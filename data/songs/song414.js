@@ -10,7 +10,7 @@ window.SONG_DATA = {
   "difficulty": "Open Investigation",
   "status": "OPEN INVESTIGATION",
   "artwork": null,
-  "audioSrc": null,
+  "audioSrc": "audio/songs/Season-35-the-archive-keeper/414.mp3",
   "streamingLinks": {
     "spotify": "",
     "apple": "",

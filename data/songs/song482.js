@@ -10,7 +10,7 @@ window.SONG_DATA = {
   "difficulty": "Archive Entry",
   "status": "OPEN INVESTIGATION",
   "artwork": null,
-  "audioSrc": null,
+  "audioSrc": "audio/songs/Season-41-the-ghost-road/482.mp3",
   "streamingLinks": {
     "spotify": "",
     "apple": "",

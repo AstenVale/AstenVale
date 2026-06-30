@@ -10,7 +10,7 @@ window.SONG_DATA = {
   "difficulty": "Deep File",
   "status": "OPEN INVESTIGATION",
   "artwork": null,
-  "audioSrc": null,
+  "audioSrc": "audio/songs/Season-49-the-final-witness/584.mp3",
   "streamingLinks": {
     "spotify": "",
     "apple": "",

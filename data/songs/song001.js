@@ -10,7 +10,7 @@ window.SONG_DATA = {
   "difficulty": "Archive Entry",
   "status": "OPEN INVESTIGATION",
   "artwork": null,
-  "audioSrc": null,
+  "audioSrc": "audio/songs/Season-01-the-stranger/001.mp3",
   "streamingLinks": {
     "spotify": "https://open.spotify.com/track/1MlxnxcNpSMZzYb6d6bH84",
     "apple": "https://music.apple.com/us/artist/asten-vale/6784035672",

@@ -10,7 +10,7 @@ window.SONG_DATA = {
   "difficulty": "Vault-Level",
   "status": "OPEN INVESTIGATION",
   "artwork": null,
-  "audioSrc": null,
+  "audioSrc": "audio/songs/Season-38-the-signal-fire/455.mp3",
   "streamingLinks": {
     "spotify": "",
     "apple": "",
