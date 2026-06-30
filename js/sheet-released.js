@@ -9,7 +9,8 @@ function applySheetReleased(callback) {
     if (typeof SEASONS_CONFIG !== 'undefined') {
       SEASONS_CONFIG.forEach(function(season) {
         season.cases.forEach(function(c) {
-          c.released = releasedIds.indexOf(c.id) !== -1;
+          // Sheet adds releases on top of vault-config; never removes a vault-config true
+          c.released = c.released || releasedIds.indexOf(c.id) !== -1;
         });
       });
     }
@@ -34,28 +35,28 @@ function applySheetReleased(callback) {
     return releasedIds;
   }
 
-  function useCacheOrEmpty() {
+  function useCacheOrVaultConfig() {
     try {
       var cached = JSON.parse(localStorage.getItem(CACHE_KEY) || 'null');
-      if (Array.isArray(cached) && cached.length > 0) { applyIds(cached); return; }
+      if (Array.isArray(cached)) { applyIds(cached); return; }
     } catch(e) {}
-    applyIds([]);
+    // No cache — preserve vault-config's own released flags unchanged
+    callback();
   }
 
   fetch('js/site-settings.json')
     .then(function(r) { return r.json(); })
     .then(function(s) {
       var sheetUrl = s.streamingSheetUrl;
-      if (!sheetUrl) { useCacheOrEmpty(); return; }
+      if (!sheetUrl) { useCacheOrVaultConfig(); return; }
       return fetch(sheetUrl)
         .then(function(r) { return r.text(); })
         .then(function(csv) {
           var releasedIds = parseCSV(csv);
-          if (releasedIds.length > 0) {
-            try { localStorage.setItem(CACHE_KEY, JSON.stringify(releasedIds)); } catch(e) {}
-          }
+          // Always update cache so removals take effect immediately
+          try { localStorage.setItem(CACHE_KEY, JSON.stringify(releasedIds)); } catch(e) {}
           applyIds(releasedIds);
         });
     })
-    .catch(function() { useCacheOrEmpty(); });
+    .catch(function() { useCacheOrVaultConfig(); });
 }

@@ -130,6 +130,12 @@
 
     @keyframes fade-up { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
 
+    /* ── SOUND EVIDENCE BLOCK ── */
+    .artifact-sound-block { padding-top: 0.6rem; border-top: 1px dashed rgba(60,30,10,0.2); display: flex; flex-direction: column; gap: 0.4rem; }
+    .artifact-sound-player { width: 100%; height: 28px; opacity: 0.82; display: block; }
+    .artifact-sound-link { font-family: var(--font-type); font-size: 0.58rem; letter-spacing: 0.16em; color: var(--folder-red); text-transform: uppercase; text-decoration: underline; text-underline-offset: 2px; opacity: 0.8; transition: opacity 0.15s; align-self: flex-start; }
+    .artifact-sound-link:hover { opacity: 1; }
+
     @media (max-width: 640px) {
       .site-nav { padding: 1rem 1.25rem; }
       .cabinet-inner { padding: 0 1rem 2rem; }
@@ -169,6 +175,7 @@
     <div class="nav-links">
       <a href="index.html"     class="nav-link"        data-icon="🗄">Archive</a>
       <a href="cabinet.html"   class="nav-link active" data-icon="🔍">Cabinet</a>
+      <a href="sounds.html"    class="nav-link"        data-icon="🔊">Sounds</a>
       <a href="completed.html" class="nav-link"        data-icon="✦">Completed</a>
       <a href="progress.html"  class="nav-link"        data-icon="◎">Progress</a>
       <a href="about.html"     class="nav-link"        data-icon="◉">About</a>
@@ -227,8 +234,15 @@
   </footer>
 
   <script src="js/vault-config.js"></script>
+  <script src="data/sounds.js"></script>
   <script>
   (function() {
+    // Build a quick lookup: sound name (lowercase) → sound object
+    var soundLookup = {};
+    (window.SOUNDS_DATA || []).forEach(function(s) {
+      soundLookup[s.name.toLowerCase()] = s;
+    });
+
     var solved = [];
     try { solved = JSON.parse(localStorage.getItem('av_solved') || '[]'); } catch(e) {}
 
@@ -413,6 +427,22 @@
             }
             if (c.unknownInfo && c.unknownInfo.indexOf('//') === -1) {
               html +=   '<div class="artifact-card-unknown">' + c.unknownInfo + '</div>';
+            }
+            // Sound evidence: inline player + cabinet link
+            if (c.type === 'Sound') {
+              var snd = soundLookup[c.name.toLowerCase()];
+              if (snd && snd.audioFile) {
+                html += '<div class="artifact-sound-block">';
+                html +=   '<audio class="artifact-sound-player" controls preload="none" aria-label="Play recording: ' + c.name + '">';
+                html +=     '<source src="' + snd.audioFile + '" type="audio/mpeg">';
+                html +=   '</audio>';
+                html +=   '<a href="sounds.html" class="artifact-sound-link">View in Sound Cabinet</a>';
+                html += '</div>';
+              } else {
+                html += '<div class="artifact-sound-block">';
+                html +=   '<a href="sounds.html" class="artifact-sound-link">View in Sound Cabinet</a>';
+                html += '</div>';
+              }
             }
             html +=   '</div>';
 

@@ -1280,7 +1280,7 @@
       var isActive   = active && active.id === c.id;
       var isReleased = c.released;
 
-      // Hide future cases — player hasn't reached them yet
+      // Show solved cases + the next active released case only
       if (!isSolved && !isActive) return;
 
       var card = document.createElement('a');
