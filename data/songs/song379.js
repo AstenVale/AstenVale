@@ -10,7 +10,7 @@ window.SONG_DATA = {
   "difficulty": "Deep File",
   "status": "OPEN INVESTIGATION",
   "artwork": null,
-  "audioSrc": "audio/songs/Season-32-the-deep-current/379.mp3",
+  "audioSrc": "Songs/Season-32-the-deep-current/379.mp3",
   "streamingLinks": {
     "spotify": "",
     "apple": "",

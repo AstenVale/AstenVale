@@ -10,7 +10,7 @@ window.SONG_DATA = {
   "difficulty": "Archive Entry",
   "status": "OPEN INVESTIGATION",
   "artwork": null,
-  "audioSrc": "audio/songs/Season-14-the-flood-year/159.mp3",
+  "audioSrc": "Songs/Season-14-the-flood-year/159.mp3",
   "streamingLinks": {
     "spotify": "",
     "apple": "",

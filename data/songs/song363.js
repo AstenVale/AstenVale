@@ -10,7 +10,7 @@ window.SONG_DATA = {
   "difficulty": "Archive Entry",
   "status": "OPEN INVESTIGATION",
   "artwork": null,
-  "audioSrc": "audio/songs/Season-31-the-cipher-garden/363.mp3",
+  "audioSrc": "Songs/Season-31-the-cipher-garden/363.mp3",
   "streamingLinks": {
     "spotify": "",
     "apple": "",
