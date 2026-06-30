@@ -1,0 +1,102 @@
+﻿/* Final Ashton Vale polish layer: shared hover, focus, mobile, loading, and media refinements. */
+:root {
+  --av-focus: rgba(226,196,145,0.82);
+  --av-hover-shadow: 0 7px 20px rgba(0,0,0,0.2);
+  --av-bronze: rgba(201,169,122,0.9);
+}
+
+html, body { max-width: 100%; overflow-x: hidden; }
+
+:is(a, button, input, select, textarea, [role="button"], [tabindex]):focus-visible {
+  outline: 2px solid var(--av-focus);
+  outline-offset: 3px;
+  box-shadow: 0 0 0 1px rgba(60,30,10,0.35);
+}
+
+:is(.case-file-card, .case-card, .artifact-card, .recording-card, .evidence-card, .case-group-toggle, .category-toggle, .summary-record, .summary-item, .access-brief, .faq-item, .evidence-card, .workflow-step, .locked-season):hover {
+  cursor: pointer;
+}
+
+:is(.case-file-card, .artifact-card, .case-card, .recording-card, .evidence-card, .faq-item, .workflow-step):not(.locked):not(.locked-card) {
+  transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease, border-color 0.18s ease, color 0.18s ease;
+}
+
+:is(.case-file-card, .artifact-card, .case-card, .recording-card, .evidence-card, .faq-item, .workflow-step):not(.locked):not(.locked-card):hover {
+  transform: translateY(-2px);
+  box-shadow: var(--av-hover-shadow);
+}
+
+:is(.case-file-card, .artifact-card, .case-card, .recording-card):hover :is(.case-number, .case-title, .artifact-card-stamp, .sound-stamp, .status-stamp, .closed-stamp, .recovered-stamp) {
+  color: var(--folder-red, #7a1f1f);
+  border-color: rgba(122,31,31,0.7);
+}
+
+.case-file-card:not(.locked):not(.closed)::after,
+.artifact-card::after,
+.recording-card::after {
+  content: "View Record \2192";
+  position: absolute;
+  right: 0.7rem;
+  bottom: 0.45rem;
+  font-family: var(--font-type, 'Courier New', monospace);
+  font-size: 0.56rem;
+  letter-spacing: 0.16em;
+  color: rgba(60,30,10,0);
+  text-transform: uppercase;
+  transition: color 0.18s ease;
+  pointer-events: none;
+}
+.case-file-card:not(.locked):not(.closed)::after { content: "Open File \2192"; }
+:is(.case-file-card, .artifact-card, .recording-card):hover::after { color: rgba(60,30,10,0.55); }
+
+.av-loading {
+  border: 1px dashed rgba(60,30,10,0.22);
+  background: rgba(0,0,0,0.03);
+  padding: 1rem;
+  font-family: var(--font-type, 'Courier New', monospace);
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  color: rgba(60,30,10,0.52);
+  text-transform: uppercase;
+  text-align: center;
+  font-style: italic;
+}
+
+.av-audio-player {
+  border: 1px solid rgba(60,30,10,0.18);
+  background: rgba(0,0,0,0.035);
+  padding: 0.55rem;
+  margin-top: 0.45rem;
+}
+.av-audio-wave { display: flex; align-items: center; gap: 2px; height: 28px; margin-bottom: 0.45rem; overflow: hidden; }
+.av-audio-wave span { flex: 1; min-width: 2px; background: rgba(122,31,31,0.46); }
+.av-audio-row { display: grid; grid-template-columns: auto minmax(90px, 1fr) auto 76px; gap: 0.5rem; align-items: center; }
+.av-audio-play {
+  font-family: var(--font-header, 'Courier New', serif);
+  font-size: 0.6rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(201,169,122,0.88);
+  background: rgba(28,18,10,0.88);
+  border: 1px solid rgba(201,169,122,0.32);
+  padding: 0.38rem 0.58rem;
+  cursor: pointer;
+}
+.av-audio-play:hover { color: var(--paper, #c9a97a); border-color: rgba(226,196,145,0.7); }
+.av-audio-progress, .av-audio-volume { height: 8px; border: 1px solid rgba(60,30,10,0.18); background: rgba(60,30,10,0.14); cursor: pointer; }
+.av-audio-fill, .av-audio-volume-fill { display: block; height: 100%; width: 0; background: rgba(122,31,31,0.58); }
+.av-audio-time { font-size: 0.6rem; letter-spacing: 0.08em; color: rgba(60,30,10,0.62); white-space: nowrap; }
+.av-enhanced-audio { display: none !important; }
+
+img { max-width: 100%; height: auto; }
+button, .btn-submit, .briefing-link, .return-link, .empty-action, .cabinet-empty-btn { min-height: 38px; }
+
+@media (max-width: 640px) {
+  body { font-size: 14px; }
+  :is(.hero-title, .page-title) { overflow-wrap: anywhere; }
+  :is(.case-file-card, .case-card, .artifact-card, .recording-card, .evidence-card)::after { display: none; }
+  .av-audio-row { grid-template-columns: 1fr; }
+  .av-audio-play { width: 100%; }
+  :is(.paper-inner, .cabinet-inner) { max-width: 100%; }
+  :is(.nav-link, .filter-btn, .archive-tab, button, a) { touch-action: manipulation; }
+}

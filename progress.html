@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Progress — The Asten Vale Archives</title>
+  <title>Investigator Record ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â The Asten Vale Archives</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
@@ -30,16 +30,14 @@
       font-family: var(--font-type);
       font-size: 15px;
       line-height: 1.7;
-      min-height: auto;
       overflow-x: hidden;
     }
 
     a { text-decoration: none; color: inherit; }
 
-    /* ── HERO ── */
+    /* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ HERO ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */
     .hero {
       position: relative;
-      min-height: auto;
       display: flex;
       flex-direction: column;
       overflow: hidden;
@@ -56,16 +54,14 @@
 
     .hero-glow {
       position: absolute;
-      right: 8%;
-      top: 15%;
-      width: 300px;
-      height: 250px;
+      right: 8%; top: 15%;
+      width: 300px; height: 250px;
       background: radial-gradient(ellipse at 60% 40%, rgba(200,150,40,0.07) 0%, transparent 70%);
       pointer-events: none;
       z-index: 1;
     }
 
-    /* ── NAV ── */
+    /* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ NAV ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */
     .site-nav {
       position: relative;
       z-index: 10;
@@ -109,7 +105,7 @@
       background: rgba(201,169,122,0.6);
     }
 
-    /* ── HERO CONTENT ── */
+    /* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ HERO CONTENT ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */
     .hero-content {
       position: relative;
       z-index: 5;
@@ -138,12 +134,47 @@
       color: rgba(220,190,140,0.95);
       text-transform: uppercase;
       text-shadow: 0 2px 30px rgba(0,0,0,0.8);
-      margin-bottom: 1rem;
+      margin-bottom: 1.25rem;
     }
 
-    .hero-rule { width: 60px; height: 1px; background: rgba(201,169,122,0.35); margin: 0 auto; }
+    .hero-meta {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
 
-    /* ── PAPER SECTION ── */
+    .hero-meta-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.2rem;
+    }
+
+    .hero-meta-label {
+      font-family: var(--font-type);
+      font-size: 0.62rem;
+      letter-spacing: 0.25em;
+      color: rgba(201,169,122,0.4);
+      text-transform: uppercase;
+    }
+
+    .hero-meta-value {
+      font-family: var(--font-header);
+      font-size: 1rem;
+      letter-spacing: 0.12em;
+      color: rgba(201,169,122,0.9);
+      text-transform: uppercase;
+    }
+
+    .hero-meta-sep {
+      width: 1px;
+      height: 32px;
+      background: rgba(201,169,122,0.2);
+    }
+
+    /* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ PAPER SECTION ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */
     .paper-section {
       position: relative;
       background: var(--paper-bg);
@@ -197,7 +228,7 @@
       pointer-events: none;
     }
 
-    /* ── SECTION HEADING ── */
+    /* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ SECTION HEADING ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */
     .section-head {
       padding-top: 2.5rem;
       margin-bottom: 1.75rem;
@@ -232,44 +263,7 @@
       margin: 2.5rem 0;
     }
 
-    /* ── STAT GRID ── */
-    .stat-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1px;
-      background: rgba(60,30,10,0.12);
-      border: 1px solid rgba(60,30,10,0.12);
-      margin-bottom: 0.25rem;
-    }
-
-    .stat-cell {
-      background: rgba(210,180,120,0.35);
-      padding: 1.1rem 1.25rem;
-      display: flex;
-      flex-direction: column;
-      gap: 0.2rem;
-    }
-
-    .stat-label {
-      font-family: var(--font-type);
-      font-size: 0.63rem;
-      letter-spacing: 0.2em;
-      color: rgba(60,30,10,0.5);
-      text-transform: uppercase;
-    }
-
-    .stat-value {
-      font-family: var(--font-header);
-      font-size: clamp(1.1rem, 3vw, 1.5rem);
-      letter-spacing: 0.08em;
-      color: var(--ink);
-    }
-
-    /* ── MASTER PROGRESS BAR ── */
-    .progress-bar-wrap {
-      margin: 1.5rem 0 0.4rem;
-    }
-
+    /* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ PROGRESS BARS ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */
     .progress-bar-header {
       display: flex;
       justify-content: space-between;
@@ -293,23 +287,207 @@
     }
 
     .progress-track {
-      height: 6px;
+      height: 5px;
       background: rgba(60,30,10,0.12);
-      border-radius: 0;
       overflow: hidden;
     }
 
     .progress-fill {
       height: 100%;
-      background: rgba(60,30,10,0.55);
-      transition: width 0.8s ease;
+      background: rgba(60,30,10,0.45);
+      transition: width 0.9s ease;
     }
 
-    .progress-fill.complete {
-      background: var(--green-pine);
+    .progress-fill.complete { background: var(--green-pine); }
+
+    /* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ RANK STRIP ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */
+    .rank-strip {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      border: 1px solid rgba(60,30,10,0.12);
+      overflow: hidden;
     }
 
-    /* ── CASE LIST ── */
+    .rank-item {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.7rem 1.1rem;
+      background: rgba(210,180,120,0.2);
+      border-bottom: 1px solid rgba(60,30,10,0.07);
+      transition: background 0.15s;
+    }
+
+    .rank-item:last-child { border-bottom: none; }
+
+    .rank-item.rank-past {
+      opacity: 0.55;
+    }
+
+    .rank-item.rank-current {
+      background: rgba(60,30,10,0.1);
+      border-left: 3px solid rgba(60,30,10,0.45);
+    }
+
+    .rank-item.rank-future {
+      opacity: 0.35;
+    }
+
+    .rank-dot {
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      flex-shrink: 0;
+      background: rgba(60,30,10,0.15);
+    }
+
+    .rank-item.rank-past .rank-dot { background: var(--green-pine); }
+    .rank-item.rank-current .rank-dot { background: rgba(60,30,10,0.7); }
+
+    .rank-item-name {
+      font-family: var(--font-header);
+      font-size: 0.85rem;
+      letter-spacing: 0.08em;
+      color: var(--ink);
+      text-transform: uppercase;
+      flex: 1;
+    }
+
+    .rank-item-tag {
+      font-family: var(--font-type);
+      font-size: 0.6rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      padding: 0.15rem 0.45rem;
+      border-radius: 1px;
+    }
+
+    .rank-item.rank-past .rank-item-tag {
+      color: var(--green-pine);
+      background: rgba(74,124,78,0.12);
+      border: 1px solid rgba(74,124,78,0.2);
+    }
+
+    .rank-item.rank-current .rank-item-tag {
+      color: rgba(60,30,10,0.7);
+      background: rgba(60,30,10,0.08);
+      border: 1px solid rgba(60,30,10,0.2);
+    }
+
+    .rank-item.rank-future .rank-item-tag {
+      color: rgba(60,30,10,0.3);
+      background: transparent;
+      border: 1px solid rgba(60,30,10,0.1);
+    }
+
+    .rank-threshold {
+      font-family: var(--font-type);
+      font-size: 0.6rem;
+      color: rgba(60,30,10,0.35);
+      letter-spacing: 0.1em;
+      font-style: italic;
+    }
+
+    /* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ CURRENT INVESTIGATION CARD ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */
+    .inv-card {
+      background: rgba(210,180,120,0.3);
+      border: 1px solid rgba(60,30,10,0.12);
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.9rem;
+    }
+
+    .inv-row {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 1rem;
+      border-bottom: 1px solid rgba(60,30,10,0.08);
+      padding-bottom: 0.9rem;
+    }
+
+    .inv-row:last-child { border-bottom: none; padding-bottom: 0; }
+
+    .inv-row.inv-bar-row { flex-direction: column; gap: 0.4rem; }
+
+    .inv-label {
+      font-family: var(--font-type);
+      font-size: 0.63rem;
+      letter-spacing: 0.2em;
+      color: rgba(60,30,10,0.45);
+      text-transform: uppercase;
+      flex-shrink: 0;
+    }
+
+    .inv-value {
+      font-family: var(--font-header);
+      font-size: 0.95rem;
+      letter-spacing: 0.06em;
+      color: var(--ink);
+      text-transform: uppercase;
+      text-align: right;
+    }
+
+    .inv-case-link {
+      color: var(--ink);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      transition: opacity 0.15s;
+    }
+    .inv-case-link:hover { opacity: 0.65; }
+
+    .inv-locked { color: rgba(60,30,10,0.4); font-style: italic; }
+    .inv-complete { color: var(--green-pine); }
+
+    /* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ ARCHIVE CATEGORY CARDS ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */
+    .archive-cats {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      gap: 0.75rem;
+    }
+
+    .cat-card {
+      background: rgba(210,180,120,0.3);
+      border: 1px solid rgba(60,30,10,0.1);
+      padding: 1.1rem 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+
+    .cat-label {
+      font-family: var(--font-header);
+      font-size: 0.78rem;
+      letter-spacing: 0.1em;
+      color: var(--ink);
+      text-transform: uppercase;
+    }
+
+    .cat-counts {
+      font-family: var(--font-header);
+      font-size: 1.15rem;
+      letter-spacing: 0.06em;
+      color: var(--ink);
+      line-height: 1;
+    }
+
+    .cat-sep { color: rgba(60,30,10,0.35); }
+    .cat-total { color: rgba(60,30,10,0.45); font-size: 0.9rem; }
+
+    .cat-remaining {
+      font-family: var(--font-type);
+      font-size: 0.62rem;
+      letter-spacing: 0.12em;
+      color: rgba(60,30,10,0.4);
+      text-transform: uppercase;
+      font-style: italic;
+      margin-bottom: 0.3rem;
+    }
+
+    .cat-bar { margin-top: auto; }
+
+    /* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ CASE LIST ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */
     .case-list {
       display: flex;
       flex-direction: column;
@@ -348,9 +526,7 @@
       text-transform: uppercase;
     }
 
-    .case-row-title.pending-title {
-      color: rgba(60,30,10,0.45);
-    }
+    .case-row-title.pending-title { color: rgba(60,30,10,0.45); }
 
     .case-row-status {
       font-family: var(--font-type);
@@ -387,107 +563,349 @@
 
     .case-row-link:hover { color: var(--ink); }
 
-    /* ── EVIDENCE CABINET ── */
-    .evidence-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
-      gap: 0.75rem;
-    }
-
-    .evidence-card {
-      background: rgba(210,180,120,0.35);
-      border: 1px solid rgba(60,30,10,0.12);
-      padding: 1rem 0.75rem;
-      text-align: center;
+    /* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ RECENT DISCOVERIES ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */
+    .discovery-feed {
       display: flex;
       flex-direction: column;
-      align-items: center;
-      gap: 0.4rem;
-      cursor: default;
+      gap: 0.5rem;
     }
 
-    .evidence-card.earned {
-      cursor: pointer;
-      border-color: rgba(60,30,10,0.2);
-      transition: background 0.15s;
-    }
-
-    .evidence-card.earned:hover { background: rgba(210,180,120,0.55); }
-
-    .evidence-card.mystery {
-      opacity: 0.45;
-    }
-
-    .card-symbol {
-      font-size: 1.6rem;
-      line-height: 1;
-    }
-
-    .card-name {
-      font-family: var(--font-type);
-      font-size: 0.62rem;
-      letter-spacing: 0.1em;
-      color: rgba(60,30,10,0.6);
-      text-transform: uppercase;
-      line-height: 1.3;
-    }
-
-    .card-case {
-      font-family: var(--font-type);
-      font-size: 0.58rem;
-      color: rgba(60,30,10,0.38);
-      font-style: italic;
-    }
-
-    /* ── BADGES ── */
-    .badge-grid {
+    .discovery-item {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-      gap: 0.75rem;
-    }
-
-    .badge-card {
+      grid-template-columns: 160px 1fr 80px;
+      align-items: center;
+      gap: 1rem;
+      padding: 0.7rem 1rem;
       background: rgba(210,180,120,0.3);
       border: 1px solid rgba(60,30,10,0.1);
-      padding: 1.1rem;
-      display: flex;
-      flex-direction: column;
-      gap: 0.4rem;
+      border-left: 3px solid rgba(60,30,10,0.2);
     }
 
-    .badge-card.earned-badge {
-      border-color: rgba(60,30,10,0.22);
+    .disc-type {
+      font-family: var(--font-type);
+      font-size: 0.63rem;
+      letter-spacing: 0.18em;
+      color: rgba(60,30,10,0.45);
+      text-transform: uppercase;
     }
 
-    .badge-card.locked-badge {
-      opacity: 0.45;
-    }
-
-    .badge-symbol {
-      font-size: 1.5rem;
-      line-height: 1;
-    }
-
-    .badge-name {
+    .disc-name {
       font-family: var(--font-header);
-      font-size: 0.8rem;
+      font-size: 0.9rem;
       letter-spacing: 0.06em;
       color: var(--ink);
       text-transform: uppercase;
-      line-height: 1.3;
     }
 
-    .badge-desc {
+    .disc-case {
       font-family: var(--font-type);
-      font-size: 0.7rem;
-      color: rgba(60,30,10,0.55);
-      font-style: italic;
-      line-height: 1.55;
+      font-size: 0.6rem;
+      letter-spacing: 0.12em;
+      color: rgba(60,30,10,0.35);
+      text-transform: uppercase;
+      text-align: right;
     }
 
-    /* ── RESET BUTTON ── */
+    .discovery-empty, .discovery-loading {
+      font-family: var(--font-type);
+      font-size: 0.78rem;
+      color: rgba(60,30,10,0.4);
+      font-style: italic;
+      padding: 0.5rem 0;
+    }
+
+    /* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ VAULT ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */
+    .vault-wrap {
+      background: rgba(18,12,6,0.92);
+      border: 1px solid rgba(201,169,122,0.18);
+      padding: 2rem 1.75rem 1.75rem;
+      position: relative;
+      box-shadow: inset 0 2px 20px rgba(0,0,0,0.5), 0 4px 24px rgba(0,0,0,0.35);
+    }
+
+    .vault-wrap::before {
+      content: "";
+      position: absolute; top: 0; left: 0; right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, rgba(201,169,122,0.35), transparent);
+    }
+
+    .vault-label-row {
+      display: flex; align-items: center; justify-content: space-between;
+      margin-bottom: 1.25rem;
+    }
+
+    .vault-label {
+      font-family: var(--font-type); font-size: 0.65rem;
+      letter-spacing: 0.3em; text-transform: uppercase;
+      color: rgba(201,169,122,0.45);
+    }
+
+    .vault-status {
+      font-family: var(--font-header); font-size: 0.72rem;
+      letter-spacing: 0.2em; text-transform: uppercase;
+    }
+
+    .vault-status.locked   { color: rgba(180,40,40,0.75); }
+    .vault-status.unlocked { color: rgba(74,124,78,0.85); }
+
+    .vault-dials {
+      display: flex; flex-wrap: nowrap; gap: 0.4rem;
+      justify-content: space-between;
+    }
+
+    .vault-dial {
+      flex: 1 1 0; min-width: 0; height: 64px;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      gap: 0.3rem;
+      border: 1px solid rgba(201,169,122,0.15);
+      background: rgba(28,18,8,0.9);
+      transition: border-color 0.3s;
+    }
+
+    .vault-dial.revealed   { border-color: rgba(201,169,122,0.4); background: rgba(40,26,10,0.9); }
+    .vault-dial.all-unlocked { border-color: rgba(74,124,78,0.5); background: rgba(20,40,22,0.85); }
+    .vault-dial.hidden     { border-color: rgba(201,169,122,0.08); }
+
+    .vault-dial-num {
+      font-family: var(--font-header);
+      font-size: 1.35rem;
+      letter-spacing: 0.05em;
+      color: rgba(201,169,122,0.9);
+      line-height: 1;
+      transition: color 0.3s;
+    }
+
+    .vault-dial.all-unlocked .vault-dial-num { color: rgba(120,200,130,0.9); }
+
+    .vault-dial.hidden .vault-dial-num {
+      font-size: 1rem;
+      color: rgba(201,169,122,0.15);
+      letter-spacing: 0.1em;
+    }
+
+    .vault-dial-case {
+      font-family: var(--font-type);
+      font-size: 0.55rem;
+      letter-spacing: 0.15em;
+      color: rgba(201,169,122,0.35);
+      text-transform: uppercase;
+    }
+
+    .vault-hint {
+      margin-top: 1.25rem; text-align: center;
+      font-family: var(--font-type); font-size: 0.72rem;
+      color: rgba(201,169,122,0.35); font-style: italic;
+    }
+
+    /* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ VAULT PROGRESS SUMMARY ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */
+    .vault-progress-row {
+      display: flex; align-items: center; justify-content: space-between;
+      margin-top: 1.25rem;
+      padding-top: 1rem;
+      border-top: 1px solid rgba(201,169,122,0.1);
+    }
+
+    .vault-progress-label {
+      font-family: var(--font-type);
+      font-size: 0.62rem;
+      letter-spacing: 0.2em;
+      color: rgba(201,169,122,0.35);
+      text-transform: uppercase;
+    }
+
+    .vault-progress-val {
+      font-family: var(--font-header);
+      font-size: 0.9rem;
+      letter-spacing: 0.1em;
+      color: rgba(201,169,122,0.7);
+    }
+
+    /* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ VAULT REWARD ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */
+    .vault-reward {
+      display: none;
+      margin-top: 1.75rem;
+      border-top: 1px solid rgba(201,169,122,0.15);
+      padding-top: 1.75rem;
+      text-align: center;
+    }
+
+    .vault-reward.visible { display: block; }
+
+    .vault-reward-stamp {
+      display: inline-block;
+      border: 2px solid rgba(74,124,78,0.55);
+      color: rgba(74,124,78,0.75);
+      font-family: var(--font-header);
+      font-size: 0.75rem;
+      letter-spacing: 0.35em;
+      text-transform: uppercase;
+      padding: 0.25rem 0.9rem;
+      transform: rotate(-2deg);
+      margin-bottom: 1.25rem;
+    }
+
+    .vault-reward-title {
+      font-family: var(--font-header);
+      font-size: clamp(1rem, 3vw, 1.4rem);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(201,169,122,0.9);
+      margin-bottom: 0.6rem;
+    }
+
+    .vault-reward-msg {
+      font-family: var(--font-type);
+      font-size: 0.82rem;
+      color: rgba(201,169,122,0.5);
+      font-style: italic;
+      line-height: 1.8;
+      max-width: 380px;
+      margin: 0 auto 1.25rem;
+    }
+
+    .vault-coupon {
+      display: inline-block;
+      background: rgba(201,169,122,0.08);
+      border: 1px dashed rgba(201,169,122,0.35);
+      padding: 0.55rem 1.4rem;
+      font-family: var(--font-header);
+      font-size: 1.1rem;
+      letter-spacing: 0.3em;
+      color: rgba(201,169,122,0.9);
+      text-transform: uppercase;
+      margin-bottom: 1.25rem;
+      cursor: text;
+      user-select: all;
+    }
+
+    .vault-coupon-label {
+      display: block;
+      font-family: var(--font-type);
+      font-size: 0.6rem;
+      letter-spacing: 0.2em;
+      color: rgba(201,169,122,0.35);
+      text-transform: uppercase;
+      margin-bottom: 0.35rem;
+    }
+
+    .vault-btn {
+      display: inline-block;
+      background: rgba(201,169,122,0.12);
+      border: 1px solid rgba(201,169,122,0.4);
+      color: rgba(201,169,122,0.9);
+      font-family: var(--font-header);
+      font-size: 0.82rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      padding: 0.75rem 2rem;
+      text-decoration: none;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .vault-btn:hover { background: rgba(201,169,122,0.22); color: rgba(201,169,122,1); }
+
+    /* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ RECENT ACTIVITY ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */
+    .activity-feed {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      border: 1px solid rgba(60,30,10,0.1);
+      overflow: hidden;
+    }
+
+    .activity-item {
+      display: flex;
+      align-items: center;
+      gap: 0.9rem;
+      padding: 0.7rem 1rem;
+      border-bottom: 1px solid rgba(60,30,10,0.07);
+      background: rgba(210,180,120,0.2);
+      transition: background 0.15s;
+    }
+
+    .activity-item:last-child { border-bottom: none; }
+    .activity-item:hover { background: rgba(210,180,120,0.35); }
+
+    .activity-dot {
+      font-size: 0.5rem;
+      color: rgba(60,30,10,0.3);
+      flex-shrink: 0;
+    }
+
+    .activity-solved .activity-dot { color: var(--green-pine); }
+
+    .activity-text {
+      font-family: var(--font-type);
+      font-size: 0.78rem;
+      color: rgba(60,30,10,0.7);
+      letter-spacing: 0.06em;
+    }
+
+    .activity-text strong {
+      font-family: var(--font-header);
+      font-weight: normal;
+      color: var(--ink);
+      letter-spacing: 0.08em;
+    }
+
+    .activity-empty {
+      font-family: var(--font-type);
+      font-size: 0.78rem;
+      color: rgba(60,30,10,0.4);
+      font-style: italic;
+      padding: 0.75rem 1rem;
+    }
+
+    /* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ ARCHIVE TOTAL ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */
+    .archive-total {
+      background: rgba(18,12,6,0.85);
+      border: 1px solid rgba(201,169,122,0.15);
+      padding: 2.5rem 2rem;
+      text-align: center;
+      position: relative;
+    }
+
+    .archive-total::before {
+      content: "";
+      position: absolute; top: 0; left: 0; right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, rgba(201,169,122,0.25), transparent);
+    }
+
+    .archive-total-pct {
+      font-family: var(--font-header);
+      font-size: clamp(3rem, 12vw, 6rem);
+      letter-spacing: 0.08em;
+      color: rgba(201,169,122,0.9);
+      line-height: 1;
+      margin-bottom: 0.6rem;
+    }
+
+    .archive-total-label {
+      font-family: var(--font-type);
+      font-size: 0.72rem;
+      letter-spacing: 0.22em;
+      color: rgba(201,169,122,0.4);
+      text-transform: uppercase;
+    }
+
+    .archive-open-stamp {
+      display: inline-block;
+      border: 2px solid rgba(74,124,78,0.55);
+      color: rgba(74,124,78,0.8);
+      font-family: var(--font-header);
+      font-size: 1.1rem;
+      letter-spacing: 0.4em;
+      text-transform: uppercase;
+      padding: 0.4rem 1.2rem;
+      margin-top: 1.25rem;
+      transform: rotate(-1.5deg);
+    }
+
+    /* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ RESET ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */
     .reset-wrap {
-      margin-top: 1rem;
+      margin-top: 2rem;
       display: flex;
       justify-content: flex-end;
     }
@@ -510,92 +928,7 @@
       border-color: rgba(120,20,20,0.3);
     }
 
-    /* ── OBJECT MODAL ── */
-    .modal-overlay {
-      position: fixed;
-      inset: 0;
-      background: rgba(8,5,2,0.82);
-      z-index: 100;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 1rem;
-      opacity: 0;
-      pointer-events: none;
-      transition: opacity 0.25s;
-    }
-
-    .modal-overlay.visible {
-      opacity: 1;
-      pointer-events: all;
-    }
-
-    .modal-box {
-      background: var(--paper-bg);
-      max-width: 480px;
-      width: 100%;
-      padding: 2.5rem 2rem 2rem;
-      position: relative;
-      box-shadow: 0 8px 40px rgba(0,0,0,0.7);
-    }
-
-    .modal-close {
-      position: absolute;
-      top: 1rem; right: 1rem;
-      background: none;
-      border: none;
-      font-family: var(--font-type);
-      font-size: 0.7rem;
-      letter-spacing: 0.15em;
-      color: rgba(60,30,10,0.45);
-      cursor: pointer;
-      text-transform: uppercase;
-      padding: 0.25rem 0.5rem;
-      transition: color 0.15s;
-    }
-    .modal-close:hover { color: var(--ink); }
-
-    .modal-symbol { font-size: 2.5rem; margin-bottom: 0.5rem; line-height: 1; }
-
-    .modal-name {
-      font-family: var(--font-header);
-      font-size: 1.15rem;
-      letter-spacing: 0.1em;
-      color: var(--ink);
-      text-transform: uppercase;
-      margin-bottom: 0.75rem;
-    }
-
-    .modal-divider {
-      font-size: 0.7rem;
-      color: rgba(60,30,10,0.3);
-      letter-spacing: 0.2em;
-      margin-bottom: 1rem;
-    }
-
-    .modal-label {
-      font-family: var(--font-type);
-      font-size: 0.62rem;
-      letter-spacing: 0.22em;
-      color: rgba(60,30,10,0.45);
-      text-transform: uppercase;
-      margin-top: 0.85rem;
-      margin-bottom: 0.2rem;
-    }
-
-    .modal-text {
-      font-family: var(--font-type);
-      font-size: 0.82rem;
-      color: rgba(28,18,10,0.75);
-      font-style: italic;
-      line-height: 1.65;
-    }
-
-    .modal-unknown {
-      color: rgba(120,20,20,0.7);
-    }
-
-    /* ── FOOTER ── */
+    /* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ FOOTER ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */
     .site-footer {
       background: var(--bg);
       padding: 1.5rem 2.5rem;
@@ -607,6 +940,7 @@
 
     .footer-motto { display: flex; align-items: center; gap: 0.85rem; }
     .footer-motto svg { opacity: 0.55; flex-shrink: 0; }
+
     .footer-motto-text {
       font-family: var(--font-header);
       font-size: 0.68rem;
@@ -615,6 +949,7 @@
       text-transform: uppercase;
       line-height: 1.4;
     }
+
     .footer-copy {
       font-family: var(--font-type);
       font-size: 0.65rem;
@@ -622,7 +957,9 @@
       color: rgba(201,169,122,0.3);
       text-transform: uppercase;
     }
+
     .footer-right { display: flex; align-items: center; gap: 1.25rem; }
+
     .footer-link {
       font-family: var(--font-type);
       font-size: 0.68rem;
@@ -633,185 +970,29 @@
       text-underline-offset: 3px;
       transition: color 0.2s;
     }
+
     .footer-link:hover { color: var(--paper); }
-
-    /* ── VAULT ── */
-    .vault-wrap {
-      background: rgba(18,12,6,0.92);
-      border: 1px solid rgba(201,169,122,0.18);
-      padding: 2rem 1.75rem 1.75rem;
-      position: relative;
-      box-shadow: inset 0 2px 20px rgba(0,0,0,0.5), 0 4px 24px rgba(0,0,0,0.35);
-    }
-    .vault-wrap::before {
-      content: "";
-      position: absolute; top: 0; left: 0; right: 0;
-      height: 2px;
-      background: linear-gradient(90deg, transparent, rgba(201,169,122,0.35), transparent);
-    }
-    .vault-label-row {
-      display: flex; align-items: center; justify-content: space-between;
-      margin-bottom: 1.25rem;
-    }
-    .vault-label {
-      font-family: var(--font-type); font-size: 0.65rem;
-      letter-spacing: 0.3em; text-transform: uppercase;
-      color: rgba(201,169,122,0.45);
-    }
-    .vault-status {
-      font-family: var(--font-header); font-size: 0.72rem;
-      letter-spacing: 0.2em; text-transform: uppercase;
-    }
-    .vault-status.locked   { color: rgba(180,40,40,0.75); }
-    .vault-status.unlocked { color: rgba(74,124,78,0.85); }
-
-    .vault-dials {
-      display: flex; flex-wrap: nowrap; gap: 0.4rem;
-      justify-content: space-between;
-    }
-    .vault-dial {
-      flex: 1 1 0; min-width: 0; height: 64px;
-      display: flex; flex-direction: column; align-items: center; justify-content: center;
-      gap: 0.3rem;
-      border: 1px solid rgba(201,169,122,0.15);
-      background: rgba(28,18,8,0.9);
-      position: relative;
-      transition: border-color 0.3s;
-    }
-    .vault-dial.revealed {
-      border-color: rgba(201,169,122,0.4);
-      background: rgba(40,26,10,0.9);
-    }
-    .vault-dial.all-unlocked {
-      border-color: rgba(74,124,78,0.5);
-      background: rgba(20,40,22,0.85);
-    }
-    .vault-dial-num {
-      font-family: var(--font-header);
-      font-size: 1.35rem;
-      letter-spacing: 0.05em;
-      color: rgba(201,169,122,0.9);
-      line-height: 1;
-      transition: color 0.3s;
-    }
-    .vault-dial.all-unlocked .vault-dial-num { color: rgba(120,200,130,0.9); }
-    .vault-dial-case {
-      font-family: var(--font-type);
-      font-size: 0.55rem;
-      letter-spacing: 0.15em;
-      color: rgba(201,169,122,0.35);
-      text-transform: uppercase;
-    }
-    /* Locked dial — redacted */
-    .vault-dial.hidden .vault-dial-num {
-      font-size: 1rem;
-      color: rgba(201,169,122,0.15);
-      letter-spacing: 0.1em;
-    }
-    .vault-dial.hidden { border-color: rgba(201,169,122,0.08); }
-
-    .vault-hint {
-      margin-top: 1.25rem; text-align: center;
-      font-family: var(--font-type); font-size: 0.72rem;
-      color: rgba(201,169,122,0.35); font-style: italic;
-    }
-
-    /* ── VAULT REWARD ── */
-    .vault-reward {
-      display: none;
-      margin-top: 1.75rem;
-      border-top: 1px solid rgba(201,169,122,0.15);
-      padding-top: 1.75rem;
-      text-align: center;
-    }
-    .vault-reward.visible { display: block; }
-    .vault-reward-stamp {
-      display: inline-block;
-      border: 2px solid rgba(74,124,78,0.55);
-      color: rgba(74,124,78,0.75);
-      font-family: var(--font-header);
-      font-size: 0.75rem;
-      letter-spacing: 0.35em;
-      text-transform: uppercase;
-      padding: 0.25rem 0.9rem;
-      transform: rotate(-2deg);
-      margin-bottom: 1.25rem;
-      display: inline-block;
-    }
-    .vault-reward-title {
-      font-family: var(--font-header);
-      font-size: clamp(1rem, 3vw, 1.4rem);
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: rgba(201,169,122,0.9);
-      margin-bottom: 0.6rem;
-    }
-    .vault-reward-msg {
-      font-family: var(--font-type);
-      font-size: 0.82rem;
-      color: rgba(201,169,122,0.5);
-      font-style: italic;
-      line-height: 1.8;
-      max-width: 380px;
-      margin: 0 auto 1.25rem;
-    }
-    .vault-coupon {
-      display: inline-block;
-      background: rgba(201,169,122,0.08);
-      border: 1px dashed rgba(201,169,122,0.35);
-      padding: 0.55rem 1.4rem;
-      font-family: var(--font-header);
-      font-size: 1.1rem;
-      letter-spacing: 0.3em;
-      color: rgba(201,169,122,0.9);
-      text-transform: uppercase;
-      margin-bottom: 1.25rem;
-      cursor: text;
-      user-select: all;
-    }
-    .vault-coupon-label {
-      display: block;
-      font-family: var(--font-type);
-      font-size: 0.6rem;
-      letter-spacing: 0.2em;
-      color: rgba(201,169,122,0.35);
-      text-transform: uppercase;
-      margin-bottom: 0.35rem;
-    }
-    .vault-btn {
-      display: inline-block;
-      background: rgba(201,169,122,0.12);
-      border: 1px solid rgba(201,169,122,0.4);
-      color: rgba(201,169,122,0.9);
-      font-family: var(--font-header);
-      font-size: 0.82rem;
-      letter-spacing: 0.25em;
-      text-transform: uppercase;
-      padding: 0.75rem 2rem;
-      text-decoration: none;
-      transition: background 0.2s, color 0.2s;
-    }
-    .vault-btn:hover {
-      background: rgba(201,169,122,0.22);
-      color: rgba(201,169,122,1);
-    }
 
     @media (max-width: 640px) {
       .site-nav { padding: 1rem 1.25rem; }
       .paper-inner { padding: 1rem 1.25rem 2rem; }
       .paper-inner::after { left: 2rem; }
-      .stat-grid { grid-template-columns: repeat(2, 1fr); }
-      .badge-grid { grid-template-columns: 1fr; }
-      .vault-dial { height: 54px; }
+      .archive-cats { grid-template-columns: repeat(2, 1fr); }
+      .discovery-item { grid-template-columns: 1fr; gap: 0.25rem; }
+      .disc-case { text-align: left; }
+      .vault-dial { height: 52px; }
       .vault-dial-num { font-size: 0.95rem; }
       .vault-dial-case { font-size: 0.48rem; }
       .vault-wrap { padding: 1.25rem 0.75rem; }
       .case-row-link { display: none; }
       .site-footer { flex-direction: column; gap: 1rem; text-align: center; }
       .footer-motto { justify-content: center; }
+      .hero-meta { gap: 1rem; }
+      .hero-meta-sep { display: none; }
     }
   </style>
   <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/polish.css">
 </head>
 <body>
 
@@ -838,97 +1019,122 @@
         </svg>
       </div>
       <div class="nav-links">
-        <a href="index.html"     class="nav-link"        data-icon="🗄">Archive</a>
-        <a href="cabinet.html"   class="nav-link"        data-icon="🔍">Cabinet</a>
-        <a href="completed.html" class="nav-link"        data-icon="✦">Completed</a>
-        <a href="progress.html"  class="nav-link active" data-icon="◎">Progress</a>
-        <a href="about.html"     class="nav-link"        data-icon="◉">About</a>
-        <a href="join.html"      class="nav-link"        data-icon="✉">Join</a>
+        <a href="index.html"     class="nav-link">Archive</a>
+        <a href="cabinet.html"   class="nav-link">Cabinet</a>
+        <a href="completed.html" class="nav-link">Completed</a>
+        <a href="progress.html"  class="nav-link active">Progress</a>
+        <a href="about.html"     class="nav-link">About</a>
+        <a href="join.html"      class="nav-link">Join</a>
       </div>
     </nav>
 
     <div class="hero-content">
-      <p class="hero-label">Investigator Record — Season One</p>
-      <h1 class="hero-title">Progress</h1>
-      <div class="hero-rule"></div>
+      <p class="hero-label">The Asten Vale Archives</p>
+      <h1 class="hero-title">Investigator Record</h1>
+      <div class="hero-meta">
+        <div class="hero-meta-block">
+          <span class="hero-meta-label">Archive Status</span>
+          <span class="hero-meta-value" id="heroRank">ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â</span>
+        </div>
+        <div class="hero-meta-sep"></div>
+        <div class="hero-meta-block">
+          <span class="hero-meta-label">Archive Recovery</span>
+          <span class="hero-meta-value" id="heroCompletion">0%</span>
+        </div>
+      </div>
     </div>
   </section>
 
   <section class="paper-section">
     <div class="paper-inner">
 
-      <!-- ── OVERVIEW STATS ── -->
+      <!-- ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ 1. INVESTIGATOR STATUS ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ -->
       <div class="section-head">
-        <p class="section-label">Overview</p>
-        <h2 class="section-title">Investigation Summary</h2>
+        <p class="section-label">Archive Rank</p>
+        <h2 class="section-title">Investigator Status</h2>
         <div class="section-rule"></div>
       </div>
 
-      <div class="stat-grid" id="statGrid">
-        <!-- Populated by JS -->
-      </div>
-
-      <div class="progress-bar-wrap">
-        <div class="progress-bar-header">
-          <span class="progress-bar-title">Season One — Overall Progress</span>
-          <span class="progress-bar-pct" id="progressPct">0%</span>
-        </div>
-        <div class="progress-track">
-          <div class="progress-fill" id="progressFill" style="width: 0%"></div>
-        </div>
-      </div>
+      <div class="rank-strip" id="rankStrip"></div>
 
       <hr class="section-divider" />
 
-      <!-- ── CASE FILES ── -->
+      <!-- ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ 2. CURRENT INVESTIGATION ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ -->
+      <div class="section-head" style="padding-top:0">
+        <p class="section-label">Active File</p>
+        <h2 class="section-title">Current Investigation</h2>
+        <div class="section-rule"></div>
+      </div>
+
+      <div class="inv-card" id="invCard"></div>
+
+      <hr class="section-divider" />
+
+      <!-- ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ 3. ARCHIVE PROGRESS ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ -->
+      <div class="section-head" style="padding-top:0">
+        <p class="section-label">Evidence Recovery</p>
+        <h2 class="section-title">Archive Progress</h2>
+        <div class="section-rule"></div>
+      </div>
+
+      <div class="archive-cats" id="archiveCats"></div>
+
+      <hr class="section-divider" />
+
+      <!-- ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ 4. CURRENT SEASON ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ -->
       <div class="section-head" style="padding-top:0">
         <p class="section-label">Season One</p>
         <h2 class="section-title">Case Files</h2>
         <div class="section-rule"></div>
       </div>
 
-      <div class="case-list" id="caseList">
-        <!-- Populated by JS -->
+      <div class="case-list" id="caseList"></div>
+
+      <hr class="section-divider" />
+
+      <!-- ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ 5. RECENT DISCOVERIES ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ -->
+      <div class="section-head" style="padding-top:0">
+        <p class="section-label">Latest Recoveries</p>
+        <h2 class="section-title">Recent Discoveries</h2>
+        <div class="section-rule"></div>
+      </div>
+
+      <div class="discovery-feed" id="discoveryFeed">
+        <div class="discovery-loading">Searching archive recordsÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦</div>
       </div>
 
       <hr class="section-divider" />
 
-      <!-- ── VAULTS (one per season, populated by JS) ── -->
+      <!-- ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ 6. VAULT STATUS ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ -->
       <div id="vaultsContainer"></div>
 
       <hr class="section-divider" />
 
-      <!-- ── EVIDENCE CABINET ── -->
+      <!-- ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ 7. RECENT ACTIVITY ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ -->
       <div class="section-head" style="padding-top:0">
-        <p class="section-label">Collected Evidence</p>
-        <h2 class="section-title">Evidence Cabinet</h2>
+        <p class="section-label">Archive Log</p>
+        <h2 class="section-title">Recent Activity</h2>
         <div class="section-rule"></div>
       </div>
 
-      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:2rem;padding:1.25rem 1.5rem;background:rgba(0,0,0,0.06);border:1px solid rgba(60,30,10,0.15);">
-        <div>
-          <div style="font-family:var(--font-header);font-size:0.9rem;letter-spacing:0.15em;color:var(--ink);text-transform:uppercase;" id="evidenceSummaryTitle">Evidence Recovered</div>
-          <div style="font-family:var(--font-type);font-size:0.72rem;color:rgba(60,30,10,0.5);margin-top:0.25rem;font-style:italic;" id="evidenceSummaryCount">Loading…</div>
-        </div>
-        <a href="cabinet.html" style="font-family:var(--font-header);font-size:0.7rem;letter-spacing:0.2em;color:rgba(220,190,140,0.9);background:rgba(60,30,10,0.55);border:1px solid rgba(60,30,10,0.4);padding:0.6rem 1.25rem;text-decoration:none;text-transform:uppercase;transition:background 0.2s;" onmouseover="this.style.background='rgba(60,30,10,0.75)'" onmouseout="this.style.background='rgba(60,30,10,0.55)'">Open Cabinet →</a>
-      </div>
+      <div class="activity-feed" id="activityFeed"></div>
 
       <hr class="section-divider" />
 
-      <!-- ── BADGES ── -->
-      <div class="section-head" style="padding-top:0;display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:0.75rem;">
-        <div>
-          <p class="section-label">Achievements</p>
-          <h2 class="section-title">Earned Badges</h2>
-          <div class="section-rule"></div>
-        </div>
-        <a href="badges.html" id="badgesPageLink" style="font-family:var(--font-type);font-size:0.68rem;letter-spacing:0.18em;color:rgba(60,30,10,0.5);border:1px solid rgba(60,30,10,0.2);padding:0.4rem 0.85rem;text-decoration:none;align-self:center;text-transform:uppercase;transition:all 0.2s;" onmouseover="this.style.color='rgba(60,30,10,0.85)';this.style.borderColor='rgba(60,30,10,0.45)'" onmouseout="this.style.color='rgba(60,30,10,0.5)';this.style.borderColor='rgba(60,30,10,0.2)'">View All →</a>
+      <!-- ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ 8. OVERALL ARCHIVE RECOVERY ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ -->
+      <div class="section-head" style="padding-top:0">
+        <p class="section-label">Total Recovery</p>
+        <h2 class="section-title">Overall Archive Recovery</h2>
+        <div class="section-rule"></div>
       </div>
 
-      <div class="badge-grid" id="badgeGrid">
-        <!-- Populated by JS -->
+      <div class="archive-total">
+        <div class="archive-total-pct" id="archiveTotalPct">0%</div>
+        <div class="archive-total-label">of the Asten Vale Archive has been recovered</div>
+        <div id="archiveOpenStamp"></div>
       </div>
 
+      <!-- RESET -->
       <div class="reset-wrap">
         <button class="btn-reset" id="btnReset">Reset All Progress</button>
       </div>
@@ -936,7 +1142,7 @@
     </div>
   </section>
 
-  <!-- ── FOOTER ── -->
+  <!-- ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ FOOTER ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ -->
   <footer class="site-footer">
     <div class="footer-motto">
       <svg width="28" height="28" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -950,144 +1156,204 @@
         It is discovered.
       </span>
     </div>
-    <span class="footer-copy">© 2026 Asten Vale Archives</span>
-    <a href="https://buymeacoffee.com/YOUR_USERNAME" target="_blank" rel="noopener" class="footer-copy" style="text-decoration:none;opacity:0.7;transition:opacity 0.2s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.7'">☕ Buy Me a Coffee</a>
+    <span class="footer-copy">Ãƒâ€šÃ‚Â© 2026 Asten Vale Archives</span>
+    <a href="https://buymeacoffee.com/YOUR_USERNAME" target="_blank" rel="noopener" class="footer-copy" style="text-decoration:none;opacity:0.7;transition:opacity 0.2s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.7'">ÃƒÂ¢Ã‹Å“Ã¢â‚¬Â¢ Buy Me a Coffee</a>
     <div class="footer-right">
       <a href="index.html" class="footer-link">Back to Archive</a>
     </div>
   </footer>
 
   <script src="js/vault-config.js"></script>
-  <script src="js/badges.js"></script>
   <script src="js/sheet-released.js"></script>
   <script>
   applySheetReleased(function() {
-  (function () {
+  (function() {
     var season = SEASONS_CONFIG[0];
 
-    // ── READ SOLVED STATE — same key case.html writes ──────────────────────
     var solved = [];
     try { solved = JSON.parse(localStorage.getItem('av_solved') || '[]'); } catch(e) {}
 
-    var numSolved  = season.cases.filter(function(c) { return solved.indexOf(c.id) !== -1; }).length;
+    var numSolved  = season.cases.filter(function(c){ return solved.indexOf(c.id) !== -1; }).length;
     var totalCases = season.cases.length;
-    var allRevealed = numSolved === totalCases;
+    var pct        = totalCases > 0 ? Math.round((numSolved / totalCases) * 100) : 0;
 
-    // ── STAT GRID ──────────────────────────────────────────────────────────
-    var statDefs = [
-      { label: 'Cases Solved',       value: numSolved + ' / ' + totalCases },
-      { label: 'Files Recovered',    value: String(numSolved) },
-      { label: 'Evidence Collected', value: '…' },  // filled async below
-      { label: 'Season',             value: 'One' },
-      { label: 'Vault Status',       value: allRevealed ? 'Open' : 'Locked' },
-      { label: 'Active Cases',       value: String(Math.max(0, season.cases.filter(function(c){ return c.released; }).length - numSolved)) }
+    // ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ RANKS ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬
+    var RANKS = [
+      { name: 'Civilian',           min: 0,  label: 'No cases solved' },
+      { name: 'Volunteer',          min: 1,  label: '1 case solved' },
+      { name: 'Deputy Archivist',   min: 3,  label: '3 cases solved' },
+      { name: 'Senior Archivist',   min: 5,  label: '5 cases solved' },
+      { name: 'Sheriff Records',    min: 8,  label: '8 cases solved' },
+      { name: 'Restricted Archive', min: 10, label: '10 cases solved' },
+      { name: 'Evidence Vault',     min: 11, label: '11 cases solved' },
+      { name: 'Black Archive',      min: 12, label: '12 cases solved' }
     ];
 
-    var grid = document.getElementById('statGrid');
-    statDefs.forEach(function(s) {
-      var cell = document.createElement('div');
-      cell.className = 'stat-cell';
-      cell.innerHTML = '<span class="stat-label">' + s.label + '</span><span class="stat-value" data-stat="' + s.label + '">' + s.value + '</span>';
-      grid.appendChild(cell);
+    var currentRankIdx = 0;
+    for (var ri = RANKS.length - 1; ri >= 0; ri--) {
+      if (numSolved >= RANKS[ri].min) { currentRankIdx = ri; break; }
+    }
+
+    // Hero
+    document.getElementById('heroRank').textContent = RANKS[currentRankIdx].name;
+    document.getElementById('heroCompletion').textContent = pct + '%';
+
+    // Rank strip
+    var strip = document.getElementById('rankStrip');
+    RANKS.forEach(function(r, i) {
+      var isPast    = i < currentRankIdx;
+      var isCurrent = i === currentRankIdx;
+      var cl = 'rank-item' + (isPast ? ' rank-past' : '') + (isCurrent ? ' rank-current' : '') + (!isPast && !isCurrent ? ' rank-future' : '');
+      var tag = isPast ? 'Achieved' : (isCurrent ? 'Current Rank' : 'Locked');
+      var item = document.createElement('div');
+      item.className = cl;
+      item.innerHTML =
+        '<span class="rank-dot"></span>' +
+        '<span class="rank-item-name">' + r.name + '</span>' +
+        '<span class="rank-threshold">' + r.label + '</span>' +
+        '<span class="rank-item-tag">' + tag + '</span>';
+      strip.appendChild(item);
     });
 
-    // ── PROGRESS BAR ───────────────────────────────────────────────────────
-    var pct  = totalCases > 0 ? Math.round((numSolved / totalCases) * 100) : 0;
-    var fill = document.getElementById('progressFill');
-    var pctEl = document.getElementById('progressPct');
-    pctEl.textContent = pct + '%';
-    setTimeout(function() {
-      fill.style.width = pct + '%';
-      if (pct === 100) fill.classList.add('complete');
-    }, 100);
+    // ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ CURRENT INVESTIGATION ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬
+    var relCases      = season.cases.filter(function(c){ return c.released; });
+    var unsolvedRel   = relCases.filter(function(c){ return solved.indexOf(c.id) === -1; });
+    var currentCase   = unsolvedRel[0] || null;
+    var currentIdx    = currentCase ? season.cases.indexOf(currentCase) : season.cases.length - 1;
+    var nextCase      = currentCase && currentIdx + 1 < season.cases.length ? season.cases[currentIdx + 1] : null;
 
-    // ── CASE LIST ──────────────────────────────────────────────────────────
+    var invCard = document.getElementById('invCard');
+
+    var currentRow = currentCase
+      ? '<div class="inv-row"><span class="inv-label">Current Case</span><span class="inv-value"><a href="' + currentCase.url + '" class="inv-case-link">Case ' + currentCase.id + ' ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â ' + currentCase.title + '</a></span></div>'
+      : '<div class="inv-row"><span class="inv-label">Current Case</span><span class="inv-value inv-complete">All Cases Complete</span></div>';
+
+    var nextRow = nextCase
+      ? '<div class="inv-row"><span class="inv-label">Next Unlock</span><span class="inv-value inv-locked">Case ' + nextCase.id + ' ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Pending Release</span></div>'
+      : '';
+
+    invCard.innerHTML =
+      '<div class="inv-row"><span class="inv-label">Current Season</span><span class="inv-value">' + season.title + '</span></div>' +
+      '<div class="inv-row"><span class="inv-label">Cases Solved</span><span class="inv-value">' + numSolved + ' / ' + totalCases + '</span></div>' +
+      '<div class="inv-row inv-bar-row">' +
+        '<div class="progress-bar-header"><span class="progress-bar-title">Season Progress</span><span class="progress-bar-pct">' + pct + '%</span></div>' +
+        '<div class="progress-track"><div class="progress-fill' + (pct === 100 ? ' complete' : '') + '" style="width:' + pct + '%"></div></div>' +
+      '</div>' +
+      currentRow + nextRow;
+
+    // ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ ARCHIVE PROGRESS CARDS ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬
+    var CATS = [
+      { type: 'Object',    label: 'Objects'    },
+      { type: 'Location',  label: 'Locations'  },
+      { type: 'Witness',   label: 'Witnesses'  },
+      { type: 'Time',      label: 'Times'      },
+      { type: 'Marker',    label: 'Markers'    },
+      { type: 'Direction', label: 'Directions' },
+      { type: 'Sound',     label: 'Sounds'     }
+    ];
+
+    var catsEl = document.getElementById('archiveCats');
+    CATS.forEach(function(cat) {
+      var recovered = numSolved;
+      var total     = totalCases;
+      var remaining = total - recovered;
+      var catPct    = total > 0 ? Math.round((recovered / total) * 100) : 0;
+
+      var card = document.createElement('div');
+      card.className = 'cat-card';
+      card.innerHTML =
+        '<div class="cat-label">' + cat.label + '</div>' +
+        '<div class="cat-counts">' +
+          '<span class="cat-recovered">' + recovered + '</span>' +
+          '<span class="cat-sep"> / </span>' +
+          '<span class="cat-total">' + total + '</span>' +
+        '</div>' +
+        '<div class="cat-remaining">Remaining: ' + remaining + '</div>' +
+        '<div class="progress-track cat-bar"><div class="progress-fill' + (catPct === 100 ? ' complete' : '') + '" style="width:' + catPct + '%"></div></div>';
+      catsEl.appendChild(card);
+    });
+
+    // ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ CASE LIST ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬
     var caseList = document.getElementById('caseList');
     season.cases.forEach(function(c, i) {
       var isSolved   = solved.indexOf(c.id) !== -1;
       var isReleased = c.released;
-      var num = String(i + 1).padStart(3, '0');
-      var row = document.createElement('div');
-      row.className = 'case-row ' + (isSolved ? 'solved' : 'pending');
+      var num        = String(i + 1).padStart(3, '0');
+      var row        = document.createElement('div');
+      row.className  = 'case-row ' + (isSolved ? 'solved' : 'pending');
 
       var statusTag = isSolved
         ? '<span class="case-row-status solved-tag">Solved</span>'
-        : (isReleased
-            ? '<span class="case-row-status locked-tag">Active</span>'
-            : '<span class="case-row-status locked-tag">Upcoming</span>');
+        : (isReleased ? '<span class="case-row-status locked-tag">Active</span>' : '<span class="case-row-status locked-tag">Upcoming</span>');
 
-      var titleText = isSolved
-        ? c.title
-        : (isReleased ? c.title : '— ' + c.title + ' —');
-
+      var titleText  = isSolved ? c.title : (isReleased ? c.title : 'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â ' + c.title + ' ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â');
       var titleClass = isSolved ? '' : 'pending-title';
-
-      var linkEl = isSolved && c.url && c.url !== '#'
-        ? '<a class="case-row-link" href="' + c.url + '">Open File →</a>'
-        : '';
+      var linkEl     = isSolved && c.url ? '<a class="case-row-link" href="' + c.url + '">Open File ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢</a>' : '';
 
       row.innerHTML =
         '<span class="case-row-num">Case ' + num + '</span>' +
         '<span class="case-row-title ' + titleClass + '">' + titleText + '</span>' +
-        statusTag +
-        linkEl;
+        statusTag + linkEl;
 
       caseList.appendChild(row);
     });
 
-    // ── VAULTS — one per season that the player has reached ───────────────
+    // ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ VAULT ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬
     var vaultsContainer = document.getElementById('vaultsContainer');
-
-    // Determine which seasons to show: all seasons up to and including the active one
     var activeSeasonIdx = 0;
     for (var si = 0; si < SEASONS_CONFIG.length; si++) {
       var s = SEASONS_CONFIG[si];
-      var sAllSolved = s.cases.every(function(c) { return solved.indexOf(c.id) !== -1; });
-      if (!sAllSolved) { activeSeasonIdx = si; break; }
-      activeSeasonIdx = si; // keep advancing if complete
+      var sAllSolved = s.cases.every(function(c){ return solved.indexOf(c.id) !== -1; });
+      activeSeasonIdx = si;
+      if (!sAllSolved) break;
     }
 
     for (var vi = 0; vi <= activeSeasonIdx; vi++) {
       var vs       = SEASONS_CONFIG[vi];
       var vDigits  = vs.digits || [];
       var vCases   = vs.cases;
-      var vSolved  = vCases.filter(function(c) { return solved.indexOf(c.id) !== -1; });
+      var vSolved  = vCases.filter(function(c){ return solved.indexOf(c.id) !== -1; });
       var vComplete = vSolved.length === vCases.length && vCases.length > 0;
-      var vCoupon  = vs.vaultCode || (vs.title.replace(/\s+/g,'').toUpperCase());
+      var vCoupon  = vs.vaultCode || vs.title.replace(/\s+/g,'').toUpperCase();
+      var vPct     = vCases.length > 0 ? Math.round((vSolved.length / vCases.length) * 100) : 0;
 
-      // Section head
       var vHead = document.createElement('div');
       vHead.className = 'section-head';
-      vHead.style.paddingTop = vi === 0 ? '0' : '';
+      vHead.style.paddingTop = '0';
       vHead.innerHTML =
         '<p class="section-label">' + vs.title + '</p>' +
-        '<h2 class="section-title">The Vault</h2>' +
+        '<h2 class="section-title">Vault Status</h2>' +
         '<div class="section-rule"></div>';
       vaultsContainer.appendChild(vHead);
 
-      // Vault wrap
       var vWrap = document.createElement('div');
       vWrap.className = 'vault-wrap';
 
-      var labelRow = document.createElement('div');
-      labelRow.className = 'vault-label-row';
-      labelRow.innerHTML =
-        '<span class="vault-label">12-Digit Combination</span>' +
-        '<span class="vault-status ' + (vComplete ? 'unlocked' : 'locked') + '">' + (vComplete ? 'Unlocked' : 'Locked') + '</span>';
-      vWrap.appendChild(labelRow);
+      vWrap.innerHTML =
+        '<div class="vault-label-row">' +
+          '<span class="vault-label">12-Digit Combination</span>' +
+          '<span class="vault-status ' + (vComplete ? 'unlocked' : 'locked') + '">' + (vComplete ? 'Archive Open' : 'Locked') + '</span>' +
+        '</div>';
 
       var dialsEl = document.createElement('div');
       dialsEl.className = 'vault-dials';
       vCases.forEach(function(c, i) {
-        var isSolved = solved.indexOf(c.id) !== -1;
-        var dial = document.createElement('div');
-        dial.className = 'vault-dial' + (isSolved ? (vComplete ? ' all-unlocked' : ' revealed') : ' hidden');
+        var isSolvedD = solved.indexOf(c.id) !== -1;
+        var dial      = document.createElement('div');
+        dial.className = 'vault-dial' + (isSolvedD ? (vComplete ? ' all-unlocked' : ' revealed') : ' hidden');
         dial.innerHTML =
-          '<span class="vault-dial-num">' + (isSolved && vDigits[i] != null ? String(vDigits[i]).padStart(2,'0') : '??') + '</span>' +
-          '<span class="vault-dial-case">' + String(i + 1).padStart(3,'0') + '</span>';
+          '<span class="vault-dial-num">' + (isSolvedD && vDigits[i] != null ? String(vDigits[i]).padStart(2, '0') : '??') + '</span>' +
+          '<span class="vault-dial-case">' + String(i + 1).padStart(3, '0') + '</span>';
         dialsEl.appendChild(dial);
       });
       vWrap.appendChild(dialsEl);
+
+      var progressRow = document.createElement('div');
+      progressRow.className = 'vault-progress-row';
+      progressRow.innerHTML =
+        '<span class="vault-progress-label">Vault Unlock</span>' +
+        '<span class="vault-progress-val">' + vSolved.length + ' / ' + vCases.length + ' Cases &nbsp;Ãƒâ€šÃ‚Â·&nbsp; ' + vPct + '%</span>';
+      vWrap.appendChild(progressRow);
 
       var hintEl = document.createElement('p');
       hintEl.className = 'vault-hint';
@@ -1096,13 +1362,12 @@
         : vSolved.length + ' of ' + vCases.length + ' digits recovered. Solve more cases to continue.';
       vWrap.appendChild(hintEl);
 
-      // Reward — only show when complete
       if (vComplete) {
         var reward = document.createElement('div');
         reward.className = 'vault-reward visible';
         reward.innerHTML =
-          '<div class="vault-reward-stamp">Vault Open</div>' +
-          '<h3 class="vault-reward-title">Investigator Reward — ' + vs.title + '</h3>' +
+          '<div class="vault-reward-stamp">Archive Open</div>' +
+          '<h3 class="vault-reward-title">Investigator Reward ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â ' + vs.title + '</h3>' +
           '<p class="vault-reward-msg">' +
             'You followed every trail. Recovered every file.<br>' +
             'The archive recognizes what you\'ve done.<br>' +
@@ -1111,82 +1376,59 @@
           '<span class="vault-coupon-label">Your discount code</span>' +
           '<div class="vault-coupon">' + vCoupon + '</div>' +
           '<br><br>' +
-          '<a href="#" class="vault-btn">Claim Your Reward →</a>' +
+          '<a href="#" class="vault-btn">Claim Your Reward ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢</a>' +
           '<p style="margin-top:0.85rem;font-family:var(--font-type);font-size:0.62rem;letter-spacing:0.12em;color:rgba(201,169,122,0.25);text-transform:uppercase;">Store coming soon</p>';
         vWrap.appendChild(reward);
       }
 
       vaultsContainer.appendChild(vWrap);
 
-      // Divider between seasons
       if (vi < activeSeasonIdx) {
-        var div = document.createElement('hr');
-        div.className = 'section-divider';
-        vaultsContainer.appendChild(div);
+        var divEl = document.createElement('hr');
+        divEl.className = 'section-divider';
+        vaultsContainer.appendChild(divEl);
       }
     }
 
-    // ── EVIDENCE SUMMARY — just count, link to cabinet page ──────────────
-    var evidenceCount = numSolved * 7; // 7 items per solved case
-    var statEl = document.querySelector('[data-stat="Evidence Collected"]');
-    if (statEl) statEl.textContent = String(evidenceCount);
+    // ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ RECENT ACTIVITY ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬
+    var actFeed    = document.getElementById('activityFeed');
+    var solvedObjs = season.cases.filter(function(c){ return solved.indexOf(c.id) !== -1; });
 
-    var summaryCount = document.getElementById('evidenceSummaryCount');
-    if (summaryCount) {
-      summaryCount.textContent = evidenceCount > 0
-        ? evidenceCount + ' items recovered across ' + numSolved + ' case' + (numSolved === 1 ? '' : 's') + ' — grouped by season and case.'
-        : 'No evidence recovered yet. Solve a case to begin.';
-    }
-
-    // ── BADGES ─────────────────────────────────────────────────────────────
-    var earnedBadges = [];
-    try { earnedBadges = JSON.parse(localStorage.getItem('av_badges') || '[]'); } catch(e) {}
-
-    var badgeGrid = document.getElementById('badgeGrid');
-    var badgeTotal = (typeof BADGES_CONFIG !== 'undefined') ? BADGES_CONFIG.length : 13;
-
-    if (earnedBadges.length === 0) {
-      badgeGrid.innerHTML =
-        '<div style="font-family:var(--font-type);font-size:0.78rem;color:rgba(60,30,10,0.4);font-style:italic;padding:0.5rem 0;">' +
-          'No badges earned yet. Keep investigating.' +
-        '</div>';
-    } else if (typeof BADGES_CONFIG !== 'undefined') {
-      var shown = 0;
-      BADGES_CONFIG.forEach(function(badge) {
-        if (earnedBadges.indexOf(badge.id) === -1 || shown >= 4) return;
-        shown++;
-        var card = document.createElement('div');
-        card.className = 'badge-card earned-badge';
-        card.innerHTML =
-          '<div class="badge-symbol">' + badge.symbol + '</div>' +
-          '<div class="badge-name">' + badge.name + '</div>' +
-          '<div class="badge-desc">' + badge.description + '</div>';
-        badgeGrid.appendChild(card);
+    if (solvedObjs.length === 0) {
+      var emptyAct = document.createElement('div');
+      emptyAct.className = 'activity-empty';
+      emptyAct.textContent = 'No activity recorded. Begin your investigation.';
+      actFeed.appendChild(emptyAct);
+    } else {
+      solvedObjs.slice().reverse().slice(0, 12).forEach(function(c) {
+        var item = document.createElement('div');
+        item.className = 'activity-item activity-solved';
+        item.innerHTML =
+          '<span class="activity-dot">ÃƒÂ¢Ã¢â‚¬â€Ã¢â‚¬Â </span>' +
+          '<span class="activity-text">Solved <strong>Case ' + c.id + ' ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â ' + c.title + '</strong></span>';
+        actFeed.appendChild(item);
       });
-      if (earnedBadges.length > 4) {
-        var more = document.createElement('div');
-        more.className = 'badge-card';
-        more.style.cssText = 'justify-content:center;opacity:0.6;font-style:italic;font-size:0.72rem;';
-        more.textContent = '+ ' + (earnedBadges.length - 4) + ' more';
-        badgeGrid.appendChild(more);
-      }
     }
 
-    // Link to full badges page
-    var badgesLink = document.getElementById('badgesPageLink');
-    if (badgesLink) badgesLink.textContent = earnedBadges.length + ' / ' + badgeTotal + ' Earned — View All →';
+    // ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ OVERALL ARCHIVE RECOVERY ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬
+    var totalPctEl = document.getElementById('archiveTotalPct');
+    totalPctEl.textContent = pct + '%';
 
-    // ── RESET ──────────────────────────────────────────────────────────────
+    if (pct === 100) {
+      var stampEl = document.getElementById('archiveOpenStamp');
+      stampEl.innerHTML = '<div class="archive-open-stamp">Archive Open</div>';
+    }
+
+    // ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ RESET ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬
     document.getElementById('btnReset').addEventListener('click', function() {
       if (confirm('Reset all progress? This cannot be undone.')) {
-        // Clear all av_ keys
         var keysToRemove = [];
         var keepKeys = ['av_released_ids'];
         for (var i = 0; i < localStorage.length; i++) {
           var k = localStorage.key(i);
           if (k && (k.indexOf('av_') === 0 || k.indexOf('ava_') === 0) && keepKeys.indexOf(k) === -1) keysToRemove.push(k);
         }
-        keysToRemove.forEach(function(k) { localStorage.removeItem(k); });
+        keysToRemove.forEach(function(k){ localStorage.removeItem(k); });
         location.reload();
       }
     });
@@ -1195,16 +1437,79 @@
   }); // applySheetReleased
   </script>
 
+  <!-- Load solved case song files to populate Recent Discoveries -->
   <script>
-  fetch('js/site-settings.json').then(function(r){return r.json();}).then(function(s){
-    var pg = s.pages && s.pages.progress; if(!pg) return;
+  (function() {
+    var solved = [];
+    try { solved = JSON.parse(localStorage.getItem('av_solved') || '[]'); } catch(e) {}
+
+    var season1Ids = ['001','002','003','004','005','006','007','008','009','010','011','012'];
+    var solvedS1   = season1Ids.filter(function(id){ return solved.indexOf(id) !== -1; }).reverse();
+
+    if (solvedS1.length === 0) {
+      var feed = document.getElementById('discoveryFeed');
+      feed.innerHTML = '<div class="discovery-empty">No discoveries recorded. Solve a case to begin.</div>';
+      return;
+    }
+
+    var allItems = [];
+    var loadIdx  = 0;
+
+    function loadNext() {
+      if (loadIdx >= solvedS1.length) { renderDiscoveries(); return; }
+      var id  = solvedS1[loadIdx++];
+      var scr = document.createElement('script');
+      scr.src = 'data/songs/song' + id + '.js';
+      scr.onload = function() {
+        if (window.SONG_DATA && Array.isArray(window.SONG_DATA.collectibles)) {
+          window.SONG_DATA.collectibles.forEach(function(c) {
+            if (c && c.name && c.name.indexOf('//') === -1) {
+              allItems.push({ type: c.type || 'Evidence', name: c.name, caseId: id });
+            }
+          });
+        }
+        window.SONG_DATA = null;
+        loadNext();
+      };
+      scr.onerror = function() { loadNext(); };
+      document.head.appendChild(scr);
+    }
+
+    function renderDiscoveries() {
+      var feed = document.getElementById('discoveryFeed');
+      if (!allItems.length) {
+        feed.innerHTML = '<div class="discovery-empty">No discoveries recorded.</div>';
+        return;
+      }
+      feed.innerHTML = '';
+      allItems.slice(0, 10).forEach(function(item) {
+        var el = document.createElement('div');
+        el.className = 'discovery-item';
+        el.innerHTML =
+          '<span class="disc-type">Recovered ' + item.type + '</span>' +
+          '<span class="disc-name">' + item.name + '</span>' +
+          '<span class="disc-case">Case ' + item.caseId + '</span>';
+        feed.appendChild(el);
+      });
+    }
+
+    loadNext();
+  })();
+  </script>
+
+  <script>
+  fetch('js/site-settings.json').then(function(r){ return r.json(); }).then(function(s){
+    var pg = s.pages && s.pages.progress; if (!pg) return;
     var bg = document.querySelector('.hero-bg');
-    if(bg && pg.heroImage){ bg.style.backgroundImage='url("'+pg.heroImage+'")'; bg.style.backgroundSize='cover'; bg.style.backgroundPosition='center'; bg.style.opacity=pg.heroOverlay!=null?(1-pg.heroOverlay):1; document.body.classList.add('has-hero-image'); }
-    if(pg.showTitle===false||pg.heroImage){ document.querySelectorAll('.hero-title,.hero-diamond').forEach(function(e){e.style.display='none';}); }
-    if(pg.showSubtitle===false){ var el=document.querySelector('.hero-tagline,.hero-subtitle'); if(el) el.style.display='none'; }
-    if(pg.heroTitleText){ var t=document.querySelector('.hero-title'); if(t) t.textContent=pg.heroTitleText; }
+    if (bg && pg.heroImage) {
+      bg.style.backgroundImage = 'url("' + pg.heroImage + '")';
+      bg.style.backgroundSize  = 'cover';
+      bg.style.backgroundPosition = 'center';
+    }
+    if (pg.heroTitleText) { var t = document.querySelector('.hero-title'); if (t) t.textContent = pg.heroTitleText; }
   }).catch(function(){});
   </script>
 
+  <script src="js/polish.js" defer></script>
 </body>
 </html>

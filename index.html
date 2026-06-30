@@ -857,6 +857,7 @@
     }
   </style>
   <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/polish.css">
 </head>
 <body>
 
@@ -923,7 +924,7 @@
       </div>
       <div class="archive-ledger">
         <section class="ledger-section" aria-labelledby="continue-title"><div class="ledger-heading"><div><h3 class="ledger-title" id="continue-title">Continue Investigation</h3><p class="ledger-note">The next open file on the sheriff's desk.</p></div><span class="ledger-stamp">Current File</span></div><div id="continueInvestigation"></div></section>
-        <section class="ledger-section" aria-labelledby="current-season-title"><div class="ledger-heading"><div><h3 class="ledger-title" id="current-season-title">Current Season</h3><p class="ledger-note">Recovery progress for the active vault.</p></div></div><div id="currentSeason"></div></section>
+        <section class="ledger-section" aria-labelledby="current-season-title"><div class="ledger-heading"><div><h3 class="ledger-title" id="current-season-title">Current Season</h3><p class="ledger-note">Recovery progress for the active vault.</p></div></div><div id="currentSeason"><div class="av-loading" aria-live="polite">Loading investigation...</div></div></section>
         <section class="ledger-section" aria-labelledby="available-cases-title"><div class="ledger-heading"><div><h3 class="ledger-title" id="available-cases-title">Available Case Files</h3><p class="ledger-note">Released files may be opened. Restricted files remain obscured.</p></div></div><div class="available-grid" id="availableCases"></div></section>
         <section class="ledger-section" aria-labelledby="recently-solved-title"><div class="ledger-heading"><div><h3 class="ledger-title" id="recently-solved-title">Recently Solved</h3><p class="ledger-note">Recovered files, newest records first.</p></div></div><div class="solved-list" id="recentlySolved"></div></section>
         <section class="ledger-section" aria-labelledby="archive-statistics-title"><div class="ledger-heading"><div><h3 class="ledger-title" id="archive-statistics-title">Archive Statistics</h3><p class="ledger-note">Unadorned recovery counts from the archive record.</p></div></div><div class="stats-grid" id="archiveStats"></div></section>
@@ -945,7 +946,7 @@
         <span>Spotify</span>
       </a>
 
-      <span class="platform-sep">�</span>
+      <span class="platform-sep">Ã‚Â·</span>
 
       <!-- Apple Music -->
       <a href="#" class="platform-link" aria-label="Apple Music">
@@ -955,7 +956,7 @@
         <span>Apple Music</span>
       </a>
 
-      <span class="platform-sep">�</span>
+      <span class="platform-sep">Ã‚Â·</span>
 
       <!-- YouTube Music -->
       <a href="#" class="platform-link" aria-label="YouTube Music">
@@ -966,7 +967,7 @@
         <span>YouTube Music</span>
       </a>
 
-      <span class="platform-sep">�</span>
+      <span class="platform-sep">Ã‚Â·</span>
 
       <!-- Amazon Music -->
       <a href="#" class="platform-link" aria-label="Amazon Music">
@@ -1001,7 +1002,7 @@
       </span>
     </div>
 
-    <span class="footer-copy">� 2026 Asten Vale Archives</span>
+    <span class="footer-copy">Ã‚Â© 2026 Asten Vale Archives</span>
 
     <a href="https://buymeacoffee.com/YOUR_USERNAME" target="_blank" rel="noopener" class="footer-copy" style="text-decoration:none;opacity:0.7;transition:opacity 0.2s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.7'">&#9749; Buy Me a Coffee</a>
 
@@ -1130,10 +1131,11 @@
         .then(function(s) { startCountdown(s.releaseSchedule); })
         .catch(function() {});
     } else {
-      // file:// � fetch blocked, use weekly Sunday as default so countdown is always visible locally
+      // file:// Ã¢â‚¬â€ fetch blocked, use weekly Sunday as default so countdown is always visible locally
       startCountdown({ type: 'weekly', weekday: 0 });
     }
   })();
   </script>
+  <script src="js/polish.js" defer></script>
 </body>
 </html>
