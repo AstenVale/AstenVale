@@ -7,7 +7,7 @@ const SEASONS_CONFIG = [
     title: "Season One",
     subtitle: "The Stranger",
     totalCases: 12,
-    digits: [6,29,40,87,90,97,28,27,46,37,16,31],
+    digits: [17,27,43,12,55,8,61,9,72,81,91,99],
     vault: {
       id: "s01_vault",
       name: "The Stranger Vault",
@@ -35,7 +35,7 @@ const SEASONS_CONFIG = [
     title: "Season Two",
     subtitle: "The Before",
     totalCases: 12,
-    digits: [73,36,67,86,45,24,71,42,49,76,43,62],
+    digits: [110,121,132,143,154,165,176,187,198,209,220,231],
     vault: {
       id: "s02_vault",
       name: "The Before Vault",
@@ -63,7 +63,7 @@ const SEASONS_CONFIG = [
     title: "Season Three",
     subtitle: "The Disappearance",
     totalCases: 12,
-    digits: [44,11,94,53,64,47,50,57,52,83,70,93],
+    digits: [307,316,325,334,343,352,361,370,379,388,397,406],
     vault: {
       id: "s03_vault",
       name: "The Disappearance Vault",
@@ -91,7 +91,7 @@ const SEASONS_CONFIG = [
     title: "Season Four",
     subtitle: "The River Speaks",
     totalCases: 12,
-    digits: [79,18,89,52,19,38,93,72,55,90,65,28],
+    digits: [407,416,425,434,443,452,461,470,479,488,497,506],
     vault: {
       id: "s04_vault",
       name: "The River Speaks Vault",
@@ -119,7 +119,7 @@ const SEASONS_CONFIG = [
     title: "Season Five",
     subtitle: "The Last Winter",
     totalCases: 12,
-    digits: [50,89,20,51,38,61,40,87,58,97,92,59],
+    digits: [507,516,525,534,543,552,561,570,579,588,597,606],
     vault: {
       id: "s05_vault",
       name: "The Last Winter Vault",
@@ -147,7 +147,7 @@ const SEASONS_CONFIG = [
     title: "Season Six",
     subtitle: "The Underground",
     totalCases: 12,
-    digits: [21,96,15,50,89,84,83,6,61,8,23,90],
+    digits: [607,616,625,634,643,652,661,670,679,688,697,706],
     vault: {
       id: "s06_vault",
       name: "The Underground Vault",
@@ -175,7 +175,7 @@ const SEASONS_CONFIG = [
     title: "Season Seven",
     subtitle: "The Second Family",
     totalCases: 12,
-    digits: [88,71,42,17,12,11,30,21,64,15,50,25],
+    digits: [707,716,725,734,743,752,761,770,779,788,797,806],
     vault: {
       id: "s07_vault",
       name: "The Second Family Vault",
@@ -203,7 +203,7 @@ const SEASONS_CONFIG = [
     title: "Season Eight",
     subtitle: "The Fire Year",
     totalCases: 12,
-    digits: [59,46,69,16,63,98,9,36,67,22,77,56],
+    digits: [807,816,825,834,843,852,861,870,879,888,897,906],
     vault: {
       id: "s08_vault",
       name: "The Fire Year Vault",
@@ -231,7 +231,7 @@ const SEASONS_CONFIG = [
     title: "Season Nine",
     subtitle: "The Keeper",
     totalCases: 12,
-    digits: [30,53,64,15,82,25,52,51,70,61,8,87],
+    digits: [907,916,925,934,943,952,961,970,979,988,997,1006],
     vault: {
       id: "s09_vault",
       name: "The Keeper Vault",
@@ -259,7 +259,7 @@ const SEASONS_CONFIG = [
     title: "Season Ten",
     subtitle: "The Forgotten Road",
     totalCases: 12,
-    digits: [97,28,91,14,37,48,95,66,73,68,35,86],
+    digits: [1007,1016,1025,1034,1043,1052,1061,1070,1079,1088,1097,1106],
     vault: {
       id: "s10_vault",
       name: "The Forgotten Road Vault",
@@ -287,7 +287,7 @@ const SEASONS_CONFIG = [
     title: "Season Eleven",
     subtitle: "The Map Maker",
     totalCases: 12,
-    digits: [68,35,86,77,56,71,42,81,76,75,62,21],
+    digits: [1107,1116,1125,1134,1143,1152,1161,1170,1179,1188,1197,1206],
     vault: {
       id: "s11_vault",
       name: "The Map Maker Vault",
@@ -315,7 +315,7 @@ const SEASONS_CONFIG = [
     title: "Season Twelve",
     subtitle: "The Inheritance",
     totalCases: 12,
-    digits: [7,10,17,76,11,62,21,96,79,82,89,52],
+    digits: [1207,1216,1225,1234,1243,1252,1261,1270,1279,1288,1297,1306],
     vault: {
       id: "s12_vault",
       name: "The Inheritance Vault",
@@ -343,7 +343,7 @@ const SEASONS_CONFIG = [
     title: "Season Thirteen",
     subtitle: "The Twin Hollows",
     totalCases: 12,
-    digits: [74,17,44,75,30,85,64,15,82,89,20,83],
+    digits: [1307,1316,1325,1334,1343,1352,1361,1370,1379,1388,1397,1406],
     vault: {
       id: "s13_vault",
       name: "The Twin Hollows Vault",
@@ -371,7 +371,7 @@ const SEASONS_CONFIG = [
     title: "Season Fourteen",
     subtitle: "The Flood Year",
     totalCases: 12,
-    digits: [45,88,39,42,81,12,11,30,85,96,15,18],
+    digits: [1407,1416,1425,1434,1443,1452,1461,1470,1479,1488,1497,1506],
     vault: {
       id: "s14_vault",
       name: "The Flood Year Vault",
@@ -399,7 +399,7 @@ const SEASONS_CONFIG = [
     title: "Season Fifteen",
     subtitle: "The Lantern Keeper",
     totalCases: 12,
-    digits: [16,63,66,41,4,35,54,45,88,7,42,49],
+    digits: [1507,1516,1525,1534,1543,1552,1561,1570,1579,1588,1597,1606],
     vault: {
       id: "s15_vault",
       name: "The Lantern Keeper Vault",
@@ -427,7 +427,7 @@ const SEASONS_CONFIG = [
     title: "Season Sixteen",
     subtitle: "The Glass House",
     totalCases: 12,
-    digits: [83,70,61,40,55,26,33,60,91,14,69,80],
+    digits: [1607,1616,1625,1634,1643,1652,1661,1670,1679,1688,1697,1706],
     vault: {
       id: "s16_vault",
       name: "The Glass House Vault",
@@ -455,7 +455,7 @@ const SEASONS_CONFIG = [
     title: "Season Seventeen",
     subtitle: "The Cold Season",
     totalCases: 12,
-    digits: [54,45,88,39,74,49,76,75,94,53,96,15],
+    digits: [1707,1716,1725,1734,1743,1752,1761,1770,1779,1788,1797,1806],
     vault: {
       id: "s17_vault",
       name: "The Cold Season Vault",
@@ -483,7 +483,7 @@ const SEASONS_CONFIG = [
     title: "Season Eighteen",
     subtitle: "The Hollow Names",
     totalCases: 12,
-    digits: [25,52,83,6,29,72,23,90,97,60,27,46],
+    digits: [1807,1816,1825,1834,1843,1852,1861,1870,1879,1888,1897,1906],
     vault: {
       id: "s18_vault",
       name: "The Hollow Names Vault",
@@ -511,7 +511,7 @@ const SEASONS_CONFIG = [
     title: "Season Nineteen",
     subtitle: "The Bridge Burner",
     totalCases: 12,
-    digits: [60,27,14,5,48,95,66,9,4,67,54,77],
+    digits: [1907,1916,1925,1934,1943,1952,1961,1970,1979,1988,1997,2006],
     vault: {
       id: "s19_vault",
       name: "The Bridge Burner Vault",
@@ -539,7 +539,7 @@ const SEASONS_CONFIG = [
     title: "Season Twenty",
     subtitle: "The Midnight Circuit",
     totalCases: 12,
-    digits: [31,34,41,4,99,86,45,24,7,74,81,12],
+    digits: [2007,2016,2025,2034,2043,2052,2061,2070,2079,2088,2097,2106],
     vault: {
       id: "s20_vault",
       name: "The Midnight Circuit Vault",
@@ -567,7 +567,7 @@ const SEASONS_CONFIG = [
     title: "Season Twenty-One",
     subtitle: "The Witness Tree",
     totalCases: 12,
-    digits: [98,9,36,99,22,13,88,39,10,81,12,43],
+    digits: [2107,2116,2125,2134,2143,2152,2161,2170,2179,2188,2197,2206],
     vault: {
       id: "s21_vault",
       name: "The Witness Tree Vault",
@@ -595,7 +595,7 @@ const SEASONS_CONFIG = [
     title: "Season Twenty-Two",
     subtitle: "The Bone Road",
     totalCases: 12,
-    digits: [69,80,63,66,73,36,35,54,13,88,39,74],
+    digits: [2207,2216,2225,2234,2243,2252,2261,2270,2279,2288,2297,2306],
     vault: {
       id: "s22_vault",
       name: "The Bone Road Vault",
@@ -623,7 +623,7 @@ const SEASONS_CONFIG = [
     title: "Season Twenty-Three",
     subtitle: "The Paper Trail",
     totalCases: 12,
-    digits: [40,87,58,65,92,59,78,69,16,95,34,9],
+    digits: [2307,2316,2325,2334,2343,2352,2361,2370,2379,2388,2397,2406],
     vault: {
       id: "s23_vault",
       name: "The Paper Trail Vault",
@@ -651,7 +651,7 @@ const SEASONS_CONFIG = [
     title: "Season Twenty-Four",
     subtitle: "The Missing Hours",
     totalCases: 12,
-    digits: [11,62,85,64,47,50,25,52,19,6,61,40],
+    digits: [2407,2416,2425,2434,2443,2452,2461,2470,2479,2488,2497,2506],
     vault: {
       id: "s24_vault",
       name: "The Missing Hours Vault",
@@ -679,7 +679,7 @@ const SEASONS_CONFIG = [
     title: "Season Twenty-Five",
     subtitle: "The Echo Chamber",
     totalCases: 12,
-    digits: [78,69,16,63,66,73,4,67,22,45,88,71],
+    digits: [2507,2516,2525,2534,2543,2552,2561,2570,2579,2588,2597,2606],
     vault: {
       id: "s25_vault",
       name: "The Echo Chamber Vault",
@@ -707,7 +707,7 @@ const SEASONS_CONFIG = [
     title: "Season Twenty-Six",
     subtitle: "The Red Door",
     totalCases: 12,
-    digits: [17,44,11,30,21,96,47,82,25,52,19,6],
+    digits: [2607,2616,2625,2634,2643,2652,2661,2670,2679,2688,2697,2706],
     vault: {
       id: "s26_vault",
       name: "The Red Door Vault",
@@ -735,7 +735,7 @@ const SEASONS_CONFIG = [
     title: "Season Twenty-Seven",
     subtitle: "The Salt Flats",
     totalCases: 12,
-    digits: [84,51,38,29,40,23,90,97,28,59,46,37],
+    digits: [2707,2716,2725,2734,2743,2752,2761,2770,2779,2788,2797,2806],
     vault: {
       id: "s27_vault",
       name: "The Salt Flats Vault",
@@ -763,7 +763,7 @@ const SEASONS_CONFIG = [
     title: "Season Twenty-Eight",
     subtitle: "The Buried Signal",
     totalCases: 12,
-    digits: [55,26,33,28,91,14,37,16,31,66,73,36],
+    digits: [2807,2816,2825,2834,2843,2852,2861,2870,2879,2888,2897,2906],
     vault: {
       id: "s28_vault",
       name: "The Buried Signal Vault",
@@ -791,7 +791,7 @@ const SEASONS_CONFIG = [
     title: "Season Twenty-Nine",
     subtitle: "The Unmarked Grave",
     totalCases: 12,
-    digits: [26,33,60,91,14,37,16,31,34,73,4,67],
+    digits: [2907,2916,2925,2934,2943,2952,2961,2970,2979,2988,2997,3006],
     vault: {
       id: "s29_vault",
       name: "The Unmarked Grave Vault",
@@ -819,7 +819,7 @@ const SEASONS_CONFIG = [
     title: "Season Thirty",
     subtitle: "The Last Train",
     totalCases: 12,
-    digits: [93,8,87,90,65,60,59,46,37,80,31,98],
+    digits: [3007,3016,3025,3034,3043,3052,3061,3070,3079,3088,3097,3106],
     vault: {
       id: "s30_vault",
       name: "The Last Train Vault",
@@ -847,7 +847,7 @@ const SEASONS_CONFIG = [
     title: "Season Thirty-One",
     subtitle: "The Cipher Garden",
     totalCases: 12,
-    digits: [64,79,82,89,84,83,6,61,40,87,58,33],
+    digits: [3107,3116,3125,3134,3143,3152,3161,3170,3179,3188,3197,3206],
     vault: {
       id: "s31_vault",
       name: "The Cipher Garden Vault",
@@ -875,7 +875,7 @@ const SEASONS_CONFIG = [
     title: "Season Thirty-Two",
     subtitle: "The Deep Current",
     totalCases: 12,
-    digits: [35,86,13,88,39,74,49,76,43,30,53,64],
+    digits: [3207,3216,3225,3234,3243,3252,3261,3270,3279,3288,3297,3306],
     vault: {
       id: "s32_vault",
       name: "The Deep Current Vault",
@@ -903,7 +903,7 @@ const SEASONS_CONFIG = [
     title: "Season Thirty-Three",
     subtitle: "The Pale Season",
     totalCases: 12,
-    digits: [70,61,8,55,58,97,28,91,14,37,80,95],
+    digits: [3307,3316,3325,3334,3343,3352,3361,3370,3379,3388,3397,3406],
     vault: {
       id: "s33_vault",
       name: "The Pale Season Vault",
@@ -931,7 +931,7 @@ const SEASONS_CONFIG = [
     title: "Season Thirty-Four",
     subtitle: "The Locked Ward",
     totalCases: 12,
-    digits: [41,68,35,54,13,24,71,10,17,44,11,30],
+    digits: [3407,3416,3425,3434,3443,3452,3461,3470,3479,3488,3497,3506],
     vault: {
       id: "s34_vault",
       name: "The Locked Ward Vault",
@@ -959,7 +959,7 @@ const SEASONS_CONFIG = [
     title: "Season Thirty-Five",
     subtitle: "The Archive Keeper",
     totalCases: 12,
-    digits: [12,43,62,53,32,47,18,25,20,51,38,61],
+    digits: [3507,3516,3525,3534,3543,3552,3561,3570,3579,3588,3597,3606],
     vault: {
       id: "s35_vault",
       name: "The Archive Keeper Vault",
@@ -987,7 +987,7 @@ const SEASONS_CONFIG = [
     title: "Season Thirty-Six",
     subtitle: "The Night Caller",
     totalCases: 12,
-    digits: [79,50,57,52,83,38,61,40,23,58,65,92],
+    digits: [3607,3616,3625,3634,3643,3652,3661,3670,3679,3688,3697,3706],
     vault: {
       id: "s36_vault",
       name: "The Night Caller Vault",
@@ -1015,7 +1015,7 @@ const SEASONS_CONFIG = [
     title: "Season Thirty-Seven",
     subtitle: "The Abandoned Post",
     totalCases: 12,
-    digits: [50,25,84,19,38,61,40,55,26,65,92,27],
+    digits: [3707,3716,3725,3734,3743,3752,3761,3770,3779,3788,3797,3806],
     vault: {
       id: "s37_vault",
       name: "The Abandoned Post Vault",
@@ -1043,7 +1043,7 @@ const SEASONS_CONFIG = [
     title: "Season Thirty-Eight",
     subtitle: "The Signal Fire",
     totalCases: 12,
-    digits: [21,96,79,18,57,84,83,70,29,72,23,58],
+    digits: [3807,3816,3825,3834,3843,3852,3861,3870,3879,3888,3897,3906],
     vault: {
       id: "s38_vault",
       name: "The Signal Fire Vault",
@@ -1071,7 +1071,7 @@ const SEASONS_CONFIG = [
     title: "Season Thirty-Nine",
     subtitle: "The Pale Horse",
     totalCases: 12,
-    digits: [88,7,10,17,12,11,30,85,32,79,50,89],
+    digits: [3907,3916,3925,3934,3943,3952,3961,3970,3979,3988,3997,4006],
     vault: {
       id: "s39_vault",
       name: "The Pale Horse Vault",
@@ -1099,7 +1099,7 @@ const SEASONS_CONFIG = [
     title: "Season Forty",
     subtitle: "The Coded Letter",
     totalCases: 12,
-    digits: [59,78,5,16,31,98,73,4,35,22,77,24],
+    digits: [4007,4016,4025,4034,4043,4052,4061,4070,4079,4088,4097,4106],
     vault: {
       id: "s40_vault",
       name: "The Coded Letter Vault",
@@ -1127,7 +1127,7 @@ const SEASONS_CONFIG = [
     title: "Season Forty-One",
     subtitle: "The Ghost Road",
     totalCases: 12,
-    digits: [94,85,32,79,82,25,20,19,38,29,8,55],
+    digits: [4107,4116,4125,4134,4143,4152,4161,4170,4179,4188,4197,4206],
     vault: {
       id: "s41_vault",
       name: "The Ghost Road Vault",
@@ -1155,7 +1155,7 @@ const SEASONS_CONFIG = [
     title: "Season Forty-Two",
     subtitle: "The Dry Season",
     totalCases: 12,
-    digits: [65,60,59,78,5,48,95,34,41,36,99,86],
+    digits: [4207,4216,4225,4234,4243,4252,4261,4270,4279,4288,4297,4306],
     vault: {
       id: "s42_vault",
       name: "The Dry Season Vault",
@@ -1183,7 +1183,7 @@ const SEASONS_CONFIG = [
     title: "Season Forty-Three",
     subtitle: "The False Name",
     totalCases: 12,
-    digits: [36,67,54,77,56,71,42,49,44,43,30,21],
+    digits: [4307,4316,4325,4334,4343,4352,4361,4370,4379,4388,4397,4406],
     vault: {
       id: "s43_vault",
       name: "The False Name Vault",
@@ -1211,7 +1211,7 @@ const SEASONS_CONFIG = [
     title: "Season Forty-Four",
     subtitle: "The Mirror Case",
     totalCases: 12,
-    digits: [7,42,81,44,75,62,85,64,47,50,57,52],
+    digits: [4407,4416,4425,4434,4443,4452,4461,4470,4479,4488,4497,4506],
     vault: {
       id: "s44_vault",
       name: "The Mirror Case Vault",
@@ -1239,7 +1239,7 @@ const SEASONS_CONFIG = [
     title: "Season Forty-Five",
     subtitle: "The Hollow Crown",
     totalCases: 12,
-    digits: [74,17,76,43,30,85,32,79,50,57,84,83],
+    digits: [4507,4516,4525,4534,4543,4552,4561,4570,4579,4588,4597,4606],
     vault: {
       id: "s45_vault",
       name: "The Hollow Crown Vault",
@@ -1267,7 +1267,7 @@ const SEASONS_CONFIG = [
     title: "Season Forty-Six",
     subtitle: "The Storm Season",
     totalCases: 12,
-    digits: [45,24,7,42,49,12,11,94,53,64,15,82],
+    digits: [4607,4616,4625,4634,4643,4652,4661,4670,4679,4688,4697,4706],
     vault: {
       id: "s46_vault",
       name: "The Storm Season Vault",
@@ -1295,7 +1295,7 @@ const SEASONS_CONFIG = [
     title: "Season Forty-Seven",
     subtitle: "The Long Way Round",
     totalCases: 12,
-    digits: [16,95,34,41,4,35,54,13,56,71,42,17],
+    digits: [4707,4716,4725,4734,4743,4752,4761,4770,4779,4788,4797,4806],
     vault: {
       id: "s47_vault",
       name: "The Long Way Round Vault",
@@ -1323,7 +1323,7 @@ const SEASONS_CONFIG = [
     title: "Season Forty-Eight",
     subtitle: "The Broken Signal",
     totalCases: 12,
-    digits: [51,6,29,8,23,58,97,28,59,14,69,48],
+    digits: [4807,4816,4825,4834,4843,4852,4861,4870,4879,4888,4897,4906],
     vault: {
       id: "s48_vault",
       name: "The Broken Signal Vault",
@@ -1351,7 +1351,7 @@ const SEASONS_CONFIG = [
     title: "Season Forty-Nine",
     subtitle: "The Final Witness",
     totalCases: 12,
-    digits: [22,77,56,7,74,49,44,43,62,21,96,79],
+    digits: [4907,4916,4925,4934,4943,4952,4961,4970,4979,4988,4997,5006],
     vault: {
       id: "s49_vault",
       name: "The Final Witness Vault",
@@ -1379,7 +1379,7 @@ const SEASONS_CONFIG = [
     title: "Season Fifty",
     subtitle: "The Resolution",
     totalCases: 12,
-    digits: [89,84,51,6,93,72,23,58,65,28,27,14],
+    digits: [5007,5016,5025,5034,5043,5052,5061,5070,5079,5088,5097,5106],
     vault: {
       id: "s50_vault",
       name: "The Resolution Vault",
