@@ -111,8 +111,8 @@ body::before{
 .ev-related-card:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,0,0,0.18);}
 .ev-related-card-name{font-family:var(--font-header);font-size:0.85rem;letter-spacing:0.06em;color:var(--ink);text-transform:uppercase;}
 
-/* Spotify embed */
-.ev-spotify-frame{width:100%;height:152px;border:0;}
+/* Recovered audio player */
+.ev-audio-player{width:100%;}
 
 .ev-empty{font-family:var(--font-type);font-size:0.85rem;color:var(--ink-faded);font-style:italic;}
 
@@ -194,9 +194,9 @@ body::before{
   </footer>
 
   <script src="js/vault-config.js"></script>
-  <script src="js/csv-utils.js"></script>
   <script src="js/asset-url-builder.js"></script>
-  <script src="js/evidence-sheet-data.js"></script>
+  <script src="js/evidence-index.js"></script>
+  <script src="data/sounds.js"></script>
   <script>
   (function() {
     var B = window.AssetUrlBuilder;
@@ -253,8 +253,8 @@ body::before{
       var category = rec.category || 'Evidence';
       var status = rec.status || 'Recovered';
       var verification = rec.verification || 'Unverified';
-      var appearsIn = (rec.appearsIn || '').split(',').map(function(s) { return s.trim().padStart(3, '0'); }).filter(Boolean);
-      var relatedEvidence = (rec.relatedEvidence || '').split(',').map(function(s) { return s.trim(); }).filter(Boolean);
+      var appearsIn = rec.appearsIn || [];
+      var relatedEvidence = rec.relatedEvidence || [];
       var firstAppearance = rec.firstAppearance || (appearsIn[0] || '');
 
       document.title = title + ' — Evidence Archive — The Asten Vale Archives';
@@ -275,8 +275,8 @@ body::before{
       html += '<div class="ev-meta-field"><span class="ev-meta-label">Verification</span><span class="ev-meta-value">' + esc(verification) + '</span></div>';
       html += '</div></section>';
 
-      // Evidence Image
-      var imgUrl = rec.image ? B.buildImageUrl('Evidence', rec.image) : '';
+      // Evidence Image (collectible.image is already a resolved URL from the source case file)
+      var imgUrl = rec.image || '';
       html += '<section class="ev-section"><div class="ev-section-label">Evidence Image</div>';
       html += '<div class="ev-image-wrap">';
       if (imgUrl) {
@@ -332,18 +332,21 @@ body::before{
       if (relatedEvidence.length) {
         html += '<section class="ev-section"><div class="ev-section-label">Related Evidence</div><div class="ev-related-grid">';
         relatedEvidence.forEach(function(relSlug) {
-          var relRec = window.EVIDENCE_SHEET_DATA && window.EVIDENCE_SHEET_DATA[relSlug];
+          var relRec = window.EVIDENCE_INDEX && window.EVIDENCE_INDEX[relSlug];
           var relTitle = relRec && relRec.title ? relRec.title : titleCase(relSlug);
           html += '<a class="ev-related-card" href="evidence.html?id=' + esc(relSlug) + '"><div class="ev-related-card-name">' + esc(relTitle) + '</div></a>';
         });
         html += '</div></section>';
       }
 
-      // Spotify Player (Sound category only)
-      if (category.toLowerCase() === 'sound' && rec.spotifyTrackId) {
-        var embedUrl = B.buildSpotifyEmbedUrl(rec.spotifyTrackId);
-        html += '<section class="ev-section"><div class="ev-section-label">Recovered Audio</div>' +
-          '<iframe class="ev-spotify-frame" src="' + esc(embedUrl) + '" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></section>';
+      // Recovered Audio (Sound category only) -- looked up by name from data/sounds.js,
+      // the same lookup cabinet.html already uses for its sound evidence cards.
+      if (category.toLowerCase() === 'sound') {
+        var soundEntry = (window.SOUNDS_DATA || []).find(function(s) { return s.name && s.name.toLowerCase() === title.toLowerCase(); });
+        if (soundEntry && soundEntry.audioFile) {
+          html += '<section class="ev-section"><div class="ev-section-label">Recovered Audio</div>' +
+            '<audio class="ev-audio-player" controls preload="none" src="' + esc(soundEntry.audioFile) + '"></audio></section>';
+        }
       }
 
       // Timeline
@@ -372,13 +375,14 @@ body::before{
 
     function init() {
       if (!slug) { renderNotArchived(); return; }
-      var rec = window.EVIDENCE_SHEET_DATA && window.EVIDENCE_SHEET_DATA[slug];
+      var rec = window.EVIDENCE_INDEX && window.EVIDENCE_INDEX[slug];
       if (!rec) { renderNotArchived(); return; }
       renderRecord(rec);
     }
 
-    if (typeof applyEvidenceSheetData === 'function') {
-      applyEvidenceSheetData(init);
+    if (typeof buildEvidenceIndex === 'function') {
+      document.getElementById('ev-content').innerHTML = '<p class="ev-empty">Scanning archive records&#8230;</p>';
+      buildEvidenceIndex(init);
     } else {
       renderNotArchived();
     }
