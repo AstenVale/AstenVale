@@ -262,7 +262,7 @@ window.SONG_DATA = {
     {
       "id": "307_marker",
       "type": "Marker",
-      "image": "images/Markers/307_The_Visitor.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/307_The_Visitor.jpg",
       "name": "Marker 2661",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 307.",

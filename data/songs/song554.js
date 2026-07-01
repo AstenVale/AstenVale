@@ -251,7 +251,7 @@ window.SONG_DATA = {
     {
       "id": "554_marker",
       "type": "Marker",
-      "image": "images/Markers/554_Why_the_Long_Way.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/554_Why_the_Long_Way.jpg",
       "name": "Marker 4716",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 554.",

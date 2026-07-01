@@ -233,12 +233,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Ticket was recovered from Forge in Case File 068. It is tied to Retired Soldier, 2:55, and marker 670.",
       "unknownInfo": "Back and Old Hinge suggest this object matters beyond the first reading.",
-      "image": "images/Objects/068 - dried ink blot.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/068 - dried ink blot.jpg"
     },
     {
       "id": "068_location",
       "type": "Location",
-      "image": "images/Location/case-068-cooperage-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-068-cooperage-location.jpg",
       "name": "Forge",
       "symbol": "📍",
       "description": "The active scene for Case File 068. Recovered field notes place the primary event at Forge.",
@@ -256,7 +256,7 @@ window.SONG_DATA = {
     {
       "id": "068_time",
       "type": "Time",
-      "image": "images/5 Time/068_lantern_4-47.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/5 Time/068_lantern_4-47.jpg",
       "name": "255",
       "symbol": "⌚",
       "description": "The time recorded in the case audio for Case File 068. Cross-referenced with field notes.",
@@ -265,7 +265,7 @@ window.SONG_DATA = {
     {
       "id": "068_marker",
       "type": "Marker",
-      "image": "images/Markers/068_Old_Stone.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/068_Old_Stone.jpg",
       "name": "Marker 670",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 068.",

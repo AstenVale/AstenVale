@@ -234,12 +234,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Iron Nail was recovered from Cabin in Case File 070. It is tied to Lamplighter, 9:55, and marker 688.",
       "unknownInfo": "Toward the River and Broken String suggest this object matters beyond the first reading.",
-      "image": "images/Objects/070 - ship manifest.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/070 - ship manifest.jpg"
     },
     {
       "id": "070_location",
       "type": "Location",
-      "image": "images/Location/case-070-tunnel-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-070-tunnel-location.jpg",
       "name": "Cabin",
       "symbol": "📍",
       "description": "The active scene for Case File 070. Recovered field notes place the primary event at Cabin.",
@@ -257,7 +257,7 @@ window.SONG_DATA = {
     {
       "id": "070_time",
       "type": "Time",
-      "image": "images/5 Time/070_lantern_1-33.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/5 Time/070_lantern_1-33.jpg",
       "name": "955",
       "symbol": "⌚",
       "description": "The time recorded in the case audio for Case File 070. Cross-referenced with field notes.",
@@ -266,7 +266,7 @@ window.SONG_DATA = {
     {
       "id": "070_marker",
       "type": "Marker",
-      "image": "images/Markers/070_The_Vault.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/070_The_Vault.jpg",
       "name": "Marker 688",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 070.",

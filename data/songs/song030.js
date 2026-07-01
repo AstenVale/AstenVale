@@ -225,12 +225,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Charcoal Sketch was recovered from Grist Mill in Case File 030. It is tied to Lock Keeper, 5:40, and marker 352.",
       "unknownInfo": "Down the Hollow and Door Creak suggest this object matters beyond the first reading.",
-      "image": "images/Objects/030 - straight razor.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/030 - straight razor.jpg"
     },
     {
       "id": "030_location",
       "type": "Location",
-      "image": "images/Location/case-030-south-fork-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-030-south-fork-location.jpg",
       "name": "Gristmill",
       "symbol": "📍",
       "description": "The active scene for Case File 030. Recovered field notes place the primary event at Gristmill.",
@@ -248,7 +248,7 @@ window.SONG_DATA = {
     {
       "id": "030_time",
       "type": "Time",
-      "image": "images/5 Time/030_lantern_7-37.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/5 Time/030_lantern_7-37.jpg",
       "name": "540",
       "symbol": "⌚",
       "description": "The time recorded in the case audio for Case File 030. Cross-referenced with field notes.",
@@ -257,7 +257,7 @@ window.SONG_DATA = {
     {
       "id": "030_marker",
       "type": "Marker",
-      "image": "images/Markers/030_The_False_Trail.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/030_The_False_Trail.jpg",
       "name": "Marker 352",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 030.",

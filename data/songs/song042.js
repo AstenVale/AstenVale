@@ -234,12 +234,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Ear of Corn was recovered from The Root Cellar in Case File 042. It is tied to Lamplighter, 10:19, and marker 452.",
       "unknownInfo": "Up and Lantern Glass suggest this object matters beyond the first reading.",
-      "image": "images/Objects/042 - axle pin.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/042 - axle pin.jpg"
     },
     {
       "id": "042_location",
       "type": "Location",
-      "image": "images/Location/case-042-forge-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-042-forge-location.jpg",
       "name": "Root Cellar",
       "symbol": "📍",
       "description": "The active scene for Case File 042. Recovered field notes place the primary event at Root Cellar.",
@@ -257,7 +257,7 @@ window.SONG_DATA = {
     {
       "id": "042_time",
       "type": "Time",
-      "image": "images/5 Time/042_lantern_3-49.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/5 Time/042_lantern_3-49.jpg",
       "name": "1019",
       "symbol": "⌚",
       "description": "The time recorded in the case audio for Case File 042. Cross-referenced with field notes.",
@@ -266,7 +266,7 @@ window.SONG_DATA = {
     {
       "id": "042_marker",
       "type": "Marker",
-      "image": "images/Markers/042_What_the_River_Kept.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/042_What_the_River_Kept.jpg",
       "name": "Marker 452",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 042.",

@@ -264,7 +264,7 @@ window.SONG_DATA = {
     {
       "id": "212_marker",
       "type": "Marker",
-      "image": "images/Markers/212_The_Signature.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/212_The_Signature.jpg",
       "name": "Marker 1870",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 212.",

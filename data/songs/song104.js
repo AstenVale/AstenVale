@@ -236,7 +236,7 @@ window.SONG_DATA = {
     {
       "id": "104_location",
       "type": "Location",
-      "image": "images/Location/case-104-silo-row-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-104-silo-row-location.jpg",
       "name": "Cooperage",
       "symbol": "📍",
       "description": "The active scene for Case File 104. Recovered field notes place the primary event at Cooperage.",
@@ -261,7 +261,7 @@ window.SONG_DATA = {
     {
       "id": "104_marker",
       "type": "Marker",
-      "image": "images/Markers/104_The_Catalog.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/104_The_Catalog.jpg",
       "name": "Marker 970",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 104.",

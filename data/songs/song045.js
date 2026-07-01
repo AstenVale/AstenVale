@@ -233,12 +233,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Chain was recovered from Cider House in Case File 045. It is tied to Rope Maker, 7:14, and marker 479.",
       "unknownInfo": "Over and Dry Grass suggest this object matters beyond the first reading.",
-      "image": "images/Objects/045 - flask.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/045 - flask.jpg"
     },
     {
       "id": "045_location",
       "type": "Location",
-      "image": "images/Location/case-045-orchard-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-045-orchard-location.jpg",
       "name": "Ciderhouse",
       "symbol": "📍",
       "description": "The active scene for Case File 045. Recovered field notes place the primary event at Ciderhouse.",
@@ -256,7 +256,7 @@ window.SONG_DATA = {
     {
       "id": "045_time",
       "type": "Time",
-      "image": "images/5 Time/045_lantern_10-47.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/5 Time/045_lantern_10-47.jpg",
       "name": "714",
       "symbol": "⌚",
       "description": "The time recorded in the case audio for Case File 045. Cross-referenced with field notes.",
@@ -265,7 +265,7 @@ window.SONG_DATA = {
     {
       "id": "045_marker",
       "type": "Marker",
-      "image": "images/Markers/045_The_Fishermans_Truth.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/045_The_Fishermans_Truth.jpg",
       "name": "Marker 479",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 045.",

@@ -250,7 +250,7 @@ window.SONG_DATA = {
     {
       "id": "225_marker",
       "type": "Marker",
-      "image": "images/Markers/225_Why_the_Bridge.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/225_Why_the_Bridge.jpg",
       "name": "Marker 1979",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 225.",

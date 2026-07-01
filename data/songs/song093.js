@@ -224,12 +224,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Wool Scarf was recovered from Sheriff's Office in Case File 093. It is tied to Judge, 9:08, and marker 879.",
       "unknownInfo": "Straight Down and Telegraph Click suggest this object matters beyond the first reading.",
-      "image": "images/Objects/093 - knife.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/093 - knife.jpg"
     },
     {
       "id": "093_location",
       "type": "Location",
-      "image": "images/Location/case-093-birch-stand-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-093-birch-stand-location.jpg",
       "name": "Sheriff'Soffice",
       "symbol": "📍",
       "description": "The active scene for Case File 093. Recovered field notes place the primary event at Sheriff'Soffice.",
@@ -254,7 +254,7 @@ window.SONG_DATA = {
     {
       "id": "093_marker",
       "type": "Marker",
-      "image": "images/Markers/093_The_Survivor.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/093_The_Survivor.jpg",
       "name": "Marker 879",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 093.",

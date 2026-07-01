@@ -263,7 +263,7 @@ window.SONG_DATA = {
     {
       "id": "552_marker",
       "type": "Marker",
-      "image": "images/Markers/552_The_Calm.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/552_The_Calm.jpg",
       "name": "Marker 4706",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 552.",

@@ -234,12 +234,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Empty Tin was recovered from The Quarry Pool in Case File 039. It is tied to Miller, 8:42, and marker 425.",
       "unknownInfo": "Sideways and Moth Wings suggest this object matters beyond the first reading.",
-      "image": "images/Objects/039 - watch.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/039 - watch.jpg"
     },
     {
       "id": "039_location",
       "type": "Location",
-      "image": "images/Location/case-039-cider-house-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-039-cider-house-location.jpg",
       "name": "Quarry Pool",
       "symbol": "📍",
       "description": "The active scene for Case File 039. Recovered field notes place the primary event at Quarry Pool.",
@@ -257,7 +257,7 @@ window.SONG_DATA = {
     {
       "id": "039_time",
       "type": "Time",
-      "image": "images/5 Time/039_lantern_8-33.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/5 Time/039_lantern_8-33.jpg",
       "name": "842",
       "symbol": "⌚",
       "description": "The time recorded in the case audio for Case File 039. Cross-referenced with field notes.",
@@ -266,7 +266,7 @@ window.SONG_DATA = {
     {
       "id": "039_marker",
       "type": "Marker",
-      "image": "images/Markers/039_What_Surfaces.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/039_What_Surfaces.jpg",
       "name": "Marker 425",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 039.",

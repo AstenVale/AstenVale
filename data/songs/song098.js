@@ -227,7 +227,7 @@ window.SONG_DATA = {
     {
       "id": "098_location",
       "type": "Location",
-      "image": "images/Location/case-098-pharmacy-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-098-pharmacy-location.jpg",
       "name": "Southfork",
       "symbol": "📍",
       "description": "The active scene for Case File 098. Recovered field notes place the primary event at Southfork.",
@@ -252,7 +252,7 @@ window.SONG_DATA = {
     {
       "id": "098_marker",
       "type": "Marker",
-      "image": "images/Markers/098_What_She_Saved.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/098_What_She_Saved.jpg",
       "name": "Marker 916",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 098.",

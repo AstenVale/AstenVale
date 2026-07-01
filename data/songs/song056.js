@@ -223,12 +223,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Locket was recovered from Orchard in Case File 056. It is tied to Lock Keeper, 10:47, and marker 570.",
       "unknownInfo": "Down the Hollow and Bell Toll suggest this object matters beyond the first reading.",
-      "image": "images/Objects/056 - tin star.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/056 - tin star.jpg"
     },
     {
       "id": "056_location",
       "type": "Location",
-      "image": "images/Location/case-056-the-gully-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-056-the-gully-location.jpg",
       "name": "Orchard",
       "symbol": "📍",
       "description": "The active scene for Case File 056. Recovered field notes place the primary event at Orchard.",
@@ -246,7 +246,7 @@ window.SONG_DATA = {
     {
       "id": "056_time",
       "type": "Time",
-      "image": "images/5 Time/056_lantern_3-58.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/5 Time/056_lantern_3-58.jpg",
       "name": "1047",
       "symbol": "⌚",
       "description": "The time recorded in the case audio for Case File 056. Cross-referenced with field notes.",
@@ -255,7 +255,7 @@ window.SONG_DATA = {
     {
       "id": "056_marker",
       "type": "Marker",
-      "image": "images/Markers/056_The_Frozen_Clock.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/056_The_Frozen_Clock.jpg",
       "name": "Marker 570",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 056.",

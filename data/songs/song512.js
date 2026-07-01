@@ -250,7 +250,7 @@ window.SONG_DATA = {
     {
       "id": "512_marker",
       "type": "Marker",
-      "image": "images/Markers/512_The_Confrontation.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/512_The_Confrontation.jpg",
       "name": "Marker 4370",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 512.",

@@ -235,12 +235,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Tin Star was recovered from The Hollow Road in Case File 069. It is tied to Conductor, 2:55, and marker 679.",
       "unknownInfo": "Nowhere and River Water suggest this object matters beyond the first reading.",
-      "image": "images/Objects/069 - surveyor's pin.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/069 - surveyor's pin.jpg"
     },
     {
       "id": "069_location",
       "type": "Location",
-      "image": "images/Location/case-069-calico-alley-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-069-calico-alley-location.jpg",
       "name": "Hollow Road",
       "symbol": "📍",
       "description": "The active scene for Case File 069. Recovered field notes place the primary event at Hollow Road.",
@@ -258,7 +258,7 @@ window.SONG_DATA = {
     {
       "id": "069_time",
       "type": "Time",
-      "image": "images/5 Time/069_lantern_4-38.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/5 Time/069_lantern_4-38.jpg",
       "name": "255",
       "symbol": "⌚",
       "description": "The time recorded in the case audio for Case File 069. Cross-referenced with field notes.",
@@ -267,7 +267,7 @@ window.SONG_DATA = {
     {
       "id": "069_marker",
       "type": "Marker",
-      "image": "images/Markers/069_Underground_Water.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/069_Underground_Water.jpg",
       "name": "Marker 679",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 069.",

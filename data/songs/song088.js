@@ -233,12 +233,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "String of Beads was recovered from Forge in Case File 088. It is tied to Cattle Driver, 4:29, and marker 834.",
       "unknownInfo": "Beyond and Clock Ticking suggest this object matters beyond the first reading.",
-      "image": "images/Objects/088 - torn map.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/088 - torn map.jpg"
     },
     {
       "id": "088_location",
       "type": "Location",
-      "image": "images/Location/case-088-the-dry-gulch-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-088-the-dry-gulch-location.jpg",
       "name": "Forge",
       "symbol": "📍",
       "description": "The active scene for Case File 088. Recovered field notes place the primary event at Forge.",
@@ -263,7 +263,7 @@ window.SONG_DATA = {
     {
       "id": "088_marker",
       "type": "Marker",
-      "image": "images/Markers/088_The_House_That_Burned.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/088_The_House_That_Burned.jpg",
       "name": "Marker 834",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 088.",

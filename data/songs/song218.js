@@ -263,7 +263,7 @@ window.SONG_DATA = {
     {
       "id": "218_marker",
       "type": "Marker",
-      "image": "images/Markers/218_The_Last_Transit.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/218_The_Last_Transit.jpg",
       "name": "Marker 1916",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 218.",

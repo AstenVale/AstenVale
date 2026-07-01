@@ -232,12 +232,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Wedding Ring was recovered from Church in Case File 013. It is tied to Preacher, 6:45, and marker 110.",
       "unknownInfo": "North and Bells suggest this object matters beyond the first reading.",
-      "image": "images/Objects/013 - love letter.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/013 - love letter.jpg"
     },
     {
       "id": "013_location",
       "type": "Location",
-      "image": "images/Location/case-013-kitchen-table-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-013-kitchen-table-location.jpg",
       "name": "Church",
       "symbol": "📍",
       "description": "The active scene for Case File 013. Recovered field notes place the primary event at Church.",
@@ -255,7 +255,7 @@ window.SONG_DATA = {
     {
       "id": "013_time",
       "type": "Time",
-      "image": "images/5 Time/013_lantern_9-30.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/5 Time/013_lantern_9-30.jpg",
       "name": "645",
       "symbol": "⌚",
       "description": "The time recorded in the case audio for Case File 013. Cross-referenced with field notes.",
@@ -264,7 +264,7 @@ window.SONG_DATA = {
     {
       "id": "013_marker",
       "type": "Marker",
-      "image": "images/Markers/013_The_Wedding_Dance.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/013_The_Wedding_Dance.jpg",
       "name": "Marker 110",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 013.",

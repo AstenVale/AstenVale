@@ -261,7 +261,7 @@ window.SONG_DATA = {
     {
       "id": "171_marker",
       "type": "Marker",
-      "image": "images/Markers/171_The_Dark_Night.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/171_The_Dark_Night.jpg",
       "name": "Marker 1525",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 171.",

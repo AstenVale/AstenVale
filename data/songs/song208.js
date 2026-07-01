@@ -252,7 +252,7 @@ window.SONG_DATA = {
     {
       "id": "208_marker",
       "type": "Marker",
-      "image": "images/Markers/208_The_Register.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/208_The_Register.jpg",
       "name": "Marker 1834",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 208.",

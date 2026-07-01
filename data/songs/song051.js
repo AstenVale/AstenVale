@@ -221,12 +221,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Photograph was recovered from Forge in Case File 051. It is tied to Apothecary, 12:44, and marker 525.",
       "unknownInfo": "Out and Broken String suggest this object matters beyond the first reading.",
-      "image": "images/Objects/051 - wax seal.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/051 - wax seal.jpg"
     },
     {
       "id": "051_location",
       "type": "Location",
-      "image": "images/Location/case-051-hotel-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-051-hotel-location.jpg",
       "name": "Forge",
       "symbol": "📍",
       "description": "The active scene for Case File 051. Recovered field notes place the primary event at Forge.",
@@ -244,7 +244,7 @@ window.SONG_DATA = {
     {
       "id": "051_time",
       "type": "Time",
-      "image": "images/5 Time/051_lantern_3-17.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/5 Time/051_lantern_3-17.jpg",
       "name": "1244",
       "symbol": "⌚",
       "description": "The time recorded in the case audio for Case File 051. Cross-referenced with field notes.",
@@ -253,7 +253,7 @@ window.SONG_DATA = {
     {
       "id": "051_marker",
       "type": "Marker",
-      "image": "images/Markers/051_Snow_on_the_Roof.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/051_Snow_on_the_Roof.jpg",
       "name": "Marker 525",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 051.",

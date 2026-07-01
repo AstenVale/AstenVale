@@ -232,12 +232,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Watch was recovered from Cemetery in Case File 044. It is tied to Midwife, 12:33, and marker 470.",
       "unknownInfo": "Down the Hollow and Knife Scrape suggest this object matters beyond the first reading.",
-      "image": "images/Objects/044 - coin.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/044 - coin.jpg"
     },
     {
       "id": "044_location",
       "type": "Location",
-      "image": "images/Location/case-044-feed-store-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-044-feed-store-location.jpg",
       "name": "Cemetery",
       "symbol": "📍",
       "description": "The active scene for Case File 044. Recovered field notes place the primary event at Cemetery.",
@@ -255,7 +255,7 @@ window.SONG_DATA = {
     {
       "id": "044_time",
       "type": "Time",
-      "image": "images/5 Time/044_lantern_6-17.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/5 Time/044_lantern_6-17.jpg",
       "name": "1233",
       "symbol": "⌚",
       "description": "The time recorded in the case audio for Case File 044. Cross-referenced with field notes.",
@@ -264,7 +264,7 @@ window.SONG_DATA = {
     {
       "id": "044_marker",
       "type": "Marker",
-      "image": "images/Markers/044_Underneath.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/044_Underneath.jpg",
       "name": "Marker 470",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 044.",

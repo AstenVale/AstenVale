@@ -263,7 +263,7 @@ window.SONG_DATA = {
     {
       "id": "393_marker",
       "type": "Marker",
-      "image": "images/Markers/393_The_Pallor.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/393_The_Pallor.jpg",
       "name": "Marker 3379",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 393.",

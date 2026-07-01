@@ -262,7 +262,7 @@ window.SONG_DATA = {
     {
       "id": "309_marker",
       "type": "Marker",
-      "image": "images/Markers/309_What_the_Door_Kept.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/309_What_the_Door_Kept.jpg",
       "name": "Marker 2679",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 309.",

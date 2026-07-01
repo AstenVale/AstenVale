@@ -262,7 +262,7 @@ window.SONG_DATA = {
     {
       "id": "152_marker",
       "type": "Marker",
-      "image": "images/Markers/152_The_Switch.png",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/152_The_Switch.png",
       "name": "Marker 1370",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 152.",

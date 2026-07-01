@@ -233,12 +233,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Dried Flower was recovered from East Field in Case File 085. It is tied to Schoolgirl, 7:48, and marker 807.",
       "unknownInfo": "Across and Train Whistle suggest this object matters beyond the first reading.",
-      "image": "images/Objects/085 - stamp.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/085 - stamp.jpg"
     },
     {
       "id": "085_location",
       "type": "Location",
-      "image": "images/Location/case-085-rivers-edge-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-085-rivers-edge-location.jpg",
       "name": "Eastfield",
       "symbol": "📍",
       "description": "The active scene for Case File 085. Recovered field notes place the primary event at Eastfield.",
@@ -263,7 +263,7 @@ window.SONG_DATA = {
     {
       "id": "085_marker",
       "type": "Marker",
-      "image": "images/Markers/085_The_First_Smoke.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/085_The_First_Smoke.jpg",
       "name": "Marker 807",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 085.",

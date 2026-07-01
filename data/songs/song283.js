@@ -263,7 +263,7 @@ window.SONG_DATA = {
     {
       "id": "283_marker",
       "type": "Marker",
-      "image": "images/Markers/283_The_Lost_Hour.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/283_The_Lost_Hour.jpg",
       "name": "Marker 2461",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 283.",

@@ -251,7 +251,7 @@ window.SONG_DATA = {
     {
       "id": "247_marker",
       "type": "Marker",
-      "image": "images/Markers/247_The_Tree_Line.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/247_The_Tree_Line.jpg",
       "name": "Marker 2161",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 247.",

@@ -222,12 +222,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Thimble was recovered from Old Wharf in Case File 081. It is tied to Tanner, 6:06, and marker 779.",
       "unknownInfo": "Out and Crow Wings suggest this object matters beyond the first reading.",
-      "image": "images/Objects/081 - belt buckle.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/081 - belt buckle.jpg"
     },
     {
       "id": "081_location",
       "type": "Location",
-      "image": "images/Location/case-081-the-ravine-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-081-the-ravine-location.jpg",
       "name": "Oldwharf",
       "symbol": "📍",
       "description": "The active scene for Case File 081. Recovered field notes place the primary event at Oldwharf.",
@@ -252,7 +252,7 @@ window.SONG_DATA = {
     {
       "id": "081_marker",
       "type": "Marker",
-      "image": "images/Markers/081_What_the_Letter_Said.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/081_What_the_Letter_Said.jpg",
       "name": "Marker 779",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 081.",

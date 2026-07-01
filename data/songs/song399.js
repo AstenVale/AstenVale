@@ -252,7 +252,7 @@ window.SONG_DATA = {
     {
       "id": "399_marker",
       "type": "Marker",
-      "image": "images/Markers/399_What_She_Said_Inside.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/399_What_She_Said_Inside.jpg",
       "name": "Marker 3425",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 399.",

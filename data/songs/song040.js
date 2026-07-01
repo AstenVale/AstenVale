@@ -232,12 +232,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Brooch was recovered from Fulling Mill in Case File 040. It is tied to Blacksmith, 10:19, and marker 434.",
       "unknownInfo": "Left and Telegraph Click suggest this object matters beyond the first reading.",
-      "image": "images/Objects/040 - torn label.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/040 - torn label.jpg"
     },
     {
       "id": "040_location",
       "type": "Location",
-      "image": "images/Location/case-040-bankers-house-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-040-bankers-house-location.jpg",
       "name": "Fullingmill",
       "symbol": "📍",
       "description": "The active scene for Case File 040. Recovered field notes place the primary event at Fullingmill.",
@@ -255,7 +255,7 @@ window.SONG_DATA = {
     {
       "id": "040_time",
       "type": "Time",
-      "image": "images/5 Time/040_lantern_8-06.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/5 Time/040_lantern_8-06.jpg",
       "name": "1019",
       "symbol": "⌚",
       "description": "The time recorded in the case audio for Case File 040. Cross-referenced with field notes.",
@@ -264,7 +264,7 @@ window.SONG_DATA = {
     {
       "id": "040_marker",
       "type": "Marker",
-      "image": "images/Markers/040_The_Current_Knows.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/040_The_Current_Knows.jpg",
       "name": "Marker 434",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 040.",

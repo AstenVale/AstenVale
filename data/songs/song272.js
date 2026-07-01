@@ -252,7 +252,7 @@ window.SONG_DATA = {
     {
       "id": "272_marker",
       "type": "Marker",
-      "image": "images/Markers/272_The_Signature_Match.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/272_The_Signature_Match.jpg",
       "name": "Marker 2370",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 272.",

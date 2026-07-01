@@ -234,12 +234,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Telegram was recovered from Loom House in Case File 061. It is tied to Night Watchman, 7:02, and marker 607.",
       "unknownInfo": "Further In and Rain suggest this object matters beyond the first reading.",
-      "image": "images/Objects/061 - bullet casing.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/061 - bullet casing.jpg"
     },
     {
       "id": "061_location",
       "type": "Location",
-      "image": "images/Location/case-061-harness-shop-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-061-harness-shop-location.jpg",
       "name": "Loomhouse",
       "symbol": "📍",
       "description": "The active scene for Case File 061. Recovered field notes place the primary event at Loomhouse.",
@@ -257,7 +257,7 @@ window.SONG_DATA = {
     {
       "id": "061_time",
       "type": "Time",
-      "image": "images/5 Time/061_lantern_9-08.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/5 Time/061_lantern_9-08.jpg",
       "name": "702",
       "symbol": "⌚",
       "description": "The time recorded in the case audio for Case File 061. Cross-referenced with field notes.",
@@ -266,7 +266,7 @@ window.SONG_DATA = {
     {
       "id": "061_marker",
       "type": "Marker",
-      "image": "images/Markers/061_The_Tunnel_Entry.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/061_The_Tunnel_Entry.jpg",
       "name": "Marker 607",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 061.",

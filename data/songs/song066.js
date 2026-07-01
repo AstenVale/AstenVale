@@ -235,12 +235,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Canteen was recovered from The Hollow Road in Case File 066. It is tied to Drifter, 3:17, and marker 652.",
       "unknownInfo": "Straight Down and Crow Wings suggest this object matters beyond the first reading.",
-      "image": "images/Objects/066 - prayer card.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/066 - prayer card.jpg"
     },
     {
       "id": "066_location",
       "type": "Location",
-      "image": "images/Location/case-066-doctors-office-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-066-doctors-office-location.jpg",
       "name": "Hollow Road",
       "symbol": "📍",
       "description": "The active scene for Case File 066. Recovered field notes place the primary event at Hollow Road.",
@@ -258,7 +258,7 @@ window.SONG_DATA = {
     {
       "id": "066_time",
       "type": "Time",
-      "image": "images/5 Time/066_lantern_11-44.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/5 Time/066_lantern_11-44.jpg",
       "name": "317",
       "symbol": "⌚",
       "description": "The time recorded in the case audio for Case File 066. Cross-referenced with field notes.",
@@ -267,7 +267,7 @@ window.SONG_DATA = {
     {
       "id": "066_marker",
       "type": "Marker",
-      "image": "images/Markers/066_The_Map_of_Below.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/066_The_Map_of_Below.jpg",
       "name": "Marker 652",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 066.",
