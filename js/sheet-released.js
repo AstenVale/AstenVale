@@ -17,42 +17,19 @@ function applySheetReleased(callback) {
     callback();
   }
 
-  function parseCSVLine(line) {
-    var cells = [];
-    var cell = '';
-    var inQuotes = false;
-    for (var i = 0; i < line.length; i++) {
-      var ch = line[i];
-      var next = line[i + 1];
-      if (ch === '"' && inQuotes && next === '"') { cell += '"'; i++; continue; }
-      if (ch === '"') { inQuotes = !inQuotes; continue; }
-      if (ch === ',' && !inQuotes) { cells.push(cell); cell = ''; continue; }
-      cell += ch;
-    }
-    cells.push(cell);
-    return cells;
-  }
-
-  function cleanCell(value) {
-    return (value || '').trim();
-  }
-
   function parseCSV(csv) {
-    var lines = csv.trim().split(/\r?\n/).filter(function(line) { return line.trim(); });
-    if (!lines.length) return [];
-    var rows    = lines.map(parseCSVLine);
-    var headers = rows[0].map(function(h) { return cleanCell(h).toLowerCase(); });
+    var parsed = window.CSVUtils.parseCSV(csv);
+    var headers = parsed.headers;
     var idCol     = headers.indexOf('id');
     var activeCol = headers.indexOf('active');
     var linkCols  = ['spotify','apple','youtube','amazon'].map(function(n) { return headers.indexOf(n); });
     if (idCol < 0) return [];
 
-    function isYes(v) {
-      return ['yes','y','true','1'].indexOf(cleanCell(v).toLowerCase()) !== -1;
-    }
+    var cleanCell = window.CSVUtils.cleanCell;
+    var isYes = window.CSVUtils.isYes;
 
     var releasedIds = [];
-    rows.slice(1).forEach(function(row) {
+    parsed.rows.forEach(function(row) {
       var rawId = cleanCell(row[idCol]);
       var id = rawId ? rawId.padStart(3, '0') : null;
       if (!id) return;

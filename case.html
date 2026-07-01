@@ -706,6 +706,9 @@ body.unlocked .archive-player,body.unlocked #fields-container,body.unlocked .pan
     <a href="index.html" style="font-family:var(--font-type);font-size:0.68rem;letter-spacing:0.15em;color:rgba(201,169,122,0.55);text-transform:uppercase;text-decoration:underline;text-underline-offset:3px;">Back to Archive</a>
   </footer>
 
+  <script src="js/csv-utils.js"></script>
+  <script src="js/asset-url-builder.js"></script>
+  <script src="js/sheet-case-data.js"></script>
   <script>
   // Ã¢â€â‚¬Ã¢â€â‚¬ MODAL OPEN / CLOSE Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
   // CSS uses .hidden (display:none) + .visible (opacity:1) pattern
@@ -929,6 +932,31 @@ body.unlocked .archive-player,body.unlocked #fields-container,body.unlocked .pan
     if (window.setAudioSrc) { window.setAudioSrc(audio, audioSrc); } else { audio.src = audioSrc; }
     audio.setAttribute('aria-label', label || 'Recovered Music');
     return audio;
+  }
+
+  // Wraps the existing local player (always present, never removed) and optionally
+  // appends a service embed/button based on caseData.playerType from the Sheet.
+  // playerType empty/unrecognized/"local" -> local player only (current behavior, unchanged).
+  function renderPlayer(caseData, audioSrc, label) {
+    var wrap = document.createElement('div');
+    wrap.className = 'recovered-player-wrap';
+    wrap.appendChild(buildRecoveredMusicPlayer(audioSrc, label));
+
+    // Spotify embed shows automatically whenever a spotify_track_id is present in the
+    // Sheet for this case -- no separate player-type column needed. Local player above
+    // always stays.
+    if (caseData.spotifyEmbedUrl) {
+      var sframe = document.createElement('iframe');
+      sframe.src = caseData.spotifyEmbedUrl;
+      sframe.width = '100%';
+      sframe.height = '152';
+      sframe.frameBorder = '0';
+      sframe.allow = 'autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture';
+      sframe.loading = 'lazy';
+      sframe.className = 'spotify-embed-frame';
+      wrap.appendChild(sframe);
+    }
+    return wrap;
   }
 
 
@@ -1485,7 +1513,7 @@ body.unlocked .archive-player,body.unlocked #fields-container,body.unlocked .pan
 
       if (caseData.audioSrc) {
       var rmAudioSrc = caseData.audioSrc || getCaseAudioPath(caseData);
-      musicDoc.appendChild(buildRecoveredMusicPlayer(rmAudioSrc, caseData.title || ('Case ' + caseNumM)));
+      musicDoc.appendChild(renderPlayer(caseData, rmAudioSrc, caseData.title || ('Case ' + caseNumM)));
 
       var noteM = document.createElement('div');
       noteM.className = 'artifact-desc';
@@ -2121,21 +2149,55 @@ document.title = 'Case File ' + d.caseFile + ' Ã¢â‚¬â€ The Asten Vale
       window.initCase(d);
     }
 
+    // Merges optional Google Sheet overrides into the per-case SONG_DATA record.
+    // Every override is additive: empty/missing sheet cells leave SONG_DATA untouched.
+    function mergeSheetIntoSongData(d, sheetRow) {
+      if (!sheetRow || !sheetRow.spotifyTrackId || !window.AssetUrlBuilder) return d;
+      var B = window.AssetUrlBuilder;
+      d.streamingLinks = d.streamingLinks || {};
+      d.streamingLinks.spotify = B.buildSpotifyTrackUrl(sheetRow.spotifyTrackId);
+      d.spotifyEmbedUrl = B.buildSpotifyEmbedUrl(sheetRow.spotifyTrackId);
+      return d;
+    }
+
+    var songDataLoaded = false;
+    var songDataFailed = false;
+    var sheetCaseDataLoaded = false;
+
+    function tryApply() {
+      if (songDataFailed) return;
+      if (!songDataLoaded || !sheetCaseDataLoaded) return;
+      var d = window.SONG_DATA;
+      var sheetRow = window.SHEET_CASE_DATA && window.SHEET_CASE_DATA[padded];
+      applyMeta(mergeSheetIntoSongData(d, sheetRow));
+    }
+
     var script   = document.createElement('script');
     script.src   = 'data/songs/song' + padded + '.js';
     script.async = false;
     script.onload = function() {
       if (window.SONG_DATA) {
-        applyMeta(window.SONG_DATA);
+        songDataLoaded = true;
+        tryApply();
       } else {
         document.getElementById('case-title').textContent = 'Case file unavailable.';
       }
     };
     script.onerror = function() {
+      songDataFailed = true;
       document.getElementById('case-title').textContent  = 'Case file ' + padded + ' not found.';
       document.getElementById('case-status').textContent = 'FILE NOT FOUND';
     };
     document.body.appendChild(script);
+
+    if (typeof applySheetCaseData === 'function') {
+      applySheetCaseData(function() {
+        sheetCaseDataLoaded = true;
+        tryApply();
+      });
+    } else {
+      sheetCaseDataLoaded = true;
+    }
   })();
   </script>
 
@@ -2152,25 +2214,29 @@ document.title = 'Case File ' + d.caseFile + ' Ã¢â‚¬â€ The Asten Vale
         return fetch(sheetUrl).then(function(r){ return r.text(); }).then(function(csv) {
           var rows = csv.trim().split('\n').map(function(r){ return r.split(','); });
           var headers = rows[0].map(function(h){ return h.trim().toLowerCase(); });
-          var idCol      = headers.indexOf('id');
-          var spotifyCol = headers.indexOf('spotify');
-          var appleCol   = headers.indexOf('apple');
-          var ytCol      = headers.indexOf('youtube');
-          var amazonCol  = headers.indexOf('amazon');
+          var idCol         = headers.indexOf('id');
+          var spotifyCol    = headers.indexOf('spotify');
+          var appleCol      = headers.indexOf('apple');
+          var ytCol         = headers.indexOf('youtube');
+          var amazonCol     = headers.indexOf('amazon');
+          var spotifyIdCol  = headers.indexOf('spotify_track_id');
+          var ytIdCol       = headers.indexOf('youtube_video_id');
           var row = rows.slice(1).find(function(r){
             return r[idCol] && r[idCol].trim().padStart(3,'0') === caseId;
           });
           if (!row) return;
-          function setLink(elId, col) {
+          function cell(col) { return col >= 0 && row[col] ? row[col].trim() : ''; }
+          function setLink(elId, col, idCol, idBuilder) {
             var el = document.getElementById(elId);
-            var val = col >= 0 && row[col] ? row[col].trim() : '';
+            var idVal = idCol >= 0 ? cell(idCol) : '';
+            var val = (idVal && window.AssetUrlBuilder) ? idBuilder(idVal) : cell(col);
             if (val && val !== '#' && !/^https?:\/\//i.test(val)) val = 'https://' + val;
             if (el) { if (val && val !== '#') { el.href = val; el.style.display = ''; } else { el.style.display = 'none'; } }
           }
-          setLink('stream-spotify', spotifyCol);
-          setLink('stream-apple',   appleCol);
-          setLink('stream-youtube', ytCol);
-          setLink('stream-amazon',  amazonCol);
+          setLink('stream-spotify', spotifyCol, spotifyIdCol, window.AssetUrlBuilder && window.AssetUrlBuilder.buildSpotifyTrackUrl);
+          setLink('stream-apple',   appleCol, -1, null);
+          setLink('stream-youtube', ytCol, ytIdCol, window.AssetUrlBuilder && window.AssetUrlBuilder.buildYoutubeWatchUrl);
+          setLink('stream-amazon',  amazonCol, -1, null);
         });
       }).catch(function(){});
   })();
