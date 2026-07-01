@@ -940,11 +940,9 @@ body.unlocked .archive-player,body.unlocked #fields-container,body.unlocked .pan
   function renderPlayer(caseData, audioSrc, label) {
     var wrap = document.createElement('div');
     wrap.className = 'recovered-player-wrap';
-    wrap.appendChild(buildRecoveredMusicPlayer(audioSrc, label));
 
-    // Spotify embed shows automatically whenever a spotify_track_id is present in the
-    // Sheet for this case -- no separate player-type column needed. Local player above
-    // always stays.
+    // If the Sheet has a spotify_track_id for this case, Spotify becomes the player
+    // (replacing the local audio player). No spotify_track_id -> local player, unchanged.
     if (caseData.spotifyEmbedUrl) {
       var sframe = document.createElement('iframe');
       sframe.src = caseData.spotifyEmbedUrl;
@@ -955,6 +953,8 @@ body.unlocked .archive-player,body.unlocked #fields-container,body.unlocked .pan
       sframe.loading = 'lazy';
       sframe.className = 'spotify-embed-frame';
       wrap.appendChild(sframe);
+    } else {
+      wrap.appendChild(buildRecoveredMusicPlayer(audioSrc, label));
     }
     return wrap;
   }
