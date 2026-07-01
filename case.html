@@ -205,6 +205,13 @@ body.unlocked .archive-player,body.unlocked #fields-container,body.unlocked .pan
 .field-input:focus{border-bottom-color:var(--ink);background:rgba(255,255,255,0.35);}
 .field-input:disabled{opacity:0.55;cursor:not-allowed;}
 .field-input.solved-input{border-bottom-color:rgba(60,100,60,0.4);}
+.field-input.verified-input{background:rgba(60,100,60,0.08);border-bottom-color:rgba(60,100,60,0.55);color:rgba(40,80,40,0.85);opacity:1;cursor:default;}
+.field-status{font-size:0.6rem;letter-spacing:0.14em;text-transform:uppercase;margin-top:0.1rem;font-style:italic;}
+.field-status.verified{color:rgba(60,110,60,0.85);font-style:normal;font-weight:bold;}
+.field-status.pending{color:rgba(100,60,20,0.4);}
+.field-hint-btn{align-self:flex-start;font-family:var(--font-type);font-size:0.58rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--folder-red);background:none;border:1px solid rgba(122,31,31,0.35);padding:0.15rem 0.5rem;cursor:pointer;margin-top:0.15rem;transition:background 0.15s;}
+.field-hint-btn:hover{background:rgba(122,31,31,0.08);}
+.field-hint-text{font-size:0.68rem;color:var(--ink-faded);font-style:italic;margin-top:0.15rem;}
 
 .cabinet-anim-wrap{display:flex;justify-content:center;margin:1.5rem 0;}
 .cabinet-anim{font-size:2.5rem;transition:transform 0.3s ease;display:inline-block;}
@@ -1028,8 +1035,29 @@ body.unlocked .archive-player,body.unlocked #fields-container,body.unlocked .pan
         if (e.key === 'Enter') checkAnswers();
       });
 
+      var statusEl = document.createElement('div');
+      statusEl.className = 'field-status';
+      statusEl.id = 'field-status-' + f.id;
+      statusEl.style.display = 'none';
+
+      var hintBtn = document.createElement('button');
+      hintBtn.type = 'button';
+      hintBtn.className = 'field-hint-btn';
+      hintBtn.id = 'field-hint-btn-' + f.id;
+      hintBtn.textContent = 'Request Archive Analysis';
+      hintBtn.style.display = 'none';
+      hintBtn.addEventListener('click', function() { revealHint(f.id, f.placeholder); });
+
+      var hintText = document.createElement('div');
+      hintText.className = 'field-hint-text';
+      hintText.id = 'field-hint-text-' + f.id;
+      hintText.style.display = 'none';
+
       group.appendChild(label);
       group.appendChild(input);
+      group.appendChild(statusEl);
+      group.appendChild(hintBtn);
+      group.appendChild(hintText);
       container.appendChild(group);
     });
   }
@@ -1039,10 +1067,99 @@ body.unlocked .archive-player,body.unlocked #fields-container,body.unlocked .pan
     return String(s).toLowerCase().trim().replace(/\s+/g, ' ');
   }
 
+  // — PROGRESSIVE VERIFICATION STATE —
+  // Verified fields persist permanently per-case, same storage pattern as av_progress_*.
+  function getVerified(caseId) {
+    try { return JSON.parse(localStorage.getItem('av_verified_' + caseId) || '[]'); } catch (e) { return []; }
+  }
+  function setVerified(caseId, arr) {
+    try { localStorage.setItem('av_verified_' + caseId, JSON.stringify(arr)); } catch (e) {}
+  }
+  function getAttempts(caseId) {
+    try { return parseInt(localStorage.getItem('av_attempts_' + caseId) || '0', 10) || 0; } catch (e) { return 0; }
+  }
+  function setAttempts(caseId, n) {
+    try { localStorage.setItem('av_attempts_' + caseId, String(n)); } catch (e) {}
+  }
+
+  function isFieldCorrect(value, accepted) {
+    if (!value) return false;
+    var val     = norm(value);
+    var nospace = val.replace(/\s+/g, '');
+    var isCorrect = accepted.indexOf(val) !== -1 || accepted.indexOf(nospace) !== -1;
+    if (!isCorrect && val.length >= 4 && val.indexOf(' ') === -1) {
+      var re = new RegExp('\\b' + val.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '\\b');
+      isCorrect = accepted.some(function(a) { return re.test(a); });
+    }
+    return isCorrect;
+  }
+
+  // Locks a verified field: read-only, green archive styling, permanent "Verified" tag.
+  function lockFieldAsVerified(fieldId, value) {
+    var input = document.getElementById('field-' + fieldId);
+    var status = document.getElementById('field-status-' + fieldId);
+    var hintBtn = document.getElementById('field-hint-btn-' + fieldId);
+    var hintText = document.getElementById('field-hint-text-' + fieldId);
+    if (input) {
+      input.value = value;
+      input.readOnly = true;
+      input.classList.add('verified-input');
+    }
+    if (status) {
+      status.textContent = 'VERIFIED';
+      status.className = 'field-status verified';
+      status.style.display = '';
+    }
+    if (hintBtn) hintBtn.style.display = 'none';
+    if (hintText) hintText.style.display = 'none';
+  }
+
+  // Shows the "Not Yet Verified" state for a field that hasn't been confirmed yet.
+  // Only called starting attempt 2, per the reveal schedule.
+  function showPendingStatus(fieldId) {
+    var status = document.getElementById('field-status-' + fieldId);
+    if (status) {
+      status.textContent = 'Not Yet Verified';
+      status.className = 'field-status pending';
+      status.style.display = '';
+    }
+  }
+
+  function revealHint(fieldId, placeholder) {
+    var hintText = document.getElementById('field-hint-text-' + fieldId);
+    var hintBtn = document.getElementById('field-hint-btn-' + fieldId);
+    if (hintText) {
+      hintText.textContent = 'Archive Analysis: ' + (placeholder || 'No further leads on file.');
+      hintText.style.display = '';
+    }
+    if (hintBtn) hintBtn.style.display = 'none';
+  }
+
+  // Applies persisted verification/attempt state to the rendered fields (used both after
+  // a submission and on page load, so refreshing never loses verification progress).
+  function applyFieldStates(d, attempts) {
+    // Nothing is revealed after attempt 1 -- verified/pending indicators and locking
+    // only begin showing starting attempt 2, per the reveal schedule.
+    if (attempts < 2) return;
+    var verified = getVerified(d.id);
+    (d.fields || []).forEach(function(f) {
+      if (verified.indexOf(f.id) !== -1) {
+        var accepted = (d.answers[f.id] || []).map(norm);
+        var input = document.getElementById('field-' + f.id);
+        var displayVal = accepted[0] ? accepted[0].replace(/\b\w/g, function(c) { return c.toUpperCase(); }) : (input ? input.value : '');
+        lockFieldAsVerified(f.id, displayVal);
+      } else {
+        showPendingStatus(f.id);
+        var hintBtn = document.getElementById('field-hint-btn-' + f.id);
+        if (hintBtn && attempts >= 3) hintBtn.style.display = '';
+      }
+    });
+  }
+
   function checkAnswers() {
     if (!SONG) return;
-    var correct = 0;
-    var total   = (SONG.fields || []).length;
+    var verified = getVerified(SONG.id);
+    var total    = (SONG.fields || []).length;
 
     // Cabinet rattle animation
     var cab = document.getElementById('cabinet-anim');
@@ -1050,32 +1167,28 @@ body.unlocked .archive-player,body.unlocked #fields-container,body.unlocked .pan
     cab.classList.add('searching');
 
     SONG.fields.forEach(function(f) {
+      if (verified.indexOf(f.id) !== -1) return; // already permanently verified
       var input = document.getElementById('field-' + f.id);
       if (!input || !input.value.trim()) return;
-      var val      = norm(input.value);
-      var nospace  = val.replace(/\s+/g, '');
       var accepted = (SONG.answers[f.id] || []).map(norm);
-
-      // Exact match or spaceless match
-      var isCorrect = accepted.indexOf(val) !== -1 || accepted.indexOf(nospace) !== -1;
-
-      // Word match: player typed a single meaningful word (4+ chars) that
-      // appears as a standalone word inside any accepted answer.
-      // Handles: "crow" matching "crow call", "lantern" matching "the lantern", etc.
-      if (!isCorrect && val.length >= 4 && val.indexOf(' ') === -1) {
-        var re = new RegExp('\\b' + val.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '\\b');
-        isCorrect = accepted.some(function(a) { return re.test(a); });
+      if (isFieldCorrect(input.value, accepted)) {
+        verified.push(f.id);
       }
-      input.classList.remove('solved-input');
-      if (isCorrect) { input.classList.add('solved-input'); correct++; }
     });
+    setVerified(SONG.id, verified);
+
+    var attempts = getAttempts(SONG.id) + 1;
+    setAttempts(SONG.id, attempts);
+
+    var correct = verified.length;
 
     setTimeout(function() {
       cab.classList.remove('searching');
       cab.classList.add(correct === total && total > 0 ? 'open' : 'closed');
     }, 500);
 
-    updateProgress(correct, total);
+    applyFieldStates(SONG, attempts);
+    updateProgress(correct, total, attempts);
     saveProgress(SONG);
 
     if (correct === total && total > 0) {
@@ -1084,7 +1197,7 @@ body.unlocked .archive-player,body.unlocked #fields-container,body.unlocked .pan
   }
 
   // Ã¢â€â‚¬Ã¢â€â‚¬ PROGRESS Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
-  function updateProgress(correct, total) {
+  function updateProgress(correct, total, attempts) {
     var pct = total > 0 ? Math.round((correct / total) * 100) : 0;
     document.getElementById('header-progress').textContent = pct + '%';
     // Keep case notes counter in sync
@@ -1098,16 +1211,16 @@ body.unlocked .archive-player,body.unlocked #fields-container,body.unlocked .pan
     if (correct === total && total > 0) {
       panel.classList.add('success');
       panel.innerHTML =
-        '<span class="response-icon unlock-icon">Ã°Å¸â€â€œ</span>' +
-        '<div class="response-headline">Case Solved</div>' +
+        '<span class="response-icon unlock-icon">&#128220;</span>' +
+        '<div class="response-headline">Case Verified</div>' +
+        '<div class="response-sub">Archive Updated &middot; Evidence Successfully Recovered</div>' +
         '<div class="response-sub">Investigation Report, Recovered Artifact, Witness Record, Evidence Recording, Archived Journal, and Recovered Music unlocked.</div>';
     } else {
       panel.classList.add('fail');
-      var remaining = total - correct;
       panel.innerHTML =
-        '<span class="response-icon">Ã°Å¸â€œâ€¹</span>' +
-        '<div class="response-headline">' + correct + ' of ' + total + ' Confirmed</div>' +
-        '<div class="response-sub">' + remaining + ' element' + (remaining === 1 ? '' : 's') + ' remain unidentified.</div>';
+        '<span class="response-icon">&#128203;</span>' +
+        '<div class="response-headline">Case Remains Unresolved</div>' +
+        (attempts >= 2 ? '<div class="response-sub">Review the verification status below. Confirmed evidence is locked to the archive record.</div>' : '');
     }
   }
 
@@ -2046,6 +2159,11 @@ var witDesc = document.createElement('div');
           if (input && saved[f.id]) input.value = saved[f.id];
         });
       }
+
+      // Restore progressive verification state so refreshing never loses progress.
+      var attempts = getAttempts(d.id);
+      if (attempts > 0) applyFieldStates(d, attempts);
+
       var solved = JSON.parse(localStorage.getItem('av_solved') || '[]');
       if (solved.indexOf(d.id) !== -1) {
         // Case already solved Ã¢â‚¬â€ restore visual state directly without re-validating answers
