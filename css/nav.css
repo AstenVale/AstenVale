@@ -35,7 +35,7 @@ body.has-hero-image .hero {
   /* No top padding needed — nav moves to bottom */
   body {
     padding-top: 0 !important;
-    padding-bottom: calc(64px + env(safe-area-inset-bottom, 0px)) !important;
+    padding-bottom: calc(78px + env(safe-area-inset-bottom, 0px)) !important;
   }
 
   .site-nav {
@@ -43,13 +43,18 @@ body.has-hero-image .hero {
     bottom: 0 !important;
     padding: 0 !important;
     flex-direction: row !important;
-    justify-content: space-around !important;
+    justify-content: center !important;
     align-items: stretch !important;
-    background: rgba(6, 3, 1, 0.97) !important;
-    border-top: 1px solid rgba(201, 169, 122, 0.2) !important;
+    background: rgba(6, 3, 1, 0.985) !important;
+    border-top: 1px solid rgba(226, 196, 145, 0.34) !important;
     border-bottom: none !important;
-    height: calc(64px + env(safe-area-inset-bottom, 0px));
+    height: calc(78px + env(safe-area-inset-bottom, 0px));
     box-shadow: 0 -4px 24px rgba(0, 0, 0, 0.5);
+    overflow: visible !important;
+  }
+
+  .site-nav::-webkit-scrollbar {
+    display: none;
   }
 
   /* Hide brand and logo on mobile */
@@ -62,9 +67,10 @@ body.has-hero-image .hero {
   .nav-links {
     display: flex !important;
     flex-direction: row !important;
-    width: 100% !important;
-    justify-content: space-around !important;
+    width: max-content !important;
+    justify-content: center !important;
     align-items: center !important;
+    min-width: 100% !important;
     gap: 0 !important;
     padding-bottom: env(safe-area-inset-bottom, 0px);
   }
@@ -76,20 +82,25 @@ body.has-hero-image .hero {
     align-items: center !important;
     justify-content: center !important;
     gap: 3px;
-    font-size: 0.52rem !important;
-    letter-spacing: 0.1em !important;
-    padding: 0.6rem 0.25rem !important;
-    flex: 1;
+    font-size: 0.64rem !important;
+    letter-spacing: 0.02em !important;
+    padding: 0.65rem 0.22rem 0.55rem !important;
+    line-height: 1.1 !important;
+    flex: 1 1 0;
     min-width: 0;
-    color: rgba(201, 169, 122, 0.5) !important;
+    max-width: none;
+    color: rgba(226, 196, 145, 0.86) !important;
     text-decoration: none;
+    text-align: center !important;
+    white-space: nowrap !important;
+    overflow-wrap: normal;
     transition: color 0.15s;
     -webkit-tap-highlight-color: transparent;
   }
 
   .nav-link::before {
     content: attr(data-icon);
-    font-size: 1.1rem;
+    font-size: 1rem;
     line-height: 1;
     display: block;
   }
@@ -100,11 +111,69 @@ body.has-hero-image .hero {
   }
 
   .nav-link.active {
-    color: rgba(201, 169, 122, 0.95) !important;
+    color: #f1d6a8 !important;
+    background: rgba(201, 169, 122, 0.11);
   }
 
   /* Remove the desktop underline active indicator */
   .nav-link.active::after {
     display: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-link[href="sounds.html"],
+  .nav-link[href="about.html"],
+  .nav-link[href="join.html"] {
+    display: none !important;
+  }
+
+  .nav-more-toggle {
+    border: 0;
+    font-family: var(--font-type, 'Courier New', monospace);
+    background: transparent;
+    cursor: pointer;
+  }
+
+  .nav-more-toggle[aria-expanded="true"] {
+    color: #f1d6a8 !important;
+    background: rgba(201, 169, 122, 0.11);
+  }
+
+  .nav-more-menu {
+    position: fixed;
+    right: 0.75rem;
+    bottom: calc(86px + env(safe-area-inset-bottom, 0px));
+    z-index: 260;
+    display: none;
+    min-width: 180px;
+    padding: 0.45rem;
+    background: rgba(8, 5, 2, 0.985);
+    border: 1px solid rgba(226, 196, 145, 0.34);
+    box-shadow: 0 12px 34px rgba(0, 0, 0, 0.65);
+  }
+
+  .nav-more-menu.open {
+    display: grid;
+    gap: 0.25rem;
+  }
+
+  .nav-more-menu a {
+    display: flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 0.7rem 0.85rem;
+    font-family: var(--font-type, 'Courier New', monospace);
+    font-size: 0.76rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgba(226, 196, 145, 0.9);
+    border: 1px solid rgba(226, 196, 145, 0.12);
+  }
+
+  .nav-more-menu a.active {
+    color: #f1d6a8;
+    background: rgba(201, 169, 122, 0.11);
   }
 }
