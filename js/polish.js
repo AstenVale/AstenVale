@@ -1,4 +1,33 @@
 (function() {
+
+  // Expose globally so case.html and other pages can use it
+  window.setAudioSrc = function(audio, src) {
+    if (!src) return;
+    var base = src.replace(/\.(mp3|wav|ogg|m4a|aac|flac)$/i, '');
+    var types = [
+      { ext: 'mp3', mime: 'audio/mpeg' },
+      { ext: 'wav', mime: 'audio/wav' },
+      { ext: 'ogg', mime: 'audio/ogg' },
+      { ext: 'm4a', mime: 'audio/mp4' },
+      { ext: 'aac', mime: 'audio/aac' }
+    ];
+    // Remove any existing sources
+    audio.removeAttribute('src');
+    audio.querySelectorAll('source').forEach(function(s) { s.remove(); });
+    // Put the original format first so it's preferred
+    var origExt = (src.match(/\.(mp3|wav|ogg|m4a|aac|flac)$/i) || ['','mp3'])[1].toLowerCase();
+    var sorted = types.slice().sort(function(a, b) {
+      return a.ext === origExt ? -1 : b.ext === origExt ? 1 : 0;
+    });
+    sorted.forEach(function(t) {
+      var s = document.createElement('source');
+      s.src = base + '.' + t.ext;
+      s.type = t.mime;
+      audio.appendChild(s);
+    });
+    audio.load();
+  };
+
   var loadingCopy = {
     cabinetBody: 'Restoring evidence...',
     soundBody: 'Recovering file...',

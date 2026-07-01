@@ -1,5 +1,5 @@
 (function() {
-  var allSounds = (window.SOUNDS_DATA || []).filter(function(s) { return s.audioFile; });
+  var allSounds = (window.SOUNDS_DATA || []);
   var body = document.getElementById('soundBody');
   var countEl = document.getElementById('soundCount');
   var summaryEl = document.getElementById('archiveSummary');
@@ -86,13 +86,16 @@
 
   function renderCard(record, idx) {
     var delay = (idx * 0.035) + 's';
-    return '<article class="recording-card" style="animation:fade-up 0.4s ease both;animation-delay:' + delay + '">' +
+    var playerHtml = record.audioFile
+      ? '<div class="archive-player"><div class="waveform" aria-hidden="true">' + waveformBars(record) + '</div><div class="player-row"><button class="play-btn" type="button">Play</button><div class="progress-track"><div class="progress-fill"></div></div><span class="time-readout">0:00 / --:--</span><div class="volume-track" title="Volume"><div class="volume-fill" style="width:80%"></div></div></div><audio class="native-audio" preload="none"><source src="' + esc(record.audioFile) + '" type="audio/mpeg"></audio></div>'
+      : '<div class="archive-player archive-player--pending"><div class="waveform" aria-hidden="true">' + waveformBars(record) + '</div><div class="player-row"><button class="play-btn" type="button" disabled style="opacity:0.4;cursor:default">Audio Pending</button></div></div>';
+    return '<article class="recording-card" id="' + esc(record.id) + '" style="animation:fade-up 0.4s ease both;animation-delay:' + delay + '">' +
       '<div class="recording-grid"><div class="cassette" aria-label="Cassette artwork"><div class="cassette-label"><span class="cassette-kicker">Asten Vale / Audio Evidence</span><span class="cassette-name">' + esc(record.name) + '</span></div><div class="cassette-reels"><span class="cassette-reel"></span><span class="cassette-reel"></span></div><div class="cassette-meta"><span>Case ' + esc(record.firstCase) + '</span><span>' + esc(record.id) + '</span></div></div>' +
       '<div class="recording-file"><div class="recording-head"><h3 class="recording-name">' + esc(record.name) + '</h3><span class="sound-stamp">' + esc(record.category) + '</span><span class="status-stamp">' + esc(record.status) + '</span>' + (record.isRecurring ? '<span class="recurring-stamp">Recurring Evidence</span>' : '') + '</div>' +
       '<div class="recording-metadata">' + meta('Archive Status', record.status) + meta('Recovered During', 'Case ' + record.firstCase) + meta('Recording Location', record.location) + meta('Recorded Time', record.recordedTime) + meta('Duration', record.duration, 'duration-readout') + meta('Season', record.season) + '</div>' +
       '<div class="archive-copy"><div class="archive-copy-block"><span class="copy-label">Archive Description</span><p class="copy-text">' + esc(record.archiveDescription) + '</p></div><div class="archive-copy-block"><span class="copy-label">Archive Notes</span><p class="copy-text">' + esc(record.archiveNotes) + '</p></div></div>' +
       '<div class="appears-row"><span>Appears In: </span>' + casesHtml(record) + '</div>' +
-      '<div class="archive-player"><div class="waveform" aria-hidden="true">' + waveformBars(record) + '</div><div class="player-row"><button class="play-btn" type="button">Play</button><div class="progress-track"><div class="progress-fill"></div></div><span class="time-readout">0:00 / --:--</span><div class="volume-track" title="Volume"><div class="volume-fill" style="width:80%"></div></div></div><audio class="native-audio" preload="none"><source src="' + esc(record.audioFile) + '" type="audio/mpeg"></audio></div>' +
+      playerHtml +
       '</div></div></article>';
   }
   function lockedMarkup() {
@@ -131,6 +134,7 @@
   function wirePlayers() {
     body.querySelectorAll('.archive-player').forEach(function(player) {
       var audio = player.querySelector('audio');
+      if (!audio) return;
       var btn = player.querySelector('.play-btn');
       var progress = player.querySelector('.progress-track');
       var fill = player.querySelector('.progress-fill');
