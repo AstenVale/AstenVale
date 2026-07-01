@@ -309,6 +309,32 @@
       document.head.appendChild(s);
     });
 
+
+    function clampImageValue(value, fallback, min, max) {
+      var num = parseFloat(value);
+      if (!isFinite(num)) return fallback;
+      return Math.max(min, Math.min(max, num));
+    }
+
+    function readImageFrameValue(source, key, fallback) {
+      source = source || {};
+      var frame = source.imageFrame || {};
+      var breakpoint = window.innerWidth <= 640 ? 'mobile' : (window.innerWidth <= 900 ? 'tablet' : 'desktop');
+      var cap = key === 'x' ? 'X' : (key === 'y' ? 'Y' : 'Zoom');
+      var bpCap = breakpoint.charAt(0).toUpperCase() + breakpoint.slice(1);
+      if (source['image' + bpCap + cap] != null) return source['image' + bpCap + cap];
+      if (frame[breakpoint] && frame[breakpoint][key] != null) return frame[breakpoint][key];
+      if (source['image' + cap] != null) return source['image' + cap];
+      if (frame[key] != null) return frame[key];
+      return fallback;
+    }
+
+    function imageFrameStyle(source) {
+      var zoom = clampImageValue(readImageFrameValue(source, 'zoom', 100), 100, 50, 300);
+      var x = clampImageValue(readImageFrameValue(source, 'x', 50), 50, 0, 100);
+      var y = clampImageValue(readImageFrameValue(source, 'y', 50), 50, 0, 100);
+      return ' style="--archive-image-zoom:' + zoom + ';--archive-image-x:' + x + '%;--archive-image-y:' + y + '%;"';
+    }
     function renderCabinet(items) {
       if (items.length === 0) {
         body.innerHTML =
@@ -420,7 +446,7 @@
             // Image box
             html +=   '<div class="artifact-img-box">';
             if (img) {
-              html += '<img src="' + img + '" alt="' + c.name + '">';
+              html += '<img src="' + img + '" alt="' + c.name + '"' + imageFrameStyle(c) + '>';
             } else {
               html += '<div class="artifact-img-placeholder">';
               html +=   '<span class="artifact-img-symbol">' + (c.symbol || 'ÃƒÂ°Ã…Â¸Ã¢â‚¬ÂÃ‚Â') + '</span>';
