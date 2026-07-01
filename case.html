@@ -497,13 +497,13 @@ body.unlocked .archive-player,body.unlocked #fields-container,body.unlocked .pan
     </div>
 
     <div class="nav-links">
-      <a href="index.html"     class="nav-link" data-icon="Ã°Å¸â€”â€ž">Archive</a>
-      <a href="cabinet.html"   class="nav-link" data-icon="Ã°Å¸â€Â">Cabinet</a>
-      <a href="sounds.html"    class="nav-link" data-icon="Ã°Å¸â€Å ">Sounds</a>
-      <a href="completed.html" class="nav-link" data-icon="Ã¢Å“Â¦">Completed</a>
-      <a href="progress.html"  class="nav-link" data-icon="Ã¢â€”Å½">Progress</a>
-      <a href="about.html"     class="nav-link" data-icon="Ã¢â€”â€°">About</a>
-      <a href="join.html"      class="nav-link" data-icon="Ã¢Å“â€°">Join</a>
+      <a href="index.html"     class="nav-link" data-icon="&#128452;">Archive</a>
+      <a href="cabinet.html"   class="nav-link" data-icon="&#128269;">Cabinet</a>
+      <a href="sounds.html"    class="nav-link" data-icon="&#128266;">Sounds</a>
+      <a href="completed.html" class="nav-link" data-icon="&#10022;">Completed</a>
+      <a href="progress.html"  class="nav-link" data-icon="&#9678;">Progress</a>
+      <a href="about.html"     class="nav-link" data-icon="&#9673;">About</a>
+      <a href="join.html"      class="nav-link" data-icon="&#9993;">Join</a>
     </div>
   </nav>
 
@@ -528,10 +528,16 @@ body.unlocked .archive-player,body.unlocked #fields-container,body.unlocked .pan
         <div class="archive-title">The Asten Vale Archives</div>
         <div class="case-number" id="case-number">CASE FILE Ã¢â‚¬â€</div>
         <hr class="case-divider" />
-        <div class="case-location-img-wrap" id="case-location-wrap" style="display:none">
-          <img class="case-location-img" id="case-location-img" src="" alt="Case location" loading="lazy" decoding="async" />
-        </div>
-        <div class="case-song-title" id="case-title">Loading case file...</div>
+        <figure class="archive-image-card archive-image-card--scene case-scene-card" id="case-location-wrap" style="display:none">
+          <figcaption class="archive-image-kicker">Recovered Scene Photograph</figcaption>
+          <div class="archive-image-frame case-location-img-wrap">
+            <img class="archive-image case-location-img" id="case-location-img" src="" alt="Case location" loading="lazy" decoding="async" />
+          </div>
+          <figcaption class="archive-image-caption">
+            <div class="archive-image-title" id="case-title">Scene location on file</div>
+            <div class="archive-image-meta" id="case-scene-location">Recovered Scene / Archive Entry</div>
+          </figcaption>
+        </figure>
         <div class="case-meta">
           DIFFICULTY: <span id="case-difficulty">Ã¢â‚¬â€</span> &nbsp;|&nbsp; PROGRESS:
           <span id="header-progress">0%</span>
@@ -952,7 +958,7 @@ body.unlocked .archive-player,body.unlocked #fields-container,body.unlocked .pan
       var _archiveHref = _archiveMap[f.id] || 'cabinet.html';
       label.innerHTML =
         '<span class="field-number">0' + (i + 1) + '</span>' +
-        (f.icon ? ' ' + f.icon + ' ' : ' ') +
+        (f.icon ? '<span class=\"field-code\">' + f.icon + '</span>' : '') +
         '<a href="' + _archiveHref + '" class="field-archive-link" tabindex="-1">' + f.label + '</a>';
 
       var input = document.createElement('input');
@@ -1129,15 +1135,89 @@ body.unlocked .archive-player,body.unlocked #fields-container,body.unlocked .pan
 
   function renderOfficialReleaseLinks(links) {
     links = links || {};
-    var order = [['spotify', 'Spotify'], ['apple', 'Apple Music'], ['amazon', 'Amazon Music'], ['youtube', 'YouTube Music']];
+    var order = [
+      ['spotify', 'Spotify', 'S'],
+      ['apple', 'Apple Music', 'AM'],
+      ['amazon', 'Amazon Music', 'AZ'],
+      ['youtube', 'YouTube Music', 'YT']
+    ];
     var out = order.map(function(item) {
       var href = links[item[0]];
       if (!href || href === '#') return '';
-      return '<a href="' + href + '" target="_blank" rel="noopener" class="artifact-view-link">' + item[1] + '</a>';
+      return '<a href="' + href + '" target="_blank" rel="noopener" class="release-icon-link release-icon-link--' + item[0] + '" aria-label="Listen on ' + item[1] + '" title="' + item[1] + '"><span aria-hidden="true">' + item[2] + '</span></a>';
     }).filter(Boolean).join('');
-    return out ? '<div class="music-release-links"><span class="ledger-label">Official Releases</span>' + out + '</div>' : '';
+    return out ? '<div class="music-release-links"><span class="ledger-label">Listen On</span><div class="release-icon-row">' + out + '</div></div>' : '';
   }
+  function buildArchiveImageCard(opts) {
+    opts = opts || {};
+    var card = document.createElement('figure');
+    card.className = 'archive-image-card archive-image-card--' + (opts.type || 'standard');
 
+    var label = document.createElement('figcaption');
+    label.className = 'archive-image-kicker';
+    label.textContent = opts.label || 'Recovered Archive Image';
+    card.appendChild(label);
+
+    var frame = document.createElement('div');
+    frame.className = 'archive-image-frame';
+
+    if (opts.src) {
+      var image = document.createElement('img');
+      image.className = 'archive-image';
+      image.src = opts.src;
+      image.alt = opts.alt || opts.title || 'Archive image';
+      image.loading = 'lazy';
+      image.decoding = 'async';
+      image.onerror = function() {
+        this.style.display = 'none';
+        var fb = document.createElement('span');
+        fb.className = 'artifact-symbol archive-image-symbol';
+        fb.textContent = opts.symbol || '?';
+        frame.appendChild(fb);
+      };
+      frame.appendChild(image);
+    } else {
+      var symbol = document.createElement('span');
+      symbol.className = 'artifact-symbol archive-image-symbol';
+      symbol.textContent = opts.symbol || '?';
+      frame.appendChild(symbol);
+    }
+
+    card.appendChild(frame);
+
+    var caption = document.createElement('figcaption');
+    caption.className = 'archive-image-caption';
+
+    var title = document.createElement('div');
+    title.className = 'archive-image-title';
+    title.textContent = opts.title || 'Image On File';
+    caption.appendChild(title);
+
+    if (opts.meta) {
+      var meta = document.createElement('div');
+      meta.className = 'archive-image-meta';
+      meta.textContent = opts.meta;
+      caption.appendChild(meta);
+    }
+
+    if (opts.description) {
+      var description = document.createElement('div');
+      description.className = 'archive-image-description';
+      description.textContent = opts.description;
+      caption.appendChild(description);
+    }
+
+    if (opts.actionHref && opts.actionText) {
+      var action = document.createElement('a');
+      action.className = 'archive-image-action';
+      action.href = opts.actionHref;
+      action.textContent = opts.actionText;
+      caption.appendChild(action);
+    }
+
+    card.appendChild(caption);
+    return card;
+  }
   function renderPostUnlock(d) {
     var panel = document.getElementById('lore-panel');
     panel.classList.remove('hidden');
@@ -1218,7 +1298,7 @@ body.unlocked .archive-player,body.unlocked #fields-container,body.unlocked .pan
         var row = document.createElement('div');
         row.className = 'case-summary-row';
         row.innerHTML =
-          '<span class="case-summary-label"><a href="' + _ahref + '" class="case-summary-label-link">' + f.label + ' Ã¢â‚¬Âº</a></span>' +
+          '<span class="case-summary-label"><a href="' + _ahref + '" class="case-summary-label-link">' + f.label + '</a></span>' +
           '<span class="case-summary-value">' + display + '</span>';
         fieldList.appendChild(row);
       });
@@ -1230,7 +1310,8 @@ body.unlocked .archive-player,body.unlocked #fields-container,body.unlocked .pan
 
     // Ã¢â€â‚¬Ã¢â€â‚¬ SECTION 1: EVIDENCE CABINET Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
     var sec1 = document.createElement('div');
-    sec1.className = 'ev-cabinet-section unlock-section';
+    sec1.className = 'ev-cabinet-section unlock-section mobile-folder-source';
+    sec1.setAttribute('data-mobile-folder-title', 'Recovered Artifact');
     sec1.style.animationDelay = '0.2s';
 
     var lbl1 = document.createElement('div');
@@ -1244,39 +1325,22 @@ body.unlocked .archive-player,body.unlocked #fields-container,body.unlocked .pan
     sec1.appendChild(h1);
 
     var artWrap = document.createElement('div');
-    artWrap.className = 'artifact-display';
+    artWrap.className = 'artifact-display archive-image-layout archive-image-layout--artifact';
 
     if (collectible && collectible.name && collectible.name.indexOf('//') === -1) {
-      var tag = document.createElement('div');
-      tag.className = 'artifact-evidence-tag';
-      tag.textContent = 'Case ' + (caseData.caseFile || caseData.id) + ' Ã¢â‚¬â€ Evidence Recovered';
-      artWrap.appendChild(tag);
-
-      var imgBox = document.createElement('div');
-      imgBox.className = 'artifact-img-box';
-      if (collectible.image) {
-        var img = document.createElement('img');
-        img.src = collectible.image;
-        img.alt = collectible.name || '';
-        img.onerror = function() {
-          this.style.display = 'none';
-          var fb = document.createElement('span'); fb.className = 'artifact-symbol'; fb.textContent = collectible.symbol || '?';
-          imgBox.appendChild(fb);
-        };
-        imgBox.appendChild(img);
-      } else {
-        var sym = document.createElement('span');
-        sym.className = 'artifact-symbol';
-        sym.textContent = collectible.symbol || '?';
-        imgBox.appendChild(sym);
-      }
-      artWrap.appendChild(imgBox);
+      artWrap.appendChild(buildArchiveImageCard({
+        type: 'artifact',
+        label: 'Recovered Evidence Photograph',
+        src: collectible.image || '',
+        alt: collectible.name || '',
+        symbol: collectible.symbol || '?',
+        title: collectible.name || 'Evidence On File',
+        meta: 'Recovered Artifact'
+      }));
 
       var abody = document.createElement('div');
       abody.className = 'artifact-body';
       abody.innerHTML =
-        '<div class="artifact-name">' + collectible.name + '</div>' +
-        '<div class="artifact-file-id">' + (collectible.id || '') + '</div>' +
         '<div class="artifact-desc">' + (collectible.description || '') + '</div>' +
         (collectible.unknownInfo && collectible.unknownInfo.indexOf('//') === -1
           ? '<div class="artifact-unknown">' + collectible.unknownInfo + '</div>'
@@ -1306,7 +1370,8 @@ body.unlocked .archive-player,body.unlocked #fields-container,body.unlocked .pan
       var caseNum = String(parseInt(caseData.id, 10) || 1).padStart(3, '0');
 
       var secS = document.createElement('div');
-      secS.className = 'sound-evidence-section unlock-section';
+      secS.className = 'sound-evidence-section unlock-section mobile-folder-source';
+      secS.setAttribute('data-mobile-folder-title', 'Environmental Recording');
       secS.style.animationDelay = '0.38s';
 
       var lblS = document.createElement('div');
@@ -1332,11 +1397,6 @@ body.unlocked .archive-player,body.unlocked #fields-container,body.unlocked .pan
       catEl.textContent = (soundData && soundData.category) || 'Audio Evidence';
       blk.appendChild(catEl);
 
-      var recovInEl = document.createElement('div');
-      recovInEl.className = 'sound-ev-recovered-in';
-      recovInEl.textContent = 'Recovered in Case ' + caseNum;
-      blk.appendChild(recovInEl);
-
       if (soundData && soundData.audioFile) {
         var sevAudio = document.createElement('audio');
         sevAudio.preload = 'none';
@@ -1347,11 +1407,6 @@ body.unlocked .archive-player,body.unlocked #fields-container,body.unlocked .pan
 
       var metaRow = document.createElement('div');
       metaRow.className = 'sound-ev-meta';
-
-      var recoveredEl = document.createElement('span');
-      recoveredEl.className = 'sound-ev-recovered';
-      recoveredEl.textContent = 'Recovered: Case ' + caseNum;
-      metaRow.appendChild(recoveredEl);
 
       var linkEl = document.createElement('a');
       var soundAnchorId = (soundData ? (soundData.id || soundData.slug || soundData.name) : soundCollectible.name).toUpperCase().replace(/[^A-Z0-9]+/g, '-');
@@ -1369,7 +1424,8 @@ body.unlocked .archive-player,body.unlocked #fields-container,body.unlocked .pan
     (function() {
       var caseNumM = String(parseInt(caseData.id, 10) || 1).padStart(3, '0');
       var secM = document.createElement('div');
-      secM.className = 'recovered-music-section unlock-section';
+      secM.className = 'recovered-music-section unlock-section mobile-folder-source';
+      secM.setAttribute('data-mobile-folder-title', 'Recovered Audio');
       secM.style.animationDelay = '0.72s';
 
       var lblM = document.createElement('div');
@@ -1382,16 +1438,19 @@ body.unlocked .archive-player,body.unlocked #fields-container,body.unlocked .pan
       hM.textContent = caseData.title || ('Case ' + caseNumM);
       secM.appendChild(hM);
 
+      var recoveredFromM = caseData.answers && caseData.answers.location;
+      recoveredFromM = Array.isArray(recoveredFromM) ? recoveredFromM[0] : recoveredFromM;
+      recoveredFromM = recoveredFromM ? recoveredFromM.replace(/\b\w/g, function(c) { return c.toUpperCase(); }) : 'Ashton Vale Archives';
+
       var musicDoc = document.createElement('div');
       musicDoc.className = 'sound-ev-block recovered-music-block';
       musicDoc.innerHTML =
         '<div class="sound-ev-name">' + (caseData.title || ('Case ' + caseNumM)) + '</div>' +
         '<div class="sound-ev-category">Official archive recording</div>' +
         '<div class="case-summary-fields">' +
-          '<div class="case-summary-row"><span class="case-summary-label">Recovered During</span><span class="case-summary-value">Case ' + caseNumM + '</span></div>' +
-          '<div class="case-summary-row"><span class="case-summary-label">Archive Status</span><span class="case-summary-value">Recovered</span></div>' +
-          '<div class="case-summary-row"><span class="case-summary-label">Duration</span><span class="case-summary-value">Auto detected</span></div>' +
-          '<div class="case-summary-row"><span class="case-summary-label">Recovered Date</span><span class="case-summary-value">' + getCompletionDate(caseData.id) + '</span></div>' +
+          '<div class="case-summary-row"><span class="case-summary-label">Status</span><span class="case-summary-value">Recovered</span></div>' +
+          '<div class="case-summary-row"><span class="case-summary-label">Archive Grade</span><span class="case-summary-value">Verified</span></div>' +
+          '<div class="case-summary-row"><span class="case-summary-label">Recovered From</span><span class="case-summary-value">' + recoveredFromM + '</span></div>' +
         '</div>';
 
       if (caseData.audioSrc) {
@@ -1400,7 +1459,7 @@ body.unlocked .archive-player,body.unlocked #fields-container,body.unlocked .pan
 
       var noteM = document.createElement('div');
       noteM.className = 'artifact-desc';
-      noteM.textContent = 'This recording has been entered into the Ashton Vale Archives following successful completion of the investigation.';
+      noteM.textContent = 'Archive Entry Verified.';
       musicDoc.appendChild(noteM);
 
       var releasesM = document.createElement('div');
@@ -1422,7 +1481,8 @@ body.unlocked .archive-player,body.unlocked #fields-container,body.unlocked .pan
       var caseNum2 = String(parseInt(caseData.id, 10) || 1).padStart(3, '0');
 
       var secWit = document.createElement('div');
-      secWit.className = 'ev-cabinet-section unlock-section';
+      secWit.className = 'ev-cabinet-section witness-section unlock-section mobile-folder-source';
+      secWit.setAttribute('data-mobile-folder-title', 'Witness Testimony');
       secWit.style.animationDelay = '0.55s';
 
       var lblWit = document.createElement('div');
@@ -1436,47 +1496,21 @@ body.unlocked .archive-player,body.unlocked #fields-container,body.unlocked .pan
       secWit.appendChild(hWit);
 
       var witWrap = document.createElement('div');
-      witWrap.className = 'artifact-display';
+      witWrap.className = 'artifact-display witness-display archive-image-layout archive-image-layout--witness';
 
-      var witTag = document.createElement('div');
-      witTag.className = 'artifact-evidence-tag';
-      witTag.textContent = 'Case ' + caseNum2 + ' Ã¢â‚¬â€ Witness on File';
-      witWrap.appendChild(witTag);
-
-      var witImgBox = document.createElement('div');
-      witImgBox.className = 'artifact-img-box';
-      if (witC.image) {
-        var witImg = document.createElement('img');
-        witImg.src = witC.image;
-        witImg.alt = witC.name || '';
-        witImg.onerror = function() {
-          this.style.display = 'none';
-          var fb = document.createElement('span'); fb.className = 'artifact-symbol'; fb.textContent = witC.symbol || '?';
-          witImgBox.appendChild(fb);
-        };
-        witImgBox.appendChild(witImg);
-      } else {
-        var witSym = document.createElement('span');
-        witSym.className = 'artifact-symbol';
-        witSym.textContent = witC.symbol || '?';
-        witImgBox.appendChild(witSym);
-      }
-      witWrap.appendChild(witImgBox);
+      witWrap.appendChild(buildArchiveImageCard({
+        type: 'witness',
+        label: 'Recovered Witness Photograph',
+        src: witC.image || '',
+        alt: witC.name || '',
+        symbol: witC.symbol || '?',
+        title: witC.name || 'Witness On File',
+        meta: 'Case ' + caseNum2 + ' / Witness'
+      }));
 
       var witBody = document.createElement('div');
       witBody.className = 'artifact-body';
-
-      var witNameEl = document.createElement('div');
-      witNameEl.className = 'artifact-name';
-      witNameEl.textContent = witC.name;
-      witBody.appendChild(witNameEl);
-
-      var witFileId = document.createElement('div');
-      witFileId.className = 'artifact-file-id';
-      witFileId.textContent = 'Case ' + caseNum2 + ' — Witness';
-      witBody.appendChild(witFileId);
-
-      var witDesc = document.createElement('div');
+var witDesc = document.createElement('div');
       witDesc.className = 'artifact-desc';
       witDesc.textContent = witC.description || '';
       witBody.appendChild(witDesc);
@@ -1487,6 +1521,7 @@ body.unlocked .archive-player,body.unlocked #fields-container,body.unlocked .pan
         witUnk.textContent = witC.unknownInfo;
         witBody.appendChild(witUnk);
       }
+      witWrap.appendChild(witBody);
 
       // Witness Testimony Audio Player
       (function() {
@@ -1502,7 +1537,10 @@ body.unlocked .archive-player,body.unlocked #fields-container,body.unlocked .pan
           wtLocked.className = 'wt-locked-notice';
           wtLocked.innerHTML = '<div class="wt-locked-heading">&#x1F512; Locked</div>' +
             '<div class="wt-locked-text">Witness testimony has not yet been recovered.<br>Complete this investigation to unlock the archived interview.</div>';
-          witBody.appendChild(wtLocked);
+          var wtRow = document.createElement('div');
+          wtRow.className = 'witness-audio-row';
+          wtRow.appendChild(wtLocked);
+          witWrap.appendChild(wtRow);
           return;
         }
 
@@ -1510,17 +1548,19 @@ body.unlocked .archive-player,body.unlocked #fields-container,body.unlocked .pan
         var wtAudio = document.createElement('audio');
         wtAudio.preload = 'none';
         if (window.setAudioSrc) { window.setAudioSrc(wtAudio, tSrc); } else { wtAudio.src = tSrc; }
+        wtAudio.className = 'witness-audio';
         wtAudio.setAttribute('aria-label', 'Witness Statement');
-        witBody.appendChild(wtAudio);
+        var wtRow = document.createElement('div');
+        wtRow.className = 'witness-audio-row';
+        wtRow.appendChild(wtAudio);
+        witWrap.appendChild(wtRow);
       })();
 
       var witViewLink = document.createElement('a');
       witViewLink.href = 'cabinet.html';
       witViewLink.className = 'artifact-view-link';
-      witViewLink.textContent = 'View Witness ›';
-      witBody.appendChild(witViewLink);
-
-      witWrap.appendChild(witBody);
+      witViewLink.textContent = 'View Witness >';
+      witWrap.appendChild(witViewLink);
 
       secWit.appendChild(witWrap);
       panel.appendChild(secWit);
@@ -1528,7 +1568,8 @@ body.unlocked .archive-player,body.unlocked #fields-container,body.unlocked .pan
 
     // Ã¢â€â‚¬Ã¢â€â‚¬ SECTION 2: INCIDENT REPORT Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
     var sec2 = document.createElement('div');
-    sec2.className = 'incident-report-section unlock-section';
+    sec2.className = 'incident-report-section unlock-section mobile-folder-source';
+    sec2.setAttribute('data-mobile-folder-title', 'Investigation Report');
     sec2.style.animationDelay = '0.55s';
 
     var lbl2 = document.createElement('div');
@@ -1621,10 +1662,9 @@ body.unlocked .archive-player,body.unlocked #fields-container,body.unlocked .pan
         row.innerHTML = '<div class="report-field-label">' + label + '</div><div class="report-field-value">' + value + '</div>';
         recMeta.appendChild(row);
       }
-      addRecField('Recovered From', lore.fileId ? 'Case ' + caseNum3 + ' Archive' : 'Ashton Vale Archives');
-      addRecField('Archive Status', 'Recovered');
-      addRecField('Integrity', '97%');
-      addRecField('Recording Quality', 'Archive Grade');
+      addRecField('Recovered From', lore.location && lore.location.indexOf('//') === -1 ? lore.location : 'Ashton Vale Archives');
+      addRecField('Status', 'Recovered');
+      addRecField('Archive Grade', 'Verified');
       reportDoc.appendChild(recMeta);
 
       var recAudio = document.createElement('audio');
@@ -1705,9 +1745,84 @@ body.unlocked .archive-player,body.unlocked #fields-container,body.unlocked .pan
       panel.appendChild(contSec);
     })();
 
+    setupMobileCaseFolders(panel);
     panel.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 
+  function setupMobileCaseFolders(panel) {
+    if (!panel || !window.matchMedia || !window.matchMedia('(max-width: 767px)').matches) return;
+
+    var sections = Array.prototype.slice.call(panel.querySelectorAll('.mobile-folder-source'));
+    if (!sections.length) return;
+
+    panel.classList.add('mobile-investigation-locked');
+
+    var gate = panel.querySelector('.mobile-begin-investigation');
+    if (!gate) {
+      gate = document.createElement('button');
+      gate.type = 'button';
+      gate.className = 'mobile-begin-investigation';
+      gate.textContent = 'Begin Investigation';
+      var summary = panel.querySelector('.case-summary-section');
+      if (summary && summary.parentNode === panel) {
+        panel.insertBefore(gate, summary.nextSibling);
+      } else {
+        panel.insertBefore(gate, sections[0]);
+      }
+    }
+
+    sections.forEach(function(section, index) {
+      if (!section.classList.contains('mobile-folder-ready')) {
+        var title = section.getAttribute('data-mobile-folder-title') || 'Archive Folder';
+        var content = document.createElement('div');
+        content.className = 'mobile-folder-content';
+
+        while (section.firstChild) {
+          content.appendChild(section.firstChild);
+        }
+
+        var button = document.createElement('button');
+        button.type = 'button';
+        button.className = 'mobile-folder-toggle';
+        button.setAttribute('aria-expanded', 'false');
+        button.setAttribute('aria-controls', 'mobile-folder-' + index);
+        button.innerHTML = '<span class="mobile-folder-caret" aria-hidden="true">&#9654;</span><span>' + title + '</span>';
+
+        content.id = 'mobile-folder-' + index;
+        content.hidden = true;
+        section.hidden = true;
+        section.classList.add('mobile-folder-section', 'mobile-folder-ready', 'is-collapsed');
+        section.appendChild(button);
+        section.appendChild(content);
+
+        button.addEventListener('click', function() {
+          var isOpen = !section.classList.contains('is-open');
+          section.classList.toggle('is-open', isOpen);
+          section.classList.toggle('is-collapsed', !isOpen);
+          content.hidden = !isOpen;
+          button.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+          button.querySelector('.mobile-folder-caret').innerHTML = isOpen ? '&#9660;' : '&#9654;';
+        });
+      } else {
+        section.hidden = true;
+        section.classList.remove('is-open');
+        section.classList.add('is-collapsed');
+        var existingContent = section.querySelector('.mobile-folder-content');
+        var existingButton = section.querySelector('.mobile-folder-toggle');
+        if (existingContent) existingContent.hidden = true;
+        if (existingButton) existingButton.setAttribute('aria-expanded', 'false');
+      }
+    });
+
+    gate.addEventListener('click', function() {
+      panel.classList.remove('mobile-investigation-locked');
+      panel.classList.add('mobile-investigation-started');
+      gate.hidden = true;
+      sections.forEach(function(section) {
+        section.hidden = false;
+      });
+    }, { once: true });
+  }
   // Ã¢â€â‚¬Ã¢â€â‚¬ CASE NOTES Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
   function renderCaseNotes(d) {
     var body = document.getElementById('casenotes-body');
@@ -1939,7 +2054,11 @@ document.title = 'Case File ' + d.caseFile + ' Ã¢â‚¬â€ The Asten Vale
       document.getElementById('jacket-label').textContent    = 'Asten Vale Sheriff\'s Dept.  Ã‚Â·  Case File ' + d.caseFile;
       document.getElementById('case-status').textContent     = d.status || 'OPEN INVESTIGATION';
       document.getElementById('case-number').textContent     = 'CASE FILE ' + d.caseFile;
-      document.getElementById('case-title').textContent      = d.title;
+      var sceneLocation = d.answers && d.answers.location;
+      sceneLocation = Array.isArray(sceneLocation) ? sceneLocation[0] : sceneLocation;
+      sceneLocation = sceneLocation ? sceneLocation.replace(/\b\w/g, function(c) { return c.toUpperCase(); }) : 'Scene Location On File';
+      document.getElementById('case-title').textContent = sceneLocation;
+      document.getElementById('case-scene-location').textContent = 'Recovered Scene / Archive Entry';
       // Location image
       (function() {
         var imgSrc = window.CASE_LOCATION_MAP && window.CASE_LOCATION_MAP[String(parseInt(d.id,10)||1).padStart(3,'0')];
@@ -1948,7 +2067,7 @@ document.title = 'Case File ' + d.caseFile + ' Ã¢â‚¬â€ The Asten Vale
         var img  = document.getElementById('case-location-img');
         if (!wrap || !img) return;
         img.src = imgSrc;
-        img.alt = d.title || 'Case location';
+        img.alt = 'Recovered scene photograph for ' + (d.title || 'case file');
         wrap.style.display = '';
       })();
       document.getElementById('hero-case-number').textContent = 'Case File ' + d.caseFile;
@@ -1977,7 +2096,7 @@ document.title = 'Case File ' + d.caseFile + ' Ã¢â‚¬â€ The Asten Vale
       if (window.SONG_DATA) {
         applyMeta(window.SONG_DATA);
       } else {
-        document.getElementById('case-title').textContent = 'Error: SONG_DATA not found.';
+        document.getElementById('case-title').textContent = 'Case file unavailable.';
       }
     };
     script.onerror = function() {
