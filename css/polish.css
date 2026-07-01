@@ -405,7 +405,7 @@ body {
 
 @media (max-width: 480px) {
   body {
-    font-size: 15px !important;
+    font-size: 16px !important;
   }
 
   :is(.site-wrapper, .paper-inner, .cabinet-inner, .badges-inner, .vault-page-wrapper) {
@@ -1841,4 +1841,41 @@ body.unlocked .case-meta {
 
 .case-card.ledger-case.is-open-file:hover {
   cursor: pointer;
+}
+
+/* Cabinet evidence images should fill the full card width on mobile. */
+.cabinet-section .artifact-card > .artifact-img-box {
+  width: 100% !important;
+  max-width: none !important;
+  aspect-ratio: 4 / 3 !important;
+}
+
+.cabinet-section .artifact-card > .artifact-img-box img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+}
+
+/* Percentage-based image framing: zoom, horizontal, and vertical placement. */
+.archive-image,
+.artifact-img-box img {
+  object-position: var(--archive-image-x, 50%) var(--archive-image-y, 50%);
+  transform: scale(calc(var(--archive-image-zoom, 100) / 100));
+  transform-origin: var(--archive-image-x, 50%) var(--archive-image-y, 50%);
+}
+
+/* Paper-section headings need ink contrast; the global gold title polish is only for dark archive surfaces. */
+:is(.paper-section, .paper-inner, .cases-section, .cases-section-inner,
+.cabinet-section, .cabinet-inner, .badges-section, .badges-inner) :is(.section-title,
+.cabinet-title, .badges-summary-title) {
+  color: var(--ink, #1c120a) !important;
+  text-shadow: none !important;
+}
+
+:is(.paper-section, .paper-inner, .cases-section, .cases-section-inner,
+.cabinet-section, .cabinet-inner, .badges-section, .badges-inner) :is(.section-label,
+.archive-search-label, .archive-tabs-label, .cabinet-subtitle, .badges-summary-sub) {
+  color: rgba(28, 18, 10, 0.78) !important;
+  opacity: 1 !important;
+  text-shadow: none !important;
 }
