@@ -780,6 +780,11 @@ body.unlocked .archive-player,body.unlocked #fields-container,body.unlocked .pan
     // player entirely (same rule as the post-solve Recovered Music section).
     if (d.spotifyEmbedUrl) {
       audio.style.display = 'none';
+      // js/polish.js may have already wrapped #ap-audio in its own custom UI
+      // (inserted as the next sibling, class "av-audio-player") -- hide that too.
+      if (audio.nextElementSibling && audio.nextElementSibling.classList.contains('av-audio-player')) {
+        audio.nextElementSibling.style.display = 'none';
+      }
       var apControls = document.querySelector('#archive-player .ap-controls');
       if (apControls) apControls.style.display = 'none';
       if (!document.getElementById('ap-spotify-embed')) {
