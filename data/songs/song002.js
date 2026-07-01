@@ -10,7 +10,7 @@ window.SONG_DATA = {
   "difficulty": "Archive Entry",
   "status": "OPEN INVESTIGATION",
   "artwork": null,
-  "audioSrc": "Songs/Season-01-the-stranger/002.mp3",
+  "audioSrc": "https://astenvale.github.io/AstenVale-Songs/Songs/Season-01-the-stranger/002.mp3",
   "streamingLinks": {
     "spotify": "",
     "apple": "",

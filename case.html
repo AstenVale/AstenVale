@@ -1558,7 +1558,7 @@ var witDesc = document.createElement('div');
       (function() {
         var tid = String(parseInt(caseData.id, 10) || 1).padStart(3, '0');
         var tslug = window.TESTIMONY_MAP && window.TESTIMONY_MAP[parseInt(caseData.id, 10)];
-        var tSrc = tslug ? 'Testimonies/case-' + tid + '-' + tslug + '-testimony.mp3' : '';
+        var tSrc = tslug ? 'https://astenvale.github.io/AstenVale-Testimonies/Testimonies/case-' + tid + '-' + tslug + '-testimony.mp3' : '';
         var tSolved = (function() {
           try { return JSON.parse(localStorage.getItem('av_solved') || '[]').indexOf(caseData.id) !== -1; } catch(e) { return false; }
         })();
