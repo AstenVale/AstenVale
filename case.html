@@ -1148,6 +1148,34 @@ body.unlocked .archive-player,body.unlocked #fields-container,body.unlocked .pan
     }).filter(Boolean).join('');
     return out ? '<div class="music-release-links"><span class="ledger-label">Listen On</span><div class="release-icon-row">' + out + '</div></div>' : '';
   }
+  function clampImageFrameValue(value, fallback, min, max) {
+    var num = parseFloat(value);
+    if (!isFinite(num)) return fallback;
+    return Math.max(min, Math.min(max, num));
+  }
+
+  function readImageFrameValue(source, key, fallback) {
+    source = source || {};
+    var frame = source.imageFrame || {};
+    var breakpoint = window.innerWidth <= 640 ? 'mobile' : (window.innerWidth <= 900 ? 'tablet' : 'desktop');
+    var cap = key === 'x' ? 'X' : (key === 'y' ? 'Y' : 'Zoom');
+    var bpCap = breakpoint.charAt(0).toUpperCase() + breakpoint.slice(1);
+    if (source['image' + bpCap + cap] != null) return source['image' + bpCap + cap];
+    if (frame[breakpoint] && frame[breakpoint][key] != null) return frame[breakpoint][key];
+    if (source['image' + cap] != null) return source['image' + cap];
+    if (frame[key] != null) return frame[key];
+    return fallback;
+  }
+
+  function applyImageFrameVars(image, source) {
+    if (!image) return;
+    var zoom = clampImageFrameValue(readImageFrameValue(source, 'zoom', 100), 100, 50, 300);
+    var x = clampImageFrameValue(readImageFrameValue(source, 'x', 50), 50, 0, 100);
+    var y = clampImageFrameValue(readImageFrameValue(source, 'y', 50), 50, 0, 100);
+    image.style.setProperty('--archive-image-zoom', zoom);
+    image.style.setProperty('--archive-image-x', x + '%');
+    image.style.setProperty('--archive-image-y', y + '%');
+  }
   function buildArchiveImageCard(opts) {
     opts = opts || {};
     var card = document.createElement('figure');
@@ -1168,6 +1196,7 @@ body.unlocked .archive-player,body.unlocked #fields-container,body.unlocked .pan
       image.alt = opts.alt || opts.title || 'Archive image';
       image.loading = 'lazy';
       image.decoding = 'async';
+      applyImageFrameVars(image, opts.imageFrameSource || opts);
       image.onerror = function() {
         this.style.display = 'none';
         var fb = document.createElement('span');
@@ -1335,7 +1364,8 @@ body.unlocked .archive-player,body.unlocked #fields-container,body.unlocked .pan
         alt: collectible.name || '',
         symbol: collectible.symbol || '?',
         title: collectible.name || 'Evidence On File',
-        meta: 'Recovered Artifact'
+        meta: 'Recovered Artifact',
+        imageFrameSource: collectible
       }));
 
       var abody = document.createElement('div');
@@ -1505,6 +1535,7 @@ body.unlocked .archive-player,body.unlocked #fields-container,body.unlocked .pan
         alt: witC.name || '',
         symbol: witC.symbol || '?',
         title: witC.name || 'Witness On File',
+        imageFrameSource: witC,
         meta: 'Case ' + caseNum2 + ' / Witness'
       }));
 
@@ -2068,6 +2099,7 @@ document.title = 'Case File ' + d.caseFile + ' Ã¢â‚¬â€ The Asten Vale
         if (!wrap || !img) return;
         img.src = imgSrc;
         img.alt = 'Recovered scene photograph for ' + (d.title || 'case file');
+        applyImageFrameVars(img, d.sceneImageFrame || d.locationImageFrame || d.imageFrame || d);
         wrap.style.display = '';
       })();
       document.getElementById('hero-case-number').textContent = 'Case File ' + d.caseFile;
