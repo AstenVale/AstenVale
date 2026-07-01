@@ -262,7 +262,7 @@ window.SONG_DATA = {
     {
       "id": "497_marker",
       "type": "Marker",
-      "image": "images/Markers/497_The_Thirst.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/497_The_Thirst.jpg",
       "name": "Marker 4243",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 497.",

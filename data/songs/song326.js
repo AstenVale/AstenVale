@@ -264,7 +264,7 @@ window.SONG_DATA = {
     {
       "id": "326_marker",
       "type": "Marker",
-      "image": "images/Markers/326_The_Old_Transmitter.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/326_The_Old_Transmitter.jpg",
       "name": "Marker 2816",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 326.",

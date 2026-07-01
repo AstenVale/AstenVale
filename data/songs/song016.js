@@ -234,12 +234,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Wedding Photo was recovered from Old Bridge in Case File 016. It is tied to Wife, 11:52, and marker 143.",
       "unknownInfo": "South and Wind in Pines suggest this object matters beyond the first reading.",
-      "image": "images/Objects/016 - suitcase.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/016 - suitcase.jpg"
     },
     {
       "id": "016_location",
       "type": "Location",
-      "image": "images/Location/case-016-window-seat-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-016-window-seat-location.jpg",
       "name": "Oldbridge",
       "symbol": "📍",
       "description": "The active scene for Case File 016. Recovered field notes place the primary event at Oldbridge.",
@@ -257,7 +257,7 @@ window.SONG_DATA = {
     {
       "id": "016_time",
       "type": "Time",
-      "image": "images/5 Time/016_lantern_5-47.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/5 Time/016_lantern_5-47.jpg",
       "name": "1152",
       "symbol": "⌚",
       "description": "The time recorded in the case audio for Case File 016. Cross-referenced with field notes.",
@@ -266,7 +266,7 @@ window.SONG_DATA = {
     {
       "id": "016_marker",
       "type": "Marker",
-      "image": "images/Markers/016_The_Confession.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/016_The_Confession.jpg",
       "name": "Marker 143",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 016.",

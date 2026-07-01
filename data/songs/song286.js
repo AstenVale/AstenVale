@@ -262,7 +262,7 @@ window.SONG_DATA = {
     {
       "id": "286_marker",
       "type": "Marker",
-      "image": "images/Markers/286_Minutes_Matter.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/286_Minutes_Matter.jpg",
       "name": "Marker 2488",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 286.",

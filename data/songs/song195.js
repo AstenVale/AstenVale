@@ -260,7 +260,7 @@ window.SONG_DATA = {
     {
       "id": "195_marker",
       "type": "Marker",
-      "image": "images/Markers/195_The_Last_Warm_Day.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/195_The_Last_Warm_Day.jpg",
       "name": "Marker 1725",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 195.",

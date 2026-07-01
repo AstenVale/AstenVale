@@ -251,7 +251,7 @@ window.SONG_DATA = {
     {
       "id": "470_marker",
       "type": "Marker",
-      "image": "images/Markers/470_The_Cipher.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/470_The_Cipher.jpg",
       "name": "Marker 4016",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 470.",

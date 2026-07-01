@@ -252,7 +252,7 @@ window.SONG_DATA = {
     {
       "id": "333_marker",
       "type": "Marker",
-      "image": "images/Markers/333_When_It_Stopped.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/333_When_It_Stopped.jpg",
       "name": "Marker 2879",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 333.",

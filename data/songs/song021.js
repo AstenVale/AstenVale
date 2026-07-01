@@ -232,12 +232,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Ash was recovered from Fireplace in Case File 021. It is tied to Mechanic, 7:22, and marker 198.",
       "unknownInfo": "Up and Fire Crackling suggest this object matters beyond the first reading.",
-      "image": "images/Objects/021 - key.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/021 - key.jpg"
     },
     {
       "id": "021_location",
       "type": "Location",
-      "image": "images/Location/case-021-pine-road-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-021-pine-road-location.jpg",
       "name": "Fireplace",
       "symbol": "📍",
       "description": "The active scene for Case File 021. Recovered field notes place the primary event at Fireplace.",
@@ -255,7 +255,7 @@ window.SONG_DATA = {
     {
       "id": "021_time",
       "type": "Time",
-      "image": "images/5 Time/021_lantern_9-45.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/5 Time/021_lantern_9-45.jpg",
       "name": "722",
       "symbol": "⌚",
       "description": "The time recorded in the case audio for Case File 021. Cross-referenced with field notes.",
@@ -264,7 +264,7 @@ window.SONG_DATA = {
     {
       "id": "021_marker",
       "type": "Marker",
-      "image": "images/Markers/021_The_Burnt_Pages.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/021_The_Burnt_Pages.jpg",
       "name": "Marker 198",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 021.",

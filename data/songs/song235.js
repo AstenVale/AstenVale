@@ -261,7 +261,7 @@ window.SONG_DATA = {
     {
       "id": "235_marker",
       "type": "Marker",
-      "image": "images/Markers/235_The_Night_Evidence.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/235_The_Night_Evidence.jpg",
       "name": "Marker 2061",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 235.",

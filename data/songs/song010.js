@@ -221,12 +221,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Compass was recovered from Highway in Case File 010. It is tied to Driver, 11:40, and marker 81.",
       "unknownInfo": "West and Horse Hooves suggest this object matters beyond the first reading.",
-      "image": "images/Objects/010 - compass.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/010 - compass.jpg"
     },
     {
       "id": "010_location",
       "type": "Location",
-      "image": "images/Location/case-010-cemetery-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-010-cemetery-location.jpg",
       "name": "Highway",
       "symbol": "📍",
       "description": "The active scene for Case File 010. Recovered field notes place the primary event at Highway.",
@@ -244,7 +244,7 @@ window.SONG_DATA = {
     {
       "id": "010_time",
       "type": "Time",
-      "image": "images/5 Time/010_lantern_11-40.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/5 Time/010_lantern_11-40.jpg",
       "name": "1140",
       "symbol": "⌚",
       "description": "The time recorded in the case audio for Case File 010. Cross-referenced with field notes.",
@@ -253,7 +253,7 @@ window.SONG_DATA = {
     {
       "id": "010_marker",
       "type": "Marker",
-      "image": "images/Markers/010_Westbound_Shadows.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/010_Westbound_Shadows.jpg",
       "name": "Marker 81",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 010.",

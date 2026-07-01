@@ -223,12 +223,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Axle Pin was recovered from North Pasture in Case File 049. It is tied to Postman, 8:33, and marker 507.",
       "unknownInfo": "Below and Water Drip suggest this object matters beyond the first reading.",
-      "image": "images/Objects/049 - ledger page.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/049 - ledger page.jpg"
     },
     {
       "id": "049_location",
       "type": "Location",
-      "image": "images/Location/case-049-the-hollow-road-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-049-the-hollow-road-location.jpg",
       "name": "Northpasture",
       "symbol": "📍",
       "description": "The active scene for Case File 049. Recovered field notes place the primary event at Northpasture.",
@@ -246,7 +246,7 @@ window.SONG_DATA = {
     {
       "id": "049_time",
       "type": "Time",
-      "image": "images/5 Time/049_lantern_12-17.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/5 Time/049_lantern_12-17.jpg",
       "name": "833",
       "symbol": "⌚",
       "description": "The time recorded in the case audio for Case File 049. Cross-referenced with field notes.",
@@ -255,7 +255,7 @@ window.SONG_DATA = {
     {
       "id": "049_marker",
       "type": "Marker",
-      "image": "images/Markers/049_First_Frost.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/049_First_Frost.jpg",
       "name": "Marker 507",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 049.",

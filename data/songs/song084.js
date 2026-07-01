@@ -235,12 +235,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Charcoal Sketch was recovered from Black Pine in Case File 084. It is tied to Census Taker, 5:40, and marker 806.",
       "unknownInfo": "Below and Broken String suggest this object matters beyond the first reading.",
-      "image": "images/Objects/084 - folded cloth.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/084 - folded cloth.jpg"
     },
     {
       "id": "084_location",
       "type": "Location",
-      "image": "images/Location/case-084-jail-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-084-jail-location.jpg",
       "name": "Blackpine",
       "symbol": "📍",
       "description": "The active scene for Case File 084. Recovered field notes place the primary event at Blackpine.",
@@ -265,7 +265,7 @@ window.SONG_DATA = {
     {
       "id": "084_marker",
       "type": "Marker",
-      "image": "images/Markers/084_The_Confrontation.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/084_The_Confrontation.jpg",
       "name": "Marker 806",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 084.",

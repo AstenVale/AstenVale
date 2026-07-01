@@ -221,12 +221,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Straight Razor was recovered from Church in Case File 059. It is tied to Doctor, 1:26, and marker 597.",
       "unknownInfo": "South and Floorboard suggest this object matters beyond the first reading.",
-      "image": "images/Objects/059 - cufflink.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/059 - cufflink.jpg"
     },
     {
       "id": "059_location",
       "type": "Location",
-      "image": "images/Location/case-059-post-office-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-059-post-office-location.jpg",
       "name": "Church",
       "symbol": "📍",
       "description": "The active scene for Case File 059. Recovered field notes place the primary event at Church.",
@@ -244,7 +244,7 @@ window.SONG_DATA = {
     {
       "id": "059_time",
       "type": "Time",
-      "image": "images/5 Time/059_lantern_1-58.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/5 Time/059_lantern_1-58.jpg",
       "name": "126",
       "symbol": "⌚",
       "description": "The time recorded in the case audio for Case File 059. Cross-referenced with field notes.",
@@ -253,7 +253,7 @@ window.SONG_DATA = {
     {
       "id": "059_marker",
       "type": "Marker",
-      "image": "images/Markers/059_The_Thaw.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/059_The_Thaw.jpg",
       "name": "Marker 597",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 059.",

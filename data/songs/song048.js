@@ -233,12 +233,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Photograph was recovered from Cooper's Yard in Case File 048. It is tied to Night Watchman, 7:48, and marker 506.",
       "unknownInfo": "Around and Broken String suggest this object matters beyond the first reading.",
-      "image": "images/Objects/048 - journal.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/048 - journal.jpg"
     },
     {
       "id": "048_location",
       "type": "Location",
-      "image": "images/Location/case-048-covered-bridge-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-048-covered-bridge-location.jpg",
       "name": "Cooper'Syard",
       "symbol": "📍",
       "description": "The active scene for Case File 048. Recovered field notes place the primary event at Cooper'Syard.",
@@ -256,7 +256,7 @@ window.SONG_DATA = {
     {
       "id": "048_time",
       "type": "Time",
-      "image": "images/5 Time/048_lantern_3-44.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/5 Time/048_lantern_3-44.jpg",
       "name": "748",
       "symbol": "⌚",
       "description": "The time recorded in the case audio for Case File 048. Cross-referenced with field notes.",
@@ -265,7 +265,7 @@ window.SONG_DATA = {
     {
       "id": "048_marker",
       "type": "Marker",
-      "image": "images/Markers/048_The_Rivers_End.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/048_The_Rivers_End.jpg",
       "name": "Marker 506",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 048.",

@@ -222,12 +222,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "River Stone was recovered from River in Case File 006. It is tied to Child, 5:40, and marker 08.",
       "unknownInfo": "West and River Water suggest this object matters beyond the first reading.",
-      "image": "images/Objects/006 - river stone.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/006 - river stone.jpg"
     },
     {
       "id": "006_location",
       "type": "Location",
-      "image": "images/Location/case-006-river-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-006-river-location.jpg",
       "name": "River",
       "symbol": "📍",
       "description": "The active scene for Case File 006. Recovered field notes place the primary event at River.",
@@ -245,7 +245,7 @@ window.SONG_DATA = {
     {
       "id": "006_time",
       "type": "Time",
-      "image": "images/5 Time/006_lantern_5-40.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/5 Time/006_lantern_5-40.jpg",
       "name": "540",
       "symbol": "⌚",
       "description": "The time recorded in the case audio for Case File 006. Cross-referenced with field notes.",
@@ -254,7 +254,7 @@ window.SONG_DATA = {
     {
       "id": "006_marker",
       "type": "Marker",
-      "image": "images/Markers/006_Across_Pine_Hollow.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/006_Across_Pine_Hollow.jpg",
       "name": "Marker 08",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 006.",

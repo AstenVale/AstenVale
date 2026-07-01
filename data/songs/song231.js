@@ -263,7 +263,7 @@ window.SONG_DATA = {
     {
       "id": "231_marker",
       "type": "Marker",
-      "image": "images/Markers/231_What_Runs_at_Midnight.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/231_What_Runs_at_Midnight.jpg",
       "name": "Marker 2025",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 231.",

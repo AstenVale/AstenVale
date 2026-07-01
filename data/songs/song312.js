@@ -260,7 +260,7 @@ window.SONG_DATA = {
     {
       "id": "312_marker",
       "type": "Marker",
-      "image": "images/Markers/312_The_Door_Stays_Locked.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/312_The_Door_Stays_Locked.jpg",
       "name": "Marker 2706",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 312.",

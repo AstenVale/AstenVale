@@ -263,7 +263,7 @@ window.SONG_DATA = {
     {
       "id": "342_marker",
       "type": "Marker",
-      "image": "images/Markers/342_Who_Knows.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/342_Who_Knows.jpg",
       "name": "Marker 2952",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 342.",

@@ -238,7 +238,7 @@ window.SONG_DATA = {
     {
       "id": "101_location",
       "type": "Location",
-      "image": "images/Location/case-101-butchers-row-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-101-butchers-row-location.jpg",
       "name": "Brickkiln",
       "symbol": "📍",
       "description": "The active scene for Case File 101. Recovered field notes place the primary event at Brickkiln.",
@@ -263,7 +263,7 @@ window.SONG_DATA = {
     {
       "id": "101_marker",
       "type": "Marker",
-      "image": "images/Markers/101_What_the_Index_Says.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/101_What_the_Index_Says.jpg",
       "name": "Marker 943",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 101.",

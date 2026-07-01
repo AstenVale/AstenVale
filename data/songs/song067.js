@@ -233,12 +233,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Thimble was recovered from Mill House in Case File 067. It is tied to Librarian, 1:26, and marker 661.",
       "unknownInfo": "Under and Hammer Strike suggest this object matters beyond the first reading.",
-      "image": "images/Objects/067 - badge.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/067 - badge.jpg"
     },
     {
       "id": "067_location",
       "type": "Location",
-      "image": "images/Location/case-067-chandlers-row-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-067-chandlers-row-location.jpg",
       "name": "Millhouse",
       "symbol": "📍",
       "description": "The active scene for Case File 067. Recovered field notes place the primary event at Millhouse.",
@@ -256,7 +256,7 @@ window.SONG_DATA = {
     {
       "id": "067_time",
       "type": "Time",
-      "image": "images/5 Time/067_lantern_5-55.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/5 Time/067_lantern_5-55.jpg",
       "name": "126",
       "symbol": "⌚",
       "description": "The time recorded in the case audio for Case File 067. Cross-referenced with field notes.",
@@ -265,7 +265,7 @@ window.SONG_DATA = {
     {
       "id": "067_marker",
       "type": "Marker",
-      "image": "images/Markers/067_The_Second_Room.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/067_The_Second_Room.jpg",
       "name": "Marker 661",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 067.",

@@ -251,7 +251,7 @@ window.SONG_DATA = {
     {
       "id": "182_marker",
       "type": "Marker",
-      "image": "images/Markers/182_The_Transparent_Life.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/182_The_Transparent_Life.jpg",
       "name": "Marker 1616",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 182.",

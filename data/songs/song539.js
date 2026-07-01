@@ -250,7 +250,7 @@ window.SONG_DATA = {
     {
       "id": "539_marker",
       "type": "Marker",
-      "image": "images/Markers/539_The_Reckoning.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/539_The_Reckoning.jpg",
       "name": "Marker 4597",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 539.",

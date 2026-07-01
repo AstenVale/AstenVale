@@ -234,12 +234,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Suitcase was recovered from Train Station in Case File 017. It is tied to Station Master, 5:47, and marker 154.",
       "unknownInfo": "West and Train Whistle suggest this object matters beyond the first reading.",
-      "image": "images/Objects/017 - handkerchief.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/017 - handkerchief.jpg"
     },
     {
       "id": "017_location",
       "type": "Location",
-      "image": "images/Location/case-017-mailbox-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-017-mailbox-location.jpg",
       "name": "Trainstation",
       "symbol": "📍",
       "description": "The active scene for Case File 017. Recovered field notes place the primary event at Trainstation.",
@@ -257,7 +257,7 @@ window.SONG_DATA = {
     {
       "id": "017_time",
       "type": "Time",
-      "image": "images/5 Time/017_lantern_2-34.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/5 Time/017_lantern_2-34.jpg",
       "name": "547",
       "symbol": "⌚",
       "description": "The time recorded in the case audio for Case File 017. Cross-referenced with field notes.",
@@ -266,7 +266,7 @@ window.SONG_DATA = {
     {
       "id": "017_marker",
       "type": "Marker",
-      "image": "images/Markers/017_The_Leaving.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/017_The_Leaving.jpg",
       "name": "Marker 154",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 017.",

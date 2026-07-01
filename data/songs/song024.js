@@ -234,12 +234,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Suitcase Latch was recovered from Pine Road in Case File 024. It is tied to Child, 5:30, and marker 231.",
       "unknownInfo": "Home and Wind in Pines suggest this object matters beyond the first reading.",
-      "image": "images/Objects/024 - iron nail.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/024 - iron nail.jpg"
     },
     {
       "id": "024_location",
       "type": "Location",
-      "image": "images/Location/case-024-millpond-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-024-millpond-location.jpg",
       "name": "Pineroad",
       "symbol": "📍",
       "description": "The active scene for Case File 024. Recovered field notes place the primary event at Pineroad.",
@@ -257,7 +257,7 @@ window.SONG_DATA = {
     {
       "id": "024_time",
       "type": "Time",
-      "image": "images/5 Time/024_lantern_2-19.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/5 Time/024_lantern_2-19.jpg",
       "name": "530",
       "symbol": "⌚",
       "description": "The time recorded in the case audio for Case File 024. Cross-referenced with field notes.",
@@ -266,7 +266,7 @@ window.SONG_DATA = {
     {
       "id": "024_marker",
       "type": "Marker",
-      "image": "images/Markers/024_The_Pine_Road_Home.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/024_The_Pine_Road_Home.jpg",
       "name": "Marker 231",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 024.",

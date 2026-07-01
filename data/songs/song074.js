@@ -224,12 +224,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Tin Star was recovered from Old Wharf in Case File 074. It is tied to Surveyor, 10:51, and marker 716.",
       "unknownInfo": "Along the Creek and Wind in Pines suggest this object matters beyond the first reading.",
-      "image": "images/Objects/074 - bone button.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/074 - bone button.jpg"
     },
     {
       "id": "074_location",
       "type": "Location",
-      "image": "images/Location/case-074-clock-tower-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-074-clock-tower-location.jpg",
       "name": "Oldwharf",
       "symbol": "📍",
       "description": "The active scene for Case File 074. Recovered field notes place the primary event at Oldwharf.",
@@ -255,7 +255,7 @@ window.SONG_DATA = {
     {
       "id": "074_marker",
       "type": "Marker",
-      "image": "images/Markers/074_A_Different_Name.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/074_A_Different_Name.jpg",
       "name": "Marker 716",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 074.",

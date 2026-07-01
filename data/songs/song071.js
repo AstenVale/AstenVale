@@ -234,12 +234,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Telegram was recovered from Hotel in Case File 071. It is tied to Judge, 7:48, and marker 697.",
       "unknownInfo": "Straight Down and The Silence After suggest this object matters beyond the first reading.",
-      "image": "images/Objects/071 - flint stone.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/071 - flint stone.jpg"
     },
     {
       "id": "071_location",
       "type": "Location",
-      "image": "images/Location/case-071-the-ridge-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-071-the-ridge-location.jpg",
       "name": "Hotel",
       "symbol": "📍",
       "description": "The active scene for Case File 071. Recovered field notes place the primary event at Hotel.",
@@ -265,7 +265,7 @@ window.SONG_DATA = {
     {
       "id": "071_marker",
       "type": "Marker",
-      "image": "images/Markers/071_What_Grows_in_Dark.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/071_What_Grows_in_Dark.jpg",
       "name": "Marker 697",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 071.",

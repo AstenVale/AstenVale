@@ -234,12 +234,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Signet Ring was recovered from Cabin in Case File 062. It is tied to Cattle Driver, 4:12, and marker 616.",
       "unknownInfo": "Up the Ridge and Thunder suggest this object matters beyond the first reading.",
-      "image": "images/Objects/062 - glove.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/062 - glove.jpg"
     },
     {
       "id": "062_location",
       "type": "Location",
-      "image": "images/Location/case-062-sheriffs-office-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-062-sheriffs-office-location.jpg",
       "name": "Cabin",
       "symbol": "📍",
       "description": "The active scene for Case File 062. Recovered field notes place the primary event at Cabin.",
@@ -257,7 +257,7 @@ window.SONG_DATA = {
     {
       "id": "062_time",
       "type": "Time",
-      "image": "images/5 Time/062_lantern_11-03.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/5 Time/062_lantern_11-03.jpg",
       "name": "412",
       "symbol": "⌚",
       "description": "The time recorded in the case audio for Case File 062. Cross-referenced with field notes.",
@@ -266,7 +266,7 @@ window.SONG_DATA = {
     {
       "id": "062_marker",
       "type": "Marker",
-      "image": "images/Markers/062_Blind_Direction.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/062_Blind_Direction.jpg",
       "name": "Marker 616",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 062.",

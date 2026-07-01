@@ -263,7 +263,7 @@ window.SONG_DATA = {
     {
       "id": "240_marker",
       "type": "Marker",
-      "image": "images/Markers/240_The_Morning_After.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/240_The_Morning_After.jpg",
       "name": "Marker 2106",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 240.",

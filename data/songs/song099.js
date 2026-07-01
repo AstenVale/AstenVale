@@ -224,7 +224,7 @@ window.SONG_DATA = {
     {
       "id": "099_location",
       "type": "Location",
-      "image": "images/Location/case-099-rope-walk-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-099-rope-walk-location.jpg",
       "name": "Sawmill",
       "symbol": "📍",
       "description": "The active scene for Case File 099. Recovered field notes place the primary event at Sawmill.",
@@ -249,7 +249,7 @@ window.SONG_DATA = {
     {
       "id": "099_marker",
       "type": "Marker",
-      "image": "images/Markers/099_The_Record_Room.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/099_The_Record_Room.jpg",
       "name": "Marker 925",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 099.",

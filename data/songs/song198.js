@@ -262,7 +262,7 @@ window.SONG_DATA = {
     {
       "id": "198_marker",
       "type": "Marker",
-      "image": "images/Markers/198_What_the_Ground_Held.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/198_What_the_Ground_Held.jpg",
       "name": "Marker 1752",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 198.",

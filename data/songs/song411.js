@@ -260,7 +260,7 @@ window.SONG_DATA = {
     {
       "id": "411_marker",
       "type": "Marker",
-      "image": "images/Markers/411_The_Missing_Item.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/411_The_Missing_Item.jpg",
       "name": "Marker 3525",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 411.",

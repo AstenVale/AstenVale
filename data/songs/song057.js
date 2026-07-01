@@ -222,12 +222,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Journal was recovered from Cooper's Yard in Case File 057. It is tied to Chandler, 8:42, and marker 579.",
       "unknownInfo": "Back and Pen on Paper suggest this object matters beyond the first reading.",
-      "image": "images/Objects/057 - dried blood on cloth.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/057 - dried blood on cloth.jpg"
     },
     {
       "id": "057_location",
       "type": "Location",
-      "image": "images/Location/case-057-boatyard-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-057-boatyard-location.jpg",
       "name": "Cooper'Syard",
       "symbol": "📍",
       "description": "The active scene for Case File 057. Recovered field notes place the primary event at Cooper'Syard.",
@@ -245,7 +245,7 @@ window.SONG_DATA = {
     {
       "id": "057_time",
       "type": "Time",
-      "image": "images/5 Time/057_lantern_2-22.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/5 Time/057_lantern_2-22.jpg",
       "name": "842",
       "symbol": "⌚",
       "description": "The time recorded in the case audio for Case File 057. Cross-referenced with field notes.",
@@ -254,7 +254,7 @@ window.SONG_DATA = {
     {
       "id": "057_marker",
       "type": "Marker",
-      "image": "images/Markers/057_What_He_Left_Behind.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/057_What_He_Left_Behind.jpg",
       "name": "Marker 579",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 057.",

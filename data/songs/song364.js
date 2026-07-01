@@ -262,7 +262,7 @@ window.SONG_DATA = {
     {
       "id": "364_marker",
       "type": "Marker",
-      "image": "images/Markers/364_The_Gardener.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/364_The_Gardener.jpg",
       "name": "Marker 3134",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 364.",

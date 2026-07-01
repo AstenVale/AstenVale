@@ -224,12 +224,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Charcoal Sketch was recovered from Quarry Edge in Case File 025. It is tied to Station Master, 9:55, and marker 307.",
       "unknownInfo": "Toward and Coal Shifting suggest this object matters beyond the first reading.",
-      "image": "images/Objects/025 - leather strap.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/025 - leather strap.jpg"
     },
     {
       "id": "025_location",
       "type": "Location",
-      "image": "images/Location/case-025-grist-mill-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-025-grist-mill-location.jpg",
       "name": "Quarryedge",
       "symbol": "📍",
       "description": "The active scene for Case File 025. Recovered field notes place the primary event at Quarryedge.",
@@ -247,7 +247,7 @@ window.SONG_DATA = {
     {
       "id": "025_time",
       "type": "Time",
-      "image": "images/5 Time/025_lantern_2-47.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/5 Time/025_lantern_2-47.jpg",
       "name": "955",
       "symbol": "⌚",
       "description": "The time recorded in the case audio for Case File 025. Cross-referenced with field notes.",
@@ -256,7 +256,7 @@ window.SONG_DATA = {
     {
       "id": "025_marker",
       "type": "Marker",
-      "image": "images/Markers/025_The_Last_Sighting.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/025_The_Last_Sighting.jpg",
       "name": "Marker 307",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 025.",

@@ -222,12 +222,12 @@ window.SONG_DATA = {
       "symbol": "💍",
       "description": "A plain gold band recovered from the Church floor. Engraved inside: a date that predates the church's construction.",
       "unknownInfo": "Whose name was removed from the inscription — and when.",
-      "image": "images/Objects/004 - wedding ring.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/004 - wedding ring.jpg"
     },
     {
       "id": "004_location",
       "type": "Location",
-      "image": "images/Location/case-004-church-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-004-church-location.jpg",
       "name": "The Church",
       "symbol": "📍",
       "description": "A small stone church at the edge of the valley. Unconsecrated. No congregation on record since 1943.",
@@ -245,7 +245,7 @@ window.SONG_DATA = {
     {
       "id": "004_time",
       "type": "Time",
-      "image": "images/5 Time/004_lantern_6-45.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/5 Time/004_lantern_6-45.jpg",
       "name": "6:45",
       "symbol": "⌚",
       "description": "The time of the Bell Toll audio captured inside the Church. The bell has no bell tower. No mechanism was found.",
@@ -254,7 +254,7 @@ window.SONG_DATA = {
     {
       "id": "004_marker",
       "type": "Marker",
-      "image": "images/Markers/004_The_Widow_Knows.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/004_The_Widow_Knows.jpg",
       "name": "Marker 12",
       "symbol": "◆",
       "description": "Found scratched into the church doorframe. Marker 12 — the lowest number yet. The sequence is not ascending.",
