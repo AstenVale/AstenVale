@@ -1,5 +1,6 @@
-// Patches SEASONS_CONFIG so that any case with a valid https:// streaming link
-// in the Google Sheet is marked released:true before the page renders.
+// Patches SEASONS_CONFIG so that any case marked "Yes" in the sheet's "active"
+// column is marked released:true before the page renders. If no "active"
+// column exists, falls back to checking for a valid https:// streaming link.
 // Falls back to localStorage cache if the sheet fetch fails.
 // Usage: applySheetReleased(callback) — runs callback after patching.
 function applySheetReleased(callback) {
@@ -41,20 +42,30 @@ function applySheetReleased(callback) {
     if (!lines.length) return [];
     var rows    = lines.map(parseCSVLine);
     var headers = rows[0].map(function(h) { return cleanCell(h).toLowerCase(); });
-    var idCol    = headers.indexOf('id');
-    var linkCols = ['spotify','apple','youtube','amazon'].map(function(n) { return headers.indexOf(n); });
+    var idCol     = headers.indexOf('id');
+    var activeCol = headers.indexOf('active');
+    var linkCols  = ['spotify','apple','youtube','amazon'].map(function(n) { return headers.indexOf(n); });
     if (idCol < 0) return [];
+
+    function isYes(v) {
+      return ['yes','y','true','1'].indexOf(cleanCell(v).toLowerCase()) !== -1;
+    }
 
     var releasedIds = [];
     rows.slice(1).forEach(function(row) {
       var rawId = cleanCell(row[idCol]);
       var id = rawId ? rawId.padStart(3, '0') : null;
       if (!id) return;
-      var hasLink = linkCols.some(function(col) {
-        var v = col >= 0 ? cleanCell(row[col]) : '';
-        return /^https?:\/\//i.test(v);
-      });
-      if (hasLink && releasedIds.indexOf(id) === -1) releasedIds.push(id);
+      var isReleased;
+      if (activeCol >= 0) {
+        isReleased = isYes(row[activeCol]);
+      } else {
+        isReleased = linkCols.some(function(col) {
+          var v = col >= 0 ? cleanCell(row[col]) : '';
+          return /^https?:\/\//i.test(v);
+        });
+      }
+      if (isReleased && releasedIds.indexOf(id) === -1) releasedIds.push(id);
     });
     return releasedIds;
   }
