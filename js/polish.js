@@ -179,6 +179,67 @@
     });
   }
 
+
+  function setupMobileMoreNav(root) {
+    root = root || document;
+    var navs = root.querySelectorAll ? root.querySelectorAll('.site-nav') : [];
+    navs.forEach(function(nav) {
+      if (nav.dataset.moreReady === '1') return;
+      var links = nav.querySelector('.nav-links');
+      if (!links) return;
+      var extras = Array.prototype.slice.call(links.querySelectorAll('a.nav-link')).filter(function(a) {
+        var href = (a.getAttribute('href') || '').toLowerCase();
+        return href === 'sounds.html' || href === 'about.html' || href === 'join.html';
+      });
+      if (!extras.length) return;
+
+      nav.dataset.moreReady = '1';
+      var toggle = document.createElement('button');
+      toggle.type = 'button';
+      toggle.className = 'nav-link nav-more-toggle';
+      toggle.setAttribute('data-icon', '\u2630');
+      toggle.setAttribute('aria-expanded', 'false');
+      toggle.setAttribute('aria-label', 'Open more navigation links');
+      toggle.textContent = 'More';
+
+      var menu = document.createElement('div');
+      menu.className = 'nav-more-menu';
+      menu.setAttribute('role', 'menu');
+      menu.setAttribute('aria-label', 'More navigation');
+
+      extras.forEach(function(link) {
+        var item = link.cloneNode(true);
+        item.classList.remove('nav-link');
+        item.removeAttribute('data-icon');
+        item.setAttribute('role', 'menuitem');
+        menu.appendChild(item);
+        if (link.classList.contains('active')) toggle.classList.add('active');
+      });
+
+      links.appendChild(toggle);
+      document.body.appendChild(menu);
+
+      function closeMenu() {
+        menu.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+      }
+
+      toggle.addEventListener('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        var open = menu.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+
+      document.addEventListener('click', function(e) {
+        if (!menu.contains(e.target) && e.target !== toggle) closeMenu();
+      });
+
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') closeMenu();
+      });
+    });
+  }
   function polish(root) {
     root = root || document;
     repairVisibleText(root);
@@ -191,6 +252,7 @@
     root.querySelectorAll('[role="button"], .case-group-toggle, .category-toggle').forEach(function(el) {
       if (!el.hasAttribute('tabindex')) el.setAttribute('tabindex', '0');
     });
+    setupMobileMoreNav(root);
     root.querySelectorAll('button:not([aria-label])').forEach(function(btn) {
       var text = (btn.textContent || '').trim();
       if (text) btn.setAttribute('aria-label', text);

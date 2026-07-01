@@ -100,3 +100,1733 @@ button, .btn-submit, .briefing-link, .return-link, .empty-action, .cabinet-empty
   :is(.paper-inner, .cabinet-inner) { max-width: 100%; }
   :is(.nav-link, .filter-btn, .archive-tab, button, a) { touch-action: manipulation; }
 }
+/* Shared readability and mobile responsiveness fixes. */
+body {
+  color: rgba(226, 196, 145, 0.9);
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+}
+
+:is(.hero-eyebrow, .hero-title-top, .hero-title-sub, .hero-tagline, .section-intro,
+.about-text p, .about-quote blockquote, .rules-list li, .step-body, .cf-desc,
+.cabinet-sub, .stat-label, .card-case, .store-sub, .product-desc, .product-detail,
+.sn-text, .footer-cta-sub, .footer-nav a, .footer-note, .recording-intro,
+.locked-tally-text) {
+  color: rgba(226, 196, 145, 0.78) !important;
+}
+
+:is(.section-title, .step-title, .cf-title, .cabinet-title, .stat-value, .card-name,
+.store-title, .product-name, .footer-cta-title, .page-title, .archive-title) {
+  color: #dfc28f !important;
+}
+
+:is(.section-label, .cf-cta, .store-stamp, .rule-mark, .filter-btn.active,
+.sound-stamp, .status-stamp, .recovered-stamp) {
+  opacity: 1 !important;
+}
+
+:is(.hero-btn, .lore-cta-btn, #submit-btn, #view-reward-btn, .reward-close-btn,
+.product-btn, .play-btn, .av-audio-play, .cabinet-empty-btn, .briefing-link,
+.return-link, .empty-action, button) {
+  min-height: 44px;
+  overflow-wrap: anywhere;
+}
+
+:is(.paper-panel, .streaming-box, .lyrics-box, .casenotes-box, .modal-box, .badge-modal-box) {
+  color: var(--ink, #1c120a);
+}
+
+@media (max-width: 768px) {
+  .site-wrapper,
+  .page-shell,
+  .content-section,
+  .footer-cta-section,
+  .site-footer {
+    padding-left: clamp(1rem, 4vw, 1.35rem) !important;
+    padding-right: clamp(1rem, 4vw, 1.35rem) !important;
+  }
+
+  .hero {
+    min-height: calc(100svh - 78px);
+    padding: 3rem 1.15rem 2rem !important;
+  }
+
+  .hero-inner,
+  .section-inner,
+  .footer-cta-inner,
+  .rules-inner {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hero-title-main {
+    font-size: clamp(2.65rem, 18vw, 4.8rem) !important;
+    overflow-wrap: anywhere;
+  }
+
+  .hero-title-sub,
+  .hero-title-top,
+  .hero-eyebrow,
+  .section-label,
+  .nav-link,
+  .filter-btn,
+  .cf-status,
+  .product-catalog,
+  .product-detail {
+    letter-spacing: 0.08em !important;
+  }
+
+  .hero-tagline,
+  .section-intro,
+  .about-text p,
+  .rules-list li,
+  .step-body,
+  .cf-desc,
+  .product-desc,
+  .footer-cta-sub {
+    font-size: 0.95rem !important;
+    line-height: 1.75 !important;
+  }
+
+  .hero-cta-row,
+  .footer-nav,
+  .store-filters,
+  .player-btns,
+  .product-footer,
+  .cn-progress-note {
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+
+  .hero-btn,
+  .lore-cta-btn,
+  #submit-btn,
+  #view-reward-btn,
+  .reward-close-btn,
+  .product-btn,
+  .filter-btn,
+  .play-btn,
+  .av-audio-play,
+  .cabinet-empty-btn,
+  .briefing-link,
+  .return-link,
+  .empty-action {
+    display: flex !important;
+    width: 100% !important;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0.78rem 0.9rem !important;
+    white-space: normal !important;
+    line-height: 1.25 !important;
+  }
+
+  .paper-panel,
+  .lore-cta-inner,
+  .streaming-box,
+  .lyrics-box,
+  .casenotes-box,
+  .modal-box,
+  .badge-modal-box {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  .song-player,
+  .rules-list li,
+  .sn-inner,
+  .recording-head,
+  .cassette-meta {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+
+  .archive-summary,
+  .recording-metadata,
+  .archive-copy,
+  .player-row,
+  .av-audio-row,
+  .stats-bar,
+  #cabinet-grid,
+  .cases-grid,
+  .steps-grid,
+  .about-grid,
+  .product-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .recording-grid {
+    grid-template-columns: 1fr !important;
+    padding: 0.9rem !important;
+  }
+
+  .footer-nav {
+    gap: 0.65rem !important;
+  }
+
+  .footer-nav a {
+    color: rgba(226, 196, 145, 0.82) !important;
+  }
+}
+
+@media (max-width: 380px) {
+  .site-nav .nav-link {
+    flex-basis: 80px;
+    min-width: 80px;
+    font-size: 0.64rem !important;
+  }
+}
+
+/* Whole-site mobile layout safeguards. */
+:is(.site-wrapper, .paper-inner, .cabinet-inner, .badges-inner, .page-shell, .vault-page-wrapper) {
+  width: 100%;
+}
+
+:is(.case-card, .artifact-card, .recording-card, .sound-card, .badge-card, .summary-item,
+.season-row, .solved-record, .continue-card, .workflow-step, .faq-item) {
+  min-width: 0;
+}
+
+:is(.case-title, .case-subtitle, .case-song-title, .artifact-title, .artifact-name,
+.recording-name, .sound-title, .badge-title, .page-title, .section-title, .archive-title,
+.lore-title, .modal-name, .lyrics-song-title, .casenotes-title) {
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+
+:is(input, textarea, select) {
+  max-width: 100%;
+}
+
+:is(audio, video, canvas, iframe, table) {
+  max-width: 100%;
+}
+
+@media (max-width: 900px) {
+  :is(.archive-controls, .season-header, .case-card, .continue-card, .solved-record,
+  .season-row, .artifact-display, .report-field-row, .case-summary-row,
+  .discovery-item, .vault-inner) {
+    grid-template-columns: 1fr !important;
+  }
+
+  :is(.section-head, .archive-controls, .season-header, .case-card, .continue-card,
+  .solved-record, .season-row, .artifact-display, .sound-card) {
+    gap: 0.85rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  :is(.paper-inner, .cabinet-inner, .badges-inner, .vault-page-wrapper) {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  :is(.archive-tabs, .store-filters, .filter-row, .continue-nav, .ap-actions,
+  .briefing-actions, .empty-actions) {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    width: 100%;
+  }
+
+  :is(.archive-tab, .filter-btn, .continue-link, .continue-action, .ap-link,
+  .streaming-btn, .btn-primary, .btn-secondary) {
+    min-height: 44px;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  :is(.ap-controls, .ap-bottom, .ap-right, .ap-vol-wrap, .rm-player-controls,
+  .wt-controls, .wt-vol-row, .cab-controls, .cab-vol-row, .sound-card,
+  .sound-main, .sound-ev-meta, .reward-stat-row) {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+
+  :is(.ap-right, .sound-player-col) {
+    width: 100% !important;
+  }
+
+  :is(.ap-progress-wrap, .rm-progress-wrap, .wt-progress-wrap, .cab-progress-wrap,
+  .progress-track, .volume-track) {
+    width: 100% !important;
+  }
+
+  :is(.case-location-img-wrap, .artifact-img-box, .sound-player-col, .season-indicator) {
+    max-width: 100% !important;
+  }
+
+  :is(.artifact-img-box) {
+    width: min(100%, 180px) !important;
+    height: auto !important;
+    aspect-ratio: 1;
+  }
+
+  :is(.archive-summary, .recording-metadata, .archive-copy, .ledger-fields,
+  .season-record-grid, .case-mini-meta, .stats-grid, .archive-cats,
+  .artifact-grid, .badge-grid, .bonus-grid, .vault-badges-grid,
+  .related-ev-grid, .available-grid, .evidence-grid) {
+    grid-template-columns: 1fr !important;
+  }
+
+  :is(.lyrics-scroll, .casenotes-scroll) {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  :is(#collectible-overlay, #object-modal, #casenotes-modal, #lyrics-modal,
+  #classified-lock-modal, #streaming-modal, #vault-modal, #badge-modal,
+  #bonus-modal) {
+    padding: 1rem !important;
+  }
+
+  :is(#collectible-content, .modal-box, .casenotes-box, .lyrics-box,
+  .classified-lock-box, .streaming-box, .vault-box, #badge-modal-content,
+  #bonus-modal-content) {
+    width: 100% !important;
+    max-width: 100% !important;
+    max-height: calc(100svh - 2rem);
+  }
+
+  body > footer,
+  .site-footer,
+  footer[style] {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 0.8rem !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    text-align: center !important;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 15px !important;
+  }
+
+  :is(.site-wrapper, .paper-inner, .cabinet-inner, .badges-inner, .vault-page-wrapper) {
+    padding-left: 0.85rem !important;
+    padding-right: 0.85rem !important;
+  }
+
+  :is(.hero, .page-header, .cabinet-header, .badges-header, .store-header,
+  .vault-page-header) {
+    padding-left: 0.85rem !important;
+    padding-right: 0.85rem !important;
+  }
+
+  :is(.file-jacket, .season-header, .case-card, .continue-card, .solved-record,
+  .season-row, .artifact-card, .recording-card, .sound-card, .badge-card,
+  .summary-item, .workflow-step, .faq-item, .s2-teaser, .reward-vault-file) {
+    padding-left: 0.85rem !important;
+    padding-right: 0.85rem !important;
+  }
+
+  :is(.archive-title, .page-title, .cabinet-title, .badges-title,
+  .store-title, .vault-page-title, .reward-header) {
+    letter-spacing: 0.07em !important;
+  }
+
+  :is(.field-label, .section-label, .archive-tab, .filter-btn, .stat-label,
+  .case-number, .case-meta, .cabinet-sub, .badges-sub, .vault-page-eyebrow,
+  .vault-page-subtitle) {
+    letter-spacing: 0.08em !important;
+  }
+
+  :is(.vault-door-wrap) {
+    width: min(76vw, 260px) !important;
+    height: min(76vw, 260px) !important;
+  }
+
+  :is(.vault-wheel) {
+    width: min(36vw, 120px) !important;
+    height: min(36vw, 120px) !important;
+  }
+}
+
+/* Page-specific mobile fixes for index, join, progress, sounds, about, and case pages. */
+@media (max-width: 768px) {
+  /* index.html */
+  .cases-section-inner,
+  .archive-ledger,
+  .ledger-section,
+  .streaming-bar,
+  .streaming-platforms,
+  .countdown-wrap,
+  .countdown-dials {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .section-header,
+  .ledger-heading,
+  .case-row,
+  .streaming-bar,
+  .streaming-platforms,
+  .vault-reward-row,
+  .footer-right {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    text-align: left;
+  }
+
+  .btn-progress,
+  .btn-view-more,
+  .footer-join,
+  .footer-email,
+  .vault-claim-btn,
+  .vault-close,
+  .reward-close,
+  .continue-btn,
+  .coffee-link {
+    display: flex !important;
+    width: 100% !important;
+    min-height: 44px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    white-space: normal !important;
+    line-height: 1.25 !important;
+  }
+
+  .case-img-placeholder,
+  .case-img,
+  .case-status {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 180px;
+  }
+
+  .countdown-dials {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.6rem;
+  }
+
+  .countdown-sep {
+    display: none !important;
+  }
+
+  .countdown-unit {
+    min-width: 0 !important;
+  }
+
+  /* join.html */
+  .hero-content,
+  .form-header,
+  .archive-form,
+  .access-brief,
+  .confirmation-ledger,
+  .form-success {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .check-group {
+    align-items: flex-start !important;
+  }
+
+  .btn-submit,
+  .success-return {
+    width: 100% !important;
+  }
+
+  /* progress.html */
+  .hero-meta,
+  .rank-strip,
+  .rank-item,
+  .inv-card,
+  .inv-row,
+  .archive-cats,
+  .case-list,
+  .case-file-row,
+  .discovery-feed,
+  .activity-feed,
+  .vault-card,
+  .vault-label-row,
+  .vault-progress-row,
+  .vault-dials,
+  .archive-total,
+  .reset-wrap {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .hero-meta,
+  .rank-item,
+  .inv-row,
+  .progress-bar-header,
+  .case-file-row,
+  .vault-label-row,
+  .vault-progress-row,
+  .activity-row {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 0.35rem !important;
+  }
+
+  .hero-meta-sep {
+    display: none !important;
+  }
+
+  .case-file-row,
+  .discovery-item {
+    grid-template-columns: 1fr !important;
+  }
+
+  .vault-dials {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.55rem;
+  }
+
+  .btn-reset,
+  .vault-btn,
+  .case-row-link,
+  .footer-link {
+    display: flex !important;
+    width: 100% !important;
+    min-height: 44px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  /* sounds.html */
+  .cabinet-header,
+  .cabinet-search-row,
+  .category-toggle,
+  .sound-card-inner,
+  .locked-tally,
+  .cabinet-more {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+
+  .cabinet-count,
+  .cabinet-search,
+  .cabinet-sort,
+  .category-badge,
+  .sound-symbol,
+  .sound-player-col,
+  .sound-locked-col {
+    width: 100% !important;
+    min-width: 0 !important;
+    text-align: left !important;
+  }
+
+  .sound-symbol {
+    max-width: none !important;
+  }
+
+  /* about.html */
+  .content-block,
+  .workflow-list,
+  .faq-list,
+  .briefing-actions,
+  .archive-note,
+  .pull-quote {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .workflow-step,
+  .faq-item,
+  .briefing-link {
+    min-width: 0 !important;
+  }
+
+  /* case.html */
+  .case-hero,
+  .archive-player,
+  .investigation-panel,
+  .ap-actions,
+  .music-release-links,
+  .artifact-display,
+  .report-fields,
+  .case-summary-fields,
+  .sound-ev-meta,
+  .continue-section,
+  .continue-nav {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .file-jacket,
+  .ap-actions,
+  .music-release-links,
+  .artifact-display,
+  .sound-ev-meta,
+  .continue-nav {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 0.65rem !important;
+  }
+
+  .jacket-label,
+  .jacket-status,
+  .ap-meta,
+  .case-summary-value,
+  .report-field-value,
+  .sound-ev-name,
+  .continue-sub {
+    overflow-wrap: anywhere;
+  }
+
+  .ap-play,
+  .rm-play,
+  .wt-play,
+  .cab-play,
+  .ap-vol-btn {
+    min-width: 44px !important;
+    min-height: 44px !important;
+  }
+
+  .ap-speed,
+  .ap-vol,
+  .field-input,
+  .field-select,
+  .field-textarea {
+    width: 100% !important;
+  }
+
+  .field-label {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 420px) {
+  .countdown-dials,
+  .vault-dials {
+    grid-template-columns: 1fr !important;
+  }
+
+  .hero-title-main,
+  .hero-title,
+  .case-hero-title {
+    letter-spacing: 0.04em !important;
+  }
+
+  .paper-inner::after,
+  .paper-panel .margin-line {
+    display: none !important;
+  }
+}
+
+/* Hide bulky secondary audio controls on mobile case pages. */
+@media (max-width: 768px) {
+  .archive-player .ap-right,
+  .archive-player .ap-vol-wrap,
+  .archive-player .ap-speed,
+  .rm-vol-row,
+  .wt-vol-row,
+  .cab-vol-row {
+    display: none !important;
+  }
+
+  .archive-player .ap-controls {
+    grid-template-columns: auto minmax(0, 1fr) !important;
+  }
+}
+
+/* Case evidence form readability. */
+.field-label,
+.case-summary-label,
+.report-field-label {
+  color: rgba(28, 18, 10, 0.82) !important;
+  font-weight: 700;
+}
+
+.field-number {
+  color: #8b1a1a !important;
+  font-weight: 700;
+}
+
+.field-input,
+.field-select,
+.field-textarea {
+  color: #1c120a !important;
+  background: rgba(255, 242, 210, 0.58) !important;
+  border: 1px solid rgba(70, 42, 16, 0.28) !important;
+  border-bottom: 2px solid rgba(70, 42, 16, 0.48) !important;
+}
+
+.field-input::placeholder,
+.field-textarea::placeholder {
+  color: rgba(70, 42, 16, 0.55) !important;
+  opacity: 1;
+}
+
+.field-input:focus,
+.field-select:focus,
+.field-textarea:focus {
+  background: rgba(255, 248, 224, 0.78) !important;
+  border-color: rgba(28, 18, 10, 0.65) !important;
+  box-shadow: 0 0 0 2px rgba(139, 26, 26, 0.14);
+}
+
+@media (max-width: 768px) {
+  .field-label {
+    gap: 0.32rem !important;
+    font-size: 0.78rem !important;
+    letter-spacing: 0.08em !important;
+    line-height: 1.35 !important;
+  }
+
+  .field-number {
+    font-size: 0.72rem !important;
+    letter-spacing: 0.05em !important;
+  }
+
+  .field-input,
+  .field-select,
+  .field-textarea {
+    min-height: 44px;
+    font-size: 0.95rem !important;
+    letter-spacing: 0.01em !important;
+    padding: 0.68rem 0.75rem !important;
+  }
+
+  .field-input::placeholder,
+  .field-textarea::placeholder {
+    font-size: 0.9rem !important;
+  }
+}
+
+/* Mobile-only evidence form clarity boost. */
+@media (max-width: 768px) {
+  #fields-container {
+    gap: 1.05rem !important;
+  }
+
+  .field-group {
+    gap: 0.42rem !important;
+  }
+
+  .field-label {
+    display: grid !important;
+    grid-template-columns: auto 1fr;
+    align-items: center !important;
+    color: #1c120a !important;
+    text-shadow: 0 1px 0 rgba(255, 238, 196, 0.45);
+  }
+
+  .field-number {
+    color: #8b1a1a !important;
+  }
+
+  .field-label::after {
+    content: "";
+    height: 1px;
+    background: rgba(70, 42, 16, 0.22);
+    align-self: center;
+  }
+
+  .field-input,
+  .field-select,
+  .field-textarea {
+    background: rgba(255, 246, 220, 0.72) !important;
+    border-color: rgba(70, 42, 16, 0.36) !important;
+    border-bottom-color: rgba(70, 42, 16, 0.62) !important;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.24);
+  }
+
+  .field-input::placeholder,
+  .field-textarea::placeholder {
+    color: rgba(46, 27, 10, 0.68) !important;
+    font-style: normal !important;
+  }
+}
+
+/* Shorter mobile hero image areas. */
+@media (max-width: 768px) {
+  .hero,
+  .page-hero,
+  .case-hero {
+    min-height: auto !important;
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+
+  body.has-hero-image .hero {
+    min-height: 32svh !important;
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+
+  .case-hero {
+    padding-top: 1.8rem !important;
+    padding-bottom: 1.8rem !important;
+  }
+
+  .hero-content {
+    padding-top: 1.6rem !important;
+    padding-bottom: 1.8rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero,
+  .page-hero,
+  .case-hero,
+  body.has-hero-image .hero {
+    min-height: auto !important;
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+  }
+}
+
+/* Mobile evidence titles: single-line, larger, and cleaner. */
+@media (max-width: 768px) {
+  .field-label {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    align-items: baseline !important;
+    gap: 0.5rem !important;
+    font-size: 0.9rem !important;
+    letter-spacing: 0.1em !important;
+    line-height: 1.25 !important;
+  }
+
+  .field-label::after {
+    display: none !important;
+  }
+
+  .field-code {
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    color: rgba(28, 18, 10, 0.68);
+    min-width: 2.7rem;
+    text-align: right;
+  }
+
+  .field-archive-link {
+    font-size: 0.9rem;
+    letter-spacing: 0.1em;
+    color: #1c120a !important;
+    border-bottom-color: rgba(70, 42, 16, 0.32) !important;
+    white-space: nowrap;
+  }
+
+  .field-number {
+    flex: 0 0 auto;
+  }
+}
+
+/* Keep recovered artifact image and details side by side on mobile. */
+@media (max-width: 768px) {
+  .artifact-display {
+    display: grid !important;
+    grid-template-columns: minmax(96px, 38%) minmax(0, 1fr) !important;
+    align-items: start !important;
+    gap: 1rem !important;
+  }
+
+  .artifact-display .artifact-img-box {
+    width: 100% !important;
+    max-width: none !important;
+    aspect-ratio: 1;
+  }
+
+  .artifact-display .artifact-info,
+  .artifact-display .artifact-details,
+  .artifact-display > div:not(.artifact-img-box) {
+    min-width: 0;
+  }
+
+  .artifact-name {
+    font-size: 1.05rem !important;
+    line-height: 1.25 !important;
+  }
+
+  .artifact-desc,
+  .artifact-unknown {
+    font-size: 0.82rem !important;
+    line-height: 1.65 !important;
+  }
+}
+
+@media (max-width: 360px) {
+  .artifact-display {
+    grid-template-columns: 1fr !important;
+  }
+
+  .artifact-display .artifact-img-box {
+    max-width: 180px !important;
+  }
+}
+
+/* Witness testimony layout: audio player gets its own row. */
+@media (max-width: 768px) {
+  .witness-display {
+    grid-template-columns: minmax(96px, 38%) minmax(0, 1fr) !important;
+  }
+
+  .witness-display .artifact-img-box {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .witness-display > div:not(.artifact-img-box):not(.artifact-evidence-tag) {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .witness-display .witness-audio,
+  .witness-display .witness-audio + .av-audio-player,
+  .witness-display .wt-player,
+  .witness-display .wt-locked-notice {
+    grid-column: 1 / -1;
+    grid-row: auto;
+    width: 100% !important;
+    margin-top: 0.85rem !important;
+  }
+
+  .witness-display .artifact-view-link {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 360px) {
+  .witness-display {
+    grid-template-columns: 1fr !important;
+  }
+
+  .witness-display .artifact-img-box,
+  .witness-display > div:not(.artifact-img-box):not(.artifact-evidence-tag),
+  .witness-display .witness-audio,
+  .witness-display .witness-audio + .av-audio-player,
+  .witness-display .wt-player,
+  .witness-display .wt-locked-notice,
+  .witness-display .artifact-view-link {
+    grid-column: 1 !important;
+  }
+}
+
+/* Force witness audio below both columns, full width. */
+@media (max-width: 768px) {
+  .witness-display .witness-audio-row {
+    grid-column: 1 / -1 !important;
+    grid-row: 2 !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    margin-top: 0.85rem !important;
+  }
+
+  .witness-display .witness-audio-row .av-audio-player,
+  .witness-display .witness-audio-row .wt-player,
+  .witness-display .witness-audio-row .wt-locked-notice {
+    width: 100% !important;
+    margin-top: 0 !important;
+  }
+
+  .witness-display .artifact-view-link {
+    grid-row: 3 !important;
+  }
+}
+
+/* Mobile solved-case reading mode: larger and bolder long case-file text. */
+@media (max-width: 768px) {
+  body.unlocked .paper-panel,
+  body.unlocked #lore-panel,
+  body.unlocked .unlock-section,
+  body.unlocked .case-summary-block,
+  body.unlocked .report-doc,
+  body.unlocked .story-card,
+  body.unlocked .artifact-display,
+  body.unlocked .recording-card,
+  body.unlocked .sound-ev-card,
+  body.unlocked .witness-display {
+    font-size: 1rem !important;
+    line-height: 1.8 !important;
+  }
+
+  body.unlocked :is(.case-meta, .case-number, .case-summary-label, .report-field-label,
+  .ledger-label, .artifact-file-id, .sound-ev-category, .recording-category,
+  .recording-duration, .unlock-section-label, .solved-ev-label-text,
+  .cn-progress-label, .vault-label, .ap-meta) {
+    font-size: 0.78rem !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.09em !important;
+    line-height: 1.45 !important;
+    color: rgba(28, 18, 10, 0.72) !important;
+  }
+
+  body.unlocked :is(.case-song-title, .unlock-section-heading, .artifact-name,
+  .sound-ev-name, .recording-name, .report-title, .story-title,
+  .case-summary-heading, .lore-title) {
+    font-size: 1.12rem !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.06em !important;
+    line-height: 1.35 !important;
+    color: #1c120a !important;
+  }
+
+  body.unlocked :is(.artifact-desc, .artifact-unknown, .report-body,
+  .report-body-line, .case-summary-value, .report-field-value,
+  .sound-ev-desc, .recording-desc, .story-body, .story-copy,
+  .lore-body, .music-release-note, .continue-sub) {
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+    line-height: 1.85 !important;
+    letter-spacing: 0.01em !important;
+    color: rgba(28, 18, 10, 0.86) !important;
+  }
+
+  body.unlocked :is(.artifact-view-link, .continue-btn, .coffee-link,
+  .music-release-links a, .case-summary-label-link) {
+    font-size: 0.86rem !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.09em !important;
+  }
+
+  body.unlocked .paper-panel {
+    padding-top: 1.35rem !important;
+  }
+
+  body.unlocked :is(.unlock-section, .ev-cabinet-section,
+  .incident-report-section, .story-chapter-section, .continue-section) {
+    margin-bottom: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+
+  body.unlocked :is(.report-field-row, .case-summary-row) {
+    gap: 0.18rem !important;
+    padding: 0.65rem 0 !important;
+  }
+}
+
+@media (max-width: 420px) {
+  body.unlocked :is(.artifact-desc, .artifact-unknown, .report-body,
+  .report-body-line, .case-summary-value, .report-field-value,
+  .sound-ev-desc, .recording-desc, .story-body, .story-copy,
+  .lore-body, .music-release-note, .continue-sub) {
+    font-size: 1.04rem !important;
+  }
+
+  body.unlocked :is(.case-song-title, .unlock-section-heading, .artifact-name,
+  .sound-ev-name, .recording-name, .report-title, .story-title,
+  .case-summary-heading, .lore-title) {
+    font-size: 1.18rem !important;
+  }
+}
+
+/* Mobile solved case folders: progressive archive reveal. */
+@media (max-width: 768px) {
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden !important;
+  }
+
+  body.unlocked .archive-page,
+  body.unlocked .case-page,
+  body.unlocked .case-file,
+  body.unlocked .paper-panel,
+  body.unlocked #lore-panel {
+    width: 96vw !important;
+    max-width: 96vw !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  body.unlocked .paper-panel,
+  body.unlocked #lore-panel {
+    padding-left: 0.82rem !important;
+    padding-right: 0.82rem !important;
+  }
+
+  body.unlocked .case-summary-section {
+    margin-bottom: 0.9rem !important;
+    padding-bottom: 1rem !important;
+  }
+
+  body.unlocked .mobile-folder-section {
+    position: relative;
+    margin: 0 0 0.82rem !important;
+    padding: 0 !important;
+    border: 1px solid rgba(70, 42, 16, 0.25);
+    background: rgba(214, 178, 124, 0.18);
+    box-shadow: inset 0 1px 0 rgba(255, 241, 205, 0.25);
+    overflow: hidden;
+  }
+
+  body.unlocked .mobile-folder-toggle {
+    display: flex;
+    align-items: center;
+    gap: 0.62rem;
+    width: 100%;
+    min-height: 52px;
+    padding: 0.86rem 0.92rem;
+    border: 0;
+    border-bottom: 1px solid rgba(70, 42, 16, 0.18);
+    background: rgba(156, 31, 34, 0.12);
+    color: var(--stamp-red);
+    font-family: var(--font-header);
+    font-size: 0.84rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    line-height: 1.25;
+    text-align: left;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  body.unlocked .mobile-folder-caret {
+    flex: 0 0 auto;
+    width: 1rem;
+    font-size: 0.78rem;
+    line-height: 1;
+  }
+
+  body.unlocked .mobile-folder-content {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0 0.82rem;
+    transition: max-height 280ms ease, opacity 220ms ease, padding 280ms ease;
+  }
+
+  body.unlocked .mobile-folder-section.is-open .mobile-folder-content {
+    max-height: 9000px;
+    opacity: 1;
+    padding: 0.82rem 0.82rem 1rem;
+  }
+
+  body.unlocked .mobile-folder-section.is-open .mobile-folder-toggle {
+    border-bottom-color: rgba(70, 42, 16, 0.28);
+  }
+
+  body.unlocked :is(.unlock-section, .ev-cabinet-section, .sound-evidence-section,
+  .recovered-music-section, .incident-report-section, .continue-section) {
+    margin-bottom: 0.95rem !important;
+    padding-bottom: 0.95rem !important;
+  }
+
+  body.unlocked :is(.paper-panel, #lore-panel, .case-summary-block, .report-doc,
+  .story-card, .artifact-display, .recording-card, .sound-ev-block,
+  .witness-display, .mobile-folder-content) {
+    font-size: 0.94rem !important;
+    line-height: 1.72 !important;
+  }
+
+  body.unlocked :is(.artifact-desc, .artifact-unknown, .report-body,
+  .report-body-line, .case-summary-value, .report-field-value,
+  .sound-ev-desc, .recording-desc, .story-body, .story-copy,
+  .lore-body, .music-release-note, .continue-sub) {
+    font-size: 0.95rem !important;
+    font-weight: 700 !important;
+    line-height: 1.8 !important;
+  }
+
+  body.unlocked :is(.case-song-title, .unlock-section-heading, .artifact-name,
+  .sound-ev-name, .recording-name, .report-title, .story-title,
+  .case-summary-heading, .lore-title) {
+    font-size: 1.13rem !important;
+    line-height: 1.35 !important;
+  }
+
+  body.unlocked .artifact-display,
+  body.unlocked .witness-display,
+  body.unlocked .sound-ev-block,
+  body.unlocked .recording-card,
+  body.unlocked .report-doc,
+  body.unlocked .story-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  body.unlocked .artifact-display,
+  body.unlocked .witness-display {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 0.85rem !important;
+  }
+
+  body.unlocked .artifact-display > *,
+  body.unlocked .witness-display > * {
+    grid-column: 1 / -1 !important;
+    grid-row: auto !important;
+    min-width: 0 !important;
+  }
+
+  body.unlocked .artifact-img-box {
+    width: 100% !important;
+    max-width: 240px !important;
+    justify-self: start !important;
+  }
+
+  body.unlocked audio,
+  body.unlocked .av-audio-player,
+  body.unlocked .witness-audio-row,
+  body.unlocked .wt-player {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  body.unlocked :is(.artifact-view-link, .continue-btn, .coffee-link,
+  .music-release-links a, .case-summary-label-link, .sound-ev-link) {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    line-height: 1.3 !important;
+  }
+
+  body.unlocked .continue-nav {
+    gap: 0.75rem !important;
+  }
+}
+
+@media (min-width: 769px) {
+  .mobile-folder-toggle {
+    display: none !important;
+  }
+}
+
+/* Keep mobile case folders inside the archive paper. */
+@media (max-width: 768px) {
+  body.unlocked .paper-panel {
+    width: min(96vw, calc(100vw - 1rem)) !important;
+    max-width: min(96vw, calc(100vw - 1rem)) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    overflow-x: hidden !important;
+    box-sizing: border-box !important;
+  }
+
+  body.unlocked #lore-panel,
+  body.unlocked .case-summary-section,
+  body.unlocked .case-summary-block,
+  body.unlocked .mobile-folder-section,
+  body.unlocked .mobile-folder-toggle,
+  body.unlocked .mobile-folder-content {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  body.unlocked .mobile-folder-section {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+
+/* Mobile case start gate: keep first view short and focused. */
+@media (max-width: 768px) {
+  body.unlocked #lore-panel.mobile-investigation-locked .mobile-folder-section,
+  body.unlocked .mobile-folder-content[hidden],
+  body.unlocked .mobile-begin-investigation[hidden] {
+    display: none !important;
+  }
+
+  body.unlocked .mobile-begin-investigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 54px;
+    margin: 1rem 0 0.85rem;
+    padding: 0.95rem 1rem;
+    border: 1px solid rgba(95, 21, 24, 0.72);
+    background: var(--stamp-red);
+    color: #f7e2b2;
+    box-shadow: 0 10px 22px rgba(44, 19, 9, 0.22), inset 0 1px 0 rgba(255, 230, 180, 0.18);
+    font-family: var(--font-header);
+    font-size: 0.88rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    line-height: 1.2;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  body.unlocked .mobile-folder-section.is-collapsed .mobile-folder-content,
+  body.unlocked .mobile-folder-section.is-collapsed .mobile-folder-content > *,
+  body.unlocked .mobile-folder-section.is-collapsed :is(audio, .av-audio-player, .artifact-display, .witness-display, .report-doc, .sound-ev-block) {
+    display: none !important;
+    height: 0 !important;
+    max-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+  }
+
+  body.unlocked .mobile-folder-section.is-collapsed {
+    min-height: 0 !important;
+    padding: 0 !important;
+  }
+
+  body.unlocked .mobile-folder-section.is-collapsed .mobile-folder-toggle {
+    border-bottom: 0 !important;
+  }
+
+  body.unlocked .mobile-folder-section.is-open .mobile-folder-content:not([hidden]) {
+    display: block !important;
+  }
+}
+
+/* Mobile accordion bars already name these sections; hide duplicate inner headers. */
+@media (max-width: 768px) {
+  body.unlocked .mobile-folder-content > .unlock-section-label,
+  body.unlocked .mobile-folder-content > .unlock-section-heading {
+    display: none !important;
+  }
+}
+
+/* Compact Evidence Summary quick-reference card. */
+body.unlocked .case-summary-section {
+  margin-bottom: 1.35rem !important;
+  padding-bottom: 1.35rem !important;
+}
+
+body.unlocked .case-summary-section .case-summary-block {
+  padding: 1rem 1.15rem !important;
+}
+
+body.unlocked .case-summary-section .case-summary-heading {
+  margin-bottom: 0.72rem !important;
+  padding-bottom: 0.45rem !important;
+}
+
+body.unlocked .case-summary-section .case-summary-fields {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 1.35rem;
+  row-gap: 0;
+}
+
+body.unlocked .case-summary-section .case-summary-row {
+  display: grid !important;
+  grid-template-columns: minmax(5.8rem, 0.7fr) minmax(0, 1fr) !important;
+  align-items: baseline;
+  gap: 0.55rem !important;
+  padding: 0.34rem 0 !important;
+  min-height: 0 !important;
+}
+
+body.unlocked .case-summary-section .case-summary-label,
+body.unlocked .case-summary-section .case-summary-label-link {
+  color: rgba(70, 42, 16, 0.56) !important;
+  font-size: 0.62rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.16em !important;
+  line-height: 1.25 !important;
+  opacity: 1 !important;
+}
+
+body.unlocked .case-summary-section .case-summary-label-link {
+  display: inline !important;
+  min-height: 0 !important;
+  padding: 0 !important;
+  border-bottom: 0 !important;
+}
+
+body.unlocked .case-summary-section .case-summary-value {
+  color: var(--ink) !important;
+  font-size: 0.98rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.05em !important;
+  line-height: 1.35 !important;
+}
+
+@media (max-width: 768px) {
+  body.unlocked .case-summary-section {
+    margin-bottom: 0.9rem !important;
+    padding-bottom: 0.95rem !important;
+  }
+
+  body.unlocked .case-summary-section .case-summary-block {
+    padding: 0.82rem 0.86rem !important;
+  }
+
+  body.unlocked .case-summary-section .case-summary-fields {
+    grid-template-columns: 1fr !important;
+  }
+
+  body.unlocked .case-summary-section .case-summary-row {
+    grid-template-columns: minmax(5.6rem, 0.58fr) minmax(0, 1fr) !important;
+    padding: 0.32rem 0 !important;
+  }
+
+  body.unlocked .case-summary-section .case-summary-value {
+    font-size: 0.98rem !important;
+  }
+}
+
+@media (max-width: 360px) {
+  body.unlocked .case-summary-section .case-summary-row {
+    grid-template-columns: 1fr !important;
+    gap: 0.08rem !important;
+  }
+}
+
+/* Compact streaming destinations for recovered recordings. */
+.music-release-links {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-top: 0.72rem;
+}
+
+.music-release-links .ledger-label {
+  flex: 0 0 auto;
+  margin: 0;
+  color: rgba(70, 42, 16, 0.58) !important;
+}
+
+.release-icon-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.42rem;
+}
+
+.release-icon-link {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  width: 2.15rem !important;
+  height: 2.15rem !important;
+  min-width: 2.15rem !important;
+  min-height: 2.15rem !important;
+  padding: 0 !important;
+  border: 1px solid rgba(70, 42, 16, 0.34);
+  background: rgba(28, 18, 10, 0.08);
+  color: var(--folder-red) !important;
+  box-shadow: inset 0 1px 0 rgba(255, 241, 205, 0.2);
+  font-family: var(--font-header);
+  font-size: 0.62rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.08em !important;
+  line-height: 1 !important;
+  text-decoration: none !important;
+  opacity: 0.88;
+  transition: transform 180ms ease, opacity 180ms ease, background 180ms ease, border-color 180ms ease;
+}
+
+.release-icon-link:hover,
+.release-icon-link:focus-visible {
+  opacity: 1;
+  transform: translateY(-1px);
+  background: rgba(139, 26, 26, 0.12);
+  border-color: rgba(139, 26, 26, 0.45);
+}
+
+.recovered-music-block .artifact-desc {
+  margin-top: 0.65rem !important;
+  margin-bottom: 0 !important;
+  font-size: 0.82rem !important;
+  line-height: 1.45 !important;
+}
+
+@media (max-width: 768px) {
+  body.unlocked .music-release-links {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    gap: 0.62rem !important;
+    width: 100% !important;
+    margin-top: 0.65rem !important;
+  }
+
+  body.unlocked .release-icon-row {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    gap: 0.4rem !important;
+    width: auto !important;
+  }
+
+  body.unlocked .release-icon-link {
+    width: 2.25rem !important;
+    height: 2.25rem !important;
+    min-width: 2.25rem !important;
+    min-height: 2.25rem !important;
+    font-size: 0.64rem !important;
+  }
+}
+
+/* Case header hierarchy polish. */
+body.unlocked .case-header {
+  margin-bottom: 1.7rem !important;
+}
+
+body.unlocked .case-header .archive-title {
+  color: rgba(46, 29, 13, 0.9) !important;
+  font-weight: 700;
+  letter-spacing: 0.24em;
+  margin: 0.35rem 0 0.72rem;
+}
+
+body.unlocked .case-header .case-number {
+  color: rgba(46, 29, 13, 0.68) !important;
+  margin: 0.38rem 0 0.9rem !important;
+}
+
+body.unlocked .case-header .case-divider {
+  margin: 0.85rem auto 1.1rem !important;
+  opacity: 0.5 !important;
+}
+
+body.unlocked .case-header .case-song-title {
+  margin-top: 0.15rem;
+  margin-bottom: 0.28rem;
+  color: rgba(46, 29, 13, 0.86) !important;
+  font-size: clamp(0.86rem, 2.2vw, 1.04rem) !important;
+  font-style: normal !important;
+  font-weight: 700;
+  letter-spacing: 0.18em !important;
+  text-transform: uppercase;
+}
+
+body.unlocked .case-scene-location {
+  margin-bottom: 1.05rem;
+  font-family: var(--font-type);
+  font-size: 0.78rem;
+  font-style: italic;
+  letter-spacing: 0.08em;
+  color: rgba(70, 42, 16, 0.66);
+}
+
+body.unlocked .case-location-img-wrap {
+  margin-top: 0 !important;
+  max-width: 640px !important;
+}
+
+body.unlocked .case-location-img {
+  max-height: 320px !important;
+}
+
+body.unlocked .case-meta {
+  margin-top: 0.82rem !important;
+  color: rgba(46, 29, 13, 0.62) !important;
+}
+
+@media (max-width: 768px) {
+  body.unlocked .case-header .archive-title {
+    font-size: clamp(1.08rem, 6vw, 1.45rem) !important;
+    letter-spacing: 0.12em !important;
+    margin-top: 0.15rem;
+    margin-bottom: 0.62rem;
+  }
+
+  body.unlocked .case-header .case-number {
+    margin-bottom: 0.72rem !important;
+  }
+
+  body.unlocked .case-header .case-divider {
+    margin: 0.72rem auto 0.9rem !important;
+    width: 78%;
+  }
+
+  body.unlocked .case-header .case-song-title {
+    font-size: 0.92rem !important;
+    letter-spacing: 0.12em !important;
+  }
+
+  body.unlocked .case-scene-location {
+    margin-bottom: 0.85rem;
+    font-size: 0.82rem;
+  }
+
+  body.unlocked .case-location-img {
+    max-height: 260px !important;
+  }
+}
+
+/* Unified Archive Image Component. */
+.archive-image-card {
+  margin: 0;
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  padding: 0.72rem;
+  border: 1px solid rgba(100, 60, 20, 0.25);
+  background: rgba(0, 0, 0, 0.055);
+  box-shadow: inset 0 1px 0 rgba(255, 241, 205, 0.14), 0 4px 18px rgba(0, 0, 0, 0.16);
+}
+
+.archive-image-kicker {
+  margin: 0 0 0.5rem;
+  color: var(--stamp-red);
+  font-family: var(--font-header);
+  font-size: 0.56rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+.archive-image-frame {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid rgba(100, 60, 20, 0.28);
+  background: rgba(0, 0, 0, 0.16);
+}
+
+.archive-image-frame::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(201, 169, 122, 0.04), rgba(12, 8, 4, 0.18)), repeating-linear-gradient(0deg, transparent, transparent 3px, rgba(0,0,0,0.035) 3px, rgba(0,0,0,0.035) 4px);
+  pointer-events: none;
+}
+
+.archive-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: sepia(0.18) contrast(1.05);
+}
+
+.archive-image-caption {
+  margin-top: 0.62rem;
+}
+
+.archive-image-title {
+  color: var(--ink);
+  font-family: var(--font-header);
+  font-size: 0.96rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  line-height: 1.3;
+}
+
+.archive-image-meta {
+  margin-top: 0.18rem;
+  color: rgba(70, 42, 16, 0.62);
+  font-family: var(--font-type);
+  font-size: 0.68rem;
+  font-style: italic;
+  letter-spacing: 0.08em;
+  line-height: 1.45;
+}
+
+.archive-image-symbol {
+  color: var(--ink);
+}
+
+.archive-image-card--scene .archive-image-frame {
+  aspect-ratio: 16 / 9;
+}
+
+.archive-image-card--witness .archive-image-frame {
+  aspect-ratio: 4 / 5;
+}
+
+.archive-image-card--artifact .archive-image-frame {
+  aspect-ratio: 1;
+}
+
+.case-scene-card {
+  max-width: 640px;
+  margin: 0 auto 0.82rem;
+}
+
+.case-scene-card .case-location-img-wrap {
+  max-width: none !important;
+  margin: 0 !important;
+  box-shadow: none !important;
+}
+
+.archive-image-layout {
+  display: grid !important;
+  grid-template-columns: minmax(150px, 0.42fr) minmax(0, 1fr) !important;
+  gap: 1.2rem !important;
+  align-items: start !important;
+}
+
+.archive-image-layout .archive-image-card {
+  max-width: 220px;
+}
+
+.archive-image-layout--witness .archive-image-card {
+  max-width: 230px;
+}
+
+.archive-image-layout .artifact-body {
+  min-width: 0;
+}
+
+@media (max-width: 768px) {
+  body.unlocked .archive-image-card {
+    padding: 0.62rem;
+  }
+
+  body.unlocked .archive-image-kicker {
+    font-size: 0.58rem !important;
+    letter-spacing: 0.16em !important;
+  }
+
+  body.unlocked .archive-image-title {
+    font-size: 0.98rem !important;
+  }
+
+  body.unlocked .archive-image-layout {
+    grid-template-columns: 1fr !important;
+    gap: 0.82rem !important;
+  }
+
+  body.unlocked .archive-image-layout .archive-image-card {
+    max-width: 260px;
+  }
+
+  body.unlocked .case-scene-card {
+    max-width: 100%;
+    margin-bottom: 0.78rem;
+  }
+
+  body.unlocked .case-scene-card .archive-image-card,
+  body.unlocked .case-scene-card.archive-image-card {
+    max-width: 100%;
+  }
+}
+
+.archive-image-description {
+  margin-top: 0.52rem;
+  color: rgba(28, 18, 10, 0.76);
+  font-family: var(--font-type);
+  font-size: 0.82rem;
+  font-style: italic;
+  line-height: 1.65;
+}
+
+.archive-image-action {
+  display: inline-block;
+  margin-top: 0.62rem;
+  color: var(--folder-red);
+  font-family: var(--font-type);
+  font-size: 0.62rem;
+  letter-spacing: 0.18em;
+  text-decoration: underline;
+  text-transform: uppercase;
+  text-underline-offset: 3px;
+  opacity: 0.82;
+}
+
+.archive-image-action:hover,
+.archive-image-action:focus-visible {
+  opacity: 1;
+}
