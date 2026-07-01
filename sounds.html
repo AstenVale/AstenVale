@@ -282,6 +282,18 @@
 
   <script src="data/sounds.js"></script>
   <script src="js/sounds-archive.js"></script>
+  <script>
+    (function() {
+      var hash = window.location.hash.replace('#','');
+      if (!hash) return;
+      function tryScroll(attempts) {
+        var el = document.getElementById(hash);
+        if (el) { el.scrollIntoView({behavior:'smooth',block:'center'}); el.style.outline='2px solid var(--folder-red)'; setTimeout(function(){ el.style.outline=''; },2000); return; }
+        if (attempts > 0) setTimeout(function(){ tryScroll(attempts-1); }, 200);
+      }
+      tryScroll(10);
+    })();
+  </script>
   <script src="js/badges.js"></script>
   <script>try { localStorage.setItem('av_visited_sounds','1'); if(typeof checkAndAwardBadges==='function') checkAndAwardBadges(); } catch(e) {}</script>
 

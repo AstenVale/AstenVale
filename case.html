@@ -765,7 +765,7 @@ body.unlocked .archive-player,body.unlocked #fields-container,body.unlocked .pan
 
     // Use audioSrc from song data; store back so Recovered Music section picks it up
     var src = d.audioSrc || getCaseAudioPath(d);
-    if (src) { audio.src = src; }
+    if (src) { window.setAudioSrc ? window.setAudioSrc(audio, src) : (audio.src = src); }
     d.audioSrc = src;
 
     var playing = false;
@@ -920,7 +920,7 @@ body.unlocked .archive-player,body.unlocked #fields-container,body.unlocked .pan
   function buildRecoveredMusicPlayer(audioSrc, label) {
     var audio = document.createElement('audio');
     audio.preload = 'none';
-    audio.src = audioSrc;
+    if (window.setAudioSrc) { window.setAudioSrc(audio, audioSrc); } else { audio.src = audioSrc; }
     audio.setAttribute('aria-label', label || 'Recovered Music');
     return audio;
   }
@@ -1340,7 +1340,7 @@ body.unlocked .archive-player,body.unlocked #fields-container,body.unlocked .pan
       if (soundData && soundData.audioFile) {
         var sevAudio = document.createElement('audio');
         sevAudio.preload = 'none';
-        sevAudio.src = soundData.audioFile;
+        if (window.setAudioSrc) { window.setAudioSrc(sevAudio, soundData.audioFile); } else { sevAudio.src = soundData.audioFile; }
         sevAudio.setAttribute('aria-label', 'Audio Evidence');
         blk.appendChild(sevAudio);
       }
@@ -1354,9 +1354,10 @@ body.unlocked .archive-player,body.unlocked #fields-container,body.unlocked .pan
       metaRow.appendChild(recoveredEl);
 
       var linkEl = document.createElement('a');
+      var soundAnchorId = (soundData ? (soundData.id || soundData.slug || soundData.name) : soundCollectible.name).toUpperCase().replace(/[^A-Z0-9]+/g, '-');
       linkEl.className = 'sound-ev-link';
-      linkEl.href      = 'sounds.html';
-      linkEl.textContent = 'View in Evidence Recordings Ã¢â€ â€™';
+      linkEl.href      = 'sounds.html#' + soundAnchorId;
+      linkEl.textContent = 'View in Evidence Recordings →';
       metaRow.appendChild(linkEl);
 
       blk.appendChild(metaRow);
@@ -1508,7 +1509,7 @@ body.unlocked .archive-player,body.unlocked #fields-container,body.unlocked .pan
         if (!tSrc) return;
         var wtAudio = document.createElement('audio');
         wtAudio.preload = 'none';
-        wtAudio.src = tSrc;
+        if (window.setAudioSrc) { window.setAudioSrc(wtAudio, tSrc); } else { wtAudio.src = tSrc; }
         wtAudio.setAttribute('aria-label', 'Witness Statement');
         witBody.appendChild(wtAudio);
       })();
@@ -1628,7 +1629,7 @@ body.unlocked .archive-player,body.unlocked #fields-container,body.unlocked .pan
 
       var recAudio = document.createElement('audio');
       recAudio.preload = 'none';
-      recAudio.src = novelSrc;
+      if (window.setAudioSrc) { window.setAudioSrc(recAudio, novelSrc); } else { recAudio.src = novelSrc; }
       recAudio.setAttribute('aria-label', 'Recovered Archive Recording');
       reportDoc.appendChild(recAudio);
     })();
