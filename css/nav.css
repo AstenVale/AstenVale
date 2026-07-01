@@ -35,7 +35,7 @@ body.has-hero-image .hero {
   /* No top padding needed ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â nav moves to bottom */
   body {
     padding-top: 0 !important;
-    padding-bottom: calc(78px + env(safe-area-inset-bottom, 0px)) !important;
+    padding-bottom: calc(86px + env(safe-area-inset-bottom, 0px)) !important;
   }
 
   .site-nav {
@@ -48,7 +48,7 @@ body.has-hero-image .hero {
     background: rgba(6, 3, 1, 0.985) !important;
     border-top: 1px solid rgba(226, 196, 145, 0.34) !important;
     border-bottom: none !important;
-    height: calc(78px + env(safe-area-inset-bottom, 0px));
+    height: calc(86px + env(safe-area-inset-bottom, 0px));
     box-shadow: 0 -4px 24px rgba(0, 0, 0, 0.5);
     overflow: visible !important;
   }
@@ -82,18 +82,20 @@ body.has-hero-image .hero {
     align-items: center !important;
     justify-content: center !important;
     gap: 3px;
-    font-size: 0.64rem !important;
-    letter-spacing: 0.02em !important;
-    padding: 0.65rem 0.22rem 0.55rem !important;
-    line-height: 1.1 !important;
+    font-size: 0.56rem !important;
+    letter-spacing: 0 !important;
+    padding: 0.65rem 0.15rem 0.55rem !important;
+    line-height: 1.15 !important;
     flex: 1 1 0;
     min-width: 0;
     max-width: none;
     color: rgba(226, 196, 145, 0.86) !important;
     text-decoration: none;
     text-align: center !important;
-    white-space: nowrap !important;
-    overflow-wrap: normal;
+    white-space: normal !important;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    hyphens: auto;
     transition: color 0.15s;
     -webkit-tap-highlight-color: transparent;
   }
