@@ -182,14 +182,14 @@ body.has-hero-image .hero {
 /* Shared page header text sizing for archive navigation. */
 @media (min-width: 769px) {
   .site-nav :is(.nav-brand, .nav-link) {
-    font-size: 16px !important;
+    font-size: 14px !important;
   }
 }
 
 @media (max-width: 768px) {
   .site-nav .nav-link,
   .nav-more-menu a {
-    font-size: 16px !important;
+    font-size: 14px !important;
   }
 }
 /* Desktop nav should stay visually fixed instead of stretching wider with the window. */
