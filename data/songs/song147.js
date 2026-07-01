@@ -10,7 +10,7 @@ window.SONG_DATA = {
   "difficulty": "Archive Entry",
   "status": "OPEN INVESTIGATION",
   "artwork": null,
-  "audioSrc": "Songs/Season-13-the-twin-hollows/147.mp3",
+  "audioSrc": "https://astenvale.github.io/AstenVale-Songs/Songs/Season-13-the-twin-hollows/147.mp3",
   "streamingLinks": {
     "spotify": "",
     "apple": "",

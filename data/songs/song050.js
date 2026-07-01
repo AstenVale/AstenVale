@@ -10,7 +10,7 @@ window.SONG_DATA = {
   "difficulty": "Archive Entry",
   "status": "OPEN INVESTIGATION",
   "artwork": null,
-  "audioSrc": "Songs/Season-05-the-last-winter/050.mp3",
+  "audioSrc": "https://astenvale.github.io/AstenVale-Songs/Songs/Season-05-the-last-winter/050.mp3",
   "streamingLinks": {
     "spotify": "",
     "apple": "",

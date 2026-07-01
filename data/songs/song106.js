@@ -10,7 +10,7 @@ window.SONG_DATA = {
   "difficulty": "Vault-Level",
   "status": "OPEN INVESTIGATION",
   "artwork": null,
-  "audioSrc": "Songs/Season-09-the-keeper/106.mp3",
+  "audioSrc": "https://astenvale.github.io/AstenVale-Songs/Songs/Season-09-the-keeper/106.mp3",
   "streamingLinks": {
     "spotify": "",
     "apple": "",
