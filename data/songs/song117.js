@@ -10,7 +10,7 @@ window.SONG_DATA = {
   "difficulty": "Deep File",
   "status": "OPEN INVESTIGATION",
   "artwork": null,
-  "audioSrc": "Songs/Season-10-the-forgotten-road/117.mp3",
+  "audioSrc": "https://astenvale.github.io/AstenVale-Songs/Songs/Season-10-the-forgotten-road/117.mp3",
   "streamingLinks": {
     "spotify": "",
     "apple": "",

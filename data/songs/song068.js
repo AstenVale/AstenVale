@@ -10,7 +10,7 @@ window.SONG_DATA = {
   "difficulty": "Deep File",
   "status": "OPEN INVESTIGATION",
   "artwork": null,
-  "audioSrc": "Songs/Season-06-the-underground/068.mp3",
+  "audioSrc": "https://astenvale.github.io/AstenVale-Songs/Songs/Season-06-the-underground/068.mp3",
   "streamingLinks": {
     "spotify": "",
     "apple": "",

@@ -10,7 +10,7 @@ window.SONG_DATA = {
   "difficulty": "Vault-Level",
   "status": "OPEN INVESTIGATION",
   "artwork": null,
-  "audioSrc": "Songs/Season-16-the-glass-house/190.mp3",
+  "audioSrc": "https://astenvale.github.io/AstenVale-Songs/Songs/Season-16-the-glass-house/190.mp3",
   "streamingLinks": {
     "spotify": "",
     "apple": "",

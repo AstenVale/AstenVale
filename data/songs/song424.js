@@ -10,7 +10,7 @@ window.SONG_DATA = {
   "difficulty": "Open Investigation",
   "status": "OPEN INVESTIGATION",
   "artwork": null,
-  "audioSrc": "Songs/Season-36-the-night-caller/424.mp3",
+  "audioSrc": "https://astenvale.github.io/AstenVale-Songs/Songs/Season-36-the-night-caller/424.mp3",
   "streamingLinks": {
     "spotify": "",
     "apple": "",
