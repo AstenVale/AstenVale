@@ -261,7 +261,7 @@ window.SONG_DATA = {
     {
       "id": "153_marker",
       "type": "Marker",
-      "image": "images/Markers/153_Before_the_Divide.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/153_Before_the_Divide.jpg",
       "name": "Marker 1379",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 153.",

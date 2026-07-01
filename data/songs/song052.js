@@ -224,12 +224,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Dried Flower was recovered from Fulling Mill in Case File 052. It is tied to Typesetter, 3:49, and marker 534.",
       "unknownInfo": "Past the Tree Line and Forge Breath suggest this object matters beyond the first reading.",
-      "image": "images/Objects/052 - bottle.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/052 - bottle.jpg"
     },
     {
       "id": "052_location",
       "type": "Location",
-      "image": "images/Location/case-052-north-gate-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-052-north-gate-location.jpg",
       "name": "Fullingmill",
       "symbol": "📍",
       "description": "The active scene for Case File 052. Recovered field notes place the primary event at Fullingmill.",
@@ -247,7 +247,7 @@ window.SONG_DATA = {
     {
       "id": "052_time",
       "type": "Time",
-      "image": "images/5 Time/052_lantern_2-55.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/5 Time/052_lantern_2-55.jpg",
       "name": "349",
       "symbol": "⌚",
       "description": "The time recorded in the case audio for Case File 052. Cross-referenced with field notes.",
@@ -256,7 +256,7 @@ window.SONG_DATA = {
     {
       "id": "052_marker",
       "type": "Marker",
-      "image": "images/Markers/052_The_Long_Night.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/052_The_Long_Night.jpg",
       "name": "Marker 534",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 052.",

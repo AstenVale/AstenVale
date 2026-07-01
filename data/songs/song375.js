@@ -250,7 +250,7 @@ window.SONG_DATA = {
     {
       "id": "375_marker",
       "type": "Marker",
-      "image": "images/Markers/375_What_the_Depth_Holds.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/375_What_the_Depth_Holds.jpg",
       "name": "Marker 3225",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 375.",

@@ -251,7 +251,7 @@ window.SONG_DATA = {
     {
       "id": "297_marker",
       "type": "Marker",
-      "image": "images/Markers/297_The_Source_Story.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/297_The_Source_Story.jpg",
       "name": "Marker 2579",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 297.",

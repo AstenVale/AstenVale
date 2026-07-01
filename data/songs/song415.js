@@ -260,7 +260,7 @@ window.SONG_DATA = {
     {
       "id": "415_marker",
       "type": "Marker",
-      "image": "images/Markers/415_What_the_Keeper_Knows.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/415_What_the_Keeper_Knows.jpg",
       "name": "Marker 3561",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 415.",

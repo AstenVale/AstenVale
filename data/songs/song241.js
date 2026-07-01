@@ -249,7 +249,7 @@ window.SONG_DATA = {
     {
       "id": "241_marker",
       "type": "Marker",
-      "image": "images/Markers/241_The_Old_Oak.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/241_The_Old_Oak.jpg",
       "name": "Marker 2107",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 241.",

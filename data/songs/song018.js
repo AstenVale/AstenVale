@@ -233,12 +233,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Handkerchief was recovered from Window Seat in Case File 018. It is tied to Sister, 8:00, and marker 165.",
       "unknownInfo": "In and Clock Ticking suggest this object matters beyond the first reading.",
-      "image": "images/Objects/018 - unopened mail.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/018 - unopened mail.jpg"
     },
     {
       "id": "018_location",
       "type": "Location",
-      "image": "images/Location/case-018-fireplace-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-018-fireplace-location.jpg",
       "name": "Windowseat",
       "symbol": "📍",
       "description": "The active scene for Case File 018. Recovered field notes place the primary event at Windowseat.",
@@ -256,7 +256,7 @@ window.SONG_DATA = {
     {
       "id": "018_time",
       "type": "Time",
-      "image": "images/5 Time/018_lantern_12-15.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/5 Time/018_lantern_12-15.jpg",
       "name": "800",
       "symbol": "⌚",
       "description": "The time recorded in the case audio for Case File 018. Cross-referenced with field notes.",
@@ -265,7 +265,7 @@ window.SONG_DATA = {
     {
       "id": "018_marker",
       "type": "Marker",
-      "image": "images/Markers/018_The_Vigil.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/018_The_Vigil.jpg",
       "name": "Marker 165",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 018.",

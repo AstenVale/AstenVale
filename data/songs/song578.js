@@ -249,7 +249,7 @@ window.SONG_DATA = {
     {
       "id": "578_marker",
       "type": "Marker",
-      "image": "images/Markers/578_What_She_Remembers.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/578_What_She_Remembers.jpg",
       "name": "Marker 4916",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 578.",

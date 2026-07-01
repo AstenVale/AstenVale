@@ -222,12 +222,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Charred Paper was recovered from Boatyard in Case File 082. It is tied to Midwife, 2:19, and marker 788.",
       "unknownInfo": "Beyond and Forge Breath suggest this object matters beyond the first reading.",
-      "image": "images/Objects/082 - pipe.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/082 - pipe.jpg"
     },
     {
       "id": "082_location",
       "type": "Location",
-      "image": "images/Location/case-082-the-depot-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-082-the-depot-location.jpg",
       "name": "Boatyard",
       "symbol": "📍",
       "description": "The active scene for Case File 082. Recovered field notes place the primary event at Boatyard.",
@@ -252,7 +252,7 @@ window.SONG_DATA = {
     {
       "id": "082_marker",
       "type": "Marker",
-      "image": "images/Markers/082_The_Other_Town.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/082_The_Other_Town.jpg",
       "name": "Marker 788",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 082.",

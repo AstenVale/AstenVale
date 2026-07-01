@@ -264,7 +264,7 @@ window.SONG_DATA = {
     {
       "id": "306_marker",
       "type": "Marker",
-      "image": "images/Markers/306_What_Changed_Inside.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/306_What_Changed_Inside.jpg",
       "name": "Marker 2652",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 306.",

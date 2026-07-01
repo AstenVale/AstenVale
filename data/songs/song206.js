@@ -254,7 +254,7 @@ window.SONG_DATA = {
     {
       "id": "206_marker",
       "type": "Marker",
-      "image": "images/Markers/206_The_Alias.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/206_The_Alias.jpg",
       "name": "Marker 1816",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 206.",

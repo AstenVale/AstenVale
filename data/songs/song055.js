@@ -223,12 +223,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Charred Paper was recovered from Old Bridge in Case File 055. It is tied to Banker, 6:17, and marker 561.",
       "unknownInfo": "Under and Crow on Wire suggest this object matters beyond the first reading.",
-      "image": "images/Objects/055 - ticket.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/055 - ticket.jpg"
     },
     {
       "id": "055_location",
       "type": "Location",
-      "image": "images/Location/case-055-the-pit-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-055-the-pit-location.jpg",
       "name": "Oldbridge",
       "symbol": "📍",
       "description": "The active scene for Case File 055. Recovered field notes place the primary event at Oldbridge.",
@@ -246,7 +246,7 @@ window.SONG_DATA = {
     {
       "id": "055_time",
       "type": "Time",
-      "image": "images/5 Time/055_lantern_5-13.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/5 Time/055_lantern_5-13.jpg",
       "name": "617",
       "symbol": "⌚",
       "description": "The time recorded in the case audio for Case File 055. Cross-referenced with field notes.",
@@ -255,7 +255,7 @@ window.SONG_DATA = {
     {
       "id": "055_marker",
       "type": "Marker",
-      "image": "images/Markers/055_Ice_Road.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/055_Ice_Road.jpg",
       "name": "Marker 561",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 055.",

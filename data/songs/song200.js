@@ -261,7 +261,7 @@ window.SONG_DATA = {
     {
       "id": "200_marker",
       "type": "Marker",
-      "image": "images/Markers/200_The_Ice.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/200_The_Ice.jpg",
       "name": "Marker 1770",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 200.",

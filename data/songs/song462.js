@@ -261,7 +261,7 @@ window.SONG_DATA = {
     {
       "id": "462_marker",
       "type": "Marker",
-      "image": "images/Markers/462_What_the_Horse_Knew.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/462_What_the_Horse_Knew.jpg",
       "name": "Marker 3952",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 462.",

@@ -261,7 +261,7 @@ window.SONG_DATA = {
     {
       "id": "176_marker",
       "type": "Marker",
-      "image": "images/Markers/176_What_He_Saw.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/176_What_He_Saw.jpg",
       "name": "Marker 1570",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 176.",

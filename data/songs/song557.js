@@ -250,7 +250,7 @@ window.SONG_DATA = {
     {
       "id": "557_marker",
       "type": "Marker",
-      "image": "images/Markers/557_Who_Was_Avoided.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/557_Who_Was_Avoided.jpg",
       "name": "Marker 4743",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 557.",

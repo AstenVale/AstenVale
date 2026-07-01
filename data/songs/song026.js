@@ -222,12 +222,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Iron Nail was recovered from Cabin in Case File 026. It is tied to Ferryman, 2:19, and marker 316.",
       "unknownInfo": "Right and Lid of a Tin suggest this object matters beyond the first reading.",
-      "image": "images/Objects/026 - candle.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/026 - candle.jpg"
     },
     {
       "id": "026_location",
       "type": "Location",
-      "image": "images/Location/case-026-potters-field-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-026-potters-field-location.jpg",
       "name": "Cabin",
       "symbol": "📍",
       "description": "The active scene for Case File 026. Recovered field notes place the primary event at Cabin.",
@@ -245,7 +245,7 @@ window.SONG_DATA = {
     {
       "id": "026_time",
       "type": "Time",
-      "image": "images/5 Time/026_lantern_4-03.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/5 Time/026_lantern_4-03.jpg",
       "name": "219",
       "symbol": "⌚",
       "description": "The time recorded in the case audio for Case File 026. Cross-referenced with field notes.",
@@ -254,7 +254,7 @@ window.SONG_DATA = {
     {
       "id": "026_marker",
       "type": "Marker",
-      "image": "images/Markers/026_The_Empty_Bed.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/026_The_Empty_Bed.jpg",
       "name": "Marker 316",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 026.",

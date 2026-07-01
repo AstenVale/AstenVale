@@ -234,12 +234,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Spool of Thread was recovered from The Weir in Case File 038. It is tied to Conductor, 5:21, and marker 416.",
       "unknownInfo": "Toward and Ash Settling suggest this object matters beyond the first reading.",
-      "image": "images/Objects/038 - ear of corn.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/038 - ear of corn.jpg"
     },
     {
       "id": "038_location",
       "type": "Location",
-      "image": "images/Location/case-038-grain-mill-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-038-grain-mill-location.jpg",
       "name": "Weir",
       "symbol": "📍",
       "description": "The active scene for Case File 038. Recovered field notes place the primary event at Weir.",
@@ -257,7 +257,7 @@ window.SONG_DATA = {
     {
       "id": "038_time",
       "type": "Time",
-      "image": "images/5 Time/038_lantern_7-48.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/5 Time/038_lantern_7-48.jpg",
       "name": "521",
       "symbol": "⌚",
       "description": "The time recorded in the case audio for Case File 038. Cross-referenced with field notes.",
@@ -266,7 +266,7 @@ window.SONG_DATA = {
     {
       "id": "038_marker",
       "type": "Marker",
-      "image": "images/Markers/038_The_Drowned_Watch.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/038_The_Drowned_Watch.jpg",
       "name": "Marker 416",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 038.",

@@ -227,7 +227,7 @@ window.SONG_DATA = {
     {
       "id": "096_location",
       "type": "Location",
-      "image": "images/Location/case-096-print-shop-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-096-print-shop-location.jpg",
       "name": "Ciderhouse",
       "symbol": "📍",
       "description": "The active scene for Case File 096. Recovered field notes place the primary event at Ciderhouse.",
@@ -252,7 +252,7 @@ window.SONG_DATA = {
     {
       "id": "096_marker",
       "type": "Marker",
-      "image": "images/Markers/096_The_Scar.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/096_The_Scar.jpg",
       "name": "Marker 906",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 096.",

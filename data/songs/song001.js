@@ -219,7 +219,7 @@ window.SONG_DATA = {
       "id": "001_lantern",
       "type": "Object",
       "name": "The Lantern",
-      "image": "images/Objects/001 - lantern.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/001 - lantern.jpg",
       "symbol": "🏮",
       "description": "A lantern recovered from the Black Pine scene. Still faintly warm when found. No fuel remaining.",
       "unknownInfo": "Who carried it there — and why they left it burning."
@@ -227,7 +227,7 @@ window.SONG_DATA = {
     {
       "id": "001_location",
       "type": "Location",
-      "image": "images/Location/case-001-black-pine-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-001-black-pine-location.jpg",
       "name": "Black Pine",
       "symbol": "📍",
       "description": "A remote wooded area outside the valley. The reported scene of the original incident.",
@@ -245,7 +245,7 @@ window.SONG_DATA = {
     {
       "id": "001_time",
       "type": "Time",
-      "image": "images/5 Time/001_lantern_3-30.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/5 Time/001_lantern_3-30.jpg",
       "name": "3:30",
       "symbol": "⌚",
       "description": "The confirmed time of the Crow Call recording embedded in the case audio. Cross-referenced with field notes.",
@@ -254,7 +254,7 @@ window.SONG_DATA = {
     {
       "id": "001_marker",
       "type": "Marker",
-      "image": "images/Markers/001_Lantern_at_Black_Pine.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/001_Lantern_at_Black_Pine.jpg",
       "name": "Marker 17",
       "symbol": "◆",
       "description": "A numbered field marker left at the Black Pine site. Indexed to the Public Archive.",

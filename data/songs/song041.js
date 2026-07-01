@@ -231,12 +231,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Signet Ring was recovered from Library in Case File 041. It is tied to Orphan, 12:00, and marker 443.",
       "unknownInfo": "Out and Floorboard suggest this object matters beyond the first reading.",
-      "image": "images/Objects/041 - seal.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/041 - seal.jpg"
     },
     {
       "id": "041_location",
       "type": "Location",
-      "image": "images/Location/case-041-north-pasture-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-041-north-pasture-location.jpg",
       "name": "Library",
       "symbol": "📍",
       "description": "The active scene for Case File 041. Recovered field notes place the primary event at Library.",
@@ -254,7 +254,7 @@ window.SONG_DATA = {
     {
       "id": "041_time",
       "type": "Time",
-      "image": "images/5 Time/041_lantern_12-44.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/5 Time/041_lantern_12-44.jpg",
       "name": "1200",
       "symbol": "⌚",
       "description": "The time recorded in the case audio for Case File 041. Cross-referenced with field notes.",
@@ -263,7 +263,7 @@ window.SONG_DATA = {
     {
       "id": "041_marker",
       "type": "Marker",
-      "image": "images/Markers/041_Low_Water_Mark.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/041_Low_Water_Mark.jpg",
       "name": "Marker 443",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 041.",
