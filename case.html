@@ -774,8 +774,31 @@ body.unlocked .archive-player,body.unlocked #fields-container,body.unlocked .pan
 
     // Use audioSrc from song data; store back so Recovered Music section picks it up
     var src = d.audioSrc || getCaseAudioPath(d);
-    if (src) { window.setAudioSrc ? window.setAudioSrc(audio, src) : (audio.src = src); }
     d.audioSrc = src;
+
+    // If the Sheet has a spotify_track_id for this case, Spotify replaces this
+    // player entirely (same rule as the post-solve Recovered Music section).
+    if (d.spotifyEmbedUrl) {
+      audio.style.display = 'none';
+      var apControls = document.querySelector('#archive-player .ap-controls');
+      if (apControls) apControls.style.display = 'none';
+      if (!document.getElementById('ap-spotify-embed')) {
+        var apFrame = document.createElement('iframe');
+        apFrame.id = 'ap-spotify-embed';
+        apFrame.src = d.spotifyEmbedUrl;
+        apFrame.width = '100%';
+        apFrame.height = '152';
+        apFrame.frameBorder = '0';
+        apFrame.allow = 'autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture';
+        apFrame.loading = 'lazy';
+        apFrame.className = 'spotify-embed-frame';
+        var apSub = document.getElementById('ap-sub');
+        if (apSub && apSub.parentNode) apSub.parentNode.insertBefore(apFrame, apSub.nextSibling);
+      }
+      return;
+    }
+
+    if (src) { window.setAudioSrc ? window.setAudioSrc(audio, src) : (audio.src = src); }
 
     var playing = false;
     var lastVol = 1;
