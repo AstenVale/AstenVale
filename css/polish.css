@@ -92,7 +92,7 @@ img { max-width: 100%; height: auto; }
 button, .btn-submit, .briefing-link, .return-link, .empty-action, .cabinet-empty-btn { min-height: 38px; }
 
 @media (max-width: 640px) {
-  body { font-size: 14px; }
+  body { font-size: 16px; }
   :is(.hero-title, .page-title) { overflow-wrap: anywhere; }
   :is(.case-file-card, .case-card, .artifact-card, .recording-card, .evidence-card)::after { display: none; }
   .av-audio-row { grid-template-columns: 1fr; }
@@ -1829,4 +1829,16 @@ body.unlocked .case-meta {
 .archive-image-action:hover,
 .archive-image-action:focus-visible {
   opacity: 1;
+}
+
+/* Archive case availability states keep sealed ledger cards inert. */
+.case-card.ledger-case.coming-soon-lock:hover,
+.case-card.ledger-case.classified-lock:hover {
+  cursor: default;
+  transform: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12), inset 0 1px 0 rgba(255,255,255,0.15);
+}
+
+.case-card.ledger-case.is-open-file:hover {
+  cursor: pointer;
 }
