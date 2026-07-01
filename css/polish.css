@@ -545,6 +545,7 @@ body {
   .archive-cats,
   .case-list,
   .case-file-row,
+  .case-row,
   .discovery-feed,
   .activity-feed,
   .vault-card,
@@ -562,6 +563,7 @@ body {
   .inv-row,
   .progress-bar-header,
   .case-file-row,
+  .case-row,
   .vault-label-row,
   .vault-progress-row,
   .activity-row {
@@ -569,6 +571,12 @@ body {
     flex-direction: column !important;
     align-items: stretch !important;
     gap: 0.35rem !important;
+  }
+
+  .case-row-num,
+  .case-row-title,
+  .case-row-status {
+    min-width: 0 !important;
   }
 
   .hero-meta-sep {
@@ -704,9 +712,21 @@ body {
 }
 
 @media (max-width: 420px) {
-  .countdown-dials,
-  .vault-dials {
+  .countdown-dials {
     grid-template-columns: 1fr !important;
+  }
+
+  .vault-dials {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 0.4rem !important;
+  }
+
+  .vault-dial {
+    height: 48px !important;
+  }
+
+  .vault-dial-num {
+    font-size: 0.85rem !important;
   }
 
   .hero-title-main,
