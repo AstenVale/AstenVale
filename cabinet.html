@@ -146,6 +146,8 @@
     .cab-vol{width:50px;accent-color:rgba(100,60,20,0.6);}
     .artifact-sound-link { font-family: var(--font-type); font-size: 0.58rem; letter-spacing: 0.16em; color: var(--folder-red); text-transform: uppercase; text-decoration: underline; text-underline-offset: 2px; opacity: 0.8; transition: opacity 0.15s; align-self: flex-start; }
     .artifact-sound-link:hover { opacity: 1; }
+    .artifact-card-evidence-link { font-family: var(--font-type); font-size: 0.58rem; letter-spacing: 0.16em; color: var(--folder-red); text-transform: uppercase; text-decoration: underline; text-underline-offset: 2px; opacity: 0.8; transition: opacity 0.15s; align-self: flex-start; margin-top: 0.4rem; }
+    .artifact-card-evidence-link:hover { opacity: 1; }
 
     @media (max-width: 640px) {
       .site-nav { padding: 1rem 1.25rem; }
@@ -247,6 +249,7 @@
 
   <script src="js/vault-config.js"></script>
   <script src="data/sounds.js"></script>
+  <script src="js/asset-url-builder.js"></script>
   <script>
   (function() {
     // Build a quick lookup: sound name (lowercase) ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ sound object
@@ -479,6 +482,10 @@
                 html +=   '<a href="sounds.html" class="artifact-sound-link">View in Sound Cabinet</a>';
                 html += '</div>';
               }
+            }
+            var evidenceSlug = window.AssetUrlBuilder ? window.AssetUrlBuilder.slugify(c.name) : '';
+            if (evidenceSlug) {
+              html += '<a href="evidence.html?id=' + evidenceSlug + '" class="artifact-card-evidence-link">View Evidence File</a>';
             }
             html +=   '</div>';
 
