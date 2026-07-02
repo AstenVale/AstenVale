@@ -232,12 +232,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Brooch was recovered from Fulling Mill in Case File 040. It is tied to Blacksmith, 10:19, and marker 434.",
       "unknownInfo": "Left and Telegraph Click suggest this object matters beyond the first reading.",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/040 - torn label.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/036 - brooch.jpg"
     },
     {
       "id": "040_location",
       "type": "Location",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-040-bankers-house-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-035-fulling-mill-location.jpg",
       "name": "Fulling Mill",
       "symbol": "📍",
       "description": "The active scene for Case File 040. Recovered field notes place the primary event at Fulling Mill.",

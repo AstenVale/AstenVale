@@ -219,6 +219,7 @@ window.SONG_DATA = {
     {
       "id": "488_spectacles",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/092 - spectacles.jpg",
       "name": "Spectacles",
       "symbol": "🔍",
       "description": "Spectacles was recovered from Mill House in Case File 488. It is tied to Night Watchman, 10:22, and marker 4170.",
@@ -227,9 +228,10 @@ window.SONG_DATA = {
     {
       "id": "488_location",
       "type": "Location",
-      "name": "Millhouse",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-050-mill-house-location.jpg",
+      "name": "Mill House",
       "symbol": "📍",
-      "description": "The active scene for Case File 488. Recovered field notes place the primary event at Millhouse.",
+      "description": "The active scene for Case File 488. Recovered field notes place the primary event at Mill House.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

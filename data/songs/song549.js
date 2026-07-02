@@ -229,6 +229,7 @@ window.SONG_DATA = {
     {
       "id": "549_bottle",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/052 - bottle.jpg",
       "name": "Bottle",
       "symbol": "🔍",
       "description": "Bottle was recovered from Water Tower in Case File 549. It is tied to Cooper, 4:29, and marker 4679.",
@@ -237,9 +238,10 @@ window.SONG_DATA = {
     {
       "id": "549_location",
       "type": "Location",
-      "name": "Watertower",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-028-water-tower-location.jpg",
+      "name": "Water Tower",
       "symbol": "📍",
-      "description": "The active scene for Case File 549. Recovered field notes place the primary event at Watertower.",
+      "description": "The active scene for Case File 549. Recovered field notes place the primary event at Water Tower.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

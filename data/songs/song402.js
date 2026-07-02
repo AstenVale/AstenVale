@@ -219,6 +219,7 @@ window.SONG_DATA = {
     {
       "id": "402_spectacles",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/092 - spectacles.jpg",
       "name": "Spectacles",
       "symbol": "🔍",
       "description": "Spectacles was recovered from The Hollow Road in Case File 402. It is tied to Drifter, 4:29, and marker 3452.",
@@ -227,6 +228,7 @@ window.SONG_DATA = {
     {
       "id": "402_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-049-the-hollow-road-location.jpg",
       "name": "Hollow Road",
       "symbol": "📍",
       "description": "The active scene for Case File 402. Recovered field notes place the primary event at Hollow Road.",

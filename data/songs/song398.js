@@ -219,6 +219,7 @@ window.SONG_DATA = {
     {
       "id": "398_brooch",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/036 - brooch.jpg",
       "name": "Brooch",
       "symbol": "🔍",
       "description": "Brooch was recovered from Collapsed Mine in Case File 398. It is tied to Furrier, 2:19, and marker 3416.",
@@ -227,6 +228,7 @@ window.SONG_DATA = {
     {
       "id": "398_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-083-collapsed-mine-location.jpg",
       "name": "Collapsed Mine",
       "symbol": "📍",
       "description": "The active scene for Case File 398. Recovered field notes place the primary event at Collapsed Mine.",

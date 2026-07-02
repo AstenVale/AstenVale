@@ -219,6 +219,7 @@ window.SONG_DATA = {
     {
       "id": "299_bulletcasing",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/061 - bullet casing.jpg",
       "name": "Bullet Casing",
       "symbol": "🔍",
       "description": "Bullet Casing was recovered from Cooper's Yard in Case File 299. It is tied to Schoolgirl, 9:27, and marker 2597.",
@@ -227,9 +228,10 @@ window.SONG_DATA = {
     {
       "id": "299_location",
       "type": "Location",
-      "name": "Cooper'Syard",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-031-coopers-yard-location.jpg",
+      "name": "Cooper's Yard",
       "symbol": "📍",
-      "description": "The active scene for Case File 299. Recovered field notes place the primary event at Cooper'Syard.",
+      "description": "The active scene for Case File 299. Recovered field notes place the primary event at Cooper's Yard.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

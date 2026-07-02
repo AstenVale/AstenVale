@@ -221,7 +221,8 @@ window.SONG_DATA = {
     {
       "id": "248_prayercard",
       "type": "Object",
-      "name": "Prayercard",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/066 - prayer card.jpg",
+      "name": "Prayer Card",
       "symbol": "🔍",
       "description": "Prayer Card was recovered from The Hollow Road in Case File 248. It is tied to Schoolgirl, 11:40, and marker 2170.",
       "unknownInfo": "Down the Hollow and Telegraph Click suggest this object matters beyond the first reading."
@@ -229,6 +230,7 @@ window.SONG_DATA = {
     {
       "id": "248_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-049-the-hollow-road-location.jpg",
       "name": "Hollow Road",
       "symbol": "📍",
       "description": "The active scene for Case File 248. Recovered field notes place the primary event at Hollow Road.",

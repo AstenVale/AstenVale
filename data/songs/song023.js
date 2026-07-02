@@ -233,12 +233,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Photograph was recovered from Empty Kitchen in Case File 023. It is tied to Neighbor, 9:45, and marker 220.",
       "unknownInfo": "Away and Clock Ticking suggest this object matters beyond the first reading.",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/023 - charcoal sketch.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/011 - photograph.jpg"
     },
     {
       "id": "023_location",
       "type": "Location",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-023-courthouse-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-020-empty-kitchen-location.jpg",
       "name": "Empty Kitchen",
       "symbol": "📍",
       "description": "The active scene for Case File 023. Recovered field notes place the primary event at Empty Kitchen.",

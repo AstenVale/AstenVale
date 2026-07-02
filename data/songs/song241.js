@@ -217,6 +217,7 @@ window.SONG_DATA = {
     {
       "id": "241_flask",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/045 - flask.jpg",
       "name": "Flask",
       "symbol": "🔍",
       "description": "Flask was recovered from Crossroads in Case File 241. It is tied to Tanner, 1:26, and marker 2107.",
@@ -225,6 +226,7 @@ window.SONG_DATA = {
     {
       "id": "241_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-073-crossroads-location.jpg",
       "name": "Crossroads",
       "symbol": "📍",
       "description": "The active scene for Case File 241. Recovered field notes place the primary event at Crossroads.",

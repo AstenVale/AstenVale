@@ -219,6 +219,7 @@ window.SONG_DATA = {
     {
       "id": "408_watch",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/039 - watch.jpg",
       "name": "Watch",
       "symbol": "🔍",
       "description": "Watch was recovered from Ice House in Case File 408. It is tied to Lock Keeper, 5:40, and marker 3506.",
@@ -227,18 +228,19 @@ window.SONG_DATA = {
     {
       "id": "408_location",
       "type": "Location",
-      "name": "Icehouse",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-102-ice-house-location.jpg",
+      "name": "Ice House",
       "symbol": "📍",
-      "description": "The active scene for Case File 408. Recovered field notes place the primary event at Icehouse.",
+      "description": "The active scene for Case File 408. Recovered field notes place the primary event at Ice House.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {
       "id": "408_witness",
       "type": "Witness",
-      "name": "Lockkeeper",
+      "name": "Lock Keeper",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/lock-keeper.jpg",
       "symbol": "👤",
-      "description": "Lockkeeper, identified in the case notes for Case File 408. Has not given a formal statement.",
+      "description": "Lock Keeper, identified in the case notes for Case File 408. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

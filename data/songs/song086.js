@@ -229,19 +229,19 @@ window.SONG_DATA = {
     {
       "id": "086_tinstar",
       "type": "Object",
-      "name": "Tinstar",
+      "name": "Tin Star",
       "symbol": "🔍",
       "description": "Tin Star was recovered from Post Office in Case File 086. It is tied to Fence Mender, 12:33, and marker 816.",
       "unknownInfo": "Behind and Rain suggest this object matters beyond the first reading.",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/086 - oil rag.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/056 - tin star.jpg"
     },
     {
       "id": "086_location",
       "type": "Location",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-086-sheep-fold-location.jpg",
-      "name": "Postoffice",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-059-post-office-location.jpg",
+      "name": "Post Office",
       "symbol": "📍",
-      "description": "The active scene for Case File 086. Recovered field notes place the primary event at Postoffice.",
+      "description": "The active scene for Case File 086. Recovered field notes place the primary event at Post Office.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

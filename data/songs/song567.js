@@ -230,6 +230,7 @@ window.SONG_DATA = {
     {
       "id": "567_badge",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/067 - badge.jpg",
       "name": "Badge",
       "symbol": "🔍",
       "description": "Badge was recovered from North Gate in Case File 567. It is tied to Harness Maker, 3:30, and marker 4825.",
@@ -238,9 +239,10 @@ window.SONG_DATA = {
     {
       "id": "567_location",
       "type": "Location",
-      "name": "Northgate",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-052-north-gate-location.jpg",
+      "name": "North Gate",
       "symbol": "📍",
-      "description": "The active scene for Case File 567. Recovered field notes place the primary event at Northgate.",
+      "description": "The active scene for Case File 567. Recovered field notes place the primary event at North Gate.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

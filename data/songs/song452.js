@@ -220,6 +220,7 @@ window.SONG_DATA = {
     {
       "id": "452_spoolofthread",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/034 - spool of thread.jpg",
       "name": "Spool of Thread",
       "symbol": "🔍",
       "description": "Spool of Thread was recovered from Lumber Camp in Case File 452. It is tied to Doctor, 4:12, and marker 3870.",
@@ -228,9 +229,10 @@ window.SONG_DATA = {
     {
       "id": "452_location",
       "type": "Location",
-      "name": "Lumbercamp",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-047-lumber-camp-location.jpg",
+      "name": "Lumber Camp",
       "symbol": "📍",
-      "description": "The active scene for Case File 452. Recovered field notes place the primary event at Lumbercamp.",
+      "description": "The active scene for Case File 452. Recovered field notes place the primary event at Lumber Camp.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

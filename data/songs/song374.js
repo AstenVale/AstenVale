@@ -219,6 +219,7 @@ window.SONG_DATA = {
     {
       "id": "374_coin",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/044 - coin.jpg",
       "name": "Coin",
       "symbol": "🔍",
       "description": "Coin was recovered from Birch Stand in Case File 374. It is tied to Cattle Driver, 8:17, and marker 3216.",
@@ -227,9 +228,10 @@ window.SONG_DATA = {
     {
       "id": "374_location",
       "type": "Location",
-      "name": "Birchstand",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-093-birch-stand-location.jpg",
+      "name": "Birch Stand",
       "symbol": "📍",
-      "description": "The active scene for Case File 374. Recovered field notes place the primary event at Birchstand.",
+      "description": "The active scene for Case File 374. Recovered field notes place the primary event at Birch Stand.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

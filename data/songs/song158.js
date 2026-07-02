@@ -219,6 +219,7 @@ window.SONG_DATA = {
     {
       "id": "158_seal",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/041 - seal.jpg",
       "name": "Seal",
       "symbol": "🔍",
       "description": "Seal was recovered from Ash Hollow in Case File 158. It is tied to River Pilot, 8:06, and marker 1416.",
@@ -227,18 +228,19 @@ window.SONG_DATA = {
     {
       "id": "158_location",
       "type": "Location",
-      "name": "Ashhollow",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-075-ash-hollow-location.jpg",
+      "name": "Ash Hollow",
       "symbol": "📍",
-      "description": "The active scene for Case File 158. Recovered field notes place the primary event at Ashhollow.",
+      "description": "The active scene for Case File 158. Recovered field notes place the primary event at Ash Hollow.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {
       "id": "158_witness",
       "type": "Witness",
-      "name": "Riverpilot",
+      "name": "River Pilot",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/river-pilot.jpg",
       "symbol": "👤",
-      "description": "Riverpilot, identified in the case notes for Case File 158. Has not given a formal statement.",
+      "description": "River Pilot, identified in the case notes for Case File 158. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

@@ -219,7 +219,8 @@ window.SONG_DATA = {
     {
       "id": "469_flintstone",
       "type": "Object",
-      "name": "Flintstone",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/071 - flint stone.jpg",
+      "name": "Flint Stone",
       "symbol": "🔍",
       "description": "Flint Stone was recovered from Jail in Case File 469. It is tied to Drifter, 8:42, and marker 4007.",
       "unknownInfo": "Straight Down and Rope Strain suggest this object matters beyond the first reading."
@@ -227,6 +228,7 @@ window.SONG_DATA = {
     {
       "id": "469_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-084-jail-location.jpg",
       "name": "Jail",
       "symbol": "📍",
       "description": "The active scene for Case File 469. Recovered field notes place the primary event at Jail.",

@@ -221,16 +221,16 @@ window.SONG_DATA = {
     {
       "id": "050_emptytin",
       "type": "Object",
-      "name": "Emptytin",
+      "name": "Empty Tin",
       "symbol": "🔍",
       "description": "Empty Tin was recovered from The Root Cellar in Case File 050. It is tied to Lock Keeper, 8:06, and marker 516.",
       "unknownInfo": "Down the Hollow and Chains suggest this object matters beyond the first reading.",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/050 - telegram.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/035 - empty tin.jpg"
     },
     {
       "id": "050_location",
       "type": "Location",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-050-mill-house-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-037-the-root-cellar-location.jpg",
       "name": "Root Cellar",
       "symbol": "📍",
       "description": "The active scene for Case File 050. Recovered field notes place the primary event at Root Cellar.",
@@ -239,9 +239,9 @@ window.SONG_DATA = {
     {
       "id": "050_witness",
       "type": "Witness",
-      "name": "Lockkeeper",
+      "name": "Lock Keeper",
       "symbol": "👤",
-      "description": "Lockkeeper, identified in the case notes for Case File 050. Has not given a formal statement.",
+      "description": "Lock Keeper, identified in the case notes for Case File 050. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/lock-keeper.jpg"
     },

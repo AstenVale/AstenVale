@@ -230,6 +230,7 @@ window.SONG_DATA = {
     {
       "id": "364_comb",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/027 - comb.jpg",
       "name": "Comb",
       "symbol": "🔍",
       "description": "Comb was recovered from The Bluff in Case File 364. It is tied to Schoolgirl, 1:33, and marker 3134.",
@@ -238,6 +239,7 @@ window.SONG_DATA = {
     {
       "id": "364_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-077-the-bluff-location.jpg",
       "name": "Bluff",
       "symbol": "📍",
       "description": "The active scene for Case File 364. Recovered field notes place the primary event at Bluff.",

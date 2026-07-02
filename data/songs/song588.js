@@ -229,6 +229,7 @@ window.SONG_DATA = {
     {
       "id": "588_receipt",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/060 - receipt.jpg",
       "name": "Receipt",
       "symbol": "🔍",
       "description": "Receipt was recovered from The Pit in Case File 588. It is tied to Barber, 8:17, and marker 5006.",
@@ -237,6 +238,7 @@ window.SONG_DATA = {
     {
       "id": "588_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-055-the-pit-location.jpg",
       "name": "Pit",
       "symbol": "📍",
       "description": "The active scene for Case File 588. Recovered field notes place the primary event at Pit.",

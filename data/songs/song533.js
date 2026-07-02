@@ -219,7 +219,8 @@ window.SONG_DATA = {
     {
       "id": "533_emptytin",
       "type": "Object",
-      "name": "Emptytin",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/035 - empty tin.jpg",
+      "name": "Empty Tin",
       "symbol": "🔍",
       "description": "Empty Tin was recovered from Chandler's Row in Case File 533. It is tied to Cooper, 4:29, and marker 4543.",
       "unknownInfo": "In and Swamp Gas suggest this object matters beyond the first reading."
@@ -227,9 +228,10 @@ window.SONG_DATA = {
     {
       "id": "533_location",
       "type": "Location",
-      "name": "Chandler'Srow",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-067-chandlers-row-location.jpg",
+      "name": "Chandler's Row",
       "symbol": "📍",
-      "description": "The active scene for Case File 533. Recovered field notes place the primary event at Chandler'Srow.",
+      "description": "The active scene for Case File 533. Recovered field notes place the primary event at Chandler's Row.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

@@ -228,6 +228,7 @@ window.SONG_DATA = {
     {
       "id": "573_handkerchief",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/017 - handkerchief.jpg",
       "name": "Handkerchief",
       "symbol": "🔍",
       "description": "Handkerchief was recovered from Church in Case File 573. It is tied to Schoolgirl, 12:44, and marker 4879.",
@@ -236,6 +237,7 @@ window.SONG_DATA = {
     {
       "id": "573_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-004-church-location.jpg",
       "name": "Church",
       "symbol": "📍",
       "description": "The active scene for Case File 573. Recovered field notes place the primary event at Church.",

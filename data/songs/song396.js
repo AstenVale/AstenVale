@@ -231,6 +231,7 @@ window.SONG_DATA = {
     {
       "id": "396_copperfitting",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/079 - copper fitting.jpg",
       "name": "Copper Fitting",
       "symbol": "🔍",
       "description": "Copper Fitting was recovered from Feed Store in Case File 396. It is tied to Tanner, 10:47, and marker 3406.",
@@ -239,9 +240,10 @@ window.SONG_DATA = {
     {
       "id": "396_location",
       "type": "Location",
-      "name": "Feedstore",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-044-feed-store-location.jpg",
+      "name": "Feed Store",
       "symbol": "📍",
-      "description": "The active scene for Case File 396. Recovered field notes place the primary event at Feedstore.",
+      "description": "The active scene for Case File 396. Recovered field notes place the primary event at Feed Store.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

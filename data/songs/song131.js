@@ -230,7 +230,8 @@ window.SONG_DATA = {
     {
       "id": "131_emptytin",
       "type": "Object",
-      "name": "Emptytin",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/035 - empty tin.jpg",
+      "name": "Empty Tin",
       "symbol": "🔍",
       "description": "Empty Tin was recovered from Stables in Case File 131. It is tied to Apothecary, 6:17, and marker 1197.",
       "unknownInfo": "Along the Creek and Lock Click suggest this object matters beyond the first reading."
@@ -238,6 +239,7 @@ window.SONG_DATA = {
     {
       "id": "131_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-032-stables-location.jpg",
       "name": "Stables",
       "symbol": "📍",
       "description": "The active scene for Case File 131. Recovered field notes place the primary event at Stables.",

@@ -219,6 +219,7 @@ window.SONG_DATA = {
     {
       "id": "242_hollowacorn",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/065 - hollow acorn.jpg",
       "name": "Hollow Acorn",
       "symbol": "🔍",
       "description": "Hollow Acorn was recovered from Cabin in Case File 242. It is tied to River Pilot, 5:09, and marker 2116.",
@@ -227,6 +228,7 @@ window.SONG_DATA = {
     {
       "id": "242_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-008-cabin-location.jpg",
       "name": "Cabin",
       "symbol": "📍",
       "description": "The active scene for Case File 242. Recovered field notes place the primary event at Cabin.",
@@ -235,10 +237,10 @@ window.SONG_DATA = {
     {
       "id": "242_witness",
       "type": "Witness",
-      "name": "Riverpilot",
+      "name": "River Pilot",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/river-pilot.jpg",
       "symbol": "👤",
-      "description": "Riverpilot, identified in the case notes for Case File 242. Has not given a formal statement.",
+      "description": "River Pilot, identified in the case notes for Case File 242. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

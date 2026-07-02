@@ -231,7 +231,8 @@ window.SONG_DATA = {
     {
       "id": "496_signetring",
       "type": "Object",
-      "name": "Signetring",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/037 - signet ring.jpg",
+      "name": "Signet Ring",
       "symbol": "🔍",
       "description": "Signet Ring was recovered from The Ridge in Case File 496. It is tied to Deputy, 6:53, and marker 4234.",
       "unknownInfo": "Under and Bell Toll suggest this object matters beyond the first reading."
@@ -239,6 +240,7 @@ window.SONG_DATA = {
     {
       "id": "496_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-071-the-ridge-location.jpg",
       "name": "Ridge",
       "symbol": "📍",
       "description": "The active scene for Case File 496. Recovered field notes place the primary event at Ridge.",

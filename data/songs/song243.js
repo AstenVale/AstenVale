@@ -220,6 +220,7 @@ window.SONG_DATA = {
     {
       "id": "243_charredpaper",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/046 - charred paper.jpg",
       "name": "Charred Paper",
       "symbol": "🔍",
       "description": "Charred Paper was recovered from Telegraph Office in Case File 243. It is tied to Salt Seller, 6:45, and marker 2125.",
@@ -228,6 +229,7 @@ window.SONG_DATA = {
     {
       "id": "243_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-097-telegraph-office-location.jpg",
       "name": "Telegraph Office",
       "symbol": "📍",
       "description": "The active scene for Case File 243. Recovered field notes place the primary event at Telegraph Office.",
@@ -236,10 +238,10 @@ window.SONG_DATA = {
     {
       "id": "243_witness",
       "type": "Witness",
-      "name": "Saltseller",
+      "name": "Salt Seller",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/salt-seller.jpg",
       "symbol": "👤",
-      "description": "Saltseller, identified in the case notes for Case File 243. Has not given a formal statement.",
+      "description": "Salt Seller, identified in the case notes for Case File 243. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

@@ -219,6 +219,7 @@ window.SONG_DATA = {
     {
       "id": "334_telegram",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/050 - telegram.jpg",
       "name": "Telegram",
       "symbol": "🔍",
       "description": "Telegram was recovered from Quarry Edge in Case File 334. It is tied to Cartographer, 9:44, and marker 2888.",
@@ -227,9 +228,10 @@ window.SONG_DATA = {
     {
       "id": "334_location",
       "type": "Location",
-      "name": "Quarryedge",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-022-quarry-edge-location.jpg",
+      "name": "Quarry Edge",
       "symbol": "📍",
-      "description": "The active scene for Case File 334. Recovered field notes place the primary event at Quarryedge.",
+      "description": "The active scene for Case File 334. Recovered field notes place the primary event at Quarry Edge.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

@@ -230,6 +230,7 @@ window.SONG_DATA = {
     {
       "id": "545_charredpaper",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/046 - charred paper.jpg",
       "name": "Charred Paper",
       "symbol": "🔍",
       "description": "Charred Paper was recovered from South Fork in Case File 545. It is tied to Furrier, 10:05, and marker 4643.",
@@ -238,9 +239,10 @@ window.SONG_DATA = {
     {
       "id": "545_location",
       "type": "Location",
-      "name": "Southfork",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-030-south-fork-location.jpg",
+      "name": "South Fork",
       "symbol": "📍",
-      "description": "The active scene for Case File 545. Recovered field notes place the primary event at Southfork.",
+      "description": "The active scene for Case File 545. Recovered field notes place the primary event at South Fork.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

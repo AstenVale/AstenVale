@@ -233,7 +233,8 @@ window.SONG_DATA = {
     {
       "id": "542_bonebutton",
       "type": "Object",
-      "name": "Bonebutton",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/074 - bone button.jpg",
+      "name": "Bone Button",
       "symbol": "🔍",
       "description": "Bone Button was recovered from The Depot in Case File 542. It is tied to River Pilot, 9:55, and marker 4616.",
       "unknownInfo": "Toward the River and Wheel on Gravel suggest this object matters beyond the first reading."
@@ -241,6 +242,7 @@ window.SONG_DATA = {
     {
       "id": "542_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-005-depot-location.jpg",
       "name": "Depot",
       "symbol": "📍",
       "description": "The active scene for Case File 542. Recovered field notes place the primary event at Depot.",
@@ -249,10 +251,10 @@ window.SONG_DATA = {
     {
       "id": "542_witness",
       "type": "Witness",
-      "name": "Riverpilot",
+      "name": "River Pilot",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/river-pilot.jpg",
       "symbol": "👤",
-      "description": "Riverpilot, identified in the case notes for Case File 542. Has not given a formal statement.",
+      "description": "River Pilot, identified in the case notes for Case File 542. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

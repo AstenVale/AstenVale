@@ -228,6 +228,7 @@ window.SONG_DATA = {
     {
       "id": "347_matchbook",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/007 - matchbook.jpg",
       "name": "Matchbook",
       "symbol": "🔍",
       "description": "Matchbook was recovered from Jail in Case File 347. It is tied to Cartographer, 7:48, and marker 2997.",
@@ -236,6 +237,7 @@ window.SONG_DATA = {
     {
       "id": "347_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-084-jail-location.jpg",
       "name": "Jail",
       "symbol": "📍",
       "description": "The active scene for Case File 347. Recovered field notes place the primary event at Jail.",

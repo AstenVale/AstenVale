@@ -228,6 +228,7 @@ window.SONG_DATA = {
     {
       "id": "145_pocketwatch",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/032 - pocket watch.jpg",
       "name": "Pocket Watch",
       "symbol": "🔍",
       "description": "Pocket Watch was recovered from Orchard in Case File 145. It is tied to Wool Sorter, 8:33, and marker 1307.",
@@ -236,6 +237,7 @@ window.SONG_DATA = {
     {
       "id": "145_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-045-orchard-location.jpg",
       "name": "Orchard",
       "symbol": "📍",
       "description": "The active scene for Case File 145. Recovered field notes place the primary event at Orchard.",
@@ -244,10 +246,10 @@ window.SONG_DATA = {
     {
       "id": "145_witness",
       "type": "Witness",
-      "name": "Woolsorter",
+      "name": "Wool Sorter",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/wool-sorter.jpg",
       "symbol": "👤",
-      "description": "Woolsorter, identified in the case notes for Case File 145. Has not given a formal statement.",
+      "description": "Wool Sorter, identified in the case notes for Case File 145. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

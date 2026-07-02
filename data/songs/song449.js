@@ -218,6 +218,7 @@ window.SONG_DATA = {
     {
       "id": "449_foldedcloth",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/084 - folded cloth.jpg",
       "name": "Folded Cloth",
       "symbol": "🔍",
       "description": "Folded Cloth was recovered from Library in Case File 449. It is tied to Furrier, 11:40, and marker 3843.",
@@ -226,6 +227,7 @@ window.SONG_DATA = {
     {
       "id": "449_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-036-library-location.jpg",
       "name": "Library",
       "symbol": "📍",
       "description": "The active scene for Case File 449. Recovered field notes place the primary event at Library.",

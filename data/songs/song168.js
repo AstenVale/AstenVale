@@ -219,6 +219,7 @@ window.SONG_DATA = {
     {
       "id": "168_ticket",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/055 - ticket.jpg",
       "name": "Ticket",
       "symbol": "🔍",
       "description": "Ticket was recovered from The Hollow Road in Case File 168. It is tied to Cooper, 10:47, and marker 1506.",
@@ -227,6 +228,7 @@ window.SONG_DATA = {
     {
       "id": "168_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-049-the-hollow-road-location.jpg",
       "name": "Hollow Road",
       "symbol": "📍",
       "description": "The active scene for Case File 168. Recovered field notes place the primary event at Hollow Road.",

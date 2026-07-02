@@ -230,6 +230,7 @@ window.SONG_DATA = {
     {
       "id": "479_brokenclasp",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/089 - broken clasp.jpg",
       "name": "Broken Clasp",
       "symbol": "🔍",
       "description": "Broken Clasp was recovered from The Bluff in Case File 479. It is tied to Farmer, 9:15, and marker 4097.",
@@ -238,6 +239,7 @@ window.SONG_DATA = {
     {
       "id": "479_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-077-the-bluff-location.jpg",
       "name": "Bluff",
       "symbol": "📍",
       "description": "The active scene for Case File 479. Recovered field notes place the primary event at Bluff.",

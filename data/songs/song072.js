@@ -235,15 +235,15 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Dried Blood on Cloth was recovered from North Gate in Case File 072. It is tied to Fisherman, 6:32, and marker 706.",
       "unknownInfo": "Away from Town and Old Hinge suggest this object matters beyond the first reading.",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/072 - button.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/057 - dried blood on cloth.jpg"
     },
     {
       "id": "072_location",
       "type": "Location",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-072-freight-yard-location.jpg",
-      "name": "Northgate",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-052-north-gate-location.jpg",
+      "name": "North Gate",
       "symbol": "📍",
-      "description": "The active scene for Case File 072. Recovered field notes place the primary event at Northgate.",
+      "description": "The active scene for Case File 072. Recovered field notes place the primary event at North Gate.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

@@ -230,7 +230,8 @@ window.SONG_DATA = {
     {
       "id": "367_oilrag",
       "type": "Object",
-      "name": "Oilrag",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/086 - oil rag.jpg",
+      "name": "Oil Rag",
       "symbol": "🔍",
       "description": "Oil Rag was recovered from Water Tower in Case File 367. It is tied to Circuit Rider, 11:40, and marker 3161.",
       "unknownInfo": "North and Rope on Pulley suggest this object matters beyond the first reading."
@@ -238,9 +239,10 @@ window.SONG_DATA = {
     {
       "id": "367_location",
       "type": "Location",
-      "name": "Watertower",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-028-water-tower-location.jpg",
+      "name": "Water Tower",
       "symbol": "📍",
-      "description": "The active scene for Case File 367. Recovered field notes place the primary event at Watertower.",
+      "description": "The active scene for Case File 367. Recovered field notes place the primary event at Water Tower.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

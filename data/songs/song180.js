@@ -230,6 +230,7 @@ window.SONG_DATA = {
     {
       "id": "180_stringofbeads",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/033 - string of beads.jpg",
       "name": "String of Beads",
       "symbol": "🔍",
       "description": "String of Beads was recovered from Courthouse in Case File 180. It is tied to Woodsman, 11:29, and marker 1606.",
@@ -238,6 +239,7 @@ window.SONG_DATA = {
     {
       "id": "180_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-023-courthouse-location.jpg",
       "name": "Courthouse",
       "symbol": "📍",
       "description": "The active scene for Case File 180. Recovered field notes place the primary event at Courthouse.",

@@ -219,6 +219,7 @@ window.SONG_DATA = {
     {
       "id": "098_hollowacorn",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/065 - hollow acorn.jpg",
       "name": "Hollow Acorn",
       "symbol": "🔍",
       "description": "Hollow Acorn was recovered from South Fork in Case File 098. It is tied to Drifter, 11:03, and marker 916.",
@@ -227,10 +228,10 @@ window.SONG_DATA = {
     {
       "id": "098_location",
       "type": "Location",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-098-pharmacy-location.jpg",
-      "name": "Southfork",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-030-south-fork-location.jpg",
+      "name": "South Fork",
       "symbol": "📍",
-      "description": "The active scene for Case File 098. Recovered field notes place the primary event at Southfork.",
+      "description": "The active scene for Case File 098. Recovered field notes place the primary event at South Fork.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

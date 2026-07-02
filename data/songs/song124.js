@@ -231,6 +231,7 @@ window.SONG_DATA = {
     {
       "id": "124_inkwell",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/058 - inkwell.jpg",
       "name": "Inkwell",
       "symbol": "🔍",
       "description": "Inkwell was recovered from Banker's House in Case File 124. It is tied to Lime Burner, 7:14, and marker 1134.",
@@ -239,18 +240,19 @@ window.SONG_DATA = {
     {
       "id": "124_location",
       "type": "Location",
-      "name": "Banker'Shouse",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-040-bankers-house-location.jpg",
+      "name": "Banker's House",
       "symbol": "📍",
-      "description": "The active scene for Case File 124. Recovered field notes place the primary event at Banker'Shouse.",
+      "description": "The active scene for Case File 124. Recovered field notes place the primary event at Banker's House.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {
       "id": "124_witness",
       "type": "Witness",
-      "name": "Limeburner",
+      "name": "Lime Burner",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/lime-burner.jpg",
       "symbol": "👤",
-      "description": "Limeburner, identified in the case notes for Case File 124. Has not given a formal statement.",
+      "description": "Lime Burner, identified in the case notes for Case File 124. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

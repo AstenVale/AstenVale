@@ -219,6 +219,7 @@ window.SONG_DATA = {
     {
       "id": "228_coin",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/044 - coin.jpg",
       "name": "Coin",
       "symbol": "🔍",
       "description": "Coin was recovered from Undertaker's Hall in Case File 228. It is tied to Conductor, 1:11, and marker 2006.",
@@ -227,9 +228,10 @@ window.SONG_DATA = {
     {
       "id": "228_location",
       "type": "Location",
-      "name": "Undertaker'Shall",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-053-undertakers-hall-location.jpg",
+      "name": "Undertaker's Hall",
       "symbol": "📍",
-      "description": "The active scene for Case File 228. Recovered field notes place the primary event at Undertaker'Shall.",
+      "description": "The active scene for Case File 228. Recovered field notes place the primary event at Undertaker's Hall.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

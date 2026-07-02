@@ -232,7 +232,8 @@ window.SONG_DATA = {
     {
       "id": "348_wirecoil",
       "type": "Object",
-      "name": "Wirecoil",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/095 - wire coil.jpg",
+      "name": "Wire Coil",
       "symbol": "🔍",
       "description": "Wire Coil was recovered from The Ridge in Case File 348. It is tied to Apothecary, 11:44, and marker 3006.",
       "unknownInfo": "Back the Way You Came and River Water suggest this object matters beyond the first reading."
@@ -240,6 +241,7 @@ window.SONG_DATA = {
     {
       "id": "348_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-071-the-ridge-location.jpg",
       "name": "Ridge",
       "symbol": "📍",
       "description": "The active scene for Case File 348. Recovered field notes place the primary event at Ridge.",

@@ -219,6 +219,7 @@ window.SONG_DATA = {
     {
       "id": "600_brokenclasp",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/089 - broken clasp.jpg",
       "name": "Broken Clasp",
       "symbol": "🔍",
       "description": "Broken Clasp was recovered from Old Wharf in Case File 600. It is tied to Child, 2:55, and marker 5106.",
@@ -227,9 +228,10 @@ window.SONG_DATA = {
     {
       "id": "600_location",
       "type": "Location",
-      "name": "Oldwharf",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-054-old-wharf-location.jpg",
+      "name": "Old Wharf",
       "symbol": "📍",
-      "description": "The active scene for Case File 600. Recovered field notes place the primary event at Oldwharf.",
+      "description": "The active scene for Case File 600. Recovered field notes place the primary event at Old Wharf.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

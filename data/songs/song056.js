@@ -223,12 +223,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Locket was recovered from Orchard in Case File 056. It is tied to Lock Keeper, 10:47, and marker 570.",
       "unknownInfo": "Down the Hollow and Bell Toll suggest this object matters beyond the first reading.",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/056 - tin star.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/047 - locket.jpg"
     },
     {
       "id": "056_location",
       "type": "Location",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-056-the-gully-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-045-orchard-location.jpg",
       "name": "Orchard",
       "symbol": "📍",
       "description": "The active scene for Case File 056. Recovered field notes place the primary event at Orchard.",
@@ -237,9 +237,9 @@ window.SONG_DATA = {
     {
       "id": "056_witness",
       "type": "Witness",
-      "name": "Lockkeeper",
+      "name": "Lock Keeper",
       "symbol": "👤",
-      "description": "Lockkeeper, identified in the case notes for Case File 056. Has not given a formal statement.",
+      "description": "Lock Keeper, identified in the case notes for Case File 056. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/lock-keeper.jpg"
     },

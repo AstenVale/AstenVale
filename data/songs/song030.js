@@ -225,23 +225,23 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Charcoal Sketch was recovered from Grist Mill in Case File 030. It is tied to Lock Keeper, 5:40, and marker 352.",
       "unknownInfo": "Down the Hollow and Door Creak suggest this object matters beyond the first reading.",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/030 - straight razor.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/023 - charcoal sketch.jpg"
     },
     {
       "id": "030_location",
       "type": "Location",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-030-south-fork-location.jpg",
-      "name": "Gristmill",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-025-grist-mill-location.jpg",
+      "name": "Grist Mill",
       "symbol": "📍",
-      "description": "The active scene for Case File 030. Recovered field notes place the primary event at Gristmill.",
+      "description": "The active scene for Case File 030. Recovered field notes place the primary event at Grist Mill.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {
       "id": "030_witness",
       "type": "Witness",
-      "name": "Lockkeeper",
+      "name": "Lock Keeper",
       "symbol": "👤",
-      "description": "Lockkeeper, identified in the case notes for Case File 030. Has not given a formal statement.",
+      "description": "Lock Keeper, identified in the case notes for Case File 030. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/lock-keeper.jpg"
     },

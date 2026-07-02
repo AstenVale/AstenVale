@@ -228,6 +228,7 @@ window.SONG_DATA = {
     {
       "id": "150_flask",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/045 - flask.jpg",
       "name": "Flask",
       "symbol": "🔍",
       "description": "Flask was recovered from Loom House in Case File 150. It is tied to Stranger, 2:38, and marker 1352.",
@@ -236,9 +237,10 @@ window.SONG_DATA = {
     {
       "id": "150_location",
       "type": "Location",
-      "name": "Loomhouse",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-046-loom-house-location.jpg",
+      "name": "Loom House",
       "symbol": "📍",
-      "description": "The active scene for Case File 150. Recovered field notes place the primary event at Loomhouse.",
+      "description": "The active scene for Case File 150. Recovered field notes place the primary event at Loom House.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

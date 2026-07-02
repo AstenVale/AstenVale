@@ -229,7 +229,8 @@ window.SONG_DATA = {
     {
       "id": "130_tradetoken",
       "type": "Object",
-      "name": "Tradetoken",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/076 - trade token.jpg",
+      "name": "Trade Token",
       "symbol": "🔍",
       "description": "Trade Token was recovered from Stables in Case File 130. It is tied to Tanner, 1:26, and marker 1188.",
       "unknownInfo": "Below and Train Whistle suggest this object matters beyond the first reading."
@@ -237,6 +238,7 @@ window.SONG_DATA = {
     {
       "id": "130_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-032-stables-location.jpg",
       "name": "Stables",
       "symbol": "📍",
       "description": "The active scene for Case File 130. Recovered field notes place the primary event at Stables.",

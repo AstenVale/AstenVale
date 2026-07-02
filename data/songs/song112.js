@@ -217,6 +217,7 @@ window.SONG_DATA = {
     {
       "id": "112_receipt",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/060 - receipt.jpg",
       "name": "Receipt",
       "symbol": "🔍",
       "description": "Receipt was recovered from Saloon in Case File 112. It is tied to Apothecary, 10:51, and marker 1034.",
@@ -225,6 +226,7 @@ window.SONG_DATA = {
     {
       "id": "112_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-064-saloon-location.jpg",
       "name": "Saloon",
       "symbol": "📍",
       "description": "The active scene for Case File 112. Recovered field notes place the primary event at Saloon.",

@@ -230,6 +230,7 @@ window.SONG_DATA = {
     {
       "id": "286_leatherstrap",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/025 - leather strap.jpg",
       "name": "Leather Strap",
       "symbol": "🔍",
       "description": "Leather Strap was recovered from Loom House in Case File 286. It is tied to Stranger, 11:44, and marker 2488.",
@@ -238,9 +239,10 @@ window.SONG_DATA = {
     {
       "id": "286_location",
       "type": "Location",
-      "name": "Loomhouse",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-046-loom-house-location.jpg",
+      "name": "Loom House",
       "symbol": "📍",
-      "description": "The active scene for Case File 286. Recovered field notes place the primary event at Loomhouse.",
+      "description": "The active scene for Case File 286. Recovered field notes place the primary event at Loom House.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

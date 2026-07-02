@@ -220,6 +220,7 @@ window.SONG_DATA = {
     {
       "id": "119_notebook",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/073 - notebook.jpg",
       "name": "Notebook",
       "symbol": "🔍",
       "description": "Notebook was recovered from The Weir in Case File 119. It is tied to River Pilot, 12:44, and marker 1097.",
@@ -228,6 +229,7 @@ window.SONG_DATA = {
     {
       "id": "119_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-033-the-weir-location.jpg",
       "name": "Weir",
       "symbol": "📍",
       "description": "The active scene for Case File 119. Recovered field notes place the primary event at Weir.",
@@ -236,10 +238,10 @@ window.SONG_DATA = {
     {
       "id": "119_witness",
       "type": "Witness",
-      "name": "Riverpilot",
+      "name": "River Pilot",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/river-pilot.jpg",
       "symbol": "👤",
-      "description": "Riverpilot, identified in the case notes for Case File 119. Has not given a formal statement.",
+      "description": "River Pilot, identified in the case notes for Case File 119. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

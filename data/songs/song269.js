@@ -222,7 +222,8 @@ window.SONG_DATA = {
     {
       "id": "269_surveyorspin",
       "type": "Object",
-      "name": "Surveyor'Spin",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/069 - surveyor's pin.jpg",
+      "name": "Surveyor's Pin",
       "symbol": "🔍",
       "description": "Surveyor's Pin was recovered from The Pit in Case File 269. It is tied to Station Master, 1:11, and marker 2343.",
       "unknownInfo": "Out of Sight and Cellar Stairs suggest this object matters beyond the first reading."
@@ -230,6 +231,7 @@ window.SONG_DATA = {
     {
       "id": "269_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-055-the-pit-location.jpg",
       "name": "Pit",
       "symbol": "📍",
       "description": "The active scene for Case File 269. Recovered field notes place the primary event at Pit.",

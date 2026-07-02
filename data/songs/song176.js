@@ -229,7 +229,8 @@ window.SONG_DATA = {
     {
       "id": "176_bentnail",
       "type": "Object",
-      "name": "Bentnail",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/080 - bent nail.jpg",
+      "name": "Bent Nail",
       "symbol": "🔍",
       "description": "Bent Nail was recovered from Old Bridge in Case File 176. It is tied to Lamplighter, 3:03, and marker 1570.",
       "unknownInfo": "Under and Footsteps suggest this object matters beyond the first reading."
@@ -237,9 +238,10 @@ window.SONG_DATA = {
     {
       "id": "176_location",
       "type": "Location",
-      "name": "Oldbridge",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-014-old-bridge-location.jpg",
+      "name": "Old Bridge",
       "symbol": "📍",
-      "description": "The active scene for Case File 176. Recovered field notes place the primary event at Oldbridge.",
+      "description": "The active scene for Case File 176. Recovered field notes place the primary event at Old Bridge.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

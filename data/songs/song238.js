@@ -230,7 +230,8 @@ window.SONG_DATA = {
     {
       "id": "238_tornlabel",
       "type": "Object",
-      "name": "Tornlabel",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/040 - torn label.jpg",
+      "name": "Torn Label",
       "symbol": "🔍",
       "description": "Torn Label was recovered from Mill House in Case File 238. It is tied to Midwife, 7:14, and marker 2088.",
       "unknownInfo": "Sideways and Empty Wagon suggest this object matters beyond the first reading."
@@ -238,9 +239,10 @@ window.SONG_DATA = {
     {
       "id": "238_location",
       "type": "Location",
-      "name": "Millhouse",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-050-mill-house-location.jpg",
+      "name": "Mill House",
       "symbol": "📍",
-      "description": "The active scene for Case File 238. Recovered field notes place the primary event at Millhouse.",
+      "description": "The active scene for Case File 238. Recovered field notes place the primary event at Mill House.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

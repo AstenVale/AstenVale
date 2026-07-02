@@ -218,6 +218,7 @@ window.SONG_DATA = {
     {
       "id": "448_inkwell",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/058 - inkwell.jpg",
       "name": "Inkwell",
       "symbol": "🔍",
       "description": "Inkwell was recovered from River's Edge in Case File 448. It is tied to Cartographer, 1:33, and marker 3834.",
@@ -226,9 +227,10 @@ window.SONG_DATA = {
     {
       "id": "448_location",
       "type": "Location",
-      "name": "River'Sedge",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-085-rivers-edge-location.jpg",
+      "name": "River's Edge",
       "symbol": "📍",
-      "description": "The active scene for Case File 448. Recovered field notes place the primary event at River'Sedge.",
+      "description": "The active scene for Case File 448. Recovered field notes place the primary event at River's Edge.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

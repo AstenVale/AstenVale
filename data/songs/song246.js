@@ -219,7 +219,8 @@ window.SONG_DATA = {
     {
       "id": "246_oilrag",
       "type": "Object",
-      "name": "Oilrag",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/086 - oil rag.jpg",
+      "name": "Oil Rag",
       "symbol": "🔍",
       "description": "Oil Rag was recovered from Ash Creek in Case File 246. It is tied to Undertaker, 5:21, and marker 2152.",
       "unknownInfo": "Under and Swamp Gas suggest this object matters beyond the first reading."
@@ -227,9 +228,10 @@ window.SONG_DATA = {
     {
       "id": "246_location",
       "type": "Location",
-      "name": "Ashcreek",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-003-ash-creek-location.jpg",
+      "name": "Ash Creek",
       "symbol": "📍",
-      "description": "The active scene for Case File 246. Recovered field notes place the primary event at Ashcreek.",
+      "description": "The active scene for Case File 246. Recovered field notes place the primary event at Ash Creek.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

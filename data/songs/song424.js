@@ -218,6 +218,7 @@ window.SONG_DATA = {
     {
       "id": "424_thimble",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/054 - thimble.jpg",
       "name": "Thimble",
       "symbol": "🔍",
       "description": "Thimble was recovered from Chandler's Row in Case File 424. It is tied to Wainwright, 3:58, and marker 3634.",
@@ -226,9 +227,10 @@ window.SONG_DATA = {
     {
       "id": "424_location",
       "type": "Location",
-      "name": "Chandler'Srow",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-067-chandlers-row-location.jpg",
+      "name": "Chandler's Row",
       "symbol": "📍",
-      "description": "The active scene for Case File 424. Recovered field notes place the primary event at Chandler'Srow.",
+      "description": "The active scene for Case File 424. Recovered field notes place the primary event at Chandler's Row.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

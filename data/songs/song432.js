@@ -220,6 +220,7 @@ window.SONG_DATA = {
     {
       "id": "432_driedbloodoncloth",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/057 - dried blood on cloth.jpg",
       "name": "Dried Blood on Cloth",
       "symbol": "🔍",
       "description": "Dried Blood on Cloth was recovered from North Pasture in Case File 432. It is tied to Fisherman, 7:00, and marker 3706.",
@@ -228,6 +229,7 @@ window.SONG_DATA = {
     {
       "id": "432_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-041-north-pasture-location.jpg",
       "name": "North Pasture",
       "symbol": "📍",
       "description": "The active scene for Case File 432. Recovered field notes place the primary event at North Pasture.",

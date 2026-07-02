@@ -230,6 +230,7 @@ window.SONG_DATA = {
     {
       "id": "493_comb",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/027 - comb.jpg",
       "name": "Comb",
       "symbol": "🔍",
       "description": "Comb was recovered from Post Office in Case File 493. It is tied to Salt Seller, 12:33, and marker 4207.",
@@ -238,18 +239,19 @@ window.SONG_DATA = {
     {
       "id": "493_location",
       "type": "Location",
-      "name": "Postoffice",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-059-post-office-location.jpg",
+      "name": "Post Office",
       "symbol": "📍",
-      "description": "The active scene for Case File 493. Recovered field notes place the primary event at Postoffice.",
+      "description": "The active scene for Case File 493. Recovered field notes place the primary event at Post Office.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {
       "id": "493_witness",
       "type": "Witness",
-      "name": "Saltseller",
+      "name": "Salt Seller",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/salt-seller.jpg",
       "symbol": "👤",
-      "description": "Saltseller, identified in the case notes for Case File 493. Has not given a formal statement.",
+      "description": "Salt Seller, identified in the case notes for Case File 493. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

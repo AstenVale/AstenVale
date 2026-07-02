@@ -219,7 +219,8 @@ window.SONG_DATA = {
     {
       "id": "381_tornmap",
       "type": "Object",
-      "name": "Tornmap",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/088 - torn map.jpg",
+      "name": "Torn Map",
       "symbol": "🔍",
       "description": "Torn Map was recovered from Diner in Case File 381. It is tied to Quarry Foreman, 4:03, and marker 3279.",
       "unknownInfo": "Nowhere and Pages Turning suggest this object matters beyond the first reading."
@@ -227,6 +228,7 @@ window.SONG_DATA = {
     {
       "id": "381_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-007-diner-location.jpg",
       "name": "Diner",
       "symbol": "📍",
       "description": "The active scene for Case File 381. Recovered field notes place the primary event at Diner.",

@@ -222,7 +222,8 @@ window.SONG_DATA = {
     {
       "id": "429_bentnail",
       "type": "Object",
-      "name": "Bentnail",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/080 - bent nail.jpg",
+      "name": "Bent Nail",
       "symbol": "🔍",
       "description": "Bent Nail was recovered from The Narrow Road in Case File 429. It is tied to The Mute, 4:47, and marker 3679.",
       "unknownInfo": "Ahead and Shovel on Earth suggest this object matters beyond the first reading."
@@ -230,6 +231,7 @@ window.SONG_DATA = {
     {
       "id": "429_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-091-the-narrow-road-location.jpg",
       "name": "Narrow Road",
       "symbol": "📍",
       "description": "The active scene for Case File 429. Recovered field notes place the primary event at Narrow Road.",

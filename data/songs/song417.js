@@ -228,7 +228,8 @@ window.SONG_DATA = {
     {
       "id": "417_waxseal",
       "type": "Object",
-      "name": "Waxseal",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/051 - wax seal.jpg",
+      "name": "Wax Seal",
       "symbol": "🔍",
       "description": "Wax Seal was recovered from Sawmill in Case File 417. It is tied to Stranger, 7:02, and marker 3579.",
       "unknownInfo": "Left and Dog Bark at Nothing suggest this object matters beyond the first reading."
@@ -236,6 +237,7 @@ window.SONG_DATA = {
     {
       "id": "417_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-063-sawmill-location.jpg",
       "name": "Sawmill",
       "symbol": "📍",
       "description": "The active scene for Case File 417. Recovered field notes place the primary event at Sawmill.",

@@ -218,6 +218,7 @@ window.SONG_DATA = {
     {
       "id": "553_chain",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/028 - chain.jpg",
       "name": "Chain",
       "symbol": "🔍",
       "description": "Chain was recovered from Fulling Mill in Case File 553. It is tied to Innkeeper, 9:08, and marker 4707.",
@@ -226,6 +227,7 @@ window.SONG_DATA = {
     {
       "id": "553_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-035-fulling-mill-location.jpg",
       "name": "Fulling Mill",
       "symbol": "📍",
       "description": "The active scene for Case File 553. Recovered field notes place the primary event at Fulling Mill.",

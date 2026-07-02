@@ -230,7 +230,8 @@ window.SONG_DATA = {
     {
       "id": "345_wirecoil",
       "type": "Object",
-      "name": "Wirecoil",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/095 - wire coil.jpg",
+      "name": "Wire Coil",
       "symbol": "🔍",
       "description": "Wire Coil was recovered from Fulling Mill in Case File 345. It is tied to Sexton, 3:44, and marker 2979.",
       "unknownInfo": "Home and Lantern Glass suggest this object matters beyond the first reading."
@@ -238,6 +239,7 @@ window.SONG_DATA = {
     {
       "id": "345_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-035-fulling-mill-location.jpg",
       "name": "Fulling Mill",
       "symbol": "📍",
       "description": "The active scene for Case File 345. Recovered field notes place the primary event at Fulling Mill.",

@@ -229,6 +229,7 @@ window.SONG_DATA = {
     {
       "id": "476_foldedcloth",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/084 - folded cloth.jpg",
       "name": "Folded Cloth",
       "symbol": "🔍",
       "description": "Folded Cloth was recovered from Diner in Case File 476. It is tied to Sheriff, 11:44, and marker 4070.",
@@ -237,6 +238,7 @@ window.SONG_DATA = {
     {
       "id": "476_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-007-diner-location.jpg",
       "name": "Diner",
       "symbol": "📍",
       "description": "The active scene for Case File 476. Recovered field notes place the primary event at Diner.",

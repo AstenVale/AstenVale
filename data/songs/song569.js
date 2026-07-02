@@ -230,6 +230,7 @@ window.SONG_DATA = {
     {
       "id": "569_brokenclasp",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/089 - broken clasp.jpg",
       "name": "Broken Clasp",
       "symbol": "🔍",
       "description": "Broken Clasp was recovered from Feed Store in Case File 569. It is tied to Circuit Rider, 10:19, and marker 4843.",
@@ -238,9 +239,10 @@ window.SONG_DATA = {
     {
       "id": "569_location",
       "type": "Location",
-      "name": "Feedstore",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-044-feed-store-location.jpg",
+      "name": "Feed Store",
       "symbol": "📍",
-      "description": "The active scene for Case File 569. Recovered field notes place the primary event at Feedstore.",
+      "description": "The active scene for Case File 569. Recovered field notes place the primary event at Feed Store.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

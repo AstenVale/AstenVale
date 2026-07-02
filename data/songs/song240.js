@@ -231,7 +231,8 @@ window.SONG_DATA = {
     {
       "id": "240_flintstone",
       "type": "Object",
-      "name": "Flintstone",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/071 - flint stone.jpg",
+      "name": "Flint Stone",
       "symbol": "🔍",
       "description": "Flint Stone was recovered from Cider House in Case File 240. It is tied to Salt Seller, 3:03, and marker 2106.",
       "unknownInfo": "Under and Fire Crackling suggest this object matters beyond the first reading."
@@ -239,18 +240,19 @@ window.SONG_DATA = {
     {
       "id": "240_location",
       "type": "Location",
-      "name": "Ciderhouse",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-039-cider-house-location.jpg",
+      "name": "Cider House",
       "symbol": "📍",
-      "description": "The active scene for Case File 240. Recovered field notes place the primary event at Ciderhouse.",
+      "description": "The active scene for Case File 240. Recovered field notes place the primary event at Cider House.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {
       "id": "240_witness",
       "type": "Witness",
-      "name": "Saltseller",
+      "name": "Salt Seller",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/salt-seller.jpg",
       "symbol": "👤",
-      "description": "Saltseller, identified in the case notes for Case File 240. Has not given a formal statement.",
+      "description": "Salt Seller, identified in the case notes for Case File 240. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

@@ -224,15 +224,15 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Pocket Watch was recovered from Mill House in Case File 094. It is tied to Lamplighter, 6:06, and marker 888.",
       "unknownInfo": "Past the Tree Line and Broken String suggest this object matters beyond the first reading.",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/094 - numbered disk.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/032 - pocket watch.jpg"
     },
     {
       "id": "094_location",
       "type": "Location",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-094-the-widows-porch-location.jpg",
-      "name": "Millhouse",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-050-mill-house-location.jpg",
+      "name": "Mill House",
       "symbol": "📍",
-      "description": "The active scene for Case File 094. Recovered field notes place the primary event at Millhouse.",
+      "description": "The active scene for Case File 094. Recovered field notes place the primary event at Mill House.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

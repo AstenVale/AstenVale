@@ -220,6 +220,7 @@ window.SONG_DATA = {
     {
       "id": "483_charredpaper",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/046 - charred paper.jpg",
       "name": "Charred Paper",
       "symbol": "🔍",
       "description": "Charred Paper was recovered from The Narrow Road in Case File 483. It is tied to Fisherman, 11:03, and marker 4125.",
@@ -228,6 +229,7 @@ window.SONG_DATA = {
     {
       "id": "483_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-091-the-narrow-road-location.jpg",
       "name": "Narrow Road",
       "symbol": "📍",
       "description": "The active scene for Case File 483. Recovered field notes place the primary event at Narrow Road.",

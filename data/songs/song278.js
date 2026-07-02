@@ -230,6 +230,7 @@ window.SONG_DATA = {
     {
       "id": "278_rope",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/063 - rope.jpg",
       "name": "Rope",
       "symbol": "🔍",
       "description": "Rope was recovered from Old Bridge in Case File 278. It is tied to River Pilot, 8:42, and marker 2416.",
@@ -238,18 +239,19 @@ window.SONG_DATA = {
     {
       "id": "278_location",
       "type": "Location",
-      "name": "Oldbridge",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-014-old-bridge-location.jpg",
+      "name": "Old Bridge",
       "symbol": "📍",
-      "description": "The active scene for Case File 278. Recovered field notes place the primary event at Oldbridge.",
+      "description": "The active scene for Case File 278. Recovered field notes place the primary event at Old Bridge.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {
       "id": "278_witness",
       "type": "Witness",
-      "name": "Riverpilot",
+      "name": "River Pilot",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/river-pilot.jpg",
       "symbol": "👤",
-      "description": "Riverpilot, identified in the case notes for Case File 278. Has not given a formal statement.",
+      "description": "River Pilot, identified in the case notes for Case File 278. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

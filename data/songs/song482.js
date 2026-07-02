@@ -218,6 +218,7 @@ window.SONG_DATA = {
     {
       "id": "482_badge",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/067 - badge.jpg",
       "name": "Badge",
       "symbol": "🔍",
       "description": "Badge was recovered from Calico Alley in Case File 482. It is tied to Schoolteacher, 7:14, and marker 4116.",
@@ -226,6 +227,7 @@ window.SONG_DATA = {
     {
       "id": "482_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-069-calico-alley-location.jpg",
       "name": "Calico Alley",
       "symbol": "📍",
       "description": "The active scene for Case File 482. Recovered field notes place the primary event at Calico Alley.",

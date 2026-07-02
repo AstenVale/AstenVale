@@ -219,7 +219,8 @@ window.SONG_DATA = {
     {
       "id": "445_beltbuckle",
       "type": "Object",
-      "name": "Beltbuckle",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/081 - belt buckle.jpg",
+      "name": "Belt Buckle",
       "symbol": "🔍",
       "description": "Belt Buckle was recovered from Post Office in Case File 445. It is tied to Chandler, 8:17, and marker 3807.",
       "unknownInfo": "In and Clock Ticking suggest this object matters beyond the first reading."
@@ -227,9 +228,10 @@ window.SONG_DATA = {
     {
       "id": "445_location",
       "type": "Location",
-      "name": "Postoffice",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-059-post-office-location.jpg",
+      "name": "Post Office",
       "symbol": "📍",
-      "description": "The active scene for Case File 445. Recovered field notes place the primary event at Postoffice.",
+      "description": "The active scene for Case File 445. Recovered field notes place the primary event at Post Office.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

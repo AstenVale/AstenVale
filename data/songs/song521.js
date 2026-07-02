@@ -230,6 +230,7 @@ window.SONG_DATA = {
     {
       "id": "521_spoolofthread",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/034 - spool of thread.jpg",
       "name": "Spool of Thread",
       "symbol": "🔍",
       "description": "Spool of Thread was recovered from The Quarry Pool in Case File 521. It is tied to Fisherman, 8:42, and marker 4443.",
@@ -238,6 +239,7 @@ window.SONG_DATA = {
     {
       "id": "521_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-034-the-quarry-pool-location.jpg",
       "name": "Quarry Pool",
       "symbol": "📍",
       "description": "The active scene for Case File 521. Recovered field notes place the primary event at Quarry Pool.",

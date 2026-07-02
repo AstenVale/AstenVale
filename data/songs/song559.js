@@ -218,6 +218,7 @@ window.SONG_DATA = {
     {
       "id": "559_flask",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/045 - flask.jpg",
       "name": "Flask",
       "symbol": "🔍",
       "description": "Flask was recovered from East Field in Case File 559. It is tied to Orphan, 11:40, and marker 4761.",
@@ -226,9 +227,10 @@ window.SONG_DATA = {
     {
       "id": "559_location",
       "type": "Location",
-      "name": "Eastfield",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-058-east-field-location.jpg",
+      "name": "East Field",
       "symbol": "📍",
-      "description": "The active scene for Case File 559. Recovered field notes place the primary event at Eastfield.",
+      "description": "The active scene for Case File 559. Recovered field notes place the primary event at East Field.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

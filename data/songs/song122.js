@@ -229,6 +229,7 @@ window.SONG_DATA = {
     {
       "id": "122_bulletcasing",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/061 - bullet casing.jpg",
       "name": "Bullet Casing",
       "symbol": "🔍",
       "description": "Bullet Casing was recovered from Crossroads in Case File 122. It is tied to Farmer, 9:44, and marker 1116.",
@@ -237,6 +238,7 @@ window.SONG_DATA = {
     {
       "id": "122_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-073-crossroads-location.jpg",
       "name": "Crossroads",
       "symbol": "📍",
       "description": "The active scene for Case File 122. Recovered field notes place the primary event at Crossroads.",

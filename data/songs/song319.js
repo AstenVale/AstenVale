@@ -218,6 +218,7 @@ window.SONG_DATA = {
     {
       "id": "319_compass",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/010 - compass.jpg",
       "name": "Compass",
       "symbol": "🔍",
       "description": "Compass was recovered from Birch Stand in Case File 319. It is tied to Furrier, 1:11, and marker 2761.",
@@ -226,9 +227,10 @@ window.SONG_DATA = {
     {
       "id": "319_location",
       "type": "Location",
-      "name": "Birchstand",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-093-birch-stand-location.jpg",
+      "name": "Birch Stand",
       "symbol": "📍",
-      "description": "The active scene for Case File 319. Recovered field notes place the primary event at Birchstand.",
+      "description": "The active scene for Case File 319. Recovered field notes place the primary event at Birch Stand.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

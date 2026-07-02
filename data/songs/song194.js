@@ -230,6 +230,7 @@ window.SONG_DATA = {
     {
       "id": "194_shardofmirror",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/031 - shard of mirror.jpg",
       "name": "Shard of Mirror",
       "symbol": "🔍",
       "description": "Shard of Mirror was recovered from North Gate in Case File 194. It is tied to Census Taker, 2:47, and marker 1716.",
@@ -238,9 +239,10 @@ window.SONG_DATA = {
     {
       "id": "194_location",
       "type": "Location",
-      "name": "Northgate",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-052-north-gate-location.jpg",
+      "name": "North Gate",
       "symbol": "📍",
-      "description": "The active scene for Case File 194. Recovered field notes place the primary event at Northgate.",
+      "description": "The active scene for Case File 194. Recovered field notes place the primary event at North Gate.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

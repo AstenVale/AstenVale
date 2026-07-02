@@ -231,7 +231,8 @@ window.SONG_DATA = {
     {
       "id": "589_beltbuckle",
       "type": "Object",
-      "name": "Beltbuckle",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/081 - belt buckle.jpg",
+      "name": "Belt Buckle",
       "symbol": "🔍",
       "description": "Belt Buckle was recovered from Pine Hollow in Case File 589. It is tied to Judge, 9:15, and marker 5007.",
       "unknownInfo": "Further In and Dry Grass suggest this object matters beyond the first reading."
@@ -239,9 +240,10 @@ window.SONG_DATA = {
     {
       "id": "589_location",
       "type": "Location",
-      "name": "Pinehollow",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-080-pine-hollow-location.jpg",
+      "name": "Pine Hollow",
       "symbol": "📍",
-      "description": "The active scene for Case File 589. Recovered field notes place the primary event at Pinehollow.",
+      "description": "The active scene for Case File 589. Recovered field notes place the primary event at Pine Hollow.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

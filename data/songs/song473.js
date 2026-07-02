@@ -230,7 +230,8 @@ window.SONG_DATA = {
     {
       "id": "473_surveyorspin",
       "type": "Object",
-      "name": "Surveyor'Spin",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/069 - surveyor's pin.jpg",
+      "name": "Surveyor's Pin",
       "symbol": "🔍",
       "description": "Surveyor's Pin was recovered from Candlemaker's Alley in Case File 473. It is tied to Cattle Driver, 8:33, and marker 4043.",
       "unknownInfo": "Away and Wind in Pines suggest this object matters beyond the first reading."
@@ -238,9 +239,10 @@ window.SONG_DATA = {
     {
       "id": "473_location",
       "type": "Location",
-      "name": "Candlemaker'Salley",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-079-candlemakers-alley-location.jpg",
+      "name": "Candlemaker's Alley",
       "symbol": "📍",
-      "description": "The active scene for Case File 473. Recovered field notes place the primary event at Candlemaker'Salley.",
+      "description": "The active scene for Case File 473. Recovered field notes place the primary event at Candlemaker's Alley.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

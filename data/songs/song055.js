@@ -223,15 +223,15 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Charred Paper was recovered from Old Bridge in Case File 055. It is tied to Banker, 6:17, and marker 561.",
       "unknownInfo": "Under and Crow on Wire suggest this object matters beyond the first reading.",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/055 - ticket.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/046 - charred paper.jpg"
     },
     {
       "id": "055_location",
       "type": "Location",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-055-the-pit-location.jpg",
-      "name": "Oldbridge",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-014-old-bridge-location.jpg",
+      "name": "Old Bridge",
       "symbol": "📍",
-      "description": "The active scene for Case File 055. Recovered field notes place the primary event at Oldbridge.",
+      "description": "The active scene for Case File 055. Recovered field notes place the primary event at Old Bridge.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

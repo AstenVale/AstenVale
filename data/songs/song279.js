@@ -231,7 +231,8 @@ window.SONG_DATA = {
     {
       "id": "279_woolscarf",
       "type": "Object",
-      "name": "Woolscarf",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/029 - wool scarf.jpg",
+      "name": "Wool Scarf",
       "symbol": "🔍",
       "description": "Wool Scarf was recovered from Iron Bridge in Case File 279. It is tied to Harness Maker, 10:22, and marker 2425.",
       "unknownInfo": "Out and Lantern Flicker suggest this object matters beyond the first reading."
@@ -239,9 +240,10 @@ window.SONG_DATA = {
     {
       "id": "279_location",
       "type": "Location",
-      "name": "Ironbridge",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-089-iron-bridge-location.jpg",
+      "name": "Iron Bridge",
       "symbol": "📍",
-      "description": "The active scene for Case File 279. Recovered field notes place the primary event at Ironbridge.",
+      "description": "The active scene for Case File 279. Recovered field notes place the primary event at Iron Bridge.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

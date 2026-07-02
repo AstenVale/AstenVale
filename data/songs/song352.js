@@ -218,6 +218,7 @@ window.SONG_DATA = {
     {
       "id": "352_ticket",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/055 - ticket.jpg",
       "name": "Ticket",
       "symbol": "🔍",
       "description": "Ticket was recovered from The Pit in Case File 352. It is tied to Tailor, 11:17, and marker 3034.",
@@ -226,6 +227,7 @@ window.SONG_DATA = {
     {
       "id": "352_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-055-the-pit-location.jpg",
       "name": "Pit",
       "symbol": "📍",
       "description": "The active scene for Case File 352. Recovered field notes place the primary event at Pit.",

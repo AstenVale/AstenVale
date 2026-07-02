@@ -228,6 +228,7 @@ window.SONG_DATA = {
     {
       "id": "350_straightrazor",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/030 - straight razor.jpg",
       "name": "Straight Razor",
       "symbol": "🔍",
       "description": "Straight Razor was recovered from Jail in Case File 350. It is tied to Typesetter, 10:19, and marker 3016.",
@@ -236,6 +237,7 @@ window.SONG_DATA = {
     {
       "id": "350_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-084-jail-location.jpg",
       "name": "Jail",
       "symbol": "📍",
       "description": "The active scene for Case File 350. Recovered field notes place the primary event at Jail.",

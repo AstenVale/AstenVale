@@ -219,7 +219,8 @@ window.SONG_DATA = {
     {
       "id": "111_tinstar",
       "type": "Object",
-      "name": "Tinstar",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/056 - tin star.jpg",
+      "name": "Tin Star",
       "symbol": "🔍",
       "description": "Tin Star was recovered from Calico Alley in Case File 111. It is tied to Judge, 1:11, and marker 1025.",
       "unknownInfo": "Toward and Cellar Stairs suggest this object matters beyond the first reading."
@@ -227,6 +228,7 @@ window.SONG_DATA = {
     {
       "id": "111_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-069-calico-alley-location.jpg",
       "name": "Calico Alley",
       "symbol": "📍",
       "description": "The active scene for Case File 111. Recovered field notes place the primary event at Calico Alley.",

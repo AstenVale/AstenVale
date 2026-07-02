@@ -229,6 +229,7 @@ window.SONG_DATA = {
     {
       "id": "371_scratchedinitialsinwood",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/090 - scratched initials in wood.jpg",
       "name": "Scratched Initials in Wood",
       "symbol": "🔍",
       "description": "Scratched Initials in Wood was recovered from Ash Hollow in Case File 371. It is tied to Auctioneer, 7:48, and marker 3197.",
@@ -237,9 +238,10 @@ window.SONG_DATA = {
     {
       "id": "371_location",
       "type": "Location",
-      "name": "Ashhollow",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-075-ash-hollow-location.jpg",
+      "name": "Ash Hollow",
       "symbol": "📍",
-      "description": "The active scene for Case File 371. Recovered field notes place the primary event at Ashhollow.",
+      "description": "The active scene for Case File 371. Recovered field notes place the primary event at Ash Hollow.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

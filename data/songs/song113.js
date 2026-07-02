@@ -217,6 +217,7 @@ window.SONG_DATA = {
     {
       "id": "113_watch",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/039 - watch.jpg",
       "name": "Watch",
       "symbol": "🔍",
       "description": "Watch was recovered from Tannery in Case File 113. It is tied to Glazier, 10:05, and marker 1043.",
@@ -225,6 +226,7 @@ window.SONG_DATA = {
     {
       "id": "113_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-027-tannery-location.jpg",
       "name": "Tannery",
       "symbol": "📍",
       "description": "The active scene for Case File 113. Recovered field notes place the primary event at Tannery.",

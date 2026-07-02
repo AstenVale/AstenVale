@@ -219,6 +219,7 @@ window.SONG_DATA = {
     {
       "id": "598_copperfitting",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/079 - copper fitting.jpg",
       "name": "Copper Fitting",
       "symbol": "🔍",
       "description": "Copper Fitting was recovered from Telegraph Office in Case File 598. It is tied to Census Taker, 4:12, and marker 5088.",
@@ -227,6 +228,7 @@ window.SONG_DATA = {
     {
       "id": "598_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-097-telegraph-office-location.jpg",
       "name": "Telegraph Office",
       "symbol": "📍",
       "description": "The active scene for Case File 598. Recovered field notes place the primary event at Telegraph Office.",

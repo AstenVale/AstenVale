@@ -230,6 +230,7 @@ window.SONG_DATA = {
     {
       "id": "361_locket",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/047 - locket.jpg",
       "name": "Locket",
       "symbol": "🔍",
       "description": "Locket was recovered from The Quarry Pool in Case File 361. It is tied to Blacksmith, 12:00, and marker 3107.",
@@ -238,6 +239,7 @@ window.SONG_DATA = {
     {
       "id": "361_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-034-the-quarry-pool-location.jpg",
       "name": "Quarry Pool",
       "symbol": "📍",
       "description": "The active scene for Case File 361. Recovered field notes place the primary event at Quarry Pool.",

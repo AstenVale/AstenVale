@@ -218,6 +218,7 @@ window.SONG_DATA = {
     {
       "id": "185_comb",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/027 - comb.jpg",
       "name": "Comb",
       "symbol": "🔍",
       "description": "Comb was recovered from Iron Bridge in Case File 185. It is tied to Groundskeeper, 2:47, and marker 1643.",
@@ -226,9 +227,10 @@ window.SONG_DATA = {
     {
       "id": "185_location",
       "type": "Location",
-      "name": "Ironbridge",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-089-iron-bridge-location.jpg",
+      "name": "Iron Bridge",
       "symbol": "📍",
-      "description": "The active scene for Case File 185. Recovered field notes place the primary event at Ironbridge.",
+      "description": "The active scene for Case File 185. Recovered field notes place the primary event at Iron Bridge.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

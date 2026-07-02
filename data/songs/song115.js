@@ -220,7 +220,8 @@ window.SONG_DATA = {
     {
       "id": "115_flintstone",
       "type": "Object",
-      "name": "Flintstone",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/071 - flint stone.jpg",
+      "name": "Flint Stone",
       "symbol": "🔍",
       "description": "Flint Stone was recovered from Grain Mill in Case File 115. It is tied to Stranger, 9:08, and marker 1061.",
       "unknownInfo": "Along the Creek and Match Strike suggest this object matters beyond the first reading."
@@ -228,9 +229,10 @@ window.SONG_DATA = {
     {
       "id": "115_location",
       "type": "Location",
-      "name": "Grainmill",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-038-grain-mill-location.jpg",
+      "name": "Grain Mill",
       "symbol": "📍",
-      "description": "The active scene for Case File 115. Recovered field notes place the primary event at Grainmill.",
+      "description": "The active scene for Case File 115. Recovered field notes place the primary event at Grain Mill.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

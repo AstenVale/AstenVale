@@ -230,16 +230,16 @@ window.SONG_DATA = {
     {
       "id": "062_signetring",
       "type": "Object",
-      "name": "Signetring",
+      "name": "Signet Ring",
       "symbol": "🔍",
       "description": "Signet Ring was recovered from Cabin in Case File 062. It is tied to Cattle Driver, 4:12, and marker 616.",
       "unknownInfo": "Up the Ridge and Thunder suggest this object matters beyond the first reading.",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/062 - glove.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/037 - signet ring.jpg"
     },
     {
       "id": "062_location",
       "type": "Location",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-062-sheriffs-office-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-008-cabin-location.jpg",
       "name": "Cabin",
       "symbol": "📍",
       "description": "The active scene for Case File 062. Recovered field notes place the primary event at Cabin.",

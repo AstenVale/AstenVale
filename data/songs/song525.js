@@ -230,6 +230,7 @@ window.SONG_DATA = {
     {
       "id": "525_button",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/072 - button.jpg",
       "name": "Button",
       "symbol": "🔍",
       "description": "Button was recovered from The Quarry Pool in Case File 525. It is tied to Sheriff, 6:53, and marker 4479.",
@@ -238,6 +239,7 @@ window.SONG_DATA = {
     {
       "id": "525_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-034-the-quarry-pool-location.jpg",
       "name": "Quarry Pool",
       "symbol": "📍",
       "description": "The active scene for Case File 525. Recovered field notes place the primary event at Quarry Pool.",

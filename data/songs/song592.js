@@ -230,6 +230,7 @@ window.SONG_DATA = {
     {
       "id": "592_telegram",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/050 - telegram.jpg",
       "name": "Telegram",
       "symbol": "🔍",
       "description": "Telegram was recovered from Old Wharf in Case File 592. It is tied to Undertaker, 3:44, and marker 5034.",
@@ -238,9 +239,10 @@ window.SONG_DATA = {
     {
       "id": "592_location",
       "type": "Location",
-      "name": "Oldwharf",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-054-old-wharf-location.jpg",
+      "name": "Old Wharf",
       "symbol": "📍",
-      "description": "The active scene for Case File 592. Recovered field notes place the primary event at Oldwharf.",
+      "description": "The active scene for Case File 592. Recovered field notes place the primary event at Old Wharf.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

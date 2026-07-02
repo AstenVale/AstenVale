@@ -219,6 +219,7 @@ window.SONG_DATA = {
     {
       "id": "355_bottle",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/052 - bottle.jpg",
       "name": "Bottle",
       "symbol": "🔍",
       "description": "Bottle was recovered from Ash Hollow in Case File 355. It is tied to Rope Maker, 2:19, and marker 3061.",
@@ -227,18 +228,19 @@ window.SONG_DATA = {
     {
       "id": "355_location",
       "type": "Location",
-      "name": "Ashhollow",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-075-ash-hollow-location.jpg",
+      "name": "Ash Hollow",
       "symbol": "📍",
-      "description": "The active scene for Case File 355. Recovered field notes place the primary event at Ashhollow.",
+      "description": "The active scene for Case File 355. Recovered field notes place the primary event at Ash Hollow.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {
       "id": "355_witness",
       "type": "Witness",
-      "name": "Ropemaker",
+      "name": "Rope Maker",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/rope-maker.jpg",
       "symbol": "👤",
-      "description": "Ropemaker, identified in the case notes for Case File 355. Has not given a formal statement.",
+      "description": "Rope Maker, identified in the case notes for Case File 355. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

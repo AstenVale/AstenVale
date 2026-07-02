@@ -232,12 +232,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Watch was recovered from Cemetery in Case File 044. It is tied to Midwife, 12:33, and marker 470.",
       "unknownInfo": "Down the Hollow and Knife Scrape suggest this object matters beyond the first reading.",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/044 - coin.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/039 - watch.jpg"
     },
     {
       "id": "044_location",
       "type": "Location",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-044-feed-store-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-010-cemetery-location.jpg",
       "name": "Cemetery",
       "symbol": "📍",
       "description": "The active scene for Case File 044. Recovered field notes place the primary event at Cemetery.",

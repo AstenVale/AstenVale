@@ -230,6 +230,7 @@ window.SONG_DATA = {
     {
       "id": "239_brokenclasp",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/089 - broken clasp.jpg",
       "name": "Broken Clasp",
       "symbol": "🔍",
       "description": "Broken Clasp was recovered from North Pasture in Case File 239. It is tied to Widow, 11:17, and marker 2097.",
@@ -238,6 +239,7 @@ window.SONG_DATA = {
     {
       "id": "239_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-041-north-pasture-location.jpg",
       "name": "North Pasture",
       "symbol": "📍",
       "description": "The active scene for Case File 239. Recovered field notes place the primary event at North Pasture.",

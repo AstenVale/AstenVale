@@ -220,6 +220,7 @@ window.SONG_DATA = {
     {
       "id": "508_numbereddisk",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/094 - numbered disk.jpg",
       "name": "Numbered Disk",
       "symbol": "🔍",
       "description": "Numbered Disk was recovered from Lake Shore in Case File 508. It is tied to Caretaker, 1:33, and marker 4334.",
@@ -228,9 +229,10 @@ window.SONG_DATA = {
     {
       "id": "508_location",
       "type": "Location",
-      "name": "Lakeshore",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-092-lake-shore-location.jpg",
+      "name": "Lake Shore",
       "symbol": "📍",
-      "description": "The active scene for Case File 508. Recovered field notes place the primary event at Lakeshore.",
+      "description": "The active scene for Case File 508. Recovered field notes place the primary event at Lake Shore.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

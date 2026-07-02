@@ -222,7 +222,8 @@ window.SONG_DATA = {
     {
       "id": "384_tornlabel",
       "type": "Object",
-      "name": "Tornlabel",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/040 - torn label.jpg",
+      "name": "Torn Label",
       "symbol": "🔍",
       "description": "Torn Label was recovered from The Ravine in Case File 384. It is tied to Census Taker, 5:21, and marker 3306.",
       "unknownInfo": "Away from Town and Lock Click suggest this object matters beyond the first reading."
@@ -230,6 +231,7 @@ window.SONG_DATA = {
     {
       "id": "384_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-081-the-ravine-location.jpg",
       "name": "Ravine",
       "symbol": "📍",
       "description": "The active scene for Case File 384. Recovered field notes place the primary event at Ravine.",

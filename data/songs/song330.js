@@ -231,6 +231,7 @@ window.SONG_DATA = {
     {
       "id": "330_spoolofthread",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/034 - spool of thread.jpg",
       "name": "Spool of Thread",
       "symbol": "🔍",
       "description": "Spool of Thread was recovered from Lake Shore in Case File 330. It is tied to Fisherman, 2:55, and marker 2852.",
@@ -239,9 +240,10 @@ window.SONG_DATA = {
     {
       "id": "330_location",
       "type": "Location",
-      "name": "Lakeshore",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-092-lake-shore-location.jpg",
+      "name": "Lake Shore",
       "symbol": "📍",
-      "description": "The active scene for Case File 330. Recovered field notes place the primary event at Lakeshore.",
+      "description": "The active scene for Case File 330. Recovered field notes place the primary event at Lake Shore.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

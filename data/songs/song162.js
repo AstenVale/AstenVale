@@ -219,6 +219,7 @@ window.SONG_DATA = {
     {
       "id": "162_charredpaper",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/046 - charred paper.jpg",
       "name": "Charred Paper",
       "symbol": "🔍",
       "description": "Charred Paper was recovered from Cider House in Case File 162. It is tied to Sheriff, 11:29, and marker 1452.",
@@ -227,9 +228,10 @@ window.SONG_DATA = {
     {
       "id": "162_location",
       "type": "Location",
-      "name": "Ciderhouse",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-039-cider-house-location.jpg",
+      "name": "Cider House",
       "symbol": "📍",
-      "description": "The active scene for Case File 162. Recovered field notes place the primary event at Ciderhouse.",
+      "description": "The active scene for Case File 162. Recovered field notes place the primary event at Cider House.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

@@ -223,15 +223,15 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Straight Razor was recovered from Water Tower in Case File 033. It is tied to Fisherman, 8:17, and marker 379.",
       "unknownInfo": "Beyond and Lantern Glass suggest this object matters beyond the first reading.",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/033 - string of beads.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/030 - straight razor.jpg"
     },
     {
       "id": "033_location",
       "type": "Location",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-033-the-weir-location.jpg",
-      "name": "Watertower",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-028-water-tower-location.jpg",
+      "name": "Water Tower",
       "symbol": "📍",
-      "description": "The active scene for Case File 033. Recovered field notes place the primary event at Watertower.",
+      "description": "The active scene for Case File 033. Recovered field notes place the primary event at Water Tower.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

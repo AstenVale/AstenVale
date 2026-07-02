@@ -228,6 +228,7 @@ window.SONG_DATA = {
     {
       "id": "440_locket",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/047 - locket.jpg",
       "name": "Locket",
       "symbol": "🔍",
       "description": "Locket was recovered from Stables in Case File 440. It is tied to Glazier, 9:44, and marker 3770.",
@@ -236,6 +237,7 @@ window.SONG_DATA = {
     {
       "id": "440_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-032-stables-location.jpg",
       "name": "Stables",
       "symbol": "📍",
       "description": "The active scene for Case File 440. Recovered field notes place the primary event at Stables.",

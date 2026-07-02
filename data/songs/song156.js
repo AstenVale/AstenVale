@@ -232,7 +232,8 @@ window.SONG_DATA = {
     {
       "id": "156_axlepin",
       "type": "Object",
-      "name": "Axlepin",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/042 - axle pin.jpg",
+      "name": "Axle Pin",
       "symbol": "🔍",
       "description": "Axle Pin was recovered from The Bluff in Case File 156. It is tied to The Handless Man, 3:17, and marker 1406.",
       "unknownInfo": "East and Moth Wings suggest this object matters beyond the first reading."
@@ -240,6 +241,7 @@ window.SONG_DATA = {
     {
       "id": "156_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-077-the-bluff-location.jpg",
       "name": "Bluff",
       "symbol": "📍",
       "description": "The active scene for Case File 156. Recovered field notes place the primary event at Bluff.",

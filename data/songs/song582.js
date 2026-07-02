@@ -221,6 +221,7 @@ window.SONG_DATA = {
     {
       "id": "582_pocketwatch",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/032 - pocket watch.jpg",
       "name": "Pocket Watch",
       "symbol": "🔍",
       "description": "Pocket Watch was recovered from Cooper's Yard in Case File 582. It is tied to Cattle Driver, 2:47, and marker 4952.",
@@ -229,9 +230,10 @@ window.SONG_DATA = {
     {
       "id": "582_location",
       "type": "Location",
-      "name": "Cooper'Syard",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-031-coopers-yard-location.jpg",
+      "name": "Cooper's Yard",
       "symbol": "📍",
-      "description": "The active scene for Case File 582. Recovered field notes place the primary event at Cooper'Syard.",
+      "description": "The active scene for Case File 582. Recovered field notes place the primary event at Cooper's Yard.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

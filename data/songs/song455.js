@@ -229,6 +229,7 @@ window.SONG_DATA = {
     {
       "id": "455_numbereddisk",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/094 - numbered disk.jpg",
       "name": "Numbered Disk",
       "symbol": "🔍",
       "description": "Numbered Disk was recovered from Cemetery in Case File 455. It is tied to Orphan, 2:22, and marker 3897.",
@@ -237,6 +238,7 @@ window.SONG_DATA = {
     {
       "id": "455_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-010-cemetery-location.jpg",
       "name": "Cemetery",
       "symbol": "📍",
       "description": "The active scene for Case File 455. Recovered field notes place the primary event at Cemetery.",

@@ -219,7 +219,8 @@ window.SONG_DATA = {
     {
       "id": "183_beltbuckle",
       "type": "Object",
-      "name": "Beltbuckle",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/081 - belt buckle.jpg",
+      "name": "Belt Buckle",
       "symbol": "🔍",
       "description": "Belt Buckle was recovered from Crossroads in Case File 183. It is tied to Lock Keeper, 11:29, and marker 1625.",
       "unknownInfo": "Somewhere and Fence Wire Hum suggest this object matters beyond the first reading."
@@ -227,6 +228,7 @@ window.SONG_DATA = {
     {
       "id": "183_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-073-crossroads-location.jpg",
       "name": "Crossroads",
       "symbol": "📍",
       "description": "The active scene for Case File 183. Recovered field notes place the primary event at Crossroads.",
@@ -235,10 +237,10 @@ window.SONG_DATA = {
     {
       "id": "183_witness",
       "type": "Witness",
-      "name": "Lockkeeper",
+      "name": "Lock Keeper",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/lock-keeper.jpg",
       "symbol": "👤",
-      "description": "Lockkeeper, identified in the case notes for Case File 183. Has not given a formal statement.",
+      "description": "Lock Keeper, identified in the case notes for Case File 183. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

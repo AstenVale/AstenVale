@@ -233,12 +233,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "String of Beads was recovered from Forge in Case File 088. It is tied to Cattle Driver, 4:29, and marker 834.",
       "unknownInfo": "Beyond and Clock Ticking suggest this object matters beyond the first reading.",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/088 - torn map.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/033 - string of beads.jpg"
     },
     {
       "id": "088_location",
       "type": "Location",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-088-the-dry-gulch-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-042-forge-location.jpg",
       "name": "Forge",
       "symbol": "📍",
       "description": "The active scene for Case File 088. Recovered field notes place the primary event at Forge.",

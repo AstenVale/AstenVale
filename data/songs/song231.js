@@ -231,7 +231,8 @@ window.SONG_DATA = {
     {
       "id": "231_tradetoken",
       "type": "Object",
-      "name": "Tradetoken",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/076 - trade token.jpg",
+      "name": "Trade Token",
       "symbol": "🔍",
       "description": "Trade Token was recovered from Doctor's Office in Case File 231. It is tied to Driver, 7:14, and marker 2025.",
       "unknownInfo": "Up the Ridge and River Ice suggest this object matters beyond the first reading."
@@ -239,9 +240,10 @@ window.SONG_DATA = {
     {
       "id": "231_location",
       "type": "Location",
-      "name": "Doctor'Soffice",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-066-doctors-office-location.jpg",
+      "name": "Doctor's Office",
       "symbol": "📍",
-      "description": "The active scene for Case File 231. Recovered field notes place the primary event at Doctor'Soffice.",
+      "description": "The active scene for Case File 231. Recovered field notes place the primary event at Doctor's Office.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

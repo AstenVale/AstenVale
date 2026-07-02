@@ -221,6 +221,7 @@ window.SONG_DATA = {
     {
       "id": "422_numbereddisk",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/094 - numbered disk.jpg",
       "name": "Numbered Disk",
       "symbol": "🔍",
       "description": "Numbered Disk was recovered from Ice House in Case File 422. It is tied to Bone Collector, 9:27, and marker 3616.",
@@ -229,9 +230,10 @@ window.SONG_DATA = {
     {
       "id": "422_location",
       "type": "Location",
-      "name": "Icehouse",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-102-ice-house-location.jpg",
+      "name": "Ice House",
       "symbol": "📍",
-      "description": "The active scene for Case File 422. Recovered field notes place the primary event at Icehouse.",
+      "description": "The active scene for Case File 422. Recovered field notes place the primary event at Ice House.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

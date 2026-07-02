@@ -218,6 +218,7 @@ window.SONG_DATA = {
     {
       "id": "133_ribbon",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/078 - ribbon.jpg",
       "name": "Ribbon",
       "symbol": "🔍",
       "description": "Ribbon was recovered from Old Bridge in Case File 133. It is tied to Tanner, 3:49, and marker 1207.",
@@ -226,9 +227,10 @@ window.SONG_DATA = {
     {
       "id": "133_location",
       "type": "Location",
-      "name": "Oldbridge",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-014-old-bridge-location.jpg",
+      "name": "Old Bridge",
       "symbol": "📍",
-      "description": "The active scene for Case File 133. Recovered field notes place the primary event at Oldbridge.",
+      "description": "The active scene for Case File 133. Recovered field notes place the primary event at Old Bridge.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

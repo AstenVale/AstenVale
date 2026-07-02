@@ -218,6 +218,7 @@ window.SONG_DATA = {
     {
       "id": "134_straightrazor",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/030 - straight razor.jpg",
       "name": "Straight Razor",
       "symbol": "🔍",
       "description": "Straight Razor was recovered from Sawmill in Case File 134. It is tied to Sexton, 3:49, and marker 1216.",
@@ -226,6 +227,7 @@ window.SONG_DATA = {
     {
       "id": "134_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-063-sawmill-location.jpg",
       "name": "Sawmill",
       "symbol": "📍",
       "description": "The active scene for Case File 134. Recovered field notes place the primary event at Sawmill.",

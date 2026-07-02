@@ -219,7 +219,7 @@ window.SONG_DATA = {
     {
       "id": "012_casefolder",
       "type": "Object",
-      "name": "Casefolder",
+      "name": "Case Folder",
       "symbol": "🔍",
       "description": "Case Folder was recovered from Sheriff Archive in Case File 012. It is tied to Sheriff, 12:00, and marker 99.",
       "unknownInfo": "Below and Cellar Door suggest this object matters beyond the first reading.",
@@ -228,7 +228,7 @@ window.SONG_DATA = {
     {
       "id": "012_location",
       "type": "Location",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-012-riverside-cabin-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-011-sheriff-archive-location.jpg",
       "name": "Sheriff Archive",
       "symbol": "📍",
       "description": "The active scene for Case File 012. Recovered field notes place the primary event at Sheriff Archive.",

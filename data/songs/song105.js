@@ -229,6 +229,7 @@ window.SONG_DATA = {
     {
       "id": "105_driedinkblot",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/068 - dried ink blot.jpg",
       "name": "Dried Ink Blot",
       "symbol": "🔍",
       "description": "Dried Ink Blot was recovered from Hotel in Case File 105. It is tied to Station Master, 7:02, and marker 979.",
@@ -237,6 +238,7 @@ window.SONG_DATA = {
     {
       "id": "105_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-051-hotel-location.jpg",
       "name": "Hotel",
       "symbol": "📍",
       "description": "The active scene for Case File 105. Recovered field notes place the primary event at Hotel.",

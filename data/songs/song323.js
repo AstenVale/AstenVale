@@ -218,6 +218,7 @@ window.SONG_DATA = {
     {
       "id": "323_compass",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/010 - compass.jpg",
       "name": "Compass",
       "symbol": "🔍",
       "description": "Compass was recovered from East Field in Case File 323. It is tied to Ferryman, 3:17, and marker 2797.",
@@ -226,9 +227,10 @@ window.SONG_DATA = {
     {
       "id": "323_location",
       "type": "Location",
-      "name": "Eastfield",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-058-east-field-location.jpg",
+      "name": "East Field",
       "symbol": "📍",
-      "description": "The active scene for Case File 323. Recovered field notes place the primary event at Eastfield.",
+      "description": "The active scene for Case File 323. Recovered field notes place the primary event at East Field.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

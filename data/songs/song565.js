@@ -229,6 +229,7 @@ window.SONG_DATA = {
     {
       "id": "565_inkwell",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/058 - inkwell.jpg",
       "name": "Inkwell",
       "symbol": "🔍",
       "description": "Inkwell was recovered from Birch Stand in Case File 565. It is tied to Farmer, 4:12, and marker 4807.",
@@ -237,9 +238,10 @@ window.SONG_DATA = {
     {
       "id": "565_location",
       "type": "Location",
-      "name": "Birchstand",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-093-birch-stand-location.jpg",
+      "name": "Birch Stand",
       "symbol": "📍",
-      "description": "The active scene for Case File 565. Recovered field notes place the primary event at Birchstand.",
+      "description": "The active scene for Case File 565. Recovered field notes place the primary event at Birch Stand.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

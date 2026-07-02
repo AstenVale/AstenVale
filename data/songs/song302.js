@@ -229,6 +229,7 @@ window.SONG_DATA = {
     {
       "id": "302_driedinkblot",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/068 - dried ink blot.jpg",
       "name": "Dried Ink Blot",
       "symbol": "🔍",
       "description": "Dried Ink Blot was recovered from Forge in Case File 302. It is tied to Rope Maker, 11:40, and marker 2616.",
@@ -237,6 +238,7 @@ window.SONG_DATA = {
     {
       "id": "302_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-042-forge-location.jpg",
       "name": "Forge",
       "symbol": "📍",
       "description": "The active scene for Case File 302. Recovered field notes place the primary event at Forge.",
@@ -245,10 +247,10 @@ window.SONG_DATA = {
     {
       "id": "302_witness",
       "type": "Witness",
-      "name": "Ropemaker",
+      "name": "Rope Maker",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/rope-maker.jpg",
       "symbol": "👤",
-      "description": "Ropemaker, identified in the case notes for Case File 302. Has not given a formal statement.",
+      "description": "Rope Maker, identified in the case notes for Case File 302. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

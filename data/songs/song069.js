@@ -231,16 +231,16 @@ window.SONG_DATA = {
     {
       "id": "069_tinstar",
       "type": "Object",
-      "name": "Tinstar",
+      "name": "Tin Star",
       "symbol": "🔍",
       "description": "Tin Star was recovered from The Hollow Road in Case File 069. It is tied to Conductor, 2:55, and marker 679.",
       "unknownInfo": "Nowhere and River Water suggest this object matters beyond the first reading.",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/069 - surveyor's pin.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/056 - tin star.jpg"
     },
     {
       "id": "069_location",
       "type": "Location",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-069-calico-alley-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-049-the-hollow-road-location.jpg",
       "name": "Hollow Road",
       "symbol": "📍",
       "description": "The active scene for Case File 069. Recovered field notes place the primary event at Hollow Road.",

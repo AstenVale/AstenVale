@@ -218,16 +218,16 @@ window.SONG_DATA = {
     {
       "id": "026_ironnail",
       "type": "Object",
-      "name": "Ironnail",
+      "name": "Iron Nail",
       "symbol": "🔍",
       "description": "Iron Nail was recovered from Cabin in Case File 026. It is tied to Ferryman, 2:19, and marker 316.",
       "unknownInfo": "Right and Lid of a Tin suggest this object matters beyond the first reading.",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/026 - candle.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/024 - iron nail.jpg"
     },
     {
       "id": "026_location",
       "type": "Location",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-026-potters-field-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-008-cabin-location.jpg",
       "name": "Cabin",
       "symbol": "📍",
       "description": "The active scene for Case File 026. Recovered field notes place the primary event at Cabin.",

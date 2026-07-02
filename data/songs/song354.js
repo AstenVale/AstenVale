@@ -219,7 +219,8 @@ window.SONG_DATA = {
     {
       "id": "354_waxseal",
       "type": "Object",
-      "name": "Waxseal",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/051 - wax seal.jpg",
+      "name": "Wax Seal",
       "symbol": "🔍",
       "description": "Wax Seal was recovered from Old Bridge in Case File 354. It is tied to Barber, 5:09, and marker 3052.",
       "unknownInfo": "Sideways and Swamp Gas suggest this object matters beyond the first reading."
@@ -227,9 +228,10 @@ window.SONG_DATA = {
     {
       "id": "354_location",
       "type": "Location",
-      "name": "Oldbridge",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-014-old-bridge-location.jpg",
+      "name": "Old Bridge",
       "symbol": "📍",
-      "description": "The active scene for Case File 354. Recovered field notes place the primary event at Oldbridge.",
+      "description": "The active scene for Case File 354. Recovered field notes place the primary event at Old Bridge.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

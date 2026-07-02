@@ -219,6 +219,7 @@ window.SONG_DATA = {
     {
       "id": "379_notebook",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/073 - notebook.jpg",
       "name": "Notebook",
       "symbol": "🔍",
       "description": "Notebook was recovered from Crow's Nest Ridge in Case File 379. It is tied to Stranger, 10:47, and marker 3261.",
@@ -227,9 +228,10 @@ window.SONG_DATA = {
     {
       "id": "379_location",
       "type": "Location",
-      "name": "Crow'Snestridge",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-100-crows-nest-ridge-location.jpg",
+      "name": "Crow's Nest Ridge",
       "symbol": "📍",
-      "description": "The active scene for Case File 379. Recovered field notes place the primary event at Crow'Snestridge.",
+      "description": "The active scene for Case File 379. Recovered field notes place the primary event at Crow's Nest Ridge.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

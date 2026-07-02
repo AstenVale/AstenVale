@@ -230,6 +230,7 @@ window.SONG_DATA = {
     {
       "id": "327_driedinkblot",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/068 - dried ink blot.jpg",
       "name": "Dried Ink Blot",
       "symbol": "🔍",
       "description": "Dried Ink Blot was recovered from Schoolhouse in Case File 327. It is tied to Apothecary, 7:02, and marker 2825.",
@@ -238,6 +239,7 @@ window.SONG_DATA = {
     {
       "id": "327_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-087-schoolhouse-location.jpg",
       "name": "Schoolhouse",
       "symbol": "📍",
       "description": "The active scene for Case File 327. Recovered field notes place the primary event at Schoolhouse.",

@@ -219,16 +219,16 @@ window.SONG_DATA = {
     {
       "id": "049_axlepin",
       "type": "Object",
-      "name": "Axlepin",
+      "name": "Axle Pin",
       "symbol": "🔍",
       "description": "Axle Pin was recovered from North Pasture in Case File 049. It is tied to Postman, 8:33, and marker 507.",
       "unknownInfo": "Below and Water Drip suggest this object matters beyond the first reading.",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/049 - ledger page.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/042 - axle pin.jpg"
     },
     {
       "id": "049_location",
       "type": "Location",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-049-the-hollow-road-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-041-north-pasture-location.jpg",
       "name": "North Pasture",
       "symbol": "📍",
       "description": "The active scene for Case File 049. Recovered field notes place the primary event at North Pasture.",

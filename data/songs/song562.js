@@ -219,7 +219,8 @@ window.SONG_DATA = {
     {
       "id": "562_tornmap",
       "type": "Object",
-      "name": "Tornmap",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/088 - torn map.jpg",
+      "name": "Torn Map",
       "symbol": "🔍",
       "description": "Torn Map was recovered from Barn in Case File 562. It is tied to Cartographer, 7:48, and marker 4788.",
       "unknownInfo": "Back the Way You Came and Rope on Pulley suggest this object matters beyond the first reading."
@@ -227,6 +228,7 @@ window.SONG_DATA = {
     {
       "id": "562_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-078-barn-location.jpg",
       "name": "Barn",
       "symbol": "📍",
       "description": "The active scene for Case File 562. Recovered field notes place the primary event at Barn.",

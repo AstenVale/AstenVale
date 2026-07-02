@@ -218,6 +218,7 @@ window.SONG_DATA = {
     {
       "id": "375_leatherstrap",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/025 - leather strap.jpg",
       "name": "Leather Strap",
       "symbol": "🔍",
       "description": "Leather Strap was recovered from Library in Case File 375. It is tied to Preacher, 4:38, and marker 3225.",
@@ -226,6 +227,7 @@ window.SONG_DATA = {
     {
       "id": "375_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-036-library-location.jpg",
       "name": "Library",
       "symbol": "📍",
       "description": "The active scene for Case File 375. Recovered field notes place the primary event at Library.",

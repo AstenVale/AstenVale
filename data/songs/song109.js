@@ -217,6 +217,7 @@ window.SONG_DATA = {
     {
       "id": "109_compass",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/010 - compass.jpg",
       "name": "Compass",
       "symbol": "🔍",
       "description": "Compass was recovered from Tunnel in Case File 109. It is tied to Surveyor, 6:32, and marker 1007.",
@@ -225,6 +226,7 @@ window.SONG_DATA = {
     {
       "id": "109_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-070-tunnel-location.jpg",
       "name": "Tunnel",
       "symbol": "📍",
       "description": "The active scene for Case File 109. Recovered field notes place the primary event at Tunnel.",

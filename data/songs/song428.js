@@ -218,6 +218,7 @@ window.SONG_DATA = {
     {
       "id": "428_matchbook",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/007 - matchbook.jpg",
       "name": "Matchbook",
       "symbol": "🔍",
       "description": "Matchbook was recovered from Schoolhouse in Case File 428. It is tied to Land Agent, 9:44, and marker 3670.",
@@ -226,6 +227,7 @@ window.SONG_DATA = {
     {
       "id": "428_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-087-schoolhouse-location.jpg",
       "name": "Schoolhouse",
       "symbol": "📍",
       "description": "The active scene for Case File 428. Recovered field notes place the primary event at Schoolhouse.",
@@ -234,10 +236,10 @@ window.SONG_DATA = {
     {
       "id": "428_witness",
       "type": "Witness",
-      "name": "Landagent",
+      "name": "Land Agent",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/land-agent.jpg",
       "symbol": "👤",
-      "description": "Landagent, identified in the case notes for Case File 428. Has not given a formal statement.",
+      "description": "Land Agent, identified in the case notes for Case File 428. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

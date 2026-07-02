@@ -230,7 +230,8 @@ window.SONG_DATA = {
     {
       "id": "106_surveyorspin",
       "type": "Object",
-      "name": "Surveyor'Spin",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/069 - surveyor's pin.jpg",
+      "name": "Surveyor's Pin",
       "symbol": "🔍",
       "description": "Surveyor's Pin was recovered from Potter's Field in Case File 106. It is tied to Station Master, 6:17, and marker 988.",
       "unknownInfo": "Under and Cannon Bolt suggest this object matters beyond the first reading."
@@ -238,9 +239,10 @@ window.SONG_DATA = {
     {
       "id": "106_location",
       "type": "Location",
-      "name": "Potter'Sfield",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-026-potters-field-location.jpg",
+      "name": "Potter's Field",
       "symbol": "📍",
-      "description": "The active scene for Case File 106. Recovered field notes place the primary event at Potter'Sfield.",
+      "description": "The active scene for Case File 106. Recovered field notes place the primary event at Potter's Field.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

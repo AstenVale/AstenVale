@@ -220,6 +220,7 @@ window.SONG_DATA = {
     {
       "id": "558_thimble",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/054 - thimble.jpg",
       "name": "Thimble",
       "symbol": "🔍",
       "description": "Thimble was recovered from The Pit in Case File 558. It is tied to Fisherman, 11:17, and marker 4752.",
@@ -228,6 +229,7 @@ window.SONG_DATA = {
     {
       "id": "558_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-055-the-pit-location.jpg",
       "name": "Pit",
       "symbol": "📍",
       "description": "The active scene for Case File 558. Recovered field notes place the primary event at Pit.",

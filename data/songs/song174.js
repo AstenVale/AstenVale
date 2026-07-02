@@ -230,6 +230,7 @@ window.SONG_DATA = {
     {
       "id": "174_flask",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/045 - flask.jpg",
       "name": "Flask",
       "symbol": "🔍",
       "description": "Flask was recovered from Sheep Fold in Case File 174. It is tied to Drifter, 10:47, and marker 1552.",
@@ -238,9 +239,10 @@ window.SONG_DATA = {
     {
       "id": "174_location",
       "type": "Location",
-      "name": "Sheepfold",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-086-sheep-fold-location.jpg",
+      "name": "Sheep Fold",
       "symbol": "📍",
-      "description": "The active scene for Case File 174. Recovered field notes place the primary event at Sheepfold.",
+      "description": "The active scene for Case File 174. Recovered field notes place the primary event at Sheep Fold.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

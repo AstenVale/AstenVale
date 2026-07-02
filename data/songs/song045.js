@@ -233,23 +233,23 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Chain was recovered from Cider House in Case File 045. It is tied to Rope Maker, 7:14, and marker 479.",
       "unknownInfo": "Over and Dry Grass suggest this object matters beyond the first reading.",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/045 - flask.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/028 - chain.jpg"
     },
     {
       "id": "045_location",
       "type": "Location",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-045-orchard-location.jpg",
-      "name": "Ciderhouse",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-039-cider-house-location.jpg",
+      "name": "Cider House",
       "symbol": "📍",
-      "description": "The active scene for Case File 045. Recovered field notes place the primary event at Ciderhouse.",
+      "description": "The active scene for Case File 045. Recovered field notes place the primary event at Cider House.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {
       "id": "045_witness",
       "type": "Witness",
-      "name": "Ropemaker",
+      "name": "Rope Maker",
       "symbol": "👤",
-      "description": "Ropemaker, identified in the case notes for Case File 045. Has not given a formal statement.",
+      "description": "Rope Maker, identified in the case notes for Case File 045. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/rope-maker.jpg"
     },

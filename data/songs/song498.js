@@ -231,7 +231,8 @@ window.SONG_DATA = {
     {
       "id": "498_earofcorn",
       "type": "Object",
-      "name": "Earofcorn",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/038 - ear of corn.jpg",
+      "name": "Ear of Corn",
       "symbol": "🔍",
       "description": "Ear of Corn was recovered from Cider House in Case File 498. It is tied to Schoolgirl, 8:17, and marker 4252.",
       "unknownInfo": "Past the Tree Line and Child's Laugh (far off) suggest this object matters beyond the first reading."
@@ -239,9 +240,10 @@ window.SONG_DATA = {
     {
       "id": "498_location",
       "type": "Location",
-      "name": "Ciderhouse",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-039-cider-house-location.jpg",
+      "name": "Cider House",
       "symbol": "📍",
-      "description": "The active scene for Case File 498. Recovered field notes place the primary event at Ciderhouse.",
+      "description": "The active scene for Case File 498. Recovered field notes place the primary event at Cider House.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

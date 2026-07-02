@@ -221,12 +221,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Key was recovered from Diner in Case File 058. It is tied to Lamplighter, 8:00, and marker 588.",
       "unknownInfo": "Left and River Water suggest this object matters beyond the first reading.",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/058 - inkwell.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/021 - key.jpg"
     },
     {
       "id": "058_location",
       "type": "Location",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-058-east-field-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-007-diner-location.jpg",
       "name": "Diner",
       "symbol": "📍",
       "description": "The active scene for Case File 058. Recovered field notes place the primary event at Diner.",

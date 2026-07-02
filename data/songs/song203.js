@@ -228,6 +228,7 @@ window.SONG_DATA = {
     {
       "id": "203_flask",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/045 - flask.jpg",
       "name": "Flask",
       "symbol": "🔍",
       "description": "Flask was recovered from Black Pine in Case File 203. It is tied to Postman, 11:03, and marker 1797.",
@@ -236,9 +237,10 @@ window.SONG_DATA = {
     {
       "id": "203_location",
       "type": "Location",
-      "name": "Blackpine",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-001-black-pine-location.jpg",
+      "name": "Black Pine",
       "symbol": "📍",
-      "description": "The active scene for Case File 203. Recovered field notes place the primary event at Blackpine.",
+      "description": "The active scene for Case File 203. Recovered field notes place the primary event at Black Pine.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

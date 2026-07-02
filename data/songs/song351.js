@@ -219,6 +219,7 @@ window.SONG_DATA = {
     {
       "id": "351_driedbloodoncloth",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/057 - dried blood on cloth.jpg",
       "name": "Dried Blood on Cloth",
       "symbol": "🔍",
       "description": "Dried Blood on Cloth was recovered from Market Square in Case File 351. It is tied to Stranger, 8:06, and marker 3025.",
@@ -227,6 +228,7 @@ window.SONG_DATA = {
     {
       "id": "351_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-076-market-square-location.jpg",
       "name": "Market Square",
       "symbol": "📍",
       "description": "The active scene for Case File 351. Recovered field notes place the primary event at Market Square.",

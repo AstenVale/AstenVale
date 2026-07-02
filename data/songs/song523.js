@@ -229,6 +229,7 @@ window.SONG_DATA = {
     {
       "id": "523_shardofmirror",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/031 - shard of mirror.jpg",
       "name": "Shard of Mirror",
       "symbol": "🔍",
       "description": "Shard of Mirror was recovered from The Hollow Road in Case File 523. It is tied to Wainwright, 3:17, and marker 4461.",
@@ -237,6 +238,7 @@ window.SONG_DATA = {
     {
       "id": "523_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-049-the-hollow-road-location.jpg",
       "name": "Hollow Road",
       "symbol": "📍",
       "description": "The active scene for Case File 523. Recovered field notes place the primary event at Hollow Road.",

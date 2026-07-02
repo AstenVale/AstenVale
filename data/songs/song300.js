@@ -220,7 +220,8 @@ window.SONG_DATA = {
     {
       "id": "300_ledgerpage",
       "type": "Object",
-      "name": "Ledgerpage",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/049 - ledger page.jpg",
+      "name": "Ledger Page",
       "symbol": "🔍",
       "description": "Ledger Page was recovered from Potter's Field in Case File 300. It is tied to Rope Maker, 3:17, and marker 2606.",
       "unknownInfo": "Past the Tree Line and Floorboard suggest this object matters beyond the first reading."
@@ -228,18 +229,19 @@ window.SONG_DATA = {
     {
       "id": "300_location",
       "type": "Location",
-      "name": "Potter'Sfield",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-026-potters-field-location.jpg",
+      "name": "Potter's Field",
       "symbol": "📍",
-      "description": "The active scene for Case File 300. Recovered field notes place the primary event at Potter'Sfield.",
+      "description": "The active scene for Case File 300. Recovered field notes place the primary event at Potter's Field.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {
       "id": "300_witness",
       "type": "Witness",
-      "name": "Ropemaker",
+      "name": "Rope Maker",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/rope-maker.jpg",
       "symbol": "👤",
-      "description": "Ropemaker, identified in the case notes for Case File 300. Has not given a formal statement.",
+      "description": "Rope Maker, identified in the case notes for Case File 300. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

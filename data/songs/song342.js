@@ -231,6 +231,7 @@ window.SONG_DATA = {
     {
       "id": "342_notebook",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/073 - notebook.jpg",
       "name": "Notebook",
       "symbol": "🔍",
       "description": "Notebook was recovered from The Widow's Porch in Case File 342. It is tied to Farmer, 10:05, and marker 2952.",
@@ -239,6 +240,7 @@ window.SONG_DATA = {
     {
       "id": "342_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-094-the-widows-porch-location.jpg",
       "name": "Widow'S Porch",
       "symbol": "📍",
       "description": "The active scene for Case File 342. Recovered field notes place the primary event at Widow'S Porch.",

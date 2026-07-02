@@ -231,6 +231,7 @@ window.SONG_DATA = {
     {
       "id": "568_pipe",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/082 - pipe.jpg",
       "name": "Pipe",
       "symbol": "🔍",
       "description": "Pipe was recovered from The Hollow Road in Case File 568. It is tied to Cider Presser, 7:14, and marker 4834.",
@@ -239,6 +240,7 @@ window.SONG_DATA = {
     {
       "id": "568_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-049-the-hollow-road-location.jpg",
       "name": "Hollow Road",
       "symbol": "📍",
       "description": "The active scene for Case File 568. Recovered field notes place the primary event at Hollow Road.",

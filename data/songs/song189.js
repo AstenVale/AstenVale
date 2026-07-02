@@ -221,6 +221,7 @@ window.SONG_DATA = {
     {
       "id": "189_journal",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/048 - journal.jpg",
       "name": "Journal",
       "symbol": "🔍",
       "description": "Journal was recovered from The Cistern in Case File 189. It is tied to Salt Seller, 6:17, and marker 1679.",
@@ -229,6 +230,7 @@ window.SONG_DATA = {
     {
       "id": "189_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-090-the-cistern-location.jpg",
       "name": "Cistern",
       "symbol": "📍",
       "description": "The active scene for Case File 189. Recovered field notes place the primary event at Cistern.",
@@ -237,10 +239,10 @@ window.SONG_DATA = {
     {
       "id": "189_witness",
       "type": "Witness",
-      "name": "Saltseller",
+      "name": "Salt Seller",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/salt-seller.jpg",
       "symbol": "👤",
-      "description": "Saltseller, identified in the case notes for Case File 189. Has not given a formal statement.",
+      "description": "Salt Seller, identified in the case notes for Case File 189. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

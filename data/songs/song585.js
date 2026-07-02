@@ -230,6 +230,7 @@ window.SONG_DATA = {
     {
       "id": "585_coin",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/044 - coin.jpg",
       "name": "Coin",
       "symbol": "🔍",
       "description": "Coin was recovered from Rope Walk in Case File 585. It is tied to Harness Maker, 2:38, and marker 4979.",
@@ -238,9 +239,10 @@ window.SONG_DATA = {
     {
       "id": "585_location",
       "type": "Location",
-      "name": "Ropewalk",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-099-rope-walk-location.jpg",
+      "name": "Rope Walk",
       "symbol": "📍",
-      "description": "The active scene for Case File 585. Recovered field notes place the primary event at Ropewalk.",
+      "description": "The active scene for Case File 585. Recovered field notes place the primary event at Rope Walk.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

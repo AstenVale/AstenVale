@@ -230,7 +230,8 @@ window.SONG_DATA = {
     {
       "id": "125_bonebutton",
       "type": "Object",
-      "name": "Bonebutton",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/074 - bone button.jpg",
+      "name": "Bone Button",
       "symbol": "🔍",
       "description": "Bone Button was recovered from North Pasture in Case File 125. It is tied to Blacksmith, 7:00, and marker 1143.",
       "unknownInfo": "Forward and Dry Grass suggest this object matters beyond the first reading."
@@ -238,6 +239,7 @@ window.SONG_DATA = {
     {
       "id": "125_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-041-north-pasture-location.jpg",
       "name": "North Pasture",
       "symbol": "📍",
       "description": "The active scene for Case File 125. Recovered field notes place the primary event at North Pasture.",

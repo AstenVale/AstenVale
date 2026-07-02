@@ -219,7 +219,8 @@ window.SONG_DATA = {
     {
       "id": "406_lockofhair",
       "type": "Object",
-      "name": "Lockofhair",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/087 - lock of hair.jpg",
+      "name": "Lock of Hair",
       "symbol": "🔍",
       "description": "Lock of Hair was recovered from Barn in Case File 406. It is tied to Fence Mender, 11:17, and marker 3488.",
       "unknownInfo": "South and Cannon Bolt suggest this object matters beyond the first reading."
@@ -227,6 +228,7 @@ window.SONG_DATA = {
     {
       "id": "406_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-078-barn-location.jpg",
       "name": "Barn",
       "symbol": "📍",
       "description": "The active scene for Case File 406. Recovered field notes place the primary event at Barn.",

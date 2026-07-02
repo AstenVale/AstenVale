@@ -220,7 +220,8 @@ window.SONG_DATA = {
     {
       "id": "561_beltbuckle",
       "type": "Object",
-      "name": "Beltbuckle",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/081 - belt buckle.jpg",
+      "name": "Belt Buckle",
       "symbol": "🔍",
       "description": "Belt Buckle was recovered from Chandler's Row in Case File 561. It is tied to Auctioneer, 4:38, and marker 4779.",
       "unknownInfo": "Off the Road and River Water suggest this object matters beyond the first reading."
@@ -228,9 +229,10 @@ window.SONG_DATA = {
     {
       "id": "561_location",
       "type": "Location",
-      "name": "Chandler'Srow",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-067-chandlers-row-location.jpg",
+      "name": "Chandler's Row",
       "symbol": "📍",
-      "description": "The active scene for Case File 561. Recovered field notes place the primary event at Chandler'Srow.",
+      "description": "The active scene for Case File 561. Recovered field notes place the primary event at Chandler's Row.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

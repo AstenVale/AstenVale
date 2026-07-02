@@ -219,7 +219,8 @@ window.SONG_DATA = {
     {
       "id": "315_axlepin",
       "type": "Object",
-      "name": "Axlepin",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/042 - axle pin.jpg",
+      "name": "Axle Pin",
       "symbol": "🔍",
       "description": "Axle Pin was recovered from Old Bridge in Case File 315. It is tied to Lime Burner, 11:51, and marker 2725.",
       "unknownInfo": "Through and Floorboard suggest this object matters beyond the first reading."
@@ -227,18 +228,19 @@ window.SONG_DATA = {
     {
       "id": "315_location",
       "type": "Location",
-      "name": "Oldbridge",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-014-old-bridge-location.jpg",
+      "name": "Old Bridge",
       "symbol": "📍",
-      "description": "The active scene for Case File 315. Recovered field notes place the primary event at Oldbridge.",
+      "description": "The active scene for Case File 315. Recovered field notes place the primary event at Old Bridge.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {
       "id": "315_witness",
       "type": "Witness",
-      "name": "Limeburner",
+      "name": "Lime Burner",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/lime-burner.jpg",
       "symbol": "👤",
-      "description": "Limeburner, identified in the case notes for Case File 315. Has not given a formal statement.",
+      "description": "Lime Burner, identified in the case notes for Case File 315. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

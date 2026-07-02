@@ -220,7 +220,8 @@ window.SONG_DATA = {
     {
       "id": "336_waxtablet",
       "type": "Object",
-      "name": "Waxtablet",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/077 - wax tablet.jpg",
+      "name": "Wax Tablet",
       "symbol": "🔍",
       "description": "Wax Tablet was recovered from Jail in Case File 336. It is tied to Cattle Driver, 2:55, and marker 2906.",
       "unknownInfo": "Down the Hollow and Cellar Stairs suggest this object matters beyond the first reading."
@@ -228,6 +229,7 @@ window.SONG_DATA = {
     {
       "id": "336_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-084-jail-location.jpg",
       "name": "Jail",
       "symbol": "📍",
       "description": "The active scene for Case File 336. Recovered field notes place the primary event at Jail.",

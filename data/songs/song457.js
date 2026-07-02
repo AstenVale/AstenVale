@@ -230,7 +230,8 @@ window.SONG_DATA = {
     {
       "id": "457_bentnail",
       "type": "Object",
-      "name": "Bentnail",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/080 - bent nail.jpg",
+      "name": "Bent Nail",
       "symbol": "🔍",
       "description": "Bent Nail was recovered from Banker's House in Case File 457. It is tied to Census Taker, 7:00, and marker 3907.",
       "unknownInfo": "Behind and Night Insects suggest this object matters beyond the first reading."
@@ -238,9 +239,10 @@ window.SONG_DATA = {
     {
       "id": "457_location",
       "type": "Location",
-      "name": "Banker'Shouse",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-040-bankers-house-location.jpg",
+      "name": "Banker's House",
       "symbol": "📍",
-      "description": "The active scene for Case File 457. Recovered field notes place the primary event at Banker'Shouse.",
+      "description": "The active scene for Case File 457. Recovered field notes place the primary event at Banker's House.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

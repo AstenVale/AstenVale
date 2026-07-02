@@ -219,6 +219,7 @@ window.SONG_DATA = {
     {
       "id": "296_spoolofthread",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/034 - spool of thread.jpg",
       "name": "Spool of Thread",
       "symbol": "🔍",
       "description": "Spool of Thread was recovered from Ash Hollow in Case File 296. It is tied to Apothecary, 8:17, and marker 2570.",
@@ -227,9 +228,10 @@ window.SONG_DATA = {
     {
       "id": "296_location",
       "type": "Location",
-      "name": "Ashhollow",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-075-ash-hollow-location.jpg",
+      "name": "Ash Hollow",
       "symbol": "📍",
-      "description": "The active scene for Case File 296. Recovered field notes place the primary event at Ashhollow.",
+      "description": "The active scene for Case File 296. Recovered field notes place the primary event at Ash Hollow.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

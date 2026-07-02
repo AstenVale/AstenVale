@@ -219,6 +219,7 @@ window.SONG_DATA = {
     {
       "id": "377_journal",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/048 - journal.jpg",
       "name": "Journal",
       "symbol": "🔍",
       "description": "Journal was recovered from Collapsed Mine in Case File 377. It is tied to Librarian, 8:17, and marker 3243.",
@@ -227,6 +228,7 @@ window.SONG_DATA = {
     {
       "id": "377_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-083-collapsed-mine-location.jpg",
       "name": "Collapsed Mine",
       "symbol": "📍",
       "description": "The active scene for Case File 377. Recovered field notes place the primary event at Collapsed Mine.",

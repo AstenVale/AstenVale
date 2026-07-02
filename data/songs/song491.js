@@ -217,6 +217,7 @@ window.SONG_DATA = {
     {
       "id": "491_button",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/072 - button.jpg",
       "name": "Button",
       "symbol": "🔍",
       "description": "Button was recovered from Courthouse in Case File 491. It is tied to Gravedigger, 1:33, and marker 4197.",
@@ -225,6 +226,7 @@ window.SONG_DATA = {
     {
       "id": "491_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-023-courthouse-location.jpg",
       "name": "Courthouse",
       "symbol": "📍",
       "description": "The active scene for Case File 491. Recovered field notes place the primary event at Courthouse.",

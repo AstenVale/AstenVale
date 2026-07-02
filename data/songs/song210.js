@@ -219,6 +219,7 @@ window.SONG_DATA = {
     {
       "id": "210_journal",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/048 - journal.jpg",
       "name": "Journal",
       "symbol": "🔍",
       "description": "Journal was recovered from Jail in Case File 210. It is tied to The Mute, 4:12, and marker 1852.",
@@ -227,6 +228,7 @@ window.SONG_DATA = {
     {
       "id": "210_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-084-jail-location.jpg",
       "name": "Jail",
       "symbol": "📍",
       "description": "The active scene for Case File 210. Recovered field notes place the primary event at Jail.",

@@ -234,15 +234,15 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Suitcase Latch was recovered from Pine Road in Case File 024. It is tied to Child, 5:30, and marker 231.",
       "unknownInfo": "Home and Wind in Pines suggest this object matters beyond the first reading.",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/024 - iron nail.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/022 - suitcase latch.jpg"
     },
     {
       "id": "024_location",
       "type": "Location",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-024-millpond-location.jpg",
-      "name": "Pineroad",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-021-pine-road-location.jpg",
+      "name": "Pine Road",
       "symbol": "📍",
-      "description": "The active scene for Case File 024. Recovered field notes place the primary event at Pineroad.",
+      "description": "The active scene for Case File 024. Recovered field notes place the primary event at Pine Road.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

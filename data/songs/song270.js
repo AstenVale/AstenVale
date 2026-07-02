@@ -219,7 +219,8 @@ window.SONG_DATA = {
     {
       "id": "270_tradetoken",
       "type": "Object",
-      "name": "Tradetoken",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/076 - trade token.jpg",
+      "name": "Trade Token",
       "symbol": "🔍",
       "description": "Trade Token was recovered from Pharmacy in Case File 270. It is tied to Apothecary, 12:00, and marker 2352.",
       "unknownInfo": "Into the Pines and Crow Wings suggest this object matters beyond the first reading."
@@ -227,6 +228,7 @@ window.SONG_DATA = {
     {
       "id": "270_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-098-pharmacy-location.jpg",
       "name": "Pharmacy",
       "symbol": "📍",
       "description": "The active scene for Case File 270. Recovered field notes place the primary event at Pharmacy.",

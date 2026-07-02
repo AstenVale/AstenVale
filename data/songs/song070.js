@@ -230,16 +230,16 @@ window.SONG_DATA = {
     {
       "id": "070_ironnail",
       "type": "Object",
-      "name": "Ironnail",
+      "name": "Iron Nail",
       "symbol": "🔍",
       "description": "Iron Nail was recovered from Cabin in Case File 070. It is tied to Lamplighter, 9:55, and marker 688.",
       "unknownInfo": "Toward the River and Broken String suggest this object matters beyond the first reading.",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/070 - ship manifest.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/024 - iron nail.jpg"
     },
     {
       "id": "070_location",
       "type": "Location",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-070-tunnel-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-008-cabin-location.jpg",
       "name": "Cabin",
       "symbol": "📍",
       "description": "The active scene for Case File 070. Recovered field notes place the primary event at Cabin.",

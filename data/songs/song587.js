@@ -228,7 +228,8 @@ window.SONG_DATA = {
     {
       "id": "587_tradetoken",
       "type": "Object",
-      "name": "Tradetoken",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/076 - trade token.jpg",
+      "name": "Trade Token",
       "symbol": "🔍",
       "description": "Trade Token was recovered from Barn in Case File 587. It is tied to Gravedigger, 6:06, and marker 4997.",
       "unknownInfo": "Around and Knife Scrape suggest this object matters beyond the first reading."
@@ -236,6 +237,7 @@ window.SONG_DATA = {
     {
       "id": "587_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-078-barn-location.jpg",
       "name": "Barn",
       "symbol": "📍",
       "description": "The active scene for Case File 587. Recovered field notes place the primary event at Barn.",

@@ -227,6 +227,7 @@ window.SONG_DATA = {
     {
       "id": "527_compass",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/010 - compass.jpg",
       "name": "Compass",
       "symbol": "🔍",
       "description": "Compass was recovered from Schoolhouse in Case File 527. It is tied to Farmer, 8:00, and marker 4497.",
@@ -235,6 +236,7 @@ window.SONG_DATA = {
     {
       "id": "527_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-087-schoolhouse-location.jpg",
       "name": "Schoolhouse",
       "symbol": "📍",
       "description": "The active scene for Case File 527. Recovered field notes place the primary event at Schoolhouse.",

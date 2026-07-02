@@ -231,6 +231,7 @@ window.SONG_DATA = {
     {
       "id": "389_glove",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/062 - glove.jpg",
       "name": "Glove",
       "symbol": "🔍",
       "description": "Glove was recovered from The Root Cellar in Case File 389. It is tied to Night Porter, 8:33, and marker 3343.",
@@ -239,6 +240,7 @@ window.SONG_DATA = {
     {
       "id": "389_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-037-the-root-cellar-location.jpg",
       "name": "Root Cellar",
       "symbol": "📍",
       "description": "The active scene for Case File 389. Recovered field notes place the primary event at Root Cellar.",

@@ -219,6 +219,7 @@ window.SONG_DATA = {
     {
       "id": "338_badge",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/067 - badge.jpg",
       "name": "Badge",
       "symbol": "🔍",
       "description": "Badge was recovered from The Bluff in Case File 338. It is tied to Banker, 4:03, and marker 2916.",
@@ -227,6 +228,7 @@ window.SONG_DATA = {
     {
       "id": "338_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-077-the-bluff-location.jpg",
       "name": "Bluff",
       "symbol": "📍",
       "description": "The active scene for Case File 338. Recovered field notes place the primary event at Bluff.",

@@ -231,7 +231,8 @@ window.SONG_DATA = {
     {
       "id": "503_emptytin",
       "type": "Object",
-      "name": "Emptytin",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/035 - empty tin.jpg",
+      "name": "Empty Tin",
       "symbol": "🔍",
       "description": "Empty Tin was recovered from The Bluff in Case File 503. It is tied to Chandler, 12:00, and marker 4297.",
       "unknownInfo": "Up the Ridge and Footsteps suggest this object matters beyond the first reading."
@@ -239,6 +240,7 @@ window.SONG_DATA = {
     {
       "id": "503_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-077-the-bluff-location.jpg",
       "name": "Bluff",
       "symbol": "📍",
       "description": "The active scene for Case File 503. Recovered field notes place the primary event at Bluff.",

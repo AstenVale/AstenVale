@@ -228,6 +228,7 @@ window.SONG_DATA = {
     {
       "id": "412_brooch",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/036 - brooch.jpg",
       "name": "Brooch",
       "symbol": "🔍",
       "description": "Brooch was recovered from Covered Bridge in Case File 412. It is tied to Cooper, 12:44, and marker 3534.",
@@ -236,6 +237,7 @@ window.SONG_DATA = {
     {
       "id": "412_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-048-covered-bridge-location.jpg",
       "name": "Covered Bridge",
       "symbol": "📍",
       "description": "The active scene for Case File 412. Recovered field notes place the primary event at Covered Bridge.",

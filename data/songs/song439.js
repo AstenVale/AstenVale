@@ -229,6 +229,7 @@ window.SONG_DATA = {
     {
       "id": "439_canteen",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/053 - canteen.jpg",
       "name": "Canteen",
       "symbol": "🔍",
       "description": "Canteen was recovered from Freight Yard in Case File 439. It is tied to Cartographer, 10:19, and marker 3761.",
@@ -237,6 +238,7 @@ window.SONG_DATA = {
     {
       "id": "439_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-072-freight-yard-location.jpg",
       "name": "Freight Yard",
       "symbol": "📍",
       "description": "The active scene for Case File 439. Recovered field notes place the primary event at Freight Yard.",

@@ -230,16 +230,16 @@ window.SONG_DATA = {
     {
       "id": "039_emptytin",
       "type": "Object",
-      "name": "Emptytin",
+      "name": "Empty Tin",
       "symbol": "🔍",
       "description": "Empty Tin was recovered from The Quarry Pool in Case File 039. It is tied to Miller, 8:42, and marker 425.",
       "unknownInfo": "Sideways and Moth Wings suggest this object matters beyond the first reading.",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/039 - watch.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/035 - empty tin.jpg"
     },
     {
       "id": "039_location",
       "type": "Location",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-039-cider-house-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-034-the-quarry-pool-location.jpg",
       "name": "Quarry Pool",
       "symbol": "📍",
       "description": "The active scene for Case File 039. Recovered field notes place the primary event at Quarry Pool.",

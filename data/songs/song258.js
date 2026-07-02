@@ -228,6 +228,7 @@ window.SONG_DATA = {
     {
       "id": "258_seal",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/041 - seal.jpg",
       "name": "Seal",
       "symbol": "🔍",
       "description": "Seal was recovered from Post Office in Case File 258. It is tied to Glazier, 12:00, and marker 2252.",
@@ -236,9 +237,10 @@ window.SONG_DATA = {
     {
       "id": "258_location",
       "type": "Location",
-      "name": "Postoffice",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-059-post-office-location.jpg",
+      "name": "Post Office",
       "symbol": "📍",
-      "description": "The active scene for Case File 258. Recovered field notes place the primary event at Postoffice.",
+      "description": "The active scene for Case File 258. Recovered field notes place the primary event at Post Office.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

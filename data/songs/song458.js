@@ -229,6 +229,7 @@ window.SONG_DATA = {
     {
       "id": "458_ring",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/064 - ring.jpg",
       "name": "Ring",
       "symbol": "🔍",
       "description": "Ring was recovered from South Fork in Case File 458. It is tied to Fence Mender, 8:00, and marker 3916.",
@@ -237,9 +238,10 @@ window.SONG_DATA = {
     {
       "id": "458_location",
       "type": "Location",
-      "name": "Southfork",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-030-south-fork-location.jpg",
+      "name": "South Fork",
       "symbol": "📍",
-      "description": "The active scene for Case File 458. Recovered field notes place the primary event at Southfork.",
+      "description": "The active scene for Case File 458. Recovered field notes place the primary event at South Fork.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

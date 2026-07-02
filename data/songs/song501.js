@@ -229,6 +229,7 @@ window.SONG_DATA = {
     {
       "id": "501_cufflink",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/059 - cufflink.jpg",
       "name": "Cufflink",
       "symbol": "🔍",
       "description": "Cufflink was recovered from Butcher's Row in Case File 501. It is tied to Glazier, 3:30, and marker 4279.",
@@ -237,9 +238,10 @@ window.SONG_DATA = {
     {
       "id": "501_location",
       "type": "Location",
-      "name": "Butcher'Srow",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-101-butchers-row-location.jpg",
+      "name": "Butcher's Row",
       "symbol": "📍",
-      "description": "The active scene for Case File 501. Recovered field notes place the primary event at Butcher'Srow.",
+      "description": "The active scene for Case File 501. Recovered field notes place the primary event at Butcher's Row.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

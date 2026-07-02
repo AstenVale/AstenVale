@@ -230,7 +230,8 @@ window.SONG_DATA = {
     {
       "id": "443_bentnail",
       "type": "Object",
-      "name": "Bentnail",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/080 - bent nail.jpg",
+      "name": "Bent Nail",
       "symbol": "🔍",
       "description": "Bent Nail was recovered from Grain Mill in Case File 443. It is tied to Miller, 5:21, and marker 3797.",
       "unknownInfo": "Sideways and River Water suggest this object matters beyond the first reading."
@@ -238,9 +239,10 @@ window.SONG_DATA = {
     {
       "id": "443_location",
       "type": "Location",
-      "name": "Grainmill",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-038-grain-mill-location.jpg",
+      "name": "Grain Mill",
       "symbol": "📍",
-      "description": "The active scene for Case File 443. Recovered field notes place the primary event at Grainmill.",
+      "description": "The active scene for Case File 443. Recovered field notes place the primary event at Grain Mill.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

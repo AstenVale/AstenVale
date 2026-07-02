@@ -231,6 +231,7 @@ window.SONG_DATA = {
     {
       "id": "436_notebook",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/073 - notebook.jpg",
       "name": "Notebook",
       "symbol": "🔍",
       "description": "Notebook was recovered from The Ridge in Case File 436. It is tied to Land Agent, 2:55, and marker 3734.",
@@ -239,6 +240,7 @@ window.SONG_DATA = {
     {
       "id": "436_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-071-the-ridge-location.jpg",
       "name": "Ridge",
       "symbol": "📍",
       "description": "The active scene for Case File 436. Recovered field notes place the primary event at Ridge.",
@@ -247,10 +249,10 @@ window.SONG_DATA = {
     {
       "id": "436_witness",
       "type": "Witness",
-      "name": "Landagent",
+      "name": "Land Agent",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/land-agent.jpg",
       "symbol": "👤",
-      "description": "Landagent, identified in the case notes for Case File 436. Has not given a formal statement.",
+      "description": "Land Agent, identified in the case notes for Case File 436. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

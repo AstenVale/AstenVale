@@ -232,6 +232,7 @@ window.SONG_DATA = {
     {
       "id": "212_bulletcasing",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/061 - bullet casing.jpg",
       "name": "Bullet Casing",
       "symbol": "🔍",
       "description": "Bullet Casing was recovered from The Widow's Porch in Case File 212. It is tied to Bone Collector, 5:55, and marker 1870.",
@@ -240,6 +241,7 @@ window.SONG_DATA = {
     {
       "id": "212_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-094-the-widows-porch-location.jpg",
       "name": "Widow'S Porch",
       "symbol": "📍",
       "description": "The active scene for Case File 212. Recovered field notes place the primary event at Widow'S Porch.",

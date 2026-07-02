@@ -230,6 +230,7 @@ window.SONG_DATA = {
     {
       "id": "460_hollowacorn",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/065 - hollow acorn.jpg",
       "name": "Hollow Acorn",
       "symbol": "🔍",
       "description": "Hollow Acorn was recovered from Print Shop in Case File 460. It is tied to Child, 2:19, and marker 3934.",
@@ -238,9 +239,10 @@ window.SONG_DATA = {
     {
       "id": "460_location",
       "type": "Location",
-      "name": "Printshop",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-096-print-shop-location.jpg",
+      "name": "Print Shop",
       "symbol": "📍",
-      "description": "The active scene for Case File 460. Recovered field notes place the primary event at Printshop.",
+      "description": "The active scene for Case File 460. Recovered field notes place the primary event at Print Shop.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

@@ -229,6 +229,7 @@ window.SONG_DATA = {
     {
       "id": "420_journal",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/048 - journal.jpg",
       "name": "Journal",
       "symbol": "🔍",
       "description": "Journal was recovered from South Fork in Case File 420. It is tied to Farmer, 9:55, and marker 3606.",
@@ -237,9 +238,10 @@ window.SONG_DATA = {
     {
       "id": "420_location",
       "type": "Location",
-      "name": "Southfork",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-030-south-fork-location.jpg",
+      "name": "South Fork",
       "symbol": "📍",
-      "description": "The active scene for Case File 420. Recovered field notes place the primary event at Southfork.",
+      "description": "The active scene for Case File 420. Recovered field notes place the primary event at South Fork.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

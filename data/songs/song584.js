@@ -229,6 +229,7 @@ window.SONG_DATA = {
     {
       "id": "584_driedbloodoncloth",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/057 - dried blood on cloth.jpg",
       "name": "Dried Blood on Cloth",
       "symbol": "🔍",
       "description": "Dried Blood on Cloth was recovered from Grist Mill in Case File 584. It is tied to Lamplighter, 8:42, and marker 4970.",
@@ -237,9 +238,10 @@ window.SONG_DATA = {
     {
       "id": "584_location",
       "type": "Location",
-      "name": "Gristmill",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-025-grist-mill-location.jpg",
+      "name": "Grist Mill",
       "symbol": "📍",
-      "description": "The active scene for Case File 584. Recovered field notes place the primary event at Gristmill.",
+      "description": "The active scene for Case File 584. Recovered field notes place the primary event at Grist Mill.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

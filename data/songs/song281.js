@@ -229,6 +229,7 @@ window.SONG_DATA = {
     {
       "id": "281_letter",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/091 - letter.jpg",
       "name": "Letter",
       "symbol": "🔍",
       "description": "Letter was recovered from Fulling Mill in Case File 281. It is tied to Retired Soldier, 12:17, and marker 2443.",
@@ -237,6 +238,7 @@ window.SONG_DATA = {
     {
       "id": "281_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-035-fulling-mill-location.jpg",
       "name": "Fulling Mill",
       "symbol": "📍",
       "description": "The active scene for Case File 281. Recovered field notes place the primary event at Fulling Mill.",

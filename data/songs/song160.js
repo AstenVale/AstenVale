@@ -219,6 +219,7 @@ window.SONG_DATA = {
     {
       "id": "160_charredpaper",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/046 - charred paper.jpg",
       "name": "Charred Paper",
       "symbol": "🔍",
       "description": "Charred Paper was recovered from Candlemaker's Alley in Case File 160. It is tied to Station Master, 5:40, and marker 1434.",
@@ -227,9 +228,10 @@ window.SONG_DATA = {
     {
       "id": "160_location",
       "type": "Location",
-      "name": "Candlemaker'Salley",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-079-candlemakers-alley-location.jpg",
+      "name": "Candlemaker's Alley",
       "symbol": "📍",
-      "description": "The active scene for Case File 160. Recovered field notes place the primary event at Candlemaker'Salley.",
+      "description": "The active scene for Case File 160. Recovered field notes place the primary event at Candlemaker's Alley.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

@@ -235,15 +235,15 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Charcoal Sketch was recovered from Black Pine in Case File 084. It is tied to Census Taker, 5:40, and marker 806.",
       "unknownInfo": "Below and Broken String suggest this object matters beyond the first reading.",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/084 - folded cloth.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/023 - charcoal sketch.jpg"
     },
     {
       "id": "084_location",
       "type": "Location",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-084-jail-location.jpg",
-      "name": "Blackpine",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-001-black-pine-location.jpg",
+      "name": "Black Pine",
       "symbol": "📍",
-      "description": "The active scene for Case File 084. Recovered field notes place the primary event at Blackpine.",
+      "description": "The active scene for Case File 084. Recovered field notes place the primary event at Black Pine.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

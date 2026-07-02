@@ -230,6 +230,7 @@ window.SONG_DATA = {
     {
       "id": "169_boot",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/083 - boot.jpg",
       "name": "Boot",
       "symbol": "🔍",
       "description": "Boot was recovered from Collapsed Mine in Case File 169. It is tied to Night Watchman, 4:03, and marker 1507.",
@@ -238,6 +239,7 @@ window.SONG_DATA = {
     {
       "id": "169_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-083-collapsed-mine-location.jpg",
       "name": "Collapsed Mine",
       "symbol": "📍",
       "description": "The active scene for Case File 169. Recovered field notes place the primary event at Collapsed Mine.",

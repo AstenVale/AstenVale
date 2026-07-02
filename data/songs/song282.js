@@ -230,6 +230,7 @@ window.SONG_DATA = {
     {
       "id": "282_rope",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/063 - rope.jpg",
       "name": "Rope",
       "symbol": "🔍",
       "description": "Rope was recovered from The Weir in Case File 282. It is tied to Typesetter, 12:00, and marker 2452.",
@@ -238,6 +239,7 @@ window.SONG_DATA = {
     {
       "id": "282_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-033-the-weir-location.jpg",
       "name": "Weir",
       "symbol": "📍",
       "description": "The active scene for Case File 282. Recovered field notes place the primary event at Weir.",

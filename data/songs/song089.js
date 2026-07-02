@@ -233,15 +233,15 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Bullet Casing was recovered from Potter's Field in Case File 089. It is tied to Barber, 5:09, and marker 843.",
       "unknownInfo": "Beyond and Horse Hooves suggest this object matters beyond the first reading.",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/089 - broken clasp.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/061 - bullet casing.jpg"
     },
     {
       "id": "089_location",
       "type": "Location",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-089-iron-bridge-location.jpg",
-      "name": "Potter'Sfield",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-026-potters-field-location.jpg",
+      "name": "Potter's Field",
       "symbol": "📍",
-      "description": "The active scene for Case File 089. Recovered field notes place the primary event at Potter'Sfield.",
+      "description": "The active scene for Case File 089. Recovered field notes place the primary event at Potter's Field.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

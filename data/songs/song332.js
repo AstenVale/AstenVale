@@ -231,6 +231,7 @@ window.SONG_DATA = {
     {
       "id": "332_shipmanifest",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/070 - ship manifest.jpg",
       "name": "Ship Manifest",
       "symbol": "🔍",
       "description": "Ship Manifest was recovered from The Bluff in Case File 332. It is tied to Banker, 6:53, and marker 2870.",
@@ -239,6 +240,7 @@ window.SONG_DATA = {
     {
       "id": "332_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-077-the-bluff-location.jpg",
       "name": "Bluff",
       "symbol": "📍",
       "description": "The active scene for Case File 332. Recovered field notes place the primary event at Bluff.",

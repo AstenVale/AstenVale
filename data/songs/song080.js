@@ -224,15 +224,15 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Spool of Thread was recovered from Potter's Field in Case File 080. It is tied to Schoolteacher, 2:19, and marker 770.",
       "unknownInfo": "Into the Dark and Saw Cutting suggest this object matters beyond the first reading.",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/080 - bent nail.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/034 - spool of thread.jpg"
     },
     {
       "id": "080_location",
       "type": "Location",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-080-pine-hollow-location.jpg",
-      "name": "Potter'Sfield",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-026-potters-field-location.jpg",
+      "name": "Potter's Field",
       "symbol": "📍",
-      "description": "The active scene for Case File 080. Recovered field notes place the primary event at Potter'Sfield.",
+      "description": "The active scene for Case File 080. Recovered field notes place the primary event at Potter's Field.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

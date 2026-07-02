@@ -218,6 +218,7 @@ window.SONG_DATA = {
     {
       "id": "594_watch",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/039 - watch.jpg",
       "name": "Watch",
       "symbol": "🔍",
       "description": "Watch was recovered from Butcher's Row in Case File 594. It is tied to Apothecary, 3:30, and marker 5052.",
@@ -226,9 +227,10 @@ window.SONG_DATA = {
     {
       "id": "594_location",
       "type": "Location",
-      "name": "Butcher'Srow",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-101-butchers-row-location.jpg",
+      "name": "Butcher's Row",
       "symbol": "📍",
-      "description": "The active scene for Case File 594. Recovered field notes place the primary event at Butcher'Srow.",
+      "description": "The active scene for Case File 594. Recovered field notes place the primary event at Butcher's Row.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

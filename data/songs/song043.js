@@ -233,15 +233,15 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Chain was recovered from Grain Mill in Case File 043. It is tied to Woodsman, 5:09, and marker 461.",
       "unknownInfo": "Out of Sight and Dry Grass suggest this object matters beyond the first reading.",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/043 - dried flower.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/028 - chain.jpg"
     },
     {
       "id": "043_location",
       "type": "Location",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-043-smithy-location.jpg",
-      "name": "Grainmill",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-038-grain-mill-location.jpg",
+      "name": "Grain Mill",
       "symbol": "📍",
-      "description": "The active scene for Case File 043. Recovered field notes place the primary event at Grainmill.",
+      "description": "The active scene for Case File 043. Recovered field notes place the primary event at Grain Mill.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

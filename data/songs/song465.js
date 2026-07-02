@@ -219,6 +219,7 @@ window.SONG_DATA = {
     {
       "id": "465_seal",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/041 - seal.jpg",
       "name": "Seal",
       "symbol": "🔍",
       "description": "Seal was recovered from Butcher's Row in Case File 465. It is tied to Cider Presser, 1:26, and marker 3979.",
@@ -227,9 +228,10 @@ window.SONG_DATA = {
     {
       "id": "465_location",
       "type": "Location",
-      "name": "Butcher'Srow",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-101-butchers-row-location.jpg",
+      "name": "Butcher's Row",
       "symbol": "📍",
-      "description": "The active scene for Case File 465. Recovered field notes place the primary event at Butcher'Srow.",
+      "description": "The active scene for Case File 465. Recovered field notes place the primary event at Butcher's Row.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

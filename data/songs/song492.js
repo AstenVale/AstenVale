@@ -219,6 +219,7 @@ window.SONG_DATA = {
     {
       "id": "492_charcoalsketch",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/023 - charcoal sketch.jpg",
       "name": "Charcoal Sketch",
       "symbol": "🔍",
       "description": "Charcoal Sketch was recovered from Harness Shop in Case File 492. It is tied to Typesetter, 1:11, and marker 4206.",
@@ -227,6 +228,7 @@ window.SONG_DATA = {
     {
       "id": "492_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-061-harness-shop-location.jpg",
       "name": "Harness Shop",
       "symbol": "📍",
       "description": "The active scene for Case File 492. Recovered field notes place the primary event at Harness Shop.",

@@ -228,6 +228,7 @@ window.SONG_DATA = {
     {
       "id": "411_foldedcloth",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/084 - folded cloth.jpg",
       "name": "Folded Cloth",
       "symbol": "🔍",
       "description": "Folded Cloth was recovered from Church in Case File 411. It is tied to River Pilot, 4:29, and marker 3525.",
@@ -236,6 +237,7 @@ window.SONG_DATA = {
     {
       "id": "411_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-004-church-location.jpg",
       "name": "Church",
       "symbol": "📍",
       "description": "The active scene for Case File 411. Recovered field notes place the primary event at Church.",
@@ -244,10 +246,10 @@ window.SONG_DATA = {
     {
       "id": "411_witness",
       "type": "Witness",
-      "name": "Riverpilot",
+      "name": "River Pilot",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/river-pilot.jpg",
       "symbol": "👤",
-      "description": "Riverpilot, identified in the case notes for Case File 411. Has not given a formal statement.",
+      "description": "River Pilot, identified in the case notes for Case File 411. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

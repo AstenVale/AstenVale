@@ -220,6 +220,7 @@ window.SONG_DATA = {
     {
       "id": "597_copperfitting",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/079 - copper fitting.jpg",
       "name": "Copper Fitting",
       "symbol": "🔍",
       "description": "Copper Fitting was recovered from North Pasture in Case File 597. It is tied to Lamplighter, 7:00, and marker 5079.",
@@ -228,6 +229,7 @@ window.SONG_DATA = {
     {
       "id": "597_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-041-north-pasture-location.jpg",
       "name": "North Pasture",
       "symbol": "📍",
       "description": "The active scene for Case File 597. Recovered field notes place the primary event at North Pasture.",

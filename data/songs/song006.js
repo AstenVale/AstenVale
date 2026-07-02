@@ -218,7 +218,7 @@ window.SONG_DATA = {
     {
       "id": "006_riverstone",
       "type": "Object",
-      "name": "Riverstone",
+      "name": "River Stone",
       "symbol": "🔍",
       "description": "River Stone was recovered from River in Case File 006. It is tied to Child, 5:40, and marker 08.",
       "unknownInfo": "West and River Water suggest this object matters beyond the first reading.",

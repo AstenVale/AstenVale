@@ -231,7 +231,8 @@ window.SONG_DATA = {
     {
       "id": "387_bonebutton",
       "type": "Object",
-      "name": "Bonebutton",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/074 - bone button.jpg",
+      "name": "Bone Button",
       "symbol": "🔍",
       "description": "Bone Button was recovered from Sheriff's Office in Case File 387. It is tied to Salt Seller, 9:55, and marker 3325.",
       "unknownInfo": "Down and Latch Drop suggest this object matters beyond the first reading."
@@ -239,18 +240,19 @@ window.SONG_DATA = {
     {
       "id": "387_location",
       "type": "Location",
-      "name": "Sheriff'Soffice",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-062-sheriffs-office-location.jpg",
+      "name": "Sheriff's Office",
       "symbol": "📍",
-      "description": "The active scene for Case File 387. Recovered field notes place the primary event at Sheriff'Soffice.",
+      "description": "The active scene for Case File 387. Recovered field notes place the primary event at Sheriff's Office.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {
       "id": "387_witness",
       "type": "Witness",
-      "name": "Saltseller",
+      "name": "Salt Seller",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/salt-seller.jpg",
       "symbol": "👤",
-      "description": "Saltseller, identified in the case notes for Case File 387. Has not given a formal statement.",
+      "description": "Salt Seller, identified in the case notes for Case File 387. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

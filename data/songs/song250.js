@@ -219,6 +219,7 @@ window.SONG_DATA = {
     {
       "id": "250_pipe",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/082 - pipe.jpg",
       "name": "Pipe",
       "symbol": "🔍",
       "description": "Pipe was recovered from Watchmaker's Shop in Case File 250. It is tied to Miller, 3:30, and marker 2188.",
@@ -227,9 +228,10 @@ window.SONG_DATA = {
     {
       "id": "250_location",
       "type": "Location",
-      "name": "Watchmaker'Sshop",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-029-watchmakers-shop-location.jpg",
+      "name": "Watchmaker's Shop",
       "symbol": "📍",
-      "description": "The active scene for Case File 250. Recovered field notes place the primary event at Watchmaker'Sshop.",
+      "description": "The active scene for Case File 250. Recovered field notes place the primary event at Watchmaker's Shop.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

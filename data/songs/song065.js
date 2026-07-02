@@ -233,12 +233,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Bottle was recovered from Covered Bridge in Case File 065. It is tied to Deputy, 6:53, and marker 643.",
       "unknownInfo": "Ahead and Ice Crack suggest this object matters beyond the first reading.",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/065 - hollow acorn.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/052 - bottle.jpg"
     },
     {
       "id": "065_location",
       "type": "Location",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-065-brick-kiln-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-048-covered-bridge-location.jpg",
       "name": "Covered Bridge",
       "symbol": "📍",
       "description": "The active scene for Case File 065. Recovered field notes place the primary event at Covered Bridge.",

@@ -230,6 +230,7 @@ window.SONG_DATA = {
     {
       "id": "544_copperfitting",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/079 - copper fitting.jpg",
       "name": "Copper Fitting",
       "symbol": "🔍",
       "description": "Copper Fitting was recovered from Crow's Nest Ridge in Case File 544. It is tied to Gravedigger, 12:33, and marker 4634.",
@@ -238,9 +239,10 @@ window.SONG_DATA = {
     {
       "id": "544_location",
       "type": "Location",
-      "name": "Crow'Snestridge",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-100-crows-nest-ridge-location.jpg",
+      "name": "Crow's Nest Ridge",
       "symbol": "📍",
-      "description": "The active scene for Case File 544. Recovered field notes place the primary event at Crow'Snestridge.",
+      "description": "The active scene for Case File 544. Recovered field notes place the primary event at Crow's Nest Ridge.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

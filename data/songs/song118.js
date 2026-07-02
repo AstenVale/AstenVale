@@ -220,7 +220,8 @@ window.SONG_DATA = {
     {
       "id": "118_earofcorn",
       "type": "Object",
-      "name": "Earofcorn",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/038 - ear of corn.jpg",
+      "name": "Ear of Corn",
       "symbol": "🔍",
       "description": "Ear of Corn was recovered from Covered Bridge in Case File 118. It is tied to Salt Seller, 3:49, and marker 1088.",
       "unknownInfo": "Toward and Pages Turning suggest this object matters beyond the first reading."
@@ -228,6 +229,7 @@ window.SONG_DATA = {
     {
       "id": "118_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-048-covered-bridge-location.jpg",
       "name": "Covered Bridge",
       "symbol": "📍",
       "description": "The active scene for Case File 118. Recovered field notes place the primary event at Covered Bridge.",
@@ -236,10 +238,10 @@ window.SONG_DATA = {
     {
       "id": "118_witness",
       "type": "Witness",
-      "name": "Saltseller",
+      "name": "Salt Seller",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/salt-seller.jpg",
       "symbol": "👤",
-      "description": "Saltseller, identified in the case notes for Case File 118. Has not given a formal statement.",
+      "description": "Salt Seller, identified in the case notes for Case File 118. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

@@ -231,12 +231,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Headstone was recovered from Cemetery in Case File 020. It is tied to Groundskeeper, 12:15, and marker 187.",
       "unknownInfo": "Down and Rain suggest this object matters beyond the first reading.",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/020 - ash.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/019 - headstone.jpg"
     },
     {
       "id": "020_location",
       "type": "Location",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-020-empty-kitchen-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-010-cemetery-location.jpg",
       "name": "Cemetery",
       "symbol": "📍",
       "description": "The active scene for Case File 020. Recovered field notes place the primary event at Cemetery.",

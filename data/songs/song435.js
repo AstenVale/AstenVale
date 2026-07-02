@@ -230,7 +230,8 @@ window.SONG_DATA = {
     {
       "id": "435_bonebutton",
       "type": "Object",
-      "name": "Bonebutton",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/074 - bone button.jpg",
+      "name": "Bone Button",
       "symbol": "🔍",
       "description": "Bone Button was recovered from Cooper's Yard in Case File 435. It is tied to Weaver, 10:22, and marker 3725.",
       "unknownInfo": "Across and Knife Scrape suggest this object matters beyond the first reading."
@@ -238,9 +239,10 @@ window.SONG_DATA = {
     {
       "id": "435_location",
       "type": "Location",
-      "name": "Cooper'Syard",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-031-coopers-yard-location.jpg",
+      "name": "Cooper's Yard",
       "symbol": "📍",
-      "description": "The active scene for Case File 435. Recovered field notes place the primary event at Cooper'Syard.",
+      "description": "The active scene for Case File 435. Recovered field notes place the primary event at Cooper's Yard.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

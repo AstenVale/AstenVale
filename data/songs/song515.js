@@ -218,6 +218,7 @@ window.SONG_DATA = {
     {
       "id": "515_boot",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/083 - boot.jpg",
       "name": "Boot",
       "symbol": "🔍",
       "description": "Boot was recovered from Silo Row in Case File 515. It is tied to Wool Sorter, 6:06, and marker 4397.",
@@ -226,18 +227,19 @@ window.SONG_DATA = {
     {
       "id": "515_location",
       "type": "Location",
-      "name": "Silorow",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-104-silo-row-location.jpg",
+      "name": "Silo Row",
       "symbol": "📍",
-      "description": "The active scene for Case File 515. Recovered field notes place the primary event at Silorow.",
+      "description": "The active scene for Case File 515. Recovered field notes place the primary event at Silo Row.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {
       "id": "515_witness",
       "type": "Witness",
-      "name": "Woolsorter",
+      "name": "Wool Sorter",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/wool-sorter.jpg",
       "symbol": "👤",
-      "description": "Woolsorter, identified in the case notes for Case File 515. Has not given a formal statement.",
+      "description": "Wool Sorter, identified in the case notes for Case File 515. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

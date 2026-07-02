@@ -220,6 +220,7 @@ window.SONG_DATA = {
     {
       "id": "245_stamp",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/085 - stamp.jpg",
       "name": "Stamp",
       "symbol": "🔍",
       "description": "Stamp was recovered from The Gully in Case File 245. It is tied to Night Porter, 6:17, and marker 2143.",
@@ -228,6 +229,7 @@ window.SONG_DATA = {
     {
       "id": "245_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-056-the-gully-location.jpg",
       "name": "Gully",
       "symbol": "📍",
       "description": "The active scene for Case File 245. Recovered field notes place the primary event at Gully.",

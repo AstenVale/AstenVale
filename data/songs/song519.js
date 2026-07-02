@@ -229,6 +229,7 @@ window.SONG_DATA = {
     {
       "id": "519_ribbon",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/078 - ribbon.jpg",
       "name": "Ribbon",
       "symbol": "🔍",
       "description": "Ribbon was recovered from The Hollow Road in Case File 519. It is tied to Orphan, 8:33, and marker 4425.",
@@ -237,6 +238,7 @@ window.SONG_DATA = {
     {
       "id": "519_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-049-the-hollow-road-location.jpg",
       "name": "Hollow Road",
       "symbol": "📍",
       "description": "The active scene for Case File 519. Recovered field notes place the primary event at Hollow Road.",

@@ -219,6 +219,7 @@ window.SONG_DATA = {
     {
       "id": "116_driedinkblot",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/068 - dried ink blot.jpg",
       "name": "Dried Ink Blot",
       "symbol": "🔍",
       "description": "Dried Ink Blot was recovered from Post Office in Case File 116. It is tied to Midwife, 2:22, and marker 1070.",
@@ -227,9 +228,10 @@ window.SONG_DATA = {
     {
       "id": "116_location",
       "type": "Location",
-      "name": "Postoffice",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-059-post-office-location.jpg",
+      "name": "Post Office",
       "symbol": "📍",
-      "description": "The active scene for Case File 116. Recovered field notes place the primary event at Postoffice.",
+      "description": "The active scene for Case File 116. Recovered field notes place the primary event at Post Office.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

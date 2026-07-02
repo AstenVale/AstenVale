@@ -230,19 +230,19 @@ window.SONG_DATA = {
     {
       "id": "087_waxseal",
       "type": "Object",
-      "name": "Waxseal",
+      "name": "Wax Seal",
       "symbol": "🔍",
       "description": "Wax Seal was recovered from North Gate in Case File 087. It is tied to Fence Mender, 10:19, and marker 825.",
       "unknownInfo": "Down and Ash Settling suggest this object matters beyond the first reading.",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/087 - lock of hair.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/051 - wax seal.jpg"
     },
     {
       "id": "087_location",
       "type": "Location",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-087-schoolhouse-location.jpg",
-      "name": "Northgate",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-052-north-gate-location.jpg",
+      "name": "North Gate",
       "symbol": "📍",
-      "description": "The active scene for Case File 087. Recovered field notes place the primary event at Northgate.",
+      "description": "The active scene for Case File 087. Recovered field notes place the primary event at North Gate.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

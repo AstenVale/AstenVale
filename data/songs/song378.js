@@ -218,6 +218,7 @@ window.SONG_DATA = {
     {
       "id": "378_scratchedinitialsinwood",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/090 - scratched initials in wood.jpg",
       "name": "Scratched Initials in Wood",
       "symbol": "🔍",
       "description": "Scratched Initials in Wood was recovered from Pharmacy in Case File 378. It is tied to Furrier, 9:08, and marker 3252.",
@@ -226,6 +227,7 @@ window.SONG_DATA = {
     {
       "id": "378_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-098-pharmacy-location.jpg",
       "name": "Pharmacy",
       "symbol": "📍",
       "description": "The active scene for Case File 378. Recovered field notes place the primary event at Pharmacy.",

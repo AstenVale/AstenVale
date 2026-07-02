@@ -218,6 +218,7 @@ window.SONG_DATA = {
     {
       "id": "143_lantern",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/001 - lantern.jpg",
       "name": "Lantern",
       "symbol": "🔍",
       "description": "Lantern was recovered from Undertaker's Hall in Case File 143. It is tied to Fisherman, 12:00, and marker 1297.",
@@ -226,9 +227,10 @@ window.SONG_DATA = {
     {
       "id": "143_location",
       "type": "Location",
-      "name": "Undertaker'Shall",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-053-undertakers-hall-location.jpg",
+      "name": "Undertaker's Hall",
       "symbol": "📍",
-      "description": "The active scene for Case File 143. Recovered field notes place the primary event at Undertaker'Shall.",
+      "description": "The active scene for Case File 143. Recovered field notes place the primary event at Undertaker's Hall.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

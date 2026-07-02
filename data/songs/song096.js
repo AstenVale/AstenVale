@@ -219,6 +219,7 @@ window.SONG_DATA = {
     {
       "id": "096_leatherstrap",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/025 - leather strap.jpg",
       "name": "Leather Strap",
       "symbol": "🔍",
       "description": "Leather Strap was recovered from Cider House in Case File 096. It is tied to Circuit Rider, 1:26, and marker 906.",
@@ -227,10 +228,10 @@ window.SONG_DATA = {
     {
       "id": "096_location",
       "type": "Location",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-096-print-shop-location.jpg",
-      "name": "Ciderhouse",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-039-cider-house-location.jpg",
+      "name": "Cider House",
       "symbol": "📍",
-      "description": "The active scene for Case File 096. Recovered field notes place the primary event at Ciderhouse.",
+      "description": "The active scene for Case File 096. Recovered field notes place the primary event at Cider House.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

@@ -232,6 +232,7 @@ window.SONG_DATA = {
     {
       "id": "219_stringofbeads",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/033 - string of beads.jpg",
       "name": "String of Beads",
       "symbol": "🔍",
       "description": "String of Beads was recovered from The Depot in Case File 219. It is tied to Station Master, 6:06, and marker 1925.",
@@ -240,6 +241,7 @@ window.SONG_DATA = {
     {
       "id": "219_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-005-depot-location.jpg",
       "name": "Depot",
       "symbol": "📍",
       "description": "The active scene for Case File 219. Recovered field notes place the primary event at Depot.",

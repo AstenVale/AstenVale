@@ -218,7 +218,8 @@ window.SONG_DATA = {
     {
       "id": "512_emptytin",
       "type": "Object",
-      "name": "Emptytin",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/035 - empty tin.jpg",
+      "name": "Empty Tin",
       "symbol": "🔍",
       "description": "Empty Tin was recovered from Smithy in Case File 512. It is tied to Gravedigger, 3:03, and marker 4370.",
       "unknownInfo": "North and Cellar Door suggest this object matters beyond the first reading."
@@ -226,6 +227,7 @@ window.SONG_DATA = {
     {
       "id": "512_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-043-smithy-location.jpg",
       "name": "Smithy",
       "symbol": "📍",
       "description": "The active scene for Case File 512. Recovered field notes place the primary event at Smithy.",

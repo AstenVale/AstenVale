@@ -229,6 +229,7 @@ window.SONG_DATA = {
     {
       "id": "129_map",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/075 - map.jpg",
       "name": "Map",
       "symbol": "🔍",
       "description": "Map was recovered from Grist Mill in Case File 129. It is tied to Cartographer, 6:06, and marker 1179.",
@@ -237,9 +238,10 @@ window.SONG_DATA = {
     {
       "id": "129_location",
       "type": "Location",
-      "name": "Gristmill",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-025-grist-mill-location.jpg",
+      "name": "Grist Mill",
       "symbol": "📍",
-      "description": "The active scene for Case File 129. Recovered field notes place the primary event at Gristmill.",
+      "description": "The active scene for Case File 129. Recovered field notes place the primary event at Grist Mill.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

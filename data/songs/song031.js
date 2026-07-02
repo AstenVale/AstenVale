@@ -223,15 +223,15 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Chain was recovered from Potter's Field in Case File 031. It is tied to Census Taker, 10:22, and marker 361.",
       "unknownInfo": "Toward and Hammer Strike suggest this object matters beyond the first reading.",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/031 - shard of mirror.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/028 - chain.jpg"
     },
     {
       "id": "031_location",
       "type": "Location",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-031-coopers-yard-location.jpg",
-      "name": "Potter'Sfield",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-026-potters-field-location.jpg",
+      "name": "Potter's Field",
       "symbol": "📍",
-      "description": "The active scene for Case File 031. Recovered field notes place the primary event at Potter'Sfield.",
+      "description": "The active scene for Case File 031. Recovered field notes place the primary event at Potter's Field.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

@@ -220,6 +220,7 @@ window.SONG_DATA = {
     {
       "id": "405_notebook",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/073 - notebook.jpg",
       "name": "Notebook",
       "symbol": "🔍",
       "description": "Notebook was recovered from The Depot in Case File 405. It is tied to Postman, 6:17, and marker 3479.",
@@ -228,6 +229,7 @@ window.SONG_DATA = {
     {
       "id": "405_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-005-depot-location.jpg",
       "name": "Depot",
       "symbol": "📍",
       "description": "The active scene for Case File 405. Recovered field notes place the primary event at Depot.",

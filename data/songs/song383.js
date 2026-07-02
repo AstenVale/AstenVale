@@ -220,6 +220,7 @@ window.SONG_DATA = {
     {
       "id": "383_receipt",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/060 - receipt.jpg",
       "name": "Receipt",
       "symbol": "🔍",
       "description": "Receipt was recovered from Covered Bridge in Case File 383. It is tied to Cider Presser, 2:55, and marker 3297.",
@@ -228,6 +229,7 @@ window.SONG_DATA = {
     {
       "id": "383_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-048-covered-bridge-location.jpg",
       "name": "Covered Bridge",
       "symbol": "📍",
       "description": "The active scene for Case File 383. Recovered field notes place the primary event at Covered Bridge.",

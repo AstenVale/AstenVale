@@ -227,6 +227,7 @@ window.SONG_DATA = {
     {
       "id": "328_matchbook",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/007 - matchbook.jpg",
       "name": "Matchbook",
       "symbol": "🔍",
       "description": "Matchbook was recovered from Forge in Case File 328. It is tied to Ferryman, 6:17, and marker 2834.",
@@ -235,6 +236,7 @@ window.SONG_DATA = {
     {
       "id": "328_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-042-forge-location.jpg",
       "name": "Forge",
       "symbol": "📍",
       "description": "The active scene for Case File 328. Recovered field notes place the primary event at Forge.",

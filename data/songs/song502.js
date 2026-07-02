@@ -231,6 +231,7 @@ window.SONG_DATA = {
     {
       "id": "502_letter",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/091 - letter.jpg",
       "name": "Letter",
       "symbol": "🔍",
       "description": "Letter was recovered from Quarry Edge in Case File 502. It is tied to Station Master, 9:08, and marker 4288.",
@@ -239,9 +240,10 @@ window.SONG_DATA = {
     {
       "id": "502_location",
       "type": "Location",
-      "name": "Quarryedge",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-022-quarry-edge-location.jpg",
+      "name": "Quarry Edge",
       "symbol": "📍",
-      "description": "The active scene for Case File 502. Recovered field notes place the primary event at Quarryedge.",
+      "description": "The active scene for Case File 502. Recovered field notes place the primary event at Quarry Edge.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

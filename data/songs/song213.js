@@ -228,6 +228,7 @@ window.SONG_DATA = {
     {
       "id": "213_stamp",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/085 - stamp.jpg",
       "name": "Stamp",
       "symbol": "🔍",
       "description": "Stamp was recovered from Chandler's Row in Case File 213. It is tied to Gravedigger, 10:19, and marker 1879.",
@@ -236,9 +237,10 @@ window.SONG_DATA = {
     {
       "id": "213_location",
       "type": "Location",
-      "name": "Chandler'Srow",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-067-chandlers-row-location.jpg",
+      "name": "Chandler's Row",
       "symbol": "📍",
-      "description": "The active scene for Case File 213. Recovered field notes place the primary event at Chandler'Srow.",
+      "description": "The active scene for Case File 213. Recovered field notes place the primary event at Chandler's Row.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

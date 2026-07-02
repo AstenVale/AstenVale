@@ -219,6 +219,7 @@ window.SONG_DATA = {
     {
       "id": "167_flask",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/045 - flask.jpg",
       "name": "Flask",
       "symbol": "🔍",
       "description": "Flask was recovered from Watchmaker's Shop in Case File 167. It is tied to Preacher, 9:27, and marker 1497.",
@@ -227,9 +228,10 @@ window.SONG_DATA = {
     {
       "id": "167_location",
       "type": "Location",
-      "name": "Watchmaker'Sshop",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-029-watchmakers-shop-location.jpg",
+      "name": "Watchmaker's Shop",
       "symbol": "📍",
-      "description": "The active scene for Case File 167. Recovered field notes place the primary event at Watchmaker'Sshop.",
+      "description": "The active scene for Case File 167. Recovered field notes place the primary event at Watchmaker's Shop.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

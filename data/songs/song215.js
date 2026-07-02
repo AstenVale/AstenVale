@@ -229,6 +229,7 @@ window.SONG_DATA = {
     {
       "id": "215_brokenclasp",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/089 - broken clasp.jpg",
       "name": "Broken Clasp",
       "symbol": "🔍",
       "description": "Broken Clasp was recovered from Jail in Case File 215. It is tied to Woodsman, 3:49, and marker 1897.",
@@ -237,6 +238,7 @@ window.SONG_DATA = {
     {
       "id": "215_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-084-jail-location.jpg",
       "name": "Jail",
       "symbol": "📍",
       "description": "The active scene for Case File 215. Recovered field notes place the primary event at Jail.",

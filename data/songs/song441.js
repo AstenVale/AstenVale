@@ -229,6 +229,7 @@ window.SONG_DATA = {
     {
       "id": "441_spectacles",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/092 - spectacles.jpg",
       "name": "Spectacles",
       "symbol": "🔍",
       "description": "Spectacles was recovered from North Gate in Case File 441. It is tied to Caretaker, 7:37, and marker 3779.",
@@ -237,9 +238,10 @@ window.SONG_DATA = {
     {
       "id": "441_location",
       "type": "Location",
-      "name": "Northgate",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-052-north-gate-location.jpg",
+      "name": "North Gate",
       "symbol": "📍",
-      "description": "The active scene for Case File 441. Recovered field notes place the primary event at Northgate.",
+      "description": "The active scene for Case File 441. Recovered field notes place the primary event at North Gate.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

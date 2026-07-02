@@ -219,6 +219,7 @@ window.SONG_DATA = {
     {
       "id": "221_badge",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/067 - badge.jpg",
       "name": "Badge",
       "symbol": "🔍",
       "description": "Badge was recovered from Iron Bridge in Case File 221. It is tied to Schoolteacher, 1:58, and marker 1943.",
@@ -227,9 +228,10 @@ window.SONG_DATA = {
     {
       "id": "221_location",
       "type": "Location",
-      "name": "Ironbridge",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-089-iron-bridge-location.jpg",
+      "name": "Iron Bridge",
       "symbol": "📍",
-      "description": "The active scene for Case File 221. Recovered field notes place the primary event at Ironbridge.",
+      "description": "The active scene for Case File 221. Recovered field notes place the primary event at Iron Bridge.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

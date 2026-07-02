@@ -231,6 +231,7 @@ window.SONG_DATA = {
     {
       "id": "391_numbereddisk",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/094 - numbered disk.jpg",
       "name": "Numbered Disk",
       "symbol": "🔍",
       "description": "Numbered Disk was recovered from The Cistern in Case File 391. It is tied to Wainwright, 8:33, and marker 3361.",
@@ -239,6 +240,7 @@ window.SONG_DATA = {
     {
       "id": "391_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-090-the-cistern-location.jpg",
       "name": "Cistern",
       "symbol": "📍",
       "description": "The active scene for Case File 391. Recovered field notes place the primary event at Cistern.",

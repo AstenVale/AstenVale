@@ -230,6 +230,7 @@ window.SONG_DATA = {
     {
       "id": "349_cufflink",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/059 - cufflink.jpg",
       "name": "Cufflink",
       "symbol": "🔍",
       "description": "Cufflink was recovered from The Weir in Case File 349. It is tied to Fence Mender, 3:49, and marker 3007.",
@@ -238,6 +239,7 @@ window.SONG_DATA = {
     {
       "id": "349_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-033-the-weir-location.jpg",
       "name": "Weir",
       "symbol": "📍",
       "description": "The active scene for Case File 349. Recovered field notes place the primary event at Weir.",

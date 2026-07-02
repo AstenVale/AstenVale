@@ -228,6 +228,7 @@ window.SONG_DATA = {
     {
       "id": "415_pocketwatch",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/032 - pocket watch.jpg",
       "name": "Pocket Watch",
       "symbol": "🔍",
       "description": "Pocket Watch was recovered from Barn in Case File 415. It is tied to Gravedigger, 8:33, and marker 3561.",
@@ -236,6 +237,7 @@ window.SONG_DATA = {
     {
       "id": "415_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-078-barn-location.jpg",
       "name": "Barn",
       "symbol": "📍",
       "description": "The active scene for Case File 415. Recovered field notes place the primary event at Barn.",

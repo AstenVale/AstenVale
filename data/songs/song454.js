@@ -230,6 +230,7 @@ window.SONG_DATA = {
     {
       "id": "454_receipt",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/060 - receipt.jpg",
       "name": "Receipt",
       "symbol": "🔍",
       "description": "Receipt was recovered from Ice House in Case File 454. It is tied to Night Porter, 4:29, and marker 3888.",
@@ -238,9 +239,10 @@ window.SONG_DATA = {
     {
       "id": "454_location",
       "type": "Location",
-      "name": "Icehouse",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-102-ice-house-location.jpg",
+      "name": "Ice House",
       "symbol": "📍",
-      "description": "The active scene for Case File 454. Recovered field notes place the primary event at Icehouse.",
+      "description": "The active scene for Case File 454. Recovered field notes place the primary event at Ice House.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

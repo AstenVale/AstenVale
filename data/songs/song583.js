@@ -222,6 +222,7 @@ window.SONG_DATA = {
     {
       "id": "583_copperfitting",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/079 - copper fitting.jpg",
       "name": "Copper Fitting",
       "symbol": "🔍",
       "description": "Copper Fitting was recovered from The Weir in Case File 583. It is tied to Rag Picker, 9:55, and marker 4961.",
@@ -230,6 +231,7 @@ window.SONG_DATA = {
     {
       "id": "583_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-033-the-weir-location.jpg",
       "name": "Weir",
       "symbol": "📍",
       "description": "The active scene for Case File 583. Recovered field notes place the primary event at Weir.",
@@ -238,10 +240,10 @@ window.SONG_DATA = {
     {
       "id": "583_witness",
       "type": "Witness",
-      "name": "Ragpicker",
+      "name": "Rag Picker",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/rag-picker.jpg",
       "symbol": "👤",
-      "description": "Ragpicker, identified in the case notes for Case File 583. Has not given a formal statement.",
+      "description": "Rag Picker, identified in the case notes for Case File 583. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

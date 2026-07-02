@@ -230,6 +230,7 @@ window.SONG_DATA = {
     {
       "id": "369_hollowacorn",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/065 - hollow acorn.jpg",
       "name": "Hollow Acorn",
       "symbol": "🔍",
       "description": "Hollow Acorn was recovered from Freight Yard in Case File 369. It is tied to Wool Sorter, 6:17, and marker 3179.",
@@ -238,6 +239,7 @@ window.SONG_DATA = {
     {
       "id": "369_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-072-freight-yard-location.jpg",
       "name": "Freight Yard",
       "symbol": "📍",
       "description": "The active scene for Case File 369. Recovered field notes place the primary event at Freight Yard.",
@@ -246,10 +248,10 @@ window.SONG_DATA = {
     {
       "id": "369_witness",
       "type": "Witness",
-      "name": "Woolsorter",
+      "name": "Wool Sorter",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/wool-sorter.jpg",
       "symbol": "👤",
-      "description": "Woolsorter, identified in the case notes for Case File 369. Has not given a formal statement.",
+      "description": "Wool Sorter, identified in the case notes for Case File 369. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

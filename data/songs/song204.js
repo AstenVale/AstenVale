@@ -218,7 +218,8 @@ window.SONG_DATA = {
     {
       "id": "204_oilrag",
       "type": "Object",
-      "name": "Oilrag",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/086 - oil rag.jpg",
+      "name": "Oil Rag",
       "symbol": "🔍",
       "description": "Oil Rag was recovered from Diner in Case File 204. It is tied to Cartographer, 9:55, and marker 1806.",
       "unknownInfo": "North and Fog Horn suggest this object matters beyond the first reading."
@@ -226,6 +227,7 @@ window.SONG_DATA = {
     {
       "id": "204_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-007-diner-location.jpg",
       "name": "Diner",
       "symbol": "📍",
       "description": "The active scene for Case File 204. Recovered field notes place the primary event at Diner.",

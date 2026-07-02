@@ -229,7 +229,8 @@ window.SONG_DATA = {
     {
       "id": "177_flintstone",
       "type": "Object",
-      "name": "Flintstone",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/071 - flint stone.jpg",
+      "name": "Flint Stone",
       "symbol": "🔍",
       "description": "Flint Stone was recovered from Sheriff's Office in Case File 177. It is tied to Auctioneer, 8:42, and marker 1579.",
       "unknownInfo": "North and Thunder suggest this object matters beyond the first reading."
@@ -237,9 +238,10 @@ window.SONG_DATA = {
     {
       "id": "177_location",
       "type": "Location",
-      "name": "Sheriff'Soffice",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-062-sheriffs-office-location.jpg",
+      "name": "Sheriff's Office",
       "symbol": "📍",
-      "description": "The active scene for Case File 177. Recovered field notes place the primary event at Sheriff'Soffice.",
+      "description": "The active scene for Case File 177. Recovered field notes place the primary event at Sheriff's Office.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

@@ -224,15 +224,15 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Cufflink was recovered from Water Tower in Case File 075. It is tied to Fence Mender, 12:00, and marker 725.",
       "unknownInfo": "Off the Road and Pen on Paper suggest this object matters beyond the first reading.",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/075 - map.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/059 - cufflink.jpg"
     },
     {
       "id": "075_location",
       "type": "Location",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-075-ash-hollow-location.jpg",
-      "name": "Watertower",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-028-water-tower-location.jpg",
+      "name": "Water Tower",
       "symbol": "📍",
-      "description": "The active scene for Case File 075. Recovered field notes place the primary event at Watertower.",
+      "description": "The active scene for Case File 075. Recovered field notes place the primary event at Water Tower.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

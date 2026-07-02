@@ -230,7 +230,8 @@ window.SONG_DATA = {
     {
       "id": "154_bentnail",
       "type": "Object",
-      "name": "Bentnail",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/080 - bent nail.jpg",
+      "name": "Bent Nail",
       "symbol": "🔍",
       "description": "Bent Nail was recovered from Market Square in Case File 154. It is tied to Fisherman, 2:38, and marker 1388.",
       "unknownInfo": "Up the Ridge and Lid of a Tin suggest this object matters beyond the first reading."
@@ -238,6 +239,7 @@ window.SONG_DATA = {
     {
       "id": "154_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-076-market-square-location.jpg",
       "name": "Market Square",
       "symbol": "📍",
       "description": "The active scene for Case File 154. Recovered field notes place the primary event at Market Square.",

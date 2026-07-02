@@ -218,6 +218,7 @@ window.SONG_DATA = {
     {
       "id": "137_ribbon",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/078 - ribbon.jpg",
       "name": "Ribbon",
       "symbol": "🔍",
       "description": "Ribbon was recovered from Tannery in Case File 137. It is tied to Wool Sorter, 12:33, and marker 1243.",
@@ -226,6 +227,7 @@ window.SONG_DATA = {
     {
       "id": "137_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-027-tannery-location.jpg",
       "name": "Tannery",
       "symbol": "📍",
       "description": "The active scene for Case File 137. Recovered field notes place the primary event at Tannery.",
@@ -234,10 +236,10 @@ window.SONG_DATA = {
     {
       "id": "137_witness",
       "type": "Witness",
-      "name": "Woolsorter",
+      "name": "Wool Sorter",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/wool-sorter.jpg",
       "symbol": "👤",
-      "description": "Woolsorter, identified in the case notes for Case File 137. Has not given a formal statement.",
+      "description": "Wool Sorter, identified in the case notes for Case File 137. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

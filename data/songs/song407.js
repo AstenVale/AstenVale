@@ -218,6 +218,7 @@ window.SONG_DATA = {
     {
       "id": "407_map",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/075 - map.jpg",
       "name": "Map",
       "symbol": "🔍",
       "description": "Map was recovered from Canning Factory in Case File 407. It is tied to Sexton, 3:49, and marker 3497.",
@@ -226,6 +227,7 @@ window.SONG_DATA = {
     {
       "id": "407_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-095-canning-factory-location.jpg",
       "name": "Canning Factory",
       "symbol": "📍",
       "description": "The active scene for Case File 407. Recovered field notes place the primary event at Canning Factory.",

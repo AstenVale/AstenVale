@@ -230,6 +230,7 @@ window.SONG_DATA = {
     {
       "id": "152_locket",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/047 - locket.jpg",
       "name": "Locket",
       "symbol": "🔍",
       "description": "Locket was recovered from The Weir in Case File 152. It is tied to Apothecary, 7:37, and marker 1370.",
@@ -238,6 +239,7 @@ window.SONG_DATA = {
     {
       "id": "152_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-033-the-weir-location.jpg",
       "name": "Weir",
       "symbol": "📍",
       "description": "The active scene for Case File 152. Recovered field notes place the primary event at Weir.",

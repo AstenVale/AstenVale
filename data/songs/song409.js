@@ -228,6 +228,7 @@ window.SONG_DATA = {
     {
       "id": "409_button",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/072 - button.jpg",
       "name": "Button",
       "symbol": "🔍",
       "description": "Button was recovered from Telegraph Office in Case File 409. It is tied to Barber, 5:09, and marker 3507.",
@@ -236,6 +237,7 @@ window.SONG_DATA = {
     {
       "id": "409_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-097-telegraph-office-location.jpg",
       "name": "Telegraph Office",
       "symbol": "📍",
       "description": "The active scene for Case File 409. Recovered field notes place the primary event at Telegraph Office.",

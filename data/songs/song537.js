@@ -219,6 +219,7 @@ window.SONG_DATA = {
     {
       "id": "537_candle",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/026 - candle.jpg",
       "name": "Candle",
       "symbol": "🔍",
       "description": "Candle was recovered from Feed Store in Case File 537. It is tied to Cooper, 9:08, and marker 4579.",
@@ -227,9 +228,10 @@ window.SONG_DATA = {
     {
       "id": "537_location",
       "type": "Location",
-      "name": "Feedstore",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-044-feed-store-location.jpg",
+      "name": "Feed Store",
       "symbol": "📍",
-      "description": "The active scene for Case File 537. Recovered field notes place the primary event at Feedstore.",
+      "description": "The active scene for Case File 537. Recovered field notes place the primary event at Feed Store.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

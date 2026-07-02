@@ -218,6 +218,7 @@ window.SONG_DATA = {
     {
       "id": "225_locket",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/047 - locket.jpg",
       "name": "Locket",
       "symbol": "🔍",
       "description": "Locket was recovered from Diner in Case File 225. It is tied to Rope Maker, 7:37, and marker 1979.",
@@ -226,6 +227,7 @@ window.SONG_DATA = {
     {
       "id": "225_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-007-diner-location.jpg",
       "name": "Diner",
       "symbol": "📍",
       "description": "The active scene for Case File 225. Recovered field notes place the primary event at Diner.",
@@ -234,10 +236,10 @@ window.SONG_DATA = {
     {
       "id": "225_witness",
       "type": "Witness",
-      "name": "Ropemaker",
+      "name": "Rope Maker",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/rope-maker.jpg",
       "symbol": "👤",
-      "description": "Ropemaker, identified in the case notes for Case File 225. Has not given a formal statement.",
+      "description": "Rope Maker, identified in the case notes for Case File 225. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

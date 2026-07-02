@@ -217,6 +217,7 @@ window.SONG_DATA = {
     {
       "id": "274_telegram",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/050 - telegram.jpg",
       "name": "Telegram",
       "symbol": "🔍",
       "description": "Telegram was recovered from Post Office in Case File 274. It is tied to Judge, 4:12, and marker 2388.",
@@ -225,9 +226,10 @@ window.SONG_DATA = {
     {
       "id": "274_location",
       "type": "Location",
-      "name": "Postoffice",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-059-post-office-location.jpg",
+      "name": "Post Office",
       "symbol": "📍",
-      "description": "The active scene for Case File 274. Recovered field notes place the primary event at Postoffice.",
+      "description": "The active scene for Case File 274. Recovered field notes place the primary event at Post Office.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

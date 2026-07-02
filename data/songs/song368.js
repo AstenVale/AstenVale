@@ -228,7 +228,8 @@ window.SONG_DATA = {
     {
       "id": "368_prayercard",
       "type": "Object",
-      "name": "Prayercard",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/066 - prayer card.jpg",
+      "name": "Prayer Card",
       "symbol": "🔍",
       "description": "Prayer Card was recovered from Cabin in Case File 368. It is tied to Weaver, 12:17, and marker 3170.",
       "unknownInfo": "Right and Cellar Door suggest this object matters beyond the first reading."
@@ -236,6 +237,7 @@ window.SONG_DATA = {
     {
       "id": "368_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-008-cabin-location.jpg",
       "name": "Cabin",
       "symbol": "📍",
       "description": "The active scene for Case File 368. Recovered field notes place the primary event at Cabin.",

@@ -219,6 +219,7 @@ window.SONG_DATA = {
     {
       "id": "192_pocketwatch",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/032 - pocket watch.jpg",
       "name": "Pocket Watch",
       "symbol": "🔍",
       "description": "Pocket Watch was recovered from Ash Hollow in Case File 192. It is tied to Fisherman, 6:45, and marker 1706.",
@@ -227,9 +228,10 @@ window.SONG_DATA = {
     {
       "id": "192_location",
       "type": "Location",
-      "name": "Ashhollow",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-075-ash-hollow-location.jpg",
+      "name": "Ash Hollow",
       "symbol": "📍",
-      "description": "The active scene for Case File 192. Recovered field notes place the primary event at Ashhollow.",
+      "description": "The active scene for Case File 192. Recovered field notes place the primary event at Ash Hollow.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

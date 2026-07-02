@@ -230,7 +230,8 @@ window.SONG_DATA = {
     {
       "id": "344_ledgerpage",
       "type": "Object",
-      "name": "Ledgerpage",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/049 - ledger page.jpg",
+      "name": "Ledger Page",
       "symbol": "🔍",
       "description": "Ledger Page was recovered from Sheep Fold in Case File 344. It is tied to Judge, 11:51, and marker 2970.",
       "unknownInfo": "West and Wheel on Gravel suggest this object matters beyond the first reading."
@@ -238,9 +239,10 @@ window.SONG_DATA = {
     {
       "id": "344_location",
       "type": "Location",
-      "name": "Sheepfold",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-086-sheep-fold-location.jpg",
+      "name": "Sheep Fold",
       "symbol": "📍",
-      "description": "The active scene for Case File 344. Recovered field notes place the primary event at Sheepfold.",
+      "description": "The active scene for Case File 344. Recovered field notes place the primary event at Sheep Fold.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

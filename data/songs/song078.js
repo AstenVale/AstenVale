@@ -221,28 +221,28 @@ window.SONG_DATA = {
     {
       "id": "078_emptytin",
       "type": "Object",
-      "name": "Emptytin",
+      "name": "Empty Tin",
       "symbol": "🔍",
       "description": "Empty Tin was recovered from Banker's House in Case File 078. It is tied to Land Agent, 3:58, and marker 752.",
       "unknownInfo": "Further In and Nail Pulled from Wood suggest this object matters beyond the first reading.",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/078 - ribbon.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/035 - empty tin.jpg"
     },
     {
       "id": "078_location",
       "type": "Location",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-078-barn-location.jpg",
-      "name": "Banker'Shouse",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-040-bankers-house-location.jpg",
+      "name": "Banker's House",
       "symbol": "📍",
-      "description": "The active scene for Case File 078. Recovered field notes place the primary event at Banker'Shouse.",
+      "description": "The active scene for Case File 078. Recovered field notes place the primary event at Banker's House.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {
       "id": "078_witness",
       "type": "Witness",
-      "name": "Landagent",
+      "name": "Land Agent",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/land-agent.jpg",
       "symbol": "👤",
-      "description": "Landagent, identified in the case notes for Case File 078. Has not given a formal statement.",
+      "description": "Land Agent, identified in the case notes for Case File 078. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

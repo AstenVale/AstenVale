@@ -230,6 +230,7 @@ window.SONG_DATA = {
     {
       "id": "331_charcoalsketch",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/023 - charcoal sketch.jpg",
       "name": "Charcoal Sketch",
       "symbol": "🔍",
       "description": "Charcoal Sketch was recovered from Doctor's Office in Case File 331. It is tied to Peddler, 5:09, and marker 2861.",
@@ -238,9 +239,10 @@ window.SONG_DATA = {
     {
       "id": "331_location",
       "type": "Location",
-      "name": "Doctor'Soffice",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-066-doctors-office-location.jpg",
+      "name": "Doctor's Office",
       "symbol": "📍",
-      "description": "The active scene for Case File 331. Recovered field notes place the primary event at Doctor'Soffice.",
+      "description": "The active scene for Case File 331. Recovered field notes place the primary event at Doctor's Office.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

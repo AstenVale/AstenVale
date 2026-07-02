@@ -230,7 +230,8 @@ window.SONG_DATA = {
     {
       "id": "528_bentnail",
       "type": "Object",
-      "name": "Bentnail",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/080 - bent nail.jpg",
+      "name": "Bent Nail",
       "symbol": "🔍",
       "description": "Bent Nail was recovered from The Widow's Porch in Case File 528. It is tied to Typesetter, 5:13, and marker 4506.",
       "unknownInfo": "Nowhere and Horse Hooves suggest this object matters beyond the first reading."
@@ -238,6 +239,7 @@ window.SONG_DATA = {
     {
       "id": "528_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-094-the-widows-porch-location.jpg",
       "name": "Widow'S Porch",
       "symbol": "📍",
       "description": "The active scene for Case File 528. Recovered field notes place the primary event at Widow'S Porch.",

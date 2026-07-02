@@ -231,6 +231,7 @@ window.SONG_DATA = {
     {
       "id": "170_foldedcloth",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/084 - folded cloth.jpg",
       "name": "Folded Cloth",
       "symbol": "🔍",
       "description": "Folded Cloth was recovered from Jail in Case File 170. It is tied to Quarry Foreman, 4:03, and marker 1516.",
@@ -239,6 +240,7 @@ window.SONG_DATA = {
     {
       "id": "170_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-084-jail-location.jpg",
       "name": "Jail",
       "symbol": "📍",
       "description": "The active scene for Case File 170. Recovered field notes place the primary event at Jail.",

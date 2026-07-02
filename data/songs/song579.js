@@ -220,6 +220,7 @@ window.SONG_DATA = {
     {
       "id": "579_stamp",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/085 - stamp.jpg",
       "name": "Stamp",
       "symbol": "🔍",
       "description": "Stamp was recovered from The Weir in Case File 579. It is tied to Surveyor, 8:06, and marker 4925.",
@@ -228,6 +229,7 @@ window.SONG_DATA = {
     {
       "id": "579_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-033-the-weir-location.jpg",
       "name": "Weir",
       "symbol": "📍",
       "description": "The active scene for Case File 579. Recovered field notes place the primary event at Weir.",

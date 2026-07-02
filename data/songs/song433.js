@@ -230,6 +230,7 @@ window.SONG_DATA = {
     {
       "id": "433_badge",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/067 - badge.jpg",
       "name": "Badge",
       "symbol": "🔍",
       "description": "Badge was recovered from Potter's Field in Case File 433. It is tied to Librarian, 11:03, and marker 3707.",
@@ -238,9 +239,10 @@ window.SONG_DATA = {
     {
       "id": "433_location",
       "type": "Location",
-      "name": "Potter'Sfield",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-026-potters-field-location.jpg",
+      "name": "Potter's Field",
       "symbol": "📍",
-      "description": "The active scene for Case File 433. Recovered field notes place the primary event at Potter'Sfield.",
+      "description": "The active scene for Case File 433. Recovered field notes place the primary event at Potter's Field.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

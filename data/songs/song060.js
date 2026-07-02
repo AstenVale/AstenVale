@@ -220,16 +220,16 @@ window.SONG_DATA = {
     {
       "id": "060_ledgerpage",
       "type": "Object",
-      "name": "Ledgerpage",
+      "name": "Ledger Page",
       "symbol": "🔍",
       "description": "Ledger Page was recovered from Fulling Mill in Case File 060. It is tied to Lock Keeper, 7:14, and marker 606.",
       "unknownInfo": "Back and Lantern Flicker suggest this object matters beyond the first reading.",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/060 - receipt.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/049 - ledger page.jpg"
     },
     {
       "id": "060_location",
       "type": "Location",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-060-stone-step-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-035-fulling-mill-location.jpg",
       "name": "Fulling Mill",
       "symbol": "📍",
       "description": "The active scene for Case File 060. Recovered field notes place the primary event at Fulling Mill.",
@@ -238,9 +238,9 @@ window.SONG_DATA = {
     {
       "id": "060_witness",
       "type": "Witness",
-      "name": "Lockkeeper",
+      "name": "Lock Keeper",
       "symbol": "👤",
-      "description": "Lockkeeper, identified in the case notes for Case File 060. Has not given a formal statement.",
+      "description": "Lock Keeper, identified in the case notes for Case File 060. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/lock-keeper.jpg"
     },

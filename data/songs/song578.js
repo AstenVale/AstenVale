@@ -217,6 +217,7 @@ window.SONG_DATA = {
     {
       "id": "578_coin",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/044 - coin.jpg",
       "name": "Coin",
       "symbol": "🔍",
       "description": "Coin was recovered from Saloon in Case File 578. It is tied to Driver, 9:55, and marker 4916.",
@@ -225,6 +226,7 @@ window.SONG_DATA = {
     {
       "id": "578_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-064-saloon-location.jpg",
       "name": "Saloon",
       "symbol": "📍",
       "description": "The active scene for Case File 578. Recovered field notes place the primary event at Saloon.",

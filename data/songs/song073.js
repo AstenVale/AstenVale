@@ -222,15 +222,15 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Inkwell was recovered from Undertaker's Hall in Case File 073. It is tied to Driver, 6:53, and marker 707.",
       "unknownInfo": "West and Rope Strain suggest this object matters beyond the first reading.",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/073 - notebook.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/058 - inkwell.jpg"
     },
     {
       "id": "073_location",
       "type": "Location",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-073-crossroads-location.jpg",
-      "name": "Undertaker'Shall",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-053-undertakers-hall-location.jpg",
+      "name": "Undertaker's Hall",
       "symbol": "📍",
-      "description": "The active scene for Case File 073. Recovered field notes place the primary event at Undertaker'Shall.",
+      "description": "The active scene for Case File 073. Recovered field notes place the primary event at Undertaker's Hall.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

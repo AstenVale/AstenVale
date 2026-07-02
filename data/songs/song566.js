@@ -230,6 +230,7 @@ window.SONG_DATA = {
     {
       "id": "566_canteen",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/053 - canteen.jpg",
       "name": "Canteen",
       "symbol": "🔍",
       "description": "Canteen was recovered from The Bluff in Case File 566. It is tied to Census Taker, 6:32, and marker 4816.",
@@ -238,6 +239,7 @@ window.SONG_DATA = {
     {
       "id": "566_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-077-the-bluff-location.jpg",
       "name": "Bluff",
       "symbol": "📍",
       "description": "The active scene for Case File 566. Recovered field notes place the primary event at Bluff.",

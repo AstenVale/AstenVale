@@ -219,7 +219,8 @@ window.SONG_DATA = {
     {
       "id": "249_tornmap",
       "type": "Object",
-      "name": "Tornmap",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/088 - torn map.jpg",
+      "name": "Torn Map",
       "symbol": "🔍",
       "description": "Torn Map was recovered from Candlemaker's Alley in Case File 249. It is tied to Doctor, 12:44, and marker 2179.",
       "unknownInfo": "Around and Wind in Pines suggest this object matters beyond the first reading."
@@ -227,9 +228,10 @@ window.SONG_DATA = {
     {
       "id": "249_location",
       "type": "Location",
-      "name": "Candlemaker'Salley",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-079-candlemakers-alley-location.jpg",
+      "name": "Candlemaker's Alley",
       "symbol": "📍",
-      "description": "The active scene for Case File 249. Recovered field notes place the primary event at Candlemaker'Salley.",
+      "description": "The active scene for Case File 249. Recovered field notes place the primary event at Candlemaker's Alley.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

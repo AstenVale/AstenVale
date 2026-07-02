@@ -229,6 +229,7 @@ window.SONG_DATA = {
     {
       "id": "462_key",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/021 - key.jpg",
       "name": "Key",
       "symbol": "🔍",
       "description": "Key was recovered from Water Tower in Case File 462. It is tied to Auctioneer, 11:51, and marker 3952.",
@@ -237,9 +238,10 @@ window.SONG_DATA = {
     {
       "id": "462_location",
       "type": "Location",
-      "name": "Watertower",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-028-water-tower-location.jpg",
+      "name": "Water Tower",
       "symbol": "📍",
-      "description": "The active scene for Case File 462. Recovered field notes place the primary event at Watertower.",
+      "description": "The active scene for Case File 462. Recovered field notes place the primary event at Water Tower.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

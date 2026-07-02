@@ -222,12 +222,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Coin was recovered from Smithy in Case File 053. It is tied to Banker, 9:44, and marker 543.",
       "unknownInfo": "Away from Town and Nail Pulled from Wood suggest this object matters beyond the first reading.",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/053 - canteen.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/044 - coin.jpg"
     },
     {
       "id": "053_location",
       "type": "Location",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-053-undertakers-hall-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-043-smithy-location.jpg",
       "name": "Smithy",
       "symbol": "📍",
       "description": "The active scene for Case File 053. Recovered field notes place the primary event at Smithy.",

@@ -232,15 +232,15 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Glove was recovered from Stone Step in Case File 090. It is tied to Gravedigger, 5:13, and marker 852.",
       "unknownInfo": "Toward and Lantern Glass suggest this object matters beyond the first reading.",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/090 - scratched initials in wood.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/062 - glove.jpg"
     },
     {
       "id": "090_location",
       "type": "Location",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-090-the-cistern-location.jpg",
-      "name": "Stonestep",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-060-stone-step-location.jpg",
+      "name": "Stone Step",
       "symbol": "📍",
-      "description": "The active scene for Case File 090. Recovered field notes place the primary event at Stonestep.",
+      "description": "The active scene for Case File 090. Recovered field notes place the primary event at Stone Step.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

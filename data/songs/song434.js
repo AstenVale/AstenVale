@@ -229,6 +229,7 @@ window.SONG_DATA = {
     {
       "id": "434_boot",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/083 - boot.jpg",
       "name": "Boot",
       "symbol": "🔍",
       "description": "Boot was recovered from Forge in Case File 434. It is tied to Rag Picker, 6:06, and marker 3716.",
@@ -237,6 +238,7 @@ window.SONG_DATA = {
     {
       "id": "434_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-042-forge-location.jpg",
       "name": "Forge",
       "symbol": "📍",
       "description": "The active scene for Case File 434. Recovered field notes place the primary event at Forge.",
@@ -245,10 +247,10 @@ window.SONG_DATA = {
     {
       "id": "434_witness",
       "type": "Witness",
-      "name": "Ragpicker",
+      "name": "Rag Picker",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/rag-picker.jpg",
       "symbol": "👤",
-      "description": "Ragpicker, identified in the case notes for Case File 434. Has not given a formal statement.",
+      "description": "Rag Picker, identified in the case notes for Case File 434. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

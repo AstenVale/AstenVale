@@ -221,15 +221,15 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Flask was recovered from Feed Store in Case File 054. It is tied to Conductor, 3:03, and marker 552.",
       "unknownInfo": "Over and Floorboard suggest this object matters beyond the first reading.",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/054 - thimble.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/045 - flask.jpg"
     },
     {
       "id": "054_location",
       "type": "Location",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-054-old-wharf-location.jpg",
-      "name": "Feedstore",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-044-feed-store-location.jpg",
+      "name": "Feed Store",
       "symbol": "📍",
-      "description": "The active scene for Case File 054. Recovered field notes place the primary event at Feedstore.",
+      "description": "The active scene for Case File 054. Recovered field notes place the primary event at Feed Store.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

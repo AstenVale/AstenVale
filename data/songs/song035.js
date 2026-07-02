@@ -224,23 +224,23 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Shard of Mirror was recovered from South Fork in Case File 035. It is tied to Lime Burner, 9:55, and marker 397.",
       "unknownInfo": "North and Lid of a Tin suggest this object matters beyond the first reading.",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/035 - empty tin.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/031 - shard of mirror.jpg"
     },
     {
       "id": "035_location",
       "type": "Location",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-035-fulling-mill-location.jpg",
-      "name": "Southfork",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-030-south-fork-location.jpg",
+      "name": "South Fork",
       "symbol": "📍",
-      "description": "The active scene for Case File 035. Recovered field notes place the primary event at Southfork.",
+      "description": "The active scene for Case File 035. Recovered field notes place the primary event at South Fork.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {
       "id": "035_witness",
       "type": "Witness",
-      "name": "Limeburner",
+      "name": "Lime Burner",
       "symbol": "👤",
-      "description": "Limeburner, identified in the case notes for Case File 035. Has not given a formal statement.",
+      "description": "Lime Burner, identified in the case notes for Case File 035. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/lime-burner.jpg"
     },

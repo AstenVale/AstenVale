@@ -228,6 +228,7 @@ window.SONG_DATA = {
     {
       "id": "255_copperfitting",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/079 - copper fitting.jpg",
       "name": "Copper Fitting",
       "symbol": "🔍",
       "description": "Copper Fitting was recovered from Barn in Case File 255. It is tied to Glazier, 4:47, and marker 2225.",
@@ -236,6 +237,7 @@ window.SONG_DATA = {
     {
       "id": "255_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-078-barn-location.jpg",
       "name": "Barn",
       "symbol": "📍",
       "description": "The active scene for Case File 255. Recovered field notes place the primary event at Barn.",

@@ -231,15 +231,15 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Seal was recovered from Grain Mill in Case File 047. It is tied to Blacksmith, 8:00, and marker 497.",
       "unknownInfo": "Down and Millstone suggest this object matters beyond the first reading.",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/047 - locket.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/041 - seal.jpg"
     },
     {
       "id": "047_location",
       "type": "Location",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-047-lumber-camp-location.jpg",
-      "name": "Grainmill",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-038-grain-mill-location.jpg",
+      "name": "Grain Mill",
       "symbol": "📍",
-      "description": "The active scene for Case File 047. Recovered field notes place the primary event at Grainmill.",
+      "description": "The active scene for Case File 047. Recovered field notes place the primary event at Grain Mill.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

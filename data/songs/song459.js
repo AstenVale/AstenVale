@@ -230,6 +230,7 @@ window.SONG_DATA = {
     {
       "id": "459_shipmanifest",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/070 - ship manifest.jpg",
       "name": "Ship Manifest",
       "symbol": "🔍",
       "description": "Ship Manifest was recovered from Brick Kiln in Case File 459. It is tied to Station Master, 4:47, and marker 3925.",
@@ -238,9 +239,10 @@ window.SONG_DATA = {
     {
       "id": "459_location",
       "type": "Location",
-      "name": "Brickkiln",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-065-brick-kiln-location.jpg",
+      "name": "Brick Kiln",
       "symbol": "📍",
-      "description": "The active scene for Case File 459. Recovered field notes place the primary event at Brickkiln.",
+      "description": "The active scene for Case File 459. Recovered field notes place the primary event at Brick Kiln.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

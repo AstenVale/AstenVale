@@ -230,6 +230,7 @@ window.SONG_DATA = {
     {
       "id": "461_driedflower",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/043 - dried flower.jpg",
       "name": "Dried Flower",
       "symbol": "🔍",
       "description": "Dried Flower was recovered from Pine Hollow in Case File 461. It is tied to Quarry Foreman, 11:29, and marker 3943.",
@@ -238,9 +239,10 @@ window.SONG_DATA = {
     {
       "id": "461_location",
       "type": "Location",
-      "name": "Pinehollow",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-080-pine-hollow-location.jpg",
+      "name": "Pine Hollow",
       "symbol": "📍",
-      "description": "The active scene for Case File 461. Recovered field notes place the primary event at Pinehollow.",
+      "description": "The active scene for Case File 461. Recovered field notes place the primary event at Pine Hollow.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

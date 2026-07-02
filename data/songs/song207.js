@@ -218,6 +218,7 @@ window.SONG_DATA = {
     {
       "id": "207_bottle",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/052 - bottle.jpg",
       "name": "Bottle",
       "symbol": "🔍",
       "description": "Bottle was recovered from Sawmill in Case File 207. It is tied to Census Taker, 1:58, and marker 1825.",
@@ -226,6 +227,7 @@ window.SONG_DATA = {
     {
       "id": "207_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-063-sawmill-location.jpg",
       "name": "Sawmill",
       "symbol": "📍",
       "description": "The active scene for Case File 207. Recovered field notes place the primary event at Sawmill.",

@@ -229,6 +229,7 @@ window.SONG_DATA = {
     {
       "id": "201_shipmanifest",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/070 - ship manifest.jpg",
       "name": "Ship Manifest",
       "symbol": "🔍",
       "description": "Ship Manifest was recovered from East Field in Case File 201. It is tied to Stranger, 6:17, and marker 1779.",
@@ -237,9 +238,10 @@ window.SONG_DATA = {
     {
       "id": "201_location",
       "type": "Location",
-      "name": "Eastfield",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-058-east-field-location.jpg",
+      "name": "East Field",
       "symbol": "📍",
-      "description": "The active scene for Case File 201. Recovered field notes place the primary event at Eastfield.",
+      "description": "The active scene for Case File 201. Recovered field notes place the primary event at East Field.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

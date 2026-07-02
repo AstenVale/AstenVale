@@ -231,6 +231,7 @@ window.SONG_DATA = {
     {
       "id": "365_driedflower",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/043 - dried flower.jpg",
       "name": "Dried Flower",
       "symbol": "🔍",
       "description": "Dried Flower was recovered from The Widow's Porch in Case File 365. It is tied to Caretaker, 11:44, and marker 3143.",
@@ -239,6 +240,7 @@ window.SONG_DATA = {
     {
       "id": "365_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-094-the-widows-porch-location.jpg",
       "name": "Widow'S Porch",
       "symbol": "📍",
       "description": "The active scene for Case File 365. Recovered field notes place the primary event at Widow'S Porch.",

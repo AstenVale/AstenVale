@@ -228,7 +228,8 @@ window.SONG_DATA = {
     {
       "id": "370_flintstone",
       "type": "Object",
-      "name": "Flintstone",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/071 - flint stone.jpg",
+      "name": "Flint Stone",
       "symbol": "🔍",
       "description": "Flint Stone was recovered from Print Shop in Case File 370. It is tied to Barber, 2:55, and marker 3188.",
       "unknownInfo": "Away and Thunder suggest this object matters beyond the first reading."
@@ -236,9 +237,10 @@ window.SONG_DATA = {
     {
       "id": "370_location",
       "type": "Location",
-      "name": "Printshop",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-096-print-shop-location.jpg",
+      "name": "Print Shop",
       "symbol": "📍",
-      "description": "The active scene for Case File 370. Recovered field notes place the primary event at Printshop.",
+      "description": "The active scene for Case File 370. Recovered field notes place the primary event at Print Shop.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

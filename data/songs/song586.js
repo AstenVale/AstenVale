@@ -231,7 +231,8 @@ window.SONG_DATA = {
     {
       "id": "586_oilrag",
       "type": "Object",
-      "name": "Oilrag",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/086 - oil rag.jpg",
+      "name": "Oil Rag",
       "symbol": "🔍",
       "description": "Oil Rag was recovered from The Weir in Case File 586. It is tied to Salt Seller, 1:11, and marker 4988.",
       "unknownInfo": "Beyond and Bone on Stone suggest this object matters beyond the first reading."
@@ -239,6 +240,7 @@ window.SONG_DATA = {
     {
       "id": "586_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-033-the-weir-location.jpg",
       "name": "Weir",
       "symbol": "📍",
       "description": "The active scene for Case File 586. Recovered field notes place the primary event at Weir.",
@@ -247,10 +249,10 @@ window.SONG_DATA = {
     {
       "id": "586_witness",
       "type": "Witness",
-      "name": "Saltseller",
+      "name": "Salt Seller",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/salt-seller.jpg",
       "symbol": "👤",
-      "description": "Saltseller, identified in the case notes for Case File 586. Has not given a formal statement.",
+      "description": "Salt Seller, identified in the case notes for Case File 586. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

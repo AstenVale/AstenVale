@@ -234,23 +234,23 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Key was recovered from Old House in Case File 022. It is tied to Ghost Child, 3:13, and marker 209.",
       "unknownInfo": "Home and Door Creak suggest this object matters beyond the first reading.",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/022 - suitcase latch.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/021 - key.jpg"
     },
     {
       "id": "022_location",
       "type": "Location",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-022-quarry-edge-location.jpg",
-      "name": "Oldhouse",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-019-old-house-location.jpg",
+      "name": "Old House",
       "symbol": "📍",
-      "description": "The active scene for Case File 022. Recovered field notes place the primary event at Oldhouse.",
+      "description": "The active scene for Case File 022. Recovered field notes place the primary event at Old House.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {
       "id": "022_witness",
       "type": "Witness",
-      "name": "Ghostchild",
+      "name": "Ghost Child",
       "symbol": "👤",
-      "description": "Ghostchild, identified in the case notes for Case File 022. Has not given a formal statement.",
+      "description": "Ghost Child, identified in the case notes for Case File 022. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/ghost-child.jpg"
     },

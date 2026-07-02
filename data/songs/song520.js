@@ -229,6 +229,7 @@ window.SONG_DATA = {
     {
       "id": "520_ticket",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/055 - ticket.jpg",
       "name": "Ticket",
       "symbol": "🔍",
       "description": "Ticket was recovered from The Quarry Pool in Case File 520. It is tied to Child, 10:05, and marker 4434.",
@@ -237,6 +238,7 @@ window.SONG_DATA = {
     {
       "id": "520_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-034-the-quarry-pool-location.jpg",
       "name": "Quarry Pool",
       "symbol": "📍",
       "description": "The active scene for Case File 520. Recovered field notes place the primary event at Quarry Pool.",

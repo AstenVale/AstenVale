@@ -222,12 +222,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Comb was recovered from Church in Case File 079. It is tied to Gravedigger, 2:22, and marker 761.",
       "unknownInfo": "Into the Pines and Nail Pulled from Wood suggest this object matters beyond the first reading.",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/079 - copper fitting.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/027 - comb.jpg"
     },
     {
       "id": "079_location",
       "type": "Location",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-079-candlemakers-alley-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-004-church-location.jpg",
       "name": "Church",
       "symbol": "📍",
       "description": "The active scene for Case File 079. Recovered field notes place the primary event at Church.",

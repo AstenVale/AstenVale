@@ -231,7 +231,8 @@ window.SONG_DATA = {
     {
       "id": "393_surveyorspin",
       "type": "Object",
-      "name": "Surveyor'Spin",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/069 - surveyor's pin.jpg",
+      "name": "Surveyor's Pin",
       "symbol": "🔍",
       "description": "Surveyor's Pin was recovered from Feed Store in Case File 393. It is tied to Wool Sorter, 2:55, and marker 3379.",
       "unknownInfo": "Across and Fire Crackling suggest this object matters beyond the first reading."
@@ -239,18 +240,19 @@ window.SONG_DATA = {
     {
       "id": "393_location",
       "type": "Location",
-      "name": "Feedstore",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-044-feed-store-location.jpg",
+      "name": "Feed Store",
       "symbol": "📍",
-      "description": "The active scene for Case File 393. Recovered field notes place the primary event at Feedstore.",
+      "description": "The active scene for Case File 393. Recovered field notes place the primary event at Feed Store.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {
       "id": "393_witness",
       "type": "Witness",
-      "name": "Woolsorter",
+      "name": "Wool Sorter",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/wool-sorter.jpg",
       "symbol": "👤",
-      "description": "Woolsorter, identified in the case notes for Case File 393. Has not given a formal statement.",
+      "description": "Wool Sorter, identified in the case notes for Case File 393. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

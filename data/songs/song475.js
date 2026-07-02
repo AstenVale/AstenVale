@@ -230,6 +230,7 @@ window.SONG_DATA = {
     {
       "id": "475_telegram",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/050 - telegram.jpg",
       "name": "Telegram",
       "symbol": "🔍",
       "description": "Telegram was recovered from The Bluff in Case File 475. It is tied to Driver, 1:33, and marker 4061.",
@@ -238,6 +239,7 @@ window.SONG_DATA = {
     {
       "id": "475_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-077-the-bluff-location.jpg",
       "name": "Bluff",
       "symbol": "📍",
       "description": "The active scene for Case File 475. Recovered field notes place the primary event at Bluff.",

@@ -222,6 +222,7 @@ window.SONG_DATA = {
     {
       "id": "487_ring",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/064 - ring.jpg",
       "name": "Ring",
       "symbol": "🔍",
       "description": "Ring was recovered from The Hollow Road in Case File 487. It is tied to The Mute, 12:44, and marker 4161.",
@@ -230,6 +231,7 @@ window.SONG_DATA = {
     {
       "id": "487_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-049-the-hollow-road-location.jpg",
       "name": "Hollow Road",
       "symbol": "📍",
       "description": "The active scene for Case File 487. Recovered field notes place the primary event at Hollow Road.",

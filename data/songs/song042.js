@@ -230,16 +230,16 @@ window.SONG_DATA = {
     {
       "id": "042_earofcorn",
       "type": "Object",
-      "name": "Earofcorn",
+      "name": "Ear of Corn",
       "symbol": "🔍",
       "description": "Ear of Corn was recovered from The Root Cellar in Case File 042. It is tied to Lamplighter, 10:19, and marker 452.",
       "unknownInfo": "Up and Lantern Glass suggest this object matters beyond the first reading.",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/042 - axle pin.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/038 - ear of corn.jpg"
     },
     {
       "id": "042_location",
       "type": "Location",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-042-forge-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-037-the-root-cellar-location.jpg",
       "name": "Root Cellar",
       "symbol": "📍",
       "description": "The active scene for Case File 042. Recovered field notes place the primary event at Root Cellar.",

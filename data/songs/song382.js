@@ -220,6 +220,7 @@ window.SONG_DATA = {
     {
       "id": "382_shardofmirror",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/031 - shard of mirror.jpg",
       "name": "Shard of Mirror",
       "symbol": "🔍",
       "description": "Shard of Mirror was recovered from Black Pine in Case File 382. It is tied to Mechanic, 2:22, and marker 3288.",
@@ -228,9 +229,10 @@ window.SONG_DATA = {
     {
       "id": "382_location",
       "type": "Location",
-      "name": "Blackpine",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-001-black-pine-location.jpg",
+      "name": "Black Pine",
       "symbol": "📍",
-      "description": "The active scene for Case File 382. Recovered field notes place the primary event at Blackpine.",
+      "description": "The active scene for Case File 382. Recovered field notes place the primary event at Black Pine.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

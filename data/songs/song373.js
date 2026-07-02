@@ -220,6 +220,7 @@ window.SONG_DATA = {
     {
       "id": "373_scratchedinitialsinwood",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/090 - scratched initials in wood.jpg",
       "name": "Scratched Initials in Wood",
       "symbol": "🔍",
       "description": "Scratched Initials in Wood was recovered from Grain Mill in Case File 373. It is tied to Judge, 9:27, and marker 3207.",
@@ -228,9 +229,10 @@ window.SONG_DATA = {
     {
       "id": "373_location",
       "type": "Location",
-      "name": "Grainmill",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-038-grain-mill-location.jpg",
+      "name": "Grain Mill",
       "symbol": "📍",
-      "description": "The active scene for Case File 373. Recovered field notes place the primary event at Grainmill.",
+      "description": "The active scene for Case File 373. Recovered field notes place the primary event at Grain Mill.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

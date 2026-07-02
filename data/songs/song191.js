@@ -220,6 +220,7 @@ window.SONG_DATA = {
     {
       "id": "191_handkerchief",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/017 - handkerchief.jpg",
       "name": "Handkerchief",
       "symbol": "🔍",
       "description": "Handkerchief was recovered from The Narrow Road in Case File 191. It is tied to Salt Seller, 2:38, and marker 1697.",
@@ -228,6 +229,7 @@ window.SONG_DATA = {
     {
       "id": "191_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-091-the-narrow-road-location.jpg",
       "name": "Narrow Road",
       "symbol": "📍",
       "description": "The active scene for Case File 191. Recovered field notes place the primary event at Narrow Road.",
@@ -236,10 +238,10 @@ window.SONG_DATA = {
     {
       "id": "191_witness",
       "type": "Witness",
-      "name": "Saltseller",
+      "name": "Salt Seller",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/salt-seller.jpg",
       "symbol": "👤",
-      "description": "Saltseller, identified in the case notes for Case File 191. Has not given a formal statement.",
+      "description": "Salt Seller, identified in the case notes for Case File 191. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

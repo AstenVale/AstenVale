@@ -220,6 +220,7 @@ window.SONG_DATA = {
     {
       "id": "446_spectacles",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/092 - spectacles.jpg",
       "name": "Spectacles",
       "symbol": "🔍",
       "description": "Spectacles was recovered from The Quarry Pool in Case File 446. It is tied to Fence Mender, 12:00, and marker 3816.",
@@ -228,6 +229,7 @@ window.SONG_DATA = {
     {
       "id": "446_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-034-the-quarry-pool-location.jpg",
       "name": "Quarry Pool",
       "symbol": "📍",
       "description": "The active scene for Case File 446. Recovered field notes place the primary event at Quarry Pool.",

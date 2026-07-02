@@ -220,7 +220,8 @@ window.SONG_DATA = {
     {
       "id": "530_woolscarf",
       "type": "Object",
-      "name": "Woolscarf",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/029 - wool scarf.jpg",
+      "name": "Wool Scarf",
       "symbol": "🔍",
       "description": "Wool Scarf was recovered from North Pasture in Case File 530. It is tied to Cattle Driver, 8:42, and marker 4516.",
       "unknownInfo": "Up and Nail Pulled from Wood suggest this object matters beyond the first reading."
@@ -228,6 +229,7 @@ window.SONG_DATA = {
     {
       "id": "530_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-041-north-pasture-location.jpg",
       "name": "North Pasture",
       "symbol": "📍",
       "description": "The active scene for Case File 530. Recovered field notes place the primary event at North Pasture.",

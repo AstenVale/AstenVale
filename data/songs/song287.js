@@ -231,7 +231,8 @@ window.SONG_DATA = {
     {
       "id": "287_waxtablet",
       "type": "Object",
-      "name": "Waxtablet",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/077 - wax tablet.jpg",
+      "name": "Wax Tablet",
       "symbol": "🔍",
       "description": "Wax Tablet was recovered from Water Tower in Case File 287. It is tied to Rag Picker, 5:55, and marker 2497.",
       "unknownInfo": "Back and River Ice suggest this object matters beyond the first reading."
@@ -239,18 +240,19 @@ window.SONG_DATA = {
     {
       "id": "287_location",
       "type": "Location",
-      "name": "Watertower",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-028-water-tower-location.jpg",
+      "name": "Water Tower",
       "symbol": "📍",
-      "description": "The active scene for Case File 287. Recovered field notes place the primary event at Watertower.",
+      "description": "The active scene for Case File 287. Recovered field notes place the primary event at Water Tower.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {
       "id": "287_witness",
       "type": "Witness",
-      "name": "Ragpicker",
+      "name": "Rag Picker",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/rag-picker.jpg",
       "symbol": "👤",
-      "description": "Ragpicker, identified in the case notes for Case File 287. Has not given a formal statement.",
+      "description": "Rag Picker, identified in the case notes for Case File 287. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

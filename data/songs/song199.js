@@ -229,6 +229,7 @@ window.SONG_DATA = {
     {
       "id": "199_pipe",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/082 - pipe.jpg",
       "name": "Pipe",
       "symbol": "🔍",
       "description": "Pipe was recovered from Candlemaker's Alley in Case File 199. It is tied to Librarian, 8:17, and marker 1761.",
@@ -237,9 +238,10 @@ window.SONG_DATA = {
     {
       "id": "199_location",
       "type": "Location",
-      "name": "Candlemaker'Salley",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-079-candlemakers-alley-location.jpg",
+      "name": "Candlemaker's Alley",
       "symbol": "📍",
-      "description": "The active scene for Case File 199. Recovered field notes place the primary event at Candlemaker'Salley.",
+      "description": "The active scene for Case File 199. Recovered field notes place the primary event at Candlemaker's Alley.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

@@ -219,6 +219,7 @@ window.SONG_DATA = {
     {
       "id": "142_watch",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/039 - watch.jpg",
       "name": "Watch",
       "symbol": "🔍",
       "description": "Watch was recovered from Potter's Field in Case File 142. It is tied to Lock Keeper, 9:08, and marker 1288.",
@@ -227,18 +228,19 @@ window.SONG_DATA = {
     {
       "id": "142_location",
       "type": "Location",
-      "name": "Potter'Sfield",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-026-potters-field-location.jpg",
+      "name": "Potter's Field",
       "symbol": "📍",
-      "description": "The active scene for Case File 142. Recovered field notes place the primary event at Potter'Sfield.",
+      "description": "The active scene for Case File 142. Recovered field notes place the primary event at Potter's Field.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {
       "id": "142_witness",
       "type": "Witness",
-      "name": "Lockkeeper",
+      "name": "Lock Keeper",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/lock-keeper.jpg",
       "symbol": "👤",
-      "description": "Lockkeeper, identified in the case notes for Case File 142. Has not given a formal statement.",
+      "description": "Lock Keeper, identified in the case notes for Case File 142. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

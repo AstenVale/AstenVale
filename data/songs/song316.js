@@ -218,6 +218,7 @@ window.SONG_DATA = {
     {
       "id": "316_lantern",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/001 - lantern.jpg",
       "name": "Lantern",
       "symbol": "🔍",
       "description": "Lantern was recovered from Millpond in Case File 316. It is tied to Schoolteacher, 4:03, and marker 2734.",
@@ -226,6 +227,7 @@ window.SONG_DATA = {
     {
       "id": "316_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-024-millpond-location.jpg",
       "name": "Millpond",
       "symbol": "📍",
       "description": "The active scene for Case File 316. Recovered field notes place the primary event at Millpond.",

@@ -229,6 +229,7 @@ window.SONG_DATA = {
     {
       "id": "196_shardofmirror",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/031 - shard of mirror.jpg",
       "name": "Shard of Mirror",
       "symbol": "🔍",
       "description": "Shard of Mirror was recovered from Stone Step in Case File 196. It is tied to Preacher, 3:58, and marker 1734.",
@@ -237,9 +238,10 @@ window.SONG_DATA = {
     {
       "id": "196_location",
       "type": "Location",
-      "name": "Stonestep",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-060-stone-step-location.jpg",
+      "name": "Stone Step",
       "symbol": "📍",
-      "description": "The active scene for Case File 196. Recovered field notes place the primary event at Stonestep.",
+      "description": "The active scene for Case File 196. Recovered field notes place the primary event at Stone Step.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

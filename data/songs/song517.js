@@ -227,6 +227,7 @@ window.SONG_DATA = {
     {
       "id": "517_letter",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/091 - letter.jpg",
       "name": "Letter",
       "symbol": "🔍",
       "description": "Letter was recovered from Saloon in Case File 517. It is tied to Peddler, 7:00, and marker 4407.",
@@ -235,6 +236,7 @@ window.SONG_DATA = {
     {
       "id": "517_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-064-saloon-location.jpg",
       "name": "Saloon",
       "symbol": "📍",
       "description": "The active scene for Case File 517. Recovered field notes place the primary event at Saloon.",

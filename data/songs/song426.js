@@ -219,6 +219,7 @@ window.SONG_DATA = {
     {
       "id": "426_flask",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/045 - flask.jpg",
       "name": "Flask",
       "symbol": "🔍",
       "description": "Flask was recovered from The Ravine in Case File 426. It is tied to Ferryman, 4:12, and marker 3652.",
@@ -227,6 +228,7 @@ window.SONG_DATA = {
     {
       "id": "426_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-081-the-ravine-location.jpg",
       "name": "Ravine",
       "symbol": "📍",
       "description": "The active scene for Case File 426. Recovered field notes place the primary event at Ravine.",

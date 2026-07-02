@@ -219,6 +219,7 @@ window.SONG_DATA = {
     {
       "id": "470_driedinkblot",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/068 - dried ink blot.jpg",
       "name": "Dried Ink Blot",
       "symbol": "🔍",
       "description": "Dried Ink Blot was recovered from Library in Case File 470. It is tied to Cartographer, 12:44, and marker 4016.",
@@ -227,6 +228,7 @@ window.SONG_DATA = {
     {
       "id": "470_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-036-library-location.jpg",
       "name": "Library",
       "symbol": "📍",
       "description": "The active scene for Case File 470. Recovered field notes place the primary event at Library.",

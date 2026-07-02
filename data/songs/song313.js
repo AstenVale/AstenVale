@@ -218,6 +218,7 @@ window.SONG_DATA = {
     {
       "id": "313_boot",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/083 - boot.jpg",
       "name": "Boot",
       "symbol": "🔍",
       "description": "Boot was recovered from Collapsed Mine in Case File 313. It is tied to Census Taker, 12:33, and marker 2707.",
@@ -226,6 +227,7 @@ window.SONG_DATA = {
     {
       "id": "313_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-083-collapsed-mine-location.jpg",
       "name": "Collapsed Mine",
       "symbol": "📍",
       "description": "The active scene for Case File 313. Recovered field notes place the primary event at Collapsed Mine.",

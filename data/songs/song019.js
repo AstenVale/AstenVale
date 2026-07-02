@@ -232,12 +232,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Unopened Mail was recovered from Mailbox in Case File 019. It is tied to Postman, 2:34, and marker 176.",
       "unknownInfo": "Out and Footsteps suggest this object matters beyond the first reading.",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/019 - headstone.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/018 - unopened mail.jpg"
     },
     {
       "id": "019_location",
       "type": "Location",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-019-old-house-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-017-mailbox-location.jpg",
       "name": "Mailbox",
       "symbol": "📍",
       "description": "The active scene for Case File 019. Recovered field notes place the primary event at Mailbox.",

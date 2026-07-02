@@ -228,6 +228,7 @@ window.SONG_DATA = {
     {
       "id": "172_ribbon",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/078 - ribbon.jpg",
       "name": "Ribbon",
       "symbol": "🔍",
       "description": "Ribbon was recovered from Saloon in Case File 172. It is tied to Groundskeeper, 3:49, and marker 1534.",
@@ -236,6 +237,7 @@ window.SONG_DATA = {
     {
       "id": "172_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-064-saloon-location.jpg",
       "name": "Saloon",
       "symbol": "📍",
       "description": "The active scene for Case File 172. Recovered field notes place the primary event at Saloon.",
