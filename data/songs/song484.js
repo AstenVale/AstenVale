@@ -220,7 +220,8 @@ window.SONG_DATA = {
     {
       "id": "484_ironnail",
       "type": "Object",
-      "name": "Ironnail",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/024 - iron nail.jpg",
+      "name": "Iron Nail",
       "symbol": "🔍",
       "description": "Iron Nail was recovered from Feed Store in Case File 484. It is tied to Schoolgirl, 6:53, and marker 4134.",
       "unknownInfo": "Further In and Water Drip suggest this object matters beyond the first reading."
@@ -228,9 +229,10 @@ window.SONG_DATA = {
     {
       "id": "484_location",
       "type": "Location",
-      "name": "Feedstore",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-044-feed-store-location.jpg",
+      "name": "Feed Store",
       "symbol": "📍",
-      "description": "The active scene for Case File 484. Recovered field notes place the primary event at Feedstore.",
+      "description": "The active scene for Case File 484. Recovered field notes place the primary event at Feed Store.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

@@ -219,7 +219,8 @@ window.SONG_DATA = {
     {
       "id": "226_woolscarf",
       "type": "Object",
-      "name": "Woolscarf",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/029 - wool scarf.jpg",
+      "name": "Wool Scarf",
       "symbol": "🔍",
       "description": "Wool Scarf was recovered from Cabin in Case File 226. It is tied to Lock Keeper, 1:11, and marker 1988.",
       "unknownInfo": "Sideways and Fence Wire Hum suggest this object matters beyond the first reading."
@@ -227,6 +228,7 @@ window.SONG_DATA = {
     {
       "id": "226_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-008-cabin-location.jpg",
       "name": "Cabin",
       "symbol": "📍",
       "description": "The active scene for Case File 226. Recovered field notes place the primary event at Cabin.",
@@ -235,10 +237,10 @@ window.SONG_DATA = {
     {
       "id": "226_witness",
       "type": "Witness",
-      "name": "Lockkeeper",
+      "name": "Lock Keeper",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/lock-keeper.jpg",
       "symbol": "👤",
-      "description": "Lockkeeper, identified in the case notes for Case File 226. Has not given a formal statement.",
+      "description": "Lock Keeper, identified in the case notes for Case File 226. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

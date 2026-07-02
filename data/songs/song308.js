@@ -229,7 +229,8 @@ window.SONG_DATA = {
     {
       "id": "308_tinstar",
       "type": "Object",
-      "name": "Tinstar",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/056 - tin star.jpg",
+      "name": "Tin Star",
       "symbol": "🔍",
       "description": "Tin Star was recovered from Millpond in Case File 308. It is tied to Furrier, 8:06, and marker 2670.",
       "unknownInfo": "Out of Sight and Night Insects suggest this object matters beyond the first reading."
@@ -237,6 +238,7 @@ window.SONG_DATA = {
     {
       "id": "308_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-024-millpond-location.jpg",
       "name": "Millpond",
       "symbol": "📍",
       "description": "The active scene for Case File 308. Recovered field notes place the primary event at Millpond.",

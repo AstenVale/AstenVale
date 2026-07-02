@@ -229,6 +229,7 @@ window.SONG_DATA = {
     {
       "id": "153_receipt",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/060 - receipt.jpg",
       "name": "Receipt",
       "symbol": "🔍",
       "description": "Receipt was recovered from Post Office in Case File 153. It is tied to Retired Soldier, 6:06, and marker 1379.",
@@ -237,9 +238,10 @@ window.SONG_DATA = {
     {
       "id": "153_location",
       "type": "Location",
-      "name": "Postoffice",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-059-post-office-location.jpg",
+      "name": "Post Office",
       "symbol": "📍",
-      "description": "The active scene for Case File 153. Recovered field notes place the primary event at Postoffice.",
+      "description": "The active scene for Case File 153. Recovered field notes place the primary event at Post Office.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

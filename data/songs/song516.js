@@ -217,6 +217,7 @@ window.SONG_DATA = {
     {
       "id": "516_rope",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/063 - rope.jpg",
       "name": "Rope",
       "symbol": "🔍",
       "description": "Rope was recovered from Library in Case File 516. It is tied to Blacksmith, 8:33, and marker 4406.",
@@ -225,6 +226,7 @@ window.SONG_DATA = {
     {
       "id": "516_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-036-library-location.jpg",
       "name": "Library",
       "symbol": "📍",
       "description": "The active scene for Case File 516. Recovered field notes place the primary event at Library.",

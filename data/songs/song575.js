@@ -220,6 +220,7 @@ window.SONG_DATA = {
     {
       "id": "575_foldedcloth",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/084 - folded cloth.jpg",
       "name": "Folded Cloth",
       "symbol": "🔍",
       "description": "Folded Cloth was recovered from East Field in Case File 575. It is tied to Child, 11:17, and marker 4897.",
@@ -228,9 +229,10 @@ window.SONG_DATA = {
     {
       "id": "575_location",
       "type": "Location",
-      "name": "Eastfield",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-058-east-field-location.jpg",
+      "name": "East Field",
       "symbol": "📍",
-      "description": "The active scene for Case File 575. Recovered field notes place the primary event at Eastfield.",
+      "description": "The active scene for Case File 575. Recovered field notes place the primary event at East Field.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

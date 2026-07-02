@@ -231,6 +231,7 @@ window.SONG_DATA = {
     {
       "id": "283_brokenclasp",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/089 - broken clasp.jpg",
       "name": "Broken Clasp",
       "symbol": "🔍",
       "description": "Broken Clasp was recovered from Brick Kiln in Case File 283. It is tied to Wool Sorter, 9:44, and marker 2461.",
@@ -239,18 +240,19 @@ window.SONG_DATA = {
     {
       "id": "283_location",
       "type": "Location",
-      "name": "Brickkiln",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-065-brick-kiln-location.jpg",
+      "name": "Brick Kiln",
       "symbol": "📍",
-      "description": "The active scene for Case File 283. Recovered field notes place the primary event at Brickkiln.",
+      "description": "The active scene for Case File 283. Recovered field notes place the primary event at Brick Kiln.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {
       "id": "283_witness",
       "type": "Witness",
-      "name": "Woolsorter",
+      "name": "Wool Sorter",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/wool-sorter.jpg",
       "symbol": "👤",
-      "description": "Woolsorter, identified in the case notes for Case File 283. Has not given a formal statement.",
+      "description": "Wool Sorter, identified in the case notes for Case File 283. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

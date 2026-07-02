@@ -219,6 +219,7 @@ window.SONG_DATA = {
     {
       "id": "268_journal",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/048 - journal.jpg",
       "name": "Journal",
       "symbol": "🔍",
       "description": "Journal was recovered from Sheep Fold in Case File 268. It is tied to Circuit Rider, 6:45, and marker 2334.",
@@ -227,9 +228,10 @@ window.SONG_DATA = {
     {
       "id": "268_location",
       "type": "Location",
-      "name": "Sheepfold",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-086-sheep-fold-location.jpg",
+      "name": "Sheep Fold",
       "symbol": "📍",
-      "description": "The active scene for Case File 268. Recovered field notes place the primary event at Sheepfold.",
+      "description": "The active scene for Case File 268. Recovered field notes place the primary event at Sheep Fold.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

@@ -220,6 +220,7 @@ window.SONG_DATA = {
     {
       "id": "451_charcoalsketch",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/023 - charcoal sketch.jpg",
       "name": "Charcoal Sketch",
       "symbol": "🔍",
       "description": "Charcoal Sketch was recovered from The Narrow Road in Case File 451. It is tied to Night Watchman, 6:45, and marker 3861.",
@@ -228,6 +229,7 @@ window.SONG_DATA = {
     {
       "id": "451_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-091-the-narrow-road-location.jpg",
       "name": "Narrow Road",
       "symbol": "📍",
       "description": "The active scene for Case File 451. Recovered field notes place the primary event at Narrow Road.",

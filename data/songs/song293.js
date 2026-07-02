@@ -219,6 +219,7 @@ window.SONG_DATA = {
     {
       "id": "293_knife",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/093 - knife.jpg",
       "name": "Knife",
       "symbol": "🔍",
       "description": "Knife was recovered from Calico Alley in Case File 293. It is tied to Sexton, 3:49, and marker 2543.",
@@ -227,6 +228,7 @@ window.SONG_DATA = {
     {
       "id": "293_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-069-calico-alley-location.jpg",
       "name": "Calico Alley",
       "symbol": "📍",
       "description": "The active scene for Case File 293. Recovered field notes place the primary event at Calico Alley.",

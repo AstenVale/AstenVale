@@ -220,6 +220,7 @@ window.SONG_DATA = {
     {
       "id": "538_leatherstrap",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/025 - leather strap.jpg",
       "name": "Leather Strap",
       "symbol": "🔍",
       "description": "Leather Strap was recovered from Sawmill in Case File 538. It is tied to Quarry Foreman, 3:17, and marker 4588.",
@@ -228,6 +229,7 @@ window.SONG_DATA = {
     {
       "id": "538_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-063-sawmill-location.jpg",
       "name": "Sawmill",
       "symbol": "📍",
       "description": "The active scene for Case File 538. Recovered field notes place the primary event at Sawmill.",

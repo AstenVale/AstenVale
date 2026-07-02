@@ -231,7 +231,8 @@ window.SONG_DATA = {
     {
       "id": "324_ledgerpage",
       "type": "Object",
-      "name": "Ledgerpage",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/049 - ledger page.jpg",
+      "name": "Ledger Page",
       "symbol": "🔍",
       "description": "Ledger Page was recovered from The Narrow Road in Case File 324. It is tied to Peddler, 10:47, and marker 2806.",
       "unknownInfo": "Along the Creek and Axe on Wood suggest this object matters beyond the first reading."
@@ -239,6 +240,7 @@ window.SONG_DATA = {
     {
       "id": "324_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-091-the-narrow-road-location.jpg",
       "name": "Narrow Road",
       "symbol": "📍",
       "description": "The active scene for Case File 324. Recovered field notes place the primary event at Narrow Road.",

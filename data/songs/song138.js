@@ -219,6 +219,7 @@ window.SONG_DATA = {
     {
       "id": "138_driedbloodoncloth",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/057 - dried blood on cloth.jpg",
       "name": "Dried Blood on Cloth",
       "symbol": "🔍",
       "description": "Dried Blood on Cloth was recovered from North Gate in Case File 138. It is tied to Blacksmith, 8:33, and marker 1252.",
@@ -227,9 +228,10 @@ window.SONG_DATA = {
     {
       "id": "138_location",
       "type": "Location",
-      "name": "Northgate",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-052-north-gate-location.jpg",
+      "name": "North Gate",
       "symbol": "📍",
-      "description": "The active scene for Case File 138. Recovered field notes place the primary event at Northgate.",
+      "description": "The active scene for Case File 138. Recovered field notes place the primary event at North Gate.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

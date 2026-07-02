@@ -221,6 +221,7 @@ window.SONG_DATA = {
     {
       "id": "229_driedinkblot",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/068 - dried ink blot.jpg",
       "name": "Dried Ink Blot",
       "symbol": "🔍",
       "description": "Dried Ink Blot was recovered from Market Square in Case File 229. It is tied to Circuit Rider, 6:53, and marker 2007.",
@@ -229,6 +230,7 @@ window.SONG_DATA = {
     {
       "id": "229_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-076-market-square-location.jpg",
       "name": "Market Square",
       "symbol": "📍",
       "description": "The active scene for Case File 229. Recovered field notes place the primary event at Market Square.",

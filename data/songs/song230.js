@@ -228,6 +228,7 @@ window.SONG_DATA = {
     {
       "id": "230_thimble",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/054 - thimble.jpg",
       "name": "Thimble",
       "symbol": "🔍",
       "description": "Thimble was recovered from Orchard in Case File 230. It is tied to Deputy, 7:00, and marker 2016.",
@@ -236,6 +237,7 @@ window.SONG_DATA = {
     {
       "id": "230_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-045-orchard-location.jpg",
       "name": "Orchard",
       "symbol": "📍",
       "description": "The active scene for Case File 230. Recovered field notes place the primary event at Orchard.",

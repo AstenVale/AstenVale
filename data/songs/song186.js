@@ -219,6 +219,7 @@ window.SONG_DATA = {
     {
       "id": "186_journal",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/048 - journal.jpg",
       "name": "Journal",
       "symbol": "🔍",
       "description": "Journal was recovered from Grist Mill in Case File 186. It is tied to Cartographer, 6:32, and marker 1652.",
@@ -227,9 +228,10 @@ window.SONG_DATA = {
     {
       "id": "186_location",
       "type": "Location",
-      "name": "Gristmill",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-025-grist-mill-location.jpg",
+      "name": "Grist Mill",
       "symbol": "📍",
-      "description": "The active scene for Case File 186. Recovered field notes place the primary event at Gristmill.",
+      "description": "The active scene for Case File 186. Recovered field notes place the primary event at Grist Mill.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

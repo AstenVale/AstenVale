@@ -228,6 +228,7 @@ window.SONG_DATA = {
     {
       "id": "262_compass",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/010 - compass.jpg",
       "name": "Compass",
       "symbol": "🔍",
       "description": "Compass was recovered from River's Edge in Case File 262. It is tied to Driver, 6:06, and marker 2288.",
@@ -236,9 +237,10 @@ window.SONG_DATA = {
     {
       "id": "262_location",
       "type": "Location",
-      "name": "River'Sedge",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-085-rivers-edge-location.jpg",
+      "name": "River's Edge",
       "symbol": "📍",
-      "description": "The active scene for Case File 262. Recovered field notes place the primary event at River'Sedge.",
+      "description": "The active scene for Case File 262. Recovered field notes place the primary event at River's Edge.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

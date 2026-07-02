@@ -231,6 +231,7 @@ window.SONG_DATA = {
     {
       "id": "197_handkerchief",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/017 - handkerchief.jpg",
       "name": "Handkerchief",
       "symbol": "🔍",
       "description": "Handkerchief was recovered from The Depot in Case File 197. It is tied to Rag Picker, 8:17, and marker 1743.",
@@ -239,6 +240,7 @@ window.SONG_DATA = {
     {
       "id": "197_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-005-depot-location.jpg",
       "name": "Depot",
       "symbol": "📍",
       "description": "The active scene for Case File 197. Recovered field notes place the primary event at Depot.",
@@ -247,10 +249,10 @@ window.SONG_DATA = {
     {
       "id": "197_witness",
       "type": "Witness",
-      "name": "Ragpicker",
+      "name": "Rag Picker",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/rag-picker.jpg",
       "symbol": "👤",
-      "description": "Ragpicker, identified in the case notes for Case File 197. Has not given a formal statement.",
+      "description": "Rag Picker, identified in the case notes for Case File 197. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

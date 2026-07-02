@@ -220,6 +220,7 @@ window.SONG_DATA = {
     {
       "id": "337_cufflink",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/059 - cufflink.jpg",
       "name": "Cufflink",
       "symbol": "🔍",
       "description": "Cufflink was recovered from The Quarry Pool in Case File 337. It is tied to Cartographer, 4:47, and marker 2907.",
@@ -228,6 +229,7 @@ window.SONG_DATA = {
     {
       "id": "337_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-034-the-quarry-pool-location.jpg",
       "name": "Quarry Pool",
       "symbol": "📍",
       "description": "The active scene for Case File 337. Recovered field notes place the primary event at Quarry Pool.",

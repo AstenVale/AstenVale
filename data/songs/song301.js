@@ -229,6 +229,7 @@ window.SONG_DATA = {
     {
       "id": "301_watch",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/039 - watch.jpg",
       "name": "Watch",
       "symbol": "🔍",
       "description": "Watch was recovered from The Weir in Case File 301. It is tied to Deputy, 9:55, and marker 2607.",
@@ -237,6 +238,7 @@ window.SONG_DATA = {
     {
       "id": "301_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-033-the-weir-location.jpg",
       "name": "Weir",
       "symbol": "📍",
       "description": "The active scene for Case File 301. Recovered field notes place the primary event at Weir.",

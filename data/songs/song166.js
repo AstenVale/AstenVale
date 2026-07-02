@@ -219,6 +219,7 @@ window.SONG_DATA = {
     {
       "id": "166_pipe",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/082 - pipe.jpg",
       "name": "Pipe",
       "symbol": "🔍",
       "description": "Pipe was recovered from The Depot in Case File 166. It is tied to Glazier, 10:05, and marker 1488.",
@@ -227,6 +228,7 @@ window.SONG_DATA = {
     {
       "id": "166_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-005-depot-location.jpg",
       "name": "Depot",
       "symbol": "📍",
       "description": "The active scene for Case File 166. Recovered field notes place the primary event at Depot.",

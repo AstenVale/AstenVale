@@ -229,7 +229,8 @@ window.SONG_DATA = {
     {
       "id": "305_tornlabel",
       "type": "Object",
-      "name": "Tornlabel",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/040 - torn label.jpg",
+      "name": "Torn Label",
       "symbol": "🔍",
       "description": "Torn Label was recovered from Feed Store in Case File 305. It is tied to Stranger, 1:11, and marker 2643.",
       "unknownInfo": "Forward and Dog Bark at Nothing suggest this object matters beyond the first reading."
@@ -237,9 +238,10 @@ window.SONG_DATA = {
     {
       "id": "305_location",
       "type": "Location",
-      "name": "Feedstore",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-044-feed-store-location.jpg",
+      "name": "Feed Store",
       "symbol": "📍",
-      "description": "The active scene for Case File 305. Recovered field notes place the primary event at Feedstore.",
+      "description": "The active scene for Case File 305. Recovered field notes place the primary event at Feed Store.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

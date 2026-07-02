@@ -230,7 +230,8 @@ window.SONG_DATA = {
     {
       "id": "497_tradetoken",
       "type": "Object",
-      "name": "Tradetoken",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/076 - trade token.jpg",
+      "name": "Trade Token",
       "symbol": "🔍",
       "description": "Trade Token was recovered from Sheriff's Office in Case File 497. It is tied to Typesetter, 8:42, and marker 4243.",
       "unknownInfo": "Left and Empty Wagon suggest this object matters beyond the first reading."
@@ -238,9 +239,10 @@ window.SONG_DATA = {
     {
       "id": "497_location",
       "type": "Location",
-      "name": "Sheriff'Soffice",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-062-sheriffs-office-location.jpg",
+      "name": "Sheriff's Office",
       "symbol": "📍",
-      "description": "The active scene for Case File 497. Recovered field notes place the primary event at Sheriff'Soffice.",
+      "description": "The active scene for Case File 497. Recovered field notes place the primary event at Sheriff's Office.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

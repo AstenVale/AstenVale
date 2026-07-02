@@ -231,6 +231,7 @@ window.SONG_DATA = {
     {
       "id": "288_spectacles",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/092 - spectacles.jpg",
       "name": "Spectacles",
       "symbol": "🔍",
       "description": "Spectacles was recovered from The Hollow Road in Case File 288. It is tied to Night Porter, 12:44, and marker 2506.",
@@ -239,6 +240,7 @@ window.SONG_DATA = {
     {
       "id": "288_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-049-the-hollow-road-location.jpg",
       "name": "Hollow Road",
       "symbol": "📍",
       "description": "The active scene for Case File 288. Recovered field notes place the primary event at Hollow Road.",

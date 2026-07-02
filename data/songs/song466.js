@@ -219,6 +219,7 @@ window.SONG_DATA = {
     {
       "id": "466_pocketwatch",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/032 - pocket watch.jpg",
       "name": "Pocket Watch",
       "symbol": "🔍",
       "description": "Pocket Watch was recovered from Lake Shore in Case File 466. It is tied to Weaver, 3:03, and marker 3988.",
@@ -227,9 +228,10 @@ window.SONG_DATA = {
     {
       "id": "466_location",
       "type": "Location",
-      "name": "Lakeshore",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-092-lake-shore-location.jpg",
+      "name": "Lake Shore",
       "symbol": "📍",
-      "description": "The active scene for Case File 466. Recovered field notes place the primary event at Lakeshore.",
+      "description": "The active scene for Case File 466. Recovered field notes place the primary event at Lake Shore.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

@@ -234,15 +234,15 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Telegram was recovered from Loom House in Case File 061. It is tied to Night Watchman, 7:02, and marker 607.",
       "unknownInfo": "Further In and Rain suggest this object matters beyond the first reading.",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/061 - bullet casing.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/050 - telegram.jpg"
     },
     {
       "id": "061_location",
       "type": "Location",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-061-harness-shop-location.jpg",
-      "name": "Loomhouse",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-046-loom-house-location.jpg",
+      "name": "Loom House",
       "symbol": "📍",
-      "description": "The active scene for Case File 061. Recovered field notes place the primary event at Loomhouse.",
+      "description": "The active scene for Case File 061. Recovered field notes place the primary event at Loom House.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

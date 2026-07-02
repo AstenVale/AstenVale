@@ -219,6 +219,7 @@ window.SONG_DATA = {
     {
       "id": "576_journal",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/048 - journal.jpg",
       "name": "Journal",
       "symbol": "🔍",
       "description": "Journal was recovered from Silo Row in Case File 576. It is tied to Cooper, 6:45, and marker 4906.",
@@ -227,9 +228,10 @@ window.SONG_DATA = {
     {
       "id": "576_location",
       "type": "Location",
-      "name": "Silorow",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-104-silo-row-location.jpg",
+      "name": "Silo Row",
       "symbol": "📍",
-      "description": "The active scene for Case File 576. Recovered field notes place the primary event at Silorow.",
+      "description": "The active scene for Case File 576. Recovered field notes place the primary event at Silo Row.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

@@ -220,7 +220,8 @@ window.SONG_DATA = {
     {
       "id": "273_woolscarf",
       "type": "Object",
-      "name": "Woolscarf",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/029 - wool scarf.jpg",
+      "name": "Wool Scarf",
       "symbol": "🔍",
       "description": "Wool Scarf was recovered from South Fork in Case File 273. It is tied to Widow, 5:13, and marker 2379.",
       "unknownInfo": "Out of Sight and Crow Call suggest this object matters beyond the first reading."
@@ -228,9 +229,10 @@ window.SONG_DATA = {
     {
       "id": "273_location",
       "type": "Location",
-      "name": "Southfork",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-030-south-fork-location.jpg",
+      "name": "South Fork",
       "symbol": "📍",
-      "description": "The active scene for Case File 273. Recovered field notes place the primary event at Southfork.",
+      "description": "The active scene for Case File 273. Recovered field notes place the primary event at South Fork.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

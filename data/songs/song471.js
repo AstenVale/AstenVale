@@ -219,7 +219,8 @@ window.SONG_DATA = {
     {
       "id": "471_ironnail",
       "type": "Object",
-      "name": "Ironnail",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/024 - iron nail.jpg",
+      "name": "Iron Nail",
       "symbol": "🔍",
       "description": "Iron Nail was recovered from Ash Creek in Case File 471. It is tied to Deputy, 4:38, and marker 4025.",
       "unknownInfo": "Nowhere and Night Insects suggest this object matters beyond the first reading."
@@ -227,9 +228,10 @@ window.SONG_DATA = {
     {
       "id": "471_location",
       "type": "Location",
-      "name": "Ashcreek",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-003-ash-creek-location.jpg",
+      "name": "Ash Creek",
       "symbol": "📍",
-      "description": "The active scene for Case File 471. Recovered field notes place the primary event at Ashcreek.",
+      "description": "The active scene for Case File 471. Recovered field notes place the primary event at Ash Creek.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

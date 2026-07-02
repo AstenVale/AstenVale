@@ -229,6 +229,7 @@ window.SONG_DATA = {
     {
       "id": "522_stamp",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/085 - stamp.jpg",
       "name": "Stamp",
       "symbol": "🔍",
       "description": "Stamp was recovered from North Gate in Case File 522. It is tied to Station Master, 5:09, and marker 4452.",
@@ -237,9 +238,10 @@ window.SONG_DATA = {
     {
       "id": "522_location",
       "type": "Location",
-      "name": "Northgate",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-052-north-gate-location.jpg",
+      "name": "North Gate",
       "symbol": "📍",
-      "description": "The active scene for Case File 522. Recovered field notes place the primary event at Northgate.",
+      "description": "The active scene for Case File 522. Recovered field notes place the primary event at North Gate.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

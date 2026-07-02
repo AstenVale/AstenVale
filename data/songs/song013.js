@@ -232,12 +232,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Wedding Ring was recovered from Church in Case File 013. It is tied to Preacher, 6:45, and marker 110.",
       "unknownInfo": "North and Bells suggest this object matters beyond the first reading.",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/013 - love letter.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/004 - wedding ring.jpg"
     },
     {
       "id": "013_location",
       "type": "Location",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-013-kitchen-table-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-004-church-location.jpg",
       "name": "Church",
       "symbol": "📍",
       "description": "The active scene for Case File 013. Recovered field notes place the primary event at Church.",

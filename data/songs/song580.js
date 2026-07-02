@@ -218,6 +218,7 @@ window.SONG_DATA = {
     {
       "id": "580_flask",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/045 - flask.jpg",
       "name": "Flask",
       "symbol": "🔍",
       "description": "Flask was recovered from River's Edge in Case File 580. It is tied to Undertaker, 5:13, and marker 4934.",
@@ -226,9 +227,10 @@ window.SONG_DATA = {
     {
       "id": "580_location",
       "type": "Location",
-      "name": "River'Sedge",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-085-rivers-edge-location.jpg",
+      "name": "River's Edge",
       "symbol": "📍",
-      "description": "The active scene for Case File 580. Recovered field notes place the primary event at River'Sedge.",
+      "description": "The active scene for Case File 580. Recovered field notes place the primary event at River's Edge.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

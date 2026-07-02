@@ -229,6 +229,7 @@ window.SONG_DATA = {
     {
       "id": "277_seal",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/041 - seal.jpg",
       "name": "Seal",
       "symbol": "🔍",
       "description": "Seal was recovered from Cemetery in Case File 277. It is tied to Widow, 5:09, and marker 2407.",
@@ -237,6 +238,7 @@ window.SONG_DATA = {
     {
       "id": "277_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-010-cemetery-location.jpg",
       "name": "Cemetery",
       "symbol": "📍",
       "description": "The active scene for Case File 277. Recovered field notes place the primary event at Cemetery.",

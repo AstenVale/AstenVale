@@ -223,12 +223,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Inkwell was recovered from The Gully in Case File 077. It is tied to Glazier, 6:17, and marker 743.",
       "unknownInfo": "Home and Cannon Bolt suggest this object matters beyond the first reading.",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/077 - wax tablet.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/058 - inkwell.jpg"
     },
     {
       "id": "077_location",
       "type": "Location",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-077-the-bluff-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-056-the-gully-location.jpg",
       "name": "Gully",
       "symbol": "📍",
       "description": "The active scene for Case File 077. Recovered field notes place the primary event at Gully.",

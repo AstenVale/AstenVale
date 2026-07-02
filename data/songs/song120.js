@@ -219,6 +219,7 @@ window.SONG_DATA = {
     {
       "id": "120_driedflower",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/043 - dried flower.jpg",
       "name": "Dried Flower",
       "symbol": "🔍",
       "description": "Dried Flower was recovered from Old Wharf in Case File 120. It is tied to Typesetter, 5:13, and marker 1106.",
@@ -227,9 +228,10 @@ window.SONG_DATA = {
     {
       "id": "120_location",
       "type": "Location",
-      "name": "Oldwharf",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-054-old-wharf-location.jpg",
+      "name": "Old Wharf",
       "symbol": "📍",
-      "description": "The active scene for Case File 120. Recovered field notes place the primary event at Oldwharf.",
+      "description": "The active scene for Case File 120. Recovered field notes place the primary event at Old Wharf.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

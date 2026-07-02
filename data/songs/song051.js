@@ -221,12 +221,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Photograph was recovered from Forge in Case File 051. It is tied to Apothecary, 12:44, and marker 525.",
       "unknownInfo": "Out and Broken String suggest this object matters beyond the first reading.",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/051 - wax seal.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/011 - photograph.jpg"
     },
     {
       "id": "051_location",
       "type": "Location",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-051-hotel-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-042-forge-location.jpg",
       "name": "Forge",
       "symbol": "📍",
       "description": "The active scene for Case File 051. Recovered field notes place the primary event at Forge.",

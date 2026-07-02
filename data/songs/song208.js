@@ -220,7 +220,8 @@ window.SONG_DATA = {
     {
       "id": "208_tornmap",
       "type": "Object",
-      "name": "Tornmap",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/088 - torn map.jpg",
+      "name": "Torn Map",
       "symbol": "🔍",
       "description": "Torn Map was recovered from Lake Shore in Case File 208. It is tied to Harness Maker, 6:53, and marker 1834.",
       "unknownInfo": "Toward and Wind Through a Crack suggest this object matters beyond the first reading."
@@ -228,9 +229,10 @@ window.SONG_DATA = {
     {
       "id": "208_location",
       "type": "Location",
-      "name": "Lakeshore",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-092-lake-shore-location.jpg",
+      "name": "Lake Shore",
       "symbol": "📍",
-      "description": "The active scene for Case File 208. Recovered field notes place the primary event at Lakeshore.",
+      "description": "The active scene for Case File 208. Recovered field notes place the primary event at Lake Shore.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

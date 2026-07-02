@@ -228,6 +228,7 @@ window.SONG_DATA = {
     {
       "id": "104_badge",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/067 - badge.jpg",
       "name": "Badge",
       "symbol": "🔍",
       "description": "Badge was recovered from Cooperage in Case File 104. It is tied to River Pilot, 8:42, and marker 970.",
@@ -236,7 +237,7 @@ window.SONG_DATA = {
     {
       "id": "104_location",
       "type": "Location",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-104-silo-row-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-068-cooperage-location.jpg",
       "name": "Cooperage",
       "symbol": "📍",
       "description": "The active scene for Case File 104. Recovered field notes place the primary event at Cooperage.",
@@ -245,10 +246,10 @@ window.SONG_DATA = {
     {
       "id": "104_witness",
       "type": "Witness",
-      "name": "Riverpilot",
+      "name": "River Pilot",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/river-pilot.jpg",
       "symbol": "👤",
-      "description": "Riverpilot, identified in the case notes for Case File 104. Has not given a formal statement.",
+      "description": "River Pilot, identified in the case notes for Case File 104. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

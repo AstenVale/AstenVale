@@ -221,6 +221,7 @@ window.SONG_DATA = {
     {
       "id": "140_stringofbeads",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/033 - string of beads.jpg",
       "name": "String of Beads",
       "symbol": "🔍",
       "description": "String of Beads was recovered from The Ridge in Case File 140. It is tied to Rope Maker, 6:53, and marker 1270.",
@@ -229,6 +230,7 @@ window.SONG_DATA = {
     {
       "id": "140_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-071-the-ridge-location.jpg",
       "name": "Ridge",
       "symbol": "📍",
       "description": "The active scene for Case File 140. Recovered field notes place the primary event at Ridge.",
@@ -237,10 +239,10 @@ window.SONG_DATA = {
     {
       "id": "140_witness",
       "type": "Witness",
-      "name": "Ropemaker",
+      "name": "Rope Maker",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/rope-maker.jpg",
       "symbol": "👤",
-      "description": "Ropemaker, identified in the case notes for Case File 140. Has not given a formal statement.",
+      "description": "Rope Maker, identified in the case notes for Case File 140. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

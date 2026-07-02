@@ -216,6 +216,7 @@ window.SONG_DATA = {
     {
       "id": "341_candle",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/026 - candle.jpg",
       "name": "Candle",
       "symbol": "🔍",
       "description": "Candle was recovered from Cooperage in Case File 341. It is tied to Tanner, 11:29, and marker 2943.",
@@ -224,6 +225,7 @@ window.SONG_DATA = {
     {
       "id": "341_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-068-cooperage-location.jpg",
       "name": "Cooperage",
       "symbol": "📍",
       "description": "The active scene for Case File 341. Recovered field notes place the primary event at Cooperage.",

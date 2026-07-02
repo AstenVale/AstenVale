@@ -219,7 +219,8 @@ window.SONG_DATA = {
     {
       "id": "163_beltbuckle",
       "type": "Object",
-      "name": "Beltbuckle",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/081 - belt buckle.jpg",
+      "name": "Belt Buckle",
       "symbol": "🔍",
       "description": "Belt Buckle was recovered from Pine Hollow in Case File 163. It is tied to Postman, 2:47, and marker 1461.",
       "unknownInfo": "Around and Tree Fall suggest this object matters beyond the first reading."
@@ -227,9 +228,10 @@ window.SONG_DATA = {
     {
       "id": "163_location",
       "type": "Location",
-      "name": "Pinehollow",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-080-pine-hollow-location.jpg",
+      "name": "Pine Hollow",
       "symbol": "📍",
-      "description": "The active scene for Case File 163. Recovered field notes place the primary event at Pinehollow.",
+      "description": "The active scene for Case File 163. Recovered field notes place the primary event at Pine Hollow.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

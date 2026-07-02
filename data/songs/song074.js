@@ -220,19 +220,19 @@ window.SONG_DATA = {
     {
       "id": "074_tinstar",
       "type": "Object",
-      "name": "Tinstar",
+      "name": "Tin Star",
       "symbol": "🔍",
       "description": "Tin Star was recovered from Old Wharf in Case File 074. It is tied to Surveyor, 10:51, and marker 716.",
       "unknownInfo": "Along the Creek and Wind in Pines suggest this object matters beyond the first reading.",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/074 - bone button.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/056 - tin star.jpg"
     },
     {
       "id": "074_location",
       "type": "Location",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-074-clock-tower-location.jpg",
-      "name": "Oldwharf",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-054-old-wharf-location.jpg",
+      "name": "Old Wharf",
       "symbol": "📍",
-      "description": "The active scene for Case File 074. Recovered field notes place the primary event at Oldwharf.",
+      "description": "The active scene for Case File 074. Recovered field notes place the primary event at Old Wharf.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

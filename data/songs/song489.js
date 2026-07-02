@@ -220,6 +220,7 @@ window.SONG_DATA = {
     {
       "id": "489_boot",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/083 - boot.jpg",
       "name": "Boot",
       "symbol": "🔍",
       "description": "Boot was recovered from The Root Cellar in Case File 489. It is tied to Widow, 9:08, and marker 4179.",
@@ -228,6 +229,7 @@ window.SONG_DATA = {
     {
       "id": "489_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-037-the-root-cellar-location.jpg",
       "name": "Root Cellar",
       "symbol": "📍",
       "description": "The active scene for Case File 489. Recovered field notes place the primary event at Root Cellar.",

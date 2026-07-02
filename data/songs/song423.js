@@ -220,6 +220,7 @@ window.SONG_DATA = {
     {
       "id": "423_rope",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/063 - rope.jpg",
       "name": "Rope",
       "symbol": "🔍",
       "description": "Rope was recovered from The Narrow Road in Case File 423. It is tied to Station Master, 12:00, and marker 3625.",
@@ -228,6 +229,7 @@ window.SONG_DATA = {
     {
       "id": "423_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-091-the-narrow-road-location.jpg",
       "name": "Narrow Road",
       "symbol": "📍",
       "description": "The active scene for Case File 423. Recovered field notes place the primary event at Narrow Road.",

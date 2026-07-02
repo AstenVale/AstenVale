@@ -220,7 +220,8 @@ window.SONG_DATA = {
     {
       "id": "450_bonebutton",
       "type": "Object",
-      "name": "Bonebutton",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/074 - bone button.jpg",
+      "name": "Bone Button",
       "symbol": "🔍",
       "description": "Bone Button was recovered from Chandler's Row in Case File 450. It is tied to Peddler, 1:58, and marker 3852.",
       "unknownInfo": "Up the Ridge and Match Strike suggest this object matters beyond the first reading."
@@ -228,9 +229,10 @@ window.SONG_DATA = {
     {
       "id": "450_location",
       "type": "Location",
-      "name": "Chandler'Srow",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-067-chandlers-row-location.jpg",
+      "name": "Chandler's Row",
       "symbol": "📍",
-      "description": "The active scene for Case File 450. Recovered field notes place the primary event at Chandler'Srow.",
+      "description": "The active scene for Case File 450. Recovered field notes place the primary event at Chandler's Row.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

@@ -221,12 +221,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Comb was recovered from Millpond in Case File 029. It is tied to Night Watchman, 4:03, and marker 343.",
       "unknownInfo": "Below and Breathing suggest this object matters beyond the first reading.",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/029 - wool scarf.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/027 - comb.jpg"
     },
     {
       "id": "029_location",
       "type": "Location",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-029-watchmakers-shop-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-024-millpond-location.jpg",
       "name": "Millpond",
       "symbol": "📍",
       "description": "The active scene for Case File 029. Recovered field notes place the primary event at Millpond.",

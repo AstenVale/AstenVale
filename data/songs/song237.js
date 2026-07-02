@@ -230,6 +230,7 @@ window.SONG_DATA = {
     {
       "id": "237_boot",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/083 - boot.jpg",
       "name": "Boot",
       "symbol": "🔍",
       "description": "Boot was recovered from River's Edge in Case File 237. It is tied to Rope Maker, 5:13, and marker 2079.",
@@ -238,18 +239,19 @@ window.SONG_DATA = {
     {
       "id": "237_location",
       "type": "Location",
-      "name": "River'Sedge",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-085-rivers-edge-location.jpg",
+      "name": "River's Edge",
       "symbol": "📍",
-      "description": "The active scene for Case File 237. Recovered field notes place the primary event at River'Sedge.",
+      "description": "The active scene for Case File 237. Recovered field notes place the primary event at River's Edge.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {
       "id": "237_witness",
       "type": "Witness",
-      "name": "Ropemaker",
+      "name": "Rope Maker",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/rope-maker.jpg",
       "symbol": "👤",
-      "description": "Ropemaker, identified in the case notes for Case File 237. Has not given a formal statement.",
+      "description": "Rope Maker, identified in the case notes for Case File 237. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

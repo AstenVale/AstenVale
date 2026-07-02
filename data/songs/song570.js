@@ -227,6 +227,7 @@ window.SONG_DATA = {
     {
       "id": "570_ribbon",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/078 - ribbon.jpg",
       "name": "Ribbon",
       "symbol": "🔍",
       "description": "Ribbon was recovered from Cooper's Yard in Case File 570. It is tied to Schoolteacher, 2:55, and marker 4852.",
@@ -235,9 +236,10 @@ window.SONG_DATA = {
     {
       "id": "570_location",
       "type": "Location",
-      "name": "Cooper'Syard",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-031-coopers-yard-location.jpg",
+      "name": "Cooper's Yard",
       "symbol": "📍",
-      "description": "The active scene for Case File 570. Recovered field notes place the primary event at Cooper'Syard.",
+      "description": "The active scene for Case File 570. Recovered field notes place the primary event at Cooper's Yard.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

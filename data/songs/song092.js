@@ -223,12 +223,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Rope was recovered from Harness Shop in Case File 092. It is tied to Mechanic, 7:14, and marker 870.",
       "unknownInfo": "Along the Creek and Kettle Boil suggest this object matters beyond the first reading.",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/092 - spectacles.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/063 - rope.jpg"
     },
     {
       "id": "092_location",
       "type": "Location",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-092-lake-shore-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-061-harness-shop-location.jpg",
       "name": "Harness Shop",
       "symbol": "📍",
       "description": "The active scene for Case File 092. Recovered field notes place the primary event at Harness Shop.",

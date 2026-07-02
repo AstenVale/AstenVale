@@ -219,6 +219,7 @@ window.SONG_DATA = {
     {
       "id": "247_canteen",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/053 - canteen.jpg",
       "name": "Canteen",
       "symbol": "🔍",
       "description": "Canteen was recovered from Print Shop in Case File 247. It is tied to Wool Sorter, 3:49, and marker 2161.",
@@ -227,18 +228,19 @@ window.SONG_DATA = {
     {
       "id": "247_location",
       "type": "Location",
-      "name": "Printshop",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-096-print-shop-location.jpg",
+      "name": "Print Shop",
       "symbol": "📍",
-      "description": "The active scene for Case File 247. Recovered field notes place the primary event at Printshop.",
+      "description": "The active scene for Case File 247. Recovered field notes place the primary event at Print Shop.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {
       "id": "247_witness",
       "type": "Witness",
-      "name": "Woolsorter",
+      "name": "Wool Sorter",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/wool-sorter.jpg",
       "symbol": "👤",
-      "description": "Woolsorter, identified in the case notes for Case File 247. Has not given a formal statement.",
+      "description": "Wool Sorter, identified in the case notes for Case File 247. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

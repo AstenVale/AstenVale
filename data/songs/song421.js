@@ -219,6 +219,7 @@ window.SONG_DATA = {
     {
       "id": "421_compass",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/010 - compass.jpg",
       "name": "Compass",
       "symbol": "🔍",
       "description": "Compass was recovered from Water Tower in Case File 421. It is tied to Station Master, 10:19, and marker 3607.",
@@ -227,9 +228,10 @@ window.SONG_DATA = {
     {
       "id": "421_location",
       "type": "Location",
-      "name": "Watertower",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-028-water-tower-location.jpg",
+      "name": "Water Tower",
       "symbol": "📍",
-      "description": "The active scene for Case File 421. Recovered field notes place the primary event at Watertower.",
+      "description": "The active scene for Case File 421. Recovered field notes place the primary event at Water Tower.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

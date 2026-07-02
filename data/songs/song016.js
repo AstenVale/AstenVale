@@ -234,15 +234,15 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Wedding Photo was recovered from Old Bridge in Case File 016. It is tied to Wife, 11:52, and marker 143.",
       "unknownInfo": "South and Wind in Pines suggest this object matters beyond the first reading.",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/016 - suitcase.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/015 - wedding photo.jpg"
     },
     {
       "id": "016_location",
       "type": "Location",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-016-window-seat-location.jpg",
-      "name": "Oldbridge",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-014-old-bridge-location.jpg",
+      "name": "Old Bridge",
       "symbol": "📍",
-      "description": "The active scene for Case File 016. Recovered field notes place the primary event at Oldbridge.",
+      "description": "The active scene for Case File 016. Recovered field notes place the primary event at Old Bridge.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

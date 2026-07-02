@@ -229,6 +229,7 @@ window.SONG_DATA = {
     {
       "id": "259_thimble",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/054 - thimble.jpg",
       "name": "Thimble",
       "symbol": "🔍",
       "description": "Thimble was recovered from Watchmaker's Shop in Case File 259. It is tied to Cider Presser, 10:19, and marker 2261.",
@@ -237,9 +238,10 @@ window.SONG_DATA = {
     {
       "id": "259_location",
       "type": "Location",
-      "name": "Watchmaker'Sshop",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-029-watchmakers-shop-location.jpg",
+      "name": "Watchmaker's Shop",
       "symbol": "📍",
-      "description": "The active scene for Case File 259. Recovered field notes place the primary event at Watchmaker'Sshop.",
+      "description": "The active scene for Case File 259. Recovered field notes place the primary event at Watchmaker's Shop.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

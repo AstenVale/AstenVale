@@ -221,6 +221,7 @@ window.SONG_DATA = {
     {
       "id": "110_shipmanifest",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/070 - ship manifest.jpg",
       "name": "Ship Manifest",
       "symbol": "🔍",
       "description": "Ship Manifest was recovered from The Ridge in Case File 110. It is tied to Librarian, 1:26, and marker 1016.",
@@ -229,6 +230,7 @@ window.SONG_DATA = {
     {
       "id": "110_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-071-the-ridge-location.jpg",
       "name": "Ridge",
       "symbol": "📍",
       "description": "The active scene for Case File 110. Recovered field notes place the primary event at Ridge.",

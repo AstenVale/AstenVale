@@ -231,6 +231,7 @@ window.SONG_DATA = {
     {
       "id": "552_charcoalsketch",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/023 - charcoal sketch.jpg",
       "name": "Charcoal Sketch",
       "symbol": "🔍",
       "description": "Charcoal Sketch was recovered from Telegraph Office in Case File 552. It is tied to Retired Soldier, 9:08, and marker 4706.",
@@ -239,6 +240,7 @@ window.SONG_DATA = {
     {
       "id": "552_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-097-telegraph-office-location.jpg",
       "name": "Telegraph Office",
       "symbol": "📍",
       "description": "The active scene for Case File 552. Recovered field notes place the primary event at Telegraph Office.",

@@ -229,6 +229,7 @@ window.SONG_DATA = {
     {
       "id": "550_inkwell",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/058 - inkwell.jpg",
       "name": "Inkwell",
       "symbol": "🔍",
       "description": "Inkwell was recovered from Water Tower in Case File 550. It is tied to Widow, 10:47, and marker 4688.",
@@ -237,9 +238,10 @@ window.SONG_DATA = {
     {
       "id": "550_location",
       "type": "Location",
-      "name": "Watertower",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-028-water-tower-location.jpg",
+      "name": "Water Tower",
       "symbol": "📍",
-      "description": "The active scene for Case File 550. Recovered field notes place the primary event at Watertower.",
+      "description": "The active scene for Case File 550. Recovered field notes place the primary event at Water Tower.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

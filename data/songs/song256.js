@@ -228,6 +228,7 @@ window.SONG_DATA = {
     {
       "id": "256_inkwell",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/058 - inkwell.jpg",
       "name": "Inkwell",
       "symbol": "🔍",
       "description": "Inkwell was recovered from Quarry Edge in Case File 256. It is tied to Wainwright, 1:26, and marker 2234.",
@@ -236,9 +237,10 @@ window.SONG_DATA = {
     {
       "id": "256_location",
       "type": "Location",
-      "name": "Quarryedge",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-022-quarry-edge-location.jpg",
+      "name": "Quarry Edge",
       "symbol": "📍",
-      "description": "The active scene for Case File 256. Recovered field notes place the primary event at Quarryedge.",
+      "description": "The active scene for Case File 256. Recovered field notes place the primary event at Quarry Edge.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

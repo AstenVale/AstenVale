@@ -230,7 +230,8 @@ window.SONG_DATA = {
     {
       "id": "366_surveyorspin",
       "type": "Object",
-      "name": "Surveyor'Spin",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/069 - surveyor's pin.jpg",
+      "name": "Surveyor's Pin",
       "symbol": "🔍",
       "description": "Surveyor's Pin was recovered from The Ridge in Case File 366. It is tied to Judge, 4:12, and marker 3152.",
       "unknownInfo": "Out of Sight and Thunder suggest this object matters beyond the first reading."
@@ -238,6 +239,7 @@ window.SONG_DATA = {
     {
       "id": "366_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-071-the-ridge-location.jpg",
       "name": "Ridge",
       "symbol": "📍",
       "description": "The active scene for Case File 366. Recovered field notes place the primary event at Ridge.",

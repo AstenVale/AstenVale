@@ -217,6 +217,7 @@ window.SONG_DATA = {
     {
       "id": "294_handkerchief",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/017 - handkerchief.jpg",
       "name": "Handkerchief",
       "symbol": "🔍",
       "description": "Handkerchief was recovered from Black Pine in Case File 294. It is tied to Postman, 12:44, and marker 2552.",
@@ -225,9 +226,10 @@ window.SONG_DATA = {
     {
       "id": "294_location",
       "type": "Location",
-      "name": "Blackpine",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-001-black-pine-location.jpg",
+      "name": "Black Pine",
       "symbol": "📍",
-      "description": "The active scene for Case File 294. Recovered field notes place the primary event at Blackpine.",
+      "description": "The active scene for Case File 294. Recovered field notes place the primary event at Black Pine.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

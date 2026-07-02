@@ -229,6 +229,7 @@ window.SONG_DATA = {
     {
       "id": "311_handkerchief",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/017 - handkerchief.jpg",
       "name": "Handkerchief",
       "symbol": "🔍",
       "description": "Handkerchief was recovered from The Quarry Pool in Case File 311. It is tied to Weaver, 4:38, and marker 2697.",
@@ -237,6 +238,7 @@ window.SONG_DATA = {
     {
       "id": "311_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-034-the-quarry-pool-location.jpg",
       "name": "Quarry Pool",
       "symbol": "📍",
       "description": "The active scene for Case File 311. Recovered field notes place the primary event at Quarry Pool.",

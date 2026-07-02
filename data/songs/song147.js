@@ -229,6 +229,7 @@ window.SONG_DATA = {
     {
       "id": "147_flask",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/045 - flask.jpg",
       "name": "Flask",
       "symbol": "🔍",
       "description": "Flask was recovered from The Gully in Case File 147. It is tied to Innkeeper, 7:02, and marker 1325.",
@@ -237,6 +238,7 @@ window.SONG_DATA = {
     {
       "id": "147_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-056-the-gully-location.jpg",
       "name": "Gully",
       "symbol": "📍",
       "description": "The active scene for Case File 147. Recovered field notes place the primary event at Gully.",

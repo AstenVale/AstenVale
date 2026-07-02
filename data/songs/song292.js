@@ -218,6 +218,7 @@ window.SONG_DATA = {
     {
       "id": "292_journal",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/048 - journal.jpg",
       "name": "Journal",
       "symbol": "🔍",
       "description": "Journal was recovered from Forge in Case File 292. It is tied to Preacher, 2:38, and marker 2534.",
@@ -226,6 +227,7 @@ window.SONG_DATA = {
     {
       "id": "292_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-042-forge-location.jpg",
       "name": "Forge",
       "symbol": "📍",
       "description": "The active scene for Case File 292. Recovered field notes place the primary event at Forge.",

@@ -219,6 +219,7 @@ window.SONG_DATA = {
     {
       "id": "577_bottle",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/052 - bottle.jpg",
       "name": "Bottle",
       "symbol": "🔍",
       "description": "Bottle was recovered from Print Shop in Case File 577. It is tied to Sexton, 6:06, and marker 4907.",
@@ -227,9 +228,10 @@ window.SONG_DATA = {
     {
       "id": "577_location",
       "type": "Location",
-      "name": "Printshop",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-096-print-shop-location.jpg",
+      "name": "Print Shop",
       "symbol": "📍",
-      "description": "The active scene for Case File 577. Recovered field notes place the primary event at Printshop.",
+      "description": "The active scene for Case File 577. Recovered field notes place the primary event at Print Shop.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

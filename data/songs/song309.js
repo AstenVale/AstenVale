@@ -230,6 +230,7 @@ window.SONG_DATA = {
     {
       "id": "309_copperfitting",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/079 - copper fitting.jpg",
       "name": "Copper Fitting",
       "symbol": "🔍",
       "description": "Copper Fitting was recovered from Schoolhouse in Case File 309. It is tied to The Girl with No Shoes, 8:17, and marker 2679.",
@@ -238,6 +239,7 @@ window.SONG_DATA = {
     {
       "id": "309_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-087-schoolhouse-location.jpg",
       "name": "Schoolhouse",
       "symbol": "📍",
       "description": "The active scene for Case File 309. Recovered field notes place the primary event at Schoolhouse.",

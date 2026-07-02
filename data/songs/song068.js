@@ -233,12 +233,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Ticket was recovered from Forge in Case File 068. It is tied to Retired Soldier, 2:55, and marker 670.",
       "unknownInfo": "Back and Old Hinge suggest this object matters beyond the first reading.",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/068 - dried ink blot.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/055 - ticket.jpg"
     },
     {
       "id": "068_location",
       "type": "Location",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-068-cooperage-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-042-forge-location.jpg",
       "name": "Forge",
       "symbol": "📍",
       "description": "The active scene for Case File 068. Recovered field notes place the primary event at Forge.",

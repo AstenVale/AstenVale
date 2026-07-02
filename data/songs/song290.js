@@ -220,7 +220,8 @@ window.SONG_DATA = {
     {
       "id": "290_earofcorn",
       "type": "Object",
-      "name": "Earofcorn",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/038 - ear of corn.jpg",
+      "name": "Ear of Corn",
       "symbol": "🔍",
       "description": "Ear of Corn was recovered from Iron Bridge in Case File 290. It is tied to River Pilot, 8:42, and marker 2516.",
       "unknownInfo": "Somewhere and Knife Scrape suggest this object matters beyond the first reading."
@@ -228,18 +229,19 @@ window.SONG_DATA = {
     {
       "id": "290_location",
       "type": "Location",
-      "name": "Ironbridge",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-089-iron-bridge-location.jpg",
+      "name": "Iron Bridge",
       "symbol": "📍",
-      "description": "The active scene for Case File 290. Recovered field notes place the primary event at Ironbridge.",
+      "description": "The active scene for Case File 290. Recovered field notes place the primary event at Iron Bridge.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {
       "id": "290_witness",
       "type": "Witness",
-      "name": "Riverpilot",
+      "name": "River Pilot",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/river-pilot.jpg",
       "symbol": "👤",
-      "description": "Riverpilot, identified in the case notes for Case File 290. Has not given a formal statement.",
+      "description": "River Pilot, identified in the case notes for Case File 290. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

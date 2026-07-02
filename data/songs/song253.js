@@ -229,6 +229,7 @@ window.SONG_DATA = {
     {
       "id": "253_pocketwatch",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/032 - pocket watch.jpg",
       "name": "Pocket Watch",
       "symbol": "🔍",
       "description": "Pocket Watch was recovered from Print Shop in Case File 253. It is tied to Lamplighter, 5:09, and marker 2207.",
@@ -237,9 +238,10 @@ window.SONG_DATA = {
     {
       "id": "253_location",
       "type": "Location",
-      "name": "Printshop",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-096-print-shop-location.jpg",
+      "name": "Print Shop",
       "symbol": "📍",
-      "description": "The active scene for Case File 253. Recovered field notes place the primary event at Printshop.",
+      "description": "The active scene for Case File 253. Recovered field notes place the primary event at Print Shop.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

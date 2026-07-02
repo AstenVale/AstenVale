@@ -228,6 +228,7 @@ window.SONG_DATA = {
     {
       "id": "304_pipe",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/082 - pipe.jpg",
       "name": "Pipe",
       "symbol": "🔍",
       "description": "Pipe was recovered from Calico Alley in Case File 304. It is tied to Widow, 10:22, and marker 2634.",
@@ -236,6 +237,7 @@ window.SONG_DATA = {
     {
       "id": "304_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-069-calico-alley-location.jpg",
       "name": "Calico Alley",
       "symbol": "📍",
       "description": "The active scene for Case File 304. Recovered field notes place the primary event at Calico Alley.",

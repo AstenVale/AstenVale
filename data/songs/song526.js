@@ -228,6 +228,7 @@ window.SONG_DATA = {
     {
       "id": "526_scratchedinitialsinwood",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/090 - scratched initials in wood.jpg",
       "name": "Scratched Initials in Wood",
       "symbol": "🔍",
       "description": "Scratched Initials in Wood was recovered from Forge in Case File 526. It is tied to Typesetter, 7:48, and marker 4488.",
@@ -236,6 +237,7 @@ window.SONG_DATA = {
     {
       "id": "526_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-042-forge-location.jpg",
       "name": "Forge",
       "symbol": "📍",
       "description": "The active scene for Case File 526. Recovered field notes place the primary event at Forge.",

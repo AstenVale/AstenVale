@@ -219,6 +219,7 @@ window.SONG_DATA = {
     {
       "id": "540_chain",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/028 - chain.jpg",
       "name": "Chain",
       "symbol": "🔍",
       "description": "Chain was recovered from Watchmaker's Shop in Case File 540. It is tied to Cider Presser, 10:51, and marker 4606.",
@@ -227,9 +228,10 @@ window.SONG_DATA = {
     {
       "id": "540_location",
       "type": "Location",
-      "name": "Watchmaker'Sshop",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-029-watchmakers-shop-location.jpg",
+      "name": "Watchmaker's Shop",
       "symbol": "📍",
-      "description": "The active scene for Case File 540. Recovered field notes place the primary event at Watchmaker'Sshop.",
+      "description": "The active scene for Case File 540. Recovered field notes place the primary event at Watchmaker's Shop.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

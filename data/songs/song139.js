@@ -217,6 +217,7 @@ window.SONG_DATA = {
     {
       "id": "139_rope",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/063 - rope.jpg",
       "name": "Rope",
       "symbol": "🔍",
       "description": "Rope was recovered from Water Tower in Case File 139. It is tied to Auctioneer, 7:37, and marker 1261.",
@@ -225,9 +226,10 @@ window.SONG_DATA = {
     {
       "id": "139_location",
       "type": "Location",
-      "name": "Watertower",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-028-water-tower-location.jpg",
+      "name": "Water Tower",
       "symbol": "📍",
-      "description": "The active scene for Case File 139. Recovered field notes place the primary event at Watertower.",
+      "description": "The active scene for Case File 139. Recovered field notes place the primary event at Water Tower.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

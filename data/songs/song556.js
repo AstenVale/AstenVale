@@ -220,6 +220,7 @@ window.SONG_DATA = {
     {
       "id": "556_foldedcloth",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/084 - folded cloth.jpg",
       "name": "Folded Cloth",
       "symbol": "🔍",
       "description": "Folded Cloth was recovered from Old Wharf in Case File 556. It is tied to Sexton, 8:17, and marker 4734.",
@@ -228,9 +229,10 @@ window.SONG_DATA = {
     {
       "id": "556_location",
       "type": "Location",
-      "name": "Oldwharf",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-054-old-wharf-location.jpg",
+      "name": "Old Wharf",
       "symbol": "📍",
-      "description": "The active scene for Case File 556. Recovered field notes place the primary event at Oldwharf.",
+      "description": "The active scene for Case File 556. Recovered field notes place the primary event at Old Wharf.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

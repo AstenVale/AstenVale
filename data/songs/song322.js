@@ -219,6 +219,7 @@ window.SONG_DATA = {
     {
       "id": "322_compass",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/010 - compass.jpg",
       "name": "Compass",
       "symbol": "🔍",
       "description": "Compass was recovered from Harness Shop in Case File 322. It is tied to Lime Burner, 10:51, and marker 2788.",
@@ -227,6 +228,7 @@ window.SONG_DATA = {
     {
       "id": "322_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-061-harness-shop-location.jpg",
       "name": "Harness Shop",
       "symbol": "📍",
       "description": "The active scene for Case File 322. Recovered field notes place the primary event at Harness Shop.",
@@ -235,10 +237,10 @@ window.SONG_DATA = {
     {
       "id": "322_witness",
       "type": "Witness",
-      "name": "Limeburner",
+      "name": "Lime Burner",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/lime-burner.jpg",
       "symbol": "👤",
-      "description": "Limeburner, identified in the case notes for Case File 322. Has not given a formal statement.",
+      "description": "Lime Burner, identified in the case notes for Case File 322. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

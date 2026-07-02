@@ -230,6 +230,7 @@ window.SONG_DATA = {
     {
       "id": "198_shardofmirror",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/031 - shard of mirror.jpg",
       "name": "Shard of Mirror",
       "symbol": "🔍",
       "description": "Shard of Mirror was recovered from East Field in Case File 198. It is tied to River Pilot, 12:44, and marker 1752.",
@@ -238,18 +239,19 @@ window.SONG_DATA = {
     {
       "id": "198_location",
       "type": "Location",
-      "name": "Eastfield",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-058-east-field-location.jpg",
+      "name": "East Field",
       "symbol": "📍",
-      "description": "The active scene for Case File 198. Recovered field notes place the primary event at Eastfield.",
+      "description": "The active scene for Case File 198. Recovered field notes place the primary event at East Field.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {
       "id": "198_witness",
       "type": "Witness",
-      "name": "Riverpilot",
+      "name": "River Pilot",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/river-pilot.jpg",
       "symbol": "👤",
-      "description": "Riverpilot, identified in the case notes for Case File 198. Has not given a formal statement.",
+      "description": "River Pilot, identified in the case notes for Case File 198. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

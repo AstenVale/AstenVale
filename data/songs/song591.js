@@ -231,7 +231,8 @@ window.SONG_DATA = {
     {
       "id": "591_tinstar",
       "type": "Object",
-      "name": "Tinstar",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/056 - tin star.jpg",
+      "name": "Tin Star",
       "symbol": "🔍",
       "description": "Tin Star was recovered from Crow's Nest Ridge in Case File 591. It is tied to Rag Picker, 2:19, and marker 5025.",
       "unknownInfo": "Around and Rope on Pulley suggest this object matters beyond the first reading."
@@ -239,18 +240,19 @@ window.SONG_DATA = {
     {
       "id": "591_location",
       "type": "Location",
-      "name": "Crow'Snestridge",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-100-crows-nest-ridge-location.jpg",
+      "name": "Crow's Nest Ridge",
       "symbol": "📍",
-      "description": "The active scene for Case File 591. Recovered field notes place the primary event at Crow'Snestridge.",
+      "description": "The active scene for Case File 591. Recovered field notes place the primary event at Crow's Nest Ridge.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {
       "id": "591_witness",
       "type": "Witness",
-      "name": "Ragpicker",
+      "name": "Rag Picker",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/rag-picker.jpg",
       "symbol": "👤",
-      "description": "Ragpicker, identified in the case notes for Case File 591. Has not given a formal statement.",
+      "description": "Rag Picker, identified in the case notes for Case File 591. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

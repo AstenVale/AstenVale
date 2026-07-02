@@ -230,19 +230,19 @@ window.SONG_DATA = {
     {
       "id": "063_waxseal",
       "type": "Object",
-      "name": "Waxseal",
+      "name": "Wax Seal",
       "symbol": "🔍",
       "description": "Wax Seal was recovered from Lumber Camp in Case File 063. It is tied to Blacksmith, 3:44, and marker 625.",
       "unknownInfo": "Sideways and River Water suggest this object matters beyond the first reading.",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/063 - rope.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/051 - wax seal.jpg"
     },
     {
       "id": "063_location",
       "type": "Location",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-063-sawmill-location.jpg",
-      "name": "Lumbercamp",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-047-lumber-camp-location.jpg",
+      "name": "Lumber Camp",
       "symbol": "📍",
-      "description": "The active scene for Case File 063. Recovered field notes place the primary event at Lumbercamp.",
+      "description": "The active scene for Case File 063. Recovered field notes place the primary event at Lumber Camp.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

@@ -219,7 +219,8 @@ window.SONG_DATA = {
     {
       "id": "267_waxtablet",
       "type": "Object",
-      "name": "Waxtablet",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/077 - wax tablet.jpg",
+      "name": "Wax Tablet",
       "symbol": "🔍",
       "description": "Wax Tablet was recovered from Church in Case File 267. It is tied to Midwife, 9:08, and marker 2325.",
       "unknownInfo": "Along the Creek and Crow Wings suggest this object matters beyond the first reading."
@@ -227,6 +228,7 @@ window.SONG_DATA = {
     {
       "id": "267_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-004-church-location.jpg",
       "name": "Church",
       "symbol": "📍",
       "description": "The active scene for Case File 267. Recovered field notes place the primary event at Church.",

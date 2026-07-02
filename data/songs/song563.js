@@ -219,6 +219,7 @@ window.SONG_DATA = {
     {
       "id": "563_badge",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/067 - badge.jpg",
       "name": "Badge",
       "symbol": "🔍",
       "description": "Badge was recovered from Ash Creek in Case File 563. It is tied to The Mute, 3:58, and marker 4797.",
@@ -227,9 +228,10 @@ window.SONG_DATA = {
     {
       "id": "563_location",
       "type": "Location",
-      "name": "Ashcreek",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-003-ash-creek-location.jpg",
+      "name": "Ash Creek",
       "symbol": "📍",
-      "description": "The active scene for Case File 563. Recovered field notes place the primary event at Ashcreek.",
+      "description": "The active scene for Case File 563. Recovered field notes place the primary event at Ash Creek.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

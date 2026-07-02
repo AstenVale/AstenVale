@@ -234,12 +234,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Suitcase was recovered from Train Station in Case File 017. It is tied to Station Master, 5:47, and marker 154.",
       "unknownInfo": "West and Train Whistle suggest this object matters beyond the first reading.",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/017 - handkerchief.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/016 - suitcase.jpg"
     },
     {
       "id": "017_location",
       "type": "Location",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-017-mailbox-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-015-train-station-location.jpg",
       "name": "Train Station",
       "symbol": "📍",
       "description": "The active scene for Case File 017. Recovered field notes place the primary event at Train Station.",

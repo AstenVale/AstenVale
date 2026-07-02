@@ -230,7 +230,8 @@ window.SONG_DATA = {
     {
       "id": "101_prayercard",
       "type": "Object",
-      "name": "Prayercard",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/066 - prayer card.jpg",
+      "name": "Prayer Card",
       "symbol": "🔍",
       "description": "Prayer Card was recovered from Brick Kiln in Case File 101. It is tied to Lime Burner, 10:51, and marker 943.",
       "unknownInfo": "Left and Forge Breath suggest this object matters beyond the first reading."
@@ -238,19 +239,19 @@ window.SONG_DATA = {
     {
       "id": "101_location",
       "type": "Location",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-101-butchers-row-location.jpg",
-      "name": "Brickkiln",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-065-brick-kiln-location.jpg",
+      "name": "Brick Kiln",
       "symbol": "📍",
-      "description": "The active scene for Case File 101. Recovered field notes place the primary event at Brickkiln.",
+      "description": "The active scene for Case File 101. Recovered field notes place the primary event at Brick Kiln.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {
       "id": "101_witness",
       "type": "Witness",
-      "name": "Limeburner",
+      "name": "Lime Burner",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/lime-burner.jpg",
       "symbol": "👤",
-      "description": "Limeburner, identified in the case notes for Case File 101. Has not given a formal statement.",
+      "description": "Lime Burner, identified in the case notes for Case File 101. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

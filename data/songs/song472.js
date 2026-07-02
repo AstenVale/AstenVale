@@ -232,6 +232,7 @@ window.SONG_DATA = {
     {
       "id": "472_scratchedinitialsinwood",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/090 - scratched initials in wood.jpg",
       "name": "Scratched Initials in Wood",
       "symbol": "🔍",
       "description": "Scratched Initials in Wood was recovered from The Widow's Porch in Case File 472. It is tied to Salt Seller, 6:17, and marker 4034.",
@@ -240,6 +241,7 @@ window.SONG_DATA = {
     {
       "id": "472_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-094-the-widows-porch-location.jpg",
       "name": "Widow'S Porch",
       "symbol": "📍",
       "description": "The active scene for Case File 472. Recovered field notes place the primary event at Widow'S Porch.",
@@ -248,10 +250,10 @@ window.SONG_DATA = {
     {
       "id": "472_witness",
       "type": "Witness",
-      "name": "Saltseller",
+      "name": "Salt Seller",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/salt-seller.jpg",
       "symbol": "👤",
-      "description": "Saltseller, identified in the case notes for Case File 472. Has not given a formal statement.",
+      "description": "Salt Seller, identified in the case notes for Case File 472. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

@@ -218,7 +218,8 @@ window.SONG_DATA = {
     {
       "id": "427_axlepin",
       "type": "Object",
-      "name": "Axlepin",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/042 - axle pin.jpg",
+      "name": "Axle Pin",
       "symbol": "🔍",
       "description": "Axle Pin was recovered from Stables in Case File 427. It is tied to Furrier, 2:38, and marker 3661.",
       "unknownInfo": "Nowhere and Kettle Boil suggest this object matters beyond the first reading."
@@ -226,6 +227,7 @@ window.SONG_DATA = {
     {
       "id": "427_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-032-stables-location.jpg",
       "name": "Stables",
       "symbol": "📍",
       "description": "The active scene for Case File 427. Recovered field notes place the primary event at Stables.",

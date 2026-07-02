@@ -229,6 +229,7 @@ window.SONG_DATA = {
     {
       "id": "202_driedflower",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/043 - dried flower.jpg",
       "name": "Dried Flower",
       "symbol": "🔍",
       "description": "Dried Flower was recovered from Saloon in Case File 202. It is tied to Rag Picker, 3:30, and marker 1788.",
@@ -237,6 +238,7 @@ window.SONG_DATA = {
     {
       "id": "202_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-064-saloon-location.jpg",
       "name": "Saloon",
       "symbol": "📍",
       "description": "The active scene for Case File 202. Recovered field notes place the primary event at Saloon.",
@@ -245,10 +247,10 @@ window.SONG_DATA = {
     {
       "id": "202_witness",
       "type": "Witness",
-      "name": "Ragpicker",
+      "name": "Rag Picker",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/rag-picker.jpg",
       "symbol": "👤",
-      "description": "Ragpicker, identified in the case notes for Case File 202. Has not given a formal statement.",
+      "description": "Rag Picker, identified in the case notes for Case File 202. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

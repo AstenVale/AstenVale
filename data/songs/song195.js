@@ -228,6 +228,7 @@ window.SONG_DATA = {
     {
       "id": "195_watch",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/039 - watch.jpg",
       "name": "Watch",
       "symbol": "🔍",
       "description": "Watch was recovered from Potter's Field in Case File 195. It is tied to Blacksmith, 11:51, and marker 1725.",
@@ -236,9 +237,10 @@ window.SONG_DATA = {
     {
       "id": "195_location",
       "type": "Location",
-      "name": "Potter'Sfield",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-026-potters-field-location.jpg",
+      "name": "Potter's Field",
       "symbol": "📍",
-      "description": "The active scene for Case File 195. Recovered field notes place the primary event at Potter'Sfield.",
+      "description": "The active scene for Case File 195. Recovered field notes place the primary event at Potter's Field.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

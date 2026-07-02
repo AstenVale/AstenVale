@@ -227,6 +227,7 @@ window.SONG_DATA = {
     {
       "id": "264_photograph",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/011 - photograph.jpg",
       "name": "Photograph",
       "symbol": "🔍",
       "description": "Photograph was recovered from Hotel in Case File 264. It is tied to Furrier, 9:44, and marker 2306.",
@@ -235,6 +236,7 @@ window.SONG_DATA = {
     {
       "id": "264_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-051-hotel-location.jpg",
       "name": "Hotel",
       "symbol": "📍",
       "description": "The active scene for Case File 264. Recovered field notes place the primary event at Hotel.",

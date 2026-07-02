@@ -229,6 +229,7 @@ window.SONG_DATA = {
     {
       "id": "100_coin",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/044 - coin.jpg",
       "name": "Coin",
       "symbol": "🔍",
       "description": "Coin was recovered from Saloon in Case File 100. It is tied to The Mute, 3:30, and marker 934.",
@@ -237,7 +238,7 @@ window.SONG_DATA = {
     {
       "id": "100_location",
       "type": "Location",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-100-crows-nest-ridge-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-064-saloon-location.jpg",
       "name": "Saloon",
       "symbol": "📍",
       "description": "The active scene for Case File 100. Recovered field notes place the primary event at Saloon.",

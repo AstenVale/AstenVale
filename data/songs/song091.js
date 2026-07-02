@@ -234,12 +234,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Journal was recovered from The Root Cellar in Case File 091. It is tied to Land Agent, 9:15, and marker 861.",
       "unknownInfo": "Through and Mud Suction suggest this object matters beyond the first reading.",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/091 - letter.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/048 - journal.jpg"
     },
     {
       "id": "091_location",
       "type": "Location",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-091-the-narrow-road-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-037-the-root-cellar-location.jpg",
       "name": "Root Cellar",
       "symbol": "📍",
       "description": "The active scene for Case File 091. Recovered field notes place the primary event at Root Cellar.",
@@ -248,10 +248,10 @@ window.SONG_DATA = {
     {
       "id": "091_witness",
       "type": "Witness",
-      "name": "Landagent",
+      "name": "Land Agent",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/land-agent.jpg",
       "symbol": "👤",
-      "description": "Landagent, identified in the case notes for Case File 091. Has not given a formal statement.",
+      "description": "Land Agent, identified in the case notes for Case File 091. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

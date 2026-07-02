@@ -217,6 +217,7 @@ window.SONG_DATA = {
     {
       "id": "135_brooch",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/036 - brooch.jpg",
       "name": "Brooch",
       "symbol": "🔍",
       "description": "Brooch was recovered from Library in Case File 135. It is tied to Mechanic, 3:44, and marker 1225.",
@@ -225,6 +226,7 @@ window.SONG_DATA = {
     {
       "id": "135_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-036-library-location.jpg",
       "name": "Library",
       "symbol": "📍",
       "description": "The active scene for Case File 135. Recovered field notes place the primary event at Library.",

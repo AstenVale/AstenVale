@@ -220,7 +220,8 @@ window.SONG_DATA = {
     {
       "id": "595_woolscarf",
       "type": "Object",
-      "name": "Woolscarf",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/029 - wool scarf.jpg",
+      "name": "Wool Scarf",
       "symbol": "🔍",
       "description": "Wool Scarf was recovered from River's Edge in Case File 595. It is tied to Deputy, 11:51, and marker 5061.",
       "unknownInfo": "Off the Road and Kettle Boil suggest this object matters beyond the first reading."
@@ -228,9 +229,10 @@ window.SONG_DATA = {
     {
       "id": "595_location",
       "type": "Location",
-      "name": "River'Sedge",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-085-rivers-edge-location.jpg",
+      "name": "River's Edge",
       "symbol": "📍",
-      "description": "The active scene for Case File 595. Recovered field notes place the primary event at River'Sedge.",
+      "description": "The active scene for Case File 595. Recovered field notes place the primary event at River's Edge.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

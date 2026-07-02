@@ -228,7 +228,8 @@ window.SONG_DATA = {
     {
       "id": "193_lockofhair",
       "type": "Object",
-      "name": "Lockofhair",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/087 - lock of hair.jpg",
+      "name": "Lock of Hair",
       "symbol": "🔍",
       "description": "Lock of Hair was recovered from Smithy in Case File 193. It is tied to Driver, 5:55, and marker 1707.",
       "unknownInfo": "Around and Crow Wings suggest this object matters beyond the first reading."
@@ -236,6 +237,7 @@ window.SONG_DATA = {
     {
       "id": "193_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-043-smithy-location.jpg",
       "name": "Smithy",
       "symbol": "📍",
       "description": "The active scene for Case File 193. Recovered field notes place the primary event at Smithy.",

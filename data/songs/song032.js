@@ -218,16 +218,16 @@ window.SONG_DATA = {
     {
       "id": "032_woolscarf",
       "type": "Object",
-      "name": "Woolscarf",
+      "name": "Wool Scarf",
       "symbol": "🔍",
       "description": "Wool Scarf was recovered from Tannery in Case File 032. It is tied to Wainwright, 11:51, and marker 370.",
       "unknownInfo": "Under and Wheel on Gravel suggest this object matters beyond the first reading.",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/032 - pocket watch.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/029 - wool scarf.jpg"
     },
     {
       "id": "032_location",
       "type": "Location",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-032-stables-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-027-tannery-location.jpg",
       "name": "Tannery",
       "symbol": "📍",
       "description": "The active scene for Case File 032. Recovered field notes place the primary event at Tannery.",

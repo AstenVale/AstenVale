@@ -231,6 +231,7 @@ window.SONG_DATA = {
     {
       "id": "148_driedbloodoncloth",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/057 - dried blood on cloth.jpg",
       "name": "Dried Blood on Cloth",
       "symbol": "🔍",
       "description": "Dried Blood on Cloth was recovered from Cider House in Case File 148. It is tied to The Handless Man, 9:27, and marker 1334.",
@@ -239,9 +240,10 @@ window.SONG_DATA = {
     {
       "id": "148_location",
       "type": "Location",
-      "name": "Ciderhouse",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-039-cider-house-location.jpg",
+      "name": "Cider House",
       "symbol": "📍",
-      "description": "The active scene for Case File 148. Recovered field notes place the primary event at Ciderhouse.",
+      "description": "The active scene for Case File 148. Recovered field notes place the primary event at Cider House.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

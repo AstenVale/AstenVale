@@ -229,6 +229,7 @@ window.SONG_DATA = {
     {
       "id": "413_shipmanifest",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/070 - ship manifest.jpg",
       "name": "Ship Manifest",
       "symbol": "🔍",
       "description": "Ship Manifest was recovered from Smithy in Case File 413. It is tied to Judge, 5:09, and marker 3543.",
@@ -237,6 +238,7 @@ window.SONG_DATA = {
     {
       "id": "413_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-043-smithy-location.jpg",
       "name": "Smithy",
       "symbol": "📍",
       "description": "The active scene for Case File 413. Recovered field notes place the primary event at Smithy.",

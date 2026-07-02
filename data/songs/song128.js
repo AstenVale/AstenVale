@@ -229,6 +229,7 @@ window.SONG_DATA = {
     {
       "id": "128_matchbook",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/007 - matchbook.jpg",
       "name": "Matchbook",
       "symbol": "🔍",
       "description": "Matchbook was recovered from Potter's Field in Case File 128. It is tied to Gravedigger, 2:19, and marker 1170.",
@@ -237,9 +238,10 @@ window.SONG_DATA = {
     {
       "id": "128_location",
       "type": "Location",
-      "name": "Potter'Sfield",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-026-potters-field-location.jpg",
+      "name": "Potter's Field",
       "symbol": "📍",
-      "description": "The active scene for Case File 128. Recovered field notes place the primary event at Potter'Sfield.",
+      "description": "The active scene for Case File 128. Recovered field notes place the primary event at Potter's Field.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

@@ -230,7 +230,8 @@ window.SONG_DATA = {
     {
       "id": "127_waxseal",
       "type": "Object",
-      "name": "Waxseal",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/051 - wax seal.jpg",
+      "name": "Wax Seal",
       "symbol": "🔍",
       "description": "Wax Seal was recovered from Ash Hollow in Case File 127. It is tied to Child, 11:03, and marker 1161.",
       "unknownInfo": "Toward and Stones in a Tin suggest this object matters beyond the first reading."
@@ -238,9 +239,10 @@ window.SONG_DATA = {
     {
       "id": "127_location",
       "type": "Location",
-      "name": "Ashhollow",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-075-ash-hollow-location.jpg",
+      "name": "Ash Hollow",
       "symbol": "📍",
-      "description": "The active scene for Case File 127. Recovered field notes place the primary event at Ashhollow.",
+      "description": "The active scene for Case File 127. Recovered field notes place the primary event at Ash Hollow.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

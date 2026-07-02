@@ -217,6 +217,7 @@ window.SONG_DATA = {
     {
       "id": "223_boot",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/083 - boot.jpg",
       "name": "Boot",
       "symbol": "🔍",
       "description": "Boot was recovered from Boatyard in Case File 223. It is tied to Apothecary, 9:44, and marker 1961.",
@@ -225,6 +226,7 @@ window.SONG_DATA = {
     {
       "id": "223_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-057-boatyard-location.jpg",
       "name": "Boatyard",
       "symbol": "📍",
       "description": "The active scene for Case File 223. Recovered field notes place the primary event at Boatyard.",

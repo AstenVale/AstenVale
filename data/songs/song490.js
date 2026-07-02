@@ -217,6 +217,7 @@ window.SONG_DATA = {
     {
       "id": "490_key",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/021 - key.jpg",
       "name": "Key",
       "symbol": "🔍",
       "description": "Key was recovered from Jail in Case File 490. It is tied to Tailor, 11:17, and marker 4188.",
@@ -225,6 +226,7 @@ window.SONG_DATA = {
     {
       "id": "490_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-084-jail-location.jpg",
       "name": "Jail",
       "symbol": "📍",
       "description": "The active scene for Case File 490. Recovered field notes place the primary event at Jail.",

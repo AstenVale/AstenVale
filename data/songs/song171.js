@@ -229,6 +229,7 @@ window.SONG_DATA = {
     {
       "id": "171_badge",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/067 - badge.jpg",
       "name": "Badge",
       "symbol": "🔍",
       "description": "Badge was recovered from River's Edge in Case File 171. It is tied to Fence Mender, 11:44, and marker 1525.",
@@ -237,9 +238,10 @@ window.SONG_DATA = {
     {
       "id": "171_location",
       "type": "Location",
-      "name": "River'Sedge",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-085-rivers-edge-location.jpg",
+      "name": "River's Edge",
       "symbol": "📍",
-      "description": "The active scene for Case File 171. Recovered field notes place the primary event at River'Sedge.",
+      "description": "The active scene for Case File 171. Recovered field notes place the primary event at River's Edge.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

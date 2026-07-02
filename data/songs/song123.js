@@ -231,6 +231,7 @@ window.SONG_DATA = {
     {
       "id": "123_compass",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/010 - compass.jpg",
       "name": "Compass",
       "symbol": "🔍",
       "description": "Compass was recovered from Clock Tower in Case File 123. It is tied to Fence Mender, 10:51, and marker 1125.",
@@ -239,9 +240,10 @@ window.SONG_DATA = {
     {
       "id": "123_location",
       "type": "Location",
-      "name": "Clocktower",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-074-clock-tower-location.jpg",
+      "name": "Clock Tower",
       "symbol": "📍",
-      "description": "The active scene for Case File 123. Recovered field notes place the primary event at Clocktower.",
+      "description": "The active scene for Case File 123. Recovered field notes place the primary event at Clock Tower.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

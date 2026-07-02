@@ -229,7 +229,8 @@ window.SONG_DATA = {
     {
       "id": "416_tornmap",
       "type": "Object",
-      "name": "Tornmap",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/088 - torn map.jpg",
+      "name": "Torn Map",
       "symbol": "🔍",
       "description": "Torn Map was recovered from Mill House in Case File 416. It is tied to Undertaker, 3:49, and marker 3570.",
       "unknownInfo": "Ahead and Wind in Pines suggest this object matters beyond the first reading."
@@ -237,9 +238,10 @@ window.SONG_DATA = {
     {
       "id": "416_location",
       "type": "Location",
-      "name": "Millhouse",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-050-mill-house-location.jpg",
+      "name": "Mill House",
       "symbol": "📍",
-      "description": "The active scene for Case File 416. Recovered field notes place the primary event at Millhouse.",
+      "description": "The active scene for Case File 416. Recovered field notes place the primary event at Mill House.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

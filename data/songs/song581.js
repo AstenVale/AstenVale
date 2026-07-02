@@ -220,7 +220,8 @@ window.SONG_DATA = {
     {
       "id": "581_beltbuckle",
       "type": "Object",
-      "name": "Beltbuckle",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/081 - belt buckle.jpg",
+      "name": "Belt Buckle",
       "symbol": "🔍",
       "description": "Belt Buckle was recovered from The Widow's Porch in Case File 581. It is tied to Cartographer, 1:33, and marker 4943.",
       "unknownInfo": "South and Axe on Wood suggest this object matters beyond the first reading."
@@ -228,6 +229,7 @@ window.SONG_DATA = {
     {
       "id": "581_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-094-the-widows-porch-location.jpg",
       "name": "Widow'S Porch",
       "symbol": "📍",
       "description": "The active scene for Case File 581. Recovered field notes place the primary event at Widow'S Porch.",

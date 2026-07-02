@@ -218,6 +218,7 @@ window.SONG_DATA = {
     {
       "id": "557_glove",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/062 - glove.jpg",
       "name": "Glove",
       "symbol": "🔍",
       "description": "Glove was recovered from Birch Stand in Case File 557. It is tied to Glazier, 8:00, and marker 4743.",
@@ -226,9 +227,10 @@ window.SONG_DATA = {
     {
       "id": "557_location",
       "type": "Location",
-      "name": "Birchstand",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-093-birch-stand-location.jpg",
+      "name": "Birch Stand",
       "symbol": "📍",
-      "description": "The active scene for Case File 557. Recovered field notes place the primary event at Birchstand.",
+      "description": "The active scene for Case File 557. Recovered field notes place the primary event at Birch Stand.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

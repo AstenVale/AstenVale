@@ -231,6 +231,7 @@ window.SONG_DATA = {
     {
       "id": "590_hollowacorn",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/065 - hollow acorn.jpg",
       "name": "Hollow Acorn",
       "symbol": "🔍",
       "description": "Hollow Acorn was recovered from Undertaker's Hall in Case File 590. It is tied to Stranger, 11:40, and marker 5016.",
@@ -239,9 +240,10 @@ window.SONG_DATA = {
     {
       "id": "590_location",
       "type": "Location",
-      "name": "Undertaker'Shall",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-053-undertakers-hall-location.jpg",
+      "name": "Undertaker's Hall",
       "symbol": "📍",
-      "description": "The active scene for Case File 590. Recovered field notes place the primary event at Undertaker'Shall.",
+      "description": "The active scene for Case File 590. Recovered field notes place the primary event at Undertaker's Hall.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

@@ -219,6 +219,7 @@ window.SONG_DATA = {
     {
       "id": "593_photograph",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/011 - photograph.jpg",
       "name": "Photograph",
       "symbol": "🔍",
       "description": "Photograph was recovered from Doctor's Office in Case File 593. It is tied to Fisherman, 1:33, and marker 5043.",
@@ -227,9 +228,10 @@ window.SONG_DATA = {
     {
       "id": "593_location",
       "type": "Location",
-      "name": "Doctor'Soffice",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-066-doctors-office-location.jpg",
+      "name": "Doctor's Office",
       "symbol": "📍",
-      "description": "The active scene for Case File 593. Recovered field notes place the primary event at Doctor'Soffice.",
+      "description": "The active scene for Case File 593. Recovered field notes place the primary event at Doctor's Office.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

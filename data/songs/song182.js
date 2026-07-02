@@ -219,7 +219,8 @@ window.SONG_DATA = {
     {
       "id": "182_oilrag",
       "type": "Object",
-      "name": "Oilrag",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/086 - oil rag.jpg",
+      "name": "Oil Rag",
       "symbol": "🔍",
       "description": "Oil Rag was recovered from Barn in Case File 182. It is tied to Station Master, 10:19, and marker 1616.",
       "unknownInfo": "South and Shovel on Earth suggest this object matters beyond the first reading."
@@ -227,6 +228,7 @@ window.SONG_DATA = {
     {
       "id": "182_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-078-barn-location.jpg",
       "name": "Barn",
       "symbol": "📍",
       "description": "The active scene for Case File 182. Recovered field notes place the primary event at Barn.",

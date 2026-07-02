@@ -218,6 +218,7 @@ window.SONG_DATA = {
     {
       "id": "511_knife",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/093 - knife.jpg",
       "name": "Knife",
       "symbol": "🔍",
       "description": "Knife was recovered from Silo Row in Case File 511. It is tied to Deputy, 4:38, and marker 4361.",
@@ -226,9 +227,10 @@ window.SONG_DATA = {
     {
       "id": "511_location",
       "type": "Location",
-      "name": "Silorow",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-104-silo-row-location.jpg",
+      "name": "Silo Row",
       "symbol": "📍",
-      "description": "The active scene for Case File 511. Recovered field notes place the primary event at Silorow.",
+      "description": "The active scene for Case File 511. Recovered field notes place the primary event at Silo Row.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

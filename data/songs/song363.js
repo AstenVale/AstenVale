@@ -230,7 +230,8 @@ window.SONG_DATA = {
     {
       "id": "363_tornlabel",
       "type": "Object",
-      "name": "Tornlabel",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/040 - torn label.jpg",
+      "name": "Torn Label",
       "symbol": "🔍",
       "description": "Torn Label was recovered from Cider House in Case File 363. It is tied to Lime Burner, 2:38, and marker 3125.",
       "unknownInfo": "Nowhere and Crow on Wire suggest this object matters beyond the first reading."
@@ -238,18 +239,19 @@ window.SONG_DATA = {
     {
       "id": "363_location",
       "type": "Location",
-      "name": "Ciderhouse",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-039-cider-house-location.jpg",
+      "name": "Cider House",
       "symbol": "📍",
-      "description": "The active scene for Case File 363. Recovered field notes place the primary event at Ciderhouse.",
+      "description": "The active scene for Case File 363. Recovered field notes place the primary event at Cider House.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {
       "id": "363_witness",
       "type": "Witness",
-      "name": "Limeburner",
+      "name": "Lime Burner",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/lime-burner.jpg",
       "symbol": "👤",
-      "description": "Limeburner, identified in the case notes for Case File 363. Has not given a formal statement.",
+      "description": "Lime Burner, identified in the case notes for Case File 363. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

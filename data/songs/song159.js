@@ -220,7 +220,8 @@ window.SONG_DATA = {
     {
       "id": "159_waxseal",
       "type": "Object",
-      "name": "Waxseal",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/051 - wax seal.jpg",
+      "name": "Wax Seal",
       "symbol": "🔍",
       "description": "Wax Seal was recovered from Barn in Case File 159. It is tied to Lock Keeper, 8:00, and marker 1425.",
       "unknownInfo": "Straight Down and Moth Wings suggest this object matters beyond the first reading."
@@ -228,6 +229,7 @@ window.SONG_DATA = {
     {
       "id": "159_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-078-barn-location.jpg",
       "name": "Barn",
       "symbol": "📍",
       "description": "The active scene for Case File 159. Recovered field notes place the primary event at Barn.",
@@ -236,10 +238,10 @@ window.SONG_DATA = {
     {
       "id": "159_witness",
       "type": "Witness",
-      "name": "Lockkeeper",
+      "name": "Lock Keeper",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/lock-keeper.jpg",
       "symbol": "👤",
-      "description": "Lockkeeper, identified in the case notes for Case File 159. Has not given a formal statement.",
+      "description": "Lock Keeper, identified in the case notes for Case File 159. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

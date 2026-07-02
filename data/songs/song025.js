@@ -224,15 +224,15 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Charcoal Sketch was recovered from Quarry Edge in Case File 025. It is tied to Station Master, 9:55, and marker 307.",
       "unknownInfo": "Toward and Coal Shifting suggest this object matters beyond the first reading.",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/025 - leather strap.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/023 - charcoal sketch.jpg"
     },
     {
       "id": "025_location",
       "type": "Location",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-025-grist-mill-location.jpg",
-      "name": "Quarryedge",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-022-quarry-edge-location.jpg",
+      "name": "Quarry Edge",
       "symbol": "📍",
-      "description": "The active scene for Case File 025. Recovered field notes place the primary event at Quarryedge.",
+      "description": "The active scene for Case File 025. Recovered field notes place the primary event at Quarry Edge.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

@@ -219,7 +219,8 @@ window.SONG_DATA = {
     {
       "id": "358_prayercard",
       "type": "Object",
-      "name": "Prayercard",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/066 - prayer card.jpg",
+      "name": "Prayer Card",
       "symbol": "🔍",
       "description": "Prayer Card was recovered from Sheep Fold in Case File 358. It is tied to Deputy, 5:21, and marker 3088.",
       "unknownInfo": "Left and Fire Crackling suggest this object matters beyond the first reading."
@@ -227,9 +228,10 @@ window.SONG_DATA = {
     {
       "id": "358_location",
       "type": "Location",
-      "name": "Sheepfold",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-086-sheep-fold-location.jpg",
+      "name": "Sheep Fold",
       "symbol": "📍",
-      "description": "The active scene for Case File 358. Recovered field notes place the primary event at Sheepfold.",
+      "description": "The active scene for Case File 358. Recovered field notes place the primary event at Sheep Fold.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

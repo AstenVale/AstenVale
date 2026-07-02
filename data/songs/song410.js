@@ -228,6 +228,7 @@ window.SONG_DATA = {
     {
       "id": "410_rope",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/063 - rope.jpg",
       "name": "Rope",
       "symbol": "🔍",
       "description": "Rope was recovered from Fulling Mill in Case File 410. It is tied to Deputy, 8:00, and marker 3516.",
@@ -236,6 +237,7 @@ window.SONG_DATA = {
     {
       "id": "410_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-035-fulling-mill-location.jpg",
       "name": "Fulling Mill",
       "symbol": "📍",
       "description": "The active scene for Case File 410. Recovered field notes place the primary event at Fulling Mill.",

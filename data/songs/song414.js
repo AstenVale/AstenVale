@@ -229,6 +229,7 @@ window.SONG_DATA = {
     {
       "id": "414_brooch",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/036 - brooch.jpg",
       "name": "Brooch",
       "symbol": "🔍",
       "description": "Brooch was recovered from The Ravine in Case File 414. It is tied to Quarry Foreman, 12:44, and marker 3552.",
@@ -237,6 +238,7 @@ window.SONG_DATA = {
     {
       "id": "414_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-081-the-ravine-location.jpg",
       "name": "Ravine",
       "symbol": "📍",
       "description": "The active scene for Case File 414. Recovered field notes place the primary event at Ravine.",

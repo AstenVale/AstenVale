@@ -229,7 +229,8 @@ window.SONG_DATA = {
     {
       "id": "477_tornmap",
       "type": "Object",
-      "name": "Tornmap",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/088 - torn map.jpg",
+      "name": "Torn Map",
       "symbol": "🔍",
       "description": "Torn Map was recovered from The Ridge in Case File 477. It is tied to Ferryman, 7:14, and marker 4079.",
       "unknownInfo": "Up and Millstone suggest this object matters beyond the first reading."
@@ -237,6 +238,7 @@ window.SONG_DATA = {
     {
       "id": "477_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-071-the-ridge-location.jpg",
       "name": "Ridge",
       "symbol": "📍",
       "description": "The active scene for Case File 477. Recovered field notes place the primary event at Ridge.",

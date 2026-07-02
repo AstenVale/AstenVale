@@ -220,6 +220,7 @@ window.SONG_DATA = {
     {
       "id": "534_spoolofthread",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/034 - spool of thread.jpg",
       "name": "Spool of Thread",
       "symbol": "🔍",
       "description": "Spool of Thread was recovered from Iron Bridge in Case File 534. It is tied to Quarry Foreman, 12:00, and marker 4552.",
@@ -228,9 +229,10 @@ window.SONG_DATA = {
     {
       "id": "534_location",
       "type": "Location",
-      "name": "Ironbridge",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-089-iron-bridge-location.jpg",
+      "name": "Iron Bridge",
       "symbol": "📍",
-      "description": "The active scene for Case File 534. Recovered field notes place the primary event at Ironbridge.",
+      "description": "The active scene for Case File 534. Recovered field notes place the primary event at Iron Bridge.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

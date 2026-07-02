@@ -230,6 +230,7 @@ window.SONG_DATA = {
     {
       "id": "343_knife",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/093 - knife.jpg",
       "name": "Knife",
       "symbol": "🔍",
       "description": "Knife was recovered from Canning Factory in Case File 343. It is tied to Conductor, 1:11, and marker 2961.",
@@ -238,6 +239,7 @@ window.SONG_DATA = {
     {
       "id": "343_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-095-canning-factory-location.jpg",
       "name": "Canning Factory",
       "symbol": "📍",
       "description": "The active scene for Case File 343. Recovered field notes place the primary event at Canning Factory.",

@@ -218,6 +218,7 @@ window.SONG_DATA = {
     {
       "id": "320_hollowacorn",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/065 - hollow acorn.jpg",
       "name": "Hollow Acorn",
       "symbol": "🔍",
       "description": "Hollow Acorn was recovered from Grist Mill in Case File 320. It is tied to Peddler, 11:44, and marker 2770.",
@@ -226,9 +227,10 @@ window.SONG_DATA = {
     {
       "id": "320_location",
       "type": "Location",
-      "name": "Gristmill",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-025-grist-mill-location.jpg",
+      "name": "Grist Mill",
       "symbol": "📍",
-      "description": "The active scene for Case File 320. Recovered field notes place the primary event at Gristmill.",
+      "description": "The active scene for Case File 320. Recovered field notes place the primary event at Grist Mill.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

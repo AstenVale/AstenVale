@@ -228,6 +228,7 @@ window.SONG_DATA = {
     {
       "id": "108_receipt",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/060 - receipt.jpg",
       "name": "Receipt",
       "symbol": "🔍",
       "description": "Receipt was recovered from Calico Alley in Case File 108. It is tied to Preacher, 3:03, and marker 1006.",
@@ -236,6 +237,7 @@ window.SONG_DATA = {
     {
       "id": "108_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-069-calico-alley-location.jpg",
       "name": "Calico Alley",
       "symbol": "📍",
       "description": "The active scene for Case File 108. Recovered field notes place the primary event at Calico Alley.",

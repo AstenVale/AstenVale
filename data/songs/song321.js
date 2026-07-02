@@ -218,6 +218,7 @@ window.SONG_DATA = {
     {
       "id": "321_driedbloodoncloth",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/057 - dried blood on cloth.jpg",
       "name": "Dried Blood on Cloth",
       "symbol": "🔍",
       "description": "Dried Blood on Cloth was recovered from Smithy in Case File 321. It is tied to Fisherman, 3:03, and marker 2779.",
@@ -226,6 +227,7 @@ window.SONG_DATA = {
     {
       "id": "321_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-043-smithy-location.jpg",
       "name": "Smithy",
       "symbol": "📍",
       "description": "The active scene for Case File 321. Recovered field notes place the primary event at Smithy.",

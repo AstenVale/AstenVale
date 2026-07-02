@@ -222,6 +222,7 @@ window.SONG_DATA = {
     {
       "id": "206_hollowacorn",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/065 - hollow acorn.jpg",
       "name": "Hollow Acorn",
       "symbol": "🔍",
       "description": "Hollow Acorn was recovered from The Depot in Case File 206. It is tied to Lock Keeper, 8:06, and marker 1816.",
@@ -230,6 +231,7 @@ window.SONG_DATA = {
     {
       "id": "206_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-005-depot-location.jpg",
       "name": "Depot",
       "symbol": "📍",
       "description": "The active scene for Case File 206. Recovered field notes place the primary event at Depot.",
@@ -238,10 +240,10 @@ window.SONG_DATA = {
     {
       "id": "206_witness",
       "type": "Witness",
-      "name": "Lockkeeper",
+      "name": "Lock Keeper",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/lock-keeper.jpg",
       "symbol": "👤",
-      "description": "Lockkeeper, identified in the case notes for Case File 206. Has not given a formal statement.",
+      "description": "Lock Keeper, identified in the case notes for Case File 206. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

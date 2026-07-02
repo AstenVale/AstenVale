@@ -224,15 +224,15 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Dried Flower was recovered from Mill House in Case File 095. It is tied to Deputy, 5:09, and marker 897.",
       "unknownInfo": "Past the Tree Line and Cellar Door suggest this object matters beyond the first reading.",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/095 - wire coil.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/043 - dried flower.jpg"
     },
     {
       "id": "095_location",
       "type": "Location",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-095-canning-factory-location.jpg",
-      "name": "Millhouse",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-050-mill-house-location.jpg",
+      "name": "Mill House",
       "symbol": "📍",
-      "description": "The active scene for Case File 095. Recovered field notes place the primary event at Millhouse.",
+      "description": "The active scene for Case File 095. Recovered field notes place the primary event at Mill House.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

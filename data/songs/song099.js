@@ -216,6 +216,7 @@ window.SONG_DATA = {
     {
       "id": "099_comb",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/027 - comb.jpg",
       "name": "Comb",
       "symbol": "🔍",
       "description": "Comb was recovered from Sawmill in Case File 099. It is tied to Peddler, 12:33, and marker 925.",
@@ -224,7 +225,7 @@ window.SONG_DATA = {
     {
       "id": "099_location",
       "type": "Location",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-099-rope-walk-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-063-sawmill-location.jpg",
       "name": "Sawmill",
       "symbol": "📍",
       "description": "The active scene for Case File 099. Recovered field notes place the primary event at Sawmill.",

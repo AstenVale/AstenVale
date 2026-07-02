@@ -231,6 +231,7 @@ window.SONG_DATA = {
     {
       "id": "543_straightrazor",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/030 - straight razor.jpg",
       "name": "Straight Razor",
       "symbol": "🔍",
       "description": "Straight Razor was recovered from Clock Tower in Case File 543. It is tied to Retired Soldier, 11:17, and marker 4625.",
@@ -239,9 +240,10 @@ window.SONG_DATA = {
     {
       "id": "543_location",
       "type": "Location",
-      "name": "Clocktower",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-074-clock-tower-location.jpg",
+      "name": "Clock Tower",
       "symbol": "📍",
-      "description": "The active scene for Case File 543. Recovered field notes place the primary event at Clocktower.",
+      "description": "The active scene for Case File 543. Recovered field notes place the primary event at Clock Tower.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

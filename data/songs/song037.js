@@ -232,12 +232,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "String of Beads was recovered from Stables in Case File 037. It is tied to Midwife, 10:05, and marker 407.",
       "unknownInfo": "Toward and Kettle Boil suggest this object matters beyond the first reading.",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/037 - signet ring.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/033 - string of beads.jpg"
     },
     {
       "id": "037_location",
       "type": "Location",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-037-the-root-cellar-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-032-stables-location.jpg",
       "name": "Stables",
       "symbol": "📍",
       "description": "The active scene for Case File 037. Recovered field notes place the primary event at Stables.",

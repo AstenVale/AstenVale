@@ -230,6 +230,7 @@ window.SONG_DATA = {
     {
       "id": "155_candle",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/026 - candle.jpg",
       "name": "Candle",
       "symbol": "🔍",
       "description": "Candle was recovered from The Root Cellar in Case File 155. It is tied to Child, 8:42, and marker 1397.",
@@ -238,6 +239,7 @@ window.SONG_DATA = {
     {
       "id": "155_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-037-the-root-cellar-location.jpg",
       "name": "Root Cellar",
       "symbol": "📍",
       "description": "The active scene for Case File 155. Recovered field notes place the primary event at Root Cellar.",

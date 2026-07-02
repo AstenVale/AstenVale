@@ -218,6 +218,7 @@ window.SONG_DATA = {
     {
       "id": "555_key",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/021 - key.jpg",
       "name": "Key",
       "symbol": "🔍",
       "description": "Key was recovered from Fulling Mill in Case File 555. It is tied to Judge, 7:48, and marker 4725.",
@@ -226,6 +227,7 @@ window.SONG_DATA = {
     {
       "id": "555_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-035-fulling-mill-location.jpg",
       "name": "Fulling Mill",
       "symbol": "📍",
       "description": "The active scene for Case File 555. Recovered field notes place the primary event at Fulling Mill.",

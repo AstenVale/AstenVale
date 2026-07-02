@@ -222,15 +222,15 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Journal was recovered from Cooper's Yard in Case File 057. It is tied to Chandler, 8:42, and marker 579.",
       "unknownInfo": "Back and Pen on Paper suggest this object matters beyond the first reading.",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/057 - dried blood on cloth.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/048 - journal.jpg"
     },
     {
       "id": "057_location",
       "type": "Location",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-057-boatyard-location.jpg",
-      "name": "Cooper'Syard",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-031-coopers-yard-location.jpg",
+      "name": "Cooper's Yard",
       "symbol": "📍",
-      "description": "The active scene for Case File 057. Recovered field notes place the primary event at Cooper'Syard.",
+      "description": "The active scene for Case File 057. Recovered field notes place the primary event at Cooper's Yard.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

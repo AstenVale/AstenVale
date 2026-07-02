@@ -221,7 +221,8 @@ window.SONG_DATA = {
     {
       "id": "314_beltbuckle",
       "type": "Object",
-      "name": "Beltbuckle",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/081 - belt buckle.jpg",
+      "name": "Belt Buckle",
       "symbol": "🔍",
       "description": "Belt Buckle was recovered from The Ravine in Case File 314. It is tied to Lime Burner, 2:19, and marker 2716.",
       "unknownInfo": "Right and Horse Hooves suggest this object matters beyond the first reading."
@@ -229,6 +230,7 @@ window.SONG_DATA = {
     {
       "id": "314_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-081-the-ravine-location.jpg",
       "name": "Ravine",
       "symbol": "📍",
       "description": "The active scene for Case File 314. Recovered field notes place the primary event at Ravine.",
@@ -237,10 +239,10 @@ window.SONG_DATA = {
     {
       "id": "314_witness",
       "type": "Witness",
-      "name": "Limeburner",
+      "name": "Lime Burner",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/lime-burner.jpg",
       "symbol": "👤",
-      "description": "Limeburner, identified in the case notes for Case File 314. Has not given a formal statement.",
+      "description": "Lime Burner, identified in the case notes for Case File 314. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

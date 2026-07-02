@@ -229,6 +229,7 @@ window.SONG_DATA = {
     {
       "id": "178_stamp",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/085 - stamp.jpg",
       "name": "Stamp",
       "symbol": "🔍",
       "description": "Stamp was recovered from Banker's House in Case File 178. It is tied to Groundskeeper, 5:13, and marker 1588.",
@@ -237,9 +238,10 @@ window.SONG_DATA = {
     {
       "id": "178_location",
       "type": "Location",
-      "name": "Banker'Shouse",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-040-bankers-house-location.jpg",
+      "name": "Banker's House",
       "symbol": "📍",
-      "description": "The active scene for Case File 178. Recovered field notes place the primary event at Banker'Shouse.",
+      "description": "The active scene for Case File 178. Recovered field notes place the primary event at Banker's House.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

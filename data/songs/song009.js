@@ -218,7 +218,7 @@ window.SONG_DATA = {
     {
       "id": "009_cabinkey",
       "type": "Object",
-      "name": "Cabinkey",
+      "name": "Cabin Key",
       "symbol": "🔍",
       "description": "Cabin Key was recovered from Cabin in Case File 009. It is tied to Mechanic, 10:22, and marker 72.",
       "unknownInfo": "North and Wind in Pines suggest this object matters beyond the first reading.",
@@ -227,7 +227,7 @@ window.SONG_DATA = {
     {
       "id": "009_location",
       "type": "Location",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-009-highway-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-008-cabin-location.jpg",
       "name": "Cabin",
       "symbol": "📍",
       "description": "The active scene for Case File 009. Recovered field notes place the primary event at Cabin.",

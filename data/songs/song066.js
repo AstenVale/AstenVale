@@ -235,12 +235,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Canteen was recovered from The Hollow Road in Case File 066. It is tied to Drifter, 3:17, and marker 652.",
       "unknownInfo": "Straight Down and Crow Wings suggest this object matters beyond the first reading.",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/066 - prayer card.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/053 - canteen.jpg"
     },
     {
       "id": "066_location",
       "type": "Location",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-066-doctors-office-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-049-the-hollow-road-location.jpg",
       "name": "Hollow Road",
       "symbol": "📍",
       "description": "The active scene for Case File 066. Recovered field notes place the primary event at Hollow Road.",

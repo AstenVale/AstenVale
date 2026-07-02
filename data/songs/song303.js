@@ -229,7 +229,8 @@ window.SONG_DATA = {
     {
       "id": "303_surveyorspin",
       "type": "Object",
-      "name": "Surveyor'Spin",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/069 - surveyor's pin.jpg",
+      "name": "Surveyor's Pin",
       "symbol": "🔍",
       "description": "Surveyor's Pin was recovered from Old Wharf in Case File 303. It is tied to Midwife, 10:19, and marker 2625.",
       "unknownInfo": "Out and Water Drip suggest this object matters beyond the first reading."
@@ -237,9 +238,10 @@ window.SONG_DATA = {
     {
       "id": "303_location",
       "type": "Location",
-      "name": "Oldwharf",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-054-old-wharf-location.jpg",
+      "name": "Old Wharf",
       "symbol": "📍",
-      "description": "The active scene for Case File 303. Recovered field notes place the primary event at Oldwharf.",
+      "description": "The active scene for Case File 303. Recovered field notes place the primary event at Old Wharf.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

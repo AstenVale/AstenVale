@@ -229,6 +229,7 @@ window.SONG_DATA = {
     {
       "id": "200_stamp",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/085 - stamp.jpg",
       "name": "Stamp",
       "symbol": "🔍",
       "description": "Stamp was recovered from Sheep Fold in Case File 200. It is tied to Lamplighter, 9:55, and marker 1770.",
@@ -237,9 +238,10 @@ window.SONG_DATA = {
     {
       "id": "200_location",
       "type": "Location",
-      "name": "Sheepfold",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-086-sheep-fold-location.jpg",
+      "name": "Sheep Fold",
       "symbol": "📍",
-      "description": "The active scene for Case File 200. Recovered field notes place the primary event at Sheepfold.",
+      "description": "The active scene for Case File 200. Recovered field notes place the primary event at Sheep Fold.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

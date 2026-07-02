@@ -218,6 +218,7 @@ window.SONG_DATA = {
     {
       "id": "539_locket",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/047 - locket.jpg",
       "name": "Locket",
       "symbol": "🔍",
       "description": "Locket was recovered from Harness Shop in Case File 539. It is tied to Librarian, 5:13, and marker 4597.",
@@ -226,6 +227,7 @@ window.SONG_DATA = {
     {
       "id": "539_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-061-harness-shop-location.jpg",
       "name": "Harness Shop",
       "symbol": "📍",
       "description": "The active scene for Case File 539. Recovered field notes place the primary event at Harness Shop.",

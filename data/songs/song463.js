@@ -218,7 +218,8 @@ window.SONG_DATA = {
     {
       "id": "463_ironnail",
       "type": "Object",
-      "name": "Ironnail",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/024 - iron nail.jpg",
+      "name": "Iron Nail",
       "symbol": "🔍",
       "description": "Iron Nail was recovered from Library in Case File 463. It is tied to Surveyor, 2:22, and marker 3961.",
       "unknownInfo": "West and Empty Wagon suggest this object matters beyond the first reading."
@@ -226,6 +227,7 @@ window.SONG_DATA = {
     {
       "id": "463_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-036-library-location.jpg",
       "name": "Library",
       "symbol": "📍",
       "description": "The active scene for Case File 463. Recovered field notes place the primary event at Library.",

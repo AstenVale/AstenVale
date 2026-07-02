@@ -228,6 +228,7 @@ window.SONG_DATA = {
     {
       "id": "572_inkwell",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/058 - inkwell.jpg",
       "name": "Inkwell",
       "symbol": "🔍",
       "description": "Inkwell was recovered from Cemetery in Case File 572. It is tied to Postman, 9:55, and marker 4870.",
@@ -236,6 +237,7 @@ window.SONG_DATA = {
     {
       "id": "572_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-010-cemetery-location.jpg",
       "name": "Cemetery",
       "symbol": "📍",
       "description": "The active scene for Case File 572. Recovered field notes place the primary event at Cemetery.",

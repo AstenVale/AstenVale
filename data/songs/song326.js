@@ -232,6 +232,7 @@ window.SONG_DATA = {
     {
       "id": "326_hollowacorn",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/065 - hollow acorn.jpg",
       "name": "Hollow Acorn",
       "symbol": "🔍",
       "description": "Hollow Acorn was recovered from Barn in Case File 326. It is tied to The Handless Man, 3:58, and marker 2816.",
@@ -240,6 +241,7 @@ window.SONG_DATA = {
     {
       "id": "326_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-078-barn-location.jpg",
       "name": "Barn",
       "symbol": "📍",
       "description": "The active scene for Case File 326. Recovered field notes place the primary event at Barn.",

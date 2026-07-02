@@ -221,7 +221,8 @@ window.SONG_DATA = {
     {
       "id": "481_oilrag",
       "type": "Object",
-      "name": "Oilrag",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/086 - oil rag.jpg",
+      "name": "Oil Rag",
       "symbol": "🔍",
       "description": "Oil Rag was recovered from Lumber Camp in Case File 481. It is tied to Night Porter, 4:38, and marker 4107.",
       "unknownInfo": "Off the Road and Hammer on Anvil suggest this object matters beyond the first reading."
@@ -229,9 +230,10 @@ window.SONG_DATA = {
     {
       "id": "481_location",
       "type": "Location",
-      "name": "Lumbercamp",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-047-lumber-camp-location.jpg",
+      "name": "Lumber Camp",
       "symbol": "📍",
-      "description": "The active scene for Case File 481. Recovered field notes place the primary event at Lumbercamp.",
+      "description": "The active scene for Case File 481. Recovered field notes place the primary event at Lumber Camp.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

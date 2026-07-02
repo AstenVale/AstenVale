@@ -226,7 +226,7 @@ window.SONG_DATA = {
     {
       "id": "010_location",
       "type": "Location",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-010-cemetery-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-009-highway-location.jpg",
       "name": "Highway",
       "symbol": "📍",
       "description": "The active scene for Case File 010. Recovered field notes place the primary event at Highway.",

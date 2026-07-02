@@ -221,6 +221,7 @@ window.SONG_DATA = {
     {
       "id": "165_driedflower",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/043 - dried flower.jpg",
       "name": "Dried Flower",
       "symbol": "🔍",
       "description": "Dried Flower was recovered from The Ravine in Case File 165. It is tied to Gravedigger, 1:26, and marker 1479.",
@@ -229,6 +230,7 @@ window.SONG_DATA = {
     {
       "id": "165_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-081-the-ravine-location.jpg",
       "name": "Ravine",
       "symbol": "📍",
       "description": "The active scene for Case File 165. Recovered field notes place the primary event at Ravine.",

@@ -228,6 +228,7 @@ window.SONG_DATA = {
     {
       "id": "456_pipe",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/082 - pipe.jpg",
       "name": "Pipe",
       "symbol": "🔍",
       "description": "Pipe was recovered from Diner in Case File 456. It is tied to Retired Soldier, 1:26, and marker 3906.",
@@ -236,6 +237,7 @@ window.SONG_DATA = {
     {
       "id": "456_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-007-diner-location.jpg",
       "name": "Diner",
       "symbol": "📍",
       "description": "The active scene for Case File 456. Recovered field notes place the primary event at Diner.",

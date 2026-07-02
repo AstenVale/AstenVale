@@ -218,6 +218,7 @@ window.SONG_DATA = {
     {
       "id": "271_seal",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/041 - seal.jpg",
       "name": "Seal",
       "symbol": "🔍",
       "description": "Seal was recovered from Millpond in Case File 271. It is tied to Salt Seller, 6:06, and marker 2361.",
@@ -226,6 +227,7 @@ window.SONG_DATA = {
     {
       "id": "271_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-024-millpond-location.jpg",
       "name": "Millpond",
       "symbol": "📍",
       "description": "The active scene for Case File 271. Recovered field notes place the primary event at Millpond.",
@@ -234,10 +236,10 @@ window.SONG_DATA = {
     {
       "id": "271_witness",
       "type": "Witness",
-      "name": "Saltseller",
+      "name": "Salt Seller",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/salt-seller.jpg",
       "symbol": "👤",
-      "description": "Saltseller, identified in the case notes for Case File 271. Has not given a formal statement.",
+      "description": "Salt Seller, identified in the case notes for Case File 271. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

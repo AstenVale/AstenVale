@@ -228,6 +228,7 @@ window.SONG_DATA = {
     {
       "id": "175_thimble",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/054 - thimble.jpg",
       "name": "Thimble",
       "symbol": "🔍",
       "description": "Thimble was recovered from Schoolhouse in Case File 175. It is tied to Sheriff, 7:48, and marker 1561.",
@@ -236,6 +237,7 @@ window.SONG_DATA = {
     {
       "id": "175_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-087-schoolhouse-location.jpg",
       "name": "Schoolhouse",
       "symbol": "📍",
       "description": "The active scene for Case File 175. Recovered field notes place the primary event at Schoolhouse.",

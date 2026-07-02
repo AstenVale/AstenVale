@@ -220,6 +220,7 @@ window.SONG_DATA = {
     {
       "id": "097_ring",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/064 - ring.jpg",
       "name": "Ring",
       "symbol": "🔍",
       "description": "Ring was recovered from The Weir in Case File 097. It is tied to Banker, 8:00, and marker 907.",
@@ -228,7 +229,7 @@ window.SONG_DATA = {
     {
       "id": "097_location",
       "type": "Location",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-097-telegraph-office-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-033-the-weir-location.jpg",
       "name": "Weir",
       "symbol": "📍",
       "description": "The active scene for Case File 097. Recovered field notes place the primary event at Weir.",

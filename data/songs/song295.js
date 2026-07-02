@@ -217,6 +217,7 @@ window.SONG_DATA = {
     {
       "id": "295_brooch",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/036 - brooch.jpg",
       "name": "Brooch",
       "symbol": "🔍",
       "description": "Brooch was recovered from Church in Case File 295. It is tied to Furrier, 5:21, and marker 2561.",
@@ -225,6 +226,7 @@ window.SONG_DATA = {
     {
       "id": "295_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-004-church-location.jpg",
       "name": "Church",
       "symbol": "📍",
       "description": "The active scene for Case File 295. Recovered field notes place the primary event at Church.",

@@ -230,7 +230,8 @@ window.SONG_DATA = {
     {
       "id": "385_woolscarf",
       "type": "Object",
-      "name": "Woolscarf",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/029 - wool scarf.jpg",
+      "name": "Wool Scarf",
       "symbol": "🔍",
       "description": "Wool Scarf was recovered from Banker's House in Case File 385. It is tied to Preacher, 7:14, and marker 3307.",
       "unknownInfo": "Nowhere and Saw Cutting suggest this object matters beyond the first reading."
@@ -238,9 +239,10 @@ window.SONG_DATA = {
     {
       "id": "385_location",
       "type": "Location",
-      "name": "Banker'Shouse",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-040-bankers-house-location.jpg",
+      "name": "Banker's House",
       "symbol": "📍",
-      "description": "The active scene for Case File 385. Recovered field notes place the primary event at Banker'Shouse.",
+      "description": "The active scene for Case File 385. Recovered field notes place the primary event at Banker's House.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

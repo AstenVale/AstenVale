@@ -231,6 +231,7 @@ window.SONG_DATA = {
     {
       "id": "495_brokenclasp",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/089 - broken clasp.jpg",
       "name": "Broken Clasp",
       "symbol": "🔍",
       "description": "Broken Clasp was recovered from Hill Road in Case File 495. It is tied to Caretaker, 8:42, and marker 4225.",
@@ -239,9 +240,10 @@ window.SONG_DATA = {
     {
       "id": "495_location",
       "type": "Location",
-      "name": "Hillroad",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-103-hill-road-location.jpg",
+      "name": "Hill Road",
       "symbol": "📍",
-      "description": "The active scene for Case File 495. Recovered field notes place the primary event at Hillroad.",
+      "description": "The active scene for Case File 495. Recovered field notes place the primary event at Hill Road.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

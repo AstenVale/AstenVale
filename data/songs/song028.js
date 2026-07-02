@@ -221,12 +221,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Candle was recovered from Cabin in Case File 028. It is tied to Chandler, 2:19, and marker 334.",
       "unknownInfo": "Under and Water Drip suggest this object matters beyond the first reading.",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/028 - chain.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/026 - candle.jpg"
     },
     {
       "id": "028_location",
       "type": "Location",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-028-water-tower-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-008-cabin-location.jpg",
       "name": "Cabin",
       "symbol": "📍",
       "description": "The active scene for Case File 028. Recovered field notes place the primary event at Cabin.",

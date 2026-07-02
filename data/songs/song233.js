@@ -230,6 +230,7 @@ window.SONG_DATA = {
     {
       "id": "233_leatherstrap",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/025 - leather strap.jpg",
       "name": "Leather Strap",
       "symbol": "🔍",
       "description": "Leather Strap was recovered from Print Shop in Case File 233. It is tied to Banker, 2:55, and marker 2043.",
@@ -238,9 +239,10 @@ window.SONG_DATA = {
     {
       "id": "233_location",
       "type": "Location",
-      "name": "Printshop",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-096-print-shop-location.jpg",
+      "name": "Print Shop",
       "symbol": "📍",
-      "description": "The active scene for Case File 233. Recovered field notes place the primary event at Printshop.",
+      "description": "The active scene for Case File 233. Recovered field notes place the primary event at Print Shop.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

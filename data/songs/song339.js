@@ -219,6 +219,7 @@ window.SONG_DATA = {
     {
       "id": "339_telegram",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/050 - telegram.jpg",
       "name": "Telegram",
       "symbol": "🔍",
       "description": "Telegram was recovered from Birch Stand in Case File 339. It is tied to Schoolteacher, 2:55, and marker 2925.",
@@ -227,9 +228,10 @@ window.SONG_DATA = {
     {
       "id": "339_location",
       "type": "Location",
-      "name": "Birchstand",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-093-birch-stand-location.jpg",
+      "name": "Birch Stand",
       "symbol": "📍",
-      "description": "The active scene for Case File 339. Recovered field notes place the primary event at Birchstand.",
+      "description": "The active scene for Case File 339. Recovered field notes place the primary event at Birch Stand.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

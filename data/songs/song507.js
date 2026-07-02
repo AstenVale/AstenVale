@@ -219,7 +219,8 @@ window.SONG_DATA = {
     {
       "id": "507_waxtablet",
       "type": "Object",
-      "name": "Waxtablet",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/077 - wax tablet.jpg",
+      "name": "Wax Tablet",
       "symbol": "🔍",
       "description": "Wax Tablet was recovered from Tunnel in Case File 507. It is tied to Fence Mender, 2:47, and marker 4325.",
       "unknownInfo": "Below and Cellar Door suggest this object matters beyond the first reading."
@@ -227,6 +228,7 @@ window.SONG_DATA = {
     {
       "id": "507_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-070-tunnel-location.jpg",
       "name": "Tunnel",
       "symbol": "📍",
       "description": "The active scene for Case File 507. Recovered field notes place the primary event at Tunnel.",

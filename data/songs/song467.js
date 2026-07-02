@@ -217,6 +217,7 @@ window.SONG_DATA = {
     {
       "id": "467_badge",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/067 - badge.jpg",
       "name": "Badge",
       "symbol": "🔍",
       "description": "Badge was recovered from Schoolhouse in Case File 467. It is tied to Rag Picker, 5:13, and marker 3997.",
@@ -225,6 +226,7 @@ window.SONG_DATA = {
     {
       "id": "467_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-087-schoolhouse-location.jpg",
       "name": "Schoolhouse",
       "symbol": "📍",
       "description": "The active scene for Case File 467. Recovered field notes place the primary event at Schoolhouse.",
@@ -233,10 +235,10 @@ window.SONG_DATA = {
     {
       "id": "467_witness",
       "type": "Witness",
-      "name": "Ragpicker",
+      "name": "Rag Picker",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/rag-picker.jpg",
       "symbol": "👤",
-      "description": "Ragpicker, identified in the case notes for Case File 467. Has not given a formal statement.",
+      "description": "Rag Picker, identified in the case notes for Case File 467. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

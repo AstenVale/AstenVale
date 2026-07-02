@@ -228,7 +228,8 @@ window.SONG_DATA = {
     {
       "id": "312_waxtablet",
       "type": "Object",
-      "name": "Waxtablet",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/077 - wax tablet.jpg",
+      "name": "Wax Tablet",
       "symbol": "🔍",
       "description": "Wax Tablet was recovered from Cooperage in Case File 312. It is tied to Cartographer, 3:49, and marker 2706.",
       "unknownInfo": "South and Distant Gunshot suggest this object matters beyond the first reading."
@@ -236,6 +237,7 @@ window.SONG_DATA = {
     {
       "id": "312_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-068-cooperage-location.jpg",
       "name": "Cooperage",
       "symbol": "📍",
       "description": "The active scene for Case File 312. Recovered field notes place the primary event at Cooperage.",

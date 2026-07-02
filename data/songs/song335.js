@@ -218,6 +218,7 @@ window.SONG_DATA = {
     {
       "id": "335_handkerchief",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/017 - handkerchief.jpg",
       "name": "Handkerchief",
       "symbol": "🔍",
       "description": "Handkerchief was recovered from Post Office in Case File 335. It is tied to Cooper, 5:55, and marker 2897.",
@@ -226,9 +227,10 @@ window.SONG_DATA = {
     {
       "id": "335_location",
       "type": "Location",
-      "name": "Postoffice",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-059-post-office-location.jpg",
+      "name": "Post Office",
       "symbol": "📍",
-      "description": "The active scene for Case File 335. Recovered field notes place the primary event at Postoffice.",
+      "description": "The active scene for Case File 335. Recovered field notes place the primary event at Post Office.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

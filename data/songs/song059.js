@@ -221,12 +221,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Straight Razor was recovered from Church in Case File 059. It is tied to Doctor, 1:26, and marker 597.",
       "unknownInfo": "South and Floorboard suggest this object matters beyond the first reading.",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/059 - cufflink.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/030 - straight razor.jpg"
     },
     {
       "id": "059_location",
       "type": "Location",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-059-post-office-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-004-church-location.jpg",
       "name": "Church",
       "symbol": "📍",
       "description": "The active scene for Case File 059. Recovered field notes place the primary event at Church.",

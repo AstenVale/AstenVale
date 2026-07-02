@@ -217,6 +217,7 @@ window.SONG_DATA = {
     {
       "id": "506_coin",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/044 - coin.jpg",
       "name": "Coin",
       "symbol": "🔍",
       "description": "Coin was recovered from Barn in Case File 506. It is tied to Drifter, 3:03, and marker 4316.",
@@ -225,6 +226,7 @@ window.SONG_DATA = {
     {
       "id": "506_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-078-barn-location.jpg",
       "name": "Barn",
       "symbol": "📍",
       "description": "The active scene for Case File 506. Recovered field notes place the primary event at Barn.",

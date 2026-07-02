@@ -220,6 +220,7 @@ window.SONG_DATA = {
     {
       "id": "360_stringofbeads",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/033 - string of beads.jpg",
       "name": "String of Beads",
       "symbol": "🔍",
       "description": "String of Beads was recovered from Barn in Case File 360. It is tied to Rope Maker, 3:58, and marker 3106.",
@@ -228,6 +229,7 @@ window.SONG_DATA = {
     {
       "id": "360_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-078-barn-location.jpg",
       "name": "Barn",
       "symbol": "📍",
       "description": "The active scene for Case File 360. Recovered field notes place the primary event at Barn.",
@@ -236,10 +238,10 @@ window.SONG_DATA = {
     {
       "id": "360_witness",
       "type": "Witness",
-      "name": "Ropemaker",
+      "name": "Rope Maker",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/rope-maker.jpg",
       "symbol": "👤",
-      "description": "Ropemaker, identified in the case notes for Case File 360. Has not given a formal statement.",
+      "description": "Rope Maker, identified in the case notes for Case File 360. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

@@ -219,6 +219,7 @@ window.SONG_DATA = {
     {
       "id": "531_journal",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/048 - journal.jpg",
       "name": "Journal",
       "symbol": "🔍",
       "description": "Journal was recovered from The Quarry Pool in Case File 531. It is tied to Widow, 4:03, and marker 4525.",
@@ -227,6 +228,7 @@ window.SONG_DATA = {
     {
       "id": "531_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-034-the-quarry-pool-location.jpg",
       "name": "Quarry Pool",
       "symbol": "📍",
       "description": "The active scene for Case File 531. Recovered field notes place the primary event at Quarry Pool.",

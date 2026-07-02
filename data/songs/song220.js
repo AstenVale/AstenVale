@@ -229,6 +229,7 @@ window.SONG_DATA = {
     {
       "id": "220_photograph",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/011 - photograph.jpg",
       "name": "Photograph",
       "symbol": "🔍",
       "description": "Photograph was recovered from Crossroads in Case File 220. It is tied to Wool Sorter, 9:55, and marker 1934.",
@@ -237,6 +238,7 @@ window.SONG_DATA = {
     {
       "id": "220_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-073-crossroads-location.jpg",
       "name": "Crossroads",
       "symbol": "📍",
       "description": "The active scene for Case File 220. Recovered field notes place the primary event at Crossroads.",
@@ -245,10 +247,10 @@ window.SONG_DATA = {
     {
       "id": "220_witness",
       "type": "Witness",
-      "name": "Woolsorter",
+      "name": "Wool Sorter",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/wool-sorter.jpg",
       "symbol": "👤",
-      "description": "Woolsorter, identified in the case notes for Case File 220. Has not given a formal statement.",
+      "description": "Wool Sorter, identified in the case notes for Case File 220. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

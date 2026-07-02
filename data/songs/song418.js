@@ -228,6 +228,7 @@ window.SONG_DATA = {
     {
       "id": "418_button",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/072 - button.jpg",
       "name": "Button",
       "symbol": "🔍",
       "description": "Button was recovered from Freight Yard in Case File 418. It is tied to Wainwright, 1:26, and marker 3588.",
@@ -236,6 +237,7 @@ window.SONG_DATA = {
     {
       "id": "418_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-072-freight-yard-location.jpg",
       "name": "Freight Yard",
       "symbol": "📍",
       "description": "The active scene for Case File 418. Recovered field notes place the primary event at Freight Yard.",

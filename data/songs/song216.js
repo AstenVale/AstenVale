@@ -230,6 +230,7 @@ window.SONG_DATA = {
     {
       "id": "216_key",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/021 - key.jpg",
       "name": "Key",
       "symbol": "🔍",
       "description": "Key was recovered from The Pit in Case File 216. It is tied to Lock Keeper, 5:40, and marker 1906.",
@@ -238,6 +239,7 @@ window.SONG_DATA = {
     {
       "id": "216_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-055-the-pit-location.jpg",
       "name": "Pit",
       "symbol": "📍",
       "description": "The active scene for Case File 216. Recovered field notes place the primary event at Pit.",
@@ -246,10 +248,10 @@ window.SONG_DATA = {
     {
       "id": "216_witness",
       "type": "Witness",
-      "name": "Lockkeeper",
+      "name": "Lock Keeper",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/lock-keeper.jpg",
       "symbol": "👤",
-      "description": "Lockkeeper, identified in the case notes for Case File 216. Has not given a formal statement.",
+      "description": "Lock Keeper, identified in the case notes for Case File 216. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

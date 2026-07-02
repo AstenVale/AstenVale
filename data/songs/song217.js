@@ -230,7 +230,8 @@ window.SONG_DATA = {
     {
       "id": "217_oilrag",
       "type": "Object",
-      "name": "Oilrag",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/086 - oil rag.jpg",
+      "name": "Oil Rag",
       "symbol": "🔍",
       "description": "Oil Rag was recovered from Loom House in Case File 217. It is tied to Caretaker, 10:05, and marker 1907.",
       "unknownInfo": "West and Axe on Wood suggest this object matters beyond the first reading."
@@ -238,9 +239,10 @@ window.SONG_DATA = {
     {
       "id": "217_location",
       "type": "Location",
-      "name": "Loomhouse",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-046-loom-house-location.jpg",
+      "name": "Loom House",
       "symbol": "📍",
-      "description": "The active scene for Case File 217. Recovered field notes place the primary event at Loomhouse.",
+      "description": "The active scene for Case File 217. Recovered field notes place the primary event at Loom House.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

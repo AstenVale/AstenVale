@@ -233,15 +233,15 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Handkerchief was recovered from Window Seat in Case File 018. It is tied to Sister, 8:00, and marker 165.",
       "unknownInfo": "In and Clock Ticking suggest this object matters beyond the first reading.",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/018 - unopened mail.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/017 - handkerchief.jpg"
     },
     {
       "id": "018_location",
       "type": "Location",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-018-fireplace-location.jpg",
-      "name": "Windowseat",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-016-window-seat-location.jpg",
+      "name": "Window Seat",
       "symbol": "📍",
-      "description": "The active scene for Case File 018. Recovered field notes place the primary event at Windowseat.",
+      "description": "The active scene for Case File 018. Recovered field notes place the primary event at Window Seat.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

@@ -218,6 +218,7 @@ window.SONG_DATA = {
     {
       "id": "144_copperfitting",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/079 - copper fitting.jpg",
       "name": "Copper Fitting",
       "symbol": "🔍",
       "description": "Copper Fitting was recovered from Saloon in Case File 144. It is tied to Drifter, 9:55, and marker 1306.",
@@ -226,6 +227,7 @@ window.SONG_DATA = {
     {
       "id": "144_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-064-saloon-location.jpg",
       "name": "Saloon",
       "symbol": "📍",
       "description": "The active scene for Case File 144. Recovered field notes place the primary event at Saloon.",

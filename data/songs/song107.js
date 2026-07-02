@@ -227,6 +227,7 @@ window.SONG_DATA = {
     {
       "id": "107_handkerchief",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/017 - handkerchief.jpg",
       "name": "Handkerchief",
       "symbol": "🔍",
       "description": "Handkerchief was recovered from Forge in Case File 107. It is tied to Deputy, 8:42, and marker 997.",
@@ -235,6 +236,7 @@ window.SONG_DATA = {
     {
       "id": "107_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-042-forge-location.jpg",
       "name": "Forge",
       "symbol": "📍",
       "description": "The active scene for Case File 107. Recovered field notes place the primary event at Forge.",

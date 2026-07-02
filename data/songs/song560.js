@@ -219,6 +219,7 @@ window.SONG_DATA = {
     {
       "id": "560_inkwell",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/058 - inkwell.jpg",
       "name": "Inkwell",
       "symbol": "🔍",
       "description": "Inkwell was recovered from South Fork in Case File 560. It is tied to Schoolgirl, 11:44, and marker 4770.",
@@ -227,9 +228,10 @@ window.SONG_DATA = {
     {
       "id": "560_location",
       "type": "Location",
-      "name": "Southfork",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-030-south-fork-location.jpg",
+      "name": "South Fork",
       "symbol": "📍",
-      "description": "The active scene for Case File 560. Recovered field notes place the primary event at Southfork.",
+      "description": "The active scene for Case File 560. Recovered field notes place the primary event at South Fork.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

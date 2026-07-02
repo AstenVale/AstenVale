@@ -220,6 +220,7 @@ window.SONG_DATA = {
     {
       "id": "380_charredpaper",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/046 - charred paper.jpg",
       "name": "Charred Paper",
       "symbol": "🔍",
       "description": "Charred Paper was recovered from The Bluff in Case File 380. It is tied to Midwife, 12:44, and marker 3270.",
@@ -228,6 +229,7 @@ window.SONG_DATA = {
     {
       "id": "380_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-077-the-bluff-location.jpg",
       "name": "Bluff",
       "symbol": "📍",
       "description": "The active scene for Case File 380. Recovered field notes place the primary event at Bluff.",

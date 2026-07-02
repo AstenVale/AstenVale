@@ -220,6 +220,7 @@ window.SONG_DATA = {
     {
       "id": "187_spoolofthread",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/034 - spool of thread.jpg",
       "name": "Spool of Thread",
       "symbol": "🔍",
       "description": "Spool of Thread was recovered from Ash Creek in Case File 187. It is tied to Cider Presser, 7:02, and marker 1661.",
@@ -228,9 +229,10 @@ window.SONG_DATA = {
     {
       "id": "187_location",
       "type": "Location",
-      "name": "Ashcreek",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-003-ash-creek-location.jpg",
+      "name": "Ash Creek",
       "symbol": "📍",
-      "description": "The active scene for Case File 187. Recovered field notes place the primary event at Ashcreek.",
+      "description": "The active scene for Case File 187. Recovered field notes place the primary event at Ash Creek.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

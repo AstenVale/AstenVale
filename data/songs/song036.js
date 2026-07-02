@@ -223,15 +223,15 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Pocket Watch was recovered from Cooper's Yard in Case File 036. It is tied to Banker, 7:37, and marker 406.",
       "unknownInfo": "Home and Saw Cutting suggest this object matters beyond the first reading.",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/036 - brooch.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/032 - pocket watch.jpg"
     },
     {
       "id": "036_location",
       "type": "Location",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-036-library-location.jpg",
-      "name": "Cooper'Syard",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-031-coopers-yard-location.jpg",
+      "name": "Cooper's Yard",
       "symbol": "📍",
-      "description": "The active scene for Case File 036. Recovered field notes place the primary event at Cooper'Syard.",
+      "description": "The active scene for Case File 036. Recovered field notes place the primary event at Cooper's Yard.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

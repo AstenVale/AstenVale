@@ -229,6 +229,7 @@ window.SONG_DATA = {
     {
       "id": "254_stringofbeads",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/033 - string of beads.jpg",
       "name": "String of Beads",
       "symbol": "🔍",
       "description": "String of Beads was recovered from Post Office in Case File 254. It is tied to Preacher, 7:37, and marker 2216.",
@@ -237,9 +238,10 @@ window.SONG_DATA = {
     {
       "id": "254_location",
       "type": "Location",
-      "name": "Postoffice",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-059-post-office-location.jpg",
+      "name": "Post Office",
       "symbol": "📍",
-      "description": "The active scene for Case File 254. Recovered field notes place the primary event at Postoffice.",
+      "description": "The active scene for Case File 254. Recovered field notes place the primary event at Post Office.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

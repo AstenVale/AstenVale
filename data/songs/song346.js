@@ -228,6 +228,7 @@ window.SONG_DATA = {
     {
       "id": "346_locket",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/047 - locket.jpg",
       "name": "Locket",
       "symbol": "🔍",
       "description": "Locket was recovered from Smithy in Case File 346. It is tied to Stranger, 2:38, and marker 2988.",
@@ -236,6 +237,7 @@ window.SONG_DATA = {
     {
       "id": "346_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-043-smithy-location.jpg",
       "name": "Smithy",
       "symbol": "📍",
       "description": "The active scene for Case File 346. Recovered field notes place the primary event at Smithy.",

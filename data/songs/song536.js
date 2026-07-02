@@ -217,6 +217,7 @@ window.SONG_DATA = {
     {
       "id": "536_journal",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/048 - journal.jpg",
       "name": "Journal",
       "symbol": "🔍",
       "description": "Journal was recovered from Cooperage in Case File 536. It is tied to Wainwright, 12:17, and marker 4570.",
@@ -225,6 +226,7 @@ window.SONG_DATA = {
     {
       "id": "536_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-068-cooperage-location.jpg",
       "name": "Cooperage",
       "symbol": "📍",
       "description": "The active scene for Case File 536. Recovered field notes place the primary event at Cooperage.",

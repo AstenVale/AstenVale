@@ -220,6 +220,7 @@ window.SONG_DATA = {
     {
       "id": "399_driedflower",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/043 - dried flower.jpg",
       "name": "Dried Flower",
       "symbol": "🔍",
       "description": "Dried Flower was recovered from East Field in Case File 399. It is tied to Night Watchman, 11:29, and marker 3425.",
@@ -228,9 +229,10 @@ window.SONG_DATA = {
     {
       "id": "399_location",
       "type": "Location",
-      "name": "Eastfield",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-058-east-field-location.jpg",
+      "name": "East Field",
       "symbol": "📍",
-      "description": "The active scene for Case File 399. Recovered field notes place the primary event at Eastfield.",
+      "description": "The active scene for Case File 399. Recovered field notes place the primary event at East Field.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

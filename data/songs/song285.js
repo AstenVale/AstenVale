@@ -230,6 +230,7 @@ window.SONG_DATA = {
     {
       "id": "285_pocketwatch",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/032 - pocket watch.jpg",
       "name": "Pocket Watch",
       "symbol": "🔍",
       "description": "Pocket Watch was recovered from Telegraph Office in Case File 285. It is tied to Peddler, 5:09, and marker 2479.",
@@ -238,6 +239,7 @@ window.SONG_DATA = {
     {
       "id": "285_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-097-telegraph-office-location.jpg",
       "name": "Telegraph Office",
       "symbol": "📍",
       "description": "The active scene for Case File 285. Recovered field notes place the primary event at Telegraph Office.",

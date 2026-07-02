@@ -229,19 +229,19 @@ window.SONG_DATA = {
     {
       "id": "046_tornlabel",
       "type": "Object",
-      "name": "Tornlabel",
+      "name": "Torn Label",
       "symbol": "🔍",
       "description": "Torn Label was recovered from Banker's House in Case File 046. It is tied to Librarian, 10:19, and marker 488.",
       "unknownInfo": "Around and Child's Laugh (far off) suggest this object matters beyond the first reading.",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/046 - charred paper.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/040 - torn label.jpg"
     },
     {
       "id": "046_location",
       "type": "Location",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-046-loom-house-location.jpg",
-      "name": "Banker'Shouse",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-040-bankers-house-location.jpg",
+      "name": "Banker's House",
       "symbol": "📍",
-      "description": "The active scene for Case File 046. Recovered field notes place the primary event at Banker'Shouse.",
+      "description": "The active scene for Case File 046. Recovered field notes place the primary event at Banker's House.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

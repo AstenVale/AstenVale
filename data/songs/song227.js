@@ -220,6 +220,7 @@ window.SONG_DATA = {
     {
       "id": "227_spoolofthread",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/034 - spool of thread.jpg",
       "name": "Spool of Thread",
       "symbol": "🔍",
       "description": "Spool of Thread was recovered from Harness Shop in Case File 227. It is tied to Wool Sorter, 2:47, and marker 1997.",
@@ -228,6 +229,7 @@ window.SONG_DATA = {
     {
       "id": "227_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-061-harness-shop-location.jpg",
       "name": "Harness Shop",
       "symbol": "📍",
       "description": "The active scene for Case File 227. Recovered field notes place the primary event at Harness Shop.",
@@ -236,10 +238,10 @@ window.SONG_DATA = {
     {
       "id": "227_witness",
       "type": "Witness",
-      "name": "Woolsorter",
+      "name": "Wool Sorter",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/wool-sorter.jpg",
       "symbol": "👤",
-      "description": "Woolsorter, identified in the case notes for Case File 227. Has not given a formal statement.",
+      "description": "Wool Sorter, identified in the case notes for Case File 227. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

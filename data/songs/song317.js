@@ -220,7 +220,8 @@ window.SONG_DATA = {
     {
       "id": "317_tornlabel",
       "type": "Object",
-      "name": "Tornlabel",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/040 - torn label.jpg",
+      "name": "Torn Label",
       "symbol": "🔍",
       "description": "Torn Label was recovered from Hotel in Case File 317. It is tied to Census Taker, 2:55, and marker 2743.",
       "unknownInfo": "Along the Creek and Nail Pulled from Wood suggest this object matters beyond the first reading."
@@ -228,6 +229,7 @@ window.SONG_DATA = {
     {
       "id": "317_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-051-hotel-location.jpg",
       "name": "Hotel",
       "symbol": "📍",
       "description": "The active scene for Case File 317. Recovered field notes place the primary event at Hotel.",

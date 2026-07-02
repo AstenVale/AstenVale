@@ -219,6 +219,7 @@ window.SONG_DATA = {
     {
       "id": "425_compass",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/010 - compass.jpg",
       "name": "Compass",
       "symbol": "🔍",
       "description": "Compass was recovered from Canning Factory in Case File 425. It is tied to Stranger, 8:00, and marker 3643.",
@@ -227,6 +228,7 @@ window.SONG_DATA = {
     {
       "id": "425_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-095-canning-factory-location.jpg",
       "name": "Canning Factory",
       "symbol": "📍",
       "description": "The active scene for Case File 425. Recovered field notes place the primary event at Canning Factory.",

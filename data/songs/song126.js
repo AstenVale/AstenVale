@@ -231,7 +231,8 @@ window.SONG_DATA = {
     {
       "id": "126_signetring",
       "type": "Object",
-      "name": "Signetring",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/037 - signet ring.jpg",
+      "name": "Signet Ring",
       "symbol": "🔍",
       "description": "Signet Ring was recovered from Ash Creek in Case File 126. It is tied to Circuit Rider, 6:17, and marker 1152.",
       "unknownInfo": "Sideways and Shovel on Earth suggest this object matters beyond the first reading."
@@ -239,9 +240,10 @@ window.SONG_DATA = {
     {
       "id": "126_location",
       "type": "Location",
-      "name": "Ashcreek",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-003-ash-creek-location.jpg",
+      "name": "Ash Creek",
       "symbol": "📍",
-      "description": "The active scene for Case File 126. Recovered field notes place the primary event at Ashcreek.",
+      "description": "The active scene for Case File 126. Recovered field notes place the primary event at Ash Creek.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

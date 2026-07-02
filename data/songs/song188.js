@@ -217,6 +217,7 @@ window.SONG_DATA = {
     {
       "id": "188_candle",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/026 - candle.jpg",
       "name": "Candle",
       "symbol": "🔍",
       "description": "Candle was recovered from Forge in Case File 188. It is tied to Wainwright, 5:13, and marker 1670.",
@@ -225,6 +226,7 @@ window.SONG_DATA = {
     {
       "id": "188_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-042-forge-location.jpg",
       "name": "Forge",
       "symbol": "📍",
       "description": "The active scene for Case File 188. Recovered field notes place the primary event at Forge.",

@@ -220,7 +220,8 @@ window.SONG_DATA = {
     {
       "id": "161_waxseal",
       "type": "Object",
-      "name": "Waxseal",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/051 - wax seal.jpg",
+      "name": "Wax Seal",
       "symbol": "🔍",
       "description": "Wax Seal was recovered from Saloon in Case File 161. It is tied to Census Taker, 2:38, and marker 1443.",
       "unknownInfo": "Into the Dark and Lid of a Tin suggest this object matters beyond the first reading."
@@ -228,6 +229,7 @@ window.SONG_DATA = {
     {
       "id": "161_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-064-saloon-location.jpg",
       "name": "Saloon",
       "symbol": "📍",
       "description": "The active scene for Case File 161. Recovered field notes place the primary event at Saloon.",

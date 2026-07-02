@@ -228,7 +228,8 @@ window.SONG_DATA = {
     {
       "id": "149_tradetoken",
       "type": "Object",
-      "name": "Tradetoken",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/076 - trade token.jpg",
+      "name": "Trade Token",
       "symbol": "🔍",
       "description": "Trade Token was recovered from Sawmill in Case File 149. It is tied to Weaver, 6:17, and marker 1343.",
       "unknownInfo": "West and Wind Through a Crack suggest this object matters beyond the first reading."
@@ -236,6 +237,7 @@ window.SONG_DATA = {
     {
       "id": "149_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-063-sawmill-location.jpg",
       "name": "Sawmill",
       "symbol": "📍",
       "description": "The active scene for Case File 149. Recovered field notes place the primary event at Sawmill.",

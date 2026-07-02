@@ -229,7 +229,8 @@ window.SONG_DATA = {
     {
       "id": "571_earofcorn",
       "type": "Object",
-      "name": "Earofcorn",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/038 - ear of corn.jpg",
+      "name": "Ear of Corn",
       "symbol": "🔍",
       "description": "Ear of Corn was recovered from Forge in Case File 571. It is tied to Driver, 10:47, and marker 4861.",
       "unknownInfo": "Past the Tree Line and Horse Hooves suggest this object matters beyond the first reading."
@@ -237,6 +238,7 @@ window.SONG_DATA = {
     {
       "id": "571_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-042-forge-location.jpg",
       "name": "Forge",
       "symbol": "📍",
       "description": "The active scene for Case File 571. Recovered field notes place the primary event at Forge.",

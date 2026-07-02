@@ -232,7 +232,8 @@ window.SONG_DATA = {
     {
       "id": "132_waxtablet",
       "type": "Object",
-      "name": "Waxtablet",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/077 - wax tablet.jpg",
+      "name": "Wax Tablet",
       "symbol": "🔍",
       "description": "Wax Tablet was recovered from South Fork in Case File 132. It is tied to Cider Presser, 3:30, and marker 1206.",
       "unknownInfo": "Along the Creek and Horse Hooves suggest this object matters beyond the first reading."
@@ -240,9 +241,10 @@ window.SONG_DATA = {
     {
       "id": "132_location",
       "type": "Location",
-      "name": "Southfork",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-030-south-fork-location.jpg",
+      "name": "South Fork",
       "symbol": "📍",
-      "description": "The active scene for Case File 132. Recovered field notes place the primary event at Southfork.",
+      "description": "The active scene for Case File 132. Recovered field notes place the primary event at South Fork.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

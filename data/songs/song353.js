@@ -220,7 +220,8 @@ window.SONG_DATA = {
     {
       "id": "353_ironnail",
       "type": "Object",
-      "name": "Ironnail",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/024 - iron nail.jpg",
+      "name": "Iron Nail",
       "symbol": "🔍",
       "description": "Iron Nail was recovered from Cooperage in Case File 353. It is tied to Circuit Rider, 12:17, and marker 3043.",
       "unknownInfo": "Back the Way You Came and Shutter Bang suggest this object matters beyond the first reading."
@@ -228,6 +229,7 @@ window.SONG_DATA = {
     {
       "id": "353_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-068-cooperage-location.jpg",
       "name": "Cooperage",
       "symbol": "📍",
       "description": "The active scene for Case File 353. Recovered field notes place the primary event at Cooperage.",

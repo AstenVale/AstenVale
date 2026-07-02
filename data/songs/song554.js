@@ -219,6 +219,7 @@ window.SONG_DATA = {
     {
       "id": "554_bulletcasing",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/061 - bullet casing.jpg",
       "name": "Bullet Casing",
       "symbol": "🔍",
       "description": "Bullet Casing was recovered from Orchard in Case File 554. It is tied to Cider Presser, 10:51, and marker 4716.",
@@ -227,6 +228,7 @@ window.SONG_DATA = {
     {
       "id": "554_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-045-orchard-location.jpg",
       "name": "Orchard",
       "symbol": "📍",
       "description": "The active scene for Case File 554. Recovered field notes place the primary event at Orchard.",

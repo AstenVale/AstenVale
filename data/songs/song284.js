@@ -229,7 +229,8 @@ window.SONG_DATA = {
     {
       "id": "284_ironnail",
       "type": "Object",
-      "name": "Ironnail",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/024 - iron nail.jpg",
+      "name": "Iron Nail",
       "symbol": "🔍",
       "description": "Iron Nail was recovered from Cabin in Case File 284. It is tied to Auctioneer, 6:06, and marker 2470.",
       "unknownInfo": "Below and Mud Suction suggest this object matters beyond the first reading."
@@ -237,6 +238,7 @@ window.SONG_DATA = {
     {
       "id": "284_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-008-cabin-location.jpg",
       "name": "Cabin",
       "symbol": "📍",
       "description": "The active scene for Case File 284. Recovered field notes place the primary event at Cabin.",

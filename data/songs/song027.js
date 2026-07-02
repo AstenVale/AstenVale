@@ -222,12 +222,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Leather Strap was recovered from Courthouse in Case File 027. It is tied to Widow, 2:47, and marker 325.",
       "unknownInfo": "Somewhere and Empty Wagon suggest this object matters beyond the first reading.",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/027 - comb.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/025 - leather strap.jpg"
     },
     {
       "id": "027_location",
       "type": "Location",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-027-tannery-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-023-courthouse-location.jpg",
       "name": "Courthouse",
       "symbol": "📍",
       "description": "The active scene for Case File 027. Recovered field notes place the primary event at Courthouse.",

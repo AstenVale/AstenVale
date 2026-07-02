@@ -218,6 +218,7 @@ window.SONG_DATA = {
     {
       "id": "359_seal",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/041 - seal.jpg",
       "name": "Seal",
       "symbol": "🔍",
       "description": "Seal was recovered from Cooperage in Case File 359. It is tied to Harness Maker, 9:55, and marker 3097.",
@@ -226,6 +227,7 @@ window.SONG_DATA = {
     {
       "id": "359_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-068-cooperage-location.jpg",
       "name": "Cooperage",
       "symbol": "📍",
       "description": "The active scene for Case File 359. Recovered field notes place the primary event at Cooperage.",

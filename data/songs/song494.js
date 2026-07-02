@@ -230,6 +230,7 @@ window.SONG_DATA = {
     {
       "id": "494_cufflink",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/059 - cufflink.jpg",
       "name": "Cufflink",
       "symbol": "🔍",
       "description": "Cufflink was recovered from Tannery in Case File 494. It is tied to Rope Maker, 12:00, and marker 4216.",
@@ -238,6 +239,7 @@ window.SONG_DATA = {
     {
       "id": "494_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-027-tannery-location.jpg",
       "name": "Tannery",
       "symbol": "📍",
       "description": "The active scene for Case File 494. Recovered field notes place the primary event at Tannery.",
@@ -246,10 +248,10 @@ window.SONG_DATA = {
     {
       "id": "494_witness",
       "type": "Witness",
-      "name": "Ropemaker",
+      "name": "Rope Maker",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/rope-maker.jpg",
       "symbol": "👤",
-      "description": "Ropemaker, identified in the case notes for Case File 494. Has not given a formal statement.",
+      "description": "Rope Maker, identified in the case notes for Case File 494. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

@@ -219,6 +219,7 @@ window.SONG_DATA = {
     {
       "id": "276_spoolofthread",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/034 - spool of thread.jpg",
       "name": "Spool of Thread",
       "symbol": "🔍",
       "description": "Spool of Thread was recovered from Barn in Case File 276. It is tied to River Pilot, 7:14, and marker 2406.",
@@ -227,6 +228,7 @@ window.SONG_DATA = {
     {
       "id": "276_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-078-barn-location.jpg",
       "name": "Barn",
       "symbol": "📍",
       "description": "The active scene for Case File 276. Recovered field notes place the primary event at Barn.",
@@ -235,10 +237,10 @@ window.SONG_DATA = {
     {
       "id": "276_witness",
       "type": "Witness",
-      "name": "Riverpilot",
+      "name": "River Pilot",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/river-pilot.jpg",
       "symbol": "👤",
-      "description": "Riverpilot, identified in the case notes for Case File 276. Has not given a formal statement.",
+      "description": "River Pilot, identified in the case notes for Case File 276. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

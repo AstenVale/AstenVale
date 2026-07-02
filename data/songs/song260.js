@@ -230,7 +230,8 @@ window.SONG_DATA = {
     {
       "id": "260_prayercard",
       "type": "Object",
-      "name": "Prayercard",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/066 - prayer card.jpg",
+      "name": "Prayer Card",
       "symbol": "🔍",
       "description": "Prayer Card was recovered from Stables in Case File 260. It is tied to The Girl with No Shoes, 3:58, and marker 2270.",
       "unknownInfo": "Around and Ash Settling suggest this object matters beyond the first reading."
@@ -238,6 +239,7 @@ window.SONG_DATA = {
     {
       "id": "260_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-032-stables-location.jpg",
       "name": "Stables",
       "symbol": "📍",
       "description": "The active scene for Case File 260. Recovered field notes place the primary event at Stables.",

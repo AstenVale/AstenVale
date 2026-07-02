@@ -219,6 +219,7 @@ window.SONG_DATA = {
     {
       "id": "275_map",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/075 - map.jpg",
       "name": "Map",
       "symbol": "🔍",
       "description": "Map was recovered from The Quarry Pool in Case File 275. It is tied to Schoolgirl, 1:58, and marker 2397.",
@@ -227,6 +228,7 @@ window.SONG_DATA = {
     {
       "id": "275_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-034-the-quarry-pool-location.jpg",
       "name": "Quarry Pool",
       "symbol": "📍",
       "description": "The active scene for Case File 275. Recovered field notes place the primary event at Quarry Pool.",

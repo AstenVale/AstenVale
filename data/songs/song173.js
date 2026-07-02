@@ -228,6 +228,7 @@ window.SONG_DATA = {
     {
       "id": "173_map",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/075 - map.jpg",
       "name": "Map",
       "symbol": "🔍",
       "description": "Map was recovered from Stables in Case File 173. It is tied to Wool Sorter, 8:42, and marker 1543.",
@@ -236,6 +237,7 @@ window.SONG_DATA = {
     {
       "id": "173_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-032-stables-location.jpg",
       "name": "Stables",
       "symbol": "📍",
       "description": "The active scene for Case File 173. Recovered field notes place the primary event at Stables.",
@@ -244,10 +246,10 @@ window.SONG_DATA = {
     {
       "id": "173_witness",
       "type": "Witness",
-      "name": "Woolsorter",
+      "name": "Wool Sorter",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/wool-sorter.jpg",
       "symbol": "👤",
-      "description": "Woolsorter, identified in the case notes for Case File 173. Has not given a formal statement.",
+      "description": "Wool Sorter, identified in the case notes for Case File 173. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

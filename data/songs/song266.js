@@ -219,6 +219,7 @@ window.SONG_DATA = {
     {
       "id": "266_candle",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/026 - candle.jpg",
       "name": "Candle",
       "symbol": "🔍",
       "description": "Candle was recovered from Schoolhouse in Case File 266. It is tied to The Handless Man, 6:53, and marker 2316.",
@@ -227,6 +228,7 @@ window.SONG_DATA = {
     {
       "id": "266_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-087-schoolhouse-location.jpg",
       "name": "Schoolhouse",
       "symbol": "📍",
       "description": "The active scene for Case File 266. Recovered field notes place the primary event at Schoolhouse.",

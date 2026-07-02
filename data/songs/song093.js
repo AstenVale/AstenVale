@@ -220,19 +220,19 @@ window.SONG_DATA = {
     {
       "id": "093_woolscarf",
       "type": "Object",
-      "name": "Woolscarf",
+      "name": "Wool Scarf",
       "symbol": "🔍",
       "description": "Wool Scarf was recovered from Sheriff's Office in Case File 093. It is tied to Judge, 9:08, and marker 879.",
       "unknownInfo": "Straight Down and Telegraph Click suggest this object matters beyond the first reading.",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/093 - knife.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/029 - wool scarf.jpg"
     },
     {
       "id": "093_location",
       "type": "Location",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-093-birch-stand-location.jpg",
-      "name": "Sheriff'Soffice",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-062-sheriffs-office-location.jpg",
+      "name": "Sheriff's Office",
       "symbol": "📍",
-      "description": "The active scene for Case File 093. Recovered field notes place the primary event at Sheriff'Soffice.",
+      "description": "The active scene for Case File 093. Recovered field notes place the primary event at Sheriff's Office.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

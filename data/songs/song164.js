@@ -220,6 +220,7 @@ window.SONG_DATA = {
     {
       "id": "164_candle",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/026 - candle.jpg",
       "name": "Candle",
       "symbol": "🔍",
       "description": "Candle was recovered from Stone Step in Case File 164. It is tied to Quarry Foreman, 11:03, and marker 1470.",
@@ -228,9 +229,10 @@ window.SONG_DATA = {
     {
       "id": "164_location",
       "type": "Location",
-      "name": "Stonestep",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-060-stone-step-location.jpg",
+      "name": "Stone Step",
       "symbol": "📍",
-      "description": "The active scene for Case File 164. Recovered field notes place the primary event at Stonestep.",
+      "description": "The active scene for Case File 164. Recovered field notes place the primary event at Stone Step.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

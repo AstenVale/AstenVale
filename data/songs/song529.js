@@ -221,6 +221,7 @@ window.SONG_DATA = {
     {
       "id": "529_pocketwatch",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/032 - pocket watch.jpg",
       "name": "Pocket Watch",
       "symbol": "🔍",
       "description": "Pocket Watch was recovered from Banker's House in Case File 529. It is tied to Census Taker, 2:55, and marker 4507.",
@@ -229,9 +230,10 @@ window.SONG_DATA = {
     {
       "id": "529_location",
       "type": "Location",
-      "name": "Banker'Shouse",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-040-bankers-house-location.jpg",
+      "name": "Banker's House",
       "symbol": "📍",
-      "description": "The active scene for Case File 529. Recovered field notes place the primary event at Banker'Shouse.",
+      "description": "The active scene for Case File 529. Recovered field notes place the primary event at Banker's House.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

@@ -220,7 +220,8 @@ window.SONG_DATA = {
     {
       "id": "485_wirecoil",
       "type": "Object",
-      "name": "Wirecoil",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/095 - wire coil.jpg",
+      "name": "Wire Coil",
       "symbol": "🔍",
       "description": "Wire Coil was recovered from Stone Step in Case File 485. It is tied to Lime Burner, 5:40, and marker 4143.",
       "unknownInfo": "Out and Pages Turning suggest this object matters beyond the first reading."
@@ -228,18 +229,19 @@ window.SONG_DATA = {
     {
       "id": "485_location",
       "type": "Location",
-      "name": "Stonestep",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-060-stone-step-location.jpg",
+      "name": "Stone Step",
       "symbol": "📍",
-      "description": "The active scene for Case File 485. Recovered field notes place the primary event at Stonestep.",
+      "description": "The active scene for Case File 485. Recovered field notes place the primary event at Stone Step.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {
       "id": "485_witness",
       "type": "Witness",
-      "name": "Limeburner",
+      "name": "Lime Burner",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/lime-burner.jpg",
       "symbol": "👤",
-      "description": "Limeburner, identified in the case notes for Case File 485. Has not given a formal statement.",
+      "description": "Lime Burner, identified in the case notes for Case File 485. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

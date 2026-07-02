@@ -220,6 +220,7 @@ window.SONG_DATA = {
     {
       "id": "272_leatherstrap",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/025 - leather strap.jpg",
       "name": "Leather Strap",
       "symbol": "🔍",
       "description": "Leather Strap was recovered from Covered Bridge in Case File 272. It is tied to Child, 6:17, and marker 2370.",
@@ -228,6 +229,7 @@ window.SONG_DATA = {
     {
       "id": "272_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-048-covered-bridge-location.jpg",
       "name": "Covered Bridge",
       "symbol": "📍",
       "description": "The active scene for Case File 272. Recovered field notes place the primary event at Covered Bridge.",

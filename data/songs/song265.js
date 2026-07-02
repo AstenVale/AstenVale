@@ -219,6 +219,7 @@ window.SONG_DATA = {
     {
       "id": "265_brooch",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/036 - brooch.jpg",
       "name": "Brooch",
       "symbol": "🔍",
       "description": "Brooch was recovered from Lake Shore in Case File 265. It is tied to Weaver, 6:45, and marker 2307.",
@@ -227,9 +228,10 @@ window.SONG_DATA = {
     {
       "id": "265_location",
       "type": "Location",
-      "name": "Lakeshore",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-092-lake-shore-location.jpg",
+      "name": "Lake Shore",
       "symbol": "📍",
-      "description": "The active scene for Case File 265. Recovered field notes place the primary event at Lakeshore.",
+      "description": "The active scene for Case File 265. Recovered field notes place the primary event at Lake Shore.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

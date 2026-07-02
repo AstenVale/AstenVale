@@ -221,6 +221,7 @@ window.SONG_DATA = {
     {
       "id": "211_shardofmirror",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/031 - shard of mirror.jpg",
       "name": "Shard of Mirror",
       "symbol": "🔍",
       "description": "Shard of Mirror was recovered from The Pit in Case File 211. It is tied to Miller, 4:29, and marker 1861.",
@@ -229,6 +230,7 @@ window.SONG_DATA = {
     {
       "id": "211_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-055-the-pit-location.jpg",
       "name": "Pit",
       "symbol": "📍",
       "description": "The active scene for Case File 211. Recovered field notes place the primary event at Pit.",

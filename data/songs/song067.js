@@ -233,15 +233,15 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Thimble was recovered from Mill House in Case File 067. It is tied to Librarian, 1:26, and marker 661.",
       "unknownInfo": "Under and Hammer Strike suggest this object matters beyond the first reading.",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/067 - badge.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/054 - thimble.jpg"
     },
     {
       "id": "067_location",
       "type": "Location",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-067-chandlers-row-location.jpg",
-      "name": "Millhouse",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-050-mill-house-location.jpg",
+      "name": "Mill House",
       "symbol": "📍",
-      "description": "The active scene for Case File 067. Recovered field notes place the primary event at Millhouse.",
+      "description": "The active scene for Case File 067. Recovered field notes place the primary event at Mill House.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

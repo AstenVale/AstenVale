@@ -230,6 +230,7 @@ window.SONG_DATA = {
     {
       "id": "329_numbereddisk",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/094 - numbered disk.jpg",
       "name": "Numbered Disk",
       "symbol": "🔍",
       "description": "Numbered Disk was recovered from Stables in Case File 329. It is tied to Apothecary, 8:06, and marker 2843.",
@@ -238,6 +239,7 @@ window.SONG_DATA = {
     {
       "id": "329_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-032-stables-location.jpg",
       "name": "Stables",
       "symbol": "📍",
       "description": "The active scene for Case File 329. Recovered field notes place the primary event at Stables.",

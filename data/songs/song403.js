@@ -219,6 +219,7 @@ window.SONG_DATA = {
     {
       "id": "403_knife",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/093 - knife.jpg",
       "name": "Knife",
       "symbol": "🔍",
       "description": "Knife was recovered from The Weir in Case File 403. It is tied to Undertaker, 3:44, and marker 3461.",
@@ -227,6 +228,7 @@ window.SONG_DATA = {
     {
       "id": "403_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-033-the-weir-location.jpg",
       "name": "Weir",
       "symbol": "📍",
       "description": "The active scene for Case File 403. Recovered field notes place the primary event at Weir.",

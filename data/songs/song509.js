@@ -221,6 +221,7 @@ window.SONG_DATA = {
     {
       "id": "509_shipmanifest",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/070 - ship manifest.jpg",
       "name": "Ship Manifest",
       "symbol": "🔍",
       "description": "Ship Manifest was recovered from The Weir in Case File 509. It is tied to Wainwright, 5:13, and marker 4343.",
@@ -229,6 +230,7 @@ window.SONG_DATA = {
     {
       "id": "509_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-033-the-weir-location.jpg",
       "name": "Weir",
       "symbol": "📍",
       "description": "The active scene for Case File 509. Recovered field notes place the primary event at Weir.",

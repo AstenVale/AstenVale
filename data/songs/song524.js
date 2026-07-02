@@ -230,6 +230,7 @@ window.SONG_DATA = {
     {
       "id": "524_spoolofthread",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/034 - spool of thread.jpg",
       "name": "Spool of Thread",
       "symbol": "🔍",
       "description": "Spool of Thread was recovered from The Narrow Road in Case File 524. It is tied to Auctioneer, 2:38, and marker 4470.",
@@ -238,6 +239,7 @@ window.SONG_DATA = {
     {
       "id": "524_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-091-the-narrow-road-location.jpg",
       "name": "Narrow Road",
       "symbol": "📍",
       "description": "The active scene for Case File 524. Recovered field notes place the primary event at Narrow Road.",

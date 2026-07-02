@@ -230,6 +230,7 @@ window.SONG_DATA = {
     {
       "id": "504_brooch",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/036 - brooch.jpg",
       "name": "Brooch",
       "symbol": "🔍",
       "description": "Brooch was recovered from Sheep Fold in Case File 504. It is tied to Weaver, 3:49, and marker 4306.",
@@ -238,9 +239,10 @@ window.SONG_DATA = {
     {
       "id": "504_location",
       "type": "Location",
-      "name": "Sheepfold",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-086-sheep-fold-location.jpg",
+      "name": "Sheep Fold",
       "symbol": "📍",
-      "description": "The active scene for Case File 504. Recovered field notes place the primary event at Sheepfold.",
+      "description": "The active scene for Case File 504. Recovered field notes place the primary event at Sheep Fold.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

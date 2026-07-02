@@ -218,7 +218,8 @@ window.SONG_DATA = {
     {
       "id": "596_wirecoil",
       "type": "Object",
-      "name": "Wirecoil",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/095 - wire coil.jpg",
+      "name": "Wire Coil",
       "symbol": "🔍",
       "description": "Wire Coil was recovered from Banker's House in Case File 596. It is tied to Cooper, 11:51, and marker 5070.",
       "unknownInfo": "Out and Millstone suggest this object matters beyond the first reading."
@@ -226,9 +227,10 @@ window.SONG_DATA = {
     {
       "id": "596_location",
       "type": "Location",
-      "name": "Banker'Shouse",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-040-bankers-house-location.jpg",
+      "name": "Banker's House",
       "symbol": "📍",
-      "description": "The active scene for Case File 596. Recovered field notes place the primary event at Banker'Shouse.",
+      "description": "The active scene for Case File 596. Recovered field notes place the primary event at Banker's House.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

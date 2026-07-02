@@ -228,6 +228,7 @@ window.SONG_DATA = {
     {
       "id": "102_lantern",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/001 - lantern.jpg",
       "name": "Lantern",
       "symbol": "🔍",
       "description": "Lantern was recovered from Doctor's Office in Case File 102. It is tied to Land Agent, 5:21, and marker 952.",
@@ -236,19 +237,19 @@ window.SONG_DATA = {
     {
       "id": "102_location",
       "type": "Location",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-102-ice-house-location.jpg",
-      "name": "Doctor'Soffice",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-066-doctors-office-location.jpg",
+      "name": "Doctor's Office",
       "symbol": "📍",
-      "description": "The active scene for Case File 102. Recovered field notes place the primary event at Doctor'Soffice.",
+      "description": "The active scene for Case File 102. Recovered field notes place the primary event at Doctor's Office.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {
       "id": "102_witness",
       "type": "Witness",
-      "name": "Landagent",
+      "name": "Land Agent",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/land-agent.jpg",
       "symbol": "👤",
-      "description": "Landagent, identified in the case notes for Case File 102. Has not given a formal statement.",
+      "description": "Land Agent, identified in the case notes for Case File 102. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

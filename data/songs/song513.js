@@ -219,6 +219,7 @@ window.SONG_DATA = {
     {
       "id": "513_spoolofthread",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/034 - spool of thread.jpg",
       "name": "Spool of Thread",
       "symbol": "🔍",
       "description": "Spool of Thread was recovered from Canning Factory in Case File 513. It is tied to Doctor, 3:30, and marker 4379.",
@@ -227,6 +228,7 @@ window.SONG_DATA = {
     {
       "id": "513_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-095-canning-factory-location.jpg",
       "name": "Canning Factory",
       "symbol": "📍",
       "description": "The active scene for Case File 513. Recovered field notes place the primary event at Canning Factory.",

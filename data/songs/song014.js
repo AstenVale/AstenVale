@@ -230,16 +230,16 @@ window.SONG_DATA = {
     {
       "id": "014_loveletter",
       "type": "Object",
-      "name": "Loveletter",
+      "name": "Love Letter",
       "symbol": "🔍",
       "description": "Love Letter was recovered from Riverside Cabin in Case File 014. It is tied to Husband, 9:30, and marker 121.",
       "unknownInfo": "East and River Water suggest this object matters beyond the first reading.",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/014 - empty bottle.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/013 - love letter.jpg"
     },
     {
       "id": "014_location",
       "type": "Location",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-014-old-bridge-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-012-riverside-cabin-location.jpg",
       "name": "Riverside Cabin",
       "symbol": "📍",
       "description": "The active scene for Case File 014. Recovered field notes place the primary event at Riverside Cabin.",

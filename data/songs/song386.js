@@ -229,6 +229,7 @@ window.SONG_DATA = {
     {
       "id": "386_spectacles",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/092 - spectacles.jpg",
       "name": "Spectacles",
       "symbol": "🔍",
       "description": "Spectacles was recovered from Ash Hollow in Case File 386. It is tied to Widow, 12:44, and marker 3316.",
@@ -237,9 +238,10 @@ window.SONG_DATA = {
     {
       "id": "386_location",
       "type": "Location",
-      "name": "Ashhollow",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-075-ash-hollow-location.jpg",
+      "name": "Ash Hollow",
       "symbol": "📍",
-      "description": "The active scene for Case File 386. Recovered field notes place the primary event at Ashhollow.",
+      "description": "The active scene for Case File 386. Recovered field notes place the primary event at Ash Hollow.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

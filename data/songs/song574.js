@@ -229,6 +229,7 @@ window.SONG_DATA = {
     {
       "id": "574_leatherstrap",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/025 - leather strap.jpg",
       "name": "Leather Strap",
       "symbol": "🔍",
       "description": "Leather Strap was recovered from Jail in Case File 574. It is tied to Bone Collector, 4:03, and marker 4888.",
@@ -237,6 +238,7 @@ window.SONG_DATA = {
     {
       "id": "574_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-084-jail-location.jpg",
       "name": "Jail",
       "symbol": "📍",
       "description": "The active scene for Case File 574. Recovered field notes place the primary event at Jail.",

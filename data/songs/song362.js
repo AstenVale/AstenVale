@@ -228,6 +228,7 @@ window.SONG_DATA = {
     {
       "id": "362_spoolofthread",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/034 - spool of thread.jpg",
       "name": "Spool of Thread",
       "symbol": "🔍",
       "description": "Spool of Thread was recovered from Schoolhouse in Case File 362. It is tied to Blacksmith, 2:38, and marker 3116.",
@@ -236,6 +237,7 @@ window.SONG_DATA = {
     {
       "id": "362_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-087-schoolhouse-location.jpg",
       "name": "Schoolhouse",
       "symbol": "📍",
       "description": "The active scene for Case File 362. Recovered field notes place the primary event at Schoolhouse.",

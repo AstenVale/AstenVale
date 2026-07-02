@@ -218,7 +218,7 @@ window.SONG_DATA = {
     {
       "id": "008_churchkey",
       "type": "Object",
-      "name": "Churchkey",
+      "name": "Church Key",
       "symbol": "🔍",
       "description": "Church Key was recovered from Church in Case File 008. It is tied to Preacher, 7:00, and marker 09.",
       "unknownInfo": "East and Bell Toll suggest this object matters beyond the first reading.",
@@ -227,7 +227,7 @@ window.SONG_DATA = {
     {
       "id": "008_location",
       "type": "Location",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-008-cabin-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-004-church-location.jpg",
       "name": "Church",
       "symbol": "📍",
       "description": "The active scene for Case File 008. Recovered field notes place the primary event at Church.",

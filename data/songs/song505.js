@@ -220,6 +220,7 @@ window.SONG_DATA = {
     {
       "id": "505_rope",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/063 - rope.jpg",
       "name": "Rope",
       "symbol": "🔍",
       "description": "Rope was recovered from The Weir in Case File 505. It is tied to Land Agent, 3:58, and marker 4307.",
@@ -228,6 +229,7 @@ window.SONG_DATA = {
     {
       "id": "505_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-033-the-weir-location.jpg",
       "name": "Weir",
       "symbol": "📍",
       "description": "The active scene for Case File 505. Recovered field notes place the primary event at Weir.",
@@ -236,10 +238,10 @@ window.SONG_DATA = {
     {
       "id": "505_witness",
       "type": "Witness",
-      "name": "Landagent",
+      "name": "Land Agent",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/land-agent.jpg",
       "symbol": "👤",
-      "description": "Landagent, identified in the case notes for Case File 505. Has not given a formal statement.",
+      "description": "Land Agent, identified in the case notes for Case File 505. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

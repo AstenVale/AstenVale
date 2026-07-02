@@ -221,7 +221,8 @@ window.SONG_DATA = {
     {
       "id": "318_beltbuckle",
       "type": "Object",
-      "name": "Beltbuckle",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/081 - belt buckle.jpg",
+      "name": "Belt Buckle",
       "symbol": "🔍",
       "description": "Belt Buckle was recovered from The Dry Gulch in Case File 318. It is tied to Orphan, 6:17, and marker 2752.",
       "unknownInfo": "Down the Hollow and Horse Hooves suggest this object matters beyond the first reading."
@@ -229,6 +230,7 @@ window.SONG_DATA = {
     {
       "id": "318_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-088-the-dry-gulch-location.jpg",
       "name": "Dry Gulch",
       "symbol": "📍",
       "description": "The active scene for Case File 318. Recovered field notes place the primary event at Dry Gulch.",

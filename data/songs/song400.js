@@ -217,6 +217,7 @@ window.SONG_DATA = {
     {
       "id": "400_map",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/075 - map.jpg",
       "name": "Map",
       "symbol": "🔍",
       "description": "Map was recovered from Pharmacy in Case File 400. It is tied to Stranger, 9:08, and marker 3434.",
@@ -225,6 +226,7 @@ window.SONG_DATA = {
     {
       "id": "400_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-098-pharmacy-location.jpg",
       "name": "Pharmacy",
       "symbol": "📍",
       "description": "The active scene for Case File 400. Recovered field notes place the primary event at Pharmacy.",

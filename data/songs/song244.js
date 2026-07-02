@@ -218,6 +218,7 @@ window.SONG_DATA = {
     {
       "id": "244_badge",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/067 - badge.jpg",
       "name": "Badge",
       "symbol": "🔍",
       "description": "Badge was recovered from Jail in Case File 244. It is tied to Postman, 4:47, and marker 2134.",
@@ -226,6 +227,7 @@ window.SONG_DATA = {
     {
       "id": "244_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-084-jail-location.jpg",
       "name": "Jail",
       "symbol": "📍",
       "description": "The active scene for Case File 244. Recovered field notes place the primary event at Jail.",

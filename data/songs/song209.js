@@ -218,6 +218,7 @@ window.SONG_DATA = {
     {
       "id": "209_ring",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/064 - ring.jpg",
       "name": "Ring",
       "symbol": "🔍",
       "description": "Ring was recovered from Birch Stand in Case File 209. It is tied to Wainwright, 6:32, and marker 1843.",
@@ -226,9 +227,10 @@ window.SONG_DATA = {
     {
       "id": "209_location",
       "type": "Location",
-      "name": "Birchstand",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-093-birch-stand-location.jpg",
+      "name": "Birch Stand",
       "symbol": "📍",
-      "description": "The active scene for Case File 209. Recovered field notes place the primary event at Birchstand.",
+      "description": "The active scene for Case File 209. Recovered field notes place the primary event at Birch Stand.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

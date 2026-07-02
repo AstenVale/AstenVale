@@ -230,6 +230,7 @@ window.SONG_DATA = {
     {
       "id": "437_matchbook",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/007 - matchbook.jpg",
       "name": "Matchbook",
       "symbol": "🔍",
       "description": "Matchbook was recovered from Quarry Edge in Case File 437. It is tied to Circuit Rider, 5:13, and marker 3743.",
@@ -238,9 +239,10 @@ window.SONG_DATA = {
     {
       "id": "437_location",
       "type": "Location",
-      "name": "Quarryedge",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-022-quarry-edge-location.jpg",
+      "name": "Quarry Edge",
       "symbol": "📍",
-      "description": "The active scene for Case File 437. Recovered field notes place the primary event at Quarryedge.",
+      "description": "The active scene for Case File 437. Recovered field notes place the primary event at Quarry Edge.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

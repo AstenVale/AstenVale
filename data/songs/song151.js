@@ -230,6 +230,7 @@ window.SONG_DATA = {
     {
       "id": "151_seal",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/041 - seal.jpg",
       "name": "Seal",
       "symbol": "🔍",
       "description": "Seal was recovered from The Weir in Case File 151. It is tied to Schoolgirl, 3:44, and marker 1361.",
@@ -238,6 +239,7 @@ window.SONG_DATA = {
     {
       "id": "151_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-033-the-weir-location.jpg",
       "name": "Weir",
       "symbol": "📍",
       "description": "The active scene for Case File 151. Recovered field notes place the primary event at Weir.",

@@ -231,6 +231,7 @@ window.SONG_DATA = {
     {
       "id": "394_charcoalsketch",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/023 - charcoal sketch.jpg",
       "name": "Charcoal Sketch",
       "symbol": "🔍",
       "description": "Charcoal Sketch was recovered from Collapsed Mine in Case File 394. It is tied to Night Watchman, 11:51, and marker 3388.",
@@ -239,6 +240,7 @@ window.SONG_DATA = {
     {
       "id": "394_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-083-collapsed-mine-location.jpg",
       "name": "Collapsed Mine",
       "symbol": "📍",
       "description": "The active scene for Case File 394. Recovered field notes place the primary event at Collapsed Mine.",

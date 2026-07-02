@@ -219,6 +219,7 @@ window.SONG_DATA = {
     {
       "id": "205_leatherstrap",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/025 - leather strap.jpg",
       "name": "Leather Strap",
       "symbol": "🔍",
       "description": "Leather Strap was recovered from Feed Store in Case File 205. It is tied to Blacksmith, 3:49, and marker 1807.",
@@ -227,9 +228,10 @@ window.SONG_DATA = {
     {
       "id": "205_location",
       "type": "Location",
-      "name": "Feedstore",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-044-feed-store-location.jpg",
+      "name": "Feed Store",
       "symbol": "📍",
-      "description": "The active scene for Case File 205. Recovered field notes place the primary event at Feedstore.",
+      "description": "The active scene for Case File 205. Recovered field notes place the primary event at Feed Store.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

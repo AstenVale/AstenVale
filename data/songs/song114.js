@@ -217,6 +217,7 @@ window.SONG_DATA = {
     {
       "id": "114_thimble",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/054 - thimble.jpg",
       "name": "Thimble",
       "symbol": "🔍",
       "description": "Thimble was recovered from Courthouse in Case File 114. It is tied to Deputy, 10:05, and marker 1052.",
@@ -225,6 +226,7 @@ window.SONG_DATA = {
     {
       "id": "114_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-023-courthouse-location.jpg",
       "name": "Courthouse",
       "symbol": "📍",
       "description": "The active scene for Case File 114. Recovered field notes place the primary event at Courthouse.",

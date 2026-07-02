@@ -229,6 +229,7 @@ window.SONG_DATA = {
     {
       "id": "261_driedbloodoncloth",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/057 - dried blood on cloth.jpg",
       "name": "Dried Blood on Cloth",
       "symbol": "🔍",
       "description": "Dried Blood on Cloth was recovered from Clock Tower in Case File 261. It is tied to Conductor, 5:55, and marker 2279.",
@@ -237,9 +238,10 @@ window.SONG_DATA = {
     {
       "id": "261_location",
       "type": "Location",
-      "name": "Clocktower",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-074-clock-tower-location.jpg",
+      "name": "Clock Tower",
       "symbol": "📍",
-      "description": "The active scene for Case File 261. Recovered field notes place the primary event at Clocktower.",
+      "description": "The active scene for Case File 261. Recovered field notes place the primary event at Clock Tower.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

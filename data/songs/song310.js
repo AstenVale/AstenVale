@@ -229,6 +229,7 @@ window.SONG_DATA = {
     {
       "id": "310_notebook",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/073 - notebook.jpg",
       "name": "Notebook",
       "symbol": "🔍",
       "description": "Notebook was recovered from Harness Shop in Case File 310. It is tied to Fence Mender, 5:55, and marker 2688.",
@@ -237,6 +238,7 @@ window.SONG_DATA = {
     {
       "id": "310_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-061-harness-shop-location.jpg",
       "name": "Harness Shop",
       "symbol": "📍",
       "description": "The active scene for Case File 310. Recovered field notes place the primary event at Harness Shop.",

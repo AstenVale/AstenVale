@@ -231,7 +231,8 @@ window.SONG_DATA = {
     {
       "id": "218_tinstar",
       "type": "Object",
-      "name": "Tinstar",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/056 - tin star.jpg",
+      "name": "Tin Star",
       "symbol": "🔍",
       "description": "Tin Star was recovered from Canning Factory in Case File 218. It is tied to Salt Seller, 9:08, and marker 1916.",
       "unknownInfo": "Forward and Empty Wagon suggest this object matters beyond the first reading."
@@ -239,6 +240,7 @@ window.SONG_DATA = {
     {
       "id": "218_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-095-canning-factory-location.jpg",
       "name": "Canning Factory",
       "symbol": "📍",
       "description": "The active scene for Case File 218. Recovered field notes place the primary event at Canning Factory.",
@@ -247,10 +249,10 @@ window.SONG_DATA = {
     {
       "id": "218_witness",
       "type": "Witness",
-      "name": "Saltseller",
+      "name": "Salt Seller",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/salt-seller.jpg",
       "symbol": "👤",
-      "description": "Saltseller, identified in the case notes for Case File 218. Has not given a formal statement.",
+      "description": "Salt Seller, identified in the case notes for Case File 218. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

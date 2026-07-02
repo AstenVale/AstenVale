@@ -231,7 +231,8 @@ window.SONG_DATA = {
     {
       "id": "280_tornlabel",
       "type": "Object",
-      "name": "Tornlabel",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/040 - torn label.jpg",
+      "name": "Torn Label",
       "symbol": "🔍",
       "description": "Torn Label was recovered from Collapsed Mine in Case File 280. It is tied to Fence Mender, 4:03, and marker 2434.",
       "unknownInfo": "In and Crow Wings suggest this object matters beyond the first reading."
@@ -239,6 +240,7 @@ window.SONG_DATA = {
     {
       "id": "280_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-083-collapsed-mine-location.jpg",
       "name": "Collapsed Mine",
       "symbol": "📍",
       "description": "The active scene for Case File 280. Recovered field notes place the primary event at Collapsed Mine.",

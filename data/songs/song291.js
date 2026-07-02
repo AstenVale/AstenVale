@@ -220,6 +220,7 @@ window.SONG_DATA = {
     {
       "id": "291_driedflower",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/043 - dried flower.jpg",
       "name": "Dried Flower",
       "symbol": "🔍",
       "description": "Dried Flower was recovered from North Gate in Case File 291. It is tied to Cider Presser, 3:49, and marker 2525.",
@@ -228,9 +229,10 @@ window.SONG_DATA = {
     {
       "id": "291_location",
       "type": "Location",
-      "name": "Northgate",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-052-north-gate-location.jpg",
+      "name": "North Gate",
       "symbol": "📍",
-      "description": "The active scene for Case File 291. Recovered field notes place the primary event at Northgate.",
+      "description": "The active scene for Case File 291. Recovered field notes place the primary event at North Gate.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

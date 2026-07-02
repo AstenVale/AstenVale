@@ -217,6 +217,7 @@ window.SONG_DATA = {
     {
       "id": "340_notebook",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/073 - notebook.jpg",
       "name": "Notebook",
       "symbol": "🔍",
       "description": "Notebook was recovered from Church in Case File 340. It is tied to Cartographer, 8:00, and marker 2934.",
@@ -225,6 +226,7 @@ window.SONG_DATA = {
     {
       "id": "340_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-004-church-location.jpg",
       "name": "Church",
       "symbol": "📍",
       "description": "The active scene for Case File 340. Recovered field notes place the primary event at Church.",

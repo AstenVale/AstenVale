@@ -219,6 +219,7 @@ window.SONG_DATA = {
     {
       "id": "224_driedinkblot",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/068 - dried ink blot.jpg",
       "name": "Dried Ink Blot",
       "symbol": "🔍",
       "description": "Dried Ink Blot was recovered from Church in Case File 224. It is tied to Undertaker, 3:30, and marker 1970.",
@@ -227,6 +228,7 @@ window.SONG_DATA = {
     {
       "id": "224_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-004-church-location.jpg",
       "name": "Church",
       "symbol": "📍",
       "description": "The active scene for Case File 224. Recovered field notes place the primary event at Church.",

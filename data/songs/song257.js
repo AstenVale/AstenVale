@@ -228,6 +228,7 @@ window.SONG_DATA = {
     {
       "id": "257_glove",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/062 - glove.jpg",
       "name": "Glove",
       "symbol": "🔍",
       "description": "Glove was recovered from Sheriff's Office in Case File 257. It is tied to Stranger, 6:45, and marker 2243.",
@@ -236,9 +237,10 @@ window.SONG_DATA = {
     {
       "id": "257_location",
       "type": "Location",
-      "name": "Sheriff'Soffice",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-062-sheriffs-office-location.jpg",
+      "name": "Sheriff's Office",
       "symbol": "📍",
-      "description": "The active scene for Case File 257. Recovered field notes place the primary event at Sheriff'Soffice.",
+      "description": "The active scene for Case File 257. Recovered field notes place the primary event at Sheriff's Office.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

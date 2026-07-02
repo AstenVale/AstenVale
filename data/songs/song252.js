@@ -219,7 +219,8 @@ window.SONG_DATA = {
     {
       "id": "252_bentnail",
       "type": "Object",
-      "name": "Bentnail",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/080 - bent nail.jpg",
+      "name": "Bent Nail",
       "symbol": "🔍",
       "description": "Bent Nail was recovered from Tunnel in Case File 252. It is tied to Census Taker, 3:44, and marker 2206.",
       "unknownInfo": "Ahead and Dog Bark at Nothing suggest this object matters beyond the first reading."
@@ -227,6 +228,7 @@ window.SONG_DATA = {
     {
       "id": "252_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-070-tunnel-location.jpg",
       "name": "Tunnel",
       "symbol": "📍",
       "description": "The active scene for Case File 252. Recovered field notes place the primary event at Tunnel.",

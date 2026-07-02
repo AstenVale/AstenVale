@@ -230,6 +230,7 @@ window.SONG_DATA = {
     {
       "id": "551_cufflink",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/059 - cufflink.jpg",
       "name": "Cufflink",
       "symbol": "🔍",
       "description": "Cufflink was recovered from The Weir in Case File 551. It is tied to Innkeeper, 7:37, and marker 4697.",
@@ -238,6 +239,7 @@ window.SONG_DATA = {
     {
       "id": "551_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-033-the-weir-location.jpg",
       "name": "Weir",
       "symbol": "📍",
       "description": "The active scene for Case File 551. Recovered field notes place the primary event at Weir.",

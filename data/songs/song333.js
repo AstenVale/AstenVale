@@ -220,6 +220,7 @@ window.SONG_DATA = {
     {
       "id": "333_ticket",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/055 - ticket.jpg",
       "name": "Ticket",
       "symbol": "🔍",
       "description": "Ticket was recovered from The Root Cellar in Case File 333. It is tied to Bone Collector, 6:06, and marker 2879.",
@@ -228,6 +229,7 @@ window.SONG_DATA = {
     {
       "id": "333_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-037-the-root-cellar-location.jpg",
       "name": "Root Cellar",
       "symbol": "📍",
       "description": "The active scene for Case File 333. Recovered field notes place the primary event at Root Cellar.",

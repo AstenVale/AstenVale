@@ -230,6 +230,7 @@ window.SONG_DATA = {
     {
       "id": "307_badge",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/067 - badge.jpg",
       "name": "Badge",
       "symbol": "🔍",
       "description": "Badge was recovered from The Dry Gulch in Case File 307. It is tied to Orphan, 12:44, and marker 2661.",
@@ -238,6 +239,7 @@ window.SONG_DATA = {
     {
       "id": "307_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-088-the-dry-gulch-location.jpg",
       "name": "Dry Gulch",
       "symbol": "📍",
       "description": "The active scene for Case File 307. Recovered field notes place the primary event at Dry Gulch.",

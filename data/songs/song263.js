@@ -228,6 +228,7 @@ window.SONG_DATA = {
     {
       "id": "263_scratchedinitialsinwood",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/090 - scratched initials in wood.jpg",
       "name": "Scratched Initials in Wood",
       "symbol": "🔍",
       "description": "Scratched Initials in Wood was recovered from Crossroads in Case File 263. It is tied to Typesetter, 3:30, and marker 2297.",
@@ -236,6 +237,7 @@ window.SONG_DATA = {
     {
       "id": "263_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-073-crossroads-location.jpg",
       "name": "Crossroads",
       "symbol": "📍",
       "description": "The active scene for Case File 263. Recovered field notes place the primary event at Crossroads.",

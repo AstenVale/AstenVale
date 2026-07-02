@@ -228,6 +228,7 @@ window.SONG_DATA = {
     {
       "id": "518_brooch",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/036 - brooch.jpg",
       "name": "Brooch",
       "symbol": "🔍",
       "description": "Brooch was recovered from Cooperage in Case File 518. It is tied to Cider Presser, 3:58, and marker 4416.",
@@ -236,6 +237,7 @@ window.SONG_DATA = {
     {
       "id": "518_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-068-cooperage-location.jpg",
       "name": "Cooperage",
       "symbol": "📍",
       "description": "The active scene for Case File 518. Recovered field notes place the primary event at Cooperage.",

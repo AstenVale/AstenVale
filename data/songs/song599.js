@@ -219,6 +219,7 @@ window.SONG_DATA = {
     {
       "id": "599_candle",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/026 - candle.jpg",
       "name": "Candle",
       "symbol": "🔍",
       "description": "Candle was recovered from Undertaker's Hall in Case File 599. It is tied to River Pilot, 7:37, and marker 5097.",
@@ -227,18 +228,19 @@ window.SONG_DATA = {
     {
       "id": "599_location",
       "type": "Location",
-      "name": "Undertaker'Shall",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-053-undertakers-hall-location.jpg",
+      "name": "Undertaker's Hall",
       "symbol": "📍",
-      "description": "The active scene for Case File 599. Recovered field notes place the primary event at Undertaker'Shall.",
+      "description": "The active scene for Case File 599. Recovered field notes place the primary event at Undertaker's Hall.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {
       "id": "599_witness",
       "type": "Witness",
-      "name": "Riverpilot",
+      "name": "River Pilot",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/river-pilot.jpg",
       "symbol": "👤",
-      "description": "Riverpilot, identified in the case notes for Case File 599. Has not given a formal statement.",
+      "description": "River Pilot, identified in the case notes for Case File 599. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

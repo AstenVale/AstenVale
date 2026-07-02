@@ -229,7 +229,8 @@ window.SONG_DATA = {
     {
       "id": "121_flintstone",
       "type": "Object",
-      "name": "Flintstone",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/071 - flint stone.jpg",
+      "name": "Flint Stone",
       "symbol": "🔍",
       "description": "Flint Stone was recovered from Cooperage in Case File 121. It is tied to Peddler, 6:45, and marker 1107.",
       "unknownInfo": "Behind and Wind in Pines suggest this object matters beyond the first reading."
@@ -237,6 +238,7 @@ window.SONG_DATA = {
     {
       "id": "121_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-068-cooperage-location.jpg",
       "name": "Cooperage",
       "symbol": "📍",
       "description": "The active scene for Case File 121. Recovered field notes place the primary event at Cooperage.",

@@ -230,6 +230,7 @@ window.SONG_DATA = {
     {
       "id": "232_handkerchief",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/017 - handkerchief.jpg",
       "name": "Handkerchief",
       "symbol": "🔍",
       "description": "Handkerchief was recovered from The Widow's Porch in Case File 232. It is tied to Stranger, 11:44, and marker 2034.",
@@ -238,6 +239,7 @@ window.SONG_DATA = {
     {
       "id": "232_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-094-the-widows-porch-location.jpg",
       "name": "Widow'S Porch",
       "symbol": "📍",
       "description": "The active scene for Case File 232. Recovered field notes place the primary event at Widow'S Porch.",

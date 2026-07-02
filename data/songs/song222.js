@@ -220,7 +220,8 @@ window.SONG_DATA = {
     {
       "id": "222_signetring",
       "type": "Object",
-      "name": "Signetring",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/037 - signet ring.jpg",
+      "name": "Signet Ring",
       "symbol": "🔍",
       "description": "Signet Ring was recovered from Grain Mill in Case File 222. It is tied to Station Master, 2:19, and marker 1952.",
       "unknownInfo": "Toward and Clock Ticking suggest this object matters beyond the first reading."
@@ -228,9 +229,10 @@ window.SONG_DATA = {
     {
       "id": "222_location",
       "type": "Location",
-      "name": "Grainmill",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-038-grain-mill-location.jpg",
+      "name": "Grain Mill",
       "symbol": "📍",
-      "description": "The active scene for Case File 222. Recovered field notes place the primary event at Grainmill.",
+      "description": "The active scene for Case File 222. Recovered field notes place the primary event at Grain Mill.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

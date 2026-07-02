@@ -219,6 +219,7 @@ window.SONG_DATA = {
     {
       "id": "141_charredpaper",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/046 - charred paper.jpg",
       "name": "Charred Paper",
       "symbol": "🔍",
       "description": "Charred Paper was recovered from Tannery in Case File 141. It is tied to Land Agent, 6:06, and marker 1279.",
@@ -227,6 +228,7 @@ window.SONG_DATA = {
     {
       "id": "141_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-027-tannery-location.jpg",
       "name": "Tannery",
       "symbol": "📍",
       "description": "The active scene for Case File 141. Recovered field notes place the primary event at Tannery.",
@@ -235,10 +237,10 @@ window.SONG_DATA = {
     {
       "id": "141_witness",
       "type": "Witness",
-      "name": "Landagent",
+      "name": "Land Agent",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/land-agent.jpg",
       "symbol": "👤",
-      "description": "Landagent, identified in the case notes for Case File 141. Has not given a formal statement.",
+      "description": "Land Agent, identified in the case notes for Case File 141. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

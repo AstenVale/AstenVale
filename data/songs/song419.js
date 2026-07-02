@@ -230,6 +230,7 @@ window.SONG_DATA = {
     {
       "id": "419_key",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/021 - key.jpg",
       "name": "Key",
       "symbol": "🔍",
       "description": "Key was recovered from The Pit in Case File 419. It is tied to Midwife, 4:12, and marker 3597.",
@@ -238,6 +239,7 @@ window.SONG_DATA = {
     {
       "id": "419_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-055-the-pit-location.jpg",
       "name": "Pit",
       "symbol": "📍",
       "description": "The active scene for Case File 419. Recovered field notes place the primary event at Pit.",

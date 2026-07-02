@@ -224,12 +224,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Receipt was recovered from The Pit in Case File 076. It is tied to Census Taker, 5:13, and marker 734.",
       "unknownInfo": "Out and Bell Toll suggest this object matters beyond the first reading.",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/076 - trade token.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/060 - receipt.jpg"
     },
     {
       "id": "076_location",
       "type": "Location",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-076-market-square-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-055-the-pit-location.jpg",
       "name": "Pit",
       "symbol": "📍",
       "description": "The active scene for Case File 076. Recovered field notes place the primary event at Pit.",

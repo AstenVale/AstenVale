@@ -228,6 +228,7 @@ window.SONG_DATA = {
     {
       "id": "480_bottle",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/052 - bottle.jpg",
       "name": "Bottle",
       "symbol": "🔍",
       "description": "Bottle was recovered from Sheriff's Office in Case File 480. It is tied to Child, 4:29, and marker 4106.",
@@ -236,9 +237,10 @@ window.SONG_DATA = {
     {
       "id": "480_location",
       "type": "Location",
-      "name": "Sheriff'Soffice",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-062-sheriffs-office-location.jpg",
+      "name": "Sheriff's Office",
       "symbol": "📍",
-      "description": "The active scene for Case File 480. Recovered field notes place the primary event at Sheriff'Soffice.",
+      "description": "The active scene for Case File 480. Recovered field notes place the primary event at Sheriff's Office.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

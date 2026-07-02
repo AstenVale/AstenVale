@@ -220,7 +220,8 @@ window.SONG_DATA = {
     {
       "id": "532_signetring",
       "type": "Object",
-      "name": "Signetring",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/037 - signet ring.jpg",
+      "name": "Signet Ring",
       "symbol": "🔍",
       "description": "Signet Ring was recovered from Sheep Fold in Case File 532. It is tied to Weaver, 11:03, and marker 4534.",
       "unknownInfo": "Away from Town and Night Insects suggest this object matters beyond the first reading."
@@ -228,9 +229,10 @@ window.SONG_DATA = {
     {
       "id": "532_location",
       "type": "Location",
-      "name": "Sheepfold",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-086-sheep-fold-location.jpg",
+      "name": "Sheep Fold",
       "symbol": "📍",
-      "description": "The active scene for Case File 532. Recovered field notes place the primary event at Sheepfold.",
+      "description": "The active scene for Case File 532. Recovered field notes place the primary event at Sheep Fold.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

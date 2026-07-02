@@ -229,7 +229,8 @@ window.SONG_DATA = {
     {
       "id": "500_beltbuckle",
       "type": "Object",
-      "name": "Beltbuckle",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/081 - belt buckle.jpg",
+      "name": "Belt Buckle",
       "symbol": "🔍",
       "description": "Belt Buckle was recovered from Rope Walk in Case File 500. It is tied to Weaver, 9:08, and marker 4270.",
       "unknownInfo": "Toward and Thunder suggest this object matters beyond the first reading."
@@ -237,9 +238,10 @@ window.SONG_DATA = {
     {
       "id": "500_location",
       "type": "Location",
-      "name": "Ropewalk",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-099-rope-walk-location.jpg",
+      "name": "Rope Walk",
       "symbol": "📍",
-      "description": "The active scene for Case File 500. Recovered field notes place the primary event at Ropewalk.",
+      "description": "The active scene for Case File 500. Recovered field notes place the primary event at Rope Walk.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

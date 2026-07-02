@@ -218,6 +218,7 @@ window.SONG_DATA = {
     {
       "id": "486_matchbook",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/007 - matchbook.jpg",
       "name": "Matchbook",
       "symbol": "🔍",
       "description": "Matchbook was recovered from Black Pine in Case File 486. It is tied to Caretaker, 11:44, and marker 4152.",
@@ -226,9 +227,10 @@ window.SONG_DATA = {
     {
       "id": "486_location",
       "type": "Location",
-      "name": "Blackpine",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-001-black-pine-location.jpg",
+      "name": "Black Pine",
       "symbol": "📍",
-      "description": "The active scene for Case File 486. Recovered field notes place the primary event at Blackpine.",
+      "description": "The active scene for Case File 486. Recovered field notes place the primary event at Black Pine.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

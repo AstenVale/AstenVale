@@ -229,6 +229,7 @@ window.SONG_DATA = {
     {
       "id": "478_telegram",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/050 - telegram.jpg",
       "name": "Telegram",
       "symbol": "🔍",
       "description": "Telegram was recovered from Schoolhouse in Case File 478. It is tied to Census Taker, 4:47, and marker 4088.",
@@ -237,6 +238,7 @@ window.SONG_DATA = {
     {
       "id": "478_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-087-schoolhouse-location.jpg",
       "name": "Schoolhouse",
       "symbol": "📍",
       "description": "The active scene for Case File 478. Recovered field notes place the primary event at Schoolhouse.",

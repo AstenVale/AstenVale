@@ -219,6 +219,7 @@ window.SONG_DATA = {
     {
       "id": "514_handkerchief",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/017 - handkerchief.jpg",
       "name": "Handkerchief",
       "symbol": "🔍",
       "description": "Handkerchief was recovered from Sheriff's Office in Case File 514. It is tied to Peddler, 12:44, and marker 4388.",
@@ -227,9 +228,10 @@ window.SONG_DATA = {
     {
       "id": "514_location",
       "type": "Location",
-      "name": "Sheriff'Soffice",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-062-sheriffs-office-location.jpg",
+      "name": "Sheriff's Office",
       "symbol": "📍",
-      "description": "The active scene for Case File 514. Recovered field notes place the primary event at Sheriff'Soffice.",
+      "description": "The active scene for Case File 514. Recovered field notes place the primary event at Sheriff's Office.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

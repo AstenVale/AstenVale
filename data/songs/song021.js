@@ -232,12 +232,12 @@ window.SONG_DATA = {
       "symbol": "🔍",
       "description": "Ash was recovered from Fireplace in Case File 021. It is tied to Mechanic, 7:22, and marker 198.",
       "unknownInfo": "Up and Fire Crackling suggest this object matters beyond the first reading.",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/021 - key.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/020 - ash.jpg"
     },
     {
       "id": "021_location",
       "type": "Location",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-021-pine-road-location.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-018-fireplace-location.jpg",
       "name": "Fireplace",
       "symbol": "📍",
       "description": "The active scene for Case File 021. Recovered field notes place the primary event at Fireplace.",

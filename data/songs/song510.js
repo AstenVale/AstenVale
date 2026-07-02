@@ -219,6 +219,7 @@ window.SONG_DATA = {
     {
       "id": "510_spectacles",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/092 - spectacles.jpg",
       "name": "Spectacles",
       "symbol": "🔍",
       "description": "Spectacles was recovered from The Gully in Case File 510. It is tied to Sexton, 6:06, and marker 4352.",
@@ -227,6 +228,7 @@ window.SONG_DATA = {
     {
       "id": "510_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-056-the-gully-location.jpg",
       "name": "Gully",
       "symbol": "📍",
       "description": "The active scene for Case File 510. Recovered field notes place the primary event at Gully.",

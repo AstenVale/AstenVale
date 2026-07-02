@@ -220,6 +220,7 @@ window.SONG_DATA = {
     {
       "id": "431_glove",
       "type": "Object",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/062 - glove.jpg",
       "name": "Glove",
       "symbol": "🔍",
       "description": "Glove was recovered from The Gully in Case File 431. It is tied to Driver, 1:58, and marker 3697.",
@@ -228,6 +229,7 @@ window.SONG_DATA = {
     {
       "id": "431_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-056-the-gully-location.jpg",
       "name": "Gully",
       "symbol": "📍",
       "description": "The active scene for Case File 431. Recovered field notes place the primary event at Gully.",

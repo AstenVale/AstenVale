@@ -219,7 +219,8 @@ window.SONG_DATA = {
     {
       "id": "357_ledgerpage",
       "type": "Object",
-      "name": "Ledgerpage",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/049 - ledger page.jpg",
+      "name": "Ledger Page",
       "symbol": "🔍",
       "description": "Ledger Page was recovered from Smithy in Case File 357. It is tied to Chandler, 5:55, and marker 3079.",
       "unknownInfo": "Past the Tree Line and Match Strike suggest this object matters beyond the first reading."
@@ -227,6 +228,7 @@ window.SONG_DATA = {
     {
       "id": "357_location",
       "type": "Location",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-043-smithy-location.jpg",
       "name": "Smithy",
       "symbol": "📍",
       "description": "The active scene for Case File 357. Recovered field notes place the primary event at Smithy.",

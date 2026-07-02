@@ -229,7 +229,8 @@ window.SONG_DATA = {
     {
       "id": "474_lockofhair",
       "type": "Object",
-      "name": "Lockofhair",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Objects/087 - lock of hair.jpg",
+      "name": "Lock of Hair",
       "symbol": "🔍",
       "description": "Lock of Hair was recovered from Crow's Nest Ridge in Case File 474. It is tied to Fisherman, 8:17, and marker 4052.",
       "unknownInfo": "Below and Shutter Bang suggest this object matters beyond the first reading."
@@ -237,9 +238,10 @@ window.SONG_DATA = {
     {
       "id": "474_location",
       "type": "Location",
-      "name": "Crow'Snestridge",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-100-crows-nest-ridge-location.jpg",
+      "name": "Crow's Nest Ridge",
       "symbol": "📍",
-      "description": "The active scene for Case File 474. Recovered field notes place the primary event at Crow'Snestridge.",
+      "description": "The active scene for Case File 474. Recovered field notes place the primary event at Crow's Nest Ridge.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {
