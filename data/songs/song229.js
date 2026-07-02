@@ -263,7 +263,7 @@ window.SONG_DATA = {
     {
       "id": "229_direction",
       "type": "Direction",
-      "name": "Intothedark",
+      "name": "Into the Dark",
       "symbol": "🧭",
       "description": "The direction indicated by the field marker in Case File 229.",
       "unknownInfo": "What — or who — lies at the end of this bearing."

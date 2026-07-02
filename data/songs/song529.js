@@ -263,7 +263,7 @@ window.SONG_DATA = {
     {
       "id": "529_direction",
       "type": "Direction",
-      "name": "Outofsight",
+      "name": "Out of Sight",
       "symbol": "🧭",
       "description": "The direction indicated by the field marker in Case File 529.",
       "unknownInfo": "What — or who — lies at the end of this bearing."

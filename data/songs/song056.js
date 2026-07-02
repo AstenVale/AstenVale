@@ -264,7 +264,7 @@ window.SONG_DATA = {
     {
       "id": "056_direction",
       "type": "Direction",
-      "name": "Downthehollow",
+      "name": "Down the Hollow",
       "symbol": "🧭",
       "description": "The direction indicated by the field marker in Case File 056.",
       "unknownInfo": "What — or who — lies at the end of this bearing."

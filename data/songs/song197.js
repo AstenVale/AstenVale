@@ -273,7 +273,7 @@ window.SONG_DATA = {
     {
       "id": "197_direction",
       "type": "Direction",
-      "name": "Intothepines",
+      "name": "Into the Pines",
       "symbol": "🧭",
       "description": "The direction indicated by the field marker in Case File 197.",
       "unknownInfo": "What — or who — lies at the end of this bearing."

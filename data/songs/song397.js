@@ -263,7 +263,7 @@ window.SONG_DATA = {
     {
       "id": "397_direction",
       "type": "Direction",
-      "name": "Straightdown",
+      "name": "Straight Down",
       "symbol": "🧭",
       "description": "The direction indicated by the field marker in Case File 397.",
       "unknownInfo": "What — or who — lies at the end of this bearing."
