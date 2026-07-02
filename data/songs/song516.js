@@ -234,6 +234,7 @@ window.SONG_DATA = {
       "id": "516_witness",
       "type": "Witness",
       "name": "Blacksmith",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/blacksmith.jpg",
       "symbol": "👤",
       "description": "Blacksmith, identified in the case notes for Case File 516. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -249,7 +250,7 @@ window.SONG_DATA = {
     {
       "id": "516_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/516_The_True_Story.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/blacksmith.jpg",
       "name": "Marker 4406",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 516.",

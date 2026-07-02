@@ -248,6 +248,7 @@ window.SONG_DATA = {
       "id": "387_witness",
       "type": "Witness",
       "name": "Saltseller",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/salt-seller.jpg",
       "symbol": "👤",
       "description": "Saltseller, identified in the case notes for Case File 387. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -263,7 +264,7 @@ window.SONG_DATA = {
     {
       "id": "387_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/387_What_Fades.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/salt-seller.jpg",
       "name": "Marker 3325",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 387.",

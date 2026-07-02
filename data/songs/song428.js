@@ -235,6 +235,7 @@ window.SONG_DATA = {
       "id": "428_witness",
       "type": "Witness",
       "name": "Landagent",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/land-agent.jpg",
       "symbol": "👤",
       "description": "Landagent, identified in the case notes for Case File 428. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -250,7 +251,7 @@ window.SONG_DATA = {
     {
       "id": "428_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/428_The_Number.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/land-agent.jpg",
       "name": "Marker 3670",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 428.",

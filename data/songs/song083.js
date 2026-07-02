@@ -249,6 +249,7 @@ window.SONG_DATA = {
       "id": "083_witness",
       "type": "Witness",
       "name": "Miller",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/miller.jpg",
       "symbol": "👤",
       "description": "Miller, identified in the case notes for Case File 083. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -264,7 +265,7 @@ window.SONG_DATA = {
     {
       "id": "083_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/083_Recognition.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/miller.jpg",
       "name": "Marker 797",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 083.",

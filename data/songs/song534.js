@@ -237,6 +237,7 @@ window.SONG_DATA = {
       "id": "534_witness",
       "type": "Witness",
       "name": "Quarryforeman",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/quarry-foreman.jpg",
       "symbol": "👤",
       "description": "Quarryforeman, identified in the case notes for Case File 534. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -252,7 +253,7 @@ window.SONG_DATA = {
     {
       "id": "534_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/534_The_Leaving.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/quarry-foreman.jpg",
       "name": "Marker 4552",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 534.",

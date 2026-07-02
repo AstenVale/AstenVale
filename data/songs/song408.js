@@ -236,6 +236,7 @@ window.SONG_DATA = {
       "id": "408_witness",
       "type": "Witness",
       "name": "Lockkeeper",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/lock-keeper.jpg",
       "symbol": "👤",
       "description": "Lockkeeper, identified in the case notes for Case File 408. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -251,7 +252,7 @@ window.SONG_DATA = {
     {
       "id": "408_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/408_What_Came_Out_With_Her.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/lock-keeper.jpg",
       "name": "Marker 3506",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 408.",

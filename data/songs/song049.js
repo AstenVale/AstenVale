@@ -241,7 +241,7 @@ window.SONG_DATA = {
       "symbol": "👤",
       "description": "Postman, identified in the case notes for Case File 049. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
-      "image": "images/Witness/Case 049 - postman.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/postman.jpg"
     },
     {
       "id": "049_time",

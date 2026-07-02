@@ -247,6 +247,7 @@ window.SONG_DATA = {
       "id": "174_witness",
       "type": "Witness",
       "name": "Drifter",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/drifter.jpg",
       "symbol": "👤",
       "description": "Drifter, identified in the case notes for Case File 174. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -262,7 +263,7 @@ window.SONG_DATA = {
     {
       "id": "174_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/174_Oil_and_Flame.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/drifter.jpg",
       "name": "Marker 1552",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 174.",

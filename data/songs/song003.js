@@ -241,7 +241,7 @@ window.SONG_DATA = {
       "symbol": "👤",
       "description": "A local authority figure identified in the case notes. Present at Ash Creek. Testimony contradicts the field report.",
       "unknownInfo": "Why the Sheriff's account of the creek differs from the archived photographs.",
-      "image": "images/Witness/Case 003 - sheriff.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/sheriff.jpg"
     },
     {
       "id": "003_time",

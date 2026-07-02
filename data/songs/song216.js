@@ -247,6 +247,7 @@ window.SONG_DATA = {
       "id": "216_witness",
       "type": "Witness",
       "name": "Lockkeeper",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/lock-keeper.jpg",
       "symbol": "👤",
       "description": "Lockkeeper, identified in the case notes for Case File 216. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -262,7 +263,7 @@ window.SONG_DATA = {
     {
       "id": "216_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/216_The_True_Name.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/lock-keeper.jpg",
       "name": "Marker 1906",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 216.",

@@ -237,6 +237,7 @@ window.SONG_DATA = {
       "id": "382_witness",
       "type": "Witness",
       "name": "Mechanic",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/mechanic.jpg",
       "symbol": "👤",
       "description": "Mechanic, identified in the case notes for Case File 382. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -252,7 +253,7 @@ window.SONG_DATA = {
     {
       "id": "382_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/382_What_the_Current_Moved.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/mechanic.jpg",
       "name": "Marker 3288",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 382.",

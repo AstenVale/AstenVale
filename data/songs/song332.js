@@ -248,6 +248,7 @@ window.SONG_DATA = {
       "id": "332_witness",
       "type": "Witness",
       "name": "Banker",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/banker.jpg",
       "symbol": "👤",
       "description": "Banker, identified in the case notes for Case File 332. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -263,7 +264,7 @@ window.SONG_DATA = {
     {
       "id": "332_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/332_The_Receiver.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/banker.jpg",
       "name": "Marker 2870",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 332.",

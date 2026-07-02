@@ -247,6 +247,7 @@ window.SONG_DATA = {
       "id": "307_witness",
       "type": "Witness",
       "name": "Orphan",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/orphan.jpg",
       "symbol": "👤",
       "description": "Orphan, identified in the case notes for Case File 307. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -262,7 +263,7 @@ window.SONG_DATA = {
     {
       "id": "307_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/307_The_Visitor.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/orphan.jpg",
       "name": "Marker 2661",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 307.",

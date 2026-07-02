@@ -241,7 +241,7 @@ window.SONG_DATA = {
       "symbol": "👤",
       "description": "Fisherman, identified in the case notes for Case File 033. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
-      "image": "images/Witness/Case 033 - fisherman.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/fisherman.jpg"
     },
     {
       "id": "033_time",

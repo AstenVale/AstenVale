@@ -238,6 +238,7 @@ window.SONG_DATA = {
       "id": "229_witness",
       "type": "Witness",
       "name": "Circuitrider",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/circuit-rider.jpg",
       "symbol": "👤",
       "description": "Circuitrider, identified in the case notes for Case File 229. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -253,7 +254,7 @@ window.SONG_DATA = {
     {
       "id": "229_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/229_The_Night_Route.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/circuit-rider.jpg",
       "name": "Marker 2007",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 229.",

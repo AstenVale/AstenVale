@@ -235,6 +235,7 @@ window.SONG_DATA = {
       "id": "580_witness",
       "type": "Witness",
       "name": "Undertaker",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/undertaker.jpg",
       "symbol": "👤",
       "description": "Undertaker, identified in the case notes for Case File 580. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -250,7 +251,7 @@ window.SONG_DATA = {
     {
       "id": "580_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/580_Why_She_Waited.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/undertaker.jpg",
       "name": "Marker 4934",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 580.",

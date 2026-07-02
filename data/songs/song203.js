@@ -245,6 +245,7 @@ window.SONG_DATA = {
       "id": "203_witness",
       "type": "Witness",
       "name": "Postman",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/postman.jpg",
       "symbol": "👤",
       "description": "Postman, identified in the case notes for Case File 203. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -260,7 +261,7 @@ window.SONG_DATA = {
     {
       "id": "203_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/203_What_Cold_Distorts.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/postman.jpg",
       "name": "Marker 1797",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 203.",

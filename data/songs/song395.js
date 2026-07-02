@@ -247,6 +247,7 @@ window.SONG_DATA = {
       "id": "395_witness",
       "type": "Witness",
       "name": "Tailor",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/tailor.jpg",
       "symbol": "👤",
       "description": "Tailor, identified in the case notes for Case File 395. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -262,7 +263,7 @@ window.SONG_DATA = {
     {
       "id": "395_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/395_What_White_Hides.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/tailor.jpg",
       "name": "Marker 3397",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 395.",

@@ -247,6 +247,7 @@ window.SONG_DATA = {
       "id": "461_witness",
       "type": "Witness",
       "name": "Quarryforeman",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/quarry-foreman.jpg",
       "symbol": "👤",
       "description": "Quarryforeman, identified in the case notes for Case File 461. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -262,7 +263,7 @@ window.SONG_DATA = {
     {
       "id": "461_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/461_The_Night_Ride.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/quarry-foreman.jpg",
       "name": "Marker 3943",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 461.",

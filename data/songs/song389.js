@@ -248,6 +248,7 @@ window.SONG_DATA = {
       "id": "389_witness",
       "type": "Witness",
       "name": "Nightporter",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/night-porter.jpg",
       "symbol": "👤",
       "description": "Nightporter, identified in the case notes for Case File 389. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -263,7 +264,7 @@ window.SONG_DATA = {
     {
       "id": "389_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/389_Washed_Out.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/night-porter.jpg",
       "name": "Marker 3343",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 389.",

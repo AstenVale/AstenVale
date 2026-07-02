@@ -251,7 +251,7 @@ window.SONG_DATA = {
       "symbol": "👤",
       "description": "Librarian, identified in the case notes for Case File 067. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
-      "image": "images/Witness/Case 067 - librarian.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/librarian.jpg"
     },
     {
       "id": "067_time",

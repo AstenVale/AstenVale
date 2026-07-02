@@ -236,6 +236,7 @@ window.SONG_DATA = {
       "id": "464_witness",
       "type": "Witness",
       "name": "Schoolgirl",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/schoolgirl.jpg",
       "symbol": "👤",
       "description": "Schoolgirl, identified in the case notes for Case File 464. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -251,7 +252,7 @@ window.SONG_DATA = {
     {
       "id": "464_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/464_Where_It_Came_From.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/schoolgirl.jpg",
       "name": "Marker 3970",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 464.",

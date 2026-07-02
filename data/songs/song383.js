@@ -237,6 +237,7 @@ window.SONG_DATA = {
       "id": "383_witness",
       "type": "Witness",
       "name": "Ciderpresser",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/cider-presser.jpg",
       "symbol": "👤",
       "description": "Ciderpresser, identified in the case notes for Case File 383. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -252,7 +253,7 @@ window.SONG_DATA = {
     {
       "id": "383_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/383_The_Surface_Break.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/cider-presser.jpg",
       "name": "Marker 3297",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 383.",

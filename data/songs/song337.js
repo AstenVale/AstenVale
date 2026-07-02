@@ -237,6 +237,7 @@ window.SONG_DATA = {
       "id": "337_witness",
       "type": "Witness",
       "name": "Cartographer",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/cartographer.jpg",
       "symbol": "👤",
       "description": "Cartographer, identified in the case notes for Case File 337. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -252,7 +253,7 @@ window.SONG_DATA = {
     {
       "id": "337_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/337_No_Name.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/cartographer.jpg",
       "name": "Marker 2907",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 337.",

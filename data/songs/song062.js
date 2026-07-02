@@ -252,7 +252,7 @@ window.SONG_DATA = {
       "symbol": "👤",
       "description": "Cattledriver, identified in the case notes for Case File 062. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
-      "image": "images/Witness/Case 062 - cattle driver.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/cattle-driver.jpg"
     },
     {
       "id": "062_time",

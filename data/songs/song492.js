@@ -236,6 +236,7 @@ window.SONG_DATA = {
       "id": "492_witness",
       "type": "Witness",
       "name": "Typesetter",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/typesetter.jpg",
       "symbol": "👤",
       "description": "Typesetter, identified in the case notes for Case File 492. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -251,7 +252,7 @@ window.SONG_DATA = {
     {
       "id": "492_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/492_The_Road_Returns.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/typesetter.jpg",
       "name": "Marker 4206",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 492.",

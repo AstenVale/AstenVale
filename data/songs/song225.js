@@ -235,6 +235,7 @@ window.SONG_DATA = {
       "id": "225_witness",
       "type": "Witness",
       "name": "Ropemaker",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/rope-maker.jpg",
       "symbol": "👤",
       "description": "Ropemaker, identified in the case notes for Case File 225. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -250,7 +251,7 @@ window.SONG_DATA = {
     {
       "id": "225_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/225_Why_the_Bridge.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/rope-maker.jpg",
       "name": "Marker 1979",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 225.",

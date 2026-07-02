@@ -234,6 +234,7 @@ window.SONG_DATA = {
       "id": "506_witness",
       "type": "Witness",
       "name": "Drifter",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/drifter.jpg",
       "symbol": "👤",
       "description": "Drifter, identified in the case notes for Case File 506. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -249,7 +250,7 @@ window.SONG_DATA = {
     {
       "id": "506_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/506_Who_She_Wasnt.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/drifter.jpg",
       "name": "Marker 4316",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 506.",

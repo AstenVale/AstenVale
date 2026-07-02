@@ -247,6 +247,7 @@ window.SONG_DATA = {
       "id": "435_witness",
       "type": "Witness",
       "name": "Weaver",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/weaver.jpg",
       "symbol": "👤",
       "description": "Weaver, identified in the case notes for Case File 435. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -262,7 +263,7 @@ window.SONG_DATA = {
     {
       "id": "435_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/435_Why_It_Closed.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/weaver.jpg",
       "name": "Marker 3725",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 435.",

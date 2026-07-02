@@ -247,6 +247,7 @@ window.SONG_DATA = {
       "id": "238_witness",
       "type": "Witness",
       "name": "Midwife",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/midwife.jpg",
       "symbol": "👤",
       "description": "Midwife, identified in the case notes for Case File 238. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -262,7 +263,7 @@ window.SONG_DATA = {
     {
       "id": "238_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/238_Dark_Movement.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/midwife.jpg",
       "name": "Marker 2088",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 238.",

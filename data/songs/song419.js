@@ -247,6 +247,7 @@ window.SONG_DATA = {
       "id": "419_witness",
       "type": "Witness",
       "name": "Midwife",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/midwife.jpg",
       "symbol": "👤",
       "description": "Midwife, identified in the case notes for Case File 419. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -262,7 +263,7 @@ window.SONG_DATA = {
     {
       "id": "419_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/419_The_Index_Error.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/midwife.jpg",
       "name": "Marker 3597",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 419.",

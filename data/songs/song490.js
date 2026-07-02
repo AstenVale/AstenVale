@@ -234,6 +234,7 @@ window.SONG_DATA = {
       "id": "490_witness",
       "type": "Witness",
       "name": "Tailor",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/tailor.jpg",
       "symbol": "👤",
       "description": "Tailor, identified in the case notes for Case File 490. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -249,7 +250,7 @@ window.SONG_DATA = {
     {
       "id": "490_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/490_The_Crossing.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/tailor.jpg",
       "name": "Marker 4188",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 490.",

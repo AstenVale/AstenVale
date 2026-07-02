@@ -237,6 +237,7 @@ window.SONG_DATA = {
       "id": "431_witness",
       "type": "Witness",
       "name": "Driver",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/driver.jpg",
       "symbol": "👤",
       "description": "Driver, identified in the case notes for Case File 431. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -252,7 +253,7 @@ window.SONG_DATA = {
     {
       "id": "431_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/431_The_Response.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/driver.jpg",
       "name": "Marker 3697",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 431.",

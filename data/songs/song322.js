@@ -236,6 +236,7 @@ window.SONG_DATA = {
       "id": "322_witness",
       "type": "Witness",
       "name": "Limeburner",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/lime-burner.jpg",
       "symbol": "👤",
       "description": "Limeburner, identified in the case notes for Case File 322. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -251,7 +252,7 @@ window.SONG_DATA = {
     {
       "id": "322_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/322_What_Dissolves.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/lime-burner.jpg",
       "name": "Marker 2788",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 322.",

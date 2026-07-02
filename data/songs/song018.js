@@ -251,7 +251,7 @@ window.SONG_DATA = {
       "symbol": "👤",
       "description": "Sister, identified in the case notes for Case File 018. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
-      "image": "images/Witness/Case 018 - sister.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/sister.jpg"
     },
     {
       "id": "018_time",

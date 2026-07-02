@@ -237,6 +237,7 @@ window.SONG_DATA = {
       "id": "489_witness",
       "type": "Witness",
       "name": "Widow",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/widow.jpg",
       "symbol": "👤",
       "description": "Widow, identified in the case notes for Case File 489. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -252,7 +253,7 @@ window.SONG_DATA = {
     {
       "id": "489_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/489_What_the_Road_Remembers.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/widow.jpg",
       "name": "Marker 4179",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 489.",

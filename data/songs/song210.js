@@ -236,6 +236,7 @@ window.SONG_DATA = {
       "id": "210_witness",
       "type": "Witness",
       "name": "Mute",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/the-mute.jpg",
       "symbol": "👤",
       "description": "Mute, identified in the case notes for Case File 210. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -251,7 +252,7 @@ window.SONG_DATA = {
     {
       "id": "210_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/210_The_Changed_Identity.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/the-mute.jpg",
       "name": "Marker 1852",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 210.",
