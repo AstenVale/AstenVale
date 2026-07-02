@@ -236,6 +236,7 @@ window.SONG_DATA = {
       "id": "167_witness",
       "type": "Witness",
       "name": "Preacher",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/preacher.jpg",
       "symbol": "👤",
       "description": "Preacher, identified in the case notes for Case File 167. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -251,7 +252,7 @@ window.SONG_DATA = {
     {
       "id": "167_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/167_The_Count.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/preacher.jpg",
       "name": "Marker 1497",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 167.",

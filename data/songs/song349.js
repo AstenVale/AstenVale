@@ -247,6 +247,7 @@ window.SONG_DATA = {
       "id": "349_witness",
       "type": "Witness",
       "name": "Fencemender",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/fence-mender.jpg",
       "symbol": "👤",
       "description": "Fencemender, identified in the case notes for Case File 349. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -262,7 +263,7 @@ window.SONG_DATA = {
     {
       "id": "349_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/349_Final_Departure.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/fence-mender.jpg",
       "name": "Marker 3007",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 349.",

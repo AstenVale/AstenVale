@@ -234,6 +234,7 @@ window.SONG_DATA = {
       "id": "188_witness",
       "type": "Witness",
       "name": "Wainwright",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/wainwright.jpg",
       "symbol": "👤",
       "description": "Wainwright, identified in the case notes for Case File 188. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -249,7 +250,7 @@ window.SONG_DATA = {
     {
       "id": "188_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/188_The_Window.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/wainwright.jpg",
       "name": "Marker 1670",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 188.",

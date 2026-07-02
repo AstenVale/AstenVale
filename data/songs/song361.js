@@ -247,6 +247,7 @@ window.SONG_DATA = {
       "id": "361_witness",
       "type": "Witness",
       "name": "Blacksmith",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/blacksmith.jpg",
       "symbol": "👤",
       "description": "Blacksmith, identified in the case notes for Case File 361. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -262,7 +263,7 @@ window.SONG_DATA = {
     {
       "id": "361_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/361_The_Pattern.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/blacksmith.jpg",
       "name": "Marker 3107",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 361.",

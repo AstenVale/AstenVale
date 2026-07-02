@@ -252,7 +252,7 @@ window.SONG_DATA = {
       "symbol": "👤",
       "description": "Husband, identified in the case notes for Case File 014. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
-      "image": "images/Witness/Case 014 - husband.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/husband.jpg"
     },
     {
       "id": "014_time",

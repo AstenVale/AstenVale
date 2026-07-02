@@ -251,7 +251,7 @@ window.SONG_DATA = {
       "symbol": "👤",
       "description": "Woodsman, identified in the case notes for Case File 043. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
-      "image": "images/Witness/Case 043 - woodsman.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/woodsman.jpg"
     },
     {
       "id": "043_time",

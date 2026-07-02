@@ -234,6 +234,7 @@ window.SONG_DATA = {
       "id": "274_witness",
       "type": "Witness",
       "name": "Judge",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/judge.jpg",
       "symbol": "👤",
       "description": "Judge, identified in the case notes for Case File 274. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -249,7 +250,7 @@ window.SONG_DATA = {
     {
       "id": "274_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/274_The_Archive.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/judge.jpg",
       "name": "Marker 2388",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 274.",

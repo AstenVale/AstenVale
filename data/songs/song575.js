@@ -237,6 +237,7 @@ window.SONG_DATA = {
       "id": "575_witness",
       "type": "Witness",
       "name": "Child",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/child.jpg",
       "symbol": "👤",
       "description": "Child, identified in the case notes for Case File 575. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -252,7 +253,7 @@ window.SONG_DATA = {
     {
       "id": "575_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/575_The_Full_Message.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/child.jpg",
       "name": "Marker 4897",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 575.",

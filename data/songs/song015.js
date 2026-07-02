@@ -251,7 +251,7 @@ window.SONG_DATA = {
       "symbol": "👤",
       "description": "Neighbor, identified in the case notes for Case File 015. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
-      "image": "images/Witness/Case 015 - neighbor.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/neighbor.jpg"
     },
     {
       "id": "015_time",

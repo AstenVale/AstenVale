@@ -246,6 +246,7 @@ window.SONG_DATA = {
       "id": "235_witness",
       "type": "Witness",
       "name": "Woodsman",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/woodsman.jpg",
       "symbol": "👤",
       "description": "Woodsman, identified in the case notes for Case File 235. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -261,7 +262,7 @@ window.SONG_DATA = {
     {
       "id": "235_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/235_The_Night_Evidence.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/woodsman.jpg",
       "name": "Marker 2061",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 235.",

@@ -235,6 +235,7 @@ window.SONG_DATA = {
       "id": "316_witness",
       "type": "Witness",
       "name": "Schoolteacher",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/schoolteacher.jpg",
       "symbol": "👤",
       "description": "Schoolteacher, identified in the case notes for Case File 316. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -250,7 +251,7 @@ window.SONG_DATA = {
     {
       "id": "316_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/316_No_Cover.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/schoolteacher.jpg",
       "name": "Marker 2734",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 316.",

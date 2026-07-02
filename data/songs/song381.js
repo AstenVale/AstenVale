@@ -236,6 +236,7 @@ window.SONG_DATA = {
       "id": "381_witness",
       "type": "Witness",
       "name": "Quarryforeman",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/quarry-foreman.jpg",
       "symbol": "👤",
       "description": "Quarryforeman, identified in the case notes for Case File 381. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -251,7 +252,7 @@ window.SONG_DATA = {
     {
       "id": "381_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/381_The_Depth_Mark.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/quarry-foreman.jpg",
       "name": "Marker 3279",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 381.",

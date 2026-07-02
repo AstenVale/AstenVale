@@ -237,6 +237,7 @@ window.SONG_DATA = {
       "id": "561_witness",
       "type": "Witness",
       "name": "Auctioneer",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/auctioneer.jpg",
       "symbol": "👤",
       "description": "Auctioneer, identified in the case notes for Case File 561. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -252,7 +253,7 @@ window.SONG_DATA = {
     {
       "id": "561_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/561_The_Time_Lost.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/auctioneer.jpg",
       "name": "Marker 4779",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 561.",

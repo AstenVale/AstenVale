@@ -237,6 +237,7 @@ window.SONG_DATA = {
       "id": "432_witness",
       "type": "Witness",
       "name": "Fisherman",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/fisherman.jpg",
       "symbol": "👤",
       "description": "Fisherman, identified in the case notes for Case File 432. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -252,7 +253,7 @@ window.SONG_DATA = {
     {
       "id": "432_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/432_The_Last_Call.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/fisherman.jpg",
       "name": "Marker 3706",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 432.",

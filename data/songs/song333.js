@@ -237,6 +237,7 @@ window.SONG_DATA = {
       "id": "333_witness",
       "type": "Witness",
       "name": "Bonecollector",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/bone-collector.jpg",
       "symbol": "👤",
       "description": "Bonecollector, identified in the case notes for Case File 333. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -252,7 +253,7 @@ window.SONG_DATA = {
     {
       "id": "333_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/333_When_It_Stopped.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/bone-collector.jpg",
       "name": "Marker 2879",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 333.",

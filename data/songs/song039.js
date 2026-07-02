@@ -252,7 +252,7 @@ window.SONG_DATA = {
       "symbol": "👤",
       "description": "Miller, identified in the case notes for Case File 039. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
-      "image": "images/Witness/Case 039 - miller.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/miller.jpg"
     },
     {
       "id": "039_time",

@@ -236,6 +236,7 @@ window.SONG_DATA = {
       "id": "533_witness",
       "type": "Witness",
       "name": "Cooper",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/cooper.jpg",
       "symbol": "👤",
       "description": "Cooper, identified in the case notes for Case File 533. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -251,7 +252,7 @@ window.SONG_DATA = {
     {
       "id": "533_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/533_The_Cracks.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/cooper.jpg",
       "name": "Marker 4543",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 533.",

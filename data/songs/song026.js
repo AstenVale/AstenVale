@@ -240,7 +240,7 @@ window.SONG_DATA = {
       "symbol": "👤",
       "description": "Ferryman, identified in the case notes for Case File 026. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
-      "image": "images/Witness/Case 026 - ferryman.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/ferryman.jpg"
     },
     {
       "id": "026_time",

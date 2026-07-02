@@ -240,7 +240,7 @@ window.SONG_DATA = {
       "symbol": "👤",
       "description": "A woman identified only as The Widow. Present at Pine Hollow River. Has not given a formal statement.",
       "unknownInfo": "Her relationship to the letter's author and why she was there.",
-      "image": "images/Witness/Case 002 - widow.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/widow.jpg"
     },
     {
       "id": "002_time",

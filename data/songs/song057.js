@@ -240,7 +240,7 @@ window.SONG_DATA = {
       "symbol": "👤",
       "description": "Chandler, identified in the case notes for Case File 057. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
-      "image": "images/Witness/Case 057 - chandler.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/chandler.jpg"
     },
     {
       "id": "057_time",

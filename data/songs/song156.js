@@ -249,6 +249,7 @@ window.SONG_DATA = {
       "id": "156_witness",
       "type": "Witness",
       "name": "Handless Man",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/the-handless-man.jpg",
       "symbol": "👤",
       "description": "Handless Man, identified in the case notes for Case File 156. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -264,7 +265,7 @@ window.SONG_DATA = {
     {
       "id": "156_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/156_The_Twins_Word.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/the-handless-man.jpg",
       "name": "Marker 1406",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 156.",

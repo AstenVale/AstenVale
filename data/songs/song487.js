@@ -239,6 +239,7 @@ window.SONG_DATA = {
       "id": "487_witness",
       "type": "Witness",
       "name": "Mute",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/the-mute.jpg",
       "symbol": "👤",
       "description": "Mute, identified in the case notes for Case File 487. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -254,7 +255,7 @@ window.SONG_DATA = {
     {
       "id": "487_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/487_The_Night_Road.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/the-mute.jpg",
       "name": "Marker 4161",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 487.",

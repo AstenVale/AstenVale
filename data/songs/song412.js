@@ -245,6 +245,7 @@ window.SONG_DATA = {
       "id": "412_witness",
       "type": "Witness",
       "name": "Cooper",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/cooper.jpg",
       "symbol": "👤",
       "description": "Cooper, identified in the case notes for Case File 412. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -260,7 +261,7 @@ window.SONG_DATA = {
     {
       "id": "412_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/412_The_Catalog.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/cooper.jpg",
       "name": "Marker 3534",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 412.",

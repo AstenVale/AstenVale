@@ -237,6 +237,7 @@ window.SONG_DATA = {
       "id": "595_witness",
       "type": "Witness",
       "name": "Deputy",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/deputy.jpg",
       "symbol": "👤",
       "description": "Deputy, identified in the case notes for Case File 595. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -252,7 +253,7 @@ window.SONG_DATA = {
     {
       "id": "595_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/595_Who_Did_It.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/deputy.jpg",
       "name": "Marker 5061",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 595.",

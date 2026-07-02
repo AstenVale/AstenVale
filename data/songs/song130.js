@@ -246,6 +246,7 @@ window.SONG_DATA = {
       "id": "130_witness",
       "type": "Witness",
       "name": "Tanner",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/tanner.jpg",
       "symbol": "👤",
       "description": "Tanner, identified in the case notes for Case File 130. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -261,7 +262,7 @@ window.SONG_DATA = {
     {
       "id": "130_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/130_The_Compass_Rose.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/tanner.jpg",
       "name": "Marker 1188",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 130.",

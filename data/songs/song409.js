@@ -245,6 +245,7 @@ window.SONG_DATA = {
       "id": "409_witness",
       "type": "Witness",
       "name": "Barber",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/barber.jpg",
       "symbol": "👤",
       "description": "Barber, identified in the case notes for Case File 409. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -260,7 +261,7 @@ window.SONG_DATA = {
     {
       "id": "409_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/409_The_Collection.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/barber.jpg",
       "name": "Marker 3507",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 409.",

@@ -235,6 +235,7 @@ window.SONG_DATA = {
       "id": "553_witness",
       "type": "Witness",
       "name": "Innkeeper",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/innkeeper.jpg",
       "symbol": "👤",
       "description": "Innkeeper, identified in the case notes for Case File 553. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -250,7 +251,7 @@ window.SONG_DATA = {
     {
       "id": "553_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/553_The_Detour.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/innkeeper.jpg",
       "name": "Marker 4707",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 553.",

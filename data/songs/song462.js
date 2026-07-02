@@ -246,6 +246,7 @@ window.SONG_DATA = {
       "id": "462_witness",
       "type": "Witness",
       "name": "Auctioneer",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/auctioneer.jpg",
       "symbol": "👤",
       "description": "Auctioneer, identified in the case notes for Case File 462. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -261,7 +262,7 @@ window.SONG_DATA = {
     {
       "id": "462_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/462_What_the_Horse_Knew.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/auctioneer.jpg",
       "name": "Marker 3952",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 462.",

@@ -237,6 +237,7 @@ window.SONG_DATA = {
       "id": "423_witness",
       "type": "Witness",
       "name": "Stationmaster",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/station-master.jpg",
       "symbol": "👤",
       "description": "Stationmaster, identified in the case notes for Case File 423. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -252,7 +253,7 @@ window.SONG_DATA = {
     {
       "id": "423_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/423_2_AM.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/station-master.jpg",
       "name": "Marker 3625",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 423.",

@@ -247,6 +247,7 @@ window.SONG_DATA = {
       "id": "473_witness",
       "type": "Witness",
       "name": "Cattledriver",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/cattle-driver.jpg",
       "symbol": "👤",
       "description": "Cattledriver, identified in the case notes for Case File 473. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -262,7 +263,7 @@ window.SONG_DATA = {
     {
       "id": "473_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/473_The_Translation.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/cattle-driver.jpg",
       "name": "Marker 4043",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 473.",

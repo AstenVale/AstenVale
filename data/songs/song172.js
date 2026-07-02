@@ -245,6 +245,7 @@ window.SONG_DATA = {
       "id": "172_witness",
       "type": "Witness",
       "name": "Groundskeeper",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/groundskeeper.jpg",
       "symbol": "👤",
       "description": "Groundskeeper, identified in the case notes for Case File 172. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -260,7 +261,7 @@ window.SONG_DATA = {
     {
       "id": "172_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/172_What_the_Lantern_Showed.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/groundskeeper.jpg",
       "name": "Marker 1534",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 172.",

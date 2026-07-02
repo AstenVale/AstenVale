@@ -239,6 +239,7 @@ window.SONG_DATA = {
       "id": "583_witness",
       "type": "Witness",
       "name": "Ragpicker",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/rag-picker.jpg",
       "symbol": "👤",
       "description": "Ragpicker, identified in the case notes for Case File 583. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -254,7 +255,7 @@ window.SONG_DATA = {
     {
       "id": "583_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/583_The_Contradiction.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/rag-picker.jpg",
       "name": "Marker 4961",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 583.",

@@ -247,6 +247,7 @@ window.SONG_DATA = {
       "id": "309_witness",
       "type": "Witness",
       "name": "Girl With No Shoes",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/the-girl-with-no-shoes.jpg",
       "symbol": "👤",
       "description": "Girl With No Shoes, identified in the case notes for Case File 309. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -262,7 +263,7 @@ window.SONG_DATA = {
     {
       "id": "309_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/309_What_the_Door_Kept.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/the-girl-with-no-shoes.jpg",
       "name": "Marker 2679",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 309.",

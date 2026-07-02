@@ -236,6 +236,7 @@ window.SONG_DATA = {
       "id": "252_witness",
       "type": "Witness",
       "name": "Censustaker",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/census-taker.jpg",
       "symbol": "👤",
       "description": "Censustaker, identified in the case notes for Case File 252. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -251,7 +252,7 @@ window.SONG_DATA = {
     {
       "id": "252_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/252_The_Felled_Tree.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/census-taker.jpg",
       "name": "Marker 2206",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 252.",

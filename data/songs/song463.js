@@ -235,6 +235,7 @@ window.SONG_DATA = {
       "id": "463_witness",
       "type": "Witness",
       "name": "Surveyor",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/surveyor.jpg",
       "symbol": "👤",
       "description": "Surveyor, identified in the case notes for Case File 463. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -250,7 +251,7 @@ window.SONG_DATA = {
     {
       "id": "463_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/463_The_Stable.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/surveyor.jpg",
       "name": "Marker 3961",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 463.",

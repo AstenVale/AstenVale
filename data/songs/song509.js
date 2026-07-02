@@ -238,6 +238,7 @@ window.SONG_DATA = {
       "id": "509_witness",
       "type": "Witness",
       "name": "Wainwright",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/wainwright.jpg",
       "symbol": "👤",
       "description": "Wainwright, identified in the case notes for Case File 509. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -253,7 +254,7 @@ window.SONG_DATA = {
     {
       "id": "509_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/509_The_Life_Built.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/wainwright.jpg",
       "name": "Marker 4343",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 509.",

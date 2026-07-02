@@ -248,6 +248,7 @@ window.SONG_DATA = {
       "id": "503_witness",
       "type": "Witness",
       "name": "Chandler",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/chandler.jpg",
       "symbol": "👤",
       "description": "Chandler, identified in the case notes for Case File 503. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -263,7 +264,7 @@ window.SONG_DATA = {
     {
       "id": "503_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/503_The_Break.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/chandler.jpg",
       "name": "Marker 4297",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 503.",
