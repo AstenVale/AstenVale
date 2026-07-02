@@ -231,7 +231,7 @@ window.SONG_DATA = {
     {
       "id": "590_hollowacorn",
       "type": "Object",
-      "name": "Hollowacorn",
+      "name": "Hollow Acorn",
       "symbol": "🔍",
       "description": "Hollow Acorn was recovered from Undertaker's Hall in Case File 590. It is tied to Stranger, 11:40, and marker 5016.",
       "unknownInfo": "Toward the River and Bell Toll suggest this object matters beyond the first reading."

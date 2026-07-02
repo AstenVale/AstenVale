@@ -219,7 +219,7 @@ window.SONG_DATA = {
     {
       "id": "276_spoolofthread",
       "type": "Object",
-      "name": "Spoolofthread",
+      "name": "Spool of Thread",
       "symbol": "🔍",
       "description": "Spool of Thread was recovered from Barn in Case File 276. It is tied to River Pilot, 7:14, and marker 2406.",
       "unknownInfo": "Past the Tree Line and Thunder suggest this object matters beyond the first reading."

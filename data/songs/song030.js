@@ -221,7 +221,7 @@ window.SONG_DATA = {
     {
       "id": "030_charcoalsketch",
       "type": "Object",
-      "name": "Charcoalsketch",
+      "name": "Charcoal Sketch",
       "symbol": "🔍",
       "description": "Charcoal Sketch was recovered from Grist Mill in Case File 030. It is tied to Lock Keeper, 5:40, and marker 352.",
       "unknownInfo": "Down the Hollow and Door Creak suggest this object matters beyond the first reading.",

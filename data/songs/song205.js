@@ -219,7 +219,7 @@ window.SONG_DATA = {
     {
       "id": "205_leatherstrap",
       "type": "Object",
-      "name": "Leatherstrap",
+      "name": "Leather Strap",
       "symbol": "🔍",
       "description": "Leather Strap was recovered from Feed Store in Case File 205. It is tied to Blacksmith, 3:49, and marker 1807.",
       "unknownInfo": "Under and Distant Gunshot suggest this object matters beyond the first reading."

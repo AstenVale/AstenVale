@@ -228,18 +228,18 @@ window.SONG_DATA = {
     {
       "id": "530_location",
       "type": "Location",
-      "name": "Northpasture",
+      "name": "North Pasture",
       "symbol": "📍",
-      "description": "The active scene for Case File 530. Recovered field notes place the primary event at Northpasture.",
+      "description": "The active scene for Case File 530. Recovered field notes place the primary event at North Pasture.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {
       "id": "530_witness",
       "type": "Witness",
-      "name": "Cattledriver",
+      "name": "Cattle Driver",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/cattle-driver.jpg",
       "symbol": "👤",
-      "description": "Cattledriver, identified in the case notes for Case File 530. Has not given a formal statement.",
+      "description": "Cattle Driver, identified in the case notes for Case File 530. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

@@ -219,7 +219,7 @@ window.SONG_DATA = {
     {
       "id": "120_driedflower",
       "type": "Object",
-      "name": "Driedflower",
+      "name": "Dried Flower",
       "symbol": "🔍",
       "description": "Dried Flower was recovered from Old Wharf in Case File 120. It is tied to Typesetter, 5:13, and marker 1106.",
       "unknownInfo": "Behind and Kettle Boil suggest this object matters beyond the first reading."

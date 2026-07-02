@@ -238,9 +238,9 @@ window.SONG_DATA = {
     {
       "id": "154_location",
       "type": "Location",
-      "name": "Marketsquare",
+      "name": "Market Square",
       "symbol": "📍",
-      "description": "The active scene for Case File 154. Recovered field notes place the primary event at Marketsquare.",
+      "description": "The active scene for Case File 154. Recovered field notes place the primary event at Market Square.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

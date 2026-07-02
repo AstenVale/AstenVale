@@ -219,7 +219,7 @@ window.SONG_DATA = {
     {
       "id": "192_pocketwatch",
       "type": "Object",
-      "name": "Pocketwatch",
+      "name": "Pocket Watch",
       "symbol": "🔍",
       "description": "Pocket Watch was recovered from Ash Hollow in Case File 192. It is tied to Fisherman, 6:45, and marker 1706.",
       "unknownInfo": "Left and Empty Wagon suggest this object matters beyond the first reading."

@@ -230,7 +230,7 @@ window.SONG_DATA = {
     {
       "id": "016_weddingphoto",
       "type": "Object",
-      "name": "Weddingphoto",
+      "name": "Wedding Photo",
       "symbol": "🔍",
       "description": "Wedding Photo was recovered from Old Bridge in Case File 016. It is tied to Wife, 11:52, and marker 143.",
       "unknownInfo": "South and Wind in Pines suggest this object matters beyond the first reading.",

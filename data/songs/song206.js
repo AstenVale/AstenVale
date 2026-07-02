@@ -222,7 +222,7 @@ window.SONG_DATA = {
     {
       "id": "206_hollowacorn",
       "type": "Object",
-      "name": "Hollowacorn",
+      "name": "Hollow Acorn",
       "symbol": "🔍",
       "description": "Hollow Acorn was recovered from The Depot in Case File 206. It is tied to Lock Keeper, 8:06, and marker 1816.",
       "unknownInfo": "Out of Sight and Crow on Wire suggest this object matters beyond the first reading."

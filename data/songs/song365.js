@@ -231,7 +231,7 @@ window.SONG_DATA = {
     {
       "id": "365_driedflower",
       "type": "Object",
-      "name": "Driedflower",
+      "name": "Dried Flower",
       "symbol": "🔍",
       "description": "Dried Flower was recovered from The Widow's Porch in Case File 365. It is tied to Caretaker, 11:44, and marker 3143.",
       "unknownInfo": "Past the Tree Line and Broken String suggest this object matters beyond the first reading."

@@ -229,9 +229,9 @@ window.SONG_DATA = {
       "id": "049_location",
       "type": "Location",
       "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-049-the-hollow-road-location.jpg",
-      "name": "Northpasture",
+      "name": "North Pasture",
       "symbol": "📍",
-      "description": "The active scene for Case File 049. Recovered field notes place the primary event at Northpasture.",
+      "description": "The active scene for Case File 049. Recovered field notes place the primary event at North Pasture.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

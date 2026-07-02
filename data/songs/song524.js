@@ -230,7 +230,7 @@ window.SONG_DATA = {
     {
       "id": "524_spoolofthread",
       "type": "Object",
-      "name": "Spoolofthread",
+      "name": "Spool of Thread",
       "symbol": "🔍",
       "description": "Spool of Thread was recovered from The Narrow Road in Case File 524. It is tied to Auctioneer, 2:38, and marker 4470.",
       "unknownInfo": "West and Horse Hooves suggest this object matters beyond the first reading."

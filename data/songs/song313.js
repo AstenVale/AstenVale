@@ -226,18 +226,18 @@ window.SONG_DATA = {
     {
       "id": "313_location",
       "type": "Location",
-      "name": "Collapsedmine",
+      "name": "Collapsed Mine",
       "symbol": "📍",
-      "description": "The active scene for Case File 313. Recovered field notes place the primary event at Collapsedmine.",
+      "description": "The active scene for Case File 313. Recovered field notes place the primary event at Collapsed Mine.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {
       "id": "313_witness",
       "type": "Witness",
-      "name": "Censustaker",
+      "name": "Census Taker",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/census-taker.jpg",
       "symbol": "👤",
-      "description": "Censustaker, identified in the case notes for Case File 313. Has not given a formal statement.",
+      "description": "Census Taker, identified in the case notes for Case File 313. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

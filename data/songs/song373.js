@@ -220,7 +220,7 @@ window.SONG_DATA = {
     {
       "id": "373_scratchedinitialsinwood",
       "type": "Object",
-      "name": "Scratchedinitialsinwood",
+      "name": "Scratched Initials in Wood",
       "symbol": "🔍",
       "description": "Scratched Initials in Wood was recovered from Grain Mill in Case File 373. It is tied to Judge, 9:27, and marker 3207.",
       "unknownInfo": "Further In and Clock Ticking suggest this object matters beyond the first reading."

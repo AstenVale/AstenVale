@@ -232,7 +232,7 @@ window.SONG_DATA = {
     {
       "id": "472_scratchedinitialsinwood",
       "type": "Object",
-      "name": "Scratchedinitialsinwood",
+      "name": "Scratched Initials in Wood",
       "symbol": "🔍",
       "description": "Scratched Initials in Wood was recovered from The Widow's Porch in Case File 472. It is tied to Salt Seller, 6:17, and marker 4034.",
       "unknownInfo": "Back the Way You Came and Dog Bark at Nothing suggest this object matters beyond the first reading."

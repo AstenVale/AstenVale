@@ -229,7 +229,7 @@ window.SONG_DATA = {
     {
       "id": "015_emptybottle",
       "type": "Object",
-      "name": "Emptybottle",
+      "name": "Empty Bottle",
       "symbol": "🔍",
       "description": "Empty Bottle was recovered from Kitchen Table in Case File 015. It is tied to Neighbor, 4:15, and marker 132.",
       "unknownInfo": "Down and Silence suggest this object matters beyond the first reading.",
@@ -239,9 +239,9 @@ window.SONG_DATA = {
       "id": "015_location",
       "type": "Location",
       "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-015-train-station-location.jpg",
-      "name": "Kitchentable",
+      "name": "Kitchen Table",
       "symbol": "📍",
-      "description": "The active scene for Case File 015. Recovered field notes place the primary event at Kitchentable.",
+      "description": "The active scene for Case File 015. Recovered field notes place the primary event at Kitchen Table.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

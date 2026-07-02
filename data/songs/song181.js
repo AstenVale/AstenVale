@@ -219,7 +219,7 @@ window.SONG_DATA = {
     {
       "id": "181_straightrazor",
       "type": "Object",
-      "name": "Straightrazor",
+      "name": "Straight Razor",
       "symbol": "🔍",
       "description": "Straight Razor was recovered from Jail in Case File 181. It is tied to Harness Maker, 3:58, and marker 1607.",
       "unknownInfo": "South and River Water suggest this object matters beyond the first reading."
@@ -235,10 +235,10 @@ window.SONG_DATA = {
     {
       "id": "181_witness",
       "type": "Witness",
-      "name": "Harnessmaker",
+      "name": "Harness Maker",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/harness-maker.jpg",
       "symbol": "👤",
-      "description": "Harnessmaker, identified in the case notes for Case File 181. Has not given a formal statement.",
+      "description": "Harness Maker, identified in the case notes for Case File 181. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

@@ -218,7 +218,7 @@ window.SONG_DATA = {
     {
       "id": "082_charredpaper",
       "type": "Object",
-      "name": "Charredpaper",
+      "name": "Charred Paper",
       "symbol": "🔍",
       "description": "Charred Paper was recovered from Boatyard in Case File 082. It is tied to Midwife, 2:19, and marker 788.",
       "unknownInfo": "Beyond and Forge Breath suggest this object matters beyond the first reading.",

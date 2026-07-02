@@ -230,7 +230,7 @@ window.SONG_DATA = {
     {
       "id": "239_brokenclasp",
       "type": "Object",
-      "name": "Brokenclasp",
+      "name": "Broken Clasp",
       "symbol": "🔍",
       "description": "Broken Clasp was recovered from North Pasture in Case File 239. It is tied to Widow, 11:17, and marker 2097.",
       "unknownInfo": "Sideways and Empty Wagon suggest this object matters beyond the first reading."
@@ -238,9 +238,9 @@ window.SONG_DATA = {
     {
       "id": "239_location",
       "type": "Location",
-      "name": "Northpasture",
+      "name": "North Pasture",
       "symbol": "📍",
-      "description": "The active scene for Case File 239. Recovered field notes place the primary event at Northpasture.",
+      "description": "The active scene for Case File 239. Recovered field notes place the primary event at North Pasture.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

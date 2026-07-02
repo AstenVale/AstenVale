@@ -226,9 +226,9 @@ window.SONG_DATA = {
     {
       "id": "407_location",
       "type": "Location",
-      "name": "Canningfactory",
+      "name": "Canning Factory",
       "symbol": "📍",
-      "description": "The active scene for Case File 407. Recovered field notes place the primary event at Canningfactory.",
+      "description": "The active scene for Case File 407. Recovered field notes place the primary event at Canning Factory.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

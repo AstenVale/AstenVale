@@ -232,7 +232,7 @@ window.SONG_DATA = {
     {
       "id": "212_bulletcasing",
       "type": "Object",
-      "name": "Bulletcasing",
+      "name": "Bullet Casing",
       "symbol": "🔍",
       "description": "Bullet Casing was recovered from The Widow's Porch in Case File 212. It is tied to Bone Collector, 5:55, and marker 1870.",
       "unknownInfo": "Out of Sight and Moth Wings suggest this object matters beyond the first reading."
@@ -248,10 +248,10 @@ window.SONG_DATA = {
     {
       "id": "212_witness",
       "type": "Witness",
-      "name": "Bonecollector",
+      "name": "Bone Collector",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/bone-collector.jpg",
       "symbol": "👤",
-      "description": "Bonecollector, identified in the case notes for Case File 212. Has not given a formal statement.",
+      "description": "Bone Collector, identified in the case notes for Case File 212. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

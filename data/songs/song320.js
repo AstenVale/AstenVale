@@ -218,7 +218,7 @@ window.SONG_DATA = {
     {
       "id": "320_hollowacorn",
       "type": "Object",
-      "name": "Hollowacorn",
+      "name": "Hollow Acorn",
       "symbol": "🔍",
       "description": "Hollow Acorn was recovered from Grist Mill in Case File 320. It is tied to Peddler, 11:44, and marker 2770.",
       "unknownInfo": "Across and Floorboard suggest this object matters beyond the first reading."

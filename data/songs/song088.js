@@ -229,7 +229,7 @@ window.SONG_DATA = {
     {
       "id": "088_stringofbeads",
       "type": "Object",
-      "name": "Stringofbeads",
+      "name": "String of Beads",
       "symbol": "🔍",
       "description": "String of Beads was recovered from Forge in Case File 088. It is tied to Cattle Driver, 4:29, and marker 834.",
       "unknownInfo": "Beyond and Clock Ticking suggest this object matters beyond the first reading.",
@@ -247,10 +247,10 @@ window.SONG_DATA = {
     {
       "id": "088_witness",
       "type": "Witness",
-      "name": "Cattledriver",
+      "name": "Cattle Driver",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/cattle-driver.jpg",
       "symbol": "👤",
-      "description": "Cattledriver, identified in the case notes for Case File 088. Has not given a formal statement.",
+      "description": "Cattle Driver, identified in the case notes for Case File 088. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

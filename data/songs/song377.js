@@ -227,9 +227,9 @@ window.SONG_DATA = {
     {
       "id": "377_location",
       "type": "Location",
-      "name": "Collapsedmine",
+      "name": "Collapsed Mine",
       "symbol": "📍",
-      "description": "The active scene for Case File 377. Recovered field notes place the primary event at Collapsedmine.",
+      "description": "The active scene for Case File 377. Recovered field notes place the primary event at Collapsed Mine.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

@@ -229,7 +229,7 @@ window.SONG_DATA = {
     {
       "id": "574_leatherstrap",
       "type": "Object",
-      "name": "Leatherstrap",
+      "name": "Leather Strap",
       "symbol": "🔍",
       "description": "Leather Strap was recovered from Jail in Case File 574. It is tied to Bone Collector, 4:03, and marker 4888.",
       "unknownInfo": "Left and Horse Hooves suggest this object matters beyond the first reading."
@@ -245,10 +245,10 @@ window.SONG_DATA = {
     {
       "id": "574_witness",
       "type": "Witness",
-      "name": "Bonecollector",
+      "name": "Bone Collector",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/bone-collector.jpg",
       "symbol": "👤",
-      "description": "Bonecollector, identified in the case notes for Case File 574. Has not given a formal statement.",
+      "description": "Bone Collector, identified in the case notes for Case File 574. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

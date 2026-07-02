@@ -229,7 +229,7 @@ window.SONG_DATA = {
     {
       "id": "413_shipmanifest",
       "type": "Object",
-      "name": "Shipmanifest",
+      "name": "Ship Manifest",
       "symbol": "🔍",
       "description": "Ship Manifest was recovered from Smithy in Case File 413. It is tied to Judge, 5:09, and marker 3543.",
       "unknownInfo": "Back the Way You Came and Old Hinge suggest this object matters beyond the first reading."

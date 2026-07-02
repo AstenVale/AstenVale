@@ -231,7 +231,7 @@ window.SONG_DATA = {
     {
       "id": "148_driedbloodoncloth",
       "type": "Object",
-      "name": "Driedbloodoncloth",
+      "name": "Dried Blood on Cloth",
       "symbol": "🔍",
       "description": "Dried Blood on Cloth was recovered from Cider House in Case File 148. It is tied to The Handless Man, 9:27, and marker 1334.",
       "unknownInfo": "Behind and Shovel on Earth suggest this object matters beyond the first reading."

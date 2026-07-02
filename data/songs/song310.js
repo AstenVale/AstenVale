@@ -237,18 +237,18 @@ window.SONG_DATA = {
     {
       "id": "310_location",
       "type": "Location",
-      "name": "Harnessshop",
+      "name": "Harness Shop",
       "symbol": "📍",
-      "description": "The active scene for Case File 310. Recovered field notes place the primary event at Harnessshop.",
+      "description": "The active scene for Case File 310. Recovered field notes place the primary event at Harness Shop.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {
       "id": "310_witness",
       "type": "Witness",
-      "name": "Fencemender",
+      "name": "Fence Mender",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/fence-mender.jpg",
       "symbol": "👤",
-      "description": "Fencemender, identified in the case notes for Case File 310. Has not given a formal statement.",
+      "description": "Fence Mender, identified in the case notes for Case File 310. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

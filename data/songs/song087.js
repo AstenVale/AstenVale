@@ -248,10 +248,10 @@ window.SONG_DATA = {
     {
       "id": "087_witness",
       "type": "Witness",
-      "name": "Fencemender",
+      "name": "Fence Mender",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/fence-mender.jpg",
       "symbol": "👤",
-      "description": "Fencemender, identified in the case notes for Case File 087. Has not given a formal statement.",
+      "description": "Fence Mender, identified in the case notes for Case File 087. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

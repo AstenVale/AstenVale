@@ -228,7 +228,7 @@ window.SONG_DATA = {
     {
       "id": "145_pocketwatch",
       "type": "Object",
-      "name": "Pocketwatch",
+      "name": "Pocket Watch",
       "symbol": "🔍",
       "description": "Pocket Watch was recovered from Orchard in Case File 145. It is tied to Wool Sorter, 8:33, and marker 1307.",
       "unknownInfo": "Over and Floorboard suggest this object matters beyond the first reading."

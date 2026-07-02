@@ -220,7 +220,7 @@ window.SONG_DATA = {
     {
       "id": "380_charredpaper",
       "type": "Object",
-      "name": "Charredpaper",
+      "name": "Charred Paper",
       "symbol": "🔍",
       "description": "Charred Paper was recovered from The Bluff in Case File 380. It is tied to Midwife, 12:44, and marker 3270.",
       "unknownInfo": "Back and Door Creak suggest this object matters beyond the first reading."

@@ -218,7 +218,7 @@ window.SONG_DATA = {
     {
       "id": "378_scratchedinitialsinwood",
       "type": "Object",
-      "name": "Scratchedinitialsinwood",
+      "name": "Scratched Initials in Wood",
       "symbol": "🔍",
       "description": "Scratched Initials in Wood was recovered from Pharmacy in Case File 378. It is tied to Furrier, 9:08, and marker 3252.",
       "unknownInfo": "Forward and Lantern Flicker suggest this object matters beyond the first reading."

@@ -222,7 +222,7 @@ window.SONG_DATA = {
     {
       "id": "583_copperfitting",
       "type": "Object",
-      "name": "Copperfitting",
+      "name": "Copper Fitting",
       "symbol": "🔍",
       "description": "Copper Fitting was recovered from The Weir in Case File 583. It is tied to Rag Picker, 9:55, and marker 4961.",
       "unknownInfo": "Back the Way You Came and Wheel on Gravel suggest this object matters beyond the first reading."

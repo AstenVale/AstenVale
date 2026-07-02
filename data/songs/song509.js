@@ -221,7 +221,7 @@ window.SONG_DATA = {
     {
       "id": "509_shipmanifest",
       "type": "Object",
-      "name": "Shipmanifest",
+      "name": "Ship Manifest",
       "symbol": "🔍",
       "description": "Ship Manifest was recovered from The Weir in Case File 509. It is tied to Wainwright, 5:13, and marker 4343.",
       "unknownInfo": "Back the Way You Came and Mud Suction suggest this object matters beyond the first reading."

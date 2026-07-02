@@ -231,7 +231,7 @@ window.SONG_DATA = {
     {
       "id": "391_numbereddisk",
       "type": "Object",
-      "name": "Numbereddisk",
+      "name": "Numbered Disk",
       "symbol": "🔍",
       "description": "Numbered Disk was recovered from The Cistern in Case File 391. It is tied to Wainwright, 8:33, and marker 3361.",
       "unknownInfo": "West and Knife Scrape suggest this object matters beyond the first reading."

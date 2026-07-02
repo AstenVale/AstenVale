@@ -220,7 +220,7 @@ window.SONG_DATA = {
     {
       "id": "157_driedbloodoncloth",
       "type": "Object",
-      "name": "Driedbloodoncloth",
+      "name": "Dried Blood on Cloth",
       "symbol": "🔍",
       "description": "Dried Blood on Cloth was recovered from Ash Hollow in Case File 157. It is tied to Fisherman, 8:00, and marker 1407.",
       "unknownInfo": "Away from Town and Horse Hooves suggest this object matters beyond the first reading."

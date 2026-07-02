@@ -219,7 +219,7 @@ window.SONG_DATA = {
     {
       "id": "466_pocketwatch",
       "type": "Object",
-      "name": "Pocketwatch",
+      "name": "Pocket Watch",
       "symbol": "🔍",
       "description": "Pocket Watch was recovered from Lake Shore in Case File 466. It is tied to Weaver, 3:03, and marker 3988.",
       "unknownInfo": "Beyond and Wind Through a Crack suggest this object matters beyond the first reading."

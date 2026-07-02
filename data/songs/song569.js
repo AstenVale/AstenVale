@@ -230,7 +230,7 @@ window.SONG_DATA = {
     {
       "id": "569_brokenclasp",
       "type": "Object",
-      "name": "Brokenclasp",
+      "name": "Broken Clasp",
       "symbol": "🔍",
       "description": "Broken Clasp was recovered from Feed Store in Case File 569. It is tied to Circuit Rider, 10:19, and marker 4843.",
       "unknownInfo": "West and Shovel on Earth suggest this object matters beyond the first reading."
@@ -246,10 +246,10 @@ window.SONG_DATA = {
     {
       "id": "569_witness",
       "type": "Witness",
-      "name": "Circuitrider",
+      "name": "Circuit Rider",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/circuit-rider.jpg",
       "symbol": "👤",
-      "description": "Circuitrider, identified in the case notes for Case File 569. Has not given a formal statement.",
+      "description": "Circuit Rider, identified in the case notes for Case File 569. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

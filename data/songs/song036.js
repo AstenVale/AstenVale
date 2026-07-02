@@ -219,7 +219,7 @@ window.SONG_DATA = {
     {
       "id": "036_pocketwatch",
       "type": "Object",
-      "name": "Pocketwatch",
+      "name": "Pocket Watch",
       "symbol": "🔍",
       "description": "Pocket Watch was recovered from Cooper's Yard in Case File 036. It is tied to Banker, 7:37, and marker 406.",
       "unknownInfo": "Home and Saw Cutting suggest this object matters beyond the first reading.",

@@ -229,7 +229,7 @@ window.SONG_DATA = {
     {
       "id": "476_foldedcloth",
       "type": "Object",
-      "name": "Foldedcloth",
+      "name": "Folded Cloth",
       "symbol": "🔍",
       "description": "Folded Cloth was recovered from Diner in Case File 476. It is tied to Sheriff, 11:44, and marker 4070.",
       "unknownInfo": "Down the Hollow and Broken String suggest this object matters beyond the first reading."

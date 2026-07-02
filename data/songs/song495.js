@@ -231,7 +231,7 @@ window.SONG_DATA = {
     {
       "id": "495_brokenclasp",
       "type": "Object",
-      "name": "Brokenclasp",
+      "name": "Broken Clasp",
       "symbol": "🔍",
       "description": "Broken Clasp was recovered from Hill Road in Case File 495. It is tied to Caretaker, 8:42, and marker 4225.",
       "unknownInfo": "Out of Sight and Lantern Glass suggest this object matters beyond the first reading."

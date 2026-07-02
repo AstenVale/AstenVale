@@ -232,7 +232,7 @@ window.SONG_DATA = {
     {
       "id": "547_driedinkblot",
       "type": "Object",
-      "name": "Driedinkblot",
+      "name": "Dried Ink Blot",
       "symbol": "🔍",
       "description": "Dried Ink Blot was recovered from Ash Hollow in Case File 547. It is tied to River Pilot, 7:48, and marker 4661.",
       "unknownInfo": "Up the Ridge and Boot Heel suggest this object matters beyond the first reading."

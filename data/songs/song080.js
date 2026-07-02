@@ -220,7 +220,7 @@ window.SONG_DATA = {
     {
       "id": "080_spoolofthread",
       "type": "Object",
-      "name": "Spoolofthread",
+      "name": "Spool of Thread",
       "symbol": "🔍",
       "description": "Spool of Thread was recovered from Potter's Field in Case File 080. It is tied to Schoolteacher, 2:19, and marker 770.",
       "unknownInfo": "Into the Dark and Saw Cutting suggest this object matters beyond the first reading.",

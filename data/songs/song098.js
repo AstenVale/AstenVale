@@ -219,7 +219,7 @@ window.SONG_DATA = {
     {
       "id": "098_hollowacorn",
       "type": "Object",
-      "name": "Hollowacorn",
+      "name": "Hollow Acorn",
       "symbol": "🔍",
       "description": "Hollow Acorn was recovered from South Fork in Case File 098. It is tied to Drifter, 11:03, and marker 916.",
       "unknownInfo": "Down and Nail Pulled from Wood suggest this object matters beyond the first reading."

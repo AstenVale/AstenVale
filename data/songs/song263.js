@@ -228,7 +228,7 @@ window.SONG_DATA = {
     {
       "id": "263_scratchedinitialsinwood",
       "type": "Object",
-      "name": "Scratchedinitialsinwood",
+      "name": "Scratched Initials in Wood",
       "symbol": "🔍",
       "description": "Scratched Initials in Wood was recovered from Crossroads in Case File 263. It is tied to Typesetter, 3:30, and marker 2297.",
       "unknownInfo": "South and Dog Bark at Nothing suggest this object matters beyond the first reading."

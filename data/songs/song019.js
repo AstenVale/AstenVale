@@ -228,7 +228,7 @@ window.SONG_DATA = {
     {
       "id": "019_unopenedmail",
       "type": "Object",
-      "name": "Unopenedmail",
+      "name": "Unopened Mail",
       "symbol": "🔍",
       "description": "Unopened Mail was recovered from Mailbox in Case File 019. It is tied to Postman, 2:34, and marker 176.",
       "unknownInfo": "Out and Footsteps suggest this object matters beyond the first reading.",

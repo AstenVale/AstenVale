@@ -220,7 +220,7 @@ window.SONG_DATA = {
     {
       "id": "035_shardofmirror",
       "type": "Object",
-      "name": "Shardofmirror",
+      "name": "Shard of Mirror",
       "symbol": "🔍",
       "description": "Shard of Mirror was recovered from South Fork in Case File 035. It is tied to Lime Burner, 9:55, and marker 397.",
       "unknownInfo": "North and Lid of a Tin suggest this object matters beyond the first reading.",

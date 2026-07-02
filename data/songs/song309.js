@@ -230,7 +230,7 @@ window.SONG_DATA = {
     {
       "id": "309_copperfitting",
       "type": "Object",
-      "name": "Copperfitting",
+      "name": "Copper Fitting",
       "symbol": "🔍",
       "description": "Copper Fitting was recovered from Schoolhouse in Case File 309. It is tied to The Girl with No Shoes, 8:17, and marker 2679.",
       "unknownInfo": "Forward and Fog Horn suggest this object matters beyond the first reading."

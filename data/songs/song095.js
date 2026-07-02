@@ -220,7 +220,7 @@ window.SONG_DATA = {
     {
       "id": "095_driedflower",
       "type": "Object",
-      "name": "Driedflower",
+      "name": "Dried Flower",
       "symbol": "🔍",
       "description": "Dried Flower was recovered from Mill House in Case File 095. It is tied to Deputy, 5:09, and marker 897.",
       "unknownInfo": "Past the Tree Line and Cellar Door suggest this object matters beyond the first reading.",

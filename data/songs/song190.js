@@ -220,7 +220,7 @@ window.SONG_DATA = {
     {
       "id": "190_spoolofthread",
       "type": "Object",
-      "name": "Spoolofthread",
+      "name": "Spool of Thread",
       "symbol": "🔍",
       "description": "Spool of Thread was recovered from The Quarry Pool in Case File 190. It is tied to Glazier, 10:19, and marker 1688.",
       "unknownInfo": "Out and Shutter Bang suggest this object matters beyond the first reading."

@@ -219,7 +219,7 @@ window.SONG_DATA = {
     {
       "id": "299_bulletcasing",
       "type": "Object",
-      "name": "Bulletcasing",
+      "name": "Bullet Casing",
       "symbol": "🔍",
       "description": "Bullet Casing was recovered from Cooper's Yard in Case File 299. It is tied to Schoolgirl, 9:27, and marker 2597.",
       "unknownInfo": "Ahead and Match Strike suggest this object matters beyond the first reading."

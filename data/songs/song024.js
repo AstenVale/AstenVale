@@ -230,7 +230,7 @@ window.SONG_DATA = {
     {
       "id": "024_suitcaselatch",
       "type": "Object",
-      "name": "Suitcaselatch",
+      "name": "Suitcase Latch",
       "symbol": "🔍",
       "description": "Suitcase Latch was recovered from Pine Road in Case File 024. It is tied to Child, 5:30, and marker 231.",
       "unknownInfo": "Home and Wind in Pines suggest this object matters beyond the first reading.",

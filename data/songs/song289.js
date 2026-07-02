@@ -220,7 +220,7 @@ window.SONG_DATA = {
     {
       "id": "289_shipmanifest",
       "type": "Object",
-      "name": "Shipmanifest",
+      "name": "Ship Manifest",
       "symbol": "🔍",
       "description": "Ship Manifest was recovered from Print Shop in Case File 289. It is tied to Child, 8:06, and marker 2507.",
       "unknownInfo": "Back the Way You Came and Coal Shifting suggest this object matters beyond the first reading."

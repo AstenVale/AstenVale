@@ -221,7 +221,7 @@ window.SONG_DATA = {
     {
       "id": "582_pocketwatch",
       "type": "Object",
-      "name": "Pocketwatch",
+      "name": "Pocket Watch",
       "symbol": "🔍",
       "description": "Pocket Watch was recovered from Cooper's Yard in Case File 582. It is tied to Cattle Driver, 2:47, and marker 4952.",
       "unknownInfo": "Into the Dark and Rope Strain suggest this object matters beyond the first reading."
@@ -237,10 +237,10 @@ window.SONG_DATA = {
     {
       "id": "582_witness",
       "type": "Witness",
-      "name": "Cattledriver",
+      "name": "Cattle Driver",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/cattle-driver.jpg",
       "symbol": "👤",
-      "description": "Cattledriver, identified in the case notes for Case File 582. Has not given a formal statement.",
+      "description": "Cattle Driver, identified in the case notes for Case File 582. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

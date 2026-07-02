@@ -247,10 +247,10 @@ window.SONG_DATA = {
     {
       "id": "126_witness",
       "type": "Witness",
-      "name": "Circuitrider",
+      "name": "Circuit Rider",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/circuit-rider.jpg",
       "symbol": "👤",
-      "description": "Circuitrider, identified in the case notes for Case File 126. Has not given a formal statement.",
+      "description": "Circuit Rider, identified in the case notes for Case File 126. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

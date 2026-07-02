@@ -229,9 +229,9 @@ window.SONG_DATA = {
       "id": "012_location",
       "type": "Location",
       "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-012-riverside-cabin-location.jpg",
-      "name": "Sheriffarchive",
+      "name": "Sheriff Archive",
       "symbol": "📍",
-      "description": "The active scene for Case File 012. Recovered field notes place the primary event at Sheriffarchive.",
+      "description": "The active scene for Case File 012. Recovered field notes place the primary event at Sheriff Archive.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

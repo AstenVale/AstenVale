@@ -219,7 +219,7 @@ window.SONG_DATA = {
     {
       "id": "162_charredpaper",
       "type": "Object",
-      "name": "Charredpaper",
+      "name": "Charred Paper",
       "symbol": "🔍",
       "description": "Charred Paper was recovered from Cider House in Case File 162. It is tied to Sheriff, 11:29, and marker 1452.",
       "unknownInfo": "Left and Latch Drop suggest this object matters beyond the first reading."

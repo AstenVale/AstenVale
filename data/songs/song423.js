@@ -236,10 +236,10 @@ window.SONG_DATA = {
     {
       "id": "423_witness",
       "type": "Witness",
-      "name": "Stationmaster",
+      "name": "Station Master",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/station-master.jpg",
       "symbol": "👤",
-      "description": "Stationmaster, identified in the case notes for Case File 423. Has not given a formal statement.",
+      "description": "Station Master, identified in the case notes for Case File 423. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

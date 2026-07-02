@@ -236,9 +236,9 @@ window.SONG_DATA = {
     {
       "id": "410_location",
       "type": "Location",
-      "name": "Fullingmill",
+      "name": "Fulling Mill",
       "symbol": "📍",
-      "description": "The active scene for Case File 410. Recovered field notes place the primary event at Fullingmill.",
+      "description": "The active scene for Case File 410. Recovered field notes place the primary event at Fulling Mill.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

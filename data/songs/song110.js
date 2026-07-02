@@ -221,7 +221,7 @@ window.SONG_DATA = {
     {
       "id": "110_shipmanifest",
       "type": "Object",
-      "name": "Shipmanifest",
+      "name": "Ship Manifest",
       "symbol": "🔍",
       "description": "Ship Manifest was recovered from The Ridge in Case File 110. It is tied to Librarian, 1:26, and marker 1016.",
       "unknownInfo": "Further In and Moth Wings suggest this object matters beyond the first reading."

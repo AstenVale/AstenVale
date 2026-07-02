@@ -220,7 +220,7 @@ window.SONG_DATA = {
     {
       "id": "227_spoolofthread",
       "type": "Object",
-      "name": "Spoolofthread",
+      "name": "Spool of Thread",
       "symbol": "🔍",
       "description": "Spool of Thread was recovered from Harness Shop in Case File 227. It is tied to Wool Sorter, 2:47, and marker 1997.",
       "unknownInfo": "Sideways and Lantern Flicker suggest this object matters beyond the first reading."
@@ -228,9 +228,9 @@ window.SONG_DATA = {
     {
       "id": "227_location",
       "type": "Location",
-      "name": "Harnessshop",
+      "name": "Harness Shop",
       "symbol": "📍",
-      "description": "The active scene for Case File 227. Recovered field notes place the primary event at Harnessshop.",
+      "description": "The active scene for Case File 227. Recovered field notes place the primary event at Harness Shop.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

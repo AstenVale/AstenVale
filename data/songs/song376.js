@@ -219,7 +219,7 @@ window.SONG_DATA = {
     {
       "id": "376_leatherstrap",
       "type": "Object",
-      "name": "Leatherstrap",
+      "name": "Leather Strap",
       "symbol": "🔍",
       "description": "Leather Strap was recovered from Birch Stand in Case File 376. It is tied to Schoolteacher, 10:22, and marker 3234.",
       "unknownInfo": "Under and Lantern Glass suggest this object matters beyond the first reading."

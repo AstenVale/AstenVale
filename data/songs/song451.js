@@ -220,7 +220,7 @@ window.SONG_DATA = {
     {
       "id": "451_charcoalsketch",
       "type": "Object",
-      "name": "Charcoalsketch",
+      "name": "Charcoal Sketch",
       "symbol": "🔍",
       "description": "Charcoal Sketch was recovered from The Narrow Road in Case File 451. It is tied to Night Watchman, 6:45, and marker 3861.",
       "unknownInfo": "North and Footsteps suggest this object matters beyond the first reading."
@@ -236,10 +236,10 @@ window.SONG_DATA = {
     {
       "id": "451_witness",
       "type": "Witness",
-      "name": "Nightwatchman",
+      "name": "Night Watchman",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/night-watchman.jpg",
       "symbol": "👤",
-      "description": "Nightwatchman, identified in the case notes for Case File 451. Has not given a formal statement.",
+      "description": "Night Watchman, identified in the case notes for Case File 451. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

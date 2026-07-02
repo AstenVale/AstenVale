@@ -220,7 +220,7 @@ window.SONG_DATA = {
     {
       "id": "094_pocketwatch",
       "type": "Object",
-      "name": "Pocketwatch",
+      "name": "Pocket Watch",
       "symbol": "🔍",
       "description": "Pocket Watch was recovered from Mill House in Case File 094. It is tied to Lamplighter, 6:06, and marker 888.",
       "unknownInfo": "Past the Tree Line and Broken String suggest this object matters beyond the first reading.",

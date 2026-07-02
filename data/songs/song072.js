@@ -231,7 +231,7 @@ window.SONG_DATA = {
     {
       "id": "072_driedbloodoncloth",
       "type": "Object",
-      "name": "Driedbloodoncloth",
+      "name": "Dried Blood on Cloth",
       "symbol": "🔍",
       "description": "Dried Blood on Cloth was recovered from North Gate in Case File 072. It is tied to Fisherman, 6:32, and marker 706.",
       "unknownInfo": "Away from Town and Old Hinge suggest this object matters beyond the first reading.",

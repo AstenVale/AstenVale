@@ -220,7 +220,7 @@ window.SONG_DATA = {
     {
       "id": "508_numbereddisk",
       "type": "Object",
-      "name": "Numbereddisk",
+      "name": "Numbered Disk",
       "symbol": "🔍",
       "description": "Numbered Disk was recovered from Lake Shore in Case File 508. It is tied to Caretaker, 1:33, and marker 4334.",
       "unknownInfo": "Toward the River and Wheel on Gravel suggest this object matters beyond the first reading."

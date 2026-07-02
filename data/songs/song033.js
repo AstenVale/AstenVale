@@ -219,7 +219,7 @@ window.SONG_DATA = {
     {
       "id": "033_straightrazor",
       "type": "Object",
-      "name": "Straightrazor",
+      "name": "Straight Razor",
       "symbol": "🔍",
       "description": "Straight Razor was recovered from Water Tower in Case File 033. It is tied to Fisherman, 8:17, and marker 379.",
       "unknownInfo": "Beyond and Lantern Glass suggest this object matters beyond the first reading.",

@@ -237,9 +237,9 @@ window.SONG_DATA = {
     {
       "id": "031_witness",
       "type": "Witness",
-      "name": "Censustaker",
+      "name": "Census Taker",
       "symbol": "👤",
-      "description": "Censustaker, identified in the case notes for Case File 031. Has not given a formal statement.",
+      "description": "Census Taker, identified in the case notes for Case File 031. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/census-taker.jpg"
     },

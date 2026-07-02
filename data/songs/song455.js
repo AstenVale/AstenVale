@@ -229,7 +229,7 @@ window.SONG_DATA = {
     {
       "id": "455_numbereddisk",
       "type": "Object",
-      "name": "Numbereddisk",
+      "name": "Numbered Disk",
       "symbol": "🔍",
       "description": "Numbered Disk was recovered from Cemetery in Case File 455. It is tied to Orphan, 2:22, and marker 3897.",
       "unknownInfo": "Ahead and Crow on Wire suggest this object matters beyond the first reading."

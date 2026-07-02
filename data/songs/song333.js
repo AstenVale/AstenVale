@@ -236,10 +236,10 @@ window.SONG_DATA = {
     {
       "id": "333_witness",
       "type": "Witness",
-      "name": "Bonecollector",
+      "name": "Bone Collector",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/bone-collector.jpg",
       "symbol": "👤",
-      "description": "Bonecollector, identified in the case notes for Case File 333. Has not given a formal statement.",
+      "description": "Bone Collector, identified in the case notes for Case File 333. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

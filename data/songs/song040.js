@@ -238,9 +238,9 @@ window.SONG_DATA = {
       "id": "040_location",
       "type": "Location",
       "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-040-bankers-house-location.jpg",
-      "name": "Fullingmill",
+      "name": "Fulling Mill",
       "symbol": "📍",
-      "description": "The active scene for Case File 040. Recovered field notes place the primary event at Fullingmill.",
+      "description": "The active scene for Case File 040. Recovered field notes place the primary event at Fulling Mill.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

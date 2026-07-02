@@ -218,7 +218,7 @@ window.SONG_DATA = {
     {
       "id": "321_driedbloodoncloth",
       "type": "Object",
-      "name": "Driedbloodoncloth",
+      "name": "Dried Blood on Cloth",
       "symbol": "🔍",
       "description": "Dried Blood on Cloth was recovered from Smithy in Case File 321. It is tied to Fisherman, 3:03, and marker 2779.",
       "unknownInfo": "Below and Clock Ticking suggest this object matters beyond the first reading."

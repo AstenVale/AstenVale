@@ -229,7 +229,7 @@ window.SONG_DATA = {
     {
       "id": "371_scratchedinitialsinwood",
       "type": "Object",
-      "name": "Scratchedinitialsinwood",
+      "name": "Scratched Initials in Wood",
       "symbol": "🔍",
       "description": "Scratched Initials in Wood was recovered from Ash Hollow in Case File 371. It is tied to Auctioneer, 7:48, and marker 3197.",
       "unknownInfo": "South and Swamp Gas suggest this object matters beyond the first reading."

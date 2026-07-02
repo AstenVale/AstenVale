@@ -228,7 +228,7 @@ window.SONG_DATA = {
     {
       "id": "411_foldedcloth",
       "type": "Object",
-      "name": "Foldedcloth",
+      "name": "Folded Cloth",
       "symbol": "🔍",
       "description": "Folded Cloth was recovered from Church in Case File 411. It is tied to River Pilot, 4:29, and marker 3525.",
       "unknownInfo": "Around and Floorboard suggest this object matters beyond the first reading."

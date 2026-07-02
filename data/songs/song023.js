@@ -239,9 +239,9 @@ window.SONG_DATA = {
       "id": "023_location",
       "type": "Location",
       "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-023-courthouse-location.jpg",
-      "name": "Emptykitchen",
+      "name": "Empty Kitchen",
       "symbol": "📍",
-      "description": "The active scene for Case File 023. Recovered field notes place the primary event at Emptykitchen.",
+      "description": "The active scene for Case File 023. Recovered field notes place the primary event at Empty Kitchen.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

@@ -219,7 +219,7 @@ window.SONG_DATA = {
     {
       "id": "034_straightrazor",
       "type": "Object",
-      "name": "Straightrazor",
+      "name": "Straight Razor",
       "symbol": "🔍",
       "description": "Straight Razor was recovered from Watchmaker's Shop in Case File 034. It is tied to Preacher, 9:27, and marker 388.",
       "unknownInfo": "Ahead and River Ice suggest this object matters beyond the first reading.",

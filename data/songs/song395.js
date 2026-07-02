@@ -230,7 +230,7 @@ window.SONG_DATA = {
     {
       "id": "395_shipmanifest",
       "type": "Object",
-      "name": "Shipmanifest",
+      "name": "Ship Manifest",
       "symbol": "🔍",
       "description": "Ship Manifest was recovered from Quarry Edge in Case File 395. It is tied to Tailor, 3:49, and marker 3397.",
       "unknownInfo": "Left and Boot Heel suggest this object matters beyond the first reading."

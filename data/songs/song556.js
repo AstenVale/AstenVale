@@ -220,7 +220,7 @@ window.SONG_DATA = {
     {
       "id": "556_foldedcloth",
       "type": "Object",
-      "name": "Foldedcloth",
+      "name": "Folded Cloth",
       "symbol": "🔍",
       "description": "Folded Cloth was recovered from Old Wharf in Case File 556. It is tied to Sexton, 8:17, and marker 4734.",
       "unknownInfo": "Off the Road and Fire Crackling suggest this object matters beyond the first reading."

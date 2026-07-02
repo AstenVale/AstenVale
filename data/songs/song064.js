@@ -230,7 +230,7 @@ window.SONG_DATA = {
     {
       "id": "064_spoolofthread",
       "type": "Object",
-      "name": "Spoolofthread",
+      "name": "Spool of Thread",
       "symbol": "🔍",
       "description": "Spool of Thread was recovered from Forge in Case File 064. It is tied to Lamplighter, 12:17, and marker 634.",
       "unknownInfo": "Further In and Cellar Door suggest this object matters beyond the first reading.",

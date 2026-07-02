@@ -236,10 +236,10 @@ window.SONG_DATA = {
     {
       "id": "336_witness",
       "type": "Witness",
-      "name": "Cattledriver",
+      "name": "Cattle Driver",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/cattle-driver.jpg",
       "symbol": "👤",
-      "description": "Cattledriver, identified in the case notes for Case File 336. Has not given a formal statement.",
+      "description": "Cattle Driver, identified in the case notes for Case File 336. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

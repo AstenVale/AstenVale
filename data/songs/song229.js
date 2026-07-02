@@ -221,7 +221,7 @@ window.SONG_DATA = {
     {
       "id": "229_driedinkblot",
       "type": "Object",
-      "name": "Driedinkblot",
+      "name": "Dried Ink Blot",
       "symbol": "🔍",
       "description": "Dried Ink Blot was recovered from Market Square in Case File 229. It is tied to Circuit Rider, 6:53, and marker 2007.",
       "unknownInfo": "Into the Dark and Match Strike suggest this object matters beyond the first reading."
@@ -229,18 +229,18 @@ window.SONG_DATA = {
     {
       "id": "229_location",
       "type": "Location",
-      "name": "Marketsquare",
+      "name": "Market Square",
       "symbol": "📍",
-      "description": "The active scene for Case File 229. Recovered field notes place the primary event at Marketsquare.",
+      "description": "The active scene for Case File 229. Recovered field notes place the primary event at Market Square.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {
       "id": "229_witness",
       "type": "Witness",
-      "name": "Circuitrider",
+      "name": "Circuit Rider",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/circuit-rider.jpg",
       "symbol": "👤",
-      "description": "Circuitrider, identified in the case notes for Case File 229. Has not given a formal statement.",
+      "description": "Circuit Rider, identified in the case notes for Case File 229. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

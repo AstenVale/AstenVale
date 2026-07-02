@@ -230,7 +230,7 @@ window.SONG_DATA = {
     {
       "id": "369_hollowacorn",
       "type": "Object",
-      "name": "Hollowacorn",
+      "name": "Hollow Acorn",
       "symbol": "🔍",
       "description": "Hollow Acorn was recovered from Freight Yard in Case File 369. It is tied to Wool Sorter, 6:17, and marker 3179.",
       "unknownInfo": "Home and Swamp Gas suggest this object matters beyond the first reading."
@@ -238,9 +238,9 @@ window.SONG_DATA = {
     {
       "id": "369_location",
       "type": "Location",
-      "name": "Freightyard",
+      "name": "Freight Yard",
       "symbol": "📍",
-      "description": "The active scene for Case File 369. Recovered field notes place the primary event at Freightyard.",
+      "description": "The active scene for Case File 369. Recovered field notes place the primary event at Freight Yard.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

@@ -238,18 +238,18 @@ window.SONG_DATA = {
     {
       "id": "169_location",
       "type": "Location",
-      "name": "Collapsedmine",
+      "name": "Collapsed Mine",
       "symbol": "📍",
-      "description": "The active scene for Case File 169. Recovered field notes place the primary event at Collapsedmine.",
+      "description": "The active scene for Case File 169. Recovered field notes place the primary event at Collapsed Mine.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {
       "id": "169_witness",
       "type": "Witness",
-      "name": "Nightwatchman",
+      "name": "Night Watchman",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/night-watchman.jpg",
       "symbol": "👤",
-      "description": "Nightwatchman, identified in the case notes for Case File 169. Has not given a formal statement.",
+      "description": "Night Watchman, identified in the case notes for Case File 169. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

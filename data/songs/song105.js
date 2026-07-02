@@ -229,7 +229,7 @@ window.SONG_DATA = {
     {
       "id": "105_driedinkblot",
       "type": "Object",
-      "name": "Driedinkblot",
+      "name": "Dried Ink Blot",
       "symbol": "🔍",
       "description": "Dried Ink Blot was recovered from Hotel in Case File 105. It is tied to Station Master, 7:02, and marker 979.",
       "unknownInfo": "Back and Wind Through a Crack suggest this object matters beyond the first reading."
@@ -245,10 +245,10 @@ window.SONG_DATA = {
     {
       "id": "105_witness",
       "type": "Witness",
-      "name": "Stationmaster",
+      "name": "Station Master",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/station-master.jpg",
       "symbol": "👤",
-      "description": "Stationmaster, identified in the case notes for Case File 105. Has not given a formal statement.",
+      "description": "Station Master, identified in the case notes for Case File 105. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

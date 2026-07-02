@@ -245,10 +245,10 @@ window.SONG_DATA = {
     {
       "id": "259_witness",
       "type": "Witness",
-      "name": "Ciderpresser",
+      "name": "Cider Presser",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/cider-presser.jpg",
       "symbol": "👤",
-      "description": "Ciderpresser, identified in the case notes for Case File 259. Has not given a formal statement.",
+      "description": "Cider Presser, identified in the case notes for Case File 259. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

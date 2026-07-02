@@ -229,7 +229,7 @@ window.SONG_DATA = {
     {
       "id": "085_driedflower",
       "type": "Object",
-      "name": "Driedflower",
+      "name": "Dried Flower",
       "symbol": "🔍",
       "description": "Dried Flower was recovered from East Field in Case File 085. It is tied to Schoolgirl, 7:48, and marker 807.",
       "unknownInfo": "Across and Train Whistle suggest this object matters beyond the first reading.",

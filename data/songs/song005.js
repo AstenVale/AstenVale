@@ -219,7 +219,7 @@ window.SONG_DATA = {
     {
       "id": "005_silverwatch",
       "type": "Object",
-      "name": "Silverwatch",
+      "name": "Silver Watch",
       "symbol": "🔍",
       "description": "Silver Watch was recovered from Depot in Case File 005. It is tied to Station Master, 3:03, and marker 55.",
       "unknownInfo": "North and Train Whistle suggest this object matters beyond the first reading.",
@@ -237,9 +237,9 @@ window.SONG_DATA = {
     {
       "id": "005_witness",
       "type": "Witness",
-      "name": "Stationmaster",
+      "name": "Station Master",
       "symbol": "👤",
-      "description": "Stationmaster, identified in the case notes for Case File 005. Has not given a formal statement.",
+      "description": "Station Master, identified in the case notes for Case File 005. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/station-master.jpg"
     },

@@ -240,9 +240,9 @@ window.SONG_DATA = {
       "id": "014_location",
       "type": "Location",
       "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-014-old-bridge-location.jpg",
-      "name": "Riversidecabin",
+      "name": "Riverside Cabin",
       "symbol": "📍",
-      "description": "The active scene for Case File 014. Recovered field notes place the primary event at Riversidecabin.",
+      "description": "The active scene for Case File 014. Recovered field notes place the primary event at Riverside Cabin.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

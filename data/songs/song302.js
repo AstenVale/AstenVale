@@ -229,7 +229,7 @@ window.SONG_DATA = {
     {
       "id": "302_driedinkblot",
       "type": "Object",
-      "name": "Driedinkblot",
+      "name": "Dried Ink Blot",
       "symbol": "🔍",
       "description": "Dried Ink Blot was recovered from Forge in Case File 302. It is tied to Rope Maker, 11:40, and marker 2616.",
       "unknownInfo": "Away and Fog Horn suggest this object matters beyond the first reading."

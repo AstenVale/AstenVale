@@ -230,7 +230,7 @@ window.SONG_DATA = {
     {
       "id": "331_charcoalsketch",
       "type": "Object",
-      "name": "Charcoalsketch",
+      "name": "Charcoal Sketch",
       "symbol": "🔍",
       "description": "Charcoal Sketch was recovered from Doctor's Office in Case File 331. It is tied to Peddler, 5:09, and marker 2861.",
       "unknownInfo": "North and Lock Click suggest this object matters beyond the first reading."

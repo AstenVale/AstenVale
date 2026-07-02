@@ -219,7 +219,7 @@ window.SONG_DATA = {
     {
       "id": "492_charcoalsketch",
       "type": "Object",
-      "name": "Charcoalsketch",
+      "name": "Charcoal Sketch",
       "symbol": "🔍",
       "description": "Charcoal Sketch was recovered from Harness Shop in Case File 492. It is tied to Typesetter, 1:11, and marker 4206.",
       "unknownInfo": "Forward and Axe on Wood suggest this object matters beyond the first reading."
@@ -227,9 +227,9 @@ window.SONG_DATA = {
     {
       "id": "492_location",
       "type": "Location",
-      "name": "Harnessshop",
+      "name": "Harness Shop",
       "symbol": "📍",
-      "description": "The active scene for Case File 492. Recovered field notes place the primary event at Harnessshop.",
+      "description": "The active scene for Case File 492. Recovered field notes place the primary event at Harness Shop.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

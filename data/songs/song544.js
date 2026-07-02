@@ -230,7 +230,7 @@ window.SONG_DATA = {
     {
       "id": "544_copperfitting",
       "type": "Object",
-      "name": "Copperfitting",
+      "name": "Copper Fitting",
       "symbol": "🔍",
       "description": "Copper Fitting was recovered from Crow's Nest Ridge in Case File 544. It is tied to Gravedigger, 12:33, and marker 4634.",
       "unknownInfo": "Behind and Wheel on Gravel suggest this object matters beyond the first reading."

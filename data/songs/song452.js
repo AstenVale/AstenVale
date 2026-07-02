@@ -220,7 +220,7 @@ window.SONG_DATA = {
     {
       "id": "452_spoolofthread",
       "type": "Object",
-      "name": "Spoolofthread",
+      "name": "Spool of Thread",
       "symbol": "🔍",
       "description": "Spool of Thread was recovered from Lumber Camp in Case File 452. It is tied to Doctor, 4:12, and marker 3870.",
       "unknownInfo": "Past the Tree Line and Distant Gunshot suggest this object matters beyond the first reading."
