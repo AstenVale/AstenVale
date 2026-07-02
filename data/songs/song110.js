@@ -263,7 +263,7 @@ window.SONG_DATA = {
     {
       "id": "110_direction",
       "type": "Direction",
-      "name": "Furtherin",
+      "name": "Further In",
       "symbol": "🧭",
       "description": "The direction indicated by the field marker in Case File 110.",
       "unknownInfo": "What — or who — lies at the end of this bearing."

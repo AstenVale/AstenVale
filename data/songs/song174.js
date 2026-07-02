@@ -272,7 +272,7 @@ window.SONG_DATA = {
     {
       "id": "174_direction",
       "type": "Direction",
-      "name": "Alongthecreek",
+      "name": "Along the Creek",
       "symbol": "🧭",
       "description": "The direction indicated by the field marker in Case File 174.",
       "unknownInfo": "What — or who — lies at the end of this bearing."

@@ -275,7 +275,7 @@ window.SONG_DATA = {
     {
       "id": "542_direction",
       "type": "Direction",
-      "name": "Towardtheriver",
+      "name": "Toward the River",
       "symbol": "🧭",
       "description": "The direction indicated by the field marker in Case File 542.",
       "unknownInfo": "What — or who — lies at the end of this bearing."

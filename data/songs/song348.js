@@ -274,7 +274,7 @@ window.SONG_DATA = {
     {
       "id": "348_direction",
       "type": "Direction",
-      "name": "Backthewayyoucame",
+      "name": "Back the Way You Came",
       "symbol": "🧭",
       "description": "The direction indicated by the field marker in Case File 348.",
       "unknownInfo": "What — or who — lies at the end of this bearing."

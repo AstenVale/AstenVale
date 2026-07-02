@@ -262,7 +262,7 @@ window.SONG_DATA = {
     {
       "id": "157_direction",
       "type": "Direction",
-      "name": "Awayfromtown",
+      "name": "Away from Town",
       "symbol": "🧭",
       "description": "The direction indicated by the field marker in Case File 157.",
       "unknownInfo": "What — or who — lies at the end of this bearing."
