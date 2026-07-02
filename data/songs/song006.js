@@ -271,7 +271,7 @@ window.SONG_DATA = {
     {
       "id": "006_sound",
       "type": "Sound",
-      "name": "Riverwater",
+      "name": "River Water",
       "symbol": "🔊",
       "description": "An audio event captured in the case recording for Case File 006. Identified and logged by the archive.",
       "unknownInfo": "Whether this sound was natural — or a signal."

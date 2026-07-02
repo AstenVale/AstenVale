@@ -281,7 +281,7 @@ window.SONG_DATA = {
     {
       "id": "085_sound",
       "type": "Sound",
-      "name": "Trainwhistle",
+      "name": "Train Whistle",
       "symbol": "🔊",
       "description": "An audio event captured in the case recording for Case File 085. Identified and logged by the archive.",
       "unknownInfo": "Whether this sound was natural — or a signal."

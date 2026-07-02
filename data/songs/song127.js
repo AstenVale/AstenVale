@@ -280,7 +280,7 @@ window.SONG_DATA = {
     {
       "id": "127_sound",
       "type": "Sound",
-      "name": "Stonesinatin",
+      "name": "Stones In A Tin",
       "symbol": "🔊",
       "description": "An audio event captured in the case recording for Case File 127. Identified and logged by the archive.",
       "unknownInfo": "Whether this sound was natural — or a signal."

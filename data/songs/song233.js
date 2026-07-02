@@ -280,7 +280,7 @@ window.SONG_DATA = {
     {
       "id": "233_sound",
       "type": "Sound",
-      "name": "Riverice",
+      "name": "River Ice",
       "symbol": "🔊",
       "description": "An audio event captured in the case recording for Case File 233. Identified and logged by the archive.",
       "unknownInfo": "Whether this sound was natural — or a signal."

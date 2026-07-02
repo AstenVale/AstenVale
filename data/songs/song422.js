@@ -271,7 +271,7 @@ window.SONG_DATA = {
     {
       "id": "422_sound",
       "type": "Sound",
-      "name": "Waterdrip",
+      "name": "Water Drip",
       "symbol": "🔊",
       "description": "An audio event captured in the case recording for Case File 422. Identified and logged by the archive.",
       "unknownInfo": "Whether this sound was natural — or a signal."

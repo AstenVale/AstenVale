@@ -268,7 +268,7 @@ window.SONG_DATA = {
     {
       "id": "225_sound",
       "type": "Sound",
-      "name": "Penonpaper",
+      "name": "Pen On Paper",
       "symbol": "🔊",
       "description": "An audio event captured in the case recording for Case File 225. Identified and logged by the archive.",
       "unknownInfo": "Whether this sound was natural — or a signal."

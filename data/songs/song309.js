@@ -280,7 +280,7 @@ window.SONG_DATA = {
     {
       "id": "309_sound",
       "type": "Sound",
-      "name": "Foghorn",
+      "name": "Fog Horn",
       "symbol": "🔊",
       "description": "An audio event captured in the case recording for Case File 309. Identified and logged by the archive.",
       "unknownInfo": "Whether this sound was natural — or a signal."

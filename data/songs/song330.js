@@ -281,7 +281,7 @@ window.SONG_DATA = {
     {
       "id": "330_sound",
       "type": "Sound",
-      "name": "Silence After",
+      "name": "The Silence After",
       "symbol": "🔊",
       "description": "An audio event captured in the case recording for Case File 330. Identified and logged by the archive.",
       "unknownInfo": "Whether this sound was natural — or a signal."

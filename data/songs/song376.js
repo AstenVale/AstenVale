@@ -269,7 +269,7 @@ window.SONG_DATA = {
     {
       "id": "376_sound",
       "type": "Sound",
-      "name": "Lanternglass",
+      "name": "Lantern Glass",
       "symbol": "🔊",
       "description": "An audio event captured in the case recording for Case File 376. Identified and logged by the archive.",
       "unknownInfo": "Whether this sound was natural — or a signal."

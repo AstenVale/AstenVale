@@ -281,7 +281,7 @@ window.SONG_DATA = {
     {
       "id": "342_sound",
       "type": "Sound",
-      "name": "Pagesturning",
+      "name": "Pages Turning",
       "symbol": "🔊",
       "description": "An audio event captured in the case recording for Case File 342. Identified and logged by the archive.",
       "unknownInfo": "Whether this sound was natural — or a signal."

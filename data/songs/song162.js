@@ -269,7 +269,7 @@ window.SONG_DATA = {
     {
       "id": "162_sound",
       "type": "Sound",
-      "name": "Latchdrop",
+      "name": "Latch Drop",
       "symbol": "🔊",
       "description": "An audio event captured in the case recording for Case File 162. Identified and logged by the archive.",
       "unknownInfo": "Whether this sound was natural — or a signal."

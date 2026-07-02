@@ -269,7 +269,7 @@ window.SONG_DATA = {
     {
       "id": "183_sound",
       "type": "Sound",
-      "name": "Fencewirehum",
+      "name": "Fence Wire Hum",
       "symbol": "🔊",
       "description": "An audio event captured in the case recording for Case File 183. Identified and logged by the archive.",
       "unknownInfo": "Whether this sound was natural — or a signal."

@@ -279,7 +279,7 @@ window.SONG_DATA = {
     {
       "id": "584_sound",
       "type": "Sound",
-      "name": "Swampgas",
+      "name": "Swamp Gas",
       "symbol": "🔊",
       "description": "An audio event captured in the case recording for Case File 584. Identified and logged by the archive.",
       "unknownInfo": "Whether this sound was natural — or a signal."

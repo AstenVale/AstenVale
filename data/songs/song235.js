@@ -279,7 +279,7 @@ window.SONG_DATA = {
     {
       "id": "235_sound",
       "type": "Sound",
-      "name": "Kettleboil",
+      "name": "Kettle Boil",
       "symbol": "🔊",
       "description": "An audio event captured in the case recording for Case File 235. Identified and logged by the archive.",
       "unknownInfo": "Whether this sound was natural — or a signal."

@@ -271,7 +271,7 @@ window.SONG_DATA = {
     {
       "id": "529_sound",
       "type": "Sound",
-      "name": "Glassbreak",
+      "name": "Glass Break",
       "symbol": "🔊",
       "description": "An audio event captured in the case recording for Case File 529. Identified and logged by the archive.",
       "unknownInfo": "Whether this sound was natural — or a signal."

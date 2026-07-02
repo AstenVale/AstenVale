@@ -271,7 +271,7 @@ window.SONG_DATA = {
     {
       "id": "318_sound",
       "type": "Sound",
-      "name": "Horsehooves",
+      "name": "Horse Hooves",
       "symbol": "🔊",
       "description": "An audio event captured in the case recording for Case File 318. Identified and logged by the archive.",
       "unknownInfo": "Whether this sound was natural — or a signal."

@@ -268,7 +268,7 @@ window.SONG_DATA = {
     {
       "id": "244_sound",
       "type": "Sound",
-      "name": "Distantgunshot",
+      "name": "Distant Gunshot",
       "symbol": "🔊",
       "description": "An audio event captured in the case recording for Case File 244. Identified and logged by the archive.",
       "unknownInfo": "Whether this sound was natural — or a signal."

@@ -281,7 +281,7 @@ window.SONG_DATA = {
     {
       "id": "502_sound",
       "type": "Sound",
-      "name": "Ropestrain",
+      "name": "Rope Strain",
       "symbol": "🔊",
       "description": "An audio event captured in the case recording for Case File 502. Identified and logged by the archive.",
       "unknownInfo": "Whether this sound was natural — or a signal."

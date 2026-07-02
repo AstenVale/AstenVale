@@ -278,7 +278,7 @@ window.SONG_DATA = {
     {
       "id": "175_sound",
       "type": "Sound",
-      "name": "Crowonwire",
+      "name": "Crow On Wire",
       "symbol": "🔊",
       "description": "An audio event captured in the case recording for Case File 175. Identified and logged by the archive.",
       "unknownInfo": "Whether this sound was natural — or a signal."

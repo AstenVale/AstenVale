@@ -282,7 +282,7 @@ window.SONG_DATA = {
     {
       "id": "046_sound",
       "type": "Sound",
-      "name": "Child'Slaugh(Faroff)",
+      "name": "Child's Laugh (Far Off)",
       "symbol": "🔊",
       "description": "An audio event captured in the case recording for Case File 046. Identified and logged by the archive.",
       "unknownInfo": "Whether this sound was natural — or a signal."

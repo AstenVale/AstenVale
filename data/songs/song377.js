@@ -269,7 +269,7 @@ window.SONG_DATA = {
     {
       "id": "377_sound",
       "type": "Sound",
-      "name": "Hammeronanvil",
+      "name": "Hammer On Anvil",
       "symbol": "🔊",
       "description": "An audio event captured in the case recording for Case File 377. Identified and logged by the archive.",
       "unknownInfo": "Whether this sound was natural — or a signal."

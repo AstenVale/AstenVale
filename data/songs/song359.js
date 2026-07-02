@@ -268,7 +268,7 @@ window.SONG_DATA = {
     {
       "id": "359_sound",
       "type": "Sound",
-      "name": "Lidofatin",
+      "name": "Lid Of A Tin",
       "symbol": "🔊",
       "description": "An audio event captured in the case recording for Case File 359. Identified and logged by the archive.",
       "unknownInfo": "Whether this sound was natural — or a signal."
