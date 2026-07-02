@@ -1031,26 +1031,27 @@ body {
   }
 }
 
-/* Force witness audio below both columns, full width. */
-@media (max-width: 768px) {
-  .witness-display .witness-audio-row {
-    grid-column: 1 / -1 !important;
-    grid-row: 2 !important;
-    width: 100% !important;
-    min-width: 0 !important;
-    margin-top: 0.85rem !important;
-  }
+/* Force witness audio below both columns, full width -- at every screen size, not just
+   mobile. Without this, the audio row auto-places into the narrow image column of the
+   2-column archive-image-layout grid, squeezing the "Play" button/waveform. */
+.witness-display .witness-audio-row {
+  grid-column: 1 / -1 !important;
+  grid-row: 2 !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  margin-top: 0.85rem !important;
+}
 
-  .witness-display .witness-audio-row .av-audio-player,
-  .witness-display .witness-audio-row .wt-player,
-  .witness-display .witness-audio-row .wt-locked-notice {
-    width: 100% !important;
-    margin-top: 0 !important;
-  }
+.witness-display .witness-audio-row .av-audio-player,
+.witness-display .witness-audio-row .wt-player,
+.witness-display .witness-audio-row .wt-locked-notice {
+  width: 100% !important;
+  margin-top: 0 !important;
+}
 
-  .witness-display .artifact-view-link {
-    grid-row: 3 !important;
-  }
+.witness-display .artifact-view-link {
+  grid-column: 1 / -1 !important;
+  grid-row: 3 !important;
 }
 
 /* Mobile solved-case reading mode: larger and bolder long case-file text. */
