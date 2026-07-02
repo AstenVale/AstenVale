@@ -270,7 +270,7 @@ window.SONG_DATA = {
     {
       "id": "082_sound",
       "type": "Sound",
-      "name": "Forgebreath",
+      "name": "Forge Breath",
       "symbol": "🔊",
       "description": "An audio event captured in the case recording for Case File 082. Identified and logged by the archive.",
       "unknownInfo": "Whether this sound was natural — or a signal."

@@ -279,7 +279,7 @@ window.SONG_DATA = {
     {
       "id": "588_sound",
       "type": "Sound",
-      "name": "Mudsuction",
+      "name": "Mud Suction",
       "symbol": "🔊",
       "description": "An audio event captured in the case recording for Case File 588. Identified and logged by the archive.",
       "unknownInfo": "Whether this sound was natural — or a signal."

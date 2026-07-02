@@ -271,7 +271,7 @@ window.SONG_DATA = {
     {
       "id": "002_sound",
       "type": "Sound",
-      "name": "CREEEAK",
+      "name": "Creeeak",
       "symbol": "🔊",
       "description": "An unidentified structural sound captured at 8:00 in the case audio. Possibly a door. Possibly a floorboard.",
       "unknownInfo": "What structure it came from — and whether anyone was inside."

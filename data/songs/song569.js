@@ -280,7 +280,7 @@ window.SONG_DATA = {
     {
       "id": "569_sound",
       "type": "Sound",
-      "name": "Shovelonearth",
+      "name": "Shovel On Earth",
       "symbol": "🔊",
       "description": "An audio event captured in the case recording for Case File 569. Identified and logged by the archive.",
       "unknownInfo": "Whether this sound was natural — or a signal."

@@ -279,7 +279,7 @@ window.SONG_DATA = {
     {
       "id": "549_sound",
       "type": "Sound",
-      "name": "Cannonbolt",
+      "name": "Cannon Bolt",
       "symbol": "🔊",
       "description": "An audio event captured in the case recording for Case File 549. Identified and logged by the archive.",
       "unknownInfo": "Whether this sound was natural — or a signal."

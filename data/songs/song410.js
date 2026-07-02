@@ -278,7 +278,7 @@ window.SONG_DATA = {
     {
       "id": "410_sound",
       "type": "Sound",
-      "name": "Cellarstairs",
+      "name": "Cellar Stairs",
       "symbol": "🔊",
       "description": "An audio event captured in the case recording for Case File 410. Identified and logged by the archive.",
       "unknownInfo": "Whether this sound was natural — or a signal."

@@ -269,7 +269,7 @@ window.SONG_DATA = {
     {
       "id": "554_sound",
       "type": "Sound",
-      "name": "Shutterbang",
+      "name": "Shutter Bang",
       "symbol": "🔊",
       "description": "An audio event captured in the case recording for Case File 554. Identified and logged by the archive.",
       "unknownInfo": "Whether this sound was natural — or a signal."

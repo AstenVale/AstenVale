@@ -269,7 +269,7 @@ window.SONG_DATA = {
     {
       "id": "577_sound",
       "type": "Sound",
-      "name": "Drygrass",
+      "name": "Dry Grass",
       "symbol": "🔊",
       "description": "An audio event captured in the case recording for Case File 577. Identified and logged by the archive.",
       "unknownInfo": "Whether this sound was natural — or a signal."

@@ -279,7 +279,7 @@ window.SONG_DATA = {
     {
       "id": "311_sound",
       "type": "Sound",
-      "name": "Emptywagon",
+      "name": "Empty Wagon",
       "symbol": "🔊",
       "description": "An audio event captured in the case recording for Case File 311. Identified and logged by the archive.",
       "unknownInfo": "Whether this sound was natural — or a signal."

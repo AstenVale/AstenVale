@@ -269,7 +269,7 @@ window.SONG_DATA = {
     {
       "id": "270_sound",
       "type": "Sound",
-      "name": "Crowwings",
+      "name": "Crow Wings",
       "symbol": "🔊",
       "description": "An audio event captured in the case recording for Case File 270. Identified and logged by the archive.",
       "unknownInfo": "Whether this sound was natural — or a signal."

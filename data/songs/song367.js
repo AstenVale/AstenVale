@@ -280,7 +280,7 @@ window.SONG_DATA = {
     {
       "id": "367_sound",
       "type": "Sound",
-      "name": "Ropeonpulley",
+      "name": "Rope On Pulley",
       "symbol": "🔊",
       "description": "An audio event captured in the case recording for Case File 367. Identified and logged by the archive.",
       "unknownInfo": "Whether this sound was natural — or a signal."

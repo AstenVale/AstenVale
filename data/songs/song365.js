@@ -281,7 +281,7 @@ window.SONG_DATA = {
     {
       "id": "365_sound",
       "type": "Sound",
-      "name": "Brokenstring",
+      "name": "Broken String",
       "symbol": "🔊",
       "description": "An audio event captured in the case recording for Case File 365. Identified and logged by the archive.",
       "unknownInfo": "Whether this sound was natural — or a signal."

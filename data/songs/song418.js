@@ -278,7 +278,7 @@ window.SONG_DATA = {
     {
       "id": "418_sound",
       "type": "Sound",
-      "name": "Coalshifting",
+      "name": "Coal Shifting",
       "symbol": "🔊",
       "description": "An audio event captured in the case recording for Case File 418. Identified and logged by the archive.",
       "unknownInfo": "Whether this sound was natural — or a signal."

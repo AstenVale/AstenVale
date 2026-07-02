@@ -269,7 +269,7 @@ window.SONG_DATA = {
     {
       "id": "374_sound",
       "type": "Sound",
-      "name": "Lockclick",
+      "name": "Lock Click",
       "symbol": "🔊",
       "description": "An audio event captured in the case recording for Case File 374. Identified and logged by the archive.",
       "unknownInfo": "Whether this sound was natural — or a signal."

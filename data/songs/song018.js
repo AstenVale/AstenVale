@@ -282,7 +282,7 @@ window.SONG_DATA = {
     {
       "id": "018_sound",
       "type": "Sound",
-      "name": "Clockticking",
+      "name": "Clock Ticking",
       "symbol": "🔊",
       "description": "An audio event captured in the case recording for Case File 018. Identified and logged by the archive.",
       "unknownInfo": "Whether this sound was natural — or a signal."

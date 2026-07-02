@@ -269,7 +269,7 @@ window.SONG_DATA = {
     {
       "id": "425_sound",
       "type": "Sound",
-      "name": "Matchstrike",
+      "name": "Match Strike",
       "symbol": "🔊",
       "description": "An audio event captured in the case recording for Case File 425. Identified and logged by the archive.",
       "unknownInfo": "Whether this sound was natural — or a signal."

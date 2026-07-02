@@ -279,7 +279,7 @@ window.SONG_DATA = {
     {
       "id": "105_sound",
       "type": "Sound",
-      "name": "Windthroughacrack",
+      "name": "Wind Through A Crack",
       "symbol": "🔊",
       "description": "An audio event captured in the case recording for Case File 105. Identified and logged by the archive.",
       "unknownInfo": "Whether this sound was natural — or a signal."

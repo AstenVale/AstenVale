@@ -268,7 +268,7 @@ window.SONG_DATA = {
     {
       "id": "323_sound",
       "type": "Sound",
-      "name": "Paperrustle",
+      "name": "Paper Rustle",
       "symbol": "🔊",
       "description": "An audio event captured in the case recording for Case File 323. Identified and logged by the archive.",
       "unknownInfo": "Whether this sound was natural — or a signal."

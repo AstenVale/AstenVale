@@ -272,7 +272,7 @@ window.SONG_DATA = {
     {
       "id": "056_sound",
       "type": "Sound",
-      "name": "Belltoll",
+      "name": "Bell Toll",
       "symbol": "🔊",
       "description": "An audio event captured in the case recording for Case File 056. Identified and logged by the archive.",
       "unknownInfo": "Whether this sound was natural — or a signal."

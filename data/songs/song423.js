@@ -270,7 +270,7 @@ window.SONG_DATA = {
     {
       "id": "423_sound",
       "type": "Sound",
-      "name": "Mothwings",
+      "name": "Moth Wings",
       "symbol": "🔊",
       "description": "An audio event captured in the case recording for Case File 423. Identified and logged by the archive.",
       "unknownInfo": "Whether this sound was natural — or a signal."

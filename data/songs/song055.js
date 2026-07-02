@@ -272,7 +272,7 @@ window.SONG_DATA = {
     {
       "id": "055_sound",
       "type": "Sound",
-      "name": "Crowonwire",
+      "name": "Crow On Wire",
       "symbol": "🔊",
       "description": "An audio event captured in the case recording for Case File 055. Identified and logged by the archive.",
       "unknownInfo": "Whether this sound was natural — or a signal."

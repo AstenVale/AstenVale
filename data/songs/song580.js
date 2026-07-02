@@ -268,7 +268,7 @@ window.SONG_DATA = {
     {
       "id": "580_sound",
       "type": "Sound",
-      "name": "Boneonstone",
+      "name": "Bone On Stone",
       "symbol": "🔊",
       "description": "An audio event captured in the case recording for Case File 580. Identified and logged by the archive.",
       "unknownInfo": "Whether this sound was natural — or a signal."

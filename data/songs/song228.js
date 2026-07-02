@@ -269,7 +269,7 @@ window.SONG_DATA = {
     {
       "id": "228_sound",
       "type": "Sound",
-      "name": "Lanternflicker",
+      "name": "Lantern Flicker",
       "symbol": "🔊",
       "description": "An audio event captured in the case recording for Case File 228. Identified and logged by the archive.",
       "unknownInfo": "Whether this sound was natural — or a signal."

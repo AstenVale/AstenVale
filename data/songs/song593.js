@@ -269,7 +269,7 @@ window.SONG_DATA = {
     {
       "id": "593_sound",
       "type": "Sound",
-      "name": "Dogbarkatnothing",
+      "name": "Dog Bark At Nothing",
       "symbol": "🔊",
       "description": "An audio event captured in the case recording for Case File 593. Identified and logged by the archive.",
       "unknownInfo": "Whether this sound was natural — or a signal."

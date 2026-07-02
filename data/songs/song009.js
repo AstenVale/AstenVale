@@ -271,7 +271,7 @@ window.SONG_DATA = {
     {
       "id": "009_sound",
       "type": "Sound",
-      "name": "Windinpines",
+      "name": "Wind In Pines",
       "symbol": "🔊",
       "description": "An audio event captured in the case recording for Case File 009. Identified and logged by the archive.",
       "unknownInfo": "Whether this sound was natural — or a signal."

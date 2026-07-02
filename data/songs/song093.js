@@ -272,7 +272,7 @@ window.SONG_DATA = {
     {
       "id": "093_sound",
       "type": "Sound",
-      "name": "Telegraphclick",
+      "name": "Telegraph Click",
       "symbol": "🔊",
       "description": "An audio event captured in the case recording for Case File 093. Identified and logged by the archive.",
       "unknownInfo": "Whether this sound was natural — or a signal."

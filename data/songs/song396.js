@@ -281,7 +281,7 @@ window.SONG_DATA = {
     {
       "id": "396_sound",
       "type": "Sound",
-      "name": "Ashsettling",
+      "name": "Ash Settling",
       "symbol": "🔊",
       "description": "An audio event captured in the case recording for Case File 396. Identified and logged by the archive.",
       "unknownInfo": "Whether this sound was natural — or a signal."

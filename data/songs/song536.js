@@ -267,7 +267,7 @@ window.SONG_DATA = {
     {
       "id": "536_sound",
       "type": "Sound",
-      "name": "Distantchurchbell",
+      "name": "Distant Church Bell",
       "symbol": "🔊",
       "description": "An audio event captured in the case recording for Case File 536. Identified and logged by the archive.",
       "unknownInfo": "Whether this sound was natural — or a signal."

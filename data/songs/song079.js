@@ -270,7 +270,7 @@ window.SONG_DATA = {
     {
       "id": "079_sound",
       "type": "Sound",
-      "name": "Nailpulledfromwood",
+      "name": "Nail Pulled From Wood",
       "symbol": "🔊",
       "description": "An audio event captured in the case recording for Case File 079. Identified and logged by the archive.",
       "unknownInfo": "Whether this sound was natural — or a signal."

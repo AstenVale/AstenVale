@@ -281,7 +281,7 @@ window.SONG_DATA = {
     {
       "id": "197_sound",
       "type": "Sound",
-      "name": "Knifescrape",
+      "name": "Knife Scrape",
       "symbol": "🔊",
       "description": "An audio event captured in the case recording for Case File 197. Identified and logged by the archive.",
       "unknownInfo": "Whether this sound was natural — or a signal."

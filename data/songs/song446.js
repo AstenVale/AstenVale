@@ -270,7 +270,7 @@ window.SONG_DATA = {
     {
       "id": "446_sound",
       "type": "Sound",
-      "name": "Oldhinge",
+      "name": "Old Hinge",
       "symbol": "🔊",
       "description": "An audio event captured in the case recording for Case File 446. Identified and logged by the archive.",
       "unknownInfo": "Whether this sound was natural — or a signal."
