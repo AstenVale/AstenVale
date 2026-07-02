@@ -244,6 +244,7 @@ window.SONG_DATA = {
     {
       "id": "265_time",
       "type": "Time",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/5 Time/004_lantern_6-45.jpg",
       "name": "6:45",
       "symbol": "⌚",
       "description": "The time recorded in the case audio for Case File 265. Cross-referenced with field notes.",
