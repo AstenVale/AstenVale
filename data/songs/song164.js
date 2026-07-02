@@ -236,10 +236,10 @@ window.SONG_DATA = {
     {
       "id": "164_witness",
       "type": "Witness",
-      "name": "Quarryforeman",
+      "name": "Quarry Foreman",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/quarry-foreman.jpg",
       "symbol": "👤",
-      "description": "Quarryforeman, identified in the case notes for Case File 164. Has not given a formal statement.",
+      "description": "Quarry Foreman, identified in the case notes for Case File 164. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

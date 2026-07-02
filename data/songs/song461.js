@@ -230,7 +230,7 @@ window.SONG_DATA = {
     {
       "id": "461_driedflower",
       "type": "Object",
-      "name": "Driedflower",
+      "name": "Dried Flower",
       "symbol": "🔍",
       "description": "Dried Flower was recovered from Pine Hollow in Case File 461. It is tied to Quarry Foreman, 11:29, and marker 3943.",
       "unknownInfo": "Under and Saw Cutting suggest this object matters beyond the first reading."
@@ -246,10 +246,10 @@ window.SONG_DATA = {
     {
       "id": "461_witness",
       "type": "Witness",
-      "name": "Quarryforeman",
+      "name": "Quarry Foreman",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/quarry-foreman.jpg",
       "symbol": "👤",
-      "description": "Quarryforeman, identified in the case notes for Case File 461. Has not given a formal statement.",
+      "description": "Quarry Foreman, identified in the case notes for Case File 461. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

@@ -219,7 +219,7 @@ window.SONG_DATA = {
     {
       "id": "224_driedinkblot",
       "type": "Object",
-      "name": "Driedinkblot",
+      "name": "Dried Ink Blot",
       "symbol": "🔍",
       "description": "Dried Ink Blot was recovered from Church in Case File 224. It is tied to Undertaker, 3:30, and marker 1970.",
       "unknownInfo": "Along the Creek and Broken String suggest this object matters beyond the first reading."

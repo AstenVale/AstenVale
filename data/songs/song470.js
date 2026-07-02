@@ -219,7 +219,7 @@ window.SONG_DATA = {
     {
       "id": "470_driedinkblot",
       "type": "Object",
-      "name": "Driedinkblot",
+      "name": "Dried Ink Blot",
       "symbol": "🔍",
       "description": "Dried Ink Blot was recovered from Library in Case File 470. It is tied to Cartographer, 12:44, and marker 4016.",
       "unknownInfo": "Further In and Water Drip suggest this object matters beyond the first reading."

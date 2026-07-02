@@ -219,7 +219,7 @@ window.SONG_DATA = {
     {
       "id": "554_bulletcasing",
       "type": "Object",
-      "name": "Bulletcasing",
+      "name": "Bullet Casing",
       "symbol": "🔍",
       "description": "Bullet Casing was recovered from Orchard in Case File 554. It is tied to Cider Presser, 10:51, and marker 4716.",
       "unknownInfo": "Home and Shutter Bang suggest this object matters beyond the first reading."
@@ -235,10 +235,10 @@ window.SONG_DATA = {
     {
       "id": "554_witness",
       "type": "Witness",
-      "name": "Ciderpresser",
+      "name": "Cider Presser",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/cider-presser.jpg",
       "symbol": "👤",
-      "description": "Ciderpresser, identified in the case notes for Case File 554. Has not given a formal statement.",
+      "description": "Cider Presser, identified in the case notes for Case File 554. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

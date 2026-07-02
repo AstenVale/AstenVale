@@ -236,9 +236,9 @@ window.SONG_DATA = {
     {
       "id": "409_location",
       "type": "Location",
-      "name": "Telegraphoffice",
+      "name": "Telegraph Office",
       "symbol": "📍",
-      "description": "The active scene for Case File 409. Recovered field notes place the primary event at Telegraphoffice.",
+      "description": "The active scene for Case File 409. Recovered field notes place the primary event at Telegraph Office.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

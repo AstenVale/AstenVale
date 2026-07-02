@@ -237,9 +237,9 @@ window.SONG_DATA = {
     {
       "id": "439_location",
       "type": "Location",
-      "name": "Freightyard",
+      "name": "Freight Yard",
       "symbol": "📍",
-      "description": "The active scene for Case File 439. Recovered field notes place the primary event at Freightyard.",
+      "description": "The active scene for Case File 439. Recovered field notes place the primary event at Freight Yard.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

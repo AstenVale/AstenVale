@@ -218,7 +218,7 @@ window.SONG_DATA = {
     {
       "id": "027_leatherstrap",
       "type": "Object",
-      "name": "Leatherstrap",
+      "name": "Leather Strap",
       "symbol": "🔍",
       "description": "Leather Strap was recovered from Courthouse in Case File 027. It is tied to Widow, 2:47, and marker 325.",
       "unknownInfo": "Somewhere and Empty Wagon suggest this object matters beyond the first reading.",

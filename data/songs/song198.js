@@ -230,7 +230,7 @@ window.SONG_DATA = {
     {
       "id": "198_shardofmirror",
       "type": "Object",
-      "name": "Shardofmirror",
+      "name": "Shard of Mirror",
       "symbol": "🔍",
       "description": "Shard of Mirror was recovered from East Field in Case File 198. It is tied to River Pilot, 12:44, and marker 1752.",
       "unknownInfo": "Across and Rope Strain suggest this object matters beyond the first reading."

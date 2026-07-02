@@ -232,7 +232,7 @@ window.SONG_DATA = {
     {
       "id": "219_stringofbeads",
       "type": "Object",
-      "name": "Stringofbeads",
+      "name": "String of Beads",
       "symbol": "🔍",
       "description": "String of Beads was recovered from The Depot in Case File 219. It is tied to Station Master, 6:06, and marker 1925.",
       "unknownInfo": "East and Ash Settling suggest this object matters beyond the first reading."
@@ -248,10 +248,10 @@ window.SONG_DATA = {
     {
       "id": "219_witness",
       "type": "Witness",
-      "name": "Stationmaster",
+      "name": "Station Master",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/station-master.jpg",
       "symbol": "👤",
-      "description": "Stationmaster, identified in the case notes for Case File 219. Has not given a formal statement.",
+      "description": "Station Master, identified in the case notes for Case File 219. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

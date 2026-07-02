@@ -220,7 +220,7 @@ window.SONG_DATA = {
     {
       "id": "025_charcoalsketch",
       "type": "Object",
-      "name": "Charcoalsketch",
+      "name": "Charcoal Sketch",
       "symbol": "🔍",
       "description": "Charcoal Sketch was recovered from Quarry Edge in Case File 025. It is tied to Station Master, 9:55, and marker 307.",
       "unknownInfo": "Toward and Coal Shifting suggest this object matters beyond the first reading.",
@@ -238,9 +238,9 @@ window.SONG_DATA = {
     {
       "id": "025_witness",
       "type": "Witness",
-      "name": "Stationmaster",
+      "name": "Station Master",
       "symbol": "👤",
-      "description": "Stationmaster, identified in the case notes for Case File 025. Has not given a formal statement.",
+      "description": "Station Master, identified in the case notes for Case File 025. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/station-master.jpg"
     },

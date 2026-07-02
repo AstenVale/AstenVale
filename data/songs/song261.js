@@ -229,7 +229,7 @@ window.SONG_DATA = {
     {
       "id": "261_driedbloodoncloth",
       "type": "Object",
-      "name": "Driedbloodoncloth",
+      "name": "Dried Blood on Cloth",
       "symbol": "🔍",
       "description": "Dried Blood on Cloth was recovered from Clock Tower in Case File 261. It is tied to Conductor, 5:55, and marker 2279.",
       "unknownInfo": "Right and Hammer Strike suggest this object matters beyond the first reading."

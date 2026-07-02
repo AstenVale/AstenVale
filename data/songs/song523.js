@@ -229,7 +229,7 @@ window.SONG_DATA = {
     {
       "id": "523_shardofmirror",
       "type": "Object",
-      "name": "Shardofmirror",
+      "name": "Shard of Mirror",
       "symbol": "🔍",
       "description": "Shard of Mirror was recovered from The Hollow Road in Case File 523. It is tied to Wainwright, 3:17, and marker 4461.",
       "unknownInfo": "East and Breathing suggest this object matters beyond the first reading."

@@ -220,7 +220,7 @@ window.SONG_DATA = {
     {
       "id": "575_foldedcloth",
       "type": "Object",
-      "name": "Foldedcloth",
+      "name": "Folded Cloth",
       "symbol": "🔍",
       "description": "Folded Cloth was recovered from East Field in Case File 575. It is tied to Child, 11:17, and marker 4897.",
       "unknownInfo": "Around and The Silence After suggest this object matters beyond the first reading."

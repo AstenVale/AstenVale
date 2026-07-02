@@ -228,7 +228,7 @@ window.SONG_DATA = {
     {
       "id": "526_scratchedinitialsinwood",
       "type": "Object",
-      "name": "Scratchedinitialsinwood",
+      "name": "Scratched Initials in Wood",
       "symbol": "🔍",
       "description": "Scratched Initials in Wood was recovered from Forge in Case File 526. It is tied to Typesetter, 7:48, and marker 4488.",
       "unknownInfo": "Nowhere and Tree Fall suggest this object matters beyond the first reading."

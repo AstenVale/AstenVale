@@ -230,7 +230,7 @@ window.SONG_DATA = {
     {
       "id": "233_leatherstrap",
       "type": "Object",
-      "name": "Leatherstrap",
+      "name": "Leather Strap",
       "symbol": "🔍",
       "description": "Leather Strap was recovered from Print Shop in Case File 233. It is tied to Banker, 2:55, and marker 2043.",
       "unknownInfo": "Sideways and River Ice suggest this object matters beyond the first reading."

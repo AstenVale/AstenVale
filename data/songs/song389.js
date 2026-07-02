@@ -247,10 +247,10 @@ window.SONG_DATA = {
     {
       "id": "389_witness",
       "type": "Witness",
-      "name": "Nightporter",
+      "name": "Night Porter",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/night-porter.jpg",
       "symbol": "👤",
-      "description": "Nightporter, identified in the case notes for Case File 389. Has not given a formal statement.",
+      "description": "Night Porter, identified in the case notes for Case File 389. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

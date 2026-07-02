@@ -219,7 +219,7 @@ window.SONG_DATA = {
     {
       "id": "404_copperfitting",
       "type": "Object",
-      "name": "Copperfitting",
+      "name": "Copper Fitting",
       "symbol": "🔍",
       "description": "Copper Fitting was recovered from Butcher's Row in Case File 404. It is tied to Census Taker, 7:02, and marker 3470.",
       "unknownInfo": "Under and Breathing suggest this object matters beyond the first reading."
@@ -235,10 +235,10 @@ window.SONG_DATA = {
     {
       "id": "404_witness",
       "type": "Witness",
-      "name": "Censustaker",
+      "name": "Census Taker",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/census-taker.jpg",
       "symbol": "👤",
-      "description": "Censustaker, identified in the case notes for Case File 404. Has not given a formal statement.",
+      "description": "Census Taker, identified in the case notes for Case File 404. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

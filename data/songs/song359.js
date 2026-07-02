@@ -234,10 +234,10 @@ window.SONG_DATA = {
     {
       "id": "359_witness",
       "type": "Witness",
-      "name": "Harnessmaker",
+      "name": "Harness Maker",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/harness-maker.jpg",
       "symbol": "👤",
-      "description": "Harnessmaker, identified in the case notes for Case File 359. Has not given a formal statement.",
+      "description": "Harness Maker, identified in the case notes for Case File 359. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

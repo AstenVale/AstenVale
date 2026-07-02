@@ -220,7 +220,7 @@ window.SONG_DATA = {
     {
       "id": "360_stringofbeads",
       "type": "Object",
-      "name": "Stringofbeads",
+      "name": "String of Beads",
       "symbol": "🔍",
       "description": "String of Beads was recovered from Barn in Case File 360. It is tied to Rope Maker, 3:58, and marker 3106.",
       "unknownInfo": "Past the Tree Line and Old Hinge suggest this object matters beyond the first reading."

@@ -228,7 +228,7 @@ window.SONG_DATA = {
     {
       "id": "415_pocketwatch",
       "type": "Object",
-      "name": "Pocketwatch",
+      "name": "Pocket Watch",
       "symbol": "🔍",
       "description": "Pocket Watch was recovered from Barn in Case File 415. It is tied to Gravedigger, 8:33, and marker 3561.",
       "unknownInfo": "Out and Mud Suction suggest this object matters beyond the first reading."

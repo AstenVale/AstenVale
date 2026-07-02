@@ -228,9 +228,9 @@ window.SONG_DATA = {
     {
       "id": "118_location",
       "type": "Location",
-      "name": "Coveredbridge",
+      "name": "Covered Bridge",
       "symbol": "📍",
-      "description": "The active scene for Case File 118. Recovered field notes place the primary event at Coveredbridge.",
+      "description": "The active scene for Case File 118. Recovered field notes place the primary event at Covered Bridge.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

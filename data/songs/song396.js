@@ -231,7 +231,7 @@ window.SONG_DATA = {
     {
       "id": "396_copperfitting",
       "type": "Object",
-      "name": "Copperfitting",
+      "name": "Copper Fitting",
       "symbol": "🔍",
       "description": "Copper Fitting was recovered from Feed Store in Case File 396. It is tied to Tanner, 10:47, and marker 3406.",
       "unknownInfo": "Further In and Ash Settling suggest this object matters beyond the first reading."

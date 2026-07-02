@@ -219,7 +219,7 @@ window.SONG_DATA = {
     {
       "id": "116_driedinkblot",
       "type": "Object",
-      "name": "Driedinkblot",
+      "name": "Dried Ink Blot",
       "symbol": "🔍",
       "description": "Dried Ink Blot was recovered from Post Office in Case File 116. It is tied to Midwife, 2:22, and marker 1070.",
       "unknownInfo": "Behind and Bone on Stone suggest this object matters beyond the first reading."

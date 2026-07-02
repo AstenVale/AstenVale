@@ -221,7 +221,7 @@ window.SONG_DATA = {
     {
       "id": "165_driedflower",
       "type": "Object",
-      "name": "Driedflower",
+      "name": "Dried Flower",
       "symbol": "🔍",
       "description": "Dried Flower was recovered from The Ravine in Case File 165. It is tied to Gravedigger, 1:26, and marker 1479.",
       "unknownInfo": "Past the Tree Line and Hammer Strike suggest this object matters beyond the first reading."

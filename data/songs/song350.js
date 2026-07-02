@@ -228,7 +228,7 @@ window.SONG_DATA = {
     {
       "id": "350_straightrazor",
       "type": "Object",
-      "name": "Straightrazor",
+      "name": "Straight Razor",
       "symbol": "🔍",
       "description": "Straight Razor was recovered from Jail in Case File 350. It is tied to Typesetter, 10:19, and marker 3016.",
       "unknownInfo": "West and Pages Turning suggest this object matters beyond the first reading."

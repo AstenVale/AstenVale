@@ -238,9 +238,9 @@ window.SONG_DATA = {
     {
       "id": "125_location",
       "type": "Location",
-      "name": "Northpasture",
+      "name": "North Pasture",
       "symbol": "📍",
-      "description": "The active scene for Case File 125. Recovered field notes place the primary event at Northpasture.",
+      "description": "The active scene for Case File 125. Recovered field notes place the primary event at North Pasture.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

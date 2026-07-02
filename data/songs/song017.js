@@ -240,17 +240,17 @@ window.SONG_DATA = {
       "id": "017_location",
       "type": "Location",
       "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-017-mailbox-location.jpg",
-      "name": "Trainstation",
+      "name": "Train Station",
       "symbol": "📍",
-      "description": "The active scene for Case File 017. Recovered field notes place the primary event at Trainstation.",
+      "description": "The active scene for Case File 017. Recovered field notes place the primary event at Train Station.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {
       "id": "017_witness",
       "type": "Witness",
-      "name": "Stationmaster",
+      "name": "Station Master",
       "symbol": "👤",
-      "description": "Stationmaster, identified in the case notes for Case File 017. Has not given a formal statement.",
+      "description": "Station Master, identified in the case notes for Case File 017. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/station-master.jpg"
     },

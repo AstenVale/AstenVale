@@ -230,7 +230,7 @@ window.SONG_DATA = {
     {
       "id": "327_driedinkblot",
       "type": "Object",
-      "name": "Driedinkblot",
+      "name": "Dried Ink Blot",
       "symbol": "🔍",
       "description": "Dried Ink Blot was recovered from Schoolhouse in Case File 327. It is tied to Apothecary, 7:02, and marker 2825.",
       "unknownInfo": "Along the Creek and Cellar Door suggest this object matters beyond the first reading."

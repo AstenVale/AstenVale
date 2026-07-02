@@ -231,7 +231,7 @@ window.SONG_DATA = {
     {
       "id": "325_charredpaper",
       "type": "Object",
-      "name": "Charredpaper",
+      "name": "Charred Paper",
       "symbol": "🔍",
       "description": "Charred Paper was recovered from The Hollow Road in Case File 325. It is tied to Surveyor, 7:02, and marker 2807.",
       "unknownInfo": "South and Nail Pulled from Wood suggest this object matters beyond the first reading."

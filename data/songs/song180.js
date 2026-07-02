@@ -230,7 +230,7 @@ window.SONG_DATA = {
     {
       "id": "180_stringofbeads",
       "type": "Object",
-      "name": "Stringofbeads",
+      "name": "String of Beads",
       "symbol": "🔍",
       "description": "String of Beads was recovered from Courthouse in Case File 180. It is tied to Woodsman, 11:29, and marker 1606.",
       "unknownInfo": "Into the Dark and Shutter Bang suggest this object matters beyond the first reading."

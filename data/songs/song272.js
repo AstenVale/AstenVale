@@ -220,7 +220,7 @@ window.SONG_DATA = {
     {
       "id": "272_leatherstrap",
       "type": "Object",
-      "name": "Leatherstrap",
+      "name": "Leather Strap",
       "symbol": "🔍",
       "description": "Leather Strap was recovered from Covered Bridge in Case File 272. It is tied to Child, 6:17, and marker 2370.",
       "unknownInfo": "Into the Dark and Lantern Glass suggest this object matters beyond the first reading."
@@ -228,9 +228,9 @@ window.SONG_DATA = {
     {
       "id": "272_location",
       "type": "Location",
-      "name": "Coveredbridge",
+      "name": "Covered Bridge",
       "symbol": "📍",
-      "description": "The active scene for Case File 272. Recovered field notes place the primary event at Coveredbridge.",
+      "description": "The active scene for Case File 272. Recovered field notes place the primary event at Covered Bridge.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

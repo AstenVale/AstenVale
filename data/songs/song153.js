@@ -245,10 +245,10 @@ window.SONG_DATA = {
     {
       "id": "153_witness",
       "type": "Witness",
-      "name": "Retiredsoldier",
+      "name": "Retired Soldier",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/retired-soldier.jpg",
       "symbol": "👤",
-      "description": "Retiredsoldier, identified in the case notes for Case File 153. Has not given a formal statement.",
+      "description": "Retired Soldier, identified in the case notes for Case File 153. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

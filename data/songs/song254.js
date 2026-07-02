@@ -229,7 +229,7 @@ window.SONG_DATA = {
     {
       "id": "254_stringofbeads",
       "type": "Object",
-      "name": "Stringofbeads",
+      "name": "String of Beads",
       "symbol": "🔍",
       "description": "String of Beads was recovered from Post Office in Case File 254. It is tied to Preacher, 7:37, and marker 2216.",
       "unknownInfo": "South and River Ice suggest this object matters beyond the first reading."

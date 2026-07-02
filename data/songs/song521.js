@@ -230,7 +230,7 @@ window.SONG_DATA = {
     {
       "id": "521_spoolofthread",
       "type": "Object",
-      "name": "Spoolofthread",
+      "name": "Spool of Thread",
       "symbol": "🔍",
       "description": "Spool of Thread was recovered from The Quarry Pool in Case File 521. It is tied to Fisherman, 8:42, and marker 4443.",
       "unknownInfo": "Back and Boot Heel suggest this object matters beyond the first reading."

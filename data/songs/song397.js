@@ -221,7 +221,7 @@ window.SONG_DATA = {
     {
       "id": "397_driedinkblot",
       "type": "Object",
-      "name": "Driedinkblot",
+      "name": "Dried Ink Blot",
       "symbol": "🔍",
       "description": "Dried Ink Blot was recovered from The Bluff in Case File 397. It is tied to Wainwright, 6:06, and marker 3407.",
       "unknownInfo": "Straight Down and Paper Rustle suggest this object matters beyond the first reading."

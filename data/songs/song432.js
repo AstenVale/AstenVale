@@ -220,7 +220,7 @@ window.SONG_DATA = {
     {
       "id": "432_driedbloodoncloth",
       "type": "Object",
-      "name": "Driedbloodoncloth",
+      "name": "Dried Blood on Cloth",
       "symbol": "🔍",
       "description": "Dried Blood on Cloth was recovered from North Pasture in Case File 432. It is tied to Fisherman, 7:00, and marker 3706.",
       "unknownInfo": "Up the Ridge and Fire Crackling suggest this object matters beyond the first reading."
@@ -228,9 +228,9 @@ window.SONG_DATA = {
     {
       "id": "432_location",
       "type": "Location",
-      "name": "Northpasture",
+      "name": "North Pasture",
       "symbol": "📍",
-      "description": "The active scene for Case File 432. Recovered field notes place the primary event at Northpasture.",
+      "description": "The active scene for Case File 432. Recovered field notes place the primary event at North Pasture.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

@@ -219,7 +219,7 @@ window.SONG_DATA = {
     {
       "id": "296_spoolofthread",
       "type": "Object",
-      "name": "Spoolofthread",
+      "name": "Spool of Thread",
       "symbol": "🔍",
       "description": "Spool of Thread was recovered from Ash Hollow in Case File 296. It is tied to Apothecary, 8:17, and marker 2570.",
       "unknownInfo": "East and Bell Toll suggest this object matters beyond the first reading."

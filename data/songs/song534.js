@@ -220,7 +220,7 @@ window.SONG_DATA = {
     {
       "id": "534_spoolofthread",
       "type": "Object",
-      "name": "Spoolofthread",
+      "name": "Spool of Thread",
       "symbol": "🔍",
       "description": "Spool of Thread was recovered from Iron Bridge in Case File 534. It is tied to Quarry Foreman, 12:00, and marker 4552.",
       "unknownInfo": "Home and Broken String suggest this object matters beyond the first reading."
@@ -236,10 +236,10 @@ window.SONG_DATA = {
     {
       "id": "534_witness",
       "type": "Witness",
-      "name": "Quarryforeman",
+      "name": "Quarry Foreman",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/quarry-foreman.jpg",
       "symbol": "👤",
-      "description": "Quarryforeman, identified in the case notes for Case File 534. Has not given a formal statement.",
+      "description": "Quarry Foreman, identified in the case notes for Case File 534. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

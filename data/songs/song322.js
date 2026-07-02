@@ -227,9 +227,9 @@ window.SONG_DATA = {
     {
       "id": "322_location",
       "type": "Location",
-      "name": "Harnessshop",
+      "name": "Harness Shop",
       "symbol": "📍",
-      "description": "The active scene for Case File 322. Recovered field notes place the primary event at Harnessshop.",
+      "description": "The active scene for Case File 322. Recovered field notes place the primary event at Harness Shop.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

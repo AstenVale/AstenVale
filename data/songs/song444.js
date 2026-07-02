@@ -230,7 +230,7 @@ window.SONG_DATA = {
     {
       "id": "444_shardofmirror",
       "type": "Object",
-      "name": "Shardofmirror",
+      "name": "Shard of Mirror",
       "symbol": "🔍",
       "description": "Shard of Mirror was recovered from Crow's Nest Ridge in Case File 444. It is tied to Conductor, 10:51, and marker 3806.",
       "unknownInfo": "Over and Boot Heel suggest this object matters beyond the first reading."

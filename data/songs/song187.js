@@ -220,7 +220,7 @@ window.SONG_DATA = {
     {
       "id": "187_spoolofthread",
       "type": "Object",
-      "name": "Spoolofthread",
+      "name": "Spool of Thread",
       "symbol": "🔍",
       "description": "Spool of Thread was recovered from Ash Creek in Case File 187. It is tied to Cider Presser, 7:02, and marker 1661.",
       "unknownInfo": "Through and Rope Strain suggest this object matters beyond the first reading."
@@ -236,10 +236,10 @@ window.SONG_DATA = {
     {
       "id": "187_witness",
       "type": "Witness",
-      "name": "Ciderpresser",
+      "name": "Cider Presser",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/cider-presser.jpg",
       "symbol": "👤",
-      "description": "Ciderpresser, identified in the case notes for Case File 187. Has not given a formal statement.",
+      "description": "Cider Presser, identified in the case notes for Case File 187. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

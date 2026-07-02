@@ -231,7 +231,7 @@ window.SONG_DATA = {
     {
       "id": "332_shipmanifest",
       "type": "Object",
-      "name": "Shipmanifest",
+      "name": "Ship Manifest",
       "symbol": "🔍",
       "description": "Ship Manifest was recovered from The Bluff in Case File 332. It is tied to Banker, 6:53, and marker 2870.",
       "unknownInfo": "North and Saw Cutting suggest this object matters beyond the first reading."

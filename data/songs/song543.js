@@ -231,7 +231,7 @@ window.SONG_DATA = {
     {
       "id": "543_straightrazor",
       "type": "Object",
-      "name": "Straightrazor",
+      "name": "Straight Razor",
       "symbol": "🔍",
       "description": "Straight Razor was recovered from Clock Tower in Case File 543. It is tied to Retired Soldier, 11:17, and marker 4625.",
       "unknownInfo": "East and Fence Wire Hum suggest this object matters beyond the first reading."
@@ -247,10 +247,10 @@ window.SONG_DATA = {
     {
       "id": "543_witness",
       "type": "Witness",
-      "name": "Retiredsoldier",
+      "name": "Retired Soldier",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/retired-soldier.jpg",
       "symbol": "👤",
-      "description": "Retiredsoldier, identified in the case notes for Case File 543. Has not given a formal statement.",
+      "description": "Retired Soldier, identified in the case notes for Case File 543. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

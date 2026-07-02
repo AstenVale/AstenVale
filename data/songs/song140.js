@@ -221,7 +221,7 @@ window.SONG_DATA = {
     {
       "id": "140_stringofbeads",
       "type": "Object",
-      "name": "Stringofbeads",
+      "name": "String of Beads",
       "symbol": "🔍",
       "description": "String of Beads was recovered from The Ridge in Case File 140. It is tied to Rope Maker, 6:53, and marker 1270.",
       "unknownInfo": "Off the Road and Millstone suggest this object matters beyond the first reading."

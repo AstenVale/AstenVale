@@ -230,7 +230,7 @@ window.SONG_DATA = {
     {
       "id": "214_shardofmirror",
       "type": "Object",
-      "name": "Shardofmirror",
+      "name": "Shard of Mirror",
       "symbol": "🔍",
       "description": "Shard of Mirror was recovered from The Widow's Porch in Case File 214. It is tied to Glazier, 7:37, and marker 1888.",
       "unknownInfo": "Right and Axe on Wood suggest this object matters beyond the first reading."

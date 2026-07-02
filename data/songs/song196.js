@@ -229,7 +229,7 @@ window.SONG_DATA = {
     {
       "id": "196_shardofmirror",
       "type": "Object",
-      "name": "Shardofmirror",
+      "name": "Shard of Mirror",
       "symbol": "🔍",
       "description": "Shard of Mirror was recovered from Stone Step in Case File 196. It is tied to Preacher, 3:58, and marker 1734.",
       "unknownInfo": "South and Cannon Bolt suggest this object matters beyond the first reading."

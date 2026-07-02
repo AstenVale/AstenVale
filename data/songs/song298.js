@@ -219,7 +219,7 @@ window.SONG_DATA = {
     {
       "id": "298_driedinkblot",
       "type": "Object",
-      "name": "Driedinkblot",
+      "name": "Dried Ink Blot",
       "symbol": "🔍",
       "description": "Dried Ink Blot was recovered from Freight Yard in Case File 298. It is tied to Lamplighter, 8:42, and marker 2588.",
       "unknownInfo": "Up and Match Strike suggest this object matters beyond the first reading."
@@ -227,9 +227,9 @@ window.SONG_DATA = {
     {
       "id": "298_location",
       "type": "Location",
-      "name": "Freightyard",
+      "name": "Freight Yard",
       "symbol": "📍",
-      "description": "The active scene for Case File 298. Recovered field notes place the primary event at Freightyard.",
+      "description": "The active scene for Case File 298. Recovered field notes place the primary event at Freight Yard.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

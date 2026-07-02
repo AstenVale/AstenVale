@@ -230,7 +230,7 @@ window.SONG_DATA = {
     {
       "id": "459_shipmanifest",
       "type": "Object",
-      "name": "Shipmanifest",
+      "name": "Ship Manifest",
       "symbol": "🔍",
       "description": "Ship Manifest was recovered from Brick Kiln in Case File 459. It is tied to Station Master, 4:47, and marker 3925.",
       "unknownInfo": "Through and Lock Click suggest this object matters beyond the first reading."
@@ -246,10 +246,10 @@ window.SONG_DATA = {
     {
       "id": "459_witness",
       "type": "Witness",
-      "name": "Stationmaster",
+      "name": "Station Master",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/station-master.jpg",
       "symbol": "👤",
-      "description": "Stationmaster, identified in the case notes for Case File 459. Has not given a formal statement.",
+      "description": "Station Master, identified in the case notes for Case File 459. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

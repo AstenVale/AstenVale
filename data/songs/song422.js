@@ -221,7 +221,7 @@ window.SONG_DATA = {
     {
       "id": "422_numbereddisk",
       "type": "Object",
-      "name": "Numbereddisk",
+      "name": "Numbered Disk",
       "symbol": "🔍",
       "description": "Numbered Disk was recovered from Ice House in Case File 422. It is tied to Bone Collector, 9:27, and marker 3616.",
       "unknownInfo": "Into the Dark and Water Drip suggest this object matters beyond the first reading."
@@ -237,10 +237,10 @@ window.SONG_DATA = {
     {
       "id": "422_witness",
       "type": "Witness",
-      "name": "Bonecollector",
+      "name": "Bone Collector",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/bone-collector.jpg",
       "symbol": "👤",
-      "description": "Bonecollector, identified in the case notes for Case File 422. Has not given a formal statement.",
+      "description": "Bone Collector, identified in the case notes for Case File 422. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

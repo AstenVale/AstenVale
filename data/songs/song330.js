@@ -231,7 +231,7 @@ window.SONG_DATA = {
     {
       "id": "330_spoolofthread",
       "type": "Object",
-      "name": "Spoolofthread",
+      "name": "Spool of Thread",
       "symbol": "🔍",
       "description": "Spool of Thread was recovered from Lake Shore in Case File 330. It is tied to Fisherman, 2:55, and marker 2852.",
       "unknownInfo": "Over and The Silence After suggest this object matters beyond the first reading."

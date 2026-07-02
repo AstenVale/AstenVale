@@ -235,10 +235,10 @@ window.SONG_DATA = {
     {
       "id": "488_witness",
       "type": "Witness",
-      "name": "Nightwatchman",
+      "name": "Night Watchman",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/night-watchman.jpg",
       "symbol": "👤",
-      "description": "Nightwatchman, identified in the case notes for Case File 488. Has not given a formal statement.",
+      "description": "Night Watchman, identified in the case notes for Case File 488. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

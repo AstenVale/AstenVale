@@ -230,7 +230,7 @@ window.SONG_DATA = {
     {
       "id": "083_charcoalsketch",
       "type": "Object",
-      "name": "Charcoalsketch",
+      "name": "Charcoal Sketch",
       "symbol": "🔍",
       "description": "Charcoal Sketch was recovered from Grain Mill in Case File 083. It is tied to Miller, 1:58, and marker 797.",
       "unknownInfo": "Beyond and Knife Scrape suggest this object matters beyond the first reading.",

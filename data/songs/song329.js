@@ -230,7 +230,7 @@ window.SONG_DATA = {
     {
       "id": "329_numbereddisk",
       "type": "Object",
-      "name": "Numbereddisk",
+      "name": "Numbered Disk",
       "symbol": "🔍",
       "description": "Numbered Disk was recovered from Stables in Case File 329. It is tied to Apothecary, 8:06, and marker 2843.",
       "unknownInfo": "Further In and Kettle Boil suggest this object matters beyond the first reading."

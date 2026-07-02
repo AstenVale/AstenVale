@@ -228,7 +228,7 @@ window.SONG_DATA = {
     {
       "id": "037_stringofbeads",
       "type": "Object",
-      "name": "Stringofbeads",
+      "name": "String of Beads",
       "symbol": "🔍",
       "description": "String of Beads was recovered from Stables in Case File 037. It is tied to Midwife, 10:05, and marker 407.",
       "unknownInfo": "Toward and Kettle Boil suggest this object matters beyond the first reading.",

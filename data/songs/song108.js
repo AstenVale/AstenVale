@@ -236,9 +236,9 @@ window.SONG_DATA = {
     {
       "id": "108_location",
       "type": "Location",
-      "name": "Calicoalley",
+      "name": "Calico Alley",
       "symbol": "📍",
-      "description": "The active scene for Case File 108. Recovered field notes place the primary event at Calicoalley.",
+      "description": "The active scene for Case File 108. Recovered field notes place the primary event at Calico Alley.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

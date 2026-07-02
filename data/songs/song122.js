@@ -229,7 +229,7 @@ window.SONG_DATA = {
     {
       "id": "122_bulletcasing",
       "type": "Object",
-      "name": "Bulletcasing",
+      "name": "Bullet Casing",
       "symbol": "🔍",
       "description": "Bullet Casing was recovered from Crossroads in Case File 122. It is tied to Farmer, 9:44, and marker 1116.",
       "unknownInfo": "Right and Crow Wings suggest this object matters beyond the first reading."

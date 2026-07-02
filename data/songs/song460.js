@@ -230,7 +230,7 @@ window.SONG_DATA = {
     {
       "id": "460_hollowacorn",
       "type": "Object",
-      "name": "Hollowacorn",
+      "name": "Hollow Acorn",
       "symbol": "🔍",
       "description": "Hollow Acorn was recovered from Print Shop in Case File 460. It is tied to Child, 2:19, and marker 3934.",
       "unknownInfo": "Further In and Lid of a Tin suggest this object matters beyond the first reading."

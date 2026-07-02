@@ -229,7 +229,7 @@ window.SONG_DATA = {
     {
       "id": "584_driedbloodoncloth",
       "type": "Object",
-      "name": "Driedbloodoncloth",
+      "name": "Dried Blood on Cloth",
       "symbol": "🔍",
       "description": "Dried Blood on Cloth was recovered from Grist Mill in Case File 584. It is tied to Lamplighter, 8:42, and marker 4970.",
       "unknownInfo": "Across and Swamp Gas suggest this object matters beyond the first reading."

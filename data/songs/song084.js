@@ -231,7 +231,7 @@ window.SONG_DATA = {
     {
       "id": "084_charcoalsketch",
       "type": "Object",
-      "name": "Charcoalsketch",
+      "name": "Charcoal Sketch",
       "symbol": "🔍",
       "description": "Charcoal Sketch was recovered from Black Pine in Case File 084. It is tied to Census Taker, 5:40, and marker 806.",
       "unknownInfo": "Below and Broken String suggest this object matters beyond the first reading.",
@@ -249,10 +249,10 @@ window.SONG_DATA = {
     {
       "id": "084_witness",
       "type": "Witness",
-      "name": "Censustaker",
+      "name": "Census Taker",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/census-taker.jpg",
       "symbol": "👤",
-      "description": "Censustaker, identified in the case notes for Case File 084. Has not given a formal statement.",
+      "description": "Census Taker, identified in the case notes for Case File 084. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

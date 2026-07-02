@@ -230,7 +230,7 @@ window.SONG_DATA = {
     {
       "id": "038_spoolofthread",
       "type": "Object",
-      "name": "Spoolofthread",
+      "name": "Spool of Thread",
       "symbol": "🔍",
       "description": "Spool of Thread was recovered from The Weir in Case File 038. It is tied to Conductor, 5:21, and marker 416.",
       "unknownInfo": "Toward and Ash Settling suggest this object matters beyond the first reading.",

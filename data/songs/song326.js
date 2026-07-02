@@ -232,7 +232,7 @@ window.SONG_DATA = {
     {
       "id": "326_hollowacorn",
       "type": "Object",
-      "name": "Hollowacorn",
+      "name": "Hollow Acorn",
       "symbol": "🔍",
       "description": "Hollow Acorn was recovered from Barn in Case File 326. It is tied to The Handless Man, 3:58, and marker 2816.",
       "unknownInfo": "Further In and Nail Pulled from Wood suggest this object matters beyond the first reading."

@@ -219,7 +219,7 @@ window.SONG_DATA = {
     {
       "id": "513_spoolofthread",
       "type": "Object",
-      "name": "Spoolofthread",
+      "name": "Spool of Thread",
       "symbol": "🔍",
       "description": "Spool of Thread was recovered from Canning Factory in Case File 513. It is tied to Doctor, 3:30, and marker 4379.",
       "unknownInfo": "Right and Moth Wings suggest this object matters beyond the first reading."
@@ -227,9 +227,9 @@ window.SONG_DATA = {
     {
       "id": "513_location",
       "type": "Location",
-      "name": "Canningfactory",
+      "name": "Canning Factory",
       "symbol": "📍",
-      "description": "The active scene for Case File 513. Recovered field notes place the primary event at Canningfactory.",
+      "description": "The active scene for Case File 513. Recovered field notes place the primary event at Canning Factory.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

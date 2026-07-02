@@ -230,7 +230,7 @@ window.SONG_DATA = {
     {
       "id": "286_leatherstrap",
       "type": "Object",
-      "name": "Leatherstrap",
+      "name": "Leather Strap",
       "symbol": "🔍",
       "description": "Leather Strap was recovered from Loom House in Case File 286. It is tied to Stranger, 11:44, and marker 2488.",
       "unknownInfo": "Back and Fence Wire Hum suggest this object matters beyond the first reading."

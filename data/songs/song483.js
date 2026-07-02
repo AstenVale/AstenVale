@@ -220,7 +220,7 @@ window.SONG_DATA = {
     {
       "id": "483_charredpaper",
       "type": "Object",
-      "name": "Charredpaper",
+      "name": "Charred Paper",
       "symbol": "🔍",
       "description": "Charred Paper was recovered from The Narrow Road in Case File 483. It is tied to Fisherman, 11:03, and marker 4125.",
       "unknownInfo": "Right and Lock Click suggest this object matters beyond the first reading."

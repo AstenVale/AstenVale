@@ -231,7 +231,7 @@ window.SONG_DATA = {
     {
       "id": "283_brokenclasp",
       "type": "Object",
-      "name": "Brokenclasp",
+      "name": "Broken Clasp",
       "symbol": "🔍",
       "description": "Broken Clasp was recovered from Brick Kiln in Case File 283. It is tied to Wool Sorter, 9:44, and marker 2461.",
       "unknownInfo": "Across and Crow Call suggest this object matters beyond the first reading."

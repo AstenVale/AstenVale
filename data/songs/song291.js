@@ -220,7 +220,7 @@ window.SONG_DATA = {
     {
       "id": "291_driedflower",
       "type": "Object",
-      "name": "Driedflower",
+      "name": "Dried Flower",
       "symbol": "🔍",
       "description": "Dried Flower was recovered from North Gate in Case File 291. It is tied to Cider Presser, 3:49, and marker 2525.",
       "unknownInfo": "Away and Coal Shifting suggest this object matters beyond the first reading."
@@ -236,10 +236,10 @@ window.SONG_DATA = {
     {
       "id": "291_witness",
       "type": "Witness",
-      "name": "Ciderpresser",
+      "name": "Cider Presser",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/cider-presser.jpg",
       "symbol": "👤",
-      "description": "Ciderpresser, identified in the case notes for Case File 291. Has not given a formal statement.",
+      "description": "Cider Presser, identified in the case notes for Case File 291. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

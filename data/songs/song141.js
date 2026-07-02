@@ -219,7 +219,7 @@ window.SONG_DATA = {
     {
       "id": "141_charredpaper",
       "type": "Object",
-      "name": "Charredpaper",
+      "name": "Charred Paper",
       "symbol": "🔍",
       "description": "Charred Paper was recovered from Tannery in Case File 141. It is tied to Land Agent, 6:06, and marker 1279.",
       "unknownInfo": "Under and Train Whistle suggest this object matters beyond the first reading."

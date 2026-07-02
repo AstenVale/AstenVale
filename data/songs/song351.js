@@ -219,7 +219,7 @@ window.SONG_DATA = {
     {
       "id": "351_driedbloodoncloth",
       "type": "Object",
-      "name": "Driedbloodoncloth",
+      "name": "Dried Blood on Cloth",
       "symbol": "🔍",
       "description": "Dried Blood on Cloth was recovered from Market Square in Case File 351. It is tied to Stranger, 8:06, and marker 3025.",
       "unknownInfo": "Into the Pines and Breathing suggest this object matters beyond the first reading."
@@ -227,9 +227,9 @@ window.SONG_DATA = {
     {
       "id": "351_location",
       "type": "Location",
-      "name": "Marketsquare",
+      "name": "Market Square",
       "symbol": "📍",
-      "description": "The active scene for Case File 351. Recovered field notes place the primary event at Marketsquare.",
+      "description": "The active scene for Case File 351. Recovered field notes place the primary event at Market Square.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

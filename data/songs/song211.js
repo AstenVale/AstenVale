@@ -221,7 +221,7 @@ window.SONG_DATA = {
     {
       "id": "211_shardofmirror",
       "type": "Object",
-      "name": "Shardofmirror",
+      "name": "Shard of Mirror",
       "symbol": "🔍",
       "description": "Shard of Mirror was recovered from The Pit in Case File 211. It is tied to Miller, 4:29, and marker 1861.",
       "unknownInfo": "Further In and Stones in a Tin suggest this object matters beyond the first reading."

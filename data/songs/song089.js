@@ -229,7 +229,7 @@ window.SONG_DATA = {
     {
       "id": "089_bulletcasing",
       "type": "Object",
-      "name": "Bulletcasing",
+      "name": "Bullet Casing",
       "symbol": "🔍",
       "description": "Bullet Casing was recovered from Potter's Field in Case File 089. It is tied to Barber, 5:09, and marker 843.",
       "unknownInfo": "Beyond and Horse Hooves suggest this object matters beyond the first reading.",

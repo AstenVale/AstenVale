@@ -218,7 +218,7 @@ window.SONG_DATA = {
     {
       "id": "134_straightrazor",
       "type": "Object",
-      "name": "Straightrazor",
+      "name": "Straight Razor",
       "symbol": "🔍",
       "description": "Straight Razor was recovered from Sawmill in Case File 134. It is tied to Sexton, 3:49, and marker 1216.",
       "unknownInfo": "Somewhere and Saw Cutting suggest this object matters beyond the first reading."

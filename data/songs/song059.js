@@ -217,7 +217,7 @@ window.SONG_DATA = {
     {
       "id": "059_straightrazor",
       "type": "Object",
-      "name": "Straightrazor",
+      "name": "Straight Razor",
       "symbol": "🔍",
       "description": "Straight Razor was recovered from Church in Case File 059. It is tied to Doctor, 1:26, and marker 597.",
       "unknownInfo": "South and Floorboard suggest this object matters beyond the first reading.",

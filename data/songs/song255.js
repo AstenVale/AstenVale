@@ -228,7 +228,7 @@ window.SONG_DATA = {
     {
       "id": "255_copperfitting",
       "type": "Object",
-      "name": "Copperfitting",
+      "name": "Copper Fitting",
       "symbol": "🔍",
       "description": "Copper Fitting was recovered from Barn in Case File 255. It is tied to Glazier, 4:47, and marker 2225.",
       "unknownInfo": "Through and Old Hinge suggest this object matters beyond the first reading."

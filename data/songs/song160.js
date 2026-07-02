@@ -219,7 +219,7 @@ window.SONG_DATA = {
     {
       "id": "160_charredpaper",
       "type": "Object",
-      "name": "Charredpaper",
+      "name": "Charred Paper",
       "symbol": "🔍",
       "description": "Charred Paper was recovered from Candlemaker's Alley in Case File 160. It is tied to Station Master, 5:40, and marker 1434.",
       "unknownInfo": "Out and Rain suggest this object matters beyond the first reading."
@@ -235,10 +235,10 @@ window.SONG_DATA = {
     {
       "id": "160_witness",
       "type": "Witness",
-      "name": "Stationmaster",
+      "name": "Station Master",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/station-master.jpg",
       "symbol": "👤",
-      "description": "Stationmaster, identified in the case notes for Case File 160. Has not given a formal statement.",
+      "description": "Station Master, identified in the case notes for Case File 160. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

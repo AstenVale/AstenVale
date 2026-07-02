@@ -230,7 +230,7 @@ window.SONG_DATA = {
     {
       "id": "285_pocketwatch",
       "type": "Object",
-      "name": "Pocketwatch",
+      "name": "Pocket Watch",
       "symbol": "🔍",
       "description": "Pocket Watch was recovered from Telegraph Office in Case File 285. It is tied to Peddler, 5:09, and marker 2479.",
       "unknownInfo": "Around and Tree Fall suggest this object matters beyond the first reading."
@@ -238,9 +238,9 @@ window.SONG_DATA = {
     {
       "id": "285_location",
       "type": "Location",
-      "name": "Telegraphoffice",
+      "name": "Telegraph Office",
       "symbol": "📍",
-      "description": "The active scene for Case File 285. Recovered field notes place the primary event at Telegraphoffice.",
+      "description": "The active scene for Case File 285. Recovered field notes place the primary event at Telegraph Office.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

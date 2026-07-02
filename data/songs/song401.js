@@ -219,7 +219,7 @@ window.SONG_DATA = {
     {
       "id": "401_straightrazor",
       "type": "Object",
-      "name": "Straightrazor",
+      "name": "Straight Razor",
       "symbol": "🔍",
       "description": "Straight Razor was recovered from Candlemaker's Alley in Case File 401. It is tied to Banker, 4:03, and marker 3443.",
       "unknownInfo": "Forward and Paper Rustle suggest this object matters beyond the first reading."

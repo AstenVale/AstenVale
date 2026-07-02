@@ -237,18 +237,18 @@ window.SONG_DATA = {
     {
       "id": "281_location",
       "type": "Location",
-      "name": "Fullingmill",
+      "name": "Fulling Mill",
       "symbol": "📍",
-      "description": "The active scene for Case File 281. Recovered field notes place the primary event at Fullingmill.",
+      "description": "The active scene for Case File 281. Recovered field notes place the primary event at Fulling Mill.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {
       "id": "281_witness",
       "type": "Witness",
-      "name": "Retiredsoldier",
+      "name": "Retired Soldier",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/retired-soldier.jpg",
       "symbol": "👤",
-      "description": "Retiredsoldier, identified in the case notes for Case File 281. Has not given a formal statement.",
+      "description": "Retired Soldier, identified in the case notes for Case File 281. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

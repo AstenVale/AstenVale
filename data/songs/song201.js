@@ -229,7 +229,7 @@ window.SONG_DATA = {
     {
       "id": "201_shipmanifest",
       "type": "Object",
-      "name": "Shipmanifest",
+      "name": "Ship Manifest",
       "symbol": "🔍",
       "description": "Ship Manifest was recovered from East Field in Case File 201. It is tied to Stranger, 6:17, and marker 1779.",
       "unknownInfo": "Somewhere and River Ice suggest this object matters beyond the first reading."

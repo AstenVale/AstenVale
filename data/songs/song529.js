@@ -221,7 +221,7 @@ window.SONG_DATA = {
     {
       "id": "529_pocketwatch",
       "type": "Object",
-      "name": "Pocketwatch",
+      "name": "Pocket Watch",
       "symbol": "🔍",
       "description": "Pocket Watch was recovered from Banker's House in Case File 529. It is tied to Census Taker, 2:55, and marker 4507.",
       "unknownInfo": "Out of Sight and Glass Break suggest this object matters beyond the first reading."
@@ -237,10 +237,10 @@ window.SONG_DATA = {
     {
       "id": "529_witness",
       "type": "Witness",
-      "name": "Censustaker",
+      "name": "Census Taker",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/census-taker.jpg",
       "symbol": "👤",
-      "description": "Censustaker, identified in the case notes for Case File 529. Has not given a formal statement.",
+      "description": "Census Taker, identified in the case notes for Case File 529. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

@@ -229,7 +229,7 @@ window.SONG_DATA = {
     {
       "id": "202_driedflower",
       "type": "Object",
-      "name": "Driedflower",
+      "name": "Dried Flower",
       "symbol": "🔍",
       "description": "Dried Flower was recovered from Saloon in Case File 202. It is tied to Rag Picker, 3:30, and marker 1788.",
       "unknownInfo": "Under and Saw Cutting suggest this object matters beyond the first reading."

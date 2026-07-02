@@ -220,7 +220,7 @@ window.SONG_DATA = {
     {
       "id": "399_driedflower",
       "type": "Object",
-      "name": "Driedflower",
+      "name": "Dried Flower",
       "symbol": "🔍",
       "description": "Dried Flower was recovered from East Field in Case File 399. It is tied to Night Watchman, 11:29, and marker 3425.",
       "unknownInfo": "Back and Water Drip suggest this object matters beyond the first reading."
@@ -236,10 +236,10 @@ window.SONG_DATA = {
     {
       "id": "399_witness",
       "type": "Witness",
-      "name": "Nightwatchman",
+      "name": "Night Watchman",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/night-watchman.jpg",
       "symbol": "👤",
-      "description": "Nightwatchman, identified in the case notes for Case File 399. Has not given a formal statement.",
+      "description": "Night Watchman, identified in the case notes for Case File 399. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

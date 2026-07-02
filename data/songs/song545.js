@@ -230,7 +230,7 @@ window.SONG_DATA = {
     {
       "id": "545_charredpaper",
       "type": "Object",
-      "name": "Charredpaper",
+      "name": "Charred Paper",
       "symbol": "🔍",
       "description": "Charred Paper was recovered from South Fork in Case File 545. It is tied to Furrier, 10:05, and marker 4643.",
       "unknownInfo": "Right and Pen on Paper suggest this object matters beyond the first reading."

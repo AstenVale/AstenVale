@@ -219,7 +219,7 @@ window.SONG_DATA = {
     {
       "id": "600_brokenclasp",
       "type": "Object",
-      "name": "Brokenclasp",
+      "name": "Broken Clasp",
       "symbol": "🔍",
       "description": "Broken Clasp was recovered from Old Wharf in Case File 600. It is tied to Child, 2:55, and marker 5106.",
       "unknownInfo": "Down and Mud Suction suggest this object matters beyond the first reading."

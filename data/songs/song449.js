@@ -218,7 +218,7 @@ window.SONG_DATA = {
     {
       "id": "449_foldedcloth",
       "type": "Object",
-      "name": "Foldedcloth",
+      "name": "Folded Cloth",
       "symbol": "🔍",
       "description": "Folded Cloth was recovered from Library in Case File 449. It is tied to Furrier, 11:40, and marker 3843.",
       "unknownInfo": "Beyond and Axe on Wood suggest this object matters beyond the first reading."

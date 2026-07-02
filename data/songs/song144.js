@@ -218,7 +218,7 @@ window.SONG_DATA = {
     {
       "id": "144_copperfitting",
       "type": "Object",
-      "name": "Copperfitting",
+      "name": "Copper Fitting",
       "symbol": "🔍",
       "description": "Copper Fitting was recovered from Saloon in Case File 144. It is tied to Drifter, 9:55, and marker 1306.",
       "unknownInfo": "In and Forge Breath suggest this object matters beyond the first reading."

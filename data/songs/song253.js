@@ -229,7 +229,7 @@ window.SONG_DATA = {
     {
       "id": "253_pocketwatch",
       "type": "Object",
-      "name": "Pocketwatch",
+      "name": "Pocket Watch",
       "symbol": "🔍",
       "description": "Pocket Watch was recovered from Print Shop in Case File 253. It is tied to Lamplighter, 5:09, and marker 2207.",
       "unknownInfo": "Forward and Crow Wings suggest this object matters beyond the first reading."

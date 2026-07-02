@@ -219,7 +219,7 @@ window.SONG_DATA = {
     {
       "id": "242_hollowacorn",
       "type": "Object",
-      "name": "Hollowacorn",
+      "name": "Hollow Acorn",
       "symbol": "🔍",
       "description": "Hollow Acorn was recovered from Cabin in Case File 242. It is tied to River Pilot, 5:09, and marker 2116.",
       "unknownInfo": "Behind and Fog Horn suggest this object matters beyond the first reading."

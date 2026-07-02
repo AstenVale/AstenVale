@@ -220,7 +220,7 @@ window.SONG_DATA = {
     {
       "id": "538_leatherstrap",
       "type": "Object",
-      "name": "Leatherstrap",
+      "name": "Leather Strap",
       "symbol": "🔍",
       "description": "Leather Strap was recovered from Sawmill in Case File 538. It is tied to Quarry Foreman, 3:17, and marker 4588.",
       "unknownInfo": "Straight Down and Hammer Strike suggest this object matters beyond the first reading."
@@ -236,10 +236,10 @@ window.SONG_DATA = {
     {
       "id": "538_witness",
       "type": "Witness",
-      "name": "Quarryforeman",
+      "name": "Quarry Foreman",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/quarry-foreman.jpg",
       "symbol": "👤",
-      "description": "Quarryforeman, identified in the case notes for Case File 538. Has not given a formal statement.",
+      "description": "Quarry Foreman, identified in the case notes for Case File 538. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

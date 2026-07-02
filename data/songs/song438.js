@@ -231,7 +231,7 @@ window.SONG_DATA = {
     {
       "id": "438_driedinkblot",
       "type": "Object",
-      "name": "Driedinkblot",
+      "name": "Dried Ink Blot",
       "symbol": "🔍",
       "description": "Dried Ink Blot was recovered from Chandler's Row in Case File 438. It is tied to Blacksmith, 8:00, and marker 3752.",
       "unknownInfo": "Back the Way You Came and Telegraph Click suggest this object matters beyond the first reading."

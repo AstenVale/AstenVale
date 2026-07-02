@@ -219,7 +219,7 @@ window.SONG_DATA = {
     {
       "id": "055_charredpaper",
       "type": "Object",
-      "name": "Charredpaper",
+      "name": "Charred Paper",
       "symbol": "🔍",
       "description": "Charred Paper was recovered from Old Bridge in Case File 055. It is tied to Banker, 6:17, and marker 561.",
       "unknownInfo": "Under and Crow on Wire suggest this object matters beyond the first reading.",

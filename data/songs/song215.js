@@ -229,7 +229,7 @@ window.SONG_DATA = {
     {
       "id": "215_brokenclasp",
       "type": "Object",
-      "name": "Brokenclasp",
+      "name": "Broken Clasp",
       "symbol": "🔍",
       "description": "Broken Clasp was recovered from Jail in Case File 215. It is tied to Woodsman, 3:49, and marker 1897.",
       "unknownInfo": "Down the Hollow and Paper Rustle suggest this object matters beyond the first reading."

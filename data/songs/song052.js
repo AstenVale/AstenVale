@@ -220,7 +220,7 @@ window.SONG_DATA = {
     {
       "id": "052_driedflower",
       "type": "Object",
-      "name": "Driedflower",
+      "name": "Dried Flower",
       "symbol": "🔍",
       "description": "Dried Flower was recovered from Fulling Mill in Case File 052. It is tied to Typesetter, 3:49, and marker 534.",
       "unknownInfo": "Past the Tree Line and Forge Breath suggest this object matters beyond the first reading.",
@@ -230,9 +230,9 @@ window.SONG_DATA = {
       "id": "052_location",
       "type": "Location",
       "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-052-north-gate-location.jpg",
-      "name": "Fullingmill",
+      "name": "Fulling Mill",
       "symbol": "📍",
-      "description": "The active scene for Case File 052. Recovered field notes place the primary event at Fullingmill.",
+      "description": "The active scene for Case File 052. Recovered field notes place the primary event at Fulling Mill.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

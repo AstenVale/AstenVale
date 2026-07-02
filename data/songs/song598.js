@@ -219,7 +219,7 @@ window.SONG_DATA = {
     {
       "id": "598_copperfitting",
       "type": "Object",
-      "name": "Copperfitting",
+      "name": "Copper Fitting",
       "symbol": "🔍",
       "description": "Copper Fitting was recovered from Telegraph Office in Case File 598. It is tied to Census Taker, 4:12, and marker 5088.",
       "unknownInfo": "Up and Footsteps suggest this object matters beyond the first reading."
@@ -227,18 +227,18 @@ window.SONG_DATA = {
     {
       "id": "598_location",
       "type": "Location",
-      "name": "Telegraphoffice",
+      "name": "Telegraph Office",
       "symbol": "📍",
-      "description": "The active scene for Case File 598. Recovered field notes place the primary event at Telegraphoffice.",
+      "description": "The active scene for Case File 598. Recovered field notes place the primary event at Telegraph Office.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {
       "id": "598_witness",
       "type": "Witness",
-      "name": "Censustaker",
+      "name": "Census Taker",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/census-taker.jpg",
       "symbol": "👤",
-      "description": "Censustaker, identified in the case notes for Case File 598. Has not given a formal statement.",
+      "description": "Census Taker, identified in the case notes for Case File 598. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

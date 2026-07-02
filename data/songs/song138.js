@@ -219,7 +219,7 @@ window.SONG_DATA = {
     {
       "id": "138_driedbloodoncloth",
       "type": "Object",
-      "name": "Driedbloodoncloth",
+      "name": "Dried Blood on Cloth",
       "symbol": "🔍",
       "description": "Dried Blood on Cloth was recovered from North Gate in Case File 138. It is tied to Blacksmith, 8:33, and marker 1252.",
       "unknownInfo": "Straight Down and Footsteps suggest this object matters beyond the first reading."

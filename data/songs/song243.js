@@ -220,7 +220,7 @@ window.SONG_DATA = {
     {
       "id": "243_charredpaper",
       "type": "Object",
-      "name": "Charredpaper",
+      "name": "Charred Paper",
       "symbol": "🔍",
       "description": "Charred Paper was recovered from Telegraph Office in Case File 243. It is tied to Salt Seller, 6:45, and marker 2125.",
       "unknownInfo": "Left and River Water suggest this object matters beyond the first reading."
@@ -228,9 +228,9 @@ window.SONG_DATA = {
     {
       "id": "243_location",
       "type": "Location",
-      "name": "Telegraphoffice",
+      "name": "Telegraph Office",
       "symbol": "📍",
-      "description": "The active scene for Case File 243. Recovered field notes place the primary event at Telegraphoffice.",
+      "description": "The active scene for Case File 243. Recovered field notes place the primary event at Telegraph Office.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

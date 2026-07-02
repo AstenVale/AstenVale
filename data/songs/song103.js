@@ -230,7 +230,7 @@ window.SONG_DATA = {
     {
       "id": "103_stringofbeads",
       "type": "Object",
-      "name": "Stringofbeads",
+      "name": "String of Beads",
       "symbol": "🔍",
       "description": "String of Beads was recovered from Chandler's Row in Case File 103. It is tied to Child, 10:47, and marker 961.",
       "unknownInfo": "Past the Tree Line and Forge Breath suggest this object matters beyond the first reading."

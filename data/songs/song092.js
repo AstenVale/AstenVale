@@ -229,9 +229,9 @@ window.SONG_DATA = {
       "id": "092_location",
       "type": "Location",
       "image": "https://astenvale.github.io/AstenVale-Images/images/Location/case-092-lake-shore-location.jpg",
-      "name": "Harnessshop",
+      "name": "Harness Shop",
       "symbol": "📍",
-      "description": "The active scene for Case File 092. Recovered field notes place the primary event at Harnessshop.",
+      "description": "The active scene for Case File 092. Recovered field notes place the primary event at Harness Shop.",
       "unknownInfo": "Whether the scene matches the original report."
     },
     {

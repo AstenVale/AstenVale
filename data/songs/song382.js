@@ -220,7 +220,7 @@ window.SONG_DATA = {
     {
       "id": "382_shardofmirror",
       "type": "Object",
-      "name": "Shardofmirror",
+      "name": "Shard of Mirror",
       "symbol": "🔍",
       "description": "Shard of Mirror was recovered from Black Pine in Case File 382. It is tied to Mechanic, 2:22, and marker 3288.",
       "unknownInfo": "Down the Hollow and Ash Settling suggest this object matters beyond the first reading."

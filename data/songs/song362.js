@@ -228,7 +228,7 @@ window.SONG_DATA = {
     {
       "id": "362_spoolofthread",
       "type": "Object",
-      "name": "Spoolofthread",
+      "name": "Spool of Thread",
       "symbol": "🔍",
       "description": "Spool of Thread was recovered from Schoolhouse in Case File 362. It is tied to Blacksmith, 2:38, and marker 3116.",
       "unknownInfo": "Forward and Fog Horn suggest this object matters beyond the first reading."

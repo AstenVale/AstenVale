@@ -230,7 +230,7 @@ window.SONG_DATA = {
     {
       "id": "194_shardofmirror",
       "type": "Object",
-      "name": "Shardofmirror",
+      "name": "Shard of Mirror",
       "symbol": "🔍",
       "description": "Shard of Mirror was recovered from North Gate in Case File 194. It is tied to Census Taker, 2:47, and marker 1716.",
       "unknownInfo": "South and Old Hinge suggest this object matters beyond the first reading."
@@ -246,10 +246,10 @@ window.SONG_DATA = {
     {
       "id": "194_witness",
       "type": "Witness",
-      "name": "Censustaker",
+      "name": "Census Taker",
       "image": "https://astenvale.github.io/AstenVale-Images/Witness/census-taker.jpg",
       "symbol": "👤",
-      "description": "Censustaker, identified in the case notes for Case File 194. Has not given a formal statement.",
+      "description": "Census Taker, identified in the case notes for Case File 194. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
     },
     {

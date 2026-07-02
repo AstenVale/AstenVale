@@ -228,7 +228,7 @@ window.SONG_DATA = {
     {
       "id": "013_weddingring",
       "type": "Object",
-      "name": "Weddingring",
+      "name": "Wedding Ring",
       "symbol": "🔍",
       "description": "Wedding Ring was recovered from Church in Case File 013. It is tied to Preacher, 6:45, and marker 110.",
       "unknownInfo": "North and Bells suggest this object matters beyond the first reading.",

@@ -230,7 +230,7 @@ window.SONG_DATA = {
     {
       "id": "479_brokenclasp",
       "type": "Object",
-      "name": "Brokenclasp",
+      "name": "Broken Clasp",
       "symbol": "🔍",
       "description": "Broken Clasp was recovered from The Bluff in Case File 479. It is tied to Farmer, 9:15, and marker 4097.",
       "unknownInfo": "Under and Train Whistle suggest this object matters beyond the first reading."
