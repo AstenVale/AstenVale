@@ -253,7 +253,7 @@ window.SONG_DATA = {
     {
       "id": "350_time",
       "type": "Time",
-      "name": "1019",
+      "name": "10:19",
       "symbol": "⌚",
       "description": "The time recorded in the case audio for Case File 350. Cross-referenced with field notes.",
       "unknownInfo": "Whether this timestamp marks when the event occurred — or when it was discovered."
