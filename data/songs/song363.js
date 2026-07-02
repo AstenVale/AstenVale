@@ -247,6 +247,7 @@ window.SONG_DATA = {
       "id": "363_witness",
       "type": "Witness",
       "name": "Limeburner",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/lime-burner.jpg",
       "symbol": "👤",
       "description": "Limeburner, identified in the case notes for Case File 363. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -262,7 +263,7 @@ window.SONG_DATA = {
     {
       "id": "363_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/363_The_Code_in_the_Planting.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/lime-burner.jpg",
       "name": "Marker 3125",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 363.",

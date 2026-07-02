@@ -234,6 +234,7 @@ window.SONG_DATA = {
       "id": "294_witness",
       "type": "Witness",
       "name": "Postman",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/postman.jpg",
       "symbol": "👤",
       "description": "Postman, identified in the case notes for Case File 294. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -249,7 +250,7 @@ window.SONG_DATA = {
     {
       "id": "294_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/294_The_Detail_That_Shifts.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/postman.jpg",
       "name": "Marker 2552",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 294.",

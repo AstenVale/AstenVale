@@ -237,6 +237,7 @@ window.SONG_DATA = {
       "id": "399_witness",
       "type": "Witness",
       "name": "Nightwatchman",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/night-watchman.jpg",
       "symbol": "👤",
       "description": "Nightwatchman, identified in the case notes for Case File 399. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -252,7 +253,7 @@ window.SONG_DATA = {
     {
       "id": "399_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/399_What_She_Said_Inside.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/night-watchman.jpg",
       "name": "Marker 3425",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 399.",

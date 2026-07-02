@@ -246,6 +246,7 @@ window.SONG_DATA = {
       "id": "301_witness",
       "type": "Witness",
       "name": "Deputy",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/deputy.jpg",
       "symbol": "👤",
       "description": "Deputy, identified in the case notes for Case File 301. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -261,7 +262,7 @@ window.SONG_DATA = {
     {
       "id": "301_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/301_The_House_on_Mill_Road.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/deputy.jpg",
       "name": "Marker 2607",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 301.",

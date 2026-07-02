@@ -246,6 +246,7 @@ window.SONG_DATA = {
       "id": "284_witness",
       "type": "Witness",
       "name": "Auctioneer",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/auctioneer.jpg",
       "symbol": "👤",
       "description": "Auctioneer, identified in the case notes for Case File 284. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -261,7 +262,7 @@ window.SONG_DATA = {
     {
       "id": "284_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/284_Who_Was_Where.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/auctioneer.jpg",
       "name": "Marker 2470",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 284.",

@@ -241,7 +241,7 @@ window.SONG_DATA = {
       "symbol": "👤",
       "description": "Banker, identified in the case notes for Case File 055. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
-      "image": "images/Witness/Case 055 - banker.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/banker.jpg"
     },
     {
       "id": "055_time",

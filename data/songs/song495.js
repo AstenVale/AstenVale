@@ -248,6 +248,7 @@ window.SONG_DATA = {
       "id": "495_witness",
       "type": "Witness",
       "name": "Caretaker",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/caretaker.jpg",
       "symbol": "👤",
       "description": "Caretaker, identified in the case notes for Case File 495. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -263,7 +264,7 @@ window.SONG_DATA = {
     {
       "id": "495_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/495_What_the_Drought_Revealed.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/caretaker.jpg",
       "name": "Marker 4225",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 495.",

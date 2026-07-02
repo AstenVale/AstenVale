@@ -244,6 +244,7 @@ window.SONG_DATA = {
       "id": "328_witness",
       "type": "Witness",
       "name": "Ferryman",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/ferryman.jpg",
       "symbol": "👤",
       "description": "Ferryman, identified in the case notes for Case File 328. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -259,7 +260,7 @@ window.SONG_DATA = {
     {
       "id": "328_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/328_Static.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/ferryman.jpg",
       "name": "Marker 2834",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 328.",

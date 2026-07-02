@@ -237,6 +237,7 @@ window.SONG_DATA = {
       "id": "597_witness",
       "type": "Witness",
       "name": "Lamplighter",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/lamplighter.jpg",
       "symbol": "👤",
       "description": "Lamplighter, identified in the case notes for Case File 597. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -252,7 +253,7 @@ window.SONG_DATA = {
     {
       "id": "597_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/597_The_Before_and_After.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/lamplighter.jpg",
       "name": "Marker 5079",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 597.",

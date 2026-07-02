@@ -241,7 +241,7 @@ window.SONG_DATA = {
       "symbol": "👤",
       "description": "Lockkeeper, identified in the case notes for Case File 056. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
-      "image": "images/Witness/Case 056 - lock keeper.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/lock-keeper.jpg"
     },
     {
       "id": "056_time",

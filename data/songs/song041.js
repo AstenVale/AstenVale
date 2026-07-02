@@ -249,7 +249,7 @@ window.SONG_DATA = {
       "symbol": "👤",
       "description": "Orphan, identified in the case notes for Case File 041. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
-      "image": "images/Witness/Case 041 - orphan.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/orphan.jpg"
     },
     {
       "id": "041_time",

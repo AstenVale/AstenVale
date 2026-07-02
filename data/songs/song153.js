@@ -246,6 +246,7 @@ window.SONG_DATA = {
       "id": "153_witness",
       "type": "Witness",
       "name": "Retiredsoldier",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/retired-soldier.jpg",
       "symbol": "👤",
       "description": "Retiredsoldier, identified in the case notes for Case File 153. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -261,7 +262,7 @@ window.SONG_DATA = {
     {
       "id": "153_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/153_Before_the_Divide.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/retired-soldier.jpg",
       "name": "Marker 1379",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 153.",

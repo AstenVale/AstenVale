@@ -247,6 +247,7 @@ window.SONG_DATA = {
       "id": "180_witness",
       "type": "Witness",
       "name": "Woodsman",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/woodsman.jpg",
       "symbol": "👤",
       "description": "Woodsman, identified in the case notes for Case File 180. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -262,7 +263,7 @@ window.SONG_DATA = {
     {
       "id": "180_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/180_The_Last_Flame.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/woodsman.jpg",
       "name": "Marker 1606",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 180.",

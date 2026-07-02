@@ -235,6 +235,7 @@ window.SONG_DATA = {
       "id": "512_witness",
       "type": "Witness",
       "name": "Gravedigger",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/gravedigger.jpg",
       "symbol": "👤",
       "description": "Gravedigger, identified in the case notes for Case File 512. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -250,7 +251,7 @@ window.SONG_DATA = {
     {
       "id": "512_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/512_The_Confrontation.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/gravedigger.jpg",
       "name": "Marker 4370",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 512.",

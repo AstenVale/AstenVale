@@ -242,7 +242,7 @@ window.SONG_DATA = {
       "symbol": "👤",
       "description": "Surveyor, identified in the case notes for Case File 074. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
-      "image": "images/Witness/Case 074 - surveyor.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/surveyor.jpg"
     },
     {
       "id": "074_time",

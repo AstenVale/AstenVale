@@ -246,6 +246,7 @@ window.SONG_DATA = {
       "id": "474_witness",
       "type": "Witness",
       "name": "Fisherman",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/fisherman.jpg",
       "symbol": "👤",
       "description": "Fisherman, identified in the case notes for Case File 474. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -261,7 +262,7 @@ window.SONG_DATA = {
     {
       "id": "474_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/474_What_It_Said.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/fisherman.jpg",
       "name": "Marker 4052",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 474.",

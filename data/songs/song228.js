@@ -236,6 +236,7 @@ window.SONG_DATA = {
       "id": "228_witness",
       "type": "Witness",
       "name": "Conductor",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/conductor.jpg",
       "symbol": "👤",
       "description": "Conductor, identified in the case notes for Case File 228. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -251,7 +252,7 @@ window.SONG_DATA = {
     {
       "id": "228_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/228_The_New_Bridge.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/conductor.jpg",
       "name": "Marker 2006",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 228.",

@@ -245,6 +245,7 @@ window.SONG_DATA = {
       "id": "145_witness",
       "type": "Witness",
       "name": "Woolsorter",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/wool-sorter.jpg",
       "symbol": "👤",
       "description": "Woolsorter, identified in the case notes for Case File 145. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -260,7 +261,7 @@ window.SONG_DATA = {
     {
       "id": "145_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/145_The_Mirror_Road.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/wool-sorter.jpg",
       "name": "Marker 1307",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 145.",

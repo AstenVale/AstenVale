@@ -237,6 +237,7 @@ window.SONG_DATA = {
       "id": "556_witness",
       "type": "Witness",
       "name": "Sexton",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/sexton.jpg",
       "symbol": "👤",
       "description": "Sexton, identified in the case notes for Case File 556. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -252,7 +253,7 @@ window.SONG_DATA = {
     {
       "id": "556_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/556_The_Extra_Miles.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/sexton.jpg",
       "name": "Marker 4734",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 556.",

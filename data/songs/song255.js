@@ -245,6 +245,7 @@ window.SONG_DATA = {
       "id": "255_witness",
       "type": "Witness",
       "name": "Glazier",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/glazier.jpg",
       "symbol": "👤",
       "description": "Glazier, identified in the case notes for Case File 255. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -260,7 +261,7 @@ window.SONG_DATA = {
     {
       "id": "255_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/255_Identification.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/glazier.jpg",
       "name": "Marker 2225",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 255.",

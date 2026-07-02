@@ -246,6 +246,7 @@ window.SONG_DATA = {
       "id": "121_witness",
       "type": "Witness",
       "name": "Peddler",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/peddler.jpg",
       "symbol": "👤",
       "description": "Peddler, identified in the case notes for Case File 121. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -261,7 +262,7 @@ window.SONG_DATA = {
     {
       "id": "121_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/121_First_Survey.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/peddler.jpg",
       "name": "Marker 1107",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 121.",

@@ -246,6 +246,7 @@ window.SONG_DATA = {
       "id": "574_witness",
       "type": "Witness",
       "name": "Bonecollector",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/bone-collector.jpg",
       "symbol": "👤",
       "description": "Bonecollector, identified in the case notes for Case File 574. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -261,7 +262,7 @@ window.SONG_DATA = {
     {
       "id": "574_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/574_The_Reconstruction.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/bone-collector.jpg",
       "name": "Marker 4888",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 574.",

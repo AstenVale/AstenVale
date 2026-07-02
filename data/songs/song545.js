@@ -247,6 +247,7 @@ window.SONG_DATA = {
       "id": "545_witness",
       "type": "Witness",
       "name": "Furrier",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/furrier.jpg",
       "symbol": "👤",
       "description": "Furrier, identified in the case notes for Case File 545. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -262,7 +263,7 @@ window.SONG_DATA = {
     {
       "id": "545_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/545_The_Damage.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/furrier.jpg",
       "name": "Marker 4643",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 545.",

@@ -242,7 +242,7 @@ window.SONG_DATA = {
       "symbol": "👤",
       "description": "Fencemender, identified in the case notes for Case File 075. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
-      "image": "images/Witness/Case 075 - fence mender.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/fence-mender.jpg"
     },
     {
       "id": "075_time",

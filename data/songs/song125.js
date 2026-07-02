@@ -247,6 +247,7 @@ window.SONG_DATA = {
       "id": "125_witness",
       "type": "Witness",
       "name": "Blacksmith",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/blacksmith.jpg",
       "symbol": "👤",
       "description": "Blacksmith, identified in the case notes for Case File 125. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -262,7 +263,7 @@ window.SONG_DATA = {
     {
       "id": "125_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/125_The_Corner_Stone.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/blacksmith.jpg",
       "name": "Marker 1143",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 125.",

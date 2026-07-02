@@ -242,7 +242,7 @@ window.SONG_DATA = {
       "symbol": "👤",
       "description": "Stationmaster, identified in the case notes for Case File 025. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
-      "image": "images/Witness/Case 025 - station master.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/station-master.jpg"
     },
     {
       "id": "025_time",

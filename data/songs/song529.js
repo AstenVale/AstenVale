@@ -238,6 +238,7 @@ window.SONG_DATA = {
       "id": "529_witness",
       "type": "Witness",
       "name": "Censustaker",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/census-taker.jpg",
       "symbol": "👤",
       "description": "Censustaker, identified in the case notes for Case File 529. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -253,7 +254,7 @@ window.SONG_DATA = {
     {
       "id": "529_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/529_The_Leader.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/census-taker.jpg",
       "name": "Marker 4507",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 529.",

@@ -239,7 +239,7 @@ window.SONG_DATA = {
       "symbol": "👤",
       "description": "Apothecary, identified in the case notes for Case File 051. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
-      "image": "images/Witness/Case 051 - apothecary.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/apothecary.jpg"
     },
     {
       "id": "051_time",

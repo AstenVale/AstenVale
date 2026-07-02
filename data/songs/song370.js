@@ -245,6 +245,7 @@ window.SONG_DATA = {
       "id": "370_witness",
       "type": "Witness",
       "name": "Barber",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/barber.jpg",
       "symbol": "👤",
       "description": "Barber, identified in the case notes for Case File 370. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -260,7 +261,7 @@ window.SONG_DATA = {
     {
       "id": "370_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/370_What_the_Garden_Hides.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/barber.jpg",
       "name": "Marker 3188",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 370.",

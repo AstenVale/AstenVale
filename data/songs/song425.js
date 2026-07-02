@@ -236,6 +236,7 @@ window.SONG_DATA = {
       "id": "425_witness",
       "type": "Witness",
       "name": "Stranger",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/stranger.jpg",
       "symbol": "👤",
       "description": "Stranger, identified in the case notes for Case File 425. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -251,7 +252,7 @@ window.SONG_DATA = {
     {
       "id": "425_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/425_The_Pattern.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/stranger.jpg",
       "name": "Marker 3643",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 425.",

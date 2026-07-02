@@ -248,6 +248,7 @@ window.SONG_DATA = {
       "id": "279_witness",
       "type": "Witness",
       "name": "Harnessmaker",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/harness-maker.jpg",
       "symbol": "👤",
       "description": "Harnessmaker, identified in the case notes for Case File 279. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -263,7 +264,7 @@ window.SONG_DATA = {
     {
       "id": "279_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/279_The_Hour_Nobody_Saw.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/harness-maker.jpg",
       "name": "Marker 2425",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 279.",

@@ -245,6 +245,7 @@ window.SONG_DATA = {
       "id": "263_witness",
       "type": "Witness",
       "name": "Typesetter",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/typesetter.jpg",
       "symbol": "👤",
       "description": "Typesetter, identified in the case notes for Case File 263. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -260,7 +261,7 @@ window.SONG_DATA = {
     {
       "id": "263_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/263_The_Other_Body.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/typesetter.jpg",
       "name": "Marker 2297",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 263.",

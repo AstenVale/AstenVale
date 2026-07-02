@@ -239,7 +239,7 @@ window.SONG_DATA = {
       "symbol": "👤",
       "description": "Driver, identified in the case notes for Case File 010. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
-      "image": "images/Witness/Case 010 - driver.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/driver.jpg"
     },
     {
       "id": "010_time",

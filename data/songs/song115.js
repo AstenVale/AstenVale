@@ -237,6 +237,7 @@ window.SONG_DATA = {
       "id": "115_witness",
       "type": "Witness",
       "name": "Stranger",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/stranger.jpg",
       "symbol": "👤",
       "description": "Stranger, identified in the case notes for Case File 115. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -252,7 +253,7 @@ window.SONG_DATA = {
     {
       "id": "115_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/115_The_Crossroads_Again.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/stranger.jpg",
       "name": "Marker 1061",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 115.",

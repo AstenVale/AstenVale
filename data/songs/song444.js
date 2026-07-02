@@ -247,6 +247,7 @@ window.SONG_DATA = {
       "id": "444_witness",
       "type": "Witness",
       "name": "Conductor",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/conductor.jpg",
       "symbol": "👤",
       "description": "Conductor, identified in the case notes for Case File 444. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -262,7 +263,7 @@ window.SONG_DATA = {
     {
       "id": "444_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/444_The_Response.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/conductor.jpg",
       "name": "Marker 3806",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 444.",

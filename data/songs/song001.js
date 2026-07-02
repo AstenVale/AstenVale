@@ -240,7 +240,7 @@ window.SONG_DATA = {
       "symbol": "👤",
       "description": "An unidentified individual reported at the Black Pine location. No name on file.",
       "unknownInfo": "Their connection to Marker 17 and whether they returned West.",
-      "image": "images/Witness/Case 001 - stranger.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/stranger.jpg"
     },
     {
       "id": "001_time",

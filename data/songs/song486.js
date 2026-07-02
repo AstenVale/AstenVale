@@ -235,6 +235,7 @@ window.SONG_DATA = {
       "id": "486_witness",
       "type": "Witness",
       "name": "Caretaker",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/caretaker.jpg",
       "symbol": "👤",
       "description": "Caretaker, identified in the case notes for Case File 486. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -250,7 +251,7 @@ window.SONG_DATA = {
     {
       "id": "486_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/486_What_Remains.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/caretaker.jpg",
       "name": "Marker 4152",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 486.",

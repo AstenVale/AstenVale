@@ -238,6 +238,7 @@ window.SONG_DATA = {
       "id": "110_witness",
       "type": "Witness",
       "name": "Librarian",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/librarian.jpg",
       "symbol": "👤",
       "description": "Librarian, identified in the case notes for Case File 110. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -253,7 +254,7 @@ window.SONG_DATA = {
     {
       "id": "110_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/110_What_the_Road_Remembers.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/librarian.jpg",
       "name": "Marker 1016",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 110.",

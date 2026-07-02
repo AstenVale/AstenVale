@@ -248,6 +248,7 @@ window.SONG_DATA = {
       "id": "283_witness",
       "type": "Witness",
       "name": "Woolsorter",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/wool-sorter.jpg",
       "symbol": "👤",
       "description": "Woolsorter, identified in the case notes for Case File 283. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -263,7 +264,7 @@ window.SONG_DATA = {
     {
       "id": "283_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/283_The_Lost_Hour.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/wool-sorter.jpg",
       "name": "Marker 2461",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 283.",

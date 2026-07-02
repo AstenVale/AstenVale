@@ -246,6 +246,7 @@ window.SONG_DATA = {
       "id": "122_witness",
       "type": "Witness",
       "name": "Farmer",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/farmer.jpg",
       "symbol": "👤",
       "description": "Farmer, identified in the case notes for Case File 122. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -261,7 +262,7 @@ window.SONG_DATA = {
     {
       "id": "122_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/122_What_the_Map_Shows.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/farmer.jpg",
       "name": "Marker 1116",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 122.",

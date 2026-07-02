@@ -247,6 +247,7 @@ window.SONG_DATA = {
       "id": "479_witness",
       "type": "Witness",
       "name": "Farmer",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/farmer.jpg",
       "symbol": "👤",
       "description": "Farmer, identified in the case notes for Case File 479. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -262,7 +263,7 @@ window.SONG_DATA = {
     {
       "id": "479_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/479_The_Response.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/farmer.jpg",
       "name": "Marker 4097",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 479.",

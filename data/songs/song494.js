@@ -247,6 +247,7 @@ window.SONG_DATA = {
       "id": "494_witness",
       "type": "Witness",
       "name": "Ropemaker",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/rope-maker.jpg",
       "symbol": "👤",
       "description": "Ropemaker, identified in the case notes for Case File 494. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -262,7 +263,7 @@ window.SONG_DATA = {
     {
       "id": "494_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/494_The_Dried_Bed.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/rope-maker.jpg",
       "name": "Marker 4216",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 494.",

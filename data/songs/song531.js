@@ -236,6 +236,7 @@ window.SONG_DATA = {
       "id": "531_witness",
       "type": "Witness",
       "name": "Widow",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/widow.jpg",
       "symbol": "👤",
       "description": "Widow, identified in the case notes for Case File 531. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -251,7 +252,7 @@ window.SONG_DATA = {
     {
       "id": "531_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/531_The_Followers.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/widow.jpg",
       "name": "Marker 4525",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 531.",

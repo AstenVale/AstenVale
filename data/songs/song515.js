@@ -235,6 +235,7 @@ window.SONG_DATA = {
       "id": "515_witness",
       "type": "Witness",
       "name": "Woolsorter",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/wool-sorter.jpg",
       "symbol": "👤",
       "description": "Woolsorter, identified in the case notes for Case File 515. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -250,7 +251,7 @@ window.SONG_DATA = {
     {
       "id": "515_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/515_The_Old_Record.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/wool-sorter.jpg",
       "name": "Marker 4397",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 515.",

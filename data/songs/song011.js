@@ -239,7 +239,7 @@ window.SONG_DATA = {
       "symbol": "👤",
       "description": "Caretaker, identified in the case notes for Case File 011. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned.",
-      "image": "images/Witness/Case 011 - caretaker.jpg"
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/caretaker.jpg"
     },
     {
       "id": "011_time",

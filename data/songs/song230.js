@@ -245,6 +245,7 @@ window.SONG_DATA = {
       "id": "230_witness",
       "type": "Witness",
       "name": "Deputy",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/deputy.jpg",
       "symbol": "👤",
       "description": "Deputy, identified in the case notes for Case File 230. Has not given a formal statement.",
       "unknownInfo": "Their connection to the recovered object and whether they returned."
@@ -260,7 +261,7 @@ window.SONG_DATA = {
     {
       "id": "230_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/230_The_12_AM_Stop.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/Witness/deputy.jpg",
       "name": "Marker 2016",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 230.",
