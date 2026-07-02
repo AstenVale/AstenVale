@@ -266,7 +266,7 @@ window.SONG_DATA = {
     {
       "id": "569_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/circuit-rider.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/569_The_Partial_Message.jpg",
       "name": "Marker 4843",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 569.",

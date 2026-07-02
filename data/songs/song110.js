@@ -257,7 +257,7 @@ window.SONG_DATA = {
     {
       "id": "110_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/librarian.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/110_What_the_Road_Remembers.jpg",
       "name": "Marker 1016",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 110.",

@@ -256,7 +256,7 @@ window.SONG_DATA = {
     {
       "id": "273_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/widow.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/273_Filed_Wrong.jpg",
       "name": "Marker 2379",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 273.",

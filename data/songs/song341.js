@@ -252,7 +252,7 @@ window.SONG_DATA = {
     {
       "id": "341_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/tanner.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/341_What_It_Contains.jpg",
       "name": "Marker 2943",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 341.",

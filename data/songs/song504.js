@@ -266,7 +266,7 @@ window.SONG_DATA = {
     {
       "id": "504_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/weaver.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/504_The_Rain_Returns.jpg",
       "name": "Marker 4306",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 504.",

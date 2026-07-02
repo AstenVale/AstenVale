@@ -256,7 +256,7 @@ window.SONG_DATA = {
     {
       "id": "222_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/station-master.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/222_Cut_Off.jpg",
       "name": "Marker 1952",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 222.",

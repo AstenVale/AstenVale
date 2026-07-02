@@ -255,7 +255,7 @@ window.SONG_DATA = {
     {
       "id": "402_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/drifter.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/402_The_Treatment.jpg",
       "name": "Marker 3452",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 402.",

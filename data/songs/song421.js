@@ -255,7 +255,7 @@ window.SONG_DATA = {
     {
       "id": "421_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/station-master.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/421_The_First_Call.jpg",
       "name": "Marker 3607",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 421.",

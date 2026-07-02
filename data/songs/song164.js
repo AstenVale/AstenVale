@@ -256,7 +256,7 @@ window.SONG_DATA = {
     {
       "id": "164_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/quarry-foreman.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/164_After_the_Water.jpg",
       "name": "Marker 1470",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 164.",

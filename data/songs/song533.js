@@ -255,7 +255,7 @@ window.SONG_DATA = {
     {
       "id": "533_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/cooper.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/533_The_Cracks.jpg",
       "name": "Marker 4543",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 533.",

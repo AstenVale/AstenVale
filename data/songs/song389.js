@@ -267,7 +267,7 @@ window.SONG_DATA = {
     {
       "id": "389_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/night-porter.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/389_Washed_Out.jpg",
       "name": "Marker 3343",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 389.",

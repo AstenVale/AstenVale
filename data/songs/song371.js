@@ -265,7 +265,7 @@ window.SONG_DATA = {
     {
       "id": "371_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/auctioneer.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/371_The_Overgrowth.jpg",
       "name": "Marker 3197",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 371.",

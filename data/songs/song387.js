@@ -267,7 +267,7 @@ window.SONG_DATA = {
     {
       "id": "387_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/salt-seller.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/387_What_Fades.jpg",
       "name": "Marker 3325",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 387.",

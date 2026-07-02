@@ -257,7 +257,7 @@ window.SONG_DATA = {
     {
       "id": "529_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/census-taker.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/529_The_Leader.jpg",
       "name": "Marker 4507",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 529.",

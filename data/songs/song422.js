@@ -257,7 +257,7 @@ window.SONG_DATA = {
     {
       "id": "422_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/bone-collector.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/422_What_Was_Said.jpg",
       "name": "Marker 3616",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 422.",

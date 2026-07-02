@@ -266,7 +266,7 @@ window.SONG_DATA = {
     {
       "id": "260_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/the-girl-with-no-shoes.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/260_The_Coroners_Note.jpg",
       "name": "Marker 2270",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 260.",

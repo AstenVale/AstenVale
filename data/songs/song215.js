@@ -265,7 +265,7 @@ window.SONG_DATA = {
     {
       "id": "215_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/woodsman.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/215_Who_Answered.jpg",
       "name": "Marker 1897",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 215.",

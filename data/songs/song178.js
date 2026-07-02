@@ -265,7 +265,7 @@ window.SONG_DATA = {
     {
       "id": "178_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/groundskeeper.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/178_Someone_Moved_the_Light.jpg",
       "name": "Marker 1588",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 178.",

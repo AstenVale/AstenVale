@@ -265,7 +265,7 @@ window.SONG_DATA = {
     {
       "id": "201_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/stranger.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/201_The_Cold_Case.jpg",
       "name": "Marker 1779",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 201.",

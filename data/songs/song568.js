@@ -267,7 +267,7 @@ window.SONG_DATA = {
     {
       "id": "568_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/cider-presser.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/568_Who_Noticed.jpg",
       "name": "Marker 4834",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 568.",

@@ -253,7 +253,7 @@ window.SONG_DATA = {
     {
       "id": "400_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/stranger.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/400_The_Doctors_Note.jpg",
       "name": "Marker 3434",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 400.",

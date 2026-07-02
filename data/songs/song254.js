@@ -265,7 +265,7 @@ window.SONG_DATA = {
     {
       "id": "254_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/preacher.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/254_The_Excavation.jpg",
       "name": "Marker 2216",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 254.",

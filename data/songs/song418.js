@@ -264,7 +264,7 @@ window.SONG_DATA = {
     {
       "id": "418_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/wainwright.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/418_What_Survived.jpg",
       "name": "Marker 3588",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 418.",

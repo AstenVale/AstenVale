@@ -264,7 +264,7 @@ window.SONG_DATA = {
     {
       "id": "263_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/typesetter.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/263_The_Other_Body.jpg",
       "name": "Marker 2297",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 263.",

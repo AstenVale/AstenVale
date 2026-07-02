@@ -254,7 +254,7 @@ window.SONG_DATA = {
     {
       "id": "463_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/surveyor.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/463_The_Stable.jpg",
       "name": "Marker 3961",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 463.",

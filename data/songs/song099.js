@@ -252,7 +252,7 @@ window.SONG_DATA = {
     {
       "id": "099_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/peddler.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/099_The_Record_Room.jpg",
       "name": "Marker 925",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 099.",

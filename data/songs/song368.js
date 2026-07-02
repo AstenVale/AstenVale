@@ -264,7 +264,7 @@ window.SONG_DATA = {
     {
       "id": "368_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/weaver.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/368_The_Arrangement.jpg",
       "name": "Marker 3170",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 368.",

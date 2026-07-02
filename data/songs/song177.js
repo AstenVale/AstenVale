@@ -265,7 +265,7 @@ window.SONG_DATA = {
     {
       "id": "177_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/auctioneer.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/177_The_Unlit_Window.jpg",
       "name": "Marker 1579",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 177.",

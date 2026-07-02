@@ -265,7 +265,7 @@ window.SONG_DATA = {
     {
       "id": "089_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/barber.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/089_After_the_Ash.jpg",
       "name": "Marker 843",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 089.",

@@ -265,7 +265,7 @@ window.SONG_DATA = {
     {
       "id": "129_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/cartographer.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/129_The_Legend.jpg",
       "name": "Marker 1179",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 129.",

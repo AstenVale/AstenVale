@@ -266,7 +266,7 @@ window.SONG_DATA = {
     {
       "id": "233_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/banker.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/233_The_Shift.jpg",
       "name": "Marker 2043",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 233.",

@@ -256,7 +256,7 @@ window.SONG_DATA = {
     {
       "id": "485_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/lime-burner.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/485_The_Old_Name.jpg",
       "name": "Marker 4143",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 485.",

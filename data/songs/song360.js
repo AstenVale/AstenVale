@@ -256,7 +256,7 @@ window.SONG_DATA = {
     {
       "id": "360_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/rope-maker.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/360_After_the_Line_Closed.jpg",
       "name": "Marker 3106",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 360.",

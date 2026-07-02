@@ -256,7 +256,7 @@ window.SONG_DATA = {
     {
       "id": "538_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/quarry-foreman.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/538_The_Record.jpg",
       "name": "Marker 4588",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 538.",

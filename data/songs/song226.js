@@ -255,7 +255,7 @@ window.SONG_DATA = {
     {
       "id": "226_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/lock-keeper.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/226_What_Was_Crossing.jpg",
       "name": "Marker 1988",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 226.",

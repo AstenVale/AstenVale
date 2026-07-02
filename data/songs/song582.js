@@ -257,7 +257,7 @@ window.SONG_DATA = {
     {
       "id": "582_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/cattle-driver.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/582_What_She_Left_Out.jpg",
       "name": "Marker 4952",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 582.",

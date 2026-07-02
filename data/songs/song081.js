@@ -254,7 +254,7 @@ window.SONG_DATA = {
     {
       "id": "081_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/tanner.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/081_What_the_Letter_Said.jpg",
       "name": "Marker 779",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 081.",

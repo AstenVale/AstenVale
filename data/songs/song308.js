@@ -265,7 +265,7 @@ window.SONG_DATA = {
     {
       "id": "308_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/furrier.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/308_Why_Red.jpg",
       "name": "Marker 2670",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 308.",

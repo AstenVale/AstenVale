@@ -254,7 +254,7 @@ window.SONG_DATA = {
     {
       "id": "321_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/fisherman.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/321_The_Figure.jpg",
       "name": "Marker 2779",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 321.",

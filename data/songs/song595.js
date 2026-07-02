@@ -256,7 +256,7 @@ window.SONG_DATA = {
     {
       "id": "595_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/deputy.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/595_Who_Did_It.jpg",
       "name": "Marker 5061",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 595.",

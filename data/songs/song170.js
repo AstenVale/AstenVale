@@ -267,7 +267,7 @@ window.SONG_DATA = {
     {
       "id": "170_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/quarry-foreman.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/170_The_Light_Schedule.jpg",
       "name": "Marker 1516",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 170.",

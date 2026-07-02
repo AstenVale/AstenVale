@@ -256,7 +256,7 @@ window.SONG_DATA = {
     {
       "id": "227_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/wool-sorter.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/227_The_Gap.jpg",
       "name": "Marker 1997",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 227.",

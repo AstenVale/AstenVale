@@ -266,7 +266,7 @@ window.SONG_DATA = {
     {
       "id": "327_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/apothecary.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/327_What_the_Signal_Said.jpg",
       "name": "Marker 2825",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 327.",

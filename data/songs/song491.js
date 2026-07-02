@@ -253,7 +253,7 @@ window.SONG_DATA = {
     {
       "id": "491_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/gravedigger.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/491_The_End.jpg",
       "name": "Marker 4197",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 491.",

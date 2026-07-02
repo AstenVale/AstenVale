@@ -255,7 +255,7 @@ window.SONG_DATA = {
     {
       "id": "408_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/lock-keeper.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/408_What_Came_Out_With_Her.jpg",
       "name": "Marker 3506",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 408.",

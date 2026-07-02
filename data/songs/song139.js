@@ -253,7 +253,7 @@ window.SONG_DATA = {
     {
       "id": "139_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/auctioneer.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/139_The_Old_Account.jpg",
       "name": "Marker 1261",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 139.",

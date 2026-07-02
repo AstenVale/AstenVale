@@ -256,7 +256,7 @@ window.SONG_DATA = {
     {
       "id": "534_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/quarry-foreman.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/534_The_Leaving.jpg",
       "name": "Marker 4552",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 534.",

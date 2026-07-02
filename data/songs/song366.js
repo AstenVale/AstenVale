@@ -266,7 +266,7 @@ window.SONG_DATA = {
     {
       "id": "366_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/judge.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/366_The_Seasonal_Key.jpg",
       "name": "Marker 3152",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 366.",

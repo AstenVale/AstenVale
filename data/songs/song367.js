@@ -266,7 +266,7 @@ window.SONG_DATA = {
     {
       "id": "367_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/circuit-rider.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/367_What_Blooms_When.jpg",
       "name": "Marker 3161",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 367.",

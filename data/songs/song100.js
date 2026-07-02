@@ -265,7 +265,7 @@ window.SONG_DATA = {
     {
       "id": "100_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/the-mute.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/100_The_Locked_Cabinet.jpg",
       "name": "Marker 934",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 100.",

@@ -255,7 +255,7 @@ window.SONG_DATA = {
     {
       "id": "514_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/peddler.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/514_The_Why.jpg",
       "name": "Marker 4388",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 514.",

@@ -268,7 +268,7 @@ window.SONG_DATA = {
     {
       "id": "547_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/river-pilot.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/547_The_Storm_Witness.jpg",
       "name": "Marker 4661",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 547.",

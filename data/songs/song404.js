@@ -255,7 +255,7 @@ window.SONG_DATA = {
     {
       "id": "404_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/census-taker.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/404_The_Other_Patient.jpg",
       "name": "Marker 3470",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 404.",

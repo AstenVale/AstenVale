@@ -255,7 +255,7 @@ window.SONG_DATA = {
     {
       "id": "276_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/river-pilot.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/276_The_Last_Page.jpg",
       "name": "Marker 2406",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 276.",

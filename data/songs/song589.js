@@ -267,7 +267,7 @@ window.SONG_DATA = {
     {
       "id": "589_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/judge.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/589_All_Roads_Lead.jpg",
       "name": "Marker 5007",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 589.",
