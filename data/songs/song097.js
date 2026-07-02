@@ -256,7 +256,7 @@ window.SONG_DATA = {
     {
       "id": "097_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/banker.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/097_The_Archive.jpg",
       "name": "Marker 907",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 097.",

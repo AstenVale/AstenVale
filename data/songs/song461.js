@@ -266,7 +266,7 @@ window.SONG_DATA = {
     {
       "id": "461_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/quarry-foreman.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/461_The_Night_Ride.jpg",
       "name": "Marker 3943",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 461.",

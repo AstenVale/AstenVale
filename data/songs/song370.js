@@ -264,7 +264,7 @@ window.SONG_DATA = {
     {
       "id": "370_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/barber.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/370_What_the_Garden_Hides.jpg",
       "name": "Marker 3188",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 370.",

@@ -254,7 +254,7 @@ window.SONG_DATA = {
     {
       "id": "553_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/innkeeper.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/553_The_Detour.jpg",
       "name": "Marker 4707",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 553.",

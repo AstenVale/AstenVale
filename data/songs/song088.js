@@ -265,7 +265,7 @@ window.SONG_DATA = {
     {
       "id": "088_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/cattle-driver.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/088_The_House_That_Burned.jpg",
       "name": "Marker 834",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 088.",

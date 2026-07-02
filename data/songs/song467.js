@@ -253,7 +253,7 @@ window.SONG_DATA = {
     {
       "id": "467_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/rag-picker.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/467_The_Unridden.jpg",
       "name": "Marker 3997",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 467.",

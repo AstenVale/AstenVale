@@ -258,7 +258,7 @@ window.SONG_DATA = {
     {
       "id": "384_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/census-taker.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/384_What_Rose.jpg",
       "name": "Marker 3306",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 384.",

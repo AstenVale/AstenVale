@@ -255,7 +255,7 @@ window.SONG_DATA = {
     {
       "id": "599_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/river-pilot.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/599_What_Was_Saved.jpg",
       "name": "Marker 5097",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 599.",

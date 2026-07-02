@@ -256,7 +256,7 @@ window.SONG_DATA = {
     {
       "id": "336_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/cattle-driver.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/336_Clear_Signal.jpg",
       "name": "Marker 2906",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 336.",

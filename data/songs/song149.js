@@ -264,7 +264,7 @@ window.SONG_DATA = {
     {
       "id": "149_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/weaver.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/149_Same_Face.jpg",
       "name": "Marker 1343",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 149.",

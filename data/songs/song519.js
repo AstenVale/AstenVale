@@ -265,7 +265,7 @@ window.SONG_DATA = {
     {
       "id": "519_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/orphan.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/519_The_Same_Crime.jpg",
       "name": "Marker 4425",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 519.",

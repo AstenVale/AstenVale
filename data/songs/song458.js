@@ -265,7 +265,7 @@ window.SONG_DATA = {
     {
       "id": "458_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/fence-mender.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/458_The_Owner.jpg",
       "name": "Marker 3916",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 458.",

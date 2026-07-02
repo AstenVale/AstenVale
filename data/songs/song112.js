@@ -253,7 +253,7 @@ window.SONG_DATA = {
     {
       "id": "112_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/apothecary.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/112_Mile_Marker.jpg",
       "name": "Marker 1034",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 112.",

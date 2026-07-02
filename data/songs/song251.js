@@ -256,7 +256,7 @@ window.SONG_DATA = {
     {
       "id": "251_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/retired-soldier.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/251_What_Grew_Here.jpg",
       "name": "Marker 2197",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 251.",

@@ -253,7 +253,7 @@ window.SONG_DATA = {
     {
       "id": "295_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/furrier.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/295_The_Listener.jpg",
       "name": "Marker 2561",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 295.",

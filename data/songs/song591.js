@@ -267,7 +267,7 @@ window.SONG_DATA = {
     {
       "id": "591_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/rag-picker.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/591_What_Was_Always_There.jpg",
       "name": "Marker 5025",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 591.",

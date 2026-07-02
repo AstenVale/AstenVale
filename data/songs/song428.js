@@ -254,7 +254,7 @@ window.SONG_DATA = {
     {
       "id": "428_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/land-agent.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/428_The_Number.jpg",
       "name": "Marker 3670",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 428.",

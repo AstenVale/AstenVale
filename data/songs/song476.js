@@ -265,7 +265,7 @@ window.SONG_DATA = {
     {
       "id": "476_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/sheriff.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/476_The_Second_Letter.jpg",
       "name": "Marker 4070",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 476.",

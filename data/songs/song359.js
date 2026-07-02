@@ -254,7 +254,7 @@ window.SONG_DATA = {
     {
       "id": "359_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/harness-maker.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/359_The_Destination.jpg",
       "name": "Marker 3097",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 359.",

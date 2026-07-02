@@ -255,7 +255,7 @@ window.SONG_DATA = {
     {
       "id": "098_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/drifter.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/098_What_She_Saved.jpg",
       "name": "Marker 916",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 098.",

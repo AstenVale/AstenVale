@@ -268,7 +268,7 @@ window.SONG_DATA = {
     {
       "id": "348_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/apothecary.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/348_The_Marking.jpg",
       "name": "Marker 3006",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 348.",

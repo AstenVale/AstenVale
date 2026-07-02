@@ -253,7 +253,7 @@ window.SONG_DATA = {
     {
       "id": "536_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/wainwright.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/536_Who_Stayed.jpg",
       "name": "Marker 4570",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 536.",

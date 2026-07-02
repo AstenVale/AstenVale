@@ -256,7 +256,7 @@ window.SONG_DATA = {
     {
       "id": "505_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/land-agent.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/505_The_Register.jpg",
       "name": "Marker 4307",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 505.",

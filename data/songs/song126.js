@@ -267,7 +267,7 @@ window.SONG_DATA = {
     {
       "id": "126_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/circuit-rider.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/126_Whats_Not_on_the_Map.jpg",
       "name": "Marker 1152",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 126.",

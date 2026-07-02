@@ -265,7 +265,7 @@ window.SONG_DATA = {
     {
       "id": "220_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/wool-sorter.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/220_Who_Set_It.jpg",
       "name": "Marker 1934",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 220.",

@@ -255,7 +255,7 @@ window.SONG_DATA = {
     {
       "id": "535_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/station-master.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/535_What_Fell_Apart.jpg",
       "name": "Marker 4561",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 535.",

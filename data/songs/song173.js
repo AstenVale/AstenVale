@@ -264,7 +264,7 @@ window.SONG_DATA = {
     {
       "id": "173_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/wool-sorter.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/173_The_Shadow.jpg",
       "name": "Marker 1543",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 173.",

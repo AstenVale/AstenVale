@@ -267,7 +267,7 @@ window.SONG_DATA = {
     {
       "id": "288_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/night-porter.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/288_What_the_Hours_Say.jpg",
       "name": "Marker 2506",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 288.",

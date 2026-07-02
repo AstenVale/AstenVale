@@ -258,7 +258,7 @@ window.SONG_DATA = {
     {
       "id": "269_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/station-master.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/269_What_the_Paper_Proves.jpg",
       "name": "Marker 2343",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 269.",

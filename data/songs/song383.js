@@ -256,7 +256,7 @@ window.SONG_DATA = {
     {
       "id": "383_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/cider-presser.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/383_The_Surface_Break.jpg",
       "name": "Marker 3297",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 383.",

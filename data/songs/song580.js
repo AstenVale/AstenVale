@@ -254,7 +254,7 @@ window.SONG_DATA = {
     {
       "id": "580_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/undertaker.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/580_Why_She_Waited.jpg",
       "name": "Marker 4934",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 580.",

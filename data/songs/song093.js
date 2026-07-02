@@ -256,7 +256,7 @@ window.SONG_DATA = {
     {
       "id": "093_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/judge.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/093_The_Survivor.jpg",
       "name": "Marker 879",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 093.",

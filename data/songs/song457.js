@@ -266,7 +266,7 @@ window.SONG_DATA = {
     {
       "id": "457_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/census-taker.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/457_The_Animal.jpg",
       "name": "Marker 3907",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 457.",

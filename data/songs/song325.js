@@ -267,7 +267,7 @@ window.SONG_DATA = {
     {
       "id": "325_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/surveyor.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/325_Frequency.jpg",
       "name": "Marker 2807",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 325.",

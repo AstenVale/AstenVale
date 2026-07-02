@@ -266,7 +266,7 @@ window.SONG_DATA = {
     {
       "id": "395_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/tailor.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/395_What_White_Hides.jpg",
       "name": "Marker 3397",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 395.",

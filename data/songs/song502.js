@@ -267,7 +267,7 @@ window.SONG_DATA = {
     {
       "id": "502_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/station-master.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/502_The_Wait.jpg",
       "name": "Marker 4288",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 502.",

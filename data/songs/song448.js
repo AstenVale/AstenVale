@@ -254,7 +254,7 @@ window.SONG_DATA = {
     {
       "id": "448_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/cartographer.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/448_What_It_Meant.jpg",
       "name": "Marker 3834",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 448.",

@@ -266,7 +266,7 @@ window.SONG_DATA = {
     {
       "id": "169_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/night-watchman.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/169_First_Light.jpg",
       "name": "Marker 1507",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 169.",

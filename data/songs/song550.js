@@ -265,7 +265,7 @@ window.SONG_DATA = {
     {
       "id": "550_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/widow.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/550_The_Changed_Landscape.jpg",
       "name": "Marker 4688",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 550.",

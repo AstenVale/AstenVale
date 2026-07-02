@@ -267,7 +267,7 @@ window.SONG_DATA = {
     {
       "id": "280_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/fence-mender.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/280_The_Timeline.jpg",
       "name": "Marker 2434",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 280.",

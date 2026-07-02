@@ -255,7 +255,7 @@ window.SONG_DATA = {
     {
       "id": "242_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/river-pilot.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/242_What_the_Tree_Saw.jpg",
       "name": "Marker 2116",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 242.",

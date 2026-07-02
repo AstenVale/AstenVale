@@ -266,7 +266,7 @@ window.SONG_DATA = {
     {
       "id": "459_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/station-master.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/459_What_It_Carried.jpg",
       "name": "Marker 3925",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 459.",

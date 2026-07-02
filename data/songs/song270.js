@@ -255,7 +255,7 @@ window.SONG_DATA = {
     {
       "id": "270_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/apothecary.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/270_The_Missing_Document.jpg",
       "name": "Marker 2352",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 270.",

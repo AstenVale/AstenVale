@@ -267,7 +267,7 @@ window.SONG_DATA = {
     {
       "id": "543_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/retired-soldier.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/543_What_the_Storm_Did.jpg",
       "name": "Marker 4625",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 543.",

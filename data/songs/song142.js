@@ -255,7 +255,7 @@ window.SONG_DATA = {
     {
       "id": "142_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/lock-keeper.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/142_What_Grandfather_Kept.jpg",
       "name": "Marker 1288",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 142.",

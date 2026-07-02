@@ -266,7 +266,7 @@ window.SONG_DATA = {
     {
       "id": "345_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/sexton.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/345_What_Was_Done_Right.jpg",
       "name": "Marker 2979",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 345.",

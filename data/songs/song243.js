@@ -256,7 +256,7 @@ window.SONG_DATA = {
     {
       "id": "243_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/salt-seller.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/243_Carved_in_Bark.jpg",
       "name": "Marker 2125",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 243.",

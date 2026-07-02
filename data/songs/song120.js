@@ -255,7 +255,7 @@ window.SONG_DATA = {
     {
       "id": "120_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/typesetter.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/120_The_Road_Opens.jpg",
       "name": "Marker 1106",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 120.",

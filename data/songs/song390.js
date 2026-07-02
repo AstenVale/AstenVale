@@ -267,7 +267,7 @@ window.SONG_DATA = {
     {
       "id": "390_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/rope-maker.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/390_The_Pale_Witness.jpg",
       "name": "Marker 3352",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 390.",

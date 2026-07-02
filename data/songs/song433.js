@@ -266,7 +266,7 @@ window.SONG_DATA = {
     {
       "id": "433_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/librarian.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/433_The_Outpost.jpg",
       "name": "Marker 3707",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 433.",

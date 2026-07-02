@@ -268,7 +268,7 @@ window.SONG_DATA = {
     {
       "id": "219_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/station-master.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/219_Torched.jpg",
       "name": "Marker 1925",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 219.",

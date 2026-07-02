@@ -255,7 +255,7 @@ window.SONG_DATA = {
     {
       "id": "268_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/circuit-rider.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/268_The_Letter_Chain.jpg",
       "name": "Marker 2334",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 268.",

@@ -266,7 +266,7 @@ window.SONG_DATA = {
     {
       "id": "127_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/child.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/127_The_Other_Map.jpg",
       "name": "Marker 1161",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 127.",

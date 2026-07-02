@@ -265,7 +265,7 @@ window.SONG_DATA = {
     {
       "id": "413_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/judge.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/413_Access_Denied.jpg",
       "name": "Marker 3543",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 413.",

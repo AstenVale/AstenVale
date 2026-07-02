@@ -264,7 +264,7 @@ window.SONG_DATA = {
     {
       "id": "346_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/stranger.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/346_What_Was_Wrong.jpg",
       "name": "Marker 2988",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 346.",

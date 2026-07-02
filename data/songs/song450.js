@@ -256,7 +256,7 @@ window.SONG_DATA = {
     {
       "id": "450_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/peddler.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/450_The_Night_of_the_Fire.jpg",
       "name": "Marker 3852",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 450.",

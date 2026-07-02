@@ -254,7 +254,7 @@ window.SONG_DATA = {
     {
       "id": "320_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/peddler.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/320_The_White_Expanse.jpg",
       "name": "Marker 2770",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 320.",

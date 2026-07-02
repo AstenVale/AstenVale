@@ -264,7 +264,7 @@ window.SONG_DATA = {
     {
       "id": "410_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/deputy.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/410_What_Was_Kept.jpg",
       "name": "Marker 3516",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 410.",

@@ -256,7 +256,7 @@ window.SONG_DATA = {
     {
       "id": "532_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/weaver.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/532_The_Promise.jpg",
       "name": "Marker 4534",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 532.",

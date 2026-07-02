@@ -255,7 +255,7 @@ window.SONG_DATA = {
     {
       "id": "576_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/cooper.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/576_The_Response.jpg",
       "name": "Marker 4906",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 576.",

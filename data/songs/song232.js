@@ -266,7 +266,7 @@ window.SONG_DATA = {
     {
       "id": "232_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/stranger.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/232_The_Night_Worker.jpg",
       "name": "Marker 2034",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 232.",

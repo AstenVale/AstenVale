@@ -256,7 +256,7 @@ window.SONG_DATA = {
     {
       "id": "451_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/night-watchman.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/451_Who_Saw_It.jpg",
       "name": "Marker 3861",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 451.",

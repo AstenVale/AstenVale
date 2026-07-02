@@ -256,7 +256,7 @@ window.SONG_DATA = {
     {
       "id": "452_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/doctor.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/452_The_Distance.jpg",
       "name": "Marker 3870",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 452.",

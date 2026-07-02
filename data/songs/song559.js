@@ -254,7 +254,7 @@ window.SONG_DATA = {
     {
       "id": "559_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/orphan.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/559_The_Junction.jpg",
       "name": "Marker 4761",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 559.",

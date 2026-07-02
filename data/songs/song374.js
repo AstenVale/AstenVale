@@ -255,7 +255,7 @@ window.SONG_DATA = {
     {
       "id": "374_marker",
       "type": "Marker",
-      "image": "https://astenvale.github.io/AstenVale-Images/Witness/cattle-driver.jpg",
+      "image": "https://astenvale.github.io/AstenVale-Images/images/Markers/374_The_Undertow.jpg",
       "name": "Marker 3216",
       "symbol": "◆",
       "description": "A field marker left at the scene. Indexed to the Ashton Vale Public Archive under Case File 374.",
