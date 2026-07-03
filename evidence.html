@@ -174,6 +174,14 @@ body::before{
       <span class="jacket-status" id="ev-status">&#8212;</span>
     </div>
 
+    <div class="paper-panel" id="ev-season-panel">
+      <div class="margin-line" aria-hidden="true"></div>
+      <div class="ev-section" style="margin-top:0">
+        <div class="ev-section-label">Season</div>
+        <select id="evSeasonSelect" style="width:100%;font-family:var(--font-type);font-size:0.85rem;padding:0.6rem 0.75rem;background:rgba(0,0,0,0.04);border:1px solid rgba(100,60,20,0.25);color:var(--ink);"></select>
+      </div>
+    </div>
+
     <div class="paper-panel" id="ev-panel">
       <div class="margin-line" aria-hidden="true"></div>
       <div id="ev-content">
@@ -204,8 +212,59 @@ body::before{
   <script>
   (function() {
     var B = window.AssetUrlBuilder;
-    var slug = new URLSearchParams(window.location.search).get('id') || '';
+    var params = new URLSearchParams(window.location.search);
+    var slug = params.get('id') || '';
     var solved = [];
+    var seasonIndex = 0; // resolved, always an unlocked season
+
+    // Same unlocked-season logic as progress.html: the active season is the
+    // first one with an unsolved (released) case; anything past it is locked.
+    function resolveActiveSeasonIndex(solvedList) {
+      if (typeof SEASONS_CONFIG === 'undefined') return 0;
+      if (!solvedList || !solvedList.length) return 0;
+      for (var i = 0; i < SEASONS_CONFIG.length; i++) {
+        var allDone = SEASONS_CONFIG[i].cases.every(function (c) { return solvedList.indexOf(c.id) !== -1; });
+        if (!allDone) return i;
+      }
+      return SEASONS_CONFIG.length - 1;
+    }
+
+    function resolveSeasonIndex(activeIndex) {
+      var raw = params.get('season');
+      var n = parseInt(raw, 10);
+      if (typeof SEASONS_CONFIG !== 'undefined' && raw != null && isFinite(n) && n >= 1 && n <= SEASONS_CONFIG.length && (n - 1) <= activeIndex) {
+        return n - 1;
+      }
+      return activeIndex;
+    }
+
+    function caseSeasonIndex(caseId) {
+      if (typeof SEASONS_CONFIG === 'undefined') return 0;
+      for (var i = 0; i < SEASONS_CONFIG.length; i++) {
+        var season = SEASONS_CONFIG[i];
+        for (var j = 0; j < season.cases.length; j++) {
+          if (season.cases[j].id === caseId) return i;
+        }
+      }
+      return 0;
+    }
+
+    function populateSeasonSelect(activeIndex, selectedIndex) {
+      var sel = document.getElementById('evSeasonSelect');
+      if (!sel || typeof SEASONS_CONFIG === 'undefined') return;
+      sel.innerHTML = '';
+      for (var i = 0; i <= activeIndex; i++) {
+        var s = SEASONS_CONFIG[i];
+        var opt = document.createElement('option');
+        opt.value = i + 1;
+        opt.textContent = s.title + (i === activeIndex ? ' (Current)' : '');
+        if (i === selectedIndex) opt.selected = true;
+        sel.appendChild(opt);
+      }
+      sel.addEventListener('change', function () {
+        window.location.href = 'evidence.html?season=' + sel.value;
+      });
+    }
 
     // Backend-powered: completed_cases from player_progress (Supabase) is
     // the authority for which related cases/timeline entries this player
@@ -398,11 +457,64 @@ body::before{
       document.getElementById('ev-content').innerHTML = html;
     }
 
+    function renderSeasonList(idx) {
+      var season = (typeof SEASONS_CONFIG !== 'undefined') ? SEASONS_CONFIG[idx] : null;
+      document.title = 'Evidence Archive — The Asten Vale Archives';
+      document.getElementById('hero-eyebrow').textContent = 'Evidence Cabinet';
+      document.getElementById('hero-title').textContent = season ? season.title : 'Evidence Archive';
+      document.getElementById('hero-sub').textContent = (season && season.subtitle) ? season.subtitle : '';
+      document.getElementById('ev-status').textContent = '—';
+
+      var caseIds = season ? season.cases.map(function(c) { return c.id; }) : [];
+      var index = window.EVIDENCE_INDEX || {};
+      var items = [];
+      Object.keys(index).forEach(function(evSlug) {
+        var rec = index[evSlug];
+        var matched = (rec.appearsIn || []).some(function(cid) {
+          return caseIds.indexOf(cid) !== -1 && solved.indexOf(cid) !== -1;
+        });
+        if (matched) items.push({ slug: evSlug, rec: rec });
+      });
+
+      var html = '<section class="ev-section" style="margin-top:0"><div class="ev-section-label">Recovered Evidence</div>';
+      if (!items.length) {
+        html += '<p class="ev-empty">No evidence recovered from this season yet. Solve a case to add the first artifact.</p>';
+      } else {
+        html += '<div class="ev-related-grid">';
+        items.forEach(function(item) {
+          html += '<a class="ev-related-card" href="evidence.html?season=' + (idx + 1) + '&id=' + esc(item.slug) + '">' +
+            '<div class="ev-related-card-name">' + esc(item.rec.title) + '</div>' +
+            '<div style="font-size:0.6rem;letter-spacing:0.14em;color:var(--ink-faded);text-transform:uppercase;margin-top:0.3rem;">' + esc(item.rec.category || 'Evidence') + '</div>' +
+            '</a>';
+        });
+        html += '</div>';
+      }
+      html += '</section>';
+      document.getElementById('ev-content').innerHTML = html;
+    }
+
     function init() {
-      if (!slug) { renderNotArchived(); return; }
-      var rec = window.EVIDENCE_INDEX && window.EVIDENCE_INDEX[slug];
-      if (!rec) { renderNotArchived(); return; }
-      renderRecord(rec);
+      var activeIndex = resolveActiveSeasonIndex(solved);
+      seasonIndex = resolveSeasonIndex(activeIndex);
+
+      if (slug) {
+        var rec = window.EVIDENCE_INDEX && window.EVIDENCE_INDEX[slug];
+        if (!rec) { populateSeasonSelect(activeIndex, seasonIndex); renderNotArchived(); return; }
+        var firstAppearance = rec.firstAppearance || ((rec.appearsIn && rec.appearsIn[0]) || '');
+        var itemSeasonIdx = firstAppearance ? caseSeasonIndex(firstAppearance) : 0;
+        if (itemSeasonIdx <= activeIndex) {
+          // Belongs to an unlocked season -- open it, and reflect its real
+          // season in the dropdown regardless of any ?season= param passed.
+          seasonIndex = itemSeasonIdx;
+          populateSeasonSelect(activeIndex, seasonIndex);
+          renderRecord(rec);
+          return;
+        }
+        // Belongs to a locked season -- never expose it; fall back to the list.
+      }
+
+      populateSeasonSelect(activeIndex, seasonIndex);
+      renderSeasonList(seasonIndex);
     }
 
     getAuthoritativeSolved().then(function (result) {
