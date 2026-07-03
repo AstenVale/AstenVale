@@ -207,6 +207,10 @@
         <div class="cabinet-count" id="cabinetCount">0 Items Recovered</div>
       </div>
 
+      <div class="cabinet-season-select-wrap" style="margin-bottom:1.5rem;">
+        <select id="cabinetSeasonSelect" style="width:100%;font-family:var(--font-type);font-size:0.85rem;padding:0.6rem 0.75rem;background:rgba(0,0,0,0.04);border:1px solid rgba(60,30,10,0.25);color:var(--ink);"></select>
+      </div>
+
       <div id="cabinetBody"></div>
 
       <div class="cabinet-more">
@@ -250,8 +254,55 @@
     });
 
     var solved = [];
+    var selectedSeasonIndex = 0;
     var body  = document.getElementById('cabinetBody');
     var count = document.getElementById('cabinetCount');
+
+    function esc(s) {
+      return String(s == null ? '' : s).replace(/[&<>"']/g, function(c) {
+        return { '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[c];
+      });
+    }
+
+    // Same unlocked-season logic as progress.html/evidence.html: the active
+    // season is the first one with an unsolved (released) case; everything
+    // past it is locked and must not be listed or exposed via ?season=.
+    function resolveActiveSeasonIndex(solvedList) {
+      if (typeof SEASONS_CONFIG === 'undefined') return 0;
+      if (!solvedList || !solvedList.length) return 0;
+      for (var i = 0; i < SEASONS_CONFIG.length; i++) {
+        var allDone = SEASONS_CONFIG[i].cases.every(function (c) { return solvedList.indexOf(c.id) !== -1; });
+        if (!allDone) return i;
+      }
+      return SEASONS_CONFIG.length - 1;
+    }
+
+    function resolveSeasonIndex(activeIndex) {
+      var params = new URLSearchParams(window.location.search);
+      var raw = params.get('season');
+      var n = parseInt(raw, 10);
+      if (typeof SEASONS_CONFIG !== 'undefined' && raw != null && isFinite(n) && n >= 1 && n <= SEASONS_CONFIG.length && (n - 1) <= activeIndex) {
+        return n - 1;
+      }
+      return activeIndex;
+    }
+
+    function populateSeasonSelect(activeIndex, selectedIndex) {
+      var sel = document.getElementById('cabinetSeasonSelect');
+      if (!sel || typeof SEASONS_CONFIG === 'undefined') return;
+      sel.innerHTML = '';
+      for (var i = 0; i <= activeIndex; i++) {
+        var s = SEASONS_CONFIG[i];
+        var opt = document.createElement('option');
+        opt.value = i + 1;
+        opt.textContent = s.title + (i === activeIndex ? ' (Current)' : '');
+        if (i === selectedIndex) opt.selected = true;
+        sel.appendChild(opt);
+      }
+      sel.addEventListener('change', function () {
+        window.location.href = 'cabinet.html?season=' + sel.value;
+      });
+    }
 
     // Evidence only appears for cases the player has actually earned.
     // Backend-enforced: player_progress.completed_cases (via
@@ -276,6 +327,9 @@
 
     getAuthoritativeSolved().then(function (result) {
       solved = result;
+      var activeIndex = resolveActiveSeasonIndex(solved);
+      selectedSeasonIndex = resolveSeasonIndex(activeIndex);
+      populateSeasonSelect(activeIndex, selectedSeasonIndex);
       renderEvidenceCabinet();
     });
 
@@ -422,6 +476,24 @@
         }
         seasonGroups[seasonId].cases[item.caseId].items.push(item);
       });
+
+      // Filter to only the selected season -- lifetime stats (cabinetCount
+      // above) stay global, but the grid itself only ever shows one season
+      // at a time, same split used on progress.html.
+      var targetSeason = (typeof SEASONS_CONFIG !== 'undefined') ? SEASONS_CONFIG[selectedSeasonIndex] : null;
+      var targetSeasonId = targetSeason ? targetSeason.id : null;
+
+      if (!targetSeasonId || !seasonGroups[targetSeasonId]) {
+        body.innerHTML =
+          '<div class="cabinet-empty">' +
+            '<span class="cabinet-empty-icon">📁</span>' +
+            '<div class="cabinet-empty-title">No Evidence This Season</div>' +
+            '<div class="cabinet-empty-sub">No evidence has been recovered from ' + esc(targetSeason ? targetSeason.title : 'this season') + ' yet. Solve a case here to add the first artifact.</div>' +
+          '</div>';
+        return;
+      }
+
+      seasonOrder = seasonOrder.filter(function(seasonId) { return seasonId === targetSeasonId; });
 
       // Render
       var html = '';
