@@ -33,14 +33,15 @@
     .progress-summary{background:rgba(201,169,122,0.06);border:1px solid rgba(201,169,122,0.2);border-radius:4px;padding:1.1rem 1.25rem;margin-bottom:2rem;}
     .progress-summary-row{display:flex;justify-content:space-between;font-size:0.72rem;letter-spacing:0.08em;text-transform:uppercase;color:rgba(201,169,122,0.75);padding:0.3rem 0;}
     .progress-summary-row .val{color:rgba(220,190,140,0.95);font-weight:600;}
-    .progress-summary-current{margin-top:0.5rem;padding-top:0.6rem;border-top:1px solid rgba(201,169,122,0.15);font-size:0.7rem;letter-spacing:0.06em;color:rgba(201,169,122,0.6);text-transform:uppercase;}
+    .progress-summary-current{margin-top:0.5rem;padding-top:0.6rem;border-top:1px solid rgba(201,169,122,0.15);font-size:0.7rem;letter-spacing:0.15em;color:rgba(201,169,122,0.6);text-transform:uppercase;}
     .progress-summary-current .val{display:block;margin-top:0.25rem;font-family:var(--font-header);font-size:0.95rem;letter-spacing:0.08em;color:var(--gold);text-transform:uppercase;}
+    .vault-status-icon{margin-right:0.5rem;}
     .vault-total-note{text-align:center;font-size:0.68rem;letter-spacing:0.15em;color:rgba(201,169,122,0.45);text-transform:uppercase;margin-top:1.5rem;}
 
-    .vault-locked-row{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:0.75rem 0;border-bottom:1px solid rgba(201,169,122,0.2);opacity:0.55;}
-    .vault-locked-row .vault-title{font-size:0.85rem;}
+    .archive-vaults-heading{font-family:var(--font-header);font-size:0.85rem;letter-spacing:0.15em;color:rgba(201,169,122,0.55);text-transform:uppercase;margin:1.75rem 0 0.6rem;padding-top:1.25rem;border-top:1px solid rgba(201,169,122,0.2);}
+    .vault-locked-row{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:0.55rem 0;border-bottom:1px solid rgba(201,169,122,0.12);opacity:0.5;}
+    .vault-locked-row .vault-title{font-size:0.78rem;letter-spacing:0.08em;}
     .vault-lock-icon{font-size:0.75rem;color:rgba(201,169,122,0.4);flex-shrink:0;}
-    .vault-unknown{font-family:var(--font-type);letter-spacing:0.12em;}
 
     .badge-group{margin-bottom:2.25rem;}
     .badge-group-title{font-family:var(--font-header);font-size:1rem;letter-spacing:0.1em;color:rgba(220,190,140,0.9);text-transform:uppercase;margin-bottom:0.85rem;padding-bottom:0.4rem;border-bottom:1px solid rgba(201,169,122,0.2);}
@@ -168,7 +169,6 @@
       for (var vi = 0; vi < vaultEntries.length; vi++) {
         if (!vaultEntries[vi].completed) { currentIndex = vi; break; }
       }
-      var nextIndex = currentIndex === -1 ? -1 : currentIndex + 1;
 
       // ── Progress summary ──────────────────────────────────────────────
       var totalEarned = BADGES_CONFIG.filter(function (b) { return !!earned[b.id]; }).length;
@@ -180,7 +180,7 @@
           totalEarned + ' / ' + BADGES_CONFIG.length + '</span></div>' +
         '<div class="progress-summary-row"><span>Vaults Completed</span><span class="val">' +
           vaultsCompleted + ' / ' + vaultEntries.length + '</span></div>' +
-        '<div class="progress-summary-current">Current Vault<span class="val"></span></div>';
+        '<div class="progress-summary-current">Current Investigation<span class="val"></span></div>';
       summaryEl.querySelector('.progress-summary-current .val').textContent = currentVaultName;
 
       // ── Global (non-vault) categories -- unchanged behavior ────────────
@@ -197,13 +197,18 @@
         groups.appendChild(section);
       });
 
-      // ── Vaults -- progressive discovery ─────────────────────────────────
+      // ── Archive Vaults -- progressive discovery ─────────────────────────
+      // Real names are shown only for vaults the player has completed or is
+      // actively working (current). Every other vault -- including the very
+      // next one -- is a plain "Vault NN" row with a lock icon; no name.
+      var heading = document.createElement('div');
+      heading.className = 'archive-vaults-heading';
+      heading.textContent = 'Archive Vaults';
+      groups.appendChild(heading);
+
       vaultEntries.forEach(function (v, idx) {
         var isCurrent = idx === currentIndex;
-        var isNext = idx === nextIndex;
-        var nameRevealed = v.completed || isCurrent || isNext;
         var expandable = v.completed || isCurrent;
-
         var numStr = (v.num < 10 ? '0' : '') + v.num;
 
         if (expandable) {
@@ -217,8 +222,8 @@
             '<span class="vault-summary-left"><span class="vault-caret">&#9656;</span>' +
             '<span class="vault-title"></span></span>' +
             '<span class="vault-count"></span>';
-          var titleText = v.category + (v.completed ? ' ✓' : '');
-          summary.querySelector('.vault-title').textContent = titleText;
+          var statusIcon = v.completed ? '✓' : '▶';
+          summary.querySelector('.vault-title').textContent = v.category + ' ' + statusIcon;
           var countEl = summary.querySelector('.vault-count');
           countEl.textContent = v.earnedCount + ' / ' + v.badges.length;
           if (v.completed) { countEl.classList.add('complete'); }
@@ -231,15 +236,7 @@
           row.className = 'vault-locked-row';
           var titleSpan = document.createElement('span');
           titleSpan.className = 'vault-title';
-          if (nameRevealed) {
-            titleSpan.textContent = v.category;
-          } else {
-            titleSpan.textContent = 'Vault ' + numStr + ' — ';
-            var unknown = document.createElement('span');
-            unknown.className = 'vault-unknown';
-            unknown.textContent = '????????';
-            titleSpan.appendChild(unknown);
-          }
+          titleSpan.textContent = 'Vault ' + numStr;
           var lockSpan = document.createElement('span');
           lockSpan.className = 'vault-lock-icon';
           lockSpan.innerHTML = '&#128274;';
