@@ -82,7 +82,7 @@
   <script src="js/progress-sync.js"></script>
   <script>
   (function () {
-    function render(progress) {
+    function render(progress, releasedIds) {
       document.getElementById('loadingNote').style.display = 'none';
       document.getElementById('archiveContent').style.display = 'block';
 
@@ -97,7 +97,10 @@
       }
 
       SEASONS_CONFIG.forEach(function (season) {
-        var releasedCases = season.cases.filter(function (c) { return c.released; });
+        // Backend-enforced: a case only counts as "released" if the
+        // server's released_cases table says so, not the static
+        // SEASONS_CONFIG.released flag (which is display-only now).
+        var releasedCases = season.cases.filter(function (c) { return releasedIds.indexOf(c.id) !== -1; });
         var solvedInSeason = releasedCases.filter(function (c) { return solved[c.id]; }).length;
         var pct = releasedCases.length ? Math.round((solvedInSeason / releasedCases.length) * 100) : 0;
         var isLocked = releasedCases.length === 0;
@@ -128,13 +131,25 @@
       window.AVProgressSync.signOut(function () { window.location.href = 'index.html'; });
     });
 
+    function getReleasedCaseIds() {
+      var client = window.AVProgressSync.getClient();
+      if (!client) return Promise.resolve([]);
+      return client.from('public_released_cases').select('case_id').then(function (res) {
+        if (res.error || !res.data) return [];
+        return res.data.map(function (r) { return r.case_id; });
+      });
+    }
+
     window.AVProgressSync.getUser().then(function (user) {
       if (!user) {
         window.location.href = 'login.html?redirect=' + encodeURIComponent('archive.html');
         return;
       }
-      window.AVProgressSync.getSupabaseProgress(user).then(function (progress) {
-        render(progress);
+      Promise.all([
+        window.AVProgressSync.getSupabaseProgress(user),
+        getReleasedCaseIds()
+      ]).then(function (results) {
+        render(results[0], results[1]);
       });
     });
   })();
