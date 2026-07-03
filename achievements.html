@@ -30,6 +30,18 @@
     .hero-title{font-family:var(--font-header);font-size:clamp(1.8rem,6vw,2.8rem);letter-spacing:0.08em;color:rgba(220,190,140,0.95);text-transform:uppercase;margin-top:0.4rem;}
 
     .wrap{max-width:960px;margin:0 auto;padding:1.5rem 1.25rem 4rem;}
+    .progress-summary{background:rgba(201,169,122,0.06);border:1px solid rgba(201,169,122,0.2);border-radius:4px;padding:1.1rem 1.25rem;margin-bottom:2rem;}
+    .progress-summary-row{display:flex;justify-content:space-between;font-size:0.72rem;letter-spacing:0.08em;text-transform:uppercase;color:rgba(201,169,122,0.75);padding:0.3rem 0;}
+    .progress-summary-row .val{color:rgba(220,190,140,0.95);font-weight:600;}
+    .progress-summary-current{margin-top:0.5rem;padding-top:0.6rem;border-top:1px solid rgba(201,169,122,0.15);font-size:0.7rem;letter-spacing:0.06em;color:rgba(201,169,122,0.6);text-transform:uppercase;}
+    .progress-summary-current .val{display:block;margin-top:0.25rem;font-family:var(--font-header);font-size:0.95rem;letter-spacing:0.08em;color:var(--gold);text-transform:uppercase;}
+    .vault-total-note{text-align:center;font-size:0.68rem;letter-spacing:0.15em;color:rgba(201,169,122,0.45);text-transform:uppercase;margin-top:1.5rem;}
+
+    .vault-locked-row{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:0.75rem 0;border-bottom:1px solid rgba(201,169,122,0.2);opacity:0.55;}
+    .vault-locked-row .vault-title{font-size:0.85rem;}
+    .vault-lock-icon{font-size:0.75rem;color:rgba(201,169,122,0.4);flex-shrink:0;}
+    .vault-unknown{font-family:var(--font-type);letter-spacing:0.12em;}
+
     .badge-group{margin-bottom:2.25rem;}
     .badge-group-title{font-family:var(--font-header);font-size:1rem;letter-spacing:0.1em;color:rgba(220,190,140,0.9);text-transform:uppercase;margin-bottom:0.85rem;padding-bottom:0.4rem;border-bottom:1px solid rgba(201,169,122,0.2);}
     .badge-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:0.85rem;}
@@ -78,7 +90,11 @@
       <h1 class="hero-title">Achievements</h1>
     </div>
 
-    <div class="wrap" id="badgeGroups"></div>
+    <div class="wrap">
+      <div class="progress-summary" id="progressSummary"></div>
+      <div id="badgeGroups"></div>
+      <p class="vault-total-note" id="vaultTotalNote"></p>
+    </div>
   </div>
 
   <script src="js/vault-config.js"></script>
@@ -125,17 +141,75 @@
         return grid;
       }
 
+      // Split categories into global (always shown) and vaults (numbered,
+      // progressively revealed) -- ordered by vault number, not insertion
+      // order, so the reveal/current/next logic below is reliable regardless
+      // of how BADGES_CONFIG happens to be laid out.
+      var globalCats = [];
+      var vaultEntries = [];
       order.forEach(function (cat) {
-        var isVault = /^Vault\s+\d+/.test(cat);
-        var catBadges = byCategory[cat];
-        var earnedCount = catBadges.filter(function (b) { return !!earned[b.id]; }).length;
+        var m = /^Vault\s+(\d+)/.exec(cat);
+        if (m) {
+          vaultEntries.push({ num: parseInt(m[1], 10), category: cat, badges: byCategory[cat] });
+        } else {
+          globalCats.push(cat);
+        }
+      });
+      vaultEntries.sort(function (a, b) { return a.num - b.num; });
 
-        if (isVault) {
-          var isSeasonOne = /^Vault\s+01\b/.test(cat);
+      vaultEntries.forEach(function (v) {
+        v.earnedCount = v.badges.filter(function (b) { return !!earned[b.id]; }).length;
+        v.completed = v.earnedCount === v.badges.length;
+      });
 
+      // The player's current vault is the first one not yet fully earned.
+      // If every vault is complete, there is no "current" or "next" left.
+      var currentIndex = -1;
+      for (var vi = 0; vi < vaultEntries.length; vi++) {
+        if (!vaultEntries[vi].completed) { currentIndex = vi; break; }
+      }
+      var nextIndex = currentIndex === -1 ? -1 : currentIndex + 1;
+
+      // ── Progress summary ──────────────────────────────────────────────
+      var totalEarned = BADGES_CONFIG.filter(function (b) { return !!earned[b.id]; }).length;
+      var vaultsCompleted = vaultEntries.filter(function (v) { return v.completed; }).length;
+      var summaryEl = document.getElementById('progressSummary');
+      var currentVaultName = currentIndex === -1 ? 'All vaults recovered' : vaultEntries[currentIndex].category;
+      summaryEl.innerHTML =
+        '<div class="progress-summary-row"><span>Achievements Earned</span><span class="val">' +
+          totalEarned + ' / ' + BADGES_CONFIG.length + '</span></div>' +
+        '<div class="progress-summary-row"><span>Vaults Completed</span><span class="val">' +
+          vaultsCompleted + ' / ' + vaultEntries.length + '</span></div>' +
+        '<div class="progress-summary-current">Current Vault<span class="val"></span></div>';
+      summaryEl.querySelector('.progress-summary-current .val').textContent = currentVaultName;
+
+      // ── Global (non-vault) categories -- unchanged behavior ────────────
+      globalCats.forEach(function (cat) {
+        var section = document.createElement('div');
+        section.className = 'badge-group';
+
+        var title = document.createElement('div');
+        title.className = 'badge-group-title';
+        title.textContent = cat;
+        section.appendChild(title);
+
+        section.appendChild(buildGrid(byCategory[cat]));
+        groups.appendChild(section);
+      });
+
+      // ── Vaults -- progressive discovery ─────────────────────────────────
+      vaultEntries.forEach(function (v, idx) {
+        var isCurrent = idx === currentIndex;
+        var isNext = idx === nextIndex;
+        var nameRevealed = v.completed || isCurrent || isNext;
+        var expandable = v.completed || isCurrent;
+
+        var numStr = (v.num < 10 ? '0' : '') + v.num;
+
+        if (expandable) {
           var details = document.createElement('details');
           details.className = 'vault-group';
-          if (isSeasonOne) { details.open = true; }
+          if (isCurrent) { details.open = true; }
 
           var summary = document.createElement('summary');
           summary.className = 'vault-summary';
@@ -143,27 +217,39 @@
             '<span class="vault-summary-left"><span class="vault-caret">&#9656;</span>' +
             '<span class="vault-title"></span></span>' +
             '<span class="vault-count"></span>';
-          summary.querySelector('.vault-title').textContent = cat;
+          var titleText = v.category + (v.completed ? ' ✓' : '');
+          summary.querySelector('.vault-title').textContent = titleText;
           var countEl = summary.querySelector('.vault-count');
-          countEl.textContent = earnedCount + ' / ' + catBadges.length;
-          if (earnedCount === catBadges.length) { countEl.classList.add('complete'); }
+          countEl.textContent = v.earnedCount + ' / ' + v.badges.length;
+          if (v.completed) { countEl.classList.add('complete'); }
 
           details.appendChild(summary);
-          details.appendChild(buildGrid(catBadges));
+          details.appendChild(buildGrid(v.badges));
           groups.appendChild(details);
         } else {
-          var section = document.createElement('div');
-          section.className = 'badge-group';
-
-          var title = document.createElement('div');
-          title.className = 'badge-group-title';
-          title.textContent = cat;
-          section.appendChild(title);
-
-          section.appendChild(buildGrid(catBadges));
-          groups.appendChild(section);
+          var row = document.createElement('div');
+          row.className = 'vault-locked-row';
+          var titleSpan = document.createElement('span');
+          titleSpan.className = 'vault-title';
+          if (nameRevealed) {
+            titleSpan.textContent = v.category;
+          } else {
+            titleSpan.textContent = 'Vault ' + numStr + ' — ';
+            var unknown = document.createElement('span');
+            unknown.className = 'vault-unknown';
+            unknown.textContent = '????????';
+            titleSpan.appendChild(unknown);
+          }
+          var lockSpan = document.createElement('span');
+          lockSpan.className = 'vault-lock-icon';
+          lockSpan.innerHTML = '&#128274;';
+          row.appendChild(titleSpan);
+          row.appendChild(lockSpan);
+          groups.appendChild(row);
         }
       });
+
+      document.getElementById('vaultTotalNote').textContent = vaultEntries.length + ' Vaults Total';
     }
 
     if (!window.AVProgressSync) {
