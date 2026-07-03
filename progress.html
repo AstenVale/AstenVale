@@ -1148,27 +1148,50 @@
 
       <hr class="section-divider" />
 
-      <!-- ── SYNC PROGRESS ── -->
+      <!-- ── SAVE PROGRESS ── -->
       <div class="section-head" style="padding-top:0">
         <p class="section-label">Optional</p>
-        <h2 class="section-title">Sync Progress</h2>
+        <h2 class="section-title">Save Progress</h2>
         <div class="section-rule"></div>
       </div>
 
       <div class="inv-card" style="display:flex;flex-direction:column;gap:0.75rem;">
         <p style="font-family:var(--font-type);font-size:0.78rem;line-height:1.6;color:rgba(60,30,10,0.6);margin:0;">
-          Your progress already lives on this device. Syncing is optional — it saves a copy so you don't lose it if you clear your browser, and (if you add a name) lists you on the public leaderboard.
+          Your progress already lives on this device — you never need to log in to play. Logging in just saves a copy so you can pick up on another device, and (if you add a name) lists you on the public leaderboard.
         </p>
-        <input
-          type="text"
-          id="syncDisplayName"
-          maxlength="40"
-          placeholder="Display name (optional — leave blank to stay off the leaderboard)"
-          style="font-family:var(--font-type);font-size:0.75rem;padding:0.6rem 0.8rem;border:1px solid rgba(60,30,10,0.2);background:rgba(255,255,255,0.4);color:rgba(60,30,10,0.85);"
-        />
-        <div style="display:flex;align-items:center;gap:0.75rem;flex-wrap:wrap;">
-          <button class="btn-reset" id="btnSyncProgress" style="color:rgba(60,110,60,0.7);border-color:rgba(60,110,60,0.3);">Sync Progress</button>
-          <span id="syncStatus" style="font-family:var(--font-type);font-size:0.7rem;color:rgba(60,30,10,0.5);"></span>
+
+        <!-- Logged out: email + magic link -->
+        <div id="authLoggedOut" style="display:flex;flex-direction:column;gap:0.6rem;">
+          <input
+            type="email"
+            id="authEmail"
+            placeholder="Email address"
+            style="font-family:var(--font-type);font-size:0.75rem;padding:0.6rem 0.8rem;border:1px solid rgba(60,30,10,0.2);background:rgba(255,255,255,0.4);color:rgba(60,30,10,0.85);"
+          />
+          <div style="display:flex;align-items:center;gap:0.75rem;flex-wrap:wrap;">
+            <button class="btn-reset" id="btnSendMagicLink" style="color:rgba(60,110,60,0.7);border-color:rgba(60,110,60,0.3);">Save Progress</button>
+            <span id="authStatus" style="font-family:var(--font-type);font-size:0.7rem;color:rgba(60,30,10,0.5);"></span>
+          </div>
+        </div>
+
+        <!-- Logged in: sync + public profile + logout -->
+        <div id="authLoggedIn" style="display:none;flex-direction:column;gap:0.6rem;">
+          <p style="font-family:var(--font-type);font-size:0.75rem;color:rgba(60,110,60,0.8);margin:0;" id="loggedInLabel">Progress saved.</p>
+          <input
+            type="text"
+            id="syncDisplayName"
+            maxlength="40"
+            placeholder="Display name (optional — required to appear on the leaderboard)"
+            style="font-family:var(--font-type);font-size:0.75rem;padding:0.6rem 0.8rem;border:1px solid rgba(60,30,10,0.2);background:rgba(255,255,255,0.4);color:rgba(60,30,10,0.85);"
+          />
+          <label style="font-family:var(--font-type);font-size:0.72rem;color:rgba(60,30,10,0.6);display:flex;align-items:center;gap:0.4rem;">
+            <input type="checkbox" id="publicProfileCheck" /> List me on the public leaderboard
+          </label>
+          <div style="display:flex;align-items:center;gap:0.75rem;flex-wrap:wrap;">
+            <button class="btn-reset" id="btnSyncNow" style="color:rgba(60,110,60,0.7);border-color:rgba(60,110,60,0.3);">Sync Now</button>
+            <button class="btn-reset" id="btnLogout">Log Out</button>
+            <span id="syncStatus" style="font-family:var(--font-type);font-size:0.7rem;color:rgba(60,30,10,0.5);"></span>
+          </div>
         </div>
       </div>
 
@@ -1569,25 +1592,96 @@
   <script src="js/polish.js" defer></script>
 
   <!-- Optional progress sync (safe to remove: this tag + the two below + the
-       "Sync Progress" card above + js/supabase-progress-sync.js) -->
+       "Save Progress" card above + js/progress-sync.js) -->
   <script src="js/badges.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
-  <script src="js/supabase-progress-sync.js"></script>
+  <script src="js/progress-sync.js"></script>
   <script>
   (function () {
-    var btn = document.getElementById('btnSyncProgress');
-    var nameInput = document.getElementById('syncDisplayName');
-    var status = document.getElementById('syncStatus');
-    if (!btn) return;
-    btn.addEventListener('click', function () {
-      if (!window.AVProgressSync) { status.textContent = 'Sync is unavailable right now.'; return; }
-      btn.disabled = true;
-      status.textContent = 'Syncing…';
-      window.AVProgressSync.syncProgress(nameInput.value, function (err) {
-        btn.disabled = false;
-        status.textContent = err
-          ? 'Sync failed — please try again later.'
-          : 'Synced just now.';
+    var loggedOutBox   = document.getElementById('authLoggedOut');
+    var loggedInBox    = document.getElementById('authLoggedIn');
+    var emailInput     = document.getElementById('authEmail');
+    var sendLinkBtn    = document.getElementById('btnSendMagicLink');
+    var authStatus     = document.getElementById('authStatus');
+    var nameInput      = document.getElementById('syncDisplayName');
+    var publicCheck    = document.getElementById('publicProfileCheck');
+    var syncNowBtn     = document.getElementById('btnSyncNow');
+    var logoutBtn      = document.getElementById('btnLogout');
+    var syncStatus     = document.getElementById('syncStatus');
+    var loggedInLabel  = document.getElementById('loggedInLabel');
+    if (!loggedOutBox || !window.AVProgressSync) return;
+
+    var currentUser = null;
+
+    function showLoggedIn(user) {
+      currentUser = user;
+      loggedOutBox.style.display = 'none';
+      loggedInBox.style.display = 'flex';
+      loggedInLabel.textContent = 'Signed in as ' + user.email + '.';
+    }
+
+    function showLoggedOut() {
+      currentUser = null;
+      loggedOutBox.style.display = 'flex';
+      loggedInBox.style.display = 'none';
+    }
+
+    function loadProfile(user) {
+      var client = window.AVProgressSync.getClient();
+      if (!client) return;
+      client.from('players').select('display_name, public_profile').eq('user_id', user.id).maybeSingle()
+        .then(function (res) {
+          if (res.data) {
+            nameInput.value = res.data.display_name || '';
+            publicCheck.checked = !!res.data.public_profile;
+          }
+        });
+    }
+
+    sendLinkBtn.addEventListener('click', function () {
+      var email = emailInput.value.trim();
+      if (!email) { authStatus.textContent = 'Enter an email first.'; return; }
+      sendLinkBtn.disabled = true;
+      authStatus.textContent = 'Sending…';
+      window.AVProgressSync.sendMagicLink(email, function (err) {
+        sendLinkBtn.disabled = false;
+        authStatus.textContent = err
+          ? 'Could not send link — try again.'
+          : 'Check your email for a login link.';
+      });
+    });
+
+    syncNowBtn.addEventListener('click', function () {
+      syncNowBtn.disabled = true;
+      syncStatus.textContent = 'Syncing…';
+      window.AVProgressSync.syncProgress(function (err) {
+        syncNowBtn.disabled = false;
+        syncStatus.textContent = err ? 'Sync failed — try again later.' : 'Synced just now.';
+      });
+    });
+
+    function savePublicProfile() {
+      if (!currentUser) return;
+      window.AVProgressSync.setPublicProfile(currentUser, nameInput.value, publicCheck.checked, function () {});
+    }
+    nameInput.addEventListener('change', savePublicProfile);
+    publicCheck.addEventListener('change', savePublicProfile);
+
+    logoutBtn.addEventListener('click', function () {
+      window.AVProgressSync.signOut(function () {
+        showLoggedOut();
+      });
+    });
+
+    // On load: if already signed in (e.g. just followed a magic link), or a
+    // session already exists, show the logged-in state and sync once.
+    window.AVProgressSync.getUser().then(function (user) {
+      if (!user) return;
+      showLoggedIn(user);
+      loadProfile(user);
+      syncStatus.textContent = 'Syncing…';
+      window.AVProgressSync.syncProgress(function (err) {
+        syncStatus.textContent = err ? 'Sync failed — try again later.' : 'Synced just now.';
       });
     });
   })();

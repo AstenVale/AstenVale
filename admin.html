@@ -17,10 +17,12 @@ h1{font-size:1.3rem;letter-spacing:0.08em;margin-bottom:1.5rem;color:var(--paper
 h2{font-size:0.95rem;letter-spacing:0.06em;margin:2rem 0 0.75rem;color:var(--paper);border-bottom:1px solid rgba(201,169,122,0.25);padding-bottom:0.4rem;}
 .wrap{max-width:960px;margin:0 auto;}
 
-#loginCard{max-width:360px;margin:4rem auto;background:rgba(201,169,122,0.06);border:1px solid rgba(201,169,122,0.2);padding:2rem;}
+#loginCard{max-width:380px;margin:4rem auto;background:rgba(201,169,122,0.06);border:1px solid rgba(201,169,122,0.2);padding:2rem;}
+#loginCard p{font-size:0.75rem;color:rgba(201,169,122,0.6);margin-bottom:1rem;line-height:1.5;}
 #loginCard input{width:100%;padding:0.6rem 0.7rem;margin-bottom:0.75rem;background:rgba(0,0,0,0.3);border:1px solid rgba(201,169,122,0.25);color:var(--paper);font-family:var(--font-type);font-size:0.85rem;}
 #loginCard button{width:100%;padding:0.65rem;background:var(--folder-red);color:#fff;border:none;cursor:pointer;font-family:var(--font-type);font-size:0.8rem;letter-spacing:0.08em;text-transform:uppercase;}
 #loginError{color:#e88;font-size:0.78rem;margin-top:0.5rem;min-height:1.2em;}
+#loginNotice{color:#8c8;font-size:0.78rem;margin-top:0.5rem;min-height:1.2em;}
 
 .stat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:0.75rem;}
 .stat-tile{background:rgba(201,169,122,0.06);border:1px solid rgba(201,169,122,0.15);padding:1rem;}
@@ -40,10 +42,11 @@ td{padding:0.45rem 0.5rem;border-bottom:1px solid rgba(201,169,122,0.08);}
   <div class="wrap">
 
     <div id="loginCard">
-      <h1 style="margin-bottom:1rem;">Admin Sign In</h1>
+      <h1 style="margin-bottom:0.5rem;">Admin Sign In</h1>
+      <p>Sign in with the admin email to view stats. You'll get a magic link — this page never uses a password.</p>
       <input type="email" id="loginEmail" placeholder="Admin email" autocomplete="username" />
-      <input type="password" id="loginPassword" placeholder="Password" autocomplete="current-password" />
-      <button id="loginBtn">Sign In</button>
+      <button id="loginBtn">Send Magic Link</button>
+      <div id="loginNotice"></div>
       <div id="loginError"></div>
     </div>
 
@@ -62,6 +65,9 @@ td{padding:0.45rem 0.5rem;border-bottom:1px solid rgba(201,169,122,0.08);}
       <h2>Top Badges Earned</h2>
       <table><thead><tr><th>Badge</th><th>Players</th></tr></thead><tbody id="topBadgesBody"></tbody></table>
 
+      <h2>Completion Rate Per Case (first 30)</h2>
+      <table><thead><tr><th>Case</th><th>Completed / Players</th><th>Rate</th></tr></thead><tbody id="completionRateBody"></tbody></table>
+
       <h2>Recent Completions</h2>
       <table><thead><tr><th>Player</th><th>Last Case</th><th>Total</th><th>Updated</th></tr></thead><tbody id="recentBody"></tbody></table>
     </div>
@@ -73,11 +79,13 @@ td{padding:0.45rem 0.5rem;border-bottom:1px solid rgba(201,169,122,0.08);}
   (function () {
     var SUPABASE_URL = 'https://qtjdavuqytxqihwspchh.supabase.co';
     var SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InF0amRhdnVxeXR4cWlod3NwY2hoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODMwMzg3NjksImV4cCI6MjA5ODYxNDc2OX0.Hyl9Rf62CHEEI7rK_iF5PjKzc0Xd93WC-YrhM-L4ohg';
+    var ADMIN_EMAIL = 'marketingaftermidnight@gmail.com';
     var client = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
     var loginCard = document.getElementById('loginCard');
     var dashboard = document.getElementById('dashboard');
     var loginError = document.getElementById('loginError');
+    var loginNotice = document.getElementById('loginNotice');
 
     function esc(s) {
       return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
@@ -87,17 +95,33 @@ td{padding:0.45rem 0.5rem;border-bottom:1px solid rgba(201,169,122,0.08);}
 
     document.getElementById('loginBtn').addEventListener('click', function () {
       loginError.textContent = '';
+      loginNotice.textContent = '';
       var email = document.getElementById('loginEmail').value.trim();
-      var password = document.getElementById('loginPassword').value;
-      client.auth.signInWithPassword({ email: email, password: password }).then(function (res) {
-        if (res.error) { loginError.textContent = res.error.message; return; }
-        showDashboard();
-      });
+      if (!email) { loginError.textContent = 'Enter an email.'; return; }
+      client.auth.signInWithOtp({ email: email, options: { emailRedirectTo: window.location.href } })
+        .then(function (res) {
+          if (res.error) { loginError.textContent = res.error.message; return; }
+          loginNotice.textContent = 'Check your email for a login link.';
+        });
     });
 
     document.getElementById('signOutBtn').addEventListener('click', function () {
       client.auth.signOut().then(function () { location.reload(); });
     });
+
+    function checkSessionAndRender() {
+      client.auth.getSession().then(function (res) {
+        var session = res.data && res.data.session;
+        if (!session) return;
+        if ((session.user.email || '').toLowerCase() !== ADMIN_EMAIL.toLowerCase()) {
+          // Wrong account signed in -- RLS would block the real data reads
+          // anyway, but tell the user plainly instead of showing an empty dashboard.
+          loginError.textContent = 'This account is not authorized for admin access.';
+          return;
+        }
+        showDashboard();
+      });
+    }
 
     function showDashboard() {
       loginCard.style.display = 'none';
@@ -106,63 +130,81 @@ td{padding:0.45rem 0.5rem;border-bottom:1px solid rgba(201,169,122,0.08);}
     }
 
     function loadStats() {
-      // RLS only allows this full-table select for an authenticated (signed-in) session.
-      client.from('player_progress').select('*').then(function (res) {
-        if (res.error) {
-          dashboard.innerHTML = '<p class="empty">Could not load stats: ' + esc(res.error.message) + '</p>';
+      // RLS only allows a full-table select here for the admin email's
+      // authenticated session (see supabase/schema.sql). Any other signed-in
+      // user gets back only their own row, not an error -- the loginError
+      // check above is what actually stops the wrong account from seeing
+      // this page render.
+      Promise.all([
+        client.from('players').select('*'),
+        client.from('player_progress').select('*')
+      ]).then(function (results) {
+        var playersRes = results[0], progressRes = results[1];
+        if (playersRes.error || progressRes.error) {
+          dashboard.innerHTML = '<p class="empty">Could not load stats.</p>';
           return;
         }
-        render(res.data || []);
+        render(playersRes.data || [], progressRes.data || []);
       });
     }
 
-    function render(rows) {
-      // Summary tiles
-      var totalPlayers = rows.length;
-      var totalCasesSum = rows.reduce(function (s, r) { return s + (r.total_cases_completed || 0); }, 0);
+    function render(players, progressRows) {
+      var nameByUser = {};
+      players.forEach(function (p) { nameByUser[p.user_id] = p.display_name; });
+
+      var totalPlayers = players.length;
+      var totalCasesSum = progressRows.reduce(function (s, r) { return s + (r.total_cases_completed || 0); }, 0);
       var avgCases = totalPlayers ? (totalCasesSum / totalPlayers).toFixed(1) : '0';
-      var namedPlayers = rows.filter(function (r) { return r.display_name; }).length;
+      var namedPlayers = players.filter(function (p) { return p.public_profile; }).length;
 
       document.getElementById('summaryTiles').innerHTML =
         tile(totalPlayers, 'Total Players') +
+        tile(totalCasesSum, 'Total Cases Completed') +
         tile(avgCases, 'Avg Cases / Player') +
         tile(namedPlayers, 'On Leaderboard');
 
-      // Most completed cases
       var caseCounts = {};
-      rows.forEach(function (r) {
+      progressRows.forEach(function (r) {
         (r.completed_cases || []).forEach(function (id) {
           caseCounts[id] = (caseCounts[id] || 0) + 1;
         });
       });
       renderCountTable('mostCompletedBody', caseCounts, 'Case ', 20);
 
-      // Vault unlock counts
       var vaultCounts = {};
-      rows.forEach(function (r) {
+      progressRows.forEach(function (r) {
         (r.unlocked_vaults || []).forEach(function (id) {
           vaultCounts[id] = (vaultCounts[id] || 0) + 1;
         });
       });
       renderCountTable('vaultCountsBody', vaultCounts, '', 50);
 
-      // Top badges
       var badgeCounts = {};
-      rows.forEach(function (r) {
+      progressRows.forEach(function (r) {
         (r.earned_badges || []).forEach(function (id) {
           badgeCounts[id] = (badgeCounts[id] || 0) + 1;
         });
       });
       renderCountTable('topBadgesBody', badgeCounts, '', 20);
 
-      // Recent completions
-      var recent = rows.slice().sort(function (a, b) {
+      // Completion rate per case: completed count / total players, first 30 cases
+      var rateBody = document.getElementById('completionRateBody');
+      var rateRows = [];
+      for (var i = 1; i <= 30; i++) {
+        var id = String(i).padStart(3, '0');
+        var completed = caseCounts[id] || 0;
+        var rate = totalPlayers ? Math.round((completed / totalPlayers) * 100) : 0;
+        rateRows.push('<tr><td>Case ' + id + '</td><td>' + completed + ' / ' + totalPlayers + '</td><td>' + rate + '%</td></tr>');
+      }
+      rateBody.innerHTML = totalPlayers ? rateRows.join('') : '<tr><td colspan="3" class="empty">No players yet.</td></tr>';
+
+      var recent = progressRows.slice().sort(function (a, b) {
         return new Date(b.updated_at) - new Date(a.updated_at);
       }).slice(0, 25);
       var recentBody = document.getElementById('recentBody');
       recentBody.innerHTML = recent.length ? recent.map(function (r) {
         return '<tr>' +
-          '<td>' + esc(r.display_name || '(anonymous)') + '</td>' +
+          '<td>' + esc(nameByUser[r.user_id] || '(anonymous)') + '</td>' +
           '<td>' + (r.last_completed_case ? 'Case ' + esc(r.last_completed_case) : '&#8212;') + '</td>' +
           '<td>' + esc(r.total_cases_completed) + '</td>' +
           '<td>' + esc(new Date(r.updated_at).toLocaleString()) + '</td>' +
@@ -184,10 +226,7 @@ td{padding:0.45rem 0.5rem;border-bottom:1px solid rgba(201,169,122,0.08);}
       }).join('') : '<tr><td colspan="2" class="empty">No data yet.</td></tr>';
     }
 
-    // If already signed in (session persisted), skip the login form.
-    client.auth.getSession().then(function (res) {
-      if (res.data && res.data.session) showDashboard();
-    });
+    checkSessionAndRender();
   })();
   </script>
 </body>
