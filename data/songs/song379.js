@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "crow's nest ridge",
-      "crow'snestridge"
-    ],
-    "object": [
-      "notebook"
-    ],
-    "witness": [
-      "stranger"
-    ],
-    "time": [
-      "10:47",
-      "1047"
-    ],
-    "marker": [
-      "3261",
-      "marker 3261",
-      "road marker 3261",
-      "mile marker 3261",
-      "mile 3261"
-    ],
-    "direction": [
-      "into the pines",
-      "intothepines"
-    ],
-    "sound": [
-      "dry grass",
-      "drygrass"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S32C07",
-    "puzzleId": "S32C07-marker-lock",
-    "dialogueId": "S32C07-stranger",
-    "locationId": "crow-s-nest-ridge",
-    "objective": "Investigate Crow's Nest Ridge, question Stranger, recover Notebook, and learn why marker 3261 is tied to Depth Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Crow's Nest Ridge.",
-        "clue": "Dry Grass"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Notebook.",
-        "clue": "Notebook"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Stranger.",
-        "clue": "10:47"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3261.",
-        "clue": "3261"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Into the Pines instruction.",
-        "clue": "Into the Pines"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S32C07-location",
-        "type": "location",
-        "name": "Crow's Nest Ridge",
-        "inspectText": "Crow's Nest Ridge looks ordinary until Dry Grass moves through it."
-      },
-      {
-        "id": "S32C07-object",
-        "type": "evidence",
-        "name": "Notebook",
-        "inspectText": "Notebook is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S32C07-marker",
-        "type": "marker",
-        "name": "Marker 3261",
-        "inspectText": "Marker 3261 is not the answer. It is the lock."
-      },
-      {
-        "id": "S32C07-sound",
-        "type": "audio_clue",
-        "name": "Dry Grass",
-        "inspectText": "Dry Grass repeats near 10:47."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series32-The-Deep-Current/chapter07.md",
-      "novel": "generated/novels/Series32-The-Deep-Current/chapter07.md",
-      "song": "generated/songs/Series32-The-Deep-Current/song07.md"
     }
   },
   "story": {

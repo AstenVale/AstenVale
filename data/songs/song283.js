@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "brick kiln",
-      "brickkiln"
-    ],
-    "object": [
-      "broken clasp",
-      "brokenclasp"
-    ],
-    "witness": [
-      "wool sorter",
-      "woolsorter"
-    ],
-    "time": [
-      "9:44",
-      "944"
-    ],
-    "marker": [
-      "2461",
-      "marker 2461",
-      "road marker 2461",
-      "mile marker 2461",
-      "mile 2461"
-    ],
-    "direction": [
-      "across"
-    ],
-    "sound": [
-      "crow call",
-      "crowcall"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -312,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S24C07",
-    "puzzleId": "S24C07-marker-lock",
-    "dialogueId": "S24C07-wool-sorter",
-    "locationId": "brick-kiln",
-    "objective": "Investigate Brick Kiln, question Wool Sorter, recover Broken Clasp, and learn why marker 2461 is tied to Timeline Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Brick Kiln.",
-        "clue": "Crow Call"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Broken Clasp.",
-        "clue": "Broken Clasp"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Wool Sorter.",
-        "clue": "9:44"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2461.",
-        "clue": "2461"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Across instruction.",
-        "clue": "Across"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S24C07-location",
-        "type": "location",
-        "name": "Brick Kiln",
-        "inspectText": "Brick Kiln looks ordinary until Crow Call moves through it."
-      },
-      {
-        "id": "S24C07-object",
-        "type": "evidence",
-        "name": "Broken Clasp",
-        "inspectText": "Broken Clasp is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S24C07-marker",
-        "type": "marker",
-        "name": "Marker 2461",
-        "inspectText": "Marker 2461 is not the answer. It is the lock."
-      },
-      {
-        "id": "S24C07-sound",
-        "type": "audio_clue",
-        "name": "Crow Call",
-        "inspectText": "Crow Call repeats near 9:44."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series24-The-Missing-Hours/chapter07.md",
-      "novel": "generated/novels/Series24-The-Missing-Hours/chapter07.md",
-      "song": "generated/songs/Series24-The-Missing-Hours/song07.md"
     }
   },
   "story": {

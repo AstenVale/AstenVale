@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "sheep fold",
-      "sheepfold"
-    ],
-    "object": [
-      "stamp"
-    ],
-    "witness": [
-      "lamplighter"
-    ],
-    "time": [
-      "9:55",
-      "955"
-    ],
-    "marker": [
-      "1770",
-      "marker 1770",
-      "road marker 1770",
-      "mile marker 1770",
-      "mile 1770"
-    ],
-    "direction": [
-      "toward the river",
-      "towardtheriver"
-    ],
-    "sound": [
-      "paper rustle",
-      "paperrustle"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -310,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S17C08",
-    "puzzleId": "S17C08-marker-lock",
-    "dialogueId": "S17C08-lamplighter",
-    "locationId": "sheep-fold",
-    "objective": "Investigate Sheep Fold, question Lamplighter, recover Stamp, and learn why marker 1770 is tied to Frost Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Sheep Fold.",
-        "clue": "Paper Rustle"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Stamp.",
-        "clue": "Stamp"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Lamplighter.",
-        "clue": "9:55"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1770.",
-        "clue": "1770"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Toward the River instruction.",
-        "clue": "Toward the River"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S17C08-location",
-        "type": "location",
-        "name": "Sheep Fold",
-        "inspectText": "Sheep Fold looks ordinary until Paper Rustle moves through it."
-      },
-      {
-        "id": "S17C08-object",
-        "type": "evidence",
-        "name": "Stamp",
-        "inspectText": "Stamp is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S17C08-marker",
-        "type": "marker",
-        "name": "Marker 1770",
-        "inspectText": "Marker 1770 is not the answer. It is the lock."
-      },
-      {
-        "id": "S17C08-sound",
-        "type": "audio_clue",
-        "name": "Paper Rustle",
-        "inspectText": "Paper Rustle repeats near 9:55."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series17-The-Cold-Season/chapter08.md",
-      "novel": "generated/novels/Series17-The-Cold-Season/chapter08.md",
-      "song": "generated/songs/Series17-The-Cold-Season/song08.md"
     }
   },
   "story": {

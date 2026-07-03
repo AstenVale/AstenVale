@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "cooperage"
-    ],
-    "object": [
-      "badge"
-    ],
-    "witness": [
-      "river pilot",
-      "riverpilot"
-    ],
-    "time": [
-      "8:42",
-      "842"
-    ],
-    "marker": [
-      "970",
-      "marker 970",
-      "road marker 970",
-      "mile marker 970",
-      "mile 970"
-    ],
-    "direction": [
-      "south"
-    ],
-    "sound": [
-      "lantern flicker",
-      "lanternflicker"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -309,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S09C08",
-    "puzzleId": "S09C08-marker-lock",
-    "dialogueId": "S09C08-river-pilot",
-    "locationId": "cooperage",
-    "objective": "Investigate Cooperage, question River Pilot, recover Badge, and learn why marker 970 is tied to Record Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Cooperage.",
-        "clue": "Lantern Flicker"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Badge.",
-        "clue": "Badge"
-      },
-      {
-        "step": "interview",
-        "objective": "Question River Pilot.",
-        "clue": "8:42"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 970.",
-        "clue": "970"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the South instruction.",
-        "clue": "South"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S09C08-location",
-        "type": "location",
-        "name": "Cooperage",
-        "inspectText": "Cooperage looks ordinary until Lantern Flicker moves through it."
-      },
-      {
-        "id": "S09C08-object",
-        "type": "evidence",
-        "name": "Badge",
-        "inspectText": "Badge is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S09C08-marker",
-        "type": "marker",
-        "name": "Marker 970",
-        "inspectText": "Marker 970 is not the answer. It is the lock."
-      },
-      {
-        "id": "S09C08-sound",
-        "type": "audio_clue",
-        "name": "Lantern Flicker",
-        "inspectText": "Lantern Flicker repeats near 8:42."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series09-The-Keeper/chapter08.md",
-      "novel": "generated/novels/Series09-The-Keeper/chapter08.md",
-      "song": "generated/songs/Series09-The-Keeper/song08.md"
     }
   },
   "story": {

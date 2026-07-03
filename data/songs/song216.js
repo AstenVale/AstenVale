@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the pit",
-      "pit",
-      "thepit"
-    ],
-    "object": [
-      "key"
-    ],
-    "witness": [
-      "lock keeper",
-      "lockkeeper"
-    ],
-    "time": [
-      "5:40",
-      "540"
-    ],
-    "marker": [
-      "1906",
-      "marker 1906",
-      "road marker 1906",
-      "mile marker 1906",
-      "mile 1906"
-    ],
-    "direction": [
-      "below"
-    ],
-    "sound": [
-      "hammer strike",
-      "hammerstrike"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S18C12",
-    "puzzleId": "S18C12-marker-lock",
-    "dialogueId": "S18C12-lock-keeper",
-    "locationId": "the-pit",
-    "objective": "Investigate The Pit, question Lock Keeper, recover Key, and learn why marker 1906 is tied to Identity Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Pit.",
-        "clue": "Hammer Strike"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Key.",
-        "clue": "Key"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Lock Keeper.",
-        "clue": "5:40"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1906.",
-        "clue": "1906"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Below instruction.",
-        "clue": "Below"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S18C12-location",
-        "type": "location",
-        "name": "The Pit",
-        "inspectText": "The Pit looks ordinary until Hammer Strike moves through it."
-      },
-      {
-        "id": "S18C12-object",
-        "type": "evidence",
-        "name": "Key",
-        "inspectText": "Key is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S18C12-marker",
-        "type": "marker",
-        "name": "Marker 1906",
-        "inspectText": "Marker 1906 is not the answer. It is the lock."
-      },
-      {
-        "id": "S18C12-sound",
-        "type": "audio_clue",
-        "name": "Hammer Strike",
-        "inspectText": "Hammer Strike repeats near 5:40."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series18-The-Hollow-Names/chapter12.md",
-      "novel": "generated/novels/Series18-The-Hollow-Names/chapter12.md",
-      "song": "generated/songs/Series18-The-Hollow-Names/song12.md"
     }
   },
   "story": {

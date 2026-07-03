@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "forge"
-    ],
-    "object": [
-      "string of beads",
-      "stringofbeads"
-    ],
-    "witness": [
-      "cattle driver",
-      "cattledriver"
-    ],
-    "time": [
-      "4:29",
-      "429"
-    ],
-    "marker": [
-      "834",
-      "marker 834",
-      "road marker 834",
-      "mile marker 834",
-      "mile 834"
-    ],
-    "direction": [
-      "beyond"
-    ],
-    "sound": [
-      "clock ticking",
-      "clockticking"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -310,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S08C04",
-    "puzzleId": "S08C04-marker-lock",
-    "dialogueId": "S08C04-cattle-driver",
-    "locationId": "forge",
-    "objective": "Investigate Forge, question Cattle Driver, recover String of Beads, and learn why marker 834 is tied to Ash Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Forge.",
-        "clue": "Clock Ticking"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect String of Beads.",
-        "clue": "String of Beads"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Cattle Driver.",
-        "clue": "4:29"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 834.",
-        "clue": "834"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Beyond instruction.",
-        "clue": "Beyond"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S08C04-location",
-        "type": "location",
-        "name": "Forge",
-        "inspectText": "Forge looks ordinary until Clock Ticking moves through it."
-      },
-      {
-        "id": "S08C04-object",
-        "type": "evidence",
-        "name": "String of Beads",
-        "inspectText": "String of Beads is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S08C04-marker",
-        "type": "marker",
-        "name": "Marker 834",
-        "inspectText": "Marker 834 is not the answer. It is the lock."
-      },
-      {
-        "id": "S08C04-sound",
-        "type": "audio_clue",
-        "name": "Clock Ticking",
-        "inspectText": "Clock Ticking repeats near 4:29."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series08-The-Fire-Year/chapter04.md",
-      "novel": "generated/novels/Series08-The-Fire-Year/chapter04.md",
-      "song": "generated/songs/Series08-The-Fire-Year/song04.md"
     }
   },
   "story": {

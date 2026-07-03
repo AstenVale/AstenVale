@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "canning factory",
-      "canningfactory"
-    ],
-    "object": [
-      "compass"
-    ],
-    "witness": [
-      "stranger"
-    ],
-    "time": [
-      "8:00",
-      "800"
-    ],
-    "marker": [
-      "3643",
-      "marker 3643",
-      "road marker 3643",
-      "mile marker 3643",
-      "mile 3643"
-    ],
-    "direction": [
-      "into the pines",
-      "intothepines"
-    ],
-    "sound": [
-      "match strike",
-      "matchstrike"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S36C05",
-    "puzzleId": "S36C05-marker-lock",
-    "dialogueId": "S36C05-stranger",
-    "locationId": "canning-factory",
-    "objective": "Investigate Canning Factory, question Stranger, recover Compass, and learn why marker 3643 is tied to Voice Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Canning Factory.",
-        "clue": "Match Strike"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Compass.",
-        "clue": "Compass"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Stranger.",
-        "clue": "8:00"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3643.",
-        "clue": "3643"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Into the Pines instruction.",
-        "clue": "Into the Pines"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S36C05-location",
-        "type": "location",
-        "name": "Canning Factory",
-        "inspectText": "Canning Factory looks ordinary until Match Strike moves through it."
-      },
-      {
-        "id": "S36C05-object",
-        "type": "evidence",
-        "name": "Compass",
-        "inspectText": "Compass is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S36C05-marker",
-        "type": "marker",
-        "name": "Marker 3643",
-        "inspectText": "Marker 3643 is not the answer. It is the lock."
-      },
-      {
-        "id": "S36C05-sound",
-        "type": "audio_clue",
-        "name": "Match Strike",
-        "inspectText": "Match Strike repeats near 8:00."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series36-The-Night-Caller/chapter05.md",
-      "novel": "generated/novels/Series36-The-Night-Caller/chapter05.md",
-      "song": "generated/songs/Series36-The-Night-Caller/song05.md"
     }
   },
   "story": {

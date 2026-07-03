@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "calico alley",
-      "calicoalley"
-    ],
-    "object": [
-      "knife"
-    ],
-    "witness": [
-      "sexton"
-    ],
-    "time": [
-      "3:49",
-      "349"
-    ],
-    "marker": [
-      "2543",
-      "marker 2543",
-      "road marker 2543",
-      "mile marker 2543",
-      "mile 2543"
-    ],
-    "direction": [
-      "toward the river",
-      "towardtheriver"
-    ],
-    "sound": [
-      "knife scrape",
-      "knifescrape"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S25C05",
-    "puzzleId": "S25C05-marker-lock",
-    "dialogueId": "S25C05-sexton",
-    "locationId": "calico-alley",
-    "objective": "Investigate Calico Alley, question Sexton, recover Knife, and learn why marker 2543 is tied to Resonance Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Calico Alley.",
-        "clue": "Knife Scrape"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Knife.",
-        "clue": "Knife"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Sexton.",
-        "clue": "3:49"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2543.",
-        "clue": "2543"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Toward the River instruction.",
-        "clue": "Toward the River"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S25C05-location",
-        "type": "location",
-        "name": "Calico Alley",
-        "inspectText": "Calico Alley looks ordinary until Knife Scrape moves through it."
-      },
-      {
-        "id": "S25C05-object",
-        "type": "evidence",
-        "name": "Knife",
-        "inspectText": "Knife is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S25C05-marker",
-        "type": "marker",
-        "name": "Marker 2543",
-        "inspectText": "Marker 2543 is not the answer. It is the lock."
-      },
-      {
-        "id": "S25C05-sound",
-        "type": "audio_clue",
-        "name": "Knife Scrape",
-        "inspectText": "Knife Scrape repeats near 3:49."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series25-The-Echo-Chamber/chapter05.md",
-      "novel": "generated/novels/Series25-The-Echo-Chamber/chapter05.md",
-      "song": "generated/songs/Series25-The-Echo-Chamber/song05.md"
     }
   },
   "story": {

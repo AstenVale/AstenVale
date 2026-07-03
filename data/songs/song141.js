@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "tannery"
-    ],
-    "object": [
-      "charred paper",
-      "charredpaper"
-    ],
-    "witness": [
-      "land agent",
-      "landagent"
-    ],
-    "time": [
-      "6:06",
-      "606"
-    ],
-    "marker": [
-      "1279",
-      "marker 1279",
-      "road marker 1279",
-      "mile marker 1279",
-      "mile 1279"
-    ],
-    "direction": [
-      "under"
-    ],
-    "sound": [
-      "train whistle",
-      "trainwhistle"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S12C09",
-    "puzzleId": "S12C09-marker-lock",
-    "dialogueId": "S12C09-land-agent",
-    "locationId": "tannery",
-    "objective": "Investigate Tannery, question Land Agent, recover Charred Paper, and learn why marker 1279 is tied to Estate Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Tannery.",
-        "clue": "Train Whistle"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Charred Paper.",
-        "clue": "Charred Paper"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Land Agent.",
-        "clue": "6:06"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1279.",
-        "clue": "1279"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Under instruction.",
-        "clue": "Under"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S12C09-location",
-        "type": "location",
-        "name": "Tannery",
-        "inspectText": "Tannery looks ordinary until Train Whistle moves through it."
-      },
-      {
-        "id": "S12C09-object",
-        "type": "evidence",
-        "name": "Charred Paper",
-        "inspectText": "Charred Paper is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S12C09-marker",
-        "type": "marker",
-        "name": "Marker 1279",
-        "inspectText": "Marker 1279 is not the answer. It is the lock."
-      },
-      {
-        "id": "S12C09-sound",
-        "type": "audio_clue",
-        "name": "Train Whistle",
-        "inspectText": "Train Whistle repeats near 6:06."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series12-The-Inheritance/chapter09.md",
-      "novel": "generated/novels/Series12-The-Inheritance/chapter09.md",
-      "song": "generated/songs/Series12-The-Inheritance/song09.md"
     }
   },
   "story": {

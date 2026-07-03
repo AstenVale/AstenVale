@@ -61,39 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the depot",
-      "depot",
-      "thedepot"
-    ],
-    "object": [
-      "handkerchief"
-    ],
-    "witness": [
-      "rag picker",
-      "ragpicker"
-    ],
-    "time": [
-      "8:17",
-      "817"
-    ],
-    "marker": [
-      "1743",
-      "marker 1743",
-      "road marker 1743",
-      "mile marker 1743",
-      "mile 1743"
-    ],
-    "direction": [
-      "into the pines",
-      "intothepines"
-    ],
-    "sound": [
-      "knife scrape",
-      "knifescrape"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -312,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S17C05",
-    "puzzleId": "S17C05-marker-lock",
-    "dialogueId": "S17C05-rag-picker",
-    "locationId": "the-depot",
-    "objective": "Investigate The Depot, question Rag Picker, recover Handkerchief, and learn why marker 1743 is tied to Frost Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Depot.",
-        "clue": "Knife Scrape"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Handkerchief.",
-        "clue": "Handkerchief"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Rag Picker.",
-        "clue": "8:17"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1743.",
-        "clue": "1743"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Into the Pines instruction.",
-        "clue": "Into the Pines"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S17C05-location",
-        "type": "location",
-        "name": "The Depot",
-        "inspectText": "The Depot looks ordinary until Knife Scrape moves through it."
-      },
-      {
-        "id": "S17C05-object",
-        "type": "evidence",
-        "name": "Handkerchief",
-        "inspectText": "Handkerchief is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S17C05-marker",
-        "type": "marker",
-        "name": "Marker 1743",
-        "inspectText": "Marker 1743 is not the answer. It is the lock."
-      },
-      {
-        "id": "S17C05-sound",
-        "type": "audio_clue",
-        "name": "Knife Scrape",
-        "inspectText": "Knife Scrape repeats near 8:17."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series17-The-Cold-Season/chapter05.md",
-      "novel": "generated/novels/Series17-The-Cold-Season/chapter05.md",
-      "song": "generated/songs/Series17-The-Cold-Season/song05.md"
     }
   },
   "story": {

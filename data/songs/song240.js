@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "cider house",
-      "ciderhouse"
-    ],
-    "object": [
-      "flint stone",
-      "flintstone"
-    ],
-    "witness": [
-      "salt seller",
-      "saltseller"
-    ],
-    "time": [
-      "3:03",
-      "303"
-    ],
-    "marker": [
-      "2106",
-      "marker 2106",
-      "road marker 2106",
-      "mile marker 2106",
-      "mile 2106"
-    ],
-    "direction": [
-      "under"
-    ],
-    "sound": [
-      "fire crackling",
-      "firecrackling"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -312,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S20C12",
-    "puzzleId": "S20C12-marker-lock",
-    "dialogueId": "S20C12-salt-seller",
-    "locationId": "cider-house",
-    "objective": "Investigate Cider House, question Salt Seller, recover Flint Stone, and learn why marker 2106 is tied to Night Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Cider House.",
-        "clue": "Fire Crackling"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Flint Stone.",
-        "clue": "Flint Stone"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Salt Seller.",
-        "clue": "3:03"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2106.",
-        "clue": "2106"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Under instruction.",
-        "clue": "Under"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S20C12-location",
-        "type": "location",
-        "name": "Cider House",
-        "inspectText": "Cider House looks ordinary until Fire Crackling moves through it."
-      },
-      {
-        "id": "S20C12-object",
-        "type": "evidence",
-        "name": "Flint Stone",
-        "inspectText": "Flint Stone is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S20C12-marker",
-        "type": "marker",
-        "name": "Marker 2106",
-        "inspectText": "Marker 2106 is not the answer. It is the lock."
-      },
-      {
-        "id": "S20C12-sound",
-        "type": "audio_clue",
-        "name": "Fire Crackling",
-        "inspectText": "Fire Crackling repeats near 3:03."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series20-The-Midnight-Circuit/chapter12.md",
-      "novel": "generated/novels/Series20-The-Midnight-Circuit/chapter12.md",
-      "song": "generated/songs/Series20-The-Midnight-Circuit/song12.md"
     }
   },
   "story": {

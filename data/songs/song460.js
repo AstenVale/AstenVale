@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "print shop",
-      "printshop"
-    ],
-    "object": [
-      "hollow acorn",
-      "hollowacorn"
-    ],
-    "witness": [
-      "child"
-    ],
-    "time": [
-      "2:19",
-      "219"
-    ],
-    "marker": [
-      "3934",
-      "marker 3934",
-      "road marker 3934",
-      "mile marker 3934",
-      "mile 3934"
-    ],
-    "direction": [
-      "further in",
-      "furtherin"
-    ],
-    "sound": [
-      "lid of a tin",
-      "lidofatin"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S39C04",
-    "puzzleId": "S39C04-marker-lock",
-    "dialogueId": "S39C04-child",
-    "locationId": "print-shop",
-    "objective": "Investigate Print Shop, question Child, recover Hollow Acorn, and learn why marker 3934 is tied to Rider Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Print Shop.",
-        "clue": "Lid of a Tin"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Hollow Acorn.",
-        "clue": "Hollow Acorn"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Child.",
-        "clue": "2:19"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3934.",
-        "clue": "3934"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Further In instruction.",
-        "clue": "Further In"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S39C04-location",
-        "type": "location",
-        "name": "Print Shop",
-        "inspectText": "Print Shop looks ordinary until Lid of a Tin moves through it."
-      },
-      {
-        "id": "S39C04-object",
-        "type": "evidence",
-        "name": "Hollow Acorn",
-        "inspectText": "Hollow Acorn is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S39C04-marker",
-        "type": "marker",
-        "name": "Marker 3934",
-        "inspectText": "Marker 3934 is not the answer. It is the lock."
-      },
-      {
-        "id": "S39C04-sound",
-        "type": "audio_clue",
-        "name": "Lid of a Tin",
-        "inspectText": "Lid of a Tin repeats near 2:19."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series39-The-Pale-Horse/chapter04.md",
-      "novel": "generated/novels/Series39-The-Pale-Horse/chapter04.md",
-      "song": "generated/songs/Series39-The-Pale-Horse/song04.md"
     }
   },
   "story": {

@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "crow's nest ridge",
-      "crow'snestridge"
-    ],
-    "object": [
-      "shard of mirror",
-      "shardofmirror"
-    ],
-    "witness": [
-      "conductor"
-    ],
-    "time": [
-      "10:51",
-      "1051"
-    ],
-    "marker": [
-      "3806",
-      "marker 3806",
-      "road marker 3806",
-      "mile marker 3806",
-      "mile 3806"
-    ],
-    "direction": [
-      "over"
-    ],
-    "sound": [
-      "boot heel",
-      "bootheel"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S37C12",
-    "puzzleId": "S37C12-marker-lock",
-    "dialogueId": "S37C12-conductor",
-    "locationId": "crow-s-nest-ridge",
-    "objective": "Investigate Crow's Nest Ridge, question Conductor, recover Shard of Mirror, and learn why marker 3806 is tied to Outpost Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Crow's Nest Ridge.",
-        "clue": "Boot Heel"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Shard of Mirror.",
-        "clue": "Shard of Mirror"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Conductor.",
-        "clue": "10:51"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3806.",
-        "clue": "3806"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Over instruction.",
-        "clue": "Over"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S37C12-location",
-        "type": "location",
-        "name": "Crow's Nest Ridge",
-        "inspectText": "Crow's Nest Ridge looks ordinary until Boot Heel moves through it."
-      },
-      {
-        "id": "S37C12-object",
-        "type": "evidence",
-        "name": "Shard of Mirror",
-        "inspectText": "Shard of Mirror is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S37C12-marker",
-        "type": "marker",
-        "name": "Marker 3806",
-        "inspectText": "Marker 3806 is not the answer. It is the lock."
-      },
-      {
-        "id": "S37C12-sound",
-        "type": "audio_clue",
-        "name": "Boot Heel",
-        "inspectText": "Boot Heel repeats near 10:51."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series37-The-Abandoned-Post/chapter12.md",
-      "novel": "generated/novels/Series37-The-Abandoned-Post/chapter12.md",
-      "song": "generated/songs/Series37-The-Abandoned-Post/song12.md"
     }
   },
   "story": {

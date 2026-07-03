@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "sheriff's office",
-      "sheriff'soffice"
-    ],
-    "object": [
-      "handkerchief"
-    ],
-    "witness": [
-      "peddler"
-    ],
-    "time": [
-      "12:44",
-      "1244"
-    ],
-    "marker": [
-      "4388",
-      "marker 4388",
-      "road marker 4388",
-      "mile marker 4388",
-      "mile 4388"
-    ],
-    "direction": [
-      "back the way you came",
-      "backthewayyoucame"
-    ],
-    "sound": [
-      "fog horn",
-      "foghorn"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S43C10",
-    "puzzleId": "S43C10-marker-lock",
-    "dialogueId": "S43C10-peddler",
-    "locationId": "sheriff-s-office",
-    "objective": "Investigate Sheriff's Office, question Peddler, recover Handkerchief, and learn why marker 4388 is tied to Identity Vault II.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Sheriff's Office.",
-        "clue": "Fog Horn"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Handkerchief.",
-        "clue": "Handkerchief"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Peddler.",
-        "clue": "12:44"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4388.",
-        "clue": "4388"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Back the Way You Came instruction.",
-        "clue": "Back the Way You Came"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S43C10-location",
-        "type": "location",
-        "name": "Sheriff's Office",
-        "inspectText": "Sheriff's Office looks ordinary until Fog Horn moves through it."
-      },
-      {
-        "id": "S43C10-object",
-        "type": "evidence",
-        "name": "Handkerchief",
-        "inspectText": "Handkerchief is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S43C10-marker",
-        "type": "marker",
-        "name": "Marker 4388",
-        "inspectText": "Marker 4388 is not the answer. It is the lock."
-      },
-      {
-        "id": "S43C10-sound",
-        "type": "audio_clue",
-        "name": "Fog Horn",
-        "inspectText": "Fog Horn repeats near 12:44."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series43-The-False-Name/chapter10.md",
-      "novel": "generated/novels/Series43-The-False-Name/chapter10.md",
-      "song": "generated/songs/Series43-The-False-Name/song10.md"
     }
   },
   "story": {

@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "print shop",
-      "printshop"
-    ],
-    "object": [
-      "ship manifest",
-      "shipmanifest"
-    ],
-    "witness": [
-      "child"
-    ],
-    "time": [
-      "8:06",
-      "806"
-    ],
-    "marker": [
-      "2507",
-      "marker 2507",
-      "road marker 2507",
-      "mile marker 2507",
-      "mile 2507"
-    ],
-    "direction": [
-      "back the way you came",
-      "backthewayyoucame"
-    ],
-    "sound": [
-      "coal shifting",
-      "coalshifting"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -301,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S25C01",
-    "puzzleId": "S25C01-marker-lock",
-    "dialogueId": "S25C01-child",
-    "locationId": "print-shop",
-    "objective": "Investigate Print Shop, question Child, recover Ship Manifest, and learn why marker 2507 is tied to Resonance Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Print Shop.",
-        "clue": "Coal Shifting"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Ship Manifest.",
-        "clue": "Ship Manifest"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Child.",
-        "clue": "8:06"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2507.",
-        "clue": "2507"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Back the Way You Came instruction.",
-        "clue": "Back the Way You Came"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S25C01-location",
-        "type": "location",
-        "name": "Print Shop",
-        "inspectText": "Print Shop looks ordinary until Coal Shifting moves through it."
-      },
-      {
-        "id": "S25C01-object",
-        "type": "evidence",
-        "name": "Ship Manifest",
-        "inspectText": "Ship Manifest is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S25C01-marker",
-        "type": "marker",
-        "name": "Marker 2507",
-        "inspectText": "Marker 2507 is not the answer. It is the lock."
-      },
-      {
-        "id": "S25C01-sound",
-        "type": "audio_clue",
-        "name": "Coal Shifting",
-        "inspectText": "Coal Shifting repeats near 8:06."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series25-The-Echo-Chamber/chapter01.md",
-      "novel": "generated/novels/Series25-The-Echo-Chamber/chapter01.md",
-      "song": "generated/songs/Series25-The-Echo-Chamber/song01.md"
     }
   },
   "story": {

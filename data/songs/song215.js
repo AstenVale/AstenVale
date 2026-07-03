@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "jail"
-    ],
-    "object": [
-      "broken clasp",
-      "brokenclasp"
-    ],
-    "witness": [
-      "woodsman"
-    ],
-    "time": [
-      "3:49",
-      "349"
-    ],
-    "marker": [
-      "1897",
-      "marker 1897",
-      "road marker 1897",
-      "mile marker 1897",
-      "mile 1897"
-    ],
-    "direction": [
-      "down the hollow",
-      "downthehollow"
-    ],
-    "sound": [
-      "paper rustle",
-      "paperrustle"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -310,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S18C11",
-    "puzzleId": "S18C11-marker-lock",
-    "dialogueId": "S18C11-woodsman",
-    "locationId": "jail",
-    "objective": "Investigate Jail, question Woodsman, recover Broken Clasp, and learn why marker 1897 is tied to Identity Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Jail.",
-        "clue": "Paper Rustle"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Broken Clasp.",
-        "clue": "Broken Clasp"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Woodsman.",
-        "clue": "3:49"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1897.",
-        "clue": "1897"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Down the Hollow instruction.",
-        "clue": "Down the Hollow"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S18C11-location",
-        "type": "location",
-        "name": "Jail",
-        "inspectText": "Jail looks ordinary until Paper Rustle moves through it."
-      },
-      {
-        "id": "S18C11-object",
-        "type": "evidence",
-        "name": "Broken Clasp",
-        "inspectText": "Broken Clasp is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S18C11-marker",
-        "type": "marker",
-        "name": "Marker 1897",
-        "inspectText": "Marker 1897 is not the answer. It is the lock."
-      },
-      {
-        "id": "S18C11-sound",
-        "type": "audio_clue",
-        "name": "Paper Rustle",
-        "inspectText": "Paper Rustle repeats near 3:49."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series18-The-Hollow-Names/chapter11.md",
-      "novel": "generated/novels/Series18-The-Hollow-Names/chapter11.md",
-      "song": "generated/songs/Series18-The-Hollow-Names/song11.md"
     }
   },
   "story": {

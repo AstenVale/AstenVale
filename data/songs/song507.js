@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "tunnel"
-    ],
-    "object": [
-      "wax tablet",
-      "waxtablet"
-    ],
-    "witness": [
-      "fence mender",
-      "fencemender"
-    ],
-    "time": [
-      "2:47",
-      "247"
-    ],
-    "marker": [
-      "4325",
-      "marker 4325",
-      "road marker 4325",
-      "mile marker 4325",
-      "mile 4325"
-    ],
-    "direction": [
-      "below"
-    ],
-    "sound": [
-      "cellar door",
-      "cellardoor"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S43C03",
-    "puzzleId": "S43C03-marker-lock",
-    "dialogueId": "S43C03-fence-mender",
-    "locationId": "tunnel",
-    "objective": "Investigate Tunnel, question Fence Mender, recover Wax Tablet, and learn why marker 4325 is tied to Identity Vault II.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Tunnel.",
-        "clue": "Cellar Door"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Wax Tablet.",
-        "clue": "Wax Tablet"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Fence Mender.",
-        "clue": "2:47"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4325.",
-        "clue": "4325"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Below instruction.",
-        "clue": "Below"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S43C03-location",
-        "type": "location",
-        "name": "Tunnel",
-        "inspectText": "Tunnel looks ordinary until Cellar Door moves through it."
-      },
-      {
-        "id": "S43C03-object",
-        "type": "evidence",
-        "name": "Wax Tablet",
-        "inspectText": "Wax Tablet is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S43C03-marker",
-        "type": "marker",
-        "name": "Marker 4325",
-        "inspectText": "Marker 4325 is not the answer. It is the lock."
-      },
-      {
-        "id": "S43C03-sound",
-        "type": "audio_clue",
-        "name": "Cellar Door",
-        "inspectText": "Cellar Door repeats near 2:47."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series43-The-False-Name/chapter03.md",
-      "novel": "generated/novels/Series43-The-False-Name/chapter03.md",
-      "song": "generated/songs/Series43-The-False-Name/song03.md"
     }
   },
   "story": {

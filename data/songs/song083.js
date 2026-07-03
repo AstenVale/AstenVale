@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "grain mill",
-      "grainmill"
-    ],
-    "object": [
-      "charcoal sketch",
-      "charcoalsketch"
-    ],
-    "witness": [
-      "miller"
-    ],
-    "time": [
-      "1:58",
-      "158"
-    ],
-    "marker": [
-      "797",
-      "marker 797",
-      "road marker 797",
-      "mile marker 797",
-      "mile 797"
-    ],
-    "direction": [
-      "beyond"
-    ],
-    "sound": [
-      "knife scrape",
-      "knifescrape"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S07C11",
-    "puzzleId": "S07C11-marker-lock",
-    "dialogueId": "S07C11-miller",
-    "locationId": "grain-mill",
-    "objective": "Investigate Grain Mill, question Miller, recover Charcoal Sketch, and learn why marker 797 is tied to Parallel Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Grain Mill.",
-        "clue": "Knife Scrape"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Charcoal Sketch.",
-        "clue": "Charcoal Sketch"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Miller.",
-        "clue": "1:58"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 797.",
-        "clue": "797"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Beyond instruction.",
-        "clue": "Beyond"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S07C11-location",
-        "type": "location",
-        "name": "Grain Mill",
-        "inspectText": "Grain Mill looks ordinary until Knife Scrape moves through it."
-      },
-      {
-        "id": "S07C11-object",
-        "type": "evidence",
-        "name": "Charcoal Sketch",
-        "inspectText": "Charcoal Sketch is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S07C11-marker",
-        "type": "marker",
-        "name": "Marker 797",
-        "inspectText": "Marker 797 is not the answer. It is the lock."
-      },
-      {
-        "id": "S07C11-sound",
-        "type": "audio_clue",
-        "name": "Knife Scrape",
-        "inspectText": "Knife Scrape repeats near 1:58."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series07-The-Second-Family/chapter11.md",
-      "novel": "generated/novels/Series07-The-Second-Family/chapter11.md",
-      "song": "generated/songs/Series07-The-Second-Family/song11.md"
     }
   },
   "story": {

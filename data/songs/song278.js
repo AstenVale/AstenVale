@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "old bridge",
-      "oldbridge"
-    ],
-    "object": [
-      "rope"
-    ],
-    "witness": [
-      "river pilot",
-      "riverpilot"
-    ],
-    "time": [
-      "8:42",
-      "842"
-    ],
-    "marker": [
-      "2416",
-      "marker 2416",
-      "road marker 2416",
-      "mile marker 2416",
-      "mile 2416"
-    ],
-    "direction": [
-      "across"
-    ],
-    "sound": [
-      "crow on wire",
-      "crowonwire"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S24C02",
-    "puzzleId": "S24C02-marker-lock",
-    "dialogueId": "S24C02-river-pilot",
-    "locationId": "old-bridge",
-    "objective": "Investigate Old Bridge, question River Pilot, recover Rope, and learn why marker 2416 is tied to Timeline Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Old Bridge.",
-        "clue": "Crow on Wire"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Rope.",
-        "clue": "Rope"
-      },
-      {
-        "step": "interview",
-        "objective": "Question River Pilot.",
-        "clue": "8:42"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2416.",
-        "clue": "2416"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Across instruction.",
-        "clue": "Across"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S24C02-location",
-        "type": "location",
-        "name": "Old Bridge",
-        "inspectText": "Old Bridge looks ordinary until Crow on Wire moves through it."
-      },
-      {
-        "id": "S24C02-object",
-        "type": "evidence",
-        "name": "Rope",
-        "inspectText": "Rope is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S24C02-marker",
-        "type": "marker",
-        "name": "Marker 2416",
-        "inspectText": "Marker 2416 is not the answer. It is the lock."
-      },
-      {
-        "id": "S24C02-sound",
-        "type": "audio_clue",
-        "name": "Crow on Wire",
-        "inspectText": "Crow on Wire repeats near 8:42."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series24-The-Missing-Hours/chapter02.md",
-      "novel": "generated/novels/Series24-The-Missing-Hours/chapter02.md",
-      "song": "generated/songs/Series24-The-Missing-Hours/song02.md"
     }
   },
   "story": {

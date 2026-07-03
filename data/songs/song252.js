@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "tunnel"
-    ],
-    "object": [
-      "bent nail",
-      "bentnail"
-    ],
-    "witness": [
-      "census taker",
-      "censustaker"
-    ],
-    "time": [
-      "3:44",
-      "344"
-    ],
-    "marker": [
-      "2206",
-      "marker 2206",
-      "road marker 2206",
-      "mile marker 2206",
-      "mile 2206"
-    ],
-    "direction": [
-      "ahead"
-    ],
-    "sound": [
-      "dog bark at nothing",
-      "dogbarkatnothing"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S21C12",
-    "puzzleId": "S21C12-marker-lock",
-    "dialogueId": "S21C12-census-taker",
-    "locationId": "tunnel",
-    "objective": "Investigate Tunnel, question Census Taker, recover Bent Nail, and learn why marker 2206 is tied to Bark Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Tunnel.",
-        "clue": "Dog Bark at Nothing"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Bent Nail.",
-        "clue": "Bent Nail"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Census Taker.",
-        "clue": "3:44"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2206.",
-        "clue": "2206"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Ahead instruction.",
-        "clue": "Ahead"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S21C12-location",
-        "type": "location",
-        "name": "Tunnel",
-        "inspectText": "Tunnel looks ordinary until Dog Bark at Nothing moves through it."
-      },
-      {
-        "id": "S21C12-object",
-        "type": "evidence",
-        "name": "Bent Nail",
-        "inspectText": "Bent Nail is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S21C12-marker",
-        "type": "marker",
-        "name": "Marker 2206",
-        "inspectText": "Marker 2206 is not the answer. It is the lock."
-      },
-      {
-        "id": "S21C12-sound",
-        "type": "audio_clue",
-        "name": "Dog Bark at Nothing",
-        "inspectText": "Dog Bark at Nothing repeats near 3:44."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series21-The-Witness-Tree/chapter12.md",
-      "novel": "generated/novels/Series21-The-Witness-Tree/chapter12.md",
-      "song": "generated/songs/Series21-The-Witness-Tree/song12.md"
     }
   },
   "story": {

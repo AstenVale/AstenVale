@@ -61,35 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "post office",
-      "postoffice"
-    ],
-    "object": [
-      "telegram"
-    ],
-    "witness": [
-      "judge"
-    ],
-    "time": [
-      "4:12",
-      "412"
-    ],
-    "marker": [
-      "2388",
-      "marker 2388",
-      "road marker 2388",
-      "mile marker 2388",
-      "mile 2388"
-    ],
-    "direction": [
-      "away"
-    ],
-    "sound": [
-      "millstone"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -298,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S23C10",
-    "puzzleId": "S23C10-marker-lock",
-    "dialogueId": "S23C10-judge",
-    "locationId": "post-office",
-    "objective": "Investigate Post Office, question Judge, recover Telegram, and learn why marker 2388 is tied to Document Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Post Office.",
-        "clue": "Millstone"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Telegram.",
-        "clue": "Telegram"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Judge.",
-        "clue": "4:12"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2388.",
-        "clue": "2388"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Away instruction.",
-        "clue": "Away"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S23C10-location",
-        "type": "location",
-        "name": "Post Office",
-        "inspectText": "Post Office looks ordinary until Millstone moves through it."
-      },
-      {
-        "id": "S23C10-object",
-        "type": "evidence",
-        "name": "Telegram",
-        "inspectText": "Telegram is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S23C10-marker",
-        "type": "marker",
-        "name": "Marker 2388",
-        "inspectText": "Marker 2388 is not the answer. It is the lock."
-      },
-      {
-        "id": "S23C10-sound",
-        "type": "audio_clue",
-        "name": "Millstone",
-        "inspectText": "Millstone repeats near 4:12."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series23-The-Paper-Trail/chapter10.md",
-      "novel": "generated/novels/Series23-The-Paper-Trail/chapter10.md",
-      "song": "generated/songs/Series23-The-Paper-Trail/song10.md"
     }
   },
   "story": {

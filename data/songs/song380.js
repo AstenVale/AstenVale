@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the bluff",
-      "bluff",
-      "thebluff"
-    ],
-    "object": [
-      "charred paper",
-      "charredpaper"
-    ],
-    "witness": [
-      "midwife"
-    ],
-    "time": [
-      "12:44",
-      "1244"
-    ],
-    "marker": [
-      "3270",
-      "marker 3270",
-      "road marker 3270",
-      "mile marker 3270",
-      "mile 3270"
-    ],
-    "direction": [
-      "back"
-    ],
-    "sound": [
-      "door creak",
-      "doorcreak"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -301,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S32C08",
-    "puzzleId": "S32C08-marker-lock",
-    "dialogueId": "S32C08-midwife",
-    "locationId": "the-bluff",
-    "objective": "Investigate The Bluff, question Midwife, recover Charred Paper, and learn why marker 3270 is tied to Depth Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Bluff.",
-        "clue": "Door Creak"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Charred Paper.",
-        "clue": "Charred Paper"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Midwife.",
-        "clue": "12:44"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3270.",
-        "clue": "3270"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Back instruction.",
-        "clue": "Back"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S32C08-location",
-        "type": "location",
-        "name": "The Bluff",
-        "inspectText": "The Bluff looks ordinary until Door Creak moves through it."
-      },
-      {
-        "id": "S32C08-object",
-        "type": "evidence",
-        "name": "Charred Paper",
-        "inspectText": "Charred Paper is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S32C08-marker",
-        "type": "marker",
-        "name": "Marker 3270",
-        "inspectText": "Marker 3270 is not the answer. It is the lock."
-      },
-      {
-        "id": "S32C08-sound",
-        "type": "audio_clue",
-        "name": "Door Creak",
-        "inspectText": "Door Creak repeats near 12:44."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series32-The-Deep-Current/chapter08.md",
-      "novel": "generated/novels/Series32-The-Deep-Current/chapter08.md",
-      "song": "generated/songs/Series32-The-Deep-Current/song08.md"
     }
   },
   "story": {

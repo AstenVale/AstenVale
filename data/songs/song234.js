@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "cooper's yard",
-      "cooper'syard"
-    ],
-    "object": [
-      "bone button",
-      "bonebutton"
-    ],
-    "witness": [
-      "cider presser",
-      "ciderpresser"
-    ],
-    "time": [
-      "7:00",
-      "700"
-    ],
-    "marker": [
-      "2052",
-      "marker 2052",
-      "road marker 2052",
-      "mile marker 2052",
-      "mile 2052"
-    ],
-    "direction": [
-      "behind"
-    ],
-    "sound": [
-      "hammer on anvil",
-      "hammeronanvil"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -312,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S20C06",
-    "puzzleId": "S20C06-marker-lock",
-    "dialogueId": "S20C06-cider-presser",
-    "locationId": "cooper-s-yard",
-    "objective": "Investigate Cooper's Yard, question Cider Presser, recover Bone Button, and learn why marker 2052 is tied to Night Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Cooper's Yard.",
-        "clue": "Hammer on Anvil"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Bone Button.",
-        "clue": "Bone Button"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Cider Presser.",
-        "clue": "7:00"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2052.",
-        "clue": "2052"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Behind instruction.",
-        "clue": "Behind"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S20C06-location",
-        "type": "location",
-        "name": "Cooper's Yard",
-        "inspectText": "Cooper's Yard looks ordinary until Hammer on Anvil moves through it."
-      },
-      {
-        "id": "S20C06-object",
-        "type": "evidence",
-        "name": "Bone Button",
-        "inspectText": "Bone Button is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S20C06-marker",
-        "type": "marker",
-        "name": "Marker 2052",
-        "inspectText": "Marker 2052 is not the answer. It is the lock."
-      },
-      {
-        "id": "S20C06-sound",
-        "type": "audio_clue",
-        "name": "Hammer on Anvil",
-        "inspectText": "Hammer on Anvil repeats near 7:00."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series20-The-Midnight-Circuit/chapter06.md",
-      "novel": "generated/novels/Series20-The-Midnight-Circuit/chapter06.md",
-      "song": "generated/songs/Series20-The-Midnight-Circuit/song06.md"
     }
   },
   "story": {

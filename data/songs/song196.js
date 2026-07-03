@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "stone step",
-      "stonestep"
-    ],
-    "object": [
-      "shard of mirror",
-      "shardofmirror"
-    ],
-    "witness": [
-      "preacher"
-    ],
-    "time": [
-      "3:58",
-      "358"
-    ],
-    "marker": [
-      "1734",
-      "marker 1734",
-      "road marker 1734",
-      "mile marker 1734",
-      "mile 1734"
-    ],
-    "direction": [
-      "south"
-    ],
-    "sound": [
-      "cannon bolt",
-      "cannonbolt"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -310,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S17C04",
-    "puzzleId": "S17C04-marker-lock",
-    "dialogueId": "S17C04-preacher",
-    "locationId": "stone-step",
-    "objective": "Investigate Stone Step, question Preacher, recover Shard of Mirror, and learn why marker 1734 is tied to Frost Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Stone Step.",
-        "clue": "Cannon Bolt"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Shard of Mirror.",
-        "clue": "Shard of Mirror"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Preacher.",
-        "clue": "3:58"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1734.",
-        "clue": "1734"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the South instruction.",
-        "clue": "South"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S17C04-location",
-        "type": "location",
-        "name": "Stone Step",
-        "inspectText": "Stone Step looks ordinary until Cannon Bolt moves through it."
-      },
-      {
-        "id": "S17C04-object",
-        "type": "evidence",
-        "name": "Shard of Mirror",
-        "inspectText": "Shard of Mirror is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S17C04-marker",
-        "type": "marker",
-        "name": "Marker 1734",
-        "inspectText": "Marker 1734 is not the answer. It is the lock."
-      },
-      {
-        "id": "S17C04-sound",
-        "type": "audio_clue",
-        "name": "Cannon Bolt",
-        "inspectText": "Cannon Bolt repeats near 3:58."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series17-The-Cold-Season/chapter04.md",
-      "novel": "generated/novels/Series17-The-Cold-Season/chapter04.md",
-      "song": "generated/songs/Series17-The-Cold-Season/song04.md"
     }
   },
   "story": {

@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "mill house",
-      "millhouse"
-    ],
-    "object": [
-      "pocket watch",
-      "pocketwatch"
-    ],
-    "witness": [
-      "lamplighter"
-    ],
-    "time": [
-      "6:06",
-      "606"
-    ],
-    "marker": [
-      "888",
-      "marker 888",
-      "road marker 888",
-      "mile marker 888",
-      "mile 888"
-    ],
-    "direction": [
-      "past the tree line",
-      "pastthetreeline"
-    ],
-    "sound": [
-      "broken string",
-      "brokenstring"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -301,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S08C10",
-    "puzzleId": "S08C10-marker-lock",
-    "dialogueId": "S08C10-lamplighter",
-    "locationId": "mill-house",
-    "objective": "Investigate Mill House, question Lamplighter, recover Pocket Watch, and learn why marker 888 is tied to Ash Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Mill House.",
-        "clue": "Broken String"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Pocket Watch.",
-        "clue": "Pocket Watch"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Lamplighter.",
-        "clue": "6:06"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 888.",
-        "clue": "888"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Past the Tree Line instruction.",
-        "clue": "Past the Tree Line"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S08C10-location",
-        "type": "location",
-        "name": "Mill House",
-        "inspectText": "Mill House looks ordinary until Broken String moves through it."
-      },
-      {
-        "id": "S08C10-object",
-        "type": "evidence",
-        "name": "Pocket Watch",
-        "inspectText": "Pocket Watch is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S08C10-marker",
-        "type": "marker",
-        "name": "Marker 888",
-        "inspectText": "Marker 888 is not the answer. It is the lock."
-      },
-      {
-        "id": "S08C10-sound",
-        "type": "audio_clue",
-        "name": "Broken String",
-        "inspectText": "Broken String repeats near 6:06."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series08-The-Fire-Year/chapter10.md",
-      "novel": "generated/novels/Series08-The-Fire-Year/chapter10.md",
-      "song": "generated/songs/Series08-The-Fire-Year/song10.md"
     }
   },
   "story": {

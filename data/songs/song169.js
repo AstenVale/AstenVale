@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "collapsed mine",
-      "collapsedmine"
-    ],
-    "object": [
-      "boot"
-    ],
-    "witness": [
-      "night watchman",
-      "nightwatchman"
-    ],
-    "time": [
-      "4:03",
-      "403"
-    ],
-    "marker": [
-      "1507",
-      "marker 1507",
-      "road marker 1507",
-      "mile marker 1507",
-      "mile 1507"
-    ],
-    "direction": [
-      "over"
-    ],
-    "sound": [
-      "saw cutting",
-      "sawcutting"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S15C01",
-    "puzzleId": "S15C01-marker-lock",
-    "dialogueId": "S15C01-night-watchman",
-    "locationId": "collapsed-mine",
-    "objective": "Investigate Collapsed Mine, question Night Watchman, recover Boot, and learn why marker 1507 is tied to Signal Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Collapsed Mine.",
-        "clue": "Saw Cutting"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Boot.",
-        "clue": "Boot"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Night Watchman.",
-        "clue": "4:03"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1507.",
-        "clue": "1507"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Over instruction.",
-        "clue": "Over"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S15C01-location",
-        "type": "location",
-        "name": "Collapsed Mine",
-        "inspectText": "Collapsed Mine looks ordinary until Saw Cutting moves through it."
-      },
-      {
-        "id": "S15C01-object",
-        "type": "evidence",
-        "name": "Boot",
-        "inspectText": "Boot is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S15C01-marker",
-        "type": "marker",
-        "name": "Marker 1507",
-        "inspectText": "Marker 1507 is not the answer. It is the lock."
-      },
-      {
-        "id": "S15C01-sound",
-        "type": "audio_clue",
-        "name": "Saw Cutting",
-        "inspectText": "Saw Cutting repeats near 4:03."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series15-The-Lantern-Keeper/chapter01.md",
-      "novel": "generated/novels/Series15-The-Lantern-Keeper/chapter01.md",
-      "song": "generated/songs/Series15-The-Lantern-Keeper/song01.md"
     }
   },
   "story": {

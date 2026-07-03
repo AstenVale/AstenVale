@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "cooperage"
-    ],
-    "object": [
-      "flint stone",
-      "flintstone"
-    ],
-    "witness": [
-      "peddler"
-    ],
-    "time": [
-      "6:45",
-      "645"
-    ],
-    "marker": [
-      "1107",
-      "marker 1107",
-      "road marker 1107",
-      "mile marker 1107",
-      "mile 1107"
-    ],
-    "direction": [
-      "behind"
-    ],
-    "sound": [
-      "wind in pines",
-      "windinpines"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -310,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S11C01",
-    "puzzleId": "S11C01-marker-lock",
-    "dialogueId": "S11C01-peddler",
-    "locationId": "cooperage",
-    "objective": "Investigate Cooperage, question Peddler, recover Flint Stone, and learn why marker 1107 is tied to Survey Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Cooperage.",
-        "clue": "Wind in Pines"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Flint Stone.",
-        "clue": "Flint Stone"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Peddler.",
-        "clue": "6:45"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1107.",
-        "clue": "1107"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Behind instruction.",
-        "clue": "Behind"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S11C01-location",
-        "type": "location",
-        "name": "Cooperage",
-        "inspectText": "Cooperage looks ordinary until Wind in Pines moves through it."
-      },
-      {
-        "id": "S11C01-object",
-        "type": "evidence",
-        "name": "Flint Stone",
-        "inspectText": "Flint Stone is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S11C01-marker",
-        "type": "marker",
-        "name": "Marker 1107",
-        "inspectText": "Marker 1107 is not the answer. It is the lock."
-      },
-      {
-        "id": "S11C01-sound",
-        "type": "audio_clue",
-        "name": "Wind in Pines",
-        "inspectText": "Wind in Pines repeats near 6:45."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series11-The-Map-Maker/chapter01.md",
-      "novel": "generated/novels/Series11-The-Map-Maker/chapter01.md",
-      "song": "generated/songs/Series11-The-Map-Maker/song01.md"
     }
   },
   "story": {

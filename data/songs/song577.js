@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "print shop",
-      "printshop"
-    ],
-    "object": [
-      "bottle"
-    ],
-    "witness": [
-      "sexton"
-    ],
-    "time": [
-      "6:06",
-      "606"
-    ],
-    "marker": [
-      "4907",
-      "marker 4907",
-      "road marker 4907",
-      "mile marker 4907",
-      "mile 4907"
-    ],
-    "direction": [
-      "along the creek",
-      "alongthecreek"
-    ],
-    "sound": [
-      "dry grass",
-      "drygrass"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S49C01",
-    "puzzleId": "S49C01-marker-lock",
-    "dialogueId": "S49C01-sexton",
-    "locationId": "print-shop",
-    "objective": "Investigate Print Shop, question Sexton, recover Bottle, and learn why marker 4907 is tied to Testimony Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Print Shop.",
-        "clue": "Dry Grass"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Bottle.",
-        "clue": "Bottle"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Sexton.",
-        "clue": "6:06"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4907.",
-        "clue": "4907"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Along the Creek instruction.",
-        "clue": "Along the Creek"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S49C01-location",
-        "type": "location",
-        "name": "Print Shop",
-        "inspectText": "Print Shop looks ordinary until Dry Grass moves through it."
-      },
-      {
-        "id": "S49C01-object",
-        "type": "evidence",
-        "name": "Bottle",
-        "inspectText": "Bottle is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S49C01-marker",
-        "type": "marker",
-        "name": "Marker 4907",
-        "inspectText": "Marker 4907 is not the answer. It is the lock."
-      },
-      {
-        "id": "S49C01-sound",
-        "type": "audio_clue",
-        "name": "Dry Grass",
-        "inspectText": "Dry Grass repeats near 6:06."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series49-The-Final-Witness/chapter01.md",
-      "novel": "generated/novels/Series49-The-Final-Witness/chapter01.md",
-      "song": "generated/songs/Series49-The-Final-Witness/song01.md"
     }
   },
   "story": {

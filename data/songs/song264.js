@@ -61,35 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "hotel"
-    ],
-    "object": [
-      "photograph"
-    ],
-    "witness": [
-      "furrier"
-    ],
-    "time": [
-      "9:44",
-      "944"
-    ],
-    "marker": [
-      "2306",
-      "marker 2306",
-      "road marker 2306",
-      "mile marker 2306",
-      "mile 2306"
-    ],
-    "direction": [
-      "across"
-    ],
-    "sound": [
-      "distant gunshot",
-      "distantgunshot"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -308,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S22C12",
-    "puzzleId": "S22C12-marker-lock",
-    "dialogueId": "S22C12-furrier",
-    "locationId": "hotel",
-    "objective": "Investigate Hotel, question Furrier, recover Photograph, and learn why marker 2306 is tied to Excavation Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Hotel.",
-        "clue": "Distant Gunshot"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Photograph.",
-        "clue": "Photograph"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Furrier.",
-        "clue": "9:44"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2306.",
-        "clue": "2306"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Across instruction.",
-        "clue": "Across"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S22C12-location",
-        "type": "location",
-        "name": "Hotel",
-        "inspectText": "Hotel looks ordinary until Distant Gunshot moves through it."
-      },
-      {
-        "id": "S22C12-object",
-        "type": "evidence",
-        "name": "Photograph",
-        "inspectText": "Photograph is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S22C12-marker",
-        "type": "marker",
-        "name": "Marker 2306",
-        "inspectText": "Marker 2306 is not the answer. It is the lock."
-      },
-      {
-        "id": "S22C12-sound",
-        "type": "audio_clue",
-        "name": "Distant Gunshot",
-        "inspectText": "Distant Gunshot repeats near 9:44."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series22-The-Bone-Road/chapter12.md",
-      "novel": "generated/novels/Series22-The-Bone-Road/chapter12.md",
-      "song": "generated/songs/Series22-The-Bone-Road/song12.md"
     }
   },
   "story": {

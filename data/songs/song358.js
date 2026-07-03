@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "sheep fold",
-      "sheepfold"
-    ],
-    "object": [
-      "prayer card",
-      "prayercard"
-    ],
-    "witness": [
-      "deputy"
-    ],
-    "time": [
-      "5:21",
-      "521"
-    ],
-    "marker": [
-      "3088",
-      "marker 3088",
-      "road marker 3088",
-      "mile marker 3088",
-      "mile 3088"
-    ],
-    "direction": [
-      "left"
-    ],
-    "sound": [
-      "fire crackling",
-      "firecrackling"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S30C10",
-    "puzzleId": "S30C10-marker-lock",
-    "dialogueId": "S30C10-deputy",
-    "locationId": "sheep-fold",
-    "objective": "Investigate Sheep Fold, question Deputy, recover Prayer Card, and learn why marker 3088 is tied to Manifest Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Sheep Fold.",
-        "clue": "Fire Crackling"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Prayer Card.",
-        "clue": "Prayer Card"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Deputy.",
-        "clue": "5:21"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3088.",
-        "clue": "3088"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Left instruction.",
-        "clue": "Left"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S30C10-location",
-        "type": "location",
-        "name": "Sheep Fold",
-        "inspectText": "Sheep Fold looks ordinary until Fire Crackling moves through it."
-      },
-      {
-        "id": "S30C10-object",
-        "type": "evidence",
-        "name": "Prayer Card",
-        "inspectText": "Prayer Card is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S30C10-marker",
-        "type": "marker",
-        "name": "Marker 3088",
-        "inspectText": "Marker 3088 is not the answer. It is the lock."
-      },
-      {
-        "id": "S30C10-sound",
-        "type": "audio_clue",
-        "name": "Fire Crackling",
-        "inspectText": "Fire Crackling repeats near 5:21."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series30-The-Last-Train/chapter10.md",
-      "novel": "generated/novels/Series30-The-Last-Train/chapter10.md",
-      "song": "generated/songs/Series30-The-Last-Train/song10.md"
     }
   },
   "story": {

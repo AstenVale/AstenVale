@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "birch stand",
-      "birchstand"
-    ],
-    "object": [
-      "telegram"
-    ],
-    "witness": [
-      "schoolteacher"
-    ],
-    "time": [
-      "2:55",
-      "255"
-    ],
-    "marker": [
-      "2925",
-      "marker 2925",
-      "road marker 2925",
-      "mile marker 2925",
-      "mile 2925"
-    ],
-    "direction": [
-      "out of sight",
-      "outofsight"
-    ],
-    "sound": [
-      "lantern glass",
-      "lanternglass"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S29C03",
-    "puzzleId": "S29C03-marker-lock",
-    "dialogueId": "S29C03-schoolteacher",
-    "locationId": "birch-stand",
-    "objective": "Investigate Birch Stand, question Schoolteacher, recover Telegram, and learn why marker 2925 is tied to Interment Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Birch Stand.",
-        "clue": "Lantern Glass"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Telegram.",
-        "clue": "Telegram"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Schoolteacher.",
-        "clue": "2:55"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2925.",
-        "clue": "2925"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Out of Sight instruction.",
-        "clue": "Out of Sight"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S29C03-location",
-        "type": "location",
-        "name": "Birch Stand",
-        "inspectText": "Birch Stand looks ordinary until Lantern Glass moves through it."
-      },
-      {
-        "id": "S29C03-object",
-        "type": "evidence",
-        "name": "Telegram",
-        "inspectText": "Telegram is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S29C03-marker",
-        "type": "marker",
-        "name": "Marker 2925",
-        "inspectText": "Marker 2925 is not the answer. It is the lock."
-      },
-      {
-        "id": "S29C03-sound",
-        "type": "audio_clue",
-        "name": "Lantern Glass",
-        "inspectText": "Lantern Glass repeats near 2:55."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series29-The-Unmarked-Grave/chapter03.md",
-      "novel": "generated/novels/Series29-The-Unmarked-Grave/chapter03.md",
-      "song": "generated/songs/Series29-The-Unmarked-Grave/song03.md"
     }
   },
   "story": {

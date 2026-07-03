@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "candlemaker's alley",
-      "candlemaker'salley"
-    ],
-    "object": [
-      "straight razor",
-      "straightrazor"
-    ],
-    "witness": [
-      "banker"
-    ],
-    "time": [
-      "4:03",
-      "403"
-    ],
-    "marker": [
-      "3443",
-      "marker 3443",
-      "road marker 3443",
-      "mile marker 3443",
-      "mile 3443"
-    ],
-    "direction": [
-      "forward"
-    ],
-    "sound": [
-      "paper rustle",
-      "paperrustle"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S34C05",
-    "puzzleId": "S34C05-marker-lock",
-    "dialogueId": "S34C05-banker",
-    "locationId": "candlemaker-s-alley",
-    "objective": "Investigate Candlemaker's Alley, question Banker, recover Straight Razor, and learn why marker 3443 is tied to Clinical Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Candlemaker's Alley.",
-        "clue": "Paper Rustle"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Straight Razor.",
-        "clue": "Straight Razor"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Banker.",
-        "clue": "4:03"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3443.",
-        "clue": "3443"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Forward instruction.",
-        "clue": "Forward"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S34C05-location",
-        "type": "location",
-        "name": "Candlemaker's Alley",
-        "inspectText": "Candlemaker's Alley looks ordinary until Paper Rustle moves through it."
-      },
-      {
-        "id": "S34C05-object",
-        "type": "evidence",
-        "name": "Straight Razor",
-        "inspectText": "Straight Razor is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S34C05-marker",
-        "type": "marker",
-        "name": "Marker 3443",
-        "inspectText": "Marker 3443 is not the answer. It is the lock."
-      },
-      {
-        "id": "S34C05-sound",
-        "type": "audio_clue",
-        "name": "Paper Rustle",
-        "inspectText": "Paper Rustle repeats near 4:03."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series34-The-Locked-Ward/chapter05.md",
-      "novel": "generated/novels/Series34-The-Locked-Ward/chapter05.md",
-      "song": "generated/songs/Series34-The-Locked-Ward/song05.md"
     }
   },
   "story": {

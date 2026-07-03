@@ -61,35 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "courthouse"
-    ],
-    "object": [
-      "thimble"
-    ],
-    "witness": [
-      "deputy"
-    ],
-    "time": [
-      "10:05",
-      "1005"
-    ],
-    "marker": [
-      "1052",
-      "marker 1052",
-      "road marker 1052",
-      "mile marker 1052",
-      "mile 1052"
-    ],
-    "direction": [
-      "beyond"
-    ],
-    "sound": [
-      "knife scrape",
-      "knifescrape"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -298,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S10C06",
-    "puzzleId": "S10C06-marker-lock",
-    "dialogueId": "S10C06-deputy",
-    "locationId": "courthouse",
-    "objective": "Investigate Courthouse, question Deputy, recover Thimble, and learn why marker 1052 is tied to Lost Mile Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Courthouse.",
-        "clue": "Knife Scrape"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Thimble.",
-        "clue": "Thimble"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Deputy.",
-        "clue": "10:05"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1052.",
-        "clue": "1052"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Beyond instruction.",
-        "clue": "Beyond"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S10C06-location",
-        "type": "location",
-        "name": "Courthouse",
-        "inspectText": "Courthouse looks ordinary until Knife Scrape moves through it."
-      },
-      {
-        "id": "S10C06-object",
-        "type": "evidence",
-        "name": "Thimble",
-        "inspectText": "Thimble is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S10C06-marker",
-        "type": "marker",
-        "name": "Marker 1052",
-        "inspectText": "Marker 1052 is not the answer. It is the lock."
-      },
-      {
-        "id": "S10C06-sound",
-        "type": "audio_clue",
-        "name": "Knife Scrape",
-        "inspectText": "Knife Scrape repeats near 10:05."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series10-The-Forgotten-Road/chapter06.md",
-      "novel": "generated/novels/Series10-The-Forgotten-Road/chapter06.md",
-      "song": "generated/songs/Series10-The-Forgotten-Road/song06.md"
     }
   },
   "story": {

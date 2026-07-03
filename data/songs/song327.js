@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "schoolhouse"
-    ],
-    "object": [
-      "dried ink blot",
-      "driedinkblot"
-    ],
-    "witness": [
-      "apothecary"
-    ],
-    "time": [
-      "7:02",
-      "702"
-    ],
-    "marker": [
-      "2825",
-      "marker 2825",
-      "road marker 2825",
-      "mile marker 2825",
-      "mile 2825"
-    ],
-    "direction": [
-      "along the creek",
-      "alongthecreek"
-    ],
-    "sound": [
-      "cellar door",
-      "cellardoor"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S28C03",
-    "puzzleId": "S28C03-marker-lock",
-    "dialogueId": "S28C03-apothecary",
-    "locationId": "schoolhouse",
-    "objective": "Investigate Schoolhouse, question Apothecary, recover Dried Ink Blot, and learn why marker 2825 is tied to Frequency Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Schoolhouse.",
-        "clue": "Cellar Door"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Dried Ink Blot.",
-        "clue": "Dried Ink Blot"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Apothecary.",
-        "clue": "7:02"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2825.",
-        "clue": "2825"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Along the Creek instruction.",
-        "clue": "Along the Creek"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S28C03-location",
-        "type": "location",
-        "name": "Schoolhouse",
-        "inspectText": "Schoolhouse looks ordinary until Cellar Door moves through it."
-      },
-      {
-        "id": "S28C03-object",
-        "type": "evidence",
-        "name": "Dried Ink Blot",
-        "inspectText": "Dried Ink Blot is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S28C03-marker",
-        "type": "marker",
-        "name": "Marker 2825",
-        "inspectText": "Marker 2825 is not the answer. It is the lock."
-      },
-      {
-        "id": "S28C03-sound",
-        "type": "audio_clue",
-        "name": "Cellar Door",
-        "inspectText": "Cellar Door repeats near 7:02."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series28-The-Buried-Signal/chapter03.md",
-      "novel": "generated/novels/Series28-The-Buried-Signal/chapter03.md",
-      "song": "generated/songs/Series28-The-Buried-Signal/song03.md"
     }
   },
   "story": {

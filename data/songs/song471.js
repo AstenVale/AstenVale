@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "ash creek",
-      "ashcreek"
-    ],
-    "object": [
-      "iron nail",
-      "ironnail"
-    ],
-    "witness": [
-      "deputy"
-    ],
-    "time": [
-      "4:38",
-      "438"
-    ],
-    "marker": [
-      "4025",
-      "marker 4025",
-      "road marker 4025",
-      "mile marker 4025",
-      "mile 4025"
-    ],
-    "direction": [
-      "nowhere"
-    ],
-    "sound": [
-      "night insects",
-      "nightinsects"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S40C03",
-    "puzzleId": "S40C03-marker-lock",
-    "dialogueId": "S40C03-deputy",
-    "locationId": "ash-creek",
-    "objective": "Investigate Ash Creek, question Deputy, recover Iron Nail, and learn why marker 4025 is tied to Cipher Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Ash Creek.",
-        "clue": "Night Insects"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Iron Nail.",
-        "clue": "Iron Nail"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Deputy.",
-        "clue": "4:38"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4025.",
-        "clue": "4025"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Nowhere instruction.",
-        "clue": "Nowhere"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S40C03-location",
-        "type": "location",
-        "name": "Ash Creek",
-        "inspectText": "Ash Creek looks ordinary until Night Insects moves through it."
-      },
-      {
-        "id": "S40C03-object",
-        "type": "evidence",
-        "name": "Iron Nail",
-        "inspectText": "Iron Nail is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S40C03-marker",
-        "type": "marker",
-        "name": "Marker 4025",
-        "inspectText": "Marker 4025 is not the answer. It is the lock."
-      },
-      {
-        "id": "S40C03-sound",
-        "type": "audio_clue",
-        "name": "Night Insects",
-        "inspectText": "Night Insects repeats near 4:38."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series40-The-Coded-Letter/chapter03.md",
-      "novel": "generated/novels/Series40-The-Coded-Letter/chapter03.md",
-      "song": "generated/songs/Series40-The-Coded-Letter/song03.md"
     }
   },
   "story": {

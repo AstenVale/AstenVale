@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "diner"
-    ],
-    "object": [
-      "oil rag",
-      "oilrag"
-    ],
-    "witness": [
-      "cartographer"
-    ],
-    "time": [
-      "9:55",
-      "955"
-    ],
-    "marker": [
-      "1806",
-      "marker 1806",
-      "road marker 1806",
-      "mile marker 1806",
-      "mile 1806"
-    ],
-    "direction": [
-      "north"
-    ],
-    "sound": [
-      "fog horn",
-      "foghorn"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -299,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S17C12",
-    "puzzleId": "S17C12-marker-lock",
-    "dialogueId": "S17C12-cartographer",
-    "locationId": "diner",
-    "objective": "Investigate Diner, question Cartographer, recover Oil Rag, and learn why marker 1806 is tied to Frost Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Diner.",
-        "clue": "Fog Horn"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Oil Rag.",
-        "clue": "Oil Rag"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Cartographer.",
-        "clue": "9:55"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1806.",
-        "clue": "1806"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the North instruction.",
-        "clue": "North"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S17C12-location",
-        "type": "location",
-        "name": "Diner",
-        "inspectText": "Diner looks ordinary until Fog Horn moves through it."
-      },
-      {
-        "id": "S17C12-object",
-        "type": "evidence",
-        "name": "Oil Rag",
-        "inspectText": "Oil Rag is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S17C12-marker",
-        "type": "marker",
-        "name": "Marker 1806",
-        "inspectText": "Marker 1806 is not the answer. It is the lock."
-      },
-      {
-        "id": "S17C12-sound",
-        "type": "audio_clue",
-        "name": "Fog Horn",
-        "inspectText": "Fog Horn repeats near 9:55."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series17-The-Cold-Season/chapter12.md",
-      "novel": "generated/novels/Series17-The-Cold-Season/chapter12.md",
-      "song": "generated/songs/Series17-The-Cold-Season/song12.md"
     }
   },
   "story": {

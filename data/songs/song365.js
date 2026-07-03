@@ -61,39 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the widow's porch",
-      "widow's porch",
-      "thewidow'sporch"
-    ],
-    "object": [
-      "dried flower",
-      "driedflower"
-    ],
-    "witness": [
-      "caretaker"
-    ],
-    "time": [
-      "11:44",
-      "1144"
-    ],
-    "marker": [
-      "3143",
-      "marker 3143",
-      "road marker 3143",
-      "mile marker 3143",
-      "mile 3143"
-    ],
-    "direction": [
-      "past the tree line",
-      "pastthetreeline"
-    ],
-    "sound": [
-      "broken string",
-      "brokenstring"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -312,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S31C05",
-    "puzzleId": "S31C05-marker-lock",
-    "dialogueId": "S31C05-caretaker",
-    "locationId": "the-widow-s-porch",
-    "objective": "Investigate The Widow's Porch, question Caretaker, recover Dried Flower, and learn why marker 3143 is tied to Pattern Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Widow's Porch.",
-        "clue": "Broken String"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Dried Flower.",
-        "clue": "Dried Flower"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Caretaker.",
-        "clue": "11:44"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3143.",
-        "clue": "3143"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Past the Tree Line instruction.",
-        "clue": "Past the Tree Line"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S31C05-location",
-        "type": "location",
-        "name": "The Widow's Porch",
-        "inspectText": "The Widow's Porch looks ordinary until Broken String moves through it."
-      },
-      {
-        "id": "S31C05-object",
-        "type": "evidence",
-        "name": "Dried Flower",
-        "inspectText": "Dried Flower is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S31C05-marker",
-        "type": "marker",
-        "name": "Marker 3143",
-        "inspectText": "Marker 3143 is not the answer. It is the lock."
-      },
-      {
-        "id": "S31C05-sound",
-        "type": "audio_clue",
-        "name": "Broken String",
-        "inspectText": "Broken String repeats near 11:44."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series31-The-Cipher-Garden/chapter05.md",
-      "novel": "generated/novels/Series31-The-Cipher-Garden/chapter05.md",
-      "song": "generated/songs/Series31-The-Cipher-Garden/song05.md"
     }
   },
   "story": {

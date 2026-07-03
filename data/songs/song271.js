@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "millpond"
-    ],
-    "object": [
-      "seal"
-    ],
-    "witness": [
-      "salt seller",
-      "saltseller"
-    ],
-    "time": [
-      "6:06",
-      "606"
-    ],
-    "marker": [
-      "2361",
-      "marker 2361",
-      "road marker 2361",
-      "mile marker 2361",
-      "mile 2361"
-    ],
-    "direction": [
-      "up"
-    ],
-    "sound": [
-      "kettle boil",
-      "kettleboil"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -299,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S23C07",
-    "puzzleId": "S23C07-marker-lock",
-    "dialogueId": "S23C07-salt-seller",
-    "locationId": "millpond",
-    "objective": "Investigate Millpond, question Salt Seller, recover Seal, and learn why marker 2361 is tied to Document Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Millpond.",
-        "clue": "Kettle Boil"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Seal.",
-        "clue": "Seal"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Salt Seller.",
-        "clue": "6:06"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2361.",
-        "clue": "2361"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Up instruction.",
-        "clue": "Up"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S23C07-location",
-        "type": "location",
-        "name": "Millpond",
-        "inspectText": "Millpond looks ordinary until Kettle Boil moves through it."
-      },
-      {
-        "id": "S23C07-object",
-        "type": "evidence",
-        "name": "Seal",
-        "inspectText": "Seal is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S23C07-marker",
-        "type": "marker",
-        "name": "Marker 2361",
-        "inspectText": "Marker 2361 is not the answer. It is the lock."
-      },
-      {
-        "id": "S23C07-sound",
-        "type": "audio_clue",
-        "name": "Kettle Boil",
-        "inspectText": "Kettle Boil repeats near 6:06."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series23-The-Paper-Trail/chapter07.md",
-      "novel": "generated/novels/Series23-The-Paper-Trail/chapter07.md",
-      "song": "generated/songs/Series23-The-Paper-Trail/song07.md"
     }
   },
   "story": {

@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "river's edge",
-      "river'sedge"
-    ],
-    "object": [
-      "inkwell"
-    ],
-    "witness": [
-      "cartographer"
-    ],
-    "time": [
-      "1:33",
-      "133"
-    ],
-    "marker": [
-      "3834",
-      "marker 3834",
-      "road marker 3834",
-      "mile marker 3834",
-      "mile 3834"
-    ],
-    "direction": [
-      "south"
-    ],
-    "sound": [
-      "distant church bell",
-      "distantchurchbell"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -299,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S38C04",
-    "puzzleId": "S38C04-marker-lock",
-    "dialogueId": "S38C04-cartographer",
-    "locationId": "river-s-edge",
-    "objective": "Investigate River's Edge, question Cartographer, recover Inkwell, and learn why marker 3834 is tied to Beacon Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter River's Edge.",
-        "clue": "Distant Church Bell"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Inkwell.",
-        "clue": "Inkwell"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Cartographer.",
-        "clue": "1:33"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3834.",
-        "clue": "3834"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the South instruction.",
-        "clue": "South"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S38C04-location",
-        "type": "location",
-        "name": "River's Edge",
-        "inspectText": "River's Edge looks ordinary until Distant Church Bell moves through it."
-      },
-      {
-        "id": "S38C04-object",
-        "type": "evidence",
-        "name": "Inkwell",
-        "inspectText": "Inkwell is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S38C04-marker",
-        "type": "marker",
-        "name": "Marker 3834",
-        "inspectText": "Marker 3834 is not the answer. It is the lock."
-      },
-      {
-        "id": "S38C04-sound",
-        "type": "audio_clue",
-        "name": "Distant Church Bell",
-        "inspectText": "Distant Church Bell repeats near 1:33."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series38-The-Signal-Fire/chapter04.md",
-      "novel": "generated/novels/Series38-The-Signal-Fire/chapter04.md",
-      "song": "generated/songs/Series38-The-Signal-Fire/song04.md"
     }
   },
   "story": {

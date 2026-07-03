@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "pharmacy"
-    ],
-    "object": [
-      "trade token",
-      "tradetoken"
-    ],
-    "witness": [
-      "apothecary"
-    ],
-    "time": [
-      "12:00",
-      "1200"
-    ],
-    "marker": [
-      "2352",
-      "marker 2352",
-      "road marker 2352",
-      "mile marker 2352",
-      "mile 2352"
-    ],
-    "direction": [
-      "into the pines",
-      "intothepines"
-    ],
-    "sound": [
-      "crow wings",
-      "crowwings"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S23C06",
-    "puzzleId": "S23C06-marker-lock",
-    "dialogueId": "S23C06-apothecary",
-    "locationId": "pharmacy",
-    "objective": "Investigate Pharmacy, question Apothecary, recover Trade Token, and learn why marker 2352 is tied to Document Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Pharmacy.",
-        "clue": "Crow Wings"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Trade Token.",
-        "clue": "Trade Token"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Apothecary.",
-        "clue": "12:00"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2352.",
-        "clue": "2352"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Into the Pines instruction.",
-        "clue": "Into the Pines"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S23C06-location",
-        "type": "location",
-        "name": "Pharmacy",
-        "inspectText": "Pharmacy looks ordinary until Crow Wings moves through it."
-      },
-      {
-        "id": "S23C06-object",
-        "type": "evidence",
-        "name": "Trade Token",
-        "inspectText": "Trade Token is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S23C06-marker",
-        "type": "marker",
-        "name": "Marker 2352",
-        "inspectText": "Marker 2352 is not the answer. It is the lock."
-      },
-      {
-        "id": "S23C06-sound",
-        "type": "audio_clue",
-        "name": "Crow Wings",
-        "inspectText": "Crow Wings repeats near 12:00."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series23-The-Paper-Trail/chapter06.md",
-      "novel": "generated/novels/Series23-The-Paper-Trail/chapter06.md",
-      "song": "generated/songs/Series23-The-Paper-Trail/song06.md"
     }
   },
   "story": {

@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "east field",
-      "eastfield"
-    ],
-    "object": [
-      "ship manifest",
-      "shipmanifest"
-    ],
-    "witness": [
-      "stranger"
-    ],
-    "time": [
-      "6:17",
-      "617"
-    ],
-    "marker": [
-      "1779",
-      "marker 1779",
-      "road marker 1779",
-      "mile marker 1779",
-      "mile 1779"
-    ],
-    "direction": [
-      "somewhere"
-    ],
-    "sound": [
-      "river ice",
-      "riverice"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -310,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S17C09",
-    "puzzleId": "S17C09-marker-lock",
-    "dialogueId": "S17C09-stranger",
-    "locationId": "east-field",
-    "objective": "Investigate East Field, question Stranger, recover Ship Manifest, and learn why marker 1779 is tied to Frost Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter East Field.",
-        "clue": "River Ice"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Ship Manifest.",
-        "clue": "Ship Manifest"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Stranger.",
-        "clue": "6:17"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1779.",
-        "clue": "1779"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Somewhere instruction.",
-        "clue": "Somewhere"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S17C09-location",
-        "type": "location",
-        "name": "East Field",
-        "inspectText": "East Field looks ordinary until River Ice moves through it."
-      },
-      {
-        "id": "S17C09-object",
-        "type": "evidence",
-        "name": "Ship Manifest",
-        "inspectText": "Ship Manifest is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S17C09-marker",
-        "type": "marker",
-        "name": "Marker 1779",
-        "inspectText": "Marker 1779 is not the answer. It is the lock."
-      },
-      {
-        "id": "S17C09-sound",
-        "type": "audio_clue",
-        "name": "River Ice",
-        "inspectText": "River Ice repeats near 6:17."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series17-The-Cold-Season/chapter09.md",
-      "novel": "generated/novels/Series17-The-Cold-Season/chapter09.md",
-      "song": "generated/songs/Series17-The-Cold-Season/song09.md"
     }
   },
   "story": {

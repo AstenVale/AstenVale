@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "ash hollow",
-      "ashhollow"
-    ],
-    "object": [
-      "ribbon"
-    ],
-    "witness": [
-      "schoolgirl"
-    ],
-    "time": [
-      "8:06",
-      "806"
-    ],
-    "marker": [
-      "2070",
-      "marker 2070",
-      "road marker 2070",
-      "mile marker 2070",
-      "mile 2070"
-    ],
-    "direction": [
-      "away from town",
-      "awayfromtown"
-    ],
-    "sound": [
-      "empty wagon",
-      "emptywagon"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S20C08",
-    "puzzleId": "S20C08-marker-lock",
-    "dialogueId": "S20C08-schoolgirl",
-    "locationId": "ash-hollow",
-    "objective": "Investigate Ash Hollow, question Schoolgirl, recover Ribbon, and learn why marker 2070 is tied to Night Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Ash Hollow.",
-        "clue": "Empty Wagon"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Ribbon.",
-        "clue": "Ribbon"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Schoolgirl.",
-        "clue": "8:06"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2070.",
-        "clue": "2070"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Away from Town instruction.",
-        "clue": "Away from Town"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S20C08-location",
-        "type": "location",
-        "name": "Ash Hollow",
-        "inspectText": "Ash Hollow looks ordinary until Empty Wagon moves through it."
-      },
-      {
-        "id": "S20C08-object",
-        "type": "evidence",
-        "name": "Ribbon",
-        "inspectText": "Ribbon is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S20C08-marker",
-        "type": "marker",
-        "name": "Marker 2070",
-        "inspectText": "Marker 2070 is not the answer. It is the lock."
-      },
-      {
-        "id": "S20C08-sound",
-        "type": "audio_clue",
-        "name": "Empty Wagon",
-        "inspectText": "Empty Wagon repeats near 8:06."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series20-The-Midnight-Circuit/chapter08.md",
-      "novel": "generated/novels/Series20-The-Midnight-Circuit/chapter08.md",
-      "song": "generated/songs/Series20-The-Midnight-Circuit/song08.md"
     }
   },
   "story": {

@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "south fork",
-      "southfork"
-    ],
-    "object": [
-      "journal"
-    ],
-    "witness": [
-      "farmer"
-    ],
-    "time": [
-      "9:55",
-      "955"
-    ],
-    "marker": [
-      "3606",
-      "marker 3606",
-      "road marker 3606",
-      "mile marker 3606",
-      "mile 3606"
-    ],
-    "direction": [
-      "into the pines",
-      "intothepines"
-    ],
-    "sound": [
-      "axe on wood",
-      "axeonwood"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -310,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S35C12",
-    "puzzleId": "S35C12-marker-lock",
-    "dialogueId": "S35C12-farmer",
-    "locationId": "south-fork",
-    "objective": "Investigate South Fork, question Farmer, recover Journal, and learn why marker 3606 is tied to Collection Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter South Fork.",
-        "clue": "Axe on Wood"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Journal.",
-        "clue": "Journal"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Farmer.",
-        "clue": "9:55"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3606.",
-        "clue": "3606"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Into the Pines instruction.",
-        "clue": "Into the Pines"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S35C12-location",
-        "type": "location",
-        "name": "South Fork",
-        "inspectText": "South Fork looks ordinary until Axe on Wood moves through it."
-      },
-      {
-        "id": "S35C12-object",
-        "type": "evidence",
-        "name": "Journal",
-        "inspectText": "Journal is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S35C12-marker",
-        "type": "marker",
-        "name": "Marker 3606",
-        "inspectText": "Marker 3606 is not the answer. It is the lock."
-      },
-      {
-        "id": "S35C12-sound",
-        "type": "audio_clue",
-        "name": "Axe on Wood",
-        "inspectText": "Axe on Wood repeats near 9:55."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series35-The-Archive-Keeper/chapter12.md",
-      "novel": "generated/novels/Series35-The-Archive-Keeper/chapter12.md",
-      "song": "generated/songs/Series35-The-Archive-Keeper/song12.md"
     }
   },
   "story": {

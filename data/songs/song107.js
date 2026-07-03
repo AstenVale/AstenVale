@@ -61,35 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "forge"
-    ],
-    "object": [
-      "handkerchief"
-    ],
-    "witness": [
-      "deputy"
-    ],
-    "time": [
-      "8:42",
-      "842"
-    ],
-    "marker": [
-      "997",
-      "marker 997",
-      "road marker 997",
-      "mile marker 997",
-      "mile 997"
-    ],
-    "direction": [
-      "left"
-    ],
-    "sound": [
-      "distant gunshot",
-      "distantgunshot"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -308,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S09C11",
-    "puzzleId": "S09C11-marker-lock",
-    "dialogueId": "S09C11-deputy",
-    "locationId": "forge",
-    "objective": "Investigate Forge, question Deputy, recover Handkerchief, and learn why marker 997 is tied to Record Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Forge.",
-        "clue": "Distant Gunshot"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Handkerchief.",
-        "clue": "Handkerchief"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Deputy.",
-        "clue": "8:42"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 997.",
-        "clue": "997"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Left instruction.",
-        "clue": "Left"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S09C11-location",
-        "type": "location",
-        "name": "Forge",
-        "inspectText": "Forge looks ordinary until Distant Gunshot moves through it."
-      },
-      {
-        "id": "S09C11-object",
-        "type": "evidence",
-        "name": "Handkerchief",
-        "inspectText": "Handkerchief is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S09C11-marker",
-        "type": "marker",
-        "name": "Marker 997",
-        "inspectText": "Marker 997 is not the answer. It is the lock."
-      },
-      {
-        "id": "S09C11-sound",
-        "type": "audio_clue",
-        "name": "Distant Gunshot",
-        "inspectText": "Distant Gunshot repeats near 8:42."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series09-The-Keeper/chapter11.md",
-      "novel": "generated/novels/Series09-The-Keeper/chapter11.md",
-      "song": "generated/songs/Series09-The-Keeper/song11.md"
     }
   },
   "story": {

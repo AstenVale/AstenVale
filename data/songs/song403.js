@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the weir",
-      "weir",
-      "theweir"
-    ],
-    "object": [
-      "knife"
-    ],
-    "witness": [
-      "undertaker"
-    ],
-    "time": [
-      "3:44",
-      "344"
-    ],
-    "marker": [
-      "3461",
-      "marker 3461",
-      "road marker 3461",
-      "mile marker 3461",
-      "mile 3461"
-    ],
-    "direction": [
-      "in"
-    ],
-    "sound": [
-      "bone on stone",
-      "boneonstone"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S34C07",
-    "puzzleId": "S34C07-marker-lock",
-    "dialogueId": "S34C07-undertaker",
-    "locationId": "the-weir",
-    "objective": "Investigate The Weir, question Undertaker, recover Knife, and learn why marker 3461 is tied to Clinical Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Weir.",
-        "clue": "Bone on Stone"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Knife.",
-        "clue": "Knife"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Undertaker.",
-        "clue": "3:44"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3461.",
-        "clue": "3461"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the In instruction.",
-        "clue": "In"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S34C07-location",
-        "type": "location",
-        "name": "The Weir",
-        "inspectText": "The Weir looks ordinary until Bone on Stone moves through it."
-      },
-      {
-        "id": "S34C07-object",
-        "type": "evidence",
-        "name": "Knife",
-        "inspectText": "Knife is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S34C07-marker",
-        "type": "marker",
-        "name": "Marker 3461",
-        "inspectText": "Marker 3461 is not the answer. It is the lock."
-      },
-      {
-        "id": "S34C07-sound",
-        "type": "audio_clue",
-        "name": "Bone on Stone",
-        "inspectText": "Bone on Stone repeats near 3:44."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series34-The-Locked-Ward/chapter07.md",
-      "novel": "generated/novels/Series34-The-Locked-Ward/chapter07.md",
-      "song": "generated/songs/Series34-The-Locked-Ward/song07.md"
     }
   },
   "story": {

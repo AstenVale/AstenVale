@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "birch stand",
-      "birchstand"
-    ],
-    "object": [
-      "wool scarf",
-      "woolscarf"
-    ],
-    "witness": [
-      "tanner"
-    ],
-    "time": [
-      "11:03",
-      "1103"
-    ],
-    "marker": [
-      "2579",
-      "marker 2579",
-      "road marker 2579",
-      "mile marker 2579",
-      "mile 2579"
-    ],
-    "direction": [
-      "below"
-    ],
-    "sound": [
-      "stones in a tin",
-      "stonesinatin"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S25C09",
-    "puzzleId": "S25C09-marker-lock",
-    "dialogueId": "S25C09-tanner",
-    "locationId": "birch-stand",
-    "objective": "Investigate Birch Stand, question Tanner, recover Wool Scarf, and learn why marker 2579 is tied to Resonance Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Birch Stand.",
-        "clue": "Stones in a Tin"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Wool Scarf.",
-        "clue": "Wool Scarf"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Tanner.",
-        "clue": "11:03"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2579.",
-        "clue": "2579"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Below instruction.",
-        "clue": "Below"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S25C09-location",
-        "type": "location",
-        "name": "Birch Stand",
-        "inspectText": "Birch Stand looks ordinary until Stones in a Tin moves through it."
-      },
-      {
-        "id": "S25C09-object",
-        "type": "evidence",
-        "name": "Wool Scarf",
-        "inspectText": "Wool Scarf is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S25C09-marker",
-        "type": "marker",
-        "name": "Marker 2579",
-        "inspectText": "Marker 2579 is not the answer. It is the lock."
-      },
-      {
-        "id": "S25C09-sound",
-        "type": "audio_clue",
-        "name": "Stones in a Tin",
-        "inspectText": "Stones in a Tin repeats near 11:03."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series25-The-Echo-Chamber/chapter09.md",
-      "novel": "generated/novels/Series25-The-Echo-Chamber/chapter09.md",
-      "song": "generated/songs/Series25-The-Echo-Chamber/song09.md"
     }
   },
   "story": {

@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the bluff",
-      "bluff",
-      "thebluff"
-    ],
-    "object": [
-      "telegram"
-    ],
-    "witness": [
-      "driver"
-    ],
-    "time": [
-      "1:33",
-      "133"
-    ],
-    "marker": [
-      "4061",
-      "marker 4061",
-      "road marker 4061",
-      "mile marker 4061",
-      "mile 4061"
-    ],
-    "direction": [
-      "away from town",
-      "awayfromtown"
-    ],
-    "sound": [
-      "broken string",
-      "brokenstring"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S40C07",
-    "puzzleId": "S40C07-marker-lock",
-    "dialogueId": "S40C07-driver",
-    "locationId": "the-bluff",
-    "objective": "Investigate The Bluff, question Driver, recover Telegram, and learn why marker 4061 is tied to Cipher Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Bluff.",
-        "clue": "Broken String"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Telegram.",
-        "clue": "Telegram"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Driver.",
-        "clue": "1:33"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4061.",
-        "clue": "4061"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Away from Town instruction.",
-        "clue": "Away from Town"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S40C07-location",
-        "type": "location",
-        "name": "The Bluff",
-        "inspectText": "The Bluff looks ordinary until Broken String moves through it."
-      },
-      {
-        "id": "S40C07-object",
-        "type": "evidence",
-        "name": "Telegram",
-        "inspectText": "Telegram is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S40C07-marker",
-        "type": "marker",
-        "name": "Marker 4061",
-        "inspectText": "Marker 4061 is not the answer. It is the lock."
-      },
-      {
-        "id": "S40C07-sound",
-        "type": "audio_clue",
-        "name": "Broken String",
-        "inspectText": "Broken String repeats near 1:33."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series40-The-Coded-Letter/chapter07.md",
-      "novel": "generated/novels/Series40-The-Coded-Letter/chapter07.md",
-      "song": "generated/songs/Series40-The-Coded-Letter/song07.md"
     }
   },
   "story": {

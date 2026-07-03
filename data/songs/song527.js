@@ -61,35 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "schoolhouse"
-    ],
-    "object": [
-      "compass"
-    ],
-    "witness": [
-      "farmer"
-    ],
-    "time": [
-      "8:00",
-      "800"
-    ],
-    "marker": [
-      "4497",
-      "marker 4497",
-      "road marker 4497",
-      "mile marker 4497",
-      "mile 4497"
-    ],
-    "direction": [
-      "behind"
-    ],
-    "sound": [
-      "mud suction",
-      "mudsuction"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -308,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S44C11",
-    "puzzleId": "S44C11-marker-lock",
-    "dialogueId": "S44C11-farmer",
-    "locationId": "schoolhouse",
-    "objective": "Investigate Schoolhouse, question Farmer, recover Compass, and learn why marker 4497 is tied to Parallel Case Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Schoolhouse.",
-        "clue": "Mud Suction"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Compass.",
-        "clue": "Compass"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Farmer.",
-        "clue": "8:00"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4497.",
-        "clue": "4497"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Behind instruction.",
-        "clue": "Behind"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S44C11-location",
-        "type": "location",
-        "name": "Schoolhouse",
-        "inspectText": "Schoolhouse looks ordinary until Mud Suction moves through it."
-      },
-      {
-        "id": "S44C11-object",
-        "type": "evidence",
-        "name": "Compass",
-        "inspectText": "Compass is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S44C11-marker",
-        "type": "marker",
-        "name": "Marker 4497",
-        "inspectText": "Marker 4497 is not the answer. It is the lock."
-      },
-      {
-        "id": "S44C11-sound",
-        "type": "audio_clue",
-        "name": "Mud Suction",
-        "inspectText": "Mud Suction repeats near 8:00."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series44-The-Mirror-Case/chapter11.md",
-      "novel": "generated/novels/Series44-The-Mirror-Case/chapter11.md",
-      "song": "generated/songs/Series44-The-Mirror-Case/song11.md"
     }
   },
   "story": {

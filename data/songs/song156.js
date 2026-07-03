@@ -61,40 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the bluff",
-      "bluff",
-      "thebluff"
-    ],
-    "object": [
-      "axle pin",
-      "axlepin"
-    ],
-    "witness": [
-      "the handless man",
-      "handless man",
-      "thehandlessman"
-    ],
-    "time": [
-      "3:17",
-      "317"
-    ],
-    "marker": [
-      "1406",
-      "marker 1406",
-      "road marker 1406",
-      "mile marker 1406",
-      "mile 1406"
-    ],
-    "direction": [
-      "east"
-    ],
-    "sound": [
-      "moth wings",
-      "mothwings"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -313,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S13C12",
-    "puzzleId": "S13C12-marker-lock",
-    "dialogueId": "S13C12-the-handless-man",
-    "locationId": "the-bluff",
-    "objective": "Investigate The Bluff, question The Handless Man, recover Axle Pin, and learn why marker 1406 is tied to Mirror Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Bluff.",
-        "clue": "Moth Wings"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Axle Pin.",
-        "clue": "Axle Pin"
-      },
-      {
-        "step": "interview",
-        "objective": "Question The Handless Man.",
-        "clue": "3:17"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1406.",
-        "clue": "1406"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the East instruction.",
-        "clue": "East"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S13C12-location",
-        "type": "location",
-        "name": "The Bluff",
-        "inspectText": "The Bluff looks ordinary until Moth Wings moves through it."
-      },
-      {
-        "id": "S13C12-object",
-        "type": "evidence",
-        "name": "Axle Pin",
-        "inspectText": "Axle Pin is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S13C12-marker",
-        "type": "marker",
-        "name": "Marker 1406",
-        "inspectText": "Marker 1406 is not the answer. It is the lock."
-      },
-      {
-        "id": "S13C12-sound",
-        "type": "audio_clue",
-        "name": "Moth Wings",
-        "inspectText": "Moth Wings repeats near 3:17."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series13-The-Twin-Hollows/chapter12.md",
-      "novel": "generated/novels/Series13-The-Twin-Hollows/chapter12.md",
-      "song": "generated/songs/Series13-The-Twin-Hollows/song12.md"
     }
   },
   "story": {

@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "potter's field",
-      "potter'sfield"
-    ],
-    "object": [
-      "badge"
-    ],
-    "witness": [
-      "librarian"
-    ],
-    "time": [
-      "11:03",
-      "1103"
-    ],
-    "marker": [
-      "3707",
-      "marker 3707",
-      "road marker 3707",
-      "mile marker 3707",
-      "mile 3707"
-    ],
-    "direction": [
-      "up the ridge",
-      "uptheridge"
-    ],
-    "sound": [
-      "wheel on gravel",
-      "wheelongravel"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S37C01",
-    "puzzleId": "S37C01-marker-lock",
-    "dialogueId": "S37C01-librarian",
-    "locationId": "potter-s-field",
-    "objective": "Investigate Potter's Field, question Librarian, recover Badge, and learn why marker 3707 is tied to Outpost Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Potter's Field.",
-        "clue": "Wheel on Gravel"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Badge.",
-        "clue": "Badge"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Librarian.",
-        "clue": "11:03"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3707.",
-        "clue": "3707"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Up the Ridge instruction.",
-        "clue": "Up the Ridge"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S37C01-location",
-        "type": "location",
-        "name": "Potter's Field",
-        "inspectText": "Potter's Field looks ordinary until Wheel on Gravel moves through it."
-      },
-      {
-        "id": "S37C01-object",
-        "type": "evidence",
-        "name": "Badge",
-        "inspectText": "Badge is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S37C01-marker",
-        "type": "marker",
-        "name": "Marker 3707",
-        "inspectText": "Marker 3707 is not the answer. It is the lock."
-      },
-      {
-        "id": "S37C01-sound",
-        "type": "audio_clue",
-        "name": "Wheel on Gravel",
-        "inspectText": "Wheel on Gravel repeats near 11:03."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series37-The-Abandoned-Post/chapter01.md",
-      "novel": "generated/novels/Series37-The-Abandoned-Post/chapter01.md",
-      "song": "generated/songs/Series37-The-Abandoned-Post/song01.md"
     }
   },
   "story": {

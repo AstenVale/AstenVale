@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "black pine",
-      "blackpine"
-    ],
-    "object": [
-      "flask"
-    ],
-    "witness": [
-      "postman"
-    ],
-    "time": [
-      "11:03",
-      "1103"
-    ],
-    "marker": [
-      "1797",
-      "marker 1797",
-      "road marker 1797",
-      "mile marker 1797",
-      "mile 1797"
-    ],
-    "direction": [
-      "right"
-    ],
-    "sound": [
-      "match strike",
-      "matchstrike"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -309,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S17C11",
-    "puzzleId": "S17C11-marker-lock",
-    "dialogueId": "S17C11-postman",
-    "locationId": "black-pine",
-    "objective": "Investigate Black Pine, question Postman, recover Flask, and learn why marker 1797 is tied to Frost Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Black Pine.",
-        "clue": "Match Strike"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Flask.",
-        "clue": "Flask"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Postman.",
-        "clue": "11:03"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1797.",
-        "clue": "1797"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Right instruction.",
-        "clue": "Right"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S17C11-location",
-        "type": "location",
-        "name": "Black Pine",
-        "inspectText": "Black Pine looks ordinary until Match Strike moves through it."
-      },
-      {
-        "id": "S17C11-object",
-        "type": "evidence",
-        "name": "Flask",
-        "inspectText": "Flask is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S17C11-marker",
-        "type": "marker",
-        "name": "Marker 1797",
-        "inspectText": "Marker 1797 is not the answer. It is the lock."
-      },
-      {
-        "id": "S17C11-sound",
-        "type": "audio_clue",
-        "name": "Match Strike",
-        "inspectText": "Match Strike repeats near 11:03."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series17-The-Cold-Season/chapter11.md",
-      "novel": "generated/novels/Series17-The-Cold-Season/chapter11.md",
-      "song": "generated/songs/Series17-The-Cold-Season/song11.md"
     }
   },
   "story": {

@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "north pasture",
-      "northpasture"
-    ],
-    "object": [
-      "bone button",
-      "bonebutton"
-    ],
-    "witness": [
-      "blacksmith"
-    ],
-    "time": [
-      "7:00",
-      "700"
-    ],
-    "marker": [
-      "1143",
-      "marker 1143",
-      "road marker 1143",
-      "mile marker 1143",
-      "mile 1143"
-    ],
-    "direction": [
-      "forward"
-    ],
-    "sound": [
-      "dry grass",
-      "drygrass"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S11C05",
-    "puzzleId": "S11C05-marker-lock",
-    "dialogueId": "S11C05-blacksmith",
-    "locationId": "north-pasture",
-    "objective": "Investigate North Pasture, question Blacksmith, recover Bone Button, and learn why marker 1143 is tied to Survey Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter North Pasture.",
-        "clue": "Dry Grass"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Bone Button.",
-        "clue": "Bone Button"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Blacksmith.",
-        "clue": "7:00"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1143.",
-        "clue": "1143"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Forward instruction.",
-        "clue": "Forward"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S11C05-location",
-        "type": "location",
-        "name": "North Pasture",
-        "inspectText": "North Pasture looks ordinary until Dry Grass moves through it."
-      },
-      {
-        "id": "S11C05-object",
-        "type": "evidence",
-        "name": "Bone Button",
-        "inspectText": "Bone Button is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S11C05-marker",
-        "type": "marker",
-        "name": "Marker 1143",
-        "inspectText": "Marker 1143 is not the answer. It is the lock."
-      },
-      {
-        "id": "S11C05-sound",
-        "type": "audio_clue",
-        "name": "Dry Grass",
-        "inspectText": "Dry Grass repeats near 7:00."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series11-The-Map-Maker/chapter05.md",
-      "novel": "generated/novels/Series11-The-Map-Maker/chapter05.md",
-      "song": "generated/songs/Series11-The-Map-Maker/song05.md"
     }
   },
   "story": {

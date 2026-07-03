@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "watchmaker's shop",
-      "watchmaker'sshop"
-    ],
-    "object": [
-      "pipe"
-    ],
-    "witness": [
-      "miller"
-    ],
-    "time": [
-      "3:30",
-      "330"
-    ],
-    "marker": [
-      "2188",
-      "marker 2188",
-      "road marker 2188",
-      "mile marker 2188",
-      "mile 2188"
-    ],
-    "direction": [
-      "past the tree line",
-      "pastthetreeline"
-    ],
-    "sound": [
-      "horse hooves",
-      "horsehooves"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S21C10",
-    "puzzleId": "S21C10-marker-lock",
-    "dialogueId": "S21C10-miller",
-    "locationId": "watchmaker-s-shop",
-    "objective": "Investigate Watchmaker's Shop, question Miller, recover Pipe, and learn why marker 2188 is tied to Bark Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Watchmaker's Shop.",
-        "clue": "Horse Hooves"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Pipe.",
-        "clue": "Pipe"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Miller.",
-        "clue": "3:30"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2188.",
-        "clue": "2188"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Past the Tree Line instruction.",
-        "clue": "Past the Tree Line"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S21C10-location",
-        "type": "location",
-        "name": "Watchmaker's Shop",
-        "inspectText": "Watchmaker's Shop looks ordinary until Horse Hooves moves through it."
-      },
-      {
-        "id": "S21C10-object",
-        "type": "evidence",
-        "name": "Pipe",
-        "inspectText": "Pipe is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S21C10-marker",
-        "type": "marker",
-        "name": "Marker 2188",
-        "inspectText": "Marker 2188 is not the answer. It is the lock."
-      },
-      {
-        "id": "S21C10-sound",
-        "type": "audio_clue",
-        "name": "Horse Hooves",
-        "inspectText": "Horse Hooves repeats near 3:30."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series21-The-Witness-Tree/chapter10.md",
-      "novel": "generated/novels/Series21-The-Witness-Tree/chapter10.md",
-      "song": "generated/songs/Series21-The-Witness-Tree/song10.md"
     }
   },
   "story": {

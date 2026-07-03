@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "iron bridge",
-      "ironbridge"
-    ],
-    "object": [
-      "badge"
-    ],
-    "witness": [
-      "schoolteacher"
-    ],
-    "time": [
-      "1:58",
-      "158"
-    ],
-    "marker": [
-      "1943",
-      "marker 1943",
-      "road marker 1943",
-      "mile marker 1943",
-      "mile 1943"
-    ],
-    "direction": [
-      "up the ridge",
-      "uptheridge"
-    ],
-    "sound": [
-      "rope on pulley",
-      "ropeonpulley"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S19C05",
-    "puzzleId": "S19C05-marker-lock",
-    "dialogueId": "S19C05-schoolteacher",
-    "locationId": "iron-bridge",
-    "objective": "Investigate Iron Bridge, question Schoolteacher, recover Badge, and learn why marker 1943 is tied to Crossing Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Iron Bridge.",
-        "clue": "Rope on Pulley"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Badge.",
-        "clue": "Badge"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Schoolteacher.",
-        "clue": "1:58"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1943.",
-        "clue": "1943"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Up the Ridge instruction.",
-        "clue": "Up the Ridge"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S19C05-location",
-        "type": "location",
-        "name": "Iron Bridge",
-        "inspectText": "Iron Bridge looks ordinary until Rope on Pulley moves through it."
-      },
-      {
-        "id": "S19C05-object",
-        "type": "evidence",
-        "name": "Badge",
-        "inspectText": "Badge is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S19C05-marker",
-        "type": "marker",
-        "name": "Marker 1943",
-        "inspectText": "Marker 1943 is not the answer. It is the lock."
-      },
-      {
-        "id": "S19C05-sound",
-        "type": "audio_clue",
-        "name": "Rope on Pulley",
-        "inspectText": "Rope on Pulley repeats near 1:58."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series19-The-Bridge-Burner/chapter05.md",
-      "novel": "generated/novels/Series19-The-Bridge-Burner/chapter05.md",
-      "song": "generated/songs/Series19-The-Bridge-Burner/song05.md"
     }
   },
   "story": {

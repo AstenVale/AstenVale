@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "post office",
-      "postoffice"
-    ],
-    "object": [
-      "handkerchief"
-    ],
-    "witness": [
-      "cooper"
-    ],
-    "time": [
-      "5:55",
-      "555"
-    ],
-    "marker": [
-      "2897",
-      "marker 2897",
-      "road marker 2897",
-      "mile marker 2897",
-      "mile 2897"
-    ],
-    "direction": [
-      "home"
-    ],
-    "sound": [
-      "water drip",
-      "waterdrip"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -299,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S28C11",
-    "puzzleId": "S28C11-marker-lock",
-    "dialogueId": "S28C11-cooper",
-    "locationId": "post-office",
-    "objective": "Investigate Post Office, question Cooper, recover Handkerchief, and learn why marker 2897 is tied to Frequency Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Post Office.",
-        "clue": "Water Drip"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Handkerchief.",
-        "clue": "Handkerchief"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Cooper.",
-        "clue": "5:55"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2897.",
-        "clue": "2897"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Home instruction.",
-        "clue": "Home"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S28C11-location",
-        "type": "location",
-        "name": "Post Office",
-        "inspectText": "Post Office looks ordinary until Water Drip moves through it."
-      },
-      {
-        "id": "S28C11-object",
-        "type": "evidence",
-        "name": "Handkerchief",
-        "inspectText": "Handkerchief is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S28C11-marker",
-        "type": "marker",
-        "name": "Marker 2897",
-        "inspectText": "Marker 2897 is not the answer. It is the lock."
-      },
-      {
-        "id": "S28C11-sound",
-        "type": "audio_clue",
-        "name": "Water Drip",
-        "inspectText": "Water Drip repeats near 5:55."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series28-The-Buried-Signal/chapter11.md",
-      "novel": "generated/novels/Series28-The-Buried-Signal/chapter11.md",
-      "song": "generated/songs/Series28-The-Buried-Signal/song11.md"
     }
   },
   "story": {

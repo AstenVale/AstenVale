@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "north pasture",
-      "northpasture"
-    ],
-    "object": [
-      "wool scarf",
-      "woolscarf"
-    ],
-    "witness": [
-      "cattle driver",
-      "cattledriver"
-    ],
-    "time": [
-      "8:42",
-      "842"
-    ],
-    "marker": [
-      "4516",
-      "marker 4516",
-      "road marker 4516",
-      "mile marker 4516",
-      "mile 4516"
-    ],
-    "direction": [
-      "up"
-    ],
-    "sound": [
-      "nail pulled from wood",
-      "nailpulledfromwood"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -301,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S45C02",
-    "puzzleId": "S45C02-marker-lock",
-    "dialogueId": "S45C02-cattle-driver",
-    "locationId": "north-pasture",
-    "objective": "Investigate North Pasture, question Cattle Driver, recover Wool Scarf, and learn why marker 4516 is tied to Power Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter North Pasture.",
-        "clue": "Nail Pulled from Wood"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Wool Scarf.",
-        "clue": "Wool Scarf"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Cattle Driver.",
-        "clue": "8:42"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4516.",
-        "clue": "4516"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Up instruction.",
-        "clue": "Up"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S45C02-location",
-        "type": "location",
-        "name": "North Pasture",
-        "inspectText": "North Pasture looks ordinary until Nail Pulled from Wood moves through it."
-      },
-      {
-        "id": "S45C02-object",
-        "type": "evidence",
-        "name": "Wool Scarf",
-        "inspectText": "Wool Scarf is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S45C02-marker",
-        "type": "marker",
-        "name": "Marker 4516",
-        "inspectText": "Marker 4516 is not the answer. It is the lock."
-      },
-      {
-        "id": "S45C02-sound",
-        "type": "audio_clue",
-        "name": "Nail Pulled from Wood",
-        "inspectText": "Nail Pulled from Wood repeats near 8:42."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series45-The-Hollow-Crown/chapter02.md",
-      "novel": "generated/novels/Series45-The-Hollow-Crown/chapter02.md",
-      "song": "generated/songs/Series45-The-Hollow-Crown/song02.md"
     }
   },
   "story": {

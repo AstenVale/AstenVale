@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "fulling mill",
-      "fullingmill"
-    ],
-    "object": [
-      "dried flower",
-      "driedflower"
-    ],
-    "witness": [
-      "typesetter"
-    ],
-    "time": [
-      "3:49",
-      "349"
-    ],
-    "marker": [
-      "534",
-      "marker 534",
-      "road marker 534",
-      "mile marker 534",
-      "mile 534"
-    ],
-    "direction": [
-      "past the tree line",
-      "pastthetreeline"
-    ],
-    "sound": [
-      "forge breath",
-      "forgebreath"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -301,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S05C04",
-    "puzzleId": "S05C04-marker-lock",
-    "dialogueId": "S05C04-typesetter",
-    "locationId": "fulling-mill",
-    "objective": "Investigate Fulling Mill, question Typesetter, recover Dried Flower, and learn why marker 534 is tied to Cold Archive.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Fulling Mill.",
-        "clue": "Forge Breath"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Dried Flower.",
-        "clue": "Dried Flower"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Typesetter.",
-        "clue": "3:49"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 534.",
-        "clue": "534"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Past the Tree Line instruction.",
-        "clue": "Past the Tree Line"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S05C04-location",
-        "type": "location",
-        "name": "Fulling Mill",
-        "inspectText": "Fulling Mill looks ordinary until Forge Breath moves through it."
-      },
-      {
-        "id": "S05C04-object",
-        "type": "evidence",
-        "name": "Dried Flower",
-        "inspectText": "Dried Flower is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S05C04-marker",
-        "type": "marker",
-        "name": "Marker 534",
-        "inspectText": "Marker 534 is not the answer. It is the lock."
-      },
-      {
-        "id": "S05C04-sound",
-        "type": "audio_clue",
-        "name": "Forge Breath",
-        "inspectText": "Forge Breath repeats near 3:49."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series05-The-Last-Winter/chapter04.md",
-      "novel": "generated/novels/Series05-The-Last-Winter/chapter04.md",
-      "song": "generated/songs/Series05-The-Last-Winter/song04.md"
     }
   },
   "story": {

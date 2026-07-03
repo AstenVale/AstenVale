@@ -61,39 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the hollow road",
-      "hollow road",
-      "thehollowroad"
-    ],
-    "object": [
-      "pipe"
-    ],
-    "witness": [
-      "cider presser",
-      "ciderpresser"
-    ],
-    "time": [
-      "7:14",
-      "714"
-    ],
-    "marker": [
-      "4834",
-      "marker 4834",
-      "road marker 4834",
-      "mile marker 4834",
-      "mile 4834"
-    ],
-    "direction": [
-      "back the way you came",
-      "backthewayyoucame"
-    ],
-    "sound": [
-      "cellar stairs",
-      "cellarstairs"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -312,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S48C04",
-    "puzzleId": "S48C04-marker-lock",
-    "dialogueId": "S48C04-cider-presser",
-    "locationId": "the-hollow-road",
-    "objective": "Investigate The Hollow Road, question Cider Presser, recover Pipe, and learn why marker 4834 is tied to Static Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Hollow Road.",
-        "clue": "Cellar Stairs"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Pipe.",
-        "clue": "Pipe"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Cider Presser.",
-        "clue": "7:14"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4834.",
-        "clue": "4834"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Back the Way You Came instruction.",
-        "clue": "Back the Way You Came"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S48C04-location",
-        "type": "location",
-        "name": "The Hollow Road",
-        "inspectText": "The Hollow Road looks ordinary until Cellar Stairs moves through it."
-      },
-      {
-        "id": "S48C04-object",
-        "type": "evidence",
-        "name": "Pipe",
-        "inspectText": "Pipe is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S48C04-marker",
-        "type": "marker",
-        "name": "Marker 4834",
-        "inspectText": "Marker 4834 is not the answer. It is the lock."
-      },
-      {
-        "id": "S48C04-sound",
-        "type": "audio_clue",
-        "name": "Cellar Stairs",
-        "inspectText": "Cellar Stairs repeats near 7:14."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series48-The-Broken-Signal/chapter04.md",
-      "novel": "generated/novels/Series48-The-Broken-Signal/chapter04.md",
-      "song": "generated/songs/Series48-The-Broken-Signal/song04.md"
     }
   },
   "story": {

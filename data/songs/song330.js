@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "lake shore",
-      "lakeshore"
-    ],
-    "object": [
-      "spool of thread",
-      "spoolofthread"
-    ],
-    "witness": [
-      "fisherman"
-    ],
-    "time": [
-      "2:55",
-      "255"
-    ],
-    "marker": [
-      "2852",
-      "marker 2852",
-      "road marker 2852",
-      "mile marker 2852",
-      "mile 2852"
-    ],
-    "direction": [
-      "over"
-    ],
-    "sound": [
-      "the silence after",
-      "silence after",
-      "thesilenceafter"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -312,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S28C06",
-    "puzzleId": "S28C06-marker-lock",
-    "dialogueId": "S28C06-fisherman",
-    "locationId": "lake-shore",
-    "objective": "Investigate Lake Shore, question Fisherman, recover Spool of Thread, and learn why marker 2852 is tied to Frequency Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Lake Shore.",
-        "clue": "The Silence After"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Spool of Thread.",
-        "clue": "Spool of Thread"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Fisherman.",
-        "clue": "2:55"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2852.",
-        "clue": "2852"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Over instruction.",
-        "clue": "Over"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S28C06-location",
-        "type": "location",
-        "name": "Lake Shore",
-        "inspectText": "Lake Shore looks ordinary until The Silence After moves through it."
-      },
-      {
-        "id": "S28C06-object",
-        "type": "evidence",
-        "name": "Spool of Thread",
-        "inspectText": "Spool of Thread is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S28C06-marker",
-        "type": "marker",
-        "name": "Marker 2852",
-        "inspectText": "Marker 2852 is not the answer. It is the lock."
-      },
-      {
-        "id": "S28C06-sound",
-        "type": "audio_clue",
-        "name": "The Silence After",
-        "inspectText": "The Silence After repeats near 2:55."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series28-The-Buried-Signal/chapter06.md",
-      "novel": "generated/novels/Series28-The-Buried-Signal/chapter06.md",
-      "song": "generated/songs/Series28-The-Buried-Signal/song06.md"
     }
   },
   "story": {

@@ -61,35 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "cabin"
-    ],
-    "object": [
-      "candle"
-    ],
-    "witness": [
-      "chandler"
-    ],
-    "time": [
-      "2:19",
-      "219"
-    ],
-    "marker": [
-      "334",
-      "marker 334",
-      "road marker 334",
-      "mile marker 334",
-      "mile 334"
-    ],
-    "direction": [
-      "under"
-    ],
-    "sound": [
-      "water drip",
-      "waterdrip"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -298,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S03C04",
-    "puzzleId": "S03C04-marker-lock",
-    "dialogueId": "S03C04-chandler",
-    "locationId": "cabin",
-    "objective": "Investigate Cabin, question Chandler, recover Candle, and learn why marker 334 is tied to Absence Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Cabin.",
-        "clue": "Water Drip"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Candle.",
-        "clue": "Candle"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Chandler.",
-        "clue": "2:19"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 334.",
-        "clue": "334"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Under instruction.",
-        "clue": "Under"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S03C04-location",
-        "type": "location",
-        "name": "Cabin",
-        "inspectText": "Cabin looks ordinary until Water Drip moves through it."
-      },
-      {
-        "id": "S03C04-object",
-        "type": "evidence",
-        "name": "Candle",
-        "inspectText": "Candle is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S03C04-marker",
-        "type": "marker",
-        "name": "Marker 334",
-        "inspectText": "Marker 334 is not the answer. It is the lock."
-      },
-      {
-        "id": "S03C04-sound",
-        "type": "audio_clue",
-        "name": "Water Drip",
-        "inspectText": "Water Drip repeats near 2:19."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series03-The-Disappearance/chapter04.md",
-      "novel": "generated/novels/Series03-The-Disappearance/chapter04.md",
-      "song": "generated/songs/Series03-The-Disappearance/song04.md"
     }
   },
   "story": {

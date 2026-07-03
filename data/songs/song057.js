@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "cooper's yard",
-      "cooper'syard"
-    ],
-    "object": [
-      "journal"
-    ],
-    "witness": [
-      "chandler"
-    ],
-    "time": [
-      "8:42",
-      "842"
-    ],
-    "marker": [
-      "579",
-      "marker 579",
-      "road marker 579",
-      "mile marker 579",
-      "mile 579"
-    ],
-    "direction": [
-      "back"
-    ],
-    "sound": [
-      "pen on paper",
-      "penonpaper"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -299,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S05C09",
-    "puzzleId": "S05C09-marker-lock",
-    "dialogueId": "S05C09-chandler",
-    "locationId": "cooper-s-yard",
-    "objective": "Investigate Cooper's Yard, question Chandler, recover Journal, and learn why marker 579 is tied to Cold Archive.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Cooper's Yard.",
-        "clue": "Pen on Paper"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Journal.",
-        "clue": "Journal"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Chandler.",
-        "clue": "8:42"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 579.",
-        "clue": "579"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Back instruction.",
-        "clue": "Back"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S05C09-location",
-        "type": "location",
-        "name": "Cooper's Yard",
-        "inspectText": "Cooper's Yard looks ordinary until Pen on Paper moves through it."
-      },
-      {
-        "id": "S05C09-object",
-        "type": "evidence",
-        "name": "Journal",
-        "inspectText": "Journal is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S05C09-marker",
-        "type": "marker",
-        "name": "Marker 579",
-        "inspectText": "Marker 579 is not the answer. It is the lock."
-      },
-      {
-        "id": "S05C09-sound",
-        "type": "audio_clue",
-        "name": "Pen on Paper",
-        "inspectText": "Pen on Paper repeats near 8:42."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series05-The-Last-Winter/chapter09.md",
-      "novel": "generated/novels/Series05-The-Last-Winter/chapter09.md",
-      "song": "generated/songs/Series05-The-Last-Winter/song09.md"
     }
   },
   "story": {

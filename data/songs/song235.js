@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "sheep fold",
-      "sheepfold"
-    ],
-    "object": [
-      "key"
-    ],
-    "witness": [
-      "woodsman"
-    ],
-    "time": [
-      "4:12",
-      "412"
-    ],
-    "marker": [
-      "2061",
-      "marker 2061",
-      "road marker 2061",
-      "mile marker 2061",
-      "mile 2061"
-    ],
-    "direction": [
-      "away"
-    ],
-    "sound": [
-      "kettle boil",
-      "kettleboil"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -310,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S20C07",
-    "puzzleId": "S20C07-marker-lock",
-    "dialogueId": "S20C07-woodsman",
-    "locationId": "sheep-fold",
-    "objective": "Investigate Sheep Fold, question Woodsman, recover Key, and learn why marker 2061 is tied to Night Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Sheep Fold.",
-        "clue": "Kettle Boil"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Key.",
-        "clue": "Key"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Woodsman.",
-        "clue": "4:12"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2061.",
-        "clue": "2061"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Away instruction.",
-        "clue": "Away"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S20C07-location",
-        "type": "location",
-        "name": "Sheep Fold",
-        "inspectText": "Sheep Fold looks ordinary until Kettle Boil moves through it."
-      },
-      {
-        "id": "S20C07-object",
-        "type": "evidence",
-        "name": "Key",
-        "inspectText": "Key is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S20C07-marker",
-        "type": "marker",
-        "name": "Marker 2061",
-        "inspectText": "Marker 2061 is not the answer. It is the lock."
-      },
-      {
-        "id": "S20C07-sound",
-        "type": "audio_clue",
-        "name": "Kettle Boil",
-        "inspectText": "Kettle Boil repeats near 4:12."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series20-The-Midnight-Circuit/chapter07.md",
-      "novel": "generated/novels/Series20-The-Midnight-Circuit/chapter07.md",
-      "song": "generated/songs/Series20-The-Midnight-Circuit/song07.md"
     }
   },
   "story": {

@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "silo row",
-      "silorow"
-    ],
-    "object": [
-      "boot"
-    ],
-    "witness": [
-      "wool sorter",
-      "woolsorter"
-    ],
-    "time": [
-      "6:06",
-      "606"
-    ],
-    "marker": [
-      "4397",
-      "marker 4397",
-      "road marker 4397",
-      "mile marker 4397",
-      "mile 4397"
-    ],
-    "direction": [
-      "beyond"
-    ],
-    "sound": [
-      "floorboard"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -299,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S43C11",
-    "puzzleId": "S43C11-marker-lock",
-    "dialogueId": "S43C11-wool-sorter",
-    "locationId": "silo-row",
-    "objective": "Investigate Silo Row, question Wool Sorter, recover Boot, and learn why marker 4397 is tied to Identity Vault II.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Silo Row.",
-        "clue": "Floorboard"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Boot.",
-        "clue": "Boot"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Wool Sorter.",
-        "clue": "6:06"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4397.",
-        "clue": "4397"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Beyond instruction.",
-        "clue": "Beyond"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S43C11-location",
-        "type": "location",
-        "name": "Silo Row",
-        "inspectText": "Silo Row looks ordinary until Floorboard moves through it."
-      },
-      {
-        "id": "S43C11-object",
-        "type": "evidence",
-        "name": "Boot",
-        "inspectText": "Boot is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S43C11-marker",
-        "type": "marker",
-        "name": "Marker 4397",
-        "inspectText": "Marker 4397 is not the answer. It is the lock."
-      },
-      {
-        "id": "S43C11-sound",
-        "type": "audio_clue",
-        "name": "Floorboard",
-        "inspectText": "Floorboard repeats near 6:06."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series43-The-False-Name/chapter11.md",
-      "novel": "generated/novels/Series43-The-False-Name/chapter11.md",
-      "song": "generated/songs/Series43-The-False-Name/song11.md"
     }
   },
   "story": {

@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "print shop",
-      "printshop"
-    ],
-    "object": [
-      "canteen"
-    ],
-    "witness": [
-      "wool sorter",
-      "woolsorter"
-    ],
-    "time": [
-      "3:49",
-      "349"
-    ],
-    "marker": [
-      "2161",
-      "marker 2161",
-      "road marker 2161",
-      "mile marker 2161",
-      "mile 2161"
-    ],
-    "direction": [
-      "ahead"
-    ],
-    "sound": [
-      "distant gunshot",
-      "distantgunshot"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S21C07",
-    "puzzleId": "S21C07-marker-lock",
-    "dialogueId": "S21C07-wool-sorter",
-    "locationId": "print-shop",
-    "objective": "Investigate Print Shop, question Wool Sorter, recover Canteen, and learn why marker 2161 is tied to Bark Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Print Shop.",
-        "clue": "Distant Gunshot"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Canteen.",
-        "clue": "Canteen"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Wool Sorter.",
-        "clue": "3:49"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2161.",
-        "clue": "2161"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Ahead instruction.",
-        "clue": "Ahead"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S21C07-location",
-        "type": "location",
-        "name": "Print Shop",
-        "inspectText": "Print Shop looks ordinary until Distant Gunshot moves through it."
-      },
-      {
-        "id": "S21C07-object",
-        "type": "evidence",
-        "name": "Canteen",
-        "inspectText": "Canteen is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S21C07-marker",
-        "type": "marker",
-        "name": "Marker 2161",
-        "inspectText": "Marker 2161 is not the answer. It is the lock."
-      },
-      {
-        "id": "S21C07-sound",
-        "type": "audio_clue",
-        "name": "Distant Gunshot",
-        "inspectText": "Distant Gunshot repeats near 3:49."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series21-The-Witness-Tree/chapter07.md",
-      "novel": "generated/novels/Series21-The-Witness-Tree/chapter07.md",
-      "song": "generated/songs/Series21-The-Witness-Tree/song07.md"
     }
   },
   "story": {

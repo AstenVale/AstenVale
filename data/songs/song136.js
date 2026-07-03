@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "undertaker's hall",
-      "undertaker'shall"
-    ],
-    "object": [
-      "wax tablet",
-      "waxtablet"
-    ],
-    "witness": [
-      "apothecary"
-    ],
-    "time": [
-      "3:30",
-      "330"
-    ],
-    "marker": [
-      "1234",
-      "marker 1234",
-      "road marker 1234",
-      "mile marker 1234",
-      "mile 1234"
-    ],
-    "direction": [
-      "under"
-    ],
-    "sound": [
-      "crow call",
-      "crowcall"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S12C04",
-    "puzzleId": "S12C04-marker-lock",
-    "dialogueId": "S12C04-apothecary",
-    "locationId": "undertaker-s-hall",
-    "objective": "Investigate Undertaker's Hall, question Apothecary, recover Wax Tablet, and learn why marker 1234 is tied to Estate Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Undertaker's Hall.",
-        "clue": "Crow Call"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Wax Tablet.",
-        "clue": "Wax Tablet"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Apothecary.",
-        "clue": "3:30"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1234.",
-        "clue": "1234"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Under instruction.",
-        "clue": "Under"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S12C04-location",
-        "type": "location",
-        "name": "Undertaker's Hall",
-        "inspectText": "Undertaker's Hall looks ordinary until Crow Call moves through it."
-      },
-      {
-        "id": "S12C04-object",
-        "type": "evidence",
-        "name": "Wax Tablet",
-        "inspectText": "Wax Tablet is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S12C04-marker",
-        "type": "marker",
-        "name": "Marker 1234",
-        "inspectText": "Marker 1234 is not the answer. It is the lock."
-      },
-      {
-        "id": "S12C04-sound",
-        "type": "audio_clue",
-        "name": "Crow Call",
-        "inspectText": "Crow Call repeats near 3:30."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series12-The-Inheritance/chapter04.md",
-      "novel": "generated/novels/Series12-The-Inheritance/chapter04.md",
-      "song": "generated/songs/Series12-The-Inheritance/song04.md"
     }
   },
   "story": {

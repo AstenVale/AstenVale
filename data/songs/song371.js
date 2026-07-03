@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "ash hollow",
-      "ashhollow"
-    ],
-    "object": [
-      "scratched initials in wood",
-      "scratchedinitialsinwood"
-    ],
-    "witness": [
-      "auctioneer"
-    ],
-    "time": [
-      "7:48",
-      "748"
-    ],
-    "marker": [
-      "3197",
-      "marker 3197",
-      "road marker 3197",
-      "mile marker 3197",
-      "mile 3197"
-    ],
-    "direction": [
-      "south"
-    ],
-    "sound": [
-      "swamp gas",
-      "swampgas"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -310,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S31C11",
-    "puzzleId": "S31C11-marker-lock",
-    "dialogueId": "S31C11-auctioneer",
-    "locationId": "ash-hollow",
-    "objective": "Investigate Ash Hollow, question Auctioneer, recover Scratched Initials in Wood, and learn why marker 3197 is tied to Pattern Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Ash Hollow.",
-        "clue": "Swamp Gas"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Scratched Initials in Wood.",
-        "clue": "Scratched Initials in Wood"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Auctioneer.",
-        "clue": "7:48"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3197.",
-        "clue": "3197"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the South instruction.",
-        "clue": "South"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S31C11-location",
-        "type": "location",
-        "name": "Ash Hollow",
-        "inspectText": "Ash Hollow looks ordinary until Swamp Gas moves through it."
-      },
-      {
-        "id": "S31C11-object",
-        "type": "evidence",
-        "name": "Scratched Initials in Wood",
-        "inspectText": "Scratched Initials in Wood is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S31C11-marker",
-        "type": "marker",
-        "name": "Marker 3197",
-        "inspectText": "Marker 3197 is not the answer. It is the lock."
-      },
-      {
-        "id": "S31C11-sound",
-        "type": "audio_clue",
-        "name": "Swamp Gas",
-        "inspectText": "Swamp Gas repeats near 7:48."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series31-The-Cipher-Garden/chapter11.md",
-      "novel": "generated/novels/Series31-The-Cipher-Garden/chapter11.md",
-      "song": "generated/songs/Series31-The-Cipher-Garden/song11.md"
     }
   },
   "story": {

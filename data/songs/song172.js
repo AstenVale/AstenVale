@@ -61,35 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "saloon"
-    ],
-    "object": [
-      "ribbon"
-    ],
-    "witness": [
-      "groundskeeper"
-    ],
-    "time": [
-      "3:49",
-      "349"
-    ],
-    "marker": [
-      "1534",
-      "marker 1534",
-      "road marker 1534",
-      "mile marker 1534",
-      "mile 1534"
-    ],
-    "direction": [
-      "away"
-    ],
-    "sound": [
-      "shutter bang",
-      "shutterbang"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -309,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S15C04",
-    "puzzleId": "S15C04-marker-lock",
-    "dialogueId": "S15C04-groundskeeper",
-    "locationId": "saloon",
-    "objective": "Investigate Saloon, question Groundskeeper, recover Ribbon, and learn why marker 1534 is tied to Signal Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Saloon.",
-        "clue": "Shutter Bang"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Ribbon.",
-        "clue": "Ribbon"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Groundskeeper.",
-        "clue": "3:49"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1534.",
-        "clue": "1534"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Away instruction.",
-        "clue": "Away"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S15C04-location",
-        "type": "location",
-        "name": "Saloon",
-        "inspectText": "Saloon looks ordinary until Shutter Bang moves through it."
-      },
-      {
-        "id": "S15C04-object",
-        "type": "evidence",
-        "name": "Ribbon",
-        "inspectText": "Ribbon is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S15C04-marker",
-        "type": "marker",
-        "name": "Marker 1534",
-        "inspectText": "Marker 1534 is not the answer. It is the lock."
-      },
-      {
-        "id": "S15C04-sound",
-        "type": "audio_clue",
-        "name": "Shutter Bang",
-        "inspectText": "Shutter Bang repeats near 3:49."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series15-The-Lantern-Keeper/chapter04.md",
-      "novel": "generated/novels/Series15-The-Lantern-Keeper/chapter04.md",
-      "song": "generated/songs/Series15-The-Lantern-Keeper/song04.md"
     }
   },
   "story": {

@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "market square",
-      "marketsquare"
-    ],
-    "object": [
-      "bent nail",
-      "bentnail"
-    ],
-    "witness": [
-      "fisherman"
-    ],
-    "time": [
-      "2:38",
-      "238"
-    ],
-    "marker": [
-      "1388",
-      "marker 1388",
-      "road marker 1388",
-      "mile marker 1388",
-      "mile 1388"
-    ],
-    "direction": [
-      "up the ridge",
-      "uptheridge"
-    ],
-    "sound": [
-      "lid of a tin",
-      "lidofatin"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S13C10",
-    "puzzleId": "S13C10-marker-lock",
-    "dialogueId": "S13C10-fisherman",
-    "locationId": "market-square",
-    "objective": "Investigate Market Square, question Fisherman, recover Bent Nail, and learn why marker 1388 is tied to Mirror Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Market Square.",
-        "clue": "Lid of a Tin"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Bent Nail.",
-        "clue": "Bent Nail"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Fisherman.",
-        "clue": "2:38"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1388.",
-        "clue": "1388"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Up the Ridge instruction.",
-        "clue": "Up the Ridge"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S13C10-location",
-        "type": "location",
-        "name": "Market Square",
-        "inspectText": "Market Square looks ordinary until Lid of a Tin moves through it."
-      },
-      {
-        "id": "S13C10-object",
-        "type": "evidence",
-        "name": "Bent Nail",
-        "inspectText": "Bent Nail is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S13C10-marker",
-        "type": "marker",
-        "name": "Marker 1388",
-        "inspectText": "Marker 1388 is not the answer. It is the lock."
-      },
-      {
-        "id": "S13C10-sound",
-        "type": "audio_clue",
-        "name": "Lid of a Tin",
-        "inspectText": "Lid of a Tin repeats near 2:38."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series13-The-Twin-Hollows/chapter10.md",
-      "novel": "generated/novels/Series13-The-Twin-Hollows/chapter10.md",
-      "song": "generated/songs/Series13-The-Twin-Hollows/song10.md"
     }
   },
   "story": {

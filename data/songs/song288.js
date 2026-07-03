@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the hollow road",
-      "hollow road",
-      "thehollowroad"
-    ],
-    "object": [
-      "spectacles"
-    ],
-    "witness": [
-      "night porter",
-      "nightporter"
-    ],
-    "time": [
-      "12:44",
-      "1244"
-    ],
-    "marker": [
-      "2506",
-      "marker 2506",
-      "road marker 2506",
-      "mile marker 2506",
-      "mile 2506"
-    ],
-    "direction": [
-      "up"
-    ],
-    "sound": [
-      "coal shifting",
-      "coalshifting"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -312,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S24C12",
-    "puzzleId": "S24C12-marker-lock",
-    "dialogueId": "S24C12-night-porter",
-    "locationId": "the-hollow-road",
-    "objective": "Investigate The Hollow Road, question Night Porter, recover Spectacles, and learn why marker 2506 is tied to Timeline Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Hollow Road.",
-        "clue": "Coal Shifting"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Spectacles.",
-        "clue": "Spectacles"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Night Porter.",
-        "clue": "12:44"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2506.",
-        "clue": "2506"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Up instruction.",
-        "clue": "Up"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S24C12-location",
-        "type": "location",
-        "name": "The Hollow Road",
-        "inspectText": "The Hollow Road looks ordinary until Coal Shifting moves through it."
-      },
-      {
-        "id": "S24C12-object",
-        "type": "evidence",
-        "name": "Spectacles",
-        "inspectText": "Spectacles is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S24C12-marker",
-        "type": "marker",
-        "name": "Marker 2506",
-        "inspectText": "Marker 2506 is not the answer. It is the lock."
-      },
-      {
-        "id": "S24C12-sound",
-        "type": "audio_clue",
-        "name": "Coal Shifting",
-        "inspectText": "Coal Shifting repeats near 12:44."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series24-The-Missing-Hours/chapter12.md",
-      "novel": "generated/novels/Series24-The-Missing-Hours/chapter12.md",
-      "song": "generated/songs/Series24-The-Missing-Hours/song12.md"
     }
   },
   "story": {

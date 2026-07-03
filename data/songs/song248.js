@@ -61,39 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the hollow road",
-      "hollow road",
-      "thehollowroad"
-    ],
-    "object": [
-      "prayer card",
-      "prayercard"
-    ],
-    "witness": [
-      "schoolgirl"
-    ],
-    "time": [
-      "11:40",
-      "1140"
-    ],
-    "marker": [
-      "2170",
-      "marker 2170",
-      "road marker 2170",
-      "mile marker 2170",
-      "mile 2170"
-    ],
-    "direction": [
-      "down the hollow",
-      "downthehollow"
-    ],
-    "sound": [
-      "telegraph click",
-      "telegraphclick"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -302,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S21C08",
-    "puzzleId": "S21C08-marker-lock",
-    "dialogueId": "S21C08-schoolgirl",
-    "locationId": "the-hollow-road",
-    "objective": "Investigate The Hollow Road, question Schoolgirl, recover Prayer Card, and learn why marker 2170 is tied to Bark Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Hollow Road.",
-        "clue": "Telegraph Click"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Prayer Card.",
-        "clue": "Prayer Card"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Schoolgirl.",
-        "clue": "11:40"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2170.",
-        "clue": "2170"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Down the Hollow instruction.",
-        "clue": "Down the Hollow"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S21C08-location",
-        "type": "location",
-        "name": "The Hollow Road",
-        "inspectText": "The Hollow Road looks ordinary until Telegraph Click moves through it."
-      },
-      {
-        "id": "S21C08-object",
-        "type": "evidence",
-        "name": "Prayer Card",
-        "inspectText": "Prayer Card is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S21C08-marker",
-        "type": "marker",
-        "name": "Marker 2170",
-        "inspectText": "Marker 2170 is not the answer. It is the lock."
-      },
-      {
-        "id": "S21C08-sound",
-        "type": "audio_clue",
-        "name": "Telegraph Click",
-        "inspectText": "Telegraph Click repeats near 11:40."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series21-The-Witness-Tree/chapter08.md",
-      "novel": "generated/novels/Series21-The-Witness-Tree/chapter08.md",
-      "song": "generated/songs/Series21-The-Witness-Tree/song08.md"
     }
   },
   "story": {

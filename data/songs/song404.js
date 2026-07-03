@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "butcher's row",
-      "butcher'srow"
-    ],
-    "object": [
-      "copper fitting",
-      "copperfitting"
-    ],
-    "witness": [
-      "census taker",
-      "censustaker"
-    ],
-    "time": [
-      "7:02",
-      "702"
-    ],
-    "marker": [
-      "3470",
-      "marker 3470",
-      "road marker 3470",
-      "mile marker 3470",
-      "mile 3470"
-    ],
-    "direction": [
-      "under"
-    ],
-    "sound": [
-      "breathing"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S34C08",
-    "puzzleId": "S34C08-marker-lock",
-    "dialogueId": "S34C08-census-taker",
-    "locationId": "butcher-s-row",
-    "objective": "Investigate Butcher's Row, question Census Taker, recover Copper Fitting, and learn why marker 3470 is tied to Clinical Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Butcher's Row.",
-        "clue": "Breathing"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Copper Fitting.",
-        "clue": "Copper Fitting"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Census Taker.",
-        "clue": "7:02"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3470.",
-        "clue": "3470"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Under instruction.",
-        "clue": "Under"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S34C08-location",
-        "type": "location",
-        "name": "Butcher's Row",
-        "inspectText": "Butcher's Row looks ordinary until Breathing moves through it."
-      },
-      {
-        "id": "S34C08-object",
-        "type": "evidence",
-        "name": "Copper Fitting",
-        "inspectText": "Copper Fitting is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S34C08-marker",
-        "type": "marker",
-        "name": "Marker 3470",
-        "inspectText": "Marker 3470 is not the answer. It is the lock."
-      },
-      {
-        "id": "S34C08-sound",
-        "type": "audio_clue",
-        "name": "Breathing",
-        "inspectText": "Breathing repeats near 7:02."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series34-The-Locked-Ward/chapter08.md",
-      "novel": "generated/novels/Series34-The-Locked-Ward/chapter08.md",
-      "song": "generated/songs/Series34-The-Locked-Ward/song08.md"
     }
   },
   "story": {

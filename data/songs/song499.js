@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "birch stand",
-      "birchstand"
-    ],
-    "object": [
-      "letter"
-    ],
-    "witness": [
-      "doctor"
-    ],
-    "time": [
-      "5:09",
-      "509"
-    ],
-    "marker": [
-      "4261",
-      "marker 4261",
-      "road marker 4261",
-      "mile marker 4261",
-      "mile 4261"
-    ],
-    "direction": [
-      "into the dark",
-      "intothedark"
-    ],
-    "sound": [
-      "ice crack",
-      "icecrack"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S42C07",
-    "puzzleId": "S42C07-marker-lock",
-    "dialogueId": "S42C07-doctor",
-    "locationId": "birch-stand",
-    "objective": "Investigate Birch Stand, question Doctor, recover Letter, and learn why marker 4261 is tied to Drought Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Birch Stand.",
-        "clue": "Ice Crack"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Letter.",
-        "clue": "Letter"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Doctor.",
-        "clue": "5:09"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4261.",
-        "clue": "4261"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Into the Dark instruction.",
-        "clue": "Into the Dark"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S42C07-location",
-        "type": "location",
-        "name": "Birch Stand",
-        "inspectText": "Birch Stand looks ordinary until Ice Crack moves through it."
-      },
-      {
-        "id": "S42C07-object",
-        "type": "evidence",
-        "name": "Letter",
-        "inspectText": "Letter is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S42C07-marker",
-        "type": "marker",
-        "name": "Marker 4261",
-        "inspectText": "Marker 4261 is not the answer. It is the lock."
-      },
-      {
-        "id": "S42C07-sound",
-        "type": "audio_clue",
-        "name": "Ice Crack",
-        "inspectText": "Ice Crack repeats near 5:09."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series42-The-Dry-Season/chapter07.md",
-      "novel": "generated/novels/Series42-The-Dry-Season/chapter07.md",
-      "song": "generated/songs/Series42-The-Dry-Season/song07.md"
     }
   },
   "story": {

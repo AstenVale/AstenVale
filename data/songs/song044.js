@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "cemetery"
-    ],
-    "object": [
-      "watch"
-    ],
-    "witness": [
-      "midwife"
-    ],
-    "time": [
-      "12:33",
-      "1233"
-    ],
-    "marker": [
-      "470",
-      "marker 470",
-      "road marker 470",
-      "mile marker 470",
-      "mile 470"
-    ],
-    "direction": [
-      "down the hollow",
-      "downthehollow"
-    ],
-    "sound": [
-      "knife scrape",
-      "knifescrape"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -309,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S04C08",
-    "puzzleId": "S04C08-marker-lock",
-    "dialogueId": "S04C08-midwife",
-    "locationId": "cemetery",
-    "objective": "Investigate Cemetery, question Midwife, recover Watch, and learn why marker 470 is tied to Current Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Cemetery.",
-        "clue": "Knife Scrape"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Watch.",
-        "clue": "Watch"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Midwife.",
-        "clue": "12:33"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 470.",
-        "clue": "470"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Down the Hollow instruction.",
-        "clue": "Down the Hollow"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S04C08-location",
-        "type": "location",
-        "name": "Cemetery",
-        "inspectText": "Cemetery looks ordinary until Knife Scrape moves through it."
-      },
-      {
-        "id": "S04C08-object",
-        "type": "evidence",
-        "name": "Watch",
-        "inspectText": "Watch is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S04C08-marker",
-        "type": "marker",
-        "name": "Marker 470",
-        "inspectText": "Marker 470 is not the answer. It is the lock."
-      },
-      {
-        "id": "S04C08-sound",
-        "type": "audio_clue",
-        "name": "Knife Scrape",
-        "inspectText": "Knife Scrape repeats near 12:33."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series04-The-River-Speaks/chapter08.md",
-      "novel": "generated/novels/Series04-The-River-Speaks/chapter08.md",
-      "song": "generated/songs/Series04-The-River-Speaks/song08.md"
     }
   },
   "story": {

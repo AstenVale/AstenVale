@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "pharmacy"
-    ],
-    "object": [
-      "scratched initials in wood",
-      "scratchedinitialsinwood"
-    ],
-    "witness": [
-      "furrier"
-    ],
-    "time": [
-      "9:08",
-      "908"
-    ],
-    "marker": [
-      "3252",
-      "marker 3252",
-      "road marker 3252",
-      "mile marker 3252",
-      "mile 3252"
-    ],
-    "direction": [
-      "forward"
-    ],
-    "sound": [
-      "lantern flicker",
-      "lanternflicker"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -299,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S32C06",
-    "puzzleId": "S32C06-marker-lock",
-    "dialogueId": "S32C06-furrier",
-    "locationId": "pharmacy",
-    "objective": "Investigate Pharmacy, question Furrier, recover Scratched Initials in Wood, and learn why marker 3252 is tied to Depth Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Pharmacy.",
-        "clue": "Lantern Flicker"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Scratched Initials in Wood.",
-        "clue": "Scratched Initials in Wood"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Furrier.",
-        "clue": "9:08"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3252.",
-        "clue": "3252"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Forward instruction.",
-        "clue": "Forward"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S32C06-location",
-        "type": "location",
-        "name": "Pharmacy",
-        "inspectText": "Pharmacy looks ordinary until Lantern Flicker moves through it."
-      },
-      {
-        "id": "S32C06-object",
-        "type": "evidence",
-        "name": "Scratched Initials in Wood",
-        "inspectText": "Scratched Initials in Wood is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S32C06-marker",
-        "type": "marker",
-        "name": "Marker 3252",
-        "inspectText": "Marker 3252 is not the answer. It is the lock."
-      },
-      {
-        "id": "S32C06-sound",
-        "type": "audio_clue",
-        "name": "Lantern Flicker",
-        "inspectText": "Lantern Flicker repeats near 9:08."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series32-The-Deep-Current/chapter06.md",
-      "novel": "generated/novels/Series32-The-Deep-Current/chapter06.md",
-      "song": "generated/songs/Series32-The-Deep-Current/song06.md"
     }
   },
   "story": {

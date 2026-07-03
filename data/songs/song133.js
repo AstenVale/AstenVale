@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "old bridge",
-      "oldbridge"
-    ],
-    "object": [
-      "ribbon"
-    ],
-    "witness": [
-      "tanner"
-    ],
-    "time": [
-      "3:49",
-      "349"
-    ],
-    "marker": [
-      "1207",
-      "marker 1207",
-      "road marker 1207",
-      "mile marker 1207",
-      "mile 1207"
-    ],
-    "direction": [
-      "west"
-    ],
-    "sound": [
-      "night insects",
-      "nightinsects"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -299,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S12C01",
-    "puzzleId": "S12C01-marker-lock",
-    "dialogueId": "S12C01-tanner",
-    "locationId": "old-bridge",
-    "objective": "Investigate Old Bridge, question Tanner, recover Ribbon, and learn why marker 1207 is tied to Estate Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Old Bridge.",
-        "clue": "Night Insects"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Ribbon.",
-        "clue": "Ribbon"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Tanner.",
-        "clue": "3:49"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1207.",
-        "clue": "1207"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the West instruction.",
-        "clue": "West"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S12C01-location",
-        "type": "location",
-        "name": "Old Bridge",
-        "inspectText": "Old Bridge looks ordinary until Night Insects moves through it."
-      },
-      {
-        "id": "S12C01-object",
-        "type": "evidence",
-        "name": "Ribbon",
-        "inspectText": "Ribbon is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S12C01-marker",
-        "type": "marker",
-        "name": "Marker 1207",
-        "inspectText": "Marker 1207 is not the answer. It is the lock."
-      },
-      {
-        "id": "S12C01-sound",
-        "type": "audio_clue",
-        "name": "Night Insects",
-        "inspectText": "Night Insects repeats near 3:49."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series12-The-Inheritance/chapter01.md",
-      "novel": "generated/novels/Series12-The-Inheritance/chapter01.md",
-      "song": "generated/songs/Series12-The-Inheritance/song01.md"
     }
   },
   "story": {

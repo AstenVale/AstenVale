@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "crow's nest ridge",
-      "crow'snestridge"
-    ],
-    "object": [
-      "lock of hair",
-      "lockofhair"
-    ],
-    "witness": [
-      "fisherman"
-    ],
-    "time": [
-      "8:17",
-      "817"
-    ],
-    "marker": [
-      "4052",
-      "marker 4052",
-      "road marker 4052",
-      "mile marker 4052",
-      "mile 4052"
-    ],
-    "direction": [
-      "below"
-    ],
-    "sound": [
-      "shutter bang",
-      "shutterbang"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -310,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S40C06",
-    "puzzleId": "S40C06-marker-lock",
-    "dialogueId": "S40C06-fisherman",
-    "locationId": "crow-s-nest-ridge",
-    "objective": "Investigate Crow's Nest Ridge, question Fisherman, recover Lock of Hair, and learn why marker 4052 is tied to Cipher Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Crow's Nest Ridge.",
-        "clue": "Shutter Bang"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Lock of Hair.",
-        "clue": "Lock of Hair"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Fisherman.",
-        "clue": "8:17"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4052.",
-        "clue": "4052"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Below instruction.",
-        "clue": "Below"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S40C06-location",
-        "type": "location",
-        "name": "Crow's Nest Ridge",
-        "inspectText": "Crow's Nest Ridge looks ordinary until Shutter Bang moves through it."
-      },
-      {
-        "id": "S40C06-object",
-        "type": "evidence",
-        "name": "Lock of Hair",
-        "inspectText": "Lock of Hair is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S40C06-marker",
-        "type": "marker",
-        "name": "Marker 4052",
-        "inspectText": "Marker 4052 is not the answer. It is the lock."
-      },
-      {
-        "id": "S40C06-sound",
-        "type": "audio_clue",
-        "name": "Shutter Bang",
-        "inspectText": "Shutter Bang repeats near 8:17."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series40-The-Coded-Letter/chapter06.md",
-      "novel": "generated/novels/Series40-The-Coded-Letter/chapter06.md",
-      "song": "generated/songs/Series40-The-Coded-Letter/song06.md"
     }
   },
   "story": {

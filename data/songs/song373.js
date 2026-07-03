@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "grain mill",
-      "grainmill"
-    ],
-    "object": [
-      "scratched initials in wood",
-      "scratchedinitialsinwood"
-    ],
-    "witness": [
-      "judge"
-    ],
-    "time": [
-      "9:27",
-      "927"
-    ],
-    "marker": [
-      "3207",
-      "marker 3207",
-      "road marker 3207",
-      "mile marker 3207",
-      "mile 3207"
-    ],
-    "direction": [
-      "further in",
-      "furtherin"
-    ],
-    "sound": [
-      "clock ticking",
-      "clockticking"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -301,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S32C01",
-    "puzzleId": "S32C01-marker-lock",
-    "dialogueId": "S32C01-judge",
-    "locationId": "grain-mill",
-    "objective": "Investigate Grain Mill, question Judge, recover Scratched Initials in Wood, and learn why marker 3207 is tied to Depth Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Grain Mill.",
-        "clue": "Clock Ticking"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Scratched Initials in Wood.",
-        "clue": "Scratched Initials in Wood"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Judge.",
-        "clue": "9:27"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3207.",
-        "clue": "3207"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Further In instruction.",
-        "clue": "Further In"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S32C01-location",
-        "type": "location",
-        "name": "Grain Mill",
-        "inspectText": "Grain Mill looks ordinary until Clock Ticking moves through it."
-      },
-      {
-        "id": "S32C01-object",
-        "type": "evidence",
-        "name": "Scratched Initials in Wood",
-        "inspectText": "Scratched Initials in Wood is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S32C01-marker",
-        "type": "marker",
-        "name": "Marker 3207",
-        "inspectText": "Marker 3207 is not the answer. It is the lock."
-      },
-      {
-        "id": "S32C01-sound",
-        "type": "audio_clue",
-        "name": "Clock Ticking",
-        "inspectText": "Clock Ticking repeats near 9:27."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series32-The-Deep-Current/chapter01.md",
-      "novel": "generated/novels/Series32-The-Deep-Current/chapter01.md",
-      "song": "generated/songs/Series32-The-Deep-Current/song01.md"
     }
   },
   "story": {

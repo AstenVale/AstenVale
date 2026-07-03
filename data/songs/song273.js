@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "south fork",
-      "southfork"
-    ],
-    "object": [
-      "wool scarf",
-      "woolscarf"
-    ],
-    "witness": [
-      "widow"
-    ],
-    "time": [
-      "5:13",
-      "513"
-    ],
-    "marker": [
-      "2379",
-      "marker 2379",
-      "road marker 2379",
-      "mile marker 2379",
-      "mile 2379"
-    ],
-    "direction": [
-      "out of sight",
-      "outofsight"
-    ],
-    "sound": [
-      "crow call",
-      "crowcall"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -301,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S23C09",
-    "puzzleId": "S23C09-marker-lock",
-    "dialogueId": "S23C09-widow",
-    "locationId": "south-fork",
-    "objective": "Investigate South Fork, question Widow, recover Wool Scarf, and learn why marker 2379 is tied to Document Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter South Fork.",
-        "clue": "Crow Call"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Wool Scarf.",
-        "clue": "Wool Scarf"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Widow.",
-        "clue": "5:13"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2379.",
-        "clue": "2379"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Out of Sight instruction.",
-        "clue": "Out of Sight"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S23C09-location",
-        "type": "location",
-        "name": "South Fork",
-        "inspectText": "South Fork looks ordinary until Crow Call moves through it."
-      },
-      {
-        "id": "S23C09-object",
-        "type": "evidence",
-        "name": "Wool Scarf",
-        "inspectText": "Wool Scarf is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S23C09-marker",
-        "type": "marker",
-        "name": "Marker 2379",
-        "inspectText": "Marker 2379 is not the answer. It is the lock."
-      },
-      {
-        "id": "S23C09-sound",
-        "type": "audio_clue",
-        "name": "Crow Call",
-        "inspectText": "Crow Call repeats near 5:13."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series23-The-Paper-Trail/chapter09.md",
-      "novel": "generated/novels/Series23-The-Paper-Trail/chapter09.md",
-      "song": "generated/songs/Series23-The-Paper-Trail/song09.md"
     }
   },
   "story": {

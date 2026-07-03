@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "stone step",
-      "stonestep"
-    ],
-    "object": [
-      "candle"
-    ],
-    "witness": [
-      "quarry foreman",
-      "quarryforeman"
-    ],
-    "time": [
-      "11:03",
-      "1103"
-    ],
-    "marker": [
-      "1470",
-      "marker 1470",
-      "road marker 1470",
-      "mile marker 1470",
-      "mile 1470"
-    ],
-    "direction": [
-      "further in",
-      "furtherin"
-    ],
-    "sound": [
-      "fog horn",
-      "foghorn"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -301,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S14C08",
-    "puzzleId": "S14C08-marker-lock",
-    "dialogueId": "S14C08-quarry-foreman",
-    "locationId": "stone-step",
-    "objective": "Investigate Stone Step, question Quarry Foreman, recover Candle, and learn why marker 1470 is tied to High Water Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Stone Step.",
-        "clue": "Fog Horn"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Candle.",
-        "clue": "Candle"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Quarry Foreman.",
-        "clue": "11:03"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1470.",
-        "clue": "1470"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Further In instruction.",
-        "clue": "Further In"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S14C08-location",
-        "type": "location",
-        "name": "Stone Step",
-        "inspectText": "Stone Step looks ordinary until Fog Horn moves through it."
-      },
-      {
-        "id": "S14C08-object",
-        "type": "evidence",
-        "name": "Candle",
-        "inspectText": "Candle is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S14C08-marker",
-        "type": "marker",
-        "name": "Marker 1470",
-        "inspectText": "Marker 1470 is not the answer. It is the lock."
-      },
-      {
-        "id": "S14C08-sound",
-        "type": "audio_clue",
-        "name": "Fog Horn",
-        "inspectText": "Fog Horn repeats near 11:03."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series14-The-Flood-Year/chapter08.md",
-      "novel": "generated/novels/Series14-The-Flood-Year/chapter08.md",
-      "song": "generated/songs/Series14-The-Flood-Year/song08.md"
     }
   },
   "story": {

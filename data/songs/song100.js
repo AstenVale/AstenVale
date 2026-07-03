@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "saloon"
-    ],
-    "object": [
-      "coin"
-    ],
-    "witness": [
-      "the mute",
-      "mute",
-      "themute"
-    ],
-    "time": [
-      "3:30",
-      "330"
-    ],
-    "marker": [
-      "934",
-      "marker 934",
-      "road marker 934",
-      "mile marker 934",
-      "mile 934"
-    ],
-    "direction": [
-      "away"
-    ],
-    "sound": [
-      "stones in a tin",
-      "stonesinatin"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -310,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S09C04",
-    "puzzleId": "S09C04-marker-lock",
-    "dialogueId": "S09C04-the-mute",
-    "locationId": "saloon",
-    "objective": "Investigate Saloon, question The Mute, recover Coin, and learn why marker 934 is tied to Record Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Saloon.",
-        "clue": "Stones in a Tin"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Coin.",
-        "clue": "Coin"
-      },
-      {
-        "step": "interview",
-        "objective": "Question The Mute.",
-        "clue": "3:30"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 934.",
-        "clue": "934"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Away instruction.",
-        "clue": "Away"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S09C04-location",
-        "type": "location",
-        "name": "Saloon",
-        "inspectText": "Saloon looks ordinary until Stones in a Tin moves through it."
-      },
-      {
-        "id": "S09C04-object",
-        "type": "evidence",
-        "name": "Coin",
-        "inspectText": "Coin is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S09C04-marker",
-        "type": "marker",
-        "name": "Marker 934",
-        "inspectText": "Marker 934 is not the answer. It is the lock."
-      },
-      {
-        "id": "S09C04-sound",
-        "type": "audio_clue",
-        "name": "Stones in a Tin",
-        "inspectText": "Stones in a Tin repeats near 3:30."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series09-The-Keeper/chapter04.md",
-      "novel": "generated/novels/Series09-The-Keeper/chapter04.md",
-      "song": "generated/songs/Series09-The-Keeper/song04.md"
     }
   },
   "story": {

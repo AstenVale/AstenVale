@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "sawmill"
-    ],
-    "object": [
-      "leather strap",
-      "leatherstrap"
-    ],
-    "witness": [
-      "quarry foreman",
-      "quarryforeman"
-    ],
-    "time": [
-      "3:17",
-      "317"
-    ],
-    "marker": [
-      "4588",
-      "marker 4588",
-      "road marker 4588",
-      "mile marker 4588",
-      "mile 4588"
-    ],
-    "direction": [
-      "straight down",
-      "straightdown"
-    ],
-    "sound": [
-      "hammer strike",
-      "hammerstrike"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -301,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S45C10",
-    "puzzleId": "S45C10-marker-lock",
-    "dialogueId": "S45C10-quarry-foreman",
-    "locationId": "sawmill",
-    "objective": "Investigate Sawmill, question Quarry Foreman, recover Leather Strap, and learn why marker 4588 is tied to Power Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Sawmill.",
-        "clue": "Hammer Strike"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Leather Strap.",
-        "clue": "Leather Strap"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Quarry Foreman.",
-        "clue": "3:17"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4588.",
-        "clue": "4588"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Straight Down instruction.",
-        "clue": "Straight Down"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S45C10-location",
-        "type": "location",
-        "name": "Sawmill",
-        "inspectText": "Sawmill looks ordinary until Hammer Strike moves through it."
-      },
-      {
-        "id": "S45C10-object",
-        "type": "evidence",
-        "name": "Leather Strap",
-        "inspectText": "Leather Strap is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S45C10-marker",
-        "type": "marker",
-        "name": "Marker 4588",
-        "inspectText": "Marker 4588 is not the answer. It is the lock."
-      },
-      {
-        "id": "S45C10-sound",
-        "type": "audio_clue",
-        "name": "Hammer Strike",
-        "inspectText": "Hammer Strike repeats near 3:17."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series45-The-Hollow-Crown/chapter10.md",
-      "novel": "generated/novels/Series45-The-Hollow-Crown/chapter10.md",
-      "song": "generated/songs/Series45-The-Hollow-Crown/song10.md"
     }
   },
   "story": {

@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "schoolhouse"
-    ],
-    "object": [
-      "spool of thread",
-      "spoolofthread"
-    ],
-    "witness": [
-      "blacksmith"
-    ],
-    "time": [
-      "2:38",
-      "238"
-    ],
-    "marker": [
-      "3116",
-      "marker 3116",
-      "road marker 3116",
-      "mile marker 3116",
-      "mile 3116"
-    ],
-    "direction": [
-      "forward"
-    ],
-    "sound": [
-      "fog horn",
-      "foghorn"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -309,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S31C02",
-    "puzzleId": "S31C02-marker-lock",
-    "dialogueId": "S31C02-blacksmith",
-    "locationId": "schoolhouse",
-    "objective": "Investigate Schoolhouse, question Blacksmith, recover Spool of Thread, and learn why marker 3116 is tied to Pattern Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Schoolhouse.",
-        "clue": "Fog Horn"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Spool of Thread.",
-        "clue": "Spool of Thread"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Blacksmith.",
-        "clue": "2:38"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3116.",
-        "clue": "3116"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Forward instruction.",
-        "clue": "Forward"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S31C02-location",
-        "type": "location",
-        "name": "Schoolhouse",
-        "inspectText": "Schoolhouse looks ordinary until Fog Horn moves through it."
-      },
-      {
-        "id": "S31C02-object",
-        "type": "evidence",
-        "name": "Spool of Thread",
-        "inspectText": "Spool of Thread is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S31C02-marker",
-        "type": "marker",
-        "name": "Marker 3116",
-        "inspectText": "Marker 3116 is not the answer. It is the lock."
-      },
-      {
-        "id": "S31C02-sound",
-        "type": "audio_clue",
-        "name": "Fog Horn",
-        "inspectText": "Fog Horn repeats near 2:38."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series31-The-Cipher-Garden/chapter02.md",
-      "novel": "generated/novels/Series31-The-Cipher-Garden/chapter02.md",
-      "song": "generated/songs/Series31-The-Cipher-Garden/song02.md"
     }
   },
   "story": {

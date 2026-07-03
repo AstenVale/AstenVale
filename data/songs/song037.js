@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "stables"
-    ],
-    "object": [
-      "string of beads",
-      "stringofbeads"
-    ],
-    "witness": [
-      "midwife"
-    ],
-    "time": [
-      "10:05",
-      "1005"
-    ],
-    "marker": [
-      "407",
-      "marker 407",
-      "road marker 407",
-      "mile marker 407",
-      "mile 407"
-    ],
-    "direction": [
-      "toward"
-    ],
-    "sound": [
-      "kettle boil",
-      "kettleboil"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -309,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S04C01",
-    "puzzleId": "S04C01-marker-lock",
-    "dialogueId": "S04C01-midwife",
-    "locationId": "stables",
-    "objective": "Investigate Stables, question Midwife, recover String of Beads, and learn why marker 407 is tied to Current Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Stables.",
-        "clue": "Kettle Boil"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect String of Beads.",
-        "clue": "String of Beads"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Midwife.",
-        "clue": "10:05"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 407.",
-        "clue": "407"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Toward instruction.",
-        "clue": "Toward"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S04C01-location",
-        "type": "location",
-        "name": "Stables",
-        "inspectText": "Stables looks ordinary until Kettle Boil moves through it."
-      },
-      {
-        "id": "S04C01-object",
-        "type": "evidence",
-        "name": "String of Beads",
-        "inspectText": "String of Beads is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S04C01-marker",
-        "type": "marker",
-        "name": "Marker 407",
-        "inspectText": "Marker 407 is not the answer. It is the lock."
-      },
-      {
-        "id": "S04C01-sound",
-        "type": "audio_clue",
-        "name": "Kettle Boil",
-        "inspectText": "Kettle Boil repeats near 10:05."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series04-The-River-Speaks/chapter01.md",
-      "novel": "generated/novels/Series04-The-River-Speaks/chapter01.md",
-      "song": "generated/songs/Series04-The-River-Speaks/song01.md"
     }
   },
   "story": {

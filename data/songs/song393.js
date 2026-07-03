@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "feed store",
-      "feedstore"
-    ],
-    "object": [
-      "surveyor's pin",
-      "surveyor'spin"
-    ],
-    "witness": [
-      "wool sorter",
-      "woolsorter"
-    ],
-    "time": [
-      "2:55",
-      "255"
-    ],
-    "marker": [
-      "3379",
-      "marker 3379",
-      "road marker 3379",
-      "mile marker 3379",
-      "mile 3379"
-    ],
-    "direction": [
-      "across"
-    ],
-    "sound": [
-      "fire crackling",
-      "firecrackling"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -312,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S33C09",
-    "puzzleId": "S33C09-marker-lock",
-    "dialogueId": "S33C09-wool-sorter",
-    "locationId": "feed-store",
-    "objective": "Investigate Feed Store, question Wool Sorter, recover Surveyor's Pin, and learn why marker 3379 is tied to Faded Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Feed Store.",
-        "clue": "Fire Crackling"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Surveyor's Pin.",
-        "clue": "Surveyor's Pin"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Wool Sorter.",
-        "clue": "2:55"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3379.",
-        "clue": "3379"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Across instruction.",
-        "clue": "Across"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S33C09-location",
-        "type": "location",
-        "name": "Feed Store",
-        "inspectText": "Feed Store looks ordinary until Fire Crackling moves through it."
-      },
-      {
-        "id": "S33C09-object",
-        "type": "evidence",
-        "name": "Surveyor's Pin",
-        "inspectText": "Surveyor's Pin is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S33C09-marker",
-        "type": "marker",
-        "name": "Marker 3379",
-        "inspectText": "Marker 3379 is not the answer. It is the lock."
-      },
-      {
-        "id": "S33C09-sound",
-        "type": "audio_clue",
-        "name": "Fire Crackling",
-        "inspectText": "Fire Crackling repeats near 2:55."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series33-The-Pale-Season/chapter09.md",
-      "novel": "generated/novels/Series33-The-Pale-Season/chapter09.md",
-      "song": "generated/songs/Series33-The-Pale-Season/song09.md"
     }
   },
   "story": {

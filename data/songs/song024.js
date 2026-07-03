@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "pine road",
-      "pineroad"
-    ],
-    "object": [
-      "suitcase latch",
-      "suitcaselatch"
-    ],
-    "witness": [
-      "child"
-    ],
-    "time": [
-      "5:30",
-      "530"
-    ],
-    "marker": [
-      "231",
-      "marker 231",
-      "road marker 231",
-      "mile marker 231",
-      "mile 231"
-    ],
-    "direction": [
-      "home"
-    ],
-    "sound": [
-      "wind in pines",
-      "windinpines"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S02C12",
-    "puzzleId": "S02C12-marker-lock",
-    "dialogueId": "S02C12-child",
-    "locationId": "pine-road",
-    "objective": "Investigate Pine Road, question Child, recover Suitcase Latch, and learn why marker 231 is tied to Personal Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Pine Road.",
-        "clue": "Wind in Pines"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Suitcase Latch.",
-        "clue": "Suitcase Latch"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Child.",
-        "clue": "5:30"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 231.",
-        "clue": "231"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Home instruction.",
-        "clue": "Home"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S02C12-location",
-        "type": "location",
-        "name": "Pine Road",
-        "inspectText": "Pine Road looks ordinary until Wind in Pines moves through it."
-      },
-      {
-        "id": "S02C12-object",
-        "type": "evidence",
-        "name": "Suitcase Latch",
-        "inspectText": "Suitcase Latch is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S02C12-marker",
-        "type": "marker",
-        "name": "Marker 231",
-        "inspectText": "Marker 231 is not the answer. It is the lock."
-      },
-      {
-        "id": "S02C12-sound",
-        "type": "audio_clue",
-        "name": "Wind in Pines",
-        "inspectText": "Wind in Pines repeats near 5:30."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series02-The-Before/chapter12.md",
-      "novel": "generated/novels/Series02-The-Before/chapter12.md",
-      "song": "generated/songs/Series02-The-Before/song12.md"
     }
   },
   "story": {

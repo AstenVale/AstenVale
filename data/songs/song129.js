@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "grist mill",
-      "gristmill"
-    ],
-    "object": [
-      "map"
-    ],
-    "witness": [
-      "cartographer"
-    ],
-    "time": [
-      "6:06",
-      "606"
-    ],
-    "marker": [
-      "1179",
-      "marker 1179",
-      "road marker 1179",
-      "mile marker 1179",
-      "mile 1179"
-    ],
-    "direction": [
-      "further in",
-      "furtherin"
-    ],
-    "sound": [
-      "floorboard"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -310,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S11C09",
-    "puzzleId": "S11C09-marker-lock",
-    "dialogueId": "S11C09-cartographer",
-    "locationId": "grist-mill",
-    "objective": "Investigate Grist Mill, question Cartographer, recover Map, and learn why marker 1179 is tied to Survey Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Grist Mill.",
-        "clue": "Floorboard"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Map.",
-        "clue": "Map"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Cartographer.",
-        "clue": "6:06"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1179.",
-        "clue": "1179"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Further In instruction.",
-        "clue": "Further In"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S11C09-location",
-        "type": "location",
-        "name": "Grist Mill",
-        "inspectText": "Grist Mill looks ordinary until Floorboard moves through it."
-      },
-      {
-        "id": "S11C09-object",
-        "type": "evidence",
-        "name": "Map",
-        "inspectText": "Map is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S11C09-marker",
-        "type": "marker",
-        "name": "Marker 1179",
-        "inspectText": "Marker 1179 is not the answer. It is the lock."
-      },
-      {
-        "id": "S11C09-sound",
-        "type": "audio_clue",
-        "name": "Floorboard",
-        "inspectText": "Floorboard repeats near 6:06."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series11-The-Map-Maker/chapter09.md",
-      "novel": "generated/novels/Series11-The-Map-Maker/chapter09.md",
-      "song": "generated/songs/Series11-The-Map-Maker/song09.md"
     }
   },
   "story": {

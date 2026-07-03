@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "orchard"
-    ],
-    "object": [
-      "pocket watch",
-      "pocketwatch"
-    ],
-    "witness": [
-      "wool sorter",
-      "woolsorter"
-    ],
-    "time": [
-      "8:33",
-      "833"
-    ],
-    "marker": [
-      "1307",
-      "marker 1307",
-      "road marker 1307",
-      "mile marker 1307",
-      "mile 1307"
-    ],
-    "direction": [
-      "over"
-    ],
-    "sound": [
-      "floorboard"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -309,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S13C01",
-    "puzzleId": "S13C01-marker-lock",
-    "dialogueId": "S13C01-wool-sorter",
-    "locationId": "orchard",
-    "objective": "Investigate Orchard, question Wool Sorter, recover Pocket Watch, and learn why marker 1307 is tied to Mirror Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Orchard.",
-        "clue": "Floorboard"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Pocket Watch.",
-        "clue": "Pocket Watch"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Wool Sorter.",
-        "clue": "8:33"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1307.",
-        "clue": "1307"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Over instruction.",
-        "clue": "Over"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S13C01-location",
-        "type": "location",
-        "name": "Orchard",
-        "inspectText": "Orchard looks ordinary until Floorboard moves through it."
-      },
-      {
-        "id": "S13C01-object",
-        "type": "evidence",
-        "name": "Pocket Watch",
-        "inspectText": "Pocket Watch is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S13C01-marker",
-        "type": "marker",
-        "name": "Marker 1307",
-        "inspectText": "Marker 1307 is not the answer. It is the lock."
-      },
-      {
-        "id": "S13C01-sound",
-        "type": "audio_clue",
-        "name": "Floorboard",
-        "inspectText": "Floorboard repeats near 8:33."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series13-The-Twin-Hollows/chapter01.md",
-      "novel": "generated/novels/Series13-The-Twin-Hollows/chapter01.md",
-      "song": "generated/songs/Series13-The-Twin-Hollows/song01.md"
     }
   },
   "story": {

@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "lake shore",
-      "lakeshore"
-    ],
-    "object": [
-      "numbered disk",
-      "numbereddisk"
-    ],
-    "witness": [
-      "caretaker"
-    ],
-    "time": [
-      "1:33",
-      "133"
-    ],
-    "marker": [
-      "4334",
-      "marker 4334",
-      "road marker 4334",
-      "mile marker 4334",
-      "mile 4334"
-    ],
-    "direction": [
-      "toward the river",
-      "towardtheriver"
-    ],
-    "sound": [
-      "wheel on gravel",
-      "wheelongravel"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -301,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S43C04",
-    "puzzleId": "S43C04-marker-lock",
-    "dialogueId": "S43C04-caretaker",
-    "locationId": "lake-shore",
-    "objective": "Investigate Lake Shore, question Caretaker, recover Numbered Disk, and learn why marker 4334 is tied to Identity Vault II.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Lake Shore.",
-        "clue": "Wheel on Gravel"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Numbered Disk.",
-        "clue": "Numbered Disk"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Caretaker.",
-        "clue": "1:33"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4334.",
-        "clue": "4334"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Toward the River instruction.",
-        "clue": "Toward the River"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S43C04-location",
-        "type": "location",
-        "name": "Lake Shore",
-        "inspectText": "Lake Shore looks ordinary until Wheel on Gravel moves through it."
-      },
-      {
-        "id": "S43C04-object",
-        "type": "evidence",
-        "name": "Numbered Disk",
-        "inspectText": "Numbered Disk is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S43C04-marker",
-        "type": "marker",
-        "name": "Marker 4334",
-        "inspectText": "Marker 4334 is not the answer. It is the lock."
-      },
-      {
-        "id": "S43C04-sound",
-        "type": "audio_clue",
-        "name": "Wheel on Gravel",
-        "inspectText": "Wheel on Gravel repeats near 1:33."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series43-The-False-Name/chapter04.md",
-      "novel": "generated/novels/Series43-The-False-Name/chapter04.md",
-      "song": "generated/songs/Series43-The-False-Name/song04.md"
     }
   },
   "story": {

@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the depot",
-      "depot",
-      "thedepot"
-    ],
-    "object": [
-      "pipe"
-    ],
-    "witness": [
-      "glazier"
-    ],
-    "time": [
-      "10:05",
-      "1005"
-    ],
-    "marker": [
-      "1488",
-      "marker 1488",
-      "road marker 1488",
-      "mile marker 1488",
-      "mile 1488"
-    ],
-    "direction": [
-      "ahead"
-    ],
-    "sound": [
-      "river water",
-      "riverwater"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S14C10",
-    "puzzleId": "S14C10-marker-lock",
-    "dialogueId": "S14C10-glazier",
-    "locationId": "the-depot",
-    "objective": "Investigate The Depot, question Glazier, recover Pipe, and learn why marker 1488 is tied to High Water Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Depot.",
-        "clue": "River Water"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Pipe.",
-        "clue": "Pipe"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Glazier.",
-        "clue": "10:05"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1488.",
-        "clue": "1488"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Ahead instruction.",
-        "clue": "Ahead"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S14C10-location",
-        "type": "location",
-        "name": "The Depot",
-        "inspectText": "The Depot looks ordinary until River Water moves through it."
-      },
-      {
-        "id": "S14C10-object",
-        "type": "evidence",
-        "name": "Pipe",
-        "inspectText": "Pipe is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S14C10-marker",
-        "type": "marker",
-        "name": "Marker 1488",
-        "inspectText": "Marker 1488 is not the answer. It is the lock."
-      },
-      {
-        "id": "S14C10-sound",
-        "type": "audio_clue",
-        "name": "River Water",
-        "inspectText": "River Water repeats near 10:05."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series14-The-Flood-Year/chapter10.md",
-      "novel": "generated/novels/Series14-The-Flood-Year/chapter10.md",
-      "song": "generated/songs/Series14-The-Flood-Year/song10.md"
     }
   },
   "story": {

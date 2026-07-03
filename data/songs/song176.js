@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "old bridge",
-      "oldbridge"
-    ],
-    "object": [
-      "bent nail",
-      "bentnail"
-    ],
-    "witness": [
-      "lamplighter"
-    ],
-    "time": [
-      "3:03",
-      "303"
-    ],
-    "marker": [
-      "1570",
-      "marker 1570",
-      "road marker 1570",
-      "mile marker 1570",
-      "mile 1570"
-    ],
-    "direction": [
-      "under"
-    ],
-    "sound": [
-      "footsteps"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -310,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S15C08",
-    "puzzleId": "S15C08-marker-lock",
-    "dialogueId": "S15C08-lamplighter",
-    "locationId": "old-bridge",
-    "objective": "Investigate Old Bridge, question Lamplighter, recover Bent Nail, and learn why marker 1570 is tied to Signal Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Old Bridge.",
-        "clue": "Footsteps"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Bent Nail.",
-        "clue": "Bent Nail"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Lamplighter.",
-        "clue": "3:03"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1570.",
-        "clue": "1570"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Under instruction.",
-        "clue": "Under"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S15C08-location",
-        "type": "location",
-        "name": "Old Bridge",
-        "inspectText": "Old Bridge looks ordinary until Footsteps moves through it."
-      },
-      {
-        "id": "S15C08-object",
-        "type": "evidence",
-        "name": "Bent Nail",
-        "inspectText": "Bent Nail is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S15C08-marker",
-        "type": "marker",
-        "name": "Marker 1570",
-        "inspectText": "Marker 1570 is not the answer. It is the lock."
-      },
-      {
-        "id": "S15C08-sound",
-        "type": "audio_clue",
-        "name": "Footsteps",
-        "inspectText": "Footsteps repeats near 3:03."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series15-The-Lantern-Keeper/chapter08.md",
-      "novel": "generated/novels/Series15-The-Lantern-Keeper/chapter08.md",
-      "song": "generated/songs/Series15-The-Lantern-Keeper/song08.md"
     }
   },
   "story": {

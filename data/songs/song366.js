@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the ridge",
-      "ridge",
-      "theridge"
-    ],
-    "object": [
-      "surveyor's pin",
-      "surveyor'spin"
-    ],
-    "witness": [
-      "judge"
-    ],
-    "time": [
-      "4:12",
-      "412"
-    ],
-    "marker": [
-      "3152",
-      "marker 3152",
-      "road marker 3152",
-      "mile marker 3152",
-      "mile 3152"
-    ],
-    "direction": [
-      "out of sight",
-      "outofsight"
-    ],
-    "sound": [
-      "thunder"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S31C06",
-    "puzzleId": "S31C06-marker-lock",
-    "dialogueId": "S31C06-judge",
-    "locationId": "the-ridge",
-    "objective": "Investigate The Ridge, question Judge, recover Surveyor's Pin, and learn why marker 3152 is tied to Pattern Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Ridge.",
-        "clue": "Thunder"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Surveyor's Pin.",
-        "clue": "Surveyor's Pin"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Judge.",
-        "clue": "4:12"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3152.",
-        "clue": "3152"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Out of Sight instruction.",
-        "clue": "Out of Sight"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S31C06-location",
-        "type": "location",
-        "name": "The Ridge",
-        "inspectText": "The Ridge looks ordinary until Thunder moves through it."
-      },
-      {
-        "id": "S31C06-object",
-        "type": "evidence",
-        "name": "Surveyor's Pin",
-        "inspectText": "Surveyor's Pin is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S31C06-marker",
-        "type": "marker",
-        "name": "Marker 3152",
-        "inspectText": "Marker 3152 is not the answer. It is the lock."
-      },
-      {
-        "id": "S31C06-sound",
-        "type": "audio_clue",
-        "name": "Thunder",
-        "inspectText": "Thunder repeats near 4:12."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series31-The-Cipher-Garden/chapter06.md",
-      "novel": "generated/novels/Series31-The-Cipher-Garden/chapter06.md",
-      "song": "generated/songs/Series31-The-Cipher-Garden/song06.md"
     }
   },
   "story": {

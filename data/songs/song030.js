@@ -61,39 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "grist mill",
-      "gristmill"
-    ],
-    "object": [
-      "charcoal sketch",
-      "charcoalsketch"
-    ],
-    "witness": [
-      "lock keeper",
-      "lockkeeper"
-    ],
-    "time": [
-      "5:40",
-      "540"
-    ],
-    "marker": [
-      "352",
-      "marker 352",
-      "road marker 352",
-      "mile marker 352",
-      "mile 352"
-    ],
-    "direction": [
-      "down the hollow",
-      "downthehollow"
-    ],
-    "sound": [
-      "door creak",
-      "doorcreak"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -302,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S03C06",
-    "puzzleId": "S03C06-marker-lock",
-    "dialogueId": "S03C06-lock-keeper",
-    "locationId": "grist-mill",
-    "objective": "Investigate Grist Mill, question Lock Keeper, recover Charcoal Sketch, and learn why marker 352 is tied to Absence Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Grist Mill.",
-        "clue": "Door Creak"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Charcoal Sketch.",
-        "clue": "Charcoal Sketch"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Lock Keeper.",
-        "clue": "5:40"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 352.",
-        "clue": "352"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Down the Hollow instruction.",
-        "clue": "Down the Hollow"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S03C06-location",
-        "type": "location",
-        "name": "Grist Mill",
-        "inspectText": "Grist Mill looks ordinary until Door Creak moves through it."
-      },
-      {
-        "id": "S03C06-object",
-        "type": "evidence",
-        "name": "Charcoal Sketch",
-        "inspectText": "Charcoal Sketch is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S03C06-marker",
-        "type": "marker",
-        "name": "Marker 352",
-        "inspectText": "Marker 352 is not the answer. It is the lock."
-      },
-      {
-        "id": "S03C06-sound",
-        "type": "audio_clue",
-        "name": "Door Creak",
-        "inspectText": "Door Creak repeats near 5:40."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series03-The-Disappearance/chapter06.md",
-      "novel": "generated/novels/Series03-The-Disappearance/chapter06.md",
-      "song": "generated/songs/Series03-The-Disappearance/song06.md"
     }
   },
   "story": {

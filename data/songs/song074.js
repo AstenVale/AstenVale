@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "old wharf",
-      "oldwharf"
-    ],
-    "object": [
-      "tin star",
-      "tinstar"
-    ],
-    "witness": [
-      "surveyor"
-    ],
-    "time": [
-      "10:51",
-      "1051"
-    ],
-    "marker": [
-      "716",
-      "marker 716",
-      "road marker 716",
-      "mile marker 716",
-      "mile 716"
-    ],
-    "direction": [
-      "along the creek",
-      "alongthecreek"
-    ],
-    "sound": [
-      "wind in pines",
-      "windinpines"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -301,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S07C02",
-    "puzzleId": "S07C02-marker-lock",
-    "dialogueId": "S07C02-surveyor",
-    "locationId": "old-wharf",
-    "objective": "Investigate Old Wharf, question Surveyor, recover Tin Star, and learn why marker 716 is tied to Parallel Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Old Wharf.",
-        "clue": "Wind in Pines"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Tin Star.",
-        "clue": "Tin Star"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Surveyor.",
-        "clue": "10:51"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 716.",
-        "clue": "716"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Along the Creek instruction.",
-        "clue": "Along the Creek"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S07C02-location",
-        "type": "location",
-        "name": "Old Wharf",
-        "inspectText": "Old Wharf looks ordinary until Wind in Pines moves through it."
-      },
-      {
-        "id": "S07C02-object",
-        "type": "evidence",
-        "name": "Tin Star",
-        "inspectText": "Tin Star is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S07C02-marker",
-        "type": "marker",
-        "name": "Marker 716",
-        "inspectText": "Marker 716 is not the answer. It is the lock."
-      },
-      {
-        "id": "S07C02-sound",
-        "type": "audio_clue",
-        "name": "Wind in Pines",
-        "inspectText": "Wind in Pines repeats near 10:51."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series07-The-Second-Family/chapter02.md",
-      "novel": "generated/novels/Series07-The-Second-Family/chapter02.md",
-      "song": "generated/songs/Series07-The-Second-Family/song02.md"
     }
   },
   "story": {

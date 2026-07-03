@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "crossroads"
-    ],
-    "object": [
-      "belt buckle",
-      "beltbuckle"
-    ],
-    "witness": [
-      "lock keeper",
-      "lockkeeper"
-    ],
-    "time": [
-      "11:29",
-      "1129"
-    ],
-    "marker": [
-      "1625",
-      "marker 1625",
-      "road marker 1625",
-      "mile marker 1625",
-      "mile 1625"
-    ],
-    "direction": [
-      "somewhere"
-    ],
-    "sound": [
-      "fence wire hum",
-      "fencewirehum"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S16C03",
-    "puzzleId": "S16C03-marker-lock",
-    "dialogueId": "S16C03-lock-keeper",
-    "locationId": "crossroads",
-    "objective": "Investigate Crossroads, question Lock Keeper, recover Belt Buckle, and learn why marker 1625 is tied to Transparent Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Crossroads.",
-        "clue": "Fence Wire Hum"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Belt Buckle.",
-        "clue": "Belt Buckle"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Lock Keeper.",
-        "clue": "11:29"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1625.",
-        "clue": "1625"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Somewhere instruction.",
-        "clue": "Somewhere"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S16C03-location",
-        "type": "location",
-        "name": "Crossroads",
-        "inspectText": "Crossroads looks ordinary until Fence Wire Hum moves through it."
-      },
-      {
-        "id": "S16C03-object",
-        "type": "evidence",
-        "name": "Belt Buckle",
-        "inspectText": "Belt Buckle is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S16C03-marker",
-        "type": "marker",
-        "name": "Marker 1625",
-        "inspectText": "Marker 1625 is not the answer. It is the lock."
-      },
-      {
-        "id": "S16C03-sound",
-        "type": "audio_clue",
-        "name": "Fence Wire Hum",
-        "inspectText": "Fence Wire Hum repeats near 11:29."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series16-The-Glass-House/chapter03.md",
-      "novel": "generated/novels/Series16-The-Glass-House/chapter03.md",
-      "song": "generated/songs/Series16-The-Glass-House/song03.md"
     }
   },
   "story": {

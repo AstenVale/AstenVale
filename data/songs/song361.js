@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the quarry pool",
-      "quarry pool",
-      "thequarrypool"
-    ],
-    "object": [
-      "locket"
-    ],
-    "witness": [
-      "blacksmith"
-    ],
-    "time": [
-      "12:00",
-      "1200"
-    ],
-    "marker": [
-      "3107",
-      "marker 3107",
-      "road marker 3107",
-      "mile marker 3107",
-      "mile 3107"
-    ],
-    "direction": [
-      "past the tree line",
-      "pastthetreeline"
-    ],
-    "sound": [
-      "axe on wood",
-      "axeonwood"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S31C01",
-    "puzzleId": "S31C01-marker-lock",
-    "dialogueId": "S31C01-blacksmith",
-    "locationId": "the-quarry-pool",
-    "objective": "Investigate The Quarry Pool, question Blacksmith, recover Locket, and learn why marker 3107 is tied to Pattern Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Quarry Pool.",
-        "clue": "Axe on Wood"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Locket.",
-        "clue": "Locket"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Blacksmith.",
-        "clue": "12:00"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3107.",
-        "clue": "3107"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Past the Tree Line instruction.",
-        "clue": "Past the Tree Line"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S31C01-location",
-        "type": "location",
-        "name": "The Quarry Pool",
-        "inspectText": "The Quarry Pool looks ordinary until Axe on Wood moves through it."
-      },
-      {
-        "id": "S31C01-object",
-        "type": "evidence",
-        "name": "Locket",
-        "inspectText": "Locket is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S31C01-marker",
-        "type": "marker",
-        "name": "Marker 3107",
-        "inspectText": "Marker 3107 is not the answer. It is the lock."
-      },
-      {
-        "id": "S31C01-sound",
-        "type": "audio_clue",
-        "name": "Axe on Wood",
-        "inspectText": "Axe on Wood repeats near 12:00."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series31-The-Cipher-Garden/chapter01.md",
-      "novel": "generated/novels/Series31-The-Cipher-Garden/chapter01.md",
-      "song": "generated/songs/Series31-The-Cipher-Garden/song01.md"
     }
   },
   "story": {

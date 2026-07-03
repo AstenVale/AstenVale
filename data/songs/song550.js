@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "water tower",
-      "watertower"
-    ],
-    "object": [
-      "inkwell"
-    ],
-    "witness": [
-      "widow"
-    ],
-    "time": [
-      "10:47",
-      "1047"
-    ],
-    "marker": [
-      "4688",
-      "marker 4688",
-      "road marker 4688",
-      "mile marker 4688",
-      "mile 4688"
-    ],
-    "direction": [
-      "around"
-    ],
-    "sound": [
-      "knife scrape",
-      "knifescrape"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -310,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S46C10",
-    "puzzleId": "S46C10-marker-lock",
-    "dialogueId": "S46C10-widow",
-    "locationId": "water-tower",
-    "objective": "Investigate Water Tower, question Widow, recover Inkwell, and learn why marker 4688 is tied to Weather Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Water Tower.",
-        "clue": "Knife Scrape"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Inkwell.",
-        "clue": "Inkwell"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Widow.",
-        "clue": "10:47"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4688.",
-        "clue": "4688"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Around instruction.",
-        "clue": "Around"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S46C10-location",
-        "type": "location",
-        "name": "Water Tower",
-        "inspectText": "Water Tower looks ordinary until Knife Scrape moves through it."
-      },
-      {
-        "id": "S46C10-object",
-        "type": "evidence",
-        "name": "Inkwell",
-        "inspectText": "Inkwell is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S46C10-marker",
-        "type": "marker",
-        "name": "Marker 4688",
-        "inspectText": "Marker 4688 is not the answer. It is the lock."
-      },
-      {
-        "id": "S46C10-sound",
-        "type": "audio_clue",
-        "name": "Knife Scrape",
-        "inspectText": "Knife Scrape repeats near 10:47."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series46-The-Storm-Season/chapter10.md",
-      "novel": "generated/novels/Series46-The-Storm-Season/chapter10.md",
-      "song": "generated/songs/Series46-The-Storm-Season/song10.md"
     }
   },
   "story": {

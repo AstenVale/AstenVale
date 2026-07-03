@@ -61,35 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "smithy"
-    ],
-    "object": [
-      "locket"
-    ],
-    "witness": [
-      "stranger"
-    ],
-    "time": [
-      "2:38",
-      "238"
-    ],
-    "marker": [
-      "2988",
-      "marker 2988",
-      "road marker 2988",
-      "mile marker 2988",
-      "mile 2988"
-    ],
-    "direction": [
-      "in"
-    ],
-    "sound": [
-      "boot heel",
-      "bootheel"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -309,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S29C10",
-    "puzzleId": "S29C10-marker-lock",
-    "dialogueId": "S29C10-stranger",
-    "locationId": "smithy",
-    "objective": "Investigate Smithy, question Stranger, recover Locket, and learn why marker 2988 is tied to Interment Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Smithy.",
-        "clue": "Boot Heel"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Locket.",
-        "clue": "Locket"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Stranger.",
-        "clue": "2:38"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2988.",
-        "clue": "2988"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the In instruction.",
-        "clue": "In"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S29C10-location",
-        "type": "location",
-        "name": "Smithy",
-        "inspectText": "Smithy looks ordinary until Boot Heel moves through it."
-      },
-      {
-        "id": "S29C10-object",
-        "type": "evidence",
-        "name": "Locket",
-        "inspectText": "Locket is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S29C10-marker",
-        "type": "marker",
-        "name": "Marker 2988",
-        "inspectText": "Marker 2988 is not the answer. It is the lock."
-      },
-      {
-        "id": "S29C10-sound",
-        "type": "audio_clue",
-        "name": "Boot Heel",
-        "inspectText": "Boot Heel repeats near 2:38."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series29-The-Unmarked-Grave/chapter10.md",
-      "novel": "generated/novels/Series29-The-Unmarked-Grave/chapter10.md",
-      "song": "generated/songs/Series29-The-Unmarked-Grave/song10.md"
     }
   },
   "story": {

@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the bluff",
-      "bluff",
-      "thebluff"
-    ],
-    "object": [
-      "empty tin",
-      "emptytin"
-    ],
-    "witness": [
-      "chandler"
-    ],
-    "time": [
-      "12:00",
-      "1200"
-    ],
-    "marker": [
-      "4297",
-      "marker 4297",
-      "road marker 4297",
-      "mile marker 4297",
-      "mile 4297"
-    ],
-    "direction": [
-      "up the ridge",
-      "uptheridge"
-    ],
-    "sound": [
-      "footsteps"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -312,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S42C11",
-    "puzzleId": "S42C11-marker-lock",
-    "dialogueId": "S42C11-chandler",
-    "locationId": "the-bluff",
-    "objective": "Investigate The Bluff, question Chandler, recover Empty Tin, and learn why marker 4297 is tied to Drought Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Bluff.",
-        "clue": "Footsteps"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Empty Tin.",
-        "clue": "Empty Tin"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Chandler.",
-        "clue": "12:00"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4297.",
-        "clue": "4297"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Up the Ridge instruction.",
-        "clue": "Up the Ridge"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S42C11-location",
-        "type": "location",
-        "name": "The Bluff",
-        "inspectText": "The Bluff looks ordinary until Footsteps moves through it."
-      },
-      {
-        "id": "S42C11-object",
-        "type": "evidence",
-        "name": "Empty Tin",
-        "inspectText": "Empty Tin is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S42C11-marker",
-        "type": "marker",
-        "name": "Marker 4297",
-        "inspectText": "Marker 4297 is not the answer. It is the lock."
-      },
-      {
-        "id": "S42C11-sound",
-        "type": "audio_clue",
-        "name": "Footsteps",
-        "inspectText": "Footsteps repeats near 12:00."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series42-The-Dry-Season/chapter11.md",
-      "novel": "generated/novels/Series42-The-Dry-Season/chapter11.md",
-      "song": "generated/songs/Series42-The-Dry-Season/song11.md"
     }
   },
   "story": {

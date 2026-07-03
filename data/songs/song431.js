@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the gully",
-      "gully",
-      "thegully"
-    ],
-    "object": [
-      "glove"
-    ],
-    "witness": [
-      "driver"
-    ],
-    "time": [
-      "1:58",
-      "158"
-    ],
-    "marker": [
-      "3697",
-      "marker 3697",
-      "road marker 3697",
-      "mile marker 3697",
-      "mile 3697"
-    ],
-    "direction": [
-      "south"
-    ],
-    "sound": [
-      "the silence after",
-      "silence after",
-      "thesilenceafter"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -301,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S36C11",
-    "puzzleId": "S36C11-marker-lock",
-    "dialogueId": "S36C11-driver",
-    "locationId": "the-gully",
-    "objective": "Investigate The Gully, question Driver, recover Glove, and learn why marker 3697 is tied to Voice Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Gully.",
-        "clue": "The Silence After"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Glove.",
-        "clue": "Glove"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Driver.",
-        "clue": "1:58"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3697.",
-        "clue": "3697"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the South instruction.",
-        "clue": "South"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S36C11-location",
-        "type": "location",
-        "name": "The Gully",
-        "inspectText": "The Gully looks ordinary until The Silence After moves through it."
-      },
-      {
-        "id": "S36C11-object",
-        "type": "evidence",
-        "name": "Glove",
-        "inspectText": "Glove is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S36C11-marker",
-        "type": "marker",
-        "name": "Marker 3697",
-        "inspectText": "Marker 3697 is not the answer. It is the lock."
-      },
-      {
-        "id": "S36C11-sound",
-        "type": "audio_clue",
-        "name": "The Silence After",
-        "inspectText": "The Silence After repeats near 1:58."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series36-The-Night-Caller/chapter11.md",
-      "novel": "generated/novels/Series36-The-Night-Caller/chapter11.md",
-      "song": "generated/songs/Series36-The-Night-Caller/song11.md"
     }
   },
   "story": {

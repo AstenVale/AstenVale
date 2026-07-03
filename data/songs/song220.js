@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "crossroads"
-    ],
-    "object": [
-      "photograph"
-    ],
-    "witness": [
-      "wool sorter",
-      "woolsorter"
-    ],
-    "time": [
-      "9:55",
-      "955"
-    ],
-    "marker": [
-      "1934",
-      "marker 1934",
-      "road marker 1934",
-      "mile marker 1934",
-      "mile 1934"
-    ],
-    "direction": [
-      "beyond"
-    ],
-    "sound": [
-      "boot heel",
-      "bootheel"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -310,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S19C04",
-    "puzzleId": "S19C04-marker-lock",
-    "dialogueId": "S19C04-wool-sorter",
-    "locationId": "crossroads",
-    "objective": "Investigate Crossroads, question Wool Sorter, recover Photograph, and learn why marker 1934 is tied to Crossing Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Crossroads.",
-        "clue": "Boot Heel"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Photograph.",
-        "clue": "Photograph"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Wool Sorter.",
-        "clue": "9:55"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1934.",
-        "clue": "1934"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Beyond instruction.",
-        "clue": "Beyond"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S19C04-location",
-        "type": "location",
-        "name": "Crossroads",
-        "inspectText": "Crossroads looks ordinary until Boot Heel moves through it."
-      },
-      {
-        "id": "S19C04-object",
-        "type": "evidence",
-        "name": "Photograph",
-        "inspectText": "Photograph is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S19C04-marker",
-        "type": "marker",
-        "name": "Marker 1934",
-        "inspectText": "Marker 1934 is not the answer. It is the lock."
-      },
-      {
-        "id": "S19C04-sound",
-        "type": "audio_clue",
-        "name": "Boot Heel",
-        "inspectText": "Boot Heel repeats near 9:55."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series19-The-Bridge-Burner/chapter04.md",
-      "novel": "generated/novels/Series19-The-Bridge-Burner/chapter04.md",
-      "song": "generated/songs/Series19-The-Bridge-Burner/song04.md"
     }
   },
   "story": {

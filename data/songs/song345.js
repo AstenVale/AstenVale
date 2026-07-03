@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "fulling mill",
-      "fullingmill"
-    ],
-    "object": [
-      "wire coil",
-      "wirecoil"
-    ],
-    "witness": [
-      "sexton"
-    ],
-    "time": [
-      "3:44",
-      "344"
-    ],
-    "marker": [
-      "2979",
-      "marker 2979",
-      "road marker 2979",
-      "mile marker 2979",
-      "mile 2979"
-    ],
-    "direction": [
-      "home"
-    ],
-    "sound": [
-      "lantern glass",
-      "lanternglass"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S29C09",
-    "puzzleId": "S29C09-marker-lock",
-    "dialogueId": "S29C09-sexton",
-    "locationId": "fulling-mill",
-    "objective": "Investigate Fulling Mill, question Sexton, recover Wire Coil, and learn why marker 2979 is tied to Interment Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Fulling Mill.",
-        "clue": "Lantern Glass"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Wire Coil.",
-        "clue": "Wire Coil"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Sexton.",
-        "clue": "3:44"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2979.",
-        "clue": "2979"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Home instruction.",
-        "clue": "Home"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S29C09-location",
-        "type": "location",
-        "name": "Fulling Mill",
-        "inspectText": "Fulling Mill looks ordinary until Lantern Glass moves through it."
-      },
-      {
-        "id": "S29C09-object",
-        "type": "evidence",
-        "name": "Wire Coil",
-        "inspectText": "Wire Coil is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S29C09-marker",
-        "type": "marker",
-        "name": "Marker 2979",
-        "inspectText": "Marker 2979 is not the answer. It is the lock."
-      },
-      {
-        "id": "S29C09-sound",
-        "type": "audio_clue",
-        "name": "Lantern Glass",
-        "inspectText": "Lantern Glass repeats near 3:44."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series29-The-Unmarked-Grave/chapter09.md",
-      "novel": "generated/novels/Series29-The-Unmarked-Grave/chapter09.md",
-      "song": "generated/songs/Series29-The-Unmarked-Grave/song09.md"
     }
   },
   "story": {

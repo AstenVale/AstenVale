@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "church"
-    ],
-    "object": [
-      "wedding ring",
-      "weddingring"
-    ],
-    "witness": [
-      "widow"
-    ],
-    "time": [
-      "6:45",
-      "645"
-    ],
-    "marker": [
-      "12",
-      "marker 12",
-      "road marker 12",
-      "mile marker 12",
-      "mile 12"
-    ],
-    "direction": [
-      "east"
-    ],
-    "sound": [
-      "bell toll",
-      "belltoll"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -299,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S01C04",
-    "puzzleId": "S01C04-marker-lock",
-    "dialogueId": "S01C04-widow",
-    "locationId": "church",
-    "objective": "Investigate Church, question Widow, recover Wedding Ring, and learn why marker 12 is tied to Public Archive.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Church.",
-        "clue": "Bell Toll"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Wedding Ring.",
-        "clue": "Wedding Ring"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Widow.",
-        "clue": "6:45"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 12.",
-        "clue": "12"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the East instruction.",
-        "clue": "East"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S01C04-location",
-        "type": "location",
-        "name": "Church",
-        "inspectText": "Church looks ordinary until Bell Toll moves through it."
-      },
-      {
-        "id": "S01C04-object",
-        "type": "evidence",
-        "name": "Wedding Ring",
-        "inspectText": "Wedding Ring is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S01C04-marker",
-        "type": "marker",
-        "name": "Marker 12",
-        "inspectText": "Marker 12 is not the answer. It is the lock."
-      },
-      {
-        "id": "S01C04-sound",
-        "type": "audio_clue",
-        "name": "Bell Toll",
-        "inspectText": "Bell Toll repeats near 6:45."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series01-The-Stranger/chapter04.md",
-      "novel": "generated/novels/Series01-The-Stranger/chapter04.md",
-      "song": "generated/songs/Series01-The-Stranger/song04.md"
     }
   },
   "story": {

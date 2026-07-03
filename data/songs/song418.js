@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "freight yard",
-      "freightyard"
-    ],
-    "object": [
-      "button"
-    ],
-    "witness": [
-      "wainwright"
-    ],
-    "time": [
-      "1:26",
-      "126"
-    ],
-    "marker": [
-      "3588",
-      "marker 3588",
-      "road marker 3588",
-      "mile marker 3588",
-      "mile 3588"
-    ],
-    "direction": [
-      "away"
-    ],
-    "sound": [
-      "coal shifting",
-      "coalshifting"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -309,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S35C10",
-    "puzzleId": "S35C10-marker-lock",
-    "dialogueId": "S35C10-wainwright",
-    "locationId": "freight-yard",
-    "objective": "Investigate Freight Yard, question Wainwright, recover Button, and learn why marker 3588 is tied to Collection Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Freight Yard.",
-        "clue": "Coal Shifting"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Button.",
-        "clue": "Button"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Wainwright.",
-        "clue": "1:26"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3588.",
-        "clue": "3588"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Away instruction.",
-        "clue": "Away"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S35C10-location",
-        "type": "location",
-        "name": "Freight Yard",
-        "inspectText": "Freight Yard looks ordinary until Coal Shifting moves through it."
-      },
-      {
-        "id": "S35C10-object",
-        "type": "evidence",
-        "name": "Button",
-        "inspectText": "Button is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S35C10-marker",
-        "type": "marker",
-        "name": "Marker 3588",
-        "inspectText": "Marker 3588 is not the answer. It is the lock."
-      },
-      {
-        "id": "S35C10-sound",
-        "type": "audio_clue",
-        "name": "Coal Shifting",
-        "inspectText": "Coal Shifting repeats near 1:26."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series35-The-Archive-Keeper/chapter10.md",
-      "novel": "generated/novels/Series35-The-Archive-Keeper/chapter10.md",
-      "song": "generated/songs/Series35-The-Archive-Keeper/song10.md"
     }
   },
   "story": {

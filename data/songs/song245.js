@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the gully",
-      "gully",
-      "thegully"
-    ],
-    "object": [
-      "stamp"
-    ],
-    "witness": [
-      "night porter",
-      "nightporter"
-    ],
-    "time": [
-      "6:17",
-      "617"
-    ],
-    "marker": [
-      "2143",
-      "marker 2143",
-      "road marker 2143",
-      "mile marker 2143",
-      "mile 2143"
-    ],
-    "direction": [
-      "nowhere"
-    ],
-    "sound": [
-      "latch drop",
-      "latchdrop"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -301,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S21C05",
-    "puzzleId": "S21C05-marker-lock",
-    "dialogueId": "S21C05-night-porter",
-    "locationId": "the-gully",
-    "objective": "Investigate The Gully, question Night Porter, recover Stamp, and learn why marker 2143 is tied to Bark Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Gully.",
-        "clue": "Latch Drop"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Stamp.",
-        "clue": "Stamp"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Night Porter.",
-        "clue": "6:17"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2143.",
-        "clue": "2143"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Nowhere instruction.",
-        "clue": "Nowhere"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S21C05-location",
-        "type": "location",
-        "name": "The Gully",
-        "inspectText": "The Gully looks ordinary until Latch Drop moves through it."
-      },
-      {
-        "id": "S21C05-object",
-        "type": "evidence",
-        "name": "Stamp",
-        "inspectText": "Stamp is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S21C05-marker",
-        "type": "marker",
-        "name": "Marker 2143",
-        "inspectText": "Marker 2143 is not the answer. It is the lock."
-      },
-      {
-        "id": "S21C05-sound",
-        "type": "audio_clue",
-        "name": "Latch Drop",
-        "inspectText": "Latch Drop repeats near 6:17."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series21-The-Witness-Tree/chapter05.md",
-      "novel": "generated/novels/Series21-The-Witness-Tree/chapter05.md",
-      "song": "generated/songs/Series21-The-Witness-Tree/song05.md"
     }
   },
   "story": {

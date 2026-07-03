@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "old wharf",
-      "oldwharf"
-    ],
-    "object": [
-      "thimble"
-    ],
-    "witness": [
-      "tanner"
-    ],
-    "time": [
-      "6:06",
-      "606"
-    ],
-    "marker": [
-      "779",
-      "marker 779",
-      "road marker 779",
-      "mile marker 779",
-      "mile 779"
-    ],
-    "direction": [
-      "out"
-    ],
-    "sound": [
-      "crow wings",
-      "crowwings"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -299,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S07C09",
-    "puzzleId": "S07C09-marker-lock",
-    "dialogueId": "S07C09-tanner",
-    "locationId": "old-wharf",
-    "objective": "Investigate Old Wharf, question Tanner, recover Thimble, and learn why marker 779 is tied to Parallel Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Old Wharf.",
-        "clue": "Crow Wings"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Thimble.",
-        "clue": "Thimble"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Tanner.",
-        "clue": "6:06"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 779.",
-        "clue": "779"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Out instruction.",
-        "clue": "Out"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S07C09-location",
-        "type": "location",
-        "name": "Old Wharf",
-        "inspectText": "Old Wharf looks ordinary until Crow Wings moves through it."
-      },
-      {
-        "id": "S07C09-object",
-        "type": "evidence",
-        "name": "Thimble",
-        "inspectText": "Thimble is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S07C09-marker",
-        "type": "marker",
-        "name": "Marker 779",
-        "inspectText": "Marker 779 is not the answer. It is the lock."
-      },
-      {
-        "id": "S07C09-sound",
-        "type": "audio_clue",
-        "name": "Crow Wings",
-        "inspectText": "Crow Wings repeats near 6:06."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series07-The-Second-Family/chapter09.md",
-      "novel": "generated/novels/Series07-The-Second-Family/chapter09.md",
-      "song": "generated/songs/Series07-The-Second-Family/song09.md"
     }
   },
   "story": {

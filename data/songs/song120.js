@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "old wharf",
-      "oldwharf"
-    ],
-    "object": [
-      "dried flower",
-      "driedflower"
-    ],
-    "witness": [
-      "typesetter"
-    ],
-    "time": [
-      "5:13",
-      "513"
-    ],
-    "marker": [
-      "1106",
-      "marker 1106",
-      "road marker 1106",
-      "mile marker 1106",
-      "mile 1106"
-    ],
-    "direction": [
-      "behind"
-    ],
-    "sound": [
-      "kettle boil",
-      "kettleboil"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S10C12",
-    "puzzleId": "S10C12-marker-lock",
-    "dialogueId": "S10C12-typesetter",
-    "locationId": "old-wharf",
-    "objective": "Investigate Old Wharf, question Typesetter, recover Dried Flower, and learn why marker 1106 is tied to Lost Mile Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Old Wharf.",
-        "clue": "Kettle Boil"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Dried Flower.",
-        "clue": "Dried Flower"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Typesetter.",
-        "clue": "5:13"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1106.",
-        "clue": "1106"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Behind instruction.",
-        "clue": "Behind"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S10C12-location",
-        "type": "location",
-        "name": "Old Wharf",
-        "inspectText": "Old Wharf looks ordinary until Kettle Boil moves through it."
-      },
-      {
-        "id": "S10C12-object",
-        "type": "evidence",
-        "name": "Dried Flower",
-        "inspectText": "Dried Flower is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S10C12-marker",
-        "type": "marker",
-        "name": "Marker 1106",
-        "inspectText": "Marker 1106 is not the answer. It is the lock."
-      },
-      {
-        "id": "S10C12-sound",
-        "type": "audio_clue",
-        "name": "Kettle Boil",
-        "inspectText": "Kettle Boil repeats near 5:13."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series10-The-Forgotten-Road/chapter12.md",
-      "novel": "generated/novels/Series10-The-Forgotten-Road/chapter12.md",
-      "song": "generated/songs/Series10-The-Forgotten-Road/song12.md"
     }
   },
   "story": {

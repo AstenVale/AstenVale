@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "kitchen table",
-      "kitchentable"
-    ],
-    "object": [
-      "empty bottle",
-      "emptybottle"
-    ],
-    "witness": [
-      "neighbor"
-    ],
-    "time": [
-      "4:15",
-      "415"
-    ],
-    "marker": [
-      "132",
-      "marker 132",
-      "road marker 132",
-      "mile marker 132",
-      "mile 132"
-    ],
-    "direction": [
-      "down"
-    ],
-    "sound": [
-      "silence"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -310,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S02C03",
-    "puzzleId": "S02C03-marker-lock",
-    "dialogueId": "S02C03-neighbor",
-    "locationId": "kitchen-table",
-    "objective": "Investigate Kitchen Table, question Neighbor, recover Empty Bottle, and learn why marker 132 is tied to Personal Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Kitchen Table.",
-        "clue": "Silence"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Empty Bottle.",
-        "clue": "Empty Bottle"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Neighbor.",
-        "clue": "4:15"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 132.",
-        "clue": "132"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Down instruction.",
-        "clue": "Down"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S02C03-location",
-        "type": "location",
-        "name": "Kitchen Table",
-        "inspectText": "Kitchen Table looks ordinary until Silence moves through it."
-      },
-      {
-        "id": "S02C03-object",
-        "type": "evidence",
-        "name": "Empty Bottle",
-        "inspectText": "Empty Bottle is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S02C03-marker",
-        "type": "marker",
-        "name": "Marker 132",
-        "inspectText": "Marker 132 is not the answer. It is the lock."
-      },
-      {
-        "id": "S02C03-sound",
-        "type": "audio_clue",
-        "name": "Silence",
-        "inspectText": "Silence repeats near 4:15."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series02-The-Before/chapter03.md",
-      "novel": "generated/novels/Series02-The-Before/chapter03.md",
-      "song": "generated/songs/Series02-The-Before/song03.md"
     }
   },
   "story": {

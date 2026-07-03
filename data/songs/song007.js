@@ -61,35 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "diner"
-    ],
-    "object": [
-      "matchbook"
-    ],
-    "witness": [
-      "stranger"
-    ],
-    "time": [
-      "9:15",
-      "915"
-    ],
-    "marker": [
-      "61",
-      "marker 61",
-      "road marker 61",
-      "mile marker 61",
-      "mile 61"
-    ],
-    "direction": [
-      "south"
-    ],
-    "sound": [
-      "match strike",
-      "matchstrike"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -298,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S01C07",
-    "puzzleId": "S01C07-marker-lock",
-    "dialogueId": "S01C07-stranger",
-    "locationId": "diner",
-    "objective": "Investigate Diner, question Stranger, recover Matchbook, and learn why marker 61 is tied to Public Archive.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Diner.",
-        "clue": "Match Strike"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Matchbook.",
-        "clue": "Matchbook"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Stranger.",
-        "clue": "9:15"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 61.",
-        "clue": "61"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the South instruction.",
-        "clue": "South"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S01C07-location",
-        "type": "location",
-        "name": "Diner",
-        "inspectText": "Diner looks ordinary until Match Strike moves through it."
-      },
-      {
-        "id": "S01C07-object",
-        "type": "evidence",
-        "name": "Matchbook",
-        "inspectText": "Matchbook is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S01C07-marker",
-        "type": "marker",
-        "name": "Marker 61",
-        "inspectText": "Marker 61 is not the answer. It is the lock."
-      },
-      {
-        "id": "S01C07-sound",
-        "type": "audio_clue",
-        "name": "Match Strike",
-        "inspectText": "Match Strike repeats near 9:15."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series01-The-Stranger/chapter07.md",
-      "novel": "generated/novels/Series01-The-Stranger/chapter07.md",
-      "song": "generated/songs/Series01-The-Stranger/song07.md"
     }
   },
   "story": {

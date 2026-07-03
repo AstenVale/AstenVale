@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "candlemaker's alley",
-      "candlemaker'salley"
-    ],
-    "object": [
-      "surveyor's pin",
-      "surveyor'spin"
-    ],
-    "witness": [
-      "cattle driver",
-      "cattledriver"
-    ],
-    "time": [
-      "8:33",
-      "833"
-    ],
-    "marker": [
-      "4043",
-      "marker 4043",
-      "road marker 4043",
-      "mile marker 4043",
-      "mile 4043"
-    ],
-    "direction": [
-      "away"
-    ],
-    "sound": [
-      "wind in pines",
-      "windinpines"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S40C05",
-    "puzzleId": "S40C05-marker-lock",
-    "dialogueId": "S40C05-cattle-driver",
-    "locationId": "candlemaker-s-alley",
-    "objective": "Investigate Candlemaker's Alley, question Cattle Driver, recover Surveyor's Pin, and learn why marker 4043 is tied to Cipher Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Candlemaker's Alley.",
-        "clue": "Wind in Pines"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Surveyor's Pin.",
-        "clue": "Surveyor's Pin"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Cattle Driver.",
-        "clue": "8:33"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4043.",
-        "clue": "4043"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Away instruction.",
-        "clue": "Away"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S40C05-location",
-        "type": "location",
-        "name": "Candlemaker's Alley",
-        "inspectText": "Candlemaker's Alley looks ordinary until Wind in Pines moves through it."
-      },
-      {
-        "id": "S40C05-object",
-        "type": "evidence",
-        "name": "Surveyor's Pin",
-        "inspectText": "Surveyor's Pin is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S40C05-marker",
-        "type": "marker",
-        "name": "Marker 4043",
-        "inspectText": "Marker 4043 is not the answer. It is the lock."
-      },
-      {
-        "id": "S40C05-sound",
-        "type": "audio_clue",
-        "name": "Wind in Pines",
-        "inspectText": "Wind in Pines repeats near 8:33."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series40-The-Coded-Letter/chapter05.md",
-      "novel": "generated/novels/Series40-The-Coded-Letter/chapter05.md",
-      "song": "generated/songs/Series40-The-Coded-Letter/song05.md"
     }
   },
   "story": {

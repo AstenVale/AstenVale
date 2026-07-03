@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "cider house",
-      "ciderhouse"
-    ],
-    "object": [
-      "ear of corn",
-      "earofcorn"
-    ],
-    "witness": [
-      "schoolgirl"
-    ],
-    "time": [
-      "8:17",
-      "817"
-    ],
-    "marker": [
-      "4252",
-      "marker 4252",
-      "road marker 4252",
-      "mile marker 4252",
-      "mile 4252"
-    ],
-    "direction": [
-      "past the tree line",
-      "pastthetreeline"
-    ],
-    "sound": [
-      "child's laugh (far off)",
-      "child'slaugh(faroff)"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -312,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S42C06",
-    "puzzleId": "S42C06-marker-lock",
-    "dialogueId": "S42C06-schoolgirl",
-    "locationId": "cider-house",
-    "objective": "Investigate Cider House, question Schoolgirl, recover Ear of Corn, and learn why marker 4252 is tied to Drought Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Cider House.",
-        "clue": "Child's Laugh (far off)"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Ear of Corn.",
-        "clue": "Ear of Corn"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Schoolgirl.",
-        "clue": "8:17"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4252.",
-        "clue": "4252"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Past the Tree Line instruction.",
-        "clue": "Past the Tree Line"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S42C06-location",
-        "type": "location",
-        "name": "Cider House",
-        "inspectText": "Cider House looks ordinary until Child's Laugh (far off) moves through it."
-      },
-      {
-        "id": "S42C06-object",
-        "type": "evidence",
-        "name": "Ear of Corn",
-        "inspectText": "Ear of Corn is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S42C06-marker",
-        "type": "marker",
-        "name": "Marker 4252",
-        "inspectText": "Marker 4252 is not the answer. It is the lock."
-      },
-      {
-        "id": "S42C06-sound",
-        "type": "audio_clue",
-        "name": "Child's Laugh (far off)",
-        "inspectText": "Child's Laugh (far off) repeats near 8:17."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series42-The-Dry-Season/chapter06.md",
-      "novel": "generated/novels/Series42-The-Dry-Season/chapter06.md",
-      "song": "generated/songs/Series42-The-Dry-Season/song06.md"
     }
   },
   "story": {

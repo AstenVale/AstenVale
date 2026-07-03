@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "stables"
-    ],
-    "object": [
-      "numbered disk",
-      "numbereddisk"
-    ],
-    "witness": [
-      "apothecary"
-    ],
-    "time": [
-      "8:06",
-      "806"
-    ],
-    "marker": [
-      "2843",
-      "marker 2843",
-      "road marker 2843",
-      "mile marker 2843",
-      "mile 2843"
-    ],
-    "direction": [
-      "further in",
-      "furtherin"
-    ],
-    "sound": [
-      "kettle boil",
-      "kettleboil"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S28C05",
-    "puzzleId": "S28C05-marker-lock",
-    "dialogueId": "S28C05-apothecary",
-    "locationId": "stables",
-    "objective": "Investigate Stables, question Apothecary, recover Numbered Disk, and learn why marker 2843 is tied to Frequency Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Stables.",
-        "clue": "Kettle Boil"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Numbered Disk.",
-        "clue": "Numbered Disk"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Apothecary.",
-        "clue": "8:06"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2843.",
-        "clue": "2843"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Further In instruction.",
-        "clue": "Further In"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S28C05-location",
-        "type": "location",
-        "name": "Stables",
-        "inspectText": "Stables looks ordinary until Kettle Boil moves through it."
-      },
-      {
-        "id": "S28C05-object",
-        "type": "evidence",
-        "name": "Numbered Disk",
-        "inspectText": "Numbered Disk is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S28C05-marker",
-        "type": "marker",
-        "name": "Marker 2843",
-        "inspectText": "Marker 2843 is not the answer. It is the lock."
-      },
-      {
-        "id": "S28C05-sound",
-        "type": "audio_clue",
-        "name": "Kettle Boil",
-        "inspectText": "Kettle Boil repeats near 8:06."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series28-The-Buried-Signal/chapter05.md",
-      "novel": "generated/novels/Series28-The-Buried-Signal/chapter05.md",
-      "song": "generated/songs/Series28-The-Buried-Signal/song05.md"
     }
   },
   "story": {

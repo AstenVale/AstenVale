@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "black pine",
-      "blackpine"
-    ],
-    "object": [
-      "shard of mirror",
-      "shardofmirror"
-    ],
-    "witness": [
-      "mechanic"
-    ],
-    "time": [
-      "2:22",
-      "222"
-    ],
-    "marker": [
-      "3288",
-      "marker 3288",
-      "road marker 3288",
-      "mile marker 3288",
-      "mile 3288"
-    ],
-    "direction": [
-      "down the hollow",
-      "downthehollow"
-    ],
-    "sound": [
-      "ash settling",
-      "ashsettling"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -301,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S32C10",
-    "puzzleId": "S32C10-marker-lock",
-    "dialogueId": "S32C10-mechanic",
-    "locationId": "black-pine",
-    "objective": "Investigate Black Pine, question Mechanic, recover Shard of Mirror, and learn why marker 3288 is tied to Depth Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Black Pine.",
-        "clue": "Ash Settling"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Shard of Mirror.",
-        "clue": "Shard of Mirror"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Mechanic.",
-        "clue": "2:22"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3288.",
-        "clue": "3288"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Down the Hollow instruction.",
-        "clue": "Down the Hollow"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S32C10-location",
-        "type": "location",
-        "name": "Black Pine",
-        "inspectText": "Black Pine looks ordinary until Ash Settling moves through it."
-      },
-      {
-        "id": "S32C10-object",
-        "type": "evidence",
-        "name": "Shard of Mirror",
-        "inspectText": "Shard of Mirror is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S32C10-marker",
-        "type": "marker",
-        "name": "Marker 3288",
-        "inspectText": "Marker 3288 is not the answer. It is the lock."
-      },
-      {
-        "id": "S32C10-sound",
-        "type": "audio_clue",
-        "name": "Ash Settling",
-        "inspectText": "Ash Settling repeats near 2:22."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series32-The-Deep-Current/chapter10.md",
-      "novel": "generated/novels/Series32-The-Deep-Current/chapter10.md",
-      "song": "generated/songs/Series32-The-Deep-Current/song10.md"
     }
   },
   "story": {

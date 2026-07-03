@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "cemetery"
-    ],
-    "object": [
-      "numbered disk",
-      "numbereddisk"
-    ],
-    "witness": [
-      "orphan"
-    ],
-    "time": [
-      "2:22",
-      "222"
-    ],
-    "marker": [
-      "3897",
-      "marker 3897",
-      "road marker 3897",
-      "mile marker 3897",
-      "mile 3897"
-    ],
-    "direction": [
-      "ahead"
-    ],
-    "sound": [
-      "crow on wire",
-      "crowonwire"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -310,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S38C11",
-    "puzzleId": "S38C11-marker-lock",
-    "dialogueId": "S38C11-orphan",
-    "locationId": "cemetery",
-    "objective": "Investigate Cemetery, question Orphan, recover Numbered Disk, and learn why marker 3897 is tied to Beacon Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Cemetery.",
-        "clue": "Crow on Wire"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Numbered Disk.",
-        "clue": "Numbered Disk"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Orphan.",
-        "clue": "2:22"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3897.",
-        "clue": "3897"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Ahead instruction.",
-        "clue": "Ahead"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S38C11-location",
-        "type": "location",
-        "name": "Cemetery",
-        "inspectText": "Cemetery looks ordinary until Crow on Wire moves through it."
-      },
-      {
-        "id": "S38C11-object",
-        "type": "evidence",
-        "name": "Numbered Disk",
-        "inspectText": "Numbered Disk is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S38C11-marker",
-        "type": "marker",
-        "name": "Marker 3897",
-        "inspectText": "Marker 3897 is not the answer. It is the lock."
-      },
-      {
-        "id": "S38C11-sound",
-        "type": "audio_clue",
-        "name": "Crow on Wire",
-        "inspectText": "Crow on Wire repeats near 2:22."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series38-The-Signal-Fire/chapter11.md",
-      "novel": "generated/novels/Series38-The-Signal-Fire/chapter11.md",
-      "song": "generated/songs/Series38-The-Signal-Fire/song11.md"
     }
   },
   "story": {

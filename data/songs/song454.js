@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "ice house",
-      "icehouse"
-    ],
-    "object": [
-      "receipt"
-    ],
-    "witness": [
-      "night porter",
-      "nightporter"
-    ],
-    "time": [
-      "4:29",
-      "429"
-    ],
-    "marker": [
-      "3888",
-      "marker 3888",
-      "road marker 3888",
-      "mile marker 3888",
-      "mile 3888"
-    ],
-    "direction": [
-      "away"
-    ],
-    "sound": [
-      "wind through a crack",
-      "windthroughacrack"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S38C10",
-    "puzzleId": "S38C10-marker-lock",
-    "dialogueId": "S38C10-night-porter",
-    "locationId": "ice-house",
-    "objective": "Investigate Ice House, question Night Porter, recover Receipt, and learn why marker 3888 is tied to Beacon Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Ice House.",
-        "clue": "Wind Through a Crack"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Receipt.",
-        "clue": "Receipt"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Night Porter.",
-        "clue": "4:29"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3888.",
-        "clue": "3888"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Away instruction.",
-        "clue": "Away"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S38C10-location",
-        "type": "location",
-        "name": "Ice House",
-        "inspectText": "Ice House looks ordinary until Wind Through a Crack moves through it."
-      },
-      {
-        "id": "S38C10-object",
-        "type": "evidence",
-        "name": "Receipt",
-        "inspectText": "Receipt is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S38C10-marker",
-        "type": "marker",
-        "name": "Marker 3888",
-        "inspectText": "Marker 3888 is not the answer. It is the lock."
-      },
-      {
-        "id": "S38C10-sound",
-        "type": "audio_clue",
-        "name": "Wind Through a Crack",
-        "inspectText": "Wind Through a Crack repeats near 4:29."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series38-The-Signal-Fire/chapter10.md",
-      "novel": "generated/novels/Series38-The-Signal-Fire/chapter10.md",
-      "song": "generated/songs/Series38-The-Signal-Fire/song10.md"
     }
   },
   "story": {

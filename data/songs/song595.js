@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "river's edge",
-      "river'sedge"
-    ],
-    "object": [
-      "wool scarf",
-      "woolscarf"
-    ],
-    "witness": [
-      "deputy"
-    ],
-    "time": [
-      "11:51",
-      "1151"
-    ],
-    "marker": [
-      "5061",
-      "marker 5061",
-      "road marker 5061",
-      "mile marker 5061",
-      "mile 5061"
-    ],
-    "direction": [
-      "off the road",
-      "offtheroad"
-    ],
-    "sound": [
-      "kettle boil",
-      "kettleboil"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -301,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S50C07",
-    "puzzleId": "S50C07-marker-lock",
-    "dialogueId": "S50C07-deputy",
-    "locationId": "river-s-edge",
-    "objective": "Investigate River's Edge, question Deputy, recover Wool Scarf, and learn why marker 5061 is tied to Full Archive.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter River's Edge.",
-        "clue": "Kettle Boil"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Wool Scarf.",
-        "clue": "Wool Scarf"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Deputy.",
-        "clue": "11:51"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 5061.",
-        "clue": "5061"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Off the Road instruction.",
-        "clue": "Off the Road"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S50C07-location",
-        "type": "location",
-        "name": "River's Edge",
-        "inspectText": "River's Edge looks ordinary until Kettle Boil moves through it."
-      },
-      {
-        "id": "S50C07-object",
-        "type": "evidence",
-        "name": "Wool Scarf",
-        "inspectText": "Wool Scarf is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S50C07-marker",
-        "type": "marker",
-        "name": "Marker 5061",
-        "inspectText": "Marker 5061 is not the answer. It is the lock."
-      },
-      {
-        "id": "S50C07-sound",
-        "type": "audio_clue",
-        "name": "Kettle Boil",
-        "inspectText": "Kettle Boil repeats near 11:51."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series50-The-Resolution/chapter07.md",
-      "novel": "generated/novels/Series50-The-Resolution/chapter07.md",
-      "song": "generated/songs/Series50-The-Resolution/song07.md"
     }
   },
   "story": {

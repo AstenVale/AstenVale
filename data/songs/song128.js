@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "potter's field",
-      "potter'sfield"
-    ],
-    "object": [
-      "matchbook"
-    ],
-    "witness": [
-      "gravedigger"
-    ],
-    "time": [
-      "2:19",
-      "219"
-    ],
-    "marker": [
-      "1170",
-      "marker 1170",
-      "road marker 1170",
-      "mile marker 1170",
-      "mile 1170"
-    ],
-    "direction": [
-      "sideways"
-    ],
-    "sound": [
-      "train whistle",
-      "trainwhistle"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -310,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S11C08",
-    "puzzleId": "S11C08-marker-lock",
-    "dialogueId": "S11C08-gravedigger",
-    "locationId": "potter-s-field",
-    "objective": "Investigate Potter's Field, question Gravedigger, recover Matchbook, and learn why marker 1170 is tied to Survey Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Potter's Field.",
-        "clue": "Train Whistle"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Matchbook.",
-        "clue": "Matchbook"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Gravedigger.",
-        "clue": "2:19"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1170.",
-        "clue": "1170"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Sideways instruction.",
-        "clue": "Sideways"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S11C08-location",
-        "type": "location",
-        "name": "Potter's Field",
-        "inspectText": "Potter's Field looks ordinary until Train Whistle moves through it."
-      },
-      {
-        "id": "S11C08-object",
-        "type": "evidence",
-        "name": "Matchbook",
-        "inspectText": "Matchbook is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S11C08-marker",
-        "type": "marker",
-        "name": "Marker 1170",
-        "inspectText": "Marker 1170 is not the answer. It is the lock."
-      },
-      {
-        "id": "S11C08-sound",
-        "type": "audio_clue",
-        "name": "Train Whistle",
-        "inspectText": "Train Whistle repeats near 2:19."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series11-The-Map-Maker/chapter08.md",
-      "novel": "generated/novels/Series11-The-Map-Maker/chapter08.md",
-      "song": "generated/songs/Series11-The-Map-Maker/song08.md"
     }
   },
   "story": {

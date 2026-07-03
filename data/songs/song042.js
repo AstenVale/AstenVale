@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the root cellar",
-      "root cellar",
-      "therootcellar"
-    ],
-    "object": [
-      "ear of corn",
-      "earofcorn"
-    ],
-    "witness": [
-      "lamplighter"
-    ],
-    "time": [
-      "10:19",
-      "1019"
-    ],
-    "marker": [
-      "452",
-      "marker 452",
-      "road marker 452",
-      "mile marker 452",
-      "mile 452"
-    ],
-    "direction": [
-      "up"
-    ],
-    "sound": [
-      "lantern glass",
-      "lanternglass"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S04C06",
-    "puzzleId": "S04C06-marker-lock",
-    "dialogueId": "S04C06-lamplighter",
-    "locationId": "the-root-cellar",
-    "objective": "Investigate The Root Cellar, question Lamplighter, recover Ear of Corn, and learn why marker 452 is tied to Current Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Root Cellar.",
-        "clue": "Lantern Glass"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Ear of Corn.",
-        "clue": "Ear of Corn"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Lamplighter.",
-        "clue": "10:19"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 452.",
-        "clue": "452"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Up instruction.",
-        "clue": "Up"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S04C06-location",
-        "type": "location",
-        "name": "The Root Cellar",
-        "inspectText": "The Root Cellar looks ordinary until Lantern Glass moves through it."
-      },
-      {
-        "id": "S04C06-object",
-        "type": "evidence",
-        "name": "Ear of Corn",
-        "inspectText": "Ear of Corn is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S04C06-marker",
-        "type": "marker",
-        "name": "Marker 452",
-        "inspectText": "Marker 452 is not the answer. It is the lock."
-      },
-      {
-        "id": "S04C06-sound",
-        "type": "audio_clue",
-        "name": "Lantern Glass",
-        "inspectText": "Lantern Glass repeats near 10:19."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series04-The-River-Speaks/chapter06.md",
-      "novel": "generated/novels/Series04-The-River-Speaks/chapter06.md",
-      "song": "generated/songs/Series04-The-River-Speaks/song06.md"
     }
   },
   "story": {

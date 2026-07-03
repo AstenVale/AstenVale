@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "butcher's row",
-      "butcher'srow"
-    ],
-    "object": [
-      "watch"
-    ],
-    "witness": [
-      "apothecary"
-    ],
-    "time": [
-      "3:30",
-      "330"
-    ],
-    "marker": [
-      "5052",
-      "marker 5052",
-      "road marker 5052",
-      "mile marker 5052",
-      "mile 5052"
-    ],
-    "direction": [
-      "nowhere"
-    ],
-    "sound": [
-      "rope on pulley",
-      "ropeonpulley"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -299,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S50C06",
-    "puzzleId": "S50C06-marker-lock",
-    "dialogueId": "S50C06-apothecary",
-    "locationId": "butcher-s-row",
-    "objective": "Investigate Butcher's Row, question Apothecary, recover Watch, and learn why marker 5052 is tied to Full Archive.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Butcher's Row.",
-        "clue": "Rope on Pulley"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Watch.",
-        "clue": "Watch"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Apothecary.",
-        "clue": "3:30"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 5052.",
-        "clue": "5052"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Nowhere instruction.",
-        "clue": "Nowhere"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S50C06-location",
-        "type": "location",
-        "name": "Butcher's Row",
-        "inspectText": "Butcher's Row looks ordinary until Rope on Pulley moves through it."
-      },
-      {
-        "id": "S50C06-object",
-        "type": "evidence",
-        "name": "Watch",
-        "inspectText": "Watch is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S50C06-marker",
-        "type": "marker",
-        "name": "Marker 5052",
-        "inspectText": "Marker 5052 is not the answer. It is the lock."
-      },
-      {
-        "id": "S50C06-sound",
-        "type": "audio_clue",
-        "name": "Rope on Pulley",
-        "inspectText": "Rope on Pulley repeats near 3:30."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series50-The-Resolution/chapter06.md",
-      "novel": "generated/novels/Series50-The-Resolution/chapter06.md",
-      "song": "generated/songs/Series50-The-Resolution/song06.md"
     }
   },
   "story": {

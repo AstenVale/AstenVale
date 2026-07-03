@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "banker's house",
-      "banker'shouse"
-    ],
-    "object": [
-      "inkwell"
-    ],
-    "witness": [
-      "lime burner",
-      "limeburner"
-    ],
-    "time": [
-      "7:14",
-      "714"
-    ],
-    "marker": [
-      "1134",
-      "marker 1134",
-      "road marker 1134",
-      "mile marker 1134",
-      "mile 1134"
-    ],
-    "direction": [
-      "past the tree line",
-      "pastthetreeline"
-    ],
-    "sound": [
-      "lantern glass",
-      "lanternglass"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -312,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S11C04",
-    "puzzleId": "S11C04-marker-lock",
-    "dialogueId": "S11C04-lime-burner",
-    "locationId": "banker-s-house",
-    "objective": "Investigate Banker's House, question Lime Burner, recover Inkwell, and learn why marker 1134 is tied to Survey Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Banker's House.",
-        "clue": "Lantern Glass"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Inkwell.",
-        "clue": "Inkwell"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Lime Burner.",
-        "clue": "7:14"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1134.",
-        "clue": "1134"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Past the Tree Line instruction.",
-        "clue": "Past the Tree Line"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S11C04-location",
-        "type": "location",
-        "name": "Banker's House",
-        "inspectText": "Banker's House looks ordinary until Lantern Glass moves through it."
-      },
-      {
-        "id": "S11C04-object",
-        "type": "evidence",
-        "name": "Inkwell",
-        "inspectText": "Inkwell is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S11C04-marker",
-        "type": "marker",
-        "name": "Marker 1134",
-        "inspectText": "Marker 1134 is not the answer. It is the lock."
-      },
-      {
-        "id": "S11C04-sound",
-        "type": "audio_clue",
-        "name": "Lantern Glass",
-        "inspectText": "Lantern Glass repeats near 7:14."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series11-The-Map-Maker/chapter04.md",
-      "novel": "generated/novels/Series11-The-Map-Maker/chapter04.md",
-      "song": "generated/songs/Series11-The-Map-Maker/song04.md"
     }
   },
   "story": {

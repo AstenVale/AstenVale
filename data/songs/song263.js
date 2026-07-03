@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "crossroads"
-    ],
-    "object": [
-      "scratched initials in wood",
-      "scratchedinitialsinwood"
-    ],
-    "witness": [
-      "typesetter"
-    ],
-    "time": [
-      "3:30",
-      "330"
-    ],
-    "marker": [
-      "2297",
-      "marker 2297",
-      "road marker 2297",
-      "mile marker 2297",
-      "mile 2297"
-    ],
-    "direction": [
-      "south"
-    ],
-    "sound": [
-      "dog bark at nothing",
-      "dogbarkatnothing"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -309,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S22C11",
-    "puzzleId": "S22C11-marker-lock",
-    "dialogueId": "S22C11-typesetter",
-    "locationId": "crossroads",
-    "objective": "Investigate Crossroads, question Typesetter, recover Scratched Initials in Wood, and learn why marker 2297 is tied to Excavation Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Crossroads.",
-        "clue": "Dog Bark at Nothing"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Scratched Initials in Wood.",
-        "clue": "Scratched Initials in Wood"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Typesetter.",
-        "clue": "3:30"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2297.",
-        "clue": "2297"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the South instruction.",
-        "clue": "South"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S22C11-location",
-        "type": "location",
-        "name": "Crossroads",
-        "inspectText": "Crossroads looks ordinary until Dog Bark at Nothing moves through it."
-      },
-      {
-        "id": "S22C11-object",
-        "type": "evidence",
-        "name": "Scratched Initials in Wood",
-        "inspectText": "Scratched Initials in Wood is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S22C11-marker",
-        "type": "marker",
-        "name": "Marker 2297",
-        "inspectText": "Marker 2297 is not the answer. It is the lock."
-      },
-      {
-        "id": "S22C11-sound",
-        "type": "audio_clue",
-        "name": "Dog Bark at Nothing",
-        "inspectText": "Dog Bark at Nothing repeats near 3:30."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series22-The-Bone-Road/chapter11.md",
-      "novel": "generated/novels/Series22-The-Bone-Road/chapter11.md",
-      "song": "generated/songs/Series22-The-Bone-Road/song11.md"
     }
   },
   "story": {

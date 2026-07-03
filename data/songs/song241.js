@@ -61,35 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "crossroads"
-    ],
-    "object": [
-      "flask"
-    ],
-    "witness": [
-      "tanner"
-    ],
-    "time": [
-      "1:26",
-      "126"
-    ],
-    "marker": [
-      "2107",
-      "marker 2107",
-      "road marker 2107",
-      "mile marker 2107",
-      "mile 2107"
-    ],
-    "direction": [
-      "down"
-    ],
-    "sound": [
-      "empty wagon",
-      "emptywagon"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -298,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S21C01",
-    "puzzleId": "S21C01-marker-lock",
-    "dialogueId": "S21C01-tanner",
-    "locationId": "crossroads",
-    "objective": "Investigate Crossroads, question Tanner, recover Flask, and learn why marker 2107 is tied to Bark Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Crossroads.",
-        "clue": "Empty Wagon"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Flask.",
-        "clue": "Flask"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Tanner.",
-        "clue": "1:26"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2107.",
-        "clue": "2107"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Down instruction.",
-        "clue": "Down"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S21C01-location",
-        "type": "location",
-        "name": "Crossroads",
-        "inspectText": "Crossroads looks ordinary until Empty Wagon moves through it."
-      },
-      {
-        "id": "S21C01-object",
-        "type": "evidence",
-        "name": "Flask",
-        "inspectText": "Flask is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S21C01-marker",
-        "type": "marker",
-        "name": "Marker 2107",
-        "inspectText": "Marker 2107 is not the answer. It is the lock."
-      },
-      {
-        "id": "S21C01-sound",
-        "type": "audio_clue",
-        "name": "Empty Wagon",
-        "inspectText": "Empty Wagon repeats near 1:26."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series21-The-Witness-Tree/chapter01.md",
-      "novel": "generated/novels/Series21-The-Witness-Tree/chapter01.md",
-      "song": "generated/songs/Series21-The-Witness-Tree/song01.md"
     }
   },
   "story": {

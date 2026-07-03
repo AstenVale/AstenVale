@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "crow's nest ridge",
-      "crow'snestridge"
-    ],
-    "object": [
-      "tin star",
-      "tinstar"
-    ],
-    "witness": [
-      "rag picker",
-      "ragpicker"
-    ],
-    "time": [
-      "2:19",
-      "219"
-    ],
-    "marker": [
-      "5025",
-      "marker 5025",
-      "road marker 5025",
-      "mile marker 5025",
-      "mile 5025"
-    ],
-    "direction": [
-      "around"
-    ],
-    "sound": [
-      "rope on pulley",
-      "ropeonpulley"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -312,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S50C03",
-    "puzzleId": "S50C03-marker-lock",
-    "dialogueId": "S50C03-rag-picker",
-    "locationId": "crow-s-nest-ridge",
-    "objective": "Investigate Crow's Nest Ridge, question Rag Picker, recover Tin Star, and learn why marker 5025 is tied to Full Archive.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Crow's Nest Ridge.",
-        "clue": "Rope on Pulley"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Tin Star.",
-        "clue": "Tin Star"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Rag Picker.",
-        "clue": "2:19"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 5025.",
-        "clue": "5025"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Around instruction.",
-        "clue": "Around"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S50C03-location",
-        "type": "location",
-        "name": "Crow's Nest Ridge",
-        "inspectText": "Crow's Nest Ridge looks ordinary until Rope on Pulley moves through it."
-      },
-      {
-        "id": "S50C03-object",
-        "type": "evidence",
-        "name": "Tin Star",
-        "inspectText": "Tin Star is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S50C03-marker",
-        "type": "marker",
-        "name": "Marker 5025",
-        "inspectText": "Marker 5025 is not the answer. It is the lock."
-      },
-      {
-        "id": "S50C03-sound",
-        "type": "audio_clue",
-        "name": "Rope on Pulley",
-        "inspectText": "Rope on Pulley repeats near 2:19."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series50-The-Resolution/chapter03.md",
-      "novel": "generated/novels/Series50-The-Resolution/chapter03.md",
-      "song": "generated/songs/Series50-The-Resolution/song03.md"
     }
   },
   "story": {

@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "cider house",
-      "ciderhouse"
-    ],
-    "object": [
-      "torn label",
-      "tornlabel"
-    ],
-    "witness": [
-      "lime burner",
-      "limeburner"
-    ],
-    "time": [
-      "2:38",
-      "238"
-    ],
-    "marker": [
-      "3125",
-      "marker 3125",
-      "road marker 3125",
-      "mile marker 3125",
-      "mile 3125"
-    ],
-    "direction": [
-      "nowhere"
-    ],
-    "sound": [
-      "crow on wire",
-      "crowonwire"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S31C03",
-    "puzzleId": "S31C03-marker-lock",
-    "dialogueId": "S31C03-lime-burner",
-    "locationId": "cider-house",
-    "objective": "Investigate Cider House, question Lime Burner, recover Torn Label, and learn why marker 3125 is tied to Pattern Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Cider House.",
-        "clue": "Crow on Wire"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Torn Label.",
-        "clue": "Torn Label"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Lime Burner.",
-        "clue": "2:38"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3125.",
-        "clue": "3125"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Nowhere instruction.",
-        "clue": "Nowhere"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S31C03-location",
-        "type": "location",
-        "name": "Cider House",
-        "inspectText": "Cider House looks ordinary until Crow on Wire moves through it."
-      },
-      {
-        "id": "S31C03-object",
-        "type": "evidence",
-        "name": "Torn Label",
-        "inspectText": "Torn Label is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S31C03-marker",
-        "type": "marker",
-        "name": "Marker 3125",
-        "inspectText": "Marker 3125 is not the answer. It is the lock."
-      },
-      {
-        "id": "S31C03-sound",
-        "type": "audio_clue",
-        "name": "Crow on Wire",
-        "inspectText": "Crow on Wire repeats near 2:38."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series31-The-Cipher-Garden/chapter03.md",
-      "novel": "generated/novels/Series31-The-Cipher-Garden/chapter03.md",
-      "song": "generated/songs/Series31-The-Cipher-Garden/song03.md"
     }
   },
   "story": {

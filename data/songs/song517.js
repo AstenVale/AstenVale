@@ -61,35 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "saloon"
-    ],
-    "object": [
-      "letter"
-    ],
-    "witness": [
-      "peddler"
-    ],
-    "time": [
-      "7:00",
-      "700"
-    ],
-    "marker": [
-      "4407",
-      "marker 4407",
-      "road marker 4407",
-      "mile marker 4407",
-      "mile 4407"
-    ],
-    "direction": [
-      "sideways"
-    ],
-    "sound": [
-      "glass break",
-      "glassbreak"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -308,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S44C01",
-    "puzzleId": "S44C01-marker-lock",
-    "dialogueId": "S44C01-peddler",
-    "locationId": "saloon",
-    "objective": "Investigate Saloon, question Peddler, recover Letter, and learn why marker 4407 is tied to Parallel Case Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Saloon.",
-        "clue": "Glass Break"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Letter.",
-        "clue": "Letter"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Peddler.",
-        "clue": "7:00"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4407.",
-        "clue": "4407"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Sideways instruction.",
-        "clue": "Sideways"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S44C01-location",
-        "type": "location",
-        "name": "Saloon",
-        "inspectText": "Saloon looks ordinary until Glass Break moves through it."
-      },
-      {
-        "id": "S44C01-object",
-        "type": "evidence",
-        "name": "Letter",
-        "inspectText": "Letter is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S44C01-marker",
-        "type": "marker",
-        "name": "Marker 4407",
-        "inspectText": "Marker 4407 is not the answer. It is the lock."
-      },
-      {
-        "id": "S44C01-sound",
-        "type": "audio_clue",
-        "name": "Glass Break",
-        "inspectText": "Glass Break repeats near 7:00."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series44-The-Mirror-Case/chapter01.md",
-      "novel": "generated/novels/Series44-The-Mirror-Case/chapter01.md",
-      "song": "generated/songs/Series44-The-Mirror-Case/song01.md"
     }
   },
   "story": {

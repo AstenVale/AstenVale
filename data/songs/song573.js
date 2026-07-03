@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "church"
-    ],
-    "object": [
-      "handkerchief"
-    ],
-    "witness": [
-      "schoolgirl"
-    ],
-    "time": [
-      "12:44",
-      "1244"
-    ],
-    "marker": [
-      "4879",
-      "marker 4879",
-      "road marker 4879",
-      "mile marker 4879",
-      "mile 4879"
-    ],
-    "direction": [
-      "toward the river",
-      "towardtheriver"
-    ],
-    "sound": [
-      "paper rustle",
-      "paperrustle"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -309,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S48C09",
-    "puzzleId": "S48C09-marker-lock",
-    "dialogueId": "S48C09-schoolgirl",
-    "locationId": "church",
-    "objective": "Investigate Church, question Schoolgirl, recover Handkerchief, and learn why marker 4879 is tied to Static Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Church.",
-        "clue": "Paper Rustle"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Handkerchief.",
-        "clue": "Handkerchief"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Schoolgirl.",
-        "clue": "12:44"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4879.",
-        "clue": "4879"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Toward the River instruction.",
-        "clue": "Toward the River"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S48C09-location",
-        "type": "location",
-        "name": "Church",
-        "inspectText": "Church looks ordinary until Paper Rustle moves through it."
-      },
-      {
-        "id": "S48C09-object",
-        "type": "evidence",
-        "name": "Handkerchief",
-        "inspectText": "Handkerchief is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S48C09-marker",
-        "type": "marker",
-        "name": "Marker 4879",
-        "inspectText": "Marker 4879 is not the answer. It is the lock."
-      },
-      {
-        "id": "S48C09-sound",
-        "type": "audio_clue",
-        "name": "Paper Rustle",
-        "inspectText": "Paper Rustle repeats near 12:44."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series48-The-Broken-Signal/chapter09.md",
-      "novel": "generated/novels/Series48-The-Broken-Signal/chapter09.md",
-      "song": "generated/songs/Series48-The-Broken-Signal/song09.md"
     }
   },
   "story": {

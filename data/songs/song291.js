@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "north gate",
-      "northgate"
-    ],
-    "object": [
-      "dried flower",
-      "driedflower"
-    ],
-    "witness": [
-      "cider presser",
-      "ciderpresser"
-    ],
-    "time": [
-      "3:49",
-      "349"
-    ],
-    "marker": [
-      "2525",
-      "marker 2525",
-      "road marker 2525",
-      "mile marker 2525",
-      "mile 2525"
-    ],
-    "direction": [
-      "away"
-    ],
-    "sound": [
-      "coal shifting",
-      "coalshifting"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -301,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S25C03",
-    "puzzleId": "S25C03-marker-lock",
-    "dialogueId": "S25C03-cider-presser",
-    "locationId": "north-gate",
-    "objective": "Investigate North Gate, question Cider Presser, recover Dried Flower, and learn why marker 2525 is tied to Resonance Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter North Gate.",
-        "clue": "Coal Shifting"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Dried Flower.",
-        "clue": "Dried Flower"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Cider Presser.",
-        "clue": "3:49"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2525.",
-        "clue": "2525"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Away instruction.",
-        "clue": "Away"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S25C03-location",
-        "type": "location",
-        "name": "North Gate",
-        "inspectText": "North Gate looks ordinary until Coal Shifting moves through it."
-      },
-      {
-        "id": "S25C03-object",
-        "type": "evidence",
-        "name": "Dried Flower",
-        "inspectText": "Dried Flower is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S25C03-marker",
-        "type": "marker",
-        "name": "Marker 2525",
-        "inspectText": "Marker 2525 is not the answer. It is the lock."
-      },
-      {
-        "id": "S25C03-sound",
-        "type": "audio_clue",
-        "name": "Coal Shifting",
-        "inspectText": "Coal Shifting repeats near 3:49."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series25-The-Echo-Chamber/chapter03.md",
-      "novel": "generated/novels/Series25-The-Echo-Chamber/chapter03.md",
-      "song": "generated/songs/Series25-The-Echo-Chamber/song03.md"
     }
   },
   "story": {

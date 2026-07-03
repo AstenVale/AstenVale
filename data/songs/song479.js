@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the bluff",
-      "bluff",
-      "thebluff"
-    ],
-    "object": [
-      "broken clasp",
-      "brokenclasp"
-    ],
-    "witness": [
-      "farmer"
-    ],
-    "time": [
-      "9:15",
-      "915"
-    ],
-    "marker": [
-      "4097",
-      "marker 4097",
-      "road marker 4097",
-      "mile marker 4097",
-      "mile 4097"
-    ],
-    "direction": [
-      "under"
-    ],
-    "sound": [
-      "train whistle",
-      "trainwhistle"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S40C11",
-    "puzzleId": "S40C11-marker-lock",
-    "dialogueId": "S40C11-farmer",
-    "locationId": "the-bluff",
-    "objective": "Investigate The Bluff, question Farmer, recover Broken Clasp, and learn why marker 4097 is tied to Cipher Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Bluff.",
-        "clue": "Train Whistle"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Broken Clasp.",
-        "clue": "Broken Clasp"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Farmer.",
-        "clue": "9:15"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4097.",
-        "clue": "4097"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Under instruction.",
-        "clue": "Under"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S40C11-location",
-        "type": "location",
-        "name": "The Bluff",
-        "inspectText": "The Bluff looks ordinary until Train Whistle moves through it."
-      },
-      {
-        "id": "S40C11-object",
-        "type": "evidence",
-        "name": "Broken Clasp",
-        "inspectText": "Broken Clasp is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S40C11-marker",
-        "type": "marker",
-        "name": "Marker 4097",
-        "inspectText": "Marker 4097 is not the answer. It is the lock."
-      },
-      {
-        "id": "S40C11-sound",
-        "type": "audio_clue",
-        "name": "Train Whistle",
-        "inspectText": "Train Whistle repeats near 9:15."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series40-The-Coded-Letter/chapter11.md",
-      "novel": "generated/novels/Series40-The-Coded-Letter/chapter11.md",
-      "song": "generated/songs/Series40-The-Coded-Letter/song11.md"
     }
   },
   "story": {

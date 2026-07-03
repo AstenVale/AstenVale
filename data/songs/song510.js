@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the gully",
-      "gully",
-      "thegully"
-    ],
-    "object": [
-      "spectacles"
-    ],
-    "witness": [
-      "sexton"
-    ],
-    "time": [
-      "6:06",
-      "606"
-    ],
-    "marker": [
-      "4352",
-      "marker 4352",
-      "road marker 4352",
-      "mile marker 4352",
-      "mile 4352"
-    ],
-    "direction": [
-      "behind"
-    ],
-    "sound": [
-      "wind through a crack",
-      "windthroughacrack"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S43C06",
-    "puzzleId": "S43C06-marker-lock",
-    "dialogueId": "S43C06-sexton",
-    "locationId": "the-gully",
-    "objective": "Investigate The Gully, question Sexton, recover Spectacles, and learn why marker 4352 is tied to Identity Vault II.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Gully.",
-        "clue": "Wind Through a Crack"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Spectacles.",
-        "clue": "Spectacles"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Sexton.",
-        "clue": "6:06"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4352.",
-        "clue": "4352"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Behind instruction.",
-        "clue": "Behind"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S43C06-location",
-        "type": "location",
-        "name": "The Gully",
-        "inspectText": "The Gully looks ordinary until Wind Through a Crack moves through it."
-      },
-      {
-        "id": "S43C06-object",
-        "type": "evidence",
-        "name": "Spectacles",
-        "inspectText": "Spectacles is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S43C06-marker",
-        "type": "marker",
-        "name": "Marker 4352",
-        "inspectText": "Marker 4352 is not the answer. It is the lock."
-      },
-      {
-        "id": "S43C06-sound",
-        "type": "audio_clue",
-        "name": "Wind Through a Crack",
-        "inspectText": "Wind Through a Crack repeats near 6:06."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series43-The-False-Name/chapter06.md",
-      "novel": "generated/novels/Series43-The-False-Name/chapter06.md",
-      "song": "generated/songs/Series43-The-False-Name/song06.md"
     }
   },
   "story": {

@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "forge"
-    ],
-    "object": [
-      "dried ink blot",
-      "driedinkblot"
-    ],
-    "witness": [
-      "rope maker",
-      "ropemaker"
-    ],
-    "time": [
-      "11:40",
-      "1140"
-    ],
-    "marker": [
-      "2616",
-      "marker 2616",
-      "road marker 2616",
-      "mile marker 2616",
-      "mile 2616"
-    ],
-    "direction": [
-      "away"
-    ],
-    "sound": [
-      "fog horn",
-      "foghorn"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -310,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S26C02",
-    "puzzleId": "S26C02-marker-lock",
-    "dialogueId": "S26C02-rope-maker",
-    "locationId": "forge",
-    "objective": "Investigate Forge, question Rope Maker, recover Dried Ink Blot, and learn why marker 2616 is tied to Threshold Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Forge.",
-        "clue": "Fog Horn"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Dried Ink Blot.",
-        "clue": "Dried Ink Blot"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Rope Maker.",
-        "clue": "11:40"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2616.",
-        "clue": "2616"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Away instruction.",
-        "clue": "Away"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S26C02-location",
-        "type": "location",
-        "name": "Forge",
-        "inspectText": "Forge looks ordinary until Fog Horn moves through it."
-      },
-      {
-        "id": "S26C02-object",
-        "type": "evidence",
-        "name": "Dried Ink Blot",
-        "inspectText": "Dried Ink Blot is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S26C02-marker",
-        "type": "marker",
-        "name": "Marker 2616",
-        "inspectText": "Marker 2616 is not the answer. It is the lock."
-      },
-      {
-        "id": "S26C02-sound",
-        "type": "audio_clue",
-        "name": "Fog Horn",
-        "inspectText": "Fog Horn repeats near 11:40."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series26-The-Red-Door/chapter02.md",
-      "novel": "generated/novels/Series26-The-Red-Door/chapter02.md",
-      "song": "generated/songs/Series26-The-Red-Door/song02.md"
     }
   },
   "story": {

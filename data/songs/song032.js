@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "tannery"
-    ],
-    "object": [
-      "wool scarf",
-      "woolscarf"
-    ],
-    "witness": [
-      "wainwright"
-    ],
-    "time": [
-      "11:51",
-      "1151"
-    ],
-    "marker": [
-      "370",
-      "marker 370",
-      "road marker 370",
-      "mile marker 370",
-      "mile 370"
-    ],
-    "direction": [
-      "under"
-    ],
-    "sound": [
-      "wheel on gravel",
-      "wheelongravel"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -299,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S03C08",
-    "puzzleId": "S03C08-marker-lock",
-    "dialogueId": "S03C08-wainwright",
-    "locationId": "tannery",
-    "objective": "Investigate Tannery, question Wainwright, recover Wool Scarf, and learn why marker 370 is tied to Absence Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Tannery.",
-        "clue": "Wheel on Gravel"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Wool Scarf.",
-        "clue": "Wool Scarf"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Wainwright.",
-        "clue": "11:51"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 370.",
-        "clue": "370"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Under instruction.",
-        "clue": "Under"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S03C08-location",
-        "type": "location",
-        "name": "Tannery",
-        "inspectText": "Tannery looks ordinary until Wheel on Gravel moves through it."
-      },
-      {
-        "id": "S03C08-object",
-        "type": "evidence",
-        "name": "Wool Scarf",
-        "inspectText": "Wool Scarf is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S03C08-marker",
-        "type": "marker",
-        "name": "Marker 370",
-        "inspectText": "Marker 370 is not the answer. It is the lock."
-      },
-      {
-        "id": "S03C08-sound",
-        "type": "audio_clue",
-        "name": "Wheel on Gravel",
-        "inspectText": "Wheel on Gravel repeats near 11:51."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series03-The-Disappearance/chapter08.md",
-      "novel": "generated/novels/Series03-The-Disappearance/chapter08.md",
-      "song": "generated/songs/Series03-The-Disappearance/song08.md"
     }
   },
   "story": {

@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "chandler's row",
-      "chandler'srow"
-    ],
-    "object": [
-      "belt buckle",
-      "beltbuckle"
-    ],
-    "witness": [
-      "auctioneer"
-    ],
-    "time": [
-      "4:38",
-      "438"
-    ],
-    "marker": [
-      "4779",
-      "marker 4779",
-      "road marker 4779",
-      "mile marker 4779",
-      "mile 4779"
-    ],
-    "direction": [
-      "off the road",
-      "offtheroad"
-    ],
-    "sound": [
-      "river water",
-      "riverwater"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -301,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S47C09",
-    "puzzleId": "S47C09-marker-lock",
-    "dialogueId": "S47C09-auctioneer",
-    "locationId": "chandler-s-row",
-    "objective": "Investigate Chandler's Row, question Auctioneer, recover Belt Buckle, and learn why marker 4779 is tied to Detour Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Chandler's Row.",
-        "clue": "River Water"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Belt Buckle.",
-        "clue": "Belt Buckle"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Auctioneer.",
-        "clue": "4:38"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4779.",
-        "clue": "4779"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Off the Road instruction.",
-        "clue": "Off the Road"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S47C09-location",
-        "type": "location",
-        "name": "Chandler's Row",
-        "inspectText": "Chandler's Row looks ordinary until River Water moves through it."
-      },
-      {
-        "id": "S47C09-object",
-        "type": "evidence",
-        "name": "Belt Buckle",
-        "inspectText": "Belt Buckle is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S47C09-marker",
-        "type": "marker",
-        "name": "Marker 4779",
-        "inspectText": "Marker 4779 is not the answer. It is the lock."
-      },
-      {
-        "id": "S47C09-sound",
-        "type": "audio_clue",
-        "name": "River Water",
-        "inspectText": "River Water repeats near 4:38."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series47-The-Long-Way-Round/chapter09.md",
-      "novel": "generated/novels/Series47-The-Long-Way-Round/chapter09.md",
-      "song": "generated/songs/Series47-The-Long-Way-Round/song09.md"
     }
   },
   "story": {

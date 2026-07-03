@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "clock tower",
-      "clocktower"
-    ],
-    "object": [
-      "compass"
-    ],
-    "witness": [
-      "fence mender",
-      "fencemender"
-    ],
-    "time": [
-      "10:51",
-      "1051"
-    ],
-    "marker": [
-      "1125",
-      "marker 1125",
-      "road marker 1125",
-      "mile marker 1125",
-      "mile 1125"
-    ],
-    "direction": [
-      "into the dark",
-      "intothedark"
-    ],
-    "sound": [
-      "child's laugh (far off)",
-      "child'slaugh(faroff)"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -312,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S11C03",
-    "puzzleId": "S11C03-marker-lock",
-    "dialogueId": "S11C03-fence-mender",
-    "locationId": "clock-tower",
-    "objective": "Investigate Clock Tower, question Fence Mender, recover Compass, and learn why marker 1125 is tied to Survey Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Clock Tower.",
-        "clue": "Child's Laugh (far off)"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Compass.",
-        "clue": "Compass"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Fence Mender.",
-        "clue": "10:51"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1125.",
-        "clue": "1125"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Into the Dark instruction.",
-        "clue": "Into the Dark"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S11C03-location",
-        "type": "location",
-        "name": "Clock Tower",
-        "inspectText": "Clock Tower looks ordinary until Child's Laugh (far off) moves through it."
-      },
-      {
-        "id": "S11C03-object",
-        "type": "evidence",
-        "name": "Compass",
-        "inspectText": "Compass is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S11C03-marker",
-        "type": "marker",
-        "name": "Marker 1125",
-        "inspectText": "Marker 1125 is not the answer. It is the lock."
-      },
-      {
-        "id": "S11C03-sound",
-        "type": "audio_clue",
-        "name": "Child's Laugh (far off)",
-        "inspectText": "Child's Laugh (far off) repeats near 10:51."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series11-The-Map-Maker/chapter03.md",
-      "novel": "generated/novels/Series11-The-Map-Maker/chapter03.md",
-      "song": "generated/songs/Series11-The-Map-Maker/song03.md"
     }
   },
   "story": {

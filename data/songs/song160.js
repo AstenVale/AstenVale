@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "candlemaker's alley",
-      "candlemaker'salley"
-    ],
-    "object": [
-      "charred paper",
-      "charredpaper"
-    ],
-    "witness": [
-      "station master",
-      "stationmaster"
-    ],
-    "time": [
-      "5:40",
-      "540"
-    ],
-    "marker": [
-      "1434",
-      "marker 1434",
-      "road marker 1434",
-      "mile marker 1434",
-      "mile 1434"
-    ],
-    "direction": [
-      "out"
-    ],
-    "sound": [
-      "rain"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S14C04",
-    "puzzleId": "S14C04-marker-lock",
-    "dialogueId": "S14C04-station-master",
-    "locationId": "candlemaker-s-alley",
-    "objective": "Investigate Candlemaker's Alley, question Station Master, recover Charred Paper, and learn why marker 1434 is tied to High Water Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Candlemaker's Alley.",
-        "clue": "Rain"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Charred Paper.",
-        "clue": "Charred Paper"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Station Master.",
-        "clue": "5:40"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1434.",
-        "clue": "1434"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Out instruction.",
-        "clue": "Out"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S14C04-location",
-        "type": "location",
-        "name": "Candlemaker's Alley",
-        "inspectText": "Candlemaker's Alley looks ordinary until Rain moves through it."
-      },
-      {
-        "id": "S14C04-object",
-        "type": "evidence",
-        "name": "Charred Paper",
-        "inspectText": "Charred Paper is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S14C04-marker",
-        "type": "marker",
-        "name": "Marker 1434",
-        "inspectText": "Marker 1434 is not the answer. It is the lock."
-      },
-      {
-        "id": "S14C04-sound",
-        "type": "audio_clue",
-        "name": "Rain",
-        "inspectText": "Rain repeats near 5:40."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series14-The-Flood-Year/chapter04.md",
-      "novel": "generated/novels/Series14-The-Flood-Year/chapter04.md",
-      "song": "generated/songs/Series14-The-Flood-Year/song04.md"
     }
   },
   "story": {

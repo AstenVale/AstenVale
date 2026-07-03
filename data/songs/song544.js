@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "crow's nest ridge",
-      "crow'snestridge"
-    ],
-    "object": [
-      "copper fitting",
-      "copperfitting"
-    ],
-    "witness": [
-      "gravedigger"
-    ],
-    "time": [
-      "12:33",
-      "1233"
-    ],
-    "marker": [
-      "4634",
-      "marker 4634",
-      "road marker 4634",
-      "mile marker 4634",
-      "mile 4634"
-    ],
-    "direction": [
-      "behind"
-    ],
-    "sound": [
-      "wheel on gravel",
-      "wheelongravel"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S46C04",
-    "puzzleId": "S46C04-marker-lock",
-    "dialogueId": "S46C04-gravedigger",
-    "locationId": "crow-s-nest-ridge",
-    "objective": "Investigate Crow's Nest Ridge, question Gravedigger, recover Copper Fitting, and learn why marker 4634 is tied to Weather Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Crow's Nest Ridge.",
-        "clue": "Wheel on Gravel"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Copper Fitting.",
-        "clue": "Copper Fitting"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Gravedigger.",
-        "clue": "12:33"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4634.",
-        "clue": "4634"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Behind instruction.",
-        "clue": "Behind"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S46C04-location",
-        "type": "location",
-        "name": "Crow's Nest Ridge",
-        "inspectText": "Crow's Nest Ridge looks ordinary until Wheel on Gravel moves through it."
-      },
-      {
-        "id": "S46C04-object",
-        "type": "evidence",
-        "name": "Copper Fitting",
-        "inspectText": "Copper Fitting is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S46C04-marker",
-        "type": "marker",
-        "name": "Marker 4634",
-        "inspectText": "Marker 4634 is not the answer. It is the lock."
-      },
-      {
-        "id": "S46C04-sound",
-        "type": "audio_clue",
-        "name": "Wheel on Gravel",
-        "inspectText": "Wheel on Gravel repeats near 12:33."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series46-The-Storm-Season/chapter04.md",
-      "novel": "generated/novels/Series46-The-Storm-Season/chapter04.md",
-      "song": "generated/songs/Series46-The-Storm-Season/song04.md"
     }
   },
   "story": {

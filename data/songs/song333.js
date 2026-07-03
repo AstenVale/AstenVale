@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the root cellar",
-      "root cellar",
-      "therootcellar"
-    ],
-    "object": [
-      "ticket"
-    ],
-    "witness": [
-      "bone collector",
-      "bonecollector"
-    ],
-    "time": [
-      "6:06",
-      "606"
-    ],
-    "marker": [
-      "2879",
-      "marker 2879",
-      "road marker 2879",
-      "mile marker 2879",
-      "mile 2879"
-    ],
-    "direction": [
-      "out"
-    ],
-    "sound": [
-      "cellar door",
-      "cellardoor"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -301,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S28C09",
-    "puzzleId": "S28C09-marker-lock",
-    "dialogueId": "S28C09-bone-collector",
-    "locationId": "the-root-cellar",
-    "objective": "Investigate The Root Cellar, question Bone Collector, recover Ticket, and learn why marker 2879 is tied to Frequency Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Root Cellar.",
-        "clue": "Cellar Door"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Ticket.",
-        "clue": "Ticket"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Bone Collector.",
-        "clue": "6:06"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2879.",
-        "clue": "2879"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Out instruction.",
-        "clue": "Out"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S28C09-location",
-        "type": "location",
-        "name": "The Root Cellar",
-        "inspectText": "The Root Cellar looks ordinary until Cellar Door moves through it."
-      },
-      {
-        "id": "S28C09-object",
-        "type": "evidence",
-        "name": "Ticket",
-        "inspectText": "Ticket is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S28C09-marker",
-        "type": "marker",
-        "name": "Marker 2879",
-        "inspectText": "Marker 2879 is not the answer. It is the lock."
-      },
-      {
-        "id": "S28C09-sound",
-        "type": "audio_clue",
-        "name": "Cellar Door",
-        "inspectText": "Cellar Door repeats near 6:06."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series28-The-Buried-Signal/chapter09.md",
-      "novel": "generated/novels/Series28-The-Buried-Signal/chapter09.md",
-      "song": "generated/songs/Series28-The-Buried-Signal/song09.md"
     }
   },
   "story": {

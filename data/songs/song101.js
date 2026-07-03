@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "brick kiln",
-      "brickkiln"
-    ],
-    "object": [
-      "prayer card",
-      "prayercard"
-    ],
-    "witness": [
-      "lime burner",
-      "limeburner"
-    ],
-    "time": [
-      "10:51",
-      "1051"
-    ],
-    "marker": [
-      "943",
-      "marker 943",
-      "road marker 943",
-      "mile marker 943",
-      "mile 943"
-    ],
-    "direction": [
-      "left"
-    ],
-    "sound": [
-      "forge breath",
-      "forgebreath"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S09C05",
-    "puzzleId": "S09C05-marker-lock",
-    "dialogueId": "S09C05-lime-burner",
-    "locationId": "brick-kiln",
-    "objective": "Investigate Brick Kiln, question Lime Burner, recover Prayer Card, and learn why marker 943 is tied to Record Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Brick Kiln.",
-        "clue": "Forge Breath"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Prayer Card.",
-        "clue": "Prayer Card"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Lime Burner.",
-        "clue": "10:51"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 943.",
-        "clue": "943"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Left instruction.",
-        "clue": "Left"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S09C05-location",
-        "type": "location",
-        "name": "Brick Kiln",
-        "inspectText": "Brick Kiln looks ordinary until Forge Breath moves through it."
-      },
-      {
-        "id": "S09C05-object",
-        "type": "evidence",
-        "name": "Prayer Card",
-        "inspectText": "Prayer Card is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S09C05-marker",
-        "type": "marker",
-        "name": "Marker 943",
-        "inspectText": "Marker 943 is not the answer. It is the lock."
-      },
-      {
-        "id": "S09C05-sound",
-        "type": "audio_clue",
-        "name": "Forge Breath",
-        "inspectText": "Forge Breath repeats near 10:51."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series09-The-Keeper/chapter05.md",
-      "novel": "generated/novels/Series09-The-Keeper/chapter05.md",
-      "song": "generated/songs/Series09-The-Keeper/song05.md"
     }
   },
   "story": {

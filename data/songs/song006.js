@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "river"
-    ],
-    "object": [
-      "river stone",
-      "riverstone"
-    ],
-    "witness": [
-      "child"
-    ],
-    "time": [
-      "5:40",
-      "540"
-    ],
-    "marker": [
-      "08",
-      "marker 08",
-      "road marker 08",
-      "mile marker 08",
-      "mile 08"
-    ],
-    "direction": [
-      "west"
-    ],
-    "sound": [
-      "river water",
-      "riverwater"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -299,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S01C06",
-    "puzzleId": "S01C06-marker-lock",
-    "dialogueId": "S01C06-child",
-    "locationId": "river",
-    "objective": "Investigate River, question Child, recover River Stone, and learn why marker 08 is tied to Public Archive.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter River.",
-        "clue": "River Water"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect River Stone.",
-        "clue": "River Stone"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Child.",
-        "clue": "5:40"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 08.",
-        "clue": "08"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the West instruction.",
-        "clue": "West"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S01C06-location",
-        "type": "location",
-        "name": "River",
-        "inspectText": "River looks ordinary until River Water moves through it."
-      },
-      {
-        "id": "S01C06-object",
-        "type": "evidence",
-        "name": "River Stone",
-        "inspectText": "River Stone is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S01C06-marker",
-        "type": "marker",
-        "name": "Marker 08",
-        "inspectText": "Marker 08 is not the answer. It is the lock."
-      },
-      {
-        "id": "S01C06-sound",
-        "type": "audio_clue",
-        "name": "River Water",
-        "inspectText": "River Water repeats near 5:40."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series01-The-Stranger/chapter06.md",
-      "novel": "generated/novels/Series01-The-Stranger/chapter06.md",
-      "song": "generated/songs/Series01-The-Stranger/song06.md"
     }
   },
   "story": {

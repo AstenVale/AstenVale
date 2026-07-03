@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "cooperage"
-    ],
-    "object": [
-      "brooch"
-    ],
-    "witness": [
-      "cider presser",
-      "ciderpresser"
-    ],
-    "time": [
-      "3:58",
-      "358"
-    ],
-    "marker": [
-      "4416",
-      "marker 4416",
-      "road marker 4416",
-      "mile marker 4416",
-      "mile 4416"
-    ],
-    "direction": [
-      "away"
-    ],
-    "sound": [
-      "pages turning",
-      "pagesturning"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -309,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S44C02",
-    "puzzleId": "S44C02-marker-lock",
-    "dialogueId": "S44C02-cider-presser",
-    "locationId": "cooperage",
-    "objective": "Investigate Cooperage, question Cider Presser, recover Brooch, and learn why marker 4416 is tied to Parallel Case Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Cooperage.",
-        "clue": "Pages Turning"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Brooch.",
-        "clue": "Brooch"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Cider Presser.",
-        "clue": "3:58"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4416.",
-        "clue": "4416"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Away instruction.",
-        "clue": "Away"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S44C02-location",
-        "type": "location",
-        "name": "Cooperage",
-        "inspectText": "Cooperage looks ordinary until Pages Turning moves through it."
-      },
-      {
-        "id": "S44C02-object",
-        "type": "evidence",
-        "name": "Brooch",
-        "inspectText": "Brooch is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S44C02-marker",
-        "type": "marker",
-        "name": "Marker 4416",
-        "inspectText": "Marker 4416 is not the answer. It is the lock."
-      },
-      {
-        "id": "S44C02-sound",
-        "type": "audio_clue",
-        "name": "Pages Turning",
-        "inspectText": "Pages Turning repeats near 3:58."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series44-The-Mirror-Case/chapter02.md",
-      "novel": "generated/novels/Series44-The-Mirror-Case/chapter02.md",
-      "song": "generated/songs/Series44-The-Mirror-Case/song02.md"
     }
   },
   "story": {

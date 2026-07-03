@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "harness shop",
-      "harnessshop"
-    ],
-    "object": [
-      "notebook"
-    ],
-    "witness": [
-      "fence mender",
-      "fencemender"
-    ],
-    "time": [
-      "5:55",
-      "555"
-    ],
-    "marker": [
-      "2688",
-      "marker 2688",
-      "road marker 2688",
-      "mile marker 2688",
-      "mile 2688"
-    ],
-    "direction": [
-      "beyond"
-    ],
-    "sound": [
-      "kettle boil",
-      "kettleboil"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -310,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S26C10",
-    "puzzleId": "S26C10-marker-lock",
-    "dialogueId": "S26C10-fence-mender",
-    "locationId": "harness-shop",
-    "objective": "Investigate Harness Shop, question Fence Mender, recover Notebook, and learn why marker 2688 is tied to Threshold Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Harness Shop.",
-        "clue": "Kettle Boil"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Notebook.",
-        "clue": "Notebook"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Fence Mender.",
-        "clue": "5:55"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2688.",
-        "clue": "2688"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Beyond instruction.",
-        "clue": "Beyond"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S26C10-location",
-        "type": "location",
-        "name": "Harness Shop",
-        "inspectText": "Harness Shop looks ordinary until Kettle Boil moves through it."
-      },
-      {
-        "id": "S26C10-object",
-        "type": "evidence",
-        "name": "Notebook",
-        "inspectText": "Notebook is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S26C10-marker",
-        "type": "marker",
-        "name": "Marker 2688",
-        "inspectText": "Marker 2688 is not the answer. It is the lock."
-      },
-      {
-        "id": "S26C10-sound",
-        "type": "audio_clue",
-        "name": "Kettle Boil",
-        "inspectText": "Kettle Boil repeats near 5:55."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series26-The-Red-Door/chapter10.md",
-      "novel": "generated/novels/Series26-The-Red-Door/chapter10.md",
-      "song": "generated/songs/Series26-The-Red-Door/song10.md"
     }
   },
   "story": {

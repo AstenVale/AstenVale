@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "undertaker's hall",
-      "undertaker'shall"
-    ],
-    "object": [
-      "lantern"
-    ],
-    "witness": [
-      "fisherman"
-    ],
-    "time": [
-      "12:00",
-      "1200"
-    ],
-    "marker": [
-      "1297",
-      "marker 1297",
-      "road marker 1297",
-      "mile marker 1297",
-      "mile 1297"
-    ],
-    "direction": [
-      "sideways"
-    ],
-    "sound": [
-      "cannon bolt",
-      "cannonbolt"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -299,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S12C11",
-    "puzzleId": "S12C11-marker-lock",
-    "dialogueId": "S12C11-fisherman",
-    "locationId": "undertaker-s-hall",
-    "objective": "Investigate Undertaker's Hall, question Fisherman, recover Lantern, and learn why marker 1297 is tied to Estate Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Undertaker's Hall.",
-        "clue": "Cannon Bolt"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Lantern.",
-        "clue": "Lantern"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Fisherman.",
-        "clue": "12:00"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1297.",
-        "clue": "1297"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Sideways instruction.",
-        "clue": "Sideways"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S12C11-location",
-        "type": "location",
-        "name": "Undertaker's Hall",
-        "inspectText": "Undertaker's Hall looks ordinary until Cannon Bolt moves through it."
-      },
-      {
-        "id": "S12C11-object",
-        "type": "evidence",
-        "name": "Lantern",
-        "inspectText": "Lantern is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S12C11-marker",
-        "type": "marker",
-        "name": "Marker 1297",
-        "inspectText": "Marker 1297 is not the answer. It is the lock."
-      },
-      {
-        "id": "S12C11-sound",
-        "type": "audio_clue",
-        "name": "Cannon Bolt",
-        "inspectText": "Cannon Bolt repeats near 12:00."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series12-The-Inheritance/chapter11.md",
-      "novel": "generated/novels/Series12-The-Inheritance/chapter11.md",
-      "song": "generated/songs/Series12-The-Inheritance/song11.md"
     }
   },
   "story": {

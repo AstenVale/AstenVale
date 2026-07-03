@@ -61,39 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the pit",
-      "pit",
-      "thepit"
-    ],
-    "object": [
-      "shard of mirror",
-      "shardofmirror"
-    ],
-    "witness": [
-      "miller"
-    ],
-    "time": [
-      "4:29",
-      "429"
-    ],
-    "marker": [
-      "1861",
-      "marker 1861",
-      "road marker 1861",
-      "mile marker 1861",
-      "mile 1861"
-    ],
-    "direction": [
-      "further in",
-      "furtherin"
-    ],
-    "sound": [
-      "stones in a tin",
-      "stonesinatin"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -302,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S18C07",
-    "puzzleId": "S18C07-marker-lock",
-    "dialogueId": "S18C07-miller",
-    "locationId": "the-pit",
-    "objective": "Investigate The Pit, question Miller, recover Shard of Mirror, and learn why marker 1861 is tied to Identity Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Pit.",
-        "clue": "Stones in a Tin"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Shard of Mirror.",
-        "clue": "Shard of Mirror"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Miller.",
-        "clue": "4:29"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1861.",
-        "clue": "1861"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Further In instruction.",
-        "clue": "Further In"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S18C07-location",
-        "type": "location",
-        "name": "The Pit",
-        "inspectText": "The Pit looks ordinary until Stones in a Tin moves through it."
-      },
-      {
-        "id": "S18C07-object",
-        "type": "evidence",
-        "name": "Shard of Mirror",
-        "inspectText": "Shard of Mirror is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S18C07-marker",
-        "type": "marker",
-        "name": "Marker 1861",
-        "inspectText": "Marker 1861 is not the answer. It is the lock."
-      },
-      {
-        "id": "S18C07-sound",
-        "type": "audio_clue",
-        "name": "Stones in a Tin",
-        "inspectText": "Stones in a Tin repeats near 4:29."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series18-The-Hollow-Names/chapter07.md",
-      "novel": "generated/novels/Series18-The-Hollow-Names/chapter07.md",
-      "song": "generated/songs/Series18-The-Hollow-Names/song07.md"
     }
   },
   "story": {

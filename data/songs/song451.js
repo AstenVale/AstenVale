@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the narrow road",
-      "narrow road",
-      "thenarrowroad"
-    ],
-    "object": [
-      "charcoal sketch",
-      "charcoalsketch"
-    ],
-    "witness": [
-      "night watchman",
-      "nightwatchman"
-    ],
-    "time": [
-      "6:45",
-      "645"
-    ],
-    "marker": [
-      "3861",
-      "marker 3861",
-      "road marker 3861",
-      "mile marker 3861",
-      "mile 3861"
-    ],
-    "direction": [
-      "north"
-    ],
-    "sound": [
-      "footsteps"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -301,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S38C07",
-    "puzzleId": "S38C07-marker-lock",
-    "dialogueId": "S38C07-night-watchman",
-    "locationId": "the-narrow-road",
-    "objective": "Investigate The Narrow Road, question Night Watchman, recover Charcoal Sketch, and learn why marker 3861 is tied to Beacon Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Narrow Road.",
-        "clue": "Footsteps"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Charcoal Sketch.",
-        "clue": "Charcoal Sketch"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Night Watchman.",
-        "clue": "6:45"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3861.",
-        "clue": "3861"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the North instruction.",
-        "clue": "North"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S38C07-location",
-        "type": "location",
-        "name": "The Narrow Road",
-        "inspectText": "The Narrow Road looks ordinary until Footsteps moves through it."
-      },
-      {
-        "id": "S38C07-object",
-        "type": "evidence",
-        "name": "Charcoal Sketch",
-        "inspectText": "Charcoal Sketch is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S38C07-marker",
-        "type": "marker",
-        "name": "Marker 3861",
-        "inspectText": "Marker 3861 is not the answer. It is the lock."
-      },
-      {
-        "id": "S38C07-sound",
-        "type": "audio_clue",
-        "name": "Footsteps",
-        "inspectText": "Footsteps repeats near 6:45."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series38-The-Signal-Fire/chapter07.md",
-      "novel": "generated/novels/Series38-The-Signal-Fire/chapter07.md",
-      "song": "generated/songs/Series38-The-Signal-Fire/song07.md"
     }
   },
   "story": {

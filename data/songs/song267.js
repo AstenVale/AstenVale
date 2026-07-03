@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "church"
-    ],
-    "object": [
-      "wax tablet",
-      "waxtablet"
-    ],
-    "witness": [
-      "midwife"
-    ],
-    "time": [
-      "9:08",
-      "908"
-    ],
-    "marker": [
-      "2325",
-      "marker 2325",
-      "road marker 2325",
-      "mile marker 2325",
-      "mile 2325"
-    ],
-    "direction": [
-      "along the creek",
-      "alongthecreek"
-    ],
-    "sound": [
-      "crow wings",
-      "crowwings"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S23C03",
-    "puzzleId": "S23C03-marker-lock",
-    "dialogueId": "S23C03-midwife",
-    "locationId": "church",
-    "objective": "Investigate Church, question Midwife, recover Wax Tablet, and learn why marker 2325 is tied to Document Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Church.",
-        "clue": "Crow Wings"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Wax Tablet.",
-        "clue": "Wax Tablet"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Midwife.",
-        "clue": "9:08"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2325.",
-        "clue": "2325"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Along the Creek instruction.",
-        "clue": "Along the Creek"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S23C03-location",
-        "type": "location",
-        "name": "Church",
-        "inspectText": "Church looks ordinary until Crow Wings moves through it."
-      },
-      {
-        "id": "S23C03-object",
-        "type": "evidence",
-        "name": "Wax Tablet",
-        "inspectText": "Wax Tablet is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S23C03-marker",
-        "type": "marker",
-        "name": "Marker 2325",
-        "inspectText": "Marker 2325 is not the answer. It is the lock."
-      },
-      {
-        "id": "S23C03-sound",
-        "type": "audio_clue",
-        "name": "Crow Wings",
-        "inspectText": "Crow Wings repeats near 9:08."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series23-The-Paper-Trail/chapter03.md",
-      "novel": "generated/novels/Series23-The-Paper-Trail/chapter03.md",
-      "song": "generated/songs/Series23-The-Paper-Trail/song03.md"
     }
   },
   "story": {

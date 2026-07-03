@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "lumber camp",
-      "lumbercamp"
-    ],
-    "object": [
-      "spool of thread",
-      "spoolofthread"
-    ],
-    "witness": [
-      "doctor"
-    ],
-    "time": [
-      "4:12",
-      "412"
-    ],
-    "marker": [
-      "3870",
-      "marker 3870",
-      "road marker 3870",
-      "mile marker 3870",
-      "mile 3870"
-    ],
-    "direction": [
-      "past the tree line",
-      "pastthetreeline"
-    ],
-    "sound": [
-      "distant gunshot",
-      "distantgunshot"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -301,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S38C08",
-    "puzzleId": "S38C08-marker-lock",
-    "dialogueId": "S38C08-doctor",
-    "locationId": "lumber-camp",
-    "objective": "Investigate Lumber Camp, question Doctor, recover Spool of Thread, and learn why marker 3870 is tied to Beacon Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Lumber Camp.",
-        "clue": "Distant Gunshot"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Spool of Thread.",
-        "clue": "Spool of Thread"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Doctor.",
-        "clue": "4:12"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3870.",
-        "clue": "3870"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Past the Tree Line instruction.",
-        "clue": "Past the Tree Line"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S38C08-location",
-        "type": "location",
-        "name": "Lumber Camp",
-        "inspectText": "Lumber Camp looks ordinary until Distant Gunshot moves through it."
-      },
-      {
-        "id": "S38C08-object",
-        "type": "evidence",
-        "name": "Spool of Thread",
-        "inspectText": "Spool of Thread is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S38C08-marker",
-        "type": "marker",
-        "name": "Marker 3870",
-        "inspectText": "Marker 3870 is not the answer. It is the lock."
-      },
-      {
-        "id": "S38C08-sound",
-        "type": "audio_clue",
-        "name": "Distant Gunshot",
-        "inspectText": "Distant Gunshot repeats near 4:12."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series38-The-Signal-Fire/chapter08.md",
-      "novel": "generated/novels/Series38-The-Signal-Fire/chapter08.md",
-      "song": "generated/songs/Series38-The-Signal-Fire/song08.md"
     }
   },
   "story": {

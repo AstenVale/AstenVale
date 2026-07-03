@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "barn"
-    ],
-    "object": [
-      "oil rag",
-      "oilrag"
-    ],
-    "witness": [
-      "station master",
-      "stationmaster"
-    ],
-    "time": [
-      "10:19",
-      "1019"
-    ],
-    "marker": [
-      "1616",
-      "marker 1616",
-      "road marker 1616",
-      "mile marker 1616",
-      "mile 1616"
-    ],
-    "direction": [
-      "south"
-    ],
-    "sound": [
-      "shovel on earth",
-      "shovelonearth"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S16C02",
-    "puzzleId": "S16C02-marker-lock",
-    "dialogueId": "S16C02-station-master",
-    "locationId": "barn",
-    "objective": "Investigate Barn, question Station Master, recover Oil Rag, and learn why marker 1616 is tied to Transparent Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Barn.",
-        "clue": "Shovel on Earth"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Oil Rag.",
-        "clue": "Oil Rag"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Station Master.",
-        "clue": "10:19"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1616.",
-        "clue": "1616"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the South instruction.",
-        "clue": "South"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S16C02-location",
-        "type": "location",
-        "name": "Barn",
-        "inspectText": "Barn looks ordinary until Shovel on Earth moves through it."
-      },
-      {
-        "id": "S16C02-object",
-        "type": "evidence",
-        "name": "Oil Rag",
-        "inspectText": "Oil Rag is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S16C02-marker",
-        "type": "marker",
-        "name": "Marker 1616",
-        "inspectText": "Marker 1616 is not the answer. It is the lock."
-      },
-      {
-        "id": "S16C02-sound",
-        "type": "audio_clue",
-        "name": "Shovel on Earth",
-        "inspectText": "Shovel on Earth repeats near 10:19."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series16-The-Glass-House/chapter02.md",
-      "novel": "generated/novels/Series16-The-Glass-House/chapter02.md",
-      "song": "generated/songs/Series16-The-Glass-House/song02.md"
     }
   },
   "story": {

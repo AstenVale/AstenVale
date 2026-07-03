@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "stables"
-    ],
-    "object": [
-      "trade token",
-      "tradetoken"
-    ],
-    "witness": [
-      "tanner"
-    ],
-    "time": [
-      "1:26",
-      "126"
-    ],
-    "marker": [
-      "1188",
-      "marker 1188",
-      "road marker 1188",
-      "mile marker 1188",
-      "mile 1188"
-    ],
-    "direction": [
-      "below"
-    ],
-    "sound": [
-      "train whistle",
-      "trainwhistle"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -310,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S11C10",
-    "puzzleId": "S11C10-marker-lock",
-    "dialogueId": "S11C10-tanner",
-    "locationId": "stables",
-    "objective": "Investigate Stables, question Tanner, recover Trade Token, and learn why marker 1188 is tied to Survey Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Stables.",
-        "clue": "Train Whistle"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Trade Token.",
-        "clue": "Trade Token"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Tanner.",
-        "clue": "1:26"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1188.",
-        "clue": "1188"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Below instruction.",
-        "clue": "Below"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S11C10-location",
-        "type": "location",
-        "name": "Stables",
-        "inspectText": "Stables looks ordinary until Train Whistle moves through it."
-      },
-      {
-        "id": "S11C10-object",
-        "type": "evidence",
-        "name": "Trade Token",
-        "inspectText": "Trade Token is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S11C10-marker",
-        "type": "marker",
-        "name": "Marker 1188",
-        "inspectText": "Marker 1188 is not the answer. It is the lock."
-      },
-      {
-        "id": "S11C10-sound",
-        "type": "audio_clue",
-        "name": "Train Whistle",
-        "inspectText": "Train Whistle repeats near 1:26."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series11-The-Map-Maker/chapter10.md",
-      "novel": "generated/novels/Series11-The-Map-Maker/chapter10.md",
-      "song": "generated/songs/Series11-The-Map-Maker/song10.md"
     }
   },
   "story": {

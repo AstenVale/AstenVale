@@ -61,35 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "library"
-    ],
-    "object": [
-      "rope"
-    ],
-    "witness": [
-      "blacksmith"
-    ],
-    "time": [
-      "8:33",
-      "833"
-    ],
-    "marker": [
-      "4406",
-      "marker 4406",
-      "road marker 4406",
-      "mile marker 4406",
-      "mile 4406"
-    ],
-    "direction": [
-      "left"
-    ],
-    "sound": [
-      "child's laugh (far off)",
-      "child'slaugh(faroff)"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -298,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S43C12",
-    "puzzleId": "S43C12-marker-lock",
-    "dialogueId": "S43C12-blacksmith",
-    "locationId": "library",
-    "objective": "Investigate Library, question Blacksmith, recover Rope, and learn why marker 4406 is tied to Identity Vault II.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Library.",
-        "clue": "Child's Laugh (far off)"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Rope.",
-        "clue": "Rope"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Blacksmith.",
-        "clue": "8:33"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4406.",
-        "clue": "4406"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Left instruction.",
-        "clue": "Left"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S43C12-location",
-        "type": "location",
-        "name": "Library",
-        "inspectText": "Library looks ordinary until Child's Laugh (far off) moves through it."
-      },
-      {
-        "id": "S43C12-object",
-        "type": "evidence",
-        "name": "Rope",
-        "inspectText": "Rope is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S43C12-marker",
-        "type": "marker",
-        "name": "Marker 4406",
-        "inspectText": "Marker 4406 is not the answer. It is the lock."
-      },
-      {
-        "id": "S43C12-sound",
-        "type": "audio_clue",
-        "name": "Child's Laugh (far off)",
-        "inspectText": "Child's Laugh (far off) repeats near 8:33."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series43-The-False-Name/chapter12.md",
-      "novel": "generated/novels/Series43-The-False-Name/chapter12.md",
-      "song": "generated/songs/Series43-The-False-Name/song12.md"
     }
   },
   "story": {

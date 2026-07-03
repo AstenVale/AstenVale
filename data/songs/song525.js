@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the quarry pool",
-      "quarry pool",
-      "thequarrypool"
-    ],
-    "object": [
-      "button"
-    ],
-    "witness": [
-      "sheriff"
-    ],
-    "time": [
-      "6:53",
-      "653"
-    ],
-    "marker": [
-      "4479",
-      "marker 4479",
-      "road marker 4479",
-      "mile marker 4479",
-      "mile 4479"
-    ],
-    "direction": [
-      "toward the river",
-      "towardtheriver"
-    ],
-    "sound": [
-      "cannon bolt",
-      "cannonbolt"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S44C09",
-    "puzzleId": "S44C09-marker-lock",
-    "dialogueId": "S44C09-sheriff",
-    "locationId": "the-quarry-pool",
-    "objective": "Investigate The Quarry Pool, question Sheriff, recover Button, and learn why marker 4479 is tied to Parallel Case Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Quarry Pool.",
-        "clue": "Cannon Bolt"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Button.",
-        "clue": "Button"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Sheriff.",
-        "clue": "6:53"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4479.",
-        "clue": "4479"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Toward the River instruction.",
-        "clue": "Toward the River"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S44C09-location",
-        "type": "location",
-        "name": "The Quarry Pool",
-        "inspectText": "The Quarry Pool looks ordinary until Cannon Bolt moves through it."
-      },
-      {
-        "id": "S44C09-object",
-        "type": "evidence",
-        "name": "Button",
-        "inspectText": "Button is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S44C09-marker",
-        "type": "marker",
-        "name": "Marker 4479",
-        "inspectText": "Marker 4479 is not the answer. It is the lock."
-      },
-      {
-        "id": "S44C09-sound",
-        "type": "audio_clue",
-        "name": "Cannon Bolt",
-        "inspectText": "Cannon Bolt repeats near 6:53."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series44-The-Mirror-Case/chapter09.md",
-      "novel": "generated/novels/Series44-The-Mirror-Case/chapter09.md",
-      "song": "generated/songs/Series44-The-Mirror-Case/song09.md"
     }
   },
   "story": {

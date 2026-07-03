@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "north gate",
-      "northgate"
-    ],
-    "object": [
-      "shard of mirror",
-      "shardofmirror"
-    ],
-    "witness": [
-      "census taker",
-      "censustaker"
-    ],
-    "time": [
-      "2:47",
-      "247"
-    ],
-    "marker": [
-      "1716",
-      "marker 1716",
-      "road marker 1716",
-      "mile marker 1716",
-      "mile 1716"
-    ],
-    "direction": [
-      "south"
-    ],
-    "sound": [
-      "old hinge",
-      "oldhinge"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S17C02",
-    "puzzleId": "S17C02-marker-lock",
-    "dialogueId": "S17C02-census-taker",
-    "locationId": "north-gate",
-    "objective": "Investigate North Gate, question Census Taker, recover Shard of Mirror, and learn why marker 1716 is tied to Frost Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter North Gate.",
-        "clue": "Old Hinge"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Shard of Mirror.",
-        "clue": "Shard of Mirror"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Census Taker.",
-        "clue": "2:47"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1716.",
-        "clue": "1716"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the South instruction.",
-        "clue": "South"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S17C02-location",
-        "type": "location",
-        "name": "North Gate",
-        "inspectText": "North Gate looks ordinary until Old Hinge moves through it."
-      },
-      {
-        "id": "S17C02-object",
-        "type": "evidence",
-        "name": "Shard of Mirror",
-        "inspectText": "Shard of Mirror is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S17C02-marker",
-        "type": "marker",
-        "name": "Marker 1716",
-        "inspectText": "Marker 1716 is not the answer. It is the lock."
-      },
-      {
-        "id": "S17C02-sound",
-        "type": "audio_clue",
-        "name": "Old Hinge",
-        "inspectText": "Old Hinge repeats near 2:47."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series17-The-Cold-Season/chapter02.md",
-      "novel": "generated/novels/Series17-The-Cold-Season/chapter02.md",
-      "song": "generated/songs/Series17-The-Cold-Season/song02.md"
     }
   },
   "story": {

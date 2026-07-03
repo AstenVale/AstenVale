@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "cabin"
-    ],
-    "object": [
-      "iron nail",
-      "ironnail"
-    ],
-    "witness": [
-      "ferryman"
-    ],
-    "time": [
-      "2:19",
-      "219"
-    ],
-    "marker": [
-      "316",
-      "marker 316",
-      "road marker 316",
-      "mile marker 316",
-      "mile 316"
-    ],
-    "direction": [
-      "right"
-    ],
-    "sound": [
-      "lid of a tin",
-      "lidofatin"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -299,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S03C02",
-    "puzzleId": "S03C02-marker-lock",
-    "dialogueId": "S03C02-ferryman",
-    "locationId": "cabin",
-    "objective": "Investigate Cabin, question Ferryman, recover Iron Nail, and learn why marker 316 is tied to Absence Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Cabin.",
-        "clue": "Lid of a Tin"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Iron Nail.",
-        "clue": "Iron Nail"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Ferryman.",
-        "clue": "2:19"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 316.",
-        "clue": "316"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Right instruction.",
-        "clue": "Right"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S03C02-location",
-        "type": "location",
-        "name": "Cabin",
-        "inspectText": "Cabin looks ordinary until Lid of a Tin moves through it."
-      },
-      {
-        "id": "S03C02-object",
-        "type": "evidence",
-        "name": "Iron Nail",
-        "inspectText": "Iron Nail is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S03C02-marker",
-        "type": "marker",
-        "name": "Marker 316",
-        "inspectText": "Marker 316 is not the answer. It is the lock."
-      },
-      {
-        "id": "S03C02-sound",
-        "type": "audio_clue",
-        "name": "Lid of a Tin",
-        "inspectText": "Lid of a Tin repeats near 2:19."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series03-The-Disappearance/chapter02.md",
-      "novel": "generated/novels/Series03-The-Disappearance/chapter02.md",
-      "song": "generated/songs/Series03-The-Disappearance/song02.md"
     }
   },
   "story": {

@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "harness shop",
-      "harnessshop"
-    ],
-    "object": [
-      "locket"
-    ],
-    "witness": [
-      "librarian"
-    ],
-    "time": [
-      "5:13",
-      "513"
-    ],
-    "marker": [
-      "4597",
-      "marker 4597",
-      "road marker 4597",
-      "mile marker 4597",
-      "mile 4597"
-    ],
-    "direction": [
-      "up the ridge",
-      "uptheridge"
-    ],
-    "sound": [
-      "millstone"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -299,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S45C11",
-    "puzzleId": "S45C11-marker-lock",
-    "dialogueId": "S45C11-librarian",
-    "locationId": "harness-shop",
-    "objective": "Investigate Harness Shop, question Librarian, recover Locket, and learn why marker 4597 is tied to Power Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Harness Shop.",
-        "clue": "Millstone"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Locket.",
-        "clue": "Locket"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Librarian.",
-        "clue": "5:13"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4597.",
-        "clue": "4597"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Up the Ridge instruction.",
-        "clue": "Up the Ridge"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S45C11-location",
-        "type": "location",
-        "name": "Harness Shop",
-        "inspectText": "Harness Shop looks ordinary until Millstone moves through it."
-      },
-      {
-        "id": "S45C11-object",
-        "type": "evidence",
-        "name": "Locket",
-        "inspectText": "Locket is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S45C11-marker",
-        "type": "marker",
-        "name": "Marker 4597",
-        "inspectText": "Marker 4597 is not the answer. It is the lock."
-      },
-      {
-        "id": "S45C11-sound",
-        "type": "audio_clue",
-        "name": "Millstone",
-        "inspectText": "Millstone repeats near 5:13."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series45-The-Hollow-Crown/chapter11.md",
-      "novel": "generated/novels/Series45-The-Hollow-Crown/chapter11.md",
-      "song": "generated/songs/Series45-The-Hollow-Crown/song11.md"
     }
   },
   "story": {

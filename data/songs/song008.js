@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "church"
-    ],
-    "object": [
-      "church key",
-      "churchkey"
-    ],
-    "witness": [
-      "preacher"
-    ],
-    "time": [
-      "7:00",
-      "700"
-    ],
-    "marker": [
-      "09",
-      "marker 09",
-      "road marker 09",
-      "mile marker 09",
-      "mile 09"
-    ],
-    "direction": [
-      "east"
-    ],
-    "sound": [
-      "bell toll",
-      "belltoll"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -299,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S01C08",
-    "puzzleId": "S01C08-marker-lock",
-    "dialogueId": "S01C08-preacher",
-    "locationId": "church",
-    "objective": "Investigate Church, question Preacher, recover Church Key, and learn why marker 09 is tied to Public Archive.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Church.",
-        "clue": "Bell Toll"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Church Key.",
-        "clue": "Church Key"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Preacher.",
-        "clue": "7:00"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 09.",
-        "clue": "09"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the East instruction.",
-        "clue": "East"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S01C08-location",
-        "type": "location",
-        "name": "Church",
-        "inspectText": "Church looks ordinary until Bell Toll moves through it."
-      },
-      {
-        "id": "S01C08-object",
-        "type": "evidence",
-        "name": "Church Key",
-        "inspectText": "Church Key is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S01C08-marker",
-        "type": "marker",
-        "name": "Marker 09",
-        "inspectText": "Marker 09 is not the answer. It is the lock."
-      },
-      {
-        "id": "S01C08-sound",
-        "type": "audio_clue",
-        "name": "Bell Toll",
-        "inspectText": "Bell Toll repeats near 7:00."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series01-The-Stranger/chapter08.md",
-      "novel": "generated/novels/Series01-The-Stranger/chapter08.md",
-      "song": "generated/songs/Series01-The-Stranger/song08.md"
     }
   },
   "story": {

@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "rope walk",
-      "ropewalk"
-    ],
-    "object": [
-      "lantern"
-    ],
-    "witness": [
-      "glazier"
-    ],
-    "time": [
-      "4:29",
-      "429"
-    ],
-    "marker": [
-      "3070",
-      "marker 3070",
-      "road marker 3070",
-      "mile marker 3070",
-      "mile 3070"
-    ],
-    "direction": [
-      "around"
-    ],
-    "sound": [
-      "clock ticking",
-      "clockticking"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -299,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S30C08",
-    "puzzleId": "S30C08-marker-lock",
-    "dialogueId": "S30C08-glazier",
-    "locationId": "rope-walk",
-    "objective": "Investigate Rope Walk, question Glazier, recover Lantern, and learn why marker 3070 is tied to Manifest Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Rope Walk.",
-        "clue": "Clock Ticking"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Lantern.",
-        "clue": "Lantern"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Glazier.",
-        "clue": "4:29"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3070.",
-        "clue": "3070"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Around instruction.",
-        "clue": "Around"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S30C08-location",
-        "type": "location",
-        "name": "Rope Walk",
-        "inspectText": "Rope Walk looks ordinary until Clock Ticking moves through it."
-      },
-      {
-        "id": "S30C08-object",
-        "type": "evidence",
-        "name": "Lantern",
-        "inspectText": "Lantern is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S30C08-marker",
-        "type": "marker",
-        "name": "Marker 3070",
-        "inspectText": "Marker 3070 is not the answer. It is the lock."
-      },
-      {
-        "id": "S30C08-sound",
-        "type": "audio_clue",
-        "name": "Clock Ticking",
-        "inspectText": "Clock Ticking repeats near 4:29."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series30-The-Last-Train/chapter08.md",
-      "novel": "generated/novels/Series30-The-Last-Train/chapter08.md",
-      "song": "generated/songs/Series30-The-Last-Train/song08.md"
     }
   },
   "story": {

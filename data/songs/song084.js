@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "black pine",
-      "blackpine"
-    ],
-    "object": [
-      "charcoal sketch",
-      "charcoalsketch"
-    ],
-    "witness": [
-      "census taker",
-      "censustaker"
-    ],
-    "time": [
-      "5:40",
-      "540"
-    ],
-    "marker": [
-      "806",
-      "marker 806",
-      "road marker 806",
-      "mile marker 806",
-      "mile 806"
-    ],
-    "direction": [
-      "below"
-    ],
-    "sound": [
-      "broken string",
-      "brokenstring"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -312,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S07C12",
-    "puzzleId": "S07C12-marker-lock",
-    "dialogueId": "S07C12-census-taker",
-    "locationId": "black-pine",
-    "objective": "Investigate Black Pine, question Census Taker, recover Charcoal Sketch, and learn why marker 806 is tied to Parallel Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Black Pine.",
-        "clue": "Broken String"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Charcoal Sketch.",
-        "clue": "Charcoal Sketch"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Census Taker.",
-        "clue": "5:40"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 806.",
-        "clue": "806"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Below instruction.",
-        "clue": "Below"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S07C12-location",
-        "type": "location",
-        "name": "Black Pine",
-        "inspectText": "Black Pine looks ordinary until Broken String moves through it."
-      },
-      {
-        "id": "S07C12-object",
-        "type": "evidence",
-        "name": "Charcoal Sketch",
-        "inspectText": "Charcoal Sketch is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S07C12-marker",
-        "type": "marker",
-        "name": "Marker 806",
-        "inspectText": "Marker 806 is not the answer. It is the lock."
-      },
-      {
-        "id": "S07C12-sound",
-        "type": "audio_clue",
-        "name": "Broken String",
-        "inspectText": "Broken String repeats near 5:40."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series07-The-Second-Family/chapter12.md",
-      "novel": "generated/novels/Series07-The-Second-Family/chapter12.md",
-      "song": "generated/songs/Series07-The-Second-Family/song12.md"
     }
   },
   "story": {

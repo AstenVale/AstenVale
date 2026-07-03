@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "potter's field",
-      "potter'sfield"
-    ],
-    "object": [
-      "ledger page",
-      "ledgerpage"
-    ],
-    "witness": [
-      "rope maker",
-      "ropemaker"
-    ],
-    "time": [
-      "3:17",
-      "317"
-    ],
-    "marker": [
-      "2606",
-      "marker 2606",
-      "road marker 2606",
-      "mile marker 2606",
-      "mile 2606"
-    ],
-    "direction": [
-      "past the tree line",
-      "pastthetreeline"
-    ],
-    "sound": [
-      "floorboard"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -301,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S25C12",
-    "puzzleId": "S25C12-marker-lock",
-    "dialogueId": "S25C12-rope-maker",
-    "locationId": "potter-s-field",
-    "objective": "Investigate Potter's Field, question Rope Maker, recover Ledger Page, and learn why marker 2606 is tied to Resonance Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Potter's Field.",
-        "clue": "Floorboard"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Ledger Page.",
-        "clue": "Ledger Page"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Rope Maker.",
-        "clue": "3:17"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2606.",
-        "clue": "2606"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Past the Tree Line instruction.",
-        "clue": "Past the Tree Line"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S25C12-location",
-        "type": "location",
-        "name": "Potter's Field",
-        "inspectText": "Potter's Field looks ordinary until Floorboard moves through it."
-      },
-      {
-        "id": "S25C12-object",
-        "type": "evidence",
-        "name": "Ledger Page",
-        "inspectText": "Ledger Page is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S25C12-marker",
-        "type": "marker",
-        "name": "Marker 2606",
-        "inspectText": "Marker 2606 is not the answer. It is the lock."
-      },
-      {
-        "id": "S25C12-sound",
-        "type": "audio_clue",
-        "name": "Floorboard",
-        "inspectText": "Floorboard repeats near 3:17."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series25-The-Echo-Chamber/chapter12.md",
-      "novel": "generated/novels/Series25-The-Echo-Chamber/chapter12.md",
-      "song": "generated/songs/Series25-The-Echo-Chamber/song12.md"
     }
   },
   "story": {

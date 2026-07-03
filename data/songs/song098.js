@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "south fork",
-      "southfork"
-    ],
-    "object": [
-      "hollow acorn",
-      "hollowacorn"
-    ],
-    "witness": [
-      "drifter"
-    ],
-    "time": [
-      "11:03",
-      "1103"
-    ],
-    "marker": [
-      "916",
-      "marker 916",
-      "road marker 916",
-      "mile marker 916",
-      "mile 916"
-    ],
-    "direction": [
-      "down"
-    ],
-    "sound": [
-      "nail pulled from wood",
-      "nailpulledfromwood"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S09C02",
-    "puzzleId": "S09C02-marker-lock",
-    "dialogueId": "S09C02-drifter",
-    "locationId": "south-fork",
-    "objective": "Investigate South Fork, question Drifter, recover Hollow Acorn, and learn why marker 916 is tied to Record Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter South Fork.",
-        "clue": "Nail Pulled from Wood"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Hollow Acorn.",
-        "clue": "Hollow Acorn"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Drifter.",
-        "clue": "11:03"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 916.",
-        "clue": "916"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Down instruction.",
-        "clue": "Down"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S09C02-location",
-        "type": "location",
-        "name": "South Fork",
-        "inspectText": "South Fork looks ordinary until Nail Pulled from Wood moves through it."
-      },
-      {
-        "id": "S09C02-object",
-        "type": "evidence",
-        "name": "Hollow Acorn",
-        "inspectText": "Hollow Acorn is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S09C02-marker",
-        "type": "marker",
-        "name": "Marker 916",
-        "inspectText": "Marker 916 is not the answer. It is the lock."
-      },
-      {
-        "id": "S09C02-sound",
-        "type": "audio_clue",
-        "name": "Nail Pulled from Wood",
-        "inspectText": "Nail Pulled from Wood repeats near 11:03."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series09-The-Keeper/chapter02.md",
-      "novel": "generated/novels/Series09-The-Keeper/chapter02.md",
-      "song": "generated/songs/Series09-The-Keeper/song02.md"
     }
   },
   "story": {

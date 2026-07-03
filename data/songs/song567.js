@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "north gate",
-      "northgate"
-    ],
-    "object": [
-      "badge"
-    ],
-    "witness": [
-      "harness maker",
-      "harnessmaker"
-    ],
-    "time": [
-      "3:30",
-      "330"
-    ],
-    "marker": [
-      "4825",
-      "marker 4825",
-      "road marker 4825",
-      "mile marker 4825",
-      "mile 4825"
-    ],
-    "direction": [
-      "into the dark",
-      "intothedark"
-    ],
-    "sound": [
-      "river ice",
-      "riverice"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S48C03",
-    "puzzleId": "S48C03-marker-lock",
-    "dialogueId": "S48C03-harness-maker",
-    "locationId": "north-gate",
-    "objective": "Investigate North Gate, question Harness Maker, recover Badge, and learn why marker 4825 is tied to Static Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter North Gate.",
-        "clue": "River Ice"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Badge.",
-        "clue": "Badge"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Harness Maker.",
-        "clue": "3:30"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4825.",
-        "clue": "4825"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Into the Dark instruction.",
-        "clue": "Into the Dark"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S48C03-location",
-        "type": "location",
-        "name": "North Gate",
-        "inspectText": "North Gate looks ordinary until River Ice moves through it."
-      },
-      {
-        "id": "S48C03-object",
-        "type": "evidence",
-        "name": "Badge",
-        "inspectText": "Badge is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S48C03-marker",
-        "type": "marker",
-        "name": "Marker 4825",
-        "inspectText": "Marker 4825 is not the answer. It is the lock."
-      },
-      {
-        "id": "S48C03-sound",
-        "type": "audio_clue",
-        "name": "River Ice",
-        "inspectText": "River Ice repeats near 3:30."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series48-The-Broken-Signal/chapter03.md",
-      "novel": "generated/novels/Series48-The-Broken-Signal/chapter03.md",
-      "song": "generated/songs/Series48-The-Broken-Signal/song03.md"
     }
   },
   "story": {

@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the quarry pool",
-      "quarry pool",
-      "thequarrypool"
-    ],
-    "object": [
-      "map"
-    ],
-    "witness": [
-      "schoolgirl"
-    ],
-    "time": [
-      "1:58",
-      "158"
-    ],
-    "marker": [
-      "2397",
-      "marker 2397",
-      "road marker 2397",
-      "mile marker 2397",
-      "mile 2397"
-    ],
-    "direction": [
-      "left"
-    ],
-    "sound": [
-      "crow call",
-      "crowcall"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S23C11",
-    "puzzleId": "S23C11-marker-lock",
-    "dialogueId": "S23C11-schoolgirl",
-    "locationId": "the-quarry-pool",
-    "objective": "Investigate The Quarry Pool, question Schoolgirl, recover Map, and learn why marker 2397 is tied to Document Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Quarry Pool.",
-        "clue": "Crow Call"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Map.",
-        "clue": "Map"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Schoolgirl.",
-        "clue": "1:58"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2397.",
-        "clue": "2397"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Left instruction.",
-        "clue": "Left"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S23C11-location",
-        "type": "location",
-        "name": "The Quarry Pool",
-        "inspectText": "The Quarry Pool looks ordinary until Crow Call moves through it."
-      },
-      {
-        "id": "S23C11-object",
-        "type": "evidence",
-        "name": "Map",
-        "inspectText": "Map is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S23C11-marker",
-        "type": "marker",
-        "name": "Marker 2397",
-        "inspectText": "Marker 2397 is not the answer. It is the lock."
-      },
-      {
-        "id": "S23C11-sound",
-        "type": "audio_clue",
-        "name": "Crow Call",
-        "inspectText": "Crow Call repeats near 1:58."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series23-The-Paper-Trail/chapter11.md",
-      "novel": "generated/novels/Series23-The-Paper-Trail/chapter11.md",
-      "song": "generated/songs/Series23-The-Paper-Trail/song11.md"
     }
   },
   "story": {

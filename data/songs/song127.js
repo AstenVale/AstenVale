@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "ash hollow",
-      "ashhollow"
-    ],
-    "object": [
-      "wax seal",
-      "waxseal"
-    ],
-    "witness": [
-      "child"
-    ],
-    "time": [
-      "11:03",
-      "1103"
-    ],
-    "marker": [
-      "1161",
-      "marker 1161",
-      "road marker 1161",
-      "mile marker 1161",
-      "mile 1161"
-    ],
-    "direction": [
-      "toward"
-    ],
-    "sound": [
-      "stones in a tin",
-      "stonesinatin"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S11C07",
-    "puzzleId": "S11C07-marker-lock",
-    "dialogueId": "S11C07-child",
-    "locationId": "ash-hollow",
-    "objective": "Investigate Ash Hollow, question Child, recover Wax Seal, and learn why marker 1161 is tied to Survey Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Ash Hollow.",
-        "clue": "Stones in a Tin"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Wax Seal.",
-        "clue": "Wax Seal"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Child.",
-        "clue": "11:03"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1161.",
-        "clue": "1161"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Toward instruction.",
-        "clue": "Toward"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S11C07-location",
-        "type": "location",
-        "name": "Ash Hollow",
-        "inspectText": "Ash Hollow looks ordinary until Stones in a Tin moves through it."
-      },
-      {
-        "id": "S11C07-object",
-        "type": "evidence",
-        "name": "Wax Seal",
-        "inspectText": "Wax Seal is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S11C07-marker",
-        "type": "marker",
-        "name": "Marker 1161",
-        "inspectText": "Marker 1161 is not the answer. It is the lock."
-      },
-      {
-        "id": "S11C07-sound",
-        "type": "audio_clue",
-        "name": "Stones in a Tin",
-        "inspectText": "Stones in a Tin repeats near 11:03."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series11-The-Map-Maker/chapter07.md",
-      "novel": "generated/novels/Series11-The-Map-Maker/chapter07.md",
-      "song": "generated/songs/Series11-The-Map-Maker/song07.md"
     }
   },
   "story": {

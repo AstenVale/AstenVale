@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "water tower",
-      "watertower"
-    ],
-    "object": [
-      "cufflink"
-    ],
-    "witness": [
-      "fence mender",
-      "fencemender"
-    ],
-    "time": [
-      "12:00",
-      "1200"
-    ],
-    "marker": [
-      "725",
-      "marker 725",
-      "road marker 725",
-      "mile marker 725",
-      "mile 725"
-    ],
-    "direction": [
-      "off the road",
-      "offtheroad"
-    ],
-    "sound": [
-      "pen on paper",
-      "penonpaper"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -301,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S07C03",
-    "puzzleId": "S07C03-marker-lock",
-    "dialogueId": "S07C03-fence-mender",
-    "locationId": "water-tower",
-    "objective": "Investigate Water Tower, question Fence Mender, recover Cufflink, and learn why marker 725 is tied to Parallel Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Water Tower.",
-        "clue": "Pen on Paper"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Cufflink.",
-        "clue": "Cufflink"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Fence Mender.",
-        "clue": "12:00"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 725.",
-        "clue": "725"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Off the Road instruction.",
-        "clue": "Off the Road"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S07C03-location",
-        "type": "location",
-        "name": "Water Tower",
-        "inspectText": "Water Tower looks ordinary until Pen on Paper moves through it."
-      },
-      {
-        "id": "S07C03-object",
-        "type": "evidence",
-        "name": "Cufflink",
-        "inspectText": "Cufflink is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S07C03-marker",
-        "type": "marker",
-        "name": "Marker 725",
-        "inspectText": "Marker 725 is not the answer. It is the lock."
-      },
-      {
-        "id": "S07C03-sound",
-        "type": "audio_clue",
-        "name": "Pen on Paper",
-        "inspectText": "Pen on Paper repeats near 12:00."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series07-The-Second-Family/chapter03.md",
-      "novel": "generated/novels/Series07-The-Second-Family/chapter03.md",
-      "song": "generated/songs/Series07-The-Second-Family/song03.md"
     }
   },
   "story": {

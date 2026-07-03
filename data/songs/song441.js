@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "north gate",
-      "northgate"
-    ],
-    "object": [
-      "spectacles"
-    ],
-    "witness": [
-      "caretaker"
-    ],
-    "time": [
-      "7:37",
-      "737"
-    ],
-    "marker": [
-      "3779",
-      "marker 3779",
-      "road marker 3779",
-      "mile marker 3779",
-      "mile 3779"
-    ],
-    "direction": [
-      "behind"
-    ],
-    "sound": [
-      "broken string",
-      "brokenstring"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -310,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S37C09",
-    "puzzleId": "S37C09-marker-lock",
-    "dialogueId": "S37C09-caretaker",
-    "locationId": "north-gate",
-    "objective": "Investigate North Gate, question Caretaker, recover Spectacles, and learn why marker 3779 is tied to Outpost Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter North Gate.",
-        "clue": "Broken String"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Spectacles.",
-        "clue": "Spectacles"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Caretaker.",
-        "clue": "7:37"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3779.",
-        "clue": "3779"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Behind instruction.",
-        "clue": "Behind"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S37C09-location",
-        "type": "location",
-        "name": "North Gate",
-        "inspectText": "North Gate looks ordinary until Broken String moves through it."
-      },
-      {
-        "id": "S37C09-object",
-        "type": "evidence",
-        "name": "Spectacles",
-        "inspectText": "Spectacles is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S37C09-marker",
-        "type": "marker",
-        "name": "Marker 3779",
-        "inspectText": "Marker 3779 is not the answer. It is the lock."
-      },
-      {
-        "id": "S37C09-sound",
-        "type": "audio_clue",
-        "name": "Broken String",
-        "inspectText": "Broken String repeats near 7:37."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series37-The-Abandoned-Post/chapter09.md",
-      "novel": "generated/novels/Series37-The-Abandoned-Post/chapter09.md",
-      "song": "generated/songs/Series37-The-Abandoned-Post/song09.md"
     }
   },
   "story": {

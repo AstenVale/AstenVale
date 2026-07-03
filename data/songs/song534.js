@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "iron bridge",
-      "ironbridge"
-    ],
-    "object": [
-      "spool of thread",
-      "spoolofthread"
-    ],
-    "witness": [
-      "quarry foreman",
-      "quarryforeman"
-    ],
-    "time": [
-      "12:00",
-      "1200"
-    ],
-    "marker": [
-      "4552",
-      "marker 4552",
-      "road marker 4552",
-      "mile marker 4552",
-      "mile 4552"
-    ],
-    "direction": [
-      "home"
-    ],
-    "sound": [
-      "broken string",
-      "brokenstring"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -301,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S45C06",
-    "puzzleId": "S45C06-marker-lock",
-    "dialogueId": "S45C06-quarry-foreman",
-    "locationId": "iron-bridge",
-    "objective": "Investigate Iron Bridge, question Quarry Foreman, recover Spool of Thread, and learn why marker 4552 is tied to Power Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Iron Bridge.",
-        "clue": "Broken String"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Spool of Thread.",
-        "clue": "Spool of Thread"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Quarry Foreman.",
-        "clue": "12:00"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4552.",
-        "clue": "4552"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Home instruction.",
-        "clue": "Home"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S45C06-location",
-        "type": "location",
-        "name": "Iron Bridge",
-        "inspectText": "Iron Bridge looks ordinary until Broken String moves through it."
-      },
-      {
-        "id": "S45C06-object",
-        "type": "evidence",
-        "name": "Spool of Thread",
-        "inspectText": "Spool of Thread is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S45C06-marker",
-        "type": "marker",
-        "name": "Marker 4552",
-        "inspectText": "Marker 4552 is not the answer. It is the lock."
-      },
-      {
-        "id": "S45C06-sound",
-        "type": "audio_clue",
-        "name": "Broken String",
-        "inspectText": "Broken String repeats near 12:00."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series45-The-Hollow-Crown/chapter06.md",
-      "novel": "generated/novels/Series45-The-Hollow-Crown/chapter06.md",
-      "song": "generated/songs/Series45-The-Hollow-Crown/song06.md"
     }
   },
   "story": {

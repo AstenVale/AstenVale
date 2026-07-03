@@ -61,39 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the depot",
-      "depot",
-      "thedepot"
-    ],
-    "object": [
-      "string of beads",
-      "stringofbeads"
-    ],
-    "witness": [
-      "station master",
-      "stationmaster"
-    ],
-    "time": [
-      "6:06",
-      "606"
-    ],
-    "marker": [
-      "1925",
-      "marker 1925",
-      "road marker 1925",
-      "mile marker 1925",
-      "mile 1925"
-    ],
-    "direction": [
-      "east"
-    ],
-    "sound": [
-      "ash settling",
-      "ashsettling"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -313,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S19C03",
-    "puzzleId": "S19C03-marker-lock",
-    "dialogueId": "S19C03-station-master",
-    "locationId": "the-depot",
-    "objective": "Investigate The Depot, question Station Master, recover String of Beads, and learn why marker 1925 is tied to Crossing Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Depot.",
-        "clue": "Ash Settling"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect String of Beads.",
-        "clue": "String of Beads"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Station Master.",
-        "clue": "6:06"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1925.",
-        "clue": "1925"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the East instruction.",
-        "clue": "East"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S19C03-location",
-        "type": "location",
-        "name": "The Depot",
-        "inspectText": "The Depot looks ordinary until Ash Settling moves through it."
-      },
-      {
-        "id": "S19C03-object",
-        "type": "evidence",
-        "name": "String of Beads",
-        "inspectText": "String of Beads is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S19C03-marker",
-        "type": "marker",
-        "name": "Marker 1925",
-        "inspectText": "Marker 1925 is not the answer. It is the lock."
-      },
-      {
-        "id": "S19C03-sound",
-        "type": "audio_clue",
-        "name": "Ash Settling",
-        "inspectText": "Ash Settling repeats near 6:06."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series19-The-Bridge-Burner/chapter03.md",
-      "novel": "generated/novels/Series19-The-Bridge-Burner/chapter03.md",
-      "song": "generated/songs/Series19-The-Bridge-Burner/song03.md"
     }
   },
   "story": {

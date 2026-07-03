@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "south fork",
-      "southfork"
-    ],
-    "object": [
-      "charred paper",
-      "charredpaper"
-    ],
-    "witness": [
-      "furrier"
-    ],
-    "time": [
-      "10:05",
-      "1005"
-    ],
-    "marker": [
-      "4643",
-      "marker 4643",
-      "road marker 4643",
-      "mile marker 4643",
-      "mile 4643"
-    ],
-    "direction": [
-      "right"
-    ],
-    "sound": [
-      "pen on paper",
-      "penonpaper"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S46C05",
-    "puzzleId": "S46C05-marker-lock",
-    "dialogueId": "S46C05-furrier",
-    "locationId": "south-fork",
-    "objective": "Investigate South Fork, question Furrier, recover Charred Paper, and learn why marker 4643 is tied to Weather Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter South Fork.",
-        "clue": "Pen on Paper"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Charred Paper.",
-        "clue": "Charred Paper"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Furrier.",
-        "clue": "10:05"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4643.",
-        "clue": "4643"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Right instruction.",
-        "clue": "Right"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S46C05-location",
-        "type": "location",
-        "name": "South Fork",
-        "inspectText": "South Fork looks ordinary until Pen on Paper moves through it."
-      },
-      {
-        "id": "S46C05-object",
-        "type": "evidence",
-        "name": "Charred Paper",
-        "inspectText": "Charred Paper is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S46C05-marker",
-        "type": "marker",
-        "name": "Marker 4643",
-        "inspectText": "Marker 4643 is not the answer. It is the lock."
-      },
-      {
-        "id": "S46C05-sound",
-        "type": "audio_clue",
-        "name": "Pen on Paper",
-        "inspectText": "Pen on Paper repeats near 10:05."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series46-The-Storm-Season/chapter05.md",
-      "novel": "generated/novels/Series46-The-Storm-Season/chapter05.md",
-      "song": "generated/songs/Series46-The-Storm-Season/song05.md"
     }
   },
   "story": {

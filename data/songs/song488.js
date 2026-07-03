@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "mill house",
-      "millhouse"
-    ],
-    "object": [
-      "spectacles"
-    ],
-    "witness": [
-      "night watchman",
-      "nightwatchman"
-    ],
-    "time": [
-      "10:22",
-      "1022"
-    ],
-    "marker": [
-      "4170",
-      "marker 4170",
-      "road marker 4170",
-      "mile marker 4170",
-      "mile 4170"
-    ],
-    "direction": [
-      "out"
-    ],
-    "sound": [
-      "glass break",
-      "glassbreak"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S41C08",
-    "puzzleId": "S41C08-marker-lock",
-    "dialogueId": "S41C08-night-watchman",
-    "locationId": "mill-house",
-    "objective": "Investigate Mill House, question Night Watchman, recover Spectacles, and learn why marker 4170 is tied to Phantom Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Mill House.",
-        "clue": "Glass Break"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Spectacles.",
-        "clue": "Spectacles"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Night Watchman.",
-        "clue": "10:22"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4170.",
-        "clue": "4170"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Out instruction.",
-        "clue": "Out"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S41C08-location",
-        "type": "location",
-        "name": "Mill House",
-        "inspectText": "Mill House looks ordinary until Glass Break moves through it."
-      },
-      {
-        "id": "S41C08-object",
-        "type": "evidence",
-        "name": "Spectacles",
-        "inspectText": "Spectacles is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S41C08-marker",
-        "type": "marker",
-        "name": "Marker 4170",
-        "inspectText": "Marker 4170 is not the answer. It is the lock."
-      },
-      {
-        "id": "S41C08-sound",
-        "type": "audio_clue",
-        "name": "Glass Break",
-        "inspectText": "Glass Break repeats near 10:22."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series41-The-Ghost-Road/chapter08.md",
-      "novel": "generated/novels/Series41-The-Ghost-Road/chapter08.md",
-      "song": "generated/songs/Series41-The-Ghost-Road/song08.md"
     }
   },
   "story": {

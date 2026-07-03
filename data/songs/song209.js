@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "birch stand",
-      "birchstand"
-    ],
-    "object": [
-      "ring"
-    ],
-    "witness": [
-      "wainwright"
-    ],
-    "time": [
-      "6:32",
-      "632"
-    ],
-    "marker": [
-      "1843",
-      "marker 1843",
-      "road marker 1843",
-      "mile marker 1843",
-      "mile 1843"
-    ],
-    "direction": [
-      "east"
-    ],
-    "sound": [
-      "stones in a tin",
-      "stonesinatin"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -299,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S18C05",
-    "puzzleId": "S18C05-marker-lock",
-    "dialogueId": "S18C05-wainwright",
-    "locationId": "birch-stand",
-    "objective": "Investigate Birch Stand, question Wainwright, recover Ring, and learn why marker 1843 is tied to Identity Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Birch Stand.",
-        "clue": "Stones in a Tin"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Ring.",
-        "clue": "Ring"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Wainwright.",
-        "clue": "6:32"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1843.",
-        "clue": "1843"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the East instruction.",
-        "clue": "East"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S18C05-location",
-        "type": "location",
-        "name": "Birch Stand",
-        "inspectText": "Birch Stand looks ordinary until Stones in a Tin moves through it."
-      },
-      {
-        "id": "S18C05-object",
-        "type": "evidence",
-        "name": "Ring",
-        "inspectText": "Ring is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S18C05-marker",
-        "type": "marker",
-        "name": "Marker 1843",
-        "inspectText": "Marker 1843 is not the answer. It is the lock."
-      },
-      {
-        "id": "S18C05-sound",
-        "type": "audio_clue",
-        "name": "Stones in a Tin",
-        "inspectText": "Stones in a Tin repeats near 6:32."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series18-The-Hollow-Names/chapter05.md",
-      "novel": "generated/novels/Series18-The-Hollow-Names/chapter05.md",
-      "song": "generated/songs/Series18-The-Hollow-Names/song05.md"
     }
   },
   "story": {

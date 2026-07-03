@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "calico alley",
-      "calicoalley"
-    ],
-    "object": [
-      "receipt"
-    ],
-    "witness": [
-      "preacher"
-    ],
-    "time": [
-      "3:03",
-      "303"
-    ],
-    "marker": [
-      "1006",
-      "marker 1006",
-      "road marker 1006",
-      "mile marker 1006",
-      "mile 1006"
-    ],
-    "direction": [
-      "home"
-    ],
-    "sound": [
-      "lantern glass",
-      "lanternglass"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -309,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S09C12",
-    "puzzleId": "S09C12-marker-lock",
-    "dialogueId": "S09C12-preacher",
-    "locationId": "calico-alley",
-    "objective": "Investigate Calico Alley, question Preacher, recover Receipt, and learn why marker 1006 is tied to Record Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Calico Alley.",
-        "clue": "Lantern Glass"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Receipt.",
-        "clue": "Receipt"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Preacher.",
-        "clue": "3:03"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1006.",
-        "clue": "1006"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Home instruction.",
-        "clue": "Home"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S09C12-location",
-        "type": "location",
-        "name": "Calico Alley",
-        "inspectText": "Calico Alley looks ordinary until Lantern Glass moves through it."
-      },
-      {
-        "id": "S09C12-object",
-        "type": "evidence",
-        "name": "Receipt",
-        "inspectText": "Receipt is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S09C12-marker",
-        "type": "marker",
-        "name": "Marker 1006",
-        "inspectText": "Marker 1006 is not the answer. It is the lock."
-      },
-      {
-        "id": "S09C12-sound",
-        "type": "audio_clue",
-        "name": "Lantern Glass",
-        "inspectText": "Lantern Glass repeats near 3:03."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series09-The-Keeper/chapter12.md",
-      "novel": "generated/novels/Series09-The-Keeper/chapter12.md",
-      "song": "generated/songs/Series09-The-Keeper/song12.md"
     }
   },
   "story": {

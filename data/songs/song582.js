@@ -61,39 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "cooper's yard",
-      "cooper'syard"
-    ],
-    "object": [
-      "pocket watch",
-      "pocketwatch"
-    ],
-    "witness": [
-      "cattle driver",
-      "cattledriver"
-    ],
-    "time": [
-      "2:47",
-      "247"
-    ],
-    "marker": [
-      "4952",
-      "marker 4952",
-      "road marker 4952",
-      "mile marker 4952",
-      "mile 4952"
-    ],
-    "direction": [
-      "into the dark",
-      "intothedark"
-    ],
-    "sound": [
-      "rope strain",
-      "ropestrain"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -302,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S49C06",
-    "puzzleId": "S49C06-marker-lock",
-    "dialogueId": "S49C06-cattle-driver",
-    "locationId": "cooper-s-yard",
-    "objective": "Investigate Cooper's Yard, question Cattle Driver, recover Pocket Watch, and learn why marker 4952 is tied to Testimony Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Cooper's Yard.",
-        "clue": "Rope Strain"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Pocket Watch.",
-        "clue": "Pocket Watch"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Cattle Driver.",
-        "clue": "2:47"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4952.",
-        "clue": "4952"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Into the Dark instruction.",
-        "clue": "Into the Dark"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S49C06-location",
-        "type": "location",
-        "name": "Cooper's Yard",
-        "inspectText": "Cooper's Yard looks ordinary until Rope Strain moves through it."
-      },
-      {
-        "id": "S49C06-object",
-        "type": "evidence",
-        "name": "Pocket Watch",
-        "inspectText": "Pocket Watch is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S49C06-marker",
-        "type": "marker",
-        "name": "Marker 4952",
-        "inspectText": "Marker 4952 is not the answer. It is the lock."
-      },
-      {
-        "id": "S49C06-sound",
-        "type": "audio_clue",
-        "name": "Rope Strain",
-        "inspectText": "Rope Strain repeats near 2:47."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series49-The-Final-Witness/chapter06.md",
-      "novel": "generated/novels/Series49-The-Final-Witness/chapter06.md",
-      "song": "generated/songs/Series49-The-Final-Witness/song06.md"
     }
   },
   "story": {

@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "ash creek",
-      "ashcreek"
-    ],
-    "object": [
-      "oil rag",
-      "oilrag"
-    ],
-    "witness": [
-      "undertaker"
-    ],
-    "time": [
-      "5:21",
-      "521"
-    ],
-    "marker": [
-      "2152",
-      "marker 2152",
-      "road marker 2152",
-      "mile marker 2152",
-      "mile 2152"
-    ],
-    "direction": [
-      "under"
-    ],
-    "sound": [
-      "swamp gas",
-      "swampgas"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S21C06",
-    "puzzleId": "S21C06-marker-lock",
-    "dialogueId": "S21C06-undertaker",
-    "locationId": "ash-creek",
-    "objective": "Investigate Ash Creek, question Undertaker, recover Oil Rag, and learn why marker 2152 is tied to Bark Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Ash Creek.",
-        "clue": "Swamp Gas"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Oil Rag.",
-        "clue": "Oil Rag"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Undertaker.",
-        "clue": "5:21"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2152.",
-        "clue": "2152"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Under instruction.",
-        "clue": "Under"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S21C06-location",
-        "type": "location",
-        "name": "Ash Creek",
-        "inspectText": "Ash Creek looks ordinary until Swamp Gas moves through it."
-      },
-      {
-        "id": "S21C06-object",
-        "type": "evidence",
-        "name": "Oil Rag",
-        "inspectText": "Oil Rag is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S21C06-marker",
-        "type": "marker",
-        "name": "Marker 2152",
-        "inspectText": "Marker 2152 is not the answer. It is the lock."
-      },
-      {
-        "id": "S21C06-sound",
-        "type": "audio_clue",
-        "name": "Swamp Gas",
-        "inspectText": "Swamp Gas repeats near 5:21."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series21-The-Witness-Tree/chapter06.md",
-      "novel": "generated/novels/Series21-The-Witness-Tree/chapter06.md",
-      "song": "generated/songs/Series21-The-Witness-Tree/song06.md"
     }
   },
   "story": {

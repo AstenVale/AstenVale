@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "cooper's yard",
-      "cooper'syard"
-    ],
-    "object": [
-      "pocket watch",
-      "pocketwatch"
-    ],
-    "witness": [
-      "banker"
-    ],
-    "time": [
-      "7:37",
-      "737"
-    ],
-    "marker": [
-      "406",
-      "marker 406",
-      "road marker 406",
-      "mile marker 406",
-      "mile 406"
-    ],
-    "direction": [
-      "home"
-    ],
-    "sound": [
-      "saw cutting",
-      "sawcutting"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S03C12",
-    "puzzleId": "S03C12-marker-lock",
-    "dialogueId": "S03C12-banker",
-    "locationId": "cooper-s-yard",
-    "objective": "Investigate Cooper's Yard, question Banker, recover Pocket Watch, and learn why marker 406 is tied to Absence Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Cooper's Yard.",
-        "clue": "Saw Cutting"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Pocket Watch.",
-        "clue": "Pocket Watch"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Banker.",
-        "clue": "7:37"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 406.",
-        "clue": "406"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Home instruction.",
-        "clue": "Home"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S03C12-location",
-        "type": "location",
-        "name": "Cooper's Yard",
-        "inspectText": "Cooper's Yard looks ordinary until Saw Cutting moves through it."
-      },
-      {
-        "id": "S03C12-object",
-        "type": "evidence",
-        "name": "Pocket Watch",
-        "inspectText": "Pocket Watch is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S03C12-marker",
-        "type": "marker",
-        "name": "Marker 406",
-        "inspectText": "Marker 406 is not the answer. It is the lock."
-      },
-      {
-        "id": "S03C12-sound",
-        "type": "audio_clue",
-        "name": "Saw Cutting",
-        "inspectText": "Saw Cutting repeats near 7:37."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series03-The-Disappearance/chapter12.md",
-      "novel": "generated/novels/Series03-The-Disappearance/chapter12.md",
-      "song": "generated/songs/Series03-The-Disappearance/song12.md"
     }
   },
   "story": {

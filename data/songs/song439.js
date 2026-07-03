@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "freight yard",
-      "freightyard"
-    ],
-    "object": [
-      "canteen"
-    ],
-    "witness": [
-      "cartographer"
-    ],
-    "time": [
-      "10:19",
-      "1019"
-    ],
-    "marker": [
-      "3761",
-      "marker 3761",
-      "road marker 3761",
-      "mile marker 3761",
-      "mile 3761"
-    ],
-    "direction": [
-      "away"
-    ],
-    "sound": [
-      "fence wire hum",
-      "fencewirehum"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -310,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S37C07",
-    "puzzleId": "S37C07-marker-lock",
-    "dialogueId": "S37C07-cartographer",
-    "locationId": "freight-yard",
-    "objective": "Investigate Freight Yard, question Cartographer, recover Canteen, and learn why marker 3761 is tied to Outpost Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Freight Yard.",
-        "clue": "Fence Wire Hum"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Canteen.",
-        "clue": "Canteen"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Cartographer.",
-        "clue": "10:19"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3761.",
-        "clue": "3761"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Away instruction.",
-        "clue": "Away"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S37C07-location",
-        "type": "location",
-        "name": "Freight Yard",
-        "inspectText": "Freight Yard looks ordinary until Fence Wire Hum moves through it."
-      },
-      {
-        "id": "S37C07-object",
-        "type": "evidence",
-        "name": "Canteen",
-        "inspectText": "Canteen is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S37C07-marker",
-        "type": "marker",
-        "name": "Marker 3761",
-        "inspectText": "Marker 3761 is not the answer. It is the lock."
-      },
-      {
-        "id": "S37C07-sound",
-        "type": "audio_clue",
-        "name": "Fence Wire Hum",
-        "inspectText": "Fence Wire Hum repeats near 10:19."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series37-The-Abandoned-Post/chapter07.md",
-      "novel": "generated/novels/Series37-The-Abandoned-Post/chapter07.md",
-      "song": "generated/songs/Series37-The-Abandoned-Post/song07.md"
     }
   },
   "story": {

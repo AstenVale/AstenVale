@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "north gate",
-      "northgate"
-    ],
-    "object": [
-      "wax seal",
-      "waxseal"
-    ],
-    "witness": [
-      "fence mender",
-      "fencemender"
-    ],
-    "time": [
-      "10:19",
-      "1019"
-    ],
-    "marker": [
-      "825",
-      "marker 825",
-      "road marker 825",
-      "mile marker 825",
-      "mile 825"
-    ],
-    "direction": [
-      "down"
-    ],
-    "sound": [
-      "ash settling",
-      "ashsettling"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S08C03",
-    "puzzleId": "S08C03-marker-lock",
-    "dialogueId": "S08C03-fence-mender",
-    "locationId": "north-gate",
-    "objective": "Investigate North Gate, question Fence Mender, recover Wax Seal, and learn why marker 825 is tied to Ash Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter North Gate.",
-        "clue": "Ash Settling"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Wax Seal.",
-        "clue": "Wax Seal"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Fence Mender.",
-        "clue": "10:19"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 825.",
-        "clue": "825"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Down instruction.",
-        "clue": "Down"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S08C03-location",
-        "type": "location",
-        "name": "North Gate",
-        "inspectText": "North Gate looks ordinary until Ash Settling moves through it."
-      },
-      {
-        "id": "S08C03-object",
-        "type": "evidence",
-        "name": "Wax Seal",
-        "inspectText": "Wax Seal is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S08C03-marker",
-        "type": "marker",
-        "name": "Marker 825",
-        "inspectText": "Marker 825 is not the answer. It is the lock."
-      },
-      {
-        "id": "S08C03-sound",
-        "type": "audio_clue",
-        "name": "Ash Settling",
-        "inspectText": "Ash Settling repeats near 10:19."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series08-The-Fire-Year/chapter03.md",
-      "novel": "generated/novels/Series08-The-Fire-Year/chapter03.md",
-      "song": "generated/songs/Series08-The-Fire-Year/song03.md"
     }
   },
   "story": {

@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "banker's house",
-      "banker'shouse"
-    ],
-    "object": [
-      "wool scarf",
-      "woolscarf"
-    ],
-    "witness": [
-      "preacher"
-    ],
-    "time": [
-      "7:14",
-      "714"
-    ],
-    "marker": [
-      "3307",
-      "marker 3307",
-      "road marker 3307",
-      "mile marker 3307",
-      "mile 3307"
-    ],
-    "direction": [
-      "nowhere"
-    ],
-    "sound": [
-      "saw cutting",
-      "sawcutting"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S33C01",
-    "puzzleId": "S33C01-marker-lock",
-    "dialogueId": "S33C01-preacher",
-    "locationId": "banker-s-house",
-    "objective": "Investigate Banker's House, question Preacher, recover Wool Scarf, and learn why marker 3307 is tied to Faded Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Banker's House.",
-        "clue": "Saw Cutting"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Wool Scarf.",
-        "clue": "Wool Scarf"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Preacher.",
-        "clue": "7:14"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3307.",
-        "clue": "3307"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Nowhere instruction.",
-        "clue": "Nowhere"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S33C01-location",
-        "type": "location",
-        "name": "Banker's House",
-        "inspectText": "Banker's House looks ordinary until Saw Cutting moves through it."
-      },
-      {
-        "id": "S33C01-object",
-        "type": "evidence",
-        "name": "Wool Scarf",
-        "inspectText": "Wool Scarf is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S33C01-marker",
-        "type": "marker",
-        "name": "Marker 3307",
-        "inspectText": "Marker 3307 is not the answer. It is the lock."
-      },
-      {
-        "id": "S33C01-sound",
-        "type": "audio_clue",
-        "name": "Saw Cutting",
-        "inspectText": "Saw Cutting repeats near 7:14."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series33-The-Pale-Season/chapter01.md",
-      "novel": "generated/novels/Series33-The-Pale-Season/chapter01.md",
-      "song": "generated/songs/Series33-The-Pale-Season/song01.md"
     }
   },
   "story": {

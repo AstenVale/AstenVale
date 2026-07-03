@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "mill house",
-      "millhouse"
-    ],
-    "object": [
-      "dried flower",
-      "driedflower"
-    ],
-    "witness": [
-      "deputy"
-    ],
-    "time": [
-      "5:09",
-      "509"
-    ],
-    "marker": [
-      "897",
-      "marker 897",
-      "road marker 897",
-      "mile marker 897",
-      "mile 897"
-    ],
-    "direction": [
-      "past the tree line",
-      "pastthetreeline"
-    ],
-    "sound": [
-      "cellar door",
-      "cellardoor"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -301,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S08C11",
-    "puzzleId": "S08C11-marker-lock",
-    "dialogueId": "S08C11-deputy",
-    "locationId": "mill-house",
-    "objective": "Investigate Mill House, question Deputy, recover Dried Flower, and learn why marker 897 is tied to Ash Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Mill House.",
-        "clue": "Cellar Door"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Dried Flower.",
-        "clue": "Dried Flower"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Deputy.",
-        "clue": "5:09"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 897.",
-        "clue": "897"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Past the Tree Line instruction.",
-        "clue": "Past the Tree Line"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S08C11-location",
-        "type": "location",
-        "name": "Mill House",
-        "inspectText": "Mill House looks ordinary until Cellar Door moves through it."
-      },
-      {
-        "id": "S08C11-object",
-        "type": "evidence",
-        "name": "Dried Flower",
-        "inspectText": "Dried Flower is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S08C11-marker",
-        "type": "marker",
-        "name": "Marker 897",
-        "inspectText": "Marker 897 is not the answer. It is the lock."
-      },
-      {
-        "id": "S08C11-sound",
-        "type": "audio_clue",
-        "name": "Cellar Door",
-        "inspectText": "Cellar Door repeats near 5:09."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series08-The-Fire-Year/chapter11.md",
-      "novel": "generated/novels/Series08-The-Fire-Year/chapter11.md",
-      "song": "generated/songs/Series08-The-Fire-Year/song11.md"
     }
   },
   "story": {

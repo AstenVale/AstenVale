@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "diner"
-    ],
-    "object": [
-      "locket"
-    ],
-    "witness": [
-      "rope maker",
-      "ropemaker"
-    ],
-    "time": [
-      "7:37",
-      "737"
-    ],
-    "marker": [
-      "1979",
-      "marker 1979",
-      "road marker 1979",
-      "mile marker 1979",
-      "mile 1979"
-    ],
-    "direction": [
-      "somewhere"
-    ],
-    "sound": [
-      "pen on paper",
-      "penonpaper"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -299,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S19C09",
-    "puzzleId": "S19C09-marker-lock",
-    "dialogueId": "S19C09-rope-maker",
-    "locationId": "diner",
-    "objective": "Investigate Diner, question Rope Maker, recover Locket, and learn why marker 1979 is tied to Crossing Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Diner.",
-        "clue": "Pen on Paper"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Locket.",
-        "clue": "Locket"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Rope Maker.",
-        "clue": "7:37"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1979.",
-        "clue": "1979"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Somewhere instruction.",
-        "clue": "Somewhere"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S19C09-location",
-        "type": "location",
-        "name": "Diner",
-        "inspectText": "Diner looks ordinary until Pen on Paper moves through it."
-      },
-      {
-        "id": "S19C09-object",
-        "type": "evidence",
-        "name": "Locket",
-        "inspectText": "Locket is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S19C09-marker",
-        "type": "marker",
-        "name": "Marker 1979",
-        "inspectText": "Marker 1979 is not the answer. It is the lock."
-      },
-      {
-        "id": "S19C09-sound",
-        "type": "audio_clue",
-        "name": "Pen on Paper",
-        "inspectText": "Pen on Paper repeats near 7:37."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series19-The-Bridge-Burner/chapter09.md",
-      "novel": "generated/novels/Series19-The-Bridge-Burner/chapter09.md",
-      "song": "generated/songs/Series19-The-Bridge-Burner/song09.md"
     }
   },
   "story": {

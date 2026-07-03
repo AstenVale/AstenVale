@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "harness shop",
-      "harnessshop"
-    ],
-    "object": [
-      "charcoal sketch",
-      "charcoalsketch"
-    ],
-    "witness": [
-      "typesetter"
-    ],
-    "time": [
-      "1:11",
-      "111"
-    ],
-    "marker": [
-      "4206",
-      "marker 4206",
-      "road marker 4206",
-      "mile marker 4206",
-      "mile 4206"
-    ],
-    "direction": [
-      "forward"
-    ],
-    "sound": [
-      "axe on wood",
-      "axeonwood"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S41C12",
-    "puzzleId": "S41C12-marker-lock",
-    "dialogueId": "S41C12-typesetter",
-    "locationId": "harness-shop",
-    "objective": "Investigate Harness Shop, question Typesetter, recover Charcoal Sketch, and learn why marker 4206 is tied to Phantom Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Harness Shop.",
-        "clue": "Axe on Wood"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Charcoal Sketch.",
-        "clue": "Charcoal Sketch"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Typesetter.",
-        "clue": "1:11"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4206.",
-        "clue": "4206"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Forward instruction.",
-        "clue": "Forward"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S41C12-location",
-        "type": "location",
-        "name": "Harness Shop",
-        "inspectText": "Harness Shop looks ordinary until Axe on Wood moves through it."
-      },
-      {
-        "id": "S41C12-object",
-        "type": "evidence",
-        "name": "Charcoal Sketch",
-        "inspectText": "Charcoal Sketch is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S41C12-marker",
-        "type": "marker",
-        "name": "Marker 4206",
-        "inspectText": "Marker 4206 is not the answer. It is the lock."
-      },
-      {
-        "id": "S41C12-sound",
-        "type": "audio_clue",
-        "name": "Axe on Wood",
-        "inspectText": "Axe on Wood repeats near 1:11."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series41-The-Ghost-Road/chapter12.md",
-      "novel": "generated/novels/Series41-The-Ghost-Road/chapter12.md",
-      "song": "generated/songs/Series41-The-Ghost-Road/song12.md"
     }
   },
   "story": {

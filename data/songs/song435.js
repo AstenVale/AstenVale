@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "cooper's yard",
-      "cooper'syard"
-    ],
-    "object": [
-      "bone button",
-      "bonebutton"
-    ],
-    "witness": [
-      "weaver"
-    ],
-    "time": [
-      "10:22",
-      "1022"
-    ],
-    "marker": [
-      "3725",
-      "marker 3725",
-      "road marker 3725",
-      "mile marker 3725",
-      "mile 3725"
-    ],
-    "direction": [
-      "across"
-    ],
-    "sound": [
-      "knife scrape",
-      "knifescrape"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S37C03",
-    "puzzleId": "S37C03-marker-lock",
-    "dialogueId": "S37C03-weaver",
-    "locationId": "cooper-s-yard",
-    "objective": "Investigate Cooper's Yard, question Weaver, recover Bone Button, and learn why marker 3725 is tied to Outpost Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Cooper's Yard.",
-        "clue": "Knife Scrape"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Bone Button.",
-        "clue": "Bone Button"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Weaver.",
-        "clue": "10:22"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3725.",
-        "clue": "3725"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Across instruction.",
-        "clue": "Across"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S37C03-location",
-        "type": "location",
-        "name": "Cooper's Yard",
-        "inspectText": "Cooper's Yard looks ordinary until Knife Scrape moves through it."
-      },
-      {
-        "id": "S37C03-object",
-        "type": "evidence",
-        "name": "Bone Button",
-        "inspectText": "Bone Button is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S37C03-marker",
-        "type": "marker",
-        "name": "Marker 3725",
-        "inspectText": "Marker 3725 is not the answer. It is the lock."
-      },
-      {
-        "id": "S37C03-sound",
-        "type": "audio_clue",
-        "name": "Knife Scrape",
-        "inspectText": "Knife Scrape repeats near 10:22."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series37-The-Abandoned-Post/chapter03.md",
-      "novel": "generated/novels/Series37-The-Abandoned-Post/chapter03.md",
-      "song": "generated/songs/Series37-The-Abandoned-Post/song03.md"
     }
   },
   "story": {

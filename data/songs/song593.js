@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "doctor's office",
-      "doctor'soffice"
-    ],
-    "object": [
-      "photograph"
-    ],
-    "witness": [
-      "fisherman"
-    ],
-    "time": [
-      "1:33",
-      "133"
-    ],
-    "marker": [
-      "5043",
-      "marker 5043",
-      "road marker 5043",
-      "mile marker 5043",
-      "mile 5043"
-    ],
-    "direction": [
-      "straight down",
-      "straightdown"
-    ],
-    "sound": [
-      "dog bark at nothing",
-      "dogbarkatnothing"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S50C05",
-    "puzzleId": "S50C05-marker-lock",
-    "dialogueId": "S50C05-fisherman",
-    "locationId": "doctor-s-office",
-    "objective": "Investigate Doctor's Office, question Fisherman, recover Photograph, and learn why marker 5043 is tied to Full Archive.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Doctor's Office.",
-        "clue": "Dog Bark at Nothing"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Photograph.",
-        "clue": "Photograph"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Fisherman.",
-        "clue": "1:33"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 5043.",
-        "clue": "5043"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Straight Down instruction.",
-        "clue": "Straight Down"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S50C05-location",
-        "type": "location",
-        "name": "Doctor's Office",
-        "inspectText": "Doctor's Office looks ordinary until Dog Bark at Nothing moves through it."
-      },
-      {
-        "id": "S50C05-object",
-        "type": "evidence",
-        "name": "Photograph",
-        "inspectText": "Photograph is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S50C05-marker",
-        "type": "marker",
-        "name": "Marker 5043",
-        "inspectText": "Marker 5043 is not the answer. It is the lock."
-      },
-      {
-        "id": "S50C05-sound",
-        "type": "audio_clue",
-        "name": "Dog Bark at Nothing",
-        "inspectText": "Dog Bark at Nothing repeats near 1:33."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series50-The-Resolution/chapter05.md",
-      "novel": "generated/novels/Series50-The-Resolution/chapter05.md",
-      "song": "generated/songs/Series50-The-Resolution/song05.md"
     }
   },
   "story": {

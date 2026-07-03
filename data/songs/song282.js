@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the weir",
-      "weir",
-      "theweir"
-    ],
-    "object": [
-      "rope"
-    ],
-    "witness": [
-      "typesetter"
-    ],
-    "time": [
-      "12:00",
-      "1200"
-    ],
-    "marker": [
-      "2452",
-      "marker 2452",
-      "road marker 2452",
-      "mile marker 2452",
-      "mile 2452"
-    ],
-    "direction": [
-      "ahead"
-    ],
-    "sound": [
-      "crow wings",
-      "crowwings"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S24C06",
-    "puzzleId": "S24C06-marker-lock",
-    "dialogueId": "S24C06-typesetter",
-    "locationId": "the-weir",
-    "objective": "Investigate The Weir, question Typesetter, recover Rope, and learn why marker 2452 is tied to Timeline Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Weir.",
-        "clue": "Crow Wings"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Rope.",
-        "clue": "Rope"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Typesetter.",
-        "clue": "12:00"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2452.",
-        "clue": "2452"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Ahead instruction.",
-        "clue": "Ahead"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S24C06-location",
-        "type": "location",
-        "name": "The Weir",
-        "inspectText": "The Weir looks ordinary until Crow Wings moves through it."
-      },
-      {
-        "id": "S24C06-object",
-        "type": "evidence",
-        "name": "Rope",
-        "inspectText": "Rope is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S24C06-marker",
-        "type": "marker",
-        "name": "Marker 2452",
-        "inspectText": "Marker 2452 is not the answer. It is the lock."
-      },
-      {
-        "id": "S24C06-sound",
-        "type": "audio_clue",
-        "name": "Crow Wings",
-        "inspectText": "Crow Wings repeats near 12:00."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series24-The-Missing-Hours/chapter06.md",
-      "novel": "generated/novels/Series24-The-Missing-Hours/chapter06.md",
-      "song": "generated/songs/Series24-The-Missing-Hours/song06.md"
     }
   },
   "story": {

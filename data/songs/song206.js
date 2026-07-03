@@ -61,40 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the depot",
-      "depot",
-      "thedepot"
-    ],
-    "object": [
-      "hollow acorn",
-      "hollowacorn"
-    ],
-    "witness": [
-      "lock keeper",
-      "lockkeeper"
-    ],
-    "time": [
-      "8:06",
-      "806"
-    ],
-    "marker": [
-      "1816",
-      "marker 1816",
-      "road marker 1816",
-      "mile marker 1816",
-      "mile 1816"
-    ],
-    "direction": [
-      "out of sight",
-      "outofsight"
-    ],
-    "sound": [
-      "crow on wire",
-      "crowonwire"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -303,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S18C02",
-    "puzzleId": "S18C02-marker-lock",
-    "dialogueId": "S18C02-lock-keeper",
-    "locationId": "the-depot",
-    "objective": "Investigate The Depot, question Lock Keeper, recover Hollow Acorn, and learn why marker 1816 is tied to Identity Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Depot.",
-        "clue": "Crow on Wire"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Hollow Acorn.",
-        "clue": "Hollow Acorn"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Lock Keeper.",
-        "clue": "8:06"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1816.",
-        "clue": "1816"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Out of Sight instruction.",
-        "clue": "Out of Sight"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S18C02-location",
-        "type": "location",
-        "name": "The Depot",
-        "inspectText": "The Depot looks ordinary until Crow on Wire moves through it."
-      },
-      {
-        "id": "S18C02-object",
-        "type": "evidence",
-        "name": "Hollow Acorn",
-        "inspectText": "Hollow Acorn is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S18C02-marker",
-        "type": "marker",
-        "name": "Marker 1816",
-        "inspectText": "Marker 1816 is not the answer. It is the lock."
-      },
-      {
-        "id": "S18C02-sound",
-        "type": "audio_clue",
-        "name": "Crow on Wire",
-        "inspectText": "Crow on Wire repeats near 8:06."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series18-The-Hollow-Names/chapter02.md",
-      "novel": "generated/novels/Series18-The-Hollow-Names/chapter02.md",
-      "song": "generated/songs/Series18-The-Hollow-Names/song02.md"
     }
   },
   "story": {

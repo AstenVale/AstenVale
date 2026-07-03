@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "clock tower",
-      "clocktower"
-    ],
-    "object": [
-      "ear of corn",
-      "earofcorn"
-    ],
-    "witness": [
-      "rope maker",
-      "ropemaker"
-    ],
-    "time": [
-      "8:17",
-      "817"
-    ],
-    "marker": [
-      "3352",
-      "marker 3352",
-      "road marker 3352",
-      "mile marker 3352",
-      "mile 3352"
-    ],
-    "direction": [
-      "through"
-    ],
-    "sound": [
-      "boot heel",
-      "bootheel"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -312,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S33C06",
-    "puzzleId": "S33C06-marker-lock",
-    "dialogueId": "S33C06-rope-maker",
-    "locationId": "clock-tower",
-    "objective": "Investigate Clock Tower, question Rope Maker, recover Ear of Corn, and learn why marker 3352 is tied to Faded Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Clock Tower.",
-        "clue": "Boot Heel"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Ear of Corn.",
-        "clue": "Ear of Corn"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Rope Maker.",
-        "clue": "8:17"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3352.",
-        "clue": "3352"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Through instruction.",
-        "clue": "Through"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S33C06-location",
-        "type": "location",
-        "name": "Clock Tower",
-        "inspectText": "Clock Tower looks ordinary until Boot Heel moves through it."
-      },
-      {
-        "id": "S33C06-object",
-        "type": "evidence",
-        "name": "Ear of Corn",
-        "inspectText": "Ear of Corn is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S33C06-marker",
-        "type": "marker",
-        "name": "Marker 3352",
-        "inspectText": "Marker 3352 is not the answer. It is the lock."
-      },
-      {
-        "id": "S33C06-sound",
-        "type": "audio_clue",
-        "name": "Boot Heel",
-        "inspectText": "Boot Heel repeats near 8:17."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series33-The-Pale-Season/chapter06.md",
-      "novel": "generated/novels/Series33-The-Pale-Season/chapter06.md",
-      "song": "generated/songs/Series33-The-Pale-Season/song06.md"
     }
   },
   "story": {

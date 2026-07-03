@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "quarry edge",
-      "quarryedge"
-    ],
-    "object": [
-      "inkwell"
-    ],
-    "witness": [
-      "wainwright"
-    ],
-    "time": [
-      "1:26",
-      "126"
-    ],
-    "marker": [
-      "2234",
-      "marker 2234",
-      "road marker 2234",
-      "mile marker 2234",
-      "mile 2234"
-    ],
-    "direction": [
-      "south"
-    ],
-    "sound": [
-      "lantern flicker",
-      "lanternflicker"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -309,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S22C04",
-    "puzzleId": "S22C04-marker-lock",
-    "dialogueId": "S22C04-wainwright",
-    "locationId": "quarry-edge",
-    "objective": "Investigate Quarry Edge, question Wainwright, recover Inkwell, and learn why marker 2234 is tied to Excavation Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Quarry Edge.",
-        "clue": "Lantern Flicker"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Inkwell.",
-        "clue": "Inkwell"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Wainwright.",
-        "clue": "1:26"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2234.",
-        "clue": "2234"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the South instruction.",
-        "clue": "South"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S22C04-location",
-        "type": "location",
-        "name": "Quarry Edge",
-        "inspectText": "Quarry Edge looks ordinary until Lantern Flicker moves through it."
-      },
-      {
-        "id": "S22C04-object",
-        "type": "evidence",
-        "name": "Inkwell",
-        "inspectText": "Inkwell is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S22C04-marker",
-        "type": "marker",
-        "name": "Marker 2234",
-        "inspectText": "Marker 2234 is not the answer. It is the lock."
-      },
-      {
-        "id": "S22C04-sound",
-        "type": "audio_clue",
-        "name": "Lantern Flicker",
-        "inspectText": "Lantern Flicker repeats near 1:26."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series22-The-Bone-Road/chapter04.md",
-      "novel": "generated/novels/Series22-The-Bone-Road/chapter04.md",
-      "song": "generated/songs/Series22-The-Bone-Road/song04.md"
     }
   },
   "story": {

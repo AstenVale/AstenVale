@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "ash hollow",
-      "ashhollow"
-    ],
-    "object": [
-      "bottle"
-    ],
-    "witness": [
-      "rope maker",
-      "ropemaker"
-    ],
-    "time": [
-      "2:19",
-      "219"
-    ],
-    "marker": [
-      "3061",
-      "marker 3061",
-      "road marker 3061",
-      "mile marker 3061",
-      "mile 3061"
-    ],
-    "direction": [
-      "behind"
-    ],
-    "sound": [
-      "moth wings",
-      "mothwings"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S30C07",
-    "puzzleId": "S30C07-marker-lock",
-    "dialogueId": "S30C07-rope-maker",
-    "locationId": "ash-hollow",
-    "objective": "Investigate Ash Hollow, question Rope Maker, recover Bottle, and learn why marker 3061 is tied to Manifest Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Ash Hollow.",
-        "clue": "Moth Wings"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Bottle.",
-        "clue": "Bottle"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Rope Maker.",
-        "clue": "2:19"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3061.",
-        "clue": "3061"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Behind instruction.",
-        "clue": "Behind"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S30C07-location",
-        "type": "location",
-        "name": "Ash Hollow",
-        "inspectText": "Ash Hollow looks ordinary until Moth Wings moves through it."
-      },
-      {
-        "id": "S30C07-object",
-        "type": "evidence",
-        "name": "Bottle",
-        "inspectText": "Bottle is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S30C07-marker",
-        "type": "marker",
-        "name": "Marker 3061",
-        "inspectText": "Marker 3061 is not the answer. It is the lock."
-      },
-      {
-        "id": "S30C07-sound",
-        "type": "audio_clue",
-        "name": "Moth Wings",
-        "inspectText": "Moth Wings repeats near 2:19."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series30-The-Last-Train/chapter07.md",
-      "novel": "generated/novels/Series30-The-Last-Train/chapter07.md",
-      "song": "generated/songs/Series30-The-Last-Train/song07.md"
     }
   },
   "story": {

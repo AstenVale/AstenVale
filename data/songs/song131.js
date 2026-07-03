@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "stables"
-    ],
-    "object": [
-      "empty tin",
-      "emptytin"
-    ],
-    "witness": [
-      "apothecary"
-    ],
-    "time": [
-      "6:17",
-      "617"
-    ],
-    "marker": [
-      "1197",
-      "marker 1197",
-      "road marker 1197",
-      "mile marker 1197",
-      "mile 1197"
-    ],
-    "direction": [
-      "along the creek",
-      "alongthecreek"
-    ],
-    "sound": [
-      "lock click",
-      "lockclick"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S11C11",
-    "puzzleId": "S11C11-marker-lock",
-    "dialogueId": "S11C11-apothecary",
-    "locationId": "stables",
-    "objective": "Investigate Stables, question Apothecary, recover Empty Tin, and learn why marker 1197 is tied to Survey Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Stables.",
-        "clue": "Lock Click"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Empty Tin.",
-        "clue": "Empty Tin"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Apothecary.",
-        "clue": "6:17"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1197.",
-        "clue": "1197"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Along the Creek instruction.",
-        "clue": "Along the Creek"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S11C11-location",
-        "type": "location",
-        "name": "Stables",
-        "inspectText": "Stables looks ordinary until Lock Click moves through it."
-      },
-      {
-        "id": "S11C11-object",
-        "type": "evidence",
-        "name": "Empty Tin",
-        "inspectText": "Empty Tin is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S11C11-marker",
-        "type": "marker",
-        "name": "Marker 1197",
-        "inspectText": "Marker 1197 is not the answer. It is the lock."
-      },
-      {
-        "id": "S11C11-sound",
-        "type": "audio_clue",
-        "name": "Lock Click",
-        "inspectText": "Lock Click repeats near 6:17."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series11-The-Map-Maker/chapter11.md",
-      "novel": "generated/novels/Series11-The-Map-Maker/chapter11.md",
-      "song": "generated/songs/Series11-The-Map-Maker/song11.md"
     }
   },
   "story": {

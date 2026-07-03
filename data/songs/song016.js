@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "old bridge",
-      "oldbridge"
-    ],
-    "object": [
-      "wedding photo",
-      "weddingphoto"
-    ],
-    "witness": [
-      "wife"
-    ],
-    "time": [
-      "11:52",
-      "1152"
-    ],
-    "marker": [
-      "143",
-      "marker 143",
-      "road marker 143",
-      "mile marker 143",
-      "mile 143"
-    ],
-    "direction": [
-      "south"
-    ],
-    "sound": [
-      "wind in pines",
-      "windinpines"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S02C04",
-    "puzzleId": "S02C04-marker-lock",
-    "dialogueId": "S02C04-wife",
-    "locationId": "old-bridge",
-    "objective": "Investigate Old Bridge, question Wife, recover Wedding Photo, and learn why marker 143 is tied to Personal Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Old Bridge.",
-        "clue": "Wind in Pines"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Wedding Photo.",
-        "clue": "Wedding Photo"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Wife.",
-        "clue": "11:52"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 143.",
-        "clue": "143"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the South instruction.",
-        "clue": "South"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S02C04-location",
-        "type": "location",
-        "name": "Old Bridge",
-        "inspectText": "Old Bridge looks ordinary until Wind in Pines moves through it."
-      },
-      {
-        "id": "S02C04-object",
-        "type": "evidence",
-        "name": "Wedding Photo",
-        "inspectText": "Wedding Photo is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S02C04-marker",
-        "type": "marker",
-        "name": "Marker 143",
-        "inspectText": "Marker 143 is not the answer. It is the lock."
-      },
-      {
-        "id": "S02C04-sound",
-        "type": "audio_clue",
-        "name": "Wind in Pines",
-        "inspectText": "Wind in Pines repeats near 11:52."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series02-The-Before/chapter04.md",
-      "novel": "generated/novels/Series02-The-Before/chapter04.md",
-      "song": "generated/songs/Series02-The-Before/song04.md"
     }
   },
   "story": {

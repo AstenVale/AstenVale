@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the bluff",
-      "bluff",
-      "thebluff"
-    ],
-    "object": [
-      "comb"
-    ],
-    "witness": [
-      "schoolgirl"
-    ],
-    "time": [
-      "1:33",
-      "133"
-    ],
-    "marker": [
-      "3134",
-      "marker 3134",
-      "road marker 3134",
-      "mile marker 3134",
-      "mile 3134"
-    ],
-    "direction": [
-      "past the tree line",
-      "pastthetreeline"
-    ],
-    "sound": [
-      "dry grass",
-      "drygrass"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S31C04",
-    "puzzleId": "S31C04-marker-lock",
-    "dialogueId": "S31C04-schoolgirl",
-    "locationId": "the-bluff",
-    "objective": "Investigate The Bluff, question Schoolgirl, recover Comb, and learn why marker 3134 is tied to Pattern Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Bluff.",
-        "clue": "Dry Grass"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Comb.",
-        "clue": "Comb"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Schoolgirl.",
-        "clue": "1:33"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3134.",
-        "clue": "3134"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Past the Tree Line instruction.",
-        "clue": "Past the Tree Line"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S31C04-location",
-        "type": "location",
-        "name": "The Bluff",
-        "inspectText": "The Bluff looks ordinary until Dry Grass moves through it."
-      },
-      {
-        "id": "S31C04-object",
-        "type": "evidence",
-        "name": "Comb",
-        "inspectText": "Comb is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S31C04-marker",
-        "type": "marker",
-        "name": "Marker 3134",
-        "inspectText": "Marker 3134 is not the answer. It is the lock."
-      },
-      {
-        "id": "S31C04-sound",
-        "type": "audio_clue",
-        "name": "Dry Grass",
-        "inspectText": "Dry Grass repeats near 1:33."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series31-The-Cipher-Garden/chapter04.md",
-      "novel": "generated/novels/Series31-The-Cipher-Garden/chapter04.md",
-      "song": "generated/songs/Series31-The-Cipher-Garden/song04.md"
     }
   },
   "story": {

@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "forge"
-    ],
-    "object": [
-      "boot"
-    ],
-    "witness": [
-      "rag picker",
-      "ragpicker"
-    ],
-    "time": [
-      "6:06",
-      "606"
-    ],
-    "marker": [
-      "3716",
-      "marker 3716",
-      "road marker 3716",
-      "mile marker 3716",
-      "mile 3716"
-    ],
-    "direction": [
-      "south"
-    ],
-    "sound": [
-      "fire crackling",
-      "firecrackling"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -310,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S37C02",
-    "puzzleId": "S37C02-marker-lock",
-    "dialogueId": "S37C02-rag-picker",
-    "locationId": "forge",
-    "objective": "Investigate Forge, question Rag Picker, recover Boot, and learn why marker 3716 is tied to Outpost Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Forge.",
-        "clue": "Fire Crackling"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Boot.",
-        "clue": "Boot"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Rag Picker.",
-        "clue": "6:06"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3716.",
-        "clue": "3716"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the South instruction.",
-        "clue": "South"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S37C02-location",
-        "type": "location",
-        "name": "Forge",
-        "inspectText": "Forge looks ordinary until Fire Crackling moves through it."
-      },
-      {
-        "id": "S37C02-object",
-        "type": "evidence",
-        "name": "Boot",
-        "inspectText": "Boot is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S37C02-marker",
-        "type": "marker",
-        "name": "Marker 3716",
-        "inspectText": "Marker 3716 is not the answer. It is the lock."
-      },
-      {
-        "id": "S37C02-sound",
-        "type": "audio_clue",
-        "name": "Fire Crackling",
-        "inspectText": "Fire Crackling repeats near 6:06."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series37-The-Abandoned-Post/chapter02.md",
-      "novel": "generated/novels/Series37-The-Abandoned-Post/chapter02.md",
-      "song": "generated/songs/Series37-The-Abandoned-Post/song02.md"
     }
   },
   "story": {

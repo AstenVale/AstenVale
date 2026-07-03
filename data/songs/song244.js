@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "jail"
-    ],
-    "object": [
-      "badge"
-    ],
-    "witness": [
-      "postman"
-    ],
-    "time": [
-      "4:47",
-      "447"
-    ],
-    "marker": [
-      "2134",
-      "marker 2134",
-      "road marker 2134",
-      "mile marker 2134",
-      "mile 2134"
-    ],
-    "direction": [
-      "away from town",
-      "awayfromtown"
-    ],
-    "sound": [
-      "distant gunshot",
-      "distantgunshot"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -299,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S21C04",
-    "puzzleId": "S21C04-marker-lock",
-    "dialogueId": "S21C04-postman",
-    "locationId": "jail",
-    "objective": "Investigate Jail, question Postman, recover Badge, and learn why marker 2134 is tied to Bark Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Jail.",
-        "clue": "Distant Gunshot"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Badge.",
-        "clue": "Badge"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Postman.",
-        "clue": "4:47"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2134.",
-        "clue": "2134"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Away from Town instruction.",
-        "clue": "Away from Town"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S21C04-location",
-        "type": "location",
-        "name": "Jail",
-        "inspectText": "Jail looks ordinary until Distant Gunshot moves through it."
-      },
-      {
-        "id": "S21C04-object",
-        "type": "evidence",
-        "name": "Badge",
-        "inspectText": "Badge is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S21C04-marker",
-        "type": "marker",
-        "name": "Marker 2134",
-        "inspectText": "Marker 2134 is not the answer. It is the lock."
-      },
-      {
-        "id": "S21C04-sound",
-        "type": "audio_clue",
-        "name": "Distant Gunshot",
-        "inspectText": "Distant Gunshot repeats near 4:47."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series21-The-Witness-Tree/chapter04.md",
-      "novel": "generated/novels/Series21-The-Witness-Tree/chapter04.md",
-      "song": "generated/songs/Series21-The-Witness-Tree/song04.md"
     }
   },
   "story": {

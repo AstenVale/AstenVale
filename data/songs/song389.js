@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the root cellar",
-      "root cellar",
-      "therootcellar"
-    ],
-    "object": [
-      "glove"
-    ],
-    "witness": [
-      "night porter",
-      "nightporter"
-    ],
-    "time": [
-      "8:33",
-      "833"
-    ],
-    "marker": [
-      "3343",
-      "marker 3343",
-      "road marker 3343",
-      "mile marker 3343",
-      "mile 3343"
-    ],
-    "direction": [
-      "somewhere"
-    ],
-    "sound": [
-      "hammer strike",
-      "hammerstrike"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -312,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S33C05",
-    "puzzleId": "S33C05-marker-lock",
-    "dialogueId": "S33C05-night-porter",
-    "locationId": "the-root-cellar",
-    "objective": "Investigate The Root Cellar, question Night Porter, recover Glove, and learn why marker 3343 is tied to Faded Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Root Cellar.",
-        "clue": "Hammer Strike"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Glove.",
-        "clue": "Glove"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Night Porter.",
-        "clue": "8:33"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3343.",
-        "clue": "3343"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Somewhere instruction.",
-        "clue": "Somewhere"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S33C05-location",
-        "type": "location",
-        "name": "The Root Cellar",
-        "inspectText": "The Root Cellar looks ordinary until Hammer Strike moves through it."
-      },
-      {
-        "id": "S33C05-object",
-        "type": "evidence",
-        "name": "Glove",
-        "inspectText": "Glove is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S33C05-marker",
-        "type": "marker",
-        "name": "Marker 3343",
-        "inspectText": "Marker 3343 is not the answer. It is the lock."
-      },
-      {
-        "id": "S33C05-sound",
-        "type": "audio_clue",
-        "name": "Hammer Strike",
-        "inspectText": "Hammer Strike repeats near 8:33."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series33-The-Pale-Season/chapter05.md",
-      "novel": "generated/novels/Series33-The-Pale-Season/chapter05.md",
-      "song": "generated/songs/Series33-The-Pale-Season/song05.md"
     }
   },
   "story": {

@@ -61,40 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the widow's porch",
-      "widow's porch",
-      "thewidow'sporch"
-    ],
-    "object": [
-      "scratched initials in wood",
-      "scratchedinitialsinwood"
-    ],
-    "witness": [
-      "salt seller",
-      "saltseller"
-    ],
-    "time": [
-      "6:17",
-      "617"
-    ],
-    "marker": [
-      "4034",
-      "marker 4034",
-      "road marker 4034",
-      "mile marker 4034",
-      "mile 4034"
-    ],
-    "direction": [
-      "back the way you came",
-      "backthewayyoucame"
-    ],
-    "sound": [
-      "dog bark at nothing",
-      "dogbarkatnothing"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -313,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S40C04",
-    "puzzleId": "S40C04-marker-lock",
-    "dialogueId": "S40C04-salt-seller",
-    "locationId": "the-widow-s-porch",
-    "objective": "Investigate The Widow's Porch, question Salt Seller, recover Scratched Initials in Wood, and learn why marker 4034 is tied to Cipher Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Widow's Porch.",
-        "clue": "Dog Bark at Nothing"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Scratched Initials in Wood.",
-        "clue": "Scratched Initials in Wood"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Salt Seller.",
-        "clue": "6:17"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4034.",
-        "clue": "4034"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Back the Way You Came instruction.",
-        "clue": "Back the Way You Came"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S40C04-location",
-        "type": "location",
-        "name": "The Widow's Porch",
-        "inspectText": "The Widow's Porch looks ordinary until Dog Bark at Nothing moves through it."
-      },
-      {
-        "id": "S40C04-object",
-        "type": "evidence",
-        "name": "Scratched Initials in Wood",
-        "inspectText": "Scratched Initials in Wood is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S40C04-marker",
-        "type": "marker",
-        "name": "Marker 4034",
-        "inspectText": "Marker 4034 is not the answer. It is the lock."
-      },
-      {
-        "id": "S40C04-sound",
-        "type": "audio_clue",
-        "name": "Dog Bark at Nothing",
-        "inspectText": "Dog Bark at Nothing repeats near 6:17."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series40-The-Coded-Letter/chapter04.md",
-      "novel": "generated/novels/Series40-The-Coded-Letter/chapter04.md",
-      "song": "generated/songs/Series40-The-Coded-Letter/song04.md"
     }
   },
   "story": {

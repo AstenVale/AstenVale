@@ -61,39 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the ridge",
-      "ridge",
-      "theridge"
-    ],
-    "object": [
-      "string of beads",
-      "stringofbeads"
-    ],
-    "witness": [
-      "rope maker",
-      "ropemaker"
-    ],
-    "time": [
-      "6:53",
-      "653"
-    ],
-    "marker": [
-      "1270",
-      "marker 1270",
-      "road marker 1270",
-      "mile marker 1270",
-      "mile 1270"
-    ],
-    "direction": [
-      "off the road",
-      "offtheroad"
-    ],
-    "sound": [
-      "millstone"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -302,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S12C08",
-    "puzzleId": "S12C08-marker-lock",
-    "dialogueId": "S12C08-rope-maker",
-    "locationId": "the-ridge",
-    "objective": "Investigate The Ridge, question Rope Maker, recover String of Beads, and learn why marker 1270 is tied to Estate Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Ridge.",
-        "clue": "Millstone"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect String of Beads.",
-        "clue": "String of Beads"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Rope Maker.",
-        "clue": "6:53"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1270.",
-        "clue": "1270"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Off the Road instruction.",
-        "clue": "Off the Road"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S12C08-location",
-        "type": "location",
-        "name": "The Ridge",
-        "inspectText": "The Ridge looks ordinary until Millstone moves through it."
-      },
-      {
-        "id": "S12C08-object",
-        "type": "evidence",
-        "name": "String of Beads",
-        "inspectText": "String of Beads is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S12C08-marker",
-        "type": "marker",
-        "name": "Marker 1270",
-        "inspectText": "Marker 1270 is not the answer. It is the lock."
-      },
-      {
-        "id": "S12C08-sound",
-        "type": "audio_clue",
-        "name": "Millstone",
-        "inspectText": "Millstone repeats near 6:53."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series12-The-Inheritance/chapter08.md",
-      "novel": "generated/novels/Series12-The-Inheritance/chapter08.md",
-      "song": "generated/songs/Series12-The-Inheritance/song08.md"
     }
   },
   "story": {

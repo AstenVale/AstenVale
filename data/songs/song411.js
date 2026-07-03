@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "church"
-    ],
-    "object": [
-      "folded cloth",
-      "foldedcloth"
-    ],
-    "witness": [
-      "river pilot",
-      "riverpilot"
-    ],
-    "time": [
-      "4:29",
-      "429"
-    ],
-    "marker": [
-      "3525",
-      "marker 3525",
-      "road marker 3525",
-      "mile marker 3525",
-      "mile 3525"
-    ],
-    "direction": [
-      "around"
-    ],
-    "sound": [
-      "floorboard"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -309,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S35C03",
-    "puzzleId": "S35C03-marker-lock",
-    "dialogueId": "S35C03-river-pilot",
-    "locationId": "church",
-    "objective": "Investigate Church, question River Pilot, recover Folded Cloth, and learn why marker 3525 is tied to Collection Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Church.",
-        "clue": "Floorboard"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Folded Cloth.",
-        "clue": "Folded Cloth"
-      },
-      {
-        "step": "interview",
-        "objective": "Question River Pilot.",
-        "clue": "4:29"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3525.",
-        "clue": "3525"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Around instruction.",
-        "clue": "Around"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S35C03-location",
-        "type": "location",
-        "name": "Church",
-        "inspectText": "Church looks ordinary until Floorboard moves through it."
-      },
-      {
-        "id": "S35C03-object",
-        "type": "evidence",
-        "name": "Folded Cloth",
-        "inspectText": "Folded Cloth is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S35C03-marker",
-        "type": "marker",
-        "name": "Marker 3525",
-        "inspectText": "Marker 3525 is not the answer. It is the lock."
-      },
-      {
-        "id": "S35C03-sound",
-        "type": "audio_clue",
-        "name": "Floorboard",
-        "inspectText": "Floorboard repeats near 4:29."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series35-The-Archive-Keeper/chapter03.md",
-      "novel": "generated/novels/Series35-The-Archive-Keeper/chapter03.md",
-      "song": "generated/songs/Series35-The-Archive-Keeper/song03.md"
     }
   },
   "story": {

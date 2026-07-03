@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "calico alley",
-      "calicoalley"
-    ],
-    "object": [
-      "pipe"
-    ],
-    "witness": [
-      "widow"
-    ],
-    "time": [
-      "10:22",
-      "1022"
-    ],
-    "marker": [
-      "2634",
-      "marker 2634",
-      "road marker 2634",
-      "mile marker 2634",
-      "mile 2634"
-    ],
-    "direction": [
-      "toward the river",
-      "towardtheriver"
-    ],
-    "sound": [
-      "footsteps"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -309,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S26C04",
-    "puzzleId": "S26C04-marker-lock",
-    "dialogueId": "S26C04-widow",
-    "locationId": "calico-alley",
-    "objective": "Investigate Calico Alley, question Widow, recover Pipe, and learn why marker 2634 is tied to Threshold Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Calico Alley.",
-        "clue": "Footsteps"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Pipe.",
-        "clue": "Pipe"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Widow.",
-        "clue": "10:22"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2634.",
-        "clue": "2634"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Toward the River instruction.",
-        "clue": "Toward the River"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S26C04-location",
-        "type": "location",
-        "name": "Calico Alley",
-        "inspectText": "Calico Alley looks ordinary until Footsteps moves through it."
-      },
-      {
-        "id": "S26C04-object",
-        "type": "evidence",
-        "name": "Pipe",
-        "inspectText": "Pipe is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S26C04-marker",
-        "type": "marker",
-        "name": "Marker 2634",
-        "inspectText": "Marker 2634 is not the answer. It is the lock."
-      },
-      {
-        "id": "S26C04-sound",
-        "type": "audio_clue",
-        "name": "Footsteps",
-        "inspectText": "Footsteps repeats near 10:22."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series26-The-Red-Door/chapter04.md",
-      "novel": "generated/novels/Series26-The-Red-Door/chapter04.md",
-      "song": "generated/songs/Series26-The-Red-Door/song04.md"
     }
   },
   "story": {

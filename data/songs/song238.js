@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "mill house",
-      "millhouse"
-    ],
-    "object": [
-      "torn label",
-      "tornlabel"
-    ],
-    "witness": [
-      "midwife"
-    ],
-    "time": [
-      "7:14",
-      "714"
-    ],
-    "marker": [
-      "2088",
-      "marker 2088",
-      "road marker 2088",
-      "mile marker 2088",
-      "mile 2088"
-    ],
-    "direction": [
-      "sideways"
-    ],
-    "sound": [
-      "empty wagon",
-      "emptywagon"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S20C10",
-    "puzzleId": "S20C10-marker-lock",
-    "dialogueId": "S20C10-midwife",
-    "locationId": "mill-house",
-    "objective": "Investigate Mill House, question Midwife, recover Torn Label, and learn why marker 2088 is tied to Night Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Mill House.",
-        "clue": "Empty Wagon"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Torn Label.",
-        "clue": "Torn Label"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Midwife.",
-        "clue": "7:14"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2088.",
-        "clue": "2088"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Sideways instruction.",
-        "clue": "Sideways"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S20C10-location",
-        "type": "location",
-        "name": "Mill House",
-        "inspectText": "Mill House looks ordinary until Empty Wagon moves through it."
-      },
-      {
-        "id": "S20C10-object",
-        "type": "evidence",
-        "name": "Torn Label",
-        "inspectText": "Torn Label is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S20C10-marker",
-        "type": "marker",
-        "name": "Marker 2088",
-        "inspectText": "Marker 2088 is not the answer. It is the lock."
-      },
-      {
-        "id": "S20C10-sound",
-        "type": "audio_clue",
-        "name": "Empty Wagon",
-        "inspectText": "Empty Wagon repeats near 7:14."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series20-The-Midnight-Circuit/chapter10.md",
-      "novel": "generated/novels/Series20-The-Midnight-Circuit/chapter10.md",
-      "song": "generated/songs/Series20-The-Midnight-Circuit/song10.md"
     }
   },
   "story": {

@@ -61,39 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the gully",
-      "gully",
-      "thegully"
-    ],
-    "object": [
-      "chain"
-    ],
-    "witness": [
-      "land agent",
-      "landagent"
-    ],
-    "time": [
-      "11:29",
-      "1129"
-    ],
-    "marker": [
-      "3334",
-      "marker 3334",
-      "road marker 3334",
-      "mile marker 3334",
-      "mile 3334"
-    ],
-    "direction": [
-      "toward the river",
-      "towardtheriver"
-    ],
-    "sound": [
-      "lid of a tin",
-      "lidofatin"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -313,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S33C04",
-    "puzzleId": "S33C04-marker-lock",
-    "dialogueId": "S33C04-land-agent",
-    "locationId": "the-gully",
-    "objective": "Investigate The Gully, question Land Agent, recover Chain, and learn why marker 3334 is tied to Faded Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Gully.",
-        "clue": "Lid of a Tin"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Chain.",
-        "clue": "Chain"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Land Agent.",
-        "clue": "11:29"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3334.",
-        "clue": "3334"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Toward the River instruction.",
-        "clue": "Toward the River"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S33C04-location",
-        "type": "location",
-        "name": "The Gully",
-        "inspectText": "The Gully looks ordinary until Lid of a Tin moves through it."
-      },
-      {
-        "id": "S33C04-object",
-        "type": "evidence",
-        "name": "Chain",
-        "inspectText": "Chain is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S33C04-marker",
-        "type": "marker",
-        "name": "Marker 3334",
-        "inspectText": "Marker 3334 is not the answer. It is the lock."
-      },
-      {
-        "id": "S33C04-sound",
-        "type": "audio_clue",
-        "name": "Lid of a Tin",
-        "inspectText": "Lid of a Tin repeats near 11:29."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series33-The-Pale-Season/chapter04.md",
-      "novel": "generated/novels/Series33-The-Pale-Season/chapter04.md",
-      "song": "generated/songs/Series33-The-Pale-Season/song04.md"
     }
   },
   "story": {

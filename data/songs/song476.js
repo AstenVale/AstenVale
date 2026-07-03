@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "diner"
-    ],
-    "object": [
-      "folded cloth",
-      "foldedcloth"
-    ],
-    "witness": [
-      "sheriff"
-    ],
-    "time": [
-      "11:44",
-      "1144"
-    ],
-    "marker": [
-      "4070",
-      "marker 4070",
-      "road marker 4070",
-      "mile marker 4070",
-      "mile 4070"
-    ],
-    "direction": [
-      "down the hollow",
-      "downthehollow"
-    ],
-    "sound": [
-      "broken string",
-      "brokenstring"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -310,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S40C08",
-    "puzzleId": "S40C08-marker-lock",
-    "dialogueId": "S40C08-sheriff",
-    "locationId": "diner",
-    "objective": "Investigate Diner, question Sheriff, recover Folded Cloth, and learn why marker 4070 is tied to Cipher Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Diner.",
-        "clue": "Broken String"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Folded Cloth.",
-        "clue": "Folded Cloth"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Sheriff.",
-        "clue": "11:44"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4070.",
-        "clue": "4070"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Down the Hollow instruction.",
-        "clue": "Down the Hollow"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S40C08-location",
-        "type": "location",
-        "name": "Diner",
-        "inspectText": "Diner looks ordinary until Broken String moves through it."
-      },
-      {
-        "id": "S40C08-object",
-        "type": "evidence",
-        "name": "Folded Cloth",
-        "inspectText": "Folded Cloth is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S40C08-marker",
-        "type": "marker",
-        "name": "Marker 4070",
-        "inspectText": "Marker 4070 is not the answer. It is the lock."
-      },
-      {
-        "id": "S40C08-sound",
-        "type": "audio_clue",
-        "name": "Broken String",
-        "inspectText": "Broken String repeats near 11:44."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series40-The-Coded-Letter/chapter08.md",
-      "novel": "generated/novels/Series40-The-Coded-Letter/chapter08.md",
-      "song": "generated/songs/Series40-The-Coded-Letter/song08.md"
     }
   },
   "story": {

@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "old bridge",
-      "oldbridge"
-    ],
-    "object": [
-      "axle pin",
-      "axlepin"
-    ],
-    "witness": [
-      "lime burner",
-      "limeburner"
-    ],
-    "time": [
-      "11:51",
-      "1151"
-    ],
-    "marker": [
-      "2725",
-      "marker 2725",
-      "road marker 2725",
-      "mile marker 2725",
-      "mile 2725"
-    ],
-    "direction": [
-      "through"
-    ],
-    "sound": [
-      "floorboard"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S27C03",
-    "puzzleId": "S27C03-marker-lock",
-    "dialogueId": "S27C03-lime-burner",
-    "locationId": "old-bridge",
-    "objective": "Investigate Old Bridge, question Lime Burner, recover Axle Pin, and learn why marker 2725 is tied to Expanse Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Old Bridge.",
-        "clue": "Floorboard"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Axle Pin.",
-        "clue": "Axle Pin"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Lime Burner.",
-        "clue": "11:51"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2725.",
-        "clue": "2725"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Through instruction.",
-        "clue": "Through"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S27C03-location",
-        "type": "location",
-        "name": "Old Bridge",
-        "inspectText": "Old Bridge looks ordinary until Floorboard moves through it."
-      },
-      {
-        "id": "S27C03-object",
-        "type": "evidence",
-        "name": "Axle Pin",
-        "inspectText": "Axle Pin is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S27C03-marker",
-        "type": "marker",
-        "name": "Marker 2725",
-        "inspectText": "Marker 2725 is not the answer. It is the lock."
-      },
-      {
-        "id": "S27C03-sound",
-        "type": "audio_clue",
-        "name": "Floorboard",
-        "inspectText": "Floorboard repeats near 11:51."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series27-The-Salt-Flats/chapter03.md",
-      "novel": "generated/novels/Series27-The-Salt-Flats/chapter03.md",
-      "song": "generated/songs/Series27-The-Salt-Flats/song03.md"
     }
   },
   "story": {

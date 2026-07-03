@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "sheep fold",
-      "sheepfold"
-    ],
-    "object": [
-      "signet ring",
-      "signetring"
-    ],
-    "witness": [
-      "weaver"
-    ],
-    "time": [
-      "11:03",
-      "1103"
-    ],
-    "marker": [
-      "4534",
-      "marker 4534",
-      "road marker 4534",
-      "mile marker 4534",
-      "mile 4534"
-    ],
-    "direction": [
-      "away from town",
-      "awayfromtown"
-    ],
-    "sound": [
-      "night insects",
-      "nightinsects"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -301,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S45C04",
-    "puzzleId": "S45C04-marker-lock",
-    "dialogueId": "S45C04-weaver",
-    "locationId": "sheep-fold",
-    "objective": "Investigate Sheep Fold, question Weaver, recover Signet Ring, and learn why marker 4534 is tied to Power Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Sheep Fold.",
-        "clue": "Night Insects"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Signet Ring.",
-        "clue": "Signet Ring"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Weaver.",
-        "clue": "11:03"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4534.",
-        "clue": "4534"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Away from Town instruction.",
-        "clue": "Away from Town"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S45C04-location",
-        "type": "location",
-        "name": "Sheep Fold",
-        "inspectText": "Sheep Fold looks ordinary until Night Insects moves through it."
-      },
-      {
-        "id": "S45C04-object",
-        "type": "evidence",
-        "name": "Signet Ring",
-        "inspectText": "Signet Ring is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S45C04-marker",
-        "type": "marker",
-        "name": "Marker 4534",
-        "inspectText": "Marker 4534 is not the answer. It is the lock."
-      },
-      {
-        "id": "S45C04-sound",
-        "type": "audio_clue",
-        "name": "Night Insects",
-        "inspectText": "Night Insects repeats near 11:03."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series45-The-Hollow-Crown/chapter04.md",
-      "novel": "generated/novels/Series45-The-Hollow-Crown/chapter04.md",
-      "song": "generated/songs/Series45-The-Hollow-Crown/song04.md"
     }
   },
   "story": {

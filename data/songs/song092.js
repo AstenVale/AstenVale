@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "harness shop",
-      "harnessshop"
-    ],
-    "object": [
-      "rope"
-    ],
-    "witness": [
-      "mechanic"
-    ],
-    "time": [
-      "7:14",
-      "714"
-    ],
-    "marker": [
-      "870",
-      "marker 870",
-      "road marker 870",
-      "mile marker 870",
-      "mile 870"
-    ],
-    "direction": [
-      "along the creek",
-      "alongthecreek"
-    ],
-    "sound": [
-      "kettle boil",
-      "kettleboil"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S08C08",
-    "puzzleId": "S08C08-marker-lock",
-    "dialogueId": "S08C08-mechanic",
-    "locationId": "harness-shop",
-    "objective": "Investigate Harness Shop, question Mechanic, recover Rope, and learn why marker 870 is tied to Ash Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Harness Shop.",
-        "clue": "Kettle Boil"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Rope.",
-        "clue": "Rope"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Mechanic.",
-        "clue": "7:14"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 870.",
-        "clue": "870"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Along the Creek instruction.",
-        "clue": "Along the Creek"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S08C08-location",
-        "type": "location",
-        "name": "Harness Shop",
-        "inspectText": "Harness Shop looks ordinary until Kettle Boil moves through it."
-      },
-      {
-        "id": "S08C08-object",
-        "type": "evidence",
-        "name": "Rope",
-        "inspectText": "Rope is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S08C08-marker",
-        "type": "marker",
-        "name": "Marker 870",
-        "inspectText": "Marker 870 is not the answer. It is the lock."
-      },
-      {
-        "id": "S08C08-sound",
-        "type": "audio_clue",
-        "name": "Kettle Boil",
-        "inspectText": "Kettle Boil repeats near 7:14."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series08-The-Fire-Year/chapter08.md",
-      "novel": "generated/novels/Series08-The-Fire-Year/chapter08.md",
-      "song": "generated/songs/Series08-The-Fire-Year/song08.md"
     }
   },
   "story": {

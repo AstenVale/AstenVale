@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "doctor's office",
-      "doctor'soffice"
-    ],
-    "object": [
-      "trade token",
-      "tradetoken"
-    ],
-    "witness": [
-      "driver"
-    ],
-    "time": [
-      "7:14",
-      "714"
-    ],
-    "marker": [
-      "2025",
-      "marker 2025",
-      "road marker 2025",
-      "mile marker 2025",
-      "mile 2025"
-    ],
-    "direction": [
-      "up the ridge",
-      "uptheridge"
-    ],
-    "sound": [
-      "river ice",
-      "riverice"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -312,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S20C03",
-    "puzzleId": "S20C03-marker-lock",
-    "dialogueId": "S20C03-driver",
-    "locationId": "doctor-s-office",
-    "objective": "Investigate Doctor's Office, question Driver, recover Trade Token, and learn why marker 2025 is tied to Night Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Doctor's Office.",
-        "clue": "River Ice"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Trade Token.",
-        "clue": "Trade Token"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Driver.",
-        "clue": "7:14"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2025.",
-        "clue": "2025"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Up the Ridge instruction.",
-        "clue": "Up the Ridge"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S20C03-location",
-        "type": "location",
-        "name": "Doctor's Office",
-        "inspectText": "Doctor's Office looks ordinary until River Ice moves through it."
-      },
-      {
-        "id": "S20C03-object",
-        "type": "evidence",
-        "name": "Trade Token",
-        "inspectText": "Trade Token is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S20C03-marker",
-        "type": "marker",
-        "name": "Marker 2025",
-        "inspectText": "Marker 2025 is not the answer. It is the lock."
-      },
-      {
-        "id": "S20C03-sound",
-        "type": "audio_clue",
-        "name": "River Ice",
-        "inspectText": "River Ice repeats near 7:14."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series20-The-Midnight-Circuit/chapter03.md",
-      "novel": "generated/novels/Series20-The-Midnight-Circuit/chapter03.md",
-      "song": "generated/songs/Series20-The-Midnight-Circuit/song03.md"
     }
   },
   "story": {

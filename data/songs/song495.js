@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "hill road",
-      "hillroad"
-    ],
-    "object": [
-      "broken clasp",
-      "brokenclasp"
-    ],
-    "witness": [
-      "caretaker"
-    ],
-    "time": [
-      "8:42",
-      "842"
-    ],
-    "marker": [
-      "4225",
-      "marker 4225",
-      "road marker 4225",
-      "mile marker 4225",
-      "mile 4225"
-    ],
-    "direction": [
-      "out of sight",
-      "outofsight"
-    ],
-    "sound": [
-      "lantern glass",
-      "lanternglass"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -312,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S42C03",
-    "puzzleId": "S42C03-marker-lock",
-    "dialogueId": "S42C03-caretaker",
-    "locationId": "hill-road",
-    "objective": "Investigate Hill Road, question Caretaker, recover Broken Clasp, and learn why marker 4225 is tied to Drought Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Hill Road.",
-        "clue": "Lantern Glass"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Broken Clasp.",
-        "clue": "Broken Clasp"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Caretaker.",
-        "clue": "8:42"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4225.",
-        "clue": "4225"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Out of Sight instruction.",
-        "clue": "Out of Sight"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S42C03-location",
-        "type": "location",
-        "name": "Hill Road",
-        "inspectText": "Hill Road looks ordinary until Lantern Glass moves through it."
-      },
-      {
-        "id": "S42C03-object",
-        "type": "evidence",
-        "name": "Broken Clasp",
-        "inspectText": "Broken Clasp is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S42C03-marker",
-        "type": "marker",
-        "name": "Marker 4225",
-        "inspectText": "Marker 4225 is not the answer. It is the lock."
-      },
-      {
-        "id": "S42C03-sound",
-        "type": "audio_clue",
-        "name": "Lantern Glass",
-        "inspectText": "Lantern Glass repeats near 8:42."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series42-The-Dry-Season/chapter03.md",
-      "novel": "generated/novels/Series42-The-Dry-Season/chapter03.md",
-      "song": "generated/songs/Series42-The-Dry-Season/song03.md"
     }
   },
   "story": {

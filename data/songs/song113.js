@@ -61,35 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "tannery"
-    ],
-    "object": [
-      "watch"
-    ],
-    "witness": [
-      "glazier"
-    ],
-    "time": [
-      "10:05",
-      "1005"
-    ],
-    "marker": [
-      "1043",
-      "marker 1043",
-      "road marker 1043",
-      "mile marker 1043",
-      "mile 1043"
-    ],
-    "direction": [
-      "forward"
-    ],
-    "sound": [
-      "bone on stone",
-      "boneonstone"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -298,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S10C05",
-    "puzzleId": "S10C05-marker-lock",
-    "dialogueId": "S10C05-glazier",
-    "locationId": "tannery",
-    "objective": "Investigate Tannery, question Glazier, recover Watch, and learn why marker 1043 is tied to Lost Mile Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Tannery.",
-        "clue": "Bone on Stone"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Watch.",
-        "clue": "Watch"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Glazier.",
-        "clue": "10:05"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1043.",
-        "clue": "1043"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Forward instruction.",
-        "clue": "Forward"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S10C05-location",
-        "type": "location",
-        "name": "Tannery",
-        "inspectText": "Tannery looks ordinary until Bone on Stone moves through it."
-      },
-      {
-        "id": "S10C05-object",
-        "type": "evidence",
-        "name": "Watch",
-        "inspectText": "Watch is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S10C05-marker",
-        "type": "marker",
-        "name": "Marker 1043",
-        "inspectText": "Marker 1043 is not the answer. It is the lock."
-      },
-      {
-        "id": "S10C05-sound",
-        "type": "audio_clue",
-        "name": "Bone on Stone",
-        "inspectText": "Bone on Stone repeats near 10:05."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series10-The-Forgotten-Road/chapter05.md",
-      "novel": "generated/novels/Series10-The-Forgotten-Road/chapter05.md",
-      "song": "generated/songs/Series10-The-Forgotten-Road/song05.md"
     }
   },
   "story": {

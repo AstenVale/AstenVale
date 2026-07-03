@@ -61,35 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "stables"
-    ],
-    "object": [
-      "locket"
-    ],
-    "witness": [
-      "glazier"
-    ],
-    "time": [
-      "9:44",
-      "944"
-    ],
-    "marker": [
-      "3770",
-      "marker 3770",
-      "road marker 3770",
-      "mile marker 3770",
-      "mile 3770"
-    ],
-    "direction": [
-      "through"
-    ],
-    "sound": [
-      "mud suction",
-      "mudsuction"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -309,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S37C08",
-    "puzzleId": "S37C08-marker-lock",
-    "dialogueId": "S37C08-glazier",
-    "locationId": "stables",
-    "objective": "Investigate Stables, question Glazier, recover Locket, and learn why marker 3770 is tied to Outpost Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Stables.",
-        "clue": "Mud Suction"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Locket.",
-        "clue": "Locket"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Glazier.",
-        "clue": "9:44"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3770.",
-        "clue": "3770"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Through instruction.",
-        "clue": "Through"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S37C08-location",
-        "type": "location",
-        "name": "Stables",
-        "inspectText": "Stables looks ordinary until Mud Suction moves through it."
-      },
-      {
-        "id": "S37C08-object",
-        "type": "evidence",
-        "name": "Locket",
-        "inspectText": "Locket is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S37C08-marker",
-        "type": "marker",
-        "name": "Marker 3770",
-        "inspectText": "Marker 3770 is not the answer. It is the lock."
-      },
-      {
-        "id": "S37C08-sound",
-        "type": "audio_clue",
-        "name": "Mud Suction",
-        "inspectText": "Mud Suction repeats near 9:44."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series37-The-Abandoned-Post/chapter08.md",
-      "novel": "generated/novels/Series37-The-Abandoned-Post/chapter08.md",
-      "song": "generated/songs/Series37-The-Abandoned-Post/song08.md"
     }
   },
   "story": {

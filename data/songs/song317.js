@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "hotel"
-    ],
-    "object": [
-      "torn label",
-      "tornlabel"
-    ],
-    "witness": [
-      "census taker",
-      "censustaker"
-    ],
-    "time": [
-      "2:55",
-      "255"
-    ],
-    "marker": [
-      "2743",
-      "marker 2743",
-      "road marker 2743",
-      "mile marker 2743",
-      "mile 2743"
-    ],
-    "direction": [
-      "along the creek",
-      "alongthecreek"
-    ],
-    "sound": [
-      "nail pulled from wood",
-      "nailpulledfromwood"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -301,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S27C05",
-    "puzzleId": "S27C05-marker-lock",
-    "dialogueId": "S27C05-census-taker",
-    "locationId": "hotel",
-    "objective": "Investigate Hotel, question Census Taker, recover Torn Label, and learn why marker 2743 is tied to Expanse Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Hotel.",
-        "clue": "Nail Pulled from Wood"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Torn Label.",
-        "clue": "Torn Label"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Census Taker.",
-        "clue": "2:55"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2743.",
-        "clue": "2743"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Along the Creek instruction.",
-        "clue": "Along the Creek"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S27C05-location",
-        "type": "location",
-        "name": "Hotel",
-        "inspectText": "Hotel looks ordinary until Nail Pulled from Wood moves through it."
-      },
-      {
-        "id": "S27C05-object",
-        "type": "evidence",
-        "name": "Torn Label",
-        "inspectText": "Torn Label is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S27C05-marker",
-        "type": "marker",
-        "name": "Marker 2743",
-        "inspectText": "Marker 2743 is not the answer. It is the lock."
-      },
-      {
-        "id": "S27C05-sound",
-        "type": "audio_clue",
-        "name": "Nail Pulled from Wood",
-        "inspectText": "Nail Pulled from Wood repeats near 2:55."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series27-The-Salt-Flats/chapter05.md",
-      "novel": "generated/novels/Series27-The-Salt-Flats/chapter05.md",
-      "song": "generated/songs/Series27-The-Salt-Flats/song05.md"
     }
   },
   "story": {

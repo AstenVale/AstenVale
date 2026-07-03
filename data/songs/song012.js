@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "sheriff archive",
-      "sheriffarchive"
-    ],
-    "object": [
-      "case folder",
-      "casefolder"
-    ],
-    "witness": [
-      "sheriff"
-    ],
-    "time": [
-      "12:00",
-      "1200"
-    ],
-    "marker": [
-      "99",
-      "marker 99",
-      "road marker 99",
-      "mile marker 99",
-      "mile 99"
-    ],
-    "direction": [
-      "below"
-    ],
-    "sound": [
-      "cellar door",
-      "cellardoor"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S01C12",
-    "puzzleId": "S01C12-marker-lock",
-    "dialogueId": "S01C12-sheriff",
-    "locationId": "sheriff-archive",
-    "objective": "Investigate Sheriff Archive, question Sheriff, recover Case Folder, and learn why marker 99 is tied to Public Archive.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Sheriff Archive.",
-        "clue": "Cellar Door"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Case Folder.",
-        "clue": "Case Folder"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Sheriff.",
-        "clue": "12:00"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 99.",
-        "clue": "99"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Below instruction.",
-        "clue": "Below"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S01C12-location",
-        "type": "location",
-        "name": "Sheriff Archive",
-        "inspectText": "Sheriff Archive looks ordinary until Cellar Door moves through it."
-      },
-      {
-        "id": "S01C12-object",
-        "type": "evidence",
-        "name": "Case Folder",
-        "inspectText": "Case Folder is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S01C12-marker",
-        "type": "marker",
-        "name": "Marker 99",
-        "inspectText": "Marker 99 is not the answer. It is the lock."
-      },
-      {
-        "id": "S01C12-sound",
-        "type": "audio_clue",
-        "name": "Cellar Door",
-        "inspectText": "Cellar Door repeats near 12:00."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series01-The-Stranger/chapter12.md",
-      "novel": "generated/novels/Series01-The-Stranger/chapter12.md",
-      "song": "generated/songs/Series01-The-Stranger/song12.md"
     }
   },
   "story": {

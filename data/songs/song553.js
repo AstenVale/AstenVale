@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "fulling mill",
-      "fullingmill"
-    ],
-    "object": [
-      "chain"
-    ],
-    "witness": [
-      "innkeeper"
-    ],
-    "time": [
-      "9:08",
-      "908"
-    ],
-    "marker": [
-      "4707",
-      "marker 4707",
-      "road marker 4707",
-      "mile marker 4707",
-      "mile 4707"
-    ],
-    "direction": [
-      "home"
-    ],
-    "sound": [
-      "hammer on anvil",
-      "hammeronanvil"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -299,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S47C01",
-    "puzzleId": "S47C01-marker-lock",
-    "dialogueId": "S47C01-innkeeper",
-    "locationId": "fulling-mill",
-    "objective": "Investigate Fulling Mill, question Innkeeper, recover Chain, and learn why marker 4707 is tied to Detour Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Fulling Mill.",
-        "clue": "Hammer on Anvil"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Chain.",
-        "clue": "Chain"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Innkeeper.",
-        "clue": "9:08"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4707.",
-        "clue": "4707"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Home instruction.",
-        "clue": "Home"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S47C01-location",
-        "type": "location",
-        "name": "Fulling Mill",
-        "inspectText": "Fulling Mill looks ordinary until Hammer on Anvil moves through it."
-      },
-      {
-        "id": "S47C01-object",
-        "type": "evidence",
-        "name": "Chain",
-        "inspectText": "Chain is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S47C01-marker",
-        "type": "marker",
-        "name": "Marker 4707",
-        "inspectText": "Marker 4707 is not the answer. It is the lock."
-      },
-      {
-        "id": "S47C01-sound",
-        "type": "audio_clue",
-        "name": "Hammer on Anvil",
-        "inspectText": "Hammer on Anvil repeats near 9:08."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series47-The-Long-Way-Round/chapter01.md",
-      "novel": "generated/novels/Series47-The-Long-Way-Round/chapter01.md",
-      "song": "generated/songs/Series47-The-Long-Way-Round/song01.md"
     }
   },
   "story": {

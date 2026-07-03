@@ -61,35 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "cemetery"
-    ],
-    "object": [
-      "photograph"
-    ],
-    "witness": [
-      "caretaker"
-    ],
-    "time": [
-      "4:12",
-      "412"
-    ],
-    "marker": [
-      "91",
-      "marker 91",
-      "road marker 91",
-      "mile marker 91",
-      "mile 91"
-    ],
-    "direction": [
-      "north"
-    ],
-    "sound": [
-      "night insects",
-      "nightinsects"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -298,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S01C11",
-    "puzzleId": "S01C11-marker-lock",
-    "dialogueId": "S01C11-caretaker",
-    "locationId": "cemetery",
-    "objective": "Investigate Cemetery, question Caretaker, recover Photograph, and learn why marker 91 is tied to Public Archive.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Cemetery.",
-        "clue": "Night Insects"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Photograph.",
-        "clue": "Photograph"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Caretaker.",
-        "clue": "4:12"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 91.",
-        "clue": "91"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the North instruction.",
-        "clue": "North"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S01C11-location",
-        "type": "location",
-        "name": "Cemetery",
-        "inspectText": "Cemetery looks ordinary until Night Insects moves through it."
-      },
-      {
-        "id": "S01C11-object",
-        "type": "evidence",
-        "name": "Photograph",
-        "inspectText": "Photograph is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S01C11-marker",
-        "type": "marker",
-        "name": "Marker 91",
-        "inspectText": "Marker 91 is not the answer. It is the lock."
-      },
-      {
-        "id": "S01C11-sound",
-        "type": "audio_clue",
-        "name": "Night Insects",
-        "inspectText": "Night Insects repeats near 4:12."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series01-The-Stranger/chapter11.md",
-      "novel": "generated/novels/Series01-The-Stranger/chapter11.md",
-      "song": "generated/songs/Series01-The-Stranger/song11.md"
     }
   },
   "story": {

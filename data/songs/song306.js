@@ -61,40 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the widow's porch",
-      "widow's porch",
-      "thewidow'sporch"
-    ],
-    "object": [
-      "surveyor's pin",
-      "surveyor'spin"
-    ],
-    "witness": [
-      "rag picker",
-      "ragpicker"
-    ],
-    "time": [
-      "4:38",
-      "438"
-    ],
-    "marker": [
-      "2652",
-      "marker 2652",
-      "road marker 2652",
-      "mile marker 2652",
-      "mile 2652"
-    ],
-    "direction": [
-      "into the dark",
-      "intothedark"
-    ],
-    "sound": [
-      "lid of a tin",
-      "lidofatin"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -313,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S26C06",
-    "puzzleId": "S26C06-marker-lock",
-    "dialogueId": "S26C06-rag-picker",
-    "locationId": "the-widow-s-porch",
-    "objective": "Investigate The Widow's Porch, question Rag Picker, recover Surveyor's Pin, and learn why marker 2652 is tied to Threshold Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Widow's Porch.",
-        "clue": "Lid of a Tin"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Surveyor's Pin.",
-        "clue": "Surveyor's Pin"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Rag Picker.",
-        "clue": "4:38"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2652.",
-        "clue": "2652"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Into the Dark instruction.",
-        "clue": "Into the Dark"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S26C06-location",
-        "type": "location",
-        "name": "The Widow's Porch",
-        "inspectText": "The Widow's Porch looks ordinary until Lid of a Tin moves through it."
-      },
-      {
-        "id": "S26C06-object",
-        "type": "evidence",
-        "name": "Surveyor's Pin",
-        "inspectText": "Surveyor's Pin is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S26C06-marker",
-        "type": "marker",
-        "name": "Marker 2652",
-        "inspectText": "Marker 2652 is not the answer. It is the lock."
-      },
-      {
-        "id": "S26C06-sound",
-        "type": "audio_clue",
-        "name": "Lid of a Tin",
-        "inspectText": "Lid of a Tin repeats near 4:38."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series26-The-Red-Door/chapter06.md",
-      "novel": "generated/novels/Series26-The-Red-Door/chapter06.md",
-      "song": "generated/songs/Series26-The-Red-Door/song06.md"
     }
   },
   "story": {

@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "potter's field",
-      "potter'sfield"
-    ],
-    "object": [
-      "spool of thread",
-      "spoolofthread"
-    ],
-    "witness": [
-      "schoolteacher"
-    ],
-    "time": [
-      "2:19",
-      "219"
-    ],
-    "marker": [
-      "770",
-      "marker 770",
-      "road marker 770",
-      "mile marker 770",
-      "mile 770"
-    ],
-    "direction": [
-      "into the dark",
-      "intothedark"
-    ],
-    "sound": [
-      "saw cutting",
-      "sawcutting"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -301,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S07C08",
-    "puzzleId": "S07C08-marker-lock",
-    "dialogueId": "S07C08-schoolteacher",
-    "locationId": "potter-s-field",
-    "objective": "Investigate Potter's Field, question Schoolteacher, recover Spool of Thread, and learn why marker 770 is tied to Parallel Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Potter's Field.",
-        "clue": "Saw Cutting"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Spool of Thread.",
-        "clue": "Spool of Thread"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Schoolteacher.",
-        "clue": "2:19"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 770.",
-        "clue": "770"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Into the Dark instruction.",
-        "clue": "Into the Dark"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S07C08-location",
-        "type": "location",
-        "name": "Potter's Field",
-        "inspectText": "Potter's Field looks ordinary until Saw Cutting moves through it."
-      },
-      {
-        "id": "S07C08-object",
-        "type": "evidence",
-        "name": "Spool of Thread",
-        "inspectText": "Spool of Thread is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S07C08-marker",
-        "type": "marker",
-        "name": "Marker 770",
-        "inspectText": "Marker 770 is not the answer. It is the lock."
-      },
-      {
-        "id": "S07C08-sound",
-        "type": "audio_clue",
-        "name": "Saw Cutting",
-        "inspectText": "Saw Cutting repeats near 2:19."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series07-The-Second-Family/chapter08.md",
-      "novel": "generated/novels/Series07-The-Second-Family/chapter08.md",
-      "song": "generated/songs/Series07-The-Second-Family/song08.md"
     }
   },
   "story": {

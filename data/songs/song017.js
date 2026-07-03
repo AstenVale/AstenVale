@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "train station",
-      "trainstation"
-    ],
-    "object": [
-      "suitcase"
-    ],
-    "witness": [
-      "station master",
-      "stationmaster"
-    ],
-    "time": [
-      "5:47",
-      "547"
-    ],
-    "marker": [
-      "154",
-      "marker 154",
-      "road marker 154",
-      "mile marker 154",
-      "mile 154"
-    ],
-    "direction": [
-      "west"
-    ],
-    "sound": [
-      "train whistle",
-      "trainwhistle"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S02C05",
-    "puzzleId": "S02C05-marker-lock",
-    "dialogueId": "S02C05-station-master",
-    "locationId": "train-station",
-    "objective": "Investigate Train Station, question Station Master, recover Suitcase, and learn why marker 154 is tied to Personal Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Train Station.",
-        "clue": "Train Whistle"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Suitcase.",
-        "clue": "Suitcase"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Station Master.",
-        "clue": "5:47"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 154.",
-        "clue": "154"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the West instruction.",
-        "clue": "West"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S02C05-location",
-        "type": "location",
-        "name": "Train Station",
-        "inspectText": "Train Station looks ordinary until Train Whistle moves through it."
-      },
-      {
-        "id": "S02C05-object",
-        "type": "evidence",
-        "name": "Suitcase",
-        "inspectText": "Suitcase is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S02C05-marker",
-        "type": "marker",
-        "name": "Marker 154",
-        "inspectText": "Marker 154 is not the answer. It is the lock."
-      },
-      {
-        "id": "S02C05-sound",
-        "type": "audio_clue",
-        "name": "Train Whistle",
-        "inspectText": "Train Whistle repeats near 5:47."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series02-The-Before/chapter05.md",
-      "novel": "generated/novels/Series02-The-Before/chapter05.md",
-      "song": "generated/songs/Series02-The-Before/song05.md"
     }
   },
   "story": {

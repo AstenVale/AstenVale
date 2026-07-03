@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "quarry edge",
-      "quarryedge"
-    ],
-    "object": [
-      "letter"
-    ],
-    "witness": [
-      "station master",
-      "stationmaster"
-    ],
-    "time": [
-      "9:08",
-      "908"
-    ],
-    "marker": [
-      "4288",
-      "marker 4288",
-      "road marker 4288",
-      "mile marker 4288",
-      "mile 4288"
-    ],
-    "direction": [
-      "straight down",
-      "straightdown"
-    ],
-    "sound": [
-      "rope strain",
-      "ropestrain"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -312,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S42C10",
-    "puzzleId": "S42C10-marker-lock",
-    "dialogueId": "S42C10-station-master",
-    "locationId": "quarry-edge",
-    "objective": "Investigate Quarry Edge, question Station Master, recover Letter, and learn why marker 4288 is tied to Drought Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Quarry Edge.",
-        "clue": "Rope Strain"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Letter.",
-        "clue": "Letter"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Station Master.",
-        "clue": "9:08"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4288.",
-        "clue": "4288"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Straight Down instruction.",
-        "clue": "Straight Down"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S42C10-location",
-        "type": "location",
-        "name": "Quarry Edge",
-        "inspectText": "Quarry Edge looks ordinary until Rope Strain moves through it."
-      },
-      {
-        "id": "S42C10-object",
-        "type": "evidence",
-        "name": "Letter",
-        "inspectText": "Letter is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S42C10-marker",
-        "type": "marker",
-        "name": "Marker 4288",
-        "inspectText": "Marker 4288 is not the answer. It is the lock."
-      },
-      {
-        "id": "S42C10-sound",
-        "type": "audio_clue",
-        "name": "Rope Strain",
-        "inspectText": "Rope Strain repeats near 9:08."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series42-The-Dry-Season/chapter10.md",
-      "novel": "generated/novels/Series42-The-Dry-Season/chapter10.md",
-      "song": "generated/songs/Series42-The-Dry-Season/song10.md"
     }
   },
   "story": {

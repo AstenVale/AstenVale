@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the quarry pool",
-      "quarry pool",
-      "thequarrypool"
-    ],
-    "object": [
-      "journal"
-    ],
-    "witness": [
-      "widow"
-    ],
-    "time": [
-      "4:03",
-      "403"
-    ],
-    "marker": [
-      "4525",
-      "marker 4525",
-      "road marker 4525",
-      "mile marker 4525",
-      "mile 4525"
-    ],
-    "direction": [
-      "ahead"
-    ],
-    "sound": [
-      "shutter bang",
-      "shutterbang"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S45C03",
-    "puzzleId": "S45C03-marker-lock",
-    "dialogueId": "S45C03-widow",
-    "locationId": "the-quarry-pool",
-    "objective": "Investigate The Quarry Pool, question Widow, recover Journal, and learn why marker 4525 is tied to Power Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Quarry Pool.",
-        "clue": "Shutter Bang"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Journal.",
-        "clue": "Journal"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Widow.",
-        "clue": "4:03"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4525.",
-        "clue": "4525"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Ahead instruction.",
-        "clue": "Ahead"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S45C03-location",
-        "type": "location",
-        "name": "The Quarry Pool",
-        "inspectText": "The Quarry Pool looks ordinary until Shutter Bang moves through it."
-      },
-      {
-        "id": "S45C03-object",
-        "type": "evidence",
-        "name": "Journal",
-        "inspectText": "Journal is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S45C03-marker",
-        "type": "marker",
-        "name": "Marker 4525",
-        "inspectText": "Marker 4525 is not the answer. It is the lock."
-      },
-      {
-        "id": "S45C03-sound",
-        "type": "audio_clue",
-        "name": "Shutter Bang",
-        "inspectText": "Shutter Bang repeats near 4:03."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series45-The-Hollow-Crown/chapter03.md",
-      "novel": "generated/novels/Series45-The-Hollow-Crown/chapter03.md",
-      "song": "generated/songs/Series45-The-Hollow-Crown/song03.md"
     }
   },
   "story": {

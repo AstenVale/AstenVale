@@ -61,35 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "mailbox"
-    ],
-    "object": [
-      "unopened mail",
-      "unopenedmail"
-    ],
-    "witness": [
-      "postman"
-    ],
-    "time": [
-      "2:34",
-      "234"
-    ],
-    "marker": [
-      "176",
-      "marker 176",
-      "road marker 176",
-      "mile marker 176",
-      "mile 176"
-    ],
-    "direction": [
-      "out"
-    ],
-    "sound": [
-      "footsteps"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -309,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S02C07",
-    "puzzleId": "S02C07-marker-lock",
-    "dialogueId": "S02C07-postman",
-    "locationId": "mailbox",
-    "objective": "Investigate Mailbox, question Postman, recover Unopened Mail, and learn why marker 176 is tied to Personal Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Mailbox.",
-        "clue": "Footsteps"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Unopened Mail.",
-        "clue": "Unopened Mail"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Postman.",
-        "clue": "2:34"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 176.",
-        "clue": "176"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Out instruction.",
-        "clue": "Out"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S02C07-location",
-        "type": "location",
-        "name": "Mailbox",
-        "inspectText": "Mailbox looks ordinary until Footsteps moves through it."
-      },
-      {
-        "id": "S02C07-object",
-        "type": "evidence",
-        "name": "Unopened Mail",
-        "inspectText": "Unopened Mail is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S02C07-marker",
-        "type": "marker",
-        "name": "Marker 176",
-        "inspectText": "Marker 176 is not the answer. It is the lock."
-      },
-      {
-        "id": "S02C07-sound",
-        "type": "audio_clue",
-        "name": "Footsteps",
-        "inspectText": "Footsteps repeats near 2:34."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series02-The-Before/chapter07.md",
-      "novel": "generated/novels/Series02-The-Before/chapter07.md",
-      "song": "generated/songs/Series02-The-Before/song07.md"
     }
   },
   "story": {

@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "smithy"
-    ],
-    "object": [
-      "dried blood on cloth",
-      "driedbloodoncloth"
-    ],
-    "witness": [
-      "fisherman"
-    ],
-    "time": [
-      "3:03",
-      "303"
-    ],
-    "marker": [
-      "2779",
-      "marker 2779",
-      "road marker 2779",
-      "mile marker 2779",
-      "mile 2779"
-    ],
-    "direction": [
-      "below"
-    ],
-    "sound": [
-      "clock ticking",
-      "clockticking"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -299,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S27C09",
-    "puzzleId": "S27C09-marker-lock",
-    "dialogueId": "S27C09-fisherman",
-    "locationId": "smithy",
-    "objective": "Investigate Smithy, question Fisherman, recover Dried Blood on Cloth, and learn why marker 2779 is tied to Expanse Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Smithy.",
-        "clue": "Clock Ticking"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Dried Blood on Cloth.",
-        "clue": "Dried Blood on Cloth"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Fisherman.",
-        "clue": "3:03"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2779.",
-        "clue": "2779"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Below instruction.",
-        "clue": "Below"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S27C09-location",
-        "type": "location",
-        "name": "Smithy",
-        "inspectText": "Smithy looks ordinary until Clock Ticking moves through it."
-      },
-      {
-        "id": "S27C09-object",
-        "type": "evidence",
-        "name": "Dried Blood on Cloth",
-        "inspectText": "Dried Blood on Cloth is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S27C09-marker",
-        "type": "marker",
-        "name": "Marker 2779",
-        "inspectText": "Marker 2779 is not the answer. It is the lock."
-      },
-      {
-        "id": "S27C09-sound",
-        "type": "audio_clue",
-        "name": "Clock Ticking",
-        "inspectText": "Clock Ticking repeats near 3:03."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series27-The-Salt-Flats/chapter09.md",
-      "novel": "generated/novels/Series27-The-Salt-Flats/chapter09.md",
-      "song": "generated/songs/Series27-The-Salt-Flats/song09.md"
     }
   },
   "story": {

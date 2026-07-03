@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "north gate",
-      "northgate"
-    ],
-    "object": [
-      "stamp"
-    ],
-    "witness": [
-      "station master",
-      "stationmaster"
-    ],
-    "time": [
-      "5:09",
-      "509"
-    ],
-    "marker": [
-      "4452",
-      "marker 4452",
-      "road marker 4452",
-      "mile marker 4452",
-      "mile 4452"
-    ],
-    "direction": [
-      "somewhere"
-    ],
-    "sound": [
-      "stones in a tin",
-      "stonesinatin"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -310,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S44C06",
-    "puzzleId": "S44C06-marker-lock",
-    "dialogueId": "S44C06-station-master",
-    "locationId": "north-gate",
-    "objective": "Investigate North Gate, question Station Master, recover Stamp, and learn why marker 4452 is tied to Parallel Case Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter North Gate.",
-        "clue": "Stones in a Tin"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Stamp.",
-        "clue": "Stamp"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Station Master.",
-        "clue": "5:09"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4452.",
-        "clue": "4452"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Somewhere instruction.",
-        "clue": "Somewhere"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S44C06-location",
-        "type": "location",
-        "name": "North Gate",
-        "inspectText": "North Gate looks ordinary until Stones in a Tin moves through it."
-      },
-      {
-        "id": "S44C06-object",
-        "type": "evidence",
-        "name": "Stamp",
-        "inspectText": "Stamp is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S44C06-marker",
-        "type": "marker",
-        "name": "Marker 4452",
-        "inspectText": "Marker 4452 is not the answer. It is the lock."
-      },
-      {
-        "id": "S44C06-sound",
-        "type": "audio_clue",
-        "name": "Stones in a Tin",
-        "inspectText": "Stones in a Tin repeats near 5:09."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series44-The-Mirror-Case/chapter06.md",
-      "novel": "generated/novels/Series44-The-Mirror-Case/chapter06.md",
-      "song": "generated/songs/Series44-The-Mirror-Case/song06.md"
     }
   },
   "story": {

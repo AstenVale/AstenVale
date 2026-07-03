@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "sawmill"
-    ],
-    "object": [
-      "straight razor",
-      "straightrazor"
-    ],
-    "witness": [
-      "sexton"
-    ],
-    "time": [
-      "3:49",
-      "349"
-    ],
-    "marker": [
-      "1216",
-      "marker 1216",
-      "road marker 1216",
-      "mile marker 1216",
-      "mile 1216"
-    ],
-    "direction": [
-      "somewhere"
-    ],
-    "sound": [
-      "saw cutting",
-      "sawcutting"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -299,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S12C02",
-    "puzzleId": "S12C02-marker-lock",
-    "dialogueId": "S12C02-sexton",
-    "locationId": "sawmill",
-    "objective": "Investigate Sawmill, question Sexton, recover Straight Razor, and learn why marker 1216 is tied to Estate Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Sawmill.",
-        "clue": "Saw Cutting"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Straight Razor.",
-        "clue": "Straight Razor"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Sexton.",
-        "clue": "3:49"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1216.",
-        "clue": "1216"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Somewhere instruction.",
-        "clue": "Somewhere"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S12C02-location",
-        "type": "location",
-        "name": "Sawmill",
-        "inspectText": "Sawmill looks ordinary until Saw Cutting moves through it."
-      },
-      {
-        "id": "S12C02-object",
-        "type": "evidence",
-        "name": "Straight Razor",
-        "inspectText": "Straight Razor is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S12C02-marker",
-        "type": "marker",
-        "name": "Marker 1216",
-        "inspectText": "Marker 1216 is not the answer. It is the lock."
-      },
-      {
-        "id": "S12C02-sound",
-        "type": "audio_clue",
-        "name": "Saw Cutting",
-        "inspectText": "Saw Cutting repeats near 3:49."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series12-The-Inheritance/chapter02.md",
-      "novel": "generated/novels/Series12-The-Inheritance/chapter02.md",
-      "song": "generated/songs/Series12-The-Inheritance/song02.md"
     }
   },
   "story": {

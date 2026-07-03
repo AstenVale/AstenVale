@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "lake shore",
-      "lakeshore"
-    ],
-    "object": [
-      "pocket watch",
-      "pocketwatch"
-    ],
-    "witness": [
-      "weaver"
-    ],
-    "time": [
-      "3:03",
-      "303"
-    ],
-    "marker": [
-      "3988",
-      "marker 3988",
-      "road marker 3988",
-      "mile marker 3988",
-      "mile 3988"
-    ],
-    "direction": [
-      "beyond"
-    ],
-    "sound": [
-      "wind through a crack",
-      "windthroughacrack"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S39C10",
-    "puzzleId": "S39C10-marker-lock",
-    "dialogueId": "S39C10-weaver",
-    "locationId": "lake-shore",
-    "objective": "Investigate Lake Shore, question Weaver, recover Pocket Watch, and learn why marker 3988 is tied to Rider Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Lake Shore.",
-        "clue": "Wind Through a Crack"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Pocket Watch.",
-        "clue": "Pocket Watch"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Weaver.",
-        "clue": "3:03"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3988.",
-        "clue": "3988"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Beyond instruction.",
-        "clue": "Beyond"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S39C10-location",
-        "type": "location",
-        "name": "Lake Shore",
-        "inspectText": "Lake Shore looks ordinary until Wind Through a Crack moves through it."
-      },
-      {
-        "id": "S39C10-object",
-        "type": "evidence",
-        "name": "Pocket Watch",
-        "inspectText": "Pocket Watch is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S39C10-marker",
-        "type": "marker",
-        "name": "Marker 3988",
-        "inspectText": "Marker 3988 is not the answer. It is the lock."
-      },
-      {
-        "id": "S39C10-sound",
-        "type": "audio_clue",
-        "name": "Wind Through a Crack",
-        "inspectText": "Wind Through a Crack repeats near 3:03."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series39-The-Pale-Horse/chapter10.md",
-      "novel": "generated/novels/Series39-The-Pale-Horse/chapter10.md",
-      "song": "generated/songs/Series39-The-Pale-Horse/song10.md"
     }
   },
   "story": {

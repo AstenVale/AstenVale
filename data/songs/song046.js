@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "banker's house",
-      "banker'shouse"
-    ],
-    "object": [
-      "torn label",
-      "tornlabel"
-    ],
-    "witness": [
-      "librarian"
-    ],
-    "time": [
-      "10:19",
-      "1019"
-    ],
-    "marker": [
-      "488",
-      "marker 488",
-      "road marker 488",
-      "mile marker 488",
-      "mile 488"
-    ],
-    "direction": [
-      "around"
-    ],
-    "sound": [
-      "child's laugh (far off)",
-      "child'slaugh(faroff)"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -310,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S04C10",
-    "puzzleId": "S04C10-marker-lock",
-    "dialogueId": "S04C10-librarian",
-    "locationId": "banker-s-house",
-    "objective": "Investigate Banker's House, question Librarian, recover Torn Label, and learn why marker 488 is tied to Current Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Banker's House.",
-        "clue": "Child's Laugh (far off)"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Torn Label.",
-        "clue": "Torn Label"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Librarian.",
-        "clue": "10:19"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 488.",
-        "clue": "488"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Around instruction.",
-        "clue": "Around"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S04C10-location",
-        "type": "location",
-        "name": "Banker's House",
-        "inspectText": "Banker's House looks ordinary until Child's Laugh (far off) moves through it."
-      },
-      {
-        "id": "S04C10-object",
-        "type": "evidence",
-        "name": "Torn Label",
-        "inspectText": "Torn Label is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S04C10-marker",
-        "type": "marker",
-        "name": "Marker 488",
-        "inspectText": "Marker 488 is not the answer. It is the lock."
-      },
-      {
-        "id": "S04C10-sound",
-        "type": "audio_clue",
-        "name": "Child's Laugh (far off)",
-        "inspectText": "Child's Laugh (far off) repeats near 10:19."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series04-The-River-Speaks/chapter10.md",
-      "novel": "generated/novels/Series04-The-River-Speaks/chapter10.md",
-      "song": "generated/songs/Series04-The-River-Speaks/song10.md"
     }
   },
   "story": {

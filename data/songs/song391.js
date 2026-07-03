@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the cistern",
-      "cistern",
-      "thecistern"
-    ],
-    "object": [
-      "numbered disk",
-      "numbereddisk"
-    ],
-    "witness": [
-      "wainwright"
-    ],
-    "time": [
-      "8:33",
-      "833"
-    ],
-    "marker": [
-      "3361",
-      "marker 3361",
-      "road marker 3361",
-      "mile marker 3361",
-      "mile 3361"
-    ],
-    "direction": [
-      "west"
-    ],
-    "sound": [
-      "knife scrape",
-      "knifescrape"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -312,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S33C07",
-    "puzzleId": "S33C07-marker-lock",
-    "dialogueId": "S33C07-wainwright",
-    "locationId": "the-cistern",
-    "objective": "Investigate The Cistern, question Wainwright, recover Numbered Disk, and learn why marker 3361 is tied to Faded Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Cistern.",
-        "clue": "Knife Scrape"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Numbered Disk.",
-        "clue": "Numbered Disk"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Wainwright.",
-        "clue": "8:33"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3361.",
-        "clue": "3361"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the West instruction.",
-        "clue": "West"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S33C07-location",
-        "type": "location",
-        "name": "The Cistern",
-        "inspectText": "The Cistern looks ordinary until Knife Scrape moves through it."
-      },
-      {
-        "id": "S33C07-object",
-        "type": "evidence",
-        "name": "Numbered Disk",
-        "inspectText": "Numbered Disk is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S33C07-marker",
-        "type": "marker",
-        "name": "Marker 3361",
-        "inspectText": "Marker 3361 is not the answer. It is the lock."
-      },
-      {
-        "id": "S33C07-sound",
-        "type": "audio_clue",
-        "name": "Knife Scrape",
-        "inspectText": "Knife Scrape repeats near 8:33."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series33-The-Pale-Season/chapter07.md",
-      "novel": "generated/novels/Series33-The-Pale-Season/chapter07.md",
-      "song": "generated/songs/Series33-The-Pale-Season/song07.md"
     }
   },
   "story": {

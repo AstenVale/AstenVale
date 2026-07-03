@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "forge"
-    ],
-    "object": [
-      "scratched initials in wood",
-      "scratchedinitialsinwood"
-    ],
-    "witness": [
-      "typesetter"
-    ],
-    "time": [
-      "7:48",
-      "748"
-    ],
-    "marker": [
-      "4488",
-      "marker 4488",
-      "road marker 4488",
-      "mile marker 4488",
-      "mile 4488"
-    ],
-    "direction": [
-      "nowhere"
-    ],
-    "sound": [
-      "tree fall",
-      "treefall"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -309,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S44C10",
-    "puzzleId": "S44C10-marker-lock",
-    "dialogueId": "S44C10-typesetter",
-    "locationId": "forge",
-    "objective": "Investigate Forge, question Typesetter, recover Scratched Initials in Wood, and learn why marker 4488 is tied to Parallel Case Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Forge.",
-        "clue": "Tree Fall"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Scratched Initials in Wood.",
-        "clue": "Scratched Initials in Wood"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Typesetter.",
-        "clue": "7:48"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4488.",
-        "clue": "4488"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Nowhere instruction.",
-        "clue": "Nowhere"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S44C10-location",
-        "type": "location",
-        "name": "Forge",
-        "inspectText": "Forge looks ordinary until Tree Fall moves through it."
-      },
-      {
-        "id": "S44C10-object",
-        "type": "evidence",
-        "name": "Scratched Initials in Wood",
-        "inspectText": "Scratched Initials in Wood is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S44C10-marker",
-        "type": "marker",
-        "name": "Marker 4488",
-        "inspectText": "Marker 4488 is not the answer. It is the lock."
-      },
-      {
-        "id": "S44C10-sound",
-        "type": "audio_clue",
-        "name": "Tree Fall",
-        "inspectText": "Tree Fall repeats near 7:48."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series44-The-Mirror-Case/chapter10.md",
-      "novel": "generated/novels/Series44-The-Mirror-Case/chapter10.md",
-      "song": "generated/songs/Series44-The-Mirror-Case/song10.md"
     }
   },
   "story": {

@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "ash hollow",
-      "ashhollow"
-    ],
-    "object": [
-      "flint stone",
-      "flintstone"
-    ],
-    "witness": [
-      "lamplighter"
-    ],
-    "time": [
-      "9:27",
-      "927"
-    ],
-    "marker": [
-      "3879",
-      "marker 3879",
-      "road marker 3879",
-      "mile marker 3879",
-      "mile 3879"
-    ],
-    "direction": [
-      "across"
-    ],
-    "sound": [
-      "swamp gas",
-      "swampgas"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S38C09",
-    "puzzleId": "S38C09-marker-lock",
-    "dialogueId": "S38C09-lamplighter",
-    "locationId": "ash-hollow",
-    "objective": "Investigate Ash Hollow, question Lamplighter, recover Flint Stone, and learn why marker 3879 is tied to Beacon Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Ash Hollow.",
-        "clue": "Swamp Gas"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Flint Stone.",
-        "clue": "Flint Stone"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Lamplighter.",
-        "clue": "9:27"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3879.",
-        "clue": "3879"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Across instruction.",
-        "clue": "Across"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S38C09-location",
-        "type": "location",
-        "name": "Ash Hollow",
-        "inspectText": "Ash Hollow looks ordinary until Swamp Gas moves through it."
-      },
-      {
-        "id": "S38C09-object",
-        "type": "evidence",
-        "name": "Flint Stone",
-        "inspectText": "Flint Stone is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S38C09-marker",
-        "type": "marker",
-        "name": "Marker 3879",
-        "inspectText": "Marker 3879 is not the answer. It is the lock."
-      },
-      {
-        "id": "S38C09-sound",
-        "type": "audio_clue",
-        "name": "Swamp Gas",
-        "inspectText": "Swamp Gas repeats near 9:27."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series38-The-Signal-Fire/chapter09.md",
-      "novel": "generated/novels/Series38-The-Signal-Fire/chapter09.md",
-      "song": "generated/songs/Series38-The-Signal-Fire/song09.md"
     }
   },
   "story": {

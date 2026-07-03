@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "sawmill"
-    ],
-    "object": [
-      "bottle"
-    ],
-    "witness": [
-      "census taker",
-      "censustaker"
-    ],
-    "time": [
-      "1:58",
-      "158"
-    ],
-    "marker": [
-      "1825",
-      "marker 1825",
-      "road marker 1825",
-      "mile marker 1825",
-      "mile 1825"
-    ],
-    "direction": [
-      "past the tree line",
-      "pastthetreeline"
-    ],
-    "sound": [
-      "breathing"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -299,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S18C03",
-    "puzzleId": "S18C03-marker-lock",
-    "dialogueId": "S18C03-census-taker",
-    "locationId": "sawmill",
-    "objective": "Investigate Sawmill, question Census Taker, recover Bottle, and learn why marker 1825 is tied to Identity Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Sawmill.",
-        "clue": "Breathing"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Bottle.",
-        "clue": "Bottle"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Census Taker.",
-        "clue": "1:58"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1825.",
-        "clue": "1825"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Past the Tree Line instruction.",
-        "clue": "Past the Tree Line"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S18C03-location",
-        "type": "location",
-        "name": "Sawmill",
-        "inspectText": "Sawmill looks ordinary until Breathing moves through it."
-      },
-      {
-        "id": "S18C03-object",
-        "type": "evidence",
-        "name": "Bottle",
-        "inspectText": "Bottle is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S18C03-marker",
-        "type": "marker",
-        "name": "Marker 1825",
-        "inspectText": "Marker 1825 is not the answer. It is the lock."
-      },
-      {
-        "id": "S18C03-sound",
-        "type": "audio_clue",
-        "name": "Breathing",
-        "inspectText": "Breathing repeats near 1:58."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series18-The-Hollow-Names/chapter03.md",
-      "novel": "generated/novels/Series18-The-Hollow-Names/chapter03.md",
-      "song": "generated/songs/Series18-The-Hollow-Names/song03.md"
     }
   },
   "story": {

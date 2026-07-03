@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "doctor's office",
-      "doctor'soffice"
-    ],
-    "object": [
-      "lantern"
-    ],
-    "witness": [
-      "land agent",
-      "landagent"
-    ],
-    "time": [
-      "5:21",
-      "521"
-    ],
-    "marker": [
-      "952",
-      "marker 952",
-      "road marker 952",
-      "mile marker 952",
-      "mile 952"
-    ],
-    "direction": [
-      "over"
-    ],
-    "sound": [
-      "thunder"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -309,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S09C06",
-    "puzzleId": "S09C06-marker-lock",
-    "dialogueId": "S09C06-land-agent",
-    "locationId": "doctor-s-office",
-    "objective": "Investigate Doctor's Office, question Land Agent, recover Lantern, and learn why marker 952 is tied to Record Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Doctor's Office.",
-        "clue": "Thunder"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Lantern.",
-        "clue": "Lantern"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Land Agent.",
-        "clue": "5:21"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 952.",
-        "clue": "952"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Over instruction.",
-        "clue": "Over"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S09C06-location",
-        "type": "location",
-        "name": "Doctor's Office",
-        "inspectText": "Doctor's Office looks ordinary until Thunder moves through it."
-      },
-      {
-        "id": "S09C06-object",
-        "type": "evidence",
-        "name": "Lantern",
-        "inspectText": "Lantern is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S09C06-marker",
-        "type": "marker",
-        "name": "Marker 952",
-        "inspectText": "Marker 952 is not the answer. It is the lock."
-      },
-      {
-        "id": "S09C06-sound",
-        "type": "audio_clue",
-        "name": "Thunder",
-        "inspectText": "Thunder repeats near 5:21."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series09-The-Keeper/chapter06.md",
-      "novel": "generated/novels/Series09-The-Keeper/chapter06.md",
-      "song": "generated/songs/Series09-The-Keeper/song06.md"
     }
   },
   "story": {

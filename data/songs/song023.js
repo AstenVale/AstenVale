@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "empty kitchen",
-      "emptykitchen"
-    ],
-    "object": [
-      "photograph"
-    ],
-    "witness": [
-      "neighbor"
-    ],
-    "time": [
-      "9:45",
-      "945"
-    ],
-    "marker": [
-      "220",
-      "marker 220",
-      "road marker 220",
-      "mile marker 220",
-      "mile 220"
-    ],
-    "direction": [
-      "away"
-    ],
-    "sound": [
-      "clock ticking",
-      "clockticking"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -310,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S02C11",
-    "puzzleId": "S02C11-marker-lock",
-    "dialogueId": "S02C11-neighbor",
-    "locationId": "empty-kitchen",
-    "objective": "Investigate Empty Kitchen, question Neighbor, recover Photograph, and learn why marker 220 is tied to Personal Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Empty Kitchen.",
-        "clue": "Clock Ticking"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Photograph.",
-        "clue": "Photograph"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Neighbor.",
-        "clue": "9:45"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 220.",
-        "clue": "220"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Away instruction.",
-        "clue": "Away"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S02C11-location",
-        "type": "location",
-        "name": "Empty Kitchen",
-        "inspectText": "Empty Kitchen looks ordinary until Clock Ticking moves through it."
-      },
-      {
-        "id": "S02C11-object",
-        "type": "evidence",
-        "name": "Photograph",
-        "inspectText": "Photograph is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S02C11-marker",
-        "type": "marker",
-        "name": "Marker 220",
-        "inspectText": "Marker 220 is not the answer. It is the lock."
-      },
-      {
-        "id": "S02C11-sound",
-        "type": "audio_clue",
-        "name": "Clock Ticking",
-        "inspectText": "Clock Ticking repeats near 9:45."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series02-The-Before/chapter11.md",
-      "novel": "generated/novels/Series02-The-Before/chapter11.md",
-      "song": "generated/songs/Series02-The-Before/song11.md"
     }
   },
   "story": {

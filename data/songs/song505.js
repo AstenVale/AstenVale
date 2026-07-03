@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the weir",
-      "weir",
-      "theweir"
-    ],
-    "object": [
-      "rope"
-    ],
-    "witness": [
-      "land agent",
-      "landagent"
-    ],
-    "time": [
-      "3:58",
-      "358"
-    ],
-    "marker": [
-      "4307",
-      "marker 4307",
-      "road marker 4307",
-      "mile marker 4307",
-      "mile 4307"
-    ],
-    "direction": [
-      "back the way you came",
-      "backthewayyoucame"
-    ],
-    "sound": [
-      "floorboard"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -301,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S43C01",
-    "puzzleId": "S43C01-marker-lock",
-    "dialogueId": "S43C01-land-agent",
-    "locationId": "the-weir",
-    "objective": "Investigate The Weir, question Land Agent, recover Rope, and learn why marker 4307 is tied to Identity Vault II.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Weir.",
-        "clue": "Floorboard"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Rope.",
-        "clue": "Rope"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Land Agent.",
-        "clue": "3:58"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4307.",
-        "clue": "4307"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Back the Way You Came instruction.",
-        "clue": "Back the Way You Came"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S43C01-location",
-        "type": "location",
-        "name": "The Weir",
-        "inspectText": "The Weir looks ordinary until Floorboard moves through it."
-      },
-      {
-        "id": "S43C01-object",
-        "type": "evidence",
-        "name": "Rope",
-        "inspectText": "Rope is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S43C01-marker",
-        "type": "marker",
-        "name": "Marker 4307",
-        "inspectText": "Marker 4307 is not the answer. It is the lock."
-      },
-      {
-        "id": "S43C01-sound",
-        "type": "audio_clue",
-        "name": "Floorboard",
-        "inspectText": "Floorboard repeats near 3:58."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series43-The-False-Name/chapter01.md",
-      "novel": "generated/novels/Series43-The-False-Name/chapter01.md",
-      "song": "generated/songs/Series43-The-False-Name/song01.md"
     }
   },
   "story": {

@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the weir",
-      "weir",
-      "theweir"
-    ],
-    "object": [
-      "ring"
-    ],
-    "witness": [
-      "banker"
-    ],
-    "time": [
-      "8:00",
-      "800"
-    ],
-    "marker": [
-      "907",
-      "marker 907",
-      "road marker 907",
-      "mile marker 907",
-      "mile 907"
-    ],
-    "direction": [
-      "further in",
-      "furtherin"
-    ],
-    "sound": [
-      "knife scrape",
-      "knifescrape"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -301,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S09C01",
-    "puzzleId": "S09C01-marker-lock",
-    "dialogueId": "S09C01-banker",
-    "locationId": "the-weir",
-    "objective": "Investigate The Weir, question Banker, recover Ring, and learn why marker 907 is tied to Record Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Weir.",
-        "clue": "Knife Scrape"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Ring.",
-        "clue": "Ring"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Banker.",
-        "clue": "8:00"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 907.",
-        "clue": "907"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Further In instruction.",
-        "clue": "Further In"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S09C01-location",
-        "type": "location",
-        "name": "The Weir",
-        "inspectText": "The Weir looks ordinary until Knife Scrape moves through it."
-      },
-      {
-        "id": "S09C01-object",
-        "type": "evidence",
-        "name": "Ring",
-        "inspectText": "Ring is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S09C01-marker",
-        "type": "marker",
-        "name": "Marker 907",
-        "inspectText": "Marker 907 is not the answer. It is the lock."
-      },
-      {
-        "id": "S09C01-sound",
-        "type": "audio_clue",
-        "name": "Knife Scrape",
-        "inspectText": "Knife Scrape repeats near 8:00."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series09-The-Keeper/chapter01.md",
-      "novel": "generated/novels/Series09-The-Keeper/chapter01.md",
-      "song": "generated/songs/Series09-The-Keeper/song01.md"
     }
   },
   "story": {

@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "lumber camp",
-      "lumbercamp"
-    ],
-    "object": [
-      "wax seal",
-      "waxseal"
-    ],
-    "witness": [
-      "blacksmith"
-    ],
-    "time": [
-      "3:44",
-      "344"
-    ],
-    "marker": [
-      "625",
-      "marker 625",
-      "road marker 625",
-      "mile marker 625",
-      "mile 625"
-    ],
-    "direction": [
-      "sideways"
-    ],
-    "sound": [
-      "river water",
-      "riverwater"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S06C03",
-    "puzzleId": "S06C03-marker-lock",
-    "dialogueId": "S06C03-blacksmith",
-    "locationId": "lumber-camp",
-    "objective": "Investigate Lumber Camp, question Blacksmith, recover Wax Seal, and learn why marker 625 is tied to Below Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Lumber Camp.",
-        "clue": "River Water"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Wax Seal.",
-        "clue": "Wax Seal"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Blacksmith.",
-        "clue": "3:44"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 625.",
-        "clue": "625"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Sideways instruction.",
-        "clue": "Sideways"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S06C03-location",
-        "type": "location",
-        "name": "Lumber Camp",
-        "inspectText": "Lumber Camp looks ordinary until River Water moves through it."
-      },
-      {
-        "id": "S06C03-object",
-        "type": "evidence",
-        "name": "Wax Seal",
-        "inspectText": "Wax Seal is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S06C03-marker",
-        "type": "marker",
-        "name": "Marker 625",
-        "inspectText": "Marker 625 is not the answer. It is the lock."
-      },
-      {
-        "id": "S06C03-sound",
-        "type": "audio_clue",
-        "name": "River Water",
-        "inspectText": "River Water repeats near 3:44."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series06-The-Underground/chapter03.md",
-      "novel": "generated/novels/Series06-The-Underground/chapter03.md",
-      "song": "generated/songs/Series06-The-Underground/song03.md"
     }
   },
   "story": {

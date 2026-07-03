@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "east field",
-      "eastfield"
-    ],
-    "object": [
-      "shard of mirror",
-      "shardofmirror"
-    ],
-    "witness": [
-      "river pilot",
-      "riverpilot"
-    ],
-    "time": [
-      "12:44",
-      "1244"
-    ],
-    "marker": [
-      "1752",
-      "marker 1752",
-      "road marker 1752",
-      "mile marker 1752",
-      "mile 1752"
-    ],
-    "direction": [
-      "across"
-    ],
-    "sound": [
-      "rope strain",
-      "ropestrain"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S17C06",
-    "puzzleId": "S17C06-marker-lock",
-    "dialogueId": "S17C06-river-pilot",
-    "locationId": "east-field",
-    "objective": "Investigate East Field, question River Pilot, recover Shard of Mirror, and learn why marker 1752 is tied to Frost Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter East Field.",
-        "clue": "Rope Strain"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Shard of Mirror.",
-        "clue": "Shard of Mirror"
-      },
-      {
-        "step": "interview",
-        "objective": "Question River Pilot.",
-        "clue": "12:44"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1752.",
-        "clue": "1752"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Across instruction.",
-        "clue": "Across"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S17C06-location",
-        "type": "location",
-        "name": "East Field",
-        "inspectText": "East Field looks ordinary until Rope Strain moves through it."
-      },
-      {
-        "id": "S17C06-object",
-        "type": "evidence",
-        "name": "Shard of Mirror",
-        "inspectText": "Shard of Mirror is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S17C06-marker",
-        "type": "marker",
-        "name": "Marker 1752",
-        "inspectText": "Marker 1752 is not the answer. It is the lock."
-      },
-      {
-        "id": "S17C06-sound",
-        "type": "audio_clue",
-        "name": "Rope Strain",
-        "inspectText": "Rope Strain repeats near 12:44."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series17-The-Cold-Season/chapter06.md",
-      "novel": "generated/novels/Series17-The-Cold-Season/chapter06.md",
-      "song": "generated/songs/Series17-The-Cold-Season/song06.md"
     }
   },
   "story": {

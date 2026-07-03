@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "post office",
-      "postoffice"
-    ],
-    "object": [
-      "key"
-    ],
-    "witness": [
-      "weaver"
-    ],
-    "time": [
-      "9:27",
-      "927"
-    ],
-    "marker": [
-      "4652",
-      "marker 4652",
-      "road marker 4652",
-      "mile marker 4652",
-      "mile 4652"
-    ],
-    "direction": [
-      "past the tree line",
-      "pastthetreeline"
-    ],
-    "sound": [
-      "kettle boil",
-      "kettleboil"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S46C06",
-    "puzzleId": "S46C06-marker-lock",
-    "dialogueId": "S46C06-weaver",
-    "locationId": "post-office",
-    "objective": "Investigate Post Office, question Weaver, recover Key, and learn why marker 4652 is tied to Weather Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Post Office.",
-        "clue": "Kettle Boil"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Key.",
-        "clue": "Key"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Weaver.",
-        "clue": "9:27"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4652.",
-        "clue": "4652"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Past the Tree Line instruction.",
-        "clue": "Past the Tree Line"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S46C06-location",
-        "type": "location",
-        "name": "Post Office",
-        "inspectText": "Post Office looks ordinary until Kettle Boil moves through it."
-      },
-      {
-        "id": "S46C06-object",
-        "type": "evidence",
-        "name": "Key",
-        "inspectText": "Key is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S46C06-marker",
-        "type": "marker",
-        "name": "Marker 4652",
-        "inspectText": "Marker 4652 is not the answer. It is the lock."
-      },
-      {
-        "id": "S46C06-sound",
-        "type": "audio_clue",
-        "name": "Kettle Boil",
-        "inspectText": "Kettle Boil repeats near 9:27."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series46-The-Storm-Season/chapter06.md",
-      "novel": "generated/novels/Series46-The-Storm-Season/chapter06.md",
-      "song": "generated/songs/Series46-The-Storm-Season/song06.md"
     }
   },
   "story": {

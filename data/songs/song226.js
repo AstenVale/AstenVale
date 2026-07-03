@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "cabin"
-    ],
-    "object": [
-      "wool scarf",
-      "woolscarf"
-    ],
-    "witness": [
-      "lock keeper",
-      "lockkeeper"
-    ],
-    "time": [
-      "1:11",
-      "111"
-    ],
-    "marker": [
-      "1988",
-      "marker 1988",
-      "road marker 1988",
-      "mile marker 1988",
-      "mile 1988"
-    ],
-    "direction": [
-      "sideways"
-    ],
-    "sound": [
-      "fence wire hum",
-      "fencewirehum"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S19C10",
-    "puzzleId": "S19C10-marker-lock",
-    "dialogueId": "S19C10-lock-keeper",
-    "locationId": "cabin",
-    "objective": "Investigate Cabin, question Lock Keeper, recover Wool Scarf, and learn why marker 1988 is tied to Crossing Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Cabin.",
-        "clue": "Fence Wire Hum"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Wool Scarf.",
-        "clue": "Wool Scarf"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Lock Keeper.",
-        "clue": "1:11"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1988.",
-        "clue": "1988"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Sideways instruction.",
-        "clue": "Sideways"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S19C10-location",
-        "type": "location",
-        "name": "Cabin",
-        "inspectText": "Cabin looks ordinary until Fence Wire Hum moves through it."
-      },
-      {
-        "id": "S19C10-object",
-        "type": "evidence",
-        "name": "Wool Scarf",
-        "inspectText": "Wool Scarf is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S19C10-marker",
-        "type": "marker",
-        "name": "Marker 1988",
-        "inspectText": "Marker 1988 is not the answer. It is the lock."
-      },
-      {
-        "id": "S19C10-sound",
-        "type": "audio_clue",
-        "name": "Fence Wire Hum",
-        "inspectText": "Fence Wire Hum repeats near 1:11."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series19-The-Bridge-Burner/chapter10.md",
-      "novel": "generated/novels/Series19-The-Bridge-Burner/chapter10.md",
-      "song": "generated/songs/Series19-The-Bridge-Burner/song10.md"
     }
   },
   "story": {

@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "feed store",
-      "feedstore"
-    ],
-    "object": [
-      "torn label",
-      "tornlabel"
-    ],
-    "witness": [
-      "stranger"
-    ],
-    "time": [
-      "1:11",
-      "111"
-    ],
-    "marker": [
-      "2643",
-      "marker 2643",
-      "road marker 2643",
-      "mile marker 2643",
-      "mile 2643"
-    ],
-    "direction": [
-      "forward"
-    ],
-    "sound": [
-      "dog bark at nothing",
-      "dogbarkatnothing"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -310,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S26C05",
-    "puzzleId": "S26C05-marker-lock",
-    "dialogueId": "S26C05-stranger",
-    "locationId": "feed-store",
-    "objective": "Investigate Feed Store, question Stranger, recover Torn Label, and learn why marker 2643 is tied to Threshold Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Feed Store.",
-        "clue": "Dog Bark at Nothing"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Torn Label.",
-        "clue": "Torn Label"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Stranger.",
-        "clue": "1:11"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2643.",
-        "clue": "2643"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Forward instruction.",
-        "clue": "Forward"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S26C05-location",
-        "type": "location",
-        "name": "Feed Store",
-        "inspectText": "Feed Store looks ordinary until Dog Bark at Nothing moves through it."
-      },
-      {
-        "id": "S26C05-object",
-        "type": "evidence",
-        "name": "Torn Label",
-        "inspectText": "Torn Label is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S26C05-marker",
-        "type": "marker",
-        "name": "Marker 2643",
-        "inspectText": "Marker 2643 is not the answer. It is the lock."
-      },
-      {
-        "id": "S26C05-sound",
-        "type": "audio_clue",
-        "name": "Dog Bark at Nothing",
-        "inspectText": "Dog Bark at Nothing repeats near 1:11."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series26-The-Red-Door/chapter05.md",
-      "novel": "generated/novels/Series26-The-Red-Door/chapter05.md",
-      "song": "generated/songs/Series26-The-Red-Door/song05.md"
     }
   },
   "story": {

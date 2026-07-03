@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "sheep fold",
-      "sheepfold"
-    ],
-    "object": [
-      "ledger page",
-      "ledgerpage"
-    ],
-    "witness": [
-      "judge"
-    ],
-    "time": [
-      "11:51",
-      "1151"
-    ],
-    "marker": [
-      "2970",
-      "marker 2970",
-      "road marker 2970",
-      "mile marker 2970",
-      "mile 2970"
-    ],
-    "direction": [
-      "west"
-    ],
-    "sound": [
-      "wheel on gravel",
-      "wheelongravel"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S29C08",
-    "puzzleId": "S29C08-marker-lock",
-    "dialogueId": "S29C08-judge",
-    "locationId": "sheep-fold",
-    "objective": "Investigate Sheep Fold, question Judge, recover Ledger Page, and learn why marker 2970 is tied to Interment Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Sheep Fold.",
-        "clue": "Wheel on Gravel"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Ledger Page.",
-        "clue": "Ledger Page"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Judge.",
-        "clue": "11:51"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2970.",
-        "clue": "2970"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the West instruction.",
-        "clue": "West"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S29C08-location",
-        "type": "location",
-        "name": "Sheep Fold",
-        "inspectText": "Sheep Fold looks ordinary until Wheel on Gravel moves through it."
-      },
-      {
-        "id": "S29C08-object",
-        "type": "evidence",
-        "name": "Ledger Page",
-        "inspectText": "Ledger Page is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S29C08-marker",
-        "type": "marker",
-        "name": "Marker 2970",
-        "inspectText": "Marker 2970 is not the answer. It is the lock."
-      },
-      {
-        "id": "S29C08-sound",
-        "type": "audio_clue",
-        "name": "Wheel on Gravel",
-        "inspectText": "Wheel on Gravel repeats near 11:51."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series29-The-Unmarked-Grave/chapter08.md",
-      "novel": "generated/novels/Series29-The-Unmarked-Grave/chapter08.md",
-      "song": "generated/songs/Series29-The-Unmarked-Grave/song08.md"
     }
   },
   "story": {

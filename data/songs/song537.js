@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "feed store",
-      "feedstore"
-    ],
-    "object": [
-      "candle"
-    ],
-    "witness": [
-      "cooper"
-    ],
-    "time": [
-      "9:08",
-      "908"
-    ],
-    "marker": [
-      "4579",
-      "marker 4579",
-      "road marker 4579",
-      "mile marker 4579",
-      "mile 4579"
-    ],
-    "direction": [
-      "away from town",
-      "awayfromtown"
-    ],
-    "sound": [
-      "distant gunshot",
-      "distantgunshot"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S45C09",
-    "puzzleId": "S45C09-marker-lock",
-    "dialogueId": "S45C09-cooper",
-    "locationId": "feed-store",
-    "objective": "Investigate Feed Store, question Cooper, recover Candle, and learn why marker 4579 is tied to Power Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Feed Store.",
-        "clue": "Distant Gunshot"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Candle.",
-        "clue": "Candle"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Cooper.",
-        "clue": "9:08"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4579.",
-        "clue": "4579"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Away from Town instruction.",
-        "clue": "Away from Town"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S45C09-location",
-        "type": "location",
-        "name": "Feed Store",
-        "inspectText": "Feed Store looks ordinary until Distant Gunshot moves through it."
-      },
-      {
-        "id": "S45C09-object",
-        "type": "evidence",
-        "name": "Candle",
-        "inspectText": "Candle is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S45C09-marker",
-        "type": "marker",
-        "name": "Marker 4579",
-        "inspectText": "Marker 4579 is not the answer. It is the lock."
-      },
-      {
-        "id": "S45C09-sound",
-        "type": "audio_clue",
-        "name": "Distant Gunshot",
-        "inspectText": "Distant Gunshot repeats near 9:08."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series45-The-Hollow-Crown/chapter09.md",
-      "novel": "generated/novels/Series45-The-Hollow-Crown/chapter09.md",
-      "song": "generated/songs/Series45-The-Hollow-Crown/song09.md"
     }
   },
   "story": {

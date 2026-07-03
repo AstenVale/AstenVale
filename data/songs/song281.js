@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "fulling mill",
-      "fullingmill"
-    ],
-    "object": [
-      "letter"
-    ],
-    "witness": [
-      "retired soldier",
-      "retiredsoldier"
-    ],
-    "time": [
-      "12:17",
-      "1217"
-    ],
-    "marker": [
-      "2443",
-      "marker 2443",
-      "road marker 2443",
-      "mile marker 2443",
-      "mile 2443"
-    ],
-    "direction": [
-      "forward"
-    ],
-    "sound": [
-      "millstone"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -310,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S24C05",
-    "puzzleId": "S24C05-marker-lock",
-    "dialogueId": "S24C05-retired-soldier",
-    "locationId": "fulling-mill",
-    "objective": "Investigate Fulling Mill, question Retired Soldier, recover Letter, and learn why marker 2443 is tied to Timeline Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Fulling Mill.",
-        "clue": "Millstone"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Letter.",
-        "clue": "Letter"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Retired Soldier.",
-        "clue": "12:17"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2443.",
-        "clue": "2443"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Forward instruction.",
-        "clue": "Forward"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S24C05-location",
-        "type": "location",
-        "name": "Fulling Mill",
-        "inspectText": "Fulling Mill looks ordinary until Millstone moves through it."
-      },
-      {
-        "id": "S24C05-object",
-        "type": "evidence",
-        "name": "Letter",
-        "inspectText": "Letter is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S24C05-marker",
-        "type": "marker",
-        "name": "Marker 2443",
-        "inspectText": "Marker 2443 is not the answer. It is the lock."
-      },
-      {
-        "id": "S24C05-sound",
-        "type": "audio_clue",
-        "name": "Millstone",
-        "inspectText": "Millstone repeats near 12:17."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series24-The-Missing-Hours/chapter05.md",
-      "novel": "generated/novels/Series24-The-Missing-Hours/chapter05.md",
-      "song": "generated/songs/Series24-The-Missing-Hours/song05.md"
     }
   },
   "story": {

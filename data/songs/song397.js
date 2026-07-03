@@ -61,39 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the bluff",
-      "bluff",
-      "thebluff"
-    ],
-    "object": [
-      "dried ink blot",
-      "driedinkblot"
-    ],
-    "witness": [
-      "wainwright"
-    ],
-    "time": [
-      "6:06",
-      "606"
-    ],
-    "marker": [
-      "3407",
-      "marker 3407",
-      "road marker 3407",
-      "mile marker 3407",
-      "mile 3407"
-    ],
-    "direction": [
-      "straight down",
-      "straightdown"
-    ],
-    "sound": [
-      "paper rustle",
-      "paperrustle"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -302,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S34C01",
-    "puzzleId": "S34C01-marker-lock",
-    "dialogueId": "S34C01-wainwright",
-    "locationId": "the-bluff",
-    "objective": "Investigate The Bluff, question Wainwright, recover Dried Ink Blot, and learn why marker 3407 is tied to Clinical Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Bluff.",
-        "clue": "Paper Rustle"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Dried Ink Blot.",
-        "clue": "Dried Ink Blot"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Wainwright.",
-        "clue": "6:06"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3407.",
-        "clue": "3407"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Straight Down instruction.",
-        "clue": "Straight Down"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S34C01-location",
-        "type": "location",
-        "name": "The Bluff",
-        "inspectText": "The Bluff looks ordinary until Paper Rustle moves through it."
-      },
-      {
-        "id": "S34C01-object",
-        "type": "evidence",
-        "name": "Dried Ink Blot",
-        "inspectText": "Dried Ink Blot is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S34C01-marker",
-        "type": "marker",
-        "name": "Marker 3407",
-        "inspectText": "Marker 3407 is not the answer. It is the lock."
-      },
-      {
-        "id": "S34C01-sound",
-        "type": "audio_clue",
-        "name": "Paper Rustle",
-        "inspectText": "Paper Rustle repeats near 6:06."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series34-The-Locked-Ward/chapter01.md",
-      "novel": "generated/novels/Series34-The-Locked-Ward/chapter01.md",
-      "song": "generated/songs/Series34-The-Locked-Ward/song01.md"
     }
   },
   "story": {

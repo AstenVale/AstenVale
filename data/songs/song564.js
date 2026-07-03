@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "black pine",
-      "blackpine"
-    ],
-    "object": [
-      "ribbon"
-    ],
-    "witness": [
-      "retired soldier",
-      "retiredsoldier"
-    ],
-    "time": [
-      "2:55",
-      "255"
-    ],
-    "marker": [
-      "4806",
-      "marker 4806",
-      "road marker 4806",
-      "mile marker 4806",
-      "mile 4806"
-    ],
-    "direction": [
-      "into the pines",
-      "intothepines"
-    ],
-    "sound": [
-      "crow wings",
-      "crowwings"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -301,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S47C12",
-    "puzzleId": "S47C12-marker-lock",
-    "dialogueId": "S47C12-retired-soldier",
-    "locationId": "black-pine",
-    "objective": "Investigate Black Pine, question Retired Soldier, recover Ribbon, and learn why marker 4806 is tied to Detour Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Black Pine.",
-        "clue": "Crow Wings"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Ribbon.",
-        "clue": "Ribbon"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Retired Soldier.",
-        "clue": "2:55"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4806.",
-        "clue": "4806"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Into the Pines instruction.",
-        "clue": "Into the Pines"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S47C12-location",
-        "type": "location",
-        "name": "Black Pine",
-        "inspectText": "Black Pine looks ordinary until Crow Wings moves through it."
-      },
-      {
-        "id": "S47C12-object",
-        "type": "evidence",
-        "name": "Ribbon",
-        "inspectText": "Ribbon is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S47C12-marker",
-        "type": "marker",
-        "name": "Marker 4806",
-        "inspectText": "Marker 4806 is not the answer. It is the lock."
-      },
-      {
-        "id": "S47C12-sound",
-        "type": "audio_clue",
-        "name": "Crow Wings",
-        "inspectText": "Crow Wings repeats near 2:55."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series47-The-Long-Way-Round/chapter12.md",
-      "novel": "generated/novels/Series47-The-Long-Way-Round/chapter12.md",
-      "song": "generated/songs/Series47-The-Long-Way-Round/song12.md"
     }
   },
   "story": {

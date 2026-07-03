@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "banker's house",
-      "banker'shouse"
-    ],
-    "object": [
-      "wire coil",
-      "wirecoil"
-    ],
-    "witness": [
-      "cooper"
-    ],
-    "time": [
-      "11:51",
-      "1151"
-    ],
-    "marker": [
-      "5070",
-      "marker 5070",
-      "road marker 5070",
-      "mile marker 5070",
-      "mile 5070"
-    ],
-    "direction": [
-      "out"
-    ],
-    "sound": [
-      "millstone"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -299,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S50C08",
-    "puzzleId": "S50C08-marker-lock",
-    "dialogueId": "S50C08-cooper",
-    "locationId": "banker-s-house",
-    "objective": "Investigate Banker's House, question Cooper, recover Wire Coil, and learn why marker 5070 is tied to Full Archive.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Banker's House.",
-        "clue": "Millstone"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Wire Coil.",
-        "clue": "Wire Coil"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Cooper.",
-        "clue": "11:51"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 5070.",
-        "clue": "5070"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Out instruction.",
-        "clue": "Out"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S50C08-location",
-        "type": "location",
-        "name": "Banker's House",
-        "inspectText": "Banker's House looks ordinary until Millstone moves through it."
-      },
-      {
-        "id": "S50C08-object",
-        "type": "evidence",
-        "name": "Wire Coil",
-        "inspectText": "Wire Coil is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S50C08-marker",
-        "type": "marker",
-        "name": "Marker 5070",
-        "inspectText": "Marker 5070 is not the answer. It is the lock."
-      },
-      {
-        "id": "S50C08-sound",
-        "type": "audio_clue",
-        "name": "Millstone",
-        "inspectText": "Millstone repeats near 11:51."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series50-The-Resolution/chapter08.md",
-      "novel": "generated/novels/Series50-The-Resolution/chapter08.md",
-      "song": "generated/songs/Series50-The-Resolution/song08.md"
     }
   },
   "story": {

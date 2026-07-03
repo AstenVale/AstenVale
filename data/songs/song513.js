@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "canning factory",
-      "canningfactory"
-    ],
-    "object": [
-      "spool of thread",
-      "spoolofthread"
-    ],
-    "witness": [
-      "doctor"
-    ],
-    "time": [
-      "3:30",
-      "330"
-    ],
-    "marker": [
-      "4379",
-      "marker 4379",
-      "road marker 4379",
-      "mile marker 4379",
-      "mile 4379"
-    ],
-    "direction": [
-      "right"
-    ],
-    "sound": [
-      "moth wings",
-      "mothwings"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S43C09",
-    "puzzleId": "S43C09-marker-lock",
-    "dialogueId": "S43C09-doctor",
-    "locationId": "canning-factory",
-    "objective": "Investigate Canning Factory, question Doctor, recover Spool of Thread, and learn why marker 4379 is tied to Identity Vault II.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Canning Factory.",
-        "clue": "Moth Wings"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Spool of Thread.",
-        "clue": "Spool of Thread"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Doctor.",
-        "clue": "3:30"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4379.",
-        "clue": "4379"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Right instruction.",
-        "clue": "Right"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S43C09-location",
-        "type": "location",
-        "name": "Canning Factory",
-        "inspectText": "Canning Factory looks ordinary until Moth Wings moves through it."
-      },
-      {
-        "id": "S43C09-object",
-        "type": "evidence",
-        "name": "Spool of Thread",
-        "inspectText": "Spool of Thread is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S43C09-marker",
-        "type": "marker",
-        "name": "Marker 4379",
-        "inspectText": "Marker 4379 is not the answer. It is the lock."
-      },
-      {
-        "id": "S43C09-sound",
-        "type": "audio_clue",
-        "name": "Moth Wings",
-        "inspectText": "Moth Wings repeats near 3:30."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series43-The-False-Name/chapter09.md",
-      "novel": "generated/novels/Series43-The-False-Name/chapter09.md",
-      "song": "generated/songs/Series43-The-False-Name/song09.md"
     }
   },
   "story": {

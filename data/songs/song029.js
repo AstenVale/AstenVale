@@ -61,35 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "millpond"
-    ],
-    "object": [
-      "comb"
-    ],
-    "witness": [
-      "night watchman",
-      "nightwatchman"
-    ],
-    "time": [
-      "4:03",
-      "403"
-    ],
-    "marker": [
-      "343",
-      "marker 343",
-      "road marker 343",
-      "mile marker 343",
-      "mile 343"
-    ],
-    "direction": [
-      "below"
-    ],
-    "sound": [
-      "breathing"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -298,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S03C05",
-    "puzzleId": "S03C05-marker-lock",
-    "dialogueId": "S03C05-night-watchman",
-    "locationId": "millpond",
-    "objective": "Investigate Millpond, question Night Watchman, recover Comb, and learn why marker 343 is tied to Absence Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Millpond.",
-        "clue": "Breathing"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Comb.",
-        "clue": "Comb"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Night Watchman.",
-        "clue": "4:03"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 343.",
-        "clue": "343"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Below instruction.",
-        "clue": "Below"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S03C05-location",
-        "type": "location",
-        "name": "Millpond",
-        "inspectText": "Millpond looks ordinary until Breathing moves through it."
-      },
-      {
-        "id": "S03C05-object",
-        "type": "evidence",
-        "name": "Comb",
-        "inspectText": "Comb is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S03C05-marker",
-        "type": "marker",
-        "name": "Marker 343",
-        "inspectText": "Marker 343 is not the answer. It is the lock."
-      },
-      {
-        "id": "S03C05-sound",
-        "type": "audio_clue",
-        "name": "Breathing",
-        "inspectText": "Breathing repeats near 4:03."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series03-The-Disappearance/chapter05.md",
-      "novel": "generated/novels/Series03-The-Disappearance/chapter05.md",
-      "song": "generated/songs/Series03-The-Disappearance/song05.md"
     }
   },
   "story": {

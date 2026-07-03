@@ -61,35 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "orchard"
-    ],
-    "object": [
-      "thimble"
-    ],
-    "witness": [
-      "deputy"
-    ],
-    "time": [
-      "7:00",
-      "700"
-    ],
-    "marker": [
-      "2016",
-      "marker 2016",
-      "road marker 2016",
-      "mile marker 2016",
-      "mile 2016"
-    ],
-    "direction": [
-      "ahead"
-    ],
-    "sound": [
-      "crow on wire",
-      "crowonwire"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -309,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S20C02",
-    "puzzleId": "S20C02-marker-lock",
-    "dialogueId": "S20C02-deputy",
-    "locationId": "orchard",
-    "objective": "Investigate Orchard, question Deputy, recover Thimble, and learn why marker 2016 is tied to Night Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Orchard.",
-        "clue": "Crow on Wire"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Thimble.",
-        "clue": "Thimble"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Deputy.",
-        "clue": "7:00"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2016.",
-        "clue": "2016"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Ahead instruction.",
-        "clue": "Ahead"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S20C02-location",
-        "type": "location",
-        "name": "Orchard",
-        "inspectText": "Orchard looks ordinary until Crow on Wire moves through it."
-      },
-      {
-        "id": "S20C02-object",
-        "type": "evidence",
-        "name": "Thimble",
-        "inspectText": "Thimble is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S20C02-marker",
-        "type": "marker",
-        "name": "Marker 2016",
-        "inspectText": "Marker 2016 is not the answer. It is the lock."
-      },
-      {
-        "id": "S20C02-sound",
-        "type": "audio_clue",
-        "name": "Crow on Wire",
-        "inspectText": "Crow on Wire repeats near 7:00."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series20-The-Midnight-Circuit/chapter02.md",
-      "novel": "generated/novels/Series20-The-Midnight-Circuit/chapter02.md",
-      "song": "generated/songs/Series20-The-Midnight-Circuit/song02.md"
     }
   },
   "story": {

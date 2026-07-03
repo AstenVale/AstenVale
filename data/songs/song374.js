@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "birch stand",
-      "birchstand"
-    ],
-    "object": [
-      "coin"
-    ],
-    "witness": [
-      "cattle driver",
-      "cattledriver"
-    ],
-    "time": [
-      "8:17",
-      "817"
-    ],
-    "marker": [
-      "3216",
-      "marker 3216",
-      "road marker 3216",
-      "mile marker 3216",
-      "mile 3216"
-    ],
-    "direction": [
-      "beyond"
-    ],
-    "sound": [
-      "lock click",
-      "lockclick"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S32C02",
-    "puzzleId": "S32C02-marker-lock",
-    "dialogueId": "S32C02-cattle-driver",
-    "locationId": "birch-stand",
-    "objective": "Investigate Birch Stand, question Cattle Driver, recover Coin, and learn why marker 3216 is tied to Depth Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Birch Stand.",
-        "clue": "Lock Click"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Coin.",
-        "clue": "Coin"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Cattle Driver.",
-        "clue": "8:17"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3216.",
-        "clue": "3216"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Beyond instruction.",
-        "clue": "Beyond"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S32C02-location",
-        "type": "location",
-        "name": "Birch Stand",
-        "inspectText": "Birch Stand looks ordinary until Lock Click moves through it."
-      },
-      {
-        "id": "S32C02-object",
-        "type": "evidence",
-        "name": "Coin",
-        "inspectText": "Coin is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S32C02-marker",
-        "type": "marker",
-        "name": "Marker 3216",
-        "inspectText": "Marker 3216 is not the answer. It is the lock."
-      },
-      {
-        "id": "S32C02-sound",
-        "type": "audio_clue",
-        "name": "Lock Click",
-        "inspectText": "Lock Click repeats near 8:17."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series32-The-Deep-Current/chapter02.md",
-      "novel": "generated/novels/Series32-The-Deep-Current/chapter02.md",
-      "song": "generated/songs/Series32-The-Deep-Current/song02.md"
     }
   },
   "story": {

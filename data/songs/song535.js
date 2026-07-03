@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "barn"
-    ],
-    "object": [
-      "notebook"
-    ],
-    "witness": [
-      "station master",
-      "stationmaster"
-    ],
-    "time": [
-      "7:14",
-      "714"
-    ],
-    "marker": [
-      "4561",
-      "marker 4561",
-      "road marker 4561",
-      "mile marker 4561",
-      "mile 4561"
-    ],
-    "direction": [
-      "straight down",
-      "straightdown"
-    ],
-    "sound": [
-      "pen on paper",
-      "penonpaper"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S45C07",
-    "puzzleId": "S45C07-marker-lock",
-    "dialogueId": "S45C07-station-master",
-    "locationId": "barn",
-    "objective": "Investigate Barn, question Station Master, recover Notebook, and learn why marker 4561 is tied to Power Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Barn.",
-        "clue": "Pen on Paper"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Notebook.",
-        "clue": "Notebook"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Station Master.",
-        "clue": "7:14"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4561.",
-        "clue": "4561"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Straight Down instruction.",
-        "clue": "Straight Down"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S45C07-location",
-        "type": "location",
-        "name": "Barn",
-        "inspectText": "Barn looks ordinary until Pen on Paper moves through it."
-      },
-      {
-        "id": "S45C07-object",
-        "type": "evidence",
-        "name": "Notebook",
-        "inspectText": "Notebook is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S45C07-marker",
-        "type": "marker",
-        "name": "Marker 4561",
-        "inspectText": "Marker 4561 is not the answer. It is the lock."
-      },
-      {
-        "id": "S45C07-sound",
-        "type": "audio_clue",
-        "name": "Pen on Paper",
-        "inspectText": "Pen on Paper repeats near 7:14."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series45-The-Hollow-Crown/chapter07.md",
-      "novel": "generated/novels/Series45-The-Hollow-Crown/chapter07.md",
-      "song": "generated/songs/Series45-The-Hollow-Crown/song07.md"
     }
   },
   "story": {

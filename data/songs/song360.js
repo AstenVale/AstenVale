@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "barn"
-    ],
-    "object": [
-      "string of beads",
-      "stringofbeads"
-    ],
-    "witness": [
-      "rope maker",
-      "ropemaker"
-    ],
-    "time": [
-      "3:58",
-      "358"
-    ],
-    "marker": [
-      "3106",
-      "marker 3106",
-      "road marker 3106",
-      "mile marker 3106",
-      "mile 3106"
-    ],
-    "direction": [
-      "past the tree line",
-      "pastthetreeline"
-    ],
-    "sound": [
-      "old hinge",
-      "oldhinge"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -301,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S30C12",
-    "puzzleId": "S30C12-marker-lock",
-    "dialogueId": "S30C12-rope-maker",
-    "locationId": "barn",
-    "objective": "Investigate Barn, question Rope Maker, recover String of Beads, and learn why marker 3106 is tied to Manifest Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Barn.",
-        "clue": "Old Hinge"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect String of Beads.",
-        "clue": "String of Beads"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Rope Maker.",
-        "clue": "3:58"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3106.",
-        "clue": "3106"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Past the Tree Line instruction.",
-        "clue": "Past the Tree Line"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S30C12-location",
-        "type": "location",
-        "name": "Barn",
-        "inspectText": "Barn looks ordinary until Old Hinge moves through it."
-      },
-      {
-        "id": "S30C12-object",
-        "type": "evidence",
-        "name": "String of Beads",
-        "inspectText": "String of Beads is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S30C12-marker",
-        "type": "marker",
-        "name": "Marker 3106",
-        "inspectText": "Marker 3106 is not the answer. It is the lock."
-      },
-      {
-        "id": "S30C12-sound",
-        "type": "audio_clue",
-        "name": "Old Hinge",
-        "inspectText": "Old Hinge repeats near 3:58."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series30-The-Last-Train/chapter12.md",
-      "novel": "generated/novels/Series30-The-Last-Train/chapter12.md",
-      "song": "generated/songs/Series30-The-Last-Train/song12.md"
     }
   },
   "story": {

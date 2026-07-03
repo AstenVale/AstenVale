@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "ash hollow",
-      "ashhollow"
-    ],
-    "object": [
-      "dried blood on cloth",
-      "driedbloodoncloth"
-    ],
-    "witness": [
-      "fisherman"
-    ],
-    "time": [
-      "8:00",
-      "800"
-    ],
-    "marker": [
-      "1407",
-      "marker 1407",
-      "road marker 1407",
-      "mile marker 1407",
-      "mile 1407"
-    ],
-    "direction": [
-      "away from town",
-      "awayfromtown"
-    ],
-    "sound": [
-      "horse hooves",
-      "horsehooves"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -301,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S14C01",
-    "puzzleId": "S14C01-marker-lock",
-    "dialogueId": "S14C01-fisherman",
-    "locationId": "ash-hollow",
-    "objective": "Investigate Ash Hollow, question Fisherman, recover Dried Blood on Cloth, and learn why marker 1407 is tied to High Water Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Ash Hollow.",
-        "clue": "Horse Hooves"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Dried Blood on Cloth.",
-        "clue": "Dried Blood on Cloth"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Fisherman.",
-        "clue": "8:00"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1407.",
-        "clue": "1407"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Away from Town instruction.",
-        "clue": "Away from Town"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S14C01-location",
-        "type": "location",
-        "name": "Ash Hollow",
-        "inspectText": "Ash Hollow looks ordinary until Horse Hooves moves through it."
-      },
-      {
-        "id": "S14C01-object",
-        "type": "evidence",
-        "name": "Dried Blood on Cloth",
-        "inspectText": "Dried Blood on Cloth is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S14C01-marker",
-        "type": "marker",
-        "name": "Marker 1407",
-        "inspectText": "Marker 1407 is not the answer. It is the lock."
-      },
-      {
-        "id": "S14C01-sound",
-        "type": "audio_clue",
-        "name": "Horse Hooves",
-        "inspectText": "Horse Hooves repeats near 8:00."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series14-The-Flood-Year/chapter01.md",
-      "novel": "generated/novels/Series14-The-Flood-Year/chapter01.md",
-      "song": "generated/songs/Series14-The-Flood-Year/song01.md"
     }
   },
   "story": {

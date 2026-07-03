@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "east field",
-      "eastfield"
-    ],
-    "object": [
-      "dried flower",
-      "driedflower"
-    ],
-    "witness": [
-      "schoolgirl"
-    ],
-    "time": [
-      "7:48",
-      "748"
-    ],
-    "marker": [
-      "807",
-      "marker 807",
-      "road marker 807",
-      "mile marker 807",
-      "mile 807"
-    ],
-    "direction": [
-      "across"
-    ],
-    "sound": [
-      "train whistle",
-      "trainwhistle"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -310,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S08C01",
-    "puzzleId": "S08C01-marker-lock",
-    "dialogueId": "S08C01-schoolgirl",
-    "locationId": "east-field",
-    "objective": "Investigate East Field, question Schoolgirl, recover Dried Flower, and learn why marker 807 is tied to Ash Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter East Field.",
-        "clue": "Train Whistle"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Dried Flower.",
-        "clue": "Dried Flower"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Schoolgirl.",
-        "clue": "7:48"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 807.",
-        "clue": "807"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Across instruction.",
-        "clue": "Across"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S08C01-location",
-        "type": "location",
-        "name": "East Field",
-        "inspectText": "East Field looks ordinary until Train Whistle moves through it."
-      },
-      {
-        "id": "S08C01-object",
-        "type": "evidence",
-        "name": "Dried Flower",
-        "inspectText": "Dried Flower is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S08C01-marker",
-        "type": "marker",
-        "name": "Marker 807",
-        "inspectText": "Marker 807 is not the answer. It is the lock."
-      },
-      {
-        "id": "S08C01-sound",
-        "type": "audio_clue",
-        "name": "Train Whistle",
-        "inspectText": "Train Whistle repeats near 7:48."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series08-The-Fire-Year/chapter01.md",
-      "novel": "generated/novels/Series08-The-Fire-Year/chapter01.md",
-      "song": "generated/songs/Series08-The-Fire-Year/song01.md"
     }
   },
   "story": {

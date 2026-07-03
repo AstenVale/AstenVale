@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the hollow road",
-      "hollow road",
-      "thehollowroad"
-    ],
-    "object": [
-      "ticket"
-    ],
-    "witness": [
-      "cooper"
-    ],
-    "time": [
-      "10:47",
-      "1047"
-    ],
-    "marker": [
-      "1506",
-      "marker 1506",
-      "road marker 1506",
-      "mile marker 1506",
-      "mile 1506"
-    ],
-    "direction": [
-      "up"
-    ],
-    "sound": [
-      "cellar door",
-      "cellardoor"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S14C12",
-    "puzzleId": "S14C12-marker-lock",
-    "dialogueId": "S14C12-cooper",
-    "locationId": "the-hollow-road",
-    "objective": "Investigate The Hollow Road, question Cooper, recover Ticket, and learn why marker 1506 is tied to High Water Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Hollow Road.",
-        "clue": "Cellar Door"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Ticket.",
-        "clue": "Ticket"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Cooper.",
-        "clue": "10:47"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1506.",
-        "clue": "1506"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Up instruction.",
-        "clue": "Up"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S14C12-location",
-        "type": "location",
-        "name": "The Hollow Road",
-        "inspectText": "The Hollow Road looks ordinary until Cellar Door moves through it."
-      },
-      {
-        "id": "S14C12-object",
-        "type": "evidence",
-        "name": "Ticket",
-        "inspectText": "Ticket is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S14C12-marker",
-        "type": "marker",
-        "name": "Marker 1506",
-        "inspectText": "Marker 1506 is not the answer. It is the lock."
-      },
-      {
-        "id": "S14C12-sound",
-        "type": "audio_clue",
-        "name": "Cellar Door",
-        "inspectText": "Cellar Door repeats near 10:47."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series14-The-Flood-Year/chapter12.md",
-      "novel": "generated/novels/Series14-The-Flood-Year/chapter12.md",
-      "song": "generated/songs/Series14-The-Flood-Year/song12.md"
     }
   },
   "story": {

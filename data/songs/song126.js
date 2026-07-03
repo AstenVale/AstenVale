@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "ash creek",
-      "ashcreek"
-    ],
-    "object": [
-      "signet ring",
-      "signetring"
-    ],
-    "witness": [
-      "circuit rider",
-      "circuitrider"
-    ],
-    "time": [
-      "6:17",
-      "617"
-    ],
-    "marker": [
-      "1152",
-      "marker 1152",
-      "road marker 1152",
-      "mile marker 1152",
-      "mile 1152"
-    ],
-    "direction": [
-      "sideways"
-    ],
-    "sound": [
-      "shovel on earth",
-      "shovelonearth"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -312,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S11C06",
-    "puzzleId": "S11C06-marker-lock",
-    "dialogueId": "S11C06-circuit-rider",
-    "locationId": "ash-creek",
-    "objective": "Investigate Ash Creek, question Circuit Rider, recover Signet Ring, and learn why marker 1152 is tied to Survey Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Ash Creek.",
-        "clue": "Shovel on Earth"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Signet Ring.",
-        "clue": "Signet Ring"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Circuit Rider.",
-        "clue": "6:17"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1152.",
-        "clue": "1152"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Sideways instruction.",
-        "clue": "Sideways"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S11C06-location",
-        "type": "location",
-        "name": "Ash Creek",
-        "inspectText": "Ash Creek looks ordinary until Shovel on Earth moves through it."
-      },
-      {
-        "id": "S11C06-object",
-        "type": "evidence",
-        "name": "Signet Ring",
-        "inspectText": "Signet Ring is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S11C06-marker",
-        "type": "marker",
-        "name": "Marker 1152",
-        "inspectText": "Marker 1152 is not the answer. It is the lock."
-      },
-      {
-        "id": "S11C06-sound",
-        "type": "audio_clue",
-        "name": "Shovel on Earth",
-        "inspectText": "Shovel on Earth repeats near 6:17."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series11-The-Map-Maker/chapter06.md",
-      "novel": "generated/novels/Series11-The-Map-Maker/chapter06.md",
-      "song": "generated/songs/Series11-The-Map-Maker/song06.md"
     }
   },
   "story": {

@@ -61,40 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the ravine",
-      "ravine",
-      "theravine"
-    ],
-    "object": [
-      "torn label",
-      "tornlabel"
-    ],
-    "witness": [
-      "census taker",
-      "censustaker"
-    ],
-    "time": [
-      "5:21",
-      "521"
-    ],
-    "marker": [
-      "3306",
-      "marker 3306",
-      "road marker 3306",
-      "mile marker 3306",
-      "mile 3306"
-    ],
-    "direction": [
-      "away from town",
-      "awayfromtown"
-    ],
-    "sound": [
-      "lock click",
-      "lockclick"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -303,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S32C12",
-    "puzzleId": "S32C12-marker-lock",
-    "dialogueId": "S32C12-census-taker",
-    "locationId": "the-ravine",
-    "objective": "Investigate The Ravine, question Census Taker, recover Torn Label, and learn why marker 3306 is tied to Depth Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Ravine.",
-        "clue": "Lock Click"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Torn Label.",
-        "clue": "Torn Label"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Census Taker.",
-        "clue": "5:21"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3306.",
-        "clue": "3306"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Away from Town instruction.",
-        "clue": "Away from Town"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S32C12-location",
-        "type": "location",
-        "name": "The Ravine",
-        "inspectText": "The Ravine looks ordinary until Lock Click moves through it."
-      },
-      {
-        "id": "S32C12-object",
-        "type": "evidence",
-        "name": "Torn Label",
-        "inspectText": "Torn Label is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S32C12-marker",
-        "type": "marker",
-        "name": "Marker 3306",
-        "inspectText": "Marker 3306 is not the answer. It is the lock."
-      },
-      {
-        "id": "S32C12-sound",
-        "type": "audio_clue",
-        "name": "Lock Click",
-        "inspectText": "Lock Click repeats near 5:21."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series32-The-Deep-Current/chapter12.md",
-      "novel": "generated/novels/Series32-The-Deep-Current/chapter12.md",
-      "song": "generated/songs/Series32-The-Deep-Current/song12.md"
     }
   },
   "story": {

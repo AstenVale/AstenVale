@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the gully",
-      "gully",
-      "thegully"
-    ],
-    "object": [
-      "inkwell"
-    ],
-    "witness": [
-      "glazier"
-    ],
-    "time": [
-      "6:17",
-      "617"
-    ],
-    "marker": [
-      "743",
-      "marker 743",
-      "road marker 743",
-      "mile marker 743",
-      "mile 743"
-    ],
-    "direction": [
-      "home"
-    ],
-    "sound": [
-      "cannon bolt",
-      "cannonbolt"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S07C05",
-    "puzzleId": "S07C05-marker-lock",
-    "dialogueId": "S07C05-glazier",
-    "locationId": "the-gully",
-    "objective": "Investigate The Gully, question Glazier, recover Inkwell, and learn why marker 743 is tied to Parallel Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Gully.",
-        "clue": "Cannon Bolt"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Inkwell.",
-        "clue": "Inkwell"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Glazier.",
-        "clue": "6:17"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 743.",
-        "clue": "743"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Home instruction.",
-        "clue": "Home"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S07C05-location",
-        "type": "location",
-        "name": "The Gully",
-        "inspectText": "The Gully looks ordinary until Cannon Bolt moves through it."
-      },
-      {
-        "id": "S07C05-object",
-        "type": "evidence",
-        "name": "Inkwell",
-        "inspectText": "Inkwell is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S07C05-marker",
-        "type": "marker",
-        "name": "Marker 743",
-        "inspectText": "Marker 743 is not the answer. It is the lock."
-      },
-      {
-        "id": "S07C05-sound",
-        "type": "audio_clue",
-        "name": "Cannon Bolt",
-        "inspectText": "Cannon Bolt repeats near 6:17."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series07-The-Second-Family/chapter05.md",
-      "novel": "generated/novels/Series07-The-Second-Family/chapter05.md",
-      "song": "generated/songs/Series07-The-Second-Family/song05.md"
     }
   },
   "story": {

@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "stone step",
-      "stonestep"
-    ],
-    "object": [
-      "wire coil",
-      "wirecoil"
-    ],
-    "witness": [
-      "lime burner",
-      "limeburner"
-    ],
-    "time": [
-      "5:40",
-      "540"
-    ],
-    "marker": [
-      "4143",
-      "marker 4143",
-      "road marker 4143",
-      "mile marker 4143",
-      "mile 4143"
-    ],
-    "direction": [
-      "out"
-    ],
-    "sound": [
-      "pages turning",
-      "pagesturning"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -301,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S41C05",
-    "puzzleId": "S41C05-marker-lock",
-    "dialogueId": "S41C05-lime-burner",
-    "locationId": "stone-step",
-    "objective": "Investigate Stone Step, question Lime Burner, recover Wire Coil, and learn why marker 4143 is tied to Phantom Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Stone Step.",
-        "clue": "Pages Turning"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Wire Coil.",
-        "clue": "Wire Coil"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Lime Burner.",
-        "clue": "5:40"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4143.",
-        "clue": "4143"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Out instruction.",
-        "clue": "Out"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S41C05-location",
-        "type": "location",
-        "name": "Stone Step",
-        "inspectText": "Stone Step looks ordinary until Pages Turning moves through it."
-      },
-      {
-        "id": "S41C05-object",
-        "type": "evidence",
-        "name": "Wire Coil",
-        "inspectText": "Wire Coil is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S41C05-marker",
-        "type": "marker",
-        "name": "Marker 4143",
-        "inspectText": "Marker 4143 is not the answer. It is the lock."
-      },
-      {
-        "id": "S41C05-sound",
-        "type": "audio_clue",
-        "name": "Pages Turning",
-        "inspectText": "Pages Turning repeats near 5:40."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series41-The-Ghost-Road/chapter05.md",
-      "novel": "generated/novels/Series41-The-Ghost-Road/chapter05.md",
-      "song": "generated/songs/Series41-The-Ghost-Road/song05.md"
     }
   },
   "story": {

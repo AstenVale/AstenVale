@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the ravine",
-      "ravine",
-      "theravine"
-    ],
-    "object": [
-      "flask"
-    ],
-    "witness": [
-      "ferryman"
-    ],
-    "time": [
-      "4:12",
-      "412"
-    ],
-    "marker": [
-      "3652",
-      "marker 3652",
-      "road marker 3652",
-      "mile marker 3652",
-      "mile 3652"
-    ],
-    "direction": [
-      "west"
-    ],
-    "sound": [
-      "hammer on anvil",
-      "hammeronanvil"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S36C06",
-    "puzzleId": "S36C06-marker-lock",
-    "dialogueId": "S36C06-ferryman",
-    "locationId": "the-ravine",
-    "objective": "Investigate The Ravine, question Ferryman, recover Flask, and learn why marker 3652 is tied to Voice Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Ravine.",
-        "clue": "Hammer on Anvil"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Flask.",
-        "clue": "Flask"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Ferryman.",
-        "clue": "4:12"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3652.",
-        "clue": "3652"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the West instruction.",
-        "clue": "West"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S36C06-location",
-        "type": "location",
-        "name": "The Ravine",
-        "inspectText": "The Ravine looks ordinary until Hammer on Anvil moves through it."
-      },
-      {
-        "id": "S36C06-object",
-        "type": "evidence",
-        "name": "Flask",
-        "inspectText": "Flask is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S36C06-marker",
-        "type": "marker",
-        "name": "Marker 3652",
-        "inspectText": "Marker 3652 is not the answer. It is the lock."
-      },
-      {
-        "id": "S36C06-sound",
-        "type": "audio_clue",
-        "name": "Hammer on Anvil",
-        "inspectText": "Hammer on Anvil repeats near 4:12."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series36-The-Night-Caller/chapter06.md",
-      "novel": "generated/novels/Series36-The-Night-Caller/chapter06.md",
-      "song": "generated/songs/Series36-The-Night-Caller/song06.md"
     }
   },
   "story": {

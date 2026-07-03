@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "ash hollow",
-      "ashhollow"
-    ],
-    "object": [
-      "pocket watch",
-      "pocketwatch"
-    ],
-    "witness": [
-      "fisherman"
-    ],
-    "time": [
-      "6:45",
-      "645"
-    ],
-    "marker": [
-      "1706",
-      "marker 1706",
-      "road marker 1706",
-      "mile marker 1706",
-      "mile 1706"
-    ],
-    "direction": [
-      "left"
-    ],
-    "sound": [
-      "empty wagon",
-      "emptywagon"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S16C12",
-    "puzzleId": "S16C12-marker-lock",
-    "dialogueId": "S16C12-fisherman",
-    "locationId": "ash-hollow",
-    "objective": "Investigate Ash Hollow, question Fisherman, recover Pocket Watch, and learn why marker 1706 is tied to Transparent Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Ash Hollow.",
-        "clue": "Empty Wagon"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Pocket Watch.",
-        "clue": "Pocket Watch"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Fisherman.",
-        "clue": "6:45"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1706.",
-        "clue": "1706"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Left instruction.",
-        "clue": "Left"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S16C12-location",
-        "type": "location",
-        "name": "Ash Hollow",
-        "inspectText": "Ash Hollow looks ordinary until Empty Wagon moves through it."
-      },
-      {
-        "id": "S16C12-object",
-        "type": "evidence",
-        "name": "Pocket Watch",
-        "inspectText": "Pocket Watch is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S16C12-marker",
-        "type": "marker",
-        "name": "Marker 1706",
-        "inspectText": "Marker 1706 is not the answer. It is the lock."
-      },
-      {
-        "id": "S16C12-sound",
-        "type": "audio_clue",
-        "name": "Empty Wagon",
-        "inspectText": "Empty Wagon repeats near 6:45."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series16-The-Glass-House/chapter12.md",
-      "novel": "generated/novels/Series16-The-Glass-House/chapter12.md",
-      "song": "generated/songs/Series16-The-Glass-House/song12.md"
     }
   },
   "story": {

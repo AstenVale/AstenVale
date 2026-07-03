@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "ash creek",
-      "ashcreek"
-    ],
-    "object": [
-      "rusted key",
-      "rustedkey"
-    ],
-    "witness": [
-      "sheriff"
-    ],
-    "time": [
-      "11:17",
-      "1117"
-    ],
-    "marker": [
-      "43",
-      "marker 43",
-      "road marker 43",
-      "mile marker 43",
-      "mile 43"
-    ],
-    "direction": [
-      "west"
-    ],
-    "sound": [
-      "crow call",
-      "crowcall"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S01C03",
-    "puzzleId": "S01C03-marker-lock",
-    "dialogueId": "S01C03-sheriff",
-    "locationId": "ash-creek",
-    "objective": "Investigate Ash Creek, question Sheriff, recover Rusted Key, and learn why marker 43 is tied to Public Archive.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Ash Creek.",
-        "clue": "Crow Call"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Rusted Key.",
-        "clue": "Rusted Key"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Sheriff.",
-        "clue": "11:17"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 43.",
-        "clue": "43"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the West instruction.",
-        "clue": "West"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S01C03-location",
-        "type": "location",
-        "name": "Ash Creek",
-        "inspectText": "Ash Creek looks ordinary until Crow Call moves through it."
-      },
-      {
-        "id": "S01C03-object",
-        "type": "evidence",
-        "name": "Rusted Key",
-        "inspectText": "Rusted Key is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S01C03-marker",
-        "type": "marker",
-        "name": "Marker 43",
-        "inspectText": "Marker 43 is not the answer. It is the lock."
-      },
-      {
-        "id": "S01C03-sound",
-        "type": "audio_clue",
-        "name": "Crow Call",
-        "inspectText": "Crow Call repeats near 11:17."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series01-The-Stranger/chapter03.md",
-      "novel": "generated/novels/Series01-The-Stranger/chapter03.md",
-      "song": "generated/songs/Series01-The-Stranger/song03.md"
     }
   },
   "story": {

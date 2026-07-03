@@ -61,39 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the weir",
-      "weir",
-      "theweir"
-    ],
-    "object": [
-      "ship manifest",
-      "shipmanifest"
-    ],
-    "witness": [
-      "wainwright"
-    ],
-    "time": [
-      "5:13",
-      "513"
-    ],
-    "marker": [
-      "4343",
-      "marker 4343",
-      "road marker 4343",
-      "mile marker 4343",
-      "mile 4343"
-    ],
-    "direction": [
-      "back the way you came",
-      "backthewayyoucame"
-    ],
-    "sound": [
-      "mud suction",
-      "mudsuction"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -302,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S43C05",
-    "puzzleId": "S43C05-marker-lock",
-    "dialogueId": "S43C05-wainwright",
-    "locationId": "the-weir",
-    "objective": "Investigate The Weir, question Wainwright, recover Ship Manifest, and learn why marker 4343 is tied to Identity Vault II.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Weir.",
-        "clue": "Mud Suction"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Ship Manifest.",
-        "clue": "Ship Manifest"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Wainwright.",
-        "clue": "5:13"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4343.",
-        "clue": "4343"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Back the Way You Came instruction.",
-        "clue": "Back the Way You Came"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S43C05-location",
-        "type": "location",
-        "name": "The Weir",
-        "inspectText": "The Weir looks ordinary until Mud Suction moves through it."
-      },
-      {
-        "id": "S43C05-object",
-        "type": "evidence",
-        "name": "Ship Manifest",
-        "inspectText": "Ship Manifest is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S43C05-marker",
-        "type": "marker",
-        "name": "Marker 4343",
-        "inspectText": "Marker 4343 is not the answer. It is the lock."
-      },
-      {
-        "id": "S43C05-sound",
-        "type": "audio_clue",
-        "name": "Mud Suction",
-        "inspectText": "Mud Suction repeats near 5:13."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series43-The-False-Name/chapter05.md",
-      "novel": "generated/novels/Series43-The-False-Name/chapter05.md",
-      "song": "generated/songs/Series43-The-False-Name/song05.md"
     }
   },
   "story": {

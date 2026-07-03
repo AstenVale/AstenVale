@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "quarry edge",
-      "quarryedge"
-    ],
-    "object": [
-      "telegram"
-    ],
-    "witness": [
-      "cartographer"
-    ],
-    "time": [
-      "9:44",
-      "944"
-    ],
-    "marker": [
-      "2888",
-      "marker 2888",
-      "road marker 2888",
-      "mile marker 2888",
-      "mile 2888"
-    ],
-    "direction": [
-      "up the ridge",
-      "uptheridge"
-    ],
-    "sound": [
-      "crow on wire",
-      "crowonwire"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S28C10",
-    "puzzleId": "S28C10-marker-lock",
-    "dialogueId": "S28C10-cartographer",
-    "locationId": "quarry-edge",
-    "objective": "Investigate Quarry Edge, question Cartographer, recover Telegram, and learn why marker 2888 is tied to Frequency Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Quarry Edge.",
-        "clue": "Crow on Wire"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Telegram.",
-        "clue": "Telegram"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Cartographer.",
-        "clue": "9:44"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2888.",
-        "clue": "2888"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Up the Ridge instruction.",
-        "clue": "Up the Ridge"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S28C10-location",
-        "type": "location",
-        "name": "Quarry Edge",
-        "inspectText": "Quarry Edge looks ordinary until Crow on Wire moves through it."
-      },
-      {
-        "id": "S28C10-object",
-        "type": "evidence",
-        "name": "Telegram",
-        "inspectText": "Telegram is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S28C10-marker",
-        "type": "marker",
-        "name": "Marker 2888",
-        "inspectText": "Marker 2888 is not the answer. It is the lock."
-      },
-      {
-        "id": "S28C10-sound",
-        "type": "audio_clue",
-        "name": "Crow on Wire",
-        "inspectText": "Crow on Wire repeats near 9:44."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series28-The-Buried-Signal/chapter10.md",
-      "novel": "generated/novels/Series28-The-Buried-Signal/chapter10.md",
-      "song": "generated/songs/Series28-The-Buried-Signal/song10.md"
     }
   },
   "story": {

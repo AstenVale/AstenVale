@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the weir",
-      "weir",
-      "theweir"
-    ],
-    "object": [
-      "watch"
-    ],
-    "witness": [
-      "deputy"
-    ],
-    "time": [
-      "9:55",
-      "955"
-    ],
-    "marker": [
-      "2607",
-      "marker 2607",
-      "road marker 2607",
-      "mile marker 2607",
-      "mile 2607"
-    ],
-    "direction": [
-      "left"
-    ],
-    "sound": [
-      "shutter bang",
-      "shutterbang"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -310,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S26C01",
-    "puzzleId": "S26C01-marker-lock",
-    "dialogueId": "S26C01-deputy",
-    "locationId": "the-weir",
-    "objective": "Investigate The Weir, question Deputy, recover Watch, and learn why marker 2607 is tied to Threshold Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Weir.",
-        "clue": "Shutter Bang"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Watch.",
-        "clue": "Watch"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Deputy.",
-        "clue": "9:55"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2607.",
-        "clue": "2607"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Left instruction.",
-        "clue": "Left"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S26C01-location",
-        "type": "location",
-        "name": "The Weir",
-        "inspectText": "The Weir looks ordinary until Shutter Bang moves through it."
-      },
-      {
-        "id": "S26C01-object",
-        "type": "evidence",
-        "name": "Watch",
-        "inspectText": "Watch is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S26C01-marker",
-        "type": "marker",
-        "name": "Marker 2607",
-        "inspectText": "Marker 2607 is not the answer. It is the lock."
-      },
-      {
-        "id": "S26C01-sound",
-        "type": "audio_clue",
-        "name": "Shutter Bang",
-        "inspectText": "Shutter Bang repeats near 9:55."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series26-The-Red-Door/chapter01.md",
-      "novel": "generated/novels/Series26-The-Red-Door/chapter01.md",
-      "song": "generated/songs/Series26-The-Red-Door/song01.md"
     }
   },
   "story": {

@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "smithy"
-    ],
-    "object": [
-      "lock of hair",
-      "lockofhair"
-    ],
-    "witness": [
-      "driver"
-    ],
-    "time": [
-      "5:55",
-      "555"
-    ],
-    "marker": [
-      "1707",
-      "marker 1707",
-      "road marker 1707",
-      "mile marker 1707",
-      "mile 1707"
-    ],
-    "direction": [
-      "around"
-    ],
-    "sound": [
-      "crow wings",
-      "crowwings"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -309,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S17C01",
-    "puzzleId": "S17C01-marker-lock",
-    "dialogueId": "S17C01-driver",
-    "locationId": "smithy",
-    "objective": "Investigate Smithy, question Driver, recover Lock of Hair, and learn why marker 1707 is tied to Frost Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Smithy.",
-        "clue": "Crow Wings"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Lock of Hair.",
-        "clue": "Lock of Hair"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Driver.",
-        "clue": "5:55"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1707.",
-        "clue": "1707"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Around instruction.",
-        "clue": "Around"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S17C01-location",
-        "type": "location",
-        "name": "Smithy",
-        "inspectText": "Smithy looks ordinary until Crow Wings moves through it."
-      },
-      {
-        "id": "S17C01-object",
-        "type": "evidence",
-        "name": "Lock of Hair",
-        "inspectText": "Lock of Hair is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S17C01-marker",
-        "type": "marker",
-        "name": "Marker 1707",
-        "inspectText": "Marker 1707 is not the answer. It is the lock."
-      },
-      {
-        "id": "S17C01-sound",
-        "type": "audio_clue",
-        "name": "Crow Wings",
-        "inspectText": "Crow Wings repeats near 5:55."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series17-The-Cold-Season/chapter01.md",
-      "novel": "generated/novels/Series17-The-Cold-Season/chapter01.md",
-      "song": "generated/songs/Series17-The-Cold-Season/song01.md"
     }
   },
   "story": {

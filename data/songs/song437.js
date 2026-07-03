@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "quarry edge",
-      "quarryedge"
-    ],
-    "object": [
-      "matchbook"
-    ],
-    "witness": [
-      "circuit rider",
-      "circuitrider"
-    ],
-    "time": [
-      "5:13",
-      "513"
-    ],
-    "marker": [
-      "3743",
-      "marker 3743",
-      "road marker 3743",
-      "mile marker 3743",
-      "mile 3743"
-    ],
-    "direction": [
-      "west"
-    ],
-    "sound": [
-      "river water",
-      "riverwater"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S37C05",
-    "puzzleId": "S37C05-marker-lock",
-    "dialogueId": "S37C05-circuit-rider",
-    "locationId": "quarry-edge",
-    "objective": "Investigate Quarry Edge, question Circuit Rider, recover Matchbook, and learn why marker 3743 is tied to Outpost Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Quarry Edge.",
-        "clue": "River Water"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Matchbook.",
-        "clue": "Matchbook"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Circuit Rider.",
-        "clue": "5:13"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3743.",
-        "clue": "3743"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the West instruction.",
-        "clue": "West"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S37C05-location",
-        "type": "location",
-        "name": "Quarry Edge",
-        "inspectText": "Quarry Edge looks ordinary until River Water moves through it."
-      },
-      {
-        "id": "S37C05-object",
-        "type": "evidence",
-        "name": "Matchbook",
-        "inspectText": "Matchbook is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S37C05-marker",
-        "type": "marker",
-        "name": "Marker 3743",
-        "inspectText": "Marker 3743 is not the answer. It is the lock."
-      },
-      {
-        "id": "S37C05-sound",
-        "type": "audio_clue",
-        "name": "River Water",
-        "inspectText": "River Water repeats near 5:13."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series37-The-Abandoned-Post/chapter05.md",
-      "novel": "generated/novels/Series37-The-Abandoned-Post/chapter05.md",
-      "song": "generated/songs/Series37-The-Abandoned-Post/song05.md"
     }
   },
   "story": {

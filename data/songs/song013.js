@@ -61,35 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "church"
-    ],
-    "object": [
-      "wedding ring",
-      "weddingring"
-    ],
-    "witness": [
-      "preacher"
-    ],
-    "time": [
-      "6:45",
-      "645"
-    ],
-    "marker": [
-      "110",
-      "marker 110",
-      "road marker 110",
-      "mile marker 110",
-      "mile 110"
-    ],
-    "direction": [
-      "north"
-    ],
-    "sound": [
-      "bells"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -309,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S02C01",
-    "puzzleId": "S02C01-marker-lock",
-    "dialogueId": "S02C01-preacher",
-    "locationId": "church",
-    "objective": "Investigate Church, question Preacher, recover Wedding Ring, and learn why marker 110 is tied to Personal Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Church.",
-        "clue": "Bells"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Wedding Ring.",
-        "clue": "Wedding Ring"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Preacher.",
-        "clue": "6:45"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 110.",
-        "clue": "110"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the North instruction.",
-        "clue": "North"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S02C01-location",
-        "type": "location",
-        "name": "Church",
-        "inspectText": "Church looks ordinary until Bells moves through it."
-      },
-      {
-        "id": "S02C01-object",
-        "type": "evidence",
-        "name": "Wedding Ring",
-        "inspectText": "Wedding Ring is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S02C01-marker",
-        "type": "marker",
-        "name": "Marker 110",
-        "inspectText": "Marker 110 is not the answer. It is the lock."
-      },
-      {
-        "id": "S02C01-sound",
-        "type": "audio_clue",
-        "name": "Bells",
-        "inspectText": "Bells repeats near 6:45."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series02-The-Before/chapter01.md",
-      "novel": "generated/novels/Series02-The-Before/chapter01.md",
-      "song": "generated/songs/Series02-The-Before/song01.md"
     }
   },
   "story": {

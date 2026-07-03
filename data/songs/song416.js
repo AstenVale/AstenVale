@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "mill house",
-      "millhouse"
-    ],
-    "object": [
-      "torn map",
-      "tornmap"
-    ],
-    "witness": [
-      "undertaker"
-    ],
-    "time": [
-      "3:49",
-      "349"
-    ],
-    "marker": [
-      "3570",
-      "marker 3570",
-      "road marker 3570",
-      "mile marker 3570",
-      "mile 3570"
-    ],
-    "direction": [
-      "ahead"
-    ],
-    "sound": [
-      "wind in pines",
-      "windinpines"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -310,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S35C08",
-    "puzzleId": "S35C08-marker-lock",
-    "dialogueId": "S35C08-undertaker",
-    "locationId": "mill-house",
-    "objective": "Investigate Mill House, question Undertaker, recover Torn Map, and learn why marker 3570 is tied to Collection Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Mill House.",
-        "clue": "Wind in Pines"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Torn Map.",
-        "clue": "Torn Map"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Undertaker.",
-        "clue": "3:49"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3570.",
-        "clue": "3570"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Ahead instruction.",
-        "clue": "Ahead"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S35C08-location",
-        "type": "location",
-        "name": "Mill House",
-        "inspectText": "Mill House looks ordinary until Wind in Pines moves through it."
-      },
-      {
-        "id": "S35C08-object",
-        "type": "evidence",
-        "name": "Torn Map",
-        "inspectText": "Torn Map is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S35C08-marker",
-        "type": "marker",
-        "name": "Marker 3570",
-        "inspectText": "Marker 3570 is not the answer. It is the lock."
-      },
-      {
-        "id": "S35C08-sound",
-        "type": "audio_clue",
-        "name": "Wind in Pines",
-        "inspectText": "Wind in Pines repeats near 3:49."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series35-The-Archive-Keeper/chapter08.md",
-      "novel": "generated/novels/Series35-The-Archive-Keeper/chapter08.md",
-      "song": "generated/songs/Series35-The-Archive-Keeper/song08.md"
     }
   },
   "story": {

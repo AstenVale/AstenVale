@@ -61,35 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "saloon"
-    ],
-    "object": [
-      "receipt"
-    ],
-    "witness": [
-      "apothecary"
-    ],
-    "time": [
-      "10:51",
-      "1051"
-    ],
-    "marker": [
-      "1034",
-      "marker 1034",
-      "road marker 1034",
-      "mile marker 1034",
-      "mile 1034"
-    ],
-    "direction": [
-      "west"
-    ],
-    "sound": [
-      "lid of a tin",
-      "lidofatin"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -298,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S10C04",
-    "puzzleId": "S10C04-marker-lock",
-    "dialogueId": "S10C04-apothecary",
-    "locationId": "saloon",
-    "objective": "Investigate Saloon, question Apothecary, recover Receipt, and learn why marker 1034 is tied to Lost Mile Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Saloon.",
-        "clue": "Lid of a Tin"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Receipt.",
-        "clue": "Receipt"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Apothecary.",
-        "clue": "10:51"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1034.",
-        "clue": "1034"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the West instruction.",
-        "clue": "West"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S10C04-location",
-        "type": "location",
-        "name": "Saloon",
-        "inspectText": "Saloon looks ordinary until Lid of a Tin moves through it."
-      },
-      {
-        "id": "S10C04-object",
-        "type": "evidence",
-        "name": "Receipt",
-        "inspectText": "Receipt is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S10C04-marker",
-        "type": "marker",
-        "name": "Marker 1034",
-        "inspectText": "Marker 1034 is not the answer. It is the lock."
-      },
-      {
-        "id": "S10C04-sound",
-        "type": "audio_clue",
-        "name": "Lid of a Tin",
-        "inspectText": "Lid of a Tin repeats near 10:51."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series10-The-Forgotten-Road/chapter04.md",
-      "novel": "generated/novels/Series10-The-Forgotten-Road/chapter04.md",
-      "song": "generated/songs/Series10-The-Forgotten-Road/song04.md"
     }
   },
   "story": {

@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "print shop",
-      "printshop"
-    ],
-    "object": [
-      "pocket watch",
-      "pocketwatch"
-    ],
-    "witness": [
-      "lamplighter"
-    ],
-    "time": [
-      "5:09",
-      "509"
-    ],
-    "marker": [
-      "2207",
-      "marker 2207",
-      "road marker 2207",
-      "mile marker 2207",
-      "mile 2207"
-    ],
-    "direction": [
-      "forward"
-    ],
-    "sound": [
-      "crow wings",
-      "crowwings"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -310,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S22C01",
-    "puzzleId": "S22C01-marker-lock",
-    "dialogueId": "S22C01-lamplighter",
-    "locationId": "print-shop",
-    "objective": "Investigate Print Shop, question Lamplighter, recover Pocket Watch, and learn why marker 2207 is tied to Excavation Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Print Shop.",
-        "clue": "Crow Wings"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Pocket Watch.",
-        "clue": "Pocket Watch"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Lamplighter.",
-        "clue": "5:09"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2207.",
-        "clue": "2207"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Forward instruction.",
-        "clue": "Forward"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S22C01-location",
-        "type": "location",
-        "name": "Print Shop",
-        "inspectText": "Print Shop looks ordinary until Crow Wings moves through it."
-      },
-      {
-        "id": "S22C01-object",
-        "type": "evidence",
-        "name": "Pocket Watch",
-        "inspectText": "Pocket Watch is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S22C01-marker",
-        "type": "marker",
-        "name": "Marker 2207",
-        "inspectText": "Marker 2207 is not the answer. It is the lock."
-      },
-      {
-        "id": "S22C01-sound",
-        "type": "audio_clue",
-        "name": "Crow Wings",
-        "inspectText": "Crow Wings repeats near 5:09."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series22-The-Bone-Road/chapter01.md",
-      "novel": "generated/novels/Series22-The-Bone-Road/chapter01.md",
-      "song": "generated/songs/Series22-The-Bone-Road/song01.md"
     }
   },
   "story": {

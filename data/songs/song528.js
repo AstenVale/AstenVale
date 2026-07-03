@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the widow's porch",
-      "widow's porch",
-      "thewidow'sporch"
-    ],
-    "object": [
-      "bent nail",
-      "bentnail"
-    ],
-    "witness": [
-      "typesetter"
-    ],
-    "time": [
-      "5:13",
-      "513"
-    ],
-    "marker": [
-      "4506",
-      "marker 4506",
-      "road marker 4506",
-      "mile marker 4506",
-      "mile 4506"
-    ],
-    "direction": [
-      "nowhere"
-    ],
-    "sound": [
-      "horse hooves",
-      "horsehooves"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S44C12",
-    "puzzleId": "S44C12-marker-lock",
-    "dialogueId": "S44C12-typesetter",
-    "locationId": "the-widow-s-porch",
-    "objective": "Investigate The Widow's Porch, question Typesetter, recover Bent Nail, and learn why marker 4506 is tied to Parallel Case Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Widow's Porch.",
-        "clue": "Horse Hooves"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Bent Nail.",
-        "clue": "Bent Nail"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Typesetter.",
-        "clue": "5:13"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4506.",
-        "clue": "4506"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Nowhere instruction.",
-        "clue": "Nowhere"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S44C12-location",
-        "type": "location",
-        "name": "The Widow's Porch",
-        "inspectText": "The Widow's Porch looks ordinary until Horse Hooves moves through it."
-      },
-      {
-        "id": "S44C12-object",
-        "type": "evidence",
-        "name": "Bent Nail",
-        "inspectText": "Bent Nail is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S44C12-marker",
-        "type": "marker",
-        "name": "Marker 4506",
-        "inspectText": "Marker 4506 is not the answer. It is the lock."
-      },
-      {
-        "id": "S44C12-sound",
-        "type": "audio_clue",
-        "name": "Horse Hooves",
-        "inspectText": "Horse Hooves repeats near 5:13."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series44-The-Mirror-Case/chapter12.md",
-      "novel": "generated/novels/Series44-The-Mirror-Case/chapter12.md",
-      "song": "generated/songs/Series44-The-Mirror-Case/song12.md"
     }
   },
   "story": {

@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "candlemaker's alley",
-      "candlemaker'salley"
-    ],
-    "object": [
-      "pipe"
-    ],
-    "witness": [
-      "librarian"
-    ],
-    "time": [
-      "8:17",
-      "817"
-    ],
-    "marker": [
-      "1761",
-      "marker 1761",
-      "road marker 1761",
-      "mile marker 1761",
-      "mile 1761"
-    ],
-    "direction": [
-      "down the hollow",
-      "downthehollow"
-    ],
-    "sound": [
-      "forge breath",
-      "forgebreath"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -310,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S17C07",
-    "puzzleId": "S17C07-marker-lock",
-    "dialogueId": "S17C07-librarian",
-    "locationId": "candlemaker-s-alley",
-    "objective": "Investigate Candlemaker's Alley, question Librarian, recover Pipe, and learn why marker 1761 is tied to Frost Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Candlemaker's Alley.",
-        "clue": "Forge Breath"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Pipe.",
-        "clue": "Pipe"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Librarian.",
-        "clue": "8:17"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1761.",
-        "clue": "1761"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Down the Hollow instruction.",
-        "clue": "Down the Hollow"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S17C07-location",
-        "type": "location",
-        "name": "Candlemaker's Alley",
-        "inspectText": "Candlemaker's Alley looks ordinary until Forge Breath moves through it."
-      },
-      {
-        "id": "S17C07-object",
-        "type": "evidence",
-        "name": "Pipe",
-        "inspectText": "Pipe is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S17C07-marker",
-        "type": "marker",
-        "name": "Marker 1761",
-        "inspectText": "Marker 1761 is not the answer. It is the lock."
-      },
-      {
-        "id": "S17C07-sound",
-        "type": "audio_clue",
-        "name": "Forge Breath",
-        "inspectText": "Forge Breath repeats near 8:17."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series17-The-Cold-Season/chapter07.md",
-      "novel": "generated/novels/Series17-The-Cold-Season/chapter07.md",
-      "song": "generated/songs/Series17-The-Cold-Season/song07.md"
     }
   },
   "story": {

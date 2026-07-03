@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the quarry pool",
-      "quarry pool",
-      "thequarrypool"
-    ],
-    "object": [
-      "spectacles"
-    ],
-    "witness": [
-      "fence mender",
-      "fencemender"
-    ],
-    "time": [
-      "12:00",
-      "1200"
-    ],
-    "marker": [
-      "3816",
-      "marker 3816",
-      "road marker 3816",
-      "mile marker 3816",
-      "mile 3816"
-    ],
-    "direction": [
-      "under"
-    ],
-    "sound": [
-      "old hinge",
-      "oldhinge"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -301,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S38C02",
-    "puzzleId": "S38C02-marker-lock",
-    "dialogueId": "S38C02-fence-mender",
-    "locationId": "the-quarry-pool",
-    "objective": "Investigate The Quarry Pool, question Fence Mender, recover Spectacles, and learn why marker 3816 is tied to Beacon Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Quarry Pool.",
-        "clue": "Old Hinge"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Spectacles.",
-        "clue": "Spectacles"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Fence Mender.",
-        "clue": "12:00"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3816.",
-        "clue": "3816"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Under instruction.",
-        "clue": "Under"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S38C02-location",
-        "type": "location",
-        "name": "The Quarry Pool",
-        "inspectText": "The Quarry Pool looks ordinary until Old Hinge moves through it."
-      },
-      {
-        "id": "S38C02-object",
-        "type": "evidence",
-        "name": "Spectacles",
-        "inspectText": "Spectacles is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S38C02-marker",
-        "type": "marker",
-        "name": "Marker 3816",
-        "inspectText": "Marker 3816 is not the answer. It is the lock."
-      },
-      {
-        "id": "S38C02-sound",
-        "type": "audio_clue",
-        "name": "Old Hinge",
-        "inspectText": "Old Hinge repeats near 12:00."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series38-The-Signal-Fire/chapter02.md",
-      "novel": "generated/novels/Series38-The-Signal-Fire/chapter02.md",
-      "song": "generated/songs/Series38-The-Signal-Fire/song02.md"
     }
   },
   "story": {

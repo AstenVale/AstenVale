@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "east field",
-      "eastfield"
-    ],
-    "object": [
-      "compass"
-    ],
-    "witness": [
-      "ferryman"
-    ],
-    "time": [
-      "3:17",
-      "317"
-    ],
-    "marker": [
-      "2797",
-      "marker 2797",
-      "road marker 2797",
-      "mile marker 2797",
-      "mile 2797"
-    ],
-    "direction": [
-      "home"
-    ],
-    "sound": [
-      "paper rustle",
-      "paperrustle"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -299,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S27C11",
-    "puzzleId": "S27C11-marker-lock",
-    "dialogueId": "S27C11-ferryman",
-    "locationId": "east-field",
-    "objective": "Investigate East Field, question Ferryman, recover Compass, and learn why marker 2797 is tied to Expanse Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter East Field.",
-        "clue": "Paper Rustle"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Compass.",
-        "clue": "Compass"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Ferryman.",
-        "clue": "3:17"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2797.",
-        "clue": "2797"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Home instruction.",
-        "clue": "Home"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S27C11-location",
-        "type": "location",
-        "name": "East Field",
-        "inspectText": "East Field looks ordinary until Paper Rustle moves through it."
-      },
-      {
-        "id": "S27C11-object",
-        "type": "evidence",
-        "name": "Compass",
-        "inspectText": "Compass is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S27C11-marker",
-        "type": "marker",
-        "name": "Marker 2797",
-        "inspectText": "Marker 2797 is not the answer. It is the lock."
-      },
-      {
-        "id": "S27C11-sound",
-        "type": "audio_clue",
-        "name": "Paper Rustle",
-        "inspectText": "Paper Rustle repeats near 3:17."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series27-The-Salt-Flats/chapter11.md",
-      "novel": "generated/novels/Series27-The-Salt-Flats/chapter11.md",
-      "song": "generated/songs/Series27-The-Salt-Flats/song11.md"
     }
   },
   "story": {

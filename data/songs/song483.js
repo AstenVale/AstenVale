@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the narrow road",
-      "narrow road",
-      "thenarrowroad"
-    ],
-    "object": [
-      "charred paper",
-      "charredpaper"
-    ],
-    "witness": [
-      "fisherman"
-    ],
-    "time": [
-      "11:03",
-      "1103"
-    ],
-    "marker": [
-      "4125",
-      "marker 4125",
-      "road marker 4125",
-      "mile marker 4125",
-      "mile 4125"
-    ],
-    "direction": [
-      "right"
-    ],
-    "sound": [
-      "lock click",
-      "lockclick"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -301,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S41C03",
-    "puzzleId": "S41C03-marker-lock",
-    "dialogueId": "S41C03-fisherman",
-    "locationId": "the-narrow-road",
-    "objective": "Investigate The Narrow Road, question Fisherman, recover Charred Paper, and learn why marker 4125 is tied to Phantom Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Narrow Road.",
-        "clue": "Lock Click"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Charred Paper.",
-        "clue": "Charred Paper"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Fisherman.",
-        "clue": "11:03"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4125.",
-        "clue": "4125"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Right instruction.",
-        "clue": "Right"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S41C03-location",
-        "type": "location",
-        "name": "The Narrow Road",
-        "inspectText": "The Narrow Road looks ordinary until Lock Click moves through it."
-      },
-      {
-        "id": "S41C03-object",
-        "type": "evidence",
-        "name": "Charred Paper",
-        "inspectText": "Charred Paper is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S41C03-marker",
-        "type": "marker",
-        "name": "Marker 4125",
-        "inspectText": "Marker 4125 is not the answer. It is the lock."
-      },
-      {
-        "id": "S41C03-sound",
-        "type": "audio_clue",
-        "name": "Lock Click",
-        "inspectText": "Lock Click repeats near 11:03."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series41-The-Ghost-Road/chapter03.md",
-      "novel": "generated/novels/Series41-The-Ghost-Road/chapter03.md",
-      "song": "generated/songs/Series41-The-Ghost-Road/song03.md"
     }
   },
   "story": {

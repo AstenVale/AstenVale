@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "loom house",
-      "loomhouse"
-    ],
-    "object": [
-      "telegram"
-    ],
-    "witness": [
-      "night watchman",
-      "nightwatchman"
-    ],
-    "time": [
-      "7:02",
-      "702"
-    ],
-    "marker": [
-      "607",
-      "marker 607",
-      "road marker 607",
-      "mile marker 607",
-      "mile 607"
-    ],
-    "direction": [
-      "further in",
-      "furtherin"
-    ],
-    "sound": [
-      "rain"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S06C01",
-    "puzzleId": "S06C01-marker-lock",
-    "dialogueId": "S06C01-night-watchman",
-    "locationId": "loom-house",
-    "objective": "Investigate Loom House, question Night Watchman, recover Telegram, and learn why marker 607 is tied to Below Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Loom House.",
-        "clue": "Rain"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Telegram.",
-        "clue": "Telegram"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Night Watchman.",
-        "clue": "7:02"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 607.",
-        "clue": "607"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Further In instruction.",
-        "clue": "Further In"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S06C01-location",
-        "type": "location",
-        "name": "Loom House",
-        "inspectText": "Loom House looks ordinary until Rain moves through it."
-      },
-      {
-        "id": "S06C01-object",
-        "type": "evidence",
-        "name": "Telegram",
-        "inspectText": "Telegram is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S06C01-marker",
-        "type": "marker",
-        "name": "Marker 607",
-        "inspectText": "Marker 607 is not the answer. It is the lock."
-      },
-      {
-        "id": "S06C01-sound",
-        "type": "audio_clue",
-        "name": "Rain",
-        "inspectText": "Rain repeats near 7:02."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series06-The-Underground/chapter01.md",
-      "novel": "generated/novels/Series06-The-Underground/chapter01.md",
-      "song": "generated/songs/Series06-The-Underground/song01.md"
     }
   },
   "story": {

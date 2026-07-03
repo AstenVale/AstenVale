@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "brick kiln",
-      "brickkiln"
-    ],
-    "object": [
-      "ship manifest",
-      "shipmanifest"
-    ],
-    "witness": [
-      "station master",
-      "stationmaster"
-    ],
-    "time": [
-      "4:47",
-      "447"
-    ],
-    "marker": [
-      "3925",
-      "marker 3925",
-      "road marker 3925",
-      "mile marker 3925",
-      "mile 3925"
-    ],
-    "direction": [
-      "through"
-    ],
-    "sound": [
-      "lock click",
-      "lockclick"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S39C03",
-    "puzzleId": "S39C03-marker-lock",
-    "dialogueId": "S39C03-station-master",
-    "locationId": "brick-kiln",
-    "objective": "Investigate Brick Kiln, question Station Master, recover Ship Manifest, and learn why marker 3925 is tied to Rider Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Brick Kiln.",
-        "clue": "Lock Click"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Ship Manifest.",
-        "clue": "Ship Manifest"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Station Master.",
-        "clue": "4:47"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3925.",
-        "clue": "3925"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Through instruction.",
-        "clue": "Through"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S39C03-location",
-        "type": "location",
-        "name": "Brick Kiln",
-        "inspectText": "Brick Kiln looks ordinary until Lock Click moves through it."
-      },
-      {
-        "id": "S39C03-object",
-        "type": "evidence",
-        "name": "Ship Manifest",
-        "inspectText": "Ship Manifest is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S39C03-marker",
-        "type": "marker",
-        "name": "Marker 3925",
-        "inspectText": "Marker 3925 is not the answer. It is the lock."
-      },
-      {
-        "id": "S39C03-sound",
-        "type": "audio_clue",
-        "name": "Lock Click",
-        "inspectText": "Lock Click repeats near 4:47."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series39-The-Pale-Horse/chapter03.md",
-      "novel": "generated/novels/Series39-The-Pale-Horse/chapter03.md",
-      "song": "generated/songs/Series39-The-Pale-Horse/song03.md"
     }
   },
   "story": {

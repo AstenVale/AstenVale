@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "north gate",
-      "northgate"
-    ],
-    "object": [
-      "dried blood on cloth",
-      "driedbloodoncloth"
-    ],
-    "witness": [
-      "blacksmith"
-    ],
-    "time": [
-      "8:33",
-      "833"
-    ],
-    "marker": [
-      "1252",
-      "marker 1252",
-      "road marker 1252",
-      "mile marker 1252",
-      "mile 1252"
-    ],
-    "direction": [
-      "straight down",
-      "straightdown"
-    ],
-    "sound": [
-      "footsteps"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S12C06",
-    "puzzleId": "S12C06-marker-lock",
-    "dialogueId": "S12C06-blacksmith",
-    "locationId": "north-gate",
-    "objective": "Investigate North Gate, question Blacksmith, recover Dried Blood on Cloth, and learn why marker 1252 is tied to Estate Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter North Gate.",
-        "clue": "Footsteps"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Dried Blood on Cloth.",
-        "clue": "Dried Blood on Cloth"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Blacksmith.",
-        "clue": "8:33"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1252.",
-        "clue": "1252"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Straight Down instruction.",
-        "clue": "Straight Down"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S12C06-location",
-        "type": "location",
-        "name": "North Gate",
-        "inspectText": "North Gate looks ordinary until Footsteps moves through it."
-      },
-      {
-        "id": "S12C06-object",
-        "type": "evidence",
-        "name": "Dried Blood on Cloth",
-        "inspectText": "Dried Blood on Cloth is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S12C06-marker",
-        "type": "marker",
-        "name": "Marker 1252",
-        "inspectText": "Marker 1252 is not the answer. It is the lock."
-      },
-      {
-        "id": "S12C06-sound",
-        "type": "audio_clue",
-        "name": "Footsteps",
-        "inspectText": "Footsteps repeats near 8:33."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series12-The-Inheritance/chapter06.md",
-      "novel": "generated/novels/Series12-The-Inheritance/chapter06.md",
-      "song": "generated/songs/Series12-The-Inheritance/song06.md"
     }
   },
   "story": {

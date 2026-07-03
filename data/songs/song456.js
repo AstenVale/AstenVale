@@ -61,35 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "diner"
-    ],
-    "object": [
-      "pipe"
-    ],
-    "witness": [
-      "retired soldier",
-      "retiredsoldier"
-    ],
-    "time": [
-      "1:26",
-      "126"
-    ],
-    "marker": [
-      "3906",
-      "marker 3906",
-      "road marker 3906",
-      "mile marker 3906",
-      "mile 3906"
-    ],
-    "direction": [
-      "down"
-    ],
-    "sound": [
-      "breathing"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -309,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S38C12",
-    "puzzleId": "S38C12-marker-lock",
-    "dialogueId": "S38C12-retired-soldier",
-    "locationId": "diner",
-    "objective": "Investigate Diner, question Retired Soldier, recover Pipe, and learn why marker 3906 is tied to Beacon Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Diner.",
-        "clue": "Breathing"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Pipe.",
-        "clue": "Pipe"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Retired Soldier.",
-        "clue": "1:26"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3906.",
-        "clue": "3906"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Down instruction.",
-        "clue": "Down"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S38C12-location",
-        "type": "location",
-        "name": "Diner",
-        "inspectText": "Diner looks ordinary until Breathing moves through it."
-      },
-      {
-        "id": "S38C12-object",
-        "type": "evidence",
-        "name": "Pipe",
-        "inspectText": "Pipe is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S38C12-marker",
-        "type": "marker",
-        "name": "Marker 3906",
-        "inspectText": "Marker 3906 is not the answer. It is the lock."
-      },
-      {
-        "id": "S38C12-sound",
-        "type": "audio_clue",
-        "name": "Breathing",
-        "inspectText": "Breathing repeats near 1:26."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series38-The-Signal-Fire/chapter12.md",
-      "novel": "generated/novels/Series38-The-Signal-Fire/chapter12.md",
-      "song": "generated/songs/Series38-The-Signal-Fire/song12.md"
     }
   },
   "story": {

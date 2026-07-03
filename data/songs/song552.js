@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "telegraph office",
-      "telegraphoffice"
-    ],
-    "object": [
-      "charcoal sketch",
-      "charcoalsketch"
-    ],
-    "witness": [
-      "retired soldier",
-      "retiredsoldier"
-    ],
-    "time": [
-      "9:08",
-      "908"
-    ],
-    "marker": [
-      "4706",
-      "marker 4706",
-      "road marker 4706",
-      "mile marker 4706",
-      "mile 4706"
-    ],
-    "direction": [
-      "nowhere"
-    ],
-    "sound": [
-      "fog horn",
-      "foghorn"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -312,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S46C12",
-    "puzzleId": "S46C12-marker-lock",
-    "dialogueId": "S46C12-retired-soldier",
-    "locationId": "telegraph-office",
-    "objective": "Investigate Telegraph Office, question Retired Soldier, recover Charcoal Sketch, and learn why marker 4706 is tied to Weather Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Telegraph Office.",
-        "clue": "Fog Horn"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Charcoal Sketch.",
-        "clue": "Charcoal Sketch"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Retired Soldier.",
-        "clue": "9:08"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4706.",
-        "clue": "4706"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Nowhere instruction.",
-        "clue": "Nowhere"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S46C12-location",
-        "type": "location",
-        "name": "Telegraph Office",
-        "inspectText": "Telegraph Office looks ordinary until Fog Horn moves through it."
-      },
-      {
-        "id": "S46C12-object",
-        "type": "evidence",
-        "name": "Charcoal Sketch",
-        "inspectText": "Charcoal Sketch is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S46C12-marker",
-        "type": "marker",
-        "name": "Marker 4706",
-        "inspectText": "Marker 4706 is not the answer. It is the lock."
-      },
-      {
-        "id": "S46C12-sound",
-        "type": "audio_clue",
-        "name": "Fog Horn",
-        "inspectText": "Fog Horn repeats near 9:08."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series46-The-Storm-Season/chapter12.md",
-      "novel": "generated/novels/Series46-The-Storm-Season/chapter12.md",
-      "song": "generated/songs/Series46-The-Storm-Season/song12.md"
     }
   },
   "story": {

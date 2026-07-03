@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "telegraph office",
-      "telegraphoffice"
-    ],
-    "object": [
-      "copper fitting",
-      "copperfitting"
-    ],
-    "witness": [
-      "census taker",
-      "censustaker"
-    ],
-    "time": [
-      "4:12",
-      "412"
-    ],
-    "marker": [
-      "5088",
-      "marker 5088",
-      "road marker 5088",
-      "mile marker 5088",
-      "mile 5088"
-    ],
-    "direction": [
-      "up"
-    ],
-    "sound": [
-      "footsteps"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S50C10",
-    "puzzleId": "S50C10-marker-lock",
-    "dialogueId": "S50C10-census-taker",
-    "locationId": "telegraph-office",
-    "objective": "Investigate Telegraph Office, question Census Taker, recover Copper Fitting, and learn why marker 5088 is tied to Full Archive.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Telegraph Office.",
-        "clue": "Footsteps"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Copper Fitting.",
-        "clue": "Copper Fitting"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Census Taker.",
-        "clue": "4:12"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 5088.",
-        "clue": "5088"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Up instruction.",
-        "clue": "Up"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S50C10-location",
-        "type": "location",
-        "name": "Telegraph Office",
-        "inspectText": "Telegraph Office looks ordinary until Footsteps moves through it."
-      },
-      {
-        "id": "S50C10-object",
-        "type": "evidence",
-        "name": "Copper Fitting",
-        "inspectText": "Copper Fitting is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S50C10-marker",
-        "type": "marker",
-        "name": "Marker 5088",
-        "inspectText": "Marker 5088 is not the answer. It is the lock."
-      },
-      {
-        "id": "S50C10-sound",
-        "type": "audio_clue",
-        "name": "Footsteps",
-        "inspectText": "Footsteps repeats near 4:12."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series50-The-Resolution/chapter10.md",
-      "novel": "generated/novels/Series50-The-Resolution/chapter10.md",
-      "song": "generated/songs/Series50-The-Resolution/song10.md"
     }
   },
   "story": {

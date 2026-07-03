@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "diner"
-    ],
-    "object": [
-      "torn map",
-      "tornmap"
-    ],
-    "witness": [
-      "quarry foreman",
-      "quarryforeman"
-    ],
-    "time": [
-      "4:03",
-      "403"
-    ],
-    "marker": [
-      "3279",
-      "marker 3279",
-      "road marker 3279",
-      "mile marker 3279",
-      "mile 3279"
-    ],
-    "direction": [
-      "nowhere"
-    ],
-    "sound": [
-      "pages turning",
-      "pagesturning"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S32C09",
-    "puzzleId": "S32C09-marker-lock",
-    "dialogueId": "S32C09-quarry-foreman",
-    "locationId": "diner",
-    "objective": "Investigate Diner, question Quarry Foreman, recover Torn Map, and learn why marker 3279 is tied to Depth Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Diner.",
-        "clue": "Pages Turning"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Torn Map.",
-        "clue": "Torn Map"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Quarry Foreman.",
-        "clue": "4:03"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3279.",
-        "clue": "3279"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Nowhere instruction.",
-        "clue": "Nowhere"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S32C09-location",
-        "type": "location",
-        "name": "Diner",
-        "inspectText": "Diner looks ordinary until Pages Turning moves through it."
-      },
-      {
-        "id": "S32C09-object",
-        "type": "evidence",
-        "name": "Torn Map",
-        "inspectText": "Torn Map is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S32C09-marker",
-        "type": "marker",
-        "name": "Marker 3279",
-        "inspectText": "Marker 3279 is not the answer. It is the lock."
-      },
-      {
-        "id": "S32C09-sound",
-        "type": "audio_clue",
-        "name": "Pages Turning",
-        "inspectText": "Pages Turning repeats near 4:03."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series32-The-Deep-Current/chapter09.md",
-      "novel": "generated/novels/Series32-The-Deep-Current/chapter09.md",
-      "song": "generated/songs/Series32-The-Deep-Current/song09.md"
     }
   },
   "story": {

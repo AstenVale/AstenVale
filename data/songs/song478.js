@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "schoolhouse"
-    ],
-    "object": [
-      "telegram"
-    ],
-    "witness": [
-      "census taker",
-      "censustaker"
-    ],
-    "time": [
-      "4:47",
-      "447"
-    ],
-    "marker": [
-      "4088",
-      "marker 4088",
-      "road marker 4088",
-      "mile marker 4088",
-      "mile 4088"
-    ],
-    "direction": [
-      "along the creek",
-      "alongthecreek"
-    ],
-    "sound": [
-      "cannon bolt",
-      "cannonbolt"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -310,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S40C10",
-    "puzzleId": "S40C10-marker-lock",
-    "dialogueId": "S40C10-census-taker",
-    "locationId": "schoolhouse",
-    "objective": "Investigate Schoolhouse, question Census Taker, recover Telegram, and learn why marker 4088 is tied to Cipher Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Schoolhouse.",
-        "clue": "Cannon Bolt"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Telegram.",
-        "clue": "Telegram"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Census Taker.",
-        "clue": "4:47"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4088.",
-        "clue": "4088"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Along the Creek instruction.",
-        "clue": "Along the Creek"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S40C10-location",
-        "type": "location",
-        "name": "Schoolhouse",
-        "inspectText": "Schoolhouse looks ordinary until Cannon Bolt moves through it."
-      },
-      {
-        "id": "S40C10-object",
-        "type": "evidence",
-        "name": "Telegram",
-        "inspectText": "Telegram is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S40C10-marker",
-        "type": "marker",
-        "name": "Marker 4088",
-        "inspectText": "Marker 4088 is not the answer. It is the lock."
-      },
-      {
-        "id": "S40C10-sound",
-        "type": "audio_clue",
-        "name": "Cannon Bolt",
-        "inspectText": "Cannon Bolt repeats near 4:47."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series40-The-Coded-Letter/chapter10.md",
-      "novel": "generated/novels/Series40-The-Coded-Letter/chapter10.md",
-      "song": "generated/songs/Series40-The-Coded-Letter/song10.md"
     }
   },
   "story": {

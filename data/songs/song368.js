@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "cabin"
-    ],
-    "object": [
-      "prayer card",
-      "prayercard"
-    ],
-    "witness": [
-      "weaver"
-    ],
-    "time": [
-      "12:17",
-      "1217"
-    ],
-    "marker": [
-      "3170",
-      "marker 3170",
-      "road marker 3170",
-      "mile marker 3170",
-      "mile 3170"
-    ],
-    "direction": [
-      "right"
-    ],
-    "sound": [
-      "cellar door",
-      "cellardoor"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -309,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S31C08",
-    "puzzleId": "S31C08-marker-lock",
-    "dialogueId": "S31C08-weaver",
-    "locationId": "cabin",
-    "objective": "Investigate Cabin, question Weaver, recover Prayer Card, and learn why marker 3170 is tied to Pattern Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Cabin.",
-        "clue": "Cellar Door"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Prayer Card.",
-        "clue": "Prayer Card"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Weaver.",
-        "clue": "12:17"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3170.",
-        "clue": "3170"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Right instruction.",
-        "clue": "Right"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S31C08-location",
-        "type": "location",
-        "name": "Cabin",
-        "inspectText": "Cabin looks ordinary until Cellar Door moves through it."
-      },
-      {
-        "id": "S31C08-object",
-        "type": "evidence",
-        "name": "Prayer Card",
-        "inspectText": "Prayer Card is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S31C08-marker",
-        "type": "marker",
-        "name": "Marker 3170",
-        "inspectText": "Marker 3170 is not the answer. It is the lock."
-      },
-      {
-        "id": "S31C08-sound",
-        "type": "audio_clue",
-        "name": "Cellar Door",
-        "inspectText": "Cellar Door repeats near 12:17."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series31-The-Cipher-Garden/chapter08.md",
-      "novel": "generated/novels/Series31-The-Cipher-Garden/chapter08.md",
-      "song": "generated/songs/Series31-The-Cipher-Garden/song08.md"
     }
   },
   "story": {

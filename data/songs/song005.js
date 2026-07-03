@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "depot"
-    ],
-    "object": [
-      "silver watch",
-      "silverwatch"
-    ],
-    "witness": [
-      "station master",
-      "stationmaster"
-    ],
-    "time": [
-      "3:03",
-      "303"
-    ],
-    "marker": [
-      "55",
-      "marker 55",
-      "road marker 55",
-      "mile marker 55",
-      "mile 55"
-    ],
-    "direction": [
-      "north"
-    ],
-    "sound": [
-      "train whistle",
-      "trainwhistle"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S01C05",
-    "puzzleId": "S01C05-marker-lock",
-    "dialogueId": "S01C05-station-master",
-    "locationId": "depot",
-    "objective": "Investigate Depot, question Station Master, recover Silver Watch, and learn why marker 55 is tied to Public Archive.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Depot.",
-        "clue": "Train Whistle"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Silver Watch.",
-        "clue": "Silver Watch"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Station Master.",
-        "clue": "3:03"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 55.",
-        "clue": "55"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the North instruction.",
-        "clue": "North"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S01C05-location",
-        "type": "location",
-        "name": "Depot",
-        "inspectText": "Depot looks ordinary until Train Whistle moves through it."
-      },
-      {
-        "id": "S01C05-object",
-        "type": "evidence",
-        "name": "Silver Watch",
-        "inspectText": "Silver Watch is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S01C05-marker",
-        "type": "marker",
-        "name": "Marker 55",
-        "inspectText": "Marker 55 is not the answer. It is the lock."
-      },
-      {
-        "id": "S01C05-sound",
-        "type": "audio_clue",
-        "name": "Train Whistle",
-        "inspectText": "Train Whistle repeats near 3:03."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series01-The-Stranger/chapter05.md",
-      "novel": "generated/novels/Series01-The-Stranger/chapter05.md",
-      "song": "generated/songs/Series01-The-Stranger/song05.md"
     }
   },
   "story": {

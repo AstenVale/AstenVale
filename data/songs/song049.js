@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "north pasture",
-      "northpasture"
-    ],
-    "object": [
-      "axle pin",
-      "axlepin"
-    ],
-    "witness": [
-      "postman"
-    ],
-    "time": [
-      "8:33",
-      "833"
-    ],
-    "marker": [
-      "507",
-      "marker 507",
-      "road marker 507",
-      "mile marker 507",
-      "mile 507"
-    ],
-    "direction": [
-      "below"
-    ],
-    "sound": [
-      "water drip",
-      "waterdrip"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S05C01",
-    "puzzleId": "S05C01-marker-lock",
-    "dialogueId": "S05C01-postman",
-    "locationId": "north-pasture",
-    "objective": "Investigate North Pasture, question Postman, recover Axle Pin, and learn why marker 507 is tied to Cold Archive.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter North Pasture.",
-        "clue": "Water Drip"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Axle Pin.",
-        "clue": "Axle Pin"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Postman.",
-        "clue": "8:33"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 507.",
-        "clue": "507"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Below instruction.",
-        "clue": "Below"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S05C01-location",
-        "type": "location",
-        "name": "North Pasture",
-        "inspectText": "North Pasture looks ordinary until Water Drip moves through it."
-      },
-      {
-        "id": "S05C01-object",
-        "type": "evidence",
-        "name": "Axle Pin",
-        "inspectText": "Axle Pin is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S05C01-marker",
-        "type": "marker",
-        "name": "Marker 507",
-        "inspectText": "Marker 507 is not the answer. It is the lock."
-      },
-      {
-        "id": "S05C01-sound",
-        "type": "audio_clue",
-        "name": "Water Drip",
-        "inspectText": "Water Drip repeats near 8:33."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series05-The-Last-Winter/chapter01.md",
-      "novel": "generated/novels/Series05-The-Last-Winter/chapter01.md",
-      "song": "generated/songs/Series05-The-Last-Winter/song01.md"
     }
   },
   "story": {

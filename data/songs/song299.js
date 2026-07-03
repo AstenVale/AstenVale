@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "cooper's yard",
-      "cooper'syard"
-    ],
-    "object": [
-      "bullet casing",
-      "bulletcasing"
-    ],
-    "witness": [
-      "schoolgirl"
-    ],
-    "time": [
-      "9:27",
-      "927"
-    ],
-    "marker": [
-      "2597",
-      "marker 2597",
-      "road marker 2597",
-      "mile marker 2597",
-      "mile 2597"
-    ],
-    "direction": [
-      "ahead"
-    ],
-    "sound": [
-      "match strike",
-      "matchstrike"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S25C11",
-    "puzzleId": "S25C11-marker-lock",
-    "dialogueId": "S25C11-schoolgirl",
-    "locationId": "cooper-s-yard",
-    "objective": "Investigate Cooper's Yard, question Schoolgirl, recover Bullet Casing, and learn why marker 2597 is tied to Resonance Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Cooper's Yard.",
-        "clue": "Match Strike"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Bullet Casing.",
-        "clue": "Bullet Casing"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Schoolgirl.",
-        "clue": "9:27"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2597.",
-        "clue": "2597"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Ahead instruction.",
-        "clue": "Ahead"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S25C11-location",
-        "type": "location",
-        "name": "Cooper's Yard",
-        "inspectText": "Cooper's Yard looks ordinary until Match Strike moves through it."
-      },
-      {
-        "id": "S25C11-object",
-        "type": "evidence",
-        "name": "Bullet Casing",
-        "inspectText": "Bullet Casing is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S25C11-marker",
-        "type": "marker",
-        "name": "Marker 2597",
-        "inspectText": "Marker 2597 is not the answer. It is the lock."
-      },
-      {
-        "id": "S25C11-sound",
-        "type": "audio_clue",
-        "name": "Match Strike",
-        "inspectText": "Match Strike repeats near 9:27."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series25-The-Echo-Chamber/chapter11.md",
-      "novel": "generated/novels/Series25-The-Echo-Chamber/chapter11.md",
-      "song": "generated/songs/Series25-The-Echo-Chamber/song11.md"
     }
   },
   "story": {

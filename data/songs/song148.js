@@ -61,39 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "cider house",
-      "ciderhouse"
-    ],
-    "object": [
-      "dried blood on cloth",
-      "driedbloodoncloth"
-    ],
-    "witness": [
-      "the handless man",
-      "handless man",
-      "thehandlessman"
-    ],
-    "time": [
-      "9:27",
-      "927"
-    ],
-    "marker": [
-      "1334",
-      "marker 1334",
-      "road marker 1334",
-      "mile marker 1334",
-      "mile 1334"
-    ],
-    "direction": [
-      "behind"
-    ],
-    "sound": [
-      "shovel on earth",
-      "shovelonearth"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -312,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S13C04",
-    "puzzleId": "S13C04-marker-lock",
-    "dialogueId": "S13C04-the-handless-man",
-    "locationId": "cider-house",
-    "objective": "Investigate Cider House, question The Handless Man, recover Dried Blood on Cloth, and learn why marker 1334 is tied to Mirror Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Cider House.",
-        "clue": "Shovel on Earth"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Dried Blood on Cloth.",
-        "clue": "Dried Blood on Cloth"
-      },
-      {
-        "step": "interview",
-        "objective": "Question The Handless Man.",
-        "clue": "9:27"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1334.",
-        "clue": "1334"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Behind instruction.",
-        "clue": "Behind"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S13C04-location",
-        "type": "location",
-        "name": "Cider House",
-        "inspectText": "Cider House looks ordinary until Shovel on Earth moves through it."
-      },
-      {
-        "id": "S13C04-object",
-        "type": "evidence",
-        "name": "Dried Blood on Cloth",
-        "inspectText": "Dried Blood on Cloth is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S13C04-marker",
-        "type": "marker",
-        "name": "Marker 1334",
-        "inspectText": "Marker 1334 is not the answer. It is the lock."
-      },
-      {
-        "id": "S13C04-sound",
-        "type": "audio_clue",
-        "name": "Shovel on Earth",
-        "inspectText": "Shovel on Earth repeats near 9:27."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series13-The-Twin-Hollows/chapter04.md",
-      "novel": "generated/novels/Series13-The-Twin-Hollows/chapter04.md",
-      "song": "generated/songs/Series13-The-Twin-Hollows/song04.md"
     }
   },
   "story": {

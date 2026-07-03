@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "riverside cabin",
-      "riversidecabin"
-    ],
-    "object": [
-      "love letter",
-      "loveletter"
-    ],
-    "witness": [
-      "husband"
-    ],
-    "time": [
-      "9:30",
-      "930"
-    ],
-    "marker": [
-      "121",
-      "marker 121",
-      "road marker 121",
-      "mile marker 121",
-      "mile 121"
-    ],
-    "direction": [
-      "east"
-    ],
-    "sound": [
-      "river water",
-      "riverwater"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S02C02",
-    "puzzleId": "S02C02-marker-lock",
-    "dialogueId": "S02C02-husband",
-    "locationId": "riverside-cabin",
-    "objective": "Investigate Riverside Cabin, question Husband, recover Love Letter, and learn why marker 121 is tied to Personal Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Riverside Cabin.",
-        "clue": "River Water"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Love Letter.",
-        "clue": "Love Letter"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Husband.",
-        "clue": "9:30"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 121.",
-        "clue": "121"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the East instruction.",
-        "clue": "East"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S02C02-location",
-        "type": "location",
-        "name": "Riverside Cabin",
-        "inspectText": "Riverside Cabin looks ordinary until River Water moves through it."
-      },
-      {
-        "id": "S02C02-object",
-        "type": "evidence",
-        "name": "Love Letter",
-        "inspectText": "Love Letter is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S02C02-marker",
-        "type": "marker",
-        "name": "Marker 121",
-        "inspectText": "Marker 121 is not the answer. It is the lock."
-      },
-      {
-        "id": "S02C02-sound",
-        "type": "audio_clue",
-        "name": "River Water",
-        "inspectText": "River Water repeats near 9:30."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series02-The-Before/chapter02.md",
-      "novel": "generated/novels/Series02-The-Before/chapter02.md",
-      "song": "generated/songs/Series02-The-Before/song02.md"
     }
   },
   "story": {

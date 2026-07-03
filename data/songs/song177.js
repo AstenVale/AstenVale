@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "sheriff's office",
-      "sheriff'soffice"
-    ],
-    "object": [
-      "flint stone",
-      "flintstone"
-    ],
-    "witness": [
-      "auctioneer"
-    ],
-    "time": [
-      "8:42",
-      "842"
-    ],
-    "marker": [
-      "1579",
-      "marker 1579",
-      "road marker 1579",
-      "mile marker 1579",
-      "mile 1579"
-    ],
-    "direction": [
-      "north"
-    ],
-    "sound": [
-      "thunder"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -310,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S15C09",
-    "puzzleId": "S15C09-marker-lock",
-    "dialogueId": "S15C09-auctioneer",
-    "locationId": "sheriff-s-office",
-    "objective": "Investigate Sheriff's Office, question Auctioneer, recover Flint Stone, and learn why marker 1579 is tied to Signal Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Sheriff's Office.",
-        "clue": "Thunder"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Flint Stone.",
-        "clue": "Flint Stone"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Auctioneer.",
-        "clue": "8:42"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1579.",
-        "clue": "1579"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the North instruction.",
-        "clue": "North"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S15C09-location",
-        "type": "location",
-        "name": "Sheriff's Office",
-        "inspectText": "Sheriff's Office looks ordinary until Thunder moves through it."
-      },
-      {
-        "id": "S15C09-object",
-        "type": "evidence",
-        "name": "Flint Stone",
-        "inspectText": "Flint Stone is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S15C09-marker",
-        "type": "marker",
-        "name": "Marker 1579",
-        "inspectText": "Marker 1579 is not the answer. It is the lock."
-      },
-      {
-        "id": "S15C09-sound",
-        "type": "audio_clue",
-        "name": "Thunder",
-        "inspectText": "Thunder repeats near 8:42."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series15-The-Lantern-Keeper/chapter09.md",
-      "novel": "generated/novels/Series15-The-Lantern-Keeper/chapter09.md",
-      "song": "generated/songs/Series15-The-Lantern-Keeper/song09.md"
     }
   },
   "story": {

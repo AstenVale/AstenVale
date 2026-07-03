@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "covered bridge",
-      "coveredbridge"
-    ],
-    "object": [
-      "ear of corn",
-      "earofcorn"
-    ],
-    "witness": [
-      "salt seller",
-      "saltseller"
-    ],
-    "time": [
-      "3:49",
-      "349"
-    ],
-    "marker": [
-      "1088",
-      "marker 1088",
-      "road marker 1088",
-      "mile marker 1088",
-      "mile 1088"
-    ],
-    "direction": [
-      "toward"
-    ],
-    "sound": [
-      "pages turning",
-      "pagesturning"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -301,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S10C10",
-    "puzzleId": "S10C10-marker-lock",
-    "dialogueId": "S10C10-salt-seller",
-    "locationId": "covered-bridge",
-    "objective": "Investigate Covered Bridge, question Salt Seller, recover Ear of Corn, and learn why marker 1088 is tied to Lost Mile Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Covered Bridge.",
-        "clue": "Pages Turning"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Ear of Corn.",
-        "clue": "Ear of Corn"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Salt Seller.",
-        "clue": "3:49"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1088.",
-        "clue": "1088"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Toward instruction.",
-        "clue": "Toward"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S10C10-location",
-        "type": "location",
-        "name": "Covered Bridge",
-        "inspectText": "Covered Bridge looks ordinary until Pages Turning moves through it."
-      },
-      {
-        "id": "S10C10-object",
-        "type": "evidence",
-        "name": "Ear of Corn",
-        "inspectText": "Ear of Corn is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S10C10-marker",
-        "type": "marker",
-        "name": "Marker 1088",
-        "inspectText": "Marker 1088 is not the answer. It is the lock."
-      },
-      {
-        "id": "S10C10-sound",
-        "type": "audio_clue",
-        "name": "Pages Turning",
-        "inspectText": "Pages Turning repeats near 3:49."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series10-The-Forgotten-Road/chapter10.md",
-      "novel": "generated/novels/Series10-The-Forgotten-Road/chapter10.md",
-      "song": "generated/songs/Series10-The-Forgotten-Road/song10.md"
     }
   },
   "story": {

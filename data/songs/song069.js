@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the hollow road",
-      "hollow road",
-      "thehollowroad"
-    ],
-    "object": [
-      "tin star",
-      "tinstar"
-    ],
-    "witness": [
-      "conductor"
-    ],
-    "time": [
-      "2:55",
-      "255"
-    ],
-    "marker": [
-      "679",
-      "marker 679",
-      "road marker 679",
-      "mile marker 679",
-      "mile 679"
-    ],
-    "direction": [
-      "nowhere"
-    ],
-    "sound": [
-      "river water",
-      "riverwater"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -312,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S06C09",
-    "puzzleId": "S06C09-marker-lock",
-    "dialogueId": "S06C09-conductor",
-    "locationId": "the-hollow-road",
-    "objective": "Investigate The Hollow Road, question Conductor, recover Tin Star, and learn why marker 679 is tied to Below Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Hollow Road.",
-        "clue": "River Water"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Tin Star.",
-        "clue": "Tin Star"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Conductor.",
-        "clue": "2:55"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 679.",
-        "clue": "679"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Nowhere instruction.",
-        "clue": "Nowhere"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S06C09-location",
-        "type": "location",
-        "name": "The Hollow Road",
-        "inspectText": "The Hollow Road looks ordinary until River Water moves through it."
-      },
-      {
-        "id": "S06C09-object",
-        "type": "evidence",
-        "name": "Tin Star",
-        "inspectText": "Tin Star is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S06C09-marker",
-        "type": "marker",
-        "name": "Marker 679",
-        "inspectText": "Marker 679 is not the answer. It is the lock."
-      },
-      {
-        "id": "S06C09-sound",
-        "type": "audio_clue",
-        "name": "River Water",
-        "inspectText": "River Water repeats near 2:55."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series06-The-Underground/chapter09.md",
-      "novel": "generated/novels/Series06-The-Underground/chapter09.md",
-      "song": "generated/songs/Series06-The-Underground/song09.md"
     }
   },
   "story": {

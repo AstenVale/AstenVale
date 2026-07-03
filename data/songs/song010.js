@@ -61,35 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "highway"
-    ],
-    "object": [
-      "compass"
-    ],
-    "witness": [
-      "driver"
-    ],
-    "time": [
-      "11:40",
-      "1140"
-    ],
-    "marker": [
-      "81",
-      "marker 81",
-      "road marker 81",
-      "mile marker 81",
-      "mile 81"
-    ],
-    "direction": [
-      "west"
-    ],
-    "sound": [
-      "horse hooves",
-      "horsehooves"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -298,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S01C10",
-    "puzzleId": "S01C10-marker-lock",
-    "dialogueId": "S01C10-driver",
-    "locationId": "highway",
-    "objective": "Investigate Highway, question Driver, recover Compass, and learn why marker 81 is tied to Public Archive.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Highway.",
-        "clue": "Horse Hooves"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Compass.",
-        "clue": "Compass"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Driver.",
-        "clue": "11:40"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 81.",
-        "clue": "81"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the West instruction.",
-        "clue": "West"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S01C10-location",
-        "type": "location",
-        "name": "Highway",
-        "inspectText": "Highway looks ordinary until Horse Hooves moves through it."
-      },
-      {
-        "id": "S01C10-object",
-        "type": "evidence",
-        "name": "Compass",
-        "inspectText": "Compass is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S01C10-marker",
-        "type": "marker",
-        "name": "Marker 81",
-        "inspectText": "Marker 81 is not the answer. It is the lock."
-      },
-      {
-        "id": "S01C10-sound",
-        "type": "audio_clue",
-        "name": "Horse Hooves",
-        "inspectText": "Horse Hooves repeats near 11:40."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series01-The-Stranger/chapter10.md",
-      "novel": "generated/novels/Series01-The-Stranger/chapter10.md",
-      "song": "generated/songs/Series01-The-Stranger/song10.md"
     }
   },
   "story": {

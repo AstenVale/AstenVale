@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "cooperage"
-    ],
-    "object": [
-      "seal"
-    ],
-    "witness": [
-      "harness maker",
-      "harnessmaker"
-    ],
-    "time": [
-      "9:55",
-      "955"
-    ],
-    "marker": [
-      "3097",
-      "marker 3097",
-      "road marker 3097",
-      "mile marker 3097",
-      "mile 3097"
-    ],
-    "direction": [
-      "west"
-    ],
-    "sound": [
-      "lid of a tin",
-      "lidofatin"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -299,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S30C11",
-    "puzzleId": "S30C11-marker-lock",
-    "dialogueId": "S30C11-harness-maker",
-    "locationId": "cooperage",
-    "objective": "Investigate Cooperage, question Harness Maker, recover Seal, and learn why marker 3097 is tied to Manifest Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Cooperage.",
-        "clue": "Lid of a Tin"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Seal.",
-        "clue": "Seal"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Harness Maker.",
-        "clue": "9:55"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3097.",
-        "clue": "3097"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the West instruction.",
-        "clue": "West"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S30C11-location",
-        "type": "location",
-        "name": "Cooperage",
-        "inspectText": "Cooperage looks ordinary until Lid of a Tin moves through it."
-      },
-      {
-        "id": "S30C11-object",
-        "type": "evidence",
-        "name": "Seal",
-        "inspectText": "Seal is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S30C11-marker",
-        "type": "marker",
-        "name": "Marker 3097",
-        "inspectText": "Marker 3097 is not the answer. It is the lock."
-      },
-      {
-        "id": "S30C11-sound",
-        "type": "audio_clue",
-        "name": "Lid of a Tin",
-        "inspectText": "Lid of a Tin repeats near 9:55."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series30-The-Last-Train/chapter11.md",
-      "novel": "generated/novels/Series30-The-Last-Train/chapter11.md",
-      "song": "generated/songs/Series30-The-Last-Train/song11.md"
     }
   },
   "story": {

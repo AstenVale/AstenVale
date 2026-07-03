@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "old bridge",
-      "oldbridge"
-    ],
-    "object": [
-      "charred paper",
-      "charredpaper"
-    ],
-    "witness": [
-      "banker"
-    ],
-    "time": [
-      "6:17",
-      "617"
-    ],
-    "marker": [
-      "561",
-      "marker 561",
-      "road marker 561",
-      "mile marker 561",
-      "mile 561"
-    ],
-    "direction": [
-      "under"
-    ],
-    "sound": [
-      "crow on wire",
-      "crowonwire"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S05C07",
-    "puzzleId": "S05C07-marker-lock",
-    "dialogueId": "S05C07-banker",
-    "locationId": "old-bridge",
-    "objective": "Investigate Old Bridge, question Banker, recover Charred Paper, and learn why marker 561 is tied to Cold Archive.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Old Bridge.",
-        "clue": "Crow on Wire"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Charred Paper.",
-        "clue": "Charred Paper"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Banker.",
-        "clue": "6:17"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 561.",
-        "clue": "561"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Under instruction.",
-        "clue": "Under"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S05C07-location",
-        "type": "location",
-        "name": "Old Bridge",
-        "inspectText": "Old Bridge looks ordinary until Crow on Wire moves through it."
-      },
-      {
-        "id": "S05C07-object",
-        "type": "evidence",
-        "name": "Charred Paper",
-        "inspectText": "Charred Paper is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S05C07-marker",
-        "type": "marker",
-        "name": "Marker 561",
-        "inspectText": "Marker 561 is not the answer. It is the lock."
-      },
-      {
-        "id": "S05C07-sound",
-        "type": "audio_clue",
-        "name": "Crow on Wire",
-        "inspectText": "Crow on Wire repeats near 6:17."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series05-The-Last-Winter/chapter07.md",
-      "novel": "generated/novels/Series05-The-Last-Winter/chapter07.md",
-      "song": "generated/songs/Series05-The-Last-Winter/song07.md"
     }
   },
   "story": {

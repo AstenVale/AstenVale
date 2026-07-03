@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "old wharf",
-      "oldwharf"
-    ],
-    "object": [
-      "broken clasp",
-      "brokenclasp"
-    ],
-    "witness": [
-      "child"
-    ],
-    "time": [
-      "2:55",
-      "255"
-    ],
-    "marker": [
-      "5106",
-      "marker 5106",
-      "road marker 5106",
-      "mile marker 5106",
-      "mile 5106"
-    ],
-    "direction": [
-      "down"
-    ],
-    "sound": [
-      "mud suction",
-      "mudsuction"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S50C12",
-    "puzzleId": "S50C12-marker-lock",
-    "dialogueId": "S50C12-child",
-    "locationId": "old-wharf",
-    "objective": "Investigate Old Wharf, question Child, recover Broken Clasp, and learn why marker 5106 is tied to Full Archive.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Old Wharf.",
-        "clue": "Mud Suction"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Broken Clasp.",
-        "clue": "Broken Clasp"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Child.",
-        "clue": "2:55"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 5106.",
-        "clue": "5106"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Down instruction.",
-        "clue": "Down"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S50C12-location",
-        "type": "location",
-        "name": "Old Wharf",
-        "inspectText": "Old Wharf looks ordinary until Mud Suction moves through it."
-      },
-      {
-        "id": "S50C12-object",
-        "type": "evidence",
-        "name": "Broken Clasp",
-        "inspectText": "Broken Clasp is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S50C12-marker",
-        "type": "marker",
-        "name": "Marker 5106",
-        "inspectText": "Marker 5106 is not the answer. It is the lock."
-      },
-      {
-        "id": "S50C12-sound",
-        "type": "audio_clue",
-        "name": "Mud Suction",
-        "inspectText": "Mud Suction repeats near 2:55."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series50-The-Resolution/chapter12.md",
-      "novel": "generated/novels/Series50-The-Resolution/chapter12.md",
-      "song": "generated/songs/Series50-The-Resolution/song12.md"
     }
   },
   "story": {

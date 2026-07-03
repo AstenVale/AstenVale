@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "jail"
-    ],
-    "object": [
-      "wax tablet",
-      "waxtablet"
-    ],
-    "witness": [
-      "cattle driver",
-      "cattledriver"
-    ],
-    "time": [
-      "2:55",
-      "255"
-    ],
-    "marker": [
-      "2906",
-      "marker 2906",
-      "road marker 2906",
-      "mile marker 2906",
-      "mile 2906"
-    ],
-    "direction": [
-      "down the hollow",
-      "downthehollow"
-    ],
-    "sound": [
-      "cellar stairs",
-      "cellarstairs"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -301,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S28C12",
-    "puzzleId": "S28C12-marker-lock",
-    "dialogueId": "S28C12-cattle-driver",
-    "locationId": "jail",
-    "objective": "Investigate Jail, question Cattle Driver, recover Wax Tablet, and learn why marker 2906 is tied to Frequency Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Jail.",
-        "clue": "Cellar Stairs"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Wax Tablet.",
-        "clue": "Wax Tablet"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Cattle Driver.",
-        "clue": "2:55"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2906.",
-        "clue": "2906"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Down the Hollow instruction.",
-        "clue": "Down the Hollow"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S28C12-location",
-        "type": "location",
-        "name": "Jail",
-        "inspectText": "Jail looks ordinary until Cellar Stairs moves through it."
-      },
-      {
-        "id": "S28C12-object",
-        "type": "evidence",
-        "name": "Wax Tablet",
-        "inspectText": "Wax Tablet is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S28C12-marker",
-        "type": "marker",
-        "name": "Marker 2906",
-        "inspectText": "Marker 2906 is not the answer. It is the lock."
-      },
-      {
-        "id": "S28C12-sound",
-        "type": "audio_clue",
-        "name": "Cellar Stairs",
-        "inspectText": "Cellar Stairs repeats near 2:55."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series28-The-Buried-Signal/chapter12.md",
-      "novel": "generated/novels/Series28-The-Buried-Signal/chapter12.md",
-      "song": "generated/songs/Series28-The-Buried-Signal/song12.md"
     }
   },
   "story": {

@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "quarry edge",
-      "quarryedge"
-    ],
-    "object": [
-      "ship manifest",
-      "shipmanifest"
-    ],
-    "witness": [
-      "tailor"
-    ],
-    "time": [
-      "3:49",
-      "349"
-    ],
-    "marker": [
-      "3397",
-      "marker 3397",
-      "road marker 3397",
-      "mile marker 3397",
-      "mile 3397"
-    ],
-    "direction": [
-      "left"
-    ],
-    "sound": [
-      "boot heel",
-      "bootheel"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S33C11",
-    "puzzleId": "S33C11-marker-lock",
-    "dialogueId": "S33C11-tailor",
-    "locationId": "quarry-edge",
-    "objective": "Investigate Quarry Edge, question Tailor, recover Ship Manifest, and learn why marker 3397 is tied to Faded Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Quarry Edge.",
-        "clue": "Boot Heel"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Ship Manifest.",
-        "clue": "Ship Manifest"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Tailor.",
-        "clue": "3:49"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3397.",
-        "clue": "3397"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Left instruction.",
-        "clue": "Left"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S33C11-location",
-        "type": "location",
-        "name": "Quarry Edge",
-        "inspectText": "Quarry Edge looks ordinary until Boot Heel moves through it."
-      },
-      {
-        "id": "S33C11-object",
-        "type": "evidence",
-        "name": "Ship Manifest",
-        "inspectText": "Ship Manifest is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S33C11-marker",
-        "type": "marker",
-        "name": "Marker 3397",
-        "inspectText": "Marker 3397 is not the answer. It is the lock."
-      },
-      {
-        "id": "S33C11-sound",
-        "type": "audio_clue",
-        "name": "Boot Heel",
-        "inspectText": "Boot Heel repeats near 3:49."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series33-The-Pale-Season/chapter11.md",
-      "novel": "generated/novels/Series33-The-Pale-Season/chapter11.md",
-      "song": "generated/songs/Series33-The-Pale-Season/song11.md"
     }
   },
   "story": {

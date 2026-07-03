@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "crow's nest ridge",
-      "crow'snestridge"
-    ],
-    "object": [
-      "inkwell"
-    ],
-    "witness": [
-      "child"
-    ],
-    "time": [
-      "2:38",
-      "238"
-    ],
-    "marker": [
-      "3688",
-      "marker 3688",
-      "road marker 3688",
-      "mile marker 3688",
-      "mile 3688"
-    ],
-    "direction": [
-      "into the dark",
-      "intothedark"
-    ],
-    "sound": [
-      "knife scrape",
-      "knifescrape"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S36C10",
-    "puzzleId": "S36C10-marker-lock",
-    "dialogueId": "S36C10-child",
-    "locationId": "crow-s-nest-ridge",
-    "objective": "Investigate Crow's Nest Ridge, question Child, recover Inkwell, and learn why marker 3688 is tied to Voice Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Crow's Nest Ridge.",
-        "clue": "Knife Scrape"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Inkwell.",
-        "clue": "Inkwell"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Child.",
-        "clue": "2:38"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3688.",
-        "clue": "3688"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Into the Dark instruction.",
-        "clue": "Into the Dark"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S36C10-location",
-        "type": "location",
-        "name": "Crow's Nest Ridge",
-        "inspectText": "Crow's Nest Ridge looks ordinary until Knife Scrape moves through it."
-      },
-      {
-        "id": "S36C10-object",
-        "type": "evidence",
-        "name": "Inkwell",
-        "inspectText": "Inkwell is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S36C10-marker",
-        "type": "marker",
-        "name": "Marker 3688",
-        "inspectText": "Marker 3688 is not the answer. It is the lock."
-      },
-      {
-        "id": "S36C10-sound",
-        "type": "audio_clue",
-        "name": "Knife Scrape",
-        "inspectText": "Knife Scrape repeats near 2:38."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series36-The-Night-Caller/chapter10.md",
-      "novel": "generated/novels/Series36-The-Night-Caller/chapter10.md",
-      "song": "generated/songs/Series36-The-Night-Caller/song10.md"
     }
   },
   "story": {

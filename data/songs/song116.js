@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "post office",
-      "postoffice"
-    ],
-    "object": [
-      "dried ink blot",
-      "driedinkblot"
-    ],
-    "witness": [
-      "midwife"
-    ],
-    "time": [
-      "2:22",
-      "222"
-    ],
-    "marker": [
-      "1070",
-      "marker 1070",
-      "road marker 1070",
-      "mile marker 1070",
-      "mile 1070"
-    ],
-    "direction": [
-      "behind"
-    ],
-    "sound": [
-      "bone on stone",
-      "boneonstone"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S10C08",
-    "puzzleId": "S10C08-marker-lock",
-    "dialogueId": "S10C08-midwife",
-    "locationId": "post-office",
-    "objective": "Investigate Post Office, question Midwife, recover Dried Ink Blot, and learn why marker 1070 is tied to Lost Mile Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Post Office.",
-        "clue": "Bone on Stone"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Dried Ink Blot.",
-        "clue": "Dried Ink Blot"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Midwife.",
-        "clue": "2:22"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1070.",
-        "clue": "1070"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Behind instruction.",
-        "clue": "Behind"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S10C08-location",
-        "type": "location",
-        "name": "Post Office",
-        "inspectText": "Post Office looks ordinary until Bone on Stone moves through it."
-      },
-      {
-        "id": "S10C08-object",
-        "type": "evidence",
-        "name": "Dried Ink Blot",
-        "inspectText": "Dried Ink Blot is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S10C08-marker",
-        "type": "marker",
-        "name": "Marker 1070",
-        "inspectText": "Marker 1070 is not the answer. It is the lock."
-      },
-      {
-        "id": "S10C08-sound",
-        "type": "audio_clue",
-        "name": "Bone on Stone",
-        "inspectText": "Bone on Stone repeats near 2:22."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series10-The-Forgotten-Road/chapter08.md",
-      "novel": "generated/novels/Series10-The-Forgotten-Road/chapter08.md",
-      "song": "generated/songs/Series10-The-Forgotten-Road/song08.md"
     }
   },
   "story": {

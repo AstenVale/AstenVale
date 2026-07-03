@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "undertaker's hall",
-      "undertaker'shall"
-    ],
-    "object": [
-      "coin"
-    ],
-    "witness": [
-      "conductor"
-    ],
-    "time": [
-      "1:11",
-      "111"
-    ],
-    "marker": [
-      "2006",
-      "marker 2006",
-      "road marker 2006",
-      "mile marker 2006",
-      "mile 2006"
-    ],
-    "direction": [
-      "straight down",
-      "straightdown"
-    ],
-    "sound": [
-      "lantern flicker",
-      "lanternflicker"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S19C12",
-    "puzzleId": "S19C12-marker-lock",
-    "dialogueId": "S19C12-conductor",
-    "locationId": "undertaker-s-hall",
-    "objective": "Investigate Undertaker's Hall, question Conductor, recover Coin, and learn why marker 2006 is tied to Crossing Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Undertaker's Hall.",
-        "clue": "Lantern Flicker"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Coin.",
-        "clue": "Coin"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Conductor.",
-        "clue": "1:11"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2006.",
-        "clue": "2006"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Straight Down instruction.",
-        "clue": "Straight Down"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S19C12-location",
-        "type": "location",
-        "name": "Undertaker's Hall",
-        "inspectText": "Undertaker's Hall looks ordinary until Lantern Flicker moves through it."
-      },
-      {
-        "id": "S19C12-object",
-        "type": "evidence",
-        "name": "Coin",
-        "inspectText": "Coin is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S19C12-marker",
-        "type": "marker",
-        "name": "Marker 2006",
-        "inspectText": "Marker 2006 is not the answer. It is the lock."
-      },
-      {
-        "id": "S19C12-sound",
-        "type": "audio_clue",
-        "name": "Lantern Flicker",
-        "inspectText": "Lantern Flicker repeats near 1:11."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series19-The-Bridge-Burner/chapter12.md",
-      "novel": "generated/novels/Series19-The-Bridge-Burner/chapter12.md",
-      "song": "generated/songs/Series19-The-Bridge-Burner/song12.md"
     }
   },
   "story": {

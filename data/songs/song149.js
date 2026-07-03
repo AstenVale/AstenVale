@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "sawmill"
-    ],
-    "object": [
-      "trade token",
-      "tradetoken"
-    ],
-    "witness": [
-      "weaver"
-    ],
-    "time": [
-      "6:17",
-      "617"
-    ],
-    "marker": [
-      "1343",
-      "marker 1343",
-      "road marker 1343",
-      "mile marker 1343",
-      "mile 1343"
-    ],
-    "direction": [
-      "west"
-    ],
-    "sound": [
-      "wind through a crack",
-      "windthroughacrack"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -309,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S13C05",
-    "puzzleId": "S13C05-marker-lock",
-    "dialogueId": "S13C05-weaver",
-    "locationId": "sawmill",
-    "objective": "Investigate Sawmill, question Weaver, recover Trade Token, and learn why marker 1343 is tied to Mirror Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Sawmill.",
-        "clue": "Wind Through a Crack"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Trade Token.",
-        "clue": "Trade Token"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Weaver.",
-        "clue": "6:17"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1343.",
-        "clue": "1343"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the West instruction.",
-        "clue": "West"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S13C05-location",
-        "type": "location",
-        "name": "Sawmill",
-        "inspectText": "Sawmill looks ordinary until Wind Through a Crack moves through it."
-      },
-      {
-        "id": "S13C05-object",
-        "type": "evidence",
-        "name": "Trade Token",
-        "inspectText": "Trade Token is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S13C05-marker",
-        "type": "marker",
-        "name": "Marker 1343",
-        "inspectText": "Marker 1343 is not the answer. It is the lock."
-      },
-      {
-        "id": "S13C05-sound",
-        "type": "audio_clue",
-        "name": "Wind Through a Crack",
-        "inspectText": "Wind Through a Crack repeats near 6:17."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series13-The-Twin-Hollows/chapter05.md",
-      "novel": "generated/novels/Series13-The-Twin-Hollows/chapter05.md",
-      "song": "generated/songs/Series13-The-Twin-Hollows/song05.md"
     }
   },
   "story": {
