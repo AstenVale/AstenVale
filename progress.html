@@ -1559,6 +1559,9 @@
           rewardLink.rel = 'noopener';
           rewardLink.className = 'vault-btn';
           rewardLink.textContent = 'Open Reward';
+          rewardLink.addEventListener('click', function () {
+            if (window.AVVaultRewardClaim) window.AVVaultRewardClaim.markClaimed(vi + 1);
+          });
           reward.appendChild(rewardLink);
         } else {
           var rewardPending = document.createElement('p');
@@ -1797,6 +1800,6 @@
   })();
   </script>
 
-  
+  <script src="js/vault-reward-popup.js"></script>
 </body>
 </html>

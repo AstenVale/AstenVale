@@ -285,6 +285,9 @@
             link.target = '_blank';
             link.rel = 'noopener';
             link.textContent = 'Open Reward';
+            link.addEventListener('click', function () {
+              if (window.AVVaultRewardClaim) window.AVVaultRewardClaim.markClaimed(vaultNum);
+            });
             rewardEl.appendChild(link);
           } else {
             rewardEl.classList.add('pending');
@@ -398,6 +401,6 @@
   })();
   </script>
 
-  
+  <script src="js/vault-reward-popup.js"></script>
 </body>
 </html>
