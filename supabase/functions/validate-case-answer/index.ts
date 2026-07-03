@@ -57,7 +57,7 @@ Deno.serve(async (req) => {
     });
   }
 
-  let body: { case_id?: unknown; fields?: unknown };
+  let body: { case_id?: unknown; fields?: unknown; reveal_solved?: unknown };
   try {
     body = await req.json();
   } catch {
@@ -68,6 +68,83 @@ Deno.serve(async (req) => {
   }
 
   const caseId = body.case_id;
+
+  // reveal_solved: for a case the player has ALREADY solved (proven by
+  // their own player_progress row, not by anything the client claims),
+  // return the same canonical display text validate would have revealed
+  // at solve time. Fixes the case where a case was solved before the
+  // reveal-cache existed, or on a different device -- without ever
+  // trusting client-supplied "I solved this" state. Ownership is
+  // established server-side from the caller's verified JWT only.
+  if (body.reveal_solved === true) {
+    if (!isValidCaseId(caseId)) {
+      return new Response(JSON.stringify({ error: "Invalid request shape" }), {
+        status: 400,
+        headers: { ...CORS_HEADERS, "Content-Type": "application/json" },
+      });
+    }
+
+    const authHeader = req.headers.get("Authorization") ?? "";
+    const callerClient = createClient(
+      Deno.env.get("SUPABASE_URL")!,
+      Deno.env.get("SUPABASE_ANON_KEY")!,
+      { global: { headers: { Authorization: authHeader } } },
+    );
+    const { data: userData, error: userError } = await callerClient.auth.getUser();
+    if (userError || !userData?.user) {
+      return new Response(JSON.stringify({ revealed: {} }), {
+        status: 200,
+        headers: { ...CORS_HEADERS, "Content-Type": "application/json" },
+      });
+    }
+
+    const adminClient = createClient(
+      Deno.env.get("SUPABASE_URL")!,
+      Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!,
+    );
+
+    const { data: progress } = await adminClient
+      .from("player_progress")
+      .select("completed_cases")
+      .eq("user_id", userData.user.id)
+      .maybeSingle();
+
+    const completed: string[] = (progress?.completed_cases as string[] | null) ?? [];
+    if (completed.indexOf(caseId as string) === -1) {
+      // Not actually solved by this player -- reveal nothing. Fails safe,
+      // same posture as an incorrect guess.
+      return new Response(JSON.stringify({ revealed: {} }), {
+        status: 200,
+        headers: { ...CORS_HEADERS, "Content-Type": "application/json" },
+      });
+    }
+
+    const { data: answerRows, error: answerError } = await adminClient
+      .from("case_answers")
+      .select("field_id, accepted_answers")
+      .eq("case_id", caseId);
+
+    if (answerError) {
+      return new Response(JSON.stringify({ error: "Lookup failed" }), {
+        status: 500,
+        headers: { ...CORS_HEADERS, "Content-Type": "application/json" },
+      });
+    }
+
+    const revealed: Record<string, string> = {};
+    for (const row of answerRows ?? []) {
+      const accepted = row.accepted_answers as string[];
+      if (VALID_FIELD_IDS.has(row.field_id) && accepted && accepted[0]) {
+        revealed[row.field_id] = accepted[0];
+      }
+    }
+
+    return new Response(JSON.stringify({ revealed }), {
+      status: 200,
+      headers: { ...CORS_HEADERS, "Content-Type": "application/json" },
+    });
+  }
+
   const fields = body.fields;
 
   if (!isValidCaseId(caseId) || typeof fields !== "object" || fields === null || Array.isArray(fields)) {
