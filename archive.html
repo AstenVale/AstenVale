@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Archive — The Asten Vale Archives</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --ink: #1c120a; --ink-faded: #4a3728; --paper: #c9a97a; --paper-dark: #b8935e;
+      --gold: #c9960c; --green-pine: #4a7c4e; --folder-red: #7a1f1f; --bg: #0c0a06;
+      --font-type: 'Courier Prime', 'Courier New', Courier, monospace;
+      --font-header: 'Special Elite', 'Courier New', serif;
+    }
+    body { background: var(--bg); color: var(--paper); font-family: var(--font-type); min-height: 100vh; }
+
+    .site-nav{display:flex;align-items:center;justify-content:space-between;padding:1.25rem 2.5rem;flex-wrap:wrap;gap:0.75rem;}
+    .nav-brand{font-family:var(--font-header);font-size:0.75rem;letter-spacing:0.22em;color:rgba(201,169,122,0.75);text-decoration:none;text-transform:uppercase;line-height:1.3;}
+    .nav-brand span{display:block;}
+    .nav-links{display:flex;gap:1.5rem;align-items:center;flex-wrap:wrap;}
+    .nav-link{font-family:var(--font-type);font-size:0.7rem;letter-spacing:0.14em;color:rgba(201,169,122,0.7);text-decoration:none;text-transform:uppercase;}
+    .nav-link:hover,.nav-link.active{color:var(--paper);}
+    .nav-link.logout{color:rgba(122,31,31,0.75);cursor:pointer;}
+
+    .hero{text-align:center;padding:2rem 2rem 1rem;}
+    .hero-eyebrow{font-size:0.68rem;letter-spacing:0.3em;color:rgba(201,169,122,0.45);text-transform:uppercase;}
+    .hero-title{font-family:var(--font-header);font-size:clamp(1.8rem,6vw,2.8rem);letter-spacing:0.08em;color:rgba(220,190,140,0.95);text-transform:uppercase;margin-top:0.4rem;}
+
+    .wrap{max-width:960px;margin:0 auto;padding:1.5rem 1.25rem 4rem;}
+
+    .season-card{background:var(--paper);color:var(--ink);padding:1.25rem 1.5rem;margin-bottom:1rem;box-shadow:0 4px 20px rgba(0,0,0,0.35);}
+    .season-card.locked{opacity:0.5;filter:grayscale(0.5);}
+    .season-head{display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;}
+    .season-title{font-family:var(--font-header);font-size:1.1rem;letter-spacing:0.06em;text-transform:uppercase;}
+    .season-sub{font-size:0.75rem;color:var(--ink-faded);font-style:italic;margin-top:0.2rem;}
+    .season-pct{font-family:var(--font-header);font-size:0.85rem;color:var(--folder-red);white-space:nowrap;}
+    .season-bar-track{height:5px;background:rgba(60,30,10,0.15);margin-top:0.75rem;}
+    .season-bar-fill{height:100%;background:var(--green-pine);}
+    .season-lock-note{font-size:0.68rem;color:var(--ink-faded);margin-top:0.6rem;text-transform:uppercase;letter-spacing:0.08em;}
+
+    .empty-note{font-size:0.8rem;color:rgba(201,169,122,0.5);font-style:italic;text-align:center;padding:1rem 0;}
+    #loadingNote{text-align:center;padding:4rem 1rem;color:rgba(201,169,122,0.5);font-size:0.8rem;}
+  </style>
+</head>
+<body>
+
+  <nav class="site-nav">
+    <a href="index.html" class="nav-brand">
+      <span>Asten Vale</span>
+      <span>Archives</span>
+    </a>
+    <div class="nav-links">
+      <a href="dashboard.html" class="nav-link">Dashboard</a>
+      <a href="archive.html" class="nav-link active">Archive</a>
+      <a href="cabinet.html" class="nav-link">Case Files</a>
+      <a href="evidence.html" class="nav-link">Evidence</a>
+      <a href="vaults.html" class="nav-link">Vaults</a>
+      <a href="progress.html" class="nav-link">Progress</a>
+      <a href="achievements.html" class="nav-link">Achievements</a>
+      <a href="profile.html" class="nav-link">Profile</a>
+      <a href="settings.html" class="nav-link">Settings</a>
+      <span class="nav-link logout" id="logoutLink">Logout</span>
+    </div>
+  </nav>
+
+  <div id="loadingNote">Retrieving the archive index&hellip;</div>
+
+  <div id="archiveContent" style="display:none;">
+    <div class="hero">
+      <p class="hero-eyebrow">Case Archive</p>
+      <h1 class="hero-title">Season Index</h1>
+    </div>
+
+    <div class="wrap" id="seasonList"></div>
+  </div>
+
+  <script src="js/vault-config.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+  <script src="js/progress-sync.js"></script>
+  <script>
+  (function () {
+    function render(progress) {
+      document.getElementById('loadingNote').style.display = 'none';
+      document.getElementById('archiveContent').style.display = 'block';
+
+      var solved = {};
+      ((progress && progress.completed_cases) || []).forEach(function (id) { solved[id] = true; });
+
+      var list = document.getElementById('seasonList');
+
+      if (typeof SEASONS_CONFIG === 'undefined') {
+        list.innerHTML = '<p class="empty-note">This archive section is being indexed.</p>';
+        return;
+      }
+
+      SEASONS_CONFIG.forEach(function (season) {
+        var releasedCases = season.cases.filter(function (c) { return c.released; });
+        var solvedInSeason = releasedCases.filter(function (c) { return solved[c.id]; }).length;
+        var pct = releasedCases.length ? Math.round((solvedInSeason / releasedCases.length) * 100) : 0;
+        var isLocked = releasedCases.length === 0;
+
+        var card = document.createElement('div');
+        card.className = 'season-card' + (isLocked ? ' locked' : '');
+        card.innerHTML =
+          '<div class="season-head">' +
+            '<div>' +
+              '<div class="season-title">' + season.title + '</div>' +
+              '<div class="season-sub">' + season.subtitle + '</div>' +
+            '</div>' +
+            '<div class="season-pct">' + (isLocked ? 'LOCKED' : solvedInSeason + ' / ' + releasedCases.length) + '</div>' +
+          '</div>' +
+          (isLocked
+            ? '<div class="season-lock-note">No cases in this season have been released yet.</div>'
+            : '<div class="season-bar-track"><div class="season-bar-fill" style="width:' + pct + '%;"></div></div>');
+        list.appendChild(card);
+      });
+    }
+
+    if (!window.AVProgressSync) {
+      document.getElementById('loadingNote').textContent = 'Archive is unavailable right now.';
+      return;
+    }
+
+    document.getElementById('logoutLink').addEventListener('click', function () {
+      window.AVProgressSync.signOut(function () { window.location.href = 'index.html'; });
+    });
+
+    window.AVProgressSync.getUser().then(function (user) {
+      if (!user) {
+        window.location.href = 'login.html?redirect=' + encodeURIComponent('archive.html');
+        return;
+      }
+      window.AVProgressSync.getSupabaseProgress(user).then(function (progress) {
+        render(progress);
+      });
+    });
+  })();
+  </script>
+</body>
+</html>
