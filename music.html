@@ -16,6 +16,7 @@
       --ink-faded:   #4a3728;
       --paper:       #c9a97a;
       --paper-dark:  #b8935e;
+      --paper-bg:    #c4a472;
       --gold:        #c9960c;
       --bg:          #0c0a06;
       --font-type:   'Courier Prime', 'Courier New', Courier, monospace;
@@ -24,44 +25,58 @@
 
     body {
       background: var(--bg);
-      color: var(--paper);
+      color: var(--ink);
       font-family: var(--font-type);
       font-size: 15px;
       line-height: 1.7;
       min-height: 100vh;
-      display: flex;
-      flex-direction: column;
       overflow-x: hidden;
     }
 
     a { text-decoration: none; color: inherit; }
 
-    
+    /* ── HERO ── */
+    .hero {
+      position: relative;
+      min-height: auto;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
 
-    
-    
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(to bottom, rgba(12,8,4,0.5) 0%, rgba(12,8,4,0.25) 40%, rgba(12,8,4,0.92) 100%),
+        linear-gradient(135deg, #1a130a 0%, #0c0a06 60%, #111008 100%);
+      z-index: 0;
+    }
 
-    
-    
+    .hero-glow {
+      position: absolute;
+      right: 5%;
+      top: 10%;
+      width: 280px;
+      height: 280px;
+      background: radial-gradient(circle at 60% 40%, rgba(200,140,40,0.08) 0%, transparent 70%);
+      pointer-events: none;
+      z-index: 1;
+    }
 
-    
-
-    
-    
-    
-    
-
-    .coming-soon {
+    .hero-content {
+      position: relative;
+      z-index: 5;
       flex: 1;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       text-align: center;
-      padding: 3rem 2rem;
+      padding: 1.5rem 2rem 2.5rem;
     }
 
-    .coming-soon-label {
+    .hero-label {
       font-family: var(--font-type);
       font-size: 0.72rem;
       letter-spacing: 0.3em;
@@ -70,24 +85,271 @@
       margin-bottom: 0.6rem;
     }
 
-    .coming-soon-title {
+    .hero-title {
       font-family: var(--font-header);
-      font-size: clamp(1.8rem, 6vw, 3rem);
-      letter-spacing: 0.1em;
+      font-size: clamp(2rem, 7vw, 4rem);
+      letter-spacing: 0.12em;
       color: rgba(220,190,140,0.95);
       text-transform: uppercase;
       text-shadow: 0 2px 30px rgba(0,0,0,0.8);
-      margin-bottom: 1.25rem;
+      margin-bottom: 1rem;
     }
 
-    .coming-soon-rule { width: 40px; height: 1px; background: rgba(201,169,122,0.3); margin: 0 auto 1.25rem; }
+    .hero-rule {
+      width: 60px;
+      height: 1px;
+      background: rgba(201,169,122,0.35);
+      margin: 0 auto;
+    }
 
-    .coming-soon-sub {
-      font-size: 0.85rem;
-      color: rgba(201,169,122,0.55);
+    /* ── PAPER SECTION ── */
+    .paper-section {
+      position: relative;
+      background: var(--paper-bg);
+    }
+
+    .paper-section::before {
+      content: "";
+      display: block;
+      height: 28px;
+      background: var(--paper-bg);
+      clip-path: polygon(
+        0% 100%, 1% 20%, 2.5% 90%, 4% 10%, 5.5% 80%, 7% 5%,
+        8.5% 85%, 10% 15%, 11.5% 75%, 13% 25%, 14.5% 70%,
+        16% 30%, 17.5% 65%, 19% 20%, 20.5% 80%, 22% 10%,
+        23.5% 90%, 25% 15%, 26.5% 75%, 28% 35%, 29.5% 60%,
+        31% 25%, 32.5% 70%, 34% 10%, 35.5% 85%, 37% 20%,
+        38.5% 75%, 40% 30%, 41.5% 65%, 43% 15%, 44.5% 80%,
+        46% 20%, 47.5% 70%, 49% 10%, 50.5% 90%, 52% 25%,
+        53.5% 60%, 55% 15%, 56.5% 80%, 58% 30%, 59.5% 65%,
+        61% 10%, 62.5% 85%, 64% 20%, 65.5% 75%, 67% 35%,
+        68.5% 60%, 70% 15%, 71.5% 80%, 73% 25%, 74.5% 70%,
+        76% 10%, 77.5% 90%, 79% 20%, 80.5% 65%, 82% 30%,
+        83.5% 75%, 85% 15%, 86.5% 80%, 88% 25%, 89.5% 60%,
+        91% 10%, 92.5% 85%, 94% 20%, 95.5% 70%, 97% 30%,
+        98.5% 80%, 100% 0%, 100% 100%
+      );
+    }
+
+    .paper-inner {
+      position: relative;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 1rem 2.5rem 4rem;
+    }
+
+    .paper-inner::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23noise)' opacity='0.035'/%3E%3C/svg%3E");
+      pointer-events: none;
+    }
+
+    .paper-inner::after {
+      content: "";
+      position: absolute;
+      top: 0; bottom: 0;
+      left: 4rem;
+      width: 1px;
+      background: rgba(180,100,80,0.22);
+      pointer-events: none;
+    }
+
+    /* ── CONTENT BLOCKS ── */
+    .content-block {
+      position: relative;
+      margin-bottom: 2.5rem;
+    }
+
+    .content-block:last-child { margin-bottom: 0; }
+
+    .block-label {
+      font-family: var(--font-type);
+      font-size: 0.65rem;
+      letter-spacing: 0.28em;
+      color: rgba(60,30,10,0.45);
+      text-transform: uppercase;
+      margin-bottom: 0.4rem;
+    }
+
+    .block-title {
+      font-family: var(--font-header);
+      font-size: clamp(1rem, 3vw, 1.35rem);
+      letter-spacing: 0.1em;
+      color: var(--ink);
+      text-transform: uppercase;
+      margin-bottom: 0.75rem;
+    }
+
+    .block-rule {
+      width: 36px;
+      height: 1px;
+      background: rgba(60,30,10,0.3);
+      margin-bottom: 0.9rem;
+    }
+
+    .block-text {
+      font-family: var(--font-type);
+      font-size: 0.88rem;
+      color: rgba(28,18,10,0.78);
+      line-height: 1.85;
+    }
+
+    .section-divider {
+      border: none;
+      border-top: 1px solid rgba(60,30,10,0.15);
+      margin: 2.5rem 0;
+    }
+
+    .archive-note {
+      border: 1px solid rgba(60,30,10,0.2);
+      border-left: 3px solid rgba(60,30,10,0.32);
+      background: rgba(255,255,255,0.11);
+      padding: 0.85rem 1rem;
+      margin: 1.25rem 0 0;
+      color: rgba(28,18,10,0.68);
+    }
+
+    .archive-note-label {
+      display: block;
+      font-family: var(--font-header);
+      font-size: 0.62rem;
+      letter-spacing: 0.22em;
+      color: rgba(60,30,10,0.48);
+      text-transform: uppercase;
+      margin-bottom: 0.25rem;
+    }
+
+    /* ── RELEASE CARD ── */
+    .release-card {
+      display: flex;
+      gap: 1.25rem;
+      align-items: flex-start;
+      border: 1px solid rgba(60,30,10,0.18);
+      background: rgba(0,0,0,0.035);
+      padding: 1.1rem;
+    }
+
+    .release-art {
+      flex-shrink: 0;
+      width: 96px;
+      height: 96px;
+      border: 1px solid rgba(60,30,10,0.3);
+      background: repeating-linear-gradient(
+        45deg,
+        rgba(60,30,10,0.06),
+        rgba(60,30,10,0.06) 8px,
+        rgba(60,30,10,0.1) 8px,
+        rgba(60,30,10,0.1) 16px
+      );
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-size: 0.58rem;
+      letter-spacing: 0.08em;
+      color: rgba(60,30,10,0.45);
+      text-transform: uppercase;
+      padding: 0.5rem;
+    }
+
+    .release-body { min-width: 0; }
+
+    .release-song-title {
+      font-family: var(--font-header);
+      font-size: 1.05rem;
+      letter-spacing: 0.05em;
+      color: var(--ink);
+      text-transform: uppercase;
+      margin-bottom: 0.3rem;
+    }
+
+    .release-desc {
+      font-size: 0.82rem;
+      color: rgba(28,18,10,0.7);
+      line-height: 1.65;
       font-style: italic;
     }
 
+    .stream-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-top: 0.9rem;
+    }
+
+    .stream-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-family: var(--font-header);
+      font-size: 0.66rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: rgba(60,30,10,0.4);
+      border: 1px solid rgba(60,30,10,0.25);
+      padding: 0.5rem 0.85rem;
+      cursor: not-allowed;
+      user-select: none;
+      background: rgba(0,0,0,0.02);
+    }
+
+    /* ── RECENT RELEASES LIST ── */
+    .release-row-list { display: grid; gap: 0.75rem; margin-top: 1rem; }
+
+    .release-row {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      border: 1px solid rgba(60,30,10,0.16);
+      background: rgba(0,0,0,0.03);
+      padding: 0.75rem 1rem;
+    }
+
+    .release-row-art {
+      flex-shrink: 0;
+      width: 44px;
+      height: 44px;
+      border: 1px solid rgba(60,30,10,0.25);
+      background: repeating-linear-gradient(
+        45deg,
+        rgba(60,30,10,0.06),
+        rgba(60,30,10,0.06) 6px,
+        rgba(60,30,10,0.1) 6px,
+        rgba(60,30,10,0.1) 12px
+      );
+    }
+
+    .release-row-body { min-width: 0; flex: 1; }
+
+    .release-row-title {
+      font-family: var(--font-header);
+      font-size: 0.82rem;
+      letter-spacing: 0.05em;
+      color: var(--ink);
+      text-transform: uppercase;
+    }
+
+    .release-row-meta {
+      font-size: 0.7rem;
+      color: rgba(28,18,10,0.55);
+      margin-top: 0.15rem;
+    }
+
+    .coming-soon-tag {
+      flex-shrink: 0;
+      font-family: var(--font-type);
+      font-size: 0.6rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: rgba(60,30,10,0.45);
+      border: 1px solid rgba(60,30,10,0.25);
+      padding: 0.3rem 0.6rem;
+      white-space: nowrap;
+    }
+
+    /* ── FOOTER ── */
     .site-footer {
       background: var(--bg);
       padding: 1.5rem 2.5rem;
@@ -119,21 +381,98 @@
 
     @media (max-width: 640px) {
       .site-nav { padding: 1rem 1.25rem; }
+      .paper-inner { padding: 1rem 1.25rem 3rem; }
+      .paper-inner::after { left: 2rem; }
+      .release-card { flex-direction: column; align-items: center; text-align: center; }
+      .stream-buttons { justify-content: center; }
+      .release-row { flex-wrap: wrap; }
       .site-footer { flex-direction: column; text-align: center; }
     }
   </style>
+  <link rel="stylesheet" href="css/polish.css">
   <link rel="stylesheet" href="css/public-nav.css" />
 </head>
 <body>
 
   <script src="js/public-nav.js"></script>
 
-    <div class="coming-soon">
-    <p class="coming-soon-label">Asten Vale Archives</p>
-    <h1 class="coming-soon-title">Music archive coming soon.</h1>
-    <div class="coming-soon-rule"></div>
-    <p class="coming-soon-sub">Recovered recordings will be indexed here.</p>
-  </div>
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-glow"></div>
+    <div class="hero-content">
+      <p class="hero-label">Recovered Recordings</p>
+      <h1 class="hero-title">Music</h1>
+      <div class="hero-rule"></div>
+    </div>
+  </section>
+
+  <section class="paper-section">
+    <div class="paper-inner">
+
+      <div class="content-block">
+        <p class="block-label">Latest Release</p>
+        <h2 class="block-title">Now Cataloging</h2>
+        <div class="block-rule"></div>
+        <div class="release-card">
+          <div class="release-art">No Artwork on File</div>
+          <div class="release-body">
+            <div class="release-song-title">Untitled Recording</div>
+            <p class="release-desc">A description of the latest recovered song will appear here once the archive processes it.</p>
+            <div class="stream-buttons">
+              <span class="stream-btn">&#9654; Spotify</span>
+              <span class="stream-btn">&#9654; Apple Music</span>
+              <span class="stream-btn">&#9654; YouTube</span>
+            </div>
+          </div>
+        </div>
+        <div class="archive-note"><span class="archive-note-label">Archive Note</span>Streaming links will activate once this recording is officially declassified.</div>
+      </div>
+
+      <hr class="section-divider" />
+
+      <div class="content-block">
+        <p class="block-label">Recent Releases</p>
+        <h2 class="block-title">Recovered So Far</h2>
+        <div class="block-rule"></div>
+        <div class="release-row-list">
+          <div class="release-row">
+            <div class="release-row-art"></div>
+            <div class="release-row-body">
+              <div class="release-row-title">Untitled Recording</div>
+              <div class="release-row-meta">Placeholder Date</div>
+            </div>
+            <span class="coming-soon-tag">Coming Soon</span>
+          </div>
+          <div class="release-row">
+            <div class="release-row-art"></div>
+            <div class="release-row-body">
+              <div class="release-row-title">Untitled Recording</div>
+              <div class="release-row-meta">Placeholder Date</div>
+            </div>
+            <span class="coming-soon-tag">Coming Soon</span>
+          </div>
+          <div class="release-row">
+            <div class="release-row-art"></div>
+            <div class="release-row-body">
+              <div class="release-row-title">Untitled Recording</div>
+              <div class="release-row-meta">Placeholder Date</div>
+            </div>
+            <span class="coming-soon-tag">Coming Soon</span>
+          </div>
+        </div>
+      </div>
+
+      <hr class="section-divider" />
+
+      <div class="content-block">
+        <p class="block-label">Archive Status</p>
+        <h2 class="block-title">Full Catalog Coming Soon</h2>
+        <div class="block-rule"></div>
+        <p class="block-text">The complete music archive is still being indexed. Recovered recordings, streaming links, and full release histories will appear here as investigations are declassified.</p>
+      </div>
+
+    </div>
+  </section>
 
   <footer class="site-footer">
     <div class="footer-motto">
@@ -148,6 +487,7 @@
     <span class="footer-copy">© 2026 Asten Vale Archives</span>
   </footer>
 
+  <script src="js/polish.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
   <script src="js/progress-sync.js"></script>
 </body>
