@@ -1535,6 +1535,7 @@ body.unlocked .archive-player,body.unlocked #fields-container,body.unlocked .pan
         var _ahref = _amap[f.id] || 'cabinet.html';
         var row = document.createElement('div');
         row.className = 'case-summary-row';
+        row.dataset.fieldId = f.id;
         row.innerHTML =
           '<span class="case-summary-label"><a href="' + _ahref + '" class="case-summary-label-link">' + f.label + '</a></span>' +
           '<span class="case-summary-value">' + display + '</span>';
@@ -1544,6 +1545,33 @@ body.unlocked .archive-player,body.unlocked #fields-container,body.unlocked .pan
       blk.appendChild(fieldList);
       sec0.appendChild(blk);
       panel.appendChild(sec0);
+
+      // Backfill from the backend if this case was marked solved before
+      // the reveal-cache existed (or on a different device) -- the local
+      // av_revealed_<id> cache is empty in that case even though the case
+      // is genuinely solved, so every field shows a dash. Ownership is
+      // verified server-side from completed_cases, never from anything
+      // this page claims, so this can't reveal an unearned answer.
+      var missing = fields.filter(function(f) { return !revealed[f.id]; });
+      if (missing.length && window.AVProgressSync) {
+        var client = window.AVProgressSync.getClient();
+        if (client) {
+          client.functions.invoke('validate-case-answer', { body: { case_id: caseData.id, reveal_solved: true } })
+            .then(function (res) {
+              var fromServer = (res && res.data && res.data.revealed) || {};
+              if (!Object.keys(fromServer).length) return;
+              var merged = getRevealed(caseData.id);
+              Object.keys(fromServer).forEach(function (id) { merged[id] = fromServer[id]; });
+              setRevealed(caseData.id, merged);
+              missing.forEach(function (f) {
+                if (!fromServer[f.id]) return;
+                var row = fieldList.querySelector('[data-field-id="' + f.id + '"] .case-summary-value');
+                if (row) row.textContent = titleCase(fromServer[f.id]);
+              });
+            })
+            .catch(function () { /* network error -- leave dashes, not a regression */ });
+        }
+      }
     })();
 
     // Ã¢â€â‚¬Ã¢â€â‚¬ SECTION 1: EVIDENCE CABINET Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
