@@ -279,58 +279,84 @@
     });
 
     var solved = [];
-    try { solved = JSON.parse(localStorage.getItem('av_solved') || '[]'); } catch(e) {}
-
     var body  = document.getElementById('cabinetBody');
     var count = document.getElementById('cabinetCount');
 
-    if (solved.length === 0) {
-      body.innerHTML =
+    // Evidence only appears for cases the player has actually earned.
+    // Backend-enforced: player_progress.completed_cases (via
+    // AVProgressSync/getSupabaseProgress) is the authority; localStorage
+    // is merged in only as an offline fallback -- a player can no longer
+    // fabricate a solve by editing localStorage alone once the server
+    // record is reachable.
+    function getAuthoritativeSolved() {
+      var local = [];
+      try { local = JSON.parse(localStorage.getItem('av_solved') || '[]'); } catch(e) {}
+      if (!window.AVProgressSync) return Promise.resolve(local);
+      return window.AVProgressSync.getUser().then(function (user) {
+        if (!user) return local;
+        return window.AVProgressSync.getSupabaseProgress(user).then(function (progress) {
+          var serverSolved = (progress && progress.completed_cases) || [];
+          var merged = local.slice();
+          serverSolved.forEach(function (id) { if (merged.indexOf(id) === -1) merged.push(id); });
+          return merged;
+        });
+      }).catch(function () { return local; }); // Supabase unreachable -- fall back to local
+    }
+
+    getAuthoritativeSolved().then(function (result) {
+      solved = result;
+      renderEvidenceCabinet();
+    });
+
+    function renderEvidenceCabinet() {
+      if (solved.length === 0) {
+        body.innerHTML =
         '<div class="cabinet-empty">' +
           '<span class="cabinet-empty-icon">ÃƒÂ°Ã…Â¸Ã¢â‚¬â€Ã¢â‚¬Å¾</span>' +
           '<div class="cabinet-empty-title">Cabinet Empty</div>' +
           '<div class="cabinet-empty-sub">No evidence has been recovered yet. Solve a case to add the first artifact to your cabinet.</div>' +
           '<a href="index.html" class="cabinet-empty-btn">Begin Investigation</a>' +
         '</div>';
-      count.textContent = '0 Items Recovered';
-      return;
+              count.textContent = '0 Items Recovered';
+        return;
+      }
+
+      // Load collectible data from each solved song file
+      var loaded      = 0;
+      var collectibles = [];
+
+      solved.forEach(function(id) {
+        var padded = String(parseInt(id, 10) || 1).padStart(3, '0');
+        var s = document.createElement('script');
+        s.src = 'data/songs/song' + padded + '.js';
+        s.onload = function() {
+          if (window.SONG_DATA) {
+            var caseFile  = window.SONG_DATA.caseFile || id;
+            var caseTitle = window.SONG_DATA.title || ('Case ' + id);
+            // Support both new collectibles[] array and legacy collectible{}
+            var arr = window.SONG_DATA.collectibles || (window.SONG_DATA.collectible ? [window.SONG_DATA.collectible] : []);
+            arr.forEach(function(c) {
+              if (c && c.name && c.name.indexOf('//') === -1) {
+                collectibles.push({ caseId: id, caseFile: caseFile, caseTitle: caseTitle, collectible: c });
+              }
+            });
+          }
+          window.SONG_DATA = null;
+          loaded++;
+          if (loaded === solved.length) {
+            collectibles.sort(function(a, b) {
+              return parseInt(a.caseId, 10) - parseInt(b.caseId, 10);
+            });
+            renderCabinet(collectibles);
+          }
+        };
+        s.onerror = function() {
+          loaded++;
+          if (loaded === solved.length) renderCabinet(collectibles);
+        };
+        document.head.appendChild(s);
+      });
     }
-
-    // Load collectible data from each solved song file
-    var loaded      = 0;
-    var collectibles = [];
-
-    solved.forEach(function(id) {
-      var padded = String(parseInt(id, 10) || 1).padStart(3, '0');
-      var s = document.createElement('script');
-      s.src = 'data/songs/song' + padded + '.js';
-      s.onload = function() {
-        if (window.SONG_DATA) {
-          var caseFile  = window.SONG_DATA.caseFile || id;
-          var caseTitle = window.SONG_DATA.title || ('Case ' + id);
-          // Support both new collectibles[] array and legacy collectible{}
-          var arr = window.SONG_DATA.collectibles || (window.SONG_DATA.collectible ? [window.SONG_DATA.collectible] : []);
-          arr.forEach(function(c) {
-            if (c && c.name && c.name.indexOf('//') === -1) {
-              collectibles.push({ caseId: id, caseFile: caseFile, caseTitle: caseTitle, collectible: c });
-            }
-          });
-        }
-        window.SONG_DATA = null;
-        loaded++;
-        if (loaded === solved.length) {
-          collectibles.sort(function(a, b) {
-            return parseInt(a.caseId, 10) - parseInt(b.caseId, 10);
-          });
-          renderCabinet(collectibles);
-        }
-      };
-      s.onerror = function() {
-        loaded++;
-        if (loaded === solved.length) renderCabinet(collectibles);
-      };
-      document.head.appendChild(s);
-    });
 
 
     function clampImageValue(value, fallback, min, max) {

@@ -2245,31 +2245,34 @@ var witDesc = document.createElement('div');
       }
     } catch(e) {}
   }
-
-  // Ã¢â€â‚¬Ã¢â€â‚¬ PROGRESSION GATE Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
-  // A case is considered released if:
-  //   (a) vault-config marks it released:true, OR
-  //   (b) the Google Sheet has a valid https:// streaming link for it.
-  // Adding a streaming link to the sheet is the only action needed to open a case.
+  // ---- PROGRESSION GATE ----
+  // Backend-enforced: a case is only viewable if the server's
+  // released_cases table (via the public_released_cases view) says it's
+  // released, or the player has already solved it per their server-side
+  // player_progress row -- not just localStorage, which a client could
+  // edit directly to fake having solved earlier cases and skip ahead.
+  //
+  // Adding a streaming link to the sheet no longer opens a case by
+  // itself; released_cases must also be flipped server-side. Fails open
+  // (does not redirect) only if Supabase itself is unreachable, matching
+  // the fail-open pattern used by the auth gate above -- an outage should
+  // not brick the game, but a case simply not being released is not an
+  // outage and does redirect.
   (function() {
     var params   = new URLSearchParams(window.location.search);
     var rawId    = params.get('id') || '1';
     var paddedId = String(parseInt(rawId, 10) || 1).padStart(3, '0');
 
-    var solved = [];
-    try { solved = JSON.parse(localStorage.getItem('av_solved') || '[]'); } catch(e) {}
+    var localSolved = [];
+    try { localSolved = JSON.parse(localStorage.getItem('av_solved') || '[]'); } catch(e) {}
 
-    // Already solved Ã¢â‚¬â€ always allow
-    if (solved.indexOf(paddedId) !== -1) return;
-
-    function runGate(sheetReleasedIds) {
+    function runGate(releasedIds, solved) {
       if (typeof SEASONS_CONFIG === 'undefined') return;
       var season = SEASONS_CONFIG[0];
 
-      // Merge vault-config released flags with sheet-based released ids
-      var released = season.cases.filter(function(c) {
-        return c.released || sheetReleasedIds.indexOf(c.id) !== -1;
-      });
+      if (solved.indexOf(paddedId) !== -1) return; // already solved -- always allow
+
+      var released = season.cases.filter(function(c) { return releasedIds.indexOf(c.id) !== -1; });
       var unsolved = released.filter(function(c) { return solved.indexOf(c.id) === -1; });
       var active   = unsolved[0];
 
@@ -2277,42 +2280,39 @@ var witDesc = document.createElement('div');
       window.location.replace('classified.html?id=' + paddedId);
     }
 
-    // Fetch the sheet to discover which cases have a real streaming link
-    function loadVaultAndGate(sheetReleasedIds) {
-      if (typeof SEASONS_CONFIG !== 'undefined') {
-        runGate(sheetReleasedIds);
-      } else {
-        var s = document.createElement('script');
-        s.src = 'js/vault-config.js';
-        s.onload = function() { runGate(sheetReleasedIds); };
-        document.head.appendChild(s);
-      }
+    function withVaultConfig(cb) {
+      if (typeof SEASONS_CONFIG !== 'undefined') { cb(); return; }
+      var s = document.createElement('script');
+      s.src = 'js/vault-config.js';
+      s.onload = cb;
+      document.head.appendChild(s);
     }
 
-    fetch('js/site-settings.json')
-      .then(function(r) { return r.json(); })
-      .then(function(s) {
-        var sheetUrl = s.streamingSheetUrl;
-        if (!sheetUrl) { loadVaultAndGate([]); return; }
-        return fetch(sheetUrl).then(function(r) { return r.text(); }).then(function(csv) {
-          var rows    = csv.trim().split('\n').map(function(r) { return r.split(','); });
-          var headers = rows[0].map(function(h) { return h.trim().toLowerCase(); });
-          var idCol   = headers.indexOf('id');
-          var linkCols = ['spotify','apple','youtube','amazon'].map(function(n) { return headers.indexOf(n); });
-          var released = [];
-          rows.slice(1).forEach(function(row) {
-            var id = row[idCol] ? row[idCol].trim().padStart(3, '0') : null;
-            if (!id) return;
-            var hasLink = linkCols.some(function(col) {
-              var v = col >= 0 && row[col] ? row[col].trim() : '';
-              return /^https?:\/\//i.test(v);
-            });
-            if (hasLink) released.push(id);
-          });
-          loadVaultAndGate(released);
-        });
-      })
-      .catch(function() { loadVaultAndGate([]); });
+    withVaultConfig(function() {
+      if (!window.AVProgressSync) { return; } // sync module missing -- fail open
+      var client = window.AVProgressSync.getClient();
+      if (!client) { return; } // Supabase unreachable -- fail open
+
+      Promise.all([
+        client.from('public_released_cases').select('case_id'),
+        window.AVProgressSync.getUser().then(function(user) {
+          if (!user) return null;
+          return window.AVProgressSync.getSupabaseProgress(user);
+        })
+      ]).then(function(results) {
+        var releasedRes = results[0];
+        var progress     = results[1];
+
+        if (releasedRes.error || !releasedRes.data) return; // fetch failed -- fail open
+
+        var releasedIds = releasedRes.data.map(function(r) { return r.case_id; });
+        var serverSolved = (progress && progress.completed_cases) || [];
+        var solved = localSolved.slice();
+        serverSolved.forEach(function(id) { if (solved.indexOf(id) === -1) solved.push(id); });
+
+        runGate(releasedIds, solved);
+      }).catch(function() { /* network error -- fail open */ });
+    });
   })();
 
   // Ã¢â€â‚¬Ã¢â€â‚¬ DYNAMIC SONG LOADER Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
