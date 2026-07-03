@@ -47,6 +47,41 @@
 
     .empty-note{font-size:0.8rem;color:rgba(201,169,122,0.5);font-style:italic;text-align:center;padding:1rem 0;}
     #loadingNote{text-align:center;padding:4rem 1rem;color:rgba(201,169,122,0.5);font-size:0.8rem;}
+
+    /* ── Progress summary ─────────────────────────────────────────────── */
+    .progress-summary{background:rgba(201,169,122,0.06);border:1px solid rgba(201,169,122,0.2);border-radius:4px;padding:1.1rem 1.25rem;margin-bottom:2rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:0.9rem;}
+    .progress-summary-item .label{font-size:0.65rem;letter-spacing:0.08em;text-transform:uppercase;color:rgba(201,169,122,0.6);}
+    .progress-summary-item .val{display:block;margin-top:0.25rem;font-family:var(--font-header);font-size:1.1rem;letter-spacing:0.04em;color:var(--gold);text-transform:uppercase;}
+
+    /* ── Section headings ─────────────────────────────────────────────── */
+    .vault-section{margin-bottom:2.25rem;}
+    .vault-section-heading{font-family:var(--font-header);font-size:0.85rem;letter-spacing:0.15em;color:rgba(201,169,122,0.6);text-transform:uppercase;margin-bottom:0.85rem;padding-bottom:0.4rem;border-bottom:1px solid rgba(201,169,122,0.2);}
+
+    /* ── Next vault (medium card) ─────────────────────────────────────── */
+    .vault-card.next-vault{max-width:280px;margin:0 auto;padding:1rem;}
+    .vault-card.next-vault .vault-symbol{font-size:1.5rem;}
+    .vault-card.next-vault .vault-name{font-size:0.85rem;}
+
+    /* ── Compact archive rows (completed + sealed) ────────────────────── */
+    .vault-row-list{display:flex;flex-direction:column;}
+    .vault-row{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:0.65rem 0;border-bottom:1px solid rgba(201,169,122,0.15);}
+    .vault-row-left{display:flex;align-items:center;gap:0.65rem;min-width:0;}
+    .vault-row-icon{flex-shrink:0;font-size:0.85rem;}
+    .vault-row-name{font-size:0.8rem;letter-spacing:0.05em;overflow-wrap:anywhere;}
+    .vault-row.completed .vault-row-name{color:rgba(220,190,140,0.9);}
+    .vault-row.sealed{opacity:0.5;}
+    .vault-row.sealed .vault-row-name{letter-spacing:0.1em;}
+    .vault-row-view-btn{font-size:0.62rem;letter-spacing:0.08em;text-transform:uppercase;color:rgba(201,169,122,0.7);background:none;border:none;padding:0;margin-top:0.2rem;cursor:pointer;font-family:inherit;text-align:left;}
+    .vault-row-view-btn:hover{color:var(--paper);}
+    .vault-row-lore{display:none;font-size:0.7rem;font-style:italic;color:rgba(201,169,122,0.55);margin-top:0.4rem;line-height:1.5;}
+    .vault-row-lore.open{display:block;}
+    .vault-row-body{display:flex;flex-direction:column;min-width:0;}
+    .vault-row-empty{font-size:0.75rem;font-style:italic;color:rgba(201,169,122,0.45);padding:0.5rem 0;}
+
+    /* ── Current vault progress bar ───────────────────────────────────── */
+    .vault-progress-track{background:rgba(60,30,10,0.15);border-radius:3px;height:8px;overflow:hidden;margin-top:0.6rem;}
+    .vault-progress-fill{background:var(--folder-red);height:100%;border-radius:3px;transition:width 0.3s;}
+    .vault-progress-count{font-size:0.68rem;letter-spacing:0.06em;color:var(--ink-faded);margin-top:0.35rem;}
   
     
     
@@ -74,7 +109,29 @@
     </div>
 
     <div class="wrap">
-      <div class="vault-grid" id="vaultGrid"></div>
+      <div class="progress-summary" id="progressSummary"></div>
+
+      <div class="vault-section" id="currentVaultSection" style="display:none;">
+        <div class="vault-section-heading">Current Vault</div>
+        <div class="vault-grid" id="currentVaultGrid"></div>
+      </div>
+
+      <div class="vault-section" id="nextVaultSection" style="display:none;">
+        <div class="vault-section-heading">Next Vault</div>
+        <div class="vault-grid" id="nextVaultGrid"></div>
+      </div>
+
+      <div class="vault-section" id="completedVaultsSection" style="display:none;">
+        <div class="vault-section-heading">Unlocked Vaults</div>
+        <div class="vault-row-list" id="completedVaultsList"></div>
+      </div>
+
+      <div class="vault-section" id="sealedVaultsSection" style="display:none;">
+        <div class="vault-section-heading">Sealed Vaults</div>
+        <div class="vault-row-list" id="sealedVaultsList"></div>
+      </div>
+
+      <p class="empty-note" id="vaultsEmptyNote" style="display:none;"></p>
     </div>
   </div>
 
@@ -99,6 +156,51 @@
       return season.cases.filter(function (c) { return releasedIds.indexOf(c.id) !== -1; });
     }
 
+    function buildVaultCard(season, releasedIds, solved, isCompleted, isCurrent, extraClass) {
+      var vault = season.vault;
+      var released = releasedCases(season, releasedIds);
+      var solvedCount = released.filter(function (c) { return solved.indexOf(c.id) !== -1; }).length;
+      var totalCount = released.length;
+
+      var card = document.createElement('div');
+      var stateClass = isCompleted ? 'unlocked' : (isCurrent ? 'current' : 'locked');
+      card.className = 'vault-card ' + stateClass + (extraClass ? ' ' + extraClass : '');
+      card.dataset.vaultId = vault.id;
+
+      var statusText = isCompleted ? 'Unlocked' : (isCurrent ? 'In Progress' : 'Locked');
+      var pct = totalCount ? Math.round((solvedCount / totalCount) * 100) : 0;
+      // Story names only render for completed/current vaults -- the "next"
+      // vault card is built with a number-only placeholder name by the
+      // caller, so this function itself never has to guess what's safe
+      // to reveal.
+
+      card.innerHTML =
+        '<div class="vault-symbol">' + (isCompleted ? '&#128274;&#65039;' : '&#128272;') + '</div>' +
+        '<div class="vault-name">' + esc(vault.name) + '</div>' +
+        '<div class="vault-status">' + statusText + '</div>' +
+        (isCompleted ? '<div class="vault-lore">' + esc(vault.lore) + '</div>' : '') +
+        (isCurrent
+          ? '<div class="vault-progress-count">' + solvedCount + ' / ' + totalCount + ' Cases</div>' +
+            '<div class="vault-progress-track"><div class="vault-progress-fill" style="width:' + pct + '%"></div></div>'
+          : '') +
+        (!isCompleted
+          ? '<div class="vault-detail">' +
+              '<div class="vault-detail-row"><span class="vault-detail-label">Required Series</span><span>' + esc(season.title) + '</span></div>' +
+              '<div class="vault-detail-row"><span class="vault-detail-label">Progress</span><span>' + solvedCount + ' / ' + totalCount + '</span></div>' +
+              '<div class="vault-detail-requirement">Solve every released case in ' + esc(season.title) + ' to unlock this vault.</div>' +
+            '</div>'
+          : '');
+
+      if (!isCompleted) {
+        card.addEventListener('click', function () {
+          var detail = card.querySelector('.vault-detail');
+          if (detail) detail.classList.toggle('open');
+        });
+      }
+
+      return { card: card, solvedCount: solvedCount, totalCount: totalCount };
+    }
+
     function render(progress, releasedIds) {
       document.getElementById('loadingNote').style.display = 'none';
       document.getElementById('vaultsContent').style.display = 'block';
@@ -107,65 +209,128 @@
       var unlockedVaultIds = {};
       ((progress && progress.unlocked_vaults) || []).forEach(function (id) { unlockedVaultIds[id] = true; });
 
-      var grid = document.getElementById('vaultGrid');
+      var currentSection   = document.getElementById('currentVaultSection');
+      var currentGrid      = document.getElementById('currentVaultGrid');
+      var nextSection      = document.getElementById('nextVaultSection');
+      var nextGrid         = document.getElementById('nextVaultGrid');
+      var completedSection = document.getElementById('completedVaultsSection');
+      var completedList    = document.getElementById('completedVaultsList');
+      var sealedSection     = document.getElementById('sealedVaultsSection');
+      var sealedList        = document.getElementById('sealedVaultsList');
+      var emptyNote          = document.getElementById('vaultsEmptyNote');
 
       if (typeof SEASONS_CONFIG === 'undefined') {
-        grid.innerHTML = '<p class="empty-note">This archive section is being indexed.</p>';
+        emptyNote.textContent = 'This archive section is being indexed.';
+        emptyNote.style.display = 'block';
         return;
       }
 
       var seasonsWithVaults = SEASONS_CONFIG.filter(function (s) { return !!s.vault; });
 
-      // "Current" is the first season whose vault isn't completed yet --
-      // by definition that's never a completed vault. "Next" is the one
-      // right after it. Everything past that stays hidden so a brand new
-      // player only ever sees three vaults at most, never all fifty.
+      // "Current" is the first season whose vault isn't completed yet.
+      // "Next" is the one right after it. Everything else beyond "next" is
+      // rendered as a sealed row with its story name still hidden.
       var currentIndex = seasonsWithVaults.findIndex(function (s) { return !unlockedVaultIds[s.vault.id]; });
       if (currentIndex === -1) currentIndex = seasonsWithVaults.length; // all completed
+
+      var totalCasesSolved = solved.length;
+      var totalCasesOverall = 0;
+      seasonsWithVaults.forEach(function (s) { totalCasesOverall += s.cases.length; });
+
+      var completedCount = 0;
+      var currentCasesInfo = null;
+      // The next vault's requirement is framed around finishing the season
+      // tied to the *current* vault -- that's what actually stands between
+      // the player and the next investigation, not the next vault's own
+      // (still-hidden) season.
+      var currentSeasonTitle = currentIndex < seasonsWithVaults.length ? seasonsWithVaults[currentIndex].title : null;
 
       seasonsWithVaults.forEach(function (season, i) {
         var isCompleted = i < currentIndex;
         var isCurrent = i === currentIndex;
         var isNext = i === currentIndex + 1;
-        if (!isCompleted && !isCurrent && !isNext) return; // hidden -- future vault
-
         var vault = season.vault;
-        var released = releasedCases(season, releasedIds);
-        var solvedCount = released.filter(function (c) { return solved.indexOf(c.id) !== -1; }).length;
-        var totalCount = released.length;
 
-        var card = document.createElement('div');
-        var stateClass = isCompleted ? 'unlocked' : (isCurrent ? 'current' : 'locked');
-        card.className = 'vault-card ' + stateClass;
-        card.dataset.vaultId = vault.id;
-
-        var statusText = isCompleted ? 'Unlocked' : (isCurrent ? 'In Progress' : 'Locked');
-
-        card.innerHTML =
-          '<div class="vault-symbol">' + (isCompleted ? '&#128274;&#65039;' : '&#128272;') + '</div>' +
-          '<div class="vault-name">' + esc(vault.name) + '</div>' +
-          '<div class="vault-status">' + statusText + '</div>' +
-          (isCompleted ? '<div class="vault-lore">' + esc(vault.lore) + '</div>' : '') +
-          (!isCompleted
-            ? '<div class="vault-detail">' +
-                '<div class="vault-detail-row"><span class="vault-detail-label">Required Series</span><span>' + esc(season.title) + '</span></div>' +
-                '<div class="vault-detail-row"><span class="vault-detail-label">Progress</span><span>' + solvedCount + ' / ' + totalCount + '</span></div>' +
-                '<div class="vault-detail-requirement">Solve every released case in ' + esc(season.title) + ' to unlock this vault.</div>' +
-              '</div>'
-            : '');
-
-        if (!isCompleted) {
-          card.addEventListener('click', function () {
-            var detail = card.querySelector('.vault-detail');
-            if (detail) detail.classList.toggle('open');
+        if (isCompleted) {
+          completedCount++;
+          var row = document.createElement('div');
+          row.className = 'vault-row completed';
+          row.innerHTML =
+            '<span class="vault-row-left"><span class="vault-row-icon">&#10003;</span>' +
+            '<span class="vault-row-body">' +
+              '<span class="vault-row-name"></span>' +
+              '<button type="button" class="vault-row-view-btn">Open Vault</button>' +
+              '<span class="vault-row-lore"></span>' +
+            '</span></span>';
+          row.querySelector('.vault-row-name').textContent = vault.name;
+          row.querySelector('.vault-row-lore').textContent = vault.lore || '';
+          row.querySelector('.vault-row-view-btn').addEventListener('click', function () {
+            row.querySelector('.vault-row-lore').classList.toggle('open');
           });
+          completedList.appendChild(row);
+          return;
         }
 
-        grid.appendChild(card);
+        if (isCurrent) {
+          var built = buildVaultCard(season, releasedIds, solved, false, true, '');
+          currentCasesInfo = { solved: built.solvedCount, total: built.totalCount, name: vault.name };
+          currentGrid.appendChild(built.card);
+          currentSection.style.display = 'block';
+          return;
+        }
+
+        if (isNext) {
+          // Medium card: number + locked state + unlock requirement only.
+          // Story name stays hidden -- "Classified" is shown in its place.
+          var numStr = (i + 1 < 10 ? '0' : '') + (i + 1);
+          var requirementText = currentSeasonTitle
+            ? 'Complete ' + esc(currentSeasonTitle) + ' to reveal.'
+            : 'Complete the current investigation to reveal.';
+          var card = document.createElement('div');
+          card.className = 'vault-card locked next-vault';
+          card.innerHTML =
+            '<div class="vault-symbol">&#128272;</div>' +
+            '<div class="vault-name">Vault ' + numStr + '</div>' +
+            '<div class="vault-status">Classified</div>' +
+            '<div class="vault-detail-requirement">' + requirementText + '</div>';
+          nextGrid.appendChild(card);
+          nextSection.style.display = 'block';
+          return;
+        }
+
+        // Sealed -- number only, no name, no click affordance.
+        var sealedRow = document.createElement('div');
+        sealedRow.className = 'vault-row sealed';
+        var sealedNumStr = (i + 1 < 10 ? '0' : '') + (i + 1);
+        sealedRow.innerHTML =
+          '<span class="vault-row-left"><span class="vault-row-icon">&#128274;</span>' +
+          '<span class="vault-row-name">Vault ' + sealedNumStr + '</span></span>';
+        sealedList.appendChild(sealedRow);
       });
 
-      if (!grid.children.length) {
-        grid.innerHTML = '<p class="empty-note">This archive section is being indexed.</p>';
+      if (!completedList.children.length) {
+        var noneRow = document.createElement('div');
+        noneRow.className = 'vault-row-empty';
+        noneRow.textContent = 'None';
+        completedList.appendChild(noneRow);
+      }
+      completedSection.style.display = 'block';
+      if (sealedList.children.length) { sealedSection.style.display = 'block'; }
+
+      // ── Progress summary ────────────────────────────────────────────
+      var summaryEl = document.getElementById('progressSummary');
+      var currentVaultLabel = currentCasesInfo ? currentCasesInfo.name : 'All Vaults Recovered';
+      var casesTowardCurrent = currentCasesInfo ? (currentCasesInfo.solved + ' / ' + currentCasesInfo.total) : (seasonsWithVaults.length ? '0 / 0' : '—');
+      summaryEl.innerHTML =
+        '<div class="progress-summary-item"><span class="label">Vaults Completed</span><span class="val">' + completedCount + ' / ' + seasonsWithVaults.length + '</span></div>' +
+        '<div class="progress-summary-item"><span class="label">Current Vault</span><span class="val"></span></div>' +
+        '<div class="progress-summary-item"><span class="label">Cases Toward Current Vault</span><span class="val">' + casesTowardCurrent + '</span></div>' +
+        '<div class="progress-summary-item"><span class="label">Overall Cases Solved</span><span class="val">' + totalCasesSolved + ' / ' + totalCasesOverall + '</span></div>';
+      summaryEl.querySelectorAll('.progress-summary-item .val')[1].textContent = currentVaultLabel;
+
+      if (!seasonsWithVaults.length) {
+        emptyNote.textContent = 'This archive section is being indexed.';
+        emptyNote.style.display = 'block';
       }
     }
 
