@@ -423,9 +423,6 @@
         seasonGroups[seasonId].cases[item.caseId].items.push(item);
       });
 
-      // Figure out the most recently solved case id
-      var mostRecentCaseId = solved[solved.length - 1];
-
       // Render
       var html = '';
       var globalIdx = 0;
@@ -444,7 +441,7 @@
         sg.caseOrder.forEach(function(caseId) {
           var cg      = sg.cases[caseId];
           var caseNum = cg.caseObj.id || caseId;
-          var isOpen  = (caseId === mostRecentCaseId);
+          var isOpen  = false;
 
           html += '<div class="case-group' + (isOpen ? ' open' : '') + '" data-case="' + caseId + '">';
           html +=   '<div class="case-group-toggle">';
@@ -519,11 +516,15 @@
 
       body.innerHTML = html;
 
-      // Wire up accordion toggles
+      // Wire up accordion toggles -- opening a case closes any other open one.
       body.querySelectorAll('.case-group-toggle').forEach(function(toggle) {
         toggle.addEventListener('click', function() {
           var group = toggle.parentElement;
-          group.classList.toggle('open');
+          var willOpen = !group.classList.contains('open');
+          body.querySelectorAll('.case-group.open').forEach(function(open) {
+            open.classList.remove('open');
+          });
+          if (willOpen) { group.classList.add('open'); }
         });
       });
     }
