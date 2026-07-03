@@ -69,14 +69,13 @@
     .vault-row-icon{flex-shrink:0;font-size:0.85rem;}
     .vault-row-name{font-size:0.8rem;letter-spacing:0.05em;overflow-wrap:anywhere;}
     .vault-row.completed .vault-row-name{color:rgba(220,190,140,0.9);}
-    .vault-row.sealed{opacity:0.5;}
-    .vault-row.sealed .vault-row-name{letter-spacing:0.1em;}
     .vault-row-view-btn{font-size:0.62rem;letter-spacing:0.08em;text-transform:uppercase;color:rgba(201,169,122,0.7);background:none;border:none;padding:0;margin-top:0.2rem;cursor:pointer;font-family:inherit;text-align:left;}
     .vault-row-view-btn:hover{color:var(--paper);}
     .vault-row-lore{display:none;font-size:0.7rem;font-style:italic;color:rgba(201,169,122,0.55);margin-top:0.4rem;line-height:1.5;}
     .vault-row-lore.open{display:block;}
     .vault-row-body{display:flex;flex-direction:column;min-width:0;}
     .vault-row-empty{font-size:0.75rem;font-style:italic;color:rgba(201,169,122,0.45);padding:0.5rem 0;}
+    .vault-footer-note{text-align:center;font-size:0.72rem;font-style:italic;letter-spacing:0.06em;color:rgba(201,169,122,0.4);margin-top:1.5rem;}
 
     /* ── Current vault progress bar ───────────────────────────────────── */
     .vault-progress-track{background:rgba(60,30,10,0.15);border-radius:3px;height:8px;overflow:hidden;margin-top:0.6rem;}
@@ -126,10 +125,7 @@
         <div class="vault-row-list" id="completedVaultsList"></div>
       </div>
 
-      <div class="vault-section" id="sealedVaultsSection" style="display:none;">
-        <div class="vault-section-heading">Sealed Vaults</div>
-        <div class="vault-row-list" id="sealedVaultsList"></div>
-      </div>
+      <p class="vault-footer-note" id="vaultsFooterNote" style="display:none;">More sealed records await&hellip;</p>
 
       <p class="empty-note" id="vaultsEmptyNote" style="display:none;"></p>
     </div>
@@ -215,8 +211,7 @@
       var nextGrid         = document.getElementById('nextVaultGrid');
       var completedSection = document.getElementById('completedVaultsSection');
       var completedList    = document.getElementById('completedVaultsList');
-      var sealedSection     = document.getElementById('sealedVaultsSection');
-      var sealedList        = document.getElementById('sealedVaultsList');
+      var footerNote        = document.getElementById('vaultsFooterNote');
       var emptyNote          = document.getElementById('vaultsEmptyNote');
 
       if (typeof SEASONS_CONFIG === 'undefined') {
@@ -228,8 +223,9 @@
       var seasonsWithVaults = SEASONS_CONFIG.filter(function (s) { return !!s.vault; });
 
       // "Current" is the first season whose vault isn't completed yet.
-      // "Next" is the one right after it. Everything else beyond "next" is
-      // rendered as a sealed row with its story name still hidden.
+      // "Next" is the one right after it. This page is a teaser, not a
+      // full index -- anything beyond "next" is never rendered at all,
+      // not even as a compact row.
       var currentIndex = seasonsWithVaults.findIndex(function (s) { return !unlockedVaultIds[s.vault.id]; });
       if (currentIndex === -1) currentIndex = seasonsWithVaults.length; // all completed
 
@@ -298,14 +294,9 @@
           return;
         }
 
-        // Sealed -- number only, no name, no click affordance.
-        var sealedRow = document.createElement('div');
-        sealedRow.className = 'vault-row sealed';
-        var sealedNumStr = (i + 1 < 10 ? '0' : '') + (i + 1);
-        sealedRow.innerHTML =
-          '<span class="vault-row-left"><span class="vault-row-icon">&#128274;</span>' +
-          '<span class="vault-row-name">Vault ' + sealedNumStr + '</span></span>';
-        sealedList.appendChild(sealedRow);
+        // Everything beyond "next" is intentionally not rendered -- this
+        // page is a teaser (current + next + unlocked), not a full index
+        // of all 50 vaults.
       });
 
       if (!completedList.children.length) {
@@ -315,7 +306,9 @@
         completedList.appendChild(noneRow);
       }
       completedSection.style.display = 'block';
-      if (sealedList.children.length) { sealedSection.style.display = 'block'; }
+
+      var hasVaultsBeyondNext = seasonsWithVaults.length > currentIndex + 2;
+      if (hasVaultsBeyondNext) { footerNote.style.display = 'block'; }
 
       // ── Progress summary ────────────────────────────────────────────
       var summaryEl = document.getElementById('progressSummary');
