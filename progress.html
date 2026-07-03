@@ -1281,17 +1281,14 @@
   }
 
   // Scalable season selection: one page, ?season=N in the URL picks which
-  // of the 50 SEASONS_CONFIG entries to render. Falls back to the
-  // player's current active season (first one with any unsolved case) when
-  // the param is missing or invalid, and to Season One if that can't be
-  // determined either (e.g. everything solved, or solved data unavailable).
-  function resolveSeasonIndex(solved) {
-    var params = new URLSearchParams(window.location.search);
-    var raw = params.get('season');
-    var n = parseInt(raw, 10);
-    if (raw != null && isFinite(n) && n >= 1 && n <= SEASONS_CONFIG.length) {
-      return n - 1;
-    }
+  // of the 50 SEASONS_CONFIG entries to render. The player's own unlock
+  // progression -- the same "first season with any unsolved case" rule
+  // used everywhere else on this page (Current Investigation, Vault
+  // Status, etc.) -- is both the fallback AND the ceiling: a season past
+  // the player's highest unlocked one is never reachable, whether by
+  // omitting the param, entering an invalid one, or manually editing the
+  // URL to a season the player hasn't reached yet.
+  function resolveActiveSeasonIndex(solved) {
     if (!solved) return 0;
     for (var i = 0; i < SEASONS_CONFIG.length; i++) {
       var allDone = SEASONS_CONFIG[i].cases.every(function (c) { return solved.indexOf(c.id) !== -1; });
@@ -1300,16 +1297,31 @@
     return SEASONS_CONFIG.length - 1; // every season complete -- show the last one
   }
 
-  function populateSeasonSelect(selectedIndex) {
+  function resolveSeasonIndex(solved) {
+    var activeIndex = resolveActiveSeasonIndex(solved);
+    var params = new URLSearchParams(window.location.search);
+    var raw = params.get('season');
+    var n = parseInt(raw, 10);
+    if (raw != null && isFinite(n) && n >= 1 && n <= SEASONS_CONFIG.length && (n - 1) <= activeIndex) {
+      return n - 1;
+    }
+    return activeIndex;
+  }
+
+  // Only seasons up to (and including) the player's highest unlocked one
+  // are ever listed -- future seasons stay completely absent from the
+  // dropdown, not just unreachable via URL.
+  function populateSeasonSelect(selectedIndex, activeIndex) {
     var sel = document.getElementById('seasonSelect');
     if (!sel) return;
-    SEASONS_CONFIG.forEach(function (s, i) {
+    for (var i = 0; i <= activeIndex; i++) {
+      var s = SEASONS_CONFIG[i];
       var opt = document.createElement('option');
       opt.value = i + 1;
-      opt.textContent = s.title;
+      opt.textContent = s.title + (i === activeIndex ? ' (Current)' : '');
       if (i === selectedIndex) opt.selected = true;
       sel.appendChild(opt);
-    });
+    }
     sel.addEventListener('change', function () {
       window.location.href = 'progress.html?season=' + sel.value;
     });
@@ -1323,7 +1335,7 @@
   (function(solved, rewardsByVault) {
     var selectedSeasonIndex = resolveSeasonIndex(solved);
     var season = SEASONS_CONFIG[selectedSeasonIndex];
-    populateSeasonSelect(selectedSeasonIndex);
+    populateSeasonSelect(selectedSeasonIndex, resolveActiveSeasonIndex(solved));
 
     var caseFilesLabel = document.getElementById('caseFilesSeasonLabel');
     if (caseFilesLabel) caseFilesLabel.textContent = season.title;
