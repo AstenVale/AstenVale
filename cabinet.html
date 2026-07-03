@@ -166,6 +166,26 @@
 </head>
 <body>
 
+  <!-- ── AUTH GATE (see case.html for the original / fuller comment) ── -->
+  <div id="authGate" style="position:fixed;inset:0;z-index:99999;background:#0c0a06;display:flex;align-items:center;justify-content:center;font-family:'Courier Prime','Courier New',monospace;color:rgba(201,169,122,0.7);font-size:0.85rem;letter-spacing:0.08em;text-transform:uppercase;">
+    Verifying investigator credentials&hellip;
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+  <script src="js/progress-sync.js"></script>
+  <script>
+  (function () {
+    var gate = document.getElementById('authGate');
+    function unlock() { if (gate) gate.remove(); }
+    if (!window.AVProgressSync) { unlock(); return; }
+    window.AVProgressSync.getUser().then(function (user) {
+      if (user) { unlock(); return; }
+      var here = window.location.pathname.split('/').pop() + window.location.search;
+      window.location.href = 'login.html?redirect=' + encodeURIComponent(here);
+    }).catch(function () { unlock(); });
+  })();
+  </script>
+  <!-- ── END AUTH GATE ── -->
+
   <nav class="site-nav">
     <a href="index.html" class="nav-brand">
       <span>Asten Vale</span>

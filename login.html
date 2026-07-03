@@ -116,7 +116,7 @@ button:disabled{opacity:0.6;cursor:default;}
     // If a redirect target was requested (e.g. by case.html's auth guard),
     // send the player back there once they click the magic link.
     var params = new URLSearchParams(window.location.search);
-    var redirectTo = params.get('redirect') || 'index.html';
+    var redirectTo = params.get('redirect') || 'dashboard.html';
 
     // Already signed in? Skip straight to where they were headed.
     if (window.AVProgressSync) {
@@ -147,9 +147,16 @@ button:disabled{opacity:0.6;cursor:default;}
         btn.disabled = false;
         if (res.error) {
           status.className = 'status error';
-          status.textContent = res.error.message.indexOf('rate limit') !== -1
-            ? 'Too many attempts — please wait a few minutes and try again.'
-            : 'Could not send link — please try again.';
+          // Supabase uses a couple of different wordings for the same
+          // "you're sending too fast" situation depending on which limit
+          // is hit (per-email cooldown vs. project-wide send rate), so
+          // check status/error_code rather than one fragile substring.
+          var isRateLimited = res.error.status === 429
+            || (res.error.code && String(res.error.code).indexOf('429') !== -1)
+            || /rate limit|too many|after \d+ seconds/i.test(res.error.message || '');
+          status.textContent = isRateLimited
+            ? 'Please wait a bit before requesting another link (' + res.error.message + ')'
+            : 'Could not send link: ' + (res.error.message || 'unknown error') + '. Please try again.';
           return;
         }
         status.className = 'status success';
