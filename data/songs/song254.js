@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "post office",
-      "postoffice"
-    ],
-    "object": [
-      "string of beads",
-      "stringofbeads"
-    ],
-    "witness": [
-      "preacher"
-    ],
-    "time": [
-      "7:37",
-      "737"
-    ],
-    "marker": [
-      "2216",
-      "marker 2216",
-      "road marker 2216",
-      "mile marker 2216",
-      "mile 2216"
-    ],
-    "direction": [
-      "south"
-    ],
-    "sound": [
-      "river ice",
-      "riverice"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -310,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S22C02",
-    "puzzleId": "S22C02-marker-lock",
-    "dialogueId": "S22C02-preacher",
-    "locationId": "post-office",
-    "objective": "Investigate Post Office, question Preacher, recover String of Beads, and learn why marker 2216 is tied to Excavation Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Post Office.",
-        "clue": "River Ice"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect String of Beads.",
-        "clue": "String of Beads"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Preacher.",
-        "clue": "7:37"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2216.",
-        "clue": "2216"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the South instruction.",
-        "clue": "South"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S22C02-location",
-        "type": "location",
-        "name": "Post Office",
-        "inspectText": "Post Office looks ordinary until River Ice moves through it."
-      },
-      {
-        "id": "S22C02-object",
-        "type": "evidence",
-        "name": "String of Beads",
-        "inspectText": "String of Beads is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S22C02-marker",
-        "type": "marker",
-        "name": "Marker 2216",
-        "inspectText": "Marker 2216 is not the answer. It is the lock."
-      },
-      {
-        "id": "S22C02-sound",
-        "type": "audio_clue",
-        "name": "River Ice",
-        "inspectText": "River Ice repeats near 7:37."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series22-The-Bone-Road/chapter02.md",
-      "novel": "generated/novels/Series22-The-Bone-Road/chapter02.md",
-      "song": "generated/songs/Series22-The-Bone-Road/song02.md"
     }
   },
   "story": {

@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "black pine",
-      "blackpine"
-    ],
-    "object": [
-      "matchbook"
-    ],
-    "witness": [
-      "caretaker"
-    ],
-    "time": [
-      "11:44",
-      "1144"
-    ],
-    "marker": [
-      "4152",
-      "marker 4152",
-      "road marker 4152",
-      "mile marker 4152",
-      "mile 4152"
-    ],
-    "direction": [
-      "back"
-    ],
-    "sound": [
-      "ash settling",
-      "ashsettling"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -299,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S41C06",
-    "puzzleId": "S41C06-marker-lock",
-    "dialogueId": "S41C06-caretaker",
-    "locationId": "black-pine",
-    "objective": "Investigate Black Pine, question Caretaker, recover Matchbook, and learn why marker 4152 is tied to Phantom Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Black Pine.",
-        "clue": "Ash Settling"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Matchbook.",
-        "clue": "Matchbook"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Caretaker.",
-        "clue": "11:44"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4152.",
-        "clue": "4152"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Back instruction.",
-        "clue": "Back"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S41C06-location",
-        "type": "location",
-        "name": "Black Pine",
-        "inspectText": "Black Pine looks ordinary until Ash Settling moves through it."
-      },
-      {
-        "id": "S41C06-object",
-        "type": "evidence",
-        "name": "Matchbook",
-        "inspectText": "Matchbook is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S41C06-marker",
-        "type": "marker",
-        "name": "Marker 4152",
-        "inspectText": "Marker 4152 is not the answer. It is the lock."
-      },
-      {
-        "id": "S41C06-sound",
-        "type": "audio_clue",
-        "name": "Ash Settling",
-        "inspectText": "Ash Settling repeats near 11:44."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series41-The-Ghost-Road/chapter06.md",
-      "novel": "generated/novels/Series41-The-Ghost-Road/chapter06.md",
-      "song": "generated/songs/Series41-The-Ghost-Road/song06.md"
     }
   },
   "story": {

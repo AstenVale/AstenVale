@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "forge"
-    ],
-    "object": [
-      "ear of corn",
-      "earofcorn"
-    ],
-    "witness": [
-      "driver"
-    ],
-    "time": [
-      "10:47",
-      "1047"
-    ],
-    "marker": [
-      "4861",
-      "marker 4861",
-      "road marker 4861",
-      "mile marker 4861",
-      "mile 4861"
-    ],
-    "direction": [
-      "past the tree line",
-      "pastthetreeline"
-    ],
-    "sound": [
-      "horse hooves",
-      "horsehooves"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -310,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S48C07",
-    "puzzleId": "S48C07-marker-lock",
-    "dialogueId": "S48C07-driver",
-    "locationId": "forge",
-    "objective": "Investigate Forge, question Driver, recover Ear of Corn, and learn why marker 4861 is tied to Static Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Forge.",
-        "clue": "Horse Hooves"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Ear of Corn.",
-        "clue": "Ear of Corn"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Driver.",
-        "clue": "10:47"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4861.",
-        "clue": "4861"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Past the Tree Line instruction.",
-        "clue": "Past the Tree Line"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S48C07-location",
-        "type": "location",
-        "name": "Forge",
-        "inspectText": "Forge looks ordinary until Horse Hooves moves through it."
-      },
-      {
-        "id": "S48C07-object",
-        "type": "evidence",
-        "name": "Ear of Corn",
-        "inspectText": "Ear of Corn is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S48C07-marker",
-        "type": "marker",
-        "name": "Marker 4861",
-        "inspectText": "Marker 4861 is not the answer. It is the lock."
-      },
-      {
-        "id": "S48C07-sound",
-        "type": "audio_clue",
-        "name": "Horse Hooves",
-        "inspectText": "Horse Hooves repeats near 10:47."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series48-The-Broken-Signal/chapter07.md",
-      "novel": "generated/novels/Series48-The-Broken-Signal/chapter07.md",
-      "song": "generated/songs/Series48-The-Broken-Signal/song07.md"
     }
   },
   "story": {

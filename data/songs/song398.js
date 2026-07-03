@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "collapsed mine",
-      "collapsedmine"
-    ],
-    "object": [
-      "brooch"
-    ],
-    "witness": [
-      "furrier"
-    ],
-    "time": [
-      "2:19",
-      "219"
-    ],
-    "marker": [
-      "3416",
-      "marker 3416",
-      "road marker 3416",
-      "mile marker 3416",
-      "mile 3416"
-    ],
-    "direction": [
-      "straight down",
-      "straightdown"
-    ],
-    "sound": [
-      "cellar stairs",
-      "cellarstairs"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S34C02",
-    "puzzleId": "S34C02-marker-lock",
-    "dialogueId": "S34C02-furrier",
-    "locationId": "collapsed-mine",
-    "objective": "Investigate Collapsed Mine, question Furrier, recover Brooch, and learn why marker 3416 is tied to Clinical Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Collapsed Mine.",
-        "clue": "Cellar Stairs"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Brooch.",
-        "clue": "Brooch"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Furrier.",
-        "clue": "2:19"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3416.",
-        "clue": "3416"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Straight Down instruction.",
-        "clue": "Straight Down"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S34C02-location",
-        "type": "location",
-        "name": "Collapsed Mine",
-        "inspectText": "Collapsed Mine looks ordinary until Cellar Stairs moves through it."
-      },
-      {
-        "id": "S34C02-object",
-        "type": "evidence",
-        "name": "Brooch",
-        "inspectText": "Brooch is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S34C02-marker",
-        "type": "marker",
-        "name": "Marker 3416",
-        "inspectText": "Marker 3416 is not the answer. It is the lock."
-      },
-      {
-        "id": "S34C02-sound",
-        "type": "audio_clue",
-        "name": "Cellar Stairs",
-        "inspectText": "Cellar Stairs repeats near 2:19."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series34-The-Locked-Ward/chapter02.md",
-      "novel": "generated/novels/Series34-The-Locked-Ward/chapter02.md",
-      "song": "generated/songs/Series34-The-Locked-Ward/song02.md"
     }
   },
   "story": {

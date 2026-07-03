@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "post office",
-      "postoffice"
-    ],
-    "object": [
-      "tin star",
-      "tinstar"
-    ],
-    "witness": [
-      "fence mender",
-      "fencemender"
-    ],
-    "time": [
-      "12:33",
-      "1233"
-    ],
-    "marker": [
-      "816",
-      "marker 816",
-      "road marker 816",
-      "mile marker 816",
-      "mile 816"
-    ],
-    "direction": [
-      "behind"
-    ],
-    "sound": [
-      "rain"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -310,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S08C02",
-    "puzzleId": "S08C02-marker-lock",
-    "dialogueId": "S08C02-fence-mender",
-    "locationId": "post-office",
-    "objective": "Investigate Post Office, question Fence Mender, recover Tin Star, and learn why marker 816 is tied to Ash Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Post Office.",
-        "clue": "Rain"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Tin Star.",
-        "clue": "Tin Star"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Fence Mender.",
-        "clue": "12:33"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 816.",
-        "clue": "816"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Behind instruction.",
-        "clue": "Behind"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S08C02-location",
-        "type": "location",
-        "name": "Post Office",
-        "inspectText": "Post Office looks ordinary until Rain moves through it."
-      },
-      {
-        "id": "S08C02-object",
-        "type": "evidence",
-        "name": "Tin Star",
-        "inspectText": "Tin Star is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S08C02-marker",
-        "type": "marker",
-        "name": "Marker 816",
-        "inspectText": "Marker 816 is not the answer. It is the lock."
-      },
-      {
-        "id": "S08C02-sound",
-        "type": "audio_clue",
-        "name": "Rain",
-        "inspectText": "Rain repeats near 12:33."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series08-The-Fire-Year/chapter02.md",
-      "novel": "generated/novels/Series08-The-Fire-Year/chapter02.md",
-      "song": "generated/songs/Series08-The-Fire-Year/song02.md"
     }
   },
   "story": {

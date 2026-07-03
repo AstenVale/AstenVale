@@ -61,34 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "cooperage"
-    ],
-    "object": [
-      "candle"
-    ],
-    "witness": [
-      "tanner"
-    ],
-    "time": [
-      "11:29",
-      "1129"
-    ],
-    "marker": [
-      "2943",
-      "marker 2943",
-      "road marker 2943",
-      "mile marker 2943",
-      "mile 2943"
-    ],
-    "direction": [
-      "below"
-    ],
-    "sound": [
-      "floorboard"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -297,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S29C05",
-    "puzzleId": "S29C05-marker-lock",
-    "dialogueId": "S29C05-tanner",
-    "locationId": "cooperage",
-    "objective": "Investigate Cooperage, question Tanner, recover Candle, and learn why marker 2943 is tied to Interment Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Cooperage.",
-        "clue": "Floorboard"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Candle.",
-        "clue": "Candle"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Tanner.",
-        "clue": "11:29"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2943.",
-        "clue": "2943"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Below instruction.",
-        "clue": "Below"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S29C05-location",
-        "type": "location",
-        "name": "Cooperage",
-        "inspectText": "Cooperage looks ordinary until Floorboard moves through it."
-      },
-      {
-        "id": "S29C05-object",
-        "type": "evidence",
-        "name": "Candle",
-        "inspectText": "Candle is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S29C05-marker",
-        "type": "marker",
-        "name": "Marker 2943",
-        "inspectText": "Marker 2943 is not the answer. It is the lock."
-      },
-      {
-        "id": "S29C05-sound",
-        "type": "audio_clue",
-        "name": "Floorboard",
-        "inspectText": "Floorboard repeats near 11:29."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series29-The-Unmarked-Grave/chapter05.md",
-      "novel": "generated/novels/Series29-The-Unmarked-Grave/chapter05.md",
-      "song": "generated/songs/Series29-The-Unmarked-Grave/song05.md"
     }
   },
   "story": {

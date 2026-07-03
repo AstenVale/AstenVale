@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "barn"
-    ],
-    "object": [
-      "copper fitting",
-      "copperfitting"
-    ],
-    "witness": [
-      "glazier"
-    ],
-    "time": [
-      "4:47",
-      "447"
-    ],
-    "marker": [
-      "2225",
-      "marker 2225",
-      "road marker 2225",
-      "mile marker 2225",
-      "mile 2225"
-    ],
-    "direction": [
-      "through"
-    ],
-    "sound": [
-      "old hinge",
-      "oldhinge"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -309,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S22C03",
-    "puzzleId": "S22C03-marker-lock",
-    "dialogueId": "S22C03-glazier",
-    "locationId": "barn",
-    "objective": "Investigate Barn, question Glazier, recover Copper Fitting, and learn why marker 2225 is tied to Excavation Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Barn.",
-        "clue": "Old Hinge"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Copper Fitting.",
-        "clue": "Copper Fitting"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Glazier.",
-        "clue": "4:47"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2225.",
-        "clue": "2225"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Through instruction.",
-        "clue": "Through"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S22C03-location",
-        "type": "location",
-        "name": "Barn",
-        "inspectText": "Barn looks ordinary until Old Hinge moves through it."
-      },
-      {
-        "id": "S22C03-object",
-        "type": "evidence",
-        "name": "Copper Fitting",
-        "inspectText": "Copper Fitting is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S22C03-marker",
-        "type": "marker",
-        "name": "Marker 2225",
-        "inspectText": "Marker 2225 is not the answer. It is the lock."
-      },
-      {
-        "id": "S22C03-sound",
-        "type": "audio_clue",
-        "name": "Old Hinge",
-        "inspectText": "Old Hinge repeats near 4:47."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series22-The-Bone-Road/chapter03.md",
-      "novel": "generated/novels/Series22-The-Bone-Road/chapter03.md",
-      "song": "generated/songs/Series22-The-Bone-Road/song03.md"
     }
   },
   "story": {

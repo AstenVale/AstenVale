@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "chandler's row",
-      "chandler'srow"
-    ],
-    "object": [
-      "empty tin",
-      "emptytin"
-    ],
-    "witness": [
-      "cooper"
-    ],
-    "time": [
-      "4:29",
-      "429"
-    ],
-    "marker": [
-      "4543",
-      "marker 4543",
-      "road marker 4543",
-      "mile marker 4543",
-      "mile 4543"
-    ],
-    "direction": [
-      "in"
-    ],
-    "sound": [
-      "swamp gas",
-      "swampgas"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S45C05",
-    "puzzleId": "S45C05-marker-lock",
-    "dialogueId": "S45C05-cooper",
-    "locationId": "chandler-s-row",
-    "objective": "Investigate Chandler's Row, question Cooper, recover Empty Tin, and learn why marker 4543 is tied to Power Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Chandler's Row.",
-        "clue": "Swamp Gas"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Empty Tin.",
-        "clue": "Empty Tin"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Cooper.",
-        "clue": "4:29"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4543.",
-        "clue": "4543"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the In instruction.",
-        "clue": "In"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S45C05-location",
-        "type": "location",
-        "name": "Chandler's Row",
-        "inspectText": "Chandler's Row looks ordinary until Swamp Gas moves through it."
-      },
-      {
-        "id": "S45C05-object",
-        "type": "evidence",
-        "name": "Empty Tin",
-        "inspectText": "Empty Tin is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S45C05-marker",
-        "type": "marker",
-        "name": "Marker 4543",
-        "inspectText": "Marker 4543 is not the answer. It is the lock."
-      },
-      {
-        "id": "S45C05-sound",
-        "type": "audio_clue",
-        "name": "Swamp Gas",
-        "inspectText": "Swamp Gas repeats near 4:29."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series45-The-Hollow-Crown/chapter05.md",
-      "novel": "generated/novels/Series45-The-Hollow-Crown/chapter05.md",
-      "song": "generated/songs/Series45-The-Hollow-Crown/song05.md"
     }
   },
   "story": {

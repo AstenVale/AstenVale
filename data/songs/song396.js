@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "feed store",
-      "feedstore"
-    ],
-    "object": [
-      "copper fitting",
-      "copperfitting"
-    ],
-    "witness": [
-      "tanner"
-    ],
-    "time": [
-      "10:47",
-      "1047"
-    ],
-    "marker": [
-      "3406",
-      "marker 3406",
-      "road marker 3406",
-      "mile marker 3406",
-      "mile 3406"
-    ],
-    "direction": [
-      "further in",
-      "furtherin"
-    ],
-    "sound": [
-      "ash settling",
-      "ashsettling"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -312,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S33C12",
-    "puzzleId": "S33C12-marker-lock",
-    "dialogueId": "S33C12-tanner",
-    "locationId": "feed-store",
-    "objective": "Investigate Feed Store, question Tanner, recover Copper Fitting, and learn why marker 3406 is tied to Faded Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Feed Store.",
-        "clue": "Ash Settling"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Copper Fitting.",
-        "clue": "Copper Fitting"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Tanner.",
-        "clue": "10:47"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3406.",
-        "clue": "3406"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Further In instruction.",
-        "clue": "Further In"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S33C12-location",
-        "type": "location",
-        "name": "Feed Store",
-        "inspectText": "Feed Store looks ordinary until Ash Settling moves through it."
-      },
-      {
-        "id": "S33C12-object",
-        "type": "evidence",
-        "name": "Copper Fitting",
-        "inspectText": "Copper Fitting is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S33C12-marker",
-        "type": "marker",
-        "name": "Marker 3406",
-        "inspectText": "Marker 3406 is not the answer. It is the lock."
-      },
-      {
-        "id": "S33C12-sound",
-        "type": "audio_clue",
-        "name": "Ash Settling",
-        "inspectText": "Ash Settling repeats near 10:47."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series33-The-Pale-Season/chapter12.md",
-      "novel": "generated/novels/Series33-The-Pale-Season/chapter12.md",
-      "song": "generated/songs/Series33-The-Pale-Season/song12.md"
     }
   },
   "story": {

@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the narrow road",
-      "narrow road",
-      "thenarrowroad"
-    ],
-    "object": [
-      "handkerchief"
-    ],
-    "witness": [
-      "salt seller",
-      "saltseller"
-    ],
-    "time": [
-      "2:38",
-      "238"
-    ],
-    "marker": [
-      "1697",
-      "marker 1697",
-      "road marker 1697",
-      "mile marker 1697",
-      "mile 1697"
-    ],
-    "direction": [
-      "somewhere"
-    ],
-    "sound": [
-      "dog bark at nothing",
-      "dogbarkatnothing"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -301,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S16C11",
-    "puzzleId": "S16C11-marker-lock",
-    "dialogueId": "S16C11-salt-seller",
-    "locationId": "the-narrow-road",
-    "objective": "Investigate The Narrow Road, question Salt Seller, recover Handkerchief, and learn why marker 1697 is tied to Transparent Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Narrow Road.",
-        "clue": "Dog Bark at Nothing"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Handkerchief.",
-        "clue": "Handkerchief"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Salt Seller.",
-        "clue": "2:38"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1697.",
-        "clue": "1697"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Somewhere instruction.",
-        "clue": "Somewhere"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S16C11-location",
-        "type": "location",
-        "name": "The Narrow Road",
-        "inspectText": "The Narrow Road looks ordinary until Dog Bark at Nothing moves through it."
-      },
-      {
-        "id": "S16C11-object",
-        "type": "evidence",
-        "name": "Handkerchief",
-        "inspectText": "Handkerchief is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S16C11-marker",
-        "type": "marker",
-        "name": "Marker 1697",
-        "inspectText": "Marker 1697 is not the answer. It is the lock."
-      },
-      {
-        "id": "S16C11-sound",
-        "type": "audio_clue",
-        "name": "Dog Bark at Nothing",
-        "inspectText": "Dog Bark at Nothing repeats near 2:38."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series16-The-Glass-House/chapter11.md",
-      "novel": "generated/novels/Series16-The-Glass-House/chapter11.md",
-      "song": "generated/songs/Series16-The-Glass-House/song11.md"
     }
   },
   "story": {

@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the bluff",
-      "bluff",
-      "thebluff"
-    ],
-    "object": [
-      "badge"
-    ],
-    "witness": [
-      "banker"
-    ],
-    "time": [
-      "4:03",
-      "403"
-    ],
-    "marker": [
-      "2916",
-      "marker 2916",
-      "road marker 2916",
-      "mile marker 2916",
-      "mile 2916"
-    ],
-    "direction": [
-      "out"
-    ],
-    "sound": [
-      "old hinge",
-      "oldhinge"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S29C02",
-    "puzzleId": "S29C02-marker-lock",
-    "dialogueId": "S29C02-banker",
-    "locationId": "the-bluff",
-    "objective": "Investigate The Bluff, question Banker, recover Badge, and learn why marker 2916 is tied to Interment Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Bluff.",
-        "clue": "Old Hinge"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Badge.",
-        "clue": "Badge"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Banker.",
-        "clue": "4:03"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2916.",
-        "clue": "2916"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Out instruction.",
-        "clue": "Out"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S29C02-location",
-        "type": "location",
-        "name": "The Bluff",
-        "inspectText": "The Bluff looks ordinary until Old Hinge moves through it."
-      },
-      {
-        "id": "S29C02-object",
-        "type": "evidence",
-        "name": "Badge",
-        "inspectText": "Badge is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S29C02-marker",
-        "type": "marker",
-        "name": "Marker 2916",
-        "inspectText": "Marker 2916 is not the answer. It is the lock."
-      },
-      {
-        "id": "S29C02-sound",
-        "type": "audio_clue",
-        "name": "Old Hinge",
-        "inspectText": "Old Hinge repeats near 4:03."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series29-The-Unmarked-Grave/chapter02.md",
-      "novel": "generated/novels/Series29-The-Unmarked-Grave/chapter02.md",
-      "song": "generated/songs/Series29-The-Unmarked-Grave/song02.md"
     }
   },
   "story": {

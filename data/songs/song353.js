@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "cooperage"
-    ],
-    "object": [
-      "iron nail",
-      "ironnail"
-    ],
-    "witness": [
-      "circuit rider",
-      "circuitrider"
-    ],
-    "time": [
-      "12:17",
-      "1217"
-    ],
-    "marker": [
-      "3043",
-      "marker 3043",
-      "road marker 3043",
-      "mile marker 3043",
-      "mile 3043"
-    ],
-    "direction": [
-      "back the way you came",
-      "backthewayyoucame"
-    ],
-    "sound": [
-      "shutter bang",
-      "shutterbang"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -301,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S30C05",
-    "puzzleId": "S30C05-marker-lock",
-    "dialogueId": "S30C05-circuit-rider",
-    "locationId": "cooperage",
-    "objective": "Investigate Cooperage, question Circuit Rider, recover Iron Nail, and learn why marker 3043 is tied to Manifest Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Cooperage.",
-        "clue": "Shutter Bang"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Iron Nail.",
-        "clue": "Iron Nail"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Circuit Rider.",
-        "clue": "12:17"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3043.",
-        "clue": "3043"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Back the Way You Came instruction.",
-        "clue": "Back the Way You Came"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S30C05-location",
-        "type": "location",
-        "name": "Cooperage",
-        "inspectText": "Cooperage looks ordinary until Shutter Bang moves through it."
-      },
-      {
-        "id": "S30C05-object",
-        "type": "evidence",
-        "name": "Iron Nail",
-        "inspectText": "Iron Nail is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S30C05-marker",
-        "type": "marker",
-        "name": "Marker 3043",
-        "inspectText": "Marker 3043 is not the answer. It is the lock."
-      },
-      {
-        "id": "S30C05-sound",
-        "type": "audio_clue",
-        "name": "Shutter Bang",
-        "inspectText": "Shutter Bang repeats near 12:17."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series30-The-Last-Train/chapter05.md",
-      "novel": "generated/novels/Series30-The-Last-Train/chapter05.md",
-      "song": "generated/songs/Series30-The-Last-Train/song05.md"
     }
   },
   "story": {

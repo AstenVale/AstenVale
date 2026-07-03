@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "undertaker's hall",
-      "undertaker'shall"
-    ],
-    "object": [
-      "candle"
-    ],
-    "witness": [
-      "river pilot",
-      "riverpilot"
-    ],
-    "time": [
-      "7:37",
-      "737"
-    ],
-    "marker": [
-      "5097",
-      "marker 5097",
-      "road marker 5097",
-      "mile marker 5097",
-      "mile 5097"
-    ],
-    "direction": [
-      "below"
-    ],
-    "sound": [
-      "pen on paper",
-      "penonpaper"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S50C11",
-    "puzzleId": "S50C11-marker-lock",
-    "dialogueId": "S50C11-river-pilot",
-    "locationId": "undertaker-s-hall",
-    "objective": "Investigate Undertaker's Hall, question River Pilot, recover Candle, and learn why marker 5097 is tied to Full Archive.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Undertaker's Hall.",
-        "clue": "Pen on Paper"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Candle.",
-        "clue": "Candle"
-      },
-      {
-        "step": "interview",
-        "objective": "Question River Pilot.",
-        "clue": "7:37"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 5097.",
-        "clue": "5097"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Below instruction.",
-        "clue": "Below"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S50C11-location",
-        "type": "location",
-        "name": "Undertaker's Hall",
-        "inspectText": "Undertaker's Hall looks ordinary until Pen on Paper moves through it."
-      },
-      {
-        "id": "S50C11-object",
-        "type": "evidence",
-        "name": "Candle",
-        "inspectText": "Candle is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S50C11-marker",
-        "type": "marker",
-        "name": "Marker 5097",
-        "inspectText": "Marker 5097 is not the answer. It is the lock."
-      },
-      {
-        "id": "S50C11-sound",
-        "type": "audio_clue",
-        "name": "Pen on Paper",
-        "inspectText": "Pen on Paper repeats near 7:37."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series50-The-Resolution/chapter11.md",
-      "novel": "generated/novels/Series50-The-Resolution/chapter11.md",
-      "song": "generated/songs/Series50-The-Resolution/song11.md"
     }
   },
   "story": {

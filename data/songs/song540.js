@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "watchmaker's shop",
-      "watchmaker'sshop"
-    ],
-    "object": [
-      "chain"
-    ],
-    "witness": [
-      "cider presser",
-      "ciderpresser"
-    ],
-    "time": [
-      "10:51",
-      "1051"
-    ],
-    "marker": [
-      "4606",
-      "marker 4606",
-      "road marker 4606",
-      "mile marker 4606",
-      "mile 4606"
-    ],
-    "direction": [
-      "below"
-    ],
-    "sound": [
-      "mud suction",
-      "mudsuction"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S45C12",
-    "puzzleId": "S45C12-marker-lock",
-    "dialogueId": "S45C12-cider-presser",
-    "locationId": "watchmaker-s-shop",
-    "objective": "Investigate Watchmaker's Shop, question Cider Presser, recover Chain, and learn why marker 4606 is tied to Power Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Watchmaker's Shop.",
-        "clue": "Mud Suction"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Chain.",
-        "clue": "Chain"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Cider Presser.",
-        "clue": "10:51"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4606.",
-        "clue": "4606"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Below instruction.",
-        "clue": "Below"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S45C12-location",
-        "type": "location",
-        "name": "Watchmaker's Shop",
-        "inspectText": "Watchmaker's Shop looks ordinary until Mud Suction moves through it."
-      },
-      {
-        "id": "S45C12-object",
-        "type": "evidence",
-        "name": "Chain",
-        "inspectText": "Chain is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S45C12-marker",
-        "type": "marker",
-        "name": "Marker 4606",
-        "inspectText": "Marker 4606 is not the answer. It is the lock."
-      },
-      {
-        "id": "S45C12-sound",
-        "type": "audio_clue",
-        "name": "Mud Suction",
-        "inspectText": "Mud Suction repeats near 10:51."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series45-The-Hollow-Crown/chapter12.md",
-      "novel": "generated/novels/Series45-The-Hollow-Crown/chapter12.md",
-      "song": "generated/songs/Series45-The-Hollow-Crown/song12.md"
     }
   },
   "story": {

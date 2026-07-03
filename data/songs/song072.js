@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "north gate",
-      "northgate"
-    ],
-    "object": [
-      "dried blood on cloth",
-      "driedbloodoncloth"
-    ],
-    "witness": [
-      "fisherman"
-    ],
-    "time": [
-      "6:32",
-      "632"
-    ],
-    "marker": [
-      "706",
-      "marker 706",
-      "road marker 706",
-      "mile marker 706",
-      "mile 706"
-    ],
-    "direction": [
-      "away from town",
-      "awayfromtown"
-    ],
-    "sound": [
-      "old hinge",
-      "oldhinge"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -312,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S06C12",
-    "puzzleId": "S06C12-marker-lock",
-    "dialogueId": "S06C12-fisherman",
-    "locationId": "north-gate",
-    "objective": "Investigate North Gate, question Fisherman, recover Dried Blood on Cloth, and learn why marker 706 is tied to Below Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter North Gate.",
-        "clue": "Old Hinge"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Dried Blood on Cloth.",
-        "clue": "Dried Blood on Cloth"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Fisherman.",
-        "clue": "6:32"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 706.",
-        "clue": "706"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Away from Town instruction.",
-        "clue": "Away from Town"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S06C12-location",
-        "type": "location",
-        "name": "North Gate",
-        "inspectText": "North Gate looks ordinary until Old Hinge moves through it."
-      },
-      {
-        "id": "S06C12-object",
-        "type": "evidence",
-        "name": "Dried Blood on Cloth",
-        "inspectText": "Dried Blood on Cloth is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S06C12-marker",
-        "type": "marker",
-        "name": "Marker 706",
-        "inspectText": "Marker 706 is not the answer. It is the lock."
-      },
-      {
-        "id": "S06C12-sound",
-        "type": "audio_clue",
-        "name": "Old Hinge",
-        "inspectText": "Old Hinge repeats near 6:32."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series06-The-Underground/chapter12.md",
-      "novel": "generated/novels/Series06-The-Underground/chapter12.md",
-      "song": "generated/songs/Series06-The-Underground/song12.md"
     }
   },
   "story": {

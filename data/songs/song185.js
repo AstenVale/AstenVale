@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "iron bridge",
-      "ironbridge"
-    ],
-    "object": [
-      "comb"
-    ],
-    "witness": [
-      "groundskeeper"
-    ],
-    "time": [
-      "2:47",
-      "247"
-    ],
-    "marker": [
-      "1643",
-      "marker 1643",
-      "road marker 1643",
-      "mile marker 1643",
-      "mile 1643"
-    ],
-    "direction": [
-      "through"
-    ],
-    "sound": [
-      "fog horn",
-      "foghorn"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -299,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S16C05",
-    "puzzleId": "S16C05-marker-lock",
-    "dialogueId": "S16C05-groundskeeper",
-    "locationId": "iron-bridge",
-    "objective": "Investigate Iron Bridge, question Groundskeeper, recover Comb, and learn why marker 1643 is tied to Transparent Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Iron Bridge.",
-        "clue": "Fog Horn"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Comb.",
-        "clue": "Comb"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Groundskeeper.",
-        "clue": "2:47"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1643.",
-        "clue": "1643"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Through instruction.",
-        "clue": "Through"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S16C05-location",
-        "type": "location",
-        "name": "Iron Bridge",
-        "inspectText": "Iron Bridge looks ordinary until Fog Horn moves through it."
-      },
-      {
-        "id": "S16C05-object",
-        "type": "evidence",
-        "name": "Comb",
-        "inspectText": "Comb is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S16C05-marker",
-        "type": "marker",
-        "name": "Marker 1643",
-        "inspectText": "Marker 1643 is not the answer. It is the lock."
-      },
-      {
-        "id": "S16C05-sound",
-        "type": "audio_clue",
-        "name": "Fog Horn",
-        "inspectText": "Fog Horn repeats near 2:47."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series16-The-Glass-House/chapter05.md",
-      "novel": "generated/novels/Series16-The-Glass-House/chapter05.md",
-      "song": "generated/songs/Series16-The-Glass-House/song05.md"
     }
   },
   "story": {

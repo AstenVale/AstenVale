@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "calico alley",
-      "calicoalley"
-    ],
-    "object": [
-      "tin star",
-      "tinstar"
-    ],
-    "witness": [
-      "judge"
-    ],
-    "time": [
-      "1:11",
-      "111"
-    ],
-    "marker": [
-      "1025",
-      "marker 1025",
-      "road marker 1025",
-      "mile marker 1025",
-      "mile 1025"
-    ],
-    "direction": [
-      "toward"
-    ],
-    "sound": [
-      "cellar stairs",
-      "cellarstairs"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S10C03",
-    "puzzleId": "S10C03-marker-lock",
-    "dialogueId": "S10C03-judge",
-    "locationId": "calico-alley",
-    "objective": "Investigate Calico Alley, question Judge, recover Tin Star, and learn why marker 1025 is tied to Lost Mile Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Calico Alley.",
-        "clue": "Cellar Stairs"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Tin Star.",
-        "clue": "Tin Star"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Judge.",
-        "clue": "1:11"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1025.",
-        "clue": "1025"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Toward instruction.",
-        "clue": "Toward"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S10C03-location",
-        "type": "location",
-        "name": "Calico Alley",
-        "inspectText": "Calico Alley looks ordinary until Cellar Stairs moves through it."
-      },
-      {
-        "id": "S10C03-object",
-        "type": "evidence",
-        "name": "Tin Star",
-        "inspectText": "Tin Star is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S10C03-marker",
-        "type": "marker",
-        "name": "Marker 1025",
-        "inspectText": "Marker 1025 is not the answer. It is the lock."
-      },
-      {
-        "id": "S10C03-sound",
-        "type": "audio_clue",
-        "name": "Cellar Stairs",
-        "inspectText": "Cellar Stairs repeats near 1:11."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series10-The-Forgotten-Road/chapter03.md",
-      "novel": "generated/novels/Series10-The-Forgotten-Road/chapter03.md",
-      "song": "generated/songs/Series10-The-Forgotten-Road/song03.md"
     }
   },
   "story": {

@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "collapsed mine",
-      "collapsedmine"
-    ],
-    "object": [
-      "boot"
-    ],
-    "witness": [
-      "census taker",
-      "censustaker"
-    ],
-    "time": [
-      "12:33",
-      "1233"
-    ],
-    "marker": [
-      "2707",
-      "marker 2707",
-      "road marker 2707",
-      "mile marker 2707",
-      "mile 2707"
-    ],
-    "direction": [
-      "somewhere"
-    ],
-    "sound": [
-      "chains"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -299,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S27C01",
-    "puzzleId": "S27C01-marker-lock",
-    "dialogueId": "S27C01-census-taker",
-    "locationId": "collapsed-mine",
-    "objective": "Investigate Collapsed Mine, question Census Taker, recover Boot, and learn why marker 2707 is tied to Expanse Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Collapsed Mine.",
-        "clue": "Chains"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Boot.",
-        "clue": "Boot"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Census Taker.",
-        "clue": "12:33"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2707.",
-        "clue": "2707"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Somewhere instruction.",
-        "clue": "Somewhere"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S27C01-location",
-        "type": "location",
-        "name": "Collapsed Mine",
-        "inspectText": "Collapsed Mine looks ordinary until Chains moves through it."
-      },
-      {
-        "id": "S27C01-object",
-        "type": "evidence",
-        "name": "Boot",
-        "inspectText": "Boot is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S27C01-marker",
-        "type": "marker",
-        "name": "Marker 2707",
-        "inspectText": "Marker 2707 is not the answer. It is the lock."
-      },
-      {
-        "id": "S27C01-sound",
-        "type": "audio_clue",
-        "name": "Chains",
-        "inspectText": "Chains repeats near 12:33."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series27-The-Salt-Flats/chapter01.md",
-      "novel": "generated/novels/Series27-The-Salt-Flats/chapter01.md",
-      "song": "generated/songs/Series27-The-Salt-Flats/song01.md"
     }
   },
   "story": {

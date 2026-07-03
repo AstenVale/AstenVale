@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the weir",
-      "weir",
-      "theweir"
-    ],
-    "object": [
-      "notebook"
-    ],
-    "witness": [
-      "river pilot",
-      "riverpilot"
-    ],
-    "time": [
-      "12:44",
-      "1244"
-    ],
-    "marker": [
-      "1097",
-      "marker 1097",
-      "road marker 1097",
-      "mile marker 1097",
-      "mile 1097"
-    ],
-    "direction": [
-      "in"
-    ],
-    "sound": [
-      "nail pulled from wood",
-      "nailpulledfromwood"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -301,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S10C11",
-    "puzzleId": "S10C11-marker-lock",
-    "dialogueId": "S10C11-river-pilot",
-    "locationId": "the-weir",
-    "objective": "Investigate The Weir, question River Pilot, recover Notebook, and learn why marker 1097 is tied to Lost Mile Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Weir.",
-        "clue": "Nail Pulled from Wood"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Notebook.",
-        "clue": "Notebook"
-      },
-      {
-        "step": "interview",
-        "objective": "Question River Pilot.",
-        "clue": "12:44"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1097.",
-        "clue": "1097"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the In instruction.",
-        "clue": "In"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S10C11-location",
-        "type": "location",
-        "name": "The Weir",
-        "inspectText": "The Weir looks ordinary until Nail Pulled from Wood moves through it."
-      },
-      {
-        "id": "S10C11-object",
-        "type": "evidence",
-        "name": "Notebook",
-        "inspectText": "Notebook is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S10C11-marker",
-        "type": "marker",
-        "name": "Marker 1097",
-        "inspectText": "Marker 1097 is not the answer. It is the lock."
-      },
-      {
-        "id": "S10C11-sound",
-        "type": "audio_clue",
-        "name": "Nail Pulled from Wood",
-        "inspectText": "Nail Pulled from Wood repeats near 12:44."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series10-The-Forgotten-Road/chapter11.md",
-      "novel": "generated/novels/Series10-The-Forgotten-Road/chapter11.md",
-      "song": "generated/songs/Series10-The-Forgotten-Road/song11.md"
     }
   },
   "story": {

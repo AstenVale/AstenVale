@@ -61,35 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "fireplace"
-    ],
-    "object": [
-      "ash"
-    ],
-    "witness": [
-      "mechanic"
-    ],
-    "time": [
-      "7:22",
-      "722"
-    ],
-    "marker": [
-      "198",
-      "marker 198",
-      "road marker 198",
-      "mile marker 198",
-      "mile 198"
-    ],
-    "direction": [
-      "up"
-    ],
-    "sound": [
-      "fire crackling",
-      "firecrackling"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -309,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S02C09",
-    "puzzleId": "S02C09-marker-lock",
-    "dialogueId": "S02C09-mechanic",
-    "locationId": "fireplace",
-    "objective": "Investigate Fireplace, question Mechanic, recover Ash, and learn why marker 198 is tied to Personal Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Fireplace.",
-        "clue": "Fire Crackling"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Ash.",
-        "clue": "Ash"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Mechanic.",
-        "clue": "7:22"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 198.",
-        "clue": "198"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Up instruction.",
-        "clue": "Up"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S02C09-location",
-        "type": "location",
-        "name": "Fireplace",
-        "inspectText": "Fireplace looks ordinary until Fire Crackling moves through it."
-      },
-      {
-        "id": "S02C09-object",
-        "type": "evidence",
-        "name": "Ash",
-        "inspectText": "Ash is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S02C09-marker",
-        "type": "marker",
-        "name": "Marker 198",
-        "inspectText": "Marker 198 is not the answer. It is the lock."
-      },
-      {
-        "id": "S02C09-sound",
-        "type": "audio_clue",
-        "name": "Fire Crackling",
-        "inspectText": "Fire Crackling repeats near 7:22."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series02-The-Before/chapter09.md",
-      "novel": "generated/novels/Series02-The-Before/chapter09.md",
-      "song": "generated/songs/Series02-The-Before/song09.md"
     }
   },
   "story": {

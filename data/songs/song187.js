@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "ash creek",
-      "ashcreek"
-    ],
-    "object": [
-      "spool of thread",
-      "spoolofthread"
-    ],
-    "witness": [
-      "cider presser",
-      "ciderpresser"
-    ],
-    "time": [
-      "7:02",
-      "702"
-    ],
-    "marker": [
-      "1661",
-      "marker 1661",
-      "road marker 1661",
-      "mile marker 1661",
-      "mile 1661"
-    ],
-    "direction": [
-      "through"
-    ],
-    "sound": [
-      "rope strain",
-      "ropestrain"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -301,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S16C07",
-    "puzzleId": "S16C07-marker-lock",
-    "dialogueId": "S16C07-cider-presser",
-    "locationId": "ash-creek",
-    "objective": "Investigate Ash Creek, question Cider Presser, recover Spool of Thread, and learn why marker 1661 is tied to Transparent Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Ash Creek.",
-        "clue": "Rope Strain"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Spool of Thread.",
-        "clue": "Spool of Thread"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Cider Presser.",
-        "clue": "7:02"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1661.",
-        "clue": "1661"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Through instruction.",
-        "clue": "Through"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S16C07-location",
-        "type": "location",
-        "name": "Ash Creek",
-        "inspectText": "Ash Creek looks ordinary until Rope Strain moves through it."
-      },
-      {
-        "id": "S16C07-object",
-        "type": "evidence",
-        "name": "Spool of Thread",
-        "inspectText": "Spool of Thread is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S16C07-marker",
-        "type": "marker",
-        "name": "Marker 1661",
-        "inspectText": "Marker 1661 is not the answer. It is the lock."
-      },
-      {
-        "id": "S16C07-sound",
-        "type": "audio_clue",
-        "name": "Rope Strain",
-        "inspectText": "Rope Strain repeats near 7:02."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series16-The-Glass-House/chapter07.md",
-      "novel": "generated/novels/Series16-The-Glass-House/chapter07.md",
-      "song": "generated/songs/Series16-The-Glass-House/song07.md"
     }
   },
   "story": {

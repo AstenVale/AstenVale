@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "undertaker's hall",
-      "undertaker'shall"
-    ],
-    "object": [
-      "inkwell"
-    ],
-    "witness": [
-      "driver"
-    ],
-    "time": [
-      "6:53",
-      "653"
-    ],
-    "marker": [
-      "707",
-      "marker 707",
-      "road marker 707",
-      "mile marker 707",
-      "mile 707"
-    ],
-    "direction": [
-      "west"
-    ],
-    "sound": [
-      "rope strain",
-      "ropestrain"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -299,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S07C01",
-    "puzzleId": "S07C01-marker-lock",
-    "dialogueId": "S07C01-driver",
-    "locationId": "undertaker-s-hall",
-    "objective": "Investigate Undertaker's Hall, question Driver, recover Inkwell, and learn why marker 707 is tied to Parallel Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Undertaker's Hall.",
-        "clue": "Rope Strain"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Inkwell.",
-        "clue": "Inkwell"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Driver.",
-        "clue": "6:53"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 707.",
-        "clue": "707"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the West instruction.",
-        "clue": "West"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S07C01-location",
-        "type": "location",
-        "name": "Undertaker's Hall",
-        "inspectText": "Undertaker's Hall looks ordinary until Rope Strain moves through it."
-      },
-      {
-        "id": "S07C01-object",
-        "type": "evidence",
-        "name": "Inkwell",
-        "inspectText": "Inkwell is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S07C01-marker",
-        "type": "marker",
-        "name": "Marker 707",
-        "inspectText": "Marker 707 is not the answer. It is the lock."
-      },
-      {
-        "id": "S07C01-sound",
-        "type": "audio_clue",
-        "name": "Rope Strain",
-        "inspectText": "Rope Strain repeats near 6:53."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series07-The-Second-Family/chapter01.md",
-      "novel": "generated/novels/Series07-The-Second-Family/chapter01.md",
-      "song": "generated/songs/Series07-The-Second-Family/song01.md"
     }
   },
   "story": {

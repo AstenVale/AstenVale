@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "sawmill"
-    ],
-    "object": [
-      "wax seal",
-      "waxseal"
-    ],
-    "witness": [
-      "stranger"
-    ],
-    "time": [
-      "7:02",
-      "702"
-    ],
-    "marker": [
-      "3579",
-      "marker 3579",
-      "road marker 3579",
-      "mile marker 3579",
-      "mile 3579"
-    ],
-    "direction": [
-      "left"
-    ],
-    "sound": [
-      "dog bark at nothing",
-      "dogbarkatnothing"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -309,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S35C09",
-    "puzzleId": "S35C09-marker-lock",
-    "dialogueId": "S35C09-stranger",
-    "locationId": "sawmill",
-    "objective": "Investigate Sawmill, question Stranger, recover Wax Seal, and learn why marker 3579 is tied to Collection Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Sawmill.",
-        "clue": "Dog Bark at Nothing"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Wax Seal.",
-        "clue": "Wax Seal"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Stranger.",
-        "clue": "7:02"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3579.",
-        "clue": "3579"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Left instruction.",
-        "clue": "Left"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S35C09-location",
-        "type": "location",
-        "name": "Sawmill",
-        "inspectText": "Sawmill looks ordinary until Dog Bark at Nothing moves through it."
-      },
-      {
-        "id": "S35C09-object",
-        "type": "evidence",
-        "name": "Wax Seal",
-        "inspectText": "Wax Seal is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S35C09-marker",
-        "type": "marker",
-        "name": "Marker 3579",
-        "inspectText": "Marker 3579 is not the answer. It is the lock."
-      },
-      {
-        "id": "S35C09-sound",
-        "type": "audio_clue",
-        "name": "Dog Bark at Nothing",
-        "inspectText": "Dog Bark at Nothing repeats near 7:02."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series35-The-Archive-Keeper/chapter09.md",
-      "novel": "generated/novels/Series35-The-Archive-Keeper/chapter09.md",
-      "song": "generated/songs/Series35-The-Archive-Keeper/song09.md"
     }
   },
   "story": {

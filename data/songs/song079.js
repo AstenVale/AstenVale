@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "church"
-    ],
-    "object": [
-      "comb"
-    ],
-    "witness": [
-      "gravedigger"
-    ],
-    "time": [
-      "2:22",
-      "222"
-    ],
-    "marker": [
-      "761",
-      "marker 761",
-      "road marker 761",
-      "mile marker 761",
-      "mile 761"
-    ],
-    "direction": [
-      "into the pines",
-      "intothepines"
-    ],
-    "sound": [
-      "nail pulled from wood",
-      "nailpulledfromwood"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -299,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S07C07",
-    "puzzleId": "S07C07-marker-lock",
-    "dialogueId": "S07C07-gravedigger",
-    "locationId": "church",
-    "objective": "Investigate Church, question Gravedigger, recover Comb, and learn why marker 761 is tied to Parallel Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Church.",
-        "clue": "Nail Pulled from Wood"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Comb.",
-        "clue": "Comb"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Gravedigger.",
-        "clue": "2:22"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 761.",
-        "clue": "761"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Into the Pines instruction.",
-        "clue": "Into the Pines"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S07C07-location",
-        "type": "location",
-        "name": "Church",
-        "inspectText": "Church looks ordinary until Nail Pulled from Wood moves through it."
-      },
-      {
-        "id": "S07C07-object",
-        "type": "evidence",
-        "name": "Comb",
-        "inspectText": "Comb is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S07C07-marker",
-        "type": "marker",
-        "name": "Marker 761",
-        "inspectText": "Marker 761 is not the answer. It is the lock."
-      },
-      {
-        "id": "S07C07-sound",
-        "type": "audio_clue",
-        "name": "Nail Pulled from Wood",
-        "inspectText": "Nail Pulled from Wood repeats near 2:22."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series07-The-Second-Family/chapter07.md",
-      "novel": "generated/novels/Series07-The-Second-Family/chapter07.md",
-      "song": "generated/songs/Series07-The-Second-Family/song07.md"
     }
   },
   "story": {

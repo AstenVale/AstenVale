@@ -61,39 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the ridge",
-      "ridge",
-      "theridge"
-    ],
-    "object": [
-      "wire coil",
-      "wirecoil"
-    ],
-    "witness": [
-      "apothecary"
-    ],
-    "time": [
-      "11:44",
-      "1144"
-    ],
-    "marker": [
-      "3006",
-      "marker 3006",
-      "road marker 3006",
-      "mile marker 3006",
-      "mile 3006"
-    ],
-    "direction": [
-      "back the way you came",
-      "backthewayyoucame"
-    ],
-    "sound": [
-      "river water",
-      "riverwater"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -313,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S29C12",
-    "puzzleId": "S29C12-marker-lock",
-    "dialogueId": "S29C12-apothecary",
-    "locationId": "the-ridge",
-    "objective": "Investigate The Ridge, question Apothecary, recover Wire Coil, and learn why marker 3006 is tied to Interment Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Ridge.",
-        "clue": "River Water"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Wire Coil.",
-        "clue": "Wire Coil"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Apothecary.",
-        "clue": "11:44"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3006.",
-        "clue": "3006"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Back the Way You Came instruction.",
-        "clue": "Back the Way You Came"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S29C12-location",
-        "type": "location",
-        "name": "The Ridge",
-        "inspectText": "The Ridge looks ordinary until River Water moves through it."
-      },
-      {
-        "id": "S29C12-object",
-        "type": "evidence",
-        "name": "Wire Coil",
-        "inspectText": "Wire Coil is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S29C12-marker",
-        "type": "marker",
-        "name": "Marker 3006",
-        "inspectText": "Marker 3006 is not the answer. It is the lock."
-      },
-      {
-        "id": "S29C12-sound",
-        "type": "audio_clue",
-        "name": "River Water",
-        "inspectText": "River Water repeats near 11:44."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series29-The-Unmarked-Grave/chapter12.md",
-      "novel": "generated/novels/Series29-The-Unmarked-Grave/chapter12.md",
-      "song": "generated/songs/Series29-The-Unmarked-Grave/song12.md"
     }
   },
   "story": {

@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "old wharf",
-      "oldwharf"
-    ],
-    "object": [
-      "telegram"
-    ],
-    "witness": [
-      "undertaker"
-    ],
-    "time": [
-      "3:44",
-      "344"
-    ],
-    "marker": [
-      "5034",
-      "marker 5034",
-      "road marker 5034",
-      "mile marker 5034",
-      "mile 5034"
-    ],
-    "direction": [
-      "west"
-    ],
-    "sound": [
-      "the silence after",
-      "silence after",
-      "thesilenceafter"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S50C04",
-    "puzzleId": "S50C04-marker-lock",
-    "dialogueId": "S50C04-undertaker",
-    "locationId": "old-wharf",
-    "objective": "Investigate Old Wharf, question Undertaker, recover Telegram, and learn why marker 5034 is tied to Full Archive.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Old Wharf.",
-        "clue": "The Silence After"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Telegram.",
-        "clue": "Telegram"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Undertaker.",
-        "clue": "3:44"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 5034.",
-        "clue": "5034"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the West instruction.",
-        "clue": "West"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S50C04-location",
-        "type": "location",
-        "name": "Old Wharf",
-        "inspectText": "Old Wharf looks ordinary until The Silence After moves through it."
-      },
-      {
-        "id": "S50C04-object",
-        "type": "evidence",
-        "name": "Telegram",
-        "inspectText": "Telegram is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S50C04-marker",
-        "type": "marker",
-        "name": "Marker 5034",
-        "inspectText": "Marker 5034 is not the answer. It is the lock."
-      },
-      {
-        "id": "S50C04-sound",
-        "type": "audio_clue",
-        "name": "The Silence After",
-        "inspectText": "The Silence After repeats near 3:44."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series50-The-Resolution/chapter04.md",
-      "novel": "generated/novels/Series50-The-Resolution/chapter04.md",
-      "song": "generated/songs/Series50-The-Resolution/song04.md"
     }
   },
   "story": {

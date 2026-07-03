@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "birch stand",
-      "birchstand"
-    ],
-    "object": [
-      "inkwell"
-    ],
-    "witness": [
-      "farmer"
-    ],
-    "time": [
-      "4:12",
-      "412"
-    ],
-    "marker": [
-      "4807",
-      "marker 4807",
-      "road marker 4807",
-      "mile marker 4807",
-      "mile 4807"
-    ],
-    "direction": [
-      "back the way you came",
-      "backthewayyoucame"
-    ],
-    "sound": [
-      "rope on pulley",
-      "ropeonpulley"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -310,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S48C01",
-    "puzzleId": "S48C01-marker-lock",
-    "dialogueId": "S48C01-farmer",
-    "locationId": "birch-stand",
-    "objective": "Investigate Birch Stand, question Farmer, recover Inkwell, and learn why marker 4807 is tied to Static Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Birch Stand.",
-        "clue": "Rope on Pulley"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Inkwell.",
-        "clue": "Inkwell"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Farmer.",
-        "clue": "4:12"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4807.",
-        "clue": "4807"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Back the Way You Came instruction.",
-        "clue": "Back the Way You Came"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S48C01-location",
-        "type": "location",
-        "name": "Birch Stand",
-        "inspectText": "Birch Stand looks ordinary until Rope on Pulley moves through it."
-      },
-      {
-        "id": "S48C01-object",
-        "type": "evidence",
-        "name": "Inkwell",
-        "inspectText": "Inkwell is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S48C01-marker",
-        "type": "marker",
-        "name": "Marker 4807",
-        "inspectText": "Marker 4807 is not the answer. It is the lock."
-      },
-      {
-        "id": "S48C01-sound",
-        "type": "audio_clue",
-        "name": "Rope on Pulley",
-        "inspectText": "Rope on Pulley repeats near 4:12."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series48-The-Broken-Signal/chapter01.md",
-      "novel": "generated/novels/Series48-The-Broken-Signal/chapter01.md",
-      "song": "generated/songs/Series48-The-Broken-Signal/song01.md"
     }
   },
   "story": {

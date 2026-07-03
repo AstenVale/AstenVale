@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "pine hollow",
-      "pinehollow"
-    ],
-    "object": [
-      "dried flower",
-      "driedflower"
-    ],
-    "witness": [
-      "quarry foreman",
-      "quarryforeman"
-    ],
-    "time": [
-      "11:29",
-      "1129"
-    ],
-    "marker": [
-      "3943",
-      "marker 3943",
-      "road marker 3943",
-      "mile marker 3943",
-      "mile 3943"
-    ],
-    "direction": [
-      "under"
-    ],
-    "sound": [
-      "saw cutting",
-      "sawcutting"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S39C05",
-    "puzzleId": "S39C05-marker-lock",
-    "dialogueId": "S39C05-quarry-foreman",
-    "locationId": "pine-hollow",
-    "objective": "Investigate Pine Hollow, question Quarry Foreman, recover Dried Flower, and learn why marker 3943 is tied to Rider Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Pine Hollow.",
-        "clue": "Saw Cutting"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Dried Flower.",
-        "clue": "Dried Flower"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Quarry Foreman.",
-        "clue": "11:29"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3943.",
-        "clue": "3943"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Under instruction.",
-        "clue": "Under"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S39C05-location",
-        "type": "location",
-        "name": "Pine Hollow",
-        "inspectText": "Pine Hollow looks ordinary until Saw Cutting moves through it."
-      },
-      {
-        "id": "S39C05-object",
-        "type": "evidence",
-        "name": "Dried Flower",
-        "inspectText": "Dried Flower is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S39C05-marker",
-        "type": "marker",
-        "name": "Marker 3943",
-        "inspectText": "Marker 3943 is not the answer. It is the lock."
-      },
-      {
-        "id": "S39C05-sound",
-        "type": "audio_clue",
-        "name": "Saw Cutting",
-        "inspectText": "Saw Cutting repeats near 11:29."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series39-The-Pale-Horse/chapter05.md",
-      "novel": "generated/novels/Series39-The-Pale-Horse/chapter05.md",
-      "song": "generated/songs/Series39-The-Pale-Horse/song05.md"
     }
   },
   "story": {

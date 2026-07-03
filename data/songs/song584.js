@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "grist mill",
-      "gristmill"
-    ],
-    "object": [
-      "dried blood on cloth",
-      "driedbloodoncloth"
-    ],
-    "witness": [
-      "lamplighter"
-    ],
-    "time": [
-      "8:42",
-      "842"
-    ],
-    "marker": [
-      "4970",
-      "marker 4970",
-      "road marker 4970",
-      "mile marker 4970",
-      "mile 4970"
-    ],
-    "direction": [
-      "across"
-    ],
-    "sound": [
-      "swamp gas",
-      "swampgas"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -310,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S49C08",
-    "puzzleId": "S49C08-marker-lock",
-    "dialogueId": "S49C08-lamplighter",
-    "locationId": "grist-mill",
-    "objective": "Investigate Grist Mill, question Lamplighter, recover Dried Blood on Cloth, and learn why marker 4970 is tied to Testimony Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Grist Mill.",
-        "clue": "Swamp Gas"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Dried Blood on Cloth.",
-        "clue": "Dried Blood on Cloth"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Lamplighter.",
-        "clue": "8:42"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4970.",
-        "clue": "4970"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Across instruction.",
-        "clue": "Across"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S49C08-location",
-        "type": "location",
-        "name": "Grist Mill",
-        "inspectText": "Grist Mill looks ordinary until Swamp Gas moves through it."
-      },
-      {
-        "id": "S49C08-object",
-        "type": "evidence",
-        "name": "Dried Blood on Cloth",
-        "inspectText": "Dried Blood on Cloth is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S49C08-marker",
-        "type": "marker",
-        "name": "Marker 4970",
-        "inspectText": "Marker 4970 is not the answer. It is the lock."
-      },
-      {
-        "id": "S49C08-sound",
-        "type": "audio_clue",
-        "name": "Swamp Gas",
-        "inspectText": "Swamp Gas repeats near 8:42."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series49-The-Final-Witness/chapter08.md",
-      "novel": "generated/novels/Series49-The-Final-Witness/chapter08.md",
-      "song": "generated/songs/Series49-The-Final-Witness/song08.md"
     }
   },
   "story": {

@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "black pine",
-      "blackpine"
-    ],
-    "object": [
-      "lantern"
-    ],
-    "witness": [
-      "stranger"
-    ],
-    "time": [
-      "3:30",
-      "330"
-    ],
-    "marker": [
-      "17",
-      "marker 17",
-      "road marker 17",
-      "mile marker 17",
-      "mile 17"
-    ],
-    "direction": [
-      "west"
-    ],
-    "sound": [
-      "crow call",
-      "crowcall"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -299,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S01C01",
-    "puzzleId": "S01C01-marker-lock",
-    "dialogueId": "S01C01-stranger",
-    "locationId": "black-pine",
-    "objective": "Investigate Black Pine, question Stranger, recover Lantern, and learn why marker 17 is tied to Public Archive.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Black Pine.",
-        "clue": "Crow Call"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Lantern.",
-        "clue": "Lantern"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Stranger.",
-        "clue": "3:30"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 17.",
-        "clue": "17"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the West instruction.",
-        "clue": "West"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S01C01-location",
-        "type": "location",
-        "name": "Black Pine",
-        "inspectText": "Black Pine looks ordinary until Crow Call moves through it."
-      },
-      {
-        "id": "S01C01-object",
-        "type": "evidence",
-        "name": "Lantern",
-        "inspectText": "Lantern is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S01C01-marker",
-        "type": "marker",
-        "name": "Marker 17",
-        "inspectText": "Marker 17 is not the answer. It is the lock."
-      },
-      {
-        "id": "S01C01-sound",
-        "type": "audio_clue",
-        "name": "Crow Call",
-        "inspectText": "Crow Call repeats near 3:30."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series01-The-Stranger/chapter01.md",
-      "novel": "generated/novels/Series01-The-Stranger/chapter01.md",
-      "song": "generated/songs/Series01-The-Stranger/song01.md"
     }
   },
   "story": {

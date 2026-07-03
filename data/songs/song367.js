@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "water tower",
-      "watertower"
-    ],
-    "object": [
-      "oil rag",
-      "oilrag"
-    ],
-    "witness": [
-      "circuit rider",
-      "circuitrider"
-    ],
-    "time": [
-      "11:40",
-      "1140"
-    ],
-    "marker": [
-      "3161",
-      "marker 3161",
-      "road marker 3161",
-      "mile marker 3161",
-      "mile 3161"
-    ],
-    "direction": [
-      "north"
-    ],
-    "sound": [
-      "rope on pulley",
-      "ropeonpulley"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S31C07",
-    "puzzleId": "S31C07-marker-lock",
-    "dialogueId": "S31C07-circuit-rider",
-    "locationId": "water-tower",
-    "objective": "Investigate Water Tower, question Circuit Rider, recover Oil Rag, and learn why marker 3161 is tied to Pattern Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Water Tower.",
-        "clue": "Rope on Pulley"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Oil Rag.",
-        "clue": "Oil Rag"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Circuit Rider.",
-        "clue": "11:40"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3161.",
-        "clue": "3161"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the North instruction.",
-        "clue": "North"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S31C07-location",
-        "type": "location",
-        "name": "Water Tower",
-        "inspectText": "Water Tower looks ordinary until Rope on Pulley moves through it."
-      },
-      {
-        "id": "S31C07-object",
-        "type": "evidence",
-        "name": "Oil Rag",
-        "inspectText": "Oil Rag is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S31C07-marker",
-        "type": "marker",
-        "name": "Marker 3161",
-        "inspectText": "Marker 3161 is not the answer. It is the lock."
-      },
-      {
-        "id": "S31C07-sound",
-        "type": "audio_clue",
-        "name": "Rope on Pulley",
-        "inspectText": "Rope on Pulley repeats near 11:40."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series31-The-Cipher-Garden/chapter07.md",
-      "novel": "generated/novels/Series31-The-Cipher-Garden/chapter07.md",
-      "song": "generated/songs/Series31-The-Cipher-Garden/song07.md"
     }
   },
   "story": {

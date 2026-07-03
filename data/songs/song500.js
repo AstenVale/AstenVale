@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "rope walk",
-      "ropewalk"
-    ],
-    "object": [
-      "belt buckle",
-      "beltbuckle"
-    ],
-    "witness": [
-      "weaver"
-    ],
-    "time": [
-      "9:08",
-      "908"
-    ],
-    "marker": [
-      "4270",
-      "marker 4270",
-      "road marker 4270",
-      "mile marker 4270",
-      "mile 4270"
-    ],
-    "direction": [
-      "toward"
-    ],
-    "sound": [
-      "thunder"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -310,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S42C08",
-    "puzzleId": "S42C08-marker-lock",
-    "dialogueId": "S42C08-weaver",
-    "locationId": "rope-walk",
-    "objective": "Investigate Rope Walk, question Weaver, recover Belt Buckle, and learn why marker 4270 is tied to Drought Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Rope Walk.",
-        "clue": "Thunder"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Belt Buckle.",
-        "clue": "Belt Buckle"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Weaver.",
-        "clue": "9:08"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4270.",
-        "clue": "4270"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Toward instruction.",
-        "clue": "Toward"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S42C08-location",
-        "type": "location",
-        "name": "Rope Walk",
-        "inspectText": "Rope Walk looks ordinary until Thunder moves through it."
-      },
-      {
-        "id": "S42C08-object",
-        "type": "evidence",
-        "name": "Belt Buckle",
-        "inspectText": "Belt Buckle is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S42C08-marker",
-        "type": "marker",
-        "name": "Marker 4270",
-        "inspectText": "Marker 4270 is not the answer. It is the lock."
-      },
-      {
-        "id": "S42C08-sound",
-        "type": "audio_clue",
-        "name": "Thunder",
-        "inspectText": "Thunder repeats near 9:08."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series42-The-Dry-Season/chapter08.md",
-      "novel": "generated/novels/Series42-The-Dry-Season/chapter08.md",
-      "song": "generated/songs/Series42-The-Dry-Season/song08.md"
     }
   },
   "story": {

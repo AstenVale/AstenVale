@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "freight yard",
-      "freightyard"
-    ],
-    "object": [
-      "dried ink blot",
-      "driedinkblot"
-    ],
-    "witness": [
-      "lamplighter"
-    ],
-    "time": [
-      "8:42",
-      "842"
-    ],
-    "marker": [
-      "2588",
-      "marker 2588",
-      "road marker 2588",
-      "mile marker 2588",
-      "mile 2588"
-    ],
-    "direction": [
-      "up"
-    ],
-    "sound": [
-      "match strike",
-      "matchstrike"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S25C10",
-    "puzzleId": "S25C10-marker-lock",
-    "dialogueId": "S25C10-lamplighter",
-    "locationId": "freight-yard",
-    "objective": "Investigate Freight Yard, question Lamplighter, recover Dried Ink Blot, and learn why marker 2588 is tied to Resonance Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Freight Yard.",
-        "clue": "Match Strike"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Dried Ink Blot.",
-        "clue": "Dried Ink Blot"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Lamplighter.",
-        "clue": "8:42"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2588.",
-        "clue": "2588"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Up instruction.",
-        "clue": "Up"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S25C10-location",
-        "type": "location",
-        "name": "Freight Yard",
-        "inspectText": "Freight Yard looks ordinary until Match Strike moves through it."
-      },
-      {
-        "id": "S25C10-object",
-        "type": "evidence",
-        "name": "Dried Ink Blot",
-        "inspectText": "Dried Ink Blot is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S25C10-marker",
-        "type": "marker",
-        "name": "Marker 2588",
-        "inspectText": "Marker 2588 is not the answer. It is the lock."
-      },
-      {
-        "id": "S25C10-sound",
-        "type": "audio_clue",
-        "name": "Match Strike",
-        "inspectText": "Match Strike repeats near 8:42."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series25-The-Echo-Chamber/chapter10.md",
-      "novel": "generated/novels/Series25-The-Echo-Chamber/chapter10.md",
-      "song": "generated/songs/Series25-The-Echo-Chamber/song10.md"
     }
   },
   "story": {

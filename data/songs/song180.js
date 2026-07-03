@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "courthouse"
-    ],
-    "object": [
-      "string of beads",
-      "stringofbeads"
-    ],
-    "witness": [
-      "woodsman"
-    ],
-    "time": [
-      "11:29",
-      "1129"
-    ],
-    "marker": [
-      "1606",
-      "marker 1606",
-      "road marker 1606",
-      "mile marker 1606",
-      "mile 1606"
-    ],
-    "direction": [
-      "into the dark",
-      "intothedark"
-    ],
-    "sound": [
-      "shutter bang",
-      "shutterbang"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S15C12",
-    "puzzleId": "S15C12-marker-lock",
-    "dialogueId": "S15C12-woodsman",
-    "locationId": "courthouse",
-    "objective": "Investigate Courthouse, question Woodsman, recover String of Beads, and learn why marker 1606 is tied to Signal Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Courthouse.",
-        "clue": "Shutter Bang"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect String of Beads.",
-        "clue": "String of Beads"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Woodsman.",
-        "clue": "11:29"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1606.",
-        "clue": "1606"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Into the Dark instruction.",
-        "clue": "Into the Dark"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S15C12-location",
-        "type": "location",
-        "name": "Courthouse",
-        "inspectText": "Courthouse looks ordinary until Shutter Bang moves through it."
-      },
-      {
-        "id": "S15C12-object",
-        "type": "evidence",
-        "name": "String of Beads",
-        "inspectText": "String of Beads is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S15C12-marker",
-        "type": "marker",
-        "name": "Marker 1606",
-        "inspectText": "Marker 1606 is not the answer. It is the lock."
-      },
-      {
-        "id": "S15C12-sound",
-        "type": "audio_clue",
-        "name": "Shutter Bang",
-        "inspectText": "Shutter Bang repeats near 11:29."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series15-The-Lantern-Keeper/chapter12.md",
-      "novel": "generated/novels/Series15-The-Lantern-Keeper/chapter12.md",
-      "song": "generated/songs/Series15-The-Lantern-Keeper/song12.md"
     }
   },
   "story": {

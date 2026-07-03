@@ -61,40 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the pit",
-      "pit",
-      "thepit"
-    ],
-    "object": [
-      "surveyor's pin",
-      "surveyor'spin"
-    ],
-    "witness": [
-      "station master",
-      "stationmaster"
-    ],
-    "time": [
-      "1:11",
-      "111"
-    ],
-    "marker": [
-      "2343",
-      "marker 2343",
-      "road marker 2343",
-      "mile marker 2343",
-      "mile 2343"
-    ],
-    "direction": [
-      "out of sight",
-      "outofsight"
-    ],
-    "sound": [
-      "cellar stairs",
-      "cellarstairs"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -303,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S23C05",
-    "puzzleId": "S23C05-marker-lock",
-    "dialogueId": "S23C05-station-master",
-    "locationId": "the-pit",
-    "objective": "Investigate The Pit, question Station Master, recover Surveyor's Pin, and learn why marker 2343 is tied to Document Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Pit.",
-        "clue": "Cellar Stairs"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Surveyor's Pin.",
-        "clue": "Surveyor's Pin"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Station Master.",
-        "clue": "1:11"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2343.",
-        "clue": "2343"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Out of Sight instruction.",
-        "clue": "Out of Sight"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S23C05-location",
-        "type": "location",
-        "name": "The Pit",
-        "inspectText": "The Pit looks ordinary until Cellar Stairs moves through it."
-      },
-      {
-        "id": "S23C05-object",
-        "type": "evidence",
-        "name": "Surveyor's Pin",
-        "inspectText": "Surveyor's Pin is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S23C05-marker",
-        "type": "marker",
-        "name": "Marker 2343",
-        "inspectText": "Marker 2343 is not the answer. It is the lock."
-      },
-      {
-        "id": "S23C05-sound",
-        "type": "audio_clue",
-        "name": "Cellar Stairs",
-        "inspectText": "Cellar Stairs repeats near 1:11."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series23-The-Paper-Trail/chapter05.md",
-      "novel": "generated/novels/Series23-The-Paper-Trail/chapter05.md",
-      "song": "generated/songs/Series23-The-Paper-Trail/song05.md"
     }
   },
   "story": {

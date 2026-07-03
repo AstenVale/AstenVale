@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "old bridge",
-      "oldbridge"
-    ],
-    "object": [
-      "wax seal",
-      "waxseal"
-    ],
-    "witness": [
-      "barber"
-    ],
-    "time": [
-      "5:09",
-      "509"
-    ],
-    "marker": [
-      "3052",
-      "marker 3052",
-      "road marker 3052",
-      "mile marker 3052",
-      "mile 3052"
-    ],
-    "direction": [
-      "sideways"
-    ],
-    "sound": [
-      "swamp gas",
-      "swampgas"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S30C06",
-    "puzzleId": "S30C06-marker-lock",
-    "dialogueId": "S30C06-barber",
-    "locationId": "old-bridge",
-    "objective": "Investigate Old Bridge, question Barber, recover Wax Seal, and learn why marker 3052 is tied to Manifest Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Old Bridge.",
-        "clue": "Swamp Gas"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Wax Seal.",
-        "clue": "Wax Seal"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Barber.",
-        "clue": "5:09"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3052.",
-        "clue": "3052"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Sideways instruction.",
-        "clue": "Sideways"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S30C06-location",
-        "type": "location",
-        "name": "Old Bridge",
-        "inspectText": "Old Bridge looks ordinary until Swamp Gas moves through it."
-      },
-      {
-        "id": "S30C06-object",
-        "type": "evidence",
-        "name": "Wax Seal",
-        "inspectText": "Wax Seal is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S30C06-marker",
-        "type": "marker",
-        "name": "Marker 3052",
-        "inspectText": "Marker 3052 is not the answer. It is the lock."
-      },
-      {
-        "id": "S30C06-sound",
-        "type": "audio_clue",
-        "name": "Swamp Gas",
-        "inspectText": "Swamp Gas repeats near 5:09."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series30-The-Last-Train/chapter06.md",
-      "novel": "generated/novels/Series30-The-Last-Train/chapter06.md",
-      "song": "generated/songs/Series30-The-Last-Train/song06.md"
     }
   },
   "story": {

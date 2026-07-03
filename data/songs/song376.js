@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "birch stand",
-      "birchstand"
-    ],
-    "object": [
-      "leather strap",
-      "leatherstrap"
-    ],
-    "witness": [
-      "schoolteacher"
-    ],
-    "time": [
-      "10:22",
-      "1022"
-    ],
-    "marker": [
-      "3234",
-      "marker 3234",
-      "road marker 3234",
-      "mile marker 3234",
-      "mile 3234"
-    ],
-    "direction": [
-      "under"
-    ],
-    "sound": [
-      "lantern glass",
-      "lanternglass"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S32C04",
-    "puzzleId": "S32C04-marker-lock",
-    "dialogueId": "S32C04-schoolteacher",
-    "locationId": "birch-stand",
-    "objective": "Investigate Birch Stand, question Schoolteacher, recover Leather Strap, and learn why marker 3234 is tied to Depth Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Birch Stand.",
-        "clue": "Lantern Glass"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Leather Strap.",
-        "clue": "Leather Strap"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Schoolteacher.",
-        "clue": "10:22"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3234.",
-        "clue": "3234"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Under instruction.",
-        "clue": "Under"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S32C04-location",
-        "type": "location",
-        "name": "Birch Stand",
-        "inspectText": "Birch Stand looks ordinary until Lantern Glass moves through it."
-      },
-      {
-        "id": "S32C04-object",
-        "type": "evidence",
-        "name": "Leather Strap",
-        "inspectText": "Leather Strap is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S32C04-marker",
-        "type": "marker",
-        "name": "Marker 3234",
-        "inspectText": "Marker 3234 is not the answer. It is the lock."
-      },
-      {
-        "id": "S32C04-sound",
-        "type": "audio_clue",
-        "name": "Lantern Glass",
-        "inspectText": "Lantern Glass repeats near 10:22."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series32-The-Deep-Current/chapter04.md",
-      "novel": "generated/novels/Series32-The-Deep-Current/chapter04.md",
-      "song": "generated/songs/Series32-The-Deep-Current/song04.md"
     }
   },
   "story": {

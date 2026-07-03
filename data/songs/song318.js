@@ -61,39 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the dry gulch",
-      "dry gulch",
-      "thedrygulch"
-    ],
-    "object": [
-      "belt buckle",
-      "beltbuckle"
-    ],
-    "witness": [
-      "orphan"
-    ],
-    "time": [
-      "6:17",
-      "617"
-    ],
-    "marker": [
-      "2752",
-      "marker 2752",
-      "road marker 2752",
-      "mile marker 2752",
-      "mile 2752"
-    ],
-    "direction": [
-      "down the hollow",
-      "downthehollow"
-    ],
-    "sound": [
-      "horse hooves",
-      "horsehooves"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -302,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S27C06",
-    "puzzleId": "S27C06-marker-lock",
-    "dialogueId": "S27C06-orphan",
-    "locationId": "the-dry-gulch",
-    "objective": "Investigate The Dry Gulch, question Orphan, recover Belt Buckle, and learn why marker 2752 is tied to Expanse Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Dry Gulch.",
-        "clue": "Horse Hooves"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Belt Buckle.",
-        "clue": "Belt Buckle"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Orphan.",
-        "clue": "6:17"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2752.",
-        "clue": "2752"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Down the Hollow instruction.",
-        "clue": "Down the Hollow"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S27C06-location",
-        "type": "location",
-        "name": "The Dry Gulch",
-        "inspectText": "The Dry Gulch looks ordinary until Horse Hooves moves through it."
-      },
-      {
-        "id": "S27C06-object",
-        "type": "evidence",
-        "name": "Belt Buckle",
-        "inspectText": "Belt Buckle is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S27C06-marker",
-        "type": "marker",
-        "name": "Marker 2752",
-        "inspectText": "Marker 2752 is not the answer. It is the lock."
-      },
-      {
-        "id": "S27C06-sound",
-        "type": "audio_clue",
-        "name": "Horse Hooves",
-        "inspectText": "Horse Hooves repeats near 6:17."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series27-The-Salt-Flats/chapter06.md",
-      "novel": "generated/novels/Series27-The-Salt-Flats/chapter06.md",
-      "song": "generated/songs/Series27-The-Salt-Flats/song06.md"
     }
   },
   "story": {

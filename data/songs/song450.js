@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "chandler's row",
-      "chandler'srow"
-    ],
-    "object": [
-      "bone button",
-      "bonebutton"
-    ],
-    "witness": [
-      "peddler"
-    ],
-    "time": [
-      "1:58",
-      "158"
-    ],
-    "marker": [
-      "3852",
-      "marker 3852",
-      "road marker 3852",
-      "mile marker 3852",
-      "mile 3852"
-    ],
-    "direction": [
-      "up the ridge",
-      "uptheridge"
-    ],
-    "sound": [
-      "match strike",
-      "matchstrike"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -301,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S38C06",
-    "puzzleId": "S38C06-marker-lock",
-    "dialogueId": "S38C06-peddler",
-    "locationId": "chandler-s-row",
-    "objective": "Investigate Chandler's Row, question Peddler, recover Bone Button, and learn why marker 3852 is tied to Beacon Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Chandler's Row.",
-        "clue": "Match Strike"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Bone Button.",
-        "clue": "Bone Button"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Peddler.",
-        "clue": "1:58"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3852.",
-        "clue": "3852"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Up the Ridge instruction.",
-        "clue": "Up the Ridge"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S38C06-location",
-        "type": "location",
-        "name": "Chandler's Row",
-        "inspectText": "Chandler's Row looks ordinary until Match Strike moves through it."
-      },
-      {
-        "id": "S38C06-object",
-        "type": "evidence",
-        "name": "Bone Button",
-        "inspectText": "Bone Button is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S38C06-marker",
-        "type": "marker",
-        "name": "Marker 3852",
-        "inspectText": "Marker 3852 is not the answer. It is the lock."
-      },
-      {
-        "id": "S38C06-sound",
-        "type": "audio_clue",
-        "name": "Match Strike",
-        "inspectText": "Match Strike repeats near 1:58."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series38-The-Signal-Fire/chapter06.md",
-      "novel": "generated/novels/Series38-The-Signal-Fire/chapter06.md",
-      "song": "generated/songs/Series38-The-Signal-Fire/song06.md"
     }
   },
   "story": {

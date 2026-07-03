@@ -61,39 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the root cellar",
-      "root cellar",
-      "therootcellar"
-    ],
-    "object": [
-      "empty tin",
-      "emptytin"
-    ],
-    "witness": [
-      "lock keeper",
-      "lockkeeper"
-    ],
-    "time": [
-      "8:06",
-      "806"
-    ],
-    "marker": [
-      "516",
-      "marker 516",
-      "road marker 516",
-      "mile marker 516",
-      "mile 516"
-    ],
-    "direction": [
-      "down the hollow",
-      "downthehollow"
-    ],
-    "sound": [
-      "chains"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -302,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S05C02",
-    "puzzleId": "S05C02-marker-lock",
-    "dialogueId": "S05C02-lock-keeper",
-    "locationId": "the-root-cellar",
-    "objective": "Investigate The Root Cellar, question Lock Keeper, recover Empty Tin, and learn why marker 516 is tied to Cold Archive.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Root Cellar.",
-        "clue": "Chains"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Empty Tin.",
-        "clue": "Empty Tin"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Lock Keeper.",
-        "clue": "8:06"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 516.",
-        "clue": "516"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Down the Hollow instruction.",
-        "clue": "Down the Hollow"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S05C02-location",
-        "type": "location",
-        "name": "The Root Cellar",
-        "inspectText": "The Root Cellar looks ordinary until Chains moves through it."
-      },
-      {
-        "id": "S05C02-object",
-        "type": "evidence",
-        "name": "Empty Tin",
-        "inspectText": "Empty Tin is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S05C02-marker",
-        "type": "marker",
-        "name": "Marker 516",
-        "inspectText": "Marker 516 is not the answer. It is the lock."
-      },
-      {
-        "id": "S05C02-sound",
-        "type": "audio_clue",
-        "name": "Chains",
-        "inspectText": "Chains repeats near 8:06."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series05-The-Last-Winter/chapter02.md",
-      "novel": "generated/novels/Series05-The-Last-Winter/chapter02.md",
-      "song": "generated/songs/Series05-The-Last-Winter/song02.md"
     }
   },
   "story": {

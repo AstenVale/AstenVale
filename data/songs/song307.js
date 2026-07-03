@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the dry gulch",
-      "dry gulch",
-      "thedrygulch"
-    ],
-    "object": [
-      "badge"
-    ],
-    "witness": [
-      "orphan"
-    ],
-    "time": [
-      "12:44",
-      "1244"
-    ],
-    "marker": [
-      "2661",
-      "marker 2661",
-      "road marker 2661",
-      "mile marker 2661",
-      "mile 2661"
-    ],
-    "direction": [
-      "toward the river",
-      "towardtheriver"
-    ],
-    "sound": [
-      "lantern flicker",
-      "lanternflicker"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S26C07",
-    "puzzleId": "S26C07-marker-lock",
-    "dialogueId": "S26C07-orphan",
-    "locationId": "the-dry-gulch",
-    "objective": "Investigate The Dry Gulch, question Orphan, recover Badge, and learn why marker 2661 is tied to Threshold Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Dry Gulch.",
-        "clue": "Lantern Flicker"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Badge.",
-        "clue": "Badge"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Orphan.",
-        "clue": "12:44"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2661.",
-        "clue": "2661"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Toward the River instruction.",
-        "clue": "Toward the River"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S26C07-location",
-        "type": "location",
-        "name": "The Dry Gulch",
-        "inspectText": "The Dry Gulch looks ordinary until Lantern Flicker moves through it."
-      },
-      {
-        "id": "S26C07-object",
-        "type": "evidence",
-        "name": "Badge",
-        "inspectText": "Badge is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S26C07-marker",
-        "type": "marker",
-        "name": "Marker 2661",
-        "inspectText": "Marker 2661 is not the answer. It is the lock."
-      },
-      {
-        "id": "S26C07-sound",
-        "type": "audio_clue",
-        "name": "Lantern Flicker",
-        "inspectText": "Lantern Flicker repeats near 12:44."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series26-The-Red-Door/chapter07.md",
-      "novel": "generated/novels/Series26-The-Red-Door/chapter07.md",
-      "song": "generated/songs/Series26-The-Red-Door/song07.md"
     }
   },
   "story": {

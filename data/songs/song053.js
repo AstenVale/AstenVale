@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "smithy"
-    ],
-    "object": [
-      "coin"
-    ],
-    "witness": [
-      "banker"
-    ],
-    "time": [
-      "9:44",
-      "944"
-    ],
-    "marker": [
-      "543",
-      "marker 543",
-      "road marker 543",
-      "mile marker 543",
-      "mile 543"
-    ],
-    "direction": [
-      "away from town",
-      "awayfromtown"
-    ],
-    "sound": [
-      "nail pulled from wood",
-      "nailpulledfromwood"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -299,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S05C05",
-    "puzzleId": "S05C05-marker-lock",
-    "dialogueId": "S05C05-banker",
-    "locationId": "smithy",
-    "objective": "Investigate Smithy, question Banker, recover Coin, and learn why marker 543 is tied to Cold Archive.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Smithy.",
-        "clue": "Nail Pulled from Wood"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Coin.",
-        "clue": "Coin"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Banker.",
-        "clue": "9:44"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 543.",
-        "clue": "543"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Away from Town instruction.",
-        "clue": "Away from Town"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S05C05-location",
-        "type": "location",
-        "name": "Smithy",
-        "inspectText": "Smithy looks ordinary until Nail Pulled from Wood moves through it."
-      },
-      {
-        "id": "S05C05-object",
-        "type": "evidence",
-        "name": "Coin",
-        "inspectText": "Coin is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S05C05-marker",
-        "type": "marker",
-        "name": "Marker 543",
-        "inspectText": "Marker 543 is not the answer. It is the lock."
-      },
-      {
-        "id": "S05C05-sound",
-        "type": "audio_clue",
-        "name": "Nail Pulled from Wood",
-        "inspectText": "Nail Pulled from Wood repeats near 9:44."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series05-The-Last-Winter/chapter05.md",
-      "novel": "generated/novels/Series05-The-Last-Winter/chapter05.md",
-      "song": "generated/songs/Series05-The-Last-Winter/song05.md"
     }
   },
   "story": {

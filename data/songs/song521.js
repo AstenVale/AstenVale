@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the quarry pool",
-      "quarry pool",
-      "thequarrypool"
-    ],
-    "object": [
-      "spool of thread",
-      "spoolofthread"
-    ],
-    "witness": [
-      "fisherman"
-    ],
-    "time": [
-      "8:42",
-      "842"
-    ],
-    "marker": [
-      "4443",
-      "marker 4443",
-      "road marker 4443",
-      "mile marker 4443",
-      "mile 4443"
-    ],
-    "direction": [
-      "back"
-    ],
-    "sound": [
-      "boot heel",
-      "bootheel"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S44C05",
-    "puzzleId": "S44C05-marker-lock",
-    "dialogueId": "S44C05-fisherman",
-    "locationId": "the-quarry-pool",
-    "objective": "Investigate The Quarry Pool, question Fisherman, recover Spool of Thread, and learn why marker 4443 is tied to Parallel Case Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Quarry Pool.",
-        "clue": "Boot Heel"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Spool of Thread.",
-        "clue": "Spool of Thread"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Fisherman.",
-        "clue": "8:42"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4443.",
-        "clue": "4443"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Back instruction.",
-        "clue": "Back"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S44C05-location",
-        "type": "location",
-        "name": "The Quarry Pool",
-        "inspectText": "The Quarry Pool looks ordinary until Boot Heel moves through it."
-      },
-      {
-        "id": "S44C05-object",
-        "type": "evidence",
-        "name": "Spool of Thread",
-        "inspectText": "Spool of Thread is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S44C05-marker",
-        "type": "marker",
-        "name": "Marker 4443",
-        "inspectText": "Marker 4443 is not the answer. It is the lock."
-      },
-      {
-        "id": "S44C05-sound",
-        "type": "audio_clue",
-        "name": "Boot Heel",
-        "inspectText": "Boot Heel repeats near 8:42."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series44-The-Mirror-Case/chapter05.md",
-      "novel": "generated/novels/Series44-The-Mirror-Case/chapter05.md",
-      "song": "generated/songs/Series44-The-Mirror-Case/song05.md"
     }
   },
   "story": {

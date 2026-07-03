@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "courthouse"
-    ],
-    "object": [
-      "leather strap",
-      "leatherstrap"
-    ],
-    "witness": [
-      "widow"
-    ],
-    "time": [
-      "2:47",
-      "247"
-    ],
-    "marker": [
-      "325",
-      "marker 325",
-      "road marker 325",
-      "mile marker 325",
-      "mile 325"
-    ],
-    "direction": [
-      "somewhere"
-    ],
-    "sound": [
-      "empty wagon",
-      "emptywagon"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -299,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S03C03",
-    "puzzleId": "S03C03-marker-lock",
-    "dialogueId": "S03C03-widow",
-    "locationId": "courthouse",
-    "objective": "Investigate Courthouse, question Widow, recover Leather Strap, and learn why marker 325 is tied to Absence Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Courthouse.",
-        "clue": "Empty Wagon"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Leather Strap.",
-        "clue": "Leather Strap"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Widow.",
-        "clue": "2:47"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 325.",
-        "clue": "325"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Somewhere instruction.",
-        "clue": "Somewhere"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S03C03-location",
-        "type": "location",
-        "name": "Courthouse",
-        "inspectText": "Courthouse looks ordinary until Empty Wagon moves through it."
-      },
-      {
-        "id": "S03C03-object",
-        "type": "evidence",
-        "name": "Leather Strap",
-        "inspectText": "Leather Strap is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S03C03-marker",
-        "type": "marker",
-        "name": "Marker 325",
-        "inspectText": "Marker 325 is not the answer. It is the lock."
-      },
-      {
-        "id": "S03C03-sound",
-        "type": "audio_clue",
-        "name": "Empty Wagon",
-        "inspectText": "Empty Wagon repeats near 2:47."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series03-The-Disappearance/chapter03.md",
-      "novel": "generated/novels/Series03-The-Disappearance/chapter03.md",
-      "song": "generated/songs/Series03-The-Disappearance/song03.md"
     }
   },
   "story": {

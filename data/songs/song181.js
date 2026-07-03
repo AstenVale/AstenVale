@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "jail"
-    ],
-    "object": [
-      "straight razor",
-      "straightrazor"
-    ],
-    "witness": [
-      "harness maker",
-      "harnessmaker"
-    ],
-    "time": [
-      "3:58",
-      "358"
-    ],
-    "marker": [
-      "1607",
-      "marker 1607",
-      "road marker 1607",
-      "mile marker 1607",
-      "mile 1607"
-    ],
-    "direction": [
-      "south"
-    ],
-    "sound": [
-      "river water",
-      "riverwater"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S16C01",
-    "puzzleId": "S16C01-marker-lock",
-    "dialogueId": "S16C01-harness-maker",
-    "locationId": "jail",
-    "objective": "Investigate Jail, question Harness Maker, recover Straight Razor, and learn why marker 1607 is tied to Transparent Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Jail.",
-        "clue": "River Water"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Straight Razor.",
-        "clue": "Straight Razor"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Harness Maker.",
-        "clue": "3:58"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1607.",
-        "clue": "1607"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the South instruction.",
-        "clue": "South"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S16C01-location",
-        "type": "location",
-        "name": "Jail",
-        "inspectText": "Jail looks ordinary until River Water moves through it."
-      },
-      {
-        "id": "S16C01-object",
-        "type": "evidence",
-        "name": "Straight Razor",
-        "inspectText": "Straight Razor is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S16C01-marker",
-        "type": "marker",
-        "name": "Marker 1607",
-        "inspectText": "Marker 1607 is not the answer. It is the lock."
-      },
-      {
-        "id": "S16C01-sound",
-        "type": "audio_clue",
-        "name": "River Water",
-        "inspectText": "River Water repeats near 3:58."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series16-The-Glass-House/chapter01.md",
-      "novel": "generated/novels/Series16-The-Glass-House/chapter01.md",
-      "song": "generated/songs/Series16-The-Glass-House/song01.md"
     }
   },
   "story": {

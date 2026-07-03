@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the weir",
-      "weir",
-      "theweir"
-    ],
-    "object": [
-      "spool of thread",
-      "spoolofthread"
-    ],
-    "witness": [
-      "conductor"
-    ],
-    "time": [
-      "5:21",
-      "521"
-    ],
-    "marker": [
-      "416",
-      "marker 416",
-      "road marker 416",
-      "mile marker 416",
-      "mile 416"
-    ],
-    "direction": [
-      "toward"
-    ],
-    "sound": [
-      "ash settling",
-      "ashsettling"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S04C02",
-    "puzzleId": "S04C02-marker-lock",
-    "dialogueId": "S04C02-conductor",
-    "locationId": "the-weir",
-    "objective": "Investigate The Weir, question Conductor, recover Spool of Thread, and learn why marker 416 is tied to Current Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Weir.",
-        "clue": "Ash Settling"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Spool of Thread.",
-        "clue": "Spool of Thread"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Conductor.",
-        "clue": "5:21"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 416.",
-        "clue": "416"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Toward instruction.",
-        "clue": "Toward"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S04C02-location",
-        "type": "location",
-        "name": "The Weir",
-        "inspectText": "The Weir looks ordinary until Ash Settling moves through it."
-      },
-      {
-        "id": "S04C02-object",
-        "type": "evidence",
-        "name": "Spool of Thread",
-        "inspectText": "Spool of Thread is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S04C02-marker",
-        "type": "marker",
-        "name": "Marker 416",
-        "inspectText": "Marker 416 is not the answer. It is the lock."
-      },
-      {
-        "id": "S04C02-sound",
-        "type": "audio_clue",
-        "name": "Ash Settling",
-        "inspectText": "Ash Settling repeats near 5:21."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series04-The-River-Speaks/chapter02.md",
-      "novel": "generated/novels/Series04-The-River-Speaks/chapter02.md",
-      "song": "generated/songs/Series04-The-River-Speaks/song02.md"
     }
   },
   "story": {

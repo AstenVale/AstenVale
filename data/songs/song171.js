@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "river's edge",
-      "river'sedge"
-    ],
-    "object": [
-      "badge"
-    ],
-    "witness": [
-      "fence mender",
-      "fencemender"
-    ],
-    "time": [
-      "11:44",
-      "1144"
-    ],
-    "marker": [
-      "1525",
-      "marker 1525",
-      "road marker 1525",
-      "mile marker 1525",
-      "mile 1525"
-    ],
-    "direction": [
-      "out"
-    ],
-    "sound": [
-      "chains"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -310,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S15C03",
-    "puzzleId": "S15C03-marker-lock",
-    "dialogueId": "S15C03-fence-mender",
-    "locationId": "river-s-edge",
-    "objective": "Investigate River's Edge, question Fence Mender, recover Badge, and learn why marker 1525 is tied to Signal Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter River's Edge.",
-        "clue": "Chains"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Badge.",
-        "clue": "Badge"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Fence Mender.",
-        "clue": "11:44"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1525.",
-        "clue": "1525"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Out instruction.",
-        "clue": "Out"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S15C03-location",
-        "type": "location",
-        "name": "River's Edge",
-        "inspectText": "River's Edge looks ordinary until Chains moves through it."
-      },
-      {
-        "id": "S15C03-object",
-        "type": "evidence",
-        "name": "Badge",
-        "inspectText": "Badge is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S15C03-marker",
-        "type": "marker",
-        "name": "Marker 1525",
-        "inspectText": "Marker 1525 is not the answer. It is the lock."
-      },
-      {
-        "id": "S15C03-sound",
-        "type": "audio_clue",
-        "name": "Chains",
-        "inspectText": "Chains repeats near 11:44."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series15-The-Lantern-Keeper/chapter03.md",
-      "novel": "generated/novels/Series15-The-Lantern-Keeper/chapter03.md",
-      "song": "generated/songs/Series15-The-Lantern-Keeper/song03.md"
     }
   },
   "story": {

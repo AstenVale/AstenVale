@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the widow's porch",
-      "widow's porch",
-      "thewidow'sporch"
-    ],
-    "object": [
-      "handkerchief"
-    ],
-    "witness": [
-      "stranger"
-    ],
-    "time": [
-      "11:44",
-      "1144"
-    ],
-    "marker": [
-      "2034",
-      "marker 2034",
-      "road marker 2034",
-      "mile marker 2034",
-      "mile 2034"
-    ],
-    "direction": [
-      "across"
-    ],
-    "sound": [
-      "fire crackling",
-      "firecrackling"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S20C04",
-    "puzzleId": "S20C04-marker-lock",
-    "dialogueId": "S20C04-stranger",
-    "locationId": "the-widow-s-porch",
-    "objective": "Investigate The Widow's Porch, question Stranger, recover Handkerchief, and learn why marker 2034 is tied to Night Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Widow's Porch.",
-        "clue": "Fire Crackling"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Handkerchief.",
-        "clue": "Handkerchief"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Stranger.",
-        "clue": "11:44"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2034.",
-        "clue": "2034"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Across instruction.",
-        "clue": "Across"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S20C04-location",
-        "type": "location",
-        "name": "The Widow's Porch",
-        "inspectText": "The Widow's Porch looks ordinary until Fire Crackling moves through it."
-      },
-      {
-        "id": "S20C04-object",
-        "type": "evidence",
-        "name": "Handkerchief",
-        "inspectText": "Handkerchief is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S20C04-marker",
-        "type": "marker",
-        "name": "Marker 2034",
-        "inspectText": "Marker 2034 is not the answer. It is the lock."
-      },
-      {
-        "id": "S20C04-sound",
-        "type": "audio_clue",
-        "name": "Fire Crackling",
-        "inspectText": "Fire Crackling repeats near 11:44."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series20-The-Midnight-Circuit/chapter04.md",
-      "novel": "generated/novels/Series20-The-Midnight-Circuit/chapter04.md",
-      "song": "generated/songs/Series20-The-Midnight-Circuit/song04.md"
     }
   },
   "story": {

@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the quarry pool",
-      "quarry pool",
-      "thequarrypool"
-    ],
-    "object": [
-      "cufflink"
-    ],
-    "witness": [
-      "cartographer"
-    ],
-    "time": [
-      "4:47",
-      "447"
-    ],
-    "marker": [
-      "2907",
-      "marker 2907",
-      "road marker 2907",
-      "mile marker 2907",
-      "mile 2907"
-    ],
-    "direction": [
-      "past the tree line",
-      "pastthetreeline"
-    ],
-    "sound": [
-      "broken string",
-      "brokenstring"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -301,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S29C01",
-    "puzzleId": "S29C01-marker-lock",
-    "dialogueId": "S29C01-cartographer",
-    "locationId": "the-quarry-pool",
-    "objective": "Investigate The Quarry Pool, question Cartographer, recover Cufflink, and learn why marker 2907 is tied to Interment Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Quarry Pool.",
-        "clue": "Broken String"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Cufflink.",
-        "clue": "Cufflink"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Cartographer.",
-        "clue": "4:47"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2907.",
-        "clue": "2907"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Past the Tree Line instruction.",
-        "clue": "Past the Tree Line"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S29C01-location",
-        "type": "location",
-        "name": "The Quarry Pool",
-        "inspectText": "The Quarry Pool looks ordinary until Broken String moves through it."
-      },
-      {
-        "id": "S29C01-object",
-        "type": "evidence",
-        "name": "Cufflink",
-        "inspectText": "Cufflink is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S29C01-marker",
-        "type": "marker",
-        "name": "Marker 2907",
-        "inspectText": "Marker 2907 is not the answer. It is the lock."
-      },
-      {
-        "id": "S29C01-sound",
-        "type": "audio_clue",
-        "name": "Broken String",
-        "inspectText": "Broken String repeats near 4:47."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series29-The-Unmarked-Grave/chapter01.md",
-      "novel": "generated/novels/Series29-The-Unmarked-Grave/chapter01.md",
-      "song": "generated/songs/Series29-The-Unmarked-Grave/song01.md"
     }
   },
   "story": {

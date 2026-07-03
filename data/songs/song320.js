@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "grist mill",
-      "gristmill"
-    ],
-    "object": [
-      "hollow acorn",
-      "hollowacorn"
-    ],
-    "witness": [
-      "peddler"
-    ],
-    "time": [
-      "11:44",
-      "1144"
-    ],
-    "marker": [
-      "2770",
-      "marker 2770",
-      "road marker 2770",
-      "mile marker 2770",
-      "mile 2770"
-    ],
-    "direction": [
-      "across"
-    ],
-    "sound": [
-      "floorboard"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -299,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S27C08",
-    "puzzleId": "S27C08-marker-lock",
-    "dialogueId": "S27C08-peddler",
-    "locationId": "grist-mill",
-    "objective": "Investigate Grist Mill, question Peddler, recover Hollow Acorn, and learn why marker 2770 is tied to Expanse Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Grist Mill.",
-        "clue": "Floorboard"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Hollow Acorn.",
-        "clue": "Hollow Acorn"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Peddler.",
-        "clue": "11:44"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2770.",
-        "clue": "2770"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Across instruction.",
-        "clue": "Across"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S27C08-location",
-        "type": "location",
-        "name": "Grist Mill",
-        "inspectText": "Grist Mill looks ordinary until Floorboard moves through it."
-      },
-      {
-        "id": "S27C08-object",
-        "type": "evidence",
-        "name": "Hollow Acorn",
-        "inspectText": "Hollow Acorn is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S27C08-marker",
-        "type": "marker",
-        "name": "Marker 2770",
-        "inspectText": "Marker 2770 is not the answer. It is the lock."
-      },
-      {
-        "id": "S27C08-sound",
-        "type": "audio_clue",
-        "name": "Floorboard",
-        "inspectText": "Floorboard repeats near 11:44."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series27-The-Salt-Flats/chapter08.md",
-      "novel": "generated/novels/Series27-The-Salt-Flats/chapter08.md",
-      "song": "generated/songs/Series27-The-Salt-Flats/song08.md"
     }
   },
   "story": {

@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "covered bridge",
-      "coveredbridge"
-    ],
-    "object": [
-      "bottle"
-    ],
-    "witness": [
-      "deputy"
-    ],
-    "time": [
-      "6:53",
-      "653"
-    ],
-    "marker": [
-      "643",
-      "marker 643",
-      "road marker 643",
-      "mile marker 643",
-      "mile 643"
-    ],
-    "direction": [
-      "ahead"
-    ],
-    "sound": [
-      "ice crack",
-      "icecrack"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -310,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S06C05",
-    "puzzleId": "S06C05-marker-lock",
-    "dialogueId": "S06C05-deputy",
-    "locationId": "covered-bridge",
-    "objective": "Investigate Covered Bridge, question Deputy, recover Bottle, and learn why marker 643 is tied to Below Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Covered Bridge.",
-        "clue": "Ice Crack"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Bottle.",
-        "clue": "Bottle"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Deputy.",
-        "clue": "6:53"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 643.",
-        "clue": "643"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Ahead instruction.",
-        "clue": "Ahead"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S06C05-location",
-        "type": "location",
-        "name": "Covered Bridge",
-        "inspectText": "Covered Bridge looks ordinary until Ice Crack moves through it."
-      },
-      {
-        "id": "S06C05-object",
-        "type": "evidence",
-        "name": "Bottle",
-        "inspectText": "Bottle is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S06C05-marker",
-        "type": "marker",
-        "name": "Marker 643",
-        "inspectText": "Marker 643 is not the answer. It is the lock."
-      },
-      {
-        "id": "S06C05-sound",
-        "type": "audio_clue",
-        "name": "Ice Crack",
-        "inspectText": "Ice Crack repeats near 6:53."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series06-The-Underground/chapter05.md",
-      "novel": "generated/novels/Series06-The-Underground/chapter05.md",
-      "song": "generated/songs/Series06-The-Underground/song05.md"
     }
   },
   "story": {

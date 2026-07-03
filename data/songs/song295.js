@@ -61,35 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "church"
-    ],
-    "object": [
-      "brooch"
-    ],
-    "witness": [
-      "furrier"
-    ],
-    "time": [
-      "5:21",
-      "521"
-    ],
-    "marker": [
-      "2561",
-      "marker 2561",
-      "road marker 2561",
-      "mile marker 2561",
-      "mile 2561"
-    ],
-    "direction": [
-      "toward"
-    ],
-    "sound": [
-      "empty wagon",
-      "emptywagon"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -298,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S25C07",
-    "puzzleId": "S25C07-marker-lock",
-    "dialogueId": "S25C07-furrier",
-    "locationId": "church",
-    "objective": "Investigate Church, question Furrier, recover Brooch, and learn why marker 2561 is tied to Resonance Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Church.",
-        "clue": "Empty Wagon"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Brooch.",
-        "clue": "Brooch"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Furrier.",
-        "clue": "5:21"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2561.",
-        "clue": "2561"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Toward instruction.",
-        "clue": "Toward"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S25C07-location",
-        "type": "location",
-        "name": "Church",
-        "inspectText": "Church looks ordinary until Empty Wagon moves through it."
-      },
-      {
-        "id": "S25C07-object",
-        "type": "evidence",
-        "name": "Brooch",
-        "inspectText": "Brooch is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S25C07-marker",
-        "type": "marker",
-        "name": "Marker 2561",
-        "inspectText": "Marker 2561 is not the answer. It is the lock."
-      },
-      {
-        "id": "S25C07-sound",
-        "type": "audio_clue",
-        "name": "Empty Wagon",
-        "inspectText": "Empty Wagon repeats near 5:21."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series25-The-Echo-Chamber/chapter07.md",
-      "novel": "generated/novels/Series25-The-Echo-Chamber/chapter07.md",
-      "song": "generated/songs/Series25-The-Echo-Chamber/song07.md"
     }
   },
   "story": {

@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "boatyard"
-    ],
-    "object": [
-      "charred paper",
-      "charredpaper"
-    ],
-    "witness": [
-      "midwife"
-    ],
-    "time": [
-      "2:19",
-      "219"
-    ],
-    "marker": [
-      "788",
-      "marker 788",
-      "road marker 788",
-      "mile marker 788",
-      "mile 788"
-    ],
-    "direction": [
-      "beyond"
-    ],
-    "sound": [
-      "forge breath",
-      "forgebreath"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -299,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S07C10",
-    "puzzleId": "S07C10-marker-lock",
-    "dialogueId": "S07C10-midwife",
-    "locationId": "boatyard",
-    "objective": "Investigate Boatyard, question Midwife, recover Charred Paper, and learn why marker 788 is tied to Parallel Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Boatyard.",
-        "clue": "Forge Breath"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Charred Paper.",
-        "clue": "Charred Paper"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Midwife.",
-        "clue": "2:19"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 788.",
-        "clue": "788"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Beyond instruction.",
-        "clue": "Beyond"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S07C10-location",
-        "type": "location",
-        "name": "Boatyard",
-        "inspectText": "Boatyard looks ordinary until Forge Breath moves through it."
-      },
-      {
-        "id": "S07C10-object",
-        "type": "evidence",
-        "name": "Charred Paper",
-        "inspectText": "Charred Paper is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S07C10-marker",
-        "type": "marker",
-        "name": "Marker 788",
-        "inspectText": "Marker 788 is not the answer. It is the lock."
-      },
-      {
-        "id": "S07C10-sound",
-        "type": "audio_clue",
-        "name": "Forge Breath",
-        "inspectText": "Forge Breath repeats near 2:19."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series07-The-Second-Family/chapter10.md",
-      "novel": "generated/novels/Series07-The-Second-Family/chapter10.md",
-      "song": "generated/songs/Series07-The-Second-Family/song10.md"
     }
   },
   "story": {

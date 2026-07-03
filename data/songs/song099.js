@@ -61,34 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "sawmill"
-    ],
-    "object": [
-      "comb"
-    ],
-    "witness": [
-      "peddler"
-    ],
-    "time": [
-      "12:33",
-      "1233"
-    ],
-    "marker": [
-      "925",
-      "marker 925",
-      "road marker 925",
-      "mile marker 925",
-      "mile 925"
-    ],
-    "direction": [
-      "nowhere"
-    ],
-    "sound": [
-      "rain"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -297,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S09C03",
-    "puzzleId": "S09C03-marker-lock",
-    "dialogueId": "S09C03-peddler",
-    "locationId": "sawmill",
-    "objective": "Investigate Sawmill, question Peddler, recover Comb, and learn why marker 925 is tied to Record Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Sawmill.",
-        "clue": "Rain"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Comb.",
-        "clue": "Comb"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Peddler.",
-        "clue": "12:33"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 925.",
-        "clue": "925"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Nowhere instruction.",
-        "clue": "Nowhere"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S09C03-location",
-        "type": "location",
-        "name": "Sawmill",
-        "inspectText": "Sawmill looks ordinary until Rain moves through it."
-      },
-      {
-        "id": "S09C03-object",
-        "type": "evidence",
-        "name": "Comb",
-        "inspectText": "Comb is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S09C03-marker",
-        "type": "marker",
-        "name": "Marker 925",
-        "inspectText": "Marker 925 is not the answer. It is the lock."
-      },
-      {
-        "id": "S09C03-sound",
-        "type": "audio_clue",
-        "name": "Rain",
-        "inspectText": "Rain repeats near 12:33."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series09-The-Keeper/chapter03.md",
-      "novel": "generated/novels/Series09-The-Keeper/chapter03.md",
-      "song": "generated/songs/Series09-The-Keeper/song03.md"
     }
   },
   "story": {

@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "church"
-    ],
-    "object": [
-      "dried ink blot",
-      "driedinkblot"
-    ],
-    "witness": [
-      "undertaker"
-    ],
-    "time": [
-      "3:30",
-      "330"
-    ],
-    "marker": [
-      "1970",
-      "marker 1970",
-      "road marker 1970",
-      "mile marker 1970",
-      "mile 1970"
-    ],
-    "direction": [
-      "along the creek",
-      "alongthecreek"
-    ],
-    "sound": [
-      "broken string",
-      "brokenstring"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S19C08",
-    "puzzleId": "S19C08-marker-lock",
-    "dialogueId": "S19C08-undertaker",
-    "locationId": "church",
-    "objective": "Investigate Church, question Undertaker, recover Dried Ink Blot, and learn why marker 1970 is tied to Crossing Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Church.",
-        "clue": "Broken String"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Dried Ink Blot.",
-        "clue": "Dried Ink Blot"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Undertaker.",
-        "clue": "3:30"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1970.",
-        "clue": "1970"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Along the Creek instruction.",
-        "clue": "Along the Creek"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S19C08-location",
-        "type": "location",
-        "name": "Church",
-        "inspectText": "Church looks ordinary until Broken String moves through it."
-      },
-      {
-        "id": "S19C08-object",
-        "type": "evidence",
-        "name": "Dried Ink Blot",
-        "inspectText": "Dried Ink Blot is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S19C08-marker",
-        "type": "marker",
-        "name": "Marker 1970",
-        "inspectText": "Marker 1970 is not the answer. It is the lock."
-      },
-      {
-        "id": "S19C08-sound",
-        "type": "audio_clue",
-        "name": "Broken String",
-        "inspectText": "Broken String repeats near 3:30."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series19-The-Bridge-Burner/chapter08.md",
-      "novel": "generated/novels/Series19-The-Bridge-Burner/chapter08.md",
-      "song": "generated/songs/Series19-The-Bridge-Burner/song08.md"
     }
   },
   "story": {

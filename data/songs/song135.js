@@ -61,35 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "library"
-    ],
-    "object": [
-      "brooch"
-    ],
-    "witness": [
-      "mechanic"
-    ],
-    "time": [
-      "3:44",
-      "344"
-    ],
-    "marker": [
-      "1225",
-      "marker 1225",
-      "road marker 1225",
-      "mile marker 1225",
-      "mile 1225"
-    ],
-    "direction": [
-      "below"
-    ],
-    "sound": [
-      "pen on paper",
-      "penonpaper"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -298,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S12C03",
-    "puzzleId": "S12C03-marker-lock",
-    "dialogueId": "S12C03-mechanic",
-    "locationId": "library",
-    "objective": "Investigate Library, question Mechanic, recover Brooch, and learn why marker 1225 is tied to Estate Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Library.",
-        "clue": "Pen on Paper"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Brooch.",
-        "clue": "Brooch"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Mechanic.",
-        "clue": "3:44"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1225.",
-        "clue": "1225"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Below instruction.",
-        "clue": "Below"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S12C03-location",
-        "type": "location",
-        "name": "Library",
-        "inspectText": "Library looks ordinary until Pen on Paper moves through it."
-      },
-      {
-        "id": "S12C03-object",
-        "type": "evidence",
-        "name": "Brooch",
-        "inspectText": "Brooch is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S12C03-marker",
-        "type": "marker",
-        "name": "Marker 1225",
-        "inspectText": "Marker 1225 is not the answer. It is the lock."
-      },
-      {
-        "id": "S12C03-sound",
-        "type": "audio_clue",
-        "name": "Pen on Paper",
-        "inspectText": "Pen on Paper repeats near 3:44."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series12-The-Inheritance/chapter03.md",
-      "novel": "generated/novels/Series12-The-Inheritance/chapter03.md",
-      "song": "generated/songs/Series12-The-Inheritance/song03.md"
     }
   },
   "story": {

@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "stables"
-    ],
-    "object": [
-      "prayer card",
-      "prayercard"
-    ],
-    "witness": [
-      "the girl with no shoes",
-      "girl with no shoes",
-      "thegirlwithnoshoes"
-    ],
-    "time": [
-      "3:58",
-      "358"
-    ],
-    "marker": [
-      "2270",
-      "marker 2270",
-      "road marker 2270",
-      "mile marker 2270",
-      "mile 2270"
-    ],
-    "direction": [
-      "around"
-    ],
-    "sound": [
-      "ash settling",
-      "ashsettling"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S22C08",
-    "puzzleId": "S22C08-marker-lock",
-    "dialogueId": "S22C08-the-girl-with-no-shoes",
-    "locationId": "stables",
-    "objective": "Investigate Stables, question The Girl with No Shoes, recover Prayer Card, and learn why marker 2270 is tied to Excavation Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Stables.",
-        "clue": "Ash Settling"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Prayer Card.",
-        "clue": "Prayer Card"
-      },
-      {
-        "step": "interview",
-        "objective": "Question The Girl with No Shoes.",
-        "clue": "3:58"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2270.",
-        "clue": "2270"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Around instruction.",
-        "clue": "Around"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S22C08-location",
-        "type": "location",
-        "name": "Stables",
-        "inspectText": "Stables looks ordinary until Ash Settling moves through it."
-      },
-      {
-        "id": "S22C08-object",
-        "type": "evidence",
-        "name": "Prayer Card",
-        "inspectText": "Prayer Card is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S22C08-marker",
-        "type": "marker",
-        "name": "Marker 2270",
-        "inspectText": "Marker 2270 is not the answer. It is the lock."
-      },
-      {
-        "id": "S22C08-sound",
-        "type": "audio_clue",
-        "name": "Ash Settling",
-        "inspectText": "Ash Settling repeats near 3:58."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series22-The-Bone-Road/chapter08.md",
-      "novel": "generated/novels/Series22-The-Bone-Road/chapter08.md",
-      "song": "generated/songs/Series22-The-Bone-Road/song08.md"
     }
   },
   "story": {

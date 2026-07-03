@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "watchmaker's shop",
-      "watchmaker'sshop"
-    ],
-    "object": [
-      "straight razor",
-      "straightrazor"
-    ],
-    "witness": [
-      "preacher"
-    ],
-    "time": [
-      "9:27",
-      "927"
-    ],
-    "marker": [
-      "388",
-      "marker 388",
-      "road marker 388",
-      "mile marker 388",
-      "mile 388"
-    ],
-    "direction": [
-      "ahead"
-    ],
-    "sound": [
-      "river ice",
-      "riverice"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S03C10",
-    "puzzleId": "S03C10-marker-lock",
-    "dialogueId": "S03C10-preacher",
-    "locationId": "watchmaker-s-shop",
-    "objective": "Investigate Watchmaker's Shop, question Preacher, recover Straight Razor, and learn why marker 388 is tied to Absence Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Watchmaker's Shop.",
-        "clue": "River Ice"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Straight Razor.",
-        "clue": "Straight Razor"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Preacher.",
-        "clue": "9:27"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 388.",
-        "clue": "388"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Ahead instruction.",
-        "clue": "Ahead"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S03C10-location",
-        "type": "location",
-        "name": "Watchmaker's Shop",
-        "inspectText": "Watchmaker's Shop looks ordinary until River Ice moves through it."
-      },
-      {
-        "id": "S03C10-object",
-        "type": "evidence",
-        "name": "Straight Razor",
-        "inspectText": "Straight Razor is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S03C10-marker",
-        "type": "marker",
-        "name": "Marker 388",
-        "inspectText": "Marker 388 is not the answer. It is the lock."
-      },
-      {
-        "id": "S03C10-sound",
-        "type": "audio_clue",
-        "name": "River Ice",
-        "inspectText": "River Ice repeats near 9:27."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series03-The-Disappearance/chapter10.md",
-      "novel": "generated/novels/Series03-The-Disappearance/chapter10.md",
-      "song": "generated/songs/Series03-The-Disappearance/song10.md"
     }
   },
   "story": {

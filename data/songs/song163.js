@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "pine hollow",
-      "pinehollow"
-    ],
-    "object": [
-      "belt buckle",
-      "beltbuckle"
-    ],
-    "witness": [
-      "postman"
-    ],
-    "time": [
-      "2:47",
-      "247"
-    ],
-    "marker": [
-      "1461",
-      "marker 1461",
-      "road marker 1461",
-      "mile marker 1461",
-      "mile 1461"
-    ],
-    "direction": [
-      "around"
-    ],
-    "sound": [
-      "tree fall",
-      "treefall"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S14C07",
-    "puzzleId": "S14C07-marker-lock",
-    "dialogueId": "S14C07-postman",
-    "locationId": "pine-hollow",
-    "objective": "Investigate Pine Hollow, question Postman, recover Belt Buckle, and learn why marker 1461 is tied to High Water Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Pine Hollow.",
-        "clue": "Tree Fall"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Belt Buckle.",
-        "clue": "Belt Buckle"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Postman.",
-        "clue": "2:47"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1461.",
-        "clue": "1461"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Around instruction.",
-        "clue": "Around"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S14C07-location",
-        "type": "location",
-        "name": "Pine Hollow",
-        "inspectText": "Pine Hollow looks ordinary until Tree Fall moves through it."
-      },
-      {
-        "id": "S14C07-object",
-        "type": "evidence",
-        "name": "Belt Buckle",
-        "inspectText": "Belt Buckle is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S14C07-marker",
-        "type": "marker",
-        "name": "Marker 1461",
-        "inspectText": "Marker 1461 is not the answer. It is the lock."
-      },
-      {
-        "id": "S14C07-sound",
-        "type": "audio_clue",
-        "name": "Tree Fall",
-        "inspectText": "Tree Fall repeats near 2:47."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series14-The-Flood-Year/chapter07.md",
-      "novel": "generated/novels/Series14-The-Flood-Year/chapter07.md",
-      "song": "generated/songs/Series14-The-Flood-Year/song07.md"
     }
   },
   "story": {

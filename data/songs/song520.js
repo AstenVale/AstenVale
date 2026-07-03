@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the quarry pool",
-      "quarry pool",
-      "thequarrypool"
-    ],
-    "object": [
-      "ticket"
-    ],
-    "witness": [
-      "child"
-    ],
-    "time": [
-      "10:05",
-      "1005"
-    ],
-    "marker": [
-      "4434",
-      "marker 4434",
-      "road marker 4434",
-      "mile marker 4434",
-      "mile 4434"
-    ],
-    "direction": [
-      "in"
-    ],
-    "sound": [
-      "bell toll",
-      "belltoll"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -310,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S44C04",
-    "puzzleId": "S44C04-marker-lock",
-    "dialogueId": "S44C04-child",
-    "locationId": "the-quarry-pool",
-    "objective": "Investigate The Quarry Pool, question Child, recover Ticket, and learn why marker 4434 is tied to Parallel Case Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Quarry Pool.",
-        "clue": "Bell Toll"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Ticket.",
-        "clue": "Ticket"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Child.",
-        "clue": "10:05"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4434.",
-        "clue": "4434"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the In instruction.",
-        "clue": "In"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S44C04-location",
-        "type": "location",
-        "name": "The Quarry Pool",
-        "inspectText": "The Quarry Pool looks ordinary until Bell Toll moves through it."
-      },
-      {
-        "id": "S44C04-object",
-        "type": "evidence",
-        "name": "Ticket",
-        "inspectText": "Ticket is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S44C04-marker",
-        "type": "marker",
-        "name": "Marker 4434",
-        "inspectText": "Marker 4434 is not the answer. It is the lock."
-      },
-      {
-        "id": "S44C04-sound",
-        "type": "audio_clue",
-        "name": "Bell Toll",
-        "inspectText": "Bell Toll repeats near 10:05."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series44-The-Mirror-Case/chapter04.md",
-      "novel": "generated/novels/Series44-The-Mirror-Case/chapter04.md",
-      "song": "generated/songs/Series44-The-Mirror-Case/song04.md"
     }
   },
   "story": {

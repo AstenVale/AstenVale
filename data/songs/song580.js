@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "river's edge",
-      "river'sedge"
-    ],
-    "object": [
-      "flask"
-    ],
-    "witness": [
-      "undertaker"
-    ],
-    "time": [
-      "5:13",
-      "513"
-    ],
-    "marker": [
-      "4934",
-      "marker 4934",
-      "road marker 4934",
-      "mile marker 4934",
-      "mile 4934"
-    ],
-    "direction": [
-      "down"
-    ],
-    "sound": [
-      "bone on stone",
-      "boneonstone"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -299,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S49C04",
-    "puzzleId": "S49C04-marker-lock",
-    "dialogueId": "S49C04-undertaker",
-    "locationId": "river-s-edge",
-    "objective": "Investigate River's Edge, question Undertaker, recover Flask, and learn why marker 4934 is tied to Testimony Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter River's Edge.",
-        "clue": "Bone on Stone"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Flask.",
-        "clue": "Flask"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Undertaker.",
-        "clue": "5:13"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4934.",
-        "clue": "4934"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Down instruction.",
-        "clue": "Down"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S49C04-location",
-        "type": "location",
-        "name": "River's Edge",
-        "inspectText": "River's Edge looks ordinary until Bone on Stone moves through it."
-      },
-      {
-        "id": "S49C04-object",
-        "type": "evidence",
-        "name": "Flask",
-        "inspectText": "Flask is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S49C04-marker",
-        "type": "marker",
-        "name": "Marker 4934",
-        "inspectText": "Marker 4934 is not the answer. It is the lock."
-      },
-      {
-        "id": "S49C04-sound",
-        "type": "audio_clue",
-        "name": "Bone on Stone",
-        "inspectText": "Bone on Stone repeats near 5:13."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series49-The-Final-Witness/chapter04.md",
-      "novel": "generated/novels/Series49-The-Final-Witness/chapter04.md",
-      "song": "generated/songs/Series49-The-Final-Witness/song04.md"
     }
   },
   "story": {

@@ -61,35 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "cooper's yard",
-      "cooper'syard"
-    ],
-    "object": [
-      "ribbon"
-    ],
-    "witness": [
-      "schoolteacher"
-    ],
-    "time": [
-      "2:55",
-      "255"
-    ],
-    "marker": [
-      "4852",
-      "marker 4852",
-      "road marker 4852",
-      "mile marker 4852",
-      "mile 4852"
-    ],
-    "direction": [
-      "forward"
-    ],
-    "sound": [
-      "millstone"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -308,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S48C06",
-    "puzzleId": "S48C06-marker-lock",
-    "dialogueId": "S48C06-schoolteacher",
-    "locationId": "cooper-s-yard",
-    "objective": "Investigate Cooper's Yard, question Schoolteacher, recover Ribbon, and learn why marker 4852 is tied to Static Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Cooper's Yard.",
-        "clue": "Millstone"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Ribbon.",
-        "clue": "Ribbon"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Schoolteacher.",
-        "clue": "2:55"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4852.",
-        "clue": "4852"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Forward instruction.",
-        "clue": "Forward"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S48C06-location",
-        "type": "location",
-        "name": "Cooper's Yard",
-        "inspectText": "Cooper's Yard looks ordinary until Millstone moves through it."
-      },
-      {
-        "id": "S48C06-object",
-        "type": "evidence",
-        "name": "Ribbon",
-        "inspectText": "Ribbon is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S48C06-marker",
-        "type": "marker",
-        "name": "Marker 4852",
-        "inspectText": "Marker 4852 is not the answer. It is the lock."
-      },
-      {
-        "id": "S48C06-sound",
-        "type": "audio_clue",
-        "name": "Millstone",
-        "inspectText": "Millstone repeats near 2:55."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series48-The-Broken-Signal/chapter06.md",
-      "novel": "generated/novels/Series48-The-Broken-Signal/chapter06.md",
-      "song": "generated/songs/Series48-The-Broken-Signal/song06.md"
     }
   },
   "story": {

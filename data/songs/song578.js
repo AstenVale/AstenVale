@@ -61,35 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "saloon"
-    ],
-    "object": [
-      "coin"
-    ],
-    "witness": [
-      "driver"
-    ],
-    "time": [
-      "9:55",
-      "955"
-    ],
-    "marker": [
-      "4916",
-      "marker 4916",
-      "road marker 4916",
-      "mile marker 4916",
-      "mile 4916"
-    ],
-    "direction": [
-      "south"
-    ],
-    "sound": [
-      "cannon bolt",
-      "cannonbolt"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -298,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S49C02",
-    "puzzleId": "S49C02-marker-lock",
-    "dialogueId": "S49C02-driver",
-    "locationId": "saloon",
-    "objective": "Investigate Saloon, question Driver, recover Coin, and learn why marker 4916 is tied to Testimony Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Saloon.",
-        "clue": "Cannon Bolt"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Coin.",
-        "clue": "Coin"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Driver.",
-        "clue": "9:55"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4916.",
-        "clue": "4916"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the South instruction.",
-        "clue": "South"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S49C02-location",
-        "type": "location",
-        "name": "Saloon",
-        "inspectText": "Saloon looks ordinary until Cannon Bolt moves through it."
-      },
-      {
-        "id": "S49C02-object",
-        "type": "evidence",
-        "name": "Coin",
-        "inspectText": "Coin is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S49C02-marker",
-        "type": "marker",
-        "name": "Marker 4916",
-        "inspectText": "Marker 4916 is not the answer. It is the lock."
-      },
-      {
-        "id": "S49C02-sound",
-        "type": "audio_clue",
-        "name": "Cannon Bolt",
-        "inspectText": "Cannon Bolt repeats near 9:55."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series49-The-Final-Witness/chapter02.md",
-      "novel": "generated/novels/Series49-The-Final-Witness/chapter02.md",
-      "song": "generated/songs/Series49-The-Final-Witness/song02.md"
     }
   },
   "story": {

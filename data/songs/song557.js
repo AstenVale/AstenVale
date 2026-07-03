@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "birch stand",
-      "birchstand"
-    ],
-    "object": [
-      "glove"
-    ],
-    "witness": [
-      "glazier"
-    ],
-    "time": [
-      "8:00",
-      "800"
-    ],
-    "marker": [
-      "4743",
-      "marker 4743",
-      "road marker 4743",
-      "mile marker 4743",
-      "mile 4743"
-    ],
-    "direction": [
-      "further in",
-      "furtherin"
-    ],
-    "sound": [
-      "breathing"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -299,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S47C05",
-    "puzzleId": "S47C05-marker-lock",
-    "dialogueId": "S47C05-glazier",
-    "locationId": "birch-stand",
-    "objective": "Investigate Birch Stand, question Glazier, recover Glove, and learn why marker 4743 is tied to Detour Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Birch Stand.",
-        "clue": "Breathing"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Glove.",
-        "clue": "Glove"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Glazier.",
-        "clue": "8:00"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4743.",
-        "clue": "4743"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Further In instruction.",
-        "clue": "Further In"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S47C05-location",
-        "type": "location",
-        "name": "Birch Stand",
-        "inspectText": "Birch Stand looks ordinary until Breathing moves through it."
-      },
-      {
-        "id": "S47C05-object",
-        "type": "evidence",
-        "name": "Glove",
-        "inspectText": "Glove is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S47C05-marker",
-        "type": "marker",
-        "name": "Marker 4743",
-        "inspectText": "Marker 4743 is not the answer. It is the lock."
-      },
-      {
-        "id": "S47C05-sound",
-        "type": "audio_clue",
-        "name": "Breathing",
-        "inspectText": "Breathing repeats near 8:00."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series47-The-Long-Way-Round/chapter05.md",
-      "novel": "generated/novels/Series47-The-Long-Way-Round/chapter05.md",
-      "song": "generated/songs/Series47-The-Long-Way-Round/song05.md"
     }
   },
   "story": {

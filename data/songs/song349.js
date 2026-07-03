@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the weir",
-      "weir",
-      "theweir"
-    ],
-    "object": [
-      "cufflink"
-    ],
-    "witness": [
-      "fence mender",
-      "fencemender"
-    ],
-    "time": [
-      "3:49",
-      "349"
-    ],
-    "marker": [
-      "3007",
-      "marker 3007",
-      "road marker 3007",
-      "mile marker 3007",
-      "mile 3007"
-    ],
-    "direction": [
-      "below"
-    ],
-    "sound": [
-      "swamp gas",
-      "swampgas"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S30C01",
-    "puzzleId": "S30C01-marker-lock",
-    "dialogueId": "S30C01-fence-mender",
-    "locationId": "the-weir",
-    "objective": "Investigate The Weir, question Fence Mender, recover Cufflink, and learn why marker 3007 is tied to Manifest Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Weir.",
-        "clue": "Swamp Gas"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Cufflink.",
-        "clue": "Cufflink"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Fence Mender.",
-        "clue": "3:49"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3007.",
-        "clue": "3007"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Below instruction.",
-        "clue": "Below"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S30C01-location",
-        "type": "location",
-        "name": "The Weir",
-        "inspectText": "The Weir looks ordinary until Swamp Gas moves through it."
-      },
-      {
-        "id": "S30C01-object",
-        "type": "evidence",
-        "name": "Cufflink",
-        "inspectText": "Cufflink is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S30C01-marker",
-        "type": "marker",
-        "name": "Marker 3007",
-        "inspectText": "Marker 3007 is not the answer. It is the lock."
-      },
-      {
-        "id": "S30C01-sound",
-        "type": "audio_clue",
-        "name": "Swamp Gas",
-        "inspectText": "Swamp Gas repeats near 3:49."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series30-The-Last-Train/chapter01.md",
-      "novel": "generated/novels/Series30-The-Last-Train/chapter01.md",
-      "song": "generated/songs/Series30-The-Last-Train/song01.md"
     }
   },
   "story": {

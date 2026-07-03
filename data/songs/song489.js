@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the root cellar",
-      "root cellar",
-      "therootcellar"
-    ],
-    "object": [
-      "boot"
-    ],
-    "witness": [
-      "widow"
-    ],
-    "time": [
-      "9:08",
-      "908"
-    ],
-    "marker": [
-      "4179",
-      "marker 4179",
-      "road marker 4179",
-      "mile marker 4179",
-      "mile 4179"
-    ],
-    "direction": [
-      "off the road",
-      "offtheroad"
-    ],
-    "sound": [
-      "match strike",
-      "matchstrike"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -301,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S41C09",
-    "puzzleId": "S41C09-marker-lock",
-    "dialogueId": "S41C09-widow",
-    "locationId": "the-root-cellar",
-    "objective": "Investigate The Root Cellar, question Widow, recover Boot, and learn why marker 4179 is tied to Phantom Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Root Cellar.",
-        "clue": "Match Strike"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Boot.",
-        "clue": "Boot"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Widow.",
-        "clue": "9:08"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4179.",
-        "clue": "4179"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Off the Road instruction.",
-        "clue": "Off the Road"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S41C09-location",
-        "type": "location",
-        "name": "The Root Cellar",
-        "inspectText": "The Root Cellar looks ordinary until Match Strike moves through it."
-      },
-      {
-        "id": "S41C09-object",
-        "type": "evidence",
-        "name": "Boot",
-        "inspectText": "Boot is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S41C09-marker",
-        "type": "marker",
-        "name": "Marker 4179",
-        "inspectText": "Marker 4179 is not the answer. It is the lock."
-      },
-      {
-        "id": "S41C09-sound",
-        "type": "audio_clue",
-        "name": "Match Strike",
-        "inspectText": "Match Strike repeats near 9:08."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series41-The-Ghost-Road/chapter09.md",
-      "novel": "generated/novels/Series41-The-Ghost-Road/chapter09.md",
-      "song": "generated/songs/Series41-The-Ghost-Road/song09.md"
     }
   },
   "story": {

@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "barn"
-    ],
-    "object": [
-      "torn map",
-      "tornmap"
-    ],
-    "witness": [
-      "cartographer"
-    ],
-    "time": [
-      "7:48",
-      "748"
-    ],
-    "marker": [
-      "4788",
-      "marker 4788",
-      "road marker 4788",
-      "mile marker 4788",
-      "mile 4788"
-    ],
-    "direction": [
-      "back the way you came",
-      "backthewayyoucame"
-    ],
-    "sound": [
-      "rope on pulley",
-      "ropeonpulley"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S47C10",
-    "puzzleId": "S47C10-marker-lock",
-    "dialogueId": "S47C10-cartographer",
-    "locationId": "barn",
-    "objective": "Investigate Barn, question Cartographer, recover Torn Map, and learn why marker 4788 is tied to Detour Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Barn.",
-        "clue": "Rope on Pulley"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Torn Map.",
-        "clue": "Torn Map"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Cartographer.",
-        "clue": "7:48"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4788.",
-        "clue": "4788"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Back the Way You Came instruction.",
-        "clue": "Back the Way You Came"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S47C10-location",
-        "type": "location",
-        "name": "Barn",
-        "inspectText": "Barn looks ordinary until Rope on Pulley moves through it."
-      },
-      {
-        "id": "S47C10-object",
-        "type": "evidence",
-        "name": "Torn Map",
-        "inspectText": "Torn Map is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S47C10-marker",
-        "type": "marker",
-        "name": "Marker 4788",
-        "inspectText": "Marker 4788 is not the answer. It is the lock."
-      },
-      {
-        "id": "S47C10-sound",
-        "type": "audio_clue",
-        "name": "Rope on Pulley",
-        "inspectText": "Rope on Pulley repeats near 7:48."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series47-The-Long-Way-Round/chapter10.md",
-      "novel": "generated/novels/Series47-The-Long-Way-Round/chapter10.md",
-      "song": "generated/songs/Series47-The-Long-Way-Round/song10.md"
     }
   },
   "story": {

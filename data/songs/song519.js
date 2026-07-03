@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the hollow road",
-      "hollow road",
-      "thehollowroad"
-    ],
-    "object": [
-      "ribbon"
-    ],
-    "witness": [
-      "orphan"
-    ],
-    "time": [
-      "8:33",
-      "833"
-    ],
-    "marker": [
-      "4425",
-      "marker 4425",
-      "road marker 4425",
-      "mile marker 4425",
-      "mile 4425"
-    ],
-    "direction": [
-      "away"
-    ],
-    "sound": [
-      "lock click",
-      "lockclick"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -310,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S44C03",
-    "puzzleId": "S44C03-marker-lock",
-    "dialogueId": "S44C03-orphan",
-    "locationId": "the-hollow-road",
-    "objective": "Investigate The Hollow Road, question Orphan, recover Ribbon, and learn why marker 4425 is tied to Parallel Case Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Hollow Road.",
-        "clue": "Lock Click"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Ribbon.",
-        "clue": "Ribbon"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Orphan.",
-        "clue": "8:33"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4425.",
-        "clue": "4425"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Away instruction.",
-        "clue": "Away"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S44C03-location",
-        "type": "location",
-        "name": "The Hollow Road",
-        "inspectText": "The Hollow Road looks ordinary until Lock Click moves through it."
-      },
-      {
-        "id": "S44C03-object",
-        "type": "evidence",
-        "name": "Ribbon",
-        "inspectText": "Ribbon is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S44C03-marker",
-        "type": "marker",
-        "name": "Marker 4425",
-        "inspectText": "Marker 4425 is not the answer. It is the lock."
-      },
-      {
-        "id": "S44C03-sound",
-        "type": "audio_clue",
-        "name": "Lock Click",
-        "inspectText": "Lock Click repeats near 8:33."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series44-The-Mirror-Case/chapter03.md",
-      "novel": "generated/novels/Series44-The-Mirror-Case/chapter03.md",
-      "song": "generated/songs/Series44-The-Mirror-Case/song03.md"
     }
   },
   "story": {

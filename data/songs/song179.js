@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the ravine",
-      "ravine",
-      "theravine"
-    ],
-    "object": [
-      "belt buckle",
-      "beltbuckle"
-    ],
-    "witness": [
-      "cooper"
-    ],
-    "time": [
-      "11:29",
-      "1129"
-    ],
-    "marker": [
-      "1597",
-      "marker 1597",
-      "road marker 1597",
-      "mile marker 1597",
-      "mile 1597"
-    ],
-    "direction": [
-      "around"
-    ],
-    "sound": [
-      "shovel on earth",
-      "shovelonearth"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -312,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S15C11",
-    "puzzleId": "S15C11-marker-lock",
-    "dialogueId": "S15C11-cooper",
-    "locationId": "the-ravine",
-    "objective": "Investigate The Ravine, question Cooper, recover Belt Buckle, and learn why marker 1597 is tied to Signal Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Ravine.",
-        "clue": "Shovel on Earth"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Belt Buckle.",
-        "clue": "Belt Buckle"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Cooper.",
-        "clue": "11:29"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1597.",
-        "clue": "1597"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Around instruction.",
-        "clue": "Around"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S15C11-location",
-        "type": "location",
-        "name": "The Ravine",
-        "inspectText": "The Ravine looks ordinary until Shovel on Earth moves through it."
-      },
-      {
-        "id": "S15C11-object",
-        "type": "evidence",
-        "name": "Belt Buckle",
-        "inspectText": "Belt Buckle is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S15C11-marker",
-        "type": "marker",
-        "name": "Marker 1597",
-        "inspectText": "Marker 1597 is not the answer. It is the lock."
-      },
-      {
-        "id": "S15C11-sound",
-        "type": "audio_clue",
-        "name": "Shovel on Earth",
-        "inspectText": "Shovel on Earth repeats near 11:29."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series15-The-Lantern-Keeper/chapter11.md",
-      "novel": "generated/novels/Series15-The-Lantern-Keeper/chapter11.md",
-      "song": "generated/songs/Series15-The-Lantern-Keeper/song11.md"
     }
   },
   "story": {

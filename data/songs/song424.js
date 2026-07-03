@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "chandler's row",
-      "chandler'srow"
-    ],
-    "object": [
-      "thimble"
-    ],
-    "witness": [
-      "wainwright"
-    ],
-    "time": [
-      "3:58",
-      "358"
-    ],
-    "marker": [
-      "3634",
-      "marker 3634",
-      "road marker 3634",
-      "mile marker 3634",
-      "mile 3634"
-    ],
-    "direction": [
-      "nowhere"
-    ],
-    "sound": [
-      "cellar stairs",
-      "cellarstairs"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -299,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S36C04",
-    "puzzleId": "S36C04-marker-lock",
-    "dialogueId": "S36C04-wainwright",
-    "locationId": "chandler-s-row",
-    "objective": "Investigate Chandler's Row, question Wainwright, recover Thimble, and learn why marker 3634 is tied to Voice Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Chandler's Row.",
-        "clue": "Cellar Stairs"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Thimble.",
-        "clue": "Thimble"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Wainwright.",
-        "clue": "3:58"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3634.",
-        "clue": "3634"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Nowhere instruction.",
-        "clue": "Nowhere"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S36C04-location",
-        "type": "location",
-        "name": "Chandler's Row",
-        "inspectText": "Chandler's Row looks ordinary until Cellar Stairs moves through it."
-      },
-      {
-        "id": "S36C04-object",
-        "type": "evidence",
-        "name": "Thimble",
-        "inspectText": "Thimble is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S36C04-marker",
-        "type": "marker",
-        "name": "Marker 3634",
-        "inspectText": "Marker 3634 is not the answer. It is the lock."
-      },
-      {
-        "id": "S36C04-sound",
-        "type": "audio_clue",
-        "name": "Cellar Stairs",
-        "inspectText": "Cellar Stairs repeats near 3:58."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series36-The-Night-Caller/chapter04.md",
-      "novel": "generated/novels/Series36-The-Night-Caller/chapter04.md",
-      "song": "generated/songs/Series36-The-Night-Caller/song04.md"
     }
   },
   "story": {

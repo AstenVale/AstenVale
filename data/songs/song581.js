@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the widow's porch",
-      "widow's porch",
-      "thewidow'sporch"
-    ],
-    "object": [
-      "belt buckle",
-      "beltbuckle"
-    ],
-    "witness": [
-      "cartographer"
-    ],
-    "time": [
-      "1:33",
-      "133"
-    ],
-    "marker": [
-      "4943",
-      "marker 4943",
-      "road marker 4943",
-      "mile marker 4943",
-      "mile 4943"
-    ],
-    "direction": [
-      "south"
-    ],
-    "sound": [
-      "axe on wood",
-      "axeonwood"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -301,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S49C05",
-    "puzzleId": "S49C05-marker-lock",
-    "dialogueId": "S49C05-cartographer",
-    "locationId": "the-widow-s-porch",
-    "objective": "Investigate The Widow's Porch, question Cartographer, recover Belt Buckle, and learn why marker 4943 is tied to Testimony Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Widow's Porch.",
-        "clue": "Axe on Wood"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Belt Buckle.",
-        "clue": "Belt Buckle"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Cartographer.",
-        "clue": "1:33"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4943.",
-        "clue": "4943"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the South instruction.",
-        "clue": "South"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S49C05-location",
-        "type": "location",
-        "name": "The Widow's Porch",
-        "inspectText": "The Widow's Porch looks ordinary until Axe on Wood moves through it."
-      },
-      {
-        "id": "S49C05-object",
-        "type": "evidence",
-        "name": "Belt Buckle",
-        "inspectText": "Belt Buckle is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S49C05-marker",
-        "type": "marker",
-        "name": "Marker 4943",
-        "inspectText": "Marker 4943 is not the answer. It is the lock."
-      },
-      {
-        "id": "S49C05-sound",
-        "type": "audio_clue",
-        "name": "Axe on Wood",
-        "inspectText": "Axe on Wood repeats near 1:33."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series49-The-Final-Witness/chapter05.md",
-      "novel": "generated/novels/Series49-The-Final-Witness/chapter05.md",
-      "song": "generated/songs/Series49-The-Final-Witness/song05.md"
     }
   },
   "story": {

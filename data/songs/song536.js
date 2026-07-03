@@ -61,35 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "cooperage"
-    ],
-    "object": [
-      "journal"
-    ],
-    "witness": [
-      "wainwright"
-    ],
-    "time": [
-      "12:17",
-      "1217"
-    ],
-    "marker": [
-      "4570",
-      "marker 4570",
-      "road marker 4570",
-      "mile marker 4570",
-      "mile 4570"
-    ],
-    "direction": [
-      "across"
-    ],
-    "sound": [
-      "distant church bell",
-      "distantchurchbell"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -298,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S45C08",
-    "puzzleId": "S45C08-marker-lock",
-    "dialogueId": "S45C08-wainwright",
-    "locationId": "cooperage",
-    "objective": "Investigate Cooperage, question Wainwright, recover Journal, and learn why marker 4570 is tied to Power Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Cooperage.",
-        "clue": "Distant Church Bell"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Journal.",
-        "clue": "Journal"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Wainwright.",
-        "clue": "12:17"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4570.",
-        "clue": "4570"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Across instruction.",
-        "clue": "Across"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S45C08-location",
-        "type": "location",
-        "name": "Cooperage",
-        "inspectText": "Cooperage looks ordinary until Distant Church Bell moves through it."
-      },
-      {
-        "id": "S45C08-object",
-        "type": "evidence",
-        "name": "Journal",
-        "inspectText": "Journal is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S45C08-marker",
-        "type": "marker",
-        "name": "Marker 4570",
-        "inspectText": "Marker 4570 is not the answer. It is the lock."
-      },
-      {
-        "id": "S45C08-sound",
-        "type": "audio_clue",
-        "name": "Distant Church Bell",
-        "inspectText": "Distant Church Bell repeats near 12:17."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series45-The-Hollow-Crown/chapter08.md",
-      "novel": "generated/novels/Series45-The-Hollow-Crown/chapter08.md",
-      "song": "generated/songs/Series45-The-Hollow-Crown/song08.md"
     }
   },
   "story": {

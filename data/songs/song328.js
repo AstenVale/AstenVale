@@ -61,34 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "forge"
-    ],
-    "object": [
-      "matchbook"
-    ],
-    "witness": [
-      "ferryman"
-    ],
-    "time": [
-      "6:17",
-      "617"
-    ],
-    "marker": [
-      "2834",
-      "marker 2834",
-      "road marker 2834",
-      "mile marker 2834",
-      "mile 2834"
-    ],
-    "direction": [
-      "sideways"
-    ],
-    "sound": [
-      "rain"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -308,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S28C04",
-    "puzzleId": "S28C04-marker-lock",
-    "dialogueId": "S28C04-ferryman",
-    "locationId": "forge",
-    "objective": "Investigate Forge, question Ferryman, recover Matchbook, and learn why marker 2834 is tied to Frequency Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Forge.",
-        "clue": "Rain"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Matchbook.",
-        "clue": "Matchbook"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Ferryman.",
-        "clue": "6:17"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2834.",
-        "clue": "2834"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Sideways instruction.",
-        "clue": "Sideways"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S28C04-location",
-        "type": "location",
-        "name": "Forge",
-        "inspectText": "Forge looks ordinary until Rain moves through it."
-      },
-      {
-        "id": "S28C04-object",
-        "type": "evidence",
-        "name": "Matchbook",
-        "inspectText": "Matchbook is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S28C04-marker",
-        "type": "marker",
-        "name": "Marker 2834",
-        "inspectText": "Marker 2834 is not the answer. It is the lock."
-      },
-      {
-        "id": "S28C04-sound",
-        "type": "audio_clue",
-        "name": "Rain",
-        "inspectText": "Rain repeats near 6:17."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series28-The-Buried-Signal/chapter04.md",
-      "novel": "generated/novels/Series28-The-Buried-Signal/chapter04.md",
-      "song": "generated/songs/Series28-The-Buried-Signal/song04.md"
     }
   },
   "story": {

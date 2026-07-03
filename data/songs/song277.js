@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "cemetery"
-    ],
-    "object": [
-      "seal"
-    ],
-    "witness": [
-      "widow"
-    ],
-    "time": [
-      "5:09",
-      "509"
-    ],
-    "marker": [
-      "2407",
-      "marker 2407",
-      "road marker 2407",
-      "mile marker 2407",
-      "mile 2407"
-    ],
-    "direction": [
-      "away from town",
-      "awayfromtown"
-    ],
-    "sound": [
-      "distant church bell",
-      "distantchurchbell"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -310,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S24C01",
-    "puzzleId": "S24C01-marker-lock",
-    "dialogueId": "S24C01-widow",
-    "locationId": "cemetery",
-    "objective": "Investigate Cemetery, question Widow, recover Seal, and learn why marker 2407 is tied to Timeline Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Cemetery.",
-        "clue": "Distant Church Bell"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Seal.",
-        "clue": "Seal"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Widow.",
-        "clue": "5:09"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2407.",
-        "clue": "2407"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Away from Town instruction.",
-        "clue": "Away from Town"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S24C01-location",
-        "type": "location",
-        "name": "Cemetery",
-        "inspectText": "Cemetery looks ordinary until Distant Church Bell moves through it."
-      },
-      {
-        "id": "S24C01-object",
-        "type": "evidence",
-        "name": "Seal",
-        "inspectText": "Seal is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S24C01-marker",
-        "type": "marker",
-        "name": "Marker 2407",
-        "inspectText": "Marker 2407 is not the answer. It is the lock."
-      },
-      {
-        "id": "S24C01-sound",
-        "type": "audio_clue",
-        "name": "Distant Church Bell",
-        "inspectText": "Distant Church Bell repeats near 5:09."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series24-The-Missing-Hours/chapter01.md",
-      "novel": "generated/novels/Series24-The-Missing-Hours/chapter01.md",
-      "song": "generated/songs/Series24-The-Missing-Hours/song01.md"
     }
   },
   "story": {

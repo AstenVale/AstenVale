@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the bluff",
-      "bluff",
-      "thebluff"
-    ],
-    "object": [
-      "ship manifest",
-      "shipmanifest"
-    ],
-    "witness": [
-      "banker"
-    ],
-    "time": [
-      "6:53",
-      "653"
-    ],
-    "marker": [
-      "2870",
-      "marker 2870",
-      "road marker 2870",
-      "mile marker 2870",
-      "mile 2870"
-    ],
-    "direction": [
-      "north"
-    ],
-    "sound": [
-      "saw cutting",
-      "sawcutting"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -312,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S28C08",
-    "puzzleId": "S28C08-marker-lock",
-    "dialogueId": "S28C08-banker",
-    "locationId": "the-bluff",
-    "objective": "Investigate The Bluff, question Banker, recover Ship Manifest, and learn why marker 2870 is tied to Frequency Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Bluff.",
-        "clue": "Saw Cutting"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Ship Manifest.",
-        "clue": "Ship Manifest"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Banker.",
-        "clue": "6:53"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2870.",
-        "clue": "2870"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the North instruction.",
-        "clue": "North"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S28C08-location",
-        "type": "location",
-        "name": "The Bluff",
-        "inspectText": "The Bluff looks ordinary until Saw Cutting moves through it."
-      },
-      {
-        "id": "S28C08-object",
-        "type": "evidence",
-        "name": "Ship Manifest",
-        "inspectText": "Ship Manifest is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S28C08-marker",
-        "type": "marker",
-        "name": "Marker 2870",
-        "inspectText": "Marker 2870 is not the answer. It is the lock."
-      },
-      {
-        "id": "S28C08-sound",
-        "type": "audio_clue",
-        "name": "Saw Cutting",
-        "inspectText": "Saw Cutting repeats near 6:53."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series28-The-Buried-Signal/chapter08.md",
-      "novel": "generated/novels/Series28-The-Buried-Signal/chapter08.md",
-      "song": "generated/songs/Series28-The-Buried-Signal/song08.md"
     }
   },
   "story": {

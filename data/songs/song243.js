@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "telegraph office",
-      "telegraphoffice"
-    ],
-    "object": [
-      "charred paper",
-      "charredpaper"
-    ],
-    "witness": [
-      "salt seller",
-      "saltseller"
-    ],
-    "time": [
-      "6:45",
-      "645"
-    ],
-    "marker": [
-      "2125",
-      "marker 2125",
-      "road marker 2125",
-      "mile marker 2125",
-      "mile 2125"
-    ],
-    "direction": [
-      "left"
-    ],
-    "sound": [
-      "river water",
-      "riverwater"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -301,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S21C03",
-    "puzzleId": "S21C03-marker-lock",
-    "dialogueId": "S21C03-salt-seller",
-    "locationId": "telegraph-office",
-    "objective": "Investigate Telegraph Office, question Salt Seller, recover Charred Paper, and learn why marker 2125 is tied to Bark Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Telegraph Office.",
-        "clue": "River Water"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Charred Paper.",
-        "clue": "Charred Paper"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Salt Seller.",
-        "clue": "6:45"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2125.",
-        "clue": "2125"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Left instruction.",
-        "clue": "Left"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S21C03-location",
-        "type": "location",
-        "name": "Telegraph Office",
-        "inspectText": "Telegraph Office looks ordinary until River Water moves through it."
-      },
-      {
-        "id": "S21C03-object",
-        "type": "evidence",
-        "name": "Charred Paper",
-        "inspectText": "Charred Paper is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S21C03-marker",
-        "type": "marker",
-        "name": "Marker 2125",
-        "inspectText": "Marker 2125 is not the answer. It is the lock."
-      },
-      {
-        "id": "S21C03-sound",
-        "type": "audio_clue",
-        "name": "River Water",
-        "inspectText": "River Water repeats near 6:45."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series21-The-Witness-Tree/chapter03.md",
-      "novel": "generated/novels/Series21-The-Witness-Tree/chapter03.md",
-      "song": "generated/songs/Series21-The-Witness-Tree/song03.md"
     }
   },
   "story": {

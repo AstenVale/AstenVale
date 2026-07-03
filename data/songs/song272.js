@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "covered bridge",
-      "coveredbridge"
-    ],
-    "object": [
-      "leather strap",
-      "leatherstrap"
-    ],
-    "witness": [
-      "child"
-    ],
-    "time": [
-      "6:17",
-      "617"
-    ],
-    "marker": [
-      "2370",
-      "marker 2370",
-      "road marker 2370",
-      "mile marker 2370",
-      "mile 2370"
-    ],
-    "direction": [
-      "into the dark",
-      "intothedark"
-    ],
-    "sound": [
-      "lantern glass",
-      "lanternglass"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -301,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S23C08",
-    "puzzleId": "S23C08-marker-lock",
-    "dialogueId": "S23C08-child",
-    "locationId": "covered-bridge",
-    "objective": "Investigate Covered Bridge, question Child, recover Leather Strap, and learn why marker 2370 is tied to Document Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Covered Bridge.",
-        "clue": "Lantern Glass"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Leather Strap.",
-        "clue": "Leather Strap"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Child.",
-        "clue": "6:17"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2370.",
-        "clue": "2370"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Into the Dark instruction.",
-        "clue": "Into the Dark"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S23C08-location",
-        "type": "location",
-        "name": "Covered Bridge",
-        "inspectText": "Covered Bridge looks ordinary until Lantern Glass moves through it."
-      },
-      {
-        "id": "S23C08-object",
-        "type": "evidence",
-        "name": "Leather Strap",
-        "inspectText": "Leather Strap is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S23C08-marker",
-        "type": "marker",
-        "name": "Marker 2370",
-        "inspectText": "Marker 2370 is not the answer. It is the lock."
-      },
-      {
-        "id": "S23C08-sound",
-        "type": "audio_clue",
-        "name": "Lantern Glass",
-        "inspectText": "Lantern Glass repeats near 6:17."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series23-The-Paper-Trail/chapter08.md",
-      "novel": "generated/novels/Series23-The-Paper-Trail/chapter08.md",
-      "song": "generated/songs/Series23-The-Paper-Trail/song08.md"
     }
   },
   "story": {

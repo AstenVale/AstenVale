@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the ridge",
-      "ridge",
-      "theridge"
-    ],
-    "object": [
-      "signet ring",
-      "signetring"
-    ],
-    "witness": [
-      "deputy"
-    ],
-    "time": [
-      "6:53",
-      "653"
-    ],
-    "marker": [
-      "4234",
-      "marker 4234",
-      "road marker 4234",
-      "mile marker 4234",
-      "mile 4234"
-    ],
-    "direction": [
-      "under"
-    ],
-    "sound": [
-      "bell toll",
-      "belltoll"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -312,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S42C04",
-    "puzzleId": "S42C04-marker-lock",
-    "dialogueId": "S42C04-deputy",
-    "locationId": "the-ridge",
-    "objective": "Investigate The Ridge, question Deputy, recover Signet Ring, and learn why marker 4234 is tied to Drought Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Ridge.",
-        "clue": "Bell Toll"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Signet Ring.",
-        "clue": "Signet Ring"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Deputy.",
-        "clue": "6:53"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4234.",
-        "clue": "4234"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Under instruction.",
-        "clue": "Under"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S42C04-location",
-        "type": "location",
-        "name": "The Ridge",
-        "inspectText": "The Ridge looks ordinary until Bell Toll moves through it."
-      },
-      {
-        "id": "S42C04-object",
-        "type": "evidence",
-        "name": "Signet Ring",
-        "inspectText": "Signet Ring is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S42C04-marker",
-        "type": "marker",
-        "name": "Marker 4234",
-        "inspectText": "Marker 4234 is not the answer. It is the lock."
-      },
-      {
-        "id": "S42C04-sound",
-        "type": "audio_clue",
-        "name": "Bell Toll",
-        "inspectText": "Bell Toll repeats near 6:53."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series42-The-Dry-Season/chapter04.md",
-      "novel": "generated/novels/Series42-The-Dry-Season/chapter04.md",
-      "song": "generated/songs/Series42-The-Dry-Season/song04.md"
     }
   },
   "story": {

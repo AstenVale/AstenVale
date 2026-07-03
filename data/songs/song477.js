@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the ridge",
-      "ridge",
-      "theridge"
-    ],
-    "object": [
-      "torn map",
-      "tornmap"
-    ],
-    "witness": [
-      "ferryman"
-    ],
-    "time": [
-      "7:14",
-      "714"
-    ],
-    "marker": [
-      "4079",
-      "marker 4079",
-      "road marker 4079",
-      "mile marker 4079",
-      "mile 4079"
-    ],
-    "direction": [
-      "up"
-    ],
-    "sound": [
-      "millstone"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -310,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S40C09",
-    "puzzleId": "S40C09-marker-lock",
-    "dialogueId": "S40C09-ferryman",
-    "locationId": "the-ridge",
-    "objective": "Investigate The Ridge, question Ferryman, recover Torn Map, and learn why marker 4079 is tied to Cipher Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Ridge.",
-        "clue": "Millstone"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Torn Map.",
-        "clue": "Torn Map"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Ferryman.",
-        "clue": "7:14"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4079.",
-        "clue": "4079"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Up instruction.",
-        "clue": "Up"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S40C09-location",
-        "type": "location",
-        "name": "The Ridge",
-        "inspectText": "The Ridge looks ordinary until Millstone moves through it."
-      },
-      {
-        "id": "S40C09-object",
-        "type": "evidence",
-        "name": "Torn Map",
-        "inspectText": "Torn Map is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S40C09-marker",
-        "type": "marker",
-        "name": "Marker 4079",
-        "inspectText": "Marker 4079 is not the answer. It is the lock."
-      },
-      {
-        "id": "S40C09-sound",
-        "type": "audio_clue",
-        "name": "Millstone",
-        "inspectText": "Millstone repeats near 7:14."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series40-The-Coded-Letter/chapter09.md",
-      "novel": "generated/novels/Series40-The-Coded-Letter/chapter09.md",
-      "song": "generated/songs/Series40-The-Coded-Letter/song09.md"
     }
   },
   "story": {

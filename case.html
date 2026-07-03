@@ -1108,6 +1108,26 @@ body.unlocked .archive-player,body.unlocked #fields-container,body.unlocked .pan
     try { localStorage.setItem('av_attempts_' + caseId, String(n)); } catch (e) {}
   }
 
+  // — REVEALED ANSWER CACHE —
+  // The server only ever sends back the canonical text for a field once a
+  // player has actually gotten it right (see validate-case-answer). This
+  // caches that text locally, same persistence pattern as av_verified_*, so
+  // the "Verified" display, the post-solve Evidence Summary, and the
+  // "Recovered From" line can show real text without the raw answer set
+  // ever being present in this page's source. Known limitation: if a case
+  // was solved on a different device, this cache won't be populated here
+  // even though the case is marked solved -- those display spots will show
+  // their placeholder text until re-verified on this device.
+  function getRevealed(caseId) {
+    try { return JSON.parse(localStorage.getItem('av_revealed_' + caseId) || '{}'); } catch (e) { return {}; }
+  }
+  function setRevealed(caseId, obj) {
+    try { localStorage.setItem('av_revealed_' + caseId, JSON.stringify(obj)); } catch (e) {}
+  }
+  function titleCase(s) {
+    return String(s || '').replace(/\b\w/g, function(c) { return c.toUpperCase(); });
+  }
+
   function isFieldCorrect(value, accepted) {
     if (!value) return false;
     var val     = norm(value);
@@ -1168,11 +1188,11 @@ body.unlocked .archive-player,body.unlocked #fields-container,body.unlocked .pan
     // only begin showing starting attempt 2, per the reveal schedule.
     if (attempts < 2) return;
     var verified = getVerified(d.id);
+    var revealed = getRevealed(d.id);
     (d.fields || []).forEach(function(f) {
       if (verified.indexOf(f.id) !== -1) {
-        var accepted = (d.answers[f.id] || []).map(norm);
         var input = document.getElementById('field-' + f.id);
-        var displayVal = accepted[0] ? accepted[0].replace(/\b\w/g, function(c) { return c.toUpperCase(); }) : (input ? input.value : '');
+        var displayVal = revealed[f.id] ? titleCase(revealed[f.id]) : (input ? input.value : '');
         lockFieldAsVerified(f.id, displayVal);
       } else {
         showPendingStatus(f.id);
@@ -1192,34 +1212,61 @@ body.unlocked .archive-player,body.unlocked #fields-container,body.unlocked .pan
     cab.classList.remove('closed', 'open');
     cab.classList.add('searching');
 
+    // Collect only the currently-unverified, non-empty fields to send for
+    // checking -- same scope the old local isFieldCorrect() loop checked.
+    var toCheck = {};
     SONG.fields.forEach(function(f) {
       if (verified.indexOf(f.id) !== -1) return; // already permanently verified
       var input = document.getElementById('field-' + f.id);
       if (!input || !input.value.trim()) return;
-      var accepted = (SONG.answers[f.id] || []).map(norm);
-      if (isFieldCorrect(input.value, accepted)) {
-        verified.push(f.id);
-      }
+      toCheck[f.id] = input.value;
     });
-    setVerified(SONG.id, verified);
 
-    var attempts = getAttempts(SONG.id) + 1;
-    setAttempts(SONG.id, attempts);
+    // Finishes the submission once we know which of the submitted fields
+    // were correct -- identical to the old synchronous tail of this
+    // function, just pulled out so it can run after an async response.
+    function finish(results, revealedFromServer) {
+      var revealed = getRevealed(SONG.id);
+      Object.keys(results || {}).forEach(function(fieldId) {
+        if (!results[fieldId]) return;
+        if (verified.indexOf(fieldId) === -1) verified.push(fieldId);
+        if (revealedFromServer && revealedFromServer[fieldId]) {
+          revealed[fieldId] = revealedFromServer[fieldId];
+        }
+      });
+      setVerified(SONG.id, verified);
+      setRevealed(SONG.id, revealed);
 
-    var correct = verified.length;
+      var attempts = getAttempts(SONG.id) + 1;
+      setAttempts(SONG.id, attempts);
 
-    setTimeout(function() {
-      cab.classList.remove('searching');
-      cab.classList.add(correct === total && total > 0 ? 'open' : 'closed');
-    }, 500);
+      var correct = verified.length;
 
-    applyFieldStates(SONG, attempts);
-    updateProgress(correct, total, attempts);
-    saveProgress(SONG);
+      setTimeout(function() {
+        cab.classList.remove('searching');
+        cab.classList.add(correct === total && total > 0 ? 'open' : 'closed');
+      }, 500);
 
-    if (correct === total && total > 0) {
-      setTimeout(function() { unlockCase(SONG); }, 600);
+      applyFieldStates(SONG, attempts);
+      updateProgress(correct, total, attempts);
+      saveProgress(SONG);
+
+      if (correct === total && total > 0) {
+        setTimeout(function() { unlockCase(SONG); }, 600);
+      }
     }
+
+    if (Object.keys(toCheck).length === 0) { finish({}); return; }
+
+    // Answers are validated server-side (Edge Function validate-case-answer)
+    // rather than against a local answers object -- see supabase/functions/
+    // validate-case-answer/index.ts. Fails closed (nothing marked correct)
+    // on any network/server error rather than leaving the UI hanging.
+    var client = window.AVProgressSync && window.AVProgressSync.getClient();
+    if (!client) { finish({}); return; }
+    client.functions.invoke('validate-case-answer', { body: { case_id: SONG.id, fields: toCheck } })
+      .then(function(res) { finish(res && res.data && res.data.results, res && res.data && res.data.revealed); })
+      .catch(function() { finish({}); });
   }
 
   // Ã¢â€â‚¬Ã¢â€â‚¬ PROGRESS Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
@@ -1481,8 +1528,8 @@ body.unlocked .archive-player,body.unlocked #fields-container,body.unlocked .pan
 
     // Ã¢â€â‚¬Ã¢â€â‚¬ SECTION 0: CASE SUMMARY Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
     (function() {
-      var fields  = caseData.fields  || [];
-      var answers = caseData.answers || {};
+      var fields   = caseData.fields || [];
+      var revealed = getRevealed(caseData.id);
       if (!fields.length) return;
 
       var sec0 = document.createElement('div');
@@ -1511,11 +1558,7 @@ body.unlocked .archive-player,body.unlocked #fields-container,body.unlocked .pan
       fieldList.className = 'case-summary-fields';
 
       fields.forEach(function(f) {
-        var ans = answers[f.id];
-        // Use the first canonical answer (cleanest display value)
-        var display = Array.isArray(ans) && ans.length ? ans[0] : (ans || 'Ã¢â‚¬â€');
-        // Title-case it for display
-        display = display.replace(/\b\w/g, function(c) { return c.toUpperCase(); });
+        var display = revealed[f.id] ? titleCase(revealed[f.id]) : '—';
 
         var _amap = { location: 'cabinet.html', object: 'cabinet.html', witness: 'cabinet.html', time: 'cabinet.html', marker: 'cabinet.html', direction: 'cabinet.html', sound: 'sounds.html' };
         var _ahref = _amap[f.id] || 'cabinet.html';
@@ -1663,9 +1706,8 @@ body.unlocked .archive-player,body.unlocked #fields-container,body.unlocked .pan
       hM.textContent = caseData.title || ('Case ' + caseNumM);
       secM.appendChild(hM);
 
-      var recoveredFromM = caseData.answers && caseData.answers.location;
-      recoveredFromM = Array.isArray(recoveredFromM) ? recoveredFromM[0] : recoveredFromM;
-      recoveredFromM = recoveredFromM ? recoveredFromM.replace(/\b\w/g, function(c) { return c.toUpperCase(); }) : 'Ashton Vale Archives';
+      var _revealedM = getRevealed(caseData.id);
+      var recoveredFromM = _revealedM.location ? titleCase(_revealedM.location) : 'Ashton Vale Archives';
 
       var musicDoc = document.createElement('div');
       musicDoc.className = 'sound-ev-block recovered-music-block';
@@ -2285,9 +2327,12 @@ document.title = 'Case File ' + d.caseFile + ' Ã¢â‚¬â€ The Asten Vale
       document.getElementById('jacket-label').textContent    = 'Asten Vale Sheriff\'s Dept.  Ã‚Â·  Case File ' + d.caseFile;
       document.getElementById('case-status').textContent     = d.status || 'OPEN INVESTIGATION';
       document.getElementById('case-number').textContent     = 'CASE FILE ' + d.caseFile;
-      var sceneLocation = d.answers && d.answers.location;
-      sceneLocation = Array.isArray(sceneLocation) ? sceneLocation[0] : sceneLocation;
-      sceneLocation = sceneLocation ? sceneLocation.replace(/\b\w/g, function(c) { return c.toUpperCase(); }) : 'Scene Location On File';
+      // Only shows the real location once this device has actually
+      // revealed it by solving that field -- see getRevealed(). Before
+      // that, this intentionally shows the generic placeholder rather
+      // than spoiling the answer on page load.
+      var _revealedTitle = getRevealed(d.id);
+      var sceneLocation = _revealedTitle.location ? titleCase(_revealedTitle.location) : 'Scene Location On File';
       document.getElementById('case-title').textContent = sceneLocation;
       document.getElementById('case-scene-location').textContent = 'Recovered Scene / Archive Entry';
       // Location image

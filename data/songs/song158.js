@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "ash hollow",
-      "ashhollow"
-    ],
-    "object": [
-      "seal"
-    ],
-    "witness": [
-      "river pilot",
-      "riverpilot"
-    ],
-    "time": [
-      "8:06",
-      "806"
-    ],
-    "marker": [
-      "1416",
-      "marker 1416",
-      "road marker 1416",
-      "mile marker 1416",
-      "mile 1416"
-    ],
-    "direction": [
-      "toward the river",
-      "towardtheriver"
-    ],
-    "sound": [
-      "chains"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S14C02",
-    "puzzleId": "S14C02-marker-lock",
-    "dialogueId": "S14C02-river-pilot",
-    "locationId": "ash-hollow",
-    "objective": "Investigate Ash Hollow, question River Pilot, recover Seal, and learn why marker 1416 is tied to High Water Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Ash Hollow.",
-        "clue": "Chains"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Seal.",
-        "clue": "Seal"
-      },
-      {
-        "step": "interview",
-        "objective": "Question River Pilot.",
-        "clue": "8:06"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1416.",
-        "clue": "1416"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Toward the River instruction.",
-        "clue": "Toward the River"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S14C02-location",
-        "type": "location",
-        "name": "Ash Hollow",
-        "inspectText": "Ash Hollow looks ordinary until Chains moves through it."
-      },
-      {
-        "id": "S14C02-object",
-        "type": "evidence",
-        "name": "Seal",
-        "inspectText": "Seal is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S14C02-marker",
-        "type": "marker",
-        "name": "Marker 1416",
-        "inspectText": "Marker 1416 is not the answer. It is the lock."
-      },
-      {
-        "id": "S14C02-sound",
-        "type": "audio_clue",
-        "name": "Chains",
-        "inspectText": "Chains repeats near 8:06."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series14-The-Flood-Year/chapter02.md",
-      "novel": "generated/novels/Series14-The-Flood-Year/chapter02.md",
-      "song": "generated/songs/Series14-The-Flood-Year/song02.md"
     }
   },
   "story": {

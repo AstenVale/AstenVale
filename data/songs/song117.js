@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "freight yard",
-      "freightyard"
-    ],
-    "object": [
-      "button"
-    ],
-    "witness": [
-      "doctor"
-    ],
-    "time": [
-      "3:44",
-      "344"
-    ],
-    "marker": [
-      "1079",
-      "marker 1079",
-      "road marker 1079",
-      "mile marker 1079",
-      "mile 1079"
-    ],
-    "direction": [
-      "past the tree line",
-      "pastthetreeline"
-    ],
-    "sound": [
-      "millstone"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -299,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S10C09",
-    "puzzleId": "S10C09-marker-lock",
-    "dialogueId": "S10C09-doctor",
-    "locationId": "freight-yard",
-    "objective": "Investigate Freight Yard, question Doctor, recover Button, and learn why marker 1079 is tied to Lost Mile Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Freight Yard.",
-        "clue": "Millstone"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Button.",
-        "clue": "Button"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Doctor.",
-        "clue": "3:44"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1079.",
-        "clue": "1079"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Past the Tree Line instruction.",
-        "clue": "Past the Tree Line"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S10C09-location",
-        "type": "location",
-        "name": "Freight Yard",
-        "inspectText": "Freight Yard looks ordinary until Millstone moves through it."
-      },
-      {
-        "id": "S10C09-object",
-        "type": "evidence",
-        "name": "Button",
-        "inspectText": "Button is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S10C09-marker",
-        "type": "marker",
-        "name": "Marker 1079",
-        "inspectText": "Marker 1079 is not the answer. It is the lock."
-      },
-      {
-        "id": "S10C09-sound",
-        "type": "audio_clue",
-        "name": "Millstone",
-        "inspectText": "Millstone repeats near 3:44."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series10-The-Forgotten-Road/chapter09.md",
-      "novel": "generated/novels/Series10-The-Forgotten-Road/chapter09.md",
-      "song": "generated/songs/Series10-The-Forgotten-Road/song09.md"
     }
   },
   "story": {

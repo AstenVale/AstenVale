@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "north gate",
-      "northgate"
-    ],
-    "object": [
-      "torn map",
-      "tornmap"
-    ],
-    "witness": [
-      "preacher"
-    ],
-    "time": [
-      "3:44",
-      "344"
-    ],
-    "marker": [
-      "4670",
-      "marker 4670",
-      "road marker 4670",
-      "mile marker 4670",
-      "mile 4670"
-    ],
-    "direction": [
-      "toward"
-    ],
-    "sound": [
-      "wind through a crack",
-      "windthroughacrack"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S46C08",
-    "puzzleId": "S46C08-marker-lock",
-    "dialogueId": "S46C08-preacher",
-    "locationId": "north-gate",
-    "objective": "Investigate North Gate, question Preacher, recover Torn Map, and learn why marker 4670 is tied to Weather Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter North Gate.",
-        "clue": "Wind Through a Crack"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Torn Map.",
-        "clue": "Torn Map"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Preacher.",
-        "clue": "3:44"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4670.",
-        "clue": "4670"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Toward instruction.",
-        "clue": "Toward"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S46C08-location",
-        "type": "location",
-        "name": "North Gate",
-        "inspectText": "North Gate looks ordinary until Wind Through a Crack moves through it."
-      },
-      {
-        "id": "S46C08-object",
-        "type": "evidence",
-        "name": "Torn Map",
-        "inspectText": "Torn Map is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S46C08-marker",
-        "type": "marker",
-        "name": "Marker 4670",
-        "inspectText": "Marker 4670 is not the answer. It is the lock."
-      },
-      {
-        "id": "S46C08-sound",
-        "type": "audio_clue",
-        "name": "Wind Through a Crack",
-        "inspectText": "Wind Through a Crack repeats near 3:44."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series46-The-Storm-Season/chapter08.md",
-      "novel": "generated/novels/Series46-The-Storm-Season/chapter08.md",
-      "song": "generated/songs/Series46-The-Storm-Season/song08.md"
     }
   },
   "story": {

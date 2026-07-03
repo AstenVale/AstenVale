@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "banker's house",
-      "banker'shouse"
-    ],
-    "object": [
-      "bent nail",
-      "bentnail"
-    ],
-    "witness": [
-      "census taker",
-      "censustaker"
-    ],
-    "time": [
-      "7:00",
-      "700"
-    ],
-    "marker": [
-      "3907",
-      "marker 3907",
-      "road marker 3907",
-      "mile marker 3907",
-      "mile 3907"
-    ],
-    "direction": [
-      "behind"
-    ],
-    "sound": [
-      "night insects",
-      "nightinsects"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S39C01",
-    "puzzleId": "S39C01-marker-lock",
-    "dialogueId": "S39C01-census-taker",
-    "locationId": "banker-s-house",
-    "objective": "Investigate Banker's House, question Census Taker, recover Bent Nail, and learn why marker 3907 is tied to Rider Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Banker's House.",
-        "clue": "Night Insects"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Bent Nail.",
-        "clue": "Bent Nail"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Census Taker.",
-        "clue": "7:00"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3907.",
-        "clue": "3907"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Behind instruction.",
-        "clue": "Behind"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S39C01-location",
-        "type": "location",
-        "name": "Banker's House",
-        "inspectText": "Banker's House looks ordinary until Night Insects moves through it."
-      },
-      {
-        "id": "S39C01-object",
-        "type": "evidence",
-        "name": "Bent Nail",
-        "inspectText": "Bent Nail is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S39C01-marker",
-        "type": "marker",
-        "name": "Marker 3907",
-        "inspectText": "Marker 3907 is not the answer. It is the lock."
-      },
-      {
-        "id": "S39C01-sound",
-        "type": "audio_clue",
-        "name": "Night Insects",
-        "inspectText": "Night Insects repeats near 7:00."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series39-The-Pale-Horse/chapter01.md",
-      "novel": "generated/novels/Series39-The-Pale-Horse/chapter01.md",
-      "song": "generated/songs/Series39-The-Pale-Horse/song01.md"
     }
   },
   "story": {

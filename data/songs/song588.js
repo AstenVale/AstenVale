@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the pit",
-      "pit",
-      "thepit"
-    ],
-    "object": [
-      "receipt"
-    ],
-    "witness": [
-      "barber"
-    ],
-    "time": [
-      "8:17",
-      "817"
-    ],
-    "marker": [
-      "5006",
-      "marker 5006",
-      "road marker 5006",
-      "mile marker 5006",
-      "mile 5006"
-    ],
-    "direction": [
-      "down"
-    ],
-    "sound": [
-      "mud suction",
-      "mudsuction"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -310,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S49C12",
-    "puzzleId": "S49C12-marker-lock",
-    "dialogueId": "S49C12-barber",
-    "locationId": "the-pit",
-    "objective": "Investigate The Pit, question Barber, recover Receipt, and learn why marker 5006 is tied to Testimony Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Pit.",
-        "clue": "Mud Suction"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Receipt.",
-        "clue": "Receipt"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Barber.",
-        "clue": "8:17"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 5006.",
-        "clue": "5006"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Down instruction.",
-        "clue": "Down"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S49C12-location",
-        "type": "location",
-        "name": "The Pit",
-        "inspectText": "The Pit looks ordinary until Mud Suction moves through it."
-      },
-      {
-        "id": "S49C12-object",
-        "type": "evidence",
-        "name": "Receipt",
-        "inspectText": "Receipt is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S49C12-marker",
-        "type": "marker",
-        "name": "Marker 5006",
-        "inspectText": "Marker 5006 is not the answer. It is the lock."
-      },
-      {
-        "id": "S49C12-sound",
-        "type": "audio_clue",
-        "name": "Mud Suction",
-        "inspectText": "Mud Suction repeats near 8:17."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series49-The-Final-Witness/chapter12.md",
-      "novel": "generated/novels/Series49-The-Final-Witness/chapter12.md",
-      "song": "generated/songs/Series49-The-Final-Witness/song12.md"
     }
   },
   "story": {

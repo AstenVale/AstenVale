@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "lake shore",
-      "lakeshore"
-    ],
-    "object": [
-      "torn map",
-      "tornmap"
-    ],
-    "witness": [
-      "harness maker",
-      "harnessmaker"
-    ],
-    "time": [
-      "6:53",
-      "653"
-    ],
-    "marker": [
-      "1834",
-      "marker 1834",
-      "road marker 1834",
-      "mile marker 1834",
-      "mile 1834"
-    ],
-    "direction": [
-      "toward"
-    ],
-    "sound": [
-      "wind through a crack",
-      "windthroughacrack"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -301,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S18C04",
-    "puzzleId": "S18C04-marker-lock",
-    "dialogueId": "S18C04-harness-maker",
-    "locationId": "lake-shore",
-    "objective": "Investigate Lake Shore, question Harness Maker, recover Torn Map, and learn why marker 1834 is tied to Identity Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Lake Shore.",
-        "clue": "Wind Through a Crack"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Torn Map.",
-        "clue": "Torn Map"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Harness Maker.",
-        "clue": "6:53"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1834.",
-        "clue": "1834"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Toward instruction.",
-        "clue": "Toward"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S18C04-location",
-        "type": "location",
-        "name": "Lake Shore",
-        "inspectText": "Lake Shore looks ordinary until Wind Through a Crack moves through it."
-      },
-      {
-        "id": "S18C04-object",
-        "type": "evidence",
-        "name": "Torn Map",
-        "inspectText": "Torn Map is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S18C04-marker",
-        "type": "marker",
-        "name": "Marker 1834",
-        "inspectText": "Marker 1834 is not the answer. It is the lock."
-      },
-      {
-        "id": "S18C04-sound",
-        "type": "audio_clue",
-        "name": "Wind Through a Crack",
-        "inspectText": "Wind Through a Crack repeats near 6:53."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series18-The-Hollow-Names/chapter04.md",
-      "novel": "generated/novels/Series18-The-Hollow-Names/chapter04.md",
-      "song": "generated/songs/Series18-The-Hollow-Names/song04.md"
     }
   },
   "story": {

@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "pine hollow",
-      "pinehollow"
-    ],
-    "object": [
-      "belt buckle",
-      "beltbuckle"
-    ],
-    "witness": [
-      "judge"
-    ],
-    "time": [
-      "9:15",
-      "915"
-    ],
-    "marker": [
-      "5007",
-      "marker 5007",
-      "road marker 5007",
-      "mile marker 5007",
-      "mile 5007"
-    ],
-    "direction": [
-      "further in",
-      "furtherin"
-    ],
-    "sound": [
-      "dry grass",
-      "drygrass"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -312,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S50C01",
-    "puzzleId": "S50C01-marker-lock",
-    "dialogueId": "S50C01-judge",
-    "locationId": "pine-hollow",
-    "objective": "Investigate Pine Hollow, question Judge, recover Belt Buckle, and learn why marker 5007 is tied to Full Archive.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Pine Hollow.",
-        "clue": "Dry Grass"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Belt Buckle.",
-        "clue": "Belt Buckle"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Judge.",
-        "clue": "9:15"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 5007.",
-        "clue": "5007"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Further In instruction.",
-        "clue": "Further In"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S50C01-location",
-        "type": "location",
-        "name": "Pine Hollow",
-        "inspectText": "Pine Hollow looks ordinary until Dry Grass moves through it."
-      },
-      {
-        "id": "S50C01-object",
-        "type": "evidence",
-        "name": "Belt Buckle",
-        "inspectText": "Belt Buckle is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S50C01-marker",
-        "type": "marker",
-        "name": "Marker 5007",
-        "inspectText": "Marker 5007 is not the answer. It is the lock."
-      },
-      {
-        "id": "S50C01-sound",
-        "type": "audio_clue",
-        "name": "Dry Grass",
-        "inspectText": "Dry Grass repeats near 9:15."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series50-The-Resolution/chapter01.md",
-      "novel": "generated/novels/Series50-The-Resolution/chapter01.md",
-      "song": "generated/songs/Series50-The-Resolution/song01.md"
     }
   },
   "story": {

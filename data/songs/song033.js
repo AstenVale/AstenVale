@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "water tower",
-      "watertower"
-    ],
-    "object": [
-      "straight razor",
-      "straightrazor"
-    ],
-    "witness": [
-      "fisherman"
-    ],
-    "time": [
-      "8:17",
-      "817"
-    ],
-    "marker": [
-      "379",
-      "marker 379",
-      "road marker 379",
-      "mile marker 379",
-      "mile 379"
-    ],
-    "direction": [
-      "beyond"
-    ],
-    "sound": [
-      "lantern glass",
-      "lanternglass"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S03C09",
-    "puzzleId": "S03C09-marker-lock",
-    "dialogueId": "S03C09-fisherman",
-    "locationId": "water-tower",
-    "objective": "Investigate Water Tower, question Fisherman, recover Straight Razor, and learn why marker 379 is tied to Absence Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Water Tower.",
-        "clue": "Lantern Glass"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Straight Razor.",
-        "clue": "Straight Razor"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Fisherman.",
-        "clue": "8:17"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 379.",
-        "clue": "379"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Beyond instruction.",
-        "clue": "Beyond"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S03C09-location",
-        "type": "location",
-        "name": "Water Tower",
-        "inspectText": "Water Tower looks ordinary until Lantern Glass moves through it."
-      },
-      {
-        "id": "S03C09-object",
-        "type": "evidence",
-        "name": "Straight Razor",
-        "inspectText": "Straight Razor is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S03C09-marker",
-        "type": "marker",
-        "name": "Marker 379",
-        "inspectText": "Marker 379 is not the answer. It is the lock."
-      },
-      {
-        "id": "S03C09-sound",
-        "type": "audio_clue",
-        "name": "Lantern Glass",
-        "inspectText": "Lantern Glass repeats near 8:17."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series03-The-Disappearance/chapter09.md",
-      "novel": "generated/novels/Series03-The-Disappearance/chapter09.md",
-      "song": "generated/songs/Series03-The-Disappearance/song09.md"
     }
   },
   "story": {

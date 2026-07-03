@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "canning factory",
-      "canningfactory"
-    ],
-    "object": [
-      "tin star",
-      "tinstar"
-    ],
-    "witness": [
-      "salt seller",
-      "saltseller"
-    ],
-    "time": [
-      "9:08",
-      "908"
-    ],
-    "marker": [
-      "1916",
-      "marker 1916",
-      "road marker 1916",
-      "mile marker 1916",
-      "mile 1916"
-    ],
-    "direction": [
-      "forward"
-    ],
-    "sound": [
-      "empty wagon",
-      "emptywagon"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -312,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S19C02",
-    "puzzleId": "S19C02-marker-lock",
-    "dialogueId": "S19C02-salt-seller",
-    "locationId": "canning-factory",
-    "objective": "Investigate Canning Factory, question Salt Seller, recover Tin Star, and learn why marker 1916 is tied to Crossing Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Canning Factory.",
-        "clue": "Empty Wagon"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Tin Star.",
-        "clue": "Tin Star"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Salt Seller.",
-        "clue": "9:08"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1916.",
-        "clue": "1916"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Forward instruction.",
-        "clue": "Forward"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S19C02-location",
-        "type": "location",
-        "name": "Canning Factory",
-        "inspectText": "Canning Factory looks ordinary until Empty Wagon moves through it."
-      },
-      {
-        "id": "S19C02-object",
-        "type": "evidence",
-        "name": "Tin Star",
-        "inspectText": "Tin Star is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S19C02-marker",
-        "type": "marker",
-        "name": "Marker 1916",
-        "inspectText": "Marker 1916 is not the answer. It is the lock."
-      },
-      {
-        "id": "S19C02-sound",
-        "type": "audio_clue",
-        "name": "Empty Wagon",
-        "inspectText": "Empty Wagon repeats near 9:08."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series19-The-Bridge-Burner/chapter02.md",
-      "novel": "generated/novels/Series19-The-Bridge-Burner/chapter02.md",
-      "song": "generated/songs/Series19-The-Bridge-Burner/song02.md"
     }
   },
   "story": {

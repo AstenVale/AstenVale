@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "river's edge",
-      "river'sedge"
-    ],
-    "object": [
-      "compass"
-    ],
-    "witness": [
-      "driver"
-    ],
-    "time": [
-      "6:06",
-      "606"
-    ],
-    "marker": [
-      "2288",
-      "marker 2288",
-      "road marker 2288",
-      "mile marker 2288",
-      "mile 2288"
-    ],
-    "direction": [
-      "beyond"
-    ],
-    "sound": [
-      "cellar door",
-      "cellardoor"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -309,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S22C10",
-    "puzzleId": "S22C10-marker-lock",
-    "dialogueId": "S22C10-driver",
-    "locationId": "river-s-edge",
-    "objective": "Investigate River's Edge, question Driver, recover Compass, and learn why marker 2288 is tied to Excavation Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter River's Edge.",
-        "clue": "Cellar Door"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Compass.",
-        "clue": "Compass"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Driver.",
-        "clue": "6:06"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2288.",
-        "clue": "2288"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Beyond instruction.",
-        "clue": "Beyond"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S22C10-location",
-        "type": "location",
-        "name": "River's Edge",
-        "inspectText": "River's Edge looks ordinary until Cellar Door moves through it."
-      },
-      {
-        "id": "S22C10-object",
-        "type": "evidence",
-        "name": "Compass",
-        "inspectText": "Compass is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S22C10-marker",
-        "type": "marker",
-        "name": "Marker 2288",
-        "inspectText": "Marker 2288 is not the answer. It is the lock."
-      },
-      {
-        "id": "S22C10-sound",
-        "type": "audio_clue",
-        "name": "Cellar Door",
-        "inspectText": "Cellar Door repeats near 6:06."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series22-The-Bone-Road/chapter10.md",
-      "novel": "generated/novels/Series22-The-Bone-Road/chapter10.md",
-      "song": "generated/songs/Series22-The-Bone-Road/song10.md"
     }
   },
   "story": {

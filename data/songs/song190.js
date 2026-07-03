@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the quarry pool",
-      "quarry pool",
-      "thequarrypool"
-    ],
-    "object": [
-      "spool of thread",
-      "spoolofthread"
-    ],
-    "witness": [
-      "glazier"
-    ],
-    "time": [
-      "10:19",
-      "1019"
-    ],
-    "marker": [
-      "1688",
-      "marker 1688",
-      "road marker 1688",
-      "mile marker 1688",
-      "mile 1688"
-    ],
-    "direction": [
-      "out"
-    ],
-    "sound": [
-      "shutter bang",
-      "shutterbang"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -301,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S16C10",
-    "puzzleId": "S16C10-marker-lock",
-    "dialogueId": "S16C10-glazier",
-    "locationId": "the-quarry-pool",
-    "objective": "Investigate The Quarry Pool, question Glazier, recover Spool of Thread, and learn why marker 1688 is tied to Transparent Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Quarry Pool.",
-        "clue": "Shutter Bang"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Spool of Thread.",
-        "clue": "Spool of Thread"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Glazier.",
-        "clue": "10:19"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1688.",
-        "clue": "1688"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Out instruction.",
-        "clue": "Out"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S16C10-location",
-        "type": "location",
-        "name": "The Quarry Pool",
-        "inspectText": "The Quarry Pool looks ordinary until Shutter Bang moves through it."
-      },
-      {
-        "id": "S16C10-object",
-        "type": "evidence",
-        "name": "Spool of Thread",
-        "inspectText": "Spool of Thread is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S16C10-marker",
-        "type": "marker",
-        "name": "Marker 1688",
-        "inspectText": "Marker 1688 is not the answer. It is the lock."
-      },
-      {
-        "id": "S16C10-sound",
-        "type": "audio_clue",
-        "name": "Shutter Bang",
-        "inspectText": "Shutter Bang repeats near 10:19."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series16-The-Glass-House/chapter10.md",
-      "novel": "generated/novels/Series16-The-Glass-House/chapter10.md",
-      "song": "generated/songs/Series16-The-Glass-House/song10.md"
     }
   },
   "story": {

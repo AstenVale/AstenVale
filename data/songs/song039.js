@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the quarry pool",
-      "quarry pool",
-      "thequarrypool"
-    ],
-    "object": [
-      "empty tin",
-      "emptytin"
-    ],
-    "witness": [
-      "miller"
-    ],
-    "time": [
-      "8:42",
-      "842"
-    ],
-    "marker": [
-      "425",
-      "marker 425",
-      "road marker 425",
-      "mile marker 425",
-      "mile 425"
-    ],
-    "direction": [
-      "sideways"
-    ],
-    "sound": [
-      "moth wings",
-      "mothwings"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S04C03",
-    "puzzleId": "S04C03-marker-lock",
-    "dialogueId": "S04C03-miller",
-    "locationId": "the-quarry-pool",
-    "objective": "Investigate The Quarry Pool, question Miller, recover Empty Tin, and learn why marker 425 is tied to Current Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Quarry Pool.",
-        "clue": "Moth Wings"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Empty Tin.",
-        "clue": "Empty Tin"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Miller.",
-        "clue": "8:42"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 425.",
-        "clue": "425"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Sideways instruction.",
-        "clue": "Sideways"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S04C03-location",
-        "type": "location",
-        "name": "The Quarry Pool",
-        "inspectText": "The Quarry Pool looks ordinary until Moth Wings moves through it."
-      },
-      {
-        "id": "S04C03-object",
-        "type": "evidence",
-        "name": "Empty Tin",
-        "inspectText": "Empty Tin is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S04C03-marker",
-        "type": "marker",
-        "name": "Marker 425",
-        "inspectText": "Marker 425 is not the answer. It is the lock."
-      },
-      {
-        "id": "S04C03-sound",
-        "type": "audio_clue",
-        "name": "Moth Wings",
-        "inspectText": "Moth Wings repeats near 8:42."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series04-The-River-Speaks/chapter03.md",
-      "novel": "generated/novels/Series04-The-River-Speaks/chapter03.md",
-      "song": "generated/songs/Series04-The-River-Speaks/song03.md"
     }
   },
   "story": {

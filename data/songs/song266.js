@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "schoolhouse"
-    ],
-    "object": [
-      "candle"
-    ],
-    "witness": [
-      "the handless man",
-      "handless man",
-      "thehandlessman"
-    ],
-    "time": [
-      "6:53",
-      "653"
-    ],
-    "marker": [
-      "2316",
-      "marker 2316",
-      "road marker 2316",
-      "mile marker 2316",
-      "mile 2316"
-    ],
-    "direction": [
-      "home"
-    ],
-    "sound": [
-      "knife scrape",
-      "knifescrape"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S23C02",
-    "puzzleId": "S23C02-marker-lock",
-    "dialogueId": "S23C02-the-handless-man",
-    "locationId": "schoolhouse",
-    "objective": "Investigate Schoolhouse, question The Handless Man, recover Candle, and learn why marker 2316 is tied to Document Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Schoolhouse.",
-        "clue": "Knife Scrape"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Candle.",
-        "clue": "Candle"
-      },
-      {
-        "step": "interview",
-        "objective": "Question The Handless Man.",
-        "clue": "6:53"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2316.",
-        "clue": "2316"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Home instruction.",
-        "clue": "Home"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S23C02-location",
-        "type": "location",
-        "name": "Schoolhouse",
-        "inspectText": "Schoolhouse looks ordinary until Knife Scrape moves through it."
-      },
-      {
-        "id": "S23C02-object",
-        "type": "evidence",
-        "name": "Candle",
-        "inspectText": "Candle is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S23C02-marker",
-        "type": "marker",
-        "name": "Marker 2316",
-        "inspectText": "Marker 2316 is not the answer. It is the lock."
-      },
-      {
-        "id": "S23C02-sound",
-        "type": "audio_clue",
-        "name": "Knife Scrape",
-        "inspectText": "Knife Scrape repeats near 6:53."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series23-The-Paper-Trail/chapter02.md",
-      "novel": "generated/novels/Series23-The-Paper-Trail/chapter02.md",
-      "song": "generated/songs/Series23-The-Paper-Trail/song02.md"
     }
   },
   "story": {

@@ -61,35 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "schoolhouse"
-    ],
-    "object": [
-      "badge"
-    ],
-    "witness": [
-      "rag picker",
-      "ragpicker"
-    ],
-    "time": [
-      "5:13",
-      "513"
-    ],
-    "marker": [
-      "3997",
-      "marker 3997",
-      "road marker 3997",
-      "mile marker 3997",
-      "mile 3997"
-    ],
-    "direction": [
-      "in"
-    ],
-    "sound": [
-      "thunder"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -298,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S39C11",
-    "puzzleId": "S39C11-marker-lock",
-    "dialogueId": "S39C11-rag-picker",
-    "locationId": "schoolhouse",
-    "objective": "Investigate Schoolhouse, question Rag Picker, recover Badge, and learn why marker 3997 is tied to Rider Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Schoolhouse.",
-        "clue": "Thunder"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Badge.",
-        "clue": "Badge"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Rag Picker.",
-        "clue": "5:13"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3997.",
-        "clue": "3997"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the In instruction.",
-        "clue": "In"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S39C11-location",
-        "type": "location",
-        "name": "Schoolhouse",
-        "inspectText": "Schoolhouse looks ordinary until Thunder moves through it."
-      },
-      {
-        "id": "S39C11-object",
-        "type": "evidence",
-        "name": "Badge",
-        "inspectText": "Badge is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S39C11-marker",
-        "type": "marker",
-        "name": "Marker 3997",
-        "inspectText": "Marker 3997 is not the answer. It is the lock."
-      },
-      {
-        "id": "S39C11-sound",
-        "type": "audio_clue",
-        "name": "Thunder",
-        "inspectText": "Thunder repeats near 5:13."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series39-The-Pale-Horse/chapter11.md",
-      "novel": "generated/novels/Series39-The-Pale-Horse/chapter11.md",
-      "song": "generated/songs/Series39-The-Pale-Horse/song11.md"
     }
   },
   "story": {

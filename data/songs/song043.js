@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "grain mill",
-      "grainmill"
-    ],
-    "object": [
-      "chain"
-    ],
-    "witness": [
-      "woodsman"
-    ],
-    "time": [
-      "5:09",
-      "509"
-    ],
-    "marker": [
-      "461",
-      "marker 461",
-      "road marker 461",
-      "mile marker 461",
-      "mile 461"
-    ],
-    "direction": [
-      "out of sight",
-      "outofsight"
-    ],
-    "sound": [
-      "dry grass",
-      "drygrass"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -310,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S04C07",
-    "puzzleId": "S04C07-marker-lock",
-    "dialogueId": "S04C07-woodsman",
-    "locationId": "grain-mill",
-    "objective": "Investigate Grain Mill, question Woodsman, recover Chain, and learn why marker 461 is tied to Current Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Grain Mill.",
-        "clue": "Dry Grass"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Chain.",
-        "clue": "Chain"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Woodsman.",
-        "clue": "5:09"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 461.",
-        "clue": "461"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Out of Sight instruction.",
-        "clue": "Out of Sight"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S04C07-location",
-        "type": "location",
-        "name": "Grain Mill",
-        "inspectText": "Grain Mill looks ordinary until Dry Grass moves through it."
-      },
-      {
-        "id": "S04C07-object",
-        "type": "evidence",
-        "name": "Chain",
-        "inspectText": "Chain is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S04C07-marker",
-        "type": "marker",
-        "name": "Marker 461",
-        "inspectText": "Marker 461 is not the answer. It is the lock."
-      },
-      {
-        "id": "S04C07-sound",
-        "type": "audio_clue",
-        "name": "Dry Grass",
-        "inspectText": "Dry Grass repeats near 5:09."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series04-The-River-Speaks/chapter07.md",
-      "novel": "generated/novels/Series04-The-River-Speaks/chapter07.md",
-      "song": "generated/songs/Series04-The-River-Speaks/song07.md"
     }
   },
   "story": {

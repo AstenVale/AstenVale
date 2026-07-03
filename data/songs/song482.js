@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "calico alley",
-      "calicoalley"
-    ],
-    "object": [
-      "badge"
-    ],
-    "witness": [
-      "schoolteacher"
-    ],
-    "time": [
-      "7:14",
-      "714"
-    ],
-    "marker": [
-      "4116",
-      "marker 4116",
-      "road marker 4116",
-      "mile marker 4116",
-      "mile 4116"
-    ],
-    "direction": [
-      "around"
-    ],
-    "sound": [
-      "fog horn",
-      "foghorn"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -299,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S41C02",
-    "puzzleId": "S41C02-marker-lock",
-    "dialogueId": "S41C02-schoolteacher",
-    "locationId": "calico-alley",
-    "objective": "Investigate Calico Alley, question Schoolteacher, recover Badge, and learn why marker 4116 is tied to Phantom Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Calico Alley.",
-        "clue": "Fog Horn"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Badge.",
-        "clue": "Badge"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Schoolteacher.",
-        "clue": "7:14"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4116.",
-        "clue": "4116"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Around instruction.",
-        "clue": "Around"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S41C02-location",
-        "type": "location",
-        "name": "Calico Alley",
-        "inspectText": "Calico Alley looks ordinary until Fog Horn moves through it."
-      },
-      {
-        "id": "S41C02-object",
-        "type": "evidence",
-        "name": "Badge",
-        "inspectText": "Badge is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S41C02-marker",
-        "type": "marker",
-        "name": "Marker 4116",
-        "inspectText": "Marker 4116 is not the answer. It is the lock."
-      },
-      {
-        "id": "S41C02-sound",
-        "type": "audio_clue",
-        "name": "Fog Horn",
-        "inspectText": "Fog Horn repeats near 7:14."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series41-The-Ghost-Road/chapter02.md",
-      "novel": "generated/novels/Series41-The-Ghost-Road/chapter02.md",
-      "song": "generated/songs/Series41-The-Ghost-Road/song02.md"
     }
   },
   "story": {

@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the depot",
-      "depot",
-      "thedepot"
-    ],
-    "object": [
-      "notebook"
-    ],
-    "witness": [
-      "postman"
-    ],
-    "time": [
-      "6:17",
-      "617"
-    ],
-    "marker": [
-      "3479",
-      "marker 3479",
-      "road marker 3479",
-      "mile marker 3479",
-      "mile 3479"
-    ],
-    "direction": [
-      "into the pines",
-      "intothepines"
-    ],
-    "sound": [
-      "dry grass",
-      "drygrass"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -301,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S34C09",
-    "puzzleId": "S34C09-marker-lock",
-    "dialogueId": "S34C09-postman",
-    "locationId": "the-depot",
-    "objective": "Investigate The Depot, question Postman, recover Notebook, and learn why marker 3479 is tied to Clinical Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Depot.",
-        "clue": "Dry Grass"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Notebook.",
-        "clue": "Notebook"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Postman.",
-        "clue": "6:17"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3479.",
-        "clue": "3479"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Into the Pines instruction.",
-        "clue": "Into the Pines"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S34C09-location",
-        "type": "location",
-        "name": "The Depot",
-        "inspectText": "The Depot looks ordinary until Dry Grass moves through it."
-      },
-      {
-        "id": "S34C09-object",
-        "type": "evidence",
-        "name": "Notebook",
-        "inspectText": "Notebook is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S34C09-marker",
-        "type": "marker",
-        "name": "Marker 3479",
-        "inspectText": "Marker 3479 is not the answer. It is the lock."
-      },
-      {
-        "id": "S34C09-sound",
-        "type": "audio_clue",
-        "name": "Dry Grass",
-        "inspectText": "Dry Grass repeats near 6:17."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series34-The-Locked-Ward/chapter09.md",
-      "novel": "generated/novels/Series34-The-Locked-Ward/chapter09.md",
-      "song": "generated/songs/Series34-The-Locked-Ward/song09.md"
     }
   },
   "story": {

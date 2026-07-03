@@ -61,35 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "jail"
-    ],
-    "object": [
-      "key"
-    ],
-    "witness": [
-      "tailor"
-    ],
-    "time": [
-      "11:17",
-      "1117"
-    ],
-    "marker": [
-      "4188",
-      "marker 4188",
-      "road marker 4188",
-      "mile marker 4188",
-      "mile 4188"
-    ],
-    "direction": [
-      "under"
-    ],
-    "sound": [
-      "boot heel",
-      "bootheel"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -298,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S41C10",
-    "puzzleId": "S41C10-marker-lock",
-    "dialogueId": "S41C10-tailor",
-    "locationId": "jail",
-    "objective": "Investigate Jail, question Tailor, recover Key, and learn why marker 4188 is tied to Phantom Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Jail.",
-        "clue": "Boot Heel"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Key.",
-        "clue": "Key"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Tailor.",
-        "clue": "11:17"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4188.",
-        "clue": "4188"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Under instruction.",
-        "clue": "Under"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S41C10-location",
-        "type": "location",
-        "name": "Jail",
-        "inspectText": "Jail looks ordinary until Boot Heel moves through it."
-      },
-      {
-        "id": "S41C10-object",
-        "type": "evidence",
-        "name": "Key",
-        "inspectText": "Key is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S41C10-marker",
-        "type": "marker",
-        "name": "Marker 4188",
-        "inspectText": "Marker 4188 is not the answer. It is the lock."
-      },
-      {
-        "id": "S41C10-sound",
-        "type": "audio_clue",
-        "name": "Boot Heel",
-        "inspectText": "Boot Heel repeats near 11:17."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series41-The-Ghost-Road/chapter10.md",
-      "novel": "generated/novels/Series41-The-Ghost-Road/chapter10.md",
-      "song": "generated/songs/Series41-The-Ghost-Road/song10.md"
     }
   },
   "story": {

@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "feed store",
-      "feedstore"
-    ],
-    "object": [
-      "iron nail",
-      "ironnail"
-    ],
-    "witness": [
-      "schoolgirl"
-    ],
-    "time": [
-      "6:53",
-      "653"
-    ],
-    "marker": [
-      "4134",
-      "marker 4134",
-      "road marker 4134",
-      "mile marker 4134",
-      "mile 4134"
-    ],
-    "direction": [
-      "further in",
-      "furtherin"
-    ],
-    "sound": [
-      "water drip",
-      "waterdrip"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -301,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S41C04",
-    "puzzleId": "S41C04-marker-lock",
-    "dialogueId": "S41C04-schoolgirl",
-    "locationId": "feed-store",
-    "objective": "Investigate Feed Store, question Schoolgirl, recover Iron Nail, and learn why marker 4134 is tied to Phantom Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Feed Store.",
-        "clue": "Water Drip"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Iron Nail.",
-        "clue": "Iron Nail"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Schoolgirl.",
-        "clue": "6:53"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4134.",
-        "clue": "4134"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Further In instruction.",
-        "clue": "Further In"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S41C04-location",
-        "type": "location",
-        "name": "Feed Store",
-        "inspectText": "Feed Store looks ordinary until Water Drip moves through it."
-      },
-      {
-        "id": "S41C04-object",
-        "type": "evidence",
-        "name": "Iron Nail",
-        "inspectText": "Iron Nail is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S41C04-marker",
-        "type": "marker",
-        "name": "Marker 4134",
-        "inspectText": "Marker 4134 is not the answer. It is the lock."
-      },
-      {
-        "id": "S41C04-sound",
-        "type": "audio_clue",
-        "name": "Water Drip",
-        "inspectText": "Water Drip repeats near 6:53."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series41-The-Ghost-Road/chapter04.md",
-      "novel": "generated/novels/Series41-The-Ghost-Road/chapter04.md",
-      "song": "generated/songs/Series41-The-Ghost-Road/song04.md"
     }
   },
   "story": {

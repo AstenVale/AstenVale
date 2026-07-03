@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "smithy"
-    ],
-    "object": [
-      "ship manifest",
-      "shipmanifest"
-    ],
-    "witness": [
-      "judge"
-    ],
-    "time": [
-      "5:09",
-      "509"
-    ],
-    "marker": [
-      "3543",
-      "marker 3543",
-      "road marker 3543",
-      "mile marker 3543",
-      "mile 3543"
-    ],
-    "direction": [
-      "back the way you came",
-      "backthewayyoucame"
-    ],
-    "sound": [
-      "old hinge",
-      "oldhinge"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -310,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S35C05",
-    "puzzleId": "S35C05-marker-lock",
-    "dialogueId": "S35C05-judge",
-    "locationId": "smithy",
-    "objective": "Investigate Smithy, question Judge, recover Ship Manifest, and learn why marker 3543 is tied to Collection Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Smithy.",
-        "clue": "Old Hinge"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Ship Manifest.",
-        "clue": "Ship Manifest"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Judge.",
-        "clue": "5:09"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3543.",
-        "clue": "3543"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Back the Way You Came instruction.",
-        "clue": "Back the Way You Came"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S35C05-location",
-        "type": "location",
-        "name": "Smithy",
-        "inspectText": "Smithy looks ordinary until Old Hinge moves through it."
-      },
-      {
-        "id": "S35C05-object",
-        "type": "evidence",
-        "name": "Ship Manifest",
-        "inspectText": "Ship Manifest is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S35C05-marker",
-        "type": "marker",
-        "name": "Marker 3543",
-        "inspectText": "Marker 3543 is not the answer. It is the lock."
-      },
-      {
-        "id": "S35C05-sound",
-        "type": "audio_clue",
-        "name": "Old Hinge",
-        "inspectText": "Old Hinge repeats near 5:09."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series35-The-Archive-Keeper/chapter05.md",
-      "novel": "generated/novels/Series35-The-Archive-Keeper/chapter05.md",
-      "song": "generated/songs/Series35-The-Archive-Keeper/song05.md"
     }
   },
   "story": {

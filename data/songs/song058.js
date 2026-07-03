@@ -61,35 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "diner"
-    ],
-    "object": [
-      "key"
-    ],
-    "witness": [
-      "lamplighter"
-    ],
-    "time": [
-      "8:00",
-      "800"
-    ],
-    "marker": [
-      "588",
-      "marker 588",
-      "road marker 588",
-      "mile marker 588",
-      "mile 588"
-    ],
-    "direction": [
-      "left"
-    ],
-    "sound": [
-      "river water",
-      "riverwater"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -298,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S05C10",
-    "puzzleId": "S05C10-marker-lock",
-    "dialogueId": "S05C10-lamplighter",
-    "locationId": "diner",
-    "objective": "Investigate Diner, question Lamplighter, recover Key, and learn why marker 588 is tied to Cold Archive.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Diner.",
-        "clue": "River Water"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Key.",
-        "clue": "Key"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Lamplighter.",
-        "clue": "8:00"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 588.",
-        "clue": "588"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Left instruction.",
-        "clue": "Left"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S05C10-location",
-        "type": "location",
-        "name": "Diner",
-        "inspectText": "Diner looks ordinary until River Water moves through it."
-      },
-      {
-        "id": "S05C10-object",
-        "type": "evidence",
-        "name": "Key",
-        "inspectText": "Key is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S05C10-marker",
-        "type": "marker",
-        "name": "Marker 588",
-        "inspectText": "Marker 588 is not the answer. It is the lock."
-      },
-      {
-        "id": "S05C10-sound",
-        "type": "audio_clue",
-        "name": "River Water",
-        "inspectText": "River Water repeats near 8:00."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series05-The-Last-Winter/chapter10.md",
-      "novel": "generated/novels/Series05-The-Last-Winter/chapter10.md",
-      "song": "generated/songs/Series05-The-Last-Winter/song10.md"
     }
   },
   "story": {

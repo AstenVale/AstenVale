@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "east field",
-      "eastfield"
-    ],
-    "object": [
-      "flask"
-    ],
-    "witness": [
-      "orphan"
-    ],
-    "time": [
-      "11:40",
-      "1140"
-    ],
-    "marker": [
-      "4761",
-      "marker 4761",
-      "road marker 4761",
-      "mile marker 4761",
-      "mile 4761"
-    ],
-    "direction": [
-      "out of sight",
-      "outofsight"
-    ],
-    "sound": [
-      "thunder"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -299,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S47C07",
-    "puzzleId": "S47C07-marker-lock",
-    "dialogueId": "S47C07-orphan",
-    "locationId": "east-field",
-    "objective": "Investigate East Field, question Orphan, recover Flask, and learn why marker 4761 is tied to Detour Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter East Field.",
-        "clue": "Thunder"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Flask.",
-        "clue": "Flask"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Orphan.",
-        "clue": "11:40"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4761.",
-        "clue": "4761"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Out of Sight instruction.",
-        "clue": "Out of Sight"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S47C07-location",
-        "type": "location",
-        "name": "East Field",
-        "inspectText": "East Field looks ordinary until Thunder moves through it."
-      },
-      {
-        "id": "S47C07-object",
-        "type": "evidence",
-        "name": "Flask",
-        "inspectText": "Flask is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S47C07-marker",
-        "type": "marker",
-        "name": "Marker 4761",
-        "inspectText": "Marker 4761 is not the answer. It is the lock."
-      },
-      {
-        "id": "S47C07-sound",
-        "type": "audio_clue",
-        "name": "Thunder",
-        "inspectText": "Thunder repeats near 11:40."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series47-The-Long-Way-Round/chapter07.md",
-      "novel": "generated/novels/Series47-The-Long-Way-Round/chapter07.md",
-      "song": "generated/songs/Series47-The-Long-Way-Round/song07.md"
     }
   },
   "story": {

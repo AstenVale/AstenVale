@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "covered bridge",
-      "coveredbridge"
-    ],
-    "object": [
-      "receipt"
-    ],
-    "witness": [
-      "cider presser",
-      "ciderpresser"
-    ],
-    "time": [
-      "2:55",
-      "255"
-    ],
-    "marker": [
-      "3297",
-      "marker 3297",
-      "road marker 3297",
-      "mile marker 3297",
-      "mile 3297"
-    ],
-    "direction": [
-      "down"
-    ],
-    "sound": [
-      "the silence after",
-      "silence after",
-      "thesilenceafter"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -301,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S32C11",
-    "puzzleId": "S32C11-marker-lock",
-    "dialogueId": "S32C11-cider-presser",
-    "locationId": "covered-bridge",
-    "objective": "Investigate Covered Bridge, question Cider Presser, recover Receipt, and learn why marker 3297 is tied to Depth Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Covered Bridge.",
-        "clue": "The Silence After"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Receipt.",
-        "clue": "Receipt"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Cider Presser.",
-        "clue": "2:55"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3297.",
-        "clue": "3297"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Down instruction.",
-        "clue": "Down"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S32C11-location",
-        "type": "location",
-        "name": "Covered Bridge",
-        "inspectText": "Covered Bridge looks ordinary until The Silence After moves through it."
-      },
-      {
-        "id": "S32C11-object",
-        "type": "evidence",
-        "name": "Receipt",
-        "inspectText": "Receipt is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S32C11-marker",
-        "type": "marker",
-        "name": "Marker 3297",
-        "inspectText": "Marker 3297 is not the answer. It is the lock."
-      },
-      {
-        "id": "S32C11-sound",
-        "type": "audio_clue",
-        "name": "The Silence After",
-        "inspectText": "The Silence After repeats near 2:55."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series32-The-Deep-Current/chapter11.md",
-      "novel": "generated/novels/Series32-The-Deep-Current/chapter11.md",
-      "song": "generated/songs/Series32-The-Deep-Current/song11.md"
     }
   },
   "story": {

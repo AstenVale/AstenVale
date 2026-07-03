@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the hollow road",
-      "hollow road",
-      "thehollowroad"
-    ],
-    "object": [
-      "charred paper",
-      "charredpaper"
-    ],
-    "witness": [
-      "surveyor"
-    ],
-    "time": [
-      "7:02",
-      "702"
-    ],
-    "marker": [
-      "2807",
-      "marker 2807",
-      "road marker 2807",
-      "mile marker 2807",
-      "mile 2807"
-    ],
-    "direction": [
-      "south"
-    ],
-    "sound": [
-      "nail pulled from wood",
-      "nailpulledfromwood"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -312,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S28C01",
-    "puzzleId": "S28C01-marker-lock",
-    "dialogueId": "S28C01-surveyor",
-    "locationId": "the-hollow-road",
-    "objective": "Investigate The Hollow Road, question Surveyor, recover Charred Paper, and learn why marker 2807 is tied to Frequency Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Hollow Road.",
-        "clue": "Nail Pulled from Wood"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Charred Paper.",
-        "clue": "Charred Paper"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Surveyor.",
-        "clue": "7:02"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2807.",
-        "clue": "2807"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the South instruction.",
-        "clue": "South"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S28C01-location",
-        "type": "location",
-        "name": "The Hollow Road",
-        "inspectText": "The Hollow Road looks ordinary until Nail Pulled from Wood moves through it."
-      },
-      {
-        "id": "S28C01-object",
-        "type": "evidence",
-        "name": "Charred Paper",
-        "inspectText": "Charred Paper is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S28C01-marker",
-        "type": "marker",
-        "name": "Marker 2807",
-        "inspectText": "Marker 2807 is not the answer. It is the lock."
-      },
-      {
-        "id": "S28C01-sound",
-        "type": "audio_clue",
-        "name": "Nail Pulled from Wood",
-        "inspectText": "Nail Pulled from Wood repeats near 7:02."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series28-The-Buried-Signal/chapter01.md",
-      "novel": "generated/novels/Series28-The-Buried-Signal/chapter01.md",
-      "song": "generated/songs/Series28-The-Buried-Signal/song01.md"
     }
   },
   "story": {

@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "post office",
-      "postoffice"
-    ],
-    "object": [
-      "belt buckle",
-      "beltbuckle"
-    ],
-    "witness": [
-      "chandler"
-    ],
-    "time": [
-      "8:17",
-      "817"
-    ],
-    "marker": [
-      "3807",
-      "marker 3807",
-      "road marker 3807",
-      "mile marker 3807",
-      "mile 3807"
-    ],
-    "direction": [
-      "in"
-    ],
-    "sound": [
-      "clock ticking",
-      "clockticking"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S38C01",
-    "puzzleId": "S38C01-marker-lock",
-    "dialogueId": "S38C01-chandler",
-    "locationId": "post-office",
-    "objective": "Investigate Post Office, question Chandler, recover Belt Buckle, and learn why marker 3807 is tied to Beacon Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Post Office.",
-        "clue": "Clock Ticking"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Belt Buckle.",
-        "clue": "Belt Buckle"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Chandler.",
-        "clue": "8:17"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3807.",
-        "clue": "3807"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the In instruction.",
-        "clue": "In"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S38C01-location",
-        "type": "location",
-        "name": "Post Office",
-        "inspectText": "Post Office looks ordinary until Clock Ticking moves through it."
-      },
-      {
-        "id": "S38C01-object",
-        "type": "evidence",
-        "name": "Belt Buckle",
-        "inspectText": "Belt Buckle is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S38C01-marker",
-        "type": "marker",
-        "name": "Marker 3807",
-        "inspectText": "Marker 3807 is not the answer. It is the lock."
-      },
-      {
-        "id": "S38C01-sound",
-        "type": "audio_clue",
-        "name": "Clock Ticking",
-        "inspectText": "Clock Ticking repeats near 8:17."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series38-The-Signal-Fire/chapter01.md",
-      "novel": "generated/novels/Series38-The-Signal-Fire/chapter01.md",
-      "song": "generated/songs/Series38-The-Signal-Fire/song01.md"
     }
   },
   "story": {

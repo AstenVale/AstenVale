@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "water tower",
-      "watertower"
-    ],
-    "object": [
-      "compass"
-    ],
-    "witness": [
-      "station master",
-      "stationmaster"
-    ],
-    "time": [
-      "10:19",
-      "1019"
-    ],
-    "marker": [
-      "3607",
-      "marker 3607",
-      "road marker 3607",
-      "mile marker 3607",
-      "mile 3607"
-    ],
-    "direction": [
-      "right"
-    ],
-    "sound": [
-      "distant church bell",
-      "distantchurchbell"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S36C01",
-    "puzzleId": "S36C01-marker-lock",
-    "dialogueId": "S36C01-station-master",
-    "locationId": "water-tower",
-    "objective": "Investigate Water Tower, question Station Master, recover Compass, and learn why marker 3607 is tied to Voice Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Water Tower.",
-        "clue": "Distant Church Bell"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Compass.",
-        "clue": "Compass"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Station Master.",
-        "clue": "10:19"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3607.",
-        "clue": "3607"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Right instruction.",
-        "clue": "Right"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S36C01-location",
-        "type": "location",
-        "name": "Water Tower",
-        "inspectText": "Water Tower looks ordinary until Distant Church Bell moves through it."
-      },
-      {
-        "id": "S36C01-object",
-        "type": "evidence",
-        "name": "Compass",
-        "inspectText": "Compass is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S36C01-marker",
-        "type": "marker",
-        "name": "Marker 3607",
-        "inspectText": "Marker 3607 is not the answer. It is the lock."
-      },
-      {
-        "id": "S36C01-sound",
-        "type": "audio_clue",
-        "name": "Distant Church Bell",
-        "inspectText": "Distant Church Bell repeats near 10:19."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series36-The-Night-Caller/chapter01.md",
-      "novel": "generated/novels/Series36-The-Night-Caller/chapter01.md",
-      "song": "generated/songs/Series36-The-Night-Caller/song01.md"
     }
   },
   "story": {

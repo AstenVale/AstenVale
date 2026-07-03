@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "freight yard",
-      "freightyard"
-    ],
-    "object": [
-      "hollow acorn",
-      "hollowacorn"
-    ],
-    "witness": [
-      "wool sorter",
-      "woolsorter"
-    ],
-    "time": [
-      "6:17",
-      "617"
-    ],
-    "marker": [
-      "3179",
-      "marker 3179",
-      "road marker 3179",
-      "mile marker 3179",
-      "mile 3179"
-    ],
-    "direction": [
-      "home"
-    ],
-    "sound": [
-      "swamp gas",
-      "swampgas"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S31C09",
-    "puzzleId": "S31C09-marker-lock",
-    "dialogueId": "S31C09-wool-sorter",
-    "locationId": "freight-yard",
-    "objective": "Investigate Freight Yard, question Wool Sorter, recover Hollow Acorn, and learn why marker 3179 is tied to Pattern Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Freight Yard.",
-        "clue": "Swamp Gas"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Hollow Acorn.",
-        "clue": "Hollow Acorn"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Wool Sorter.",
-        "clue": "6:17"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3179.",
-        "clue": "3179"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Home instruction.",
-        "clue": "Home"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S31C09-location",
-        "type": "location",
-        "name": "Freight Yard",
-        "inspectText": "Freight Yard looks ordinary until Swamp Gas moves through it."
-      },
-      {
-        "id": "S31C09-object",
-        "type": "evidence",
-        "name": "Hollow Acorn",
-        "inspectText": "Hollow Acorn is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S31C09-marker",
-        "type": "marker",
-        "name": "Marker 3179",
-        "inspectText": "Marker 3179 is not the answer. It is the lock."
-      },
-      {
-        "id": "S31C09-sound",
-        "type": "audio_clue",
-        "name": "Swamp Gas",
-        "inspectText": "Swamp Gas repeats near 6:17."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series31-The-Cipher-Garden/chapter09.md",
-      "novel": "generated/novels/Series31-The-Cipher-Garden/chapter09.md",
-      "song": "generated/songs/Series31-The-Cipher-Garden/song09.md"
     }
   },
   "story": {

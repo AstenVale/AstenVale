@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the pit",
-      "pit",
-      "thepit"
-    ],
-    "object": [
-      "thimble"
-    ],
-    "witness": [
-      "fisherman"
-    ],
-    "time": [
-      "11:17",
-      "1117"
-    ],
-    "marker": [
-      "4752",
-      "marker 4752",
-      "road marker 4752",
-      "mile marker 4752",
-      "mile 4752"
-    ],
-    "direction": [
-      "past the tree line",
-      "pastthetreeline"
-    ],
-    "sound": [
-      "empty wagon",
-      "emptywagon"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -301,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S47C06",
-    "puzzleId": "S47C06-marker-lock",
-    "dialogueId": "S47C06-fisherman",
-    "locationId": "the-pit",
-    "objective": "Investigate The Pit, question Fisherman, recover Thimble, and learn why marker 4752 is tied to Detour Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Pit.",
-        "clue": "Empty Wagon"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Thimble.",
-        "clue": "Thimble"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Fisherman.",
-        "clue": "11:17"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4752.",
-        "clue": "4752"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Past the Tree Line instruction.",
-        "clue": "Past the Tree Line"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S47C06-location",
-        "type": "location",
-        "name": "The Pit",
-        "inspectText": "The Pit looks ordinary until Empty Wagon moves through it."
-      },
-      {
-        "id": "S47C06-object",
-        "type": "evidence",
-        "name": "Thimble",
-        "inspectText": "Thimble is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S47C06-marker",
-        "type": "marker",
-        "name": "Marker 4752",
-        "inspectText": "Marker 4752 is not the answer. It is the lock."
-      },
-      {
-        "id": "S47C06-sound",
-        "type": "audio_clue",
-        "name": "Empty Wagon",
-        "inspectText": "Empty Wagon repeats near 11:17."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series47-The-Long-Way-Round/chapter06.md",
-      "novel": "generated/novels/Series47-The-Long-Way-Round/chapter06.md",
-      "song": "generated/songs/Series47-The-Long-Way-Round/song06.md"
     }
   },
   "story": {

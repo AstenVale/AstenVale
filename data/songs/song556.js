@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "old wharf",
-      "oldwharf"
-    ],
-    "object": [
-      "folded cloth",
-      "foldedcloth"
-    ],
-    "witness": [
-      "sexton"
-    ],
-    "time": [
-      "8:17",
-      "817"
-    ],
-    "marker": [
-      "4734",
-      "marker 4734",
-      "road marker 4734",
-      "mile marker 4734",
-      "mile 4734"
-    ],
-    "direction": [
-      "off the road",
-      "offtheroad"
-    ],
-    "sound": [
-      "fire crackling",
-      "firecrackling"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -301,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S47C04",
-    "puzzleId": "S47C04-marker-lock",
-    "dialogueId": "S47C04-sexton",
-    "locationId": "old-wharf",
-    "objective": "Investigate Old Wharf, question Sexton, recover Folded Cloth, and learn why marker 4734 is tied to Detour Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Old Wharf.",
-        "clue": "Fire Crackling"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Folded Cloth.",
-        "clue": "Folded Cloth"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Sexton.",
-        "clue": "8:17"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4734.",
-        "clue": "4734"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Off the Road instruction.",
-        "clue": "Off the Road"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S47C04-location",
-        "type": "location",
-        "name": "Old Wharf",
-        "inspectText": "Old Wharf looks ordinary until Fire Crackling moves through it."
-      },
-      {
-        "id": "S47C04-object",
-        "type": "evidence",
-        "name": "Folded Cloth",
-        "inspectText": "Folded Cloth is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S47C04-marker",
-        "type": "marker",
-        "name": "Marker 4734",
-        "inspectText": "Marker 4734 is not the answer. It is the lock."
-      },
-      {
-        "id": "S47C04-sound",
-        "type": "audio_clue",
-        "name": "Fire Crackling",
-        "inspectText": "Fire Crackling repeats near 8:17."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series47-The-Long-Way-Round/chapter04.md",
-      "novel": "generated/novels/Series47-The-Long-Way-Round/chapter04.md",
-      "song": "generated/songs/Series47-The-Long-Way-Round/song04.md"
     }
   },
   "story": {

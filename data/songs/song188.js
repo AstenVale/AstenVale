@@ -61,35 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "forge"
-    ],
-    "object": [
-      "candle"
-    ],
-    "witness": [
-      "wainwright"
-    ],
-    "time": [
-      "5:13",
-      "513"
-    ],
-    "marker": [
-      "1670",
-      "marker 1670",
-      "road marker 1670",
-      "mile marker 1670",
-      "mile 1670"
-    ],
-    "direction": [
-      "forward"
-    ],
-    "sound": [
-      "latch drop",
-      "latchdrop"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -298,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S16C08",
-    "puzzleId": "S16C08-marker-lock",
-    "dialogueId": "S16C08-wainwright",
-    "locationId": "forge",
-    "objective": "Investigate Forge, question Wainwright, recover Candle, and learn why marker 1670 is tied to Transparent Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Forge.",
-        "clue": "Latch Drop"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Candle.",
-        "clue": "Candle"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Wainwright.",
-        "clue": "5:13"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1670.",
-        "clue": "1670"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Forward instruction.",
-        "clue": "Forward"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S16C08-location",
-        "type": "location",
-        "name": "Forge",
-        "inspectText": "Forge looks ordinary until Latch Drop moves through it."
-      },
-      {
-        "id": "S16C08-object",
-        "type": "evidence",
-        "name": "Candle",
-        "inspectText": "Candle is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S16C08-marker",
-        "type": "marker",
-        "name": "Marker 1670",
-        "inspectText": "Marker 1670 is not the answer. It is the lock."
-      },
-      {
-        "id": "S16C08-sound",
-        "type": "audio_clue",
-        "name": "Latch Drop",
-        "inspectText": "Latch Drop repeats near 5:13."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series16-The-Glass-House/chapter08.md",
-      "novel": "generated/novels/Series16-The-Glass-House/chapter08.md",
-      "song": "generated/songs/Series16-The-Glass-House/song08.md"
     }
   },
   "story": {

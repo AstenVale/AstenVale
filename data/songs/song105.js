@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "hotel"
-    ],
-    "object": [
-      "dried ink blot",
-      "driedinkblot"
-    ],
-    "witness": [
-      "station master",
-      "stationmaster"
-    ],
-    "time": [
-      "7:02",
-      "702"
-    ],
-    "marker": [
-      "979",
-      "marker 979",
-      "road marker 979",
-      "mile marker 979",
-      "mile 979"
-    ],
-    "direction": [
-      "back"
-    ],
-    "sound": [
-      "wind through a crack",
-      "windthroughacrack"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -310,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S09C09",
-    "puzzleId": "S09C09-marker-lock",
-    "dialogueId": "S09C09-station-master",
-    "locationId": "hotel",
-    "objective": "Investigate Hotel, question Station Master, recover Dried Ink Blot, and learn why marker 979 is tied to Record Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Hotel.",
-        "clue": "Wind Through a Crack"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Dried Ink Blot.",
-        "clue": "Dried Ink Blot"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Station Master.",
-        "clue": "7:02"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 979.",
-        "clue": "979"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Back instruction.",
-        "clue": "Back"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S09C09-location",
-        "type": "location",
-        "name": "Hotel",
-        "inspectText": "Hotel looks ordinary until Wind Through a Crack moves through it."
-      },
-      {
-        "id": "S09C09-object",
-        "type": "evidence",
-        "name": "Dried Ink Blot",
-        "inspectText": "Dried Ink Blot is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S09C09-marker",
-        "type": "marker",
-        "name": "Marker 979",
-        "inspectText": "Marker 979 is not the answer. It is the lock."
-      },
-      {
-        "id": "S09C09-sound",
-        "type": "audio_clue",
-        "name": "Wind Through a Crack",
-        "inspectText": "Wind Through a Crack repeats near 7:02."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series09-The-Keeper/chapter09.md",
-      "novel": "generated/novels/Series09-The-Keeper/chapter09.md",
-      "song": "generated/songs/Series09-The-Keeper/song09.md"
     }
   },
   "story": {

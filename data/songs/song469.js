@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "jail"
-    ],
-    "object": [
-      "flint stone",
-      "flintstone"
-    ],
-    "witness": [
-      "drifter"
-    ],
-    "time": [
-      "8:42",
-      "842"
-    ],
-    "marker": [
-      "4007",
-      "marker 4007",
-      "road marker 4007",
-      "mile marker 4007",
-      "mile 4007"
-    ],
-    "direction": [
-      "straight down",
-      "straightdown"
-    ],
-    "sound": [
-      "rope strain",
-      "ropestrain"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S40C01",
-    "puzzleId": "S40C01-marker-lock",
-    "dialogueId": "S40C01-drifter",
-    "locationId": "jail",
-    "objective": "Investigate Jail, question Drifter, recover Flint Stone, and learn why marker 4007 is tied to Cipher Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Jail.",
-        "clue": "Rope Strain"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Flint Stone.",
-        "clue": "Flint Stone"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Drifter.",
-        "clue": "8:42"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4007.",
-        "clue": "4007"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Straight Down instruction.",
-        "clue": "Straight Down"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S40C01-location",
-        "type": "location",
-        "name": "Jail",
-        "inspectText": "Jail looks ordinary until Rope Strain moves through it."
-      },
-      {
-        "id": "S40C01-object",
-        "type": "evidence",
-        "name": "Flint Stone",
-        "inspectText": "Flint Stone is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S40C01-marker",
-        "type": "marker",
-        "name": "Marker 4007",
-        "inspectText": "Marker 4007 is not the answer. It is the lock."
-      },
-      {
-        "id": "S40C01-sound",
-        "type": "audio_clue",
-        "name": "Rope Strain",
-        "inspectText": "Rope Strain repeats near 8:42."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series40-The-Coded-Letter/chapter01.md",
-      "novel": "generated/novels/Series40-The-Coded-Letter/chapter01.md",
-      "song": "generated/songs/Series40-The-Coded-Letter/song01.md"
     }
   },
   "story": {

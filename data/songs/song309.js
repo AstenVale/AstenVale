@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "schoolhouse"
-    ],
-    "object": [
-      "copper fitting",
-      "copperfitting"
-    ],
-    "witness": [
-      "the girl with no shoes",
-      "girl with no shoes",
-      "thegirlwithnoshoes"
-    ],
-    "time": [
-      "8:17",
-      "817"
-    ],
-    "marker": [
-      "2679",
-      "marker 2679",
-      "road marker 2679",
-      "mile marker 2679",
-      "mile 2679"
-    ],
-    "direction": [
-      "forward"
-    ],
-    "sound": [
-      "fog horn",
-      "foghorn"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S26C09",
-    "puzzleId": "S26C09-marker-lock",
-    "dialogueId": "S26C09-the-girl-with-no-shoes",
-    "locationId": "schoolhouse",
-    "objective": "Investigate Schoolhouse, question The Girl with No Shoes, recover Copper Fitting, and learn why marker 2679 is tied to Threshold Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Schoolhouse.",
-        "clue": "Fog Horn"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Copper Fitting.",
-        "clue": "Copper Fitting"
-      },
-      {
-        "step": "interview",
-        "objective": "Question The Girl with No Shoes.",
-        "clue": "8:17"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2679.",
-        "clue": "2679"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Forward instruction.",
-        "clue": "Forward"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S26C09-location",
-        "type": "location",
-        "name": "Schoolhouse",
-        "inspectText": "Schoolhouse looks ordinary until Fog Horn moves through it."
-      },
-      {
-        "id": "S26C09-object",
-        "type": "evidence",
-        "name": "Copper Fitting",
-        "inspectText": "Copper Fitting is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S26C09-marker",
-        "type": "marker",
-        "name": "Marker 2679",
-        "inspectText": "Marker 2679 is not the answer. It is the lock."
-      },
-      {
-        "id": "S26C09-sound",
-        "type": "audio_clue",
-        "name": "Fog Horn",
-        "inspectText": "Fog Horn repeats near 8:17."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series26-The-Red-Door/chapter09.md",
-      "novel": "generated/novels/Series26-The-Red-Door/chapter09.md",
-      "song": "generated/songs/Series26-The-Red-Door/song09.md"
     }
   },
   "story": {

@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "silo row",
-      "silorow"
-    ],
-    "object": [
-      "journal"
-    ],
-    "witness": [
-      "cooper"
-    ],
-    "time": [
-      "6:45",
-      "645"
-    ],
-    "marker": [
-      "4906",
-      "marker 4906",
-      "road marker 4906",
-      "mile marker 4906",
-      "mile 4906"
-    ],
-    "direction": [
-      "off the road",
-      "offtheroad"
-    ],
-    "sound": [
-      "lock click",
-      "lockclick"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S48C12",
-    "puzzleId": "S48C12-marker-lock",
-    "dialogueId": "S48C12-cooper",
-    "locationId": "silo-row",
-    "objective": "Investigate Silo Row, question Cooper, recover Journal, and learn why marker 4906 is tied to Static Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Silo Row.",
-        "clue": "Lock Click"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Journal.",
-        "clue": "Journal"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Cooper.",
-        "clue": "6:45"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4906.",
-        "clue": "4906"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Off the Road instruction.",
-        "clue": "Off the Road"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S48C12-location",
-        "type": "location",
-        "name": "Silo Row",
-        "inspectText": "Silo Row looks ordinary until Lock Click moves through it."
-      },
-      {
-        "id": "S48C12-object",
-        "type": "evidence",
-        "name": "Journal",
-        "inspectText": "Journal is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S48C12-marker",
-        "type": "marker",
-        "name": "Marker 4906",
-        "inspectText": "Marker 4906 is not the answer. It is the lock."
-      },
-      {
-        "id": "S48C12-sound",
-        "type": "audio_clue",
-        "name": "Lock Click",
-        "inspectText": "Lock Click repeats near 6:45."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series48-The-Broken-Signal/chapter12.md",
-      "novel": "generated/novels/Series48-The-Broken-Signal/chapter12.md",
-      "song": "generated/songs/Series48-The-Broken-Signal/song12.md"
     }
   },
   "story": {

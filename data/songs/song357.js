@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "smithy"
-    ],
-    "object": [
-      "ledger page",
-      "ledgerpage"
-    ],
-    "witness": [
-      "chandler"
-    ],
-    "time": [
-      "5:55",
-      "555"
-    ],
-    "marker": [
-      "3079",
-      "marker 3079",
-      "road marker 3079",
-      "mile marker 3079",
-      "mile 3079"
-    ],
-    "direction": [
-      "past the tree line",
-      "pastthetreeline"
-    ],
-    "sound": [
-      "match strike",
-      "matchstrike"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S30C09",
-    "puzzleId": "S30C09-marker-lock",
-    "dialogueId": "S30C09-chandler",
-    "locationId": "smithy",
-    "objective": "Investigate Smithy, question Chandler, recover Ledger Page, and learn why marker 3079 is tied to Manifest Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Smithy.",
-        "clue": "Match Strike"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Ledger Page.",
-        "clue": "Ledger Page"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Chandler.",
-        "clue": "5:55"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3079.",
-        "clue": "3079"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Past the Tree Line instruction.",
-        "clue": "Past the Tree Line"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S30C09-location",
-        "type": "location",
-        "name": "Smithy",
-        "inspectText": "Smithy looks ordinary until Match Strike moves through it."
-      },
-      {
-        "id": "S30C09-object",
-        "type": "evidence",
-        "name": "Ledger Page",
-        "inspectText": "Ledger Page is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S30C09-marker",
-        "type": "marker",
-        "name": "Marker 3079",
-        "inspectText": "Marker 3079 is not the answer. It is the lock."
-      },
-      {
-        "id": "S30C09-sound",
-        "type": "audio_clue",
-        "name": "Match Strike",
-        "inspectText": "Match Strike repeats near 5:55."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series30-The-Last-Train/chapter09.md",
-      "novel": "generated/novels/Series30-The-Last-Train/chapter09.md",
-      "song": "generated/songs/Series30-The-Last-Train/song09.md"
     }
   },
   "story": {

@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "grain mill",
-      "grainmill"
-    ],
-    "object": [
-      "flint stone",
-      "flintstone"
-    ],
-    "witness": [
-      "stranger"
-    ],
-    "time": [
-      "9:08",
-      "908"
-    ],
-    "marker": [
-      "1061",
-      "marker 1061",
-      "road marker 1061",
-      "mile marker 1061",
-      "mile 1061"
-    ],
-    "direction": [
-      "along the creek",
-      "alongthecreek"
-    ],
-    "sound": [
-      "match strike",
-      "matchstrike"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -301,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S10C07",
-    "puzzleId": "S10C07-marker-lock",
-    "dialogueId": "S10C07-stranger",
-    "locationId": "grain-mill",
-    "objective": "Investigate Grain Mill, question Stranger, recover Flint Stone, and learn why marker 1061 is tied to Lost Mile Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Grain Mill.",
-        "clue": "Match Strike"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Flint Stone.",
-        "clue": "Flint Stone"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Stranger.",
-        "clue": "9:08"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1061.",
-        "clue": "1061"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Along the Creek instruction.",
-        "clue": "Along the Creek"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S10C07-location",
-        "type": "location",
-        "name": "Grain Mill",
-        "inspectText": "Grain Mill looks ordinary until Match Strike moves through it."
-      },
-      {
-        "id": "S10C07-object",
-        "type": "evidence",
-        "name": "Flint Stone",
-        "inspectText": "Flint Stone is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S10C07-marker",
-        "type": "marker",
-        "name": "Marker 1061",
-        "inspectText": "Marker 1061 is not the answer. It is the lock."
-      },
-      {
-        "id": "S10C07-sound",
-        "type": "audio_clue",
-        "name": "Match Strike",
-        "inspectText": "Match Strike repeats near 9:08."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series10-The-Forgotten-Road/chapter07.md",
-      "novel": "generated/novels/Series10-The-Forgotten-Road/chapter07.md",
-      "song": "generated/songs/Series10-The-Forgotten-Road/song07.md"
     }
   },
   "story": {

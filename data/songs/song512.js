@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "smithy"
-    ],
-    "object": [
-      "empty tin",
-      "emptytin"
-    ],
-    "witness": [
-      "gravedigger"
-    ],
-    "time": [
-      "3:03",
-      "303"
-    ],
-    "marker": [
-      "4370",
-      "marker 4370",
-      "road marker 4370",
-      "mile marker 4370",
-      "mile 4370"
-    ],
-    "direction": [
-      "north"
-    ],
-    "sound": [
-      "cellar door",
-      "cellardoor"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -299,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S43C08",
-    "puzzleId": "S43C08-marker-lock",
-    "dialogueId": "S43C08-gravedigger",
-    "locationId": "smithy",
-    "objective": "Investigate Smithy, question Gravedigger, recover Empty Tin, and learn why marker 4370 is tied to Identity Vault II.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Smithy.",
-        "clue": "Cellar Door"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Empty Tin.",
-        "clue": "Empty Tin"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Gravedigger.",
-        "clue": "3:03"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4370.",
-        "clue": "4370"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the North instruction.",
-        "clue": "North"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S43C08-location",
-        "type": "location",
-        "name": "Smithy",
-        "inspectText": "Smithy looks ordinary until Cellar Door moves through it."
-      },
-      {
-        "id": "S43C08-object",
-        "type": "evidence",
-        "name": "Empty Tin",
-        "inspectText": "Empty Tin is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S43C08-marker",
-        "type": "marker",
-        "name": "Marker 4370",
-        "inspectText": "Marker 4370 is not the answer. It is the lock."
-      },
-      {
-        "id": "S43C08-sound",
-        "type": "audio_clue",
-        "name": "Cellar Door",
-        "inspectText": "Cellar Door repeats near 3:03."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series43-The-False-Name/chapter08.md",
-      "novel": "generated/novels/Series43-The-False-Name/chapter08.md",
-      "song": "generated/songs/Series43-The-False-Name/song08.md"
     }
   },
   "story": {

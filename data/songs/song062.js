@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "cabin"
-    ],
-    "object": [
-      "signet ring",
-      "signetring"
-    ],
-    "witness": [
-      "cattle driver",
-      "cattledriver"
-    ],
-    "time": [
-      "4:12",
-      "412"
-    ],
-    "marker": [
-      "616",
-      "marker 616",
-      "road marker 616",
-      "mile marker 616",
-      "mile 616"
-    ],
-    "direction": [
-      "up the ridge",
-      "uptheridge"
-    ],
-    "sound": [
-      "thunder"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S06C02",
-    "puzzleId": "S06C02-marker-lock",
-    "dialogueId": "S06C02-cattle-driver",
-    "locationId": "cabin",
-    "objective": "Investigate Cabin, question Cattle Driver, recover Signet Ring, and learn why marker 616 is tied to Below Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Cabin.",
-        "clue": "Thunder"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Signet Ring.",
-        "clue": "Signet Ring"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Cattle Driver.",
-        "clue": "4:12"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 616.",
-        "clue": "616"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Up the Ridge instruction.",
-        "clue": "Up the Ridge"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S06C02-location",
-        "type": "location",
-        "name": "Cabin",
-        "inspectText": "Cabin looks ordinary until Thunder moves through it."
-      },
-      {
-        "id": "S06C02-object",
-        "type": "evidence",
-        "name": "Signet Ring",
-        "inspectText": "Signet Ring is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S06C02-marker",
-        "type": "marker",
-        "name": "Marker 616",
-        "inspectText": "Marker 616 is not the answer. It is the lock."
-      },
-      {
-        "id": "S06C02-sound",
-        "type": "audio_clue",
-        "name": "Thunder",
-        "inspectText": "Thunder repeats near 4:12."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series06-The-Underground/chapter02.md",
-      "novel": "generated/novels/Series06-The-Underground/chapter02.md",
-      "song": "generated/songs/Series06-The-Underground/song02.md"
     }
   },
   "story": {

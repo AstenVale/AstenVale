@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the bluff",
-      "bluff",
-      "thebluff"
-    ],
-    "object": [
-      "canteen"
-    ],
-    "witness": [
-      "census taker",
-      "censustaker"
-    ],
-    "time": [
-      "6:32",
-      "632"
-    ],
-    "marker": [
-      "4816",
-      "marker 4816",
-      "road marker 4816",
-      "mile marker 4816",
-      "mile 4816"
-    ],
-    "direction": [
-      "forward"
-    ],
-    "sound": [
-      "wind in pines",
-      "windinpines"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S48C02",
-    "puzzleId": "S48C02-marker-lock",
-    "dialogueId": "S48C02-census-taker",
-    "locationId": "the-bluff",
-    "objective": "Investigate The Bluff, question Census Taker, recover Canteen, and learn why marker 4816 is tied to Static Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Bluff.",
-        "clue": "Wind in Pines"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Canteen.",
-        "clue": "Canteen"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Census Taker.",
-        "clue": "6:32"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4816.",
-        "clue": "4816"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Forward instruction.",
-        "clue": "Forward"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S48C02-location",
-        "type": "location",
-        "name": "The Bluff",
-        "inspectText": "The Bluff looks ordinary until Wind in Pines moves through it."
-      },
-      {
-        "id": "S48C02-object",
-        "type": "evidence",
-        "name": "Canteen",
-        "inspectText": "Canteen is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S48C02-marker",
-        "type": "marker",
-        "name": "Marker 4816",
-        "inspectText": "Marker 4816 is not the answer. It is the lock."
-      },
-      {
-        "id": "S48C02-sound",
-        "type": "audio_clue",
-        "name": "Wind in Pines",
-        "inspectText": "Wind in Pines repeats near 6:32."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series48-The-Broken-Signal/chapter02.md",
-      "novel": "generated/novels/Series48-The-Broken-Signal/chapter02.md",
-      "song": "generated/songs/Series48-The-Broken-Signal/song02.md"
     }
   },
   "story": {

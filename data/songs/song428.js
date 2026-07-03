@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "schoolhouse"
-    ],
-    "object": [
-      "matchbook"
-    ],
-    "witness": [
-      "land agent",
-      "landagent"
-    ],
-    "time": [
-      "9:44",
-      "944"
-    ],
-    "marker": [
-      "3670",
-      "marker 3670",
-      "road marker 3670",
-      "mile marker 3670",
-      "mile 3670"
-    ],
-    "direction": [
-      "ahead"
-    ],
-    "sound": [
-      "wind through a crack",
-      "windthroughacrack"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -299,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S36C08",
-    "puzzleId": "S36C08-marker-lock",
-    "dialogueId": "S36C08-land-agent",
-    "locationId": "schoolhouse",
-    "objective": "Investigate Schoolhouse, question Land Agent, recover Matchbook, and learn why marker 3670 is tied to Voice Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Schoolhouse.",
-        "clue": "Wind Through a Crack"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Matchbook.",
-        "clue": "Matchbook"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Land Agent.",
-        "clue": "9:44"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3670.",
-        "clue": "3670"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Ahead instruction.",
-        "clue": "Ahead"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S36C08-location",
-        "type": "location",
-        "name": "Schoolhouse",
-        "inspectText": "Schoolhouse looks ordinary until Wind Through a Crack moves through it."
-      },
-      {
-        "id": "S36C08-object",
-        "type": "evidence",
-        "name": "Matchbook",
-        "inspectText": "Matchbook is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S36C08-marker",
-        "type": "marker",
-        "name": "Marker 3670",
-        "inspectText": "Marker 3670 is not the answer. It is the lock."
-      },
-      {
-        "id": "S36C08-sound",
-        "type": "audio_clue",
-        "name": "Wind Through a Crack",
-        "inspectText": "Wind Through a Crack repeats near 9:44."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series36-The-Night-Caller/chapter08.md",
-      "novel": "generated/novels/Series36-The-Night-Caller/chapter08.md",
-      "song": "generated/songs/Series36-The-Night-Caller/song08.md"
     }
   },
   "story": {

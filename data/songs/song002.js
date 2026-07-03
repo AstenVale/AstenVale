@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "pine hollow river",
-      "pinehollowriver"
-    ],
-    "object": [
-      "crow feather",
-      "crowfeather"
-    ],
-    "witness": [
-      "widow"
-    ],
-    "time": [
-      "8:00",
-      "800"
-    ],
-    "marker": [
-      "27",
-      "marker 27",
-      "road marker 27",
-      "mile marker 27",
-      "mile 27"
-    ],
-    "direction": [
-      "west"
-    ],
-    "sound": [
-      "creeeak"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -299,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S01C02",
-    "puzzleId": "S01C02-marker-lock",
-    "dialogueId": "S01C02-widow",
-    "locationId": "pine-hollow-river",
-    "objective": "Investigate Pine Hollow River, question Widow, recover Crow Feather, and learn why marker 27 is tied to Public Archive.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Pine Hollow River.",
-        "clue": "CREEEAK"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Crow Feather.",
-        "clue": "Crow Feather"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Widow.",
-        "clue": "8:00"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 27.",
-        "clue": "27"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the West instruction.",
-        "clue": "West"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S01C02-location",
-        "type": "location",
-        "name": "Pine Hollow River",
-        "inspectText": "Pine Hollow River looks ordinary until CREEEAK moves through it."
-      },
-      {
-        "id": "S01C02-object",
-        "type": "evidence",
-        "name": "Crow Feather",
-        "inspectText": "Crow Feather is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S01C02-marker",
-        "type": "marker",
-        "name": "Marker 27",
-        "inspectText": "Marker 27 is not the answer. It is the lock."
-      },
-      {
-        "id": "S01C02-sound",
-        "type": "audio_clue",
-        "name": "CREEEAK",
-        "inspectText": "CREEEAK repeats near 8:00."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series01-The-Stranger/chapter02.md",
-      "novel": "generated/novels/Series01-The-Stranger/chapter02.md",
-      "song": "generated/songs/Series01-The-Stranger/song02.md"
     }
   },
   "story": {

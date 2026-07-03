@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "ash hollow",
-      "ashhollow"
-    ],
-    "object": [
-      "spool of thread",
-      "spoolofthread"
-    ],
-    "witness": [
-      "apothecary"
-    ],
-    "time": [
-      "8:17",
-      "817"
-    ],
-    "marker": [
-      "2570",
-      "marker 2570",
-      "road marker 2570",
-      "mile marker 2570",
-      "mile 2570"
-    ],
-    "direction": [
-      "east"
-    ],
-    "sound": [
-      "bell toll",
-      "belltoll"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S25C08",
-    "puzzleId": "S25C08-marker-lock",
-    "dialogueId": "S25C08-apothecary",
-    "locationId": "ash-hollow",
-    "objective": "Investigate Ash Hollow, question Apothecary, recover Spool of Thread, and learn why marker 2570 is tied to Resonance Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Ash Hollow.",
-        "clue": "Bell Toll"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Spool of Thread.",
-        "clue": "Spool of Thread"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Apothecary.",
-        "clue": "8:17"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2570.",
-        "clue": "2570"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the East instruction.",
-        "clue": "East"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S25C08-location",
-        "type": "location",
-        "name": "Ash Hollow",
-        "inspectText": "Ash Hollow looks ordinary until Bell Toll moves through it."
-      },
-      {
-        "id": "S25C08-object",
-        "type": "evidence",
-        "name": "Spool of Thread",
-        "inspectText": "Spool of Thread is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S25C08-marker",
-        "type": "marker",
-        "name": "Marker 2570",
-        "inspectText": "Marker 2570 is not the answer. It is the lock."
-      },
-      {
-        "id": "S25C08-sound",
-        "type": "audio_clue",
-        "name": "Bell Toll",
-        "inspectText": "Bell Toll repeats near 8:17."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series25-The-Echo-Chamber/chapter08.md",
-      "novel": "generated/novels/Series25-The-Echo-Chamber/chapter08.md",
-      "song": "generated/songs/Series25-The-Echo-Chamber/song08.md"
     }
   },
   "story": {

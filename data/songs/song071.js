@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "hotel"
-    ],
-    "object": [
-      "telegram"
-    ],
-    "witness": [
-      "judge"
-    ],
-    "time": [
-      "7:48",
-      "748"
-    ],
-    "marker": [
-      "697",
-      "marker 697",
-      "road marker 697",
-      "mile marker 697",
-      "mile 697"
-    ],
-    "direction": [
-      "straight down",
-      "straightdown"
-    ],
-    "sound": [
-      "the silence after",
-      "silence after",
-      "thesilenceafter"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S06C11",
-    "puzzleId": "S06C11-marker-lock",
-    "dialogueId": "S06C11-judge",
-    "locationId": "hotel",
-    "objective": "Investigate Hotel, question Judge, recover Telegram, and learn why marker 697 is tied to Below Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Hotel.",
-        "clue": "The Silence After"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Telegram.",
-        "clue": "Telegram"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Judge.",
-        "clue": "7:48"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 697.",
-        "clue": "697"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Straight Down instruction.",
-        "clue": "Straight Down"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S06C11-location",
-        "type": "location",
-        "name": "Hotel",
-        "inspectText": "Hotel looks ordinary until The Silence After moves through it."
-      },
-      {
-        "id": "S06C11-object",
-        "type": "evidence",
-        "name": "Telegram",
-        "inspectText": "Telegram is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S06C11-marker",
-        "type": "marker",
-        "name": "Marker 697",
-        "inspectText": "Marker 697 is not the answer. It is the lock."
-      },
-      {
-        "id": "S06C11-sound",
-        "type": "audio_clue",
-        "name": "The Silence After",
-        "inspectText": "The Silence After repeats near 7:48."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series06-The-Underground/chapter11.md",
-      "novel": "generated/novels/Series06-The-Underground/chapter11.md",
-      "song": "generated/songs/Series06-The-Underground/song11.md"
     }
   },
   "story": {

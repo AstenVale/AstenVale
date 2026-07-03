@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "water tower",
-      "watertower"
-    ],
-    "object": [
-      "bottle"
-    ],
-    "witness": [
-      "cooper"
-    ],
-    "time": [
-      "4:29",
-      "429"
-    ],
-    "marker": [
-      "4679",
-      "marker 4679",
-      "road marker 4679",
-      "mile marker 4679",
-      "mile 4679"
-    ],
-    "direction": [
-      "over"
-    ],
-    "sound": [
-      "cannon bolt",
-      "cannonbolt"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -310,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S46C09",
-    "puzzleId": "S46C09-marker-lock",
-    "dialogueId": "S46C09-cooper",
-    "locationId": "water-tower",
-    "objective": "Investigate Water Tower, question Cooper, recover Bottle, and learn why marker 4679 is tied to Weather Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Water Tower.",
-        "clue": "Cannon Bolt"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Bottle.",
-        "clue": "Bottle"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Cooper.",
-        "clue": "4:29"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4679.",
-        "clue": "4679"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Over instruction.",
-        "clue": "Over"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S46C09-location",
-        "type": "location",
-        "name": "Water Tower",
-        "inspectText": "Water Tower looks ordinary until Cannon Bolt moves through it."
-      },
-      {
-        "id": "S46C09-object",
-        "type": "evidence",
-        "name": "Bottle",
-        "inspectText": "Bottle is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S46C09-marker",
-        "type": "marker",
-        "name": "Marker 4679",
-        "inspectText": "Marker 4679 is not the answer. It is the lock."
-      },
-      {
-        "id": "S46C09-sound",
-        "type": "audio_clue",
-        "name": "Cannon Bolt",
-        "inspectText": "Cannon Bolt repeats near 4:29."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series46-The-Storm-Season/chapter09.md",
-      "novel": "generated/novels/Series46-The-Storm-Season/chapter09.md",
-      "song": "generated/songs/Series46-The-Storm-Season/song09.md"
     }
   },
   "story": {

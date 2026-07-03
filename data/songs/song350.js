@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "jail"
-    ],
-    "object": [
-      "straight razor",
-      "straightrazor"
-    ],
-    "witness": [
-      "typesetter"
-    ],
-    "time": [
-      "10:19",
-      "1019"
-    ],
-    "marker": [
-      "3016",
-      "marker 3016",
-      "road marker 3016",
-      "mile marker 3016",
-      "mile 3016"
-    ],
-    "direction": [
-      "west"
-    ],
-    "sound": [
-      "pages turning",
-      "pagesturning"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -309,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S30C02",
-    "puzzleId": "S30C02-marker-lock",
-    "dialogueId": "S30C02-typesetter",
-    "locationId": "jail",
-    "objective": "Investigate Jail, question Typesetter, recover Straight Razor, and learn why marker 3016 is tied to Manifest Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Jail.",
-        "clue": "Pages Turning"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Straight Razor.",
-        "clue": "Straight Razor"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Typesetter.",
-        "clue": "10:19"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3016.",
-        "clue": "3016"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the West instruction.",
-        "clue": "West"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S30C02-location",
-        "type": "location",
-        "name": "Jail",
-        "inspectText": "Jail looks ordinary until Pages Turning moves through it."
-      },
-      {
-        "id": "S30C02-object",
-        "type": "evidence",
-        "name": "Straight Razor",
-        "inspectText": "Straight Razor is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S30C02-marker",
-        "type": "marker",
-        "name": "Marker 3016",
-        "inspectText": "Marker 3016 is not the answer. It is the lock."
-      },
-      {
-        "id": "S30C02-sound",
-        "type": "audio_clue",
-        "name": "Pages Turning",
-        "inspectText": "Pages Turning repeats near 10:19."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series30-The-Last-Train/chapter02.md",
-      "novel": "generated/novels/Series30-The-Last-Train/chapter02.md",
-      "song": "generated/songs/Series30-The-Last-Train/song02.md"
     }
   },
   "story": {

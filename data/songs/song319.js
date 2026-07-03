@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "birch stand",
-      "birchstand"
-    ],
-    "object": [
-      "compass"
-    ],
-    "witness": [
-      "furrier"
-    ],
-    "time": [
-      "1:11",
-      "111"
-    ],
-    "marker": [
-      "2761",
-      "marker 2761",
-      "road marker 2761",
-      "mile marker 2761",
-      "mile 2761"
-    ],
-    "direction": [
-      "under"
-    ],
-    "sound": [
-      "cellar door",
-      "cellardoor"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -299,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S27C07",
-    "puzzleId": "S27C07-marker-lock",
-    "dialogueId": "S27C07-furrier",
-    "locationId": "birch-stand",
-    "objective": "Investigate Birch Stand, question Furrier, recover Compass, and learn why marker 2761 is tied to Expanse Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Birch Stand.",
-        "clue": "Cellar Door"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Compass.",
-        "clue": "Compass"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Furrier.",
-        "clue": "1:11"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2761.",
-        "clue": "2761"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Under instruction.",
-        "clue": "Under"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S27C07-location",
-        "type": "location",
-        "name": "Birch Stand",
-        "inspectText": "Birch Stand looks ordinary until Cellar Door moves through it."
-      },
-      {
-        "id": "S27C07-object",
-        "type": "evidence",
-        "name": "Compass",
-        "inspectText": "Compass is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S27C07-marker",
-        "type": "marker",
-        "name": "Marker 2761",
-        "inspectText": "Marker 2761 is not the answer. It is the lock."
-      },
-      {
-        "id": "S27C07-sound",
-        "type": "audio_clue",
-        "name": "Cellar Door",
-        "inspectText": "Cellar Door repeats near 1:11."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series27-The-Salt-Flats/chapter07.md",
-      "novel": "generated/novels/Series27-The-Salt-Flats/chapter07.md",
-      "song": "generated/songs/Series27-The-Salt-Flats/song07.md"
     }
   },
   "story": {

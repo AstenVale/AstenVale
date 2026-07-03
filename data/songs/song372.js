@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "watchmaker's shop",
-      "watchmaker'sshop"
-    ],
-    "object": [
-      "wire coil",
-      "wirecoil"
-    ],
-    "witness": [
-      "sheriff"
-    ],
-    "time": [
-      "1:11",
-      "111"
-    ],
-    "marker": [
-      "3206",
-      "marker 3206",
-      "road marker 3206",
-      "mile marker 3206",
-      "mile 3206"
-    ],
-    "direction": [
-      "north"
-    ],
-    "sound": [
-      "chains"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -309,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S31C12",
-    "puzzleId": "S31C12-marker-lock",
-    "dialogueId": "S31C12-sheriff",
-    "locationId": "watchmaker-s-shop",
-    "objective": "Investigate Watchmaker's Shop, question Sheriff, recover Wire Coil, and learn why marker 3206 is tied to Pattern Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Watchmaker's Shop.",
-        "clue": "Chains"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Wire Coil.",
-        "clue": "Wire Coil"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Sheriff.",
-        "clue": "1:11"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3206.",
-        "clue": "3206"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the North instruction.",
-        "clue": "North"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S31C12-location",
-        "type": "location",
-        "name": "Watchmaker's Shop",
-        "inspectText": "Watchmaker's Shop looks ordinary until Chains moves through it."
-      },
-      {
-        "id": "S31C12-object",
-        "type": "evidence",
-        "name": "Wire Coil",
-        "inspectText": "Wire Coil is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S31C12-marker",
-        "type": "marker",
-        "name": "Marker 3206",
-        "inspectText": "Marker 3206 is not the answer. It is the lock."
-      },
-      {
-        "id": "S31C12-sound",
-        "type": "audio_clue",
-        "name": "Chains",
-        "inspectText": "Chains repeats near 1:11."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series31-The-Cipher-Garden/chapter12.md",
-      "novel": "generated/novels/Series31-The-Cipher-Garden/chapter12.md",
-      "song": "generated/songs/Series31-The-Cipher-Garden/song12.md"
     }
   },
   "story": {

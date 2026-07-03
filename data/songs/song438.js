@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "chandler's row",
-      "chandler'srow"
-    ],
-    "object": [
-      "dried ink blot",
-      "driedinkblot"
-    ],
-    "witness": [
-      "blacksmith"
-    ],
-    "time": [
-      "8:00",
-      "800"
-    ],
-    "marker": [
-      "3752",
-      "marker 3752",
-      "road marker 3752",
-      "mile marker 3752",
-      "mile 3752"
-    ],
-    "direction": [
-      "back the way you came",
-      "backthewayyoucame"
-    ],
-    "sound": [
-      "telegraph click",
-      "telegraphclick"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -312,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S37C06",
-    "puzzleId": "S37C06-marker-lock",
-    "dialogueId": "S37C06-blacksmith",
-    "locationId": "chandler-s-row",
-    "objective": "Investigate Chandler's Row, question Blacksmith, recover Dried Ink Blot, and learn why marker 3752 is tied to Outpost Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Chandler's Row.",
-        "clue": "Telegraph Click"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Dried Ink Blot.",
-        "clue": "Dried Ink Blot"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Blacksmith.",
-        "clue": "8:00"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3752.",
-        "clue": "3752"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Back the Way You Came instruction.",
-        "clue": "Back the Way You Came"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S37C06-location",
-        "type": "location",
-        "name": "Chandler's Row",
-        "inspectText": "Chandler's Row looks ordinary until Telegraph Click moves through it."
-      },
-      {
-        "id": "S37C06-object",
-        "type": "evidence",
-        "name": "Dried Ink Blot",
-        "inspectText": "Dried Ink Blot is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S37C06-marker",
-        "type": "marker",
-        "name": "Marker 3752",
-        "inspectText": "Marker 3752 is not the answer. It is the lock."
-      },
-      {
-        "id": "S37C06-sound",
-        "type": "audio_clue",
-        "name": "Telegraph Click",
-        "inspectText": "Telegraph Click repeats near 8:00."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series37-The-Abandoned-Post/chapter06.md",
-      "novel": "generated/novels/Series37-The-Abandoned-Post/chapter06.md",
-      "song": "generated/songs/Series37-The-Abandoned-Post/song06.md"
     }
   },
   "story": {

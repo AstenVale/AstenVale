@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "rope walk",
-      "ropewalk"
-    ],
-    "object": [
-      "coin"
-    ],
-    "witness": [
-      "harness maker",
-      "harnessmaker"
-    ],
-    "time": [
-      "2:38",
-      "238"
-    ],
-    "marker": [
-      "4979",
-      "marker 4979",
-      "road marker 4979",
-      "mile marker 4979",
-      "mile 4979"
-    ],
-    "direction": [
-      "toward the river",
-      "towardtheriver"
-    ],
-    "sound": [
-      "lid of a tin",
-      "lidofatin"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S49C09",
-    "puzzleId": "S49C09-marker-lock",
-    "dialogueId": "S49C09-harness-maker",
-    "locationId": "rope-walk",
-    "objective": "Investigate Rope Walk, question Harness Maker, recover Coin, and learn why marker 4979 is tied to Testimony Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Rope Walk.",
-        "clue": "Lid of a Tin"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Coin.",
-        "clue": "Coin"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Harness Maker.",
-        "clue": "2:38"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4979.",
-        "clue": "4979"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Toward the River instruction.",
-        "clue": "Toward the River"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S49C09-location",
-        "type": "location",
-        "name": "Rope Walk",
-        "inspectText": "Rope Walk looks ordinary until Lid of a Tin moves through it."
-      },
-      {
-        "id": "S49C09-object",
-        "type": "evidence",
-        "name": "Coin",
-        "inspectText": "Coin is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S49C09-marker",
-        "type": "marker",
-        "name": "Marker 4979",
-        "inspectText": "Marker 4979 is not the answer. It is the lock."
-      },
-      {
-        "id": "S49C09-sound",
-        "type": "audio_clue",
-        "name": "Lid of a Tin",
-        "inspectText": "Lid of a Tin repeats near 2:38."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series49-The-Final-Witness/chapter09.md",
-      "novel": "generated/novels/Series49-The-Final-Witness/chapter09.md",
-      "song": "generated/songs/Series49-The-Final-Witness/song09.md"
     }
   },
   "story": {

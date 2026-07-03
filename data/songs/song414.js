@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the ravine",
-      "ravine",
-      "theravine"
-    ],
-    "object": [
-      "brooch"
-    ],
-    "witness": [
-      "quarry foreman",
-      "quarryforeman"
-    ],
-    "time": [
-      "12:44",
-      "1244"
-    ],
-    "marker": [
-      "3552",
-      "marker 3552",
-      "road marker 3552",
-      "mile marker 3552",
-      "mile 3552"
-    ],
-    "direction": [
-      "toward"
-    ],
-    "sound": [
-      "footsteps"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -310,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S35C06",
-    "puzzleId": "S35C06-marker-lock",
-    "dialogueId": "S35C06-quarry-foreman",
-    "locationId": "the-ravine",
-    "objective": "Investigate The Ravine, question Quarry Foreman, recover Brooch, and learn why marker 3552 is tied to Collection Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Ravine.",
-        "clue": "Footsteps"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Brooch.",
-        "clue": "Brooch"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Quarry Foreman.",
-        "clue": "12:44"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3552.",
-        "clue": "3552"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Toward instruction.",
-        "clue": "Toward"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S35C06-location",
-        "type": "location",
-        "name": "The Ravine",
-        "inspectText": "The Ravine looks ordinary until Footsteps moves through it."
-      },
-      {
-        "id": "S35C06-object",
-        "type": "evidence",
-        "name": "Brooch",
-        "inspectText": "Brooch is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S35C06-marker",
-        "type": "marker",
-        "name": "Marker 3552",
-        "inspectText": "Marker 3552 is not the answer. It is the lock."
-      },
-      {
-        "id": "S35C06-sound",
-        "type": "audio_clue",
-        "name": "Footsteps",
-        "inspectText": "Footsteps repeats near 12:44."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series35-The-Archive-Keeper/chapter06.md",
-      "novel": "generated/novels/Series35-The-Archive-Keeper/chapter06.md",
-      "song": "generated/songs/Series35-The-Archive-Keeper/song06.md"
     }
   },
   "story": {

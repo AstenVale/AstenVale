@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "barn"
-    ],
-    "object": [
-      "lock of hair",
-      "lockofhair"
-    ],
-    "witness": [
-      "fence mender",
-      "fencemender"
-    ],
-    "time": [
-      "11:17",
-      "1117"
-    ],
-    "marker": [
-      "3488",
-      "marker 3488",
-      "road marker 3488",
-      "mile marker 3488",
-      "mile 3488"
-    ],
-    "direction": [
-      "south"
-    ],
-    "sound": [
-      "cannon bolt",
-      "cannonbolt"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S34C10",
-    "puzzleId": "S34C10-marker-lock",
-    "dialogueId": "S34C10-fence-mender",
-    "locationId": "barn",
-    "objective": "Investigate Barn, question Fence Mender, recover Lock of Hair, and learn why marker 3488 is tied to Clinical Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Barn.",
-        "clue": "Cannon Bolt"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Lock of Hair.",
-        "clue": "Lock of Hair"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Fence Mender.",
-        "clue": "11:17"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3488.",
-        "clue": "3488"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the South instruction.",
-        "clue": "South"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S34C10-location",
-        "type": "location",
-        "name": "Barn",
-        "inspectText": "Barn looks ordinary until Cannon Bolt moves through it."
-      },
-      {
-        "id": "S34C10-object",
-        "type": "evidence",
-        "name": "Lock of Hair",
-        "inspectText": "Lock of Hair is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S34C10-marker",
-        "type": "marker",
-        "name": "Marker 3488",
-        "inspectText": "Marker 3488 is not the answer. It is the lock."
-      },
-      {
-        "id": "S34C10-sound",
-        "type": "audio_clue",
-        "name": "Cannon Bolt",
-        "inspectText": "Cannon Bolt repeats near 11:17."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series34-The-Locked-Ward/chapter10.md",
-      "novel": "generated/novels/Series34-The-Locked-Ward/chapter10.md",
-      "song": "generated/songs/Series34-The-Locked-Ward/song10.md"
     }
   },
   "story": {

@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "potter's field",
-      "potter'sfield"
-    ],
-    "object": [
-      "watch"
-    ],
-    "witness": [
-      "lock keeper",
-      "lockkeeper"
-    ],
-    "time": [
-      "9:08",
-      "908"
-    ],
-    "marker": [
-      "1288",
-      "marker 1288",
-      "road marker 1288",
-      "mile marker 1288",
-      "mile 1288"
-    ],
-    "direction": [
-      "south"
-    ],
-    "sound": [
-      "tree fall",
-      "treefall"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S12C10",
-    "puzzleId": "S12C10-marker-lock",
-    "dialogueId": "S12C10-lock-keeper",
-    "locationId": "potter-s-field",
-    "objective": "Investigate Potter's Field, question Lock Keeper, recover Watch, and learn why marker 1288 is tied to Estate Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Potter's Field.",
-        "clue": "Tree Fall"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Watch.",
-        "clue": "Watch"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Lock Keeper.",
-        "clue": "9:08"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1288.",
-        "clue": "1288"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the South instruction.",
-        "clue": "South"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S12C10-location",
-        "type": "location",
-        "name": "Potter's Field",
-        "inspectText": "Potter's Field looks ordinary until Tree Fall moves through it."
-      },
-      {
-        "id": "S12C10-object",
-        "type": "evidence",
-        "name": "Watch",
-        "inspectText": "Watch is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S12C10-marker",
-        "type": "marker",
-        "name": "Marker 1288",
-        "inspectText": "Marker 1288 is not the answer. It is the lock."
-      },
-      {
-        "id": "S12C10-sound",
-        "type": "audio_clue",
-        "name": "Tree Fall",
-        "inspectText": "Tree Fall repeats near 9:08."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series12-The-Inheritance/chapter10.md",
-      "novel": "generated/novels/Series12-The-Inheritance/chapter10.md",
-      "song": "generated/songs/Series12-The-Inheritance/song10.md"
     }
   },
   "story": {

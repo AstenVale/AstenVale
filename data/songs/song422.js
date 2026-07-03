@@ -61,39 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "ice house",
-      "icehouse"
-    ],
-    "object": [
-      "numbered disk",
-      "numbereddisk"
-    ],
-    "witness": [
-      "bone collector",
-      "bonecollector"
-    ],
-    "time": [
-      "9:27",
-      "927"
-    ],
-    "marker": [
-      "3616",
-      "marker 3616",
-      "road marker 3616",
-      "mile marker 3616",
-      "mile 3616"
-    ],
-    "direction": [
-      "into the dark",
-      "intothedark"
-    ],
-    "sound": [
-      "water drip",
-      "waterdrip"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -302,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S36C02",
-    "puzzleId": "S36C02-marker-lock",
-    "dialogueId": "S36C02-bone-collector",
-    "locationId": "ice-house",
-    "objective": "Investigate Ice House, question Bone Collector, recover Numbered Disk, and learn why marker 3616 is tied to Voice Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Ice House.",
-        "clue": "Water Drip"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Numbered Disk.",
-        "clue": "Numbered Disk"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Bone Collector.",
-        "clue": "9:27"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3616.",
-        "clue": "3616"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Into the Dark instruction.",
-        "clue": "Into the Dark"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S36C02-location",
-        "type": "location",
-        "name": "Ice House",
-        "inspectText": "Ice House looks ordinary until Water Drip moves through it."
-      },
-      {
-        "id": "S36C02-object",
-        "type": "evidence",
-        "name": "Numbered Disk",
-        "inspectText": "Numbered Disk is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S36C02-marker",
-        "type": "marker",
-        "name": "Marker 3616",
-        "inspectText": "Marker 3616 is not the answer. It is the lock."
-      },
-      {
-        "id": "S36C02-sound",
-        "type": "audio_clue",
-        "name": "Water Drip",
-        "inspectText": "Water Drip repeats near 9:27."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series36-The-Night-Caller/chapter02.md",
-      "novel": "generated/novels/Series36-The-Night-Caller/chapter02.md",
-      "song": "generated/songs/Series36-The-Night-Caller/song02.md"
     }
   },
   "story": {

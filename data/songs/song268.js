@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "sheep fold",
-      "sheepfold"
-    ],
-    "object": [
-      "journal"
-    ],
-    "witness": [
-      "circuit rider",
-      "circuitrider"
-    ],
-    "time": [
-      "6:45",
-      "645"
-    ],
-    "marker": [
-      "2334",
-      "marker 2334",
-      "road marker 2334",
-      "mile marker 2334",
-      "mile 2334"
-    ],
-    "direction": [
-      "below"
-    ],
-    "sound": [
-      "dry grass",
-      "drygrass"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S23C04",
-    "puzzleId": "S23C04-marker-lock",
-    "dialogueId": "S23C04-circuit-rider",
-    "locationId": "sheep-fold",
-    "objective": "Investigate Sheep Fold, question Circuit Rider, recover Journal, and learn why marker 2334 is tied to Document Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Sheep Fold.",
-        "clue": "Dry Grass"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Journal.",
-        "clue": "Journal"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Circuit Rider.",
-        "clue": "6:45"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2334.",
-        "clue": "2334"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Below instruction.",
-        "clue": "Below"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S23C04-location",
-        "type": "location",
-        "name": "Sheep Fold",
-        "inspectText": "Sheep Fold looks ordinary until Dry Grass moves through it."
-      },
-      {
-        "id": "S23C04-object",
-        "type": "evidence",
-        "name": "Journal",
-        "inspectText": "Journal is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S23C04-marker",
-        "type": "marker",
-        "name": "Marker 2334",
-        "inspectText": "Marker 2334 is not the answer. It is the lock."
-      },
-      {
-        "id": "S23C04-sound",
-        "type": "audio_clue",
-        "name": "Dry Grass",
-        "inspectText": "Dry Grass repeats near 6:45."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series23-The-Paper-Trail/chapter04.md",
-      "novel": "generated/novels/Series23-The-Paper-Trail/chapter04.md",
-      "song": "generated/songs/Series23-The-Paper-Trail/song04.md"
     }
   },
   "story": {

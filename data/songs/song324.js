@@ -61,39 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the narrow road",
-      "narrow road",
-      "thenarrowroad"
-    ],
-    "object": [
-      "ledger page",
-      "ledgerpage"
-    ],
-    "witness": [
-      "peddler"
-    ],
-    "time": [
-      "10:47",
-      "1047"
-    ],
-    "marker": [
-      "2806",
-      "marker 2806",
-      "road marker 2806",
-      "mile marker 2806",
-      "mile 2806"
-    ],
-    "direction": [
-      "along the creek",
-      "alongthecreek"
-    ],
-    "sound": [
-      "axe on wood",
-      "axeonwood"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -312,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S27C12",
-    "puzzleId": "S27C12-marker-lock",
-    "dialogueId": "S27C12-peddler",
-    "locationId": "the-narrow-road",
-    "objective": "Investigate The Narrow Road, question Peddler, recover Ledger Page, and learn why marker 2806 is tied to Expanse Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Narrow Road.",
-        "clue": "Axe on Wood"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Ledger Page.",
-        "clue": "Ledger Page"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Peddler.",
-        "clue": "10:47"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2806.",
-        "clue": "2806"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Along the Creek instruction.",
-        "clue": "Along the Creek"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S27C12-location",
-        "type": "location",
-        "name": "The Narrow Road",
-        "inspectText": "The Narrow Road looks ordinary until Axe on Wood moves through it."
-      },
-      {
-        "id": "S27C12-object",
-        "type": "evidence",
-        "name": "Ledger Page",
-        "inspectText": "Ledger Page is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S27C12-marker",
-        "type": "marker",
-        "name": "Marker 2806",
-        "inspectText": "Marker 2806 is not the answer. It is the lock."
-      },
-      {
-        "id": "S27C12-sound",
-        "type": "audio_clue",
-        "name": "Axe on Wood",
-        "inspectText": "Axe on Wood repeats near 10:47."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series27-The-Salt-Flats/chapter12.md",
-      "novel": "generated/novels/Series27-The-Salt-Flats/chapter12.md",
-      "song": "generated/songs/Series27-The-Salt-Flats/song12.md"
     }
   },
   "story": {

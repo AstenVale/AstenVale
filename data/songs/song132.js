@@ -61,39 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "south fork",
-      "southfork"
-    ],
-    "object": [
-      "wax tablet",
-      "waxtablet"
-    ],
-    "witness": [
-      "cider presser",
-      "ciderpresser"
-    ],
-    "time": [
-      "3:30",
-      "330"
-    ],
-    "marker": [
-      "1206",
-      "marker 1206",
-      "road marker 1206",
-      "mile marker 1206",
-      "mile 1206"
-    ],
-    "direction": [
-      "along the creek",
-      "alongthecreek"
-    ],
-    "sound": [
-      "horse hooves",
-      "horsehooves"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -313,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S11C12",
-    "puzzleId": "S11C12-marker-lock",
-    "dialogueId": "S11C12-cider-presser",
-    "locationId": "south-fork",
-    "objective": "Investigate South Fork, question Cider Presser, recover Wax Tablet, and learn why marker 1206 is tied to Survey Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter South Fork.",
-        "clue": "Horse Hooves"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Wax Tablet.",
-        "clue": "Wax Tablet"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Cider Presser.",
-        "clue": "3:30"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1206.",
-        "clue": "1206"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Along the Creek instruction.",
-        "clue": "Along the Creek"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S11C12-location",
-        "type": "location",
-        "name": "South Fork",
-        "inspectText": "South Fork looks ordinary until Horse Hooves moves through it."
-      },
-      {
-        "id": "S11C12-object",
-        "type": "evidence",
-        "name": "Wax Tablet",
-        "inspectText": "Wax Tablet is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S11C12-marker",
-        "type": "marker",
-        "name": "Marker 1206",
-        "inspectText": "Marker 1206 is not the answer. It is the lock."
-      },
-      {
-        "id": "S11C12-sound",
-        "type": "audio_clue",
-        "name": "Horse Hooves",
-        "inspectText": "Horse Hooves repeats near 3:30."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series11-The-Map-Maker/chapter12.md",
-      "novel": "generated/novels/Series11-The-Map-Maker/chapter12.md",
-      "song": "generated/songs/Series11-The-Map-Maker/song12.md"
     }
   },
   "story": {

@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "east field",
-      "eastfield"
-    ],
-    "object": [
-      "dried flower",
-      "driedflower"
-    ],
-    "witness": [
-      "night watchman",
-      "nightwatchman"
-    ],
-    "time": [
-      "11:29",
-      "1129"
-    ],
-    "marker": [
-      "3425",
-      "marker 3425",
-      "road marker 3425",
-      "mile marker 3425",
-      "mile 3425"
-    ],
-    "direction": [
-      "back"
-    ],
-    "sound": [
-      "water drip",
-      "waterdrip"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -301,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S34C03",
-    "puzzleId": "S34C03-marker-lock",
-    "dialogueId": "S34C03-night-watchman",
-    "locationId": "east-field",
-    "objective": "Investigate East Field, question Night Watchman, recover Dried Flower, and learn why marker 3425 is tied to Clinical Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter East Field.",
-        "clue": "Water Drip"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Dried Flower.",
-        "clue": "Dried Flower"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Night Watchman.",
-        "clue": "11:29"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3425.",
-        "clue": "3425"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Back instruction.",
-        "clue": "Back"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S34C03-location",
-        "type": "location",
-        "name": "East Field",
-        "inspectText": "East Field looks ordinary until Water Drip moves through it."
-      },
-      {
-        "id": "S34C03-object",
-        "type": "evidence",
-        "name": "Dried Flower",
-        "inspectText": "Dried Flower is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S34C03-marker",
-        "type": "marker",
-        "name": "Marker 3425",
-        "inspectText": "Marker 3425 is not the answer. It is the lock."
-      },
-      {
-        "id": "S34C03-sound",
-        "type": "audio_clue",
-        "name": "Water Drip",
-        "inspectText": "Water Drip repeats near 11:29."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series34-The-Locked-Ward/chapter03.md",
-      "novel": "generated/novels/Series34-The-Locked-Ward/chapter03.md",
-      "song": "generated/songs/Series34-The-Locked-Ward/song03.md"
     }
   },
   "story": {

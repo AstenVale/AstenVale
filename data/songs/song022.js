@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "old house",
-      "oldhouse"
-    ],
-    "object": [
-      "key"
-    ],
-    "witness": [
-      "ghost child",
-      "ghostchild"
-    ],
-    "time": [
-      "3:13",
-      "313"
-    ],
-    "marker": [
-      "209",
-      "marker 209",
-      "road marker 209",
-      "mile marker 209",
-      "mile 209"
-    ],
-    "direction": [
-      "home"
-    ],
-    "sound": [
-      "door creak",
-      "doorcreak"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S02C10",
-    "puzzleId": "S02C10-marker-lock",
-    "dialogueId": "S02C10-ghost-child",
-    "locationId": "old-house",
-    "objective": "Investigate Old House, question Ghost Child, recover Key, and learn why marker 209 is tied to Personal Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Old House.",
-        "clue": "Door Creak"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Key.",
-        "clue": "Key"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Ghost Child.",
-        "clue": "3:13"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 209.",
-        "clue": "209"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Home instruction.",
-        "clue": "Home"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S02C10-location",
-        "type": "location",
-        "name": "Old House",
-        "inspectText": "Old House looks ordinary until Door Creak moves through it."
-      },
-      {
-        "id": "S02C10-object",
-        "type": "evidence",
-        "name": "Key",
-        "inspectText": "Key is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S02C10-marker",
-        "type": "marker",
-        "name": "Marker 209",
-        "inspectText": "Marker 209 is not the answer. It is the lock."
-      },
-      {
-        "id": "S02C10-sound",
-        "type": "audio_clue",
-        "name": "Door Creak",
-        "inspectText": "Door Creak repeats near 3:13."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series02-The-Before/chapter10.md",
-      "novel": "generated/novels/Series02-The-Before/chapter10.md",
-      "song": "generated/songs/Series02-The-Before/song10.md"
     }
   },
   "story": {

@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "millpond"
-    ],
-    "object": [
-      "tin star",
-      "tinstar"
-    ],
-    "witness": [
-      "furrier"
-    ],
-    "time": [
-      "8:06",
-      "806"
-    ],
-    "marker": [
-      "2670",
-      "marker 2670",
-      "road marker 2670",
-      "mile marker 2670",
-      "mile 2670"
-    ],
-    "direction": [
-      "out of sight",
-      "outofsight"
-    ],
-    "sound": [
-      "night insects",
-      "nightinsects"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -310,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S26C08",
-    "puzzleId": "S26C08-marker-lock",
-    "dialogueId": "S26C08-furrier",
-    "locationId": "millpond",
-    "objective": "Investigate Millpond, question Furrier, recover Tin Star, and learn why marker 2670 is tied to Threshold Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Millpond.",
-        "clue": "Night Insects"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Tin Star.",
-        "clue": "Tin Star"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Furrier.",
-        "clue": "8:06"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2670.",
-        "clue": "2670"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Out of Sight instruction.",
-        "clue": "Out of Sight"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S26C08-location",
-        "type": "location",
-        "name": "Millpond",
-        "inspectText": "Millpond looks ordinary until Night Insects moves through it."
-      },
-      {
-        "id": "S26C08-object",
-        "type": "evidence",
-        "name": "Tin Star",
-        "inspectText": "Tin Star is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S26C08-marker",
-        "type": "marker",
-        "name": "Marker 2670",
-        "inspectText": "Marker 2670 is not the answer. It is the lock."
-      },
-      {
-        "id": "S26C08-sound",
-        "type": "audio_clue",
-        "name": "Night Insects",
-        "inspectText": "Night Insects repeats near 8:06."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series26-The-Red-Door/chapter08.md",
-      "novel": "generated/novels/Series26-The-Red-Door/chapter08.md",
-      "song": "generated/songs/Series26-The-Red-Door/song08.md"
     }
   },
   "story": {

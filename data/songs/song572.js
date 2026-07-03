@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "cemetery"
-    ],
-    "object": [
-      "inkwell"
-    ],
-    "witness": [
-      "postman"
-    ],
-    "time": [
-      "9:55",
-      "955"
-    ],
-    "marker": [
-      "4870",
-      "marker 4870",
-      "road marker 4870",
-      "mile marker 4870",
-      "mile 4870"
-    ],
-    "direction": [
-      "further in",
-      "furtherin"
-    ],
-    "sound": [
-      "cellar stairs",
-      "cellarstairs"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -309,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S48C08",
-    "puzzleId": "S48C08-marker-lock",
-    "dialogueId": "S48C08-postman",
-    "locationId": "cemetery",
-    "objective": "Investigate Cemetery, question Postman, recover Inkwell, and learn why marker 4870 is tied to Static Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Cemetery.",
-        "clue": "Cellar Stairs"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Inkwell.",
-        "clue": "Inkwell"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Postman.",
-        "clue": "9:55"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4870.",
-        "clue": "4870"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Further In instruction.",
-        "clue": "Further In"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S48C08-location",
-        "type": "location",
-        "name": "Cemetery",
-        "inspectText": "Cemetery looks ordinary until Cellar Stairs moves through it."
-      },
-      {
-        "id": "S48C08-object",
-        "type": "evidence",
-        "name": "Inkwell",
-        "inspectText": "Inkwell is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S48C08-marker",
-        "type": "marker",
-        "name": "Marker 4870",
-        "inspectText": "Marker 4870 is not the answer. It is the lock."
-      },
-      {
-        "id": "S48C08-sound",
-        "type": "audio_clue",
-        "name": "Cellar Stairs",
-        "inspectText": "Cellar Stairs repeats near 9:55."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series48-The-Broken-Signal/chapter08.md",
-      "novel": "generated/novels/Series48-The-Broken-Signal/chapter08.md",
-      "song": "generated/songs/Series48-The-Broken-Signal/song08.md"
     }
   },
   "story": {

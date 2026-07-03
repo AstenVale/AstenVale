@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "harness shop",
-      "harnessshop"
-    ],
-    "object": [
-      "spool of thread",
-      "spoolofthread"
-    ],
-    "witness": [
-      "wool sorter",
-      "woolsorter"
-    ],
-    "time": [
-      "2:47",
-      "247"
-    ],
-    "marker": [
-      "1997",
-      "marker 1997",
-      "road marker 1997",
-      "mile marker 1997",
-      "mile 1997"
-    ],
-    "direction": [
-      "sideways"
-    ],
-    "sound": [
-      "lantern flicker",
-      "lanternflicker"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -301,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S19C11",
-    "puzzleId": "S19C11-marker-lock",
-    "dialogueId": "S19C11-wool-sorter",
-    "locationId": "harness-shop",
-    "objective": "Investigate Harness Shop, question Wool Sorter, recover Spool of Thread, and learn why marker 1997 is tied to Crossing Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Harness Shop.",
-        "clue": "Lantern Flicker"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Spool of Thread.",
-        "clue": "Spool of Thread"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Wool Sorter.",
-        "clue": "2:47"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1997.",
-        "clue": "1997"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Sideways instruction.",
-        "clue": "Sideways"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S19C11-location",
-        "type": "location",
-        "name": "Harness Shop",
-        "inspectText": "Harness Shop looks ordinary until Lantern Flicker moves through it."
-      },
-      {
-        "id": "S19C11-object",
-        "type": "evidence",
-        "name": "Spool of Thread",
-        "inspectText": "Spool of Thread is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S19C11-marker",
-        "type": "marker",
-        "name": "Marker 1997",
-        "inspectText": "Marker 1997 is not the answer. It is the lock."
-      },
-      {
-        "id": "S19C11-sound",
-        "type": "audio_clue",
-        "name": "Lantern Flicker",
-        "inspectText": "Lantern Flicker repeats near 2:47."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series19-The-Bridge-Burner/chapter11.md",
-      "novel": "generated/novels/Series19-The-Bridge-Burner/chapter11.md",
-      "song": "generated/songs/Series19-The-Bridge-Burner/song11.md"
     }
   },
   "story": {

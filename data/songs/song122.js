@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "crossroads"
-    ],
-    "object": [
-      "bullet casing",
-      "bulletcasing"
-    ],
-    "witness": [
-      "farmer"
-    ],
-    "time": [
-      "9:44",
-      "944"
-    ],
-    "marker": [
-      "1116",
-      "marker 1116",
-      "road marker 1116",
-      "mile marker 1116",
-      "mile 1116"
-    ],
-    "direction": [
-      "right"
-    ],
-    "sound": [
-      "crow wings",
-      "crowwings"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -310,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S11C02",
-    "puzzleId": "S11C02-marker-lock",
-    "dialogueId": "S11C02-farmer",
-    "locationId": "crossroads",
-    "objective": "Investigate Crossroads, question Farmer, recover Bullet Casing, and learn why marker 1116 is tied to Survey Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Crossroads.",
-        "clue": "Crow Wings"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Bullet Casing.",
-        "clue": "Bullet Casing"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Farmer.",
-        "clue": "9:44"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1116.",
-        "clue": "1116"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Right instruction.",
-        "clue": "Right"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S11C02-location",
-        "type": "location",
-        "name": "Crossroads",
-        "inspectText": "Crossroads looks ordinary until Crow Wings moves through it."
-      },
-      {
-        "id": "S11C02-object",
-        "type": "evidence",
-        "name": "Bullet Casing",
-        "inspectText": "Bullet Casing is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S11C02-marker",
-        "type": "marker",
-        "name": "Marker 1116",
-        "inspectText": "Marker 1116 is not the answer. It is the lock."
-      },
-      {
-        "id": "S11C02-sound",
-        "type": "audio_clue",
-        "name": "Crow Wings",
-        "inspectText": "Crow Wings repeats near 9:44."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series11-The-Map-Maker/chapter02.md",
-      "novel": "generated/novels/Series11-The-Map-Maker/chapter02.md",
-      "song": "generated/songs/Series11-The-Map-Maker/song02.md"
     }
   },
   "story": {

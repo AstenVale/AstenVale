@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "north pasture",
-      "northpasture"
-    ],
-    "object": [
-      "broken clasp",
-      "brokenclasp"
-    ],
-    "witness": [
-      "widow"
-    ],
-    "time": [
-      "11:17",
-      "1117"
-    ],
-    "marker": [
-      "2097",
-      "marker 2097",
-      "road marker 2097",
-      "mile marker 2097",
-      "mile 2097"
-    ],
-    "direction": [
-      "sideways"
-    ],
-    "sound": [
-      "empty wagon",
-      "emptywagon"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S20C11",
-    "puzzleId": "S20C11-marker-lock",
-    "dialogueId": "S20C11-widow",
-    "locationId": "north-pasture",
-    "objective": "Investigate North Pasture, question Widow, recover Broken Clasp, and learn why marker 2097 is tied to Night Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter North Pasture.",
-        "clue": "Empty Wagon"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Broken Clasp.",
-        "clue": "Broken Clasp"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Widow.",
-        "clue": "11:17"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2097.",
-        "clue": "2097"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Sideways instruction.",
-        "clue": "Sideways"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S20C11-location",
-        "type": "location",
-        "name": "North Pasture",
-        "inspectText": "North Pasture looks ordinary until Empty Wagon moves through it."
-      },
-      {
-        "id": "S20C11-object",
-        "type": "evidence",
-        "name": "Broken Clasp",
-        "inspectText": "Broken Clasp is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S20C11-marker",
-        "type": "marker",
-        "name": "Marker 2097",
-        "inspectText": "Marker 2097 is not the answer. It is the lock."
-      },
-      {
-        "id": "S20C11-sound",
-        "type": "audio_clue",
-        "name": "Empty Wagon",
-        "inspectText": "Empty Wagon repeats near 11:17."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series20-The-Midnight-Circuit/chapter11.md",
-      "novel": "generated/novels/Series20-The-Midnight-Circuit/chapter11.md",
-      "song": "generated/songs/Series20-The-Midnight-Circuit/song11.md"
     }
   },
   "story": {

@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "collapsed mine",
-      "collapsedmine"
-    ],
-    "object": [
-      "torn label",
-      "tornlabel"
-    ],
-    "witness": [
-      "fence mender",
-      "fencemender"
-    ],
-    "time": [
-      "4:03",
-      "403"
-    ],
-    "marker": [
-      "2434",
-      "marker 2434",
-      "road marker 2434",
-      "mile marker 2434",
-      "mile 2434"
-    ],
-    "direction": [
-      "in"
-    ],
-    "sound": [
-      "crow wings",
-      "crowwings"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -312,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S24C04",
-    "puzzleId": "S24C04-marker-lock",
-    "dialogueId": "S24C04-fence-mender",
-    "locationId": "collapsed-mine",
-    "objective": "Investigate Collapsed Mine, question Fence Mender, recover Torn Label, and learn why marker 2434 is tied to Timeline Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Collapsed Mine.",
-        "clue": "Crow Wings"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Torn Label.",
-        "clue": "Torn Label"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Fence Mender.",
-        "clue": "4:03"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2434.",
-        "clue": "2434"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the In instruction.",
-        "clue": "In"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S24C04-location",
-        "type": "location",
-        "name": "Collapsed Mine",
-        "inspectText": "Collapsed Mine looks ordinary until Crow Wings moves through it."
-      },
-      {
-        "id": "S24C04-object",
-        "type": "evidence",
-        "name": "Torn Label",
-        "inspectText": "Torn Label is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S24C04-marker",
-        "type": "marker",
-        "name": "Marker 2434",
-        "inspectText": "Marker 2434 is not the answer. It is the lock."
-      },
-      {
-        "id": "S24C04-sound",
-        "type": "audio_clue",
-        "name": "Crow Wings",
-        "inspectText": "Crow Wings repeats near 4:03."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series24-The-Missing-Hours/chapter04.md",
-      "novel": "generated/novels/Series24-The-Missing-Hours/chapter04.md",
-      "song": "generated/songs/Series24-The-Missing-Hours/song04.md"
     }
   },
   "story": {

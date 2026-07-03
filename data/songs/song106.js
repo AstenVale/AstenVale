@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "potter's field",
-      "potter'sfield"
-    ],
-    "object": [
-      "surveyor's pin",
-      "surveyor'spin"
-    ],
-    "witness": [
-      "station master",
-      "stationmaster"
-    ],
-    "time": [
-      "6:17",
-      "617"
-    ],
-    "marker": [
-      "988",
-      "marker 988",
-      "road marker 988",
-      "mile marker 988",
-      "mile 988"
-    ],
-    "direction": [
-      "under"
-    ],
-    "sound": [
-      "cannon bolt",
-      "cannonbolt"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S09C10",
-    "puzzleId": "S09C10-marker-lock",
-    "dialogueId": "S09C10-station-master",
-    "locationId": "potter-s-field",
-    "objective": "Investigate Potter's Field, question Station Master, recover Surveyor's Pin, and learn why marker 988 is tied to Record Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Potter's Field.",
-        "clue": "Cannon Bolt"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Surveyor's Pin.",
-        "clue": "Surveyor's Pin"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Station Master.",
-        "clue": "6:17"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 988.",
-        "clue": "988"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Under instruction.",
-        "clue": "Under"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S09C10-location",
-        "type": "location",
-        "name": "Potter's Field",
-        "inspectText": "Potter's Field looks ordinary until Cannon Bolt moves through it."
-      },
-      {
-        "id": "S09C10-object",
-        "type": "evidence",
-        "name": "Surveyor's Pin",
-        "inspectText": "Surveyor's Pin is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S09C10-marker",
-        "type": "marker",
-        "name": "Marker 988",
-        "inspectText": "Marker 988 is not the answer. It is the lock."
-      },
-      {
-        "id": "S09C10-sound",
-        "type": "audio_clue",
-        "name": "Cannon Bolt",
-        "inspectText": "Cannon Bolt repeats near 6:17."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series09-The-Keeper/chapter10.md",
-      "novel": "generated/novels/Series09-The-Keeper/chapter10.md",
-      "song": "generated/songs/Series09-The-Keeper/song10.md"
     }
   },
   "story": {

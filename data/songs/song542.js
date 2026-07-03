@@ -61,40 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the depot",
-      "depot",
-      "thedepot"
-    ],
-    "object": [
-      "bone button",
-      "bonebutton"
-    ],
-    "witness": [
-      "river pilot",
-      "riverpilot"
-    ],
-    "time": [
-      "9:55",
-      "955"
-    ],
-    "marker": [
-      "4616",
-      "marker 4616",
-      "road marker 4616",
-      "mile marker 4616",
-      "mile 4616"
-    ],
-    "direction": [
-      "toward the river",
-      "towardtheriver"
-    ],
-    "sound": [
-      "wheel on gravel",
-      "wheelongravel"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -314,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S46C02",
-    "puzzleId": "S46C02-marker-lock",
-    "dialogueId": "S46C02-river-pilot",
-    "locationId": "the-depot",
-    "objective": "Investigate The Depot, question River Pilot, recover Bone Button, and learn why marker 4616 is tied to Weather Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Depot.",
-        "clue": "Wheel on Gravel"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Bone Button.",
-        "clue": "Bone Button"
-      },
-      {
-        "step": "interview",
-        "objective": "Question River Pilot.",
-        "clue": "9:55"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4616.",
-        "clue": "4616"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Toward the River instruction.",
-        "clue": "Toward the River"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S46C02-location",
-        "type": "location",
-        "name": "The Depot",
-        "inspectText": "The Depot looks ordinary until Wheel on Gravel moves through it."
-      },
-      {
-        "id": "S46C02-object",
-        "type": "evidence",
-        "name": "Bone Button",
-        "inspectText": "Bone Button is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S46C02-marker",
-        "type": "marker",
-        "name": "Marker 4616",
-        "inspectText": "Marker 4616 is not the answer. It is the lock."
-      },
-      {
-        "id": "S46C02-sound",
-        "type": "audio_clue",
-        "name": "Wheel on Gravel",
-        "inspectText": "Wheel on Gravel repeats near 9:55."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series46-The-Storm-Season/chapter02.md",
-      "novel": "generated/novels/Series46-The-Storm-Season/chapter02.md",
-      "song": "generated/songs/Series46-The-Storm-Season/song02.md"
     }
   },
   "story": {

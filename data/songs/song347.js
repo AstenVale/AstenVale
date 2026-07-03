@@ -61,35 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "jail"
-    ],
-    "object": [
-      "matchbook"
-    ],
-    "witness": [
-      "cartographer"
-    ],
-    "time": [
-      "7:48",
-      "748"
-    ],
-    "marker": [
-      "2997",
-      "marker 2997",
-      "road marker 2997",
-      "mile marker 2997",
-      "mile 2997"
-    ],
-    "direction": [
-      "in"
-    ],
-    "sound": [
-      "match strike",
-      "matchstrike"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -309,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S29C11",
-    "puzzleId": "S29C11-marker-lock",
-    "dialogueId": "S29C11-cartographer",
-    "locationId": "jail",
-    "objective": "Investigate Jail, question Cartographer, recover Matchbook, and learn why marker 2997 is tied to Interment Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Jail.",
-        "clue": "Match Strike"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Matchbook.",
-        "clue": "Matchbook"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Cartographer.",
-        "clue": "7:48"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2997.",
-        "clue": "2997"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the In instruction.",
-        "clue": "In"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S29C11-location",
-        "type": "location",
-        "name": "Jail",
-        "inspectText": "Jail looks ordinary until Match Strike moves through it."
-      },
-      {
-        "id": "S29C11-object",
-        "type": "evidence",
-        "name": "Matchbook",
-        "inspectText": "Matchbook is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S29C11-marker",
-        "type": "marker",
-        "name": "Marker 2997",
-        "inspectText": "Marker 2997 is not the answer. It is the lock."
-      },
-      {
-        "id": "S29C11-sound",
-        "type": "audio_clue",
-        "name": "Match Strike",
-        "inspectText": "Match Strike repeats near 7:48."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series29-The-Unmarked-Grave/chapter11.md",
-      "novel": "generated/novels/Series29-The-Unmarked-Grave/chapter11.md",
-      "song": "generated/songs/Series29-The-Unmarked-Grave/song11.md"
     }
   },
   "story": {

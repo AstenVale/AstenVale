@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "cooperage"
-    ],
-    "object": [
-      "wax tablet",
-      "waxtablet"
-    ],
-    "witness": [
-      "cartographer"
-    ],
-    "time": [
-      "3:49",
-      "349"
-    ],
-    "marker": [
-      "2706",
-      "marker 2706",
-      "road marker 2706",
-      "mile marker 2706",
-      "mile 2706"
-    ],
-    "direction": [
-      "south"
-    ],
-    "sound": [
-      "distant gunshot",
-      "distantgunshot"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -309,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S26C12",
-    "puzzleId": "S26C12-marker-lock",
-    "dialogueId": "S26C12-cartographer",
-    "locationId": "cooperage",
-    "objective": "Investigate Cooperage, question Cartographer, recover Wax Tablet, and learn why marker 2706 is tied to Threshold Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Cooperage.",
-        "clue": "Distant Gunshot"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Wax Tablet.",
-        "clue": "Wax Tablet"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Cartographer.",
-        "clue": "3:49"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2706.",
-        "clue": "2706"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the South instruction.",
-        "clue": "South"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S26C12-location",
-        "type": "location",
-        "name": "Cooperage",
-        "inspectText": "Cooperage looks ordinary until Distant Gunshot moves through it."
-      },
-      {
-        "id": "S26C12-object",
-        "type": "evidence",
-        "name": "Wax Tablet",
-        "inspectText": "Wax Tablet is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S26C12-marker",
-        "type": "marker",
-        "name": "Marker 2706",
-        "inspectText": "Marker 2706 is not the answer. It is the lock."
-      },
-      {
-        "id": "S26C12-sound",
-        "type": "audio_clue",
-        "name": "Distant Gunshot",
-        "inspectText": "Distant Gunshot repeats near 3:49."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series26-The-Red-Door/chapter12.md",
-      "novel": "generated/novels/Series26-The-Red-Door/chapter12.md",
-      "song": "generated/songs/Series26-The-Red-Door/song12.md"
     }
   },
   "story": {

@@ -61,39 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the ravine",
-      "ravine",
-      "theravine"
-    ],
-    "object": [
-      "belt buckle",
-      "beltbuckle"
-    ],
-    "witness": [
-      "lime burner",
-      "limeburner"
-    ],
-    "time": [
-      "2:19",
-      "219"
-    ],
-    "marker": [
-      "2716",
-      "marker 2716",
-      "road marker 2716",
-      "mile marker 2716",
-      "mile 2716"
-    ],
-    "direction": [
-      "right"
-    ],
-    "sound": [
-      "horse hooves",
-      "horsehooves"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -302,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S27C02",
-    "puzzleId": "S27C02-marker-lock",
-    "dialogueId": "S27C02-lime-burner",
-    "locationId": "the-ravine",
-    "objective": "Investigate The Ravine, question Lime Burner, recover Belt Buckle, and learn why marker 2716 is tied to Expanse Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Ravine.",
-        "clue": "Horse Hooves"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Belt Buckle.",
-        "clue": "Belt Buckle"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Lime Burner.",
-        "clue": "2:19"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2716.",
-        "clue": "2716"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Right instruction.",
-        "clue": "Right"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S27C02-location",
-        "type": "location",
-        "name": "The Ravine",
-        "inspectText": "The Ravine looks ordinary until Horse Hooves moves through it."
-      },
-      {
-        "id": "S27C02-object",
-        "type": "evidence",
-        "name": "Belt Buckle",
-        "inspectText": "Belt Buckle is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S27C02-marker",
-        "type": "marker",
-        "name": "Marker 2716",
-        "inspectText": "Marker 2716 is not the answer. It is the lock."
-      },
-      {
-        "id": "S27C02-sound",
-        "type": "audio_clue",
-        "name": "Horse Hooves",
-        "inspectText": "Horse Hooves repeats near 2:19."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series27-The-Salt-Flats/chapter02.md",
-      "novel": "generated/novels/Series27-The-Salt-Flats/chapter02.md",
-      "song": "generated/songs/Series27-The-Salt-Flats/song02.md"
     }
   },
   "story": {

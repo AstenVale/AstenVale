@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "loom house",
-      "loomhouse"
-    ],
-    "object": [
-      "flask"
-    ],
-    "witness": [
-      "stranger"
-    ],
-    "time": [
-      "2:38",
-      "238"
-    ],
-    "marker": [
-      "1352",
-      "marker 1352",
-      "road marker 1352",
-      "mile marker 1352",
-      "mile 1352"
-    ],
-    "direction": [
-      "out"
-    ],
-    "sound": [
-      "distant church bell",
-      "distantchurchbell"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -309,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S13C06",
-    "puzzleId": "S13C06-marker-lock",
-    "dialogueId": "S13C06-stranger",
-    "locationId": "loom-house",
-    "objective": "Investigate Loom House, question Stranger, recover Flask, and learn why marker 1352 is tied to Mirror Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Loom House.",
-        "clue": "Distant Church Bell"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Flask.",
-        "clue": "Flask"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Stranger.",
-        "clue": "2:38"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1352.",
-        "clue": "1352"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Out instruction.",
-        "clue": "Out"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S13C06-location",
-        "type": "location",
-        "name": "Loom House",
-        "inspectText": "Loom House looks ordinary until Distant Church Bell moves through it."
-      },
-      {
-        "id": "S13C06-object",
-        "type": "evidence",
-        "name": "Flask",
-        "inspectText": "Flask is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S13C06-marker",
-        "type": "marker",
-        "name": "Marker 1352",
-        "inspectText": "Marker 1352 is not the answer. It is the lock."
-      },
-      {
-        "id": "S13C06-sound",
-        "type": "audio_clue",
-        "name": "Distant Church Bell",
-        "inspectText": "Distant Church Bell repeats near 2:38."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series13-The-Twin-Hollows/chapter06.md",
-      "novel": "generated/novels/Series13-The-Twin-Hollows/chapter06.md",
-      "song": "generated/songs/Series13-The-Twin-Hollows/song06.md"
     }
   },
   "story": {

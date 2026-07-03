@@ -61,39 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "ash hollow",
-      "ashhollow"
-    ],
-    "object": [
-      "dried ink blot",
-      "driedinkblot"
-    ],
-    "witness": [
-      "river pilot",
-      "riverpilot"
-    ],
-    "time": [
-      "7:48",
-      "748"
-    ],
-    "marker": [
-      "4661",
-      "marker 4661",
-      "road marker 4661",
-      "mile marker 4661",
-      "mile 4661"
-    ],
-    "direction": [
-      "up the ridge",
-      "uptheridge"
-    ],
-    "sound": [
-      "boot heel",
-      "bootheel"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -313,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S46C07",
-    "puzzleId": "S46C07-marker-lock",
-    "dialogueId": "S46C07-river-pilot",
-    "locationId": "ash-hollow",
-    "objective": "Investigate Ash Hollow, question River Pilot, recover Dried Ink Blot, and learn why marker 4661 is tied to Weather Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Ash Hollow.",
-        "clue": "Boot Heel"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Dried Ink Blot.",
-        "clue": "Dried Ink Blot"
-      },
-      {
-        "step": "interview",
-        "objective": "Question River Pilot.",
-        "clue": "7:48"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4661.",
-        "clue": "4661"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Up the Ridge instruction.",
-        "clue": "Up the Ridge"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S46C07-location",
-        "type": "location",
-        "name": "Ash Hollow",
-        "inspectText": "Ash Hollow looks ordinary until Boot Heel moves through it."
-      },
-      {
-        "id": "S46C07-object",
-        "type": "evidence",
-        "name": "Dried Ink Blot",
-        "inspectText": "Dried Ink Blot is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S46C07-marker",
-        "type": "marker",
-        "name": "Marker 4661",
-        "inspectText": "Marker 4661 is not the answer. It is the lock."
-      },
-      {
-        "id": "S46C07-sound",
-        "type": "audio_clue",
-        "name": "Boot Heel",
-        "inspectText": "Boot Heel repeats near 7:48."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series46-The-Storm-Season/chapter07.md",
-      "novel": "generated/novels/Series46-The-Storm-Season/chapter07.md",
-      "song": "generated/songs/Series46-The-Storm-Season/song07.md"
     }
   },
   "story": {

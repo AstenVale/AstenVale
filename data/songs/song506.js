@@ -61,35 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "barn"
-    ],
-    "object": [
-      "coin"
-    ],
-    "witness": [
-      "drifter"
-    ],
-    "time": [
-      "3:03",
-      "303"
-    ],
-    "marker": [
-      "4316",
-      "marker 4316",
-      "road marker 4316",
-      "mile marker 4316",
-      "mile 4316"
-    ],
-    "direction": [
-      "behind"
-    ],
-    "sound": [
-      "old hinge",
-      "oldhinge"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -298,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S43C02",
-    "puzzleId": "S43C02-marker-lock",
-    "dialogueId": "S43C02-drifter",
-    "locationId": "barn",
-    "objective": "Investigate Barn, question Drifter, recover Coin, and learn why marker 4316 is tied to Identity Vault II.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Barn.",
-        "clue": "Old Hinge"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Coin.",
-        "clue": "Coin"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Drifter.",
-        "clue": "3:03"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4316.",
-        "clue": "4316"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Behind instruction.",
-        "clue": "Behind"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S43C02-location",
-        "type": "location",
-        "name": "Barn",
-        "inspectText": "Barn looks ordinary until Old Hinge moves through it."
-      },
-      {
-        "id": "S43C02-object",
-        "type": "evidence",
-        "name": "Coin",
-        "inspectText": "Coin is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S43C02-marker",
-        "type": "marker",
-        "name": "Marker 4316",
-        "inspectText": "Marker 4316 is not the answer. It is the lock."
-      },
-      {
-        "id": "S43C02-sound",
-        "type": "audio_clue",
-        "name": "Old Hinge",
-        "inspectText": "Old Hinge repeats near 3:03."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series43-The-False-Name/chapter02.md",
-      "novel": "generated/novels/Series43-The-False-Name/chapter02.md",
-      "song": "generated/songs/Series43-The-False-Name/song02.md"
     }
   },
   "story": {

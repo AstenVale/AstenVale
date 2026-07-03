@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "post office",
-      "postoffice"
-    ],
-    "object": [
-      "seal"
-    ],
-    "witness": [
-      "glazier"
-    ],
-    "time": [
-      "12:00",
-      "1200"
-    ],
-    "marker": [
-      "2252",
-      "marker 2252",
-      "road marker 2252",
-      "mile marker 2252",
-      "mile 2252"
-    ],
-    "direction": [
-      "down the hollow",
-      "downthehollow"
-    ],
-    "sound": [
-      "breathing"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -309,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S22C06",
-    "puzzleId": "S22C06-marker-lock",
-    "dialogueId": "S22C06-glazier",
-    "locationId": "post-office",
-    "objective": "Investigate Post Office, question Glazier, recover Seal, and learn why marker 2252 is tied to Excavation Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Post Office.",
-        "clue": "Breathing"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Seal.",
-        "clue": "Seal"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Glazier.",
-        "clue": "12:00"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2252.",
-        "clue": "2252"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Down the Hollow instruction.",
-        "clue": "Down the Hollow"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S22C06-location",
-        "type": "location",
-        "name": "Post Office",
-        "inspectText": "Post Office looks ordinary until Breathing moves through it."
-      },
-      {
-        "id": "S22C06-object",
-        "type": "evidence",
-        "name": "Seal",
-        "inspectText": "Seal is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S22C06-marker",
-        "type": "marker",
-        "name": "Marker 2252",
-        "inspectText": "Marker 2252 is not the answer. It is the lock."
-      },
-      {
-        "id": "S22C06-sound",
-        "type": "audio_clue",
-        "name": "Breathing",
-        "inspectText": "Breathing repeats near 12:00."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series22-The-Bone-Road/chapter06.md",
-      "novel": "generated/novels/Series22-The-Bone-Road/chapter06.md",
-      "song": "generated/songs/Series22-The-Bone-Road/song06.md"
     }
   },
   "story": {

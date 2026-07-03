@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "quarry edge",
-      "quarryedge"
-    ],
-    "object": [
-      "charcoal sketch",
-      "charcoalsketch"
-    ],
-    "witness": [
-      "station master",
-      "stationmaster"
-    ],
-    "time": [
-      "9:55",
-      "955"
-    ],
-    "marker": [
-      "307",
-      "marker 307",
-      "road marker 307",
-      "mile marker 307",
-      "mile 307"
-    ],
-    "direction": [
-      "toward"
-    ],
-    "sound": [
-      "coal shifting",
-      "coalshifting"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -301,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S03C01",
-    "puzzleId": "S03C01-marker-lock",
-    "dialogueId": "S03C01-station-master",
-    "locationId": "quarry-edge",
-    "objective": "Investigate Quarry Edge, question Station Master, recover Charcoal Sketch, and learn why marker 307 is tied to Absence Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Quarry Edge.",
-        "clue": "Coal Shifting"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Charcoal Sketch.",
-        "clue": "Charcoal Sketch"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Station Master.",
-        "clue": "9:55"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 307.",
-        "clue": "307"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Toward instruction.",
-        "clue": "Toward"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S03C01-location",
-        "type": "location",
-        "name": "Quarry Edge",
-        "inspectText": "Quarry Edge looks ordinary until Coal Shifting moves through it."
-      },
-      {
-        "id": "S03C01-object",
-        "type": "evidence",
-        "name": "Charcoal Sketch",
-        "inspectText": "Charcoal Sketch is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S03C01-marker",
-        "type": "marker",
-        "name": "Marker 307",
-        "inspectText": "Marker 307 is not the answer. It is the lock."
-      },
-      {
-        "id": "S03C01-sound",
-        "type": "audio_clue",
-        "name": "Coal Shifting",
-        "inspectText": "Coal Shifting repeats near 9:55."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series03-The-Disappearance/chapter01.md",
-      "novel": "generated/novels/Series03-The-Disappearance/chapter01.md",
-      "song": "generated/songs/Series03-The-Disappearance/song01.md"
     }
   },
   "story": {

@@ -61,39 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "market square",
-      "marketsquare"
-    ],
-    "object": [
-      "dried ink blot",
-      "driedinkblot"
-    ],
-    "witness": [
-      "circuit rider",
-      "circuitrider"
-    ],
-    "time": [
-      "6:53",
-      "653"
-    ],
-    "marker": [
-      "2007",
-      "marker 2007",
-      "road marker 2007",
-      "mile marker 2007",
-      "mile 2007"
-    ],
-    "direction": [
-      "into the dark",
-      "intothedark"
-    ],
-    "sound": [
-      "match strike",
-      "matchstrike"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -302,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S20C01",
-    "puzzleId": "S20C01-marker-lock",
-    "dialogueId": "S20C01-circuit-rider",
-    "locationId": "market-square",
-    "objective": "Investigate Market Square, question Circuit Rider, recover Dried Ink Blot, and learn why marker 2007 is tied to Night Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Market Square.",
-        "clue": "Match Strike"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Dried Ink Blot.",
-        "clue": "Dried Ink Blot"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Circuit Rider.",
-        "clue": "6:53"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2007.",
-        "clue": "2007"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Into the Dark instruction.",
-        "clue": "Into the Dark"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S20C01-location",
-        "type": "location",
-        "name": "Market Square",
-        "inspectText": "Market Square looks ordinary until Match Strike moves through it."
-      },
-      {
-        "id": "S20C01-object",
-        "type": "evidence",
-        "name": "Dried Ink Blot",
-        "inspectText": "Dried Ink Blot is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S20C01-marker",
-        "type": "marker",
-        "name": "Marker 2007",
-        "inspectText": "Marker 2007 is not the answer. It is the lock."
-      },
-      {
-        "id": "S20C01-sound",
-        "type": "audio_clue",
-        "name": "Match Strike",
-        "inspectText": "Match Strike repeats near 6:53."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series20-The-Midnight-Circuit/chapter01.md",
-      "novel": "generated/novels/Series20-The-Midnight-Circuit/chapter01.md",
-      "song": "generated/songs/Series20-The-Midnight-Circuit/song01.md"
     }
   },
   "story": {

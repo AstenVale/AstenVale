@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "cider house",
-      "ciderhouse"
-    ],
-    "object": [
-      "chain"
-    ],
-    "witness": [
-      "rope maker",
-      "ropemaker"
-    ],
-    "time": [
-      "7:14",
-      "714"
-    ],
-    "marker": [
-      "479",
-      "marker 479",
-      "road marker 479",
-      "mile marker 479",
-      "mile 479"
-    ],
-    "direction": [
-      "over"
-    ],
-    "sound": [
-      "dry grass",
-      "drygrass"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -310,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S04C09",
-    "puzzleId": "S04C09-marker-lock",
-    "dialogueId": "S04C09-rope-maker",
-    "locationId": "cider-house",
-    "objective": "Investigate Cider House, question Rope Maker, recover Chain, and learn why marker 479 is tied to Current Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Cider House.",
-        "clue": "Dry Grass"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Chain.",
-        "clue": "Chain"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Rope Maker.",
-        "clue": "7:14"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 479.",
-        "clue": "479"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Over instruction.",
-        "clue": "Over"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S04C09-location",
-        "type": "location",
-        "name": "Cider House",
-        "inspectText": "Cider House looks ordinary until Dry Grass moves through it."
-      },
-      {
-        "id": "S04C09-object",
-        "type": "evidence",
-        "name": "Chain",
-        "inspectText": "Chain is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S04C09-marker",
-        "type": "marker",
-        "name": "Marker 479",
-        "inspectText": "Marker 479 is not the answer. It is the lock."
-      },
-      {
-        "id": "S04C09-sound",
-        "type": "audio_clue",
-        "name": "Dry Grass",
-        "inspectText": "Dry Grass repeats near 7:14."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series04-The-River-Speaks/chapter09.md",
-      "novel": "generated/novels/Series04-The-River-Speaks/chapter09.md",
-      "song": "generated/songs/Series04-The-River-Speaks/song09.md"
     }
   },
   "story": {

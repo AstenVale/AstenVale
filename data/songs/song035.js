@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "south fork",
-      "southfork"
-    ],
-    "object": [
-      "shard of mirror",
-      "shardofmirror"
-    ],
-    "witness": [
-      "lime burner",
-      "limeburner"
-    ],
-    "time": [
-      "9:55",
-      "955"
-    ],
-    "marker": [
-      "397",
-      "marker 397",
-      "road marker 397",
-      "mile marker 397",
-      "mile 397"
-    ],
-    "direction": [
-      "north"
-    ],
-    "sound": [
-      "lid of a tin",
-      "lidofatin"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -301,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S03C11",
-    "puzzleId": "S03C11-marker-lock",
-    "dialogueId": "S03C11-lime-burner",
-    "locationId": "south-fork",
-    "objective": "Investigate South Fork, question Lime Burner, recover Shard of Mirror, and learn why marker 397 is tied to Absence Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter South Fork.",
-        "clue": "Lid of a Tin"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Shard of Mirror.",
-        "clue": "Shard of Mirror"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Lime Burner.",
-        "clue": "9:55"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 397.",
-        "clue": "397"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the North instruction.",
-        "clue": "North"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S03C11-location",
-        "type": "location",
-        "name": "South Fork",
-        "inspectText": "South Fork looks ordinary until Lid of a Tin moves through it."
-      },
-      {
-        "id": "S03C11-object",
-        "type": "evidence",
-        "name": "Shard of Mirror",
-        "inspectText": "Shard of Mirror is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S03C11-marker",
-        "type": "marker",
-        "name": "Marker 397",
-        "inspectText": "Marker 397 is not the answer. It is the lock."
-      },
-      {
-        "id": "S03C11-sound",
-        "type": "audio_clue",
-        "name": "Lid of a Tin",
-        "inspectText": "Lid of a Tin repeats near 9:55."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series03-The-Disappearance/chapter11.md",
-      "novel": "generated/novels/Series03-The-Disappearance/chapter11.md",
-      "song": "generated/songs/Series03-The-Disappearance/song11.md"
     }
   },
   "story": {

@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "feed store",
-      "feedstore"
-    ],
-    "object": [
-      "broken clasp",
-      "brokenclasp"
-    ],
-    "witness": [
-      "circuit rider",
-      "circuitrider"
-    ],
-    "time": [
-      "10:19",
-      "1019"
-    ],
-    "marker": [
-      "4843",
-      "marker 4843",
-      "road marker 4843",
-      "mile marker 4843",
-      "mile 4843"
-    ],
-    "direction": [
-      "west"
-    ],
-    "sound": [
-      "shovel on earth",
-      "shovelonearth"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S48C05",
-    "puzzleId": "S48C05-marker-lock",
-    "dialogueId": "S48C05-circuit-rider",
-    "locationId": "feed-store",
-    "objective": "Investigate Feed Store, question Circuit Rider, recover Broken Clasp, and learn why marker 4843 is tied to Static Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Feed Store.",
-        "clue": "Shovel on Earth"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Broken Clasp.",
-        "clue": "Broken Clasp"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Circuit Rider.",
-        "clue": "10:19"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4843.",
-        "clue": "4843"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the West instruction.",
-        "clue": "West"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S48C05-location",
-        "type": "location",
-        "name": "Feed Store",
-        "inspectText": "Feed Store looks ordinary until Shovel on Earth moves through it."
-      },
-      {
-        "id": "S48C05-object",
-        "type": "evidence",
-        "name": "Broken Clasp",
-        "inspectText": "Broken Clasp is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S48C05-marker",
-        "type": "marker",
-        "name": "Marker 4843",
-        "inspectText": "Marker 4843 is not the answer. It is the lock."
-      },
-      {
-        "id": "S48C05-sound",
-        "type": "audio_clue",
-        "name": "Shovel on Earth",
-        "inspectText": "Shovel on Earth repeats near 10:19."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series48-The-Broken-Signal/chapter05.md",
-      "novel": "generated/novels/Series48-The-Broken-Signal/chapter05.md",
-      "song": "generated/songs/Series48-The-Broken-Signal/song05.md"
     }
   },
   "story": {

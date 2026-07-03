@@ -61,35 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "water tower",
-      "watertower"
-    ],
-    "object": [
-      "rope"
-    ],
-    "witness": [
-      "auctioneer"
-    ],
-    "time": [
-      "7:37",
-      "737"
-    ],
-    "marker": [
-      "1261",
-      "marker 1261",
-      "road marker 1261",
-      "mile marker 1261",
-      "mile 1261"
-    ],
-    "direction": [
-      "beyond"
-    ],
-    "sound": [
-      "footsteps"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -298,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S12C07",
-    "puzzleId": "S12C07-marker-lock",
-    "dialogueId": "S12C07-auctioneer",
-    "locationId": "water-tower",
-    "objective": "Investigate Water Tower, question Auctioneer, recover Rope, and learn why marker 1261 is tied to Estate Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Water Tower.",
-        "clue": "Footsteps"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Rope.",
-        "clue": "Rope"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Auctioneer.",
-        "clue": "7:37"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1261.",
-        "clue": "1261"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Beyond instruction.",
-        "clue": "Beyond"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S12C07-location",
-        "type": "location",
-        "name": "Water Tower",
-        "inspectText": "Water Tower looks ordinary until Footsteps moves through it."
-      },
-      {
-        "id": "S12C07-object",
-        "type": "evidence",
-        "name": "Rope",
-        "inspectText": "Rope is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S12C07-marker",
-        "type": "marker",
-        "name": "Marker 1261",
-        "inspectText": "Marker 1261 is not the answer. It is the lock."
-      },
-      {
-        "id": "S12C07-sound",
-        "type": "audio_clue",
-        "name": "Footsteps",
-        "inspectText": "Footsteps repeats near 7:37."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series12-The-Inheritance/chapter07.md",
-      "novel": "generated/novels/Series12-The-Inheritance/chapter07.md",
-      "song": "generated/songs/Series12-The-Inheritance/song07.md"
     }
   },
   "story": {

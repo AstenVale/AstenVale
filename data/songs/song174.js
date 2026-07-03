@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "sheep fold",
-      "sheepfold"
-    ],
-    "object": [
-      "flask"
-    ],
-    "witness": [
-      "drifter"
-    ],
-    "time": [
-      "10:47",
-      "1047"
-    ],
-    "marker": [
-      "1552",
-      "marker 1552",
-      "road marker 1552",
-      "mile marker 1552",
-      "mile 1552"
-    ],
-    "direction": [
-      "along the creek",
-      "alongthecreek"
-    ],
-    "sound": [
-      "pen on paper",
-      "penonpaper"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S15C06",
-    "puzzleId": "S15C06-marker-lock",
-    "dialogueId": "S15C06-drifter",
-    "locationId": "sheep-fold",
-    "objective": "Investigate Sheep Fold, question Drifter, recover Flask, and learn why marker 1552 is tied to Signal Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Sheep Fold.",
-        "clue": "Pen on Paper"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Flask.",
-        "clue": "Flask"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Drifter.",
-        "clue": "10:47"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1552.",
-        "clue": "1552"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Along the Creek instruction.",
-        "clue": "Along the Creek"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S15C06-location",
-        "type": "location",
-        "name": "Sheep Fold",
-        "inspectText": "Sheep Fold looks ordinary until Pen on Paper moves through it."
-      },
-      {
-        "id": "S15C06-object",
-        "type": "evidence",
-        "name": "Flask",
-        "inspectText": "Flask is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S15C06-marker",
-        "type": "marker",
-        "name": "Marker 1552",
-        "inspectText": "Marker 1552 is not the answer. It is the lock."
-      },
-      {
-        "id": "S15C06-sound",
-        "type": "audio_clue",
-        "name": "Pen on Paper",
-        "inspectText": "Pen on Paper repeats near 10:47."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series15-The-Lantern-Keeper/chapter06.md",
-      "novel": "generated/novels/Series15-The-Lantern-Keeper/chapter06.md",
-      "song": "generated/songs/Series15-The-Lantern-Keeper/song06.md"
     }
   },
   "story": {

@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the pit",
-      "pit",
-      "thepit"
-    ],
-    "object": [
-      "ticket"
-    ],
-    "witness": [
-      "tailor"
-    ],
-    "time": [
-      "11:17",
-      "1117"
-    ],
-    "marker": [
-      "3034",
-      "marker 3034",
-      "road marker 3034",
-      "mile marker 3034",
-      "mile 3034"
-    ],
-    "direction": [
-      "across"
-    ],
-    "sound": [
-      "millstone"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -299,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S30C04",
-    "puzzleId": "S30C04-marker-lock",
-    "dialogueId": "S30C04-tailor",
-    "locationId": "the-pit",
-    "objective": "Investigate The Pit, question Tailor, recover Ticket, and learn why marker 3034 is tied to Manifest Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Pit.",
-        "clue": "Millstone"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Ticket.",
-        "clue": "Ticket"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Tailor.",
-        "clue": "11:17"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3034.",
-        "clue": "3034"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Across instruction.",
-        "clue": "Across"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S30C04-location",
-        "type": "location",
-        "name": "The Pit",
-        "inspectText": "The Pit looks ordinary until Millstone moves through it."
-      },
-      {
-        "id": "S30C04-object",
-        "type": "evidence",
-        "name": "Ticket",
-        "inspectText": "Ticket is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S30C04-marker",
-        "type": "marker",
-        "name": "Marker 3034",
-        "inspectText": "Marker 3034 is not the answer. It is the lock."
-      },
-      {
-        "id": "S30C04-sound",
-        "type": "audio_clue",
-        "name": "Millstone",
-        "inspectText": "Millstone repeats near 11:17."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series30-The-Last-Train/chapter04.md",
-      "novel": "generated/novels/Series30-The-Last-Train/chapter04.md",
-      "song": "generated/songs/Series30-The-Last-Train/song04.md"
     }
   },
   "story": {

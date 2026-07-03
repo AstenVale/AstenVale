@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the weir",
-      "weir",
-      "theweir"
-    ],
-    "object": [
-      "seal"
-    ],
-    "witness": [
-      "schoolgirl"
-    ],
-    "time": [
-      "3:44",
-      "344"
-    ],
-    "marker": [
-      "1361",
-      "marker 1361",
-      "road marker 1361",
-      "mile marker 1361",
-      "mile 1361"
-    ],
-    "direction": [
-      "into the pines",
-      "intothepines"
-    ],
-    "sound": [
-      "fence wire hum",
-      "fencewirehum"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S13C07",
-    "puzzleId": "S13C07-marker-lock",
-    "dialogueId": "S13C07-schoolgirl",
-    "locationId": "the-weir",
-    "objective": "Investigate The Weir, question Schoolgirl, recover Seal, and learn why marker 1361 is tied to Mirror Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Weir.",
-        "clue": "Fence Wire Hum"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Seal.",
-        "clue": "Seal"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Schoolgirl.",
-        "clue": "3:44"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1361.",
-        "clue": "1361"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Into the Pines instruction.",
-        "clue": "Into the Pines"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S13C07-location",
-        "type": "location",
-        "name": "The Weir",
-        "inspectText": "The Weir looks ordinary until Fence Wire Hum moves through it."
-      },
-      {
-        "id": "S13C07-object",
-        "type": "evidence",
-        "name": "Seal",
-        "inspectText": "Seal is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S13C07-marker",
-        "type": "marker",
-        "name": "Marker 1361",
-        "inspectText": "Marker 1361 is not the answer. It is the lock."
-      },
-      {
-        "id": "S13C07-sound",
-        "type": "audio_clue",
-        "name": "Fence Wire Hum",
-        "inspectText": "Fence Wire Hum repeats near 3:44."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series13-The-Twin-Hollows/chapter07.md",
-      "novel": "generated/novels/Series13-The-Twin-Hollows/chapter07.md",
-      "song": "generated/songs/Series13-The-Twin-Hollows/song07.md"
     }
   },
   "story": {

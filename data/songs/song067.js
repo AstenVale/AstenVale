@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "mill house",
-      "millhouse"
-    ],
-    "object": [
-      "thimble"
-    ],
-    "witness": [
-      "librarian"
-    ],
-    "time": [
-      "1:26",
-      "126"
-    ],
-    "marker": [
-      "661",
-      "marker 661",
-      "road marker 661",
-      "mile marker 661",
-      "mile 661"
-    ],
-    "direction": [
-      "under"
-    ],
-    "sound": [
-      "hammer strike",
-      "hammerstrike"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -310,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S06C07",
-    "puzzleId": "S06C07-marker-lock",
-    "dialogueId": "S06C07-librarian",
-    "locationId": "mill-house",
-    "objective": "Investigate Mill House, question Librarian, recover Thimble, and learn why marker 661 is tied to Below Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Mill House.",
-        "clue": "Hammer Strike"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Thimble.",
-        "clue": "Thimble"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Librarian.",
-        "clue": "1:26"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 661.",
-        "clue": "661"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Under instruction.",
-        "clue": "Under"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S06C07-location",
-        "type": "location",
-        "name": "Mill House",
-        "inspectText": "Mill House looks ordinary until Hammer Strike moves through it."
-      },
-      {
-        "id": "S06C07-object",
-        "type": "evidence",
-        "name": "Thimble",
-        "inspectText": "Thimble is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S06C07-marker",
-        "type": "marker",
-        "name": "Marker 661",
-        "inspectText": "Marker 661 is not the answer. It is the lock."
-      },
-      {
-        "id": "S06C07-sound",
-        "type": "audio_clue",
-        "name": "Hammer Strike",
-        "inspectText": "Hammer Strike repeats near 1:26."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series06-The-Underground/chapter07.md",
-      "novel": "generated/novels/Series06-The-Underground/chapter07.md",
-      "song": "generated/songs/Series06-The-Underground/song07.md"
     }
   },
   "story": {

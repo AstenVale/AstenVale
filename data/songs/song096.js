@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "cider house",
-      "ciderhouse"
-    ],
-    "object": [
-      "leather strap",
-      "leatherstrap"
-    ],
-    "witness": [
-      "circuit rider",
-      "circuitrider"
-    ],
-    "time": [
-      "1:26",
-      "126"
-    ],
-    "marker": [
-      "906",
-      "marker 906",
-      "road marker 906",
-      "mile marker 906",
-      "mile 906"
-    ],
-    "direction": [
-      "south"
-    ],
-    "sound": [
-      "floorboard"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S08C12",
-    "puzzleId": "S08C12-marker-lock",
-    "dialogueId": "S08C12-circuit-rider",
-    "locationId": "cider-house",
-    "objective": "Investigate Cider House, question Circuit Rider, recover Leather Strap, and learn why marker 906 is tied to Ash Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Cider House.",
-        "clue": "Floorboard"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Leather Strap.",
-        "clue": "Leather Strap"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Circuit Rider.",
-        "clue": "1:26"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 906.",
-        "clue": "906"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the South instruction.",
-        "clue": "South"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S08C12-location",
-        "type": "location",
-        "name": "Cider House",
-        "inspectText": "Cider House looks ordinary until Floorboard moves through it."
-      },
-      {
-        "id": "S08C12-object",
-        "type": "evidence",
-        "name": "Leather Strap",
-        "inspectText": "Leather Strap is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S08C12-marker",
-        "type": "marker",
-        "name": "Marker 906",
-        "inspectText": "Marker 906 is not the answer. It is the lock."
-      },
-      {
-        "id": "S08C12-sound",
-        "type": "audio_clue",
-        "name": "Floorboard",
-        "inspectText": "Floorboard repeats near 1:26."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series08-The-Fire-Year/chapter12.md",
-      "novel": "generated/novels/Series08-The-Fire-Year/chapter12.md",
-      "song": "generated/songs/Series08-The-Fire-Year/song12.md"
     }
   },
   "story": {

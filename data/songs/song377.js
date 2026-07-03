@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "collapsed mine",
-      "collapsedmine"
-    ],
-    "object": [
-      "journal"
-    ],
-    "witness": [
-      "librarian"
-    ],
-    "time": [
-      "8:17",
-      "817"
-    ],
-    "marker": [
-      "3243",
-      "marker 3243",
-      "road marker 3243",
-      "mile marker 3243",
-      "mile 3243"
-    ],
-    "direction": [
-      "back the way you came",
-      "backthewayyoucame"
-    ],
-    "sound": [
-      "hammer on anvil",
-      "hammeronanvil"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S32C05",
-    "puzzleId": "S32C05-marker-lock",
-    "dialogueId": "S32C05-librarian",
-    "locationId": "collapsed-mine",
-    "objective": "Investigate Collapsed Mine, question Librarian, recover Journal, and learn why marker 3243 is tied to Depth Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Collapsed Mine.",
-        "clue": "Hammer on Anvil"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Journal.",
-        "clue": "Journal"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Librarian.",
-        "clue": "8:17"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3243.",
-        "clue": "3243"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Back the Way You Came instruction.",
-        "clue": "Back the Way You Came"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S32C05-location",
-        "type": "location",
-        "name": "Collapsed Mine",
-        "inspectText": "Collapsed Mine looks ordinary until Hammer on Anvil moves through it."
-      },
-      {
-        "id": "S32C05-object",
-        "type": "evidence",
-        "name": "Journal",
-        "inspectText": "Journal is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S32C05-marker",
-        "type": "marker",
-        "name": "Marker 3243",
-        "inspectText": "Marker 3243 is not the answer. It is the lock."
-      },
-      {
-        "id": "S32C05-sound",
-        "type": "audio_clue",
-        "name": "Hammer on Anvil",
-        "inspectText": "Hammer on Anvil repeats near 8:17."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series32-The-Deep-Current/chapter05.md",
-      "novel": "generated/novels/Series32-The-Deep-Current/chapter05.md",
-      "song": "generated/songs/Series32-The-Deep-Current/song05.md"
     }
   },
   "story": {

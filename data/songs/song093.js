@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "sheriff's office",
-      "sheriff'soffice"
-    ],
-    "object": [
-      "wool scarf",
-      "woolscarf"
-    ],
-    "witness": [
-      "judge"
-    ],
-    "time": [
-      "9:08",
-      "908"
-    ],
-    "marker": [
-      "879",
-      "marker 879",
-      "road marker 879",
-      "mile marker 879",
-      "mile 879"
-    ],
-    "direction": [
-      "straight down",
-      "straightdown"
-    ],
-    "sound": [
-      "telegraph click",
-      "telegraphclick"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -301,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S08C09",
-    "puzzleId": "S08C09-marker-lock",
-    "dialogueId": "S08C09-judge",
-    "locationId": "sheriff-s-office",
-    "objective": "Investigate Sheriff's Office, question Judge, recover Wool Scarf, and learn why marker 879 is tied to Ash Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Sheriff's Office.",
-        "clue": "Telegraph Click"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Wool Scarf.",
-        "clue": "Wool Scarf"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Judge.",
-        "clue": "9:08"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 879.",
-        "clue": "879"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Straight Down instruction.",
-        "clue": "Straight Down"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S08C09-location",
-        "type": "location",
-        "name": "Sheriff's Office",
-        "inspectText": "Sheriff's Office looks ordinary until Telegraph Click moves through it."
-      },
-      {
-        "id": "S08C09-object",
-        "type": "evidence",
-        "name": "Wool Scarf",
-        "inspectText": "Wool Scarf is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S08C09-marker",
-        "type": "marker",
-        "name": "Marker 879",
-        "inspectText": "Marker 879 is not the answer. It is the lock."
-      },
-      {
-        "id": "S08C09-sound",
-        "type": "audio_clue",
-        "name": "Telegraph Click",
-        "inspectText": "Telegraph Click repeats near 9:08."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series08-The-Fire-Year/chapter09.md",
-      "novel": "generated/novels/Series08-The-Fire-Year/chapter09.md",
-      "song": "generated/songs/Series08-The-Fire-Year/song09.md"
     }
   },
   "story": {

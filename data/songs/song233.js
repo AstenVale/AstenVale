@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "print shop",
-      "printshop"
-    ],
-    "object": [
-      "leather strap",
-      "leatherstrap"
-    ],
-    "witness": [
-      "banker"
-    ],
-    "time": [
-      "2:55",
-      "255"
-    ],
-    "marker": [
-      "2043",
-      "marker 2043",
-      "road marker 2043",
-      "mile marker 2043",
-      "mile 2043"
-    ],
-    "direction": [
-      "sideways"
-    ],
-    "sound": [
-      "river ice",
-      "riverice"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S20C05",
-    "puzzleId": "S20C05-marker-lock",
-    "dialogueId": "S20C05-banker",
-    "locationId": "print-shop",
-    "objective": "Investigate Print Shop, question Banker, recover Leather Strap, and learn why marker 2043 is tied to Night Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Print Shop.",
-        "clue": "River Ice"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Leather Strap.",
-        "clue": "Leather Strap"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Banker.",
-        "clue": "2:55"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2043.",
-        "clue": "2043"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Sideways instruction.",
-        "clue": "Sideways"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S20C05-location",
-        "type": "location",
-        "name": "Print Shop",
-        "inspectText": "Print Shop looks ordinary until River Ice moves through it."
-      },
-      {
-        "id": "S20C05-object",
-        "type": "evidence",
-        "name": "Leather Strap",
-        "inspectText": "Leather Strap is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S20C05-marker",
-        "type": "marker",
-        "name": "Marker 2043",
-        "inspectText": "Marker 2043 is not the answer. It is the lock."
-      },
-      {
-        "id": "S20C05-sound",
-        "type": "audio_clue",
-        "name": "River Ice",
-        "inspectText": "River Ice repeats near 2:55."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series20-The-Midnight-Circuit/chapter05.md",
-      "novel": "generated/novels/Series20-The-Midnight-Circuit/chapter05.md",
-      "song": "generated/songs/Series20-The-Midnight-Circuit/song05.md"
     }
   },
   "story": {

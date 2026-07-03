@@ -112,13 +112,23 @@ Deno.serve(async (req) => {
   }
 
   const results: Record<string, boolean> = {};
+  // Canonical display text is only ever included for a field the player
+  // just got right -- never for a wrong guess, and never speculatively.
+  // This is what lets case.html show "Black Pine" in a locked field or an
+  // evidence summary after solving, without ever shipping the answer set
+  // to a player who hasn't earned it yet.
+  const revealed: Record<string, string> = {};
   for (const fieldId of fieldIds) {
     const accepted = acceptedByField[fieldId];
     const value = String(submitted[fieldId] ?? "");
-    results[fieldId] = accepted ? isFieldCorrect(value, accepted) : false;
+    const correct = accepted ? isFieldCorrect(value, accepted) : false;
+    results[fieldId] = correct;
+    if (correct && accepted && accepted[0]) {
+      revealed[fieldId] = accepted[0];
+    }
   }
 
-  return new Response(JSON.stringify({ results }), {
+  return new Response(JSON.stringify({ results, revealed }), {
     status: 200,
     headers: { ...CORS_HEADERS, "Content-Type": "application/json" },
   });

@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "grain mill",
-      "grainmill"
-    ],
-    "object": [
-      "signet ring",
-      "signetring"
-    ],
-    "witness": [
-      "station master",
-      "stationmaster"
-    ],
-    "time": [
-      "2:19",
-      "219"
-    ],
-    "marker": [
-      "1952",
-      "marker 1952",
-      "road marker 1952",
-      "mile marker 1952",
-      "mile 1952"
-    ],
-    "direction": [
-      "toward"
-    ],
-    "sound": [
-      "clock ticking",
-      "clockticking"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -301,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S19C06",
-    "puzzleId": "S19C06-marker-lock",
-    "dialogueId": "S19C06-station-master",
-    "locationId": "grain-mill",
-    "objective": "Investigate Grain Mill, question Station Master, recover Signet Ring, and learn why marker 1952 is tied to Crossing Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Grain Mill.",
-        "clue": "Clock Ticking"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Signet Ring.",
-        "clue": "Signet Ring"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Station Master.",
-        "clue": "2:19"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1952.",
-        "clue": "1952"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Toward instruction.",
-        "clue": "Toward"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S19C06-location",
-        "type": "location",
-        "name": "Grain Mill",
-        "inspectText": "Grain Mill looks ordinary until Clock Ticking moves through it."
-      },
-      {
-        "id": "S19C06-object",
-        "type": "evidence",
-        "name": "Signet Ring",
-        "inspectText": "Signet Ring is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S19C06-marker",
-        "type": "marker",
-        "name": "Marker 1952",
-        "inspectText": "Marker 1952 is not the answer. It is the lock."
-      },
-      {
-        "id": "S19C06-sound",
-        "type": "audio_clue",
-        "name": "Clock Ticking",
-        "inspectText": "Clock Ticking repeats near 2:19."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series19-The-Bridge-Burner/chapter06.md",
-      "novel": "generated/novels/Series19-The-Bridge-Burner/chapter06.md",
-      "song": "generated/songs/Series19-The-Bridge-Burner/song06.md"
     }
   },
   "story": {

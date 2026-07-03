@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "sheriff's office",
-      "sheriff'soffice"
-    ],
-    "object": [
-      "bottle"
-    ],
-    "witness": [
-      "child"
-    ],
-    "time": [
-      "4:29",
-      "429"
-    ],
-    "marker": [
-      "4106",
-      "marker 4106",
-      "road marker 4106",
-      "mile marker 4106",
-      "mile 4106"
-    ],
-    "direction": [
-      "beyond"
-    ],
-    "sound": [
-      "child's laugh (far off)",
-      "child'slaugh(faroff)"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -309,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S40C12",
-    "puzzleId": "S40C12-marker-lock",
-    "dialogueId": "S40C12-child",
-    "locationId": "sheriff-s-office",
-    "objective": "Investigate Sheriff's Office, question Child, recover Bottle, and learn why marker 4106 is tied to Cipher Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Sheriff's Office.",
-        "clue": "Child's Laugh (far off)"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Bottle.",
-        "clue": "Bottle"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Child.",
-        "clue": "4:29"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4106.",
-        "clue": "4106"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Beyond instruction.",
-        "clue": "Beyond"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S40C12-location",
-        "type": "location",
-        "name": "Sheriff's Office",
-        "inspectText": "Sheriff's Office looks ordinary until Child's Laugh (far off) moves through it."
-      },
-      {
-        "id": "S40C12-object",
-        "type": "evidence",
-        "name": "Bottle",
-        "inspectText": "Bottle is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S40C12-marker",
-        "type": "marker",
-        "name": "Marker 4106",
-        "inspectText": "Marker 4106 is not the answer. It is the lock."
-      },
-      {
-        "id": "S40C12-sound",
-        "type": "audio_clue",
-        "name": "Child's Laugh (far off)",
-        "inspectText": "Child's Laugh (far off) repeats near 4:29."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series40-The-Coded-Letter/chapter12.md",
-      "novel": "generated/novels/Series40-The-Coded-Letter/chapter12.md",
-      "song": "generated/songs/Series40-The-Coded-Letter/song12.md"
     }
   },
   "story": {

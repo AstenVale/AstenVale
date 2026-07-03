@@ -61,35 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "forge"
-    ],
-    "object": [
-      "photograph"
-    ],
-    "witness": [
-      "apothecary"
-    ],
-    "time": [
-      "12:44",
-      "1244"
-    ],
-    "marker": [
-      "525",
-      "marker 525",
-      "road marker 525",
-      "mile marker 525",
-      "mile 525"
-    ],
-    "direction": [
-      "out"
-    ],
-    "sound": [
-      "broken string",
-      "brokenstring"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -298,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S05C03",
-    "puzzleId": "S05C03-marker-lock",
-    "dialogueId": "S05C03-apothecary",
-    "locationId": "forge",
-    "objective": "Investigate Forge, question Apothecary, recover Photograph, and learn why marker 525 is tied to Cold Archive.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Forge.",
-        "clue": "Broken String"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Photograph.",
-        "clue": "Photograph"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Apothecary.",
-        "clue": "12:44"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 525.",
-        "clue": "525"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Out instruction.",
-        "clue": "Out"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S05C03-location",
-        "type": "location",
-        "name": "Forge",
-        "inspectText": "Forge looks ordinary until Broken String moves through it."
-      },
-      {
-        "id": "S05C03-object",
-        "type": "evidence",
-        "name": "Photograph",
-        "inspectText": "Photograph is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S05C03-marker",
-        "type": "marker",
-        "name": "Marker 525",
-        "inspectText": "Marker 525 is not the answer. It is the lock."
-      },
-      {
-        "id": "S05C03-sound",
-        "type": "audio_clue",
-        "name": "Broken String",
-        "inspectText": "Broken String repeats near 12:44."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series05-The-Last-Winter/chapter03.md",
-      "novel": "generated/novels/Series05-The-Last-Winter/chapter03.md",
-      "song": "generated/songs/Series05-The-Last-Winter/song03.md"
     }
   },
   "story": {

@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "river's edge",
-      "river'sedge"
-    ],
-    "object": [
-      "boot"
-    ],
-    "witness": [
-      "rope maker",
-      "ropemaker"
-    ],
-    "time": [
-      "5:13",
-      "513"
-    ],
-    "marker": [
-      "2079",
-      "marker 2079",
-      "road marker 2079",
-      "mile marker 2079",
-      "mile 2079"
-    ],
-    "direction": [
-      "beyond"
-    ],
-    "sound": [
-      "lantern glass",
-      "lanternglass"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S20C09",
-    "puzzleId": "S20C09-marker-lock",
-    "dialogueId": "S20C09-rope-maker",
-    "locationId": "river-s-edge",
-    "objective": "Investigate River's Edge, question Rope Maker, recover Boot, and learn why marker 2079 is tied to Night Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter River's Edge.",
-        "clue": "Lantern Glass"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Boot.",
-        "clue": "Boot"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Rope Maker.",
-        "clue": "5:13"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2079.",
-        "clue": "2079"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Beyond instruction.",
-        "clue": "Beyond"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S20C09-location",
-        "type": "location",
-        "name": "River's Edge",
-        "inspectText": "River's Edge looks ordinary until Lantern Glass moves through it."
-      },
-      {
-        "id": "S20C09-object",
-        "type": "evidence",
-        "name": "Boot",
-        "inspectText": "Boot is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S20C09-marker",
-        "type": "marker",
-        "name": "Marker 2079",
-        "inspectText": "Marker 2079 is not the answer. It is the lock."
-      },
-      {
-        "id": "S20C09-sound",
-        "type": "audio_clue",
-        "name": "Lantern Glass",
-        "inspectText": "Lantern Glass repeats near 5:13."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series20-The-Midnight-Circuit/chapter09.md",
-      "novel": "generated/novels/Series20-The-Midnight-Circuit/chapter09.md",
-      "song": "generated/songs/Series20-The-Midnight-Circuit/song09.md"
     }
   },
   "story": {

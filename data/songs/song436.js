@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the ridge",
-      "ridge",
-      "theridge"
-    ],
-    "object": [
-      "notebook"
-    ],
-    "witness": [
-      "land agent",
-      "landagent"
-    ],
-    "time": [
-      "2:55",
-      "255"
-    ],
-    "marker": [
-      "3734",
-      "marker 3734",
-      "road marker 3734",
-      "mile marker 3734",
-      "mile 3734"
-    ],
-    "direction": [
-      "across"
-    ],
-    "sound": [
-      "fence wire hum",
-      "fencewirehum"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -312,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S37C04",
-    "puzzleId": "S37C04-marker-lock",
-    "dialogueId": "S37C04-land-agent",
-    "locationId": "the-ridge",
-    "objective": "Investigate The Ridge, question Land Agent, recover Notebook, and learn why marker 3734 is tied to Outpost Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Ridge.",
-        "clue": "Fence Wire Hum"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Notebook.",
-        "clue": "Notebook"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Land Agent.",
-        "clue": "2:55"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3734.",
-        "clue": "3734"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Across instruction.",
-        "clue": "Across"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S37C04-location",
-        "type": "location",
-        "name": "The Ridge",
-        "inspectText": "The Ridge looks ordinary until Fence Wire Hum moves through it."
-      },
-      {
-        "id": "S37C04-object",
-        "type": "evidence",
-        "name": "Notebook",
-        "inspectText": "Notebook is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S37C04-marker",
-        "type": "marker",
-        "name": "Marker 3734",
-        "inspectText": "Marker 3734 is not the answer. It is the lock."
-      },
-      {
-        "id": "S37C04-sound",
-        "type": "audio_clue",
-        "name": "Fence Wire Hum",
-        "inspectText": "Fence Wire Hum repeats near 2:55."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series37-The-Abandoned-Post/chapter04.md",
-      "novel": "generated/novels/Series37-The-Abandoned-Post/chapter04.md",
-      "song": "generated/songs/Series37-The-Abandoned-Post/song04.md"
     }
   },
   "story": {

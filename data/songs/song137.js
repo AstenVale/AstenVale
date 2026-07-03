@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "tannery"
-    ],
-    "object": [
-      "ribbon"
-    ],
-    "witness": [
-      "wool sorter",
-      "woolsorter"
-    ],
-    "time": [
-      "12:33",
-      "1233"
-    ],
-    "marker": [
-      "1243",
-      "marker 1243",
-      "road marker 1243",
-      "mile marker 1243",
-      "mile 1243"
-    ],
-    "direction": [
-      "toward"
-    ],
-    "sound": [
-      "tree fall",
-      "treefall"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -299,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S12C05",
-    "puzzleId": "S12C05-marker-lock",
-    "dialogueId": "S12C05-wool-sorter",
-    "locationId": "tannery",
-    "objective": "Investigate Tannery, question Wool Sorter, recover Ribbon, and learn why marker 1243 is tied to Estate Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Tannery.",
-        "clue": "Tree Fall"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Ribbon.",
-        "clue": "Ribbon"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Wool Sorter.",
-        "clue": "12:33"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1243.",
-        "clue": "1243"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Toward instruction.",
-        "clue": "Toward"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S12C05-location",
-        "type": "location",
-        "name": "Tannery",
-        "inspectText": "Tannery looks ordinary until Tree Fall moves through it."
-      },
-      {
-        "id": "S12C05-object",
-        "type": "evidence",
-        "name": "Ribbon",
-        "inspectText": "Ribbon is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S12C05-marker",
-        "type": "marker",
-        "name": "Marker 1243",
-        "inspectText": "Marker 1243 is not the answer. It is the lock."
-      },
-      {
-        "id": "S12C05-sound",
-        "type": "audio_clue",
-        "name": "Tree Fall",
-        "inspectText": "Tree Fall repeats near 12:33."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series12-The-Inheritance/chapter05.md",
-      "novel": "generated/novels/Series12-The-Inheritance/chapter05.md",
-      "song": "generated/songs/Series12-The-Inheritance/song05.md"
     }
   },
   "story": {

@@ -61,39 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the ravine",
-      "ravine",
-      "theravine"
-    ],
-    "object": [
-      "dried flower",
-      "driedflower"
-    ],
-    "witness": [
-      "gravedigger"
-    ],
-    "time": [
-      "1:26",
-      "126"
-    ],
-    "marker": [
-      "1479",
-      "marker 1479",
-      "road marker 1479",
-      "mile marker 1479",
-      "mile 1479"
-    ],
-    "direction": [
-      "past the tree line",
-      "pastthetreeline"
-    ],
-    "sound": [
-      "hammer strike",
-      "hammerstrike"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -302,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S14C09",
-    "puzzleId": "S14C09-marker-lock",
-    "dialogueId": "S14C09-gravedigger",
-    "locationId": "the-ravine",
-    "objective": "Investigate The Ravine, question Gravedigger, recover Dried Flower, and learn why marker 1479 is tied to High Water Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Ravine.",
-        "clue": "Hammer Strike"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Dried Flower.",
-        "clue": "Dried Flower"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Gravedigger.",
-        "clue": "1:26"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1479.",
-        "clue": "1479"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Past the Tree Line instruction.",
-        "clue": "Past the Tree Line"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S14C09-location",
-        "type": "location",
-        "name": "The Ravine",
-        "inspectText": "The Ravine looks ordinary until Hammer Strike moves through it."
-      },
-      {
-        "id": "S14C09-object",
-        "type": "evidence",
-        "name": "Dried Flower",
-        "inspectText": "Dried Flower is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S14C09-marker",
-        "type": "marker",
-        "name": "Marker 1479",
-        "inspectText": "Marker 1479 is not the answer. It is the lock."
-      },
-      {
-        "id": "S14C09-sound",
-        "type": "audio_clue",
-        "name": "Hammer Strike",
-        "inspectText": "Hammer Strike repeats near 1:26."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series14-The-Flood-Year/chapter09.md",
-      "novel": "generated/novels/Series14-The-Flood-Year/chapter09.md",
-      "song": "generated/songs/Series14-The-Flood-Year/song09.md"
     }
   },
   "story": {

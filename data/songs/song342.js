@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the widow's porch",
-      "widow's porch",
-      "thewidow'sporch"
-    ],
-    "object": [
-      "notebook"
-    ],
-    "witness": [
-      "farmer"
-    ],
-    "time": [
-      "10:05",
-      "1005"
-    ],
-    "marker": [
-      "2952",
-      "marker 2952",
-      "road marker 2952",
-      "mile marker 2952",
-      "mile 2952"
-    ],
-    "direction": [
-      "further in",
-      "furtherin"
-    ],
-    "sound": [
-      "pages turning",
-      "pagesturning"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -312,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S29C06",
-    "puzzleId": "S29C06-marker-lock",
-    "dialogueId": "S29C06-farmer",
-    "locationId": "the-widow-s-porch",
-    "objective": "Investigate The Widow's Porch, question Farmer, recover Notebook, and learn why marker 2952 is tied to Interment Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Widow's Porch.",
-        "clue": "Pages Turning"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Notebook.",
-        "clue": "Notebook"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Farmer.",
-        "clue": "10:05"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2952.",
-        "clue": "2952"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Further In instruction.",
-        "clue": "Further In"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S29C06-location",
-        "type": "location",
-        "name": "The Widow's Porch",
-        "inspectText": "The Widow's Porch looks ordinary until Pages Turning moves through it."
-      },
-      {
-        "id": "S29C06-object",
-        "type": "evidence",
-        "name": "Notebook",
-        "inspectText": "Notebook is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S29C06-marker",
-        "type": "marker",
-        "name": "Marker 2952",
-        "inspectText": "Marker 2952 is not the answer. It is the lock."
-      },
-      {
-        "id": "S29C06-sound",
-        "type": "audio_clue",
-        "name": "Pages Turning",
-        "inspectText": "Pages Turning repeats near 10:05."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series29-The-Unmarked-Grave/chapter06.md",
-      "novel": "generated/novels/Series29-The-Unmarked-Grave/chapter06.md",
-      "song": "generated/songs/Series29-The-Unmarked-Grave/song06.md"
     }
   },
   "story": {

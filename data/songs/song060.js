@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "fulling mill",
-      "fullingmill"
-    ],
-    "object": [
-      "ledger page",
-      "ledgerpage"
-    ],
-    "witness": [
-      "lock keeper",
-      "lockkeeper"
-    ],
-    "time": [
-      "7:14",
-      "714"
-    ],
-    "marker": [
-      "606",
-      "marker 606",
-      "road marker 606",
-      "mile marker 606",
-      "mile 606"
-    ],
-    "direction": [
-      "back"
-    ],
-    "sound": [
-      "lantern flicker",
-      "lanternflicker"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -301,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S05C12",
-    "puzzleId": "S05C12-marker-lock",
-    "dialogueId": "S05C12-lock-keeper",
-    "locationId": "fulling-mill",
-    "objective": "Investigate Fulling Mill, question Lock Keeper, recover Ledger Page, and learn why marker 606 is tied to Cold Archive.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Fulling Mill.",
-        "clue": "Lantern Flicker"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Ledger Page.",
-        "clue": "Ledger Page"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Lock Keeper.",
-        "clue": "7:14"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 606.",
-        "clue": "606"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Back instruction.",
-        "clue": "Back"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S05C12-location",
-        "type": "location",
-        "name": "Fulling Mill",
-        "inspectText": "Fulling Mill looks ordinary until Lantern Flicker moves through it."
-      },
-      {
-        "id": "S05C12-object",
-        "type": "evidence",
-        "name": "Ledger Page",
-        "inspectText": "Ledger Page is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S05C12-marker",
-        "type": "marker",
-        "name": "Marker 606",
-        "inspectText": "Marker 606 is not the answer. It is the lock."
-      },
-      {
-        "id": "S05C12-sound",
-        "type": "audio_clue",
-        "name": "Lantern Flicker",
-        "inspectText": "Lantern Flicker repeats near 7:14."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series05-The-Last-Winter/chapter12.md",
-      "novel": "generated/novels/Series05-The-Last-Winter/chapter12.md",
-      "song": "generated/songs/Series05-The-Last-Winter/song12.md"
     }
   },
   "story": {

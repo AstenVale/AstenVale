@@ -61,40 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the widow's porch",
-      "widow's porch",
-      "thewidow'sporch"
-    ],
-    "object": [
-      "bullet casing",
-      "bulletcasing"
-    ],
-    "witness": [
-      "bone collector",
-      "bonecollector"
-    ],
-    "time": [
-      "5:55",
-      "555"
-    ],
-    "marker": [
-      "1870",
-      "marker 1870",
-      "road marker 1870",
-      "mile marker 1870",
-      "mile 1870"
-    ],
-    "direction": [
-      "out of sight",
-      "outofsight"
-    ],
-    "sound": [
-      "moth wings",
-      "mothwings"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -313,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S18C08",
-    "puzzleId": "S18C08-marker-lock",
-    "dialogueId": "S18C08-bone-collector",
-    "locationId": "the-widow-s-porch",
-    "objective": "Investigate The Widow's Porch, question Bone Collector, recover Bullet Casing, and learn why marker 1870 is tied to Identity Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Widow's Porch.",
-        "clue": "Moth Wings"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Bullet Casing.",
-        "clue": "Bullet Casing"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Bone Collector.",
-        "clue": "5:55"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1870.",
-        "clue": "1870"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Out of Sight instruction.",
-        "clue": "Out of Sight"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S18C08-location",
-        "type": "location",
-        "name": "The Widow's Porch",
-        "inspectText": "The Widow's Porch looks ordinary until Moth Wings moves through it."
-      },
-      {
-        "id": "S18C08-object",
-        "type": "evidence",
-        "name": "Bullet Casing",
-        "inspectText": "Bullet Casing is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S18C08-marker",
-        "type": "marker",
-        "name": "Marker 1870",
-        "inspectText": "Marker 1870 is not the answer. It is the lock."
-      },
-      {
-        "id": "S18C08-sound",
-        "type": "audio_clue",
-        "name": "Moth Wings",
-        "inspectText": "Moth Wings repeats near 5:55."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series18-The-Hollow-Names/chapter08.md",
-      "novel": "generated/novels/Series18-The-Hollow-Names/chapter08.md",
-      "song": "generated/songs/Series18-The-Hollow-Names/song08.md"
     }
   },
   "story": {

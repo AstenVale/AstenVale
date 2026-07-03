@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "cider house",
-      "ciderhouse"
-    ],
-    "object": [
-      "charred paper",
-      "charredpaper"
-    ],
-    "witness": [
-      "sheriff"
-    ],
-    "time": [
-      "11:29",
-      "1129"
-    ],
-    "marker": [
-      "1452",
-      "marker 1452",
-      "road marker 1452",
-      "mile marker 1452",
-      "mile 1452"
-    ],
-    "direction": [
-      "left"
-    ],
-    "sound": [
-      "latch drop",
-      "latchdrop"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S14C06",
-    "puzzleId": "S14C06-marker-lock",
-    "dialogueId": "S14C06-sheriff",
-    "locationId": "cider-house",
-    "objective": "Investigate Cider House, question Sheriff, recover Charred Paper, and learn why marker 1452 is tied to High Water Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Cider House.",
-        "clue": "Latch Drop"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Charred Paper.",
-        "clue": "Charred Paper"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Sheriff.",
-        "clue": "11:29"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1452.",
-        "clue": "1452"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Left instruction.",
-        "clue": "Left"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S14C06-location",
-        "type": "location",
-        "name": "Cider House",
-        "inspectText": "Cider House looks ordinary until Latch Drop moves through it."
-      },
-      {
-        "id": "S14C06-object",
-        "type": "evidence",
-        "name": "Charred Paper",
-        "inspectText": "Charred Paper is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S14C06-marker",
-        "type": "marker",
-        "name": "Marker 1452",
-        "inspectText": "Marker 1452 is not the answer. It is the lock."
-      },
-      {
-        "id": "S14C06-sound",
-        "type": "audio_clue",
-        "name": "Latch Drop",
-        "inspectText": "Latch Drop repeats near 11:29."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series14-The-Flood-Year/chapter06.md",
-      "novel": "generated/novels/Series14-The-Flood-Year/chapter06.md",
-      "song": "generated/songs/Series14-The-Flood-Year/song06.md"
     }
   },
   "story": {

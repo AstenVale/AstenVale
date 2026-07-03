@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "north pasture",
-      "northpasture"
-    ],
-    "object": [
-      "dried blood on cloth",
-      "driedbloodoncloth"
-    ],
-    "witness": [
-      "fisherman"
-    ],
-    "time": [
-      "7:00",
-      "700"
-    ],
-    "marker": [
-      "3706",
-      "marker 3706",
-      "road marker 3706",
-      "mile marker 3706",
-      "mile 3706"
-    ],
-    "direction": [
-      "up the ridge",
-      "uptheridge"
-    ],
-    "sound": [
-      "fire crackling",
-      "firecrackling"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -301,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S36C12",
-    "puzzleId": "S36C12-marker-lock",
-    "dialogueId": "S36C12-fisherman",
-    "locationId": "north-pasture",
-    "objective": "Investigate North Pasture, question Fisherman, recover Dried Blood on Cloth, and learn why marker 3706 is tied to Voice Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter North Pasture.",
-        "clue": "Fire Crackling"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Dried Blood on Cloth.",
-        "clue": "Dried Blood on Cloth"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Fisherman.",
-        "clue": "7:00"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3706.",
-        "clue": "3706"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Up the Ridge instruction.",
-        "clue": "Up the Ridge"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S36C12-location",
-        "type": "location",
-        "name": "North Pasture",
-        "inspectText": "North Pasture looks ordinary until Fire Crackling moves through it."
-      },
-      {
-        "id": "S36C12-object",
-        "type": "evidence",
-        "name": "Dried Blood on Cloth",
-        "inspectText": "Dried Blood on Cloth is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S36C12-marker",
-        "type": "marker",
-        "name": "Marker 3706",
-        "inspectText": "Marker 3706 is not the answer. It is the lock."
-      },
-      {
-        "id": "S36C12-sound",
-        "type": "audio_clue",
-        "name": "Fire Crackling",
-        "inspectText": "Fire Crackling repeats near 7:00."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series36-The-Night-Caller/chapter12.md",
-      "novel": "generated/novels/Series36-The-Night-Caller/chapter12.md",
-      "song": "generated/songs/Series36-The-Night-Caller/song12.md"
     }
   },
   "story": {

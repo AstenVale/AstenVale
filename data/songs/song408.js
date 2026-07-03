@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "ice house",
-      "icehouse"
-    ],
-    "object": [
-      "watch"
-    ],
-    "witness": [
-      "lock keeper",
-      "lockkeeper"
-    ],
-    "time": [
-      "5:40",
-      "540"
-    ],
-    "marker": [
-      "3506",
-      "marker 3506",
-      "road marker 3506",
-      "mile marker 3506",
-      "mile 3506"
-    ],
-    "direction": [
-      "west"
-    ],
-    "sound": [
-      "crow wings",
-      "crowwings"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S34C12",
-    "puzzleId": "S34C12-marker-lock",
-    "dialogueId": "S34C12-lock-keeper",
-    "locationId": "ice-house",
-    "objective": "Investigate Ice House, question Lock Keeper, recover Watch, and learn why marker 3506 is tied to Clinical Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Ice House.",
-        "clue": "Crow Wings"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Watch.",
-        "clue": "Watch"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Lock Keeper.",
-        "clue": "5:40"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3506.",
-        "clue": "3506"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the West instruction.",
-        "clue": "West"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S34C12-location",
-        "type": "location",
-        "name": "Ice House",
-        "inspectText": "Ice House looks ordinary until Crow Wings moves through it."
-      },
-      {
-        "id": "S34C12-object",
-        "type": "evidence",
-        "name": "Watch",
-        "inspectText": "Watch is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S34C12-marker",
-        "type": "marker",
-        "name": "Marker 3506",
-        "inspectText": "Marker 3506 is not the answer. It is the lock."
-      },
-      {
-        "id": "S34C12-sound",
-        "type": "audio_clue",
-        "name": "Crow Wings",
-        "inspectText": "Crow Wings repeats near 5:40."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series34-The-Locked-Ward/chapter12.md",
-      "novel": "generated/novels/Series34-The-Locked-Ward/chapter12.md",
-      "song": "generated/songs/Series34-The-Locked-Ward/song12.md"
     }
   },
   "story": {

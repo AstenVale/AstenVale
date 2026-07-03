@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the dry gulch",
-      "dry gulch",
-      "thedrygulch"
-    ],
-    "object": [
-      "ribbon"
-    ],
-    "witness": [
-      "fisherman"
-    ],
-    "time": [
-      "10:05",
-      "1005"
-    ],
-    "marker": [
-      "1634",
-      "marker 1634",
-      "road marker 1634",
-      "mile marker 1634",
-      "mile 1634"
-    ],
-    "direction": [
-      "past the tree line",
-      "pastthetreeline"
-    ],
-    "sound": [
-      "night insects",
-      "nightinsects"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -301,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S16C04",
-    "puzzleId": "S16C04-marker-lock",
-    "dialogueId": "S16C04-fisherman",
-    "locationId": "the-dry-gulch",
-    "objective": "Investigate The Dry Gulch, question Fisherman, recover Ribbon, and learn why marker 1634 is tied to Transparent Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Dry Gulch.",
-        "clue": "Night Insects"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Ribbon.",
-        "clue": "Ribbon"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Fisherman.",
-        "clue": "10:05"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1634.",
-        "clue": "1634"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Past the Tree Line instruction.",
-        "clue": "Past the Tree Line"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S16C04-location",
-        "type": "location",
-        "name": "The Dry Gulch",
-        "inspectText": "The Dry Gulch looks ordinary until Night Insects moves through it."
-      },
-      {
-        "id": "S16C04-object",
-        "type": "evidence",
-        "name": "Ribbon",
-        "inspectText": "Ribbon is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S16C04-marker",
-        "type": "marker",
-        "name": "Marker 1634",
-        "inspectText": "Marker 1634 is not the answer. It is the lock."
-      },
-      {
-        "id": "S16C04-sound",
-        "type": "audio_clue",
-        "name": "Night Insects",
-        "inspectText": "Night Insects repeats near 10:05."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series16-The-Glass-House/chapter04.md",
-      "novel": "generated/novels/Series16-The-Glass-House/chapter04.md",
-      "song": "generated/songs/Series16-The-Glass-House/song04.md"
     }
   },
   "story": {

@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "canning factory",
-      "canningfactory"
-    ],
-    "object": [
-      "knife"
-    ],
-    "witness": [
-      "conductor"
-    ],
-    "time": [
-      "1:11",
-      "111"
-    ],
-    "marker": [
-      "2961",
-      "marker 2961",
-      "road marker 2961",
-      "mile marker 2961",
-      "mile 2961"
-    ],
-    "direction": [
-      "out of sight",
-      "outofsight"
-    ],
-    "sound": [
-      "crow call",
-      "crowcall"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S29C07",
-    "puzzleId": "S29C07-marker-lock",
-    "dialogueId": "S29C07-conductor",
-    "locationId": "canning-factory",
-    "objective": "Investigate Canning Factory, question Conductor, recover Knife, and learn why marker 2961 is tied to Interment Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Canning Factory.",
-        "clue": "Crow Call"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Knife.",
-        "clue": "Knife"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Conductor.",
-        "clue": "1:11"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2961.",
-        "clue": "2961"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Out of Sight instruction.",
-        "clue": "Out of Sight"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S29C07-location",
-        "type": "location",
-        "name": "Canning Factory",
-        "inspectText": "Canning Factory looks ordinary until Crow Call moves through it."
-      },
-      {
-        "id": "S29C07-object",
-        "type": "evidence",
-        "name": "Knife",
-        "inspectText": "Knife is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S29C07-marker",
-        "type": "marker",
-        "name": "Marker 2961",
-        "inspectText": "Marker 2961 is not the answer. It is the lock."
-      },
-      {
-        "id": "S29C07-sound",
-        "type": "audio_clue",
-        "name": "Crow Call",
-        "inspectText": "Crow Call repeats near 1:11."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series29-The-Unmarked-Grave/chapter07.md",
-      "novel": "generated/novels/Series29-The-Unmarked-Grave/chapter07.md",
-      "song": "generated/songs/Series29-The-Unmarked-Grave/song07.md"
     }
   },
   "story": {

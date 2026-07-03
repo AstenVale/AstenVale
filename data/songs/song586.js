@@ -61,39 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the weir",
-      "weir",
-      "theweir"
-    ],
-    "object": [
-      "oil rag",
-      "oilrag"
-    ],
-    "witness": [
-      "salt seller",
-      "saltseller"
-    ],
-    "time": [
-      "1:11",
-      "111"
-    ],
-    "marker": [
-      "4988",
-      "marker 4988",
-      "road marker 4988",
-      "mile marker 4988",
-      "mile 4988"
-    ],
-    "direction": [
-      "beyond"
-    ],
-    "sound": [
-      "bone on stone",
-      "boneonstone"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -312,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S49C10",
-    "puzzleId": "S49C10-marker-lock",
-    "dialogueId": "S49C10-salt-seller",
-    "locationId": "the-weir",
-    "objective": "Investigate The Weir, question Salt Seller, recover Oil Rag, and learn why marker 4988 is tied to Testimony Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Weir.",
-        "clue": "Bone on Stone"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Oil Rag.",
-        "clue": "Oil Rag"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Salt Seller.",
-        "clue": "1:11"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4988.",
-        "clue": "4988"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Beyond instruction.",
-        "clue": "Beyond"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S49C10-location",
-        "type": "location",
-        "name": "The Weir",
-        "inspectText": "The Weir looks ordinary until Bone on Stone moves through it."
-      },
-      {
-        "id": "S49C10-object",
-        "type": "evidence",
-        "name": "Oil Rag",
-        "inspectText": "Oil Rag is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S49C10-marker",
-        "type": "marker",
-        "name": "Marker 4988",
-        "inspectText": "Marker 4988 is not the answer. It is the lock."
-      },
-      {
-        "id": "S49C10-sound",
-        "type": "audio_clue",
-        "name": "Bone on Stone",
-        "inspectText": "Bone on Stone repeats near 1:11."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series49-The-Final-Witness/chapter10.md",
-      "novel": "generated/novels/Series49-The-Final-Witness/chapter10.md",
-      "song": "generated/songs/Series49-The-Final-Witness/song10.md"
     }
   },
   "story": {

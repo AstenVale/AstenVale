@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "forge"
-    ],
-    "object": [
-      "spool of thread",
-      "spoolofthread"
-    ],
-    "witness": [
-      "lamplighter"
-    ],
-    "time": [
-      "12:17",
-      "1217"
-    ],
-    "marker": [
-      "634",
-      "marker 634",
-      "road marker 634",
-      "mile marker 634",
-      "mile 634"
-    ],
-    "direction": [
-      "further in",
-      "furtherin"
-    ],
-    "sound": [
-      "cellar door",
-      "cellardoor"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S06C04",
-    "puzzleId": "S06C04-marker-lock",
-    "dialogueId": "S06C04-lamplighter",
-    "locationId": "forge",
-    "objective": "Investigate Forge, question Lamplighter, recover Spool of Thread, and learn why marker 634 is tied to Below Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Forge.",
-        "clue": "Cellar Door"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Spool of Thread.",
-        "clue": "Spool of Thread"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Lamplighter.",
-        "clue": "12:17"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 634.",
-        "clue": "634"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Further In instruction.",
-        "clue": "Further In"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S06C04-location",
-        "type": "location",
-        "name": "Forge",
-        "inspectText": "Forge looks ordinary until Cellar Door moves through it."
-      },
-      {
-        "id": "S06C04-object",
-        "type": "evidence",
-        "name": "Spool of Thread",
-        "inspectText": "Spool of Thread is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S06C04-marker",
-        "type": "marker",
-        "name": "Marker 634",
-        "inspectText": "Marker 634 is not the answer. It is the lock."
-      },
-      {
-        "id": "S06C04-sound",
-        "type": "audio_clue",
-        "name": "Cellar Door",
-        "inspectText": "Cellar Door repeats near 12:17."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series06-The-Underground/chapter04.md",
-      "novel": "generated/novels/Series06-The-Underground/chapter04.md",
-      "song": "generated/songs/Series06-The-Underground/song04.md"
     }
   },
   "story": {

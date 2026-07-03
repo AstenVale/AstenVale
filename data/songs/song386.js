@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "ash hollow",
-      "ashhollow"
-    ],
-    "object": [
-      "spectacles"
-    ],
-    "witness": [
-      "widow"
-    ],
-    "time": [
-      "12:44",
-      "1244"
-    ],
-    "marker": [
-      "3316",
-      "marker 3316",
-      "road marker 3316",
-      "mile marker 3316",
-      "mile 3316"
-    ],
-    "direction": [
-      "back"
-    ],
-    "sound": [
-      "empty wagon",
-      "emptywagon"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -310,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S33C02",
-    "puzzleId": "S33C02-marker-lock",
-    "dialogueId": "S33C02-widow",
-    "locationId": "ash-hollow",
-    "objective": "Investigate Ash Hollow, question Widow, recover Spectacles, and learn why marker 3316 is tied to Faded Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Ash Hollow.",
-        "clue": "Empty Wagon"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Spectacles.",
-        "clue": "Spectacles"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Widow.",
-        "clue": "12:44"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3316.",
-        "clue": "3316"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Back instruction.",
-        "clue": "Back"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S33C02-location",
-        "type": "location",
-        "name": "Ash Hollow",
-        "inspectText": "Ash Hollow looks ordinary until Empty Wagon moves through it."
-      },
-      {
-        "id": "S33C02-object",
-        "type": "evidence",
-        "name": "Spectacles",
-        "inspectText": "Spectacles is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S33C02-marker",
-        "type": "marker",
-        "name": "Marker 3316",
-        "inspectText": "Marker 3316 is not the answer. It is the lock."
-      },
-      {
-        "id": "S33C02-sound",
-        "type": "audio_clue",
-        "name": "Empty Wagon",
-        "inspectText": "Empty Wagon repeats near 12:44."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series33-The-Pale-Season/chapter02.md",
-      "novel": "generated/novels/Series33-The-Pale-Season/chapter02.md",
-      "song": "generated/songs/Series33-The-Pale-Season/song02.md"
     }
   },
   "story": {

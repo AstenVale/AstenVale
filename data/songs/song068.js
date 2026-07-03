@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "forge"
-    ],
-    "object": [
-      "ticket"
-    ],
-    "witness": [
-      "retired soldier",
-      "retiredsoldier"
-    ],
-    "time": [
-      "2:55",
-      "255"
-    ],
-    "marker": [
-      "670",
-      "marker 670",
-      "road marker 670",
-      "mile marker 670",
-      "mile 670"
-    ],
-    "direction": [
-      "back"
-    ],
-    "sound": [
-      "old hinge",
-      "oldhinge"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -310,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S06C08",
-    "puzzleId": "S06C08-marker-lock",
-    "dialogueId": "S06C08-retired-soldier",
-    "locationId": "forge",
-    "objective": "Investigate Forge, question Retired Soldier, recover Ticket, and learn why marker 670 is tied to Below Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Forge.",
-        "clue": "Old Hinge"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Ticket.",
-        "clue": "Ticket"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Retired Soldier.",
-        "clue": "2:55"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 670.",
-        "clue": "670"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Back instruction.",
-        "clue": "Back"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S06C08-location",
-        "type": "location",
-        "name": "Forge",
-        "inspectText": "Forge looks ordinary until Old Hinge moves through it."
-      },
-      {
-        "id": "S06C08-object",
-        "type": "evidence",
-        "name": "Ticket",
-        "inspectText": "Ticket is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S06C08-marker",
-        "type": "marker",
-        "name": "Marker 670",
-        "inspectText": "Marker 670 is not the answer. It is the lock."
-      },
-      {
-        "id": "S06C08-sound",
-        "type": "audio_clue",
-        "name": "Old Hinge",
-        "inspectText": "Old Hinge repeats near 2:55."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series06-The-Underground/chapter08.md",
-      "novel": "generated/novels/Series06-The-Underground/chapter08.md",
-      "song": "generated/songs/Series06-The-Underground/song08.md"
     }
   },
   "story": {

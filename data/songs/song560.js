@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "south fork",
-      "southfork"
-    ],
-    "object": [
-      "inkwell"
-    ],
-    "witness": [
-      "schoolgirl"
-    ],
-    "time": [
-      "11:44",
-      "1144"
-    ],
-    "marker": [
-      "4770",
-      "marker 4770",
-      "road marker 4770",
-      "mile marker 4770",
-      "mile 4770"
-    ],
-    "direction": [
-      "off the road",
-      "offtheroad"
-    ],
-    "sound": [
-      "dog bark at nothing",
-      "dogbarkatnothing"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S47C08",
-    "puzzleId": "S47C08-marker-lock",
-    "dialogueId": "S47C08-schoolgirl",
-    "locationId": "south-fork",
-    "objective": "Investigate South Fork, question Schoolgirl, recover Inkwell, and learn why marker 4770 is tied to Detour Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter South Fork.",
-        "clue": "Dog Bark at Nothing"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Inkwell.",
-        "clue": "Inkwell"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Schoolgirl.",
-        "clue": "11:44"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4770.",
-        "clue": "4770"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Off the Road instruction.",
-        "clue": "Off the Road"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S47C08-location",
-        "type": "location",
-        "name": "South Fork",
-        "inspectText": "South Fork looks ordinary until Dog Bark at Nothing moves through it."
-      },
-      {
-        "id": "S47C08-object",
-        "type": "evidence",
-        "name": "Inkwell",
-        "inspectText": "Inkwell is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S47C08-marker",
-        "type": "marker",
-        "name": "Marker 4770",
-        "inspectText": "Marker 4770 is not the answer. It is the lock."
-      },
-      {
-        "id": "S47C08-sound",
-        "type": "audio_clue",
-        "name": "Dog Bark at Nothing",
-        "inspectText": "Dog Bark at Nothing repeats near 11:44."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series47-The-Long-Way-Round/chapter08.md",
-      "novel": "generated/novels/Series47-The-Long-Way-Round/chapter08.md",
-      "song": "generated/songs/Series47-The-Long-Way-Round/song08.md"
     }
   },
   "story": {

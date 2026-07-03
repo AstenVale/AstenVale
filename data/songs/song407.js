@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "canning factory",
-      "canningfactory"
-    ],
-    "object": [
-      "map"
-    ],
-    "witness": [
-      "sexton"
-    ],
-    "time": [
-      "3:49",
-      "349"
-    ],
-    "marker": [
-      "3497",
-      "marker 3497",
-      "road marker 3497",
-      "mile marker 3497",
-      "mile 3497"
-    ],
-    "direction": [
-      "nowhere"
-    ],
-    "sound": [
-      "horse hooves",
-      "horsehooves"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -299,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S34C11",
-    "puzzleId": "S34C11-marker-lock",
-    "dialogueId": "S34C11-sexton",
-    "locationId": "canning-factory",
-    "objective": "Investigate Canning Factory, question Sexton, recover Map, and learn why marker 3497 is tied to Clinical Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Canning Factory.",
-        "clue": "Horse Hooves"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Map.",
-        "clue": "Map"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Sexton.",
-        "clue": "3:49"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3497.",
-        "clue": "3497"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Nowhere instruction.",
-        "clue": "Nowhere"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S34C11-location",
-        "type": "location",
-        "name": "Canning Factory",
-        "inspectText": "Canning Factory looks ordinary until Horse Hooves moves through it."
-      },
-      {
-        "id": "S34C11-object",
-        "type": "evidence",
-        "name": "Map",
-        "inspectText": "Map is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S34C11-marker",
-        "type": "marker",
-        "name": "Marker 3497",
-        "inspectText": "Marker 3497 is not the answer. It is the lock."
-      },
-      {
-        "id": "S34C11-sound",
-        "type": "audio_clue",
-        "name": "Horse Hooves",
-        "inspectText": "Horse Hooves repeats near 3:49."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series34-The-Locked-Ward/chapter11.md",
-      "novel": "generated/novels/Series34-The-Locked-Ward/chapter11.md",
-      "song": "generated/songs/Series34-The-Locked-Ward/song11.md"
     }
   },
   "story": {

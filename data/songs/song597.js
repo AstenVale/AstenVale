@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "north pasture",
-      "northpasture"
-    ],
-    "object": [
-      "copper fitting",
-      "copperfitting"
-    ],
-    "witness": [
-      "lamplighter"
-    ],
-    "time": [
-      "7:00",
-      "700"
-    ],
-    "marker": [
-      "5079",
-      "marker 5079",
-      "road marker 5079",
-      "mile marker 5079",
-      "mile 5079"
-    ],
-    "direction": [
-      "toward the river",
-      "towardtheriver"
-    ],
-    "sound": [
-      "river water",
-      "riverwater"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -301,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S50C09",
-    "puzzleId": "S50C09-marker-lock",
-    "dialogueId": "S50C09-lamplighter",
-    "locationId": "north-pasture",
-    "objective": "Investigate North Pasture, question Lamplighter, recover Copper Fitting, and learn why marker 5079 is tied to Full Archive.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter North Pasture.",
-        "clue": "River Water"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Copper Fitting.",
-        "clue": "Copper Fitting"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Lamplighter.",
-        "clue": "7:00"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 5079.",
-        "clue": "5079"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Toward the River instruction.",
-        "clue": "Toward the River"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S50C09-location",
-        "type": "location",
-        "name": "North Pasture",
-        "inspectText": "North Pasture looks ordinary until River Water moves through it."
-      },
-      {
-        "id": "S50C09-object",
-        "type": "evidence",
-        "name": "Copper Fitting",
-        "inspectText": "Copper Fitting is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S50C09-marker",
-        "type": "marker",
-        "name": "Marker 5079",
-        "inspectText": "Marker 5079 is not the answer. It is the lock."
-      },
-      {
-        "id": "S50C09-sound",
-        "type": "audio_clue",
-        "name": "River Water",
-        "inspectText": "River Water repeats near 7:00."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series50-The-Resolution/chapter09.md",
-      "novel": "generated/novels/Series50-The-Resolution/chapter09.md",
-      "song": "generated/songs/Series50-The-Resolution/song09.md"
     }
   },
   "story": {

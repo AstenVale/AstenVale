@@ -61,34 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "cemetery"
-    ],
-    "object": [
-      "headstone"
-    ],
-    "witness": [
-      "groundskeeper"
-    ],
-    "time": [
-      "12:15",
-      "1215"
-    ],
-    "marker": [
-      "187",
-      "marker 187",
-      "road marker 187",
-      "mile marker 187",
-      "mile 187"
-    ],
-    "direction": [
-      "down"
-    ],
-    "sound": [
-      "rain"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -308,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S02C08",
-    "puzzleId": "S02C08-marker-lock",
-    "dialogueId": "S02C08-groundskeeper",
-    "locationId": "cemetery",
-    "objective": "Investigate Cemetery, question Groundskeeper, recover Headstone, and learn why marker 187 is tied to Personal Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Cemetery.",
-        "clue": "Rain"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Headstone.",
-        "clue": "Headstone"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Groundskeeper.",
-        "clue": "12:15"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 187.",
-        "clue": "187"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Down instruction.",
-        "clue": "Down"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S02C08-location",
-        "type": "location",
-        "name": "Cemetery",
-        "inspectText": "Cemetery looks ordinary until Rain moves through it."
-      },
-      {
-        "id": "S02C08-object",
-        "type": "evidence",
-        "name": "Headstone",
-        "inspectText": "Headstone is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S02C08-marker",
-        "type": "marker",
-        "name": "Marker 187",
-        "inspectText": "Marker 187 is not the answer. It is the lock."
-      },
-      {
-        "id": "S02C08-sound",
-        "type": "audio_clue",
-        "name": "Rain",
-        "inspectText": "Rain repeats near 12:15."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series02-The-Before/chapter08.md",
-      "novel": "generated/novels/Series02-The-Before/chapter08.md",
-      "song": "generated/songs/Series02-The-Before/song08.md"
     }
   },
   "story": {

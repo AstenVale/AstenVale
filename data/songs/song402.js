@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the hollow road",
-      "hollow road",
-      "thehollowroad"
-    ],
-    "object": [
-      "spectacles"
-    ],
-    "witness": [
-      "drifter"
-    ],
-    "time": [
-      "4:29",
-      "429"
-    ],
-    "marker": [
-      "3452",
-      "marker 3452",
-      "road marker 3452",
-      "mile marker 3452",
-      "mile 3452"
-    ],
-    "direction": [
-      "beyond"
-    ],
-    "sound": [
-      "latch drop",
-      "latchdrop"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S34C06",
-    "puzzleId": "S34C06-marker-lock",
-    "dialogueId": "S34C06-drifter",
-    "locationId": "the-hollow-road",
-    "objective": "Investigate The Hollow Road, question Drifter, recover Spectacles, and learn why marker 3452 is tied to Clinical Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Hollow Road.",
-        "clue": "Latch Drop"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Spectacles.",
-        "clue": "Spectacles"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Drifter.",
-        "clue": "4:29"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3452.",
-        "clue": "3452"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Beyond instruction.",
-        "clue": "Beyond"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S34C06-location",
-        "type": "location",
-        "name": "The Hollow Road",
-        "inspectText": "The Hollow Road looks ordinary until Latch Drop moves through it."
-      },
-      {
-        "id": "S34C06-object",
-        "type": "evidence",
-        "name": "Spectacles",
-        "inspectText": "Spectacles is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S34C06-marker",
-        "type": "marker",
-        "name": "Marker 3452",
-        "inspectText": "Marker 3452 is not the answer. It is the lock."
-      },
-      {
-        "id": "S34C06-sound",
-        "type": "audio_clue",
-        "name": "Latch Drop",
-        "inspectText": "Latch Drop repeats near 4:29."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series34-The-Locked-Ward/chapter06.md",
-      "novel": "generated/novels/Series34-The-Locked-Ward/chapter06.md",
-      "song": "generated/songs/Series34-The-Locked-Ward/song06.md"
     }
   },
   "story": {

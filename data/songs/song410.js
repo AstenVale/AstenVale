@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "fulling mill",
-      "fullingmill"
-    ],
-    "object": [
-      "rope"
-    ],
-    "witness": [
-      "deputy"
-    ],
-    "time": [
-      "8:00",
-      "800"
-    ],
-    "marker": [
-      "3516",
-      "marker 3516",
-      "road marker 3516",
-      "mile marker 3516",
-      "mile 3516"
-    ],
-    "direction": [
-      "nowhere"
-    ],
-    "sound": [
-      "cellar stairs",
-      "cellarstairs"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -309,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S35C02",
-    "puzzleId": "S35C02-marker-lock",
-    "dialogueId": "S35C02-deputy",
-    "locationId": "fulling-mill",
-    "objective": "Investigate Fulling Mill, question Deputy, recover Rope, and learn why marker 3516 is tied to Collection Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Fulling Mill.",
-        "clue": "Cellar Stairs"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Rope.",
-        "clue": "Rope"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Deputy.",
-        "clue": "8:00"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3516.",
-        "clue": "3516"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Nowhere instruction.",
-        "clue": "Nowhere"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S35C02-location",
-        "type": "location",
-        "name": "Fulling Mill",
-        "inspectText": "Fulling Mill looks ordinary until Cellar Stairs moves through it."
-      },
-      {
-        "id": "S35C02-object",
-        "type": "evidence",
-        "name": "Rope",
-        "inspectText": "Rope is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S35C02-marker",
-        "type": "marker",
-        "name": "Marker 3516",
-        "inspectText": "Marker 3516 is not the answer. It is the lock."
-      },
-      {
-        "id": "S35C02-sound",
-        "type": "audio_clue",
-        "name": "Cellar Stairs",
-        "inspectText": "Cellar Stairs repeats near 8:00."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series35-The-Archive-Keeper/chapter02.md",
-      "novel": "generated/novels/Series35-The-Archive-Keeper/chapter02.md",
-      "song": "generated/songs/Series35-The-Archive-Keeper/song02.md"
     }
   },
   "story": {

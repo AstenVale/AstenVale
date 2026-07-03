@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "old wharf",
-      "oldwharf"
-    ],
-    "object": [
-      "surveyor's pin",
-      "surveyor'spin"
-    ],
-    "witness": [
-      "midwife"
-    ],
-    "time": [
-      "10:19",
-      "1019"
-    ],
-    "marker": [
-      "2625",
-      "marker 2625",
-      "road marker 2625",
-      "mile marker 2625",
-      "mile 2625"
-    ],
-    "direction": [
-      "out"
-    ],
-    "sound": [
-      "water drip",
-      "waterdrip"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -310,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S26C03",
-    "puzzleId": "S26C03-marker-lock",
-    "dialogueId": "S26C03-midwife",
-    "locationId": "old-wharf",
-    "objective": "Investigate Old Wharf, question Midwife, recover Surveyor's Pin, and learn why marker 2625 is tied to Threshold Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Old Wharf.",
-        "clue": "Water Drip"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Surveyor's Pin.",
-        "clue": "Surveyor's Pin"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Midwife.",
-        "clue": "10:19"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2625.",
-        "clue": "2625"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Out instruction.",
-        "clue": "Out"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S26C03-location",
-        "type": "location",
-        "name": "Old Wharf",
-        "inspectText": "Old Wharf looks ordinary until Water Drip moves through it."
-      },
-      {
-        "id": "S26C03-object",
-        "type": "evidence",
-        "name": "Surveyor's Pin",
-        "inspectText": "Surveyor's Pin is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S26C03-marker",
-        "type": "marker",
-        "name": "Marker 2625",
-        "inspectText": "Marker 2625 is not the answer. It is the lock."
-      },
-      {
-        "id": "S26C03-sound",
-        "type": "audio_clue",
-        "name": "Water Drip",
-        "inspectText": "Water Drip repeats near 10:19."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series26-The-Red-Door/chapter03.md",
-      "novel": "generated/novels/Series26-The-Red-Door/chapter03.md",
-      "song": "generated/songs/Series26-The-Red-Door/song03.md"
     }
   },
   "story": {

@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "sheep fold",
-      "sheepfold"
-    ],
-    "object": [
-      "thimble"
-    ],
-    "witness": [
-      "schoolgirl"
-    ],
-    "time": [
-      "7:37",
-      "737"
-    ],
-    "marker": [
-      "3970",
-      "marker 3970",
-      "road marker 3970",
-      "mile marker 3970",
-      "mile 3970"
-    ],
-    "direction": [
-      "off the road",
-      "offtheroad"
-    ],
-    "sound": [
-      "mud suction",
-      "mudsuction"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S39C08",
-    "puzzleId": "S39C08-marker-lock",
-    "dialogueId": "S39C08-schoolgirl",
-    "locationId": "sheep-fold",
-    "objective": "Investigate Sheep Fold, question Schoolgirl, recover Thimble, and learn why marker 3970 is tied to Rider Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Sheep Fold.",
-        "clue": "Mud Suction"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Thimble.",
-        "clue": "Thimble"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Schoolgirl.",
-        "clue": "7:37"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3970.",
-        "clue": "3970"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Off the Road instruction.",
-        "clue": "Off the Road"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S39C08-location",
-        "type": "location",
-        "name": "Sheep Fold",
-        "inspectText": "Sheep Fold looks ordinary until Mud Suction moves through it."
-      },
-      {
-        "id": "S39C08-object",
-        "type": "evidence",
-        "name": "Thimble",
-        "inspectText": "Thimble is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S39C08-marker",
-        "type": "marker",
-        "name": "Marker 3970",
-        "inspectText": "Marker 3970 is not the answer. It is the lock."
-      },
-      {
-        "id": "S39C08-sound",
-        "type": "audio_clue",
-        "name": "Mud Suction",
-        "inspectText": "Mud Suction repeats near 7:37."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series39-The-Pale-Horse/chapter08.md",
-      "novel": "generated/novels/Series39-The-Pale-Horse/chapter08.md",
-      "song": "generated/songs/Series39-The-Pale-Horse/song08.md"
     }
   },
   "story": {

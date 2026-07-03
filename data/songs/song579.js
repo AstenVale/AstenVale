@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the weir",
-      "weir",
-      "theweir"
-    ],
-    "object": [
-      "stamp"
-    ],
-    "witness": [
-      "surveyor"
-    ],
-    "time": [
-      "8:06",
-      "806"
-    ],
-    "marker": [
-      "4925",
-      "marker 4925",
-      "road marker 4925",
-      "mile marker 4925",
-      "mile 4925"
-    ],
-    "direction": [
-      "past the tree line",
-      "pastthetreeline"
-    ],
-    "sound": [
-      "child's laugh (far off)",
-      "child'slaugh(faroff)"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -301,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S49C03",
-    "puzzleId": "S49C03-marker-lock",
-    "dialogueId": "S49C03-surveyor",
-    "locationId": "the-weir",
-    "objective": "Investigate The Weir, question Surveyor, recover Stamp, and learn why marker 4925 is tied to Testimony Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Weir.",
-        "clue": "Child's Laugh (far off)"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Stamp.",
-        "clue": "Stamp"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Surveyor.",
-        "clue": "8:06"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4925.",
-        "clue": "4925"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Past the Tree Line instruction.",
-        "clue": "Past the Tree Line"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S49C03-location",
-        "type": "location",
-        "name": "The Weir",
-        "inspectText": "The Weir looks ordinary until Child's Laugh (far off) moves through it."
-      },
-      {
-        "id": "S49C03-object",
-        "type": "evidence",
-        "name": "Stamp",
-        "inspectText": "Stamp is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S49C03-marker",
-        "type": "marker",
-        "name": "Marker 4925",
-        "inspectText": "Marker 4925 is not the answer. It is the lock."
-      },
-      {
-        "id": "S49C03-sound",
-        "type": "audio_clue",
-        "name": "Child's Laugh (far off)",
-        "inspectText": "Child's Laugh (far off) repeats near 8:06."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series49-The-Final-Witness/chapter03.md",
-      "novel": "generated/novels/Series49-The-Final-Witness/chapter03.md",
-      "song": "generated/songs/Series49-The-Final-Witness/song03.md"
     }
   },
   "story": {

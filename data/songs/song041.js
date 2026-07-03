@@ -61,35 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "library"
-    ],
-    "object": [
-      "signet ring",
-      "signetring"
-    ],
-    "witness": [
-      "orphan"
-    ],
-    "time": [
-      "12:00",
-      "1200"
-    ],
-    "marker": [
-      "443",
-      "marker 443",
-      "road marker 443",
-      "mile marker 443",
-      "mile 443"
-    ],
-    "direction": [
-      "out"
-    ],
-    "sound": [
-      "floorboard"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -308,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S04C05",
-    "puzzleId": "S04C05-marker-lock",
-    "dialogueId": "S04C05-orphan",
-    "locationId": "library",
-    "objective": "Investigate Library, question Orphan, recover Signet Ring, and learn why marker 443 is tied to Current Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Library.",
-        "clue": "Floorboard"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Signet Ring.",
-        "clue": "Signet Ring"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Orphan.",
-        "clue": "12:00"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 443.",
-        "clue": "443"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Out instruction.",
-        "clue": "Out"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S04C05-location",
-        "type": "location",
-        "name": "Library",
-        "inspectText": "Library looks ordinary until Floorboard moves through it."
-      },
-      {
-        "id": "S04C05-object",
-        "type": "evidence",
-        "name": "Signet Ring",
-        "inspectText": "Signet Ring is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S04C05-marker",
-        "type": "marker",
-        "name": "Marker 443",
-        "inspectText": "Marker 443 is not the answer. It is the lock."
-      },
-      {
-        "id": "S04C05-sound",
-        "type": "audio_clue",
-        "name": "Floorboard",
-        "inspectText": "Floorboard repeats near 12:00."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series04-The-River-Speaks/chapter05.md",
-      "novel": "generated/novels/Series04-The-River-Speaks/chapter05.md",
-      "song": "generated/songs/Series04-The-River-Speaks/song05.md"
     }
   },
   "story": {

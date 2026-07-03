@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "millpond"
-    ],
-    "object": [
-      "lantern"
-    ],
-    "witness": [
-      "schoolteacher"
-    ],
-    "time": [
-      "4:03",
-      "403"
-    ],
-    "marker": [
-      "2734",
-      "marker 2734",
-      "road marker 2734",
-      "mile marker 2734",
-      "mile 2734"
-    ],
-    "direction": [
-      "into the pines",
-      "intothepines"
-    ],
-    "sound": [
-      "match strike",
-      "matchstrike"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -299,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S27C04",
-    "puzzleId": "S27C04-marker-lock",
-    "dialogueId": "S27C04-schoolteacher",
-    "locationId": "millpond",
-    "objective": "Investigate Millpond, question Schoolteacher, recover Lantern, and learn why marker 2734 is tied to Expanse Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Millpond.",
-        "clue": "Match Strike"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Lantern.",
-        "clue": "Lantern"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Schoolteacher.",
-        "clue": "4:03"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2734.",
-        "clue": "2734"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Into the Pines instruction.",
-        "clue": "Into the Pines"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S27C04-location",
-        "type": "location",
-        "name": "Millpond",
-        "inspectText": "Millpond looks ordinary until Match Strike moves through it."
-      },
-      {
-        "id": "S27C04-object",
-        "type": "evidence",
-        "name": "Lantern",
-        "inspectText": "Lantern is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S27C04-marker",
-        "type": "marker",
-        "name": "Marker 2734",
-        "inspectText": "Marker 2734 is not the answer. It is the lock."
-      },
-      {
-        "id": "S27C04-sound",
-        "type": "audio_clue",
-        "name": "Match Strike",
-        "inspectText": "Match Strike repeats near 4:03."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series27-The-Salt-Flats/chapter04.md",
-      "novel": "generated/novels/Series27-The-Salt-Flats/chapter04.md",
-      "song": "generated/songs/Series27-The-Salt-Flats/song04.md"
     }
   },
   "story": {

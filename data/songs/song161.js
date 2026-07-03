@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "saloon"
-    ],
-    "object": [
-      "wax seal",
-      "waxseal"
-    ],
-    "witness": [
-      "census taker",
-      "censustaker"
-    ],
-    "time": [
-      "2:38",
-      "238"
-    ],
-    "marker": [
-      "1443",
-      "marker 1443",
-      "road marker 1443",
-      "mile marker 1443",
-      "mile 1443"
-    ],
-    "direction": [
-      "into the dark",
-      "intothedark"
-    ],
-    "sound": [
-      "lid of a tin",
-      "lidofatin"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -301,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S14C05",
-    "puzzleId": "S14C05-marker-lock",
-    "dialogueId": "S14C05-census-taker",
-    "locationId": "saloon",
-    "objective": "Investigate Saloon, question Census Taker, recover Wax Seal, and learn why marker 1443 is tied to High Water Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Saloon.",
-        "clue": "Lid of a Tin"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Wax Seal.",
-        "clue": "Wax Seal"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Census Taker.",
-        "clue": "2:38"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1443.",
-        "clue": "1443"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Into the Dark instruction.",
-        "clue": "Into the Dark"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S14C05-location",
-        "type": "location",
-        "name": "Saloon",
-        "inspectText": "Saloon looks ordinary until Lid of a Tin moves through it."
-      },
-      {
-        "id": "S14C05-object",
-        "type": "evidence",
-        "name": "Wax Seal",
-        "inspectText": "Wax Seal is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S14C05-marker",
-        "type": "marker",
-        "name": "Marker 1443",
-        "inspectText": "Marker 1443 is not the answer. It is the lock."
-      },
-      {
-        "id": "S14C05-sound",
-        "type": "audio_clue",
-        "name": "Lid of a Tin",
-        "inspectText": "Lid of a Tin repeats near 2:38."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series14-The-Flood-Year/chapter05.md",
-      "novel": "generated/novels/Series14-The-Flood-Year/chapter05.md",
-      "song": "generated/songs/Series14-The-Flood-Year/song05.md"
     }
   },
   "story": {

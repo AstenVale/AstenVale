@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "sheep fold",
-      "sheepfold"
-    ],
-    "object": [
-      "brooch"
-    ],
-    "witness": [
-      "weaver"
-    ],
-    "time": [
-      "3:49",
-      "349"
-    ],
-    "marker": [
-      "4306",
-      "marker 4306",
-      "road marker 4306",
-      "mile marker 4306",
-      "mile 4306"
-    ],
-    "direction": [
-      "straight down",
-      "straightdown"
-    ],
-    "sound": [
-      "axe on wood",
-      "axeonwood"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S42C12",
-    "puzzleId": "S42C12-marker-lock",
-    "dialogueId": "S42C12-weaver",
-    "locationId": "sheep-fold",
-    "objective": "Investigate Sheep Fold, question Weaver, recover Brooch, and learn why marker 4306 is tied to Drought Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Sheep Fold.",
-        "clue": "Axe on Wood"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Brooch.",
-        "clue": "Brooch"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Weaver.",
-        "clue": "3:49"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4306.",
-        "clue": "4306"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Straight Down instruction.",
-        "clue": "Straight Down"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S42C12-location",
-        "type": "location",
-        "name": "Sheep Fold",
-        "inspectText": "Sheep Fold looks ordinary until Axe on Wood moves through it."
-      },
-      {
-        "id": "S42C12-object",
-        "type": "evidence",
-        "name": "Brooch",
-        "inspectText": "Brooch is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S42C12-marker",
-        "type": "marker",
-        "name": "Marker 4306",
-        "inspectText": "Marker 4306 is not the answer. It is the lock."
-      },
-      {
-        "id": "S42C12-sound",
-        "type": "audio_clue",
-        "name": "Axe on Wood",
-        "inspectText": "Axe on Wood repeats near 3:49."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series42-The-Dry-Season/chapter12.md",
-      "novel": "generated/novels/Series42-The-Dry-Season/chapter12.md",
-      "song": "generated/songs/Series42-The-Dry-Season/song12.md"
     }
   },
   "story": {

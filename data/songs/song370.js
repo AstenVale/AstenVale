@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "print shop",
-      "printshop"
-    ],
-    "object": [
-      "flint stone",
-      "flintstone"
-    ],
-    "witness": [
-      "barber"
-    ],
-    "time": [
-      "2:55",
-      "255"
-    ],
-    "marker": [
-      "3188",
-      "marker 3188",
-      "road marker 3188",
-      "mile marker 3188",
-      "mile 3188"
-    ],
-    "direction": [
-      "away"
-    ],
-    "sound": [
-      "thunder"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -309,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S31C10",
-    "puzzleId": "S31C10-marker-lock",
-    "dialogueId": "S31C10-barber",
-    "locationId": "print-shop",
-    "objective": "Investigate Print Shop, question Barber, recover Flint Stone, and learn why marker 3188 is tied to Pattern Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Print Shop.",
-        "clue": "Thunder"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Flint Stone.",
-        "clue": "Flint Stone"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Barber.",
-        "clue": "2:55"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3188.",
-        "clue": "3188"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Away instruction.",
-        "clue": "Away"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S31C10-location",
-        "type": "location",
-        "name": "Print Shop",
-        "inspectText": "Print Shop looks ordinary until Thunder moves through it."
-      },
-      {
-        "id": "S31C10-object",
-        "type": "evidence",
-        "name": "Flint Stone",
-        "inspectText": "Flint Stone is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S31C10-marker",
-        "type": "marker",
-        "name": "Marker 3188",
-        "inspectText": "Marker 3188 is not the answer. It is the lock."
-      },
-      {
-        "id": "S31C10-sound",
-        "type": "audio_clue",
-        "name": "Thunder",
-        "inspectText": "Thunder repeats near 2:55."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series31-The-Cipher-Garden/chapter10.md",
-      "novel": "generated/novels/Series31-The-Cipher-Garden/chapter10.md",
-      "song": "generated/songs/Series31-The-Cipher-Garden/song10.md"
     }
   },
   "story": {

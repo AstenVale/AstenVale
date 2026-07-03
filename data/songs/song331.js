@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "doctor's office",
-      "doctor'soffice"
-    ],
-    "object": [
-      "charcoal sketch",
-      "charcoalsketch"
-    ],
-    "witness": [
-      "peddler"
-    ],
-    "time": [
-      "5:09",
-      "509"
-    ],
-    "marker": [
-      "2861",
-      "marker 2861",
-      "road marker 2861",
-      "mile marker 2861",
-      "mile 2861"
-    ],
-    "direction": [
-      "north"
-    ],
-    "sound": [
-      "lock click",
-      "lockclick"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S28C07",
-    "puzzleId": "S28C07-marker-lock",
-    "dialogueId": "S28C07-peddler",
-    "locationId": "doctor-s-office",
-    "objective": "Investigate Doctor's Office, question Peddler, recover Charcoal Sketch, and learn why marker 2861 is tied to Frequency Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Doctor's Office.",
-        "clue": "Lock Click"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Charcoal Sketch.",
-        "clue": "Charcoal Sketch"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Peddler.",
-        "clue": "5:09"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2861.",
-        "clue": "2861"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the North instruction.",
-        "clue": "North"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S28C07-location",
-        "type": "location",
-        "name": "Doctor's Office",
-        "inspectText": "Doctor's Office looks ordinary until Lock Click moves through it."
-      },
-      {
-        "id": "S28C07-object",
-        "type": "evidence",
-        "name": "Charcoal Sketch",
-        "inspectText": "Charcoal Sketch is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S28C07-marker",
-        "type": "marker",
-        "name": "Marker 2861",
-        "inspectText": "Marker 2861 is not the answer. It is the lock."
-      },
-      {
-        "id": "S28C07-sound",
-        "type": "audio_clue",
-        "name": "Lock Click",
-        "inspectText": "Lock Click repeats near 5:09."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series28-The-Buried-Signal/chapter07.md",
-      "novel": "generated/novels/Series28-The-Buried-Signal/chapter07.md",
-      "song": "generated/songs/Series28-The-Buried-Signal/song07.md"
     }
   },
   "story": {

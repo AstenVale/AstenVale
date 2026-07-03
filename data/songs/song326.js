@@ -61,39 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "barn"
-    ],
-    "object": [
-      "hollow acorn",
-      "hollowacorn"
-    ],
-    "witness": [
-      "the handless man",
-      "handless man",
-      "thehandlessman"
-    ],
-    "time": [
-      "3:58",
-      "358"
-    ],
-    "marker": [
-      "2816",
-      "marker 2816",
-      "road marker 2816",
-      "mile marker 2816",
-      "mile 2816"
-    ],
-    "direction": [
-      "further in",
-      "furtherin"
-    ],
-    "sound": [
-      "nail pulled from wood",
-      "nailpulledfromwood"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -313,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S28C02",
-    "puzzleId": "S28C02-marker-lock",
-    "dialogueId": "S28C02-the-handless-man",
-    "locationId": "barn",
-    "objective": "Investigate Barn, question The Handless Man, recover Hollow Acorn, and learn why marker 2816 is tied to Frequency Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Barn.",
-        "clue": "Nail Pulled from Wood"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Hollow Acorn.",
-        "clue": "Hollow Acorn"
-      },
-      {
-        "step": "interview",
-        "objective": "Question The Handless Man.",
-        "clue": "3:58"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2816.",
-        "clue": "2816"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Further In instruction.",
-        "clue": "Further In"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S28C02-location",
-        "type": "location",
-        "name": "Barn",
-        "inspectText": "Barn looks ordinary until Nail Pulled from Wood moves through it."
-      },
-      {
-        "id": "S28C02-object",
-        "type": "evidence",
-        "name": "Hollow Acorn",
-        "inspectText": "Hollow Acorn is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S28C02-marker",
-        "type": "marker",
-        "name": "Marker 2816",
-        "inspectText": "Marker 2816 is not the answer. It is the lock."
-      },
-      {
-        "id": "S28C02-sound",
-        "type": "audio_clue",
-        "name": "Nail Pulled from Wood",
-        "inspectText": "Nail Pulled from Wood repeats near 3:58."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series28-The-Buried-Signal/chapter02.md",
-      "novel": "generated/novels/Series28-The-Buried-Signal/chapter02.md",
-      "song": "generated/songs/Series28-The-Buried-Signal/song02.md"
     }
   },
   "story": {

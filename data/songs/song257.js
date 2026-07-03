@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "sheriff's office",
-      "sheriff'soffice"
-    ],
-    "object": [
-      "glove"
-    ],
-    "witness": [
-      "stranger"
-    ],
-    "time": [
-      "6:45",
-      "645"
-    ],
-    "marker": [
-      "2243",
-      "marker 2243",
-      "road marker 2243",
-      "mile marker 2243",
-      "mile 2243"
-    ],
-    "direction": [
-      "north"
-    ],
-    "sound": [
-      "nail pulled from wood",
-      "nailpulledfromwood"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -309,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S22C05",
-    "puzzleId": "S22C05-marker-lock",
-    "dialogueId": "S22C05-stranger",
-    "locationId": "sheriff-s-office",
-    "objective": "Investigate Sheriff's Office, question Stranger, recover Glove, and learn why marker 2243 is tied to Excavation Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Sheriff's Office.",
-        "clue": "Nail Pulled from Wood"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Glove.",
-        "clue": "Glove"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Stranger.",
-        "clue": "6:45"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2243.",
-        "clue": "2243"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the North instruction.",
-        "clue": "North"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S22C05-location",
-        "type": "location",
-        "name": "Sheriff's Office",
-        "inspectText": "Sheriff's Office looks ordinary until Nail Pulled from Wood moves through it."
-      },
-      {
-        "id": "S22C05-object",
-        "type": "evidence",
-        "name": "Glove",
-        "inspectText": "Glove is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S22C05-marker",
-        "type": "marker",
-        "name": "Marker 2243",
-        "inspectText": "Marker 2243 is not the answer. It is the lock."
-      },
-      {
-        "id": "S22C05-sound",
-        "type": "audio_clue",
-        "name": "Nail Pulled from Wood",
-        "inspectText": "Nail Pulled from Wood repeats near 6:45."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series22-The-Bone-Road/chapter05.md",
-      "novel": "generated/novels/Series22-The-Bone-Road/chapter05.md",
-      "song": "generated/songs/Series22-The-Bone-Road/song05.md"
     }
   },
   "story": {

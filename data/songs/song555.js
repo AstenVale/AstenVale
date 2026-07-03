@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "fulling mill",
-      "fullingmill"
-    ],
-    "object": [
-      "key"
-    ],
-    "witness": [
-      "judge"
-    ],
-    "time": [
-      "7:48",
-      "748"
-    ],
-    "marker": [
-      "4725",
-      "marker 4725",
-      "road marker 4725",
-      "mile marker 4725",
-      "mile 4725"
-    ],
-    "direction": [
-      "across"
-    ],
-    "sound": [
-      "axe on wood",
-      "axeonwood"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -299,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S47C03",
-    "puzzleId": "S47C03-marker-lock",
-    "dialogueId": "S47C03-judge",
-    "locationId": "fulling-mill",
-    "objective": "Investigate Fulling Mill, question Judge, recover Key, and learn why marker 4725 is tied to Detour Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Fulling Mill.",
-        "clue": "Axe on Wood"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Key.",
-        "clue": "Key"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Judge.",
-        "clue": "7:48"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4725.",
-        "clue": "4725"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Across instruction.",
-        "clue": "Across"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S47C03-location",
-        "type": "location",
-        "name": "Fulling Mill",
-        "inspectText": "Fulling Mill looks ordinary until Axe on Wood moves through it."
-      },
-      {
-        "id": "S47C03-object",
-        "type": "evidence",
-        "name": "Key",
-        "inspectText": "Key is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S47C03-marker",
-        "type": "marker",
-        "name": "Marker 4725",
-        "inspectText": "Marker 4725 is not the answer. It is the lock."
-      },
-      {
-        "id": "S47C03-sound",
-        "type": "audio_clue",
-        "name": "Axe on Wood",
-        "inspectText": "Axe on Wood repeats near 7:48."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series47-The-Long-Way-Round/chapter03.md",
-      "novel": "generated/novels/Series47-The-Long-Way-Round/chapter03.md",
-      "song": "generated/songs/Series47-The-Long-Way-Round/song03.md"
     }
   },
   "story": {

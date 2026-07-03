@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "jail"
-    ],
-    "object": [
-      "folded cloth",
-      "foldedcloth"
-    ],
-    "witness": [
-      "quarry foreman",
-      "quarryforeman"
-    ],
-    "time": [
-      "4:03",
-      "403"
-    ],
-    "marker": [
-      "1516",
-      "marker 1516",
-      "road marker 1516",
-      "mile marker 1516",
-      "mile 1516"
-    ],
-    "direction": [
-      "up the ridge",
-      "uptheridge"
-    ],
-    "sound": [
-      "knife scrape",
-      "knifescrape"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -312,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S15C02",
-    "puzzleId": "S15C02-marker-lock",
-    "dialogueId": "S15C02-quarry-foreman",
-    "locationId": "jail",
-    "objective": "Investigate Jail, question Quarry Foreman, recover Folded Cloth, and learn why marker 1516 is tied to Signal Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Jail.",
-        "clue": "Knife Scrape"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Folded Cloth.",
-        "clue": "Folded Cloth"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Quarry Foreman.",
-        "clue": "4:03"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1516.",
-        "clue": "1516"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Up the Ridge instruction.",
-        "clue": "Up the Ridge"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S15C02-location",
-        "type": "location",
-        "name": "Jail",
-        "inspectText": "Jail looks ordinary until Knife Scrape moves through it."
-      },
-      {
-        "id": "S15C02-object",
-        "type": "evidence",
-        "name": "Folded Cloth",
-        "inspectText": "Folded Cloth is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S15C02-marker",
-        "type": "marker",
-        "name": "Marker 1516",
-        "inspectText": "Marker 1516 is not the answer. It is the lock."
-      },
-      {
-        "id": "S15C02-sound",
-        "type": "audio_clue",
-        "name": "Knife Scrape",
-        "inspectText": "Knife Scrape repeats near 4:03."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series15-The-Lantern-Keeper/chapter02.md",
-      "novel": "generated/novels/Series15-The-Lantern-Keeper/chapter02.md",
-      "song": "generated/songs/Series15-The-Lantern-Keeper/song02.md"
     }
   },
   "story": {

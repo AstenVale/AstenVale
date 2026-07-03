@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "grist mill",
-      "gristmill"
-    ],
-    "object": [
-      "journal"
-    ],
-    "witness": [
-      "cartographer"
-    ],
-    "time": [
-      "6:32",
-      "632"
-    ],
-    "marker": [
-      "1652",
-      "marker 1652",
-      "road marker 1652",
-      "mile marker 1652",
-      "mile 1652"
-    ],
-    "direction": [
-      "up the ridge",
-      "uptheridge"
-    ],
-    "sound": [
-      "cellar stairs",
-      "cellarstairs"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S16C06",
-    "puzzleId": "S16C06-marker-lock",
-    "dialogueId": "S16C06-cartographer",
-    "locationId": "grist-mill",
-    "objective": "Investigate Grist Mill, question Cartographer, recover Journal, and learn why marker 1652 is tied to Transparent Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Grist Mill.",
-        "clue": "Cellar Stairs"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Journal.",
-        "clue": "Journal"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Cartographer.",
-        "clue": "6:32"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1652.",
-        "clue": "1652"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Up the Ridge instruction.",
-        "clue": "Up the Ridge"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S16C06-location",
-        "type": "location",
-        "name": "Grist Mill",
-        "inspectText": "Grist Mill looks ordinary until Cellar Stairs moves through it."
-      },
-      {
-        "id": "S16C06-object",
-        "type": "evidence",
-        "name": "Journal",
-        "inspectText": "Journal is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S16C06-marker",
-        "type": "marker",
-        "name": "Marker 1652",
-        "inspectText": "Marker 1652 is not the answer. It is the lock."
-      },
-      {
-        "id": "S16C06-sound",
-        "type": "audio_clue",
-        "name": "Cellar Stairs",
-        "inspectText": "Cellar Stairs repeats near 6:32."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series16-The-Glass-House/chapter06.md",
-      "novel": "generated/novels/Series16-The-Glass-House/chapter06.md",
-      "song": "generated/songs/Series16-The-Glass-House/song06.md"
     }
   },
   "story": {

@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "cabin"
-    ],
-    "object": [
-      "iron nail",
-      "ironnail"
-    ],
-    "witness": [
-      "lamplighter"
-    ],
-    "time": [
-      "9:55",
-      "955"
-    ],
-    "marker": [
-      "688",
-      "marker 688",
-      "road marker 688",
-      "mile marker 688",
-      "mile 688"
-    ],
-    "direction": [
-      "toward the river",
-      "towardtheriver"
-    ],
-    "sound": [
-      "broken string",
-      "brokenstring"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S06C10",
-    "puzzleId": "S06C10-marker-lock",
-    "dialogueId": "S06C10-lamplighter",
-    "locationId": "cabin",
-    "objective": "Investigate Cabin, question Lamplighter, recover Iron Nail, and learn why marker 688 is tied to Below Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Cabin.",
-        "clue": "Broken String"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Iron Nail.",
-        "clue": "Iron Nail"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Lamplighter.",
-        "clue": "9:55"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 688.",
-        "clue": "688"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Toward the River instruction.",
-        "clue": "Toward the River"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S06C10-location",
-        "type": "location",
-        "name": "Cabin",
-        "inspectText": "Cabin looks ordinary until Broken String moves through it."
-      },
-      {
-        "id": "S06C10-object",
-        "type": "evidence",
-        "name": "Iron Nail",
-        "inspectText": "Iron Nail is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S06C10-marker",
-        "type": "marker",
-        "name": "Marker 688",
-        "inspectText": "Marker 688 is not the answer. It is the lock."
-      },
-      {
-        "id": "S06C10-sound",
-        "type": "audio_clue",
-        "name": "Broken String",
-        "inspectText": "Broken String repeats near 9:55."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series06-The-Underground/chapter10.md",
-      "novel": "generated/novels/Series06-The-Underground/chapter10.md",
-      "song": "generated/songs/Series06-The-Underground/song10.md"
     }
   },
   "story": {

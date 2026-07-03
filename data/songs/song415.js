@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "barn"
-    ],
-    "object": [
-      "pocket watch",
-      "pocketwatch"
-    ],
-    "witness": [
-      "gravedigger"
-    ],
-    "time": [
-      "8:33",
-      "833"
-    ],
-    "marker": [
-      "3561",
-      "marker 3561",
-      "road marker 3561",
-      "mile marker 3561",
-      "mile 3561"
-    ],
-    "direction": [
-      "out"
-    ],
-    "sound": [
-      "mud suction",
-      "mudsuction"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -309,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S35C07",
-    "puzzleId": "S35C07-marker-lock",
-    "dialogueId": "S35C07-gravedigger",
-    "locationId": "barn",
-    "objective": "Investigate Barn, question Gravedigger, recover Pocket Watch, and learn why marker 3561 is tied to Collection Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Barn.",
-        "clue": "Mud Suction"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Pocket Watch.",
-        "clue": "Pocket Watch"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Gravedigger.",
-        "clue": "8:33"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3561.",
-        "clue": "3561"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Out instruction.",
-        "clue": "Out"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S35C07-location",
-        "type": "location",
-        "name": "Barn",
-        "inspectText": "Barn looks ordinary until Mud Suction moves through it."
-      },
-      {
-        "id": "S35C07-object",
-        "type": "evidence",
-        "name": "Pocket Watch",
-        "inspectText": "Pocket Watch is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S35C07-marker",
-        "type": "marker",
-        "name": "Marker 3561",
-        "inspectText": "Marker 3561 is not the answer. It is the lock."
-      },
-      {
-        "id": "S35C07-sound",
-        "type": "audio_clue",
-        "name": "Mud Suction",
-        "inspectText": "Mud Suction repeats near 8:33."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series35-The-Archive-Keeper/chapter07.md",
-      "novel": "generated/novels/Series35-The-Archive-Keeper/chapter07.md",
-      "song": "generated/songs/Series35-The-Archive-Keeper/song07.md"
     }
   },
   "story": {

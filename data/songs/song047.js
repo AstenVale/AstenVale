@@ -61,35 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "grain mill",
-      "grainmill"
-    ],
-    "object": [
-      "seal"
-    ],
-    "witness": [
-      "blacksmith"
-    ],
-    "time": [
-      "8:00",
-      "800"
-    ],
-    "marker": [
-      "497",
-      "marker 497",
-      "road marker 497",
-      "mile marker 497",
-      "mile 497"
-    ],
-    "direction": [
-      "down"
-    ],
-    "sound": [
-      "millstone"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -308,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S04C11",
-    "puzzleId": "S04C11-marker-lock",
-    "dialogueId": "S04C11-blacksmith",
-    "locationId": "grain-mill",
-    "objective": "Investigate Grain Mill, question Blacksmith, recover Seal, and learn why marker 497 is tied to Current Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Grain Mill.",
-        "clue": "Millstone"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Seal.",
-        "clue": "Seal"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Blacksmith.",
-        "clue": "8:00"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 497.",
-        "clue": "497"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Down instruction.",
-        "clue": "Down"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S04C11-location",
-        "type": "location",
-        "name": "Grain Mill",
-        "inspectText": "Grain Mill looks ordinary until Millstone moves through it."
-      },
-      {
-        "id": "S04C11-object",
-        "type": "evidence",
-        "name": "Seal",
-        "inspectText": "Seal is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S04C11-marker",
-        "type": "marker",
-        "name": "Marker 497",
-        "inspectText": "Marker 497 is not the answer. It is the lock."
-      },
-      {
-        "id": "S04C11-sound",
-        "type": "audio_clue",
-        "name": "Millstone",
-        "inspectText": "Millstone repeats near 8:00."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series04-The-River-Speaks/chapter11.md",
-      "novel": "generated/novels/Series04-The-River-Speaks/chapter11.md",
-      "song": "generated/songs/Series04-The-River-Speaks/song11.md"
     }
   },
   "story": {

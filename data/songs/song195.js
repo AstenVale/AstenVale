@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "potter's field",
-      "potter'sfield"
-    ],
-    "object": [
-      "watch"
-    ],
-    "witness": [
-      "blacksmith"
-    ],
-    "time": [
-      "11:51",
-      "1151"
-    ],
-    "marker": [
-      "1725",
-      "marker 1725",
-      "road marker 1725",
-      "mile marker 1725",
-      "mile 1725"
-    ],
-    "direction": [
-      "under"
-    ],
-    "sound": [
-      "empty wagon",
-      "emptywagon"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -309,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S17C03",
-    "puzzleId": "S17C03-marker-lock",
-    "dialogueId": "S17C03-blacksmith",
-    "locationId": "potter-s-field",
-    "objective": "Investigate Potter's Field, question Blacksmith, recover Watch, and learn why marker 1725 is tied to Frost Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Potter's Field.",
-        "clue": "Empty Wagon"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Watch.",
-        "clue": "Watch"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Blacksmith.",
-        "clue": "11:51"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1725.",
-        "clue": "1725"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Under instruction.",
-        "clue": "Under"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S17C03-location",
-        "type": "location",
-        "name": "Potter's Field",
-        "inspectText": "Potter's Field looks ordinary until Empty Wagon moves through it."
-      },
-      {
-        "id": "S17C03-object",
-        "type": "evidence",
-        "name": "Watch",
-        "inspectText": "Watch is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S17C03-marker",
-        "type": "marker",
-        "name": "Marker 1725",
-        "inspectText": "Marker 1725 is not the answer. It is the lock."
-      },
-      {
-        "id": "S17C03-sound",
-        "type": "audio_clue",
-        "name": "Empty Wagon",
-        "inspectText": "Empty Wagon repeats near 11:51."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series17-The-Cold-Season/chapter03.md",
-      "novel": "generated/novels/Series17-The-Cold-Season/chapter03.md",
-      "song": "generated/songs/Series17-The-Cold-Season/song03.md"
     }
   },
   "story": {

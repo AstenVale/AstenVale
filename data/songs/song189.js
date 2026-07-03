@@ -61,39 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the cistern",
-      "cistern",
-      "thecistern"
-    ],
-    "object": [
-      "journal"
-    ],
-    "witness": [
-      "salt seller",
-      "saltseller"
-    ],
-    "time": [
-      "6:17",
-      "617"
-    ],
-    "marker": [
-      "1679",
-      "marker 1679",
-      "road marker 1679",
-      "mile marker 1679",
-      "mile 1679"
-    ],
-    "direction": [
-      "past the tree line",
-      "pastthetreeline"
-    ],
-    "sound": [
-      "cannon bolt",
-      "cannonbolt"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -302,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S16C09",
-    "puzzleId": "S16C09-marker-lock",
-    "dialogueId": "S16C09-salt-seller",
-    "locationId": "the-cistern",
-    "objective": "Investigate The Cistern, question Salt Seller, recover Journal, and learn why marker 1679 is tied to Transparent Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Cistern.",
-        "clue": "Cannon Bolt"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Journal.",
-        "clue": "Journal"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Salt Seller.",
-        "clue": "6:17"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1679.",
-        "clue": "1679"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Past the Tree Line instruction.",
-        "clue": "Past the Tree Line"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S16C09-location",
-        "type": "location",
-        "name": "The Cistern",
-        "inspectText": "The Cistern looks ordinary until Cannon Bolt moves through it."
-      },
-      {
-        "id": "S16C09-object",
-        "type": "evidence",
-        "name": "Journal",
-        "inspectText": "Journal is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S16C09-marker",
-        "type": "marker",
-        "name": "Marker 1679",
-        "inspectText": "Marker 1679 is not the answer. It is the lock."
-      },
-      {
-        "id": "S16C09-sound",
-        "type": "audio_clue",
-        "name": "Cannon Bolt",
-        "inspectText": "Cannon Bolt repeats near 6:17."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series16-The-Glass-House/chapter09.md",
-      "novel": "generated/novels/Series16-The-Glass-House/chapter09.md",
-      "song": "generated/songs/Series16-The-Glass-House/song09.md"
     }
   },
   "story": {

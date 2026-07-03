@@ -61,35 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "stables"
-    ],
-    "object": [
-      "map"
-    ],
-    "witness": [
-      "wool sorter",
-      "woolsorter"
-    ],
-    "time": [
-      "8:42",
-      "842"
-    ],
-    "marker": [
-      "1543",
-      "marker 1543",
-      "road marker 1543",
-      "mile marker 1543",
-      "mile 1543"
-    ],
-    "direction": [
-      "toward"
-    ],
-    "sound": [
-      "millstone"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -309,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S15C05",
-    "puzzleId": "S15C05-marker-lock",
-    "dialogueId": "S15C05-wool-sorter",
-    "locationId": "stables",
-    "objective": "Investigate Stables, question Wool Sorter, recover Map, and learn why marker 1543 is tied to Signal Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Stables.",
-        "clue": "Millstone"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Map.",
-        "clue": "Map"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Wool Sorter.",
-        "clue": "8:42"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1543.",
-        "clue": "1543"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Toward instruction.",
-        "clue": "Toward"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S15C05-location",
-        "type": "location",
-        "name": "Stables",
-        "inspectText": "Stables looks ordinary until Millstone moves through it."
-      },
-      {
-        "id": "S15C05-object",
-        "type": "evidence",
-        "name": "Map",
-        "inspectText": "Map is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S15C05-marker",
-        "type": "marker",
-        "name": "Marker 1543",
-        "inspectText": "Marker 1543 is not the answer. It is the lock."
-      },
-      {
-        "id": "S15C05-sound",
-        "type": "audio_clue",
-        "name": "Millstone",
-        "inspectText": "Millstone repeats near 8:42."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series15-The-Lantern-Keeper/chapter05.md",
-      "novel": "generated/novels/Series15-The-Lantern-Keeper/chapter05.md",
-      "song": "generated/songs/Series15-The-Lantern-Keeper/song05.md"
     }
   },
   "story": {

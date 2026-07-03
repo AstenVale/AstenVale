@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "saloon"
-    ],
-    "object": [
-      "copper fitting",
-      "copperfitting"
-    ],
-    "witness": [
-      "drifter"
-    ],
-    "time": [
-      "9:55",
-      "955"
-    ],
-    "marker": [
-      "1306",
-      "marker 1306",
-      "road marker 1306",
-      "mile marker 1306",
-      "mile 1306"
-    ],
-    "direction": [
-      "in"
-    ],
-    "sound": [
-      "forge breath",
-      "forgebreath"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -299,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S12C12",
-    "puzzleId": "S12C12-marker-lock",
-    "dialogueId": "S12C12-drifter",
-    "locationId": "saloon",
-    "objective": "Investigate Saloon, question Drifter, recover Copper Fitting, and learn why marker 1306 is tied to Estate Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Saloon.",
-        "clue": "Forge Breath"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Copper Fitting.",
-        "clue": "Copper Fitting"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Drifter.",
-        "clue": "9:55"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1306.",
-        "clue": "1306"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the In instruction.",
-        "clue": "In"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S12C12-location",
-        "type": "location",
-        "name": "Saloon",
-        "inspectText": "Saloon looks ordinary until Forge Breath moves through it."
-      },
-      {
-        "id": "S12C12-object",
-        "type": "evidence",
-        "name": "Copper Fitting",
-        "inspectText": "Copper Fitting is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S12C12-marker",
-        "type": "marker",
-        "name": "Marker 1306",
-        "inspectText": "Marker 1306 is not the answer. It is the lock."
-      },
-      {
-        "id": "S12C12-sound",
-        "type": "audio_clue",
-        "name": "Forge Breath",
-        "inspectText": "Forge Breath repeats near 9:55."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series12-The-Inheritance/chapter12.md",
-      "novel": "generated/novels/Series12-The-Inheritance/chapter12.md",
-      "song": "generated/songs/Series12-The-Inheritance/song12.md"
     }
   },
   "story": {

@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "east field",
-      "eastfield"
-    ],
-    "object": [
-      "folded cloth",
-      "foldedcloth"
-    ],
-    "witness": [
-      "child"
-    ],
-    "time": [
-      "11:17",
-      "1117"
-    ],
-    "marker": [
-      "4897",
-      "marker 4897",
-      "road marker 4897",
-      "mile marker 4897",
-      "mile 4897"
-    ],
-    "direction": [
-      "around"
-    ],
-    "sound": [
-      "the silence after",
-      "silence after",
-      "thesilenceafter"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -301,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S48C11",
-    "puzzleId": "S48C11-marker-lock",
-    "dialogueId": "S48C11-child",
-    "locationId": "east-field",
-    "objective": "Investigate East Field, question Child, recover Folded Cloth, and learn why marker 4897 is tied to Static Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter East Field.",
-        "clue": "The Silence After"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Folded Cloth.",
-        "clue": "Folded Cloth"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Child.",
-        "clue": "11:17"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4897.",
-        "clue": "4897"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Around instruction.",
-        "clue": "Around"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S48C11-location",
-        "type": "location",
-        "name": "East Field",
-        "inspectText": "East Field looks ordinary until The Silence After moves through it."
-      },
-      {
-        "id": "S48C11-object",
-        "type": "evidence",
-        "name": "Folded Cloth",
-        "inspectText": "Folded Cloth is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S48C11-marker",
-        "type": "marker",
-        "name": "Marker 4897",
-        "inspectText": "Marker 4897 is not the answer. It is the lock."
-      },
-      {
-        "id": "S48C11-sound",
-        "type": "audio_clue",
-        "name": "The Silence After",
-        "inspectText": "The Silence After repeats near 11:17."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series48-The-Broken-Signal/chapter11.md",
-      "novel": "generated/novels/Series48-The-Broken-Signal/chapter11.md",
-      "song": "generated/songs/Series48-The-Broken-Signal/song11.md"
     }
   },
   "story": {

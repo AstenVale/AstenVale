@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "clock tower",
-      "clocktower"
-    ],
-    "object": [
-      "straight razor",
-      "straightrazor"
-    ],
-    "witness": [
-      "retired soldier",
-      "retiredsoldier"
-    ],
-    "time": [
-      "11:17",
-      "1117"
-    ],
-    "marker": [
-      "4625",
-      "marker 4625",
-      "road marker 4625",
-      "mile marker 4625",
-      "mile 4625"
-    ],
-    "direction": [
-      "east"
-    ],
-    "sound": [
-      "fence wire hum",
-      "fencewirehum"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -312,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S46C03",
-    "puzzleId": "S46C03-marker-lock",
-    "dialogueId": "S46C03-retired-soldier",
-    "locationId": "clock-tower",
-    "objective": "Investigate Clock Tower, question Retired Soldier, recover Straight Razor, and learn why marker 4625 is tied to Weather Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Clock Tower.",
-        "clue": "Fence Wire Hum"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Straight Razor.",
-        "clue": "Straight Razor"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Retired Soldier.",
-        "clue": "11:17"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4625.",
-        "clue": "4625"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the East instruction.",
-        "clue": "East"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S46C03-location",
-        "type": "location",
-        "name": "Clock Tower",
-        "inspectText": "Clock Tower looks ordinary until Fence Wire Hum moves through it."
-      },
-      {
-        "id": "S46C03-object",
-        "type": "evidence",
-        "name": "Straight Razor",
-        "inspectText": "Straight Razor is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S46C03-marker",
-        "type": "marker",
-        "name": "Marker 4625",
-        "inspectText": "Marker 4625 is not the answer. It is the lock."
-      },
-      {
-        "id": "S46C03-sound",
-        "type": "audio_clue",
-        "name": "Fence Wire Hum",
-        "inspectText": "Fence Wire Hum repeats near 11:17."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series46-The-Storm-Season/chapter03.md",
-      "novel": "generated/novels/Series46-The-Storm-Season/chapter03.md",
-      "song": "generated/songs/Series46-The-Storm-Season/song03.md"
     }
   },
   "story": {

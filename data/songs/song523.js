@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the hollow road",
-      "hollow road",
-      "thehollowroad"
-    ],
-    "object": [
-      "shard of mirror",
-      "shardofmirror"
-    ],
-    "witness": [
-      "wainwright"
-    ],
-    "time": [
-      "3:17",
-      "317"
-    ],
-    "marker": [
-      "4461",
-      "marker 4461",
-      "road marker 4461",
-      "mile marker 4461",
-      "mile 4461"
-    ],
-    "direction": [
-      "east"
-    ],
-    "sound": [
-      "breathing"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -310,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S44C07",
-    "puzzleId": "S44C07-marker-lock",
-    "dialogueId": "S44C07-wainwright",
-    "locationId": "the-hollow-road",
-    "objective": "Investigate The Hollow Road, question Wainwright, recover Shard of Mirror, and learn why marker 4461 is tied to Parallel Case Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Hollow Road.",
-        "clue": "Breathing"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Shard of Mirror.",
-        "clue": "Shard of Mirror"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Wainwright.",
-        "clue": "3:17"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4461.",
-        "clue": "4461"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the East instruction.",
-        "clue": "East"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S44C07-location",
-        "type": "location",
-        "name": "The Hollow Road",
-        "inspectText": "The Hollow Road looks ordinary until Breathing moves through it."
-      },
-      {
-        "id": "S44C07-object",
-        "type": "evidence",
-        "name": "Shard of Mirror",
-        "inspectText": "Shard of Mirror is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S44C07-marker",
-        "type": "marker",
-        "name": "Marker 4461",
-        "inspectText": "Marker 4461 is not the answer. It is the lock."
-      },
-      {
-        "id": "S44C07-sound",
-        "type": "audio_clue",
-        "name": "Breathing",
-        "inspectText": "Breathing repeats near 3:17."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series44-The-Mirror-Case/chapter07.md",
-      "novel": "generated/novels/Series44-The-Mirror-Case/chapter07.md",
-      "song": "generated/songs/Series44-The-Mirror-Case/song07.md"
     }
   },
   "story": {

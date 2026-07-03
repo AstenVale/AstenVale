@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "watchmaker's shop",
-      "watchmaker'sshop"
-    ],
-    "object": [
-      "thimble"
-    ],
-    "witness": [
-      "cider presser",
-      "ciderpresser"
-    ],
-    "time": [
-      "10:19",
-      "1019"
-    ],
-    "marker": [
-      "2261",
-      "marker 2261",
-      "road marker 2261",
-      "mile marker 2261",
-      "mile 2261"
-    ],
-    "direction": [
-      "over"
-    ],
-    "sound": [
-      "river ice",
-      "riverice"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -310,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S22C07",
-    "puzzleId": "S22C07-marker-lock",
-    "dialogueId": "S22C07-cider-presser",
-    "locationId": "watchmaker-s-shop",
-    "objective": "Investigate Watchmaker's Shop, question Cider Presser, recover Thimble, and learn why marker 2261 is tied to Excavation Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Watchmaker's Shop.",
-        "clue": "River Ice"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Thimble.",
-        "clue": "Thimble"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Cider Presser.",
-        "clue": "10:19"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2261.",
-        "clue": "2261"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Over instruction.",
-        "clue": "Over"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S22C07-location",
-        "type": "location",
-        "name": "Watchmaker's Shop",
-        "inspectText": "Watchmaker's Shop looks ordinary until River Ice moves through it."
-      },
-      {
-        "id": "S22C07-object",
-        "type": "evidence",
-        "name": "Thimble",
-        "inspectText": "Thimble is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S22C07-marker",
-        "type": "marker",
-        "name": "Marker 2261",
-        "inspectText": "Marker 2261 is not the answer. It is the lock."
-      },
-      {
-        "id": "S22C07-sound",
-        "type": "audio_clue",
-        "name": "River Ice",
-        "inspectText": "River Ice repeats near 10:19."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series22-The-Bone-Road/chapter07.md",
-      "novel": "generated/novels/Series22-The-Bone-Road/chapter07.md",
-      "song": "generated/songs/Series22-The-Bone-Road/song07.md"
     }
   },
   "story": {

@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the weir",
-      "weir",
-      "theweir"
-    ],
-    "object": [
-      "cufflink"
-    ],
-    "witness": [
-      "innkeeper"
-    ],
-    "time": [
-      "7:37",
-      "737"
-    ],
-    "marker": [
-      "4697",
-      "marker 4697",
-      "road marker 4697",
-      "mile marker 4697",
-      "mile 4697"
-    ],
-    "direction": [
-      "west"
-    ],
-    "sound": [
-      "empty wagon",
-      "emptywagon"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S46C11",
-    "puzzleId": "S46C11-marker-lock",
-    "dialogueId": "S46C11-innkeeper",
-    "locationId": "the-weir",
-    "objective": "Investigate The Weir, question Innkeeper, recover Cufflink, and learn why marker 4697 is tied to Weather Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Weir.",
-        "clue": "Empty Wagon"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Cufflink.",
-        "clue": "Cufflink"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Innkeeper.",
-        "clue": "7:37"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4697.",
-        "clue": "4697"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the West instruction.",
-        "clue": "West"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S46C11-location",
-        "type": "location",
-        "name": "The Weir",
-        "inspectText": "The Weir looks ordinary until Empty Wagon moves through it."
-      },
-      {
-        "id": "S46C11-object",
-        "type": "evidence",
-        "name": "Cufflink",
-        "inspectText": "Cufflink is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S46C11-marker",
-        "type": "marker",
-        "name": "Marker 4697",
-        "inspectText": "Marker 4697 is not the answer. It is the lock."
-      },
-      {
-        "id": "S46C11-sound",
-        "type": "audio_clue",
-        "name": "Empty Wagon",
-        "inspectText": "Empty Wagon repeats near 7:37."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series46-The-Storm-Season/chapter11.md",
-      "novel": "generated/novels/Series46-The-Storm-Season/chapter11.md",
-      "song": "generated/songs/Series46-The-Storm-Season/song11.md"
     }
   },
   "story": {

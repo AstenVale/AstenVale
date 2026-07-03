@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "loom house",
-      "loomhouse"
-    ],
-    "object": [
-      "oil rag",
-      "oilrag"
-    ],
-    "witness": [
-      "caretaker"
-    ],
-    "time": [
-      "10:05",
-      "1005"
-    ],
-    "marker": [
-      "1907",
-      "marker 1907",
-      "road marker 1907",
-      "mile marker 1907",
-      "mile 1907"
-    ],
-    "direction": [
-      "west"
-    ],
-    "sound": [
-      "axe on wood",
-      "axeonwood"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S19C01",
-    "puzzleId": "S19C01-marker-lock",
-    "dialogueId": "S19C01-caretaker",
-    "locationId": "loom-house",
-    "objective": "Investigate Loom House, question Caretaker, recover Oil Rag, and learn why marker 1907 is tied to Crossing Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Loom House.",
-        "clue": "Axe on Wood"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Oil Rag.",
-        "clue": "Oil Rag"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Caretaker.",
-        "clue": "10:05"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1907.",
-        "clue": "1907"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the West instruction.",
-        "clue": "West"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S19C01-location",
-        "type": "location",
-        "name": "Loom House",
-        "inspectText": "Loom House looks ordinary until Axe on Wood moves through it."
-      },
-      {
-        "id": "S19C01-object",
-        "type": "evidence",
-        "name": "Oil Rag",
-        "inspectText": "Oil Rag is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S19C01-marker",
-        "type": "marker",
-        "name": "Marker 1907",
-        "inspectText": "Marker 1907 is not the answer. It is the lock."
-      },
-      {
-        "id": "S19C01-sound",
-        "type": "audio_clue",
-        "name": "Axe on Wood",
-        "inspectText": "Axe on Wood repeats near 10:05."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series19-The-Bridge-Burner/chapter01.md",
-      "novel": "generated/novels/Series19-The-Bridge-Burner/chapter01.md",
-      "song": "generated/songs/Series19-The-Bridge-Burner/song01.md"
     }
   },
   "story": {

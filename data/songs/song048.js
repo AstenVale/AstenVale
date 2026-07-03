@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "cooper's yard",
-      "cooper'syard"
-    ],
-    "object": [
-      "photograph"
-    ],
-    "witness": [
-      "night watchman",
-      "nightwatchman"
-    ],
-    "time": [
-      "7:48",
-      "748"
-    ],
-    "marker": [
-      "506",
-      "marker 506",
-      "road marker 506",
-      "mile marker 506",
-      "mile 506"
-    ],
-    "direction": [
-      "around"
-    ],
-    "sound": [
-      "broken string",
-      "brokenstring"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -310,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S04C12",
-    "puzzleId": "S04C12-marker-lock",
-    "dialogueId": "S04C12-night-watchman",
-    "locationId": "cooper-s-yard",
-    "objective": "Investigate Cooper's Yard, question Night Watchman, recover Photograph, and learn why marker 506 is tied to Current Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Cooper's Yard.",
-        "clue": "Broken String"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Photograph.",
-        "clue": "Photograph"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Night Watchman.",
-        "clue": "7:48"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 506.",
-        "clue": "506"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Around instruction.",
-        "clue": "Around"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S04C12-location",
-        "type": "location",
-        "name": "Cooper's Yard",
-        "inspectText": "Cooper's Yard looks ordinary until Broken String moves through it."
-      },
-      {
-        "id": "S04C12-object",
-        "type": "evidence",
-        "name": "Photograph",
-        "inspectText": "Photograph is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S04C12-marker",
-        "type": "marker",
-        "name": "Marker 506",
-        "inspectText": "Marker 506 is not the answer. It is the lock."
-      },
-      {
-        "id": "S04C12-sound",
-        "type": "audio_clue",
-        "name": "Broken String",
-        "inspectText": "Broken String repeats near 7:48."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series04-The-River-Speaks/chapter12.md",
-      "novel": "generated/novels/Series04-The-River-Speaks/chapter12.md",
-      "song": "generated/songs/Series04-The-River-Speaks/song12.md"
     }
   },
   "story": {

@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "banker's house",
-      "banker'shouse"
-    ],
-    "object": [
-      "stamp"
-    ],
-    "witness": [
-      "groundskeeper"
-    ],
-    "time": [
-      "5:13",
-      "513"
-    ],
-    "marker": [
-      "1588",
-      "marker 1588",
-      "road marker 1588",
-      "mile marker 1588",
-      "mile 1588"
-    ],
-    "direction": [
-      "down"
-    ],
-    "sound": [
-      "moth wings",
-      "mothwings"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -310,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S15C10",
-    "puzzleId": "S15C10-marker-lock",
-    "dialogueId": "S15C10-groundskeeper",
-    "locationId": "banker-s-house",
-    "objective": "Investigate Banker's House, question Groundskeeper, recover Stamp, and learn why marker 1588 is tied to Signal Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Banker's House.",
-        "clue": "Moth Wings"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Stamp.",
-        "clue": "Stamp"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Groundskeeper.",
-        "clue": "5:13"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1588.",
-        "clue": "1588"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Down instruction.",
-        "clue": "Down"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S15C10-location",
-        "type": "location",
-        "name": "Banker's House",
-        "inspectText": "Banker's House looks ordinary until Moth Wings moves through it."
-      },
-      {
-        "id": "S15C10-object",
-        "type": "evidence",
-        "name": "Stamp",
-        "inspectText": "Stamp is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S15C10-marker",
-        "type": "marker",
-        "name": "Marker 1588",
-        "inspectText": "Marker 1588 is not the answer. It is the lock."
-      },
-      {
-        "id": "S15C10-sound",
-        "type": "audio_clue",
-        "name": "Moth Wings",
-        "inspectText": "Moth Wings repeats near 5:13."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series15-The-Lantern-Keeper/chapter10.md",
-      "novel": "generated/novels/Series15-The-Lantern-Keeper/chapter10.md",
-      "song": "generated/songs/Series15-The-Lantern-Keeper/song10.md"
     }
   },
   "story": {

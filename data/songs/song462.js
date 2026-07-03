@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "water tower",
-      "watertower"
-    ],
-    "object": [
-      "key"
-    ],
-    "witness": [
-      "auctioneer"
-    ],
-    "time": [
-      "11:51",
-      "1151"
-    ],
-    "marker": [
-      "3952",
-      "marker 3952",
-      "road marker 3952",
-      "mile marker 3952",
-      "mile 3952"
-    ],
-    "direction": [
-      "back the way you came",
-      "backthewayyoucame"
-    ],
-    "sound": [
-      "broken string",
-      "brokenstring"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -310,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S39C06",
-    "puzzleId": "S39C06-marker-lock",
-    "dialogueId": "S39C06-auctioneer",
-    "locationId": "water-tower",
-    "objective": "Investigate Water Tower, question Auctioneer, recover Key, and learn why marker 3952 is tied to Rider Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Water Tower.",
-        "clue": "Broken String"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Key.",
-        "clue": "Key"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Auctioneer.",
-        "clue": "11:51"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3952.",
-        "clue": "3952"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Back the Way You Came instruction.",
-        "clue": "Back the Way You Came"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S39C06-location",
-        "type": "location",
-        "name": "Water Tower",
-        "inspectText": "Water Tower looks ordinary until Broken String moves through it."
-      },
-      {
-        "id": "S39C06-object",
-        "type": "evidence",
-        "name": "Key",
-        "inspectText": "Key is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S39C06-marker",
-        "type": "marker",
-        "name": "Marker 3952",
-        "inspectText": "Marker 3952 is not the answer. It is the lock."
-      },
-      {
-        "id": "S39C06-sound",
-        "type": "audio_clue",
-        "name": "Broken String",
-        "inspectText": "Broken String repeats near 11:51."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series39-The-Pale-Horse/chapter06.md",
-      "novel": "generated/novels/Series39-The-Pale-Horse/chapter06.md",
-      "song": "generated/songs/Series39-The-Pale-Horse/song06.md"
     }
   },
   "story": {

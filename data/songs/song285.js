@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "telegraph office",
-      "telegraphoffice"
-    ],
-    "object": [
-      "pocket watch",
-      "pocketwatch"
-    ],
-    "witness": [
-      "peddler"
-    ],
-    "time": [
-      "5:09",
-      "509"
-    ],
-    "marker": [
-      "2479",
-      "marker 2479",
-      "road marker 2479",
-      "mile marker 2479",
-      "mile 2479"
-    ],
-    "direction": [
-      "around"
-    ],
-    "sound": [
-      "tree fall",
-      "treefall"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S24C09",
-    "puzzleId": "S24C09-marker-lock",
-    "dialogueId": "S24C09-peddler",
-    "locationId": "telegraph-office",
-    "objective": "Investigate Telegraph Office, question Peddler, recover Pocket Watch, and learn why marker 2479 is tied to Timeline Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Telegraph Office.",
-        "clue": "Tree Fall"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Pocket Watch.",
-        "clue": "Pocket Watch"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Peddler.",
-        "clue": "5:09"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2479.",
-        "clue": "2479"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Around instruction.",
-        "clue": "Around"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S24C09-location",
-        "type": "location",
-        "name": "Telegraph Office",
-        "inspectText": "Telegraph Office looks ordinary until Tree Fall moves through it."
-      },
-      {
-        "id": "S24C09-object",
-        "type": "evidence",
-        "name": "Pocket Watch",
-        "inspectText": "Pocket Watch is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S24C09-marker",
-        "type": "marker",
-        "name": "Marker 2479",
-        "inspectText": "Marker 2479 is not the answer. It is the lock."
-      },
-      {
-        "id": "S24C09-sound",
-        "type": "audio_clue",
-        "name": "Tree Fall",
-        "inspectText": "Tree Fall repeats near 5:09."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series24-The-Missing-Hours/chapter09.md",
-      "novel": "generated/novels/Series24-The-Missing-Hours/chapter09.md",
-      "song": "generated/songs/Series24-The-Missing-Hours/song09.md"
     }
   },
   "story": {

@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "stables"
-    ],
-    "object": [
-      "axle pin",
-      "axlepin"
-    ],
-    "witness": [
-      "furrier"
-    ],
-    "time": [
-      "2:38",
-      "238"
-    ],
-    "marker": [
-      "3661",
-      "marker 3661",
-      "road marker 3661",
-      "mile marker 3661",
-      "mile 3661"
-    ],
-    "direction": [
-      "nowhere"
-    ],
-    "sound": [
-      "kettle boil",
-      "kettleboil"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -299,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S36C07",
-    "puzzleId": "S36C07-marker-lock",
-    "dialogueId": "S36C07-furrier",
-    "locationId": "stables",
-    "objective": "Investigate Stables, question Furrier, recover Axle Pin, and learn why marker 3661 is tied to Voice Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Stables.",
-        "clue": "Kettle Boil"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Axle Pin.",
-        "clue": "Axle Pin"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Furrier.",
-        "clue": "2:38"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3661.",
-        "clue": "3661"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Nowhere instruction.",
-        "clue": "Nowhere"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S36C07-location",
-        "type": "location",
-        "name": "Stables",
-        "inspectText": "Stables looks ordinary until Kettle Boil moves through it."
-      },
-      {
-        "id": "S36C07-object",
-        "type": "evidence",
-        "name": "Axle Pin",
-        "inspectText": "Axle Pin is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S36C07-marker",
-        "type": "marker",
-        "name": "Marker 3661",
-        "inspectText": "Marker 3661 is not the answer. It is the lock."
-      },
-      {
-        "id": "S36C07-sound",
-        "type": "audio_clue",
-        "name": "Kettle Boil",
-        "inspectText": "Kettle Boil repeats near 2:38."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series36-The-Night-Caller/chapter07.md",
-      "novel": "generated/novels/Series36-The-Night-Caller/chapter07.md",
-      "song": "generated/songs/Series36-The-Night-Caller/song07.md"
     }
   },
   "story": {

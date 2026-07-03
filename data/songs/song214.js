@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the widow's porch",
-      "widow's porch",
-      "thewidow'sporch"
-    ],
-    "object": [
-      "shard of mirror",
-      "shardofmirror"
-    ],
-    "witness": [
-      "glazier"
-    ],
-    "time": [
-      "7:37",
-      "737"
-    ],
-    "marker": [
-      "1888",
-      "marker 1888",
-      "road marker 1888",
-      "mile marker 1888",
-      "mile 1888"
-    ],
-    "direction": [
-      "right"
-    ],
-    "sound": [
-      "axe on wood",
-      "axeonwood"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S18C10",
-    "puzzleId": "S18C10-marker-lock",
-    "dialogueId": "S18C10-glazier",
-    "locationId": "the-widow-s-porch",
-    "objective": "Investigate The Widow's Porch, question Glazier, recover Shard of Mirror, and learn why marker 1888 is tied to Identity Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Widow's Porch.",
-        "clue": "Axe on Wood"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Shard of Mirror.",
-        "clue": "Shard of Mirror"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Glazier.",
-        "clue": "7:37"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1888.",
-        "clue": "1888"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Right instruction.",
-        "clue": "Right"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S18C10-location",
-        "type": "location",
-        "name": "The Widow's Porch",
-        "inspectText": "The Widow's Porch looks ordinary until Axe on Wood moves through it."
-      },
-      {
-        "id": "S18C10-object",
-        "type": "evidence",
-        "name": "Shard of Mirror",
-        "inspectText": "Shard of Mirror is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S18C10-marker",
-        "type": "marker",
-        "name": "Marker 1888",
-        "inspectText": "Marker 1888 is not the answer. It is the lock."
-      },
-      {
-        "id": "S18C10-sound",
-        "type": "audio_clue",
-        "name": "Axe on Wood",
-        "inspectText": "Axe on Wood repeats near 7:37."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series18-The-Hollow-Names/chapter10.md",
-      "novel": "generated/novels/Series18-The-Hollow-Names/chapter10.md",
-      "song": "generated/songs/Series18-The-Hollow-Names/song10.md"
     }
   },
   "story": {

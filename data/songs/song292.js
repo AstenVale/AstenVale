@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "forge"
-    ],
-    "object": [
-      "journal"
-    ],
-    "witness": [
-      "preacher"
-    ],
-    "time": [
-      "2:38",
-      "238"
-    ],
-    "marker": [
-      "2534",
-      "marker 2534",
-      "road marker 2534",
-      "mile marker 2534",
-      "mile 2534"
-    ],
-    "direction": [
-      "south"
-    ],
-    "sound": [
-      "the silence after",
-      "silence after",
-      "thesilenceafter"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -299,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S25C04",
-    "puzzleId": "S25C04-marker-lock",
-    "dialogueId": "S25C04-preacher",
-    "locationId": "forge",
-    "objective": "Investigate Forge, question Preacher, recover Journal, and learn why marker 2534 is tied to Resonance Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Forge.",
-        "clue": "The Silence After"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Journal.",
-        "clue": "Journal"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Preacher.",
-        "clue": "2:38"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2534.",
-        "clue": "2534"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the South instruction.",
-        "clue": "South"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S25C04-location",
-        "type": "location",
-        "name": "Forge",
-        "inspectText": "Forge looks ordinary until The Silence After moves through it."
-      },
-      {
-        "id": "S25C04-object",
-        "type": "evidence",
-        "name": "Journal",
-        "inspectText": "Journal is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S25C04-marker",
-        "type": "marker",
-        "name": "Marker 2534",
-        "inspectText": "Marker 2534 is not the answer. It is the lock."
-      },
-      {
-        "id": "S25C04-sound",
-        "type": "audio_clue",
-        "name": "The Silence After",
-        "inspectText": "The Silence After repeats near 2:38."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series25-The-Echo-Chamber/chapter04.md",
-      "novel": "generated/novels/Series25-The-Echo-Chamber/chapter04.md",
-      "song": "generated/songs/Series25-The-Echo-Chamber/song04.md"
     }
   },
   "story": {

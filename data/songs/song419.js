@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the pit",
-      "pit",
-      "thepit"
-    ],
-    "object": [
-      "key"
-    ],
-    "witness": [
-      "midwife"
-    ],
-    "time": [
-      "4:12",
-      "412"
-    ],
-    "marker": [
-      "3597",
-      "marker 3597",
-      "road marker 3597",
-      "mile marker 3597",
-      "mile 3597"
-    ],
-    "direction": [
-      "straight down",
-      "straightdown"
-    ],
-    "sound": [
-      "tree fall",
-      "treefall"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S35C11",
-    "puzzleId": "S35C11-marker-lock",
-    "dialogueId": "S35C11-midwife",
-    "locationId": "the-pit",
-    "objective": "Investigate The Pit, question Midwife, recover Key, and learn why marker 3597 is tied to Collection Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Pit.",
-        "clue": "Tree Fall"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Key.",
-        "clue": "Key"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Midwife.",
-        "clue": "4:12"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3597.",
-        "clue": "3597"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Straight Down instruction.",
-        "clue": "Straight Down"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S35C11-location",
-        "type": "location",
-        "name": "The Pit",
-        "inspectText": "The Pit looks ordinary until Tree Fall moves through it."
-      },
-      {
-        "id": "S35C11-object",
-        "type": "evidence",
-        "name": "Key",
-        "inspectText": "Key is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S35C11-marker",
-        "type": "marker",
-        "name": "Marker 3597",
-        "inspectText": "Marker 3597 is not the answer. It is the lock."
-      },
-      {
-        "id": "S35C11-sound",
-        "type": "audio_clue",
-        "name": "Tree Fall",
-        "inspectText": "Tree Fall repeats near 4:12."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series35-The-Archive-Keeper/chapter11.md",
-      "novel": "generated/novels/Series35-The-Archive-Keeper/chapter11.md",
-      "song": "generated/songs/Series35-The-Archive-Keeper/song11.md"
     }
   },
   "story": {

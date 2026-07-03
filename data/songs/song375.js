@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "library"
-    ],
-    "object": [
-      "leather strap",
-      "leatherstrap"
-    ],
-    "witness": [
-      "preacher"
-    ],
-    "time": [
-      "4:38",
-      "438"
-    ],
-    "marker": [
-      "3225",
-      "marker 3225",
-      "road marker 3225",
-      "mile marker 3225",
-      "mile 3225"
-    ],
-    "direction": [
-      "up"
-    ],
-    "sound": [
-      "latch drop",
-      "latchdrop"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -299,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S32C03",
-    "puzzleId": "S32C03-marker-lock",
-    "dialogueId": "S32C03-preacher",
-    "locationId": "library",
-    "objective": "Investigate Library, question Preacher, recover Leather Strap, and learn why marker 3225 is tied to Depth Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Library.",
-        "clue": "Latch Drop"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Leather Strap.",
-        "clue": "Leather Strap"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Preacher.",
-        "clue": "4:38"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3225.",
-        "clue": "3225"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Up instruction.",
-        "clue": "Up"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S32C03-location",
-        "type": "location",
-        "name": "Library",
-        "inspectText": "Library looks ordinary until Latch Drop moves through it."
-      },
-      {
-        "id": "S32C03-object",
-        "type": "evidence",
-        "name": "Leather Strap",
-        "inspectText": "Leather Strap is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S32C03-marker",
-        "type": "marker",
-        "name": "Marker 3225",
-        "inspectText": "Marker 3225 is not the answer. It is the lock."
-      },
-      {
-        "id": "S32C03-sound",
-        "type": "audio_clue",
-        "name": "Latch Drop",
-        "inspectText": "Latch Drop repeats near 4:38."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series32-The-Deep-Current/chapter03.md",
-      "novel": "generated/novels/Series32-The-Deep-Current/chapter03.md",
-      "song": "generated/songs/Series32-The-Deep-Current/song03.md"
     }
   },
   "story": {

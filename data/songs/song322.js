@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "harness shop",
-      "harnessshop"
-    ],
-    "object": [
-      "compass"
-    ],
-    "witness": [
-      "lime burner",
-      "limeburner"
-    ],
-    "time": [
-      "10:51",
-      "1051"
-    ],
-    "marker": [
-      "2788",
-      "marker 2788",
-      "road marker 2788",
-      "mile marker 2788",
-      "mile 2788"
-    ],
-    "direction": [
-      "behind"
-    ],
-    "sound": [
-      "stones in a tin",
-      "stonesinatin"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S27C10",
-    "puzzleId": "S27C10-marker-lock",
-    "dialogueId": "S27C10-lime-burner",
-    "locationId": "harness-shop",
-    "objective": "Investigate Harness Shop, question Lime Burner, recover Compass, and learn why marker 2788 is tied to Expanse Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Harness Shop.",
-        "clue": "Stones in a Tin"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Compass.",
-        "clue": "Compass"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Lime Burner.",
-        "clue": "10:51"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2788.",
-        "clue": "2788"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Behind instruction.",
-        "clue": "Behind"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S27C10-location",
-        "type": "location",
-        "name": "Harness Shop",
-        "inspectText": "Harness Shop looks ordinary until Stones in a Tin moves through it."
-      },
-      {
-        "id": "S27C10-object",
-        "type": "evidence",
-        "name": "Compass",
-        "inspectText": "Compass is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S27C10-marker",
-        "type": "marker",
-        "name": "Marker 2788",
-        "inspectText": "Marker 2788 is not the answer. It is the lock."
-      },
-      {
-        "id": "S27C10-sound",
-        "type": "audio_clue",
-        "name": "Stones in a Tin",
-        "inspectText": "Stones in a Tin repeats near 10:51."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series27-The-Salt-Flats/chapter10.md",
-      "novel": "generated/novels/Series27-The-Salt-Flats/chapter10.md",
-      "song": "generated/songs/Series27-The-Salt-Flats/song10.md"
     }
   },
   "story": {

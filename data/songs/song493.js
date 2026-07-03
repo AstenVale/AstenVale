@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "post office",
-      "postoffice"
-    ],
-    "object": [
-      "comb"
-    ],
-    "witness": [
-      "salt seller",
-      "saltseller"
-    ],
-    "time": [
-      "12:33",
-      "1233"
-    ],
-    "marker": [
-      "4207",
-      "marker 4207",
-      "road marker 4207",
-      "mile marker 4207",
-      "mile 4207"
-    ],
-    "direction": [
-      "beyond"
-    ],
-    "sound": [
-      "saw cutting",
-      "sawcutting"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S42C01",
-    "puzzleId": "S42C01-marker-lock",
-    "dialogueId": "S42C01-salt-seller",
-    "locationId": "post-office",
-    "objective": "Investigate Post Office, question Salt Seller, recover Comb, and learn why marker 4207 is tied to Drought Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Post Office.",
-        "clue": "Saw Cutting"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Comb.",
-        "clue": "Comb"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Salt Seller.",
-        "clue": "12:33"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4207.",
-        "clue": "4207"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Beyond instruction.",
-        "clue": "Beyond"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S42C01-location",
-        "type": "location",
-        "name": "Post Office",
-        "inspectText": "Post Office looks ordinary until Saw Cutting moves through it."
-      },
-      {
-        "id": "S42C01-object",
-        "type": "evidence",
-        "name": "Comb",
-        "inspectText": "Comb is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S42C01-marker",
-        "type": "marker",
-        "name": "Marker 4207",
-        "inspectText": "Marker 4207 is not the answer. It is the lock."
-      },
-      {
-        "id": "S42C01-sound",
-        "type": "audio_clue",
-        "name": "Saw Cutting",
-        "inspectText": "Saw Cutting repeats near 12:33."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series42-The-Dry-Season/chapter01.md",
-      "novel": "generated/novels/Series42-The-Dry-Season/chapter01.md",
-      "song": "generated/songs/Series42-The-Dry-Season/song01.md"
     }
   },
   "story": {

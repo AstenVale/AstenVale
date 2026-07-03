@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "sheep fold",
-      "sheepfold"
-    ],
-    "object": [
-      "signet ring",
-      "signetring"
-    ],
-    "witness": [
-      "retired soldier",
-      "retiredsoldier"
-    ],
-    "time": [
-      "3:03",
-      "303"
-    ],
-    "marker": [
-      "2197",
-      "marker 2197",
-      "road marker 2197",
-      "mile marker 2197",
-      "mile 2197"
-    ],
-    "direction": [
-      "over"
-    ],
-    "sound": [
-      "distant gunshot",
-      "distantgunshot"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -301,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S21C11",
-    "puzzleId": "S21C11-marker-lock",
-    "dialogueId": "S21C11-retired-soldier",
-    "locationId": "sheep-fold",
-    "objective": "Investigate Sheep Fold, question Retired Soldier, recover Signet Ring, and learn why marker 2197 is tied to Bark Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Sheep Fold.",
-        "clue": "Distant Gunshot"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Signet Ring.",
-        "clue": "Signet Ring"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Retired Soldier.",
-        "clue": "3:03"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2197.",
-        "clue": "2197"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Over instruction.",
-        "clue": "Over"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S21C11-location",
-        "type": "location",
-        "name": "Sheep Fold",
-        "inspectText": "Sheep Fold looks ordinary until Distant Gunshot moves through it."
-      },
-      {
-        "id": "S21C11-object",
-        "type": "evidence",
-        "name": "Signet Ring",
-        "inspectText": "Signet Ring is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S21C11-marker",
-        "type": "marker",
-        "name": "Marker 2197",
-        "inspectText": "Marker 2197 is not the answer. It is the lock."
-      },
-      {
-        "id": "S21C11-sound",
-        "type": "audio_clue",
-        "name": "Distant Gunshot",
-        "inspectText": "Distant Gunshot repeats near 3:03."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series21-The-Witness-Tree/chapter11.md",
-      "novel": "generated/novels/Series21-The-Witness-Tree/chapter11.md",
-      "song": "generated/songs/Series21-The-Witness-Tree/song11.md"
     }
   },
   "story": {

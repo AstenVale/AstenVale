@@ -61,39 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "lumber camp",
-      "lumbercamp"
-    ],
-    "object": [
-      "oil rag",
-      "oilrag"
-    ],
-    "witness": [
-      "night porter",
-      "nightporter"
-    ],
-    "time": [
-      "4:38",
-      "438"
-    ],
-    "marker": [
-      "4107",
-      "marker 4107",
-      "road marker 4107",
-      "mile marker 4107",
-      "mile 4107"
-    ],
-    "direction": [
-      "off the road",
-      "offtheroad"
-    ],
-    "sound": [
-      "hammer on anvil",
-      "hammeronanvil"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -302,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S41C01",
-    "puzzleId": "S41C01-marker-lock",
-    "dialogueId": "S41C01-night-porter",
-    "locationId": "lumber-camp",
-    "objective": "Investigate Lumber Camp, question Night Porter, recover Oil Rag, and learn why marker 4107 is tied to Phantom Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Lumber Camp.",
-        "clue": "Hammer on Anvil"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Oil Rag.",
-        "clue": "Oil Rag"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Night Porter.",
-        "clue": "4:38"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4107.",
-        "clue": "4107"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Off the Road instruction.",
-        "clue": "Off the Road"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S41C01-location",
-        "type": "location",
-        "name": "Lumber Camp",
-        "inspectText": "Lumber Camp looks ordinary until Hammer on Anvil moves through it."
-      },
-      {
-        "id": "S41C01-object",
-        "type": "evidence",
-        "name": "Oil Rag",
-        "inspectText": "Oil Rag is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S41C01-marker",
-        "type": "marker",
-        "name": "Marker 4107",
-        "inspectText": "Marker 4107 is not the answer. It is the lock."
-      },
-      {
-        "id": "S41C01-sound",
-        "type": "audio_clue",
-        "name": "Hammer on Anvil",
-        "inspectText": "Hammer on Anvil repeats near 4:38."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series41-The-Ghost-Road/chapter01.md",
-      "novel": "generated/novels/Series41-The-Ghost-Road/chapter01.md",
-      "song": "generated/songs/Series41-The-Ghost-Road/song01.md"
     }
   },
   "story": {

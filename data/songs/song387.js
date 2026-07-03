@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "sheriff's office",
-      "sheriff'soffice"
-    ],
-    "object": [
-      "bone button",
-      "bonebutton"
-    ],
-    "witness": [
-      "salt seller",
-      "saltseller"
-    ],
-    "time": [
-      "9:55",
-      "955"
-    ],
-    "marker": [
-      "3325",
-      "marker 3325",
-      "road marker 3325",
-      "mile marker 3325",
-      "mile 3325"
-    ],
-    "direction": [
-      "down"
-    ],
-    "sound": [
-      "latch drop",
-      "latchdrop"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -312,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S33C03",
-    "puzzleId": "S33C03-marker-lock",
-    "dialogueId": "S33C03-salt-seller",
-    "locationId": "sheriff-s-office",
-    "objective": "Investigate Sheriff's Office, question Salt Seller, recover Bone Button, and learn why marker 3325 is tied to Faded Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Sheriff's Office.",
-        "clue": "Latch Drop"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Bone Button.",
-        "clue": "Bone Button"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Salt Seller.",
-        "clue": "9:55"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3325.",
-        "clue": "3325"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Down instruction.",
-        "clue": "Down"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S33C03-location",
-        "type": "location",
-        "name": "Sheriff's Office",
-        "inspectText": "Sheriff's Office looks ordinary until Latch Drop moves through it."
-      },
-      {
-        "id": "S33C03-object",
-        "type": "evidence",
-        "name": "Bone Button",
-        "inspectText": "Bone Button is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S33C03-marker",
-        "type": "marker",
-        "name": "Marker 3325",
-        "inspectText": "Marker 3325 is not the answer. It is the lock."
-      },
-      {
-        "id": "S33C03-sound",
-        "type": "audio_clue",
-        "name": "Latch Drop",
-        "inspectText": "Latch Drop repeats near 9:55."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series33-The-Pale-Season/chapter03.md",
-      "novel": "generated/novels/Series33-The-Pale-Season/chapter03.md",
-      "song": "generated/songs/Series33-The-Pale-Season/song03.md"
     }
   },
   "story": {

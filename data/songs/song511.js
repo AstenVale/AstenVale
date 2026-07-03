@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "silo row",
-      "silorow"
-    ],
-    "object": [
-      "knife"
-    ],
-    "witness": [
-      "deputy"
-    ],
-    "time": [
-      "4:38",
-      "438"
-    ],
-    "marker": [
-      "4361",
-      "marker 4361",
-      "road marker 4361",
-      "mile marker 4361",
-      "mile 4361"
-    ],
-    "direction": [
-      "east"
-    ],
-    "sound": [
-      "dog bark at nothing",
-      "dogbarkatnothing"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -299,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S43C07",
-    "puzzleId": "S43C07-marker-lock",
-    "dialogueId": "S43C07-deputy",
-    "locationId": "silo-row",
-    "objective": "Investigate Silo Row, question Deputy, recover Knife, and learn why marker 4361 is tied to Identity Vault II.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Silo Row.",
-        "clue": "Dog Bark at Nothing"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Knife.",
-        "clue": "Knife"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Deputy.",
-        "clue": "4:38"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4361.",
-        "clue": "4361"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the East instruction.",
-        "clue": "East"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S43C07-location",
-        "type": "location",
-        "name": "Silo Row",
-        "inspectText": "Silo Row looks ordinary until Dog Bark at Nothing moves through it."
-      },
-      {
-        "id": "S43C07-object",
-        "type": "evidence",
-        "name": "Knife",
-        "inspectText": "Knife is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S43C07-marker",
-        "type": "marker",
-        "name": "Marker 4361",
-        "inspectText": "Marker 4361 is not the answer. It is the lock."
-      },
-      {
-        "id": "S43C07-sound",
-        "type": "audio_clue",
-        "name": "Dog Bark at Nothing",
-        "inspectText": "Dog Bark at Nothing repeats near 4:38."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series43-The-False-Name/chapter07.md",
-      "novel": "generated/novels/Series43-The-False-Name/chapter07.md",
-      "song": "generated/songs/Series43-The-False-Name/song07.md"
     }
   },
   "story": {

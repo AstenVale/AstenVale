@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "barn"
-    ],
-    "object": [
-      "trade token",
-      "tradetoken"
-    ],
-    "witness": [
-      "gravedigger"
-    ],
-    "time": [
-      "6:06",
-      "606"
-    ],
-    "marker": [
-      "4997",
-      "marker 4997",
-      "road marker 4997",
-      "mile marker 4997",
-      "mile 4997"
-    ],
-    "direction": [
-      "around"
-    ],
-    "sound": [
-      "knife scrape",
-      "knifescrape"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -309,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S49C11",
-    "puzzleId": "S49C11-marker-lock",
-    "dialogueId": "S49C11-gravedigger",
-    "locationId": "barn",
-    "objective": "Investigate Barn, question Gravedigger, recover Trade Token, and learn why marker 4997 is tied to Testimony Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Barn.",
-        "clue": "Knife Scrape"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Trade Token.",
-        "clue": "Trade Token"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Gravedigger.",
-        "clue": "6:06"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4997.",
-        "clue": "4997"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Around instruction.",
-        "clue": "Around"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S49C11-location",
-        "type": "location",
-        "name": "Barn",
-        "inspectText": "Barn looks ordinary until Knife Scrape moves through it."
-      },
-      {
-        "id": "S49C11-object",
-        "type": "evidence",
-        "name": "Trade Token",
-        "inspectText": "Trade Token is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S49C11-marker",
-        "type": "marker",
-        "name": "Marker 4997",
-        "inspectText": "Marker 4997 is not the answer. It is the lock."
-      },
-      {
-        "id": "S49C11-sound",
-        "type": "audio_clue",
-        "name": "Knife Scrape",
-        "inspectText": "Knife Scrape repeats near 6:06."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series49-The-Final-Witness/chapter11.md",
-      "novel": "generated/novels/Series49-The-Final-Witness/chapter11.md",
-      "song": "generated/songs/Series49-The-Final-Witness/song11.md"
     }
   },
   "story": {

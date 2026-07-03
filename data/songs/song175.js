@@ -61,35 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "schoolhouse"
-    ],
-    "object": [
-      "thimble"
-    ],
-    "witness": [
-      "sheriff"
-    ],
-    "time": [
-      "7:48",
-      "748"
-    ],
-    "marker": [
-      "1561",
-      "marker 1561",
-      "road marker 1561",
-      "mile marker 1561",
-      "mile 1561"
-    ],
-    "direction": [
-      "out"
-    ],
-    "sound": [
-      "crow on wire",
-      "crowonwire"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -309,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S15C07",
-    "puzzleId": "S15C07-marker-lock",
-    "dialogueId": "S15C07-sheriff",
-    "locationId": "schoolhouse",
-    "objective": "Investigate Schoolhouse, question Sheriff, recover Thimble, and learn why marker 1561 is tied to Signal Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Schoolhouse.",
-        "clue": "Crow on Wire"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Thimble.",
-        "clue": "Thimble"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Sheriff.",
-        "clue": "7:48"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1561.",
-        "clue": "1561"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Out instruction.",
-        "clue": "Out"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S15C07-location",
-        "type": "location",
-        "name": "Schoolhouse",
-        "inspectText": "Schoolhouse looks ordinary until Crow on Wire moves through it."
-      },
-      {
-        "id": "S15C07-object",
-        "type": "evidence",
-        "name": "Thimble",
-        "inspectText": "Thimble is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S15C07-marker",
-        "type": "marker",
-        "name": "Marker 1561",
-        "inspectText": "Marker 1561 is not the answer. It is the lock."
-      },
-      {
-        "id": "S15C07-sound",
-        "type": "audio_clue",
-        "name": "Crow on Wire",
-        "inspectText": "Crow on Wire repeats near 7:48."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series15-The-Lantern-Keeper/chapter07.md",
-      "novel": "generated/novels/Series15-The-Lantern-Keeper/chapter07.md",
-      "song": "generated/songs/Series15-The-Lantern-Keeper/song07.md"
     }
   },
   "story": {

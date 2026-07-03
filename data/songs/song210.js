@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "jail"
-    ],
-    "object": [
-      "journal"
-    ],
-    "witness": [
-      "the mute",
-      "mute",
-      "themute"
-    ],
-    "time": [
-      "4:12",
-      "412"
-    ],
-    "marker": [
-      "1852",
-      "marker 1852",
-      "road marker 1852",
-      "mile marker 1852",
-      "mile 1852"
-    ],
-    "direction": [
-      "nowhere"
-    ],
-    "sound": [
-      "pen on paper",
-      "penonpaper"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S18C06",
-    "puzzleId": "S18C06-marker-lock",
-    "dialogueId": "S18C06-the-mute",
-    "locationId": "jail",
-    "objective": "Investigate Jail, question The Mute, recover Journal, and learn why marker 1852 is tied to Identity Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Jail.",
-        "clue": "Pen on Paper"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Journal.",
-        "clue": "Journal"
-      },
-      {
-        "step": "interview",
-        "objective": "Question The Mute.",
-        "clue": "4:12"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1852.",
-        "clue": "1852"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Nowhere instruction.",
-        "clue": "Nowhere"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S18C06-location",
-        "type": "location",
-        "name": "Jail",
-        "inspectText": "Jail looks ordinary until Pen on Paper moves through it."
-      },
-      {
-        "id": "S18C06-object",
-        "type": "evidence",
-        "name": "Journal",
-        "inspectText": "Journal is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S18C06-marker",
-        "type": "marker",
-        "name": "Marker 1852",
-        "inspectText": "Marker 1852 is not the answer. It is the lock."
-      },
-      {
-        "id": "S18C06-sound",
-        "type": "audio_clue",
-        "name": "Pen on Paper",
-        "inspectText": "Pen on Paper repeats near 4:12."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series18-The-Hollow-Names/chapter06.md",
-      "novel": "generated/novels/Series18-The-Hollow-Names/chapter06.md",
-      "song": "generated/songs/Series18-The-Hollow-Names/song06.md"
     }
   },
   "story": {

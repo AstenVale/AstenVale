@@ -61,40 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the hollow road",
-      "hollow road",
-      "thehollowroad"
-    ],
-    "object": [
-      "ring"
-    ],
-    "witness": [
-      "the mute",
-      "mute",
-      "themute"
-    ],
-    "time": [
-      "12:44",
-      "1244"
-    ],
-    "marker": [
-      "4161",
-      "marker 4161",
-      "road marker 4161",
-      "mile marker 4161",
-      "mile 4161"
-    ],
-    "direction": [
-      "down the hollow",
-      "downthehollow"
-    ],
-    "sound": [
-      "latch drop",
-      "latchdrop"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -303,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S41C07",
-    "puzzleId": "S41C07-marker-lock",
-    "dialogueId": "S41C07-the-mute",
-    "locationId": "the-hollow-road",
-    "objective": "Investigate The Hollow Road, question The Mute, recover Ring, and learn why marker 4161 is tied to Phantom Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Hollow Road.",
-        "clue": "Latch Drop"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Ring.",
-        "clue": "Ring"
-      },
-      {
-        "step": "interview",
-        "objective": "Question The Mute.",
-        "clue": "12:44"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4161.",
-        "clue": "4161"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Down the Hollow instruction.",
-        "clue": "Down the Hollow"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S41C07-location",
-        "type": "location",
-        "name": "The Hollow Road",
-        "inspectText": "The Hollow Road looks ordinary until Latch Drop moves through it."
-      },
-      {
-        "id": "S41C07-object",
-        "type": "evidence",
-        "name": "Ring",
-        "inspectText": "Ring is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S41C07-marker",
-        "type": "marker",
-        "name": "Marker 4161",
-        "inspectText": "Marker 4161 is not the answer. It is the lock."
-      },
-      {
-        "id": "S41C07-sound",
-        "type": "audio_clue",
-        "name": "Latch Drop",
-        "inspectText": "Latch Drop repeats near 12:44."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series41-The-Ghost-Road/chapter07.md",
-      "novel": "generated/novels/Series41-The-Ghost-Road/chapter07.md",
-      "song": "generated/songs/Series41-The-Ghost-Road/song07.md"
     }
   },
   "story": {

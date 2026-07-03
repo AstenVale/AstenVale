@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "jail"
-    ],
-    "object": [
-      "leather strap",
-      "leatherstrap"
-    ],
-    "witness": [
-      "bone collector",
-      "bonecollector"
-    ],
-    "time": [
-      "4:03",
-      "403"
-    ],
-    "marker": [
-      "4888",
-      "marker 4888",
-      "road marker 4888",
-      "mile marker 4888",
-      "mile 4888"
-    ],
-    "direction": [
-      "left"
-    ],
-    "sound": [
-      "horse hooves",
-      "horsehooves"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -310,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S48C10",
-    "puzzleId": "S48C10-marker-lock",
-    "dialogueId": "S48C10-bone-collector",
-    "locationId": "jail",
-    "objective": "Investigate Jail, question Bone Collector, recover Leather Strap, and learn why marker 4888 is tied to Static Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Jail.",
-        "clue": "Horse Hooves"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Leather Strap.",
-        "clue": "Leather Strap"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Bone Collector.",
-        "clue": "4:03"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4888.",
-        "clue": "4888"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Left instruction.",
-        "clue": "Left"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S48C10-location",
-        "type": "location",
-        "name": "Jail",
-        "inspectText": "Jail looks ordinary until Horse Hooves moves through it."
-      },
-      {
-        "id": "S48C10-object",
-        "type": "evidence",
-        "name": "Leather Strap",
-        "inspectText": "Leather Strap is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S48C10-marker",
-        "type": "marker",
-        "name": "Marker 4888",
-        "inspectText": "Marker 4888 is not the answer. It is the lock."
-      },
-      {
-        "id": "S48C10-sound",
-        "type": "audio_clue",
-        "name": "Horse Hooves",
-        "inspectText": "Horse Hooves repeats near 4:03."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series48-The-Broken-Signal/chapter10.md",
-      "novel": "generated/novels/Series48-The-Broken-Signal/chapter10.md",
-      "song": "generated/songs/Series48-The-Broken-Signal/song10.md"
     }
   },
   "story": {

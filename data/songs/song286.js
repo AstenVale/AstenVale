@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "loom house",
-      "loomhouse"
-    ],
-    "object": [
-      "leather strap",
-      "leatherstrap"
-    ],
-    "witness": [
-      "stranger"
-    ],
-    "time": [
-      "11:44",
-      "1144"
-    ],
-    "marker": [
-      "2488",
-      "marker 2488",
-      "road marker 2488",
-      "mile marker 2488",
-      "mile 2488"
-    ],
-    "direction": [
-      "back"
-    ],
-    "sound": [
-      "fence wire hum",
-      "fencewirehum"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S24C10",
-    "puzzleId": "S24C10-marker-lock",
-    "dialogueId": "S24C10-stranger",
-    "locationId": "loom-house",
-    "objective": "Investigate Loom House, question Stranger, recover Leather Strap, and learn why marker 2488 is tied to Timeline Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Loom House.",
-        "clue": "Fence Wire Hum"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Leather Strap.",
-        "clue": "Leather Strap"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Stranger.",
-        "clue": "11:44"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2488.",
-        "clue": "2488"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Back instruction.",
-        "clue": "Back"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S24C10-location",
-        "type": "location",
-        "name": "Loom House",
-        "inspectText": "Loom House looks ordinary until Fence Wire Hum moves through it."
-      },
-      {
-        "id": "S24C10-object",
-        "type": "evidence",
-        "name": "Leather Strap",
-        "inspectText": "Leather Strap is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S24C10-marker",
-        "type": "marker",
-        "name": "Marker 2488",
-        "inspectText": "Marker 2488 is not the answer. It is the lock."
-      },
-      {
-        "id": "S24C10-sound",
-        "type": "audio_clue",
-        "name": "Fence Wire Hum",
-        "inspectText": "Fence Wire Hum repeats near 11:44."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series24-The-Missing-Hours/chapter10.md",
-      "novel": "generated/novels/Series24-The-Missing-Hours/chapter10.md",
-      "song": "generated/songs/Series24-The-Missing-Hours/song10.md"
     }
   },
   "story": {

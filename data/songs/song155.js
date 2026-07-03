@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the root cellar",
-      "root cellar",
-      "therootcellar"
-    ],
-    "object": [
-      "candle"
-    ],
-    "witness": [
-      "child"
-    ],
-    "time": [
-      "8:42",
-      "842"
-    ],
-    "marker": [
-      "1397",
-      "marker 1397",
-      "road marker 1397",
-      "mile marker 1397",
-      "mile 1397"
-    ],
-    "direction": [
-      "into the dark",
-      "intothedark"
-    ],
-    "sound": [
-      "pen on paper",
-      "penonpaper"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S13C11",
-    "puzzleId": "S13C11-marker-lock",
-    "dialogueId": "S13C11-child",
-    "locationId": "the-root-cellar",
-    "objective": "Investigate The Root Cellar, question Child, recover Candle, and learn why marker 1397 is tied to Mirror Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Root Cellar.",
-        "clue": "Pen on Paper"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Candle.",
-        "clue": "Candle"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Child.",
-        "clue": "8:42"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1397.",
-        "clue": "1397"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Into the Dark instruction.",
-        "clue": "Into the Dark"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S13C11-location",
-        "type": "location",
-        "name": "The Root Cellar",
-        "inspectText": "The Root Cellar looks ordinary until Pen on Paper moves through it."
-      },
-      {
-        "id": "S13C11-object",
-        "type": "evidence",
-        "name": "Candle",
-        "inspectText": "Candle is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S13C11-marker",
-        "type": "marker",
-        "name": "Marker 1397",
-        "inspectText": "Marker 1397 is not the answer. It is the lock."
-      },
-      {
-        "id": "S13C11-sound",
-        "type": "audio_clue",
-        "name": "Pen on Paper",
-        "inspectText": "Pen on Paper repeats near 8:42."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series13-The-Twin-Hollows/chapter11.md",
-      "novel": "generated/novels/Series13-The-Twin-Hollows/chapter11.md",
-      "song": "generated/songs/Series13-The-Twin-Hollows/song11.md"
     }
   },
   "story": {

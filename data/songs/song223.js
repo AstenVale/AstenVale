@@ -61,35 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "boatyard"
-    ],
-    "object": [
-      "boot"
-    ],
-    "witness": [
-      "apothecary"
-    ],
-    "time": [
-      "9:44",
-      "944"
-    ],
-    "marker": [
-      "1961",
-      "marker 1961",
-      "road marker 1961",
-      "mile marker 1961",
-      "mile 1961"
-    ],
-    "direction": [
-      "over"
-    ],
-    "sound": [
-      "swamp gas",
-      "swampgas"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -298,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S19C07",
-    "puzzleId": "S19C07-marker-lock",
-    "dialogueId": "S19C07-apothecary",
-    "locationId": "boatyard",
-    "objective": "Investigate Boatyard, question Apothecary, recover Boot, and learn why marker 1961 is tied to Crossing Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Boatyard.",
-        "clue": "Swamp Gas"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Boot.",
-        "clue": "Boot"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Apothecary.",
-        "clue": "9:44"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1961.",
-        "clue": "1961"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Over instruction.",
-        "clue": "Over"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S19C07-location",
-        "type": "location",
-        "name": "Boatyard",
-        "inspectText": "Boatyard looks ordinary until Swamp Gas moves through it."
-      },
-      {
-        "id": "S19C07-object",
-        "type": "evidence",
-        "name": "Boot",
-        "inspectText": "Boot is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S19C07-marker",
-        "type": "marker",
-        "name": "Marker 1961",
-        "inspectText": "Marker 1961 is not the answer. It is the lock."
-      },
-      {
-        "id": "S19C07-sound",
-        "type": "audio_clue",
-        "name": "Swamp Gas",
-        "inspectText": "Swamp Gas repeats near 9:44."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series19-The-Bridge-Burner/chapter07.md",
-      "novel": "generated/novels/Series19-The-Bridge-Burner/chapter07.md",
-      "song": "generated/songs/Series19-The-Bridge-Burner/song07.md"
     }
   },
   "story": {

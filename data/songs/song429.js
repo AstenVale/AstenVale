@@ -61,40 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the narrow road",
-      "narrow road",
-      "thenarrowroad"
-    ],
-    "object": [
-      "bent nail",
-      "bentnail"
-    ],
-    "witness": [
-      "the mute",
-      "mute",
-      "themute"
-    ],
-    "time": [
-      "4:47",
-      "447"
-    ],
-    "marker": [
-      "3679",
-      "marker 3679",
-      "road marker 3679",
-      "mile marker 3679",
-      "mile 3679"
-    ],
-    "direction": [
-      "ahead"
-    ],
-    "sound": [
-      "shovel on earth",
-      "shovelonearth"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -303,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S36C09",
-    "puzzleId": "S36C09-marker-lock",
-    "dialogueId": "S36C09-the-mute",
-    "locationId": "the-narrow-road",
-    "objective": "Investigate The Narrow Road, question The Mute, recover Bent Nail, and learn why marker 3679 is tied to Voice Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Narrow Road.",
-        "clue": "Shovel on Earth"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Bent Nail.",
-        "clue": "Bent Nail"
-      },
-      {
-        "step": "interview",
-        "objective": "Question The Mute.",
-        "clue": "4:47"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3679.",
-        "clue": "3679"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Ahead instruction.",
-        "clue": "Ahead"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S36C09-location",
-        "type": "location",
-        "name": "The Narrow Road",
-        "inspectText": "The Narrow Road looks ordinary until Shovel on Earth moves through it."
-      },
-      {
-        "id": "S36C09-object",
-        "type": "evidence",
-        "name": "Bent Nail",
-        "inspectText": "Bent Nail is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S36C09-marker",
-        "type": "marker",
-        "name": "Marker 3679",
-        "inspectText": "Marker 3679 is not the answer. It is the lock."
-      },
-      {
-        "id": "S36C09-sound",
-        "type": "audio_clue",
-        "name": "Shovel on Earth",
-        "inspectText": "Shovel on Earth repeats near 4:47."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series36-The-Night-Caller/chapter09.md",
-      "novel": "generated/novels/Series36-The-Night-Caller/chapter09.md",
-      "song": "generated/songs/Series36-The-Night-Caller/song09.md"
     }
   },
   "story": {

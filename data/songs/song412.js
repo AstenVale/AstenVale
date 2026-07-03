@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "covered bridge",
-      "coveredbridge"
-    ],
-    "object": [
-      "brooch"
-    ],
-    "witness": [
-      "cooper"
-    ],
-    "time": [
-      "12:44",
-      "1244"
-    ],
-    "marker": [
-      "3534",
-      "marker 3534",
-      "road marker 3534",
-      "mile marker 3534",
-      "mile 3534"
-    ],
-    "direction": [
-      "around"
-    ],
-    "sound": [
-      "rope on pulley",
-      "ropeonpulley"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -309,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S35C04",
-    "puzzleId": "S35C04-marker-lock",
-    "dialogueId": "S35C04-cooper",
-    "locationId": "covered-bridge",
-    "objective": "Investigate Covered Bridge, question Cooper, recover Brooch, and learn why marker 3534 is tied to Collection Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Covered Bridge.",
-        "clue": "Rope on Pulley"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Brooch.",
-        "clue": "Brooch"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Cooper.",
-        "clue": "12:44"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3534.",
-        "clue": "3534"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Around instruction.",
-        "clue": "Around"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S35C04-location",
-        "type": "location",
-        "name": "Covered Bridge",
-        "inspectText": "Covered Bridge looks ordinary until Rope on Pulley moves through it."
-      },
-      {
-        "id": "S35C04-object",
-        "type": "evidence",
-        "name": "Brooch",
-        "inspectText": "Brooch is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S35C04-marker",
-        "type": "marker",
-        "name": "Marker 3534",
-        "inspectText": "Marker 3534 is not the answer. It is the lock."
-      },
-      {
-        "id": "S35C04-sound",
-        "type": "audio_clue",
-        "name": "Rope on Pulley",
-        "inspectText": "Rope on Pulley repeats near 12:44."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series35-The-Archive-Keeper/chapter04.md",
-      "novel": "generated/novels/Series35-The-Archive-Keeper/chapter04.md",
-      "song": "generated/songs/Series35-The-Archive-Keeper/song04.md"
     }
   },
   "story": {

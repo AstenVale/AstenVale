@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the gully",
-      "gully",
-      "thegully"
-    ],
-    "object": [
-      "flask"
-    ],
-    "witness": [
-      "innkeeper"
-    ],
-    "time": [
-      "7:02",
-      "702"
-    ],
-    "marker": [
-      "1325",
-      "marker 1325",
-      "road marker 1325",
-      "mile marker 1325",
-      "mile 1325"
-    ],
-    "direction": [
-      "behind"
-    ],
-    "sound": [
-      "pages turning",
-      "pagesturning"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -310,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S13C03",
-    "puzzleId": "S13C03-marker-lock",
-    "dialogueId": "S13C03-innkeeper",
-    "locationId": "the-gully",
-    "objective": "Investigate The Gully, question Innkeeper, recover Flask, and learn why marker 1325 is tied to Mirror Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Gully.",
-        "clue": "Pages Turning"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Flask.",
-        "clue": "Flask"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Innkeeper.",
-        "clue": "7:02"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1325.",
-        "clue": "1325"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Behind instruction.",
-        "clue": "Behind"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S13C03-location",
-        "type": "location",
-        "name": "The Gully",
-        "inspectText": "The Gully looks ordinary until Pages Turning moves through it."
-      },
-      {
-        "id": "S13C03-object",
-        "type": "evidence",
-        "name": "Flask",
-        "inspectText": "Flask is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S13C03-marker",
-        "type": "marker",
-        "name": "Marker 1325",
-        "inspectText": "Marker 1325 is not the answer. It is the lock."
-      },
-      {
-        "id": "S13C03-sound",
-        "type": "audio_clue",
-        "name": "Pages Turning",
-        "inspectText": "Pages Turning repeats near 7:02."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series13-The-Twin-Hollows/chapter03.md",
-      "novel": "generated/novels/Series13-The-Twin-Hollows/chapter03.md",
-      "song": "generated/songs/Series13-The-Twin-Hollows/song03.md"
     }
   },
   "story": {

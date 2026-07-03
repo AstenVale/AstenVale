@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "tannery"
-    ],
-    "object": [
-      "cufflink"
-    ],
-    "witness": [
-      "rope maker",
-      "ropemaker"
-    ],
-    "time": [
-      "12:00",
-      "1200"
-    ],
-    "marker": [
-      "4216",
-      "marker 4216",
-      "road marker 4216",
-      "mile marker 4216",
-      "mile 4216"
-    ],
-    "direction": [
-      "away from town",
-      "awayfromtown"
-    ],
-    "sound": [
-      "fire crackling",
-      "firecrackling"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S42C02",
-    "puzzleId": "S42C02-marker-lock",
-    "dialogueId": "S42C02-rope-maker",
-    "locationId": "tannery",
-    "objective": "Investigate Tannery, question Rope Maker, recover Cufflink, and learn why marker 4216 is tied to Drought Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Tannery.",
-        "clue": "Fire Crackling"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Cufflink.",
-        "clue": "Cufflink"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Rope Maker.",
-        "clue": "12:00"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4216.",
-        "clue": "4216"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Away from Town instruction.",
-        "clue": "Away from Town"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S42C02-location",
-        "type": "location",
-        "name": "Tannery",
-        "inspectText": "Tannery looks ordinary until Fire Crackling moves through it."
-      },
-      {
-        "id": "S42C02-object",
-        "type": "evidence",
-        "name": "Cufflink",
-        "inspectText": "Cufflink is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S42C02-marker",
-        "type": "marker",
-        "name": "Marker 4216",
-        "inspectText": "Marker 4216 is not the answer. It is the lock."
-      },
-      {
-        "id": "S42C02-sound",
-        "type": "audio_clue",
-        "name": "Fire Crackling",
-        "inspectText": "Fire Crackling repeats near 12:00."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series42-The-Dry-Season/chapter02.md",
-      "novel": "generated/novels/Series42-The-Dry-Season/chapter02.md",
-      "song": "generated/songs/Series42-The-Dry-Season/song02.md"
     }
   },
   "story": {

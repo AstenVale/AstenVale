@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the narrow road",
-      "narrow road",
-      "thenarrowroad"
-    ],
-    "object": [
-      "spool of thread",
-      "spoolofthread"
-    ],
-    "witness": [
-      "auctioneer"
-    ],
-    "time": [
-      "2:38",
-      "238"
-    ],
-    "marker": [
-      "4470",
-      "marker 4470",
-      "road marker 4470",
-      "mile marker 4470",
-      "mile 4470"
-    ],
-    "direction": [
-      "west"
-    ],
-    "sound": [
-      "horse hooves",
-      "horsehooves"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S44C08",
-    "puzzleId": "S44C08-marker-lock",
-    "dialogueId": "S44C08-auctioneer",
-    "locationId": "the-narrow-road",
-    "objective": "Investigate The Narrow Road, question Auctioneer, recover Spool of Thread, and learn why marker 4470 is tied to Parallel Case Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Narrow Road.",
-        "clue": "Horse Hooves"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Spool of Thread.",
-        "clue": "Spool of Thread"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Auctioneer.",
-        "clue": "2:38"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4470.",
-        "clue": "4470"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the West instruction.",
-        "clue": "West"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S44C08-location",
-        "type": "location",
-        "name": "The Narrow Road",
-        "inspectText": "The Narrow Road looks ordinary until Horse Hooves moves through it."
-      },
-      {
-        "id": "S44C08-object",
-        "type": "evidence",
-        "name": "Spool of Thread",
-        "inspectText": "Spool of Thread is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S44C08-marker",
-        "type": "marker",
-        "name": "Marker 4470",
-        "inspectText": "Marker 4470 is not the answer. It is the lock."
-      },
-      {
-        "id": "S44C08-sound",
-        "type": "audio_clue",
-        "name": "Horse Hooves",
-        "inspectText": "Horse Hooves repeats near 2:38."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series44-The-Mirror-Case/chapter08.md",
-      "novel": "generated/novels/Series44-The-Mirror-Case/chapter08.md",
-      "song": "generated/songs/Series44-The-Mirror-Case/song08.md"
     }
   },
   "story": {

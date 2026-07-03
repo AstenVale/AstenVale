@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "library"
-    ],
-    "object": [
-      "iron nail",
-      "ironnail"
-    ],
-    "witness": [
-      "surveyor"
-    ],
-    "time": [
-      "2:22",
-      "222"
-    ],
-    "marker": [
-      "3961",
-      "marker 3961",
-      "road marker 3961",
-      "mile marker 3961",
-      "mile 3961"
-    ],
-    "direction": [
-      "west"
-    ],
-    "sound": [
-      "empty wagon",
-      "emptywagon"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -299,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S39C07",
-    "puzzleId": "S39C07-marker-lock",
-    "dialogueId": "S39C07-surveyor",
-    "locationId": "library",
-    "objective": "Investigate Library, question Surveyor, recover Iron Nail, and learn why marker 3961 is tied to Rider Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Library.",
-        "clue": "Empty Wagon"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Iron Nail.",
-        "clue": "Iron Nail"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Surveyor.",
-        "clue": "2:22"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3961.",
-        "clue": "3961"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the West instruction.",
-        "clue": "West"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S39C07-location",
-        "type": "location",
-        "name": "Library",
-        "inspectText": "Library looks ordinary until Empty Wagon moves through it."
-      },
-      {
-        "id": "S39C07-object",
-        "type": "evidence",
-        "name": "Iron Nail",
-        "inspectText": "Iron Nail is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S39C07-marker",
-        "type": "marker",
-        "name": "Marker 3961",
-        "inspectText": "Marker 3961 is not the answer. It is the lock."
-      },
-      {
-        "id": "S39C07-sound",
-        "type": "audio_clue",
-        "name": "Empty Wagon",
-        "inspectText": "Empty Wagon repeats near 2:22."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series39-The-Pale-Horse/chapter07.md",
-      "novel": "generated/novels/Series39-The-Pale-Horse/chapter07.md",
-      "song": "generated/songs/Series39-The-Pale-Horse/song07.md"
     }
   },
   "story": {

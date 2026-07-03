@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "cabin"
-    ],
-    "object": [
-      "hollow acorn",
-      "hollowacorn"
-    ],
-    "witness": [
-      "river pilot",
-      "riverpilot"
-    ],
-    "time": [
-      "5:09",
-      "509"
-    ],
-    "marker": [
-      "2116",
-      "marker 2116",
-      "road marker 2116",
-      "mile marker 2116",
-      "mile 2116"
-    ],
-    "direction": [
-      "behind"
-    ],
-    "sound": [
-      "fog horn",
-      "foghorn"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S21C02",
-    "puzzleId": "S21C02-marker-lock",
-    "dialogueId": "S21C02-river-pilot",
-    "locationId": "cabin",
-    "objective": "Investigate Cabin, question River Pilot, recover Hollow Acorn, and learn why marker 2116 is tied to Bark Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Cabin.",
-        "clue": "Fog Horn"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Hollow Acorn.",
-        "clue": "Hollow Acorn"
-      },
-      {
-        "step": "interview",
-        "objective": "Question River Pilot.",
-        "clue": "5:09"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2116.",
-        "clue": "2116"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Behind instruction.",
-        "clue": "Behind"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S21C02-location",
-        "type": "location",
-        "name": "Cabin",
-        "inspectText": "Cabin looks ordinary until Fog Horn moves through it."
-      },
-      {
-        "id": "S21C02-object",
-        "type": "evidence",
-        "name": "Hollow Acorn",
-        "inspectText": "Hollow Acorn is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S21C02-marker",
-        "type": "marker",
-        "name": "Marker 2116",
-        "inspectText": "Marker 2116 is not the answer. It is the lock."
-      },
-      {
-        "id": "S21C02-sound",
-        "type": "audio_clue",
-        "name": "Fog Horn",
-        "inspectText": "Fog Horn repeats near 5:09."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series21-The-Witness-Tree/chapter02.md",
-      "novel": "generated/novels/Series21-The-Witness-Tree/chapter02.md",
-      "song": "generated/songs/Series21-The-Witness-Tree/song02.md"
     }
   },
   "story": {

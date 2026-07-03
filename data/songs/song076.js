@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the pit",
-      "pit",
-      "thepit"
-    ],
-    "object": [
-      "receipt"
-    ],
-    "witness": [
-      "census taker",
-      "censustaker"
-    ],
-    "time": [
-      "5:13",
-      "513"
-    ],
-    "marker": [
-      "734",
-      "marker 734",
-      "road marker 734",
-      "mile marker 734",
-      "mile 734"
-    ],
-    "direction": [
-      "out"
-    ],
-    "sound": [
-      "bell toll",
-      "belltoll"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -301,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S07C04",
-    "puzzleId": "S07C04-marker-lock",
-    "dialogueId": "S07C04-census-taker",
-    "locationId": "the-pit",
-    "objective": "Investigate The Pit, question Census Taker, recover Receipt, and learn why marker 734 is tied to Parallel Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Pit.",
-        "clue": "Bell Toll"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Receipt.",
-        "clue": "Receipt"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Census Taker.",
-        "clue": "5:13"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 734.",
-        "clue": "734"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Out instruction.",
-        "clue": "Out"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S07C04-location",
-        "type": "location",
-        "name": "The Pit",
-        "inspectText": "The Pit looks ordinary until Bell Toll moves through it."
-      },
-      {
-        "id": "S07C04-object",
-        "type": "evidence",
-        "name": "Receipt",
-        "inspectText": "Receipt is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S07C04-marker",
-        "type": "marker",
-        "name": "Marker 734",
-        "inspectText": "Marker 734 is not the answer. It is the lock."
-      },
-      {
-        "id": "S07C04-sound",
-        "type": "audio_clue",
-        "name": "Bell Toll",
-        "inspectText": "Bell Toll repeats near 5:13."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series07-The-Second-Family/chapter04.md",
-      "novel": "generated/novels/Series07-The-Second-Family/chapter04.md",
-      "song": "generated/songs/Series07-The-Second-Family/song04.md"
     }
   },
   "story": {

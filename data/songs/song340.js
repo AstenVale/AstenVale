@@ -61,35 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "church"
-    ],
-    "object": [
-      "notebook"
-    ],
-    "witness": [
-      "cartographer"
-    ],
-    "time": [
-      "8:00",
-      "800"
-    ],
-    "marker": [
-      "2934",
-      "marker 2934",
-      "road marker 2934",
-      "mile marker 2934",
-      "mile 2934"
-    ],
-    "direction": [
-      "home"
-    ],
-    "sound": [
-      "bone on stone",
-      "boneonstone"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -298,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S29C04",
-    "puzzleId": "S29C04-marker-lock",
-    "dialogueId": "S29C04-cartographer",
-    "locationId": "church",
-    "objective": "Investigate Church, question Cartographer, recover Notebook, and learn why marker 2934 is tied to Interment Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Church.",
-        "clue": "Bone on Stone"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Notebook.",
-        "clue": "Notebook"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Cartographer.",
-        "clue": "8:00"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2934.",
-        "clue": "2934"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Home instruction.",
-        "clue": "Home"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S29C04-location",
-        "type": "location",
-        "name": "Church",
-        "inspectText": "Church looks ordinary until Bone on Stone moves through it."
-      },
-      {
-        "id": "S29C04-object",
-        "type": "evidence",
-        "name": "Notebook",
-        "inspectText": "Notebook is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S29C04-marker",
-        "type": "marker",
-        "name": "Marker 2934",
-        "inspectText": "Marker 2934 is not the answer. It is the lock."
-      },
-      {
-        "id": "S29C04-sound",
-        "type": "audio_clue",
-        "name": "Bone on Stone",
-        "inspectText": "Bone on Stone repeats near 8:00."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series29-The-Unmarked-Grave/chapter04.md",
-      "novel": "generated/novels/Series29-The-Unmarked-Grave/chapter04.md",
-      "song": "generated/songs/Series29-The-Unmarked-Grave/song04.md"
     }
   },
   "story": {

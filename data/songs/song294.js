@@ -61,35 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "black pine",
-      "blackpine"
-    ],
-    "object": [
-      "handkerchief"
-    ],
-    "witness": [
-      "postman"
-    ],
-    "time": [
-      "12:44",
-      "1244"
-    ],
-    "marker": [
-      "2552",
-      "marker 2552",
-      "road marker 2552",
-      "mile marker 2552",
-      "mile 2552"
-    ],
-    "direction": [
-      "down"
-    ],
-    "sound": [
-      "chains"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -298,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S25C06",
-    "puzzleId": "S25C06-marker-lock",
-    "dialogueId": "S25C06-postman",
-    "locationId": "black-pine",
-    "objective": "Investigate Black Pine, question Postman, recover Handkerchief, and learn why marker 2552 is tied to Resonance Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Black Pine.",
-        "clue": "Chains"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Handkerchief.",
-        "clue": "Handkerchief"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Postman.",
-        "clue": "12:44"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2552.",
-        "clue": "2552"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Down instruction.",
-        "clue": "Down"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S25C06-location",
-        "type": "location",
-        "name": "Black Pine",
-        "inspectText": "Black Pine looks ordinary until Chains moves through it."
-      },
-      {
-        "id": "S25C06-object",
-        "type": "evidence",
-        "name": "Handkerchief",
-        "inspectText": "Handkerchief is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S25C06-marker",
-        "type": "marker",
-        "name": "Marker 2552",
-        "inspectText": "Marker 2552 is not the answer. It is the lock."
-      },
-      {
-        "id": "S25C06-sound",
-        "type": "audio_clue",
-        "name": "Chains",
-        "inspectText": "Chains repeats near 12:44."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series25-The-Echo-Chamber/chapter06.md",
-      "novel": "generated/novels/Series25-The-Echo-Chamber/chapter06.md",
-      "song": "generated/songs/Series25-The-Echo-Chamber/song06.md"
     }
   },
   "story": {

@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "cabin"
-    ],
-    "object": [
-      "cabin key",
-      "cabinkey"
-    ],
-    "witness": [
-      "mechanic"
-    ],
-    "time": [
-      "10:22",
-      "1022"
-    ],
-    "marker": [
-      "72",
-      "marker 72",
-      "road marker 72",
-      "mile marker 72",
-      "mile 72"
-    ],
-    "direction": [
-      "north"
-    ],
-    "sound": [
-      "wind in pines",
-      "windinpines"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -299,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S01C09",
-    "puzzleId": "S01C09-marker-lock",
-    "dialogueId": "S01C09-mechanic",
-    "locationId": "cabin",
-    "objective": "Investigate Cabin, question Mechanic, recover Cabin Key, and learn why marker 72 is tied to Public Archive.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Cabin.",
-        "clue": "Wind in Pines"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Cabin Key.",
-        "clue": "Cabin Key"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Mechanic.",
-        "clue": "10:22"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 72.",
-        "clue": "72"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the North instruction.",
-        "clue": "North"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S01C09-location",
-        "type": "location",
-        "name": "Cabin",
-        "inspectText": "Cabin looks ordinary until Wind in Pines moves through it."
-      },
-      {
-        "id": "S01C09-object",
-        "type": "evidence",
-        "name": "Cabin Key",
-        "inspectText": "Cabin Key is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S01C09-marker",
-        "type": "marker",
-        "name": "Marker 72",
-        "inspectText": "Marker 72 is not the answer. It is the lock."
-      },
-      {
-        "id": "S01C09-sound",
-        "type": "audio_clue",
-        "name": "Wind in Pines",
-        "inspectText": "Wind in Pines repeats near 10:22."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series01-The-Stranger/chapter09.md",
-      "novel": "generated/novels/Series01-The-Stranger/chapter09.md",
-      "song": "generated/songs/Series01-The-Stranger/song09.md"
     }
   },
   "story": {

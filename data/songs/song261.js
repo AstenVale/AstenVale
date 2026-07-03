@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "clock tower",
-      "clocktower"
-    ],
-    "object": [
-      "dried blood on cloth",
-      "driedbloodoncloth"
-    ],
-    "witness": [
-      "conductor"
-    ],
-    "time": [
-      "5:55",
-      "555"
-    ],
-    "marker": [
-      "2279",
-      "marker 2279",
-      "road marker 2279",
-      "mile marker 2279",
-      "mile 2279"
-    ],
-    "direction": [
-      "right"
-    ],
-    "sound": [
-      "hammer strike",
-      "hammerstrike"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -310,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S22C09",
-    "puzzleId": "S22C09-marker-lock",
-    "dialogueId": "S22C09-conductor",
-    "locationId": "clock-tower",
-    "objective": "Investigate Clock Tower, question Conductor, recover Dried Blood on Cloth, and learn why marker 2279 is tied to Excavation Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Clock Tower.",
-        "clue": "Hammer Strike"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Dried Blood on Cloth.",
-        "clue": "Dried Blood on Cloth"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Conductor.",
-        "clue": "5:55"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2279.",
-        "clue": "2279"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Right instruction.",
-        "clue": "Right"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S22C09-location",
-        "type": "location",
-        "name": "Clock Tower",
-        "inspectText": "Clock Tower looks ordinary until Hammer Strike moves through it."
-      },
-      {
-        "id": "S22C09-object",
-        "type": "evidence",
-        "name": "Dried Blood on Cloth",
-        "inspectText": "Dried Blood on Cloth is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S22C09-marker",
-        "type": "marker",
-        "name": "Marker 2279",
-        "inspectText": "Marker 2279 is not the answer. It is the lock."
-      },
-      {
-        "id": "S22C09-sound",
-        "type": "audio_clue",
-        "name": "Hammer Strike",
-        "inspectText": "Hammer Strike repeats near 5:55."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series22-The-Bone-Road/chapter09.md",
-      "novel": "generated/novels/Series22-The-Bone-Road/chapter09.md",
-      "song": "generated/songs/Series22-The-Bone-Road/song09.md"
     }
   },
   "story": {

@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "quarry edge",
-      "quarryedge"
-    ],
-    "object": [
-      "chain"
-    ],
-    "witness": [
-      "miller"
-    ],
-    "time": [
-      "7:02",
-      "702"
-    ],
-    "marker": [
-      "3788",
-      "marker 3788",
-      "road marker 3788",
-      "mile marker 3788",
-      "mile 3788"
-    ],
-    "direction": [
-      "east"
-    ],
-    "sound": [
-      "cellar door",
-      "cellardoor"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -310,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S37C10",
-    "puzzleId": "S37C10-marker-lock",
-    "dialogueId": "S37C10-miller",
-    "locationId": "quarry-edge",
-    "objective": "Investigate Quarry Edge, question Miller, recover Chain, and learn why marker 3788 is tied to Outpost Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Quarry Edge.",
-        "clue": "Cellar Door"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Chain.",
-        "clue": "Chain"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Miller.",
-        "clue": "7:02"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3788.",
-        "clue": "3788"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the East instruction.",
-        "clue": "East"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S37C10-location",
-        "type": "location",
-        "name": "Quarry Edge",
-        "inspectText": "Quarry Edge looks ordinary until Cellar Door moves through it."
-      },
-      {
-        "id": "S37C10-object",
-        "type": "evidence",
-        "name": "Chain",
-        "inspectText": "Chain is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S37C10-marker",
-        "type": "marker",
-        "name": "Marker 3788",
-        "inspectText": "Marker 3788 is not the answer. It is the lock."
-      },
-      {
-        "id": "S37C10-sound",
-        "type": "audio_clue",
-        "name": "Cellar Door",
-        "inspectText": "Cellar Door repeats near 7:02."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series37-The-Abandoned-Post/chapter10.md",
-      "novel": "generated/novels/Series37-The-Abandoned-Post/chapter10.md",
-      "song": "generated/songs/Series37-The-Abandoned-Post/song10.md"
     }
   },
   "story": {

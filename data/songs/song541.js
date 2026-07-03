@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "cooper's yard",
-      "cooper'syard"
-    ],
-    "object": [
-      "belt buckle",
-      "beltbuckle"
-    ],
-    "witness": [
-      "auctioneer"
-    ],
-    "time": [
-      "3:17",
-      "317"
-    ],
-    "marker": [
-      "4607",
-      "marker 4607",
-      "road marker 4607",
-      "mile marker 4607",
-      "mile 4607"
-    ],
-    "direction": [
-      "beyond"
-    ],
-    "sound": [
-      "hammer strike",
-      "hammerstrike"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S46C01",
-    "puzzleId": "S46C01-marker-lock",
-    "dialogueId": "S46C01-auctioneer",
-    "locationId": "cooper-s-yard",
-    "objective": "Investigate Cooper's Yard, question Auctioneer, recover Belt Buckle, and learn why marker 4607 is tied to Weather Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Cooper's Yard.",
-        "clue": "Hammer Strike"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Belt Buckle.",
-        "clue": "Belt Buckle"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Auctioneer.",
-        "clue": "3:17"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4607.",
-        "clue": "4607"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Beyond instruction.",
-        "clue": "Beyond"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S46C01-location",
-        "type": "location",
-        "name": "Cooper's Yard",
-        "inspectText": "Cooper's Yard looks ordinary until Hammer Strike moves through it."
-      },
-      {
-        "id": "S46C01-object",
-        "type": "evidence",
-        "name": "Belt Buckle",
-        "inspectText": "Belt Buckle is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S46C01-marker",
-        "type": "marker",
-        "name": "Marker 4607",
-        "inspectText": "Marker 4607 is not the answer. It is the lock."
-      },
-      {
-        "id": "S46C01-sound",
-        "type": "audio_clue",
-        "name": "Hammer Strike",
-        "inspectText": "Hammer Strike repeats near 3:17."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series46-The-Storm-Season/chapter01.md",
-      "novel": "generated/novels/Series46-The-Storm-Season/chapter01.md",
-      "song": "generated/songs/Series46-The-Storm-Season/song01.md"
     }
   },
   "story": {

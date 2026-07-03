@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "orchard"
-    ],
-    "object": [
-      "locket"
-    ],
-    "witness": [
-      "lock keeper",
-      "lockkeeper"
-    ],
-    "time": [
-      "10:47",
-      "1047"
-    ],
-    "marker": [
-      "570",
-      "marker 570",
-      "road marker 570",
-      "mile marker 570",
-      "mile 570"
-    ],
-    "direction": [
-      "down the hollow",
-      "downthehollow"
-    ],
-    "sound": [
-      "bell toll",
-      "belltoll"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S05C08",
-    "puzzleId": "S05C08-marker-lock",
-    "dialogueId": "S05C08-lock-keeper",
-    "locationId": "orchard",
-    "objective": "Investigate Orchard, question Lock Keeper, recover Locket, and learn why marker 570 is tied to Cold Archive.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Orchard.",
-        "clue": "Bell Toll"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Locket.",
-        "clue": "Locket"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Lock Keeper.",
-        "clue": "10:47"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 570.",
-        "clue": "570"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Down the Hollow instruction.",
-        "clue": "Down the Hollow"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S05C08-location",
-        "type": "location",
-        "name": "Orchard",
-        "inspectText": "Orchard looks ordinary until Bell Toll moves through it."
-      },
-      {
-        "id": "S05C08-object",
-        "type": "evidence",
-        "name": "Locket",
-        "inspectText": "Locket is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S05C08-marker",
-        "type": "marker",
-        "name": "Marker 570",
-        "inspectText": "Marker 570 is not the answer. It is the lock."
-      },
-      {
-        "id": "S05C08-sound",
-        "type": "audio_clue",
-        "name": "Bell Toll",
-        "inspectText": "Bell Toll repeats near 10:47."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series05-The-Last-Winter/chapter08.md",
-      "novel": "generated/novels/Series05-The-Last-Winter/chapter08.md",
-      "song": "generated/songs/Series05-The-Last-Winter/song08.md"
     }
   },
   "story": {

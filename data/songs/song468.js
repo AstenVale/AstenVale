@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "sheep fold",
-      "sheepfold"
-    ],
-    "object": [
-      "coin"
-    ],
-    "witness": [
-      "drifter"
-    ],
-    "time": [
-      "1:11",
-      "111"
-    ],
-    "marker": [
-      "4006",
-      "marker 4006",
-      "road marker 4006",
-      "mile marker 4006",
-      "mile 4006"
-    ],
-    "direction": [
-      "ahead"
-    ],
-    "sound": [
-      "saw cutting",
-      "sawcutting"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -299,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S39C12",
-    "puzzleId": "S39C12-marker-lock",
-    "dialogueId": "S39C12-drifter",
-    "locationId": "sheep-fold",
-    "objective": "Investigate Sheep Fold, question Drifter, recover Coin, and learn why marker 4006 is tied to Rider Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Sheep Fold.",
-        "clue": "Saw Cutting"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Coin.",
-        "clue": "Coin"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Drifter.",
-        "clue": "1:11"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4006.",
-        "clue": "4006"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Ahead instruction.",
-        "clue": "Ahead"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S39C12-location",
-        "type": "location",
-        "name": "Sheep Fold",
-        "inspectText": "Sheep Fold looks ordinary until Saw Cutting moves through it."
-      },
-      {
-        "id": "S39C12-object",
-        "type": "evidence",
-        "name": "Coin",
-        "inspectText": "Coin is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S39C12-marker",
-        "type": "marker",
-        "name": "Marker 4006",
-        "inspectText": "Marker 4006 is not the answer. It is the lock."
-      },
-      {
-        "id": "S39C12-sound",
-        "type": "audio_clue",
-        "name": "Saw Cutting",
-        "inspectText": "Saw Cutting repeats near 1:11."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series39-The-Pale-Horse/chapter12.md",
-      "novel": "generated/novels/Series39-The-Pale-Horse/chapter12.md",
-      "song": "generated/songs/Series39-The-Pale-Horse/song12.md"
     }
   },
   "story": {

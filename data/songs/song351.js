@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "market square",
-      "marketsquare"
-    ],
-    "object": [
-      "dried blood on cloth",
-      "driedbloodoncloth"
-    ],
-    "witness": [
-      "stranger"
-    ],
-    "time": [
-      "8:06",
-      "806"
-    ],
-    "marker": [
-      "3025",
-      "marker 3025",
-      "road marker 3025",
-      "mile marker 3025",
-      "mile 3025"
-    ],
-    "direction": [
-      "into the pines",
-      "intothepines"
-    ],
-    "sound": [
-      "breathing"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S30C03",
-    "puzzleId": "S30C03-marker-lock",
-    "dialogueId": "S30C03-stranger",
-    "locationId": "market-square",
-    "objective": "Investigate Market Square, question Stranger, recover Dried Blood on Cloth, and learn why marker 3025 is tied to Manifest Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Market Square.",
-        "clue": "Breathing"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Dried Blood on Cloth.",
-        "clue": "Dried Blood on Cloth"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Stranger.",
-        "clue": "8:06"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3025.",
-        "clue": "3025"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Into the Pines instruction.",
-        "clue": "Into the Pines"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S30C03-location",
-        "type": "location",
-        "name": "Market Square",
-        "inspectText": "Market Square looks ordinary until Breathing moves through it."
-      },
-      {
-        "id": "S30C03-object",
-        "type": "evidence",
-        "name": "Dried Blood on Cloth",
-        "inspectText": "Dried Blood on Cloth is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S30C03-marker",
-        "type": "marker",
-        "name": "Marker 3025",
-        "inspectText": "Marker 3025 is not the answer. It is the lock."
-      },
-      {
-        "id": "S30C03-sound",
-        "type": "audio_clue",
-        "name": "Breathing",
-        "inspectText": "Breathing repeats near 8:06."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series30-The-Last-Train/chapter03.md",
-      "novel": "generated/novels/Series30-The-Last-Train/chapter03.md",
-      "song": "generated/songs/Series30-The-Last-Train/song03.md"
     }
   },
   "story": {

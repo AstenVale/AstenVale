@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "cabin"
-    ],
-    "object": [
-      "iron nail",
-      "ironnail"
-    ],
-    "witness": [
-      "auctioneer"
-    ],
-    "time": [
-      "6:06",
-      "606"
-    ],
-    "marker": [
-      "2470",
-      "marker 2470",
-      "road marker 2470",
-      "mile marker 2470",
-      "mile 2470"
-    ],
-    "direction": [
-      "below"
-    ],
-    "sound": [
-      "mud suction",
-      "mudsuction"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -310,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S24C08",
-    "puzzleId": "S24C08-marker-lock",
-    "dialogueId": "S24C08-auctioneer",
-    "locationId": "cabin",
-    "objective": "Investigate Cabin, question Auctioneer, recover Iron Nail, and learn why marker 2470 is tied to Timeline Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Cabin.",
-        "clue": "Mud Suction"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Iron Nail.",
-        "clue": "Iron Nail"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Auctioneer.",
-        "clue": "6:06"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2470.",
-        "clue": "2470"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Below instruction.",
-        "clue": "Below"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S24C08-location",
-        "type": "location",
-        "name": "Cabin",
-        "inspectText": "Cabin looks ordinary until Mud Suction moves through it."
-      },
-      {
-        "id": "S24C08-object",
-        "type": "evidence",
-        "name": "Iron Nail",
-        "inspectText": "Iron Nail is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S24C08-marker",
-        "type": "marker",
-        "name": "Marker 2470",
-        "inspectText": "Marker 2470 is not the answer. It is the lock."
-      },
-      {
-        "id": "S24C08-sound",
-        "type": "audio_clue",
-        "name": "Mud Suction",
-        "inspectText": "Mud Suction repeats near 6:06."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series24-The-Missing-Hours/chapter08.md",
-      "novel": "generated/novels/Series24-The-Missing-Hours/chapter08.md",
-      "song": "generated/songs/Series24-The-Missing-Hours/song08.md"
     }
   },
   "story": {

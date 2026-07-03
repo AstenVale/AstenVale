@@ -61,35 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "feed store",
-      "feedstore"
-    ],
-    "object": [
-      "flask"
-    ],
-    "witness": [
-      "conductor"
-    ],
-    "time": [
-      "3:03",
-      "303"
-    ],
-    "marker": [
-      "552",
-      "marker 552",
-      "road marker 552",
-      "mile marker 552",
-      "mile 552"
-    ],
-    "direction": [
-      "over"
-    ],
-    "sound": [
-      "floorboard"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -298,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S05C06",
-    "puzzleId": "S05C06-marker-lock",
-    "dialogueId": "S05C06-conductor",
-    "locationId": "feed-store",
-    "objective": "Investigate Feed Store, question Conductor, recover Flask, and learn why marker 552 is tied to Cold Archive.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Feed Store.",
-        "clue": "Floorboard"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Flask.",
-        "clue": "Flask"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Conductor.",
-        "clue": "3:03"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 552.",
-        "clue": "552"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Over instruction.",
-        "clue": "Over"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S05C06-location",
-        "type": "location",
-        "name": "Feed Store",
-        "inspectText": "Feed Store looks ordinary until Floorboard moves through it."
-      },
-      {
-        "id": "S05C06-object",
-        "type": "evidence",
-        "name": "Flask",
-        "inspectText": "Flask is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S05C06-marker",
-        "type": "marker",
-        "name": "Marker 552",
-        "inspectText": "Marker 552 is not the answer. It is the lock."
-      },
-      {
-        "id": "S05C06-sound",
-        "type": "audio_clue",
-        "name": "Floorboard",
-        "inspectText": "Floorboard repeats near 3:03."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series05-The-Last-Winter/chapter06.md",
-      "novel": "generated/novels/Series05-The-Last-Winter/chapter06.md",
-      "song": "generated/songs/Series05-The-Last-Winter/song06.md"
     }
   },
   "story": {

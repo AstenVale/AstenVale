@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "library"
-    ],
-    "object": [
-      "dried ink blot",
-      "driedinkblot"
-    ],
-    "witness": [
-      "cartographer"
-    ],
-    "time": [
-      "12:44",
-      "1244"
-    ],
-    "marker": [
-      "4016",
-      "marker 4016",
-      "road marker 4016",
-      "mile marker 4016",
-      "mile 4016"
-    ],
-    "direction": [
-      "further in",
-      "furtherin"
-    ],
-    "sound": [
-      "water drip",
-      "waterdrip"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S40C02",
-    "puzzleId": "S40C02-marker-lock",
-    "dialogueId": "S40C02-cartographer",
-    "locationId": "library",
-    "objective": "Investigate Library, question Cartographer, recover Dried Ink Blot, and learn why marker 4016 is tied to Cipher Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Library.",
-        "clue": "Water Drip"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Dried Ink Blot.",
-        "clue": "Dried Ink Blot"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Cartographer.",
-        "clue": "12:44"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4016.",
-        "clue": "4016"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Further In instruction.",
-        "clue": "Further In"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S40C02-location",
-        "type": "location",
-        "name": "Library",
-        "inspectText": "Library looks ordinary until Water Drip moves through it."
-      },
-      {
-        "id": "S40C02-object",
-        "type": "evidence",
-        "name": "Dried Ink Blot",
-        "inspectText": "Dried Ink Blot is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S40C02-marker",
-        "type": "marker",
-        "name": "Marker 4016",
-        "inspectText": "Marker 4016 is not the answer. It is the lock."
-      },
-      {
-        "id": "S40C02-sound",
-        "type": "audio_clue",
-        "name": "Water Drip",
-        "inspectText": "Water Drip repeats near 12:44."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series40-The-Coded-Letter/chapter02.md",
-      "novel": "generated/novels/Series40-The-Coded-Letter/chapter02.md",
-      "song": "generated/songs/Series40-The-Coded-Letter/song02.md"
     }
   },
   "story": {

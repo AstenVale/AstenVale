@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "iron bridge",
-      "ironbridge"
-    ],
-    "object": [
-      "ear of corn",
-      "earofcorn"
-    ],
-    "witness": [
-      "river pilot",
-      "riverpilot"
-    ],
-    "time": [
-      "8:42",
-      "842"
-    ],
-    "marker": [
-      "2516",
-      "marker 2516",
-      "road marker 2516",
-      "mile marker 2516",
-      "mile 2516"
-    ],
-    "direction": [
-      "somewhere"
-    ],
-    "sound": [
-      "knife scrape",
-      "knifescrape"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -301,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S25C02",
-    "puzzleId": "S25C02-marker-lock",
-    "dialogueId": "S25C02-river-pilot",
-    "locationId": "iron-bridge",
-    "objective": "Investigate Iron Bridge, question River Pilot, recover Ear of Corn, and learn why marker 2516 is tied to Resonance Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Iron Bridge.",
-        "clue": "Knife Scrape"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Ear of Corn.",
-        "clue": "Ear of Corn"
-      },
-      {
-        "step": "interview",
-        "objective": "Question River Pilot.",
-        "clue": "8:42"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2516.",
-        "clue": "2516"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Somewhere instruction.",
-        "clue": "Somewhere"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S25C02-location",
-        "type": "location",
-        "name": "Iron Bridge",
-        "inspectText": "Iron Bridge looks ordinary until Knife Scrape moves through it."
-      },
-      {
-        "id": "S25C02-object",
-        "type": "evidence",
-        "name": "Ear of Corn",
-        "inspectText": "Ear of Corn is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S25C02-marker",
-        "type": "marker",
-        "name": "Marker 2516",
-        "inspectText": "Marker 2516 is not the answer. It is the lock."
-      },
-      {
-        "id": "S25C02-sound",
-        "type": "audio_clue",
-        "name": "Knife Scrape",
-        "inspectText": "Knife Scrape repeats near 8:42."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series25-The-Echo-Chamber/chapter02.md",
-      "novel": "generated/novels/Series25-The-Echo-Chamber/chapter02.md",
-      "song": "generated/songs/Series25-The-Echo-Chamber/song02.md"
     }
   },
   "story": {

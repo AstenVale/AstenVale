@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the quarry pool",
-      "quarry pool",
-      "thequarrypool"
-    ],
-    "object": [
-      "handkerchief"
-    ],
-    "witness": [
-      "weaver"
-    ],
-    "time": [
-      "4:38",
-      "438"
-    ],
-    "marker": [
-      "2697",
-      "marker 2697",
-      "road marker 2697",
-      "mile marker 2697",
-      "mile 2697"
-    ],
-    "direction": [
-      "across"
-    ],
-    "sound": [
-      "empty wagon",
-      "emptywagon"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -310,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S26C11",
-    "puzzleId": "S26C11-marker-lock",
-    "dialogueId": "S26C11-weaver",
-    "locationId": "the-quarry-pool",
-    "objective": "Investigate The Quarry Pool, question Weaver, recover Handkerchief, and learn why marker 2697 is tied to Threshold Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Quarry Pool.",
-        "clue": "Empty Wagon"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Handkerchief.",
-        "clue": "Handkerchief"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Weaver.",
-        "clue": "4:38"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2697.",
-        "clue": "2697"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Across instruction.",
-        "clue": "Across"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S26C11-location",
-        "type": "location",
-        "name": "The Quarry Pool",
-        "inspectText": "The Quarry Pool looks ordinary until Empty Wagon moves through it."
-      },
-      {
-        "id": "S26C11-object",
-        "type": "evidence",
-        "name": "Handkerchief",
-        "inspectText": "Handkerchief is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S26C11-marker",
-        "type": "marker",
-        "name": "Marker 2697",
-        "inspectText": "Marker 2697 is not the answer. It is the lock."
-      },
-      {
-        "id": "S26C11-sound",
-        "type": "audio_clue",
-        "name": "Empty Wagon",
-        "inspectText": "Empty Wagon repeats near 4:38."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series26-The-Red-Door/chapter11.md",
-      "novel": "generated/novels/Series26-The-Red-Door/chapter11.md",
-      "song": "generated/songs/Series26-The-Red-Door/song11.md"
     }
   },
   "story": {

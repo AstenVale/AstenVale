@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "post office",
-      "postoffice"
-    ],
-    "object": [
-      "receipt"
-    ],
-    "witness": [
-      "retired soldier",
-      "retiredsoldier"
-    ],
-    "time": [
-      "6:06",
-      "606"
-    ],
-    "marker": [
-      "1379",
-      "marker 1379",
-      "road marker 1379",
-      "mile marker 1379",
-      "mile 1379"
-    ],
-    "direction": [
-      "beyond"
-    ],
-    "sound": [
-      "saw cutting",
-      "sawcutting"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -310,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S13C09",
-    "puzzleId": "S13C09-marker-lock",
-    "dialogueId": "S13C09-retired-soldier",
-    "locationId": "post-office",
-    "objective": "Investigate Post Office, question Retired Soldier, recover Receipt, and learn why marker 1379 is tied to Mirror Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Post Office.",
-        "clue": "Saw Cutting"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Receipt.",
-        "clue": "Receipt"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Retired Soldier.",
-        "clue": "6:06"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1379.",
-        "clue": "1379"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Beyond instruction.",
-        "clue": "Beyond"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S13C09-location",
-        "type": "location",
-        "name": "Post Office",
-        "inspectText": "Post Office looks ordinary until Saw Cutting moves through it."
-      },
-      {
-        "id": "S13C09-object",
-        "type": "evidence",
-        "name": "Receipt",
-        "inspectText": "Receipt is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S13C09-marker",
-        "type": "marker",
-        "name": "Marker 1379",
-        "inspectText": "Marker 1379 is not the answer. It is the lock."
-      },
-      {
-        "id": "S13C09-sound",
-        "type": "audio_clue",
-        "name": "Saw Cutting",
-        "inspectText": "Saw Cutting repeats near 6:06."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series13-The-Twin-Hollows/chapter09.md",
-      "novel": "generated/novels/Series13-The-Twin-Hollows/chapter09.md",
-      "song": "generated/songs/Series13-The-Twin-Hollows/song09.md"
     }
   },
   "story": {

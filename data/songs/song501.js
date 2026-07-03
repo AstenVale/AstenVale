@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "butcher's row",
-      "butcher'srow"
-    ],
-    "object": [
-      "cufflink"
-    ],
-    "witness": [
-      "glazier"
-    ],
-    "time": [
-      "3:30",
-      "330"
-    ],
-    "marker": [
-      "4279",
-      "marker 4279",
-      "road marker 4279",
-      "mile marker 4279",
-      "mile 4279"
-    ],
-    "direction": [
-      "away"
-    ],
-    "sound": [
-      "wheel on gravel",
-      "wheelongravel"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -310,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S42C09",
-    "puzzleId": "S42C09-marker-lock",
-    "dialogueId": "S42C09-glazier",
-    "locationId": "butcher-s-row",
-    "objective": "Investigate Butcher's Row, question Glazier, recover Cufflink, and learn why marker 4279 is tied to Drought Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Butcher's Row.",
-        "clue": "Wheel on Gravel"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Cufflink.",
-        "clue": "Cufflink"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Glazier.",
-        "clue": "3:30"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4279.",
-        "clue": "4279"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Away instruction.",
-        "clue": "Away"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S42C09-location",
-        "type": "location",
-        "name": "Butcher's Row",
-        "inspectText": "Butcher's Row looks ordinary until Wheel on Gravel moves through it."
-      },
-      {
-        "id": "S42C09-object",
-        "type": "evidence",
-        "name": "Cufflink",
-        "inspectText": "Cufflink is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S42C09-marker",
-        "type": "marker",
-        "name": "Marker 4279",
-        "inspectText": "Marker 4279 is not the answer. It is the lock."
-      },
-      {
-        "id": "S42C09-sound",
-        "type": "audio_clue",
-        "name": "Wheel on Gravel",
-        "inspectText": "Wheel on Gravel repeats near 3:30."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series42-The-Dry-Season/chapter09.md",
-      "novel": "generated/novels/Series42-The-Dry-Season/chapter09.md",
-      "song": "generated/songs/Series42-The-Dry-Season/song09.md"
     }
   },
   "story": {

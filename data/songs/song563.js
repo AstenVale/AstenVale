@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "ash creek",
-      "ashcreek"
-    ],
-    "object": [
-      "badge"
-    ],
-    "witness": [
-      "the mute",
-      "mute",
-      "themute"
-    ],
-    "time": [
-      "3:58",
-      "358"
-    ],
-    "marker": [
-      "4797",
-      "marker 4797",
-      "road marker 4797",
-      "mile marker 4797",
-      "mile 4797"
-    ],
-    "direction": [
-      "across"
-    ],
-    "sound": [
-      "breathing"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S47C11",
-    "puzzleId": "S47C11-marker-lock",
-    "dialogueId": "S47C11-the-mute",
-    "locationId": "ash-creek",
-    "objective": "Investigate Ash Creek, question The Mute, recover Badge, and learn why marker 4797 is tied to Detour Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Ash Creek.",
-        "clue": "Breathing"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Badge.",
-        "clue": "Badge"
-      },
-      {
-        "step": "interview",
-        "objective": "Question The Mute.",
-        "clue": "3:58"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4797.",
-        "clue": "4797"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Across instruction.",
-        "clue": "Across"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S47C11-location",
-        "type": "location",
-        "name": "Ash Creek",
-        "inspectText": "Ash Creek looks ordinary until Breathing moves through it."
-      },
-      {
-        "id": "S47C11-object",
-        "type": "evidence",
-        "name": "Badge",
-        "inspectText": "Badge is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S47C11-marker",
-        "type": "marker",
-        "name": "Marker 4797",
-        "inspectText": "Marker 4797 is not the answer. It is the lock."
-      },
-      {
-        "id": "S47C11-sound",
-        "type": "audio_clue",
-        "name": "Breathing",
-        "inspectText": "Breathing repeats near 3:58."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series47-The-Long-Way-Round/chapter11.md",
-      "novel": "generated/novels/Series47-The-Long-Way-Round/chapter11.md",
-      "song": "generated/songs/Series47-The-Long-Way-Round/song11.md"
     }
   },
   "story": {

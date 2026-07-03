@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the root cellar",
-      "root cellar",
-      "therootcellar"
-    ],
-    "object": [
-      "journal"
-    ],
-    "witness": [
-      "land agent",
-      "landagent"
-    ],
-    "time": [
-      "9:15",
-      "915"
-    ],
-    "marker": [
-      "861",
-      "marker 861",
-      "road marker 861",
-      "mile marker 861",
-      "mile 861"
-    ],
-    "direction": [
-      "through"
-    ],
-    "sound": [
-      "mud suction",
-      "mudsuction"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S08C07",
-    "puzzleId": "S08C07-marker-lock",
-    "dialogueId": "S08C07-land-agent",
-    "locationId": "the-root-cellar",
-    "objective": "Investigate The Root Cellar, question Land Agent, recover Journal, and learn why marker 861 is tied to Ash Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Root Cellar.",
-        "clue": "Mud Suction"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Journal.",
-        "clue": "Journal"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Land Agent.",
-        "clue": "9:15"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 861.",
-        "clue": "861"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Through instruction.",
-        "clue": "Through"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S08C07-location",
-        "type": "location",
-        "name": "The Root Cellar",
-        "inspectText": "The Root Cellar looks ordinary until Mud Suction moves through it."
-      },
-      {
-        "id": "S08C07-object",
-        "type": "evidence",
-        "name": "Journal",
-        "inspectText": "Journal is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S08C07-marker",
-        "type": "marker",
-        "name": "Marker 861",
-        "inspectText": "Marker 861 is not the answer. It is the lock."
-      },
-      {
-        "id": "S08C07-sound",
-        "type": "audio_clue",
-        "name": "Mud Suction",
-        "inspectText": "Mud Suction repeats near 9:15."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series08-The-Fire-Year/chapter07.md",
-      "novel": "generated/novels/Series08-The-Fire-Year/chapter07.md",
-      "song": "generated/songs/Series08-The-Fire-Year/song07.md"
     }
   },
   "story": {

@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "water tower",
-      "watertower"
-    ],
-    "object": [
-      "wax tablet",
-      "waxtablet"
-    ],
-    "witness": [
-      "rag picker",
-      "ragpicker"
-    ],
-    "time": [
-      "5:55",
-      "555"
-    ],
-    "marker": [
-      "2497",
-      "marker 2497",
-      "road marker 2497",
-      "mile marker 2497",
-      "mile 2497"
-    ],
-    "direction": [
-      "back"
-    ],
-    "sound": [
-      "river ice",
-      "riverice"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -312,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S24C11",
-    "puzzleId": "S24C11-marker-lock",
-    "dialogueId": "S24C11-rag-picker",
-    "locationId": "water-tower",
-    "objective": "Investigate Water Tower, question Rag Picker, recover Wax Tablet, and learn why marker 2497 is tied to Timeline Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Water Tower.",
-        "clue": "River Ice"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Wax Tablet.",
-        "clue": "Wax Tablet"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Rag Picker.",
-        "clue": "5:55"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2497.",
-        "clue": "2497"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Back instruction.",
-        "clue": "Back"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S24C11-location",
-        "type": "location",
-        "name": "Water Tower",
-        "inspectText": "Water Tower looks ordinary until River Ice moves through it."
-      },
-      {
-        "id": "S24C11-object",
-        "type": "evidence",
-        "name": "Wax Tablet",
-        "inspectText": "Wax Tablet is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S24C11-marker",
-        "type": "marker",
-        "name": "Marker 2497",
-        "inspectText": "Marker 2497 is not the answer. It is the lock."
-      },
-      {
-        "id": "S24C11-sound",
-        "type": "audio_clue",
-        "name": "River Ice",
-        "inspectText": "River Ice repeats near 5:55."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series24-The-Missing-Hours/chapter11.md",
-      "novel": "generated/novels/Series24-The-Missing-Hours/chapter11.md",
-      "song": "generated/songs/Series24-The-Missing-Hours/song11.md"
     }
   },
   "story": {

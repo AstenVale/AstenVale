@@ -61,39 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the ridge",
-      "ridge",
-      "theridge"
-    ],
-    "object": [
-      "ship manifest",
-      "shipmanifest"
-    ],
-    "witness": [
-      "librarian"
-    ],
-    "time": [
-      "1:26",
-      "126"
-    ],
-    "marker": [
-      "1016",
-      "marker 1016",
-      "road marker 1016",
-      "mile marker 1016",
-      "mile 1016"
-    ],
-    "direction": [
-      "further in",
-      "furtherin"
-    ],
-    "sound": [
-      "moth wings",
-      "mothwings"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -302,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S10C02",
-    "puzzleId": "S10C02-marker-lock",
-    "dialogueId": "S10C02-librarian",
-    "locationId": "the-ridge",
-    "objective": "Investigate The Ridge, question Librarian, recover Ship Manifest, and learn why marker 1016 is tied to Lost Mile Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Ridge.",
-        "clue": "Moth Wings"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Ship Manifest.",
-        "clue": "Ship Manifest"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Librarian.",
-        "clue": "1:26"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1016.",
-        "clue": "1016"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Further In instruction.",
-        "clue": "Further In"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S10C02-location",
-        "type": "location",
-        "name": "The Ridge",
-        "inspectText": "The Ridge looks ordinary until Moth Wings moves through it."
-      },
-      {
-        "id": "S10C02-object",
-        "type": "evidence",
-        "name": "Ship Manifest",
-        "inspectText": "Ship Manifest is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S10C02-marker",
-        "type": "marker",
-        "name": "Marker 1016",
-        "inspectText": "Marker 1016 is not the answer. It is the lock."
-      },
-      {
-        "id": "S10C02-sound",
-        "type": "audio_clue",
-        "name": "Moth Wings",
-        "inspectText": "Moth Wings repeats near 1:26."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series10-The-Forgotten-Road/chapter02.md",
-      "novel": "generated/novels/Series10-The-Forgotten-Road/chapter02.md",
-      "song": "generated/songs/Series10-The-Forgotten-Road/song02.md"
     }
   },
   "story": {

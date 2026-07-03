@@ -61,35 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "church"
-    ],
-    "object": [
-      "straight razor",
-      "straightrazor"
-    ],
-    "witness": [
-      "doctor"
-    ],
-    "time": [
-      "1:26",
-      "126"
-    ],
-    "marker": [
-      "597",
-      "marker 597",
-      "road marker 597",
-      "mile marker 597",
-      "mile 597"
-    ],
-    "direction": [
-      "south"
-    ],
-    "sound": [
-      "floorboard"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -298,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S05C11",
-    "puzzleId": "S05C11-marker-lock",
-    "dialogueId": "S05C11-doctor",
-    "locationId": "church",
-    "objective": "Investigate Church, question Doctor, recover Straight Razor, and learn why marker 597 is tied to Cold Archive.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Church.",
-        "clue": "Floorboard"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Straight Razor.",
-        "clue": "Straight Razor"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Doctor.",
-        "clue": "1:26"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 597.",
-        "clue": "597"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the South instruction.",
-        "clue": "South"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S05C11-location",
-        "type": "location",
-        "name": "Church",
-        "inspectText": "Church looks ordinary until Floorboard moves through it."
-      },
-      {
-        "id": "S05C11-object",
-        "type": "evidence",
-        "name": "Straight Razor",
-        "inspectText": "Straight Razor is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S05C11-marker",
-        "type": "marker",
-        "name": "Marker 597",
-        "inspectText": "Marker 597 is not the answer. It is the lock."
-      },
-      {
-        "id": "S05C11-sound",
-        "type": "audio_clue",
-        "name": "Floorboard",
-        "inspectText": "Floorboard repeats near 1:26."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series05-The-Last-Winter/chapter11.md",
-      "novel": "generated/novels/Series05-The-Last-Winter/chapter11.md",
-      "song": "generated/songs/Series05-The-Last-Winter/song11.md"
     }
   },
   "story": {

@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "chandler's row",
-      "chandler'srow"
-    ],
-    "object": [
-      "stamp"
-    ],
-    "witness": [
-      "gravedigger"
-    ],
-    "time": [
-      "10:19",
-      "1019"
-    ],
-    "marker": [
-      "1879",
-      "marker 1879",
-      "road marker 1879",
-      "mile marker 1879",
-      "mile 1879"
-    ],
-    "direction": [
-      "south"
-    ],
-    "sound": [
-      "latch drop",
-      "latchdrop"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -309,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S18C09",
-    "puzzleId": "S18C09-marker-lock",
-    "dialogueId": "S18C09-gravedigger",
-    "locationId": "chandler-s-row",
-    "objective": "Investigate Chandler's Row, question Gravedigger, recover Stamp, and learn why marker 1879 is tied to Identity Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Chandler's Row.",
-        "clue": "Latch Drop"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Stamp.",
-        "clue": "Stamp"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Gravedigger.",
-        "clue": "10:19"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1879.",
-        "clue": "1879"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the South instruction.",
-        "clue": "South"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S18C09-location",
-        "type": "location",
-        "name": "Chandler's Row",
-        "inspectText": "Chandler's Row looks ordinary until Latch Drop moves through it."
-      },
-      {
-        "id": "S18C09-object",
-        "type": "evidence",
-        "name": "Stamp",
-        "inspectText": "Stamp is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S18C09-marker",
-        "type": "marker",
-        "name": "Marker 1879",
-        "inspectText": "Marker 1879 is not the answer. It is the lock."
-      },
-      {
-        "id": "S18C09-sound",
-        "type": "audio_clue",
-        "name": "Latch Drop",
-        "inspectText": "Latch Drop repeats near 10:19."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series18-The-Hollow-Names/chapter09.md",
-      "novel": "generated/novels/Series18-The-Hollow-Names/chapter09.md",
-      "song": "generated/songs/Series18-The-Hollow-Names/song09.md"
     }
   },
   "story": {

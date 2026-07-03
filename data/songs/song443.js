@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "grain mill",
-      "grainmill"
-    ],
-    "object": [
-      "bent nail",
-      "bentnail"
-    ],
-    "witness": [
-      "miller"
-    ],
-    "time": [
-      "5:21",
-      "521"
-    ],
-    "marker": [
-      "3797",
-      "marker 3797",
-      "road marker 3797",
-      "mile marker 3797",
-      "mile 3797"
-    ],
-    "direction": [
-      "sideways"
-    ],
-    "sound": [
-      "river water",
-      "riverwater"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S37C11",
-    "puzzleId": "S37C11-marker-lock",
-    "dialogueId": "S37C11-miller",
-    "locationId": "grain-mill",
-    "objective": "Investigate Grain Mill, question Miller, recover Bent Nail, and learn why marker 3797 is tied to Outpost Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Grain Mill.",
-        "clue": "River Water"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Bent Nail.",
-        "clue": "Bent Nail"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Miller.",
-        "clue": "5:21"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3797.",
-        "clue": "3797"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Sideways instruction.",
-        "clue": "Sideways"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S37C11-location",
-        "type": "location",
-        "name": "Grain Mill",
-        "inspectText": "Grain Mill looks ordinary until River Water moves through it."
-      },
-      {
-        "id": "S37C11-object",
-        "type": "evidence",
-        "name": "Bent Nail",
-        "inspectText": "Bent Nail is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S37C11-marker",
-        "type": "marker",
-        "name": "Marker 3797",
-        "inspectText": "Marker 3797 is not the answer. It is the lock."
-      },
-      {
-        "id": "S37C11-sound",
-        "type": "audio_clue",
-        "name": "River Water",
-        "inspectText": "River Water repeats near 5:21."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series37-The-Abandoned-Post/chapter11.md",
-      "novel": "generated/novels/Series37-The-Abandoned-Post/chapter11.md",
-      "song": "generated/songs/Series37-The-Abandoned-Post/song11.md"
     }
   },
   "story": {

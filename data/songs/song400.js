@@ -61,35 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "pharmacy"
-    ],
-    "object": [
-      "map"
-    ],
-    "witness": [
-      "stranger"
-    ],
-    "time": [
-      "9:08",
-      "908"
-    ],
-    "marker": [
-      "3434",
-      "marker 3434",
-      "road marker 3434",
-      "mile marker 3434",
-      "mile 3434"
-    ],
-    "direction": [
-      "down"
-    ],
-    "sound": [
-      "knife scrape",
-      "knifescrape"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -298,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S34C04",
-    "puzzleId": "S34C04-marker-lock",
-    "dialogueId": "S34C04-stranger",
-    "locationId": "pharmacy",
-    "objective": "Investigate Pharmacy, question Stranger, recover Map, and learn why marker 3434 is tied to Clinical Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Pharmacy.",
-        "clue": "Knife Scrape"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Map.",
-        "clue": "Map"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Stranger.",
-        "clue": "9:08"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3434.",
-        "clue": "3434"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Down instruction.",
-        "clue": "Down"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S34C04-location",
-        "type": "location",
-        "name": "Pharmacy",
-        "inspectText": "Pharmacy looks ordinary until Knife Scrape moves through it."
-      },
-      {
-        "id": "S34C04-object",
-        "type": "evidence",
-        "name": "Map",
-        "inspectText": "Map is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S34C04-marker",
-        "type": "marker",
-        "name": "Marker 3434",
-        "inspectText": "Marker 3434 is not the answer. It is the lock."
-      },
-      {
-        "id": "S34C04-sound",
-        "type": "audio_clue",
-        "name": "Knife Scrape",
-        "inspectText": "Knife Scrape repeats near 9:08."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series34-The-Locked-Ward/chapter04.md",
-      "novel": "generated/novels/Series34-The-Locked-Ward/chapter04.md",
-      "song": "generated/songs/Series34-The-Locked-Ward/song04.md"
     }
   },
   "story": {

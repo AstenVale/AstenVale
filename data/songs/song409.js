@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "telegraph office",
-      "telegraphoffice"
-    ],
-    "object": [
-      "button"
-    ],
-    "witness": [
-      "barber"
-    ],
-    "time": [
-      "5:09",
-      "509"
-    ],
-    "marker": [
-      "3507",
-      "marker 3507",
-      "road marker 3507",
-      "mile marker 3507",
-      "mile 3507"
-    ],
-    "direction": [
-      "back"
-    ],
-    "sound": [
-      "stones in a tin",
-      "stonesinatin"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -309,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S35C01",
-    "puzzleId": "S35C01-marker-lock",
-    "dialogueId": "S35C01-barber",
-    "locationId": "telegraph-office",
-    "objective": "Investigate Telegraph Office, question Barber, recover Button, and learn why marker 3507 is tied to Collection Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Telegraph Office.",
-        "clue": "Stones in a Tin"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Button.",
-        "clue": "Button"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Barber.",
-        "clue": "5:09"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3507.",
-        "clue": "3507"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Back instruction.",
-        "clue": "Back"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S35C01-location",
-        "type": "location",
-        "name": "Telegraph Office",
-        "inspectText": "Telegraph Office looks ordinary until Stones in a Tin moves through it."
-      },
-      {
-        "id": "S35C01-object",
-        "type": "evidence",
-        "name": "Button",
-        "inspectText": "Button is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S35C01-marker",
-        "type": "marker",
-        "name": "Marker 3507",
-        "inspectText": "Marker 3507 is not the answer. It is the lock."
-      },
-      {
-        "id": "S35C01-sound",
-        "type": "audio_clue",
-        "name": "Stones in a Tin",
-        "inspectText": "Stones in a Tin repeats near 5:09."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series35-The-Archive-Keeper/chapter01.md",
-      "novel": "generated/novels/Series35-The-Archive-Keeper/chapter01.md",
-      "song": "generated/songs/Series35-The-Archive-Keeper/song01.md"
     }
   },
   "story": {

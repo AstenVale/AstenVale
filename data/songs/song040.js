@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "fulling mill",
-      "fullingmill"
-    ],
-    "object": [
-      "brooch"
-    ],
-    "witness": [
-      "blacksmith"
-    ],
-    "time": [
-      "10:19",
-      "1019"
-    ],
-    "marker": [
-      "434",
-      "marker 434",
-      "road marker 434",
-      "mile marker 434",
-      "mile 434"
-    ],
-    "direction": [
-      "left"
-    ],
-    "sound": [
-      "telegraph click",
-      "telegraphclick"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -309,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S04C04",
-    "puzzleId": "S04C04-marker-lock",
-    "dialogueId": "S04C04-blacksmith",
-    "locationId": "fulling-mill",
-    "objective": "Investigate Fulling Mill, question Blacksmith, recover Brooch, and learn why marker 434 is tied to Current Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Fulling Mill.",
-        "clue": "Telegraph Click"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Brooch.",
-        "clue": "Brooch"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Blacksmith.",
-        "clue": "10:19"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 434.",
-        "clue": "434"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Left instruction.",
-        "clue": "Left"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S04C04-location",
-        "type": "location",
-        "name": "Fulling Mill",
-        "inspectText": "Fulling Mill looks ordinary until Telegraph Click moves through it."
-      },
-      {
-        "id": "S04C04-object",
-        "type": "evidence",
-        "name": "Brooch",
-        "inspectText": "Brooch is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S04C04-marker",
-        "type": "marker",
-        "name": "Marker 434",
-        "inspectText": "Marker 434 is not the answer. It is the lock."
-      },
-      {
-        "id": "S04C04-sound",
-        "type": "audio_clue",
-        "name": "Telegraph Click",
-        "inspectText": "Telegraph Click repeats near 10:19."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series04-The-River-Speaks/chapter04.md",
-      "novel": "generated/novels/Series04-The-River-Speaks/chapter04.md",
-      "song": "generated/songs/Series04-The-River-Speaks/song04.md"
     }
   },
   "story": {

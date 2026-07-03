@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "south fork",
-      "southfork"
-    ],
-    "object": [
-      "ring"
-    ],
-    "witness": [
-      "fence mender",
-      "fencemender"
-    ],
-    "time": [
-      "8:00",
-      "800"
-    ],
-    "marker": [
-      "3916",
-      "marker 3916",
-      "road marker 3916",
-      "mile marker 3916",
-      "mile 3916"
-    ],
-    "direction": [
-      "west"
-    ],
-    "sound": [
-      "stones in a tin",
-      "stonesinatin"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -310,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S39C02",
-    "puzzleId": "S39C02-marker-lock",
-    "dialogueId": "S39C02-fence-mender",
-    "locationId": "south-fork",
-    "objective": "Investigate South Fork, question Fence Mender, recover Ring, and learn why marker 3916 is tied to Rider Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter South Fork.",
-        "clue": "Stones in a Tin"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Ring.",
-        "clue": "Ring"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Fence Mender.",
-        "clue": "8:00"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3916.",
-        "clue": "3916"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the West instruction.",
-        "clue": "West"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S39C02-location",
-        "type": "location",
-        "name": "South Fork",
-        "inspectText": "South Fork looks ordinary until Stones in a Tin moves through it."
-      },
-      {
-        "id": "S39C02-object",
-        "type": "evidence",
-        "name": "Ring",
-        "inspectText": "Ring is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S39C02-marker",
-        "type": "marker",
-        "name": "Marker 3916",
-        "inspectText": "Marker 3916 is not the answer. It is the lock."
-      },
-      {
-        "id": "S39C02-sound",
-        "type": "audio_clue",
-        "name": "Stones in a Tin",
-        "inspectText": "Stones in a Tin repeats near 8:00."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series39-The-Pale-Horse/chapter02.md",
-      "novel": "generated/novels/Series39-The-Pale-Horse/chapter02.md",
-      "song": "generated/songs/Series39-The-Pale-Horse/song02.md"
     }
   },
   "story": {

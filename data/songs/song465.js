@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "butcher's row",
-      "butcher'srow"
-    ],
-    "object": [
-      "seal"
-    ],
-    "witness": [
-      "cider presser",
-      "ciderpresser"
-    ],
-    "time": [
-      "1:26",
-      "126"
-    ],
-    "marker": [
-      "3979",
-      "marker 3979",
-      "road marker 3979",
-      "mile marker 3979",
-      "mile 3979"
-    ],
-    "direction": [
-      "around"
-    ],
-    "sound": [
-      "stones in a tin",
-      "stonesinatin"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S39C09",
-    "puzzleId": "S39C09-marker-lock",
-    "dialogueId": "S39C09-cider-presser",
-    "locationId": "butcher-s-row",
-    "objective": "Investigate Butcher's Row, question Cider Presser, recover Seal, and learn why marker 3979 is tied to Rider Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Butcher's Row.",
-        "clue": "Stones in a Tin"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Seal.",
-        "clue": "Seal"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Cider Presser.",
-        "clue": "1:26"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3979.",
-        "clue": "3979"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Around instruction.",
-        "clue": "Around"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S39C09-location",
-        "type": "location",
-        "name": "Butcher's Row",
-        "inspectText": "Butcher's Row looks ordinary until Stones in a Tin moves through it."
-      },
-      {
-        "id": "S39C09-object",
-        "type": "evidence",
-        "name": "Seal",
-        "inspectText": "Seal is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S39C09-marker",
-        "type": "marker",
-        "name": "Marker 3979",
-        "inspectText": "Marker 3979 is not the answer. It is the lock."
-      },
-      {
-        "id": "S39C09-sound",
-        "type": "audio_clue",
-        "name": "Stones in a Tin",
-        "inspectText": "Stones in a Tin repeats near 1:26."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series39-The-Pale-Horse/chapter09.md",
-      "novel": "generated/novels/Series39-The-Pale-Horse/chapter09.md",
-      "song": "generated/songs/Series39-The-Pale-Horse/song09.md"
     }
   },
   "story": {

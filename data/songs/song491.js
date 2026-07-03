@@ -61,35 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "courthouse"
-    ],
-    "object": [
-      "button"
-    ],
-    "witness": [
-      "gravedigger"
-    ],
-    "time": [
-      "1:33",
-      "133"
-    ],
-    "marker": [
-      "4197",
-      "marker 4197",
-      "road marker 4197",
-      "mile marker 4197",
-      "mile 4197"
-    ],
-    "direction": [
-      "home"
-    ],
-    "sound": [
-      "distant gunshot",
-      "distantgunshot"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -298,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S41C11",
-    "puzzleId": "S41C11-marker-lock",
-    "dialogueId": "S41C11-gravedigger",
-    "locationId": "courthouse",
-    "objective": "Investigate Courthouse, question Gravedigger, recover Button, and learn why marker 4197 is tied to Phantom Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Courthouse.",
-        "clue": "Distant Gunshot"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Button.",
-        "clue": "Button"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Gravedigger.",
-        "clue": "1:33"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4197.",
-        "clue": "4197"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Home instruction.",
-        "clue": "Home"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S41C11-location",
-        "type": "location",
-        "name": "Courthouse",
-        "inspectText": "Courthouse looks ordinary until Distant Gunshot moves through it."
-      },
-      {
-        "id": "S41C11-object",
-        "type": "evidence",
-        "name": "Button",
-        "inspectText": "Button is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S41C11-marker",
-        "type": "marker",
-        "name": "Marker 4197",
-        "inspectText": "Marker 4197 is not the answer. It is the lock."
-      },
-      {
-        "id": "S41C11-sound",
-        "type": "audio_clue",
-        "name": "Distant Gunshot",
-        "inspectText": "Distant Gunshot repeats near 1:33."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series41-The-Ghost-Road/chapter11.md",
-      "novel": "generated/novels/Series41-The-Ghost-Road/chapter11.md",
-      "song": "generated/songs/Series41-The-Ghost-Road/song11.md"
     }
   },
   "story": {

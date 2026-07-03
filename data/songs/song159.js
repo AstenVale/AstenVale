@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "barn"
-    ],
-    "object": [
-      "wax seal",
-      "waxseal"
-    ],
-    "witness": [
-      "lock keeper",
-      "lockkeeper"
-    ],
-    "time": [
-      "8:00",
-      "800"
-    ],
-    "marker": [
-      "1425",
-      "marker 1425",
-      "road marker 1425",
-      "mile marker 1425",
-      "mile 1425"
-    ],
-    "direction": [
-      "straight down",
-      "straightdown"
-    ],
-    "sound": [
-      "moth wings",
-      "mothwings"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -301,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S14C03",
-    "puzzleId": "S14C03-marker-lock",
-    "dialogueId": "S14C03-lock-keeper",
-    "locationId": "barn",
-    "objective": "Investigate Barn, question Lock Keeper, recover Wax Seal, and learn why marker 1425 is tied to High Water Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Barn.",
-        "clue": "Moth Wings"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Wax Seal.",
-        "clue": "Wax Seal"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Lock Keeper.",
-        "clue": "8:00"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1425.",
-        "clue": "1425"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Straight Down instruction.",
-        "clue": "Straight Down"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S14C03-location",
-        "type": "location",
-        "name": "Barn",
-        "inspectText": "Barn looks ordinary until Moth Wings moves through it."
-      },
-      {
-        "id": "S14C03-object",
-        "type": "evidence",
-        "name": "Wax Seal",
-        "inspectText": "Wax Seal is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S14C03-marker",
-        "type": "marker",
-        "name": "Marker 1425",
-        "inspectText": "Marker 1425 is not the answer. It is the lock."
-      },
-      {
-        "id": "S14C03-sound",
-        "type": "audio_clue",
-        "name": "Moth Wings",
-        "inspectText": "Moth Wings repeats near 8:00."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series14-The-Flood-Year/chapter03.md",
-      "novel": "generated/novels/Series14-The-Flood-Year/chapter03.md",
-      "song": "generated/songs/Series14-The-Flood-Year/song03.md"
     }
   },
   "story": {

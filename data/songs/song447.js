@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "potter's field",
-      "potter'sfield"
-    ],
-    "object": [
-      "wire coil",
-      "wirecoil"
-    ],
-    "witness": [
-      "sexton"
-    ],
-    "time": [
-      "4:29",
-      "429"
-    ],
-    "marker": [
-      "3825",
-      "marker 3825",
-      "road marker 3825",
-      "mile marker 3825",
-      "mile 3825"
-    ],
-    "direction": [
-      "south"
-    ],
-    "sound": [
-      "chains"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -299,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S38C03",
-    "puzzleId": "S38C03-marker-lock",
-    "dialogueId": "S38C03-sexton",
-    "locationId": "potter-s-field",
-    "objective": "Investigate Potter's Field, question Sexton, recover Wire Coil, and learn why marker 3825 is tied to Beacon Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Potter's Field.",
-        "clue": "Chains"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Wire Coil.",
-        "clue": "Wire Coil"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Sexton.",
-        "clue": "4:29"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3825.",
-        "clue": "3825"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the South instruction.",
-        "clue": "South"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S38C03-location",
-        "type": "location",
-        "name": "Potter's Field",
-        "inspectText": "Potter's Field looks ordinary until Chains moves through it."
-      },
-      {
-        "id": "S38C03-object",
-        "type": "evidence",
-        "name": "Wire Coil",
-        "inspectText": "Wire Coil is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S38C03-marker",
-        "type": "marker",
-        "name": "Marker 3825",
-        "inspectText": "Marker 3825 is not the answer. It is the lock."
-      },
-      {
-        "id": "S38C03-sound",
-        "type": "audio_clue",
-        "name": "Chains",
-        "inspectText": "Chains repeats near 4:29."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series38-The-Signal-Fire/chapter03.md",
-      "novel": "generated/novels/Series38-The-Signal-Fire/chapter03.md",
-      "song": "generated/songs/Series38-The-Signal-Fire/song03.md"
     }
   },
   "story": {

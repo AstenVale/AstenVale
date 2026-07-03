@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "feed store",
-      "feedstore"
-    ],
-    "object": [
-      "leather strap",
-      "leatherstrap"
-    ],
-    "witness": [
-      "blacksmith"
-    ],
-    "time": [
-      "3:49",
-      "349"
-    ],
-    "marker": [
-      "1807",
-      "marker 1807",
-      "road marker 1807",
-      "mile marker 1807",
-      "mile 1807"
-    ],
-    "direction": [
-      "under"
-    ],
-    "sound": [
-      "distant gunshot",
-      "distantgunshot"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S18C01",
-    "puzzleId": "S18C01-marker-lock",
-    "dialogueId": "S18C01-blacksmith",
-    "locationId": "feed-store",
-    "objective": "Investigate Feed Store, question Blacksmith, recover Leather Strap, and learn why marker 1807 is tied to Identity Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Feed Store.",
-        "clue": "Distant Gunshot"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Leather Strap.",
-        "clue": "Leather Strap"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Blacksmith.",
-        "clue": "3:49"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1807.",
-        "clue": "1807"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Under instruction.",
-        "clue": "Under"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S18C01-location",
-        "type": "location",
-        "name": "Feed Store",
-        "inspectText": "Feed Store looks ordinary until Distant Gunshot moves through it."
-      },
-      {
-        "id": "S18C01-object",
-        "type": "evidence",
-        "name": "Leather Strap",
-        "inspectText": "Leather Strap is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S18C01-marker",
-        "type": "marker",
-        "name": "Marker 1807",
-        "inspectText": "Marker 1807 is not the answer. It is the lock."
-      },
-      {
-        "id": "S18C01-sound",
-        "type": "audio_clue",
-        "name": "Distant Gunshot",
-        "inspectText": "Distant Gunshot repeats near 3:49."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series18-The-Hollow-Names/chapter01.md",
-      "novel": "generated/novels/Series18-The-Hollow-Names/chapter01.md",
-      "song": "generated/songs/Series18-The-Hollow-Names/song01.md"
     }
   },
   "story": {

@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "post office",
-      "postoffice"
-    ],
-    "object": [
-      "lantern"
-    ],
-    "witness": [
-      "postman"
-    ],
-    "time": [
-      "10:22",
-      "1022"
-    ],
-    "marker": [
-      "1316",
-      "marker 1316",
-      "road marker 1316",
-      "mile marker 1316",
-      "mile 1316"
-    ],
-    "direction": [
-      "around"
-    ],
-    "sound": [
-      "cellar stairs",
-      "cellarstairs"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -309,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S13C02",
-    "puzzleId": "S13C02-marker-lock",
-    "dialogueId": "S13C02-postman",
-    "locationId": "post-office",
-    "objective": "Investigate Post Office, question Postman, recover Lantern, and learn why marker 1316 is tied to Mirror Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Post Office.",
-        "clue": "Cellar Stairs"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Lantern.",
-        "clue": "Lantern"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Postman.",
-        "clue": "10:22"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1316.",
-        "clue": "1316"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Around instruction.",
-        "clue": "Around"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S13C02-location",
-        "type": "location",
-        "name": "Post Office",
-        "inspectText": "Post Office looks ordinary until Cellar Stairs moves through it."
-      },
-      {
-        "id": "S13C02-object",
-        "type": "evidence",
-        "name": "Lantern",
-        "inspectText": "Lantern is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S13C02-marker",
-        "type": "marker",
-        "name": "Marker 1316",
-        "inspectText": "Marker 1316 is not the answer. It is the lock."
-      },
-      {
-        "id": "S13C02-sound",
-        "type": "audio_clue",
-        "name": "Cellar Stairs",
-        "inspectText": "Cellar Stairs repeats near 10:22."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series13-The-Twin-Hollows/chapter02.md",
-      "novel": "generated/novels/Series13-The-Twin-Hollows/chapter02.md",
-      "song": "generated/songs/Series13-The-Twin-Hollows/song02.md"
     }
   },
   "story": {

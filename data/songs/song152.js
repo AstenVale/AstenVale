@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the weir",
-      "weir",
-      "theweir"
-    ],
-    "object": [
-      "locket"
-    ],
-    "witness": [
-      "apothecary"
-    ],
-    "time": [
-      "7:37",
-      "737"
-    ],
-    "marker": [
-      "1370",
-      "marker 1370",
-      "road marker 1370",
-      "mile marker 1370",
-      "mile 1370"
-    ],
-    "direction": [
-      "past the tree line",
-      "pastthetreeline"
-    ],
-    "sound": [
-      "bell toll",
-      "belltoll"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S13C08",
-    "puzzleId": "S13C08-marker-lock",
-    "dialogueId": "S13C08-apothecary",
-    "locationId": "the-weir",
-    "objective": "Investigate The Weir, question Apothecary, recover Locket, and learn why marker 1370 is tied to Mirror Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Weir.",
-        "clue": "Bell Toll"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Locket.",
-        "clue": "Locket"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Apothecary.",
-        "clue": "7:37"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1370.",
-        "clue": "1370"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Past the Tree Line instruction.",
-        "clue": "Past the Tree Line"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S13C08-location",
-        "type": "location",
-        "name": "The Weir",
-        "inspectText": "The Weir looks ordinary until Bell Toll moves through it."
-      },
-      {
-        "id": "S13C08-object",
-        "type": "evidence",
-        "name": "Locket",
-        "inspectText": "Locket is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S13C08-marker",
-        "type": "marker",
-        "name": "Marker 1370",
-        "inspectText": "Marker 1370 is not the answer. It is the lock."
-      },
-      {
-        "id": "S13C08-sound",
-        "type": "audio_clue",
-        "name": "Bell Toll",
-        "inspectText": "Bell Toll repeats near 7:37."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series13-The-Twin-Hollows/chapter08.md",
-      "novel": "generated/novels/Series13-The-Twin-Hollows/chapter08.md",
-      "song": "generated/songs/Series13-The-Twin-Hollows/song08.md"
     }
   },
   "story": {

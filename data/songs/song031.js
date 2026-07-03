@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "potter's field",
-      "potter'sfield"
-    ],
-    "object": [
-      "chain"
-    ],
-    "witness": [
-      "census taker",
-      "censustaker"
-    ],
-    "time": [
-      "10:22",
-      "1022"
-    ],
-    "marker": [
-      "361",
-      "marker 361",
-      "road marker 361",
-      "mile marker 361",
-      "mile 361"
-    ],
-    "direction": [
-      "toward"
-    ],
-    "sound": [
-      "hammer strike",
-      "hammerstrike"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S03C07",
-    "puzzleId": "S03C07-marker-lock",
-    "dialogueId": "S03C07-census-taker",
-    "locationId": "potter-s-field",
-    "objective": "Investigate Potter's Field, question Census Taker, recover Chain, and learn why marker 361 is tied to Absence Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Potter's Field.",
-        "clue": "Hammer Strike"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Chain.",
-        "clue": "Chain"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Census Taker.",
-        "clue": "10:22"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 361.",
-        "clue": "361"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Toward instruction.",
-        "clue": "Toward"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S03C07-location",
-        "type": "location",
-        "name": "Potter's Field",
-        "inspectText": "Potter's Field looks ordinary until Hammer Strike moves through it."
-      },
-      {
-        "id": "S03C07-object",
-        "type": "evidence",
-        "name": "Chain",
-        "inspectText": "Chain is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S03C07-marker",
-        "type": "marker",
-        "name": "Marker 361",
-        "inspectText": "Marker 361 is not the answer. It is the lock."
-      },
-      {
-        "id": "S03C07-sound",
-        "type": "audio_clue",
-        "name": "Hammer Strike",
-        "inspectText": "Hammer Strike repeats near 10:22."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series03-The-Disappearance/chapter07.md",
-      "novel": "generated/novels/Series03-The-Disappearance/chapter07.md",
-      "song": "generated/songs/Series03-The-Disappearance/song07.md"
     }
   },
   "story": {

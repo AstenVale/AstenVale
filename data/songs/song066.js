@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the hollow road",
-      "hollow road",
-      "thehollowroad"
-    ],
-    "object": [
-      "canteen"
-    ],
-    "witness": [
-      "drifter"
-    ],
-    "time": [
-      "3:17",
-      "317"
-    ],
-    "marker": [
-      "652",
-      "marker 652",
-      "road marker 652",
-      "mile marker 652",
-      "mile 652"
-    ],
-    "direction": [
-      "straight down",
-      "straightdown"
-    ],
-    "sound": [
-      "crow wings",
-      "crowwings"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -312,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S06C06",
-    "puzzleId": "S06C06-marker-lock",
-    "dialogueId": "S06C06-drifter",
-    "locationId": "the-hollow-road",
-    "objective": "Investigate The Hollow Road, question Drifter, recover Canteen, and learn why marker 652 is tied to Below Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Hollow Road.",
-        "clue": "Crow Wings"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Canteen.",
-        "clue": "Canteen"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Drifter.",
-        "clue": "3:17"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 652.",
-        "clue": "652"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Straight Down instruction.",
-        "clue": "Straight Down"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S06C06-location",
-        "type": "location",
-        "name": "The Hollow Road",
-        "inspectText": "The Hollow Road looks ordinary until Crow Wings moves through it."
-      },
-      {
-        "id": "S06C06-object",
-        "type": "evidence",
-        "name": "Canteen",
-        "inspectText": "Canteen is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S06C06-marker",
-        "type": "marker",
-        "name": "Marker 652",
-        "inspectText": "Marker 652 is not the answer. It is the lock."
-      },
-      {
-        "id": "S06C06-sound",
-        "type": "audio_clue",
-        "name": "Crow Wings",
-        "inspectText": "Crow Wings repeats near 3:17."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series06-The-Underground/chapter06.md",
-      "novel": "generated/novels/Series06-The-Underground/chapter06.md",
-      "song": "generated/songs/Series06-The-Underground/song06.md"
     }
   },
   "story": {

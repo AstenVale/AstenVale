@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "lake shore",
-      "lakeshore"
-    ],
-    "object": [
-      "brooch"
-    ],
-    "witness": [
-      "weaver"
-    ],
-    "time": [
-      "6:45",
-      "645"
-    ],
-    "marker": [
-      "2307",
-      "marker 2307",
-      "road marker 2307",
-      "mile marker 2307",
-      "mile 2307"
-    ],
-    "direction": [
-      "back the way you came",
-      "backthewayyoucame"
-    ],
-    "sound": [
-      "fog horn",
-      "foghorn"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S23C01",
-    "puzzleId": "S23C01-marker-lock",
-    "dialogueId": "S23C01-weaver",
-    "locationId": "lake-shore",
-    "objective": "Investigate Lake Shore, question Weaver, recover Brooch, and learn why marker 2307 is tied to Document Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Lake Shore.",
-        "clue": "Fog Horn"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Brooch.",
-        "clue": "Brooch"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Weaver.",
-        "clue": "6:45"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2307.",
-        "clue": "2307"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Back the Way You Came instruction.",
-        "clue": "Back the Way You Came"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S23C01-location",
-        "type": "location",
-        "name": "Lake Shore",
-        "inspectText": "Lake Shore looks ordinary until Fog Horn moves through it."
-      },
-      {
-        "id": "S23C01-object",
-        "type": "evidence",
-        "name": "Brooch",
-        "inspectText": "Brooch is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S23C01-marker",
-        "type": "marker",
-        "name": "Marker 2307",
-        "inspectText": "Marker 2307 is not the answer. It is the lock."
-      },
-      {
-        "id": "S23C01-sound",
-        "type": "audio_clue",
-        "name": "Fog Horn",
-        "inspectText": "Fog Horn repeats near 6:45."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series23-The-Paper-Trail/chapter01.md",
-      "novel": "generated/novels/Series23-The-Paper-Trail/chapter01.md",
-      "song": "generated/songs/Series23-The-Paper-Trail/song01.md"
     }
   },
   "story": {

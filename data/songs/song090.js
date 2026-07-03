@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "stone step",
-      "stonestep"
-    ],
-    "object": [
-      "glove"
-    ],
-    "witness": [
-      "gravedigger"
-    ],
-    "time": [
-      "5:13",
-      "513"
-    ],
-    "marker": [
-      "852",
-      "marker 852",
-      "road marker 852",
-      "mile marker 852",
-      "mile 852"
-    ],
-    "direction": [
-      "toward"
-    ],
-    "sound": [
-      "lantern glass",
-      "lanternglass"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -309,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S08C06",
-    "puzzleId": "S08C06-marker-lock",
-    "dialogueId": "S08C06-gravedigger",
-    "locationId": "stone-step",
-    "objective": "Investigate Stone Step, question Gravedigger, recover Glove, and learn why marker 852 is tied to Ash Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Stone Step.",
-        "clue": "Lantern Glass"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Glove.",
-        "clue": "Glove"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Gravedigger.",
-        "clue": "5:13"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 852.",
-        "clue": "852"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Toward instruction.",
-        "clue": "Toward"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S08C06-location",
-        "type": "location",
-        "name": "Stone Step",
-        "inspectText": "Stone Step looks ordinary until Lantern Glass moves through it."
-      },
-      {
-        "id": "S08C06-object",
-        "type": "evidence",
-        "name": "Glove",
-        "inspectText": "Glove is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S08C06-marker",
-        "type": "marker",
-        "name": "Marker 852",
-        "inspectText": "Marker 852 is not the answer. It is the lock."
-      },
-      {
-        "id": "S08C06-sound",
-        "type": "audio_clue",
-        "name": "Lantern Glass",
-        "inspectText": "Lantern Glass repeats near 5:13."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series08-The-Fire-Year/chapter06.md",
-      "novel": "generated/novels/Series08-The-Fire-Year/chapter06.md",
-      "song": "generated/songs/Series08-The-Fire-Year/song06.md"
     }
   },
   "story": {

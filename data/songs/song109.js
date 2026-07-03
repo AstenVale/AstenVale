@@ -61,35 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "tunnel"
-    ],
-    "object": [
-      "compass"
-    ],
-    "witness": [
-      "surveyor"
-    ],
-    "time": [
-      "6:32",
-      "632"
-    ],
-    "marker": [
-      "1007",
-      "marker 1007",
-      "road marker 1007",
-      "mile marker 1007",
-      "mile 1007"
-    ],
-    "direction": [
-      "below"
-    ],
-    "sound": [
-      "boot heel",
-      "bootheel"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -298,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S10C01",
-    "puzzleId": "S10C01-marker-lock",
-    "dialogueId": "S10C01-surveyor",
-    "locationId": "tunnel",
-    "objective": "Investigate Tunnel, question Surveyor, recover Compass, and learn why marker 1007 is tied to Lost Mile Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Tunnel.",
-        "clue": "Boot Heel"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Compass.",
-        "clue": "Compass"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Surveyor.",
-        "clue": "6:32"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1007.",
-        "clue": "1007"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Below instruction.",
-        "clue": "Below"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S10C01-location",
-        "type": "location",
-        "name": "Tunnel",
-        "inspectText": "Tunnel looks ordinary until Boot Heel moves through it."
-      },
-      {
-        "id": "S10C01-object",
-        "type": "evidence",
-        "name": "Compass",
-        "inspectText": "Compass is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S10C01-marker",
-        "type": "marker",
-        "name": "Marker 1007",
-        "inspectText": "Marker 1007 is not the answer. It is the lock."
-      },
-      {
-        "id": "S10C01-sound",
-        "type": "audio_clue",
-        "name": "Boot Heel",
-        "inspectText": "Boot Heel repeats near 6:32."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series10-The-Forgotten-Road/chapter01.md",
-      "novel": "generated/novels/Series10-The-Forgotten-Road/chapter01.md",
-      "song": "generated/songs/Series10-The-Forgotten-Road/song01.md"
     }
   },
   "story": {

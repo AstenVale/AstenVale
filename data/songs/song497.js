@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "sheriff's office",
-      "sheriff'soffice"
-    ],
-    "object": [
-      "trade token",
-      "tradetoken"
-    ],
-    "witness": [
-      "typesetter"
-    ],
-    "time": [
-      "8:42",
-      "842"
-    ],
-    "marker": [
-      "4243",
-      "marker 4243",
-      "road marker 4243",
-      "mile marker 4243",
-      "mile 4243"
-    ],
-    "direction": [
-      "left"
-    ],
-    "sound": [
-      "empty wagon",
-      "emptywagon"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -311,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S42C05",
-    "puzzleId": "S42C05-marker-lock",
-    "dialogueId": "S42C05-typesetter",
-    "locationId": "sheriff-s-office",
-    "objective": "Investigate Sheriff's Office, question Typesetter, recover Trade Token, and learn why marker 4243 is tied to Drought Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Sheriff's Office.",
-        "clue": "Empty Wagon"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Trade Token.",
-        "clue": "Trade Token"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Typesetter.",
-        "clue": "8:42"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4243.",
-        "clue": "4243"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Left instruction.",
-        "clue": "Left"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S42C05-location",
-        "type": "location",
-        "name": "Sheriff's Office",
-        "inspectText": "Sheriff's Office looks ordinary until Empty Wagon moves through it."
-      },
-      {
-        "id": "S42C05-object",
-        "type": "evidence",
-        "name": "Trade Token",
-        "inspectText": "Trade Token is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S42C05-marker",
-        "type": "marker",
-        "name": "Marker 4243",
-        "inspectText": "Marker 4243 is not the answer. It is the lock."
-      },
-      {
-        "id": "S42C05-sound",
-        "type": "audio_clue",
-        "name": "Empty Wagon",
-        "inspectText": "Empty Wagon repeats near 8:42."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series42-The-Dry-Season/chapter05.md",
-      "novel": "generated/novels/Series42-The-Dry-Season/chapter05.md",
-      "song": "generated/songs/Series42-The-Dry-Season/song05.md"
     }
   },
   "story": {

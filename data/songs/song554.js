@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "orchard"
-    ],
-    "object": [
-      "bullet casing",
-      "bulletcasing"
-    ],
-    "witness": [
-      "cider presser",
-      "ciderpresser"
-    ],
-    "time": [
-      "10:51",
-      "1051"
-    ],
-    "marker": [
-      "4716",
-      "marker 4716",
-      "road marker 4716",
-      "mile marker 4716",
-      "mile 4716"
-    ],
-    "direction": [
-      "home"
-    ],
-    "sound": [
-      "shutter bang",
-      "shutterbang"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S47C02",
-    "puzzleId": "S47C02-marker-lock",
-    "dialogueId": "S47C02-cider-presser",
-    "locationId": "orchard",
-    "objective": "Investigate Orchard, question Cider Presser, recover Bullet Casing, and learn why marker 4716 is tied to Detour Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Orchard.",
-        "clue": "Shutter Bang"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Bullet Casing.",
-        "clue": "Bullet Casing"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Cider Presser.",
-        "clue": "10:51"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4716.",
-        "clue": "4716"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Home instruction.",
-        "clue": "Home"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S47C02-location",
-        "type": "location",
-        "name": "Orchard",
-        "inspectText": "Orchard looks ordinary until Shutter Bang moves through it."
-      },
-      {
-        "id": "S47C02-object",
-        "type": "evidence",
-        "name": "Bullet Casing",
-        "inspectText": "Bullet Casing is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S47C02-marker",
-        "type": "marker",
-        "name": "Marker 4716",
-        "inspectText": "Marker 4716 is not the answer. It is the lock."
-      },
-      {
-        "id": "S47C02-sound",
-        "type": "audio_clue",
-        "name": "Shutter Bang",
-        "inspectText": "Shutter Bang repeats near 10:51."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series47-The-Long-Way-Round/chapter02.md",
-      "novel": "generated/novels/Series47-The-Long-Way-Round/chapter02.md",
-      "song": "generated/songs/Series47-The-Long-Way-Round/song02.md"
     }
   },
   "story": {

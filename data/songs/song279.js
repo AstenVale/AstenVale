@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "iron bridge",
-      "ironbridge"
-    ],
-    "object": [
-      "wool scarf",
-      "woolscarf"
-    ],
-    "witness": [
-      "harness maker",
-      "harnessmaker"
-    ],
-    "time": [
-      "10:22",
-      "1022"
-    ],
-    "marker": [
-      "2425",
-      "marker 2425",
-      "road marker 2425",
-      "mile marker 2425",
-      "mile 2425"
-    ],
-    "direction": [
-      "out"
-    ],
-    "sound": [
-      "lantern flicker",
-      "lanternflicker"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -312,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S24C03",
-    "puzzleId": "S24C03-marker-lock",
-    "dialogueId": "S24C03-harness-maker",
-    "locationId": "iron-bridge",
-    "objective": "Investigate Iron Bridge, question Harness Maker, recover Wool Scarf, and learn why marker 2425 is tied to Timeline Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Iron Bridge.",
-        "clue": "Lantern Flicker"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Wool Scarf.",
-        "clue": "Wool Scarf"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Harness Maker.",
-        "clue": "10:22"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2425.",
-        "clue": "2425"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Out instruction.",
-        "clue": "Out"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S24C03-location",
-        "type": "location",
-        "name": "Iron Bridge",
-        "inspectText": "Iron Bridge looks ordinary until Lantern Flicker moves through it."
-      },
-      {
-        "id": "S24C03-object",
-        "type": "evidence",
-        "name": "Wool Scarf",
-        "inspectText": "Wool Scarf is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S24C03-marker",
-        "type": "marker",
-        "name": "Marker 2425",
-        "inspectText": "Marker 2425 is not the answer. It is the lock."
-      },
-      {
-        "id": "S24C03-sound",
-        "type": "audio_clue",
-        "name": "Lantern Flicker",
-        "inspectText": "Lantern Flicker repeats near 10:22."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series24-The-Missing-Hours/chapter03.md",
-      "novel": "generated/novels/Series24-The-Missing-Hours/chapter03.md",
-      "song": "generated/songs/Series24-The-Missing-Hours/song03.md"
     }
   },
   "story": {

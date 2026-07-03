@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "candlemaker's alley",
-      "candlemaker'salley"
-    ],
-    "object": [
-      "torn map",
-      "tornmap"
-    ],
-    "witness": [
-      "doctor"
-    ],
-    "time": [
-      "12:44",
-      "1244"
-    ],
-    "marker": [
-      "2179",
-      "marker 2179",
-      "road marker 2179",
-      "mile marker 2179",
-      "mile 2179"
-    ],
-    "direction": [
-      "around"
-    ],
-    "sound": [
-      "wind in pines",
-      "windinpines"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S21C09",
-    "puzzleId": "S21C09-marker-lock",
-    "dialogueId": "S21C09-doctor",
-    "locationId": "candlemaker-s-alley",
-    "objective": "Investigate Candlemaker's Alley, question Doctor, recover Torn Map, and learn why marker 2179 is tied to Bark Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Candlemaker's Alley.",
-        "clue": "Wind in Pines"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Torn Map.",
-        "clue": "Torn Map"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Doctor.",
-        "clue": "12:44"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2179.",
-        "clue": "2179"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Around instruction.",
-        "clue": "Around"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S21C09-location",
-        "type": "location",
-        "name": "Candlemaker's Alley",
-        "inspectText": "Candlemaker's Alley looks ordinary until Wind in Pines moves through it."
-      },
-      {
-        "id": "S21C09-object",
-        "type": "evidence",
-        "name": "Torn Map",
-        "inspectText": "Torn Map is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S21C09-marker",
-        "type": "marker",
-        "name": "Marker 2179",
-        "inspectText": "Marker 2179 is not the answer. It is the lock."
-      },
-      {
-        "id": "S21C09-sound",
-        "type": "audio_clue",
-        "name": "Wind in Pines",
-        "inspectText": "Wind in Pines repeats near 12:44."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series21-The-Witness-Tree/chapter09.md",
-      "novel": "generated/novels/Series21-The-Witness-Tree/chapter09.md",
-      "song": "generated/songs/Series21-The-Witness-Tree/song09.md"
     }
   },
   "story": {

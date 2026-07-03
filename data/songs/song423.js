@@ -61,38 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "the narrow road",
-      "narrow road",
-      "thenarrowroad"
-    ],
-    "object": [
-      "rope"
-    ],
-    "witness": [
-      "station master",
-      "stationmaster"
-    ],
-    "time": [
-      "12:00",
-      "1200"
-    ],
-    "marker": [
-      "3625",
-      "marker 3625",
-      "road marker 3625",
-      "mile marker 3625",
-      "mile 3625"
-    ],
-    "direction": [
-      "below"
-    ],
-    "sound": [
-      "moth wings",
-      "mothwings"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -301,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S36C03",
-    "puzzleId": "S36C03-marker-lock",
-    "dialogueId": "S36C03-station-master",
-    "locationId": "the-narrow-road",
-    "objective": "Investigate The Narrow Road, question Station Master, recover Rope, and learn why marker 3625 is tied to Voice Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter The Narrow Road.",
-        "clue": "Moth Wings"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Rope.",
-        "clue": "Rope"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Station Master.",
-        "clue": "12:00"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3625.",
-        "clue": "3625"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Below instruction.",
-        "clue": "Below"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S36C03-location",
-        "type": "location",
-        "name": "The Narrow Road",
-        "inspectText": "The Narrow Road looks ordinary until Moth Wings moves through it."
-      },
-      {
-        "id": "S36C03-object",
-        "type": "evidence",
-        "name": "Rope",
-        "inspectText": "Rope is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S36C03-marker",
-        "type": "marker",
-        "name": "Marker 3625",
-        "inspectText": "Marker 3625 is not the answer. It is the lock."
-      },
-      {
-        "id": "S36C03-sound",
-        "type": "audio_clue",
-        "name": "Moth Wings",
-        "inspectText": "Moth Wings repeats near 12:00."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series36-The-Night-Caller/chapter03.md",
-      "novel": "generated/novels/Series36-The-Night-Caller/chapter03.md",
-      "song": "generated/songs/Series36-The-Night-Caller/song03.md"
     }
   },
   "story": {

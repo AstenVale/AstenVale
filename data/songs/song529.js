@@ -61,39 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "banker's house",
-      "banker'shouse"
-    ],
-    "object": [
-      "pocket watch",
-      "pocketwatch"
-    ],
-    "witness": [
-      "census taker",
-      "censustaker"
-    ],
-    "time": [
-      "2:55",
-      "255"
-    ],
-    "marker": [
-      "4507",
-      "marker 4507",
-      "road marker 4507",
-      "mile marker 4507",
-      "mile 4507"
-    ],
-    "direction": [
-      "out of sight",
-      "outofsight"
-    ],
-    "sound": [
-      "glass break",
-      "glassbreak"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -302,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S45C01",
-    "puzzleId": "S45C01-marker-lock",
-    "dialogueId": "S45C01-census-taker",
-    "locationId": "banker-s-house",
-    "objective": "Investigate Banker's House, question Census Taker, recover Pocket Watch, and learn why marker 4507 is tied to Power Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Banker's House.",
-        "clue": "Glass Break"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Pocket Watch.",
-        "clue": "Pocket Watch"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Census Taker.",
-        "clue": "2:55"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 4507.",
-        "clue": "4507"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Out of Sight instruction.",
-        "clue": "Out of Sight"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S45C01-location",
-        "type": "location",
-        "name": "Banker's House",
-        "inspectText": "Banker's House looks ordinary until Glass Break moves through it."
-      },
-      {
-        "id": "S45C01-object",
-        "type": "evidence",
-        "name": "Pocket Watch",
-        "inspectText": "Pocket Watch is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S45C01-marker",
-        "type": "marker",
-        "name": "Marker 4507",
-        "inspectText": "Marker 4507 is not the answer. It is the lock."
-      },
-      {
-        "id": "S45C01-sound",
-        "type": "audio_clue",
-        "name": "Glass Break",
-        "inspectText": "Glass Break repeats near 2:55."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series45-The-Hollow-Crown/chapter01.md",
-      "novel": "generated/novels/Series45-The-Hollow-Crown/chapter01.md",
-      "song": "generated/songs/Series45-The-Hollow-Crown/song01.md"
     }
   },
   "story": {

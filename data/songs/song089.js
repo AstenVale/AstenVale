@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "potter's field",
-      "potter'sfield"
-    ],
-    "object": [
-      "bullet casing",
-      "bulletcasing"
-    ],
-    "witness": [
-      "barber"
-    ],
-    "time": [
-      "5:09",
-      "509"
-    ],
-    "marker": [
-      "843",
-      "marker 843",
-      "road marker 843",
-      "mile marker 843",
-      "mile 843"
-    ],
-    "direction": [
-      "beyond"
-    ],
-    "sound": [
-      "horse hooves",
-      "horsehooves"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -310,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S08C05",
-    "puzzleId": "S08C05-marker-lock",
-    "dialogueId": "S08C05-barber",
-    "locationId": "potter-s-field",
-    "objective": "Investigate Potter's Field, question Barber, recover Bullet Casing, and learn why marker 843 is tied to Ash Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Potter's Field.",
-        "clue": "Horse Hooves"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Bullet Casing.",
-        "clue": "Bullet Casing"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Barber.",
-        "clue": "5:09"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 843.",
-        "clue": "843"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Beyond instruction.",
-        "clue": "Beyond"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S08C05-location",
-        "type": "location",
-        "name": "Potter's Field",
-        "inspectText": "Potter's Field looks ordinary until Horse Hooves moves through it."
-      },
-      {
-        "id": "S08C05-object",
-        "type": "evidence",
-        "name": "Bullet Casing",
-        "inspectText": "Bullet Casing is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S08C05-marker",
-        "type": "marker",
-        "name": "Marker 843",
-        "inspectText": "Marker 843 is not the answer. It is the lock."
-      },
-      {
-        "id": "S08C05-sound",
-        "type": "audio_clue",
-        "name": "Horse Hooves",
-        "inspectText": "Horse Hooves repeats near 5:09."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series08-The-Fire-Year/chapter05.md",
-      "novel": "generated/novels/Series08-The-Fire-Year/chapter05.md",
-      "song": "generated/songs/Series08-The-Fire-Year/song05.md"
     }
   },
   "story": {

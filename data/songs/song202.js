@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "saloon"
-    ],
-    "object": [
-      "dried flower",
-      "driedflower"
-    ],
-    "witness": [
-      "rag picker",
-      "ragpicker"
-    ],
-    "time": [
-      "3:30",
-      "330"
-    ],
-    "marker": [
-      "1788",
-      "marker 1788",
-      "road marker 1788",
-      "mile marker 1788",
-      "mile 1788"
-    ],
-    "direction": [
-      "under"
-    ],
-    "sound": [
-      "saw cutting",
-      "sawcutting"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -310,71 +279,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S17C10",
-    "puzzleId": "S17C10-marker-lock",
-    "dialogueId": "S17C10-rag-picker",
-    "locationId": "saloon",
-    "objective": "Investigate Saloon, question Rag Picker, recover Dried Flower, and learn why marker 1788 is tied to Frost Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Saloon.",
-        "clue": "Saw Cutting"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Dried Flower.",
-        "clue": "Dried Flower"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Rag Picker.",
-        "clue": "3:30"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 1788.",
-        "clue": "1788"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Under instruction.",
-        "clue": "Under"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S17C10-location",
-        "type": "location",
-        "name": "Saloon",
-        "inspectText": "Saloon looks ordinary until Saw Cutting moves through it."
-      },
-      {
-        "id": "S17C10-object",
-        "type": "evidence",
-        "name": "Dried Flower",
-        "inspectText": "Dried Flower is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S17C10-marker",
-        "type": "marker",
-        "name": "Marker 1788",
-        "inspectText": "Marker 1788 is not the answer. It is the lock."
-      },
-      {
-        "id": "S17C10-sound",
-        "type": "audio_clue",
-        "name": "Saw Cutting",
-        "inspectText": "Saw Cutting repeats near 3:30."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series17-The-Cold-Season/chapter10.md",
-      "novel": "generated/novels/Series17-The-Cold-Season/chapter10.md",
-      "song": "generated/songs/Series17-The-Cold-Season/song10.md"
     }
   },
   "story": {

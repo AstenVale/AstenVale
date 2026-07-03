@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "library"
-    ],
-    "object": [
-      "folded cloth",
-      "foldedcloth"
-    ],
-    "witness": [
-      "furrier"
-    ],
-    "time": [
-      "11:40",
-      "1140"
-    ],
-    "marker": [
-      "3843",
-      "marker 3843",
-      "road marker 3843",
-      "mile marker 3843",
-      "mile 3843"
-    ],
-    "direction": [
-      "beyond"
-    ],
-    "sound": [
-      "axe on wood",
-      "axeonwood"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -299,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S38C05",
-    "puzzleId": "S38C05-marker-lock",
-    "dialogueId": "S38C05-furrier",
-    "locationId": "library",
-    "objective": "Investigate Library, question Furrier, recover Folded Cloth, and learn why marker 3843 is tied to Beacon Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Library.",
-        "clue": "Axe on Wood"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Folded Cloth.",
-        "clue": "Folded Cloth"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Furrier.",
-        "clue": "11:40"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 3843.",
-        "clue": "3843"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Beyond instruction.",
-        "clue": "Beyond"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S38C05-location",
-        "type": "location",
-        "name": "Library",
-        "inspectText": "Library looks ordinary until Axe on Wood moves through it."
-      },
-      {
-        "id": "S38C05-object",
-        "type": "evidence",
-        "name": "Folded Cloth",
-        "inspectText": "Folded Cloth is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S38C05-marker",
-        "type": "marker",
-        "name": "Marker 3843",
-        "inspectText": "Marker 3843 is not the answer. It is the lock."
-      },
-      {
-        "id": "S38C05-sound",
-        "type": "audio_clue",
-        "name": "Axe on Wood",
-        "inspectText": "Axe on Wood repeats near 11:40."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series38-The-Signal-Fire/chapter05.md",
-      "novel": "generated/novels/Series38-The-Signal-Fire/chapter05.md",
-      "song": "generated/songs/Series38-The-Signal-Fire/song05.md"
     }
   },
   "story": {

@@ -61,36 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "window seat",
-      "windowseat"
-    ],
-    "object": [
-      "handkerchief"
-    ],
-    "witness": [
-      "sister"
-    ],
-    "time": [
-      "8:00",
-      "800"
-    ],
-    "marker": [
-      "165",
-      "marker 165",
-      "road marker 165",
-      "mile marker 165",
-      "mile 165"
-    ],
-    "direction": [
-      "in"
-    ],
-    "sound": [
-      "clock ticking",
-      "clockticking"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -310,71 +280,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S02C06",
-    "puzzleId": "S02C06-marker-lock",
-    "dialogueId": "S02C06-sister",
-    "locationId": "window-seat",
-    "objective": "Investigate Window Seat, question Sister, recover Handkerchief, and learn why marker 165 is tied to Personal Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Window Seat.",
-        "clue": "Clock Ticking"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Handkerchief.",
-        "clue": "Handkerchief"
-      },
-      {
-        "step": "interview",
-        "objective": "Question Sister.",
-        "clue": "8:00"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 165.",
-        "clue": "165"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the In instruction.",
-        "clue": "In"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S02C06-location",
-        "type": "location",
-        "name": "Window Seat",
-        "inspectText": "Window Seat looks ordinary until Clock Ticking moves through it."
-      },
-      {
-        "id": "S02C06-object",
-        "type": "evidence",
-        "name": "Handkerchief",
-        "inspectText": "Handkerchief is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S02C06-marker",
-        "type": "marker",
-        "name": "Marker 165",
-        "inspectText": "Marker 165 is not the answer. It is the lock."
-      },
-      {
-        "id": "S02C06-sound",
-        "type": "audio_clue",
-        "name": "Clock Ticking",
-        "inspectText": "Clock Ticking repeats near 8:00."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series02-The-Before/chapter06.md",
-      "novel": "generated/novels/Series02-The-Before/chapter06.md",
-      "song": "generated/songs/Series02-The-Before/song06.md"
     }
   },
   "story": {

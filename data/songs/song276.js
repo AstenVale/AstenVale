@@ -61,37 +61,6 @@ window.SONG_DATA = {
       "icon": "SND"
     }
   ],
-  "answers": {
-    "location": [
-      "barn"
-    ],
-    "object": [
-      "spool of thread",
-      "spoolofthread"
-    ],
-    "witness": [
-      "river pilot",
-      "riverpilot"
-    ],
-    "time": [
-      "7:14",
-      "714"
-    ],
-    "marker": [
-      "2406",
-      "marker 2406",
-      "road marker 2406",
-      "mile marker 2406",
-      "mile 2406"
-    ],
-    "direction": [
-      "past the tree line",
-      "pastthetreeline"
-    ],
-    "sound": [
-      "thunder"
-    ]
-  },
   "caseNotes": [
     {
       "icon": "CLUE",
@@ -300,71 +269,6 @@ window.SONG_DATA = {
       "sub": "Move to the next recovered Ashton Vale case file.",
       "buttonText": "Return To Cases",
       "buttonUrl": "series.html"
-    }
-  },
-  "game": {
-    "missionId": "S23C12",
-    "puzzleId": "S23C12-marker-lock",
-    "dialogueId": "S23C12-river-pilot",
-    "locationId": "barn",
-    "objective": "Investigate Barn, question River Pilot, recover Spool of Thread, and learn why marker 2406 is tied to Document Vault.",
-    "missionFlow": [
-      {
-        "step": "arrive",
-        "objective": "Enter Barn.",
-        "clue": "Thunder"
-      },
-      {
-        "step": "inspect",
-        "objective": "Inspect Spool of Thread.",
-        "clue": "Spool of Thread"
-      },
-      {
-        "step": "interview",
-        "objective": "Question River Pilot.",
-        "clue": "7:14"
-      },
-      {
-        "step": "decode",
-        "objective": "Find and enter marker 2406.",
-        "clue": "2406"
-      },
-      {
-        "step": "choose",
-        "objective": "Follow the Past the Tree Line instruction.",
-        "clue": "Past the Tree Line"
-      }
-    ],
-    "interactables": [
-      {
-        "id": "S23C12-location",
-        "type": "location",
-        "name": "Barn",
-        "inspectText": "Barn looks ordinary until Thunder moves through it."
-      },
-      {
-        "id": "S23C12-object",
-        "type": "evidence",
-        "name": "Spool of Thread",
-        "inspectText": "Spool of Thread is present, specific, and wrong enough to matter."
-      },
-      {
-        "id": "S23C12-marker",
-        "type": "marker",
-        "name": "Marker 2406",
-        "inspectText": "Marker 2406 is not the answer. It is the lock."
-      },
-      {
-        "id": "S23C12-sound",
-        "type": "audio_clue",
-        "name": "Thunder",
-        "inspectText": "Thunder repeats near 7:14."
-      }
-    ],
-    "sourceFiles": {
-      "prompt": "story/series/Series23-The-Paper-Trail/chapter12.md",
-      "novel": "generated/novels/Series23-The-Paper-Trail/chapter12.md",
-      "song": "generated/songs/Series23-The-Paper-Trail/song12.md"
     }
   },
   "story": {
