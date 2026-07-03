@@ -54,23 +54,25 @@
 <body>
 
   <nav class="site-nav">
-    <a href="index.html" class="nav-brand">
-      <span>Asten Vale</span>
-      <span>Archives</span>
-    </a>
-    <div class="nav-links">
-      <a href="dashboard.html" class="nav-link active">Dashboard</a>
-      <a href="archive.html" class="nav-link">Archive</a>
-      <a href="cabinet.html" class="nav-link">Case Files</a>
-      <a href="evidence.html" class="nav-link">Evidence</a>
-      <a href="vaults.html" class="nav-link">Vaults</a>
-      <a href="progress.html" class="nav-link">Progress</a>
-      <a href="achievements.html" class="nav-link">Achievements</a>
-      <a href="profile.html" class="nav-link">Profile</a>
-      <a href="settings.html" class="nav-link">Settings</a>
-      <span class="nav-link logout" id="logoutLink">Logout</span>
-    </div>
-  </nav>
+  <a href="dashboard.html" class="nav-brand">
+    <span>Asten Vale</span>
+    <span>Archives</span>
+  </a>
+  <div class="nav-links">
+    <a href="dashboard.html" class="nav-link active">Dashboard</a>
+    <a href="archive.html" class="nav-link">Archive</a>
+    <a href="case.html" class="nav-link">Case Files</a>
+    <a href="cabinet.html" class="nav-link">Evidence Cabinet</a>
+    <a href="vaults.html" class="nav-link">Vaults</a>
+    <a href="progress.html" class="nav-link">Progress</a>
+    <a href="achievements.html" class="nav-link">Achievements</a>
+    <a href="profile.html" class="nav-link">Profile</a>
+    <a href="settings.html" class="nav-link">Settings</a>
+    <a href="admin.html" class="nav-link" id="navAdminLink" style="display:none;">Admin</a>
+    <a href="index.html" class="nav-link">Public Site</a>
+    <span class="nav-link logout" id="navLogoutLink">Logout</span>
+  </div>
+</nav>
 
   <div id="loadingNote">Retrieving your case file&hellip;</div>
 
@@ -92,15 +94,15 @@
       <div class="continue-card">
         <p class="label">Continue Investigation</p>
         <p class="case-title" id="continueTitle">Loading next case&hellip;</p>
-        <a href="index.html" class="continue-btn" id="continueBtn">Open Case File</a>
+        <a href="archive.html" class="continue-btn" id="continueBtn">Open Case File</a>
       </div>
 
       <div class="nav-tiles">
-        <a href="cabinet.html" class="nav-tile">Case Files</a>
-        <a href="evidence.html" class="nav-tile">Evidence Cabinet</a>
-        <a href="progress.html" class="nav-tile">Vaults &amp; Progress</a>
-        <a href="badges.html" class="nav-tile">Achievements</a>
-        <a href="leaderboard.html" class="nav-tile">Leaderboard</a>
+        <a href="case.html" class="nav-tile">Case Files</a>
+        <a href="cabinet.html" class="nav-tile">Evidence Cabinet</a>
+        <a href="vaults.html" class="nav-tile">Vaults</a>
+        <a href="progress.html" class="nav-tile">Progress</a>
+        <a href="achievements.html" class="nav-tile">Achievements</a>
       </div>
     </div>
   </div>
@@ -167,13 +169,13 @@
       var next = findNextCase(solvedSet);
       if (next) {
         document.getElementById('continueTitle').textContent = next.title;
-        document.getElementById('continueBtn').href = next.url || 'index.html';
+        document.getElementById('continueBtn').href = next.url || 'archive.html';
       } else {
         document.getElementById('continueTitle').textContent = cases.length
           ? 'All released cases solved — check back for new investigations.'
           : 'Your investigation has not yet begun.';
         document.getElementById('continueBtn').textContent = 'Open the Archive';
-        document.getElementById('continueBtn').href = 'index.html';
+        document.getElementById('continueBtn').href = 'archive.html';
       }
     }
 
@@ -181,10 +183,6 @@
       document.getElementById('loadingNote').textContent = 'Dashboard is unavailable right now.';
       return;
     }
-
-    document.getElementById('logoutLink').addEventListener('click', function () {
-      window.AVProgressSync.signOut(function () { window.location.href = 'index.html'; });
-    });
 
     function loadDashboard() {
       window.AVProgressSync.getUser().then(function (user) {
@@ -207,5 +205,27 @@
     }
   })();
   </script>
+
+  <script>
+  // ---- shared game nav wiring (logout + owner-only admin link) ----
+  (function () {
+    if (!window.AVProgressSync) return;
+    var logoutLink = document.getElementById('navLogoutLink');
+    if (logoutLink) {
+      logoutLink.addEventListener('click', function () {
+        window.AVProgressSync.signOut(function () { window.location.href = 'index.html'; });
+      });
+    }
+    var adminLink = document.getElementById('navAdminLink');
+    if (adminLink) {
+      window.AVProgressSync.getUser().then(function (user) {
+        if (user && user.email === 'marketingaftermidnight@gmail.com') {
+          adminLink.style.display = '';
+        }
+      });
+    }
+  })();
+  </script>
+
 </body>
 </html>
