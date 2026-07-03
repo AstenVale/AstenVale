@@ -35,7 +35,7 @@
             '<a href="achievements.html" class="nav-dropdown-item">Achievements</a>' +
             '<a href="settings.html" class="nav-dropdown-item">Settings</a>' +
             '<a href="admin.html" class="nav-dropdown-item" id="navAdminLink" style="display:none;">Admin</a>' +
-            '<a href="index.html" class="nav-dropdown-item">Return to Public Website</a>' +
+            '<a href="dashboard.html" class="nav-dropdown-item">Return to Dashboard</a>' +
           '</div>' +
         '</div>' +
         '<span class="nav-link logout" id="navLogoutLink">Logout</span>' +
