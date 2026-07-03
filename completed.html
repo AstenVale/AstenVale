@@ -121,46 +121,28 @@
       .site-footer { flex-direction: column; gap: 1rem; text-align: center; }
     }
   
-    .nav-link-primary{color:rgba(220,190,140,0.92);}
-    .nav-dropdown{position:relative;}
-    .nav-dropdown-toggle{background:none;border:none;font:inherit;cursor:pointer;display:inline-flex;align-items:center;gap:0.3rem;padding:0;font-family:var(--font-type);font-size:0.7rem;letter-spacing:0.14em;color:rgba(201,169,122,0.7);text-transform:uppercase;}
-    .nav-dropdown-toggle:hover,.nav-dropdown-toggle.open{color:var(--paper);}
-    .nav-caret{font-size:0.6em;transition:transform 0.15s;}
-    .nav-dropdown-toggle.open .nav-caret{transform:rotate(180deg);}
-    .nav-dropdown-menu{display:none;position:absolute;top:calc(100% + 0.6rem);right:0;background:var(--bg);border:1px solid rgba(201,169,122,0.22);min-width:190px;padding:0.4rem 0;box-shadow:0 10px 32px rgba(0,0,0,0.55);z-index:100;}
-    .nav-dropdown-menu.open{display:block;}
-    .nav-dropdown-item{display:block;padding:0.55rem 1.1rem;font-family:var(--font-type);font-size:0.68rem;letter-spacing:0.1em;color:rgba(201,169,122,0.75);text-decoration:none;text-transform:uppercase;cursor:pointer;}
-    .nav-dropdown-item:hover{color:var(--paper);background:rgba(201,169,122,0.08);}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 </style>
   <link rel="stylesheet" href="css/nav.css">
   <link rel="stylesheet" href="css/polish.css">
+  <link rel="stylesheet" href="css/game-nav.css" />
 </head>
 <body>
   <section class="hero">
     <div class="hero-bg"></div>
     <div class="hero-glow"></div>
-      <nav class="site-nav">
-    <a href="dashboard.html" class="nav-brand">Asten Vale Archives</a>
-    <div class="nav-links">
-      <a href="dashboard.html" class="nav-link nav-link-primary">Dashboard</a>
-      <a href="archive.html" class="nav-link nav-link-primary">Archive</a>
-      <a href="cabinet.html" class="nav-link">Evidence</a>
-      <a href="vaults.html" class="nav-link">Vaults</a>
-      <div class="nav-dropdown" id="detectiveMenu">
-        <button type="button" class="nav-dropdown-toggle" id="detectiveToggle" aria-haspopup="true" aria-expanded="false">Detective <span class="nav-caret">&#9662;</span></button>
-        <div class="nav-dropdown-menu" id="detectiveDropdown">
-          <a href="profile.html" class="nav-dropdown-item">Profile</a>
-          <a href="progress.html" class="nav-dropdown-item">Progress</a>
-          <a href="achievements.html" class="nav-dropdown-item">Achievements</a>
-          <a href="settings.html" class="nav-dropdown-item">Settings</a>
-          <a href="admin.html" class="nav-dropdown-item" id="navAdminLink" style="display:none;">Admin</a>
-          <a href="index.html" class="nav-dropdown-item">Return to Public Website</a>
-        </div>
-      </div>
-      <span class="nav-link logout" id="navLogoutLink">Logout</span>
-    </div>
-  </nav>
-    <div class="hero-content">
+      <script src="js/game-nav.js"></script>
+
+  <div class="hero-content">
       <p class="hero-label">Closed Files - Investigator Record</p>
       <h1 class="hero-title">Completed</h1>
       <div class="hero-rule"></div>
@@ -353,48 +335,6 @@
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
   <script src="js/progress-sync.js"></script>
 
-  <script>
-  // ---- shared game nav wiring (dropdown + logout + owner-only admin link) ----
-  (function () {
-    var toggle = document.getElementById('detectiveToggle');
-    var menu = document.getElementById('detectiveDropdown');
-    if (toggle && menu) {
-      function closeMenu() {
-        menu.classList.remove('open');
-        toggle.classList.remove('open');
-        toggle.setAttribute('aria-expanded', 'false');
-      }
-      toggle.addEventListener('click', function (e) {
-        e.stopPropagation();
-        var isOpen = menu.classList.toggle('open');
-        toggle.classList.toggle('open', isOpen);
-        toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-      });
-      document.addEventListener('click', function (e) {
-        if (!menu.contains(e.target) && e.target !== toggle) closeMenu();
-      });
-      document.addEventListener('keydown', function (e) {
-        if (e.key === 'Escape') closeMenu();
-      });
-    }
-
-    if (!window.AVProgressSync) return;
-    var logoutLink = document.getElementById('navLogoutLink');
-    if (logoutLink) {
-      logoutLink.addEventListener('click', function () {
-        window.AVProgressSync.signOut(function () { window.location.href = 'index.html'; });
-      });
-    }
-    var adminLink = document.getElementById('navAdminLink');
-    if (adminLink) {
-      window.AVProgressSync.getUser().then(function (user) {
-        if (user && user.email === 'marketingaftermidnight@gmail.com') {
-          adminLink.style.display = '';
-        }
-      });
-    }
-  })();
-  </script>
-
+  
 </body>
 </html>
