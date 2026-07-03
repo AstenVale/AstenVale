@@ -1252,12 +1252,30 @@
   <script src="js/csv-utils.js"></script>
   <script src="js/sheet-released.js"></script>
   <script>
-  applySheetReleased(function() {
-  (function() {
-    var season = SEASONS_CONFIG[0];
+  // Backend-enforced: reads the player's real completed_cases from
+  // player_progress via Supabase, merged with localStorage only as an
+  // offline fallback -- same pattern used on cabinet.html/dashboard.html.
+  // Progress is game state; it should come from the backend, not just
+  // whatever this device's localStorage happens to say.
+  function getAuthoritativeSolved() {
+    var local = [];
+    try { local = JSON.parse(localStorage.getItem('av_solved') || '[]'); } catch(e) {}
+    if (!window.AVProgressSync) return Promise.resolve(local);
+    return window.AVProgressSync.getUser().then(function (user) {
+      if (!user) return local;
+      return window.AVProgressSync.getSupabaseProgress(user).then(function (progress) {
+        var serverSolved = (progress && progress.completed_cases) || [];
+        var merged = local.slice();
+        serverSolved.forEach(function (id) { if (merged.indexOf(id) === -1) merged.push(id); });
+        return merged;
+      });
+    }).catch(function () { return local; });
+  }
 
-    var solved = [];
-    try { solved = JSON.parse(localStorage.getItem('av_solved') || '[]'); } catch(e) {}
+  applySheetReleased(function() {
+    getAuthoritativeSolved().then(function (solved) {
+  (function(solved) {
+    var season = SEASONS_CONFIG[0];
 
     var numSolved  = season.cases.filter(function(c){ return solved.indexOf(c.id) !== -1; }).length;
     var totalCases = season.cases.length;
@@ -1536,16 +1554,14 @@
       }
     });
 
-  })();
+  })(solved);
+    }); // getAuthoritativeSolved
   }); // applySheetReleased
   </script>
 
   <!-- Load solved case song files to populate Recent Discoveries -->
   <script>
-  (function() {
-    var solved = [];
-    try { solved = JSON.parse(localStorage.getItem('av_solved') || '[]'); } catch(e) {}
-
+  getAuthoritativeSolved().then(function (solved) {
     var season1Ids = ['001','002','003','004','005','006','007','008','009','010','011','012'];
     var solvedS1   = season1Ids.filter(function(id){ return solved.indexOf(id) !== -1; }).reverse();
 
@@ -1597,7 +1613,7 @@
     }
 
     loadNext();
-  })();
+  });
   </script>
 
   <script>
