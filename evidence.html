@@ -297,8 +297,11 @@ body::before{
       html += '<div class="ev-meta-field"><span class="ev-meta-label">Verification</span><span class="ev-meta-value">' + esc(verification) + '</span></div>';
       html += '</div></section>';
 
-      // Evidence Image (collectible.image is already a resolved URL from the source case file)
-      var imgUrl = rec.image || '';
+      // Evidence Image (collectible.image is already a resolved URL from the source case file).
+      // Sound-category items legitimately have no image in the source data --
+      // cabinet.html falls back to the generic tape icon for those; match that
+      // here instead of showing "No Image on File" for something that isn't missing.
+      var imgUrl = rec.image || (category === 'Sound' ? 'images/tape.png' : '');
       html += '<section class="ev-section"><div class="ev-section-label">Evidence Image</div>';
       html += '<div class="ev-image-wrap">';
       if (imgUrl) {
