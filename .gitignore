@@ -3,3 +3,4 @@ admin/.env
 /Novels/
 /Songs/
 /Testimonies/
+supabase/.temp/

@@ -53,23 +53,25 @@
 <body>
 
   <nav class="site-nav">
-    <a href="index.html" class="nav-brand">
-      <span>Asten Vale</span>
-      <span>Archives</span>
-    </a>
-    <div class="nav-links">
-      <a href="dashboard.html" class="nav-link">Dashboard</a>
-      <a href="archive.html" class="nav-link">Archive</a>
-      <a href="cabinet.html" class="nav-link">Case Files</a>
-      <a href="evidence.html" class="nav-link">Evidence</a>
-      <a href="vaults.html" class="nav-link">Vaults</a>
-      <a href="progress.html" class="nav-link">Progress</a>
-      <a href="achievements.html" class="nav-link">Achievements</a>
-      <a href="profile.html" class="nav-link">Profile</a>
-      <a href="settings.html" class="nav-link active">Settings</a>
-      <span class="nav-link logout" id="logoutLink">Logout</span>
-    </div>
-  </nav>
+  <a href="dashboard.html" class="nav-brand">
+    <span>Asten Vale</span>
+    <span>Archives</span>
+  </a>
+  <div class="nav-links">
+    <a href="dashboard.html" class="nav-link">Dashboard</a>
+    <a href="archive.html" class="nav-link">Archive</a>
+    <a href="case.html" class="nav-link">Case Files</a>
+    <a href="cabinet.html" class="nav-link">Evidence Cabinet</a>
+    <a href="vaults.html" class="nav-link">Vaults</a>
+    <a href="progress.html" class="nav-link">Progress</a>
+    <a href="achievements.html" class="nav-link">Achievements</a>
+    <a href="profile.html" class="nav-link">Profile</a>
+    <a href="settings.html" class="nav-link active">Settings</a>
+    <a href="admin.html" class="nav-link" id="navAdminLink" style="display:none;">Admin</a>
+    <a href="index.html" class="nav-link">Public Site</a>
+    <span class="nav-link logout" id="navLogoutLink">Logout</span>
+  </div>
+</nav>
 
   <div id="loadingNote">Retrieving your settings&hellip;</div>
 
@@ -141,7 +143,6 @@
     function doLogout() {
       window.AVProgressSync.signOut(function () { window.location.href = 'index.html'; });
     }
-    document.getElementById('logoutLink').addEventListener('click', doLogout);
     document.getElementById('logoutBtn').addEventListener('click', doLogout);
 
     document.getElementById('saveIdentityBtn').addEventListener('click', function () {
@@ -171,5 +172,27 @@
     });
   })();
   </script>
+
+  <script>
+  // ---- shared game nav wiring (logout + owner-only admin link) ----
+  (function () {
+    if (!window.AVProgressSync) return;
+    var logoutLink = document.getElementById('navLogoutLink');
+    if (logoutLink) {
+      logoutLink.addEventListener('click', function () {
+        window.AVProgressSync.signOut(function () { window.location.href = 'index.html'; });
+      });
+    }
+    var adminLink = document.getElementById('navAdminLink');
+    if (adminLink) {
+      window.AVProgressSync.getUser().then(function (user) {
+        if (user && user.email === 'marketingaftermidnight@gmail.com') {
+          adminLink.style.display = '';
+        }
+      });
+    }
+  })();
+  </script>
+
 </body>
 </html>
