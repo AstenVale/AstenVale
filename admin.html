@@ -57,7 +57,9 @@ td{padding:0.45rem 0.5rem;border-bottom:1px solid rgba(201,169,122,0.08);}
       <h2 style="margin-top:0;">Publishing</h2>
       <p style="font-size:0.75rem;color:rgba(201,169,122,0.6);margin-bottom:0.75rem;line-height:1.5;">
         Reads the streaming spreadsheet and marks any case with a published link as
-        released. Never un-releases a case. Run this after publishing a new case.
+        released. Never un-releases a case. Also reads Sheet 2 of the same
+        spreadsheet to sync vault rewards. Run this after publishing a new case
+        or updating a vault reward.
       </p>
       <button id="syncReleasesBtn" style="padding:0.6rem 1.2rem;background:var(--folder-red);color:#fff;border:none;cursor:pointer;font-family:var(--font-type);font-size:0.8rem;letter-spacing:0.08em;text-transform:uppercase;">Sync Releases</button>
       <div id="syncReleasesResult" style="font-size:0.78rem;margin-top:0.6rem;min-height:1.2em;"></div>
@@ -156,6 +158,9 @@ td{padding:0.45rem 0.5rem;border-bottom:1px solid rgba(201,169,122,0.08);}
           result.textContent = d.newly_released.length
             ? 'Released: ' + d.newly_released.join(', ') + ' (' + d.already_released_count + ' already live, ' + d.sheet_released_count + ' total in sheet)'
             : 'No new cases to release (' + d.already_released_count + ' already live, ' + d.sheet_released_count + ' total in sheet).';
+          result.textContent += d.vault_rewards_error
+            ? ' | Vault rewards sync failed: ' + d.vault_rewards_error
+            : ' | Vault rewards synced: ' + d.vault_rewards_synced;
         })
         .catch(function (e) {
           btn.disabled = false;
