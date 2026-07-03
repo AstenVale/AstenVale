@@ -1234,26 +1234,53 @@
 
     if (!pendingVault) return;
     var v = pendingVault.vault;
+    var vaultNum = i + 1; // pendingVault's 1-based position, matching vaults.html/progress.html
     document.getElementById('vault-symbol').textContent = v.badge ? v.badge.symbol : '🏛';
     document.getElementById('vault-title').textContent = v.name || pendingVault.title;
     document.getElementById('vault-lore').textContent = v.lore || '';
     document.getElementById('vault-badge-name').textContent = v.badge ? v.badge.name : '';
-    document.getElementById('vault-coupon').textContent = v.coupon || '';
 
-    var modal = document.getElementById('vault-modal');
-    modal.classList.remove('hidden');
-    setTimeout(function(){ modal.classList.add('visible'); }, 20);
-
-    function close() {
-      modal.classList.remove('visible');
-      setTimeout(function(){ modal.classList.add('hidden'); }, 320);
+    // player_vault_rewards (Sheet 2, synced via sync-released-cases) only
+    // ever returns a row here if this vault is unlocked and released with
+    // a real reward_url -- never a fabricated coupon.
+    function getVaultReward() {
+      if (!window.AVProgressSync) return Promise.resolve(null);
+      var client = window.AVProgressSync.getClient();
+      if (!client) return Promise.resolve(null);
+      return client.from('player_vault_rewards').select('vault, reward_title, reward_url').eq('vault', vaultNum).maybeSingle()
+        .then(function (res) { return res.error ? null : res.data; })
+        .catch(function () { return null; });
     }
-    document.getElementById('vault-close-btn').addEventListener('click', close);
-    modal.addEventListener('click', function(e){ if (e.target === modal) close(); });
-    document.getElementById('vault-claim-btn').addEventListener('click', function() {
-      claimed.push(v.id);
-      localStorage.setItem('av_vault_claimed', JSON.stringify(claimed));
-      close();
+
+    getVaultReward().then(function (reward) {
+      var claimBtn = document.getElementById('vault-claim-btn');
+      var couponEl = document.getElementById('vault-coupon');
+      if (reward && reward.reward_url) {
+        couponEl.textContent = '';
+        claimBtn.textContent = 'Open Reward';
+      } else {
+        couponEl.textContent = 'Reward pending';
+        claimBtn.textContent = 'Continue';
+      }
+
+      var modal = document.getElementById('vault-modal');
+      modal.classList.remove('hidden');
+      setTimeout(function(){ modal.classList.add('visible'); }, 20);
+
+      function close() {
+        modal.classList.remove('visible');
+        setTimeout(function(){ modal.classList.add('hidden'); }, 320);
+      }
+      document.getElementById('vault-close-btn').addEventListener('click', close);
+      modal.addEventListener('click', function(e){ if (e.target === modal) close(); });
+      claimBtn.addEventListener('click', function() {
+        if (reward && reward.reward_url) {
+          window.open(reward.reward_url, '_blank', 'noopener');
+        }
+        claimed.push(v.id);
+        localStorage.setItem('av_vault_claimed', JSON.stringify(claimed));
+        close();
+      });
     });
   })();
   </script>
