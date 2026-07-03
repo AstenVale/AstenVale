@@ -371,13 +371,13 @@ var BADGES_CONFIG = [
     }
   },
 
-  // -- Vault 02 — The Hollow --
+  // -- Vault 02 — The Before --
   {
     id:          's02_ach01',
-    name:        'First File — The Hollow',
+    name:        'First File — The Before',
     symbol:      '📁',
-    category:    'Vault 02 — The Hollow',
-    description: 'Opened the first case of The Hollow.',
+    category:    'Vault 02 — The Before',
+    description: 'Opened the first case of The Before.',
     hint:        'Solve the first case of this season.',
     check: function(s) {
       var ids = ['013','014','015','016','017','018','019','020','021','022','023','024'];
@@ -386,10 +386,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's02_ach02',
-    name:        'Three Files — The Hollow',
+    name:        'Three Files — The Before',
     symbol:      '📂',
-    category:    'Vault 02 — The Hollow',
-    description: 'Solved 3 cases in The Hollow.',
+    category:    'Vault 02 — The Before',
+    description: 'Solved 3 cases in The Before.',
     hint:        'Solve 3 cases in this season.',
     check: function(s) {
       var ids = ['013','014','015','016','017','018','019','020','021','022','023','024'];
@@ -398,10 +398,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's02_ach03',
-    name:        'Six Files — The Hollow',
+    name:        'Six Files — The Before',
     symbol:      '📚',
-    category:    'Vault 02 — The Hollow',
-    description: 'Solved 6 cases in The Hollow.',
+    category:    'Vault 02 — The Before',
+    description: 'Solved 6 cases in The Before.',
     hint:        'Solve 6 cases in this season.',
     check: function(s) {
       var ids = ['013','014','015','016','017','018','019','020','021','022','023','024'];
@@ -410,10 +410,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's02_ach04',
-    name:        'Nine Files — The Hollow',
+    name:        'Nine Files — The Before',
     symbol:      '🗄',
-    category:    'Vault 02 — The Hollow',
-    description: 'Solved 9 cases in The Hollow.',
+    category:    'Vault 02 — The Before',
+    description: 'Solved 9 cases in The Before.',
     hint:        'Solve 9 cases in this season.',
     check: function(s) {
       var ids = ['013','014','015','016','017','018','019','020','021','022','023','024'];
@@ -422,10 +422,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's02_ach05',
-    name:        'Season Closed — The Hollow',
+    name:        'Season Closed — The Before',
     symbol:      '✅',
-    category:    'Vault 02 — The Hollow',
-    description: 'Solved every case in The Hollow.',
+    category:    'Vault 02 — The Before',
+    description: 'Solved every case in The Before.',
     hint:        'Solve all 12 cases in this season.',
     check: function(s) {
       var ids = ['013','014','015','016','017','018','019','020','021','022','023','024'];
@@ -434,10 +434,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's02_ach06',
-    name:        'Evidence 25% — The Hollow',
+    name:        'Evidence 25% — The Before',
     symbol:      '🧪',
-    category:    'Vault 02 — The Hollow',
-    description: 'Recovered a quarter of the evidence in The Hollow.',
+    category:    'Vault 02 — The Before',
+    description: 'Recovered a quarter of the evidence in The Before.',
     hint:        'Solve 3 cases in this season.',
     check: function(s) {
       var ids = ['013','014','015','016','017','018','019','020','021','022','023','024'];
@@ -446,10 +446,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's02_ach07',
-    name:        'Evidence 50% — The Hollow',
+    name:        'Evidence 50% — The Before',
     symbol:      '🧪',
-    category:    'Vault 02 — The Hollow',
-    description: 'Recovered half the evidence in The Hollow.',
+    category:    'Vault 02 — The Before',
+    description: 'Recovered half the evidence in The Before.',
     hint:        'Solve 6 cases in this season.',
     check: function(s) {
       var ids = ['013','014','015','016','017','018','019','020','021','022','023','024'];
@@ -458,10 +458,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's02_ach08',
-    name:        'Evidence 75% — The Hollow',
+    name:        'Evidence 75% — The Before',
     symbol:      '🧪',
-    category:    'Vault 02 — The Hollow',
-    description: 'Recovered most of the evidence in The Hollow.',
+    category:    'Vault 02 — The Before',
+    description: 'Recovered most of the evidence in The Before.',
     hint:        'Solve 9 cases in this season.',
     check: function(s) {
       var ids = ['013','014','015','016','017','018','019','020','021','022','023','024'];
@@ -470,10 +470,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's02_ach09',
-    name:        'Evidence 100% — The Hollow',
+    name:        'Evidence 100% — The Before',
     symbol:      '🧪',
-    category:    'Vault 02 — The Hollow',
-    description: 'Recovered every piece of evidence in The Hollow.',
+    category:    'Vault 02 — The Before',
+    description: 'Recovered every piece of evidence in The Before.',
     hint:        'Solve all 12 cases in this season.',
     check: function(s) {
       var ids = ['013','014','015','016','017','018','019','020','021','022','023','024'];
@@ -482,10 +482,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's02_ach10',
-    name:        'First Try — The Hollow',
+    name:        'First Try — The Before',
     symbol:      '🎯',
-    category:    'Vault 02 — The Hollow',
-    description: 'Solved every case in The Hollow on the first attempt.',
+    category:    'Vault 02 — The Before',
+    description: 'Solved every case in The Before on the first attempt.',
     hint:        'Solve all cases in this season without a wrong guess.',
     check: function(s) {
       var ids = ['013','014','015','016','017','018','019','020','021','022','023','024'];
@@ -498,10 +498,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's02_ach11',
-    name:        'No Hints — The Hollow',
+    name:        'No Hints — The Before',
     symbol:      '🧠',
-    category:    'Vault 02 — The Hollow',
-    description: 'Completed The Hollow without ever revealing a hint.',
+    category:    'Vault 02 — The Before',
+    description: 'Completed The Before without ever revealing a hint.',
     hint:        'Solve all cases in this season before hints appear (3+ attempts).',
     check: function(s) {
       var ids = ['013','014','015','016','017','018','019','020','021','022','023','024'];
@@ -514,10 +514,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's02_ach12',
-    name:        'Under Time — The Hollow',
+    name:        'Under Time — The Before',
     symbol:      '⏱',
-    category:    'Vault 02 — The Hollow',
-    description: 'Completed The Hollow within a week of the first solve.',
+    category:    'Vault 02 — The Before',
+    description: 'Completed The Before within a week of the first solve.',
     hint:        'Solve all cases in this season within 7 days of the first.',
     check: function(s) {
       var ids = ['013','014','015','016','017','018','019','020','021','022','023','024'];
@@ -531,10 +531,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's02_ach13',
-    name:        'Case Notes Read — The Hollow',
+    name:        'Case Notes Read — The Before',
     symbol:      '📝',
-    category:    'Vault 02 — The Hollow',
-    description: 'Reviewed every incident report in The Hollow.',
+    category:    'Vault 02 — The Before',
+    description: 'Reviewed every incident report in The Before.',
     hint:        'Solve all 12 cases in this season.',
     check: function(s) {
       var ids = ['013','014','015','016','017','018','019','020','021','022','023','024'];
@@ -543,10 +543,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's02_ach14',
-    name:        'Full Playlist — The Hollow',
+    name:        'Full Playlist — The Before',
     symbol:      '🎵',
-    category:    'Vault 02 — The Hollow',
-    description: 'Listened to every recovered recording in The Hollow.',
+    category:    'Vault 02 — The Before',
+    description: 'Listened to every recovered recording in The Before.',
     hint:        'Solve all 12 cases in this season.',
     check: function(s) {
       var ids = ['013','014','015','016','017','018','019','020','021','022','023','024'];
@@ -555,10 +555,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's02_ach15',
-    name:        'Vault Unsealed — The Hollow',
+    name:        'Vault Unsealed — The Before',
     symbol:      '🔓',
-    category:    'Vault 02 — The Hollow',
-    description: 'Unlocked the The Hollow vault.',
+    category:    'Vault 02 — The Before',
+    description: 'Unlocked the The Before vault.',
     hint:        'Solve all 12 cases in this season to unlock its vault.',
     check: function(s) {
       var ids = ['013','014','015','016','017','018','019','020','021','022','023','024'];
@@ -567,10 +567,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's02_ach16',
-    name:        'Perfect Record — The Hollow',
+    name:        'Perfect Record — The Before',
     symbol:      '🏆',
-    category:    'Vault 02 — The Hollow',
-    description: 'Earned every achievement in The Hollow.',
+    category:    'Vault 02 — The Before',
+    description: 'Earned every achievement in The Before.',
     hint:        'Solve every case in this season on the first try, hint-free, within a week.',
     check: function(s) {
       var ids = ['013','014','015','016','017','018','019','020','021','022','023','024'];
@@ -584,13 +584,13 @@ var BADGES_CONFIG = [
     }
   },
 
-  // -- Vault 03 — The Ledger --
+  // -- Vault 03 — The Disappearance --
   {
     id:          's03_ach01',
-    name:        'First File — The Ledger',
+    name:        'First File — The Disappearance',
     symbol:      '📁',
-    category:    'Vault 03 — The Ledger',
-    description: 'Opened the first case of The Ledger.',
+    category:    'Vault 03 — The Disappearance',
+    description: 'Opened the first case of The Disappearance.',
     hint:        'Solve the first case of this season.',
     check: function(s) {
       var ids = ['025','026','027','028','029','030','031','032','033','034','035','036'];
@@ -599,10 +599,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's03_ach02',
-    name:        'Three Files — The Ledger',
+    name:        'Three Files — The Disappearance',
     symbol:      '📂',
-    category:    'Vault 03 — The Ledger',
-    description: 'Solved 3 cases in The Ledger.',
+    category:    'Vault 03 — The Disappearance',
+    description: 'Solved 3 cases in The Disappearance.',
     hint:        'Solve 3 cases in this season.',
     check: function(s) {
       var ids = ['025','026','027','028','029','030','031','032','033','034','035','036'];
@@ -611,10 +611,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's03_ach03',
-    name:        'Six Files — The Ledger',
+    name:        'Six Files — The Disappearance',
     symbol:      '📚',
-    category:    'Vault 03 — The Ledger',
-    description: 'Solved 6 cases in The Ledger.',
+    category:    'Vault 03 — The Disappearance',
+    description: 'Solved 6 cases in The Disappearance.',
     hint:        'Solve 6 cases in this season.',
     check: function(s) {
       var ids = ['025','026','027','028','029','030','031','032','033','034','035','036'];
@@ -623,10 +623,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's03_ach04',
-    name:        'Nine Files — The Ledger',
+    name:        'Nine Files — The Disappearance',
     symbol:      '🗄',
-    category:    'Vault 03 — The Ledger',
-    description: 'Solved 9 cases in The Ledger.',
+    category:    'Vault 03 — The Disappearance',
+    description: 'Solved 9 cases in The Disappearance.',
     hint:        'Solve 9 cases in this season.',
     check: function(s) {
       var ids = ['025','026','027','028','029','030','031','032','033','034','035','036'];
@@ -635,10 +635,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's03_ach05',
-    name:        'Season Closed — The Ledger',
+    name:        'Season Closed — The Disappearance',
     symbol:      '✅',
-    category:    'Vault 03 — The Ledger',
-    description: 'Solved every case in The Ledger.',
+    category:    'Vault 03 — The Disappearance',
+    description: 'Solved every case in The Disappearance.',
     hint:        'Solve all 12 cases in this season.',
     check: function(s) {
       var ids = ['025','026','027','028','029','030','031','032','033','034','035','036'];
@@ -647,10 +647,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's03_ach06',
-    name:        'Evidence 25% — The Ledger',
+    name:        'Evidence 25% — The Disappearance',
     symbol:      '🧪',
-    category:    'Vault 03 — The Ledger',
-    description: 'Recovered a quarter of the evidence in The Ledger.',
+    category:    'Vault 03 — The Disappearance',
+    description: 'Recovered a quarter of the evidence in The Disappearance.',
     hint:        'Solve 3 cases in this season.',
     check: function(s) {
       var ids = ['025','026','027','028','029','030','031','032','033','034','035','036'];
@@ -659,10 +659,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's03_ach07',
-    name:        'Evidence 50% — The Ledger',
+    name:        'Evidence 50% — The Disappearance',
     symbol:      '🧪',
-    category:    'Vault 03 — The Ledger',
-    description: 'Recovered half the evidence in The Ledger.',
+    category:    'Vault 03 — The Disappearance',
+    description: 'Recovered half the evidence in The Disappearance.',
     hint:        'Solve 6 cases in this season.',
     check: function(s) {
       var ids = ['025','026','027','028','029','030','031','032','033','034','035','036'];
@@ -671,10 +671,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's03_ach08',
-    name:        'Evidence 75% — The Ledger',
+    name:        'Evidence 75% — The Disappearance',
     symbol:      '🧪',
-    category:    'Vault 03 — The Ledger',
-    description: 'Recovered most of the evidence in The Ledger.',
+    category:    'Vault 03 — The Disappearance',
+    description: 'Recovered most of the evidence in The Disappearance.',
     hint:        'Solve 9 cases in this season.',
     check: function(s) {
       var ids = ['025','026','027','028','029','030','031','032','033','034','035','036'];
@@ -683,10 +683,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's03_ach09',
-    name:        'Evidence 100% — The Ledger',
+    name:        'Evidence 100% — The Disappearance',
     symbol:      '🧪',
-    category:    'Vault 03 — The Ledger',
-    description: 'Recovered every piece of evidence in The Ledger.',
+    category:    'Vault 03 — The Disappearance',
+    description: 'Recovered every piece of evidence in The Disappearance.',
     hint:        'Solve all 12 cases in this season.',
     check: function(s) {
       var ids = ['025','026','027','028','029','030','031','032','033','034','035','036'];
@@ -695,10 +695,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's03_ach10',
-    name:        'First Try — The Ledger',
+    name:        'First Try — The Disappearance',
     symbol:      '🎯',
-    category:    'Vault 03 — The Ledger',
-    description: 'Solved every case in The Ledger on the first attempt.',
+    category:    'Vault 03 — The Disappearance',
+    description: 'Solved every case in The Disappearance on the first attempt.',
     hint:        'Solve all cases in this season without a wrong guess.',
     check: function(s) {
       var ids = ['025','026','027','028','029','030','031','032','033','034','035','036'];
@@ -711,10 +711,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's03_ach11',
-    name:        'No Hints — The Ledger',
+    name:        'No Hints — The Disappearance',
     symbol:      '🧠',
-    category:    'Vault 03 — The Ledger',
-    description: 'Completed The Ledger without ever revealing a hint.',
+    category:    'Vault 03 — The Disappearance',
+    description: 'Completed The Disappearance without ever revealing a hint.',
     hint:        'Solve all cases in this season before hints appear (3+ attempts).',
     check: function(s) {
       var ids = ['025','026','027','028','029','030','031','032','033','034','035','036'];
@@ -727,10 +727,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's03_ach12',
-    name:        'Under Time — The Ledger',
+    name:        'Under Time — The Disappearance',
     symbol:      '⏱',
-    category:    'Vault 03 — The Ledger',
-    description: 'Completed The Ledger within a week of the first solve.',
+    category:    'Vault 03 — The Disappearance',
+    description: 'Completed The Disappearance within a week of the first solve.',
     hint:        'Solve all cases in this season within 7 days of the first.',
     check: function(s) {
       var ids = ['025','026','027','028','029','030','031','032','033','034','035','036'];
@@ -744,10 +744,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's03_ach13',
-    name:        'Case Notes Read — The Ledger',
+    name:        'Case Notes Read — The Disappearance',
     symbol:      '📝',
-    category:    'Vault 03 — The Ledger',
-    description: 'Reviewed every incident report in The Ledger.',
+    category:    'Vault 03 — The Disappearance',
+    description: 'Reviewed every incident report in The Disappearance.',
     hint:        'Solve all 12 cases in this season.',
     check: function(s) {
       var ids = ['025','026','027','028','029','030','031','032','033','034','035','036'];
@@ -756,10 +756,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's03_ach14',
-    name:        'Full Playlist — The Ledger',
+    name:        'Full Playlist — The Disappearance',
     symbol:      '🎵',
-    category:    'Vault 03 — The Ledger',
-    description: 'Listened to every recovered recording in The Ledger.',
+    category:    'Vault 03 — The Disappearance',
+    description: 'Listened to every recovered recording in The Disappearance.',
     hint:        'Solve all 12 cases in this season.',
     check: function(s) {
       var ids = ['025','026','027','028','029','030','031','032','033','034','035','036'];
@@ -768,10 +768,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's03_ach15',
-    name:        'Vault Unsealed — The Ledger',
+    name:        'Vault Unsealed — The Disappearance',
     symbol:      '🔓',
-    category:    'Vault 03 — The Ledger',
-    description: 'Unlocked the The Ledger vault.',
+    category:    'Vault 03 — The Disappearance',
+    description: 'Unlocked the The Disappearance vault.',
     hint:        'Solve all 12 cases in this season to unlock its vault.',
     check: function(s) {
       var ids = ['025','026','027','028','029','030','031','032','033','034','035','036'];
@@ -780,10 +780,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's03_ach16',
-    name:        'Perfect Record — The Ledger',
+    name:        'Perfect Record — The Disappearance',
     symbol:      '🏆',
-    category:    'Vault 03 — The Ledger',
-    description: 'Earned every achievement in The Ledger.',
+    category:    'Vault 03 — The Disappearance',
+    description: 'Earned every achievement in The Disappearance.',
     hint:        'Solve every case in this season on the first try, hint-free, within a week.',
     check: function(s) {
       var ids = ['025','026','027','028','029','030','031','032','033','034','035','036'];
@@ -797,13 +797,13 @@ var BADGES_CONFIG = [
     }
   },
 
-  // -- Vault 04 — The Signal --
+  // -- Vault 04 — The River Speaks --
   {
     id:          's04_ach01',
-    name:        'First File — The Signal',
+    name:        'First File — The River Speaks',
     symbol:      '📁',
-    category:    'Vault 04 — The Signal',
-    description: 'Opened the first case of The Signal.',
+    category:    'Vault 04 — The River Speaks',
+    description: 'Opened the first case of The River Speaks.',
     hint:        'Solve the first case of this season.',
     check: function(s) {
       var ids = ['037','038','039','040','041','042','043','044','045','046','047','048'];
@@ -812,10 +812,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's04_ach02',
-    name:        'Three Files — The Signal',
+    name:        'Three Files — The River Speaks',
     symbol:      '📂',
-    category:    'Vault 04 — The Signal',
-    description: 'Solved 3 cases in The Signal.',
+    category:    'Vault 04 — The River Speaks',
+    description: 'Solved 3 cases in The River Speaks.',
     hint:        'Solve 3 cases in this season.',
     check: function(s) {
       var ids = ['037','038','039','040','041','042','043','044','045','046','047','048'];
@@ -824,10 +824,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's04_ach03',
-    name:        'Six Files — The Signal',
+    name:        'Six Files — The River Speaks',
     symbol:      '📚',
-    category:    'Vault 04 — The Signal',
-    description: 'Solved 6 cases in The Signal.',
+    category:    'Vault 04 — The River Speaks',
+    description: 'Solved 6 cases in The River Speaks.',
     hint:        'Solve 6 cases in this season.',
     check: function(s) {
       var ids = ['037','038','039','040','041','042','043','044','045','046','047','048'];
@@ -836,10 +836,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's04_ach04',
-    name:        'Nine Files — The Signal',
+    name:        'Nine Files — The River Speaks',
     symbol:      '🗄',
-    category:    'Vault 04 — The Signal',
-    description: 'Solved 9 cases in The Signal.',
+    category:    'Vault 04 — The River Speaks',
+    description: 'Solved 9 cases in The River Speaks.',
     hint:        'Solve 9 cases in this season.',
     check: function(s) {
       var ids = ['037','038','039','040','041','042','043','044','045','046','047','048'];
@@ -848,10 +848,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's04_ach05',
-    name:        'Season Closed — The Signal',
+    name:        'Season Closed — The River Speaks',
     symbol:      '✅',
-    category:    'Vault 04 — The Signal',
-    description: 'Solved every case in The Signal.',
+    category:    'Vault 04 — The River Speaks',
+    description: 'Solved every case in The River Speaks.',
     hint:        'Solve all 12 cases in this season.',
     check: function(s) {
       var ids = ['037','038','039','040','041','042','043','044','045','046','047','048'];
@@ -860,10 +860,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's04_ach06',
-    name:        'Evidence 25% — The Signal',
+    name:        'Evidence 25% — The River Speaks',
     symbol:      '🧪',
-    category:    'Vault 04 — The Signal',
-    description: 'Recovered a quarter of the evidence in The Signal.',
+    category:    'Vault 04 — The River Speaks',
+    description: 'Recovered a quarter of the evidence in The River Speaks.',
     hint:        'Solve 3 cases in this season.',
     check: function(s) {
       var ids = ['037','038','039','040','041','042','043','044','045','046','047','048'];
@@ -872,10 +872,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's04_ach07',
-    name:        'Evidence 50% — The Signal',
+    name:        'Evidence 50% — The River Speaks',
     symbol:      '🧪',
-    category:    'Vault 04 — The Signal',
-    description: 'Recovered half the evidence in The Signal.',
+    category:    'Vault 04 — The River Speaks',
+    description: 'Recovered half the evidence in The River Speaks.',
     hint:        'Solve 6 cases in this season.',
     check: function(s) {
       var ids = ['037','038','039','040','041','042','043','044','045','046','047','048'];
@@ -884,10 +884,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's04_ach08',
-    name:        'Evidence 75% — The Signal',
+    name:        'Evidence 75% — The River Speaks',
     symbol:      '🧪',
-    category:    'Vault 04 — The Signal',
-    description: 'Recovered most of the evidence in The Signal.',
+    category:    'Vault 04 — The River Speaks',
+    description: 'Recovered most of the evidence in The River Speaks.',
     hint:        'Solve 9 cases in this season.',
     check: function(s) {
       var ids = ['037','038','039','040','041','042','043','044','045','046','047','048'];
@@ -896,10 +896,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's04_ach09',
-    name:        'Evidence 100% — The Signal',
+    name:        'Evidence 100% — The River Speaks',
     symbol:      '🧪',
-    category:    'Vault 04 — The Signal',
-    description: 'Recovered every piece of evidence in The Signal.',
+    category:    'Vault 04 — The River Speaks',
+    description: 'Recovered every piece of evidence in The River Speaks.',
     hint:        'Solve all 12 cases in this season.',
     check: function(s) {
       var ids = ['037','038','039','040','041','042','043','044','045','046','047','048'];
@@ -908,10 +908,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's04_ach10',
-    name:        'First Try — The Signal',
+    name:        'First Try — The River Speaks',
     symbol:      '🎯',
-    category:    'Vault 04 — The Signal',
-    description: 'Solved every case in The Signal on the first attempt.',
+    category:    'Vault 04 — The River Speaks',
+    description: 'Solved every case in The River Speaks on the first attempt.',
     hint:        'Solve all cases in this season without a wrong guess.',
     check: function(s) {
       var ids = ['037','038','039','040','041','042','043','044','045','046','047','048'];
@@ -924,10 +924,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's04_ach11',
-    name:        'No Hints — The Signal',
+    name:        'No Hints — The River Speaks',
     symbol:      '🧠',
-    category:    'Vault 04 — The Signal',
-    description: 'Completed The Signal without ever revealing a hint.',
+    category:    'Vault 04 — The River Speaks',
+    description: 'Completed The River Speaks without ever revealing a hint.',
     hint:        'Solve all cases in this season before hints appear (3+ attempts).',
     check: function(s) {
       var ids = ['037','038','039','040','041','042','043','044','045','046','047','048'];
@@ -940,10 +940,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's04_ach12',
-    name:        'Under Time — The Signal',
+    name:        'Under Time — The River Speaks',
     symbol:      '⏱',
-    category:    'Vault 04 — The Signal',
-    description: 'Completed The Signal within a week of the first solve.',
+    category:    'Vault 04 — The River Speaks',
+    description: 'Completed The River Speaks within a week of the first solve.',
     hint:        'Solve all cases in this season within 7 days of the first.',
     check: function(s) {
       var ids = ['037','038','039','040','041','042','043','044','045','046','047','048'];
@@ -957,10 +957,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's04_ach13',
-    name:        'Case Notes Read — The Signal',
+    name:        'Case Notes Read — The River Speaks',
     symbol:      '📝',
-    category:    'Vault 04 — The Signal',
-    description: 'Reviewed every incident report in The Signal.',
+    category:    'Vault 04 — The River Speaks',
+    description: 'Reviewed every incident report in The River Speaks.',
     hint:        'Solve all 12 cases in this season.',
     check: function(s) {
       var ids = ['037','038','039','040','041','042','043','044','045','046','047','048'];
@@ -969,10 +969,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's04_ach14',
-    name:        'Full Playlist — The Signal',
+    name:        'Full Playlist — The River Speaks',
     symbol:      '🎵',
-    category:    'Vault 04 — The Signal',
-    description: 'Listened to every recovered recording in The Signal.',
+    category:    'Vault 04 — The River Speaks',
+    description: 'Listened to every recovered recording in The River Speaks.',
     hint:        'Solve all 12 cases in this season.',
     check: function(s) {
       var ids = ['037','038','039','040','041','042','043','044','045','046','047','048'];
@@ -981,10 +981,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's04_ach15',
-    name:        'Vault Unsealed — The Signal',
+    name:        'Vault Unsealed — The River Speaks',
     symbol:      '🔓',
-    category:    'Vault 04 — The Signal',
-    description: 'Unlocked the The Signal vault.',
+    category:    'Vault 04 — The River Speaks',
+    description: 'Unlocked the The River Speaks vault.',
     hint:        'Solve all 12 cases in this season to unlock its vault.',
     check: function(s) {
       var ids = ['037','038','039','040','041','042','043','044','045','046','047','048'];
@@ -993,10 +993,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's04_ach16',
-    name:        'Perfect Record — The Signal',
+    name:        'Perfect Record — The River Speaks',
     symbol:      '🏆',
-    category:    'Vault 04 — The Signal',
-    description: 'Earned every achievement in The Signal.',
+    category:    'Vault 04 — The River Speaks',
+    description: 'Earned every achievement in The River Speaks.',
     hint:        'Solve every case in this season on the first try, hint-free, within a week.',
     check: function(s) {
       var ids = ['037','038','039','040','041','042','043','044','045','046','047','048'];
@@ -1010,13 +1010,13 @@ var BADGES_CONFIG = [
     }
   },
 
-  // -- Vault 05 — The Widow --
+  // -- Vault 05 — The Last Winter --
   {
     id:          's05_ach01',
-    name:        'First File — The Widow',
+    name:        'First File — The Last Winter',
     symbol:      '📁',
-    category:    'Vault 05 — The Widow',
-    description: 'Opened the first case of The Widow.',
+    category:    'Vault 05 — The Last Winter',
+    description: 'Opened the first case of The Last Winter.',
     hint:        'Solve the first case of this season.',
     check: function(s) {
       var ids = ['049','050','051','052','053','054','055','056','057','058','059','060'];
@@ -1025,10 +1025,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's05_ach02',
-    name:        'Three Files — The Widow',
+    name:        'Three Files — The Last Winter',
     symbol:      '📂',
-    category:    'Vault 05 — The Widow',
-    description: 'Solved 3 cases in The Widow.',
+    category:    'Vault 05 — The Last Winter',
+    description: 'Solved 3 cases in The Last Winter.',
     hint:        'Solve 3 cases in this season.',
     check: function(s) {
       var ids = ['049','050','051','052','053','054','055','056','057','058','059','060'];
@@ -1037,10 +1037,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's05_ach03',
-    name:        'Six Files — The Widow',
+    name:        'Six Files — The Last Winter',
     symbol:      '📚',
-    category:    'Vault 05 — The Widow',
-    description: 'Solved 6 cases in The Widow.',
+    category:    'Vault 05 — The Last Winter',
+    description: 'Solved 6 cases in The Last Winter.',
     hint:        'Solve 6 cases in this season.',
     check: function(s) {
       var ids = ['049','050','051','052','053','054','055','056','057','058','059','060'];
@@ -1049,10 +1049,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's05_ach04',
-    name:        'Nine Files — The Widow',
+    name:        'Nine Files — The Last Winter',
     symbol:      '🗄',
-    category:    'Vault 05 — The Widow',
-    description: 'Solved 9 cases in The Widow.',
+    category:    'Vault 05 — The Last Winter',
+    description: 'Solved 9 cases in The Last Winter.',
     hint:        'Solve 9 cases in this season.',
     check: function(s) {
       var ids = ['049','050','051','052','053','054','055','056','057','058','059','060'];
@@ -1061,10 +1061,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's05_ach05',
-    name:        'Season Closed — The Widow',
+    name:        'Season Closed — The Last Winter',
     symbol:      '✅',
-    category:    'Vault 05 — The Widow',
-    description: 'Solved every case in The Widow.',
+    category:    'Vault 05 — The Last Winter',
+    description: 'Solved every case in The Last Winter.',
     hint:        'Solve all 12 cases in this season.',
     check: function(s) {
       var ids = ['049','050','051','052','053','054','055','056','057','058','059','060'];
@@ -1073,10 +1073,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's05_ach06',
-    name:        'Evidence 25% — The Widow',
+    name:        'Evidence 25% — The Last Winter',
     symbol:      '🧪',
-    category:    'Vault 05 — The Widow',
-    description: 'Recovered a quarter of the evidence in The Widow.',
+    category:    'Vault 05 — The Last Winter',
+    description: 'Recovered a quarter of the evidence in The Last Winter.',
     hint:        'Solve 3 cases in this season.',
     check: function(s) {
       var ids = ['049','050','051','052','053','054','055','056','057','058','059','060'];
@@ -1085,10 +1085,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's05_ach07',
-    name:        'Evidence 50% — The Widow',
+    name:        'Evidence 50% — The Last Winter',
     symbol:      '🧪',
-    category:    'Vault 05 — The Widow',
-    description: 'Recovered half the evidence in The Widow.',
+    category:    'Vault 05 — The Last Winter',
+    description: 'Recovered half the evidence in The Last Winter.',
     hint:        'Solve 6 cases in this season.',
     check: function(s) {
       var ids = ['049','050','051','052','053','054','055','056','057','058','059','060'];
@@ -1097,10 +1097,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's05_ach08',
-    name:        'Evidence 75% — The Widow',
+    name:        'Evidence 75% — The Last Winter',
     symbol:      '🧪',
-    category:    'Vault 05 — The Widow',
-    description: 'Recovered most of the evidence in The Widow.',
+    category:    'Vault 05 — The Last Winter',
+    description: 'Recovered most of the evidence in The Last Winter.',
     hint:        'Solve 9 cases in this season.',
     check: function(s) {
       var ids = ['049','050','051','052','053','054','055','056','057','058','059','060'];
@@ -1109,10 +1109,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's05_ach09',
-    name:        'Evidence 100% — The Widow',
+    name:        'Evidence 100% — The Last Winter',
     symbol:      '🧪',
-    category:    'Vault 05 — The Widow',
-    description: 'Recovered every piece of evidence in The Widow.',
+    category:    'Vault 05 — The Last Winter',
+    description: 'Recovered every piece of evidence in The Last Winter.',
     hint:        'Solve all 12 cases in this season.',
     check: function(s) {
       var ids = ['049','050','051','052','053','054','055','056','057','058','059','060'];
@@ -1121,10 +1121,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's05_ach10',
-    name:        'First Try — The Widow',
+    name:        'First Try — The Last Winter',
     symbol:      '🎯',
-    category:    'Vault 05 — The Widow',
-    description: 'Solved every case in The Widow on the first attempt.',
+    category:    'Vault 05 — The Last Winter',
+    description: 'Solved every case in The Last Winter on the first attempt.',
     hint:        'Solve all cases in this season without a wrong guess.',
     check: function(s) {
       var ids = ['049','050','051','052','053','054','055','056','057','058','059','060'];
@@ -1137,10 +1137,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's05_ach11',
-    name:        'No Hints — The Widow',
+    name:        'No Hints — The Last Winter',
     symbol:      '🧠',
-    category:    'Vault 05 — The Widow',
-    description: 'Completed The Widow without ever revealing a hint.',
+    category:    'Vault 05 — The Last Winter',
+    description: 'Completed The Last Winter without ever revealing a hint.',
     hint:        'Solve all cases in this season before hints appear (3+ attempts).',
     check: function(s) {
       var ids = ['049','050','051','052','053','054','055','056','057','058','059','060'];
@@ -1153,10 +1153,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's05_ach12',
-    name:        'Under Time — The Widow',
+    name:        'Under Time — The Last Winter',
     symbol:      '⏱',
-    category:    'Vault 05 — The Widow',
-    description: 'Completed The Widow within a week of the first solve.',
+    category:    'Vault 05 — The Last Winter',
+    description: 'Completed The Last Winter within a week of the first solve.',
     hint:        'Solve all cases in this season within 7 days of the first.',
     check: function(s) {
       var ids = ['049','050','051','052','053','054','055','056','057','058','059','060'];
@@ -1170,10 +1170,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's05_ach13',
-    name:        'Case Notes Read — The Widow',
+    name:        'Case Notes Read — The Last Winter',
     symbol:      '📝',
-    category:    'Vault 05 — The Widow',
-    description: 'Reviewed every incident report in The Widow.',
+    category:    'Vault 05 — The Last Winter',
+    description: 'Reviewed every incident report in The Last Winter.',
     hint:        'Solve all 12 cases in this season.',
     check: function(s) {
       var ids = ['049','050','051','052','053','054','055','056','057','058','059','060'];
@@ -1182,10 +1182,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's05_ach14',
-    name:        'Full Playlist — The Widow',
+    name:        'Full Playlist — The Last Winter',
     symbol:      '🎵',
-    category:    'Vault 05 — The Widow',
-    description: 'Listened to every recovered recording in The Widow.',
+    category:    'Vault 05 — The Last Winter',
+    description: 'Listened to every recovered recording in The Last Winter.',
     hint:        'Solve all 12 cases in this season.',
     check: function(s) {
       var ids = ['049','050','051','052','053','054','055','056','057','058','059','060'];
@@ -1194,10 +1194,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's05_ach15',
-    name:        'Vault Unsealed — The Widow',
+    name:        'Vault Unsealed — The Last Winter',
     symbol:      '🔓',
-    category:    'Vault 05 — The Widow',
-    description: 'Unlocked the The Widow vault.',
+    category:    'Vault 05 — The Last Winter',
+    description: 'Unlocked the The Last Winter vault.',
     hint:        'Solve all 12 cases in this season to unlock its vault.',
     check: function(s) {
       var ids = ['049','050','051','052','053','054','055','056','057','058','059','060'];
@@ -1206,10 +1206,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's05_ach16',
-    name:        'Perfect Record — The Widow',
+    name:        'Perfect Record — The Last Winter',
     symbol:      '🏆',
-    category:    'Vault 05 — The Widow',
-    description: 'Earned every achievement in The Widow.',
+    category:    'Vault 05 — The Last Winter',
+    description: 'Earned every achievement in The Last Winter.',
     hint:        'Solve every case in this season on the first try, hint-free, within a week.',
     check: function(s) {
       var ids = ['049','050','051','052','053','054','055','056','057','058','059','060'];
@@ -1223,13 +1223,13 @@ var BADGES_CONFIG = [
     }
   },
 
-  // -- Vault 06 — The Orchard --
+  // -- Vault 06 — The Underground --
   {
     id:          's06_ach01',
-    name:        'First File — The Orchard',
+    name:        'First File — The Underground',
     symbol:      '📁',
-    category:    'Vault 06 — The Orchard',
-    description: 'Opened the first case of The Orchard.',
+    category:    'Vault 06 — The Underground',
+    description: 'Opened the first case of The Underground.',
     hint:        'Solve the first case of this season.',
     check: function(s) {
       var ids = ['061','062','063','064','065','066','067','068','069','070','071','072'];
@@ -1238,10 +1238,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's06_ach02',
-    name:        'Three Files — The Orchard',
+    name:        'Three Files — The Underground',
     symbol:      '📂',
-    category:    'Vault 06 — The Orchard',
-    description: 'Solved 3 cases in The Orchard.',
+    category:    'Vault 06 — The Underground',
+    description: 'Solved 3 cases in The Underground.',
     hint:        'Solve 3 cases in this season.',
     check: function(s) {
       var ids = ['061','062','063','064','065','066','067','068','069','070','071','072'];
@@ -1250,10 +1250,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's06_ach03',
-    name:        'Six Files — The Orchard',
+    name:        'Six Files — The Underground',
     symbol:      '📚',
-    category:    'Vault 06 — The Orchard',
-    description: 'Solved 6 cases in The Orchard.',
+    category:    'Vault 06 — The Underground',
+    description: 'Solved 6 cases in The Underground.',
     hint:        'Solve 6 cases in this season.',
     check: function(s) {
       var ids = ['061','062','063','064','065','066','067','068','069','070','071','072'];
@@ -1262,10 +1262,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's06_ach04',
-    name:        'Nine Files — The Orchard',
+    name:        'Nine Files — The Underground',
     symbol:      '🗄',
-    category:    'Vault 06 — The Orchard',
-    description: 'Solved 9 cases in The Orchard.',
+    category:    'Vault 06 — The Underground',
+    description: 'Solved 9 cases in The Underground.',
     hint:        'Solve 9 cases in this season.',
     check: function(s) {
       var ids = ['061','062','063','064','065','066','067','068','069','070','071','072'];
@@ -1274,10 +1274,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's06_ach05',
-    name:        'Season Closed — The Orchard',
+    name:        'Season Closed — The Underground',
     symbol:      '✅',
-    category:    'Vault 06 — The Orchard',
-    description: 'Solved every case in The Orchard.',
+    category:    'Vault 06 — The Underground',
+    description: 'Solved every case in The Underground.',
     hint:        'Solve all 12 cases in this season.',
     check: function(s) {
       var ids = ['061','062','063','064','065','066','067','068','069','070','071','072'];
@@ -1286,10 +1286,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's06_ach06',
-    name:        'Evidence 25% — The Orchard',
+    name:        'Evidence 25% — The Underground',
     symbol:      '🧪',
-    category:    'Vault 06 — The Orchard',
-    description: 'Recovered a quarter of the evidence in The Orchard.',
+    category:    'Vault 06 — The Underground',
+    description: 'Recovered a quarter of the evidence in The Underground.',
     hint:        'Solve 3 cases in this season.',
     check: function(s) {
       var ids = ['061','062','063','064','065','066','067','068','069','070','071','072'];
@@ -1298,10 +1298,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's06_ach07',
-    name:        'Evidence 50% — The Orchard',
+    name:        'Evidence 50% — The Underground',
     symbol:      '🧪',
-    category:    'Vault 06 — The Orchard',
-    description: 'Recovered half the evidence in The Orchard.',
+    category:    'Vault 06 — The Underground',
+    description: 'Recovered half the evidence in The Underground.',
     hint:        'Solve 6 cases in this season.',
     check: function(s) {
       var ids = ['061','062','063','064','065','066','067','068','069','070','071','072'];
@@ -1310,10 +1310,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's06_ach08',
-    name:        'Evidence 75% — The Orchard',
+    name:        'Evidence 75% — The Underground',
     symbol:      '🧪',
-    category:    'Vault 06 — The Orchard',
-    description: 'Recovered most of the evidence in The Orchard.',
+    category:    'Vault 06 — The Underground',
+    description: 'Recovered most of the evidence in The Underground.',
     hint:        'Solve 9 cases in this season.',
     check: function(s) {
       var ids = ['061','062','063','064','065','066','067','068','069','070','071','072'];
@@ -1322,10 +1322,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's06_ach09',
-    name:        'Evidence 100% — The Orchard',
+    name:        'Evidence 100% — The Underground',
     symbol:      '🧪',
-    category:    'Vault 06 — The Orchard',
-    description: 'Recovered every piece of evidence in The Orchard.',
+    category:    'Vault 06 — The Underground',
+    description: 'Recovered every piece of evidence in The Underground.',
     hint:        'Solve all 12 cases in this season.',
     check: function(s) {
       var ids = ['061','062','063','064','065','066','067','068','069','070','071','072'];
@@ -1334,10 +1334,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's06_ach10',
-    name:        'First Try — The Orchard',
+    name:        'First Try — The Underground',
     symbol:      '🎯',
-    category:    'Vault 06 — The Orchard',
-    description: 'Solved every case in The Orchard on the first attempt.',
+    category:    'Vault 06 — The Underground',
+    description: 'Solved every case in The Underground on the first attempt.',
     hint:        'Solve all cases in this season without a wrong guess.',
     check: function(s) {
       var ids = ['061','062','063','064','065','066','067','068','069','070','071','072'];
@@ -1350,10 +1350,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's06_ach11',
-    name:        'No Hints — The Orchard',
+    name:        'No Hints — The Underground',
     symbol:      '🧠',
-    category:    'Vault 06 — The Orchard',
-    description: 'Completed The Orchard without ever revealing a hint.',
+    category:    'Vault 06 — The Underground',
+    description: 'Completed The Underground without ever revealing a hint.',
     hint:        'Solve all cases in this season before hints appear (3+ attempts).',
     check: function(s) {
       var ids = ['061','062','063','064','065','066','067','068','069','070','071','072'];
@@ -1366,10 +1366,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's06_ach12',
-    name:        'Under Time — The Orchard',
+    name:        'Under Time — The Underground',
     symbol:      '⏱',
-    category:    'Vault 06 — The Orchard',
-    description: 'Completed The Orchard within a week of the first solve.',
+    category:    'Vault 06 — The Underground',
+    description: 'Completed The Underground within a week of the first solve.',
     hint:        'Solve all cases in this season within 7 days of the first.',
     check: function(s) {
       var ids = ['061','062','063','064','065','066','067','068','069','070','071','072'];
@@ -1383,10 +1383,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's06_ach13',
-    name:        'Case Notes Read — The Orchard',
+    name:        'Case Notes Read — The Underground',
     symbol:      '📝',
-    category:    'Vault 06 — The Orchard',
-    description: 'Reviewed every incident report in The Orchard.',
+    category:    'Vault 06 — The Underground',
+    description: 'Reviewed every incident report in The Underground.',
     hint:        'Solve all 12 cases in this season.',
     check: function(s) {
       var ids = ['061','062','063','064','065','066','067','068','069','070','071','072'];
@@ -1395,10 +1395,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's06_ach14',
-    name:        'Full Playlist — The Orchard',
+    name:        'Full Playlist — The Underground',
     symbol:      '🎵',
-    category:    'Vault 06 — The Orchard',
-    description: 'Listened to every recovered recording in The Orchard.',
+    category:    'Vault 06 — The Underground',
+    description: 'Listened to every recovered recording in The Underground.',
     hint:        'Solve all 12 cases in this season.',
     check: function(s) {
       var ids = ['061','062','063','064','065','066','067','068','069','070','071','072'];
@@ -1407,10 +1407,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's06_ach15',
-    name:        'Vault Unsealed — The Orchard',
+    name:        'Vault Unsealed — The Underground',
     symbol:      '🔓',
-    category:    'Vault 06 — The Orchard',
-    description: 'Unlocked the The Orchard vault.',
+    category:    'Vault 06 — The Underground',
+    description: 'Unlocked the The Underground vault.',
     hint:        'Solve all 12 cases in this season to unlock its vault.',
     check: function(s) {
       var ids = ['061','062','063','064','065','066','067','068','069','070','071','072'];
@@ -1419,10 +1419,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's06_ach16',
-    name:        'Perfect Record — The Orchard',
+    name:        'Perfect Record — The Underground',
     symbol:      '🏆',
-    category:    'Vault 06 — The Orchard',
-    description: 'Earned every achievement in The Orchard.',
+    category:    'Vault 06 — The Underground',
+    description: 'Earned every achievement in The Underground.',
     hint:        'Solve every case in this season on the first try, hint-free, within a week.',
     check: function(s) {
       var ids = ['061','062','063','064','065','066','067','068','069','070','071','072'];
@@ -1436,13 +1436,13 @@ var BADGES_CONFIG = [
     }
   },
 
-  // -- Vault 07 — The Bell --
+  // -- Vault 07 — The Second Family --
   {
     id:          's07_ach01',
-    name:        'First File — The Bell',
+    name:        'First File — The Second Family',
     symbol:      '📁',
-    category:    'Vault 07 — The Bell',
-    description: 'Opened the first case of The Bell.',
+    category:    'Vault 07 — The Second Family',
+    description: 'Opened the first case of The Second Family.',
     hint:        'Solve the first case of this season.',
     check: function(s) {
       var ids = ['073','074','075','076','077','078','079','080','081','082','083','084'];
@@ -1451,10 +1451,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's07_ach02',
-    name:        'Three Files — The Bell',
+    name:        'Three Files — The Second Family',
     symbol:      '📂',
-    category:    'Vault 07 — The Bell',
-    description: 'Solved 3 cases in The Bell.',
+    category:    'Vault 07 — The Second Family',
+    description: 'Solved 3 cases in The Second Family.',
     hint:        'Solve 3 cases in this season.',
     check: function(s) {
       var ids = ['073','074','075','076','077','078','079','080','081','082','083','084'];
@@ -1463,10 +1463,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's07_ach03',
-    name:        'Six Files — The Bell',
+    name:        'Six Files — The Second Family',
     symbol:      '📚',
-    category:    'Vault 07 — The Bell',
-    description: 'Solved 6 cases in The Bell.',
+    category:    'Vault 07 — The Second Family',
+    description: 'Solved 6 cases in The Second Family.',
     hint:        'Solve 6 cases in this season.',
     check: function(s) {
       var ids = ['073','074','075','076','077','078','079','080','081','082','083','084'];
@@ -1475,10 +1475,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's07_ach04',
-    name:        'Nine Files — The Bell',
+    name:        'Nine Files — The Second Family',
     symbol:      '🗄',
-    category:    'Vault 07 — The Bell',
-    description: 'Solved 9 cases in The Bell.',
+    category:    'Vault 07 — The Second Family',
+    description: 'Solved 9 cases in The Second Family.',
     hint:        'Solve 9 cases in this season.',
     check: function(s) {
       var ids = ['073','074','075','076','077','078','079','080','081','082','083','084'];
@@ -1487,10 +1487,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's07_ach05',
-    name:        'Season Closed — The Bell',
+    name:        'Season Closed — The Second Family',
     symbol:      '✅',
-    category:    'Vault 07 — The Bell',
-    description: 'Solved every case in The Bell.',
+    category:    'Vault 07 — The Second Family',
+    description: 'Solved every case in The Second Family.',
     hint:        'Solve all 12 cases in this season.',
     check: function(s) {
       var ids = ['073','074','075','076','077','078','079','080','081','082','083','084'];
@@ -1499,10 +1499,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's07_ach06',
-    name:        'Evidence 25% — The Bell',
+    name:        'Evidence 25% — The Second Family',
     symbol:      '🧪',
-    category:    'Vault 07 — The Bell',
-    description: 'Recovered a quarter of the evidence in The Bell.',
+    category:    'Vault 07 — The Second Family',
+    description: 'Recovered a quarter of the evidence in The Second Family.',
     hint:        'Solve 3 cases in this season.',
     check: function(s) {
       var ids = ['073','074','075','076','077','078','079','080','081','082','083','084'];
@@ -1511,10 +1511,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's07_ach07',
-    name:        'Evidence 50% — The Bell',
+    name:        'Evidence 50% — The Second Family',
     symbol:      '🧪',
-    category:    'Vault 07 — The Bell',
-    description: 'Recovered half the evidence in The Bell.',
+    category:    'Vault 07 — The Second Family',
+    description: 'Recovered half the evidence in The Second Family.',
     hint:        'Solve 6 cases in this season.',
     check: function(s) {
       var ids = ['073','074','075','076','077','078','079','080','081','082','083','084'];
@@ -1523,10 +1523,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's07_ach08',
-    name:        'Evidence 75% — The Bell',
+    name:        'Evidence 75% — The Second Family',
     symbol:      '🧪',
-    category:    'Vault 07 — The Bell',
-    description: 'Recovered most of the evidence in The Bell.',
+    category:    'Vault 07 — The Second Family',
+    description: 'Recovered most of the evidence in The Second Family.',
     hint:        'Solve 9 cases in this season.',
     check: function(s) {
       var ids = ['073','074','075','076','077','078','079','080','081','082','083','084'];
@@ -1535,10 +1535,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's07_ach09',
-    name:        'Evidence 100% — The Bell',
+    name:        'Evidence 100% — The Second Family',
     symbol:      '🧪',
-    category:    'Vault 07 — The Bell',
-    description: 'Recovered every piece of evidence in The Bell.',
+    category:    'Vault 07 — The Second Family',
+    description: 'Recovered every piece of evidence in The Second Family.',
     hint:        'Solve all 12 cases in this season.',
     check: function(s) {
       var ids = ['073','074','075','076','077','078','079','080','081','082','083','084'];
@@ -1547,10 +1547,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's07_ach10',
-    name:        'First Try — The Bell',
+    name:        'First Try — The Second Family',
     symbol:      '🎯',
-    category:    'Vault 07 — The Bell',
-    description: 'Solved every case in The Bell on the first attempt.',
+    category:    'Vault 07 — The Second Family',
+    description: 'Solved every case in The Second Family on the first attempt.',
     hint:        'Solve all cases in this season without a wrong guess.',
     check: function(s) {
       var ids = ['073','074','075','076','077','078','079','080','081','082','083','084'];
@@ -1563,10 +1563,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's07_ach11',
-    name:        'No Hints — The Bell',
+    name:        'No Hints — The Second Family',
     symbol:      '🧠',
-    category:    'Vault 07 — The Bell',
-    description: 'Completed The Bell without ever revealing a hint.',
+    category:    'Vault 07 — The Second Family',
+    description: 'Completed The Second Family without ever revealing a hint.',
     hint:        'Solve all cases in this season before hints appear (3+ attempts).',
     check: function(s) {
       var ids = ['073','074','075','076','077','078','079','080','081','082','083','084'];
@@ -1579,10 +1579,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's07_ach12',
-    name:        'Under Time — The Bell',
+    name:        'Under Time — The Second Family',
     symbol:      '⏱',
-    category:    'Vault 07 — The Bell',
-    description: 'Completed The Bell within a week of the first solve.',
+    category:    'Vault 07 — The Second Family',
+    description: 'Completed The Second Family within a week of the first solve.',
     hint:        'Solve all cases in this season within 7 days of the first.',
     check: function(s) {
       var ids = ['073','074','075','076','077','078','079','080','081','082','083','084'];
@@ -1596,10 +1596,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's07_ach13',
-    name:        'Case Notes Read — The Bell',
+    name:        'Case Notes Read — The Second Family',
     symbol:      '📝',
-    category:    'Vault 07 — The Bell',
-    description: 'Reviewed every incident report in The Bell.',
+    category:    'Vault 07 — The Second Family',
+    description: 'Reviewed every incident report in The Second Family.',
     hint:        'Solve all 12 cases in this season.',
     check: function(s) {
       var ids = ['073','074','075','076','077','078','079','080','081','082','083','084'];
@@ -1608,10 +1608,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's07_ach14',
-    name:        'Full Playlist — The Bell',
+    name:        'Full Playlist — The Second Family',
     symbol:      '🎵',
-    category:    'Vault 07 — The Bell',
-    description: 'Listened to every recovered recording in The Bell.',
+    category:    'Vault 07 — The Second Family',
+    description: 'Listened to every recovered recording in The Second Family.',
     hint:        'Solve all 12 cases in this season.',
     check: function(s) {
       var ids = ['073','074','075','076','077','078','079','080','081','082','083','084'];
@@ -1620,10 +1620,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's07_ach15',
-    name:        'Vault Unsealed — The Bell',
+    name:        'Vault Unsealed — The Second Family',
     symbol:      '🔓',
-    category:    'Vault 07 — The Bell',
-    description: 'Unlocked the The Bell vault.',
+    category:    'Vault 07 — The Second Family',
+    description: 'Unlocked the The Second Family vault.',
     hint:        'Solve all 12 cases in this season to unlock its vault.',
     check: function(s) {
       var ids = ['073','074','075','076','077','078','079','080','081','082','083','084'];
@@ -1632,10 +1632,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's07_ach16',
-    name:        'Perfect Record — The Bell',
+    name:        'Perfect Record — The Second Family',
     symbol:      '🏆',
-    category:    'Vault 07 — The Bell',
-    description: 'Earned every achievement in The Bell.',
+    category:    'Vault 07 — The Second Family',
+    description: 'Earned every achievement in The Second Family.',
     hint:        'Solve every case in this season on the first try, hint-free, within a week.',
     check: function(s) {
       var ids = ['073','074','075','076','077','078','079','080','081','082','083','084'];
@@ -1649,13 +1649,13 @@ var BADGES_CONFIG = [
     }
   },
 
-  // -- Vault 08 — The Crossing --
+  // -- Vault 08 — The Fire Year --
   {
     id:          's08_ach01',
-    name:        'First File — The Crossing',
+    name:        'First File — The Fire Year',
     symbol:      '📁',
-    category:    'Vault 08 — The Crossing',
-    description: 'Opened the first case of The Crossing.',
+    category:    'Vault 08 — The Fire Year',
+    description: 'Opened the first case of The Fire Year.',
     hint:        'Solve the first case of this season.',
     check: function(s) {
       var ids = ['085','086','087','088','089','090','091','092','093','094','095','096'];
@@ -1664,10 +1664,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's08_ach02',
-    name:        'Three Files — The Crossing',
+    name:        'Three Files — The Fire Year',
     symbol:      '📂',
-    category:    'Vault 08 — The Crossing',
-    description: 'Solved 3 cases in The Crossing.',
+    category:    'Vault 08 — The Fire Year',
+    description: 'Solved 3 cases in The Fire Year.',
     hint:        'Solve 3 cases in this season.',
     check: function(s) {
       var ids = ['085','086','087','088','089','090','091','092','093','094','095','096'];
@@ -1676,10 +1676,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's08_ach03',
-    name:        'Six Files — The Crossing',
+    name:        'Six Files — The Fire Year',
     symbol:      '📚',
-    category:    'Vault 08 — The Crossing',
-    description: 'Solved 6 cases in The Crossing.',
+    category:    'Vault 08 — The Fire Year',
+    description: 'Solved 6 cases in The Fire Year.',
     hint:        'Solve 6 cases in this season.',
     check: function(s) {
       var ids = ['085','086','087','088','089','090','091','092','093','094','095','096'];
@@ -1688,10 +1688,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's08_ach04',
-    name:        'Nine Files — The Crossing',
+    name:        'Nine Files — The Fire Year',
     symbol:      '🗄',
-    category:    'Vault 08 — The Crossing',
-    description: 'Solved 9 cases in The Crossing.',
+    category:    'Vault 08 — The Fire Year',
+    description: 'Solved 9 cases in The Fire Year.',
     hint:        'Solve 9 cases in this season.',
     check: function(s) {
       var ids = ['085','086','087','088','089','090','091','092','093','094','095','096'];
@@ -1700,10 +1700,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's08_ach05',
-    name:        'Season Closed — The Crossing',
+    name:        'Season Closed — The Fire Year',
     symbol:      '✅',
-    category:    'Vault 08 — The Crossing',
-    description: 'Solved every case in The Crossing.',
+    category:    'Vault 08 — The Fire Year',
+    description: 'Solved every case in The Fire Year.',
     hint:        'Solve all 12 cases in this season.',
     check: function(s) {
       var ids = ['085','086','087','088','089','090','091','092','093','094','095','096'];
@@ -1712,10 +1712,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's08_ach06',
-    name:        'Evidence 25% — The Crossing',
+    name:        'Evidence 25% — The Fire Year',
     symbol:      '🧪',
-    category:    'Vault 08 — The Crossing',
-    description: 'Recovered a quarter of the evidence in The Crossing.',
+    category:    'Vault 08 — The Fire Year',
+    description: 'Recovered a quarter of the evidence in The Fire Year.',
     hint:        'Solve 3 cases in this season.',
     check: function(s) {
       var ids = ['085','086','087','088','089','090','091','092','093','094','095','096'];
@@ -1724,10 +1724,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's08_ach07',
-    name:        'Evidence 50% — The Crossing',
+    name:        'Evidence 50% — The Fire Year',
     symbol:      '🧪',
-    category:    'Vault 08 — The Crossing',
-    description: 'Recovered half the evidence in The Crossing.',
+    category:    'Vault 08 — The Fire Year',
+    description: 'Recovered half the evidence in The Fire Year.',
     hint:        'Solve 6 cases in this season.',
     check: function(s) {
       var ids = ['085','086','087','088','089','090','091','092','093','094','095','096'];
@@ -1736,10 +1736,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's08_ach08',
-    name:        'Evidence 75% — The Crossing',
+    name:        'Evidence 75% — The Fire Year',
     symbol:      '🧪',
-    category:    'Vault 08 — The Crossing',
-    description: 'Recovered most of the evidence in The Crossing.',
+    category:    'Vault 08 — The Fire Year',
+    description: 'Recovered most of the evidence in The Fire Year.',
     hint:        'Solve 9 cases in this season.',
     check: function(s) {
       var ids = ['085','086','087','088','089','090','091','092','093','094','095','096'];
@@ -1748,10 +1748,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's08_ach09',
-    name:        'Evidence 100% — The Crossing',
+    name:        'Evidence 100% — The Fire Year',
     symbol:      '🧪',
-    category:    'Vault 08 — The Crossing',
-    description: 'Recovered every piece of evidence in The Crossing.',
+    category:    'Vault 08 — The Fire Year',
+    description: 'Recovered every piece of evidence in The Fire Year.',
     hint:        'Solve all 12 cases in this season.',
     check: function(s) {
       var ids = ['085','086','087','088','089','090','091','092','093','094','095','096'];
@@ -1760,10 +1760,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's08_ach10',
-    name:        'First Try — The Crossing',
+    name:        'First Try — The Fire Year',
     symbol:      '🎯',
-    category:    'Vault 08 — The Crossing',
-    description: 'Solved every case in The Crossing on the first attempt.',
+    category:    'Vault 08 — The Fire Year',
+    description: 'Solved every case in The Fire Year on the first attempt.',
     hint:        'Solve all cases in this season without a wrong guess.',
     check: function(s) {
       var ids = ['085','086','087','088','089','090','091','092','093','094','095','096'];
@@ -1776,10 +1776,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's08_ach11',
-    name:        'No Hints — The Crossing',
+    name:        'No Hints — The Fire Year',
     symbol:      '🧠',
-    category:    'Vault 08 — The Crossing',
-    description: 'Completed The Crossing without ever revealing a hint.',
+    category:    'Vault 08 — The Fire Year',
+    description: 'Completed The Fire Year without ever revealing a hint.',
     hint:        'Solve all cases in this season before hints appear (3+ attempts).',
     check: function(s) {
       var ids = ['085','086','087','088','089','090','091','092','093','094','095','096'];
@@ -1792,10 +1792,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's08_ach12',
-    name:        'Under Time — The Crossing',
+    name:        'Under Time — The Fire Year',
     symbol:      '⏱',
-    category:    'Vault 08 — The Crossing',
-    description: 'Completed The Crossing within a week of the first solve.',
+    category:    'Vault 08 — The Fire Year',
+    description: 'Completed The Fire Year within a week of the first solve.',
     hint:        'Solve all cases in this season within 7 days of the first.',
     check: function(s) {
       var ids = ['085','086','087','088','089','090','091','092','093','094','095','096'];
@@ -1809,10 +1809,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's08_ach13',
-    name:        'Case Notes Read — The Crossing',
+    name:        'Case Notes Read — The Fire Year',
     symbol:      '📝',
-    category:    'Vault 08 — The Crossing',
-    description: 'Reviewed every incident report in The Crossing.',
+    category:    'Vault 08 — The Fire Year',
+    description: 'Reviewed every incident report in The Fire Year.',
     hint:        'Solve all 12 cases in this season.',
     check: function(s) {
       var ids = ['085','086','087','088','089','090','091','092','093','094','095','096'];
@@ -1821,10 +1821,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's08_ach14',
-    name:        'Full Playlist — The Crossing',
+    name:        'Full Playlist — The Fire Year',
     symbol:      '🎵',
-    category:    'Vault 08 — The Crossing',
-    description: 'Listened to every recovered recording in The Crossing.',
+    category:    'Vault 08 — The Fire Year',
+    description: 'Listened to every recovered recording in The Fire Year.',
     hint:        'Solve all 12 cases in this season.',
     check: function(s) {
       var ids = ['085','086','087','088','089','090','091','092','093','094','095','096'];
@@ -1833,10 +1833,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's08_ach15',
-    name:        'Vault Unsealed — The Crossing',
+    name:        'Vault Unsealed — The Fire Year',
     symbol:      '🔓',
-    category:    'Vault 08 — The Crossing',
-    description: 'Unlocked the The Crossing vault.',
+    category:    'Vault 08 — The Fire Year',
+    description: 'Unlocked the The Fire Year vault.',
     hint:        'Solve all 12 cases in this season to unlock its vault.',
     check: function(s) {
       var ids = ['085','086','087','088','089','090','091','092','093','094','095','096'];
@@ -1845,10 +1845,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's08_ach16',
-    name:        'Perfect Record — The Crossing',
+    name:        'Perfect Record — The Fire Year',
     symbol:      '🏆',
-    category:    'Vault 08 — The Crossing',
-    description: 'Earned every achievement in The Crossing.',
+    category:    'Vault 08 — The Fire Year',
+    description: 'Earned every achievement in The Fire Year.',
     hint:        'Solve every case in this season on the first try, hint-free, within a week.',
     check: function(s) {
       var ids = ['085','086','087','088','089','090','091','092','093','094','095','096'];
@@ -1862,13 +1862,13 @@ var BADGES_CONFIG = [
     }
   },
 
-  // -- Vault 09 — The Furnace --
+  // -- Vault 09 — The Keeper --
   {
     id:          's09_ach01',
-    name:        'First File — The Furnace',
+    name:        'First File — The Keeper',
     symbol:      '📁',
-    category:    'Vault 09 — The Furnace',
-    description: 'Opened the first case of The Furnace.',
+    category:    'Vault 09 — The Keeper',
+    description: 'Opened the first case of The Keeper.',
     hint:        'Solve the first case of this season.',
     check: function(s) {
       var ids = ['097','098','099','100','101','102','103','104','105','106','107','108'];
@@ -1877,10 +1877,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's09_ach02',
-    name:        'Three Files — The Furnace',
+    name:        'Three Files — The Keeper',
     symbol:      '📂',
-    category:    'Vault 09 — The Furnace',
-    description: 'Solved 3 cases in The Furnace.',
+    category:    'Vault 09 — The Keeper',
+    description: 'Solved 3 cases in The Keeper.',
     hint:        'Solve 3 cases in this season.',
     check: function(s) {
       var ids = ['097','098','099','100','101','102','103','104','105','106','107','108'];
@@ -1889,10 +1889,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's09_ach03',
-    name:        'Six Files — The Furnace',
+    name:        'Six Files — The Keeper',
     symbol:      '📚',
-    category:    'Vault 09 — The Furnace',
-    description: 'Solved 6 cases in The Furnace.',
+    category:    'Vault 09 — The Keeper',
+    description: 'Solved 6 cases in The Keeper.',
     hint:        'Solve 6 cases in this season.',
     check: function(s) {
       var ids = ['097','098','099','100','101','102','103','104','105','106','107','108'];
@@ -1901,10 +1901,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's09_ach04',
-    name:        'Nine Files — The Furnace',
+    name:        'Nine Files — The Keeper',
     symbol:      '🗄',
-    category:    'Vault 09 — The Furnace',
-    description: 'Solved 9 cases in The Furnace.',
+    category:    'Vault 09 — The Keeper',
+    description: 'Solved 9 cases in The Keeper.',
     hint:        'Solve 9 cases in this season.',
     check: function(s) {
       var ids = ['097','098','099','100','101','102','103','104','105','106','107','108'];
@@ -1913,10 +1913,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's09_ach05',
-    name:        'Season Closed — The Furnace',
+    name:        'Season Closed — The Keeper',
     symbol:      '✅',
-    category:    'Vault 09 — The Furnace',
-    description: 'Solved every case in The Furnace.',
+    category:    'Vault 09 — The Keeper',
+    description: 'Solved every case in The Keeper.',
     hint:        'Solve all 12 cases in this season.',
     check: function(s) {
       var ids = ['097','098','099','100','101','102','103','104','105','106','107','108'];
@@ -1925,10 +1925,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's09_ach06',
-    name:        'Evidence 25% — The Furnace',
+    name:        'Evidence 25% — The Keeper',
     symbol:      '🧪',
-    category:    'Vault 09 — The Furnace',
-    description: 'Recovered a quarter of the evidence in The Furnace.',
+    category:    'Vault 09 — The Keeper',
+    description: 'Recovered a quarter of the evidence in The Keeper.',
     hint:        'Solve 3 cases in this season.',
     check: function(s) {
       var ids = ['097','098','099','100','101','102','103','104','105','106','107','108'];
@@ -1937,10 +1937,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's09_ach07',
-    name:        'Evidence 50% — The Furnace',
+    name:        'Evidence 50% — The Keeper',
     symbol:      '🧪',
-    category:    'Vault 09 — The Furnace',
-    description: 'Recovered half the evidence in The Furnace.',
+    category:    'Vault 09 — The Keeper',
+    description: 'Recovered half the evidence in The Keeper.',
     hint:        'Solve 6 cases in this season.',
     check: function(s) {
       var ids = ['097','098','099','100','101','102','103','104','105','106','107','108'];
@@ -1949,10 +1949,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's09_ach08',
-    name:        'Evidence 75% — The Furnace',
+    name:        'Evidence 75% — The Keeper',
     symbol:      '🧪',
-    category:    'Vault 09 — The Furnace',
-    description: 'Recovered most of the evidence in The Furnace.',
+    category:    'Vault 09 — The Keeper',
+    description: 'Recovered most of the evidence in The Keeper.',
     hint:        'Solve 9 cases in this season.',
     check: function(s) {
       var ids = ['097','098','099','100','101','102','103','104','105','106','107','108'];
@@ -1961,10 +1961,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's09_ach09',
-    name:        'Evidence 100% — The Furnace',
+    name:        'Evidence 100% — The Keeper',
     symbol:      '🧪',
-    category:    'Vault 09 — The Furnace',
-    description: 'Recovered every piece of evidence in The Furnace.',
+    category:    'Vault 09 — The Keeper',
+    description: 'Recovered every piece of evidence in The Keeper.',
     hint:        'Solve all 12 cases in this season.',
     check: function(s) {
       var ids = ['097','098','099','100','101','102','103','104','105','106','107','108'];
@@ -1973,10 +1973,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's09_ach10',
-    name:        'First Try — The Furnace',
+    name:        'First Try — The Keeper',
     symbol:      '🎯',
-    category:    'Vault 09 — The Furnace',
-    description: 'Solved every case in The Furnace on the first attempt.',
+    category:    'Vault 09 — The Keeper',
+    description: 'Solved every case in The Keeper on the first attempt.',
     hint:        'Solve all cases in this season without a wrong guess.',
     check: function(s) {
       var ids = ['097','098','099','100','101','102','103','104','105','106','107','108'];
@@ -1989,10 +1989,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's09_ach11',
-    name:        'No Hints — The Furnace',
+    name:        'No Hints — The Keeper',
     symbol:      '🧠',
-    category:    'Vault 09 — The Furnace',
-    description: 'Completed The Furnace without ever revealing a hint.',
+    category:    'Vault 09 — The Keeper',
+    description: 'Completed The Keeper without ever revealing a hint.',
     hint:        'Solve all cases in this season before hints appear (3+ attempts).',
     check: function(s) {
       var ids = ['097','098','099','100','101','102','103','104','105','106','107','108'];
@@ -2005,10 +2005,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's09_ach12',
-    name:        'Under Time — The Furnace',
+    name:        'Under Time — The Keeper',
     symbol:      '⏱',
-    category:    'Vault 09 — The Furnace',
-    description: 'Completed The Furnace within a week of the first solve.',
+    category:    'Vault 09 — The Keeper',
+    description: 'Completed The Keeper within a week of the first solve.',
     hint:        'Solve all cases in this season within 7 days of the first.',
     check: function(s) {
       var ids = ['097','098','099','100','101','102','103','104','105','106','107','108'];
@@ -2022,10 +2022,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's09_ach13',
-    name:        'Case Notes Read — The Furnace',
+    name:        'Case Notes Read — The Keeper',
     symbol:      '📝',
-    category:    'Vault 09 — The Furnace',
-    description: 'Reviewed every incident report in The Furnace.',
+    category:    'Vault 09 — The Keeper',
+    description: 'Reviewed every incident report in The Keeper.',
     hint:        'Solve all 12 cases in this season.',
     check: function(s) {
       var ids = ['097','098','099','100','101','102','103','104','105','106','107','108'];
@@ -2034,10 +2034,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's09_ach14',
-    name:        'Full Playlist — The Furnace',
+    name:        'Full Playlist — The Keeper',
     symbol:      '🎵',
-    category:    'Vault 09 — The Furnace',
-    description: 'Listened to every recovered recording in The Furnace.',
+    category:    'Vault 09 — The Keeper',
+    description: 'Listened to every recovered recording in The Keeper.',
     hint:        'Solve all 12 cases in this season.',
     check: function(s) {
       var ids = ['097','098','099','100','101','102','103','104','105','106','107','108'];
@@ -2046,10 +2046,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's09_ach15',
-    name:        'Vault Unsealed — The Furnace',
+    name:        'Vault Unsealed — The Keeper',
     symbol:      '🔓',
-    category:    'Vault 09 — The Furnace',
-    description: 'Unlocked the The Furnace vault.',
+    category:    'Vault 09 — The Keeper',
+    description: 'Unlocked the The Keeper vault.',
     hint:        'Solve all 12 cases in this season to unlock its vault.',
     check: function(s) {
       var ids = ['097','098','099','100','101','102','103','104','105','106','107','108'];
@@ -2058,10 +2058,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's09_ach16',
-    name:        'Perfect Record — The Furnace',
+    name:        'Perfect Record — The Keeper',
     symbol:      '🏆',
-    category:    'Vault 09 — The Furnace',
-    description: 'Earned every achievement in The Furnace.',
+    category:    'Vault 09 — The Keeper',
+    description: 'Earned every achievement in The Keeper.',
     hint:        'Solve every case in this season on the first try, hint-free, within a week.',
     check: function(s) {
       var ids = ['097','098','099','100','101','102','103','104','105','106','107','108'];
@@ -2075,13 +2075,13 @@ var BADGES_CONFIG = [
     }
   },
 
-  // -- Vault 10 — The Choir --
+  // -- Vault 10 — The Forgotten Road --
   {
     id:          's10_ach01',
-    name:        'First File — The Choir',
+    name:        'First File — The Forgotten Road',
     symbol:      '📁',
-    category:    'Vault 10 — The Choir',
-    description: 'Opened the first case of The Choir.',
+    category:    'Vault 10 — The Forgotten Road',
+    description: 'Opened the first case of The Forgotten Road.',
     hint:        'Solve the first case of this season.',
     check: function(s) {
       var ids = ['109','110','111','112','113','114','115','116','117','118','119','120'];
@@ -2090,10 +2090,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's10_ach02',
-    name:        'Three Files — The Choir',
+    name:        'Three Files — The Forgotten Road',
     symbol:      '📂',
-    category:    'Vault 10 — The Choir',
-    description: 'Solved 3 cases in The Choir.',
+    category:    'Vault 10 — The Forgotten Road',
+    description: 'Solved 3 cases in The Forgotten Road.',
     hint:        'Solve 3 cases in this season.',
     check: function(s) {
       var ids = ['109','110','111','112','113','114','115','116','117','118','119','120'];
@@ -2102,10 +2102,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's10_ach03',
-    name:        'Six Files — The Choir',
+    name:        'Six Files — The Forgotten Road',
     symbol:      '📚',
-    category:    'Vault 10 — The Choir',
-    description: 'Solved 6 cases in The Choir.',
+    category:    'Vault 10 — The Forgotten Road',
+    description: 'Solved 6 cases in The Forgotten Road.',
     hint:        'Solve 6 cases in this season.',
     check: function(s) {
       var ids = ['109','110','111','112','113','114','115','116','117','118','119','120'];
@@ -2114,10 +2114,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's10_ach04',
-    name:        'Nine Files — The Choir',
+    name:        'Nine Files — The Forgotten Road',
     symbol:      '🗄',
-    category:    'Vault 10 — The Choir',
-    description: 'Solved 9 cases in The Choir.',
+    category:    'Vault 10 — The Forgotten Road',
+    description: 'Solved 9 cases in The Forgotten Road.',
     hint:        'Solve 9 cases in this season.',
     check: function(s) {
       var ids = ['109','110','111','112','113','114','115','116','117','118','119','120'];
@@ -2126,10 +2126,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's10_ach05',
-    name:        'Season Closed — The Choir',
+    name:        'Season Closed — The Forgotten Road',
     symbol:      '✅',
-    category:    'Vault 10 — The Choir',
-    description: 'Solved every case in The Choir.',
+    category:    'Vault 10 — The Forgotten Road',
+    description: 'Solved every case in The Forgotten Road.',
     hint:        'Solve all 12 cases in this season.',
     check: function(s) {
       var ids = ['109','110','111','112','113','114','115','116','117','118','119','120'];
@@ -2138,10 +2138,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's10_ach06',
-    name:        'Evidence 25% — The Choir',
+    name:        'Evidence 25% — The Forgotten Road',
     symbol:      '🧪',
-    category:    'Vault 10 — The Choir',
-    description: 'Recovered a quarter of the evidence in The Choir.',
+    category:    'Vault 10 — The Forgotten Road',
+    description: 'Recovered a quarter of the evidence in The Forgotten Road.',
     hint:        'Solve 3 cases in this season.',
     check: function(s) {
       var ids = ['109','110','111','112','113','114','115','116','117','118','119','120'];
@@ -2150,10 +2150,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's10_ach07',
-    name:        'Evidence 50% — The Choir',
+    name:        'Evidence 50% — The Forgotten Road',
     symbol:      '🧪',
-    category:    'Vault 10 — The Choir',
-    description: 'Recovered half the evidence in The Choir.',
+    category:    'Vault 10 — The Forgotten Road',
+    description: 'Recovered half the evidence in The Forgotten Road.',
     hint:        'Solve 6 cases in this season.',
     check: function(s) {
       var ids = ['109','110','111','112','113','114','115','116','117','118','119','120'];
@@ -2162,10 +2162,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's10_ach08',
-    name:        'Evidence 75% — The Choir',
+    name:        'Evidence 75% — The Forgotten Road',
     symbol:      '🧪',
-    category:    'Vault 10 — The Choir',
-    description: 'Recovered most of the evidence in The Choir.',
+    category:    'Vault 10 — The Forgotten Road',
+    description: 'Recovered most of the evidence in The Forgotten Road.',
     hint:        'Solve 9 cases in this season.',
     check: function(s) {
       var ids = ['109','110','111','112','113','114','115','116','117','118','119','120'];
@@ -2174,10 +2174,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's10_ach09',
-    name:        'Evidence 100% — The Choir',
+    name:        'Evidence 100% — The Forgotten Road',
     symbol:      '🧪',
-    category:    'Vault 10 — The Choir',
-    description: 'Recovered every piece of evidence in The Choir.',
+    category:    'Vault 10 — The Forgotten Road',
+    description: 'Recovered every piece of evidence in The Forgotten Road.',
     hint:        'Solve all 12 cases in this season.',
     check: function(s) {
       var ids = ['109','110','111','112','113','114','115','116','117','118','119','120'];
@@ -2186,10 +2186,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's10_ach10',
-    name:        'First Try — The Choir',
+    name:        'First Try — The Forgotten Road',
     symbol:      '🎯',
-    category:    'Vault 10 — The Choir',
-    description: 'Solved every case in The Choir on the first attempt.',
+    category:    'Vault 10 — The Forgotten Road',
+    description: 'Solved every case in The Forgotten Road on the first attempt.',
     hint:        'Solve all cases in this season without a wrong guess.',
     check: function(s) {
       var ids = ['109','110','111','112','113','114','115','116','117','118','119','120'];
@@ -2202,10 +2202,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's10_ach11',
-    name:        'No Hints — The Choir',
+    name:        'No Hints — The Forgotten Road',
     symbol:      '🧠',
-    category:    'Vault 10 — The Choir',
-    description: 'Completed The Choir without ever revealing a hint.',
+    category:    'Vault 10 — The Forgotten Road',
+    description: 'Completed The Forgotten Road without ever revealing a hint.',
     hint:        'Solve all cases in this season before hints appear (3+ attempts).',
     check: function(s) {
       var ids = ['109','110','111','112','113','114','115','116','117','118','119','120'];
@@ -2218,10 +2218,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's10_ach12',
-    name:        'Under Time — The Choir',
+    name:        'Under Time — The Forgotten Road',
     symbol:      '⏱',
-    category:    'Vault 10 — The Choir',
-    description: 'Completed The Choir within a week of the first solve.',
+    category:    'Vault 10 — The Forgotten Road',
+    description: 'Completed The Forgotten Road within a week of the first solve.',
     hint:        'Solve all cases in this season within 7 days of the first.',
     check: function(s) {
       var ids = ['109','110','111','112','113','114','115','116','117','118','119','120'];
@@ -2235,10 +2235,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's10_ach13',
-    name:        'Case Notes Read — The Choir',
+    name:        'Case Notes Read — The Forgotten Road',
     symbol:      '📝',
-    category:    'Vault 10 — The Choir',
-    description: 'Reviewed every incident report in The Choir.',
+    category:    'Vault 10 — The Forgotten Road',
+    description: 'Reviewed every incident report in The Forgotten Road.',
     hint:        'Solve all 12 cases in this season.',
     check: function(s) {
       var ids = ['109','110','111','112','113','114','115','116','117','118','119','120'];
@@ -2247,10 +2247,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's10_ach14',
-    name:        'Full Playlist — The Choir',
+    name:        'Full Playlist — The Forgotten Road',
     symbol:      '🎵',
-    category:    'Vault 10 — The Choir',
-    description: 'Listened to every recovered recording in The Choir.',
+    category:    'Vault 10 — The Forgotten Road',
+    description: 'Listened to every recovered recording in The Forgotten Road.',
     hint:        'Solve all 12 cases in this season.',
     check: function(s) {
       var ids = ['109','110','111','112','113','114','115','116','117','118','119','120'];
@@ -2259,10 +2259,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's10_ach15',
-    name:        'Vault Unsealed — The Choir',
+    name:        'Vault Unsealed — The Forgotten Road',
     symbol:      '🔓',
-    category:    'Vault 10 — The Choir',
-    description: 'Unlocked the The Choir vault.',
+    category:    'Vault 10 — The Forgotten Road',
+    description: 'Unlocked the The Forgotten Road vault.',
     hint:        'Solve all 12 cases in this season to unlock its vault.',
     check: function(s) {
       var ids = ['109','110','111','112','113','114','115','116','117','118','119','120'];
@@ -2271,10 +2271,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's10_ach16',
-    name:        'Perfect Record — The Choir',
+    name:        'Perfect Record — The Forgotten Road',
     symbol:      '🏆',
-    category:    'Vault 10 — The Choir',
-    description: 'Earned every achievement in The Choir.',
+    category:    'Vault 10 — The Forgotten Road',
+    description: 'Earned every achievement in The Forgotten Road.',
     hint:        'Solve every case in this season on the first try, hint-free, within a week.',
     check: function(s) {
       var ids = ['109','110','111','112','113','114','115','116','117','118','119','120'];
@@ -2288,13 +2288,13 @@ var BADGES_CONFIG = [
     }
   },
 
-  // -- Vault 11 — The Mirror --
+  // -- Vault 11 — The Map Maker --
   {
     id:          's11_ach01',
-    name:        'First File — The Mirror',
+    name:        'First File — The Map Maker',
     symbol:      '📁',
-    category:    'Vault 11 — The Mirror',
-    description: 'Opened the first case of The Mirror.',
+    category:    'Vault 11 — The Map Maker',
+    description: 'Opened the first case of The Map Maker.',
     hint:        'Solve the first case of this season.',
     check: function(s) {
       var ids = ['121','122','123','124','125','126','127','128','129','130','131','132'];
@@ -2303,10 +2303,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's11_ach02',
-    name:        'Three Files — The Mirror',
+    name:        'Three Files — The Map Maker',
     symbol:      '📂',
-    category:    'Vault 11 — The Mirror',
-    description: 'Solved 3 cases in The Mirror.',
+    category:    'Vault 11 — The Map Maker',
+    description: 'Solved 3 cases in The Map Maker.',
     hint:        'Solve 3 cases in this season.',
     check: function(s) {
       var ids = ['121','122','123','124','125','126','127','128','129','130','131','132'];
@@ -2315,10 +2315,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's11_ach03',
-    name:        'Six Files — The Mirror',
+    name:        'Six Files — The Map Maker',
     symbol:      '📚',
-    category:    'Vault 11 — The Mirror',
-    description: 'Solved 6 cases in The Mirror.',
+    category:    'Vault 11 — The Map Maker',
+    description: 'Solved 6 cases in The Map Maker.',
     hint:        'Solve 6 cases in this season.',
     check: function(s) {
       var ids = ['121','122','123','124','125','126','127','128','129','130','131','132'];
@@ -2327,10 +2327,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's11_ach04',
-    name:        'Nine Files — The Mirror',
+    name:        'Nine Files — The Map Maker',
     symbol:      '🗄',
-    category:    'Vault 11 — The Mirror',
-    description: 'Solved 9 cases in The Mirror.',
+    category:    'Vault 11 — The Map Maker',
+    description: 'Solved 9 cases in The Map Maker.',
     hint:        'Solve 9 cases in this season.',
     check: function(s) {
       var ids = ['121','122','123','124','125','126','127','128','129','130','131','132'];
@@ -2339,10 +2339,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's11_ach05',
-    name:        'Season Closed — The Mirror',
+    name:        'Season Closed — The Map Maker',
     symbol:      '✅',
-    category:    'Vault 11 — The Mirror',
-    description: 'Solved every case in The Mirror.',
+    category:    'Vault 11 — The Map Maker',
+    description: 'Solved every case in The Map Maker.',
     hint:        'Solve all 12 cases in this season.',
     check: function(s) {
       var ids = ['121','122','123','124','125','126','127','128','129','130','131','132'];
@@ -2351,10 +2351,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's11_ach06',
-    name:        'Evidence 25% — The Mirror',
+    name:        'Evidence 25% — The Map Maker',
     symbol:      '🧪',
-    category:    'Vault 11 — The Mirror',
-    description: 'Recovered a quarter of the evidence in The Mirror.',
+    category:    'Vault 11 — The Map Maker',
+    description: 'Recovered a quarter of the evidence in The Map Maker.',
     hint:        'Solve 3 cases in this season.',
     check: function(s) {
       var ids = ['121','122','123','124','125','126','127','128','129','130','131','132'];
@@ -2363,10 +2363,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's11_ach07',
-    name:        'Evidence 50% — The Mirror',
+    name:        'Evidence 50% — The Map Maker',
     symbol:      '🧪',
-    category:    'Vault 11 — The Mirror',
-    description: 'Recovered half the evidence in The Mirror.',
+    category:    'Vault 11 — The Map Maker',
+    description: 'Recovered half the evidence in The Map Maker.',
     hint:        'Solve 6 cases in this season.',
     check: function(s) {
       var ids = ['121','122','123','124','125','126','127','128','129','130','131','132'];
@@ -2375,10 +2375,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's11_ach08',
-    name:        'Evidence 75% — The Mirror',
+    name:        'Evidence 75% — The Map Maker',
     symbol:      '🧪',
-    category:    'Vault 11 — The Mirror',
-    description: 'Recovered most of the evidence in The Mirror.',
+    category:    'Vault 11 — The Map Maker',
+    description: 'Recovered most of the evidence in The Map Maker.',
     hint:        'Solve 9 cases in this season.',
     check: function(s) {
       var ids = ['121','122','123','124','125','126','127','128','129','130','131','132'];
@@ -2387,10 +2387,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's11_ach09',
-    name:        'Evidence 100% — The Mirror',
+    name:        'Evidence 100% — The Map Maker',
     symbol:      '🧪',
-    category:    'Vault 11 — The Mirror',
-    description: 'Recovered every piece of evidence in The Mirror.',
+    category:    'Vault 11 — The Map Maker',
+    description: 'Recovered every piece of evidence in The Map Maker.',
     hint:        'Solve all 12 cases in this season.',
     check: function(s) {
       var ids = ['121','122','123','124','125','126','127','128','129','130','131','132'];
@@ -2399,10 +2399,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's11_ach10',
-    name:        'First Try — The Mirror',
+    name:        'First Try — The Map Maker',
     symbol:      '🎯',
-    category:    'Vault 11 — The Mirror',
-    description: 'Solved every case in The Mirror on the first attempt.',
+    category:    'Vault 11 — The Map Maker',
+    description: 'Solved every case in The Map Maker on the first attempt.',
     hint:        'Solve all cases in this season without a wrong guess.',
     check: function(s) {
       var ids = ['121','122','123','124','125','126','127','128','129','130','131','132'];
@@ -2415,10 +2415,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's11_ach11',
-    name:        'No Hints — The Mirror',
+    name:        'No Hints — The Map Maker',
     symbol:      '🧠',
-    category:    'Vault 11 — The Mirror',
-    description: 'Completed The Mirror without ever revealing a hint.',
+    category:    'Vault 11 — The Map Maker',
+    description: 'Completed The Map Maker without ever revealing a hint.',
     hint:        'Solve all cases in this season before hints appear (3+ attempts).',
     check: function(s) {
       var ids = ['121','122','123','124','125','126','127','128','129','130','131','132'];
@@ -2431,10 +2431,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's11_ach12',
-    name:        'Under Time — The Mirror',
+    name:        'Under Time — The Map Maker',
     symbol:      '⏱',
-    category:    'Vault 11 — The Mirror',
-    description: 'Completed The Mirror within a week of the first solve.',
+    category:    'Vault 11 — The Map Maker',
+    description: 'Completed The Map Maker within a week of the first solve.',
     hint:        'Solve all cases in this season within 7 days of the first.',
     check: function(s) {
       var ids = ['121','122','123','124','125','126','127','128','129','130','131','132'];
@@ -2448,10 +2448,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's11_ach13',
-    name:        'Case Notes Read — The Mirror',
+    name:        'Case Notes Read — The Map Maker',
     symbol:      '📝',
-    category:    'Vault 11 — The Mirror',
-    description: 'Reviewed every incident report in The Mirror.',
+    category:    'Vault 11 — The Map Maker',
+    description: 'Reviewed every incident report in The Map Maker.',
     hint:        'Solve all 12 cases in this season.',
     check: function(s) {
       var ids = ['121','122','123','124','125','126','127','128','129','130','131','132'];
@@ -2460,10 +2460,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's11_ach14',
-    name:        'Full Playlist — The Mirror',
+    name:        'Full Playlist — The Map Maker',
     symbol:      '🎵',
-    category:    'Vault 11 — The Mirror',
-    description: 'Listened to every recovered recording in The Mirror.',
+    category:    'Vault 11 — The Map Maker',
+    description: 'Listened to every recovered recording in The Map Maker.',
     hint:        'Solve all 12 cases in this season.',
     check: function(s) {
       var ids = ['121','122','123','124','125','126','127','128','129','130','131','132'];
@@ -2472,10 +2472,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's11_ach15',
-    name:        'Vault Unsealed — The Mirror',
+    name:        'Vault Unsealed — The Map Maker',
     symbol:      '🔓',
-    category:    'Vault 11 — The Mirror',
-    description: 'Unlocked the The Mirror vault.',
+    category:    'Vault 11 — The Map Maker',
+    description: 'Unlocked the The Map Maker vault.',
     hint:        'Solve all 12 cases in this season to unlock its vault.',
     check: function(s) {
       var ids = ['121','122','123','124','125','126','127','128','129','130','131','132'];
@@ -2484,10 +2484,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's11_ach16',
-    name:        'Perfect Record — The Mirror',
+    name:        'Perfect Record — The Map Maker',
     symbol:      '🏆',
-    category:    'Vault 11 — The Mirror',
-    description: 'Earned every achievement in The Mirror.',
+    category:    'Vault 11 — The Map Maker',
+    description: 'Earned every achievement in The Map Maker.',
     hint:        'Solve every case in this season on the first try, hint-free, within a week.',
     check: function(s) {
       var ids = ['121','122','123','124','125','126','127','128','129','130','131','132'];
@@ -2501,13 +2501,13 @@ var BADGES_CONFIG = [
     }
   },
 
-  // -- Vault 12 — Ashton Vale --
+  // -- Vault 12 — The Inheritance --
   {
     id:          's12_ach01',
-    name:        'First File — Ashton Vale',
+    name:        'First File — The Inheritance',
     symbol:      '📁',
-    category:    'Vault 12 — Ashton Vale',
-    description: 'Opened the first case of Ashton Vale.',
+    category:    'Vault 12 — The Inheritance',
+    description: 'Opened the first case of The Inheritance.',
     hint:        'Solve the first case of this season.',
     check: function(s) {
       var ids = ['133','134','135','136','137','138','139','140','141','142','143','144'];
@@ -2516,10 +2516,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's12_ach02',
-    name:        'Three Files — Ashton Vale',
+    name:        'Three Files — The Inheritance',
     symbol:      '📂',
-    category:    'Vault 12 — Ashton Vale',
-    description: 'Solved 3 cases in Ashton Vale.',
+    category:    'Vault 12 — The Inheritance',
+    description: 'Solved 3 cases in The Inheritance.',
     hint:        'Solve 3 cases in this season.',
     check: function(s) {
       var ids = ['133','134','135','136','137','138','139','140','141','142','143','144'];
@@ -2528,10 +2528,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's12_ach03',
-    name:        'Six Files — Ashton Vale',
+    name:        'Six Files — The Inheritance',
     symbol:      '📚',
-    category:    'Vault 12 — Ashton Vale',
-    description: 'Solved 6 cases in Ashton Vale.',
+    category:    'Vault 12 — The Inheritance',
+    description: 'Solved 6 cases in The Inheritance.',
     hint:        'Solve 6 cases in this season.',
     check: function(s) {
       var ids = ['133','134','135','136','137','138','139','140','141','142','143','144'];
@@ -2540,10 +2540,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's12_ach04',
-    name:        'Nine Files — Ashton Vale',
+    name:        'Nine Files — The Inheritance',
     symbol:      '🗄',
-    category:    'Vault 12 — Ashton Vale',
-    description: 'Solved 9 cases in Ashton Vale.',
+    category:    'Vault 12 — The Inheritance',
+    description: 'Solved 9 cases in The Inheritance.',
     hint:        'Solve 9 cases in this season.',
     check: function(s) {
       var ids = ['133','134','135','136','137','138','139','140','141','142','143','144'];
@@ -2552,10 +2552,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's12_ach05',
-    name:        'Season Closed — Ashton Vale',
+    name:        'Season Closed — The Inheritance',
     symbol:      '✅',
-    category:    'Vault 12 — Ashton Vale',
-    description: 'Solved every case in Ashton Vale.',
+    category:    'Vault 12 — The Inheritance',
+    description: 'Solved every case in The Inheritance.',
     hint:        'Solve all 12 cases in this season.',
     check: function(s) {
       var ids = ['133','134','135','136','137','138','139','140','141','142','143','144'];
@@ -2564,10 +2564,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's12_ach06',
-    name:        'Evidence 25% — Ashton Vale',
+    name:        'Evidence 25% — The Inheritance',
     symbol:      '🧪',
-    category:    'Vault 12 — Ashton Vale',
-    description: 'Recovered a quarter of the evidence in Ashton Vale.',
+    category:    'Vault 12 — The Inheritance',
+    description: 'Recovered a quarter of the evidence in The Inheritance.',
     hint:        'Solve 3 cases in this season.',
     check: function(s) {
       var ids = ['133','134','135','136','137','138','139','140','141','142','143','144'];
@@ -2576,10 +2576,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's12_ach07',
-    name:        'Evidence 50% — Ashton Vale',
+    name:        'Evidence 50% — The Inheritance',
     symbol:      '🧪',
-    category:    'Vault 12 — Ashton Vale',
-    description: 'Recovered half the evidence in Ashton Vale.',
+    category:    'Vault 12 — The Inheritance',
+    description: 'Recovered half the evidence in The Inheritance.',
     hint:        'Solve 6 cases in this season.',
     check: function(s) {
       var ids = ['133','134','135','136','137','138','139','140','141','142','143','144'];
@@ -2588,10 +2588,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's12_ach08',
-    name:        'Evidence 75% — Ashton Vale',
+    name:        'Evidence 75% — The Inheritance',
     symbol:      '🧪',
-    category:    'Vault 12 — Ashton Vale',
-    description: 'Recovered most of the evidence in Ashton Vale.',
+    category:    'Vault 12 — The Inheritance',
+    description: 'Recovered most of the evidence in The Inheritance.',
     hint:        'Solve 9 cases in this season.',
     check: function(s) {
       var ids = ['133','134','135','136','137','138','139','140','141','142','143','144'];
@@ -2600,10 +2600,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's12_ach09',
-    name:        'Evidence 100% — Ashton Vale',
+    name:        'Evidence 100% — The Inheritance',
     symbol:      '🧪',
-    category:    'Vault 12 — Ashton Vale',
-    description: 'Recovered every piece of evidence in Ashton Vale.',
+    category:    'Vault 12 — The Inheritance',
+    description: 'Recovered every piece of evidence in The Inheritance.',
     hint:        'Solve all 12 cases in this season.',
     check: function(s) {
       var ids = ['133','134','135','136','137','138','139','140','141','142','143','144'];
@@ -2612,10 +2612,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's12_ach10',
-    name:        'First Try — Ashton Vale',
+    name:        'First Try — The Inheritance',
     symbol:      '🎯',
-    category:    'Vault 12 — Ashton Vale',
-    description: 'Solved every case in Ashton Vale on the first attempt.',
+    category:    'Vault 12 — The Inheritance',
+    description: 'Solved every case in The Inheritance on the first attempt.',
     hint:        'Solve all cases in this season without a wrong guess.',
     check: function(s) {
       var ids = ['133','134','135','136','137','138','139','140','141','142','143','144'];
@@ -2628,10 +2628,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's12_ach11',
-    name:        'No Hints — Ashton Vale',
+    name:        'No Hints — The Inheritance',
     symbol:      '🧠',
-    category:    'Vault 12 — Ashton Vale',
-    description: 'Completed Ashton Vale without ever revealing a hint.',
+    category:    'Vault 12 — The Inheritance',
+    description: 'Completed The Inheritance without ever revealing a hint.',
     hint:        'Solve all cases in this season before hints appear (3+ attempts).',
     check: function(s) {
       var ids = ['133','134','135','136','137','138','139','140','141','142','143','144'];
@@ -2644,10 +2644,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's12_ach12',
-    name:        'Under Time — Ashton Vale',
+    name:        'Under Time — The Inheritance',
     symbol:      '⏱',
-    category:    'Vault 12 — Ashton Vale',
-    description: 'Completed Ashton Vale within a week of the first solve.',
+    category:    'Vault 12 — The Inheritance',
+    description: 'Completed The Inheritance within a week of the first solve.',
     hint:        'Solve all cases in this season within 7 days of the first.',
     check: function(s) {
       var ids = ['133','134','135','136','137','138','139','140','141','142','143','144'];
@@ -2661,10 +2661,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's12_ach13',
-    name:        'Case Notes Read — Ashton Vale',
+    name:        'Case Notes Read — The Inheritance',
     symbol:      '📝',
-    category:    'Vault 12 — Ashton Vale',
-    description: 'Reviewed every incident report in Ashton Vale.',
+    category:    'Vault 12 — The Inheritance',
+    description: 'Reviewed every incident report in The Inheritance.',
     hint:        'Solve all 12 cases in this season.',
     check: function(s) {
       var ids = ['133','134','135','136','137','138','139','140','141','142','143','144'];
@@ -2673,10 +2673,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's12_ach14',
-    name:        'Full Playlist — Ashton Vale',
+    name:        'Full Playlist — The Inheritance',
     symbol:      '🎵',
-    category:    'Vault 12 — Ashton Vale',
-    description: 'Listened to every recovered recording in Ashton Vale.',
+    category:    'Vault 12 — The Inheritance',
+    description: 'Listened to every recovered recording in The Inheritance.',
     hint:        'Solve all 12 cases in this season.',
     check: function(s) {
       var ids = ['133','134','135','136','137','138','139','140','141','142','143','144'];
@@ -2685,10 +2685,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's12_ach15',
-    name:        'Vault Unsealed — Ashton Vale',
+    name:        'Vault Unsealed — The Inheritance',
     symbol:      '🔓',
-    category:    'Vault 12 — Ashton Vale',
-    description: 'Unlocked the Ashton Vale vault.',
+    category:    'Vault 12 — The Inheritance',
+    description: 'Unlocked the The Inheritance vault.',
     hint:        'Solve all 12 cases in this season to unlock its vault.',
     check: function(s) {
       var ids = ['133','134','135','136','137','138','139','140','141','142','143','144'];
@@ -2697,10 +2697,10 @@ var BADGES_CONFIG = [
   },
   {
     id:          's12_ach16',
-    name:        'Perfect Record — Ashton Vale',
+    name:        'Perfect Record — The Inheritance',
     symbol:      '🏆',
-    category:    'Vault 12 — Ashton Vale',
-    description: 'Earned every achievement in Ashton Vale.',
+    category:    'Vault 12 — The Inheritance',
+    description: 'Earned every achievement in The Inheritance.',
     hint:        'Solve every case in this season on the first try, hint-free, within a week.',
     check: function(s) {
       var ids = ['133','134','135','136','137','138','139','140','141','142','143','144'];
