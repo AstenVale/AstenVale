@@ -54,6 +54,14 @@ td{padding:0.45rem 0.5rem;border-bottom:1px solid rgba(201,169,122,0.08);}
       <span class="signout" id="signOutBtn">Sign Out</span>
       <h1>Player Progress — Admin Stats</h1>
 
+      <h2 style="margin-top:0;">Publishing</h2>
+      <p style="font-size:0.75rem;color:rgba(201,169,122,0.6);margin-bottom:0.75rem;line-height:1.5;">
+        Reads the streaming spreadsheet and marks any case with a published link as
+        released. Never un-releases a case. Run this after publishing a new case.
+      </p>
+      <button id="syncReleasesBtn" style="padding:0.6rem 1.2rem;background:var(--folder-red);color:#fff;border:none;cursor:pointer;font-family:var(--font-type);font-size:0.8rem;letter-spacing:0.08em;text-transform:uppercase;">Sync Releases</button>
+      <div id="syncReleasesResult" style="font-size:0.78rem;margin-top:0.6rem;min-height:1.2em;"></div>
+
       <div class="stat-grid" id="summaryTiles"></div>
 
       <h2>Most Completed Cases</h2>
@@ -128,6 +136,33 @@ td{padding:0.45rem 0.5rem;border-bottom:1px solid rgba(201,169,122,0.08);}
       dashboard.style.display = 'block';
       loadStats();
     }
+
+    document.getElementById('syncReleasesBtn').addEventListener('click', function () {
+      var btn = document.getElementById('syncReleasesBtn');
+      var result = document.getElementById('syncReleasesResult');
+      btn.disabled = true;
+      result.style.color = '';
+      result.textContent = 'Syncing…';
+      client.functions.invoke('sync-released-cases', { method: 'POST' })
+        .then(function (res) {
+          btn.disabled = false;
+          if (res.error || (res.data && res.data.error)) {
+            result.style.color = '#e88';
+            result.textContent = 'Sync failed: ' + ((res.data && res.data.error) || res.error.message);
+            return;
+          }
+          var d = res.data;
+          result.style.color = '#8c8';
+          result.textContent = d.newly_released.length
+            ? 'Released: ' + d.newly_released.join(', ') + ' (' + d.already_released_count + ' already live, ' + d.sheet_released_count + ' total in sheet)'
+            : 'No new cases to release (' + d.already_released_count + ' already live, ' + d.sheet_released_count + ' total in sheet).';
+        })
+        .catch(function (e) {
+          btn.disabled = false;
+          result.style.color = '#e88';
+          result.textContent = 'Sync failed: ' + e.message;
+        });
+    });
 
     function loadStats() {
       // RLS only allows a full-table select here for the admin email's
