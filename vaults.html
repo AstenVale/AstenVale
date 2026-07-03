@@ -32,12 +32,18 @@
     .wrap{max-width:960px;margin:0 auto;padding:1.5rem 1.25rem 4rem;}
     .vault-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;}
     .vault-card{background:var(--paper);color:var(--ink);padding:1.25rem;text-align:center;box-shadow:0 4px 20px rgba(0,0,0,0.35);}
-    .vault-card.locked{opacity:0.45;filter:grayscale(0.5);}
+    .vault-card.locked{opacity:0.45;filter:grayscale(0.5);cursor:pointer;}
+    .vault-card.current{opacity:0.75;filter:grayscale(0.25);cursor:pointer;}
     .vault-symbol{font-size:2rem;margin-bottom:0.4rem;}
     .vault-name{font-family:var(--font-header);font-size:0.95rem;letter-spacing:0.05em;text-transform:uppercase;}
     .vault-status{font-size:0.68rem;letter-spacing:0.1em;text-transform:uppercase;margin-top:0.4rem;color:var(--ink-faded);}
     .vault-card.unlocked .vault-status{color:var(--green-pine);}
     .vault-lore{font-size:0.72rem;font-style:italic;color:var(--ink-faded);margin-top:0.6rem;line-height:1.5;}
+    .vault-detail{display:none;text-align:left;margin-top:0.75rem;padding-top:0.6rem;border-top:1px solid rgba(60,30,10,0.2);font-size:0.72rem;line-height:1.6;}
+    .vault-detail.open{display:block;}
+    .vault-detail-row{display:flex;justify-content:space-between;gap:0.5rem;}
+    .vault-detail-label{color:var(--ink-faded);text-transform:uppercase;letter-spacing:0.06em;font-size:0.62rem;}
+    .vault-detail-requirement{margin-top:0.4rem;font-style:italic;color:var(--ink-faded);}
 
     .empty-note{font-size:0.8rem;color:rgba(201,169,122,0.5);font-style:italic;text-align:center;padding:1rem 0;}
     #loadingNote{text-align:center;padding:4rem 1rem;color:rgba(201,169,122,0.5);font-size:0.8rem;}
@@ -77,12 +83,29 @@
   <script src="js/progress-sync.js"></script>
   <script>
   (function () {
-    function render(progress) {
+    function esc(s) {
+      return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
+        return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+      });
+    }
+
+    // Backend remains the source of truth throughout: "completed" comes
+    // from player_progress.unlocked_vaults (set server-side when a season
+    // is fully solved), and per-season progress/denominators use
+    // player_progress.completed_cases against public_released_cases --
+    // never the static SEASONS_CONFIG.released flag. Only the visibility
+    // rule (which vaults get rendered at all) is new here.
+    function releasedCases(season, releasedIds) {
+      return season.cases.filter(function (c) { return releasedIds.indexOf(c.id) !== -1; });
+    }
+
+    function render(progress, releasedIds) {
       document.getElementById('loadingNote').style.display = 'none';
       document.getElementById('vaultsContent').style.display = 'block';
 
-      var unlocked = {};
-      ((progress && progress.unlocked_vaults) || []).forEach(function (id) { unlocked[id] = true; });
+      var solved = (progress && progress.completed_cases) || [];
+      var unlockedVaultIds = {};
+      ((progress && progress.unlocked_vaults) || []).forEach(function (id) { unlockedVaultIds[id] = true; });
 
       var grid = document.getElementById('vaultGrid');
 
@@ -91,18 +114,53 @@
         return;
       }
 
-      SEASONS_CONFIG.forEach(function (season) {
+      var seasonsWithVaults = SEASONS_CONFIG.filter(function (s) { return !!s.vault; });
+
+      // "Current" is the first season whose vault isn't completed yet --
+      // by definition that's never a completed vault. "Next" is the one
+      // right after it. Everything past that stays hidden so a brand new
+      // player only ever sees three vaults at most, never all fifty.
+      var currentIndex = seasonsWithVaults.findIndex(function (s) { return !unlockedVaultIds[s.vault.id]; });
+      if (currentIndex === -1) currentIndex = seasonsWithVaults.length; // all completed
+
+      seasonsWithVaults.forEach(function (season, i) {
+        var isCompleted = i < currentIndex;
+        var isCurrent = i === currentIndex;
+        var isNext = i === currentIndex + 1;
+        if (!isCompleted && !isCurrent && !isNext) return; // hidden -- future vault
+
         var vault = season.vault;
-        if (!vault) return;
-        var isUnlocked = !!unlocked[vault.id];
+        var released = releasedCases(season, releasedIds);
+        var solvedCount = released.filter(function (c) { return solved.indexOf(c.id) !== -1; }).length;
+        var totalCount = released.length;
 
         var card = document.createElement('div');
-        card.className = 'vault-card ' + (isUnlocked ? 'unlocked' : 'locked');
+        var stateClass = isCompleted ? 'unlocked' : (isCurrent ? 'current' : 'locked');
+        card.className = 'vault-card ' + stateClass;
+        card.dataset.vaultId = vault.id;
+
+        var statusText = isCompleted ? 'Unlocked' : (isCurrent ? 'In Progress' : 'Locked');
+
         card.innerHTML =
-          '<div class="vault-symbol">' + (isUnlocked ? '&#128274;&#65039;' : '&#128272;') + '</div>' +
-          '<div class="vault-name">' + vault.name + '</div>' +
-          '<div class="vault-status">' + (isUnlocked ? 'Unlocked' : 'Locked') + '</div>' +
-          (isUnlocked ? '<div class="vault-lore">' + vault.lore + '</div>' : '');
+          '<div class="vault-symbol">' + (isCompleted ? '&#128274;&#65039;' : '&#128272;') + '</div>' +
+          '<div class="vault-name">' + esc(vault.name) + '</div>' +
+          '<div class="vault-status">' + statusText + '</div>' +
+          (isCompleted ? '<div class="vault-lore">' + esc(vault.lore) + '</div>' : '') +
+          (!isCompleted
+            ? '<div class="vault-detail">' +
+                '<div class="vault-detail-row"><span class="vault-detail-label">Required Series</span><span>' + esc(season.title) + '</span></div>' +
+                '<div class="vault-detail-row"><span class="vault-detail-label">Progress</span><span>' + solvedCount + ' / ' + totalCount + '</span></div>' +
+                '<div class="vault-detail-requirement">Solve every released case in ' + esc(season.title) + ' to unlock this vault.</div>' +
+              '</div>'
+            : '');
+
+        if (!isCompleted) {
+          card.addEventListener('click', function () {
+            var detail = card.querySelector('.vault-detail');
+            if (detail) detail.classList.toggle('open');
+          });
+        }
+
         grid.appendChild(card);
       });
 
@@ -116,13 +174,25 @@
       return;
     }
 
+    function getReleasedCaseIds() {
+      var client = window.AVProgressSync.getClient();
+      if (!client) return Promise.resolve([]);
+      return client.from('public_released_cases').select('case_id').then(function (res) {
+        if (res.error || !res.data) return [];
+        return res.data.map(function (r) { return r.case_id; });
+      });
+    }
+
     window.AVProgressSync.getUser().then(function (user) {
       if (!user) {
         window.location.href = 'login.html?redirect=' + encodeURIComponent('vaults.html');
         return;
       }
-      window.AVProgressSync.getSupabaseProgress(user).then(function (progress) {
-        render(progress);
+      Promise.all([
+        window.AVProgressSync.getSupabaseProgress(user),
+        getReleasedCaseIds()
+      ]).then(function (results) {
+        render(results[0], results[1]);
       });
     });
   })();
