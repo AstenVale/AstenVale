@@ -723,8 +723,7 @@ body.unlocked .archive-player,body.unlocked #fields-container,body.unlocked .pan
   }
 
   function openLockedModal(id) {
-    var solved = [];
-    try { solved = JSON.parse(localStorage.getItem('av_solved') || '[]'); } catch(e) {}
+    var solved = getAuthoritativeSolvedSync();
     var currentId = new URLSearchParams(window.location.search).get('id') || '';
     var padded = String(parseInt(currentId, 10) || 1).padStart(3, '0');
     var isSolved = solved.indexOf(padded) !== -1 || solved.indexOf(currentId) !== -1;
@@ -997,9 +996,15 @@ body.unlocked .archive-player,body.unlocked #fields-container,body.unlocked .pan
     SONG = d;
     initArchivePlayer(d);
     renderFields(d);
-    renderCaseNotes(d);
-    renderLyrics(d);
-    loadSavedProgress(d);
+    // Wait for the backend-merged solved state once, so everything that
+    // depends on "is this case solved" (lyrics lock, already-solved
+    // page-load view, etc.) sees the same authoritative answer instead
+    // of racing ahead of it with a stale/empty local-only read.
+    primeAuthoritativeSolved().then(function () {
+      renderCaseNotes(d);
+      renderLyrics(d);
+      loadSavedProgress(d);
+    });
   };
 
   function renderFields(d) {
@@ -1096,6 +1101,41 @@ body.unlocked .archive-player,body.unlocked #fields-container,body.unlocked .pan
   }
   function titleCase(s) {
     return String(s || '').replace(/\b\w/g, function(c) { return c.toUpperCase(); });
+  }
+
+  // — AUTHORITATIVE SOLVED STATE (UI display only) —
+  // Several UI-only decisions on this page (lyrics lock, case-notes/
+  // lyrics modal, witness testimony lock, the already-solved page-load
+  // view, the "Continue Investigation" suggestion) used to read
+  // localStorage's av_solved directly, so a case solved on a different
+  // device would still show as unsolved here until re-verified locally.
+  // This does NOT touch answer validation, unlock logic, Edge Functions,
+  // or the case-access progression gate below -- those already have
+  // their own correct backend checks and are untouched by this.
+  //
+  // primeAuthoritativeSolved() is awaited once in initCase(), before any
+  // of the functions that need it run, so they can all use the
+  // synchronous getter below without becoming async themselves.
+  // localStorage remains the offline fallback if Supabase is unreachable.
+  var __avSolvedAuthoritative = null;
+  function getAuthoritativeSolvedSync() {
+    if (__avSolvedAuthoritative) return __avSolvedAuthoritative;
+    try { return JSON.parse(localStorage.getItem('av_solved') || '[]'); } catch (e) { return []; }
+  }
+  function primeAuthoritativeSolved() {
+    var local = [];
+    try { local = JSON.parse(localStorage.getItem('av_solved') || '[]'); } catch (e) {}
+    if (!window.AVProgressSync) { __avSolvedAuthoritative = local; return Promise.resolve(local); }
+    return window.AVProgressSync.getUser().then(function (user) {
+      if (!user) { __avSolvedAuthoritative = local; return local; }
+      return window.AVProgressSync.getSupabaseProgress(user).then(function (progress) {
+        var serverSolved = (progress && progress.completed_cases) || [];
+        var merged = local.slice();
+        serverSolved.forEach(function (id) { if (merged.indexOf(id) === -1) merged.push(id); });
+        __avSolvedAuthoritative = merged;
+        return merged;
+      });
+    }).catch(function () { __avSolvedAuthoritative = local; return local; });
   }
 
   function isFieldCorrect(value, accepted) {
@@ -1296,6 +1336,15 @@ body.unlocked .archive-player,body.unlocked #fields-container,body.unlocked .pan
       if (!dates[d.id]) dates[d.id] = new Date().toISOString();
       localStorage.setItem('av_completed_dates', JSON.stringify(dates));
     } catch(e) {}
+
+    // Keep the primed authoritative-solved snapshot (if it's already
+    // resolved) in sync with this just-completed solve -- renderPostUnlock
+    // below reads it via getAuthoritativeSolvedSync() for the "Continue
+    // Investigation" suggestion, which needs to see this case as solved
+    // immediately, not just on the next page load.
+    if (__avSolvedAuthoritative && __avSolvedAuthoritative.indexOf(d.id) === -1) {
+      __avSolvedAuthoritative.push(d.id);
+    }
 
     // Hide investigation panel Ã¢â‚¬â€ Evidence Summary is the sole evidence record
     freezeInvestigationPanel();
@@ -1794,9 +1843,7 @@ var witDesc = document.createElement('div');
         var tid = String(parseInt(caseData.id, 10) || 1).padStart(3, '0');
         var tslug = window.TESTIMONY_MAP && window.TESTIMONY_MAP[parseInt(caseData.id, 10)];
         var tSrc = tslug ? 'https://astenvale.github.io/AstenVale-Testimonies/Testimonies/case-' + tid + '-' + tslug + '-testimony.mp3' : '';
-        var tSolved = (function() {
-          try { return JSON.parse(localStorage.getItem('av_solved') || '[]').indexOf(caseData.id) !== -1; } catch(e) { return false; }
-        })();
+        var tSolved = getAuthoritativeSolvedSync().indexOf(caseData.id) !== -1;
 
         if (!tSolved) {
           var wtLocked = document.createElement('div');
@@ -1969,8 +2016,7 @@ var witDesc = document.createElement('div');
       if (typeof SEASONS_CONFIG !== 'undefined') {
         var _allCases = [];
         SEASONS_CONFIG.forEach(function(s) { _allCases = _allCases.concat(s.cases); });
-        var _solved = [];
-        try { _solved = JSON.parse(localStorage.getItem('av_solved') || '[]'); } catch(e) {}
+        var _solved = getAuthoritativeSolvedSync();
 
         var _prevCase = _allCases.find(function(c) { return parseInt(c.id, 10) === parseInt(caseData.id, 10) - 1; });
         if (_prevCase) prevHref = _prevCase.url;
@@ -2162,9 +2208,7 @@ var witDesc = document.createElement('div');
     if (!body) return;
 
     // If already solved, show archive notice — never reveal lyrics post-completion
-    var solved = [];
-    try { solved = JSON.parse(localStorage.getItem('av_solved') || '[]'); } catch(e) {}
-    if (solved.indexOf(d.id) !== -1) { lockLyricsForArchive(); return; }
+    if (getAuthoritativeSolvedSync().indexOf(d.id) !== -1) { lockLyricsForArchive(); return; }
 
     var padded = String(parseInt(d.id, 10) || 1).padStart(3, '0');
 
@@ -2230,7 +2274,7 @@ var witDesc = document.createElement('div');
       var attempts = getAttempts(d.id);
       if (attempts > 0) applyFieldStates(d, attempts);
 
-      var solved = JSON.parse(localStorage.getItem('av_solved') || '[]');
+      var solved = getAuthoritativeSolvedSync();
       if (solved.indexOf(d.id) !== -1) {
         // Case already solved Ã¢â‚¬â€ restore visual state directly without re-validating answers
         document.body.classList.add('unlocked');
