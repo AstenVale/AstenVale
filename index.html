@@ -83,68 +83,25 @@
     }
 
     /* -- NAV -------------------------------------------------- */
-    .site-nav {
-      position: relative;
-      z-index: 10;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 1.25rem 2.5rem;
-    }
+    
 
-    .nav-brand {
-      font-family: var(--font-header);
-      font-size: 0.75rem;
-      letter-spacing: 0.22em;
-      color: rgba(201,169,122,0.75);
-      text-transform: uppercase;
-      line-height: 1.3;
-    }
+    
 
-    .nav-brand span { display: block; }
+    
 
-    .nav-logo {
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-    }
+    
 
-    .nav-logo svg {
-      width: 46px;
-      height: 46px;
-      opacity: 0.9;
-    }
+    
 
-    .nav-links {
-      display: flex;
-      gap: 2rem;
-      align-items: center;
-    }
+    
 
-    .nav-link {
-      font-family: var(--font-type);
-      font-size: 0.72rem;
-      letter-spacing: 0.18em;
-      color: rgba(201,169,122,0.7);
-      text-transform: uppercase;
-      transition: color 0.2s;
-      position: relative;
-    }
+    
 
-    .nav-link:hover { color: var(--paper); }
+    
 
-    .nav-link.active {
-      color: rgba(201,169,122,0.95);
-    }
+    
 
-    .nav-link.active::after {
-      content: "";
-      position: absolute;
-      bottom: -3px;
-      left: 0; right: 0;
-      height: 1px;
-      background: rgba(201,169,122,0.6);
-    }
+    
 
     /* -- HERO CONTENT ----------------------------------------- */
     .hero-content {
@@ -891,6 +848,7 @@
   </style>
   <link rel="stylesheet" href="css/nav.css">
   <link rel="stylesheet" href="css/polish.css">
+  <link rel="stylesheet" href="css/public-nav.css" />
 </head>
 <body>
 
@@ -899,33 +857,7 @@
     <div class="hero-bg"></div>
     <div class="hero-lamp-glow"></div>
 
-    <nav class="site-nav">
-      <a href="index.html" class="nav-brand">
-        <span>Asten Vale</span>
-        <span>Archives</span>
-      </a>
-      <div class="nav-logo">
-        <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="30" cy="30" r="28" stroke="rgba(201,169,122,0.6)" stroke-width="1.2"/>
-          <circle cx="30" cy="30" r="22" stroke="rgba(201,169,122,0.35)" stroke-width="0.8"/>
-          <line x1="30" y1="4" x2="30" y2="10" stroke="rgba(201,169,122,0.7)" stroke-width="1.5"/>
-          <polygon points="30,13 23,26 37,26" fill="rgba(201,169,122,0.82)"/>
-          <polygon points="30,18 21,33 39,33" fill="rgba(201,169,122,0.82)"/>
-          <rect x="27" y="33" width="6" height="5" fill="rgba(201,169,122,0.7)"/>
-          <line x1="30" y1="50" x2="30" y2="56" stroke="rgba(201,169,122,0.5)" stroke-width="1"/>
-          <line x1="4" y1="30" x2="10" y2="30" stroke="rgba(201,169,122,0.5)" stroke-width="1"/>
-          <line x1="50" y1="30" x2="56" y2="30" stroke="rgba(201,169,122,0.5)" stroke-width="1"/>
-        </svg>
-      </div>
-      <div class="nav-links">
-        <a href="index.html" class="nav-link active">Home</a>
-        <a href="about.html" class="nav-link">About</a>
-        <a href="music.html" class="nav-link">Music</a>
-        <a href="join.html" class="nav-link">Join</a>
-        <a href="news.html" class="nav-link">News</a>
-        <a href="login.html" class="nav-link nav-cta">Begin Investigation</a>
-      </div>
-    </nav>
+    <script src="js/public-nav.js"></script>
 
     <div class="hero-content">
       <p class="hero-title-sub">The Asten Vale</p>
@@ -938,22 +870,20 @@
     </div>
   </section>
 
-  <!-- Investigation Ledger -->
+  <!-- Public marketing teaser -- the real case archive lives behind
+       login at archive.html; this page no longer renders game data
+       or case state for anonymous visitors. -->
   <section class="cases-section" id="cases">
     <div class="cases-section-inner">
       <div class="section-header">
         <div class="section-title-group">
-          <h2 class="section-title">Investigation Ledger</h2>
+          <h2 class="section-title">The Investigation Awaits</h2>
           <div class="section-title-rule"></div>
-          <p class="section-subtitle">Open records, recovered files, and restricted case folders.<br>Return here when you need the next thread.</p>
+          <p class="section-subtitle">600 recovered case files. Fifty seasons of testimony, evidence, and unresolved threads.<br>Sign in to open the archive and begin.</p>
         </div>
-        <a href="progress.html" class="btn-progress"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="8" width="3" height="5" fill="currentColor"/><rect x="5.5" y="5" width="3" height="8" fill="currentColor"/><rect x="10" y="2" width="3" height="11" fill="currentColor"/></svg>View Records</a>
       </div>
       <div class="archive-ledger">
-        <section class="ledger-section" aria-labelledby="continue-title"><div class="ledger-heading"><div><h3 class="ledger-title" id="continue-title">Continue Investigation</h3><p class="ledger-note">The next open file on the sheriff's desk.</p></div><span class="ledger-stamp">Current File</span></div><div id="continueInvestigation"></div></section>
-        <section class="ledger-section" aria-labelledby="current-season-title"><div class="ledger-heading"><div><h3 class="ledger-title" id="current-season-title">Current Season</h3><p class="ledger-note" id="current-season-note">Recovery progress for the active vault.</p></div></div><div id="currentSeason"><div class="av-loading" aria-live="polite">Loading investigation...</div></div></section>
-        <section class="ledger-section" aria-labelledby="available-cases-title"><div class="ledger-heading"><div><h3 class="ledger-title" id="available-cases-title">Available Case Files</h3><p class="ledger-note">Released files may be opened. Restricted files remain obscured.</p></div></div><div class="available-grid" id="availableCases"></div></section>
-        <div class="countdown-wrap" id="countdownWrap" style="display:none;"><div class="countdown-header"><span class="countdown-label">Recently Scheduled</span><span class="countdown-case" id="countdownCase"></span><div class="countdown-rule"></div></div><div class="countdown-dials"><div class="countdown-unit"><span class="countdown-num" id="cd-d">--</span><span class="countdown-unit-label">Days</span></div><span class="countdown-sep">:</span><div class="countdown-unit"><span class="countdown-num" id="cd-h">--</span><span class="countdown-unit-label">Hours</span></div><span class="countdown-sep">:</span><div class="countdown-unit"><span class="countdown-num" id="cd-m">--</span><span class="countdown-unit-label">Minutes</span></div><span class="countdown-sep">:</span><div class="countdown-unit"><span class="countdown-num" id="cd-s">--</span><span class="countdown-unit-label">Seconds</span></div></div><span class="countdown-sub">The archive has marked the next release in the ledger</span></div>
+        <a href="login.html" class="continue-action" style="display:inline-flex;">Begin Investigation &rarr;</a>
       </div>
     </div>
   </section>
@@ -1041,9 +971,6 @@
     </div>
   </footer>
 
-  <script src="js/vault-config.js"></script>
-  <script src="js/csv-utils.js"></script>
-  <script src="js/sheet-released.js"></script>
   <script>
   // Apply hero image from site-settings.json
   fetch('js/site-settings.json')
@@ -1066,229 +993,8 @@
       if (pg.heroTitleText) { var tm = document.querySelector('.hero-title-main'); if(tm) tm.textContent = pg.heroTitleText; }
     }).catch(function(){});
   </script>
-  <script>
-  applySheetReleased(function() {
-  (function () {
-    function esc(value) { return String(value == null ? '' : value).replace(/[&<>"']/g, function(ch) { return ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[ch]; }); }
-    function pad(num) { return String(parseInt(num, 10) || 0).padStart(3, '0'); }
-    function pct(done, total) { return total > 0 ? Math.round((done / total) * 100) : 0; }
-    function readProgress() { var solved = [], objects = [], files = []; try { var p = JSON.parse(localStorage.getItem('ava_progress') || '{}'); solved = Array.isArray(p.solvedCases) ? p.solvedCases : []; objects = Array.isArray(p.collectedObjects) ? p.collectedObjects : []; files = Array.isArray(p.recoveredFiles) ? p.recoveredFiles : []; } catch(e) {} try { var legacy = JSON.parse(localStorage.getItem('av_solved') || '[]'); if (Array.isArray(legacy)) legacy.forEach(function(id) { if (solved.indexOf(id) === -1) solved.push(id); }); } catch(e) {} return { solved: solved, objects: objects, files: files }; }
-    function isSolved(id, solved) { return solved.indexOf(id) !== -1; }
-    function caseUrl(c) { return c.url || ('case.html?id=' + parseInt(c.id, 10)); }
-    function releasedCases(season) { return season.cases.filter(function(c) { return c.released; }); }
-    function solvedInSeason(season, solved) { return season.cases.filter(function(c) { return isSolved(c.id, solved); }); }
-    function getPlayerUnlockedSeasonIds(solved) {
-      var ids = [SEASONS_CONFIG[0].id];
-      for (var i = 0; i < SEASONS_CONFIG.length - 1; i++) {
-        var allDone = SEASONS_CONFIG[i].cases.every(function(c){ return isSolved(c.id, solved); });
-        if (allDone) ids.push(SEASONS_CONFIG[i+1].id); else break;
-      }
-      return ids;
-    }
-    function findActiveSeason(solved, unlockedIds) {
-      for (var i = 0; i < SEASONS_CONFIG.length; i++) {
-        var season = SEASONS_CONFIG[i];
-        if (unlockedIds.indexOf(season.id) === -1) continue;
-        var unsolved = season.cases.filter(function(c){ return !isSolved(c.id, solved); });
-        if (unsolved.length) return { season: season, index: i, active: unsolved[0] };
-      }
-      var last = Math.max(SEASONS_CONFIG.length - 1, 0);
-      return { season: SEASONS_CONFIG[last], index: last, active: null };
-    }
-    function renderField(label, value) { return '<div class="ledger-field"><span class="ledger-label">' + esc(label) + '</span><span class="ledger-value">' + esc(value) + '</span></div>'; }
-    function renderContinue(activeSeason, activeCase, solvedCount, totalCases) { var el = document.getElementById('continueInvestigation'); if (!el) return; var firstReleased = releasedCases(activeSeason)[0]; var c = activeCase || firstReleased || activeSeason.cases[0]; var hasActive = !!activeCase && !(solvedCount === 0 && firstReleased && activeCase.id === firstReleased.id); var title = hasActive ? c.title : 'Begin Investigation'; var button = hasActive ? 'Continue Investigation ->' : 'Start Case ' + pad(c.id) + ' ->'; var status = hasActive ? 'Ready to Investigate' : 'Open the first recovered folder'; var href = c && c.released !== false ? caseUrl(c) : 'classified.html?id=' + esc(c.id); el.innerHTML = '<div class="continue-card"><div><div class="continue-case">Case ' + pad(c.id) + '</div><h3 class="continue-title">' + esc(title) + '</h3><p class="continue-sub">' + (hasActive ? 'Current Investigation' : 'No active investigation is open yet') + '</p><div class="ledger-fields">' + renderField('Status', status) + renderField('Progress', activeSeason.title) + renderField('Record', 'Case ' + parseInt(c.id, 10) + ' of ' + totalCases) + '</div></div><a class="continue-action" href="' + esc(href) + '">' + esc(button) + '</a></div>'; }
-    function renderCurrentSeason(season, solvedCount, totalCases) { var el = document.getElementById('currentSeason'); if (!el) return; var percent = pct(solvedCount, totalCases); var titleEl = document.getElementById('current-season-title'); var noteEl = document.getElementById('current-season-note'); if (titleEl) titleEl.textContent = season.title; if (noteEl) noteEl.textContent = season.subtitle || ''; el.innerHTML = '<div class="season-record"><div class="season-record-grid">' + renderField('Cases Investigated', solvedCount + ' / ' + totalCases) + '</div><div class="archive-progress" aria-label="Cases investigated ' + percent + ' percent"><div class="archive-progress-fill" style="width:' + percent + '%"></div></div></div>'; }
-    function renderAvailable(season, activeCase, solved) {
-      var el = document.getElementById('availableCases');
-      if (!el) return;
-      el.innerHTML = '';
-      season.cases.forEach(function(c, i) {
-        var solvedCase = isSolved(c.id, solved);
-        var prevCase = i > 0 ? season.cases[i - 1] : null;
-        var prevSolved = !prevCase || isSolved(prevCase.id, solved);
-        var classifiedByPrev = !solvedCase && !prevSolved;
-        var comingSoon = !solvedCase && prevSolved && !c.released;
-        var stamp, status, href, completion, progress, availabilityLabel, actionLabel;
-        if (solvedCase) {
-          stamp = 'Recovered';
-          status = 'Solved';
-          href = caseUrl(c);
-          completion = '100%';
-          progress = 'Recovered';
-          availabilityLabel = 'Recovered File';
-          actionLabel = 'Review Case';
-        } else if (classifiedByPrev) {
-          stamp = 'Classified';
-          status = 'Classified';
-          href = '#';
-          completion = 'Restricted';
-          progress = 'Classified';
-          availabilityLabel = 'Restricted';
-          actionLabel = 'Sealed';
-        } else if (comingSoon) {
-          stamp = 'Sealed';
-          status = 'Pending Release';
-          href = '#';
-          completion = 'Pending';
-          progress = 'Pending';
-          availabilityLabel = 'Pending Release';
-          actionLabel = 'Sealed';
-        } else {
-          stamp = 'Open';
-          status = 'Available';
-          href = caseUrl(c);
-          completion = '0%';
-          progress = 'Ready';
-          availabilityLabel = 'Available for Review';
-          actionLabel = 'Open File';
-        }
-        var isUnavailable = classifiedByPrev || comingSoon;
-        var card = document.createElement(isUnavailable ? 'div' : 'a');
-        card.className = 'case-card ledger-case' + (!isUnavailable ? ' is-open-file' : '') + (solvedCase ? ' solved' : '') + (classifiedByPrev ? ' classified-lock' : '') + (comingSoon ? ' coming-soon-lock' : '');
-        if (!isUnavailable) card.href = href;
-        var innerTitle;
-        if (classifiedByPrev) innerTitle = '<div class="classified-stamp">Classified</div>';
-        else if (comingSoon) innerTitle = '<h4 class="case-mini-title">' + esc(c.title) + '</h4><div class="coming-soon-stamp">Pending Release</div>';
-        else innerTitle = '<h4 class="case-mini-title">' + esc(c.title) + '</h4>';
-        card.innerHTML = '<div class="case-row"><span class="case-mini-number">Case ' + pad(c.id) + '</span><span class="ledger-stamp">' + esc(stamp) + '</span></div>' + innerTitle + '<div class="case-mini-meta">' + renderField('Status', status) + renderField('Difficulty', isUnavailable ? 'Pending' : 'Standard') + renderField('Completion', completion) + renderField('Progress', progress) + '</div><div class="case-file-affordance"><span class="case-file-status">Status: ' + esc(availabilityLabel) + '</span><span class="case-file-action">' + esc(actionLabel) + '</span></div>';
-        el.appendChild(card);
-      });
-    }
-    var progress = readProgress(), unlockedIds = getPlayerUnlockedSeasonIds(progress.solved), found = findActiveSeason(progress.solved, unlockedIds), season = found.season, totalCases = season.cases.length, solvedCount = solvedInSeason(season, progress.solved).length;
-    renderContinue(season, found.active, solvedCount, totalCases); renderCurrentSeason(season, solvedCount, totalCases); renderAvailable(season, found.active, progress.solved);
-  })();
-  });
-  </script>
-
-  <!-- -- COUNTDOWN -------------------------------------------- -->
-  <script>
-  (function() {
-    function startCountdown(sched) {
-      if (!sched || sched.type === 'off') return;
-
-      // Find next unreleased case title from vault config
-      var nextTitle = '';
-      if (typeof SEASONS_CONFIG !== 'undefined') {
-        for (var si = 0; si < SEASONS_CONFIG.length; si++) {
-          var unreleased = SEASONS_CONFIG[si].cases.filter(function(c) { return !c.released; });
-          if (unreleased.length > 0) { nextTitle = unreleased[0].title; break; }
-        }
-      }
-
-      // Compute target date from schedule type
-      var target = null;
-      var now = new Date();
-      if (sched.type === 'manual' && sched.nextDate) {
-        target = new Date(sched.nextDate);
-      } else if (sched.type === 'weekly' || sched.type === 'biweekly') {
-        var dow  = sched.weekday != null ? parseInt(sched.weekday) : 0;
-        var diff = (dow - now.getDay() + 7) % 7 || 7;
-        if (sched.type === 'biweekly') diff += 7;
-        target = new Date(now);
-        target.setDate(now.getDate() + diff);
-        target.setHours(8, 0, 0, 0);
-      } else if (sched.type === 'monthly') {
-        var mday = parseInt(sched.monthDay) || 1;
-        target = new Date(now.getFullYear(), now.getMonth(), mday, 8, 0, 0);
-        if (target <= now) target = new Date(now.getFullYear(), now.getMonth() + 1, mday, 8, 0, 0);
-      }
-
-      if (!target || isNaN(target.getTime()) || target <= now) return;
-
-      var wrap   = document.getElementById('countdownWrap');
-      var caseEl = document.getElementById('countdownCase');
-      if (!wrap) return;
-      wrap.style.display = 'flex';
-      if (caseEl) caseEl.textContent = nextTitle ? nextTitle : 'Next case file incoming';
-
-      function pad(n) { return n < 10 ? '0' + n : '' + n; }
-      function tick() {
-        var rem = target - new Date();
-        if (rem <= 0) { wrap.style.display = 'none'; return; }
-        var d = Math.floor(rem / 86400000);
-        var h = Math.floor((rem % 86400000) / 3600000);
-        var m = Math.floor((rem % 3600000) / 60000);
-        var s = Math.floor((rem % 60000) / 1000);
-        document.getElementById('cd-d').textContent = pad(d);
-        document.getElementById('cd-h').textContent = pad(h);
-        document.getElementById('cd-m').textContent = pad(m);
-        document.getElementById('cd-s').textContent = pad(s);
-      }
-      tick();
-      setInterval(tick, 1000);
-    }
-
-    // Try fetch first (works on server), fall back to a hardcoded default
-    if (window.location.protocol !== 'file:') {
-      fetch('js/site-settings.json')
-        .then(function(r) { return r.json(); })
-        .then(function(s) { startCountdown(s.releaseSchedule); })
-        .catch(function() {});
-    } else {
-      // file:// Ã¢â‚¬â€ fetch blocked, use weekly Sunday as default so countdown is always visible locally
-      startCountdown({ type: 'weekly', weekday: 0 });
-    }
-  })();
-  </script>
-  <!-- VAULT REWARD MODAL -->
-  <div id="vault-modal" class="hidden" role="dialog" aria-modal="true" aria-label="Vault Unlocked">
-    <div class="vault-box">
-      <button class="vault-close" id="vault-close-btn">&#x2715;</button>
-      <div class="vault-symbol" id="vault-symbol">&#x1F3DB;</div>
-      <div class="vault-eyebrow">Vault Unsealed</div>
-      <div class="vault-title" id="vault-title">Season Complete</div>
-      <div class="vault-lore" id="vault-lore"></div>
-      <div class="vault-rewards">
-        <div class="vault-reward-row"><span class="vault-reward-label">Badge</span><span class="vault-reward-value" id="vault-badge-name"></span></div>
-        <div class="vault-reward-row"><span class="vault-reward-label">Content</span><span class="vault-reward-value" id="vault-content-label">Exclusive Archive Recovered</span></div>
-      </div>
-      <div class="vault-coupon" id="vault-coupon"></div>
-      <button class="vault-claim-btn" id="vault-claim-btn">Claim Vault Reward</button>
-    </div>
-  </div>
-
   <script src="js/polish.js" defer></script>
-  <script>
-  // Vault modal logic
-  (function() {
-    var claimed = [];
-    try { claimed = JSON.parse(localStorage.getItem('av_vault_claimed') || '[]'); } catch(e) {}
-    var solved = [];
-    try { solved = JSON.parse(localStorage.getItem('av_solved') || '[]'); } catch(e) {}
-    try { var p = JSON.parse(localStorage.getItem('ava_progress') || '{}'); if (Array.isArray(p.solvedCases)) p.solvedCases.forEach(function(id){ if (solved.indexOf(id)===-1) solved.push(id); }); } catch(e) {}
-
-    var pendingVault = null;
-    for (var i = 0; i < SEASONS_CONFIG.length; i++) {
-      var s = SEASONS_CONFIG[i];
-      if (!s.vault) continue;
-      var allSolved = s.cases.every(function(c){ return solved.indexOf(c.id) !== -1; });
-      if (allSolved && claimed.indexOf(s.vault.id) === -1) { pendingVault = s; break; }
-    }
-
-    if (!pendingVault) return;
-    var v = pendingVault.vault;
-    document.getElementById('vault-symbol').textContent = v.badge ? v.badge.symbol : '🏛';
-    document.getElementById('vault-title').textContent = v.name || pendingVault.title;
-    document.getElementById('vault-lore').textContent = v.lore || '';
-    document.getElementById('vault-badge-name').textContent = v.badge ? v.badge.name : '';
-    document.getElementById('vault-coupon').textContent = v.coupon || '';
-
-    var modal = document.getElementById('vault-modal');
-    modal.classList.remove('hidden');
-    setTimeout(function(){ modal.classList.add('visible'); }, 20);
-
-    function close() {
-      modal.classList.remove('visible');
-      setTimeout(function(){ modal.classList.add('hidden'); }, 320);
-    }
-    document.getElementById('vault-close-btn').addEventListener('click', close);
-    modal.addEventListener('click', function(e){ if (e.target === modal) close(); });
-    document.getElementById('vault-claim-btn').addEventListener('click', function() {
-      claimed.push(v.id);
-      localStorage.setItem('av_vault_claimed', JSON.stringify(claimed));
-      close();
-    });
-  })();
-  </script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+  <script src="js/progress-sync.js"></script>
 </body>
 </html>
