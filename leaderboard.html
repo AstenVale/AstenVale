@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leaderboard — The Asten Vale Archives</title>
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+  --ink:         #1c120a;
+  --ink-faded:   #4a3728;
+  --paper:       #c9a97a;
+  --paper-dark:  #b8935e;
+  --folder-red:  #7a1f1f;
+  --gold:        #c9960c;
+  --bg:          #0c0a06;
+  --font-type:   'Courier Prime','Courier New',Courier,monospace;
+  --font-header: 'Special Elite','Courier New',serif;
+}
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--ink);font-family:var(--font-type);font-size:15px;line-height:1.7;min-height:100vh;}
+
+.site-wrapper{max-width:900px;margin:0 auto;padding:0 1.25rem 4rem;}
+.site-nav{display:flex;align-items:center;justify-content:space-between;padding:1.25rem 2.5rem;}
+.nav-brand{font-family:var(--font-header);font-size:0.75rem;letter-spacing:0.22em;color:rgba(201,169,122,0.75);text-decoration:none;text-transform:uppercase;line-height:1.3;}
+.nav-brand span{display:block;}
+.nav-links{display:flex;gap:2rem;align-items:center;}
+.nav-link{font-family:var(--font-type);font-size:0.72rem;letter-spacing:0.18em;color:rgba(201,169,122,0.7);text-decoration:none;text-transform:uppercase;}
+.nav-link:hover, .nav-link.active{color:var(--paper);}
+
+.hero{text-align:center;padding:2rem 2rem 2.5rem;}
+.hero-eyebrow{font-size:0.68rem;letter-spacing:0.32em;color:rgba(201,169,122,0.45);text-transform:uppercase;margin-bottom:0.5rem;}
+.hero-title{font-family:var(--font-header);font-size:clamp(1.8rem,6vw,3rem);letter-spacing:0.1em;color:rgba(220,190,140,0.95);text-transform:uppercase;}
+.hero-sub{font-size:0.8rem;letter-spacing:0.1em;color:rgba(201,169,122,0.55);margin-top:0.6rem;}
+
+.paper-panel{background:var(--paper);padding:2rem 1.75rem;box-shadow:0 6px 30px rgba(0,0,0,0.5);}
+
+table{width:100%;border-collapse:collapse;}
+th{font-family:var(--font-type);font-size:0.62rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--ink-faded);text-align:left;padding:0.6rem 0.5rem;border-bottom:2px solid rgba(60,30,10,0.25);}
+td{padding:0.65rem 0.5rem;border-bottom:1px solid rgba(60,30,10,0.12);font-size:0.85rem;}
+tr:first-child td{font-family:var(--font-header);}
+.rank{color:var(--folder-red);font-weight:bold;width:2.5rem;}
+.empty{padding:2rem 0.5rem;text-align:center;color:var(--ink-faded);font-style:italic;}
+
+.back-link{display:inline-block;font-size:0.7rem;letter-spacing:0.15em;color:rgba(201,169,122,0.6);text-decoration:underline;text-underline-offset:3px;text-transform:uppercase;margin:0 0 1.25rem 2.5rem;}
+  </style>
+</head>
+<body>
+  <nav class="site-nav">
+    <a href="index.html" class="nav-brand">
+      <span>Asten Vale</span>
+      <span>Archives</span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html" class="nav-link">Archive</a>
+      <a href="cabinet.html" class="nav-link">Cabinet</a>
+      <a href="progress.html" class="nav-link">Progress</a>
+      <a href="leaderboard.html" class="nav-link active">Leaderboard</a>
+    </div>
+  </nav>
+
+  <a href="progress.html" class="back-link">&larr; Back to Progress</a>
+
+  <div class="hero">
+    <p class="hero-eyebrow">Public Record</p>
+    <h1 class="hero-title">Leaderboard</h1>
+    <p class="hero-sub">Investigators who opted in with a display name.</p>
+  </div>
+
+  <div class="site-wrapper">
+    <div class="paper-panel">
+      <table id="lbTable">
+        <thead>
+          <tr>
+            <th class="rank">#</th>
+            <th>Investigator</th>
+            <th>Cases</th>
+            <th>Badges</th>
+            <th>Last Case</th>
+          </tr>
+        </thead>
+        <tbody id="lbBody">
+          <tr><td colspan="5" class="empty">Loading…</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+  <script>
+  (function () {
+    var SUPABASE_URL = 'https://qtjdavuqytxqihwspchh.supabase.co';
+    var SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InF0amRhdnVxeXR4cWlod3NwY2hoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODMwMzg3NjksImV4cCI6MjA5ODYxNDc2OX0.Hyl9Rf62CHEEI7rK_iF5PjKzc0Xd93WC-YrhM-L4ohg';
+
+    function esc(s) {
+      return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
+        return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+      });
+    }
+
+    var body = document.getElementById('lbBody');
+
+    if (!window.supabase) {
+      body.innerHTML = '<tr><td colspan="5" class="empty">Leaderboard is unavailable right now.</td></tr>';
+      return;
+    }
+
+    var client = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+    client.from('public_leaderboard')
+      .select('*')
+      .order('total_cases_completed', { ascending: false })
+      .limit(100)
+      .then(function (res) {
+        if (res.error || !res.data || !res.data.length) {
+          body.innerHTML = '<tr><td colspan="5" class="empty">No entries yet. Be the first — sync your progress with a display name from the Progress page.</td></tr>';
+          return;
+        }
+        var html = '';
+        res.data.forEach(function (row, i) {
+          html += '<tr>' +
+            '<td class="rank">' + (i + 1) + '</td>' +
+            '<td>' + esc(row.display_name) + '</td>' +
+            '<td>' + esc(row.total_cases_completed) + '</td>' +
+            '<td>' + esc(row.badge_count) + '</td>' +
+            '<td>' + (row.last_completed_case ? 'Case ' + esc(row.last_completed_case) : '&#8212;') + '</td>' +
+            '</tr>';
+        });
+        body.innerHTML = html;
+      })
+      .catch(function () {
+        body.innerHTML = '<tr><td colspan="5" class="empty">Leaderboard is unavailable right now.</td></tr>';
+      });
+  })();
+  </script>
+</body>
+</html>

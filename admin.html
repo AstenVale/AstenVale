@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Admin — Asten Vale Archives</title>
+  <style>
+:root {
+  --ink: #1c120a; --ink-faded: #4a3728; --paper: #c9a97a;
+  --folder-red: #7a1f1f; --bg: #0c0a06;
+  --font-type: 'Courier New', Courier, monospace;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+body{background:var(--bg);color:var(--paper);font-family:var(--font-type);font-size:14px;line-height:1.6;min-height:100vh;padding:2rem;}
+h1{font-size:1.3rem;letter-spacing:0.08em;margin-bottom:1.5rem;color:var(--paper);}
+h2{font-size:0.95rem;letter-spacing:0.06em;margin:2rem 0 0.75rem;color:var(--paper);border-bottom:1px solid rgba(201,169,122,0.25);padding-bottom:0.4rem;}
+.wrap{max-width:960px;margin:0 auto;}
+
+#loginCard{max-width:360px;margin:4rem auto;background:rgba(201,169,122,0.06);border:1px solid rgba(201,169,122,0.2);padding:2rem;}
+#loginCard input{width:100%;padding:0.6rem 0.7rem;margin-bottom:0.75rem;background:rgba(0,0,0,0.3);border:1px solid rgba(201,169,122,0.25);color:var(--paper);font-family:var(--font-type);font-size:0.85rem;}
+#loginCard button{width:100%;padding:0.65rem;background:var(--folder-red);color:#fff;border:none;cursor:pointer;font-family:var(--font-type);font-size:0.8rem;letter-spacing:0.08em;text-transform:uppercase;}
+#loginError{color:#e88;font-size:0.78rem;margin-top:0.5rem;min-height:1.2em;}
+
+.stat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:0.75rem;}
+.stat-tile{background:rgba(201,169,122,0.06);border:1px solid rgba(201,169,122,0.15);padding:1rem;}
+.stat-tile .num{font-size:1.6rem;color:var(--paper);}
+.stat-tile .label{font-size:0.65rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(201,169,122,0.5);margin-top:0.25rem;}
+
+table{width:100%;border-collapse:collapse;font-size:0.8rem;}
+th{text-align:left;padding:0.45rem 0.5rem;color:rgba(201,169,122,0.55);font-size:0.65rem;letter-spacing:0.08em;text-transform:uppercase;border-bottom:1px solid rgba(201,169,122,0.2);}
+td{padding:0.45rem 0.5rem;border-bottom:1px solid rgba(201,169,122,0.08);}
+
+#dashboard{display:none;}
+.signout{float:right;font-size:0.7rem;color:rgba(201,169,122,0.5);cursor:pointer;text-decoration:underline;}
+.empty{color:rgba(201,169,122,0.4);font-style:italic;padding:0.75rem 0;}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+
+    <div id="loginCard">
+      <h1 style="margin-bottom:1rem;">Admin Sign In</h1>
+      <input type="email" id="loginEmail" placeholder="Admin email" autocomplete="username" />
+      <input type="password" id="loginPassword" placeholder="Password" autocomplete="current-password" />
+      <button id="loginBtn">Sign In</button>
+      <div id="loginError"></div>
+    </div>
+
+    <div id="dashboard">
+      <span class="signout" id="signOutBtn">Sign Out</span>
+      <h1>Player Progress — Admin Stats</h1>
+
+      <div class="stat-grid" id="summaryTiles"></div>
+
+      <h2>Most Completed Cases</h2>
+      <table><thead><tr><th>Case</th><th>Players</th></tr></thead><tbody id="mostCompletedBody"></tbody></table>
+
+      <h2>Vault Unlock Counts</h2>
+      <table><thead><tr><th>Vault</th><th>Players</th></tr></thead><tbody id="vaultCountsBody"></tbody></table>
+
+      <h2>Top Badges Earned</h2>
+      <table><thead><tr><th>Badge</th><th>Players</th></tr></thead><tbody id="topBadgesBody"></tbody></table>
+
+      <h2>Recent Completions</h2>
+      <table><thead><tr><th>Player</th><th>Last Case</th><th>Total</th><th>Updated</th></tr></thead><tbody id="recentBody"></tbody></table>
+    </div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+  <script>
+  (function () {
+    var SUPABASE_URL = 'https://qtjdavuqytxqihwspchh.supabase.co';
+    var SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InF0amRhdnVxeXR4cWlod3NwY2hoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODMwMzg3NjksImV4cCI6MjA5ODYxNDc2OX0.Hyl9Rf62CHEEI7rK_iF5PjKzc0Xd93WC-YrhM-L4ohg';
+    var client = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
+    var loginCard = document.getElementById('loginCard');
+    var dashboard = document.getElementById('dashboard');
+    var loginError = document.getElementById('loginError');
+
+    function esc(s) {
+      return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
+        return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+      });
+    }
+
+    document.getElementById('loginBtn').addEventListener('click', function () {
+      loginError.textContent = '';
+      var email = document.getElementById('loginEmail').value.trim();
+      var password = document.getElementById('loginPassword').value;
+      client.auth.signInWithPassword({ email: email, password: password }).then(function (res) {
+        if (res.error) { loginError.textContent = res.error.message; return; }
+        showDashboard();
+      });
+    });
+
+    document.getElementById('signOutBtn').addEventListener('click', function () {
+      client.auth.signOut().then(function () { location.reload(); });
+    });
+
+    function showDashboard() {
+      loginCard.style.display = 'none';
+      dashboard.style.display = 'block';
+      loadStats();
+    }
+
+    function loadStats() {
+      // RLS only allows this full-table select for an authenticated (signed-in) session.
+      client.from('player_progress').select('*').then(function (res) {
+        if (res.error) {
+          dashboard.innerHTML = '<p class="empty">Could not load stats: ' + esc(res.error.message) + '</p>';
+          return;
+        }
+        render(res.data || []);
+      });
+    }
+
+    function render(rows) {
+      // Summary tiles
+      var totalPlayers = rows.length;
+      var totalCasesSum = rows.reduce(function (s, r) { return s + (r.total_cases_completed || 0); }, 0);
+      var avgCases = totalPlayers ? (totalCasesSum / totalPlayers).toFixed(1) : '0';
+      var namedPlayers = rows.filter(function (r) { return r.display_name; }).length;
+
+      document.getElementById('summaryTiles').innerHTML =
+        tile(totalPlayers, 'Total Players') +
+        tile(avgCases, 'Avg Cases / Player') +
+        tile(namedPlayers, 'On Leaderboard');
+
+      // Most completed cases
+      var caseCounts = {};
+      rows.forEach(function (r) {
+        (r.completed_cases || []).forEach(function (id) {
+          caseCounts[id] = (caseCounts[id] || 0) + 1;
+        });
+      });
+      renderCountTable('mostCompletedBody', caseCounts, 'Case ', 20);
+
+      // Vault unlock counts
+      var vaultCounts = {};
+      rows.forEach(function (r) {
+        (r.unlocked_vaults || []).forEach(function (id) {
+          vaultCounts[id] = (vaultCounts[id] || 0) + 1;
+        });
+      });
+      renderCountTable('vaultCountsBody', vaultCounts, '', 50);
+
+      // Top badges
+      var badgeCounts = {};
+      rows.forEach(function (r) {
+        (r.earned_badges || []).forEach(function (id) {
+          badgeCounts[id] = (badgeCounts[id] || 0) + 1;
+        });
+      });
+      renderCountTable('topBadgesBody', badgeCounts, '', 20);
+
+      // Recent completions
+      var recent = rows.slice().sort(function (a, b) {
+        return new Date(b.updated_at) - new Date(a.updated_at);
+      }).slice(0, 25);
+      var recentBody = document.getElementById('recentBody');
+      recentBody.innerHTML = recent.length ? recent.map(function (r) {
+        return '<tr>' +
+          '<td>' + esc(r.display_name || '(anonymous)') + '</td>' +
+          '<td>' + (r.last_completed_case ? 'Case ' + esc(r.last_completed_case) : '&#8212;') + '</td>' +
+          '<td>' + esc(r.total_cases_completed) + '</td>' +
+          '<td>' + esc(new Date(r.updated_at).toLocaleString()) + '</td>' +
+          '</tr>';
+      }).join('') : '<tr><td colspan="4" class="empty">No players yet.</td></tr>';
+    }
+
+    function tile(num, label) {
+      return '<div class="stat-tile"><div class="num">' + esc(num) + '</div><div class="label">' + esc(label) + '</div></div>';
+    }
+
+    function renderCountTable(elId, counts, prefix, limit) {
+      var el = document.getElementById(elId);
+      var entries = Object.keys(counts).map(function (k) { return [k, counts[k]]; })
+        .sort(function (a, b) { return b[1] - a[1]; })
+        .slice(0, limit);
+      el.innerHTML = entries.length ? entries.map(function (e) {
+        return '<tr><td>' + esc(prefix + e[0]) + '</td><td>' + esc(e[1]) + '</td></tr>';
+      }).join('') : '<tr><td colspan="2" class="empty">No data yet.</td></tr>';
+    }
+
+    // If already signed in (session persisted), skip the login form.
+    client.auth.getSession().then(function (res) {
+      if (res.data && res.data.session) showDashboard();
+    });
+  })();
+  </script>
+</body>
+</html>

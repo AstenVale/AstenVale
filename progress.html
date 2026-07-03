@@ -1023,6 +1023,7 @@
         <a href="cabinet.html"   class="nav-link" data-icon="&#128269;">Cabinet</a>
         <a href="completed.html" class="nav-link" data-icon="&#10022;">Completed</a>
         <a href="progress.html"  class="nav-link active" data-icon="&#9678;">Progress</a>
+        <a href="leaderboard.html" class="nav-link" data-icon="&#9873;">Leaderboard</a>
         <a href="about.html"     class="nav-link" data-icon="&#9673;">About</a>
         <a href="join.html"      class="nav-link" data-icon="&#9993;">Join</a>
       </div>
@@ -1143,6 +1144,32 @@
         <div class="archive-total-pct" id="archiveTotalPct">0%</div>
         <div class="archive-total-label">of the Asten Vale Archive has been recovered</div>
         <div id="archiveOpenStamp"></div>
+      </div>
+
+      <hr class="section-divider" />
+
+      <!-- ── SYNC PROGRESS ── -->
+      <div class="section-head" style="padding-top:0">
+        <p class="section-label">Optional</p>
+        <h2 class="section-title">Sync Progress</h2>
+        <div class="section-rule"></div>
+      </div>
+
+      <div class="inv-card" style="display:flex;flex-direction:column;gap:0.75rem;">
+        <p style="font-family:var(--font-type);font-size:0.78rem;line-height:1.6;color:rgba(60,30,10,0.6);margin:0;">
+          Your progress already lives on this device. Syncing is optional — it saves a copy so you don't lose it if you clear your browser, and (if you add a name) lists you on the public leaderboard.
+        </p>
+        <input
+          type="text"
+          id="syncDisplayName"
+          maxlength="40"
+          placeholder="Display name (optional — leave blank to stay off the leaderboard)"
+          style="font-family:var(--font-type);font-size:0.75rem;padding:0.6rem 0.8rem;border:1px solid rgba(60,30,10,0.2);background:rgba(255,255,255,0.4);color:rgba(60,30,10,0.85);"
+        />
+        <div style="display:flex;align-items:center;gap:0.75rem;flex-wrap:wrap;">
+          <button class="btn-reset" id="btnSyncProgress" style="color:rgba(60,110,60,0.7);border-color:rgba(60,110,60,0.3);">Sync Progress</button>
+          <span id="syncStatus" style="font-family:var(--font-type);font-size:0.7rem;color:rgba(60,30,10,0.5);"></span>
+        </div>
       </div>
 
       <!-- RESET -->
@@ -1540,5 +1567,30 @@
   </script>
 
   <script src="js/polish.js" defer></script>
+
+  <!-- Optional progress sync (safe to remove: this tag + the two below + the
+       "Sync Progress" card above + js/supabase-progress-sync.js) -->
+  <script src="js/badges.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+  <script src="js/supabase-progress-sync.js"></script>
+  <script>
+  (function () {
+    var btn = document.getElementById('btnSyncProgress');
+    var nameInput = document.getElementById('syncDisplayName');
+    var status = document.getElementById('syncStatus');
+    if (!btn) return;
+    btn.addEventListener('click', function () {
+      if (!window.AVProgressSync) { status.textContent = 'Sync is unavailable right now.'; return; }
+      btn.disabled = true;
+      status.textContent = 'Syncing…';
+      window.AVProgressSync.syncProgress(nameInput.value, function (err) {
+        btn.disabled = false;
+        status.textContent = err
+          ? 'Sync failed — please try again later.'
+          : 'Synced just now.';
+      });
+    });
+  })();
+  </script>
 </body>
 </html>
