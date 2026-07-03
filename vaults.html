@@ -75,6 +75,9 @@
     .vault-row-lore.open{display:block;}
     .vault-row-body{display:flex;flex-direction:column;min-width:0;}
     .vault-row-empty{font-size:0.75rem;font-style:italic;color:rgba(201,169,122,0.45);padding:0.5rem 0;}
+    .vault-row-reward{font-size:0.68rem;letter-spacing:0.05em;margin-top:0.3rem;}
+    .vault-row-reward a{color:var(--gold);text-decoration:underline;text-underline-offset:2px;}
+    .vault-row-reward.pending{color:rgba(201,169,122,0.4);font-style:italic;}
     .vault-footer-note{text-align:center;font-size:0.72rem;font-style:italic;letter-spacing:0.06em;color:rgba(201,169,122,0.4);margin-top:1.5rem;}
 
     /* ── Current vault progress bar ───────────────────────────────────── */
@@ -197,7 +200,7 @@
       return { card: card, solvedCount: solvedCount, totalCount: totalCount };
     }
 
-    function render(progress, releasedIds) {
+    function render(progress, releasedIds, vaultRewards) {
       document.getElementById('loadingNote').style.display = 'none';
       document.getElementById('vaultsContent').style.display = 'block';
 
@@ -221,6 +224,15 @@
       }
 
       var seasonsWithVaults = SEASONS_CONFIG.filter(function (s) { return !!s.vault; });
+
+      // player_vault_rewards already only ever contains rows for vaults
+      // this signed-in player has unlocked AND that are released = true
+      // with a real reward_url (enforced server-side by the view + RLS --
+      // see supabase/vault_rewards_migration.sql). Keyed by vault number
+      // (1-based, matching "Vault 01" etc. elsewhere on this page) purely
+      // for O(1) lookup while rendering rows below.
+      var rewardsByVault = {};
+      (vaultRewards || []).forEach(function (r) { rewardsByVault[r.vault] = r; });
 
       // "Current" is the first season whose vault isn't completed yet.
       // "Next" is the one right after it. This page is a teaser, not a
@@ -249,6 +261,8 @@
 
         if (isCompleted) {
           completedCount++;
+          var vaultNum = i + 1;
+          var reward = rewardsByVault[vaultNum];
           var row = document.createElement('div');
           row.className = 'vault-row completed';
           row.innerHTML =
@@ -257,12 +271,25 @@
               '<span class="vault-row-name"></span>' +
               '<button type="button" class="vault-row-view-btn">Open Vault</button>' +
               '<span class="vault-row-lore"></span>' +
+              '<span class="vault-row-reward"></span>' +
             '</span></span>';
           row.querySelector('.vault-row-name').textContent = vault.name;
           row.querySelector('.vault-row-lore').textContent = vault.lore || '';
           row.querySelector('.vault-row-view-btn').addEventListener('click', function () {
             row.querySelector('.vault-row-lore').classList.toggle('open');
           });
+          var rewardEl = row.querySelector('.vault-row-reward');
+          if (reward && reward.reward_url) {
+            var link = document.createElement('a');
+            link.href = reward.reward_url;
+            link.target = '_blank';
+            link.rel = 'noopener';
+            link.textContent = 'Open Reward';
+            rewardEl.appendChild(link);
+          } else {
+            rewardEl.classList.add('pending');
+            rewardEl.textContent = 'Reward pending';
+          }
           completedList.appendChild(row);
           return;
         }
@@ -341,6 +368,20 @@
       });
     }
 
+    // player_vault_rewards is a per-player view (RLS + unlock join, see
+    // supabase/vault_rewards_migration.sql) -- it can only ever return
+    // rewards for vaults this signed-in player has already unlocked, and
+    // only once released = true. A read failure here degrades to "no
+    // rewards shown" rather than breaking the rest of the page.
+    function getVaultRewards() {
+      var client = window.AVProgressSync.getClient();
+      if (!client) return Promise.resolve([]);
+      return client.from('player_vault_rewards').select('vault, reward_title, reward_url').then(function (res) {
+        if (res.error || !res.data) return [];
+        return res.data;
+      });
+    }
+
     window.AVProgressSync.getUser().then(function (user) {
       if (!user) {
         window.location.href = 'login.html?redirect=' + encodeURIComponent('vaults.html');
@@ -348,9 +389,10 @@
       }
       Promise.all([
         window.AVProgressSync.getSupabaseProgress(user),
-        getReleasedCaseIds()
+        getReleasedCaseIds(),
+        getVaultRewards()
       ]).then(function (results) {
-        render(results[0], results[1]);
+        render(results[0], results[1], results[2]);
       });
     });
   })();

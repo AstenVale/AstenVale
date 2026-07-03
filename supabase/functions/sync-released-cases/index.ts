@@ -25,6 +25,10 @@ const CORS_HEADERS = {
 const ADMIN_EMAIL = "marketingaftermidnight@gmail.com";
 const SHEET_URL =
   "https://docs.google.com/spreadsheets/d/e/2PACX-1vR1lN7dxScXihZSpJ4jUe-k6u-Z4NKu9UOwnu5ULio9G0oxRjb7SsST7GlFHTxlrK2t0NnmWPPq-767/pub?output=csv";
+// Sheet 2 of the same published spreadsheet -- vault rewards (vault,
+// reward_title, reward_url, released). gid supplied by the site owner.
+const SHEET2_URL =
+  "https://docs.google.com/spreadsheets/d/e/2PACX-1vR1lN7dxScXihZSpJ4jUe-k6u-Z4NKu9UOwnu5ULio9G0oxRjb7SsST7GlFHTxlrK2t0NnmWPPq-767/pub?gid=968106571&single=true&output=csv";
 
 function parseCsv(csv: string): string[][] {
   return csv
@@ -55,6 +59,39 @@ function releasedIdsFromSheet(csv: string): string[] {
     if (hasLink) ids.push(id);
   }
   return ids;
+}
+
+interface VaultRewardRow {
+  vault: number;
+  reward_title: string;
+  reward_url: string;
+  released: boolean;
+}
+
+function vaultRewardsFromSheet(csv: string): VaultRewardRow[] {
+  const rows = parseCsv(csv);
+  if (rows.length < 2) return [];
+  const headers = rows[0].map((h) => h.toLowerCase());
+  const vaultCol = headers.indexOf("vault");
+  const titleCol = headers.indexOf("reward_title");
+  const urlCol = headers.indexOf("reward_url");
+  const releasedCol = headers.indexOf("released");
+  if (vaultCol === -1) return [];
+
+  const out: VaultRewardRow[] = [];
+  for (const row of rows.slice(1)) {
+    const rawVault = row[vaultCol];
+    if (!rawVault) continue;
+    const vault = parseInt(rawVault, 10);
+    if (!Number.isFinite(vault)) continue;
+    out.push({
+      vault,
+      reward_title: titleCol !== -1 ? (row[titleCol] ?? "") : "",
+      reward_url: urlCol !== -1 ? (row[urlCol] ?? "") : "",
+      released: releasedCol !== -1 ? (row[releasedCol] ?? "").toUpperCase() === "TRUE" : false,
+    });
+  }
+  return out;
 }
 
 Deno.serve(async (req) => {
@@ -132,11 +169,45 @@ Deno.serve(async (req) => {
     }
   }
 
+  // Sheet 2 -- vault rewards. Independent of the case-release sync above:
+  // a problem here never blocks or rolls back the case-release result,
+  // and vice versa. Straightforward upsert (not additive-only like
+  // released_cases) since the sheet's `released` column is meant to be
+  // flippable in both directions by the publisher.
+  let vaultRewardsResult: { synced: number; error: string | null } = { synced: 0, error: null };
+  try {
+    const sheet2Res = await fetch(SHEET2_URL);
+    if (!sheet2Res.ok) throw new Error("sheet2 fetch failed: " + sheet2Res.status);
+    const sheet2Csv = await sheet2Res.text();
+    const rewards = vaultRewardsFromSheet(sheet2Csv);
+
+    for (const r of rewards) {
+      const { error: upsertError } = await adminClient
+        .from("vault_rewards")
+        .upsert(
+          {
+            vault: r.vault,
+            reward_title: r.reward_title,
+            reward_url: r.reward_url,
+            released: r.released,
+            updated_at: new Date().toISOString(),
+          },
+          { onConflict: "vault" },
+        );
+      if (upsertError) throw upsertError;
+    }
+    vaultRewardsResult.synced = rewards.length;
+  } catch (e) {
+    vaultRewardsResult.error = String(e);
+  }
+
   return new Response(
     JSON.stringify({
       sheet_released_count: sheetReleasedIds.length,
       newly_released: newlyReleased,
       already_released_count: alreadyReleased.size,
+      vault_rewards_synced: vaultRewardsResult.synced,
+      vault_rewards_error: vaultRewardsResult.error,
     }),
     { status: 200, headers: { ...CORS_HEADERS, "Content-Type": "application/json" } },
   );
