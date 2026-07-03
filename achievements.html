@@ -33,6 +33,17 @@
     .badge-group{margin-bottom:2.25rem;}
     .badge-group-title{font-family:var(--font-header);font-size:1rem;letter-spacing:0.1em;color:rgba(220,190,140,0.9);text-transform:uppercase;margin-bottom:0.85rem;padding-bottom:0.4rem;border-bottom:1px solid rgba(201,169,122,0.2);}
     .badge-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:0.85rem;}
+
+    .vault-group{margin-bottom:1rem;border-bottom:1px solid rgba(201,169,122,0.2);}
+    .vault-summary{display:flex;align-items:center;justify-content:space-between;gap:1rem;cursor:pointer;list-style:none;padding-bottom:0.85rem;-webkit-tap-highlight-color:transparent;}
+    .vault-summary::-webkit-details-marker{display:none;}
+    .vault-summary-left{display:flex;align-items:center;gap:0.7rem;min-width:0;}
+    .vault-caret{font-size:0.7rem;color:rgba(201,169,122,0.55);transition:transform 0.15s;flex-shrink:0;}
+    .vault-group[open] .vault-caret{transform:rotate(90deg);}
+    .vault-title{font-family:var(--font-header);font-size:1rem;letter-spacing:0.1em;color:rgba(220,190,140,0.9);text-transform:uppercase;overflow-wrap:anywhere;}
+    .vault-count{font-size:0.7rem;letter-spacing:0.06em;color:rgba(201,169,122,0.65);white-space:nowrap;flex-shrink:0;}
+    .vault-count.complete{color:var(--gold);}
+    .vault-group .badge-grid{margin-top:0.9rem;padding-bottom:1rem;}
     .badge-card{background:var(--paper);color:var(--ink);padding:1.1rem 0.9rem;text-align:center;box-shadow:0 4px 20px rgba(0,0,0,0.35);}
     .badge-card.locked{opacity:0.4;filter:grayscale(0.5);}
     .badge-symbol{font-size:2rem;}
@@ -98,19 +109,10 @@
         byCategory[cat].push(badge);
       });
 
-      order.forEach(function (cat) {
-        var section = document.createElement('div');
-        section.className = 'badge-group';
-
-        var title = document.createElement('div');
-        title.className = 'badge-group-title';
-        title.textContent = cat;
-        section.appendChild(title);
-
+      function buildGrid(badges) {
         var grid = document.createElement('div');
         grid.className = 'badge-grid';
-
-        byCategory[cat].forEach(function (badge) {
+        badges.forEach(function (badge) {
           var isEarned = !!earned[badge.id];
           var card = document.createElement('div');
           card.className = 'badge-card ' + (isEarned ? 'earned' : 'locked');
@@ -120,9 +122,47 @@
             '<div class="badge-desc">' + (isEarned ? badge.description : (badge.hint || 'Keep investigating.')) + '</div>';
           grid.appendChild(card);
         });
+        return grid;
+      }
 
-        section.appendChild(grid);
-        groups.appendChild(section);
+      order.forEach(function (cat) {
+        var isVault = /^Vault\s+\d+/.test(cat);
+        var catBadges = byCategory[cat];
+        var earnedCount = catBadges.filter(function (b) { return !!earned[b.id]; }).length;
+
+        if (isVault) {
+          var isSeasonOne = /^Vault\s+01\b/.test(cat);
+
+          var details = document.createElement('details');
+          details.className = 'vault-group';
+          if (isSeasonOne) { details.open = true; }
+
+          var summary = document.createElement('summary');
+          summary.className = 'vault-summary';
+          summary.innerHTML =
+            '<span class="vault-summary-left"><span class="vault-caret">&#9656;</span>' +
+            '<span class="vault-title"></span></span>' +
+            '<span class="vault-count"></span>';
+          summary.querySelector('.vault-title').textContent = cat;
+          var countEl = summary.querySelector('.vault-count');
+          countEl.textContent = earnedCount + ' / ' + catBadges.length;
+          if (earnedCount === catBadges.length) { countEl.classList.add('complete'); }
+
+          details.appendChild(summary);
+          details.appendChild(buildGrid(catBadges));
+          groups.appendChild(details);
+        } else {
+          var section = document.createElement('div');
+          section.className = 'badge-group';
+
+          var title = document.createElement('div');
+          title.className = 'badge-group-title';
+          title.textContent = cat;
+          section.appendChild(title);
+
+          section.appendChild(buildGrid(catBadges));
+          groups.appendChild(section);
+        }
       });
     }
 
