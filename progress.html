@@ -996,6 +996,26 @@
 </head>
 <body>
 
+  <!-- ── AUTH GATE (see case.html for the original / fuller comment) ── -->
+  <div id="authGate" style="position:fixed;inset:0;z-index:99999;background:#0c0a06;display:flex;align-items:center;justify-content:center;font-family:'Courier Prime','Courier New',monospace;color:rgba(201,169,122,0.7);font-size:0.85rem;letter-spacing:0.08em;text-transform:uppercase;">
+    Verifying investigator credentials&hellip;
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+  <script src="js/progress-sync.js"></script>
+  <script>
+  (function () {
+    var gate = document.getElementById('authGate');
+    function unlock() { if (gate) gate.remove(); }
+    if (!window.AVProgressSync) { unlock(); return; }
+    window.AVProgressSync.getUser().then(function (user) {
+      if (user) { unlock(); return; }
+      var here = window.location.pathname.split('/').pop() + window.location.search;
+      window.location.href = 'login.html?redirect=' + encodeURIComponent(here);
+    }).catch(function () { unlock(); });
+  })();
+  </script>
+  <!-- ── END AUTH GATE ── -->
+
   <section class="hero">
     <div class="hero-bg"></div>
     <div class="hero-glow"></div>
@@ -1591,11 +1611,11 @@
 
   <script src="js/polish.js" defer></script>
 
-  <!-- Optional progress sync (safe to remove: this tag + the two below + the
-       "Save Progress" card above + js/progress-sync.js) -->
+  <!-- Optional progress sync UI wiring. supabase-js and js/progress-sync.js
+       are already loaded by the auth gate near the top of <body> now, so
+       they're not repeated here. Safe to remove: this whole block + the
+       "Save Progress" card above + the auth gate + js/progress-sync.js. -->
   <script src="js/badges.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
-  <script src="js/progress-sync.js"></script>
   <script>
   (function () {
     var loggedOutBox   = document.getElementById('authLoggedOut');
@@ -1673,12 +1693,19 @@
       });
     });
 
-    // On load: if already signed in (e.g. just followed a magic link), or a
-    // session already exists, show the logged-in state and sync once.
-    window.AVProgressSync.getUser().then(function (user) {
-      if (!user) return;
+    // React to auth state changes rather than checking once at load --
+    // Supabase parses the magic-link token out of the URL asynchronously,
+    // so a one-shot getUser() call right at page load can run before that
+    // finishes and miss the login entirely. This fires for the initial
+    // session (if any existed already) AND for a fresh sign-in from a
+    // magic link, so both cases are covered by one listener.
+    var syncedOnce = false;
+    window.AVProgressSync.onAuthChange(function (event, user) {
+      if (!user) { showLoggedOut(); return; }
       showLoggedIn(user);
       loadProfile(user);
+      if (syncedOnce) return; // avoid re-syncing on every unrelated auth event
+      syncedOnce = true;
       syncStatus.textContent = 'Syncing…';
       window.AVProgressSync.syncProgress(function (err) {
         syncStatus.textContent = err ? 'Sync failed — try again later.' : 'Synced just now.';

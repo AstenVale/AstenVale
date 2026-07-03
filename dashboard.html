@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Detective Dashboard — The Asten Vale Archives</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --ink: #1c120a; --ink-faded: #4a3728; --paper: #c9a97a; --paper-dark: #b8935e;
+      --gold: #c9960c; --green-pine: #4a7c4e; --folder-red: #7a1f1f; --bg: #0c0a06;
+      --font-type: 'Courier Prime', 'Courier New', Courier, monospace;
+      --font-header: 'Special Elite', 'Courier New', serif;
+    }
+    body { background: var(--bg); color: var(--paper); font-family: var(--font-type); min-height: 100vh; }
+
+    .site-nav{display:flex;align-items:center;justify-content:space-between;padding:1.25rem 2.5rem;}
+    .nav-brand{font-family:var(--font-header);font-size:0.75rem;letter-spacing:0.22em;color:rgba(201,169,122,0.75);text-decoration:none;text-transform:uppercase;line-height:1.3;}
+    .nav-brand span{display:block;}
+    .nav-links{display:flex;gap:1.75rem;align-items:center;flex-wrap:wrap;}
+    .nav-link{font-family:var(--font-type);font-size:0.7rem;letter-spacing:0.14em;color:rgba(201,169,122,0.7);text-decoration:none;text-transform:uppercase;}
+    .nav-link:hover,.nav-link.active{color:var(--paper);}
+    .nav-link.logout{color:rgba(122,31,31,0.75);cursor:pointer;}
+
+    .hero{text-align:center;padding:2rem 2rem 1rem;}
+    .hero-eyebrow{font-size:0.68rem;letter-spacing:0.3em;color:rgba(201,169,122,0.45);text-transform:uppercase;}
+    .hero-title{font-family:var(--font-header);font-size:clamp(1.8rem,6vw,2.8rem);letter-spacing:0.08em;color:rgba(220,190,140,0.95);text-transform:uppercase;margin-top:0.4rem;}
+    .hero-rank{font-size:0.8rem;letter-spacing:0.15em;color:var(--gold);text-transform:uppercase;margin-top:0.5rem;}
+
+    .wrap{max-width:900px;margin:0 auto;padding:1.5rem 1.25rem 4rem;}
+
+    .stat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:0.85rem;margin-bottom:2rem;}
+    .stat-tile{background:var(--paper);color:var(--ink);padding:1.1rem;text-align:center;box-shadow:0 4px 20px rgba(0,0,0,0.35);}
+    .stat-tile .num{font-family:var(--font-header);font-size:1.7rem;color:var(--folder-red);}
+    .stat-tile .label{font-size:0.62rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink-faded);margin-top:0.3rem;}
+
+    .continue-card{background:var(--paper);color:var(--ink);padding:1.75rem;margin-bottom:2rem;text-align:center;box-shadow:0 4px 20px rgba(0,0,0,0.35);}
+    .continue-card .label{font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--ink-faded);margin-bottom:0.5rem;}
+    .continue-card .case-title{font-family:var(--font-header);font-size:1.15rem;margin-bottom:1rem;}
+    .continue-btn{display:inline-block;font-family:var(--font-header);font-size:0.85rem;letter-spacing:0.08em;color:#fff;background:var(--folder-red);padding:0.8rem 2rem;text-decoration:none;text-transform:uppercase;}
+    .continue-btn:hover{background:#8b1a1a;}
+
+    .nav-tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:0.75rem;}
+    .nav-tile{display:block;background:rgba(201,169,122,0.08);border:1px solid rgba(201,169,122,0.2);padding:1.1rem 0.75rem;text-align:center;text-decoration:none;color:var(--paper);font-size:0.78rem;letter-spacing:0.06em;text-transform:uppercase;transition:background 0.15s;}
+    .nav-tile:hover{background:rgba(201,169,122,0.16);}
+
+    .empty-note{font-size:0.8rem;color:rgba(201,169,122,0.5);font-style:italic;text-align:center;padding:1rem 0;}
+    #loadingNote{text-align:center;padding:4rem 1rem;color:rgba(201,169,122,0.5);font-size:0.8rem;}
+  </style>
+</head>
+<body>
+
+  <nav class="site-nav">
+    <a href="index.html" class="nav-brand">
+      <span>Asten Vale</span>
+      <span>Archives</span>
+    </a>
+    <div class="nav-links">
+      <a href="dashboard.html" class="nav-link active">Dashboard</a>
+      <a href="index.html" class="nav-link">Archive</a>
+      <a href="cabinet.html" class="nav-link">Case Files</a>
+      <a href="evidence.html" class="nav-link">Evidence</a>
+      <a href="progress.html" class="nav-link">Progress</a>
+      <a href="leaderboard.html" class="nav-link">Leaderboard</a>
+      <span class="nav-link logout" id="logoutLink">Logout</span>
+    </div>
+  </nav>
+
+  <div id="loadingNote">Retrieving your case file&hellip;</div>
+
+  <div id="dashboardContent" style="display:none;">
+    <div class="hero">
+      <p class="hero-eyebrow">Official Case File</p>
+      <h1 class="hero-title" id="detectiveName">Detective</h1>
+      <p class="hero-rank" id="detectiveRank">Rookie Investigator</p>
+    </div>
+
+    <div class="wrap">
+      <div class="stat-grid">
+        <div class="stat-tile"><div class="num" id="statCases">0</div><div class="label">Cases Solved</div></div>
+        <div class="stat-tile"><div class="num" id="statBadges">0</div><div class="label">Badges Earned</div></div>
+        <div class="stat-tile"><div class="num" id="statVaults">0</div><div class="label">Vaults Unlocked</div></div>
+        <div class="stat-tile"><div class="num" id="statPct">0%</div><div class="label">Archive Recovered</div></div>
+      </div>
+
+      <div class="continue-card">
+        <p class="label">Continue Investigation</p>
+        <p class="case-title" id="continueTitle">Loading next case&hellip;</p>
+        <a href="index.html" class="continue-btn" id="continueBtn">Open Case File</a>
+      </div>
+
+      <div class="nav-tiles">
+        <a href="cabinet.html" class="nav-tile">Case Files</a>
+        <a href="evidence.html" class="nav-tile">Evidence Cabinet</a>
+        <a href="progress.html" class="nav-tile">Vaults &amp; Progress</a>
+        <a href="badges.html" class="nav-tile">Achievements</a>
+        <a href="leaderboard.html" class="nav-tile">Leaderboard</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/vault-config.js"></script>
+  <script src="js/csv-utils.js"></script>
+  <script src="js/sheet-released.js"></script>
+  <script src="js/badges.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+  <script src="js/progress-sync.js"></script>
+  <script>
+  (function () {
+    function esc(s) {
+      return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
+        return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+      });
+    }
+
+    function rankFor(count) {
+      if (count >= 100) return 'Chief Investigator';
+      if (count >= 50) return 'Senior Detective';
+      if (count >= 20) return 'Detective';
+      if (count >= 5) return 'Investigator';
+      return 'Rookie Investigator';
+    }
+
+    function findNextCase(solvedSet) {
+      if (typeof SEASONS_CONFIG === 'undefined') return null;
+      for (var i = 0; i < SEASONS_CONFIG.length; i++) {
+        var season = SEASONS_CONFIG[i];
+        for (var j = 0; j < season.cases.length; j++) {
+          var c = season.cases[j];
+          if (c.released !== false && !solvedSet[c.id]) return c;
+        }
+      }
+      return null;
+    }
+
+    function render(user, progress) {
+      document.getElementById('loadingNote').style.display = 'none';
+      document.getElementById('dashboardContent').style.display = 'block';
+
+      var name = (user.user_metadata && user.user_metadata.display_name) || user.email;
+      document.getElementById('detectiveName').textContent = name;
+
+      var cases = (progress && progress.completed_cases) || [];
+      var badges = (progress && progress.earned_badges) || [];
+      var vaults = (progress && progress.unlocked_vaults) || [];
+
+      document.getElementById('detectiveRank').textContent = rankFor(cases.length);
+      document.getElementById('statCases').textContent = cases.length;
+      document.getElementById('statBadges').textContent = badges.length;
+      document.getElementById('statVaults').textContent = vaults.length;
+
+      var totalCases = 0;
+      if (typeof SEASONS_CONFIG !== 'undefined') {
+        SEASONS_CONFIG.forEach(function (s) { totalCases += s.cases.length; });
+      }
+      var pct = totalCases ? Math.round((cases.length / totalCases) * 100) : 0;
+      document.getElementById('statPct').textContent = pct + '%';
+
+      var solvedSet = {};
+      cases.forEach(function (id) { solvedSet[id] = true; });
+      var next = findNextCase(solvedSet);
+      if (next) {
+        document.getElementById('continueTitle').textContent = next.title;
+        document.getElementById('continueBtn').href = next.url || 'index.html';
+      } else {
+        document.getElementById('continueTitle').textContent = cases.length
+          ? 'All released cases solved — check back for new investigations.'
+          : 'Your investigation has not yet begun.';
+        document.getElementById('continueBtn').textContent = 'Open the Archive';
+        document.getElementById('continueBtn').href = 'index.html';
+      }
+    }
+
+    if (!window.AVProgressSync) {
+      document.getElementById('loadingNote').textContent = 'Dashboard is unavailable right now.';
+      return;
+    }
+
+    document.getElementById('logoutLink').addEventListener('click', function () {
+      window.AVProgressSync.signOut(function () { window.location.href = 'index.html'; });
+    });
+
+    function loadDashboard() {
+      window.AVProgressSync.getUser().then(function (user) {
+        if (!user) {
+          window.location.href = 'login.html?redirect=' + encodeURIComponent('dashboard.html');
+          return;
+        }
+        window.AVProgressSync.getSupabaseProgress(user).then(function (progress) {
+          render(user, progress);
+        });
+      });
+    }
+
+    // applySheetReleased ensures SEASONS_CONFIG's released flags are current
+    // before we compute "next case" -- same pattern other pages already use.
+    if (typeof applySheetReleased === 'function') {
+      applySheetReleased(loadDashboard);
+    } else {
+      loadDashboard();
+    }
+  })();
+  </script>
+</body>
+</html>
