@@ -221,40 +221,45 @@
       margin-bottom: 0.25rem;
     }
 
+    /* ── SEARCH ── */
+    .music-search-input {
+      width: 100%;
+      font-family: var(--font-type);
+      font-size: 0.85rem;
+      color: var(--ink);
+      background: rgba(0,0,0,0.03);
+      border: 1px solid rgba(60,30,10,0.25);
+      padding: 0.65rem 0.85rem;
+      letter-spacing: 0.02em;
+    }
+    .music-search-input::placeholder { color: rgba(28,18,10,0.4); }
+
+    /* ── MUSIC LIST ── */
+    .music-list { display: grid; gap: 0.75rem; margin-top: 1rem; }
+
     /* ── RELEASE CARD ── */
     .release-card {
-      display: flex;
-      gap: 1.25rem;
-      align-items: flex-start;
       border: 1px solid rgba(60,30,10,0.18);
       background: rgba(0,0,0,0.035);
-      padding: 1.1rem;
+      padding: 1rem 1.1rem;
     }
 
-    .release-art {
-      flex-shrink: 0;
-      width: 96px;
-      height: 96px;
-      border: 1px solid rgba(60,30,10,0.3);
-      background: repeating-linear-gradient(
-        45deg,
-        rgba(60,30,10,0.06),
-        rgba(60,30,10,0.06) 8px,
-        rgba(60,30,10,0.1) 8px,
-        rgba(60,30,10,0.1) 16px
-      );
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      font-size: 0.58rem;
-      letter-spacing: 0.08em;
-      color: rgba(60,30,10,0.45);
-      text-transform: uppercase;
-      padding: 0.5rem;
+    .release-card.current-investigation {
+      border-color: rgba(139,26,26,0.4);
+      border-left: 3px solid rgba(139,26,26,0.55);
+      background: rgba(139,26,26,0.04);
     }
 
     .release-body { min-width: 0; }
+
+    .release-eyebrow {
+      font-family: var(--font-type);
+      font-size: 0.62rem;
+      letter-spacing: 0.2em;
+      color: rgba(60,30,10,0.5);
+      text-transform: uppercase;
+      margin-bottom: 0.35rem;
+    }
 
     .release-song-title {
       font-family: var(--font-header);
@@ -262,14 +267,7 @@
       letter-spacing: 0.05em;
       color: var(--ink);
       text-transform: uppercase;
-      margin-bottom: 0.3rem;
-    }
-
-    .release-desc {
-      font-size: 0.82rem;
-      color: rgba(28,18,10,0.7);
-      line-height: 1.65;
-      font-style: italic;
+      margin-bottom: 0.4rem;
     }
 
     .stream-buttons {
@@ -287,67 +285,27 @@
       font-size: 0.66rem;
       letter-spacing: 0.15em;
       text-transform: uppercase;
-      color: rgba(60,30,10,0.4);
-      border: 1px solid rgba(60,30,10,0.25);
+      color: rgba(60,30,10,0.65);
+      border: 1px solid rgba(60,30,10,0.3);
       padding: 0.5rem 0.85rem;
-      cursor: not-allowed;
-      user-select: none;
       background: rgba(0,0,0,0.02);
+      transition: color 0.15s, border-color 0.15s;
     }
+    .stream-btn:hover { color: var(--ink); border-color: rgba(60,30,10,0.5); }
 
-    /* ── RECENT RELEASES LIST ── */
-    .release-row-list { display: grid; gap: 0.75rem; margin-top: 1rem; }
-
-    .release-row {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      border: 1px solid rgba(60,30,10,0.16);
-      background: rgba(0,0,0,0.03);
-      padding: 0.75rem 1rem;
-    }
-
-    .release-row-art {
-      flex-shrink: 0;
-      width: 44px;
-      height: 44px;
-      border: 1px solid rgba(60,30,10,0.25);
-      background: repeating-linear-gradient(
-        45deg,
-        rgba(60,30,10,0.06),
-        rgba(60,30,10,0.06) 6px,
-        rgba(60,30,10,0.1) 6px,
-        rgba(60,30,10,0.1) 12px
-      );
-    }
-
-    .release-row-body { min-width: 0; flex: 1; }
-
-    .release-row-title {
-      font-family: var(--font-header);
-      font-size: 0.82rem;
-      letter-spacing: 0.05em;
-      color: var(--ink);
-      text-transform: uppercase;
-    }
-
-    .release-row-meta {
-      font-size: 0.7rem;
-      color: rgba(28,18,10,0.55);
-      margin-top: 0.15rem;
-    }
-
+    .released-tag,
     .coming-soon-tag {
-      flex-shrink: 0;
+      display: inline-block;
       font-family: var(--font-type);
       font-size: 0.6rem;
       letter-spacing: 0.15em;
       text-transform: uppercase;
-      color: rgba(60,30,10,0.45);
       border: 1px solid rgba(60,30,10,0.25);
-      padding: 0.3rem 0.6rem;
+      padding: 0.25rem 0.55rem;
       white-space: nowrap;
     }
+    .released-tag { color: var(--green-pine, #4a7c4e); border-color: rgba(74,124,78,0.35); }
+    .coming-soon-tag { color: rgba(60,30,10,0.45); }
 
     /* ── FOOTER ── */
     .site-footer {
@@ -383,9 +341,6 @@
       .site-nav { padding: 1rem 1.25rem; }
       .paper-inner { padding: 1rem 1.25rem 3rem; }
       .paper-inner::after { left: 2rem; }
-      .release-card { flex-direction: column; align-items: center; text-align: center; }
-      .stream-buttons { justify-content: center; }
-      .release-row { flex-wrap: wrap; }
       .site-footer { flex-direction: column; text-align: center; }
     }
   </style>
@@ -400,8 +355,8 @@
     <div class="hero-bg"></div>
     <div class="hero-glow"></div>
     <div class="hero-content">
-      <p class="hero-label">Recovered Recordings</p>
-      <h1 class="hero-title">Music</h1>
+      <p class="hero-label">Every Released Investigation Soundtrack</p>
+      <h1 class="hero-title">Music Archive</h1>
       <div class="hero-rule"></div>
     </div>
   </section>
@@ -410,65 +365,27 @@
     <div class="paper-inner">
 
       <div class="content-block">
-        <p class="block-label">Latest Release</p>
-        <h2 class="block-title">Now Cataloging</h2>
+        <p class="block-label">Investigator Tools</p>
+        <h2 class="block-title">Search The Archive</h2>
         <div class="block-rule"></div>
-        <div class="release-card">
-          <div class="release-art">No Artwork on File</div>
-          <div class="release-body">
-            <div class="release-song-title">Untitled Recording</div>
-            <p class="release-desc">A description of the latest recovered song will appear here once the archive processes it.</p>
-            <div class="stream-buttons">
-              <span class="stream-btn">&#9654; Spotify</span>
-              <span class="stream-btn">&#9654; Apple Music</span>
-              <span class="stream-btn">&#9654; YouTube</span>
-            </div>
-          </div>
-        </div>
-        <div class="archive-note"><span class="archive-note-label">Archive Note</span>Streaming links will activate once this recording is officially declassified.</div>
+        <input type="text" id="musicSearch" class="music-search-input" placeholder="Search by case number or song title&hellip;" autocomplete="off">
+      </div>
+
+      <div class="content-block" id="currentInvestigationBlock" style="display:none;">
+        <p class="block-label">Current Investigation</p>
+        <h2 class="block-title" id="currentInvestigationTitle"></h2>
+        <div class="block-rule"></div>
       </div>
 
       <hr class="section-divider" />
 
       <div class="content-block">
-        <p class="block-label">Recent Releases</p>
-        <h2 class="block-title">Recovered So Far</h2>
+        <p class="block-label">Full Catalog</p>
+        <h2 class="block-title">Released Tracks</h2>
         <div class="block-rule"></div>
-        <div class="release-row-list">
-          <div class="release-row">
-            <div class="release-row-art"></div>
-            <div class="release-row-body">
-              <div class="release-row-title">Untitled Recording</div>
-              <div class="release-row-meta">Placeholder Date</div>
-            </div>
-            <span class="coming-soon-tag">Coming Soon</span>
-          </div>
-          <div class="release-row">
-            <div class="release-row-art"></div>
-            <div class="release-row-body">
-              <div class="release-row-title">Untitled Recording</div>
-              <div class="release-row-meta">Placeholder Date</div>
-            </div>
-            <span class="coming-soon-tag">Coming Soon</span>
-          </div>
-          <div class="release-row">
-            <div class="release-row-art"></div>
-            <div class="release-row-body">
-              <div class="release-row-title">Untitled Recording</div>
-              <div class="release-row-meta">Placeholder Date</div>
-            </div>
-            <span class="coming-soon-tag">Coming Soon</span>
-          </div>
+        <div id="musicList" class="music-list">
+          <p class="block-text">Retrieving archive records&hellip;</p>
         </div>
-      </div>
-
-      <hr class="section-divider" />
-
-      <div class="content-block">
-        <p class="block-label">Archive Status</p>
-        <h2 class="block-title">Full Catalog Coming Soon</h2>
-        <div class="block-rule"></div>
-        <p class="block-text">The complete music archive is still being indexed. Recovered recordings, streaming links, and full release histories will appear here as investigations are declassified.</p>
       </div>
 
     </div>
@@ -490,5 +407,187 @@
   <script src="js/polish.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
   <script src="js/progress-sync.js"></script>
+  <script src="js/vault-config.js"></script>
+  <script src="js/asset-url-builder.js"></script>
+  <script>
+  (function() {
+    var listEl = document.getElementById('musicList');
+    var currentBlock = document.getElementById('currentInvestigationBlock');
+    var currentTitleEl = document.getElementById('currentInvestigationTitle');
+    var searchInput = document.getElementById('musicSearch');
+
+    var allRows = []; // [{ id, title, links: {spotify,apple,youtube,amazon}, released }]
+    var solved = [];
+
+    function esc(s) {
+      return String(s == null ? '' : s).replace(/[&<>"']/g, function(c) {
+        return { '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[c];
+      });
+    }
+
+    // Title fallback only -- the sheet is the primary source; SEASONS_CONFIG
+    // (already loaded on nearly every page) just fills in a readable title
+    // for rows the sheet hasn't labeled yet. Never used for release truth.
+    function titleFromConfig(id) {
+      if (typeof SEASONS_CONFIG === 'undefined') return '';
+      for (var i = 0; i < SEASONS_CONFIG.length; i++) {
+        var cases = SEASONS_CONFIG[i].cases;
+        for (var j = 0; j < cases.length; j++) {
+          if (cases[j].id === id) return cases[j].title || '';
+        }
+      }
+      return '';
+    }
+
+    // Same backend-authoritative-with-local-fallback pattern used on
+    // cabinet.html/evidence.html -- only used here to work out which case
+    // is the player's current investigation (purely visual highlight).
+    function getAuthoritativeSolved() {
+      var local = [];
+      try { local = JSON.parse(localStorage.getItem('av_solved') || '[]'); } catch (e) {}
+      if (!window.AVProgressSync) return Promise.resolve(local);
+      return window.AVProgressSync.getUser().then(function (user) {
+        if (!user) return local;
+        return window.AVProgressSync.getSupabaseProgress(user).then(function (progress) {
+          var serverSolved = (progress && progress.completed_cases) || [];
+          var merged = local.slice();
+          serverSolved.forEach(function (id) { if (merged.indexOf(id) === -1) merged.push(id); });
+          return merged;
+        });
+      }).catch(function () { return local; });
+    }
+
+    // Same Sheet 1 CSV already fetched client-side by case.html for
+    // streaming links -- reused as-is, not duplicated into a new table.
+    function parseSheet(csv) {
+      var rows = csv.trim().split('\n').map(function(r) { return r.split(','); });
+      if (rows.length < 2) return [];
+      var headers = rows[0].map(function(h) { return h.trim().toLowerCase(); });
+      var idCol        = headers.indexOf('id');
+      var titleCol      = headers.indexOf('title');
+      var spotifyCol    = headers.indexOf('spotify');
+      var appleCol      = headers.indexOf('apple');
+      var ytCol         = headers.indexOf('youtube');
+      var amazonCol     = headers.indexOf('amazon');
+      var spotifyIdCol  = headers.indexOf('spotify_track_id');
+      if (idCol === -1) return [];
+
+      function cell(row, col) { return col >= 0 && row[col] ? row[col].trim() : ''; }
+      function normalizeUrl(val) {
+        if (!val || val === '#') return '';
+        return /^https?:\/\//i.test(val) ? val : 'https://' + val;
+      }
+
+      var out = [];
+      rows.slice(1).forEach(function(row) {
+        var rawId = cell(row, idCol);
+        if (!rawId) return;
+        var num = parseInt(rawId, 10);
+        if (!isFinite(num)) return;
+        var id = String(num).padStart(3, '0');
+
+        var spotifyUrl = normalizeUrl(cell(row, spotifyCol));
+        if (!spotifyUrl && spotifyIdCol !== -1 && window.AssetUrlBuilder) {
+          spotifyUrl = window.AssetUrlBuilder.buildSpotifyTrackUrl(cell(row, spotifyIdCol));
+        }
+        var links = {
+          spotify: spotifyUrl,
+          apple:   normalizeUrl(cell(row, appleCol)),
+          youtube: normalizeUrl(cell(row, ytCol)),
+          amazon:  normalizeUrl(cell(row, amazonCol))
+        };
+        var released = !!(links.spotify || links.apple || links.youtube || links.amazon);
+        var title = cell(row, titleCol) || titleFromConfig(id) || ('Case ' + id);
+
+        out.push({ id: id, title: title, links: links, released: released });
+      });
+
+      out.sort(function(a, b) { return parseInt(a.id, 10) - parseInt(b.id, 10); });
+      return out;
+    }
+
+    function platformButtonsHtml(links) {
+      var PLATFORMS = [['spotify', 'Spotify'], ['apple', 'Apple Music'], ['youtube', 'YouTube'], ['amazon', 'Amazon Music']];
+      var html = '';
+      PLATFORMS.forEach(function(p) {
+        var url = links[p[0]];
+        if (!url) return;
+        html += '<a class="stream-btn" href="' + esc(url) + '" target="_blank" rel="noopener">&#9654; ' + p[1] + '</a>';
+      });
+      return html;
+    }
+
+    function getActiveCaseId() {
+      for (var i = 0; i < allRows.length; i++) {
+        if (solved.indexOf(allRows[i].id) === -1) return allRows[i].id;
+      }
+      return null;
+    }
+
+    function updateCurrentInvestigation() {
+      var activeId = getActiveCaseId();
+      var row = activeId ? allRows.filter(function(r) { return r.id === activeId; })[0] : null;
+      if (row && row.released) {
+        currentBlock.style.display = '';
+        currentTitleEl.textContent = 'Case ' + row.id + ' — ' + row.title;
+      } else {
+        currentBlock.style.display = 'none';
+      }
+    }
+
+    function renderCard(row, isCurrent) {
+      var tagHtml = row.released
+        ? '<span class="released-tag">Released</span>'
+        : '<span class="coming-soon-tag">Coming Soon</span>';
+      var buttonsHtml = row.released
+        ? '<div class="stream-buttons">' + platformButtonsHtml(row.links) + '</div>'
+        : '';
+      return '<div class="release-card' + (isCurrent ? ' current-investigation' : '') + '">' +
+          '<div class="release-body">' +
+            '<p class="release-eyebrow">Case ' + row.id + (isCurrent ? ' &middot; Current Investigation' : '') + '</p>' +
+            '<div class="release-song-title">' + esc(row.title) + '</div>' +
+            tagHtml +
+            buttonsHtml +
+          '</div>' +
+        '</div>';
+    }
+
+    function render() {
+      if (!allRows.length) {
+        listEl.innerHTML = '<p class="block-text">No investigation recordings have been published yet.</p>';
+        return;
+      }
+      var query = (searchInput.value || '').trim().toLowerCase();
+      var filtered = !query ? allRows : allRows.filter(function(row) {
+        return row.id.indexOf(query) !== -1 ||
+               String(parseInt(row.id, 10)).indexOf(query) !== -1 ||
+               row.title.toLowerCase().indexOf(query) !== -1;
+      });
+      if (!filtered.length) {
+        listEl.innerHTML = '<p class="block-text">No recordings match that search.</p>';
+        return;
+      }
+      var activeId = getActiveCaseId();
+      listEl.innerHTML = filtered.map(function(row) {
+        return renderCard(row, row.id === activeId);
+      }).join('');
+    }
+
+    searchInput.addEventListener('input', render);
+
+    Promise.all([
+      getAuthoritativeSolved(),
+      fetch('js/site-settings.json').then(function(r) { return r.json(); }).then(function(s) {
+        if (!s.streamingSheetUrl) return '';
+        return fetch(s.streamingSheetUrl).then(function(r) { return r.text(); });
+      }).catch(function() { return ''; })
+    ]).then(function(results) {
+      solved = results[0] || [];
+      allRows = results[1] ? parseSheet(results[1]) : [];
+      updateCurrentInvestigation();
+      render();
+    });
+  })();
+  </script>
 </body>
 </html>
