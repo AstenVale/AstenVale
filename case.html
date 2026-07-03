@@ -481,6 +481,32 @@ body.unlocked .archive-player,body.unlocked #fields-container,body.unlocked .pan
 </head>
 <body data-page="investigation">
 
+  <!-- ── AUTH GATE ──────────────────────────────────────────────────────
+       Blocks the page until we know whether a real Supabase session
+       exists. Purely additive: nothing below this point (game logic,
+       puzzle rendering, existing scripts) was touched to add this. If
+       Supabase itself is unreachable, we fail OPEN (remove the gate and
+       let the case load) rather than locking players out over a network
+       hiccup -- login is meant to gate account features, not availability. -->
+  <div id="authGate" style="position:fixed;inset:0;z-index:99999;background:#0c0a06;display:flex;align-items:center;justify-content:center;font-family:'Courier Prime','Courier New',monospace;color:rgba(201,169,122,0.7);font-size:0.85rem;letter-spacing:0.08em;text-transform:uppercase;">
+    Verifying investigator credentials&hellip;
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+  <script src="js/progress-sync.js"></script>
+  <script>
+  (function () {
+    var gate = document.getElementById('authGate');
+    function unlock() { if (gate) gate.remove(); }
+    if (!window.AVProgressSync) { unlock(); return; } // fail open, not closed
+    window.AVProgressSync.getUser().then(function (user) {
+      if (user) { unlock(); return; }
+      var here = window.location.pathname.split('/').pop() + window.location.search;
+      window.location.href = 'login.html?redirect=' + encodeURIComponent(here);
+    }).catch(function () { unlock(); }); // fail open on any error
+  })();
+  </script>
+  <!-- ── END AUTH GATE ── -->
+
   <div id="lantern-glow" aria-hidden="true"></div>
 
   <nav class="site-nav">

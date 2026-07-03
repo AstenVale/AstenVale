@@ -178,6 +178,19 @@
     });
   }
 
+  // Supabase parses the magic-link token out of the URL asynchronously
+  // after the client is created -- a one-time getSession() call right at
+  // page load can race ahead of that and see "not signed in" even though
+  // the login is about to succeed a moment later. Callers that need to
+  // react to login (not just check current state) should use this instead.
+  function onAuthChange(callback) {
+    var client = getClient();
+    if (!client) return;
+    client.auth.onAuthStateChange(function (event, session) {
+      callback(event, session ? session.user : null);
+    });
+  }
+
   // Pulls local + remote, merges, writes the merged result back to both.
   // Safe to call repeatedly (e.g. right after login, or on demand from a
   // "Sync Now" button). If Supabase is unreachable, local data is left
@@ -232,6 +245,7 @@
   window.AVProgressSync = {
     getClient: getClient,
     getUser: getUser,
+    onAuthChange: onAuthChange,
     getLocalProgress: getLocalProgress,
     saveLocalProgress: saveLocalProgress,
     getSupabaseProgress: getSupabaseProgress,
