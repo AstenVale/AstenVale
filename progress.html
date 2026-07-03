@@ -1252,9 +1252,27 @@
     }).catch(function () { return local; });
   }
 
+  // player_vault_rewards is a per-player, RLS-gated view (see
+  // supabase/vault_rewards_migration.sql) -- it only ever returns a
+  // reward row for a vault this signed-in player has actually unlocked,
+  // and only once released = true with a real reward_url. A failed
+  // fetch degrades to "no rewards known" rather than breaking the page.
+  function getVaultRewards() {
+    if (!window.AVProgressSync) return Promise.resolve([]);
+    var client = window.AVProgressSync.getClient();
+    if (!client) return Promise.resolve([]);
+    return client.from('player_vault_rewards').select('vault, reward_title, reward_url').then(function (res) {
+      if (res.error || !res.data) return [];
+      return res.data;
+    });
+  }
+
   applySheetReleased(function() {
-    getAuthoritativeSolved().then(function (solved) {
-  (function(solved) {
+    Promise.all([getAuthoritativeSolved(), getVaultRewards()]).then(function (results) {
+      var solved = results[0];
+      var rewardsByVault = {};
+      results[1].forEach(function (r) { rewardsByVault[r.vault] = r; });
+  (function(solved, rewardsByVault) {
     var season = SEASONS_CONFIG[0];
 
     var numSolved  = season.cases.filter(function(c){ return solved.indexOf(c.id) !== -1; }).length;
@@ -1415,7 +1433,6 @@
       var vCases   = vs.cases;
       var vSolved  = vCases.filter(function(c){ return solved.indexOf(c.id) !== -1; });
       var vComplete = vSolved.length === vCases.length && vCases.length > 0;
-      var vCoupon  = vs.vaultCode || vs.title.replace(/\s+/g,'').toUpperCase();
       var vPct     = vCases.length > 0 ? Math.round((vSolved.length / vCases.length) * 100) : 0;
 
       var vHead = document.createElement('div');
@@ -1468,17 +1485,31 @@
         reward.className = 'vault-reward visible';
         reward.innerHTML =
           '<div class="vault-reward-stamp">Archive Open</div>' +
-          '<h3 class="vault-reward-title">Investigator Reward ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â ' + vs.title + '</h3>' +
+          '<h3 class="vault-reward-title">Investigator Reward — ' + vs.title + '</h3>' +
           '<p class="vault-reward-msg">' +
             'You followed every trail. Recovered every file.<br>' +
             'The archive recognizes what you\'ve done.<br>' +
             'Consider this a small token of gratitude.' +
-          '</p>' +
-          '<span class="vault-coupon-label">Your discount code</span>' +
-          '<div class="vault-coupon">' + vCoupon + '</div>' +
-          '<br><br>' +
-          '<a href="#" class="vault-btn">Claim Your Reward ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢</a>' +
-          '<p style="margin-top:0.85rem;font-family:var(--font-type);font-size:0.62rem;letter-spacing:0.12em;color:rgba(201,169,122,0.25);text-transform:uppercase;">Store coming soon</p>';
+          '</p>';
+        // Real reward data only -- player_vault_rewards (Sheet 2, synced
+        // via the sync-released-cases Edge Function) already guarantees
+        // this row can't exist unless the vault is unlocked and released.
+        var vaultReward = rewardsByVault[vi + 1];
+        if (vaultReward && vaultReward.reward_url) {
+          var rewardLink = document.createElement('a');
+          rewardLink.href = vaultReward.reward_url;
+          rewardLink.target = '_blank';
+          rewardLink.rel = 'noopener';
+          rewardLink.className = 'vault-btn';
+          rewardLink.textContent = 'Open Reward';
+          reward.appendChild(rewardLink);
+        } else {
+          var rewardPending = document.createElement('p');
+          rewardPending.className = 'vault-coupon-label';
+          rewardPending.style.marginTop = '0.85rem';
+          rewardPending.textContent = 'Reward pending';
+          reward.appendChild(rewardPending);
+        }
         vWrap.appendChild(reward);
       }
 
@@ -1534,8 +1565,8 @@
       }
     });
 
-  })(solved);
-    }); // getAuthoritativeSolved
+  })(solved, rewardsByVault);
+    }); // Promise.all(getAuthoritativeSolved, getVaultRewards)
   }); // applySheetReleased
   </script>
 
