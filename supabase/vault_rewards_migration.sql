@@ -27,19 +27,33 @@ revoke all on vault_rewards from anon, authenticated;
 
 -- ---------------------------------------------------------------------
 -- player_vault_rewards — a reward row is only visible to a signed-in
--- player once player_vault_unlocks (existing view, backed by
--- player_progress.unlocked_vaults + its own RLS) shows they've actually
--- unlocked that vault, and only while released = true. security_invoker
--- means the caller's own RLS on player_progress is what enforces "your
--- own unlocks only" -- this view adds no new privilege, it just also
--- requires released = true before a reward_url is exposed at all.
+-- player once they've actually unlocked that vault, and only while
+-- released = true.
+--
+-- Deliberately NOT security_invoker (this differs from
+-- player_vault_unlocks/player_badges/etc., and that difference matters):
+-- those other views only ever touch player_progress, which authenticated
+-- already has a direct grant on -- security_invoker works fine there
+-- because the caller has real privileges on every table involved. This
+-- view also touches vault_rewards, which anon/authenticated have zero
+-- grants on by design (so a locked vault's reward_url can never leak).
+-- A security_invoker view checks the CALLER's privileges against every
+-- underlying table, so it would try to check authenticated's privileges
+-- on vault_rewards, find none, and fail with a silent permission error
+-- that the frontend (treating any error as "no reward yet") rendered as
+-- "Reward pending" no matter what the data said -- exactly the bug this
+-- fixes. Instead this runs as the view owner (who has full access to
+-- both tables) and gets its safety from the same static-WHERE-clause
+-- reasoning as public_released_cases above: auth.uid() reflects the
+-- real caller's session regardless of view/definer semantics, so
+-- filtering on it here can never return another player's vault data.
 -- ---------------------------------------------------------------------
-create or replace view player_vault_rewards
-with (security_invoker = true) as
+create or replace view player_vault_rewards as
   select vr.vault, vr.reward_title, vr.reward_url
   from vault_rewards vr
-  join player_vault_unlocks pvu
-    on pvu.vault_id = 's' || lpad(vr.vault::text, 2, '0') || '_vault'
+  join player_progress pp on pp.user_id = auth.uid()
+  join lateral jsonb_array_elements_text(pp.unlocked_vaults) as vault_id
+    on vault_id = 's' || lpad(vr.vault::text, 2, '0') || '_vault'
   where vr.released = true
     and vr.reward_url is not null
     and vr.reward_url <> '';
