@@ -1337,6 +1337,18 @@ body.unlocked .archive-player,body.unlocked #fields-container,body.unlocked .pan
       localStorage.setItem('av_completed_dates', JSON.stringify(dates));
     } catch(e) {}
 
+    // Push this solve to Supabase immediately -- previously the only place
+    // that synced local solves to the backend was progress.html, so a case
+    // solved without a later visit to Progress never reached the server
+    // (e.g. Dashboard's case count, which reads Supabase only, would
+    // undercount). Best-effort: local storage above is already the
+    // fallback of record if this fails or the player is signed out.
+    try {
+      if (window.AVProgressSync) {
+        window.AVProgressSync.syncProgress(function () {});
+      }
+    } catch (e) {}
+
     // Keep the primed authoritative-solved snapshot (if it's already
     // resolved) in sync with this just-completed solve -- renderPostUnlock
     // below reads it via getAuthoritativeSolvedSync() for the "Continue
