@@ -78,6 +78,12 @@ function vaultRewardsFromSheet(csv: string): VaultRewardRow[] {
   const releasedCol = headers.indexOf("released");
   if (vaultCol === -1) return [];
 
+  // Accept the common spreadsheet spellings of "yes" a publisher might type
+  // in the released column -- Sheet 2 in practice contains "Yes", not the
+  // literal "TRUE" this previously required, which silently kept every
+  // reward unreleased no matter what the sheet said.
+  const TRUTHY = new Set(["TRUE", "YES", "Y", "1"]);
+
   const out: VaultRewardRow[] = [];
   for (const row of rows.slice(1)) {
     const rawVault = row[vaultCol];
@@ -88,7 +94,7 @@ function vaultRewardsFromSheet(csv: string): VaultRewardRow[] {
       vault,
       reward_title: titleCol !== -1 ? (row[titleCol] ?? "") : "",
       reward_url: urlCol !== -1 ? (row[urlCol] ?? "") : "",
-      released: releasedCol !== -1 ? (row[releasedCol] ?? "").toUpperCase() === "TRUE" : false,
+      released: releasedCol !== -1 ? TRUTHY.has((row[releasedCol] ?? "").trim().toUpperCase()) : false,
     });
   }
   return out;

@@ -1276,6 +1276,7 @@
       claimBtn.addEventListener('click', function() {
         if (reward && reward.reward_url) {
           window.open(reward.reward_url, '_blank', 'noopener');
+          if (window.AVVaultRewardClaim) window.AVVaultRewardClaim.markClaimed(vaultNum);
         }
         claimed.push(v.id);
         localStorage.setItem('av_vault_claimed', JSON.stringify(claimed));
@@ -1284,5 +1285,7 @@
     });
   })();
   </script>
+
+  <script src="js/vault-reward-popup.js"></script>
 </body>
 </html>
