@@ -19,25 +19,35 @@
     return 'nav-link nav-link-primary' + (currentFile === file ? ' active' : '');
   }
 
+  // archive.html / cabinet.html / progress.html drop the Detective
+  // dropdown from their top nav entirely (explicit exception, requested
+  // for these three pages only -- every other protected page keeps it).
+  var NO_DETECTIVE_PAGES = ['archive.html', 'cabinet.html', 'progress.html'];
+  var showDetective = NO_DETECTIVE_PAGES.indexOf(currentFile) === -1;
+
+  var detectiveHtml = showDetective
+    ? '<div class="nav-dropdown" id="detectiveMenu">' +
+        '<button type="button" class="nav-dropdown-toggle" id="detectiveToggle" aria-haspopup="true" aria-expanded="false">Detective <span class="nav-caret">&#9662;</span></button>' +
+        '<div class="nav-dropdown-menu" id="detectiveDropdown">' +
+          '<a href="profile.html" class="nav-dropdown-item">Profile</a>' +
+          '<a href="progress.html" class="nav-dropdown-item">Progress</a>' +
+          '<a href="achievements.html" class="nav-dropdown-item">Achievements</a>' +
+          '<a href="settings.html" class="nav-dropdown-item">Settings</a>' +
+          '<a href="admin.html" class="nav-dropdown-item" id="navAdminLink" style="display:none;">Admin</a>' +
+          '<a href="index.html" class="nav-dropdown-item">Return to Frontend</a>' +
+        '</div>' +
+      '</div>'
+    : '';
+
   var html =
     '<nav class="site-nav">' +
       '<a href="dashboard.html" class="nav-brand">Asten Vale Archives</a>' +
       '<div class="nav-links">' +
-        '<a href="dashboard.html" class="' + activeClass('dashboard.html') + '">Dashboard</a>' +
         '<a href="archive.html" class="' + activeClass('archive.html') + '">Archive</a>' +
         '<a href="cabinet.html" class="nav-link">Evidence</a>' +
         '<a href="vaults.html" class="nav-link">Vaults</a>' +
-        '<div class="nav-dropdown" id="detectiveMenu">' +
-          '<button type="button" class="nav-dropdown-toggle" id="detectiveToggle" aria-haspopup="true" aria-expanded="false">Detective <span class="nav-caret">&#9662;</span></button>' +
-          '<div class="nav-dropdown-menu" id="detectiveDropdown">' +
-            '<a href="profile.html" class="nav-dropdown-item">Profile</a>' +
-            '<a href="progress.html" class="nav-dropdown-item">Progress</a>' +
-            '<a href="achievements.html" class="nav-dropdown-item">Achievements</a>' +
-            '<a href="settings.html" class="nav-dropdown-item">Settings</a>' +
-            '<a href="admin.html" class="nav-dropdown-item" id="navAdminLink" style="display:none;">Admin</a>' +
-            '<a href="dashboard.html" class="nav-dropdown-item">Return to Dashboard</a>' +
-          '</div>' +
-        '</div>' +
+        '<a href="dashboard.html" class="' + activeClass('dashboard.html') + '">Dashboard</a>' +
+        detectiveHtml +
         '<span class="nav-link logout" id="navLogoutLink">Logout</span>' +
       '</div>' +
     '</nav>';
