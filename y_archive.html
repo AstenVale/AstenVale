@@ -1,0 +1,1257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Asten Vale Archives</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/game-nav.css" />
+  <style>
+    /* -- RESET & VARIABLES ------------------------------------ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    :root {
+      --ink:          #1c120a;
+      --ink-faded:    #4a3728;
+      --paper:        #c9a97a;
+      --paper-dark:   #b8935e;
+      --paper-light:  #ddc49a;
+      --paper-bg:     #c4a472;
+      --folder-red:   #7a1f1f;
+      --gold:         #c9960c;
+      --green-pine:   #4a7c4e;
+      --green-light:  #5a9c5e;
+      --glow:         #f5a623;
+      --bg:           #0c0a06;
+      --bg-mid:       #16120b;
+      --font-type:    'Courier Prime', 'Courier New', Courier, monospace;
+      --font-header:  'Special Elite', 'Courier New', serif;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: var(--font-type);
+      font-size: 15px;
+      line-height: 1.7;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    a { text-decoration: none; color: inherit; }
+
+    /* -- HERO SECTION ----------------------------------------- */
+    .hero {
+      position: relative;
+      min-height: 55vh;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(to bottom, rgba(12,8,4,0.55) 0%, rgba(12,8,4,0.3) 40%, rgba(12,8,4,0.75) 80%, rgba(12,8,4,0.98) 100%),
+        linear-gradient(135deg, #1a130a 0%, #0c0a06 50%, #111008 100%);
+      z-index: 0;
+    }
+
+    /* Atmospheric dark vignette overlay */
+    .hero-bg::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 70% 50% at 20% 50%, rgba(180,130,60,0.06) 0%, transparent 60%),
+        radial-gradient(ellipse 50% 60% at 80% 40%, rgba(100,80,40,0.08) 0%, transparent 60%);
+    }
+
+    /* Simulated lamp glow left side */
+    .hero-lamp-glow {
+      position: absolute;
+      left: -2%;
+      top: 15%;
+      width: 320px;
+      height: 320px;
+      background: radial-gradient(circle at 40% 40%, rgba(240,160,40,0.22) 0%, rgba(200,120,20,0.10) 35%, transparent 70%);
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    /* -- HERO CONTENT ----------------------------------------- */
+    .hero-content {
+      position: relative;
+      z-index: 5;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 3rem 2rem 5rem;
+    }
+
+    .hero-title-sub {
+      font-family: var(--font-header);
+      font-size: clamp(1rem, 2.5vw, 1.25rem);
+      letter-spacing: 0.35em;
+      color: rgba(201,169,122,0.75);
+      text-transform: uppercase;
+      margin-bottom: 0.3rem;
+    }
+
+    .hero-title-main {
+      font-family: var(--font-header);
+      font-size: clamp(3rem, 10vw, 6.5rem);
+      letter-spacing: 0.08em;
+      color: rgba(220,190,140,0.97);
+      text-transform: uppercase;
+      line-height: 0.9;
+      text-shadow:
+        0 2px 30px rgba(0,0,0,0.8),
+        0 0 80px rgba(200,150,60,0.12);
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-diamond {
+      width: 12px;
+      height: 12px;
+      background: rgba(201,169,122,0.5);
+      transform: rotate(45deg);
+      margin: 0 auto 1.5rem;
+    }
+
+    .hero-tagline {
+      font-family: var(--font-type);
+      font-size: clamp(0.85rem, 2vw, 1.05rem);
+      color: rgba(201,169,122,0.7);
+      font-style: italic;
+      line-height: 1.8;
+      letter-spacing: 0.04em;
+    }
+
+    /* -- CASE FILES SECTION ----------------------------------- */
+    .cases-section {
+      position: relative;
+      background: var(--paper-bg);
+      padding: 0 0 3rem;
+    }
+
+    /* Torn paper top edge */
+    .cases-section::before {
+      content: "";
+      display: block;
+      height: 28px;
+      background: var(--paper-bg);
+      clip-path: polygon(
+        0% 100%, 1% 20%, 2.5% 90%, 4% 10%, 5.5% 80%, 7% 5%,
+        8.5% 85%, 10% 15%, 11.5% 75%, 13% 25%, 14.5% 70%,
+        16% 30%, 17.5% 65%, 19% 20%, 20.5% 80%, 22% 10%,
+        23.5% 90%, 25% 15%, 26.5% 75%, 28% 35%, 29.5% 60%,
+        31% 25%, 32.5% 70%, 34% 10%, 35.5% 85%, 37% 20%,
+        38.5% 75%, 40% 30%, 41.5% 65%, 43% 15%, 44.5% 80%,
+        46% 20%, 47.5% 70%, 49% 10%, 50.5% 90%, 52% 25%,
+        53.5% 60%, 55% 15%, 56.5% 80%, 58% 30%, 59.5% 65%,
+        61% 10%, 62.5% 85%, 64% 20%, 65.5% 75%, 67% 35%,
+        68.5% 60%, 70% 15%, 71.5% 80%, 73% 25%, 74.5% 70%,
+        76% 10%, 77.5% 90%, 79% 20%, 80.5% 65%, 82% 30%,
+        83.5% 75%, 85% 15%, 86.5% 80%, 88% 25%, 89.5% 60%,
+        91% 10%, 92.5% 85%, 94% 20%, 95.5% 70%, 97% 30%,
+        98.5% 80%, 100% 0%, 100% 100%
+      );
+    }
+
+    /* Paper texture grain */
+    .cases-section-inner {
+      position: relative;
+      padding: 0 2rem 2rem;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    .cases-section-inner::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23noise)' opacity='0.035'/%3E%3C/svg%3E");
+      pointer-events: none;
+    }
+
+    /* -- SECTION HEADER --------------------------------------- */
+    .section-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding-top: 2.5rem;
+      padding-bottom: 1.75rem;
+      position: relative;
+    }
+
+    .section-title-group {}
+
+    .section-title {
+      font-family: var(--font-header);
+      font-size: clamp(1.4rem, 4vw, 2rem);
+      letter-spacing: 0.18em;
+      color: var(--ink);
+      text-transform: uppercase;
+      line-height: 1;
+    }
+
+    .section-title-rule {
+      width: 48px;
+      height: 2px;
+      background: rgba(60,30,10,0.35);
+      margin-top: 0.5rem;
+    }
+
+    .section-subtitle {
+      font-family: var(--font-type);
+      font-size: 0.82rem;
+      color: rgba(60,30,10,0.6);
+      margin-top: 0.6rem;
+      font-style: italic;
+      line-height: 1.5;
+    }
+
+    .btn-progress {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(28,18,10,0.88);
+      color: rgba(201,169,122,0.85);
+      border: 1px solid rgba(201,169,122,0.2);
+      padding: 0.6rem 1.1rem;
+      font-family: var(--font-type);
+      font-size: 0.7rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s;
+      white-space: nowrap;
+      flex-shrink: 0;
+      margin-top: 0.25rem;
+    }
+
+    .btn-progress:hover {
+      background: rgba(40,28,14,0.95);
+      color: var(--paper);
+    }
+
+    .btn-progress svg { opacity: 0.8; }
+    a.btn-progress { display: inline-flex; }
+
+    /* -- CASE CARDS ------------------------------------------- */
+    .case-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .case-card {
+      display: flex;
+      align-items: stretch;
+      background: rgba(220,195,155,0.55);
+      border: 1px solid rgba(160,120,60,0.25);
+      border-radius: 2px;
+      overflow: hidden;
+      transition: box-shadow 0.2s, transform 0.2s;
+      position: relative;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.12), inset 0 1px 0 rgba(255,255,255,0.15);
+    }
+
+    a.case-card {
+      display: flex;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .case-card:hover {
+      box-shadow: 0 4px 16px rgba(0,0,0,0.18), inset 0 1px 0 rgba(255,255,255,0.15);
+      transform: translateY(-1px);
+    }
+
+    .case-card.locked {
+      opacity: 0.82;
+    }
+
+    /* Paper clip decoration */
+    .case-card::before {
+      content: "";
+      position: absolute;
+      top: -2px;
+      left: 22px;
+      width: 18px;
+      height: 28px;
+      border: 2px solid rgba(120,100,60,0.5);
+      border-bottom: none;
+      border-radius: 8px 8px 0 0;
+      pointer-events: none;
+      z-index: 2;
+    }
+
+    .case-img {
+      width: 190px;
+      min-width: 190px;
+      height: 130px;
+      object-fit: cover;
+      display: block;
+      filter: sepia(0.5) contrast(0.9);
+      flex-shrink: 0;
+    }
+
+    /* Placeholder image when no real image */
+    .case-img-placeholder {
+      width: 190px;
+      min-width: 190px;
+      height: 130px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .case-img-placeholder svg {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      inset: 0;
+    }
+
+    .case-body {
+      flex: 1;
+      padding: 1.1rem 1.4rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-width: 0;
+    }
+
+    .case-number-label {
+      font-family: var(--font-type);
+      font-size: 0.68rem;
+      letter-spacing: 0.2em;
+      color: rgba(60,30,10,0.55);
+      text-transform: uppercase;
+      margin-bottom: 0.2rem;
+    }
+
+    .case-title {
+      font-family: var(--font-header);
+      font-size: clamp(1rem, 2.5vw, 1.3rem);
+      letter-spacing: 0.06em;
+      color: var(--ink);
+      text-transform: uppercase;
+      line-height: 1.2;
+      margin-bottom: 0.5rem;
+    }
+
+    .case-desc {
+      font-family: var(--font-type);
+      font-size: 0.8rem;
+      color: rgba(60,30,10,0.65);
+      font-style: italic;
+      line-height: 1.55;
+    }
+
+    /* Card divider */
+    .case-divider-v {
+      width: 1px;
+      background: rgba(140,100,40,0.2);
+      align-self: stretch;
+      margin: 0.75rem 0;
+    }
+
+    .case-status {
+      width: 130px;
+      min-width: 130px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      padding: 1rem;
+      flex-shrink: 0;
+    }
+
+    /* Unlocked state */
+    .case-status.unlocked .status-icon {
+      color: var(--green-pine);
+    }
+
+    .case-status.unlocked .status-label {
+      color: var(--green-pine);
+      font-weight: 700;
+      letter-spacing: 0.2em;
+    }
+
+    /* Locked state */
+    .case-status.locked .status-icon {
+      color: rgba(60,40,20,0.4);
+    }
+
+    .case-status.locked .status-label {
+      color: rgba(60,40,20,0.45);
+      letter-spacing: 0.2em;
+    }
+
+    .status-icon svg {
+      display: block;
+    }
+
+    .status-label {
+      font-family: var(--font-type);
+      font-size: 0.65rem;
+      text-transform: uppercase;
+    }
+
+    /* -- INVESTIGATION LEDGER ------------------------------------ */
+    .archive-ledger { position: relative; display: flex; flex-direction: column; gap: 1.6rem; padding-bottom: 1rem; }
+    .ledger-section { position: relative; border-top: 1px solid rgba(60,30,10,0.22); padding-top: 1.2rem; }
+    .ledger-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; margin-bottom: 0.85rem; }
+    .ledger-title { font-family: var(--font-header); font-size: clamp(1rem, 2.8vw, 1.35rem); letter-spacing: 0.18em; color: var(--ink); text-transform: uppercase; }
+    .ledger-note { font-family: var(--font-type); font-size: 0.72rem; color: rgba(60,30,10,0.54); font-style: italic; line-height: 1.5; margin-top: 0.2rem; }
+    .ledger-stamp { display: inline-block; border: 1px solid var(--folder-red); color: var(--folder-red); font-family: var(--font-header); font-size: 0.56rem; letter-spacing: 0.24em; line-height: 1; padding: 0.28rem 0.55rem 0.22rem; text-transform: uppercase; transform: rotate(-1deg); opacity: 0.78; white-space: nowrap; }
+    .continue-card { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 1.5rem; align-items: center; background: rgba(220,195,155,0.62); border: 1px solid rgba(120,80,35,0.32); box-shadow: 0 4px 16px rgba(0,0,0,0.14), inset 0 1px 0 rgba(255,255,255,0.13); padding: 1.35rem 1.45rem; transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease; }
+    .continue-card:hover, a.case-card:hover, .solved-record:hover { border-color: rgba(150,105,35,0.44); box-shadow: 0 8px 22px rgba(0,0,0,0.2), 0 0 0 1px rgba(201,150,12,0.16), inset 0 1px 0 rgba(255,255,255,0.15); transform: translateY(-2px); }
+    .continue-case { font-size: 0.72rem; letter-spacing: 0.24em; color: rgba(60,30,10,0.58); text-transform: uppercase; margin-bottom: 0.35rem; }
+    .continue-title { font-family: var(--font-header); font-size: clamp(1.35rem, 4vw, 2.05rem); letter-spacing: 0.1em; color: var(--ink); line-height: 1.15; text-transform: uppercase; }
+    .continue-sub { color: rgba(60,30,10,0.62); font-size: 0.82rem; font-style: italic; margin-top: 0.5rem; }
+    .ledger-fields { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.7rem; margin-top: 1rem; }
+    .ledger-field { border-left: 1px solid rgba(60,30,10,0.2); padding-left: 0.75rem; min-width: 0; }
+    .ledger-label { display: block; font-size: 0.58rem; letter-spacing: 0.2em; color: rgba(60,30,10,0.48); text-transform: uppercase; margin-bottom: 0.12rem; }
+    .ledger-value { display: block; font-family: var(--font-header); font-size: 0.82rem; letter-spacing: 0.1em; color: rgba(60,30,10,0.84); text-transform: uppercase; line-height: 1.35; overflow-wrap: anywhere; }
+    .continue-action { display: inline-flex; align-items: center; justify-content: center; min-width: 210px; background: var(--folder-red); color: var(--paper-light); border: 2px solid rgba(255,200,150,0.18); box-shadow: 0 3px 12px rgba(0,0,0,0.32); padding: 0.8rem 1.15rem; font-family: var(--font-header); font-size: 0.8rem; letter-spacing: 0.18em; text-transform: uppercase; text-align: center; transition: background 0.18s ease, transform 0.18s ease, box-shadow 0.18s ease; }
+    .continue-action:hover { background: #8b2323; box-shadow: 0 5px 16px rgba(0,0,0,0.42); transform: translateY(-1px); }
+    .season-record { background: rgba(0,0,0,0.045); border: 1px solid rgba(60,30,10,0.18); padding: 1rem; }
+    .season-record-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; margin-bottom: 1rem; }
+    .archive-progress { height: 8px; background: rgba(60,30,10,0.18); border: 1px solid rgba(60,30,10,0.16); overflow: hidden; }
+    .archive-progress-fill { height: 100%; background: linear-gradient(90deg, rgba(122,31,31,0.76), rgba(201,150,12,0.55)); }
+    .available-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0.75rem; }
+    .case-card.ledger-case { display: block; min-height: 164px; padding: 1rem; overflow: hidden; cursor: default; }
+    a.case-card.ledger-case { cursor: pointer; }
+    .case-card.ledger-case::before { left: auto; right: 18px; opacity: 0.65; }
+    .ledger-case.locked { filter: grayscale(0.15); }
+    .ledger-case.locked::after { content: ""; position: absolute; inset: 0; background: repeating-linear-gradient(-12deg, rgba(28,18,10,0.04) 0 8px, rgba(28,18,10,0.1) 8px 10px), rgba(75,48,25,0.12); pointer-events: none; }
+    .ledger-case.is-open-file { border-color: rgba(122,31,31,0.32); }
+    .ledger-case.is-open-file .ledger-stamp { opacity: 0.9; }
+    .ledger-case.classified-lock { cursor: default; filter: grayscale(0.35); opacity: 0.72; }
+    .ledger-case.classified-lock::after { content: ""; position: absolute; inset: 0; background: rgba(28,10,10,0.18); pointer-events: none; }
+    .classified-stamp { display: inline-block; font-family: var(--font-header); font-size: 0.88rem; letter-spacing: 0.32em; color: var(--stamp-red); border: 2px solid var(--stamp-red); padding: 0.18rem 0.7rem 0.12rem; text-transform: uppercase; transform: rotate(-8deg); opacity: 0.85; margin: 0.5rem 0 0.25rem; }
+    .ledger-case.coming-soon-lock { cursor: default; filter: grayscale(0.28); opacity: 0.68; }
+    .ledger-case.coming-soon-lock::after { content: ""; position: absolute; inset: 0; background: repeating-linear-gradient(-14deg, rgba(28,18,10,0.03) 0 11px, rgba(28,18,10,0.12) 11px 13px), rgba(10,10,28,0.13); pointer-events: none; }
+    .coming-soon-stamp { display: inline-block; font-family: var(--font-header); font-size: 0.72rem; letter-spacing: 0.26em; color: var(--gold); border: 1px solid var(--gold); padding: 0.14rem 0.55rem 0.1rem; text-transform: uppercase; opacity: 0.8; margin-top: 0.35rem; }
+    .case-file-affordance { display: flex; align-items: center; justify-content: space-between; gap: 0.55rem; margin-top: 0.9rem; padding-top: 0.65rem; border-top: 1px dashed rgba(60,30,10,0.18); }
+    .case-file-status { font-family: var(--font-type); font-size: 0.56rem; letter-spacing: 0.17em; color: rgba(60,30,10,0.58); text-transform: uppercase; line-height: 1.35; }
+    .case-file-action { display: inline-block; border: 1px solid rgba(122,31,31,0.58); color: rgba(122,31,31,0.82); font-family: var(--font-header); font-size: 0.58rem; letter-spacing: 0.2em; line-height: 1; padding: 0.3rem 0.5rem 0.24rem; text-transform: uppercase; transform: rotate(-1deg); white-space: nowrap; }
+    .coming-soon-lock .case-file-action, .classified-lock .case-file-action { border-color: rgba(60,30,10,0.36); color: rgba(60,30,10,0.5); transform: rotate(1deg); }
+    /* Vault modal */
+    #vault-modal { position: fixed; inset: 0; background: rgba(5,3,1,0.92); display: flex; align-items: center; justify-content: center; z-index: 980; opacity: 0; transition: opacity 0.35s ease; backdrop-filter: blur(4px); padding: 1.5rem; }
+    #vault-modal.hidden { display: none; }
+    #vault-modal.visible { opacity: 1; }
+    .vault-box { background: var(--paper); width: 100%; max-width: 440px; padding: 2.5rem 2.25rem 2rem; position: relative; text-align: center; box-shadow: 0 0 0 1px rgba(100,60,20,0.3), 0 30px 80px rgba(0,0,0,0.75), inset 0 0 60px rgba(0,0,0,0.06); animation: streaming-drop 0.35s ease; }
+    .vault-close { position: absolute; top: 0.6rem; right: 0.75rem; font-family: var(--font-type); font-size: 0.65rem; letter-spacing: 0.1em; color: var(--ink-faded); background: none; border: 1px solid rgba(100,60,20,0.25); padding: 0.2rem 0.45rem; cursor: pointer; }
+    .vault-symbol { font-size: 2.5rem; line-height: 1; margin-bottom: 0.75rem; }
+    .vault-eyebrow { font-family: var(--font-type); font-size: 0.62rem; letter-spacing: 0.3em; color: var(--stamp-red); text-transform: uppercase; border: 1px solid var(--stamp-red); display: inline-block; padding: 0.15rem 0.6rem; margin-bottom: 0.9rem; transform: rotate(-1deg); }
+    .vault-title { font-family: var(--font-header); font-size: 1.3rem; letter-spacing: 0.1em; color: var(--ink); text-transform: uppercase; margin-bottom: 0.5rem; }
+    .vault-lore { font-family: var(--font-type); font-size: 0.82rem; color: var(--ink-faded); font-style: italic; line-height: 1.8; margin-bottom: 1.5rem; max-width: 320px; margin-left: auto; margin-right: auto; }
+    .vault-rewards { display: flex; flex-direction: column; gap: 0.65rem; margin-bottom: 1.5rem; text-align: left; }
+    .vault-reward-row { display: flex; align-items: center; gap: 0.75rem; padding: 0.6rem 0.85rem; background: rgba(60,30,10,0.08); border: 1px solid rgba(100,60,20,0.2); }
+    .vault-reward-label { font-family: var(--font-type); font-size: 0.7rem; letter-spacing: 0.12em; color: var(--ink-faded); text-transform: uppercase; flex-shrink: 0; width: 70px; }
+    .vault-reward-value { font-family: var(--font-header); font-size: 0.85rem; color: var(--ink); letter-spacing: 0.06em; }
+    .vault-coupon { font-family: var(--font-type); font-size: 1rem; letter-spacing: 0.22em; color: var(--folder-red); font-weight: bold; background: rgba(122,31,31,0.07); border: 1px dashed rgba(122,31,31,0.4); padding: 0.6rem 1.2rem; display: inline-block; margin-bottom: 1.25rem; }
+    .vault-claim-btn { font-family: var(--font-header); font-size: 0.78rem; letter-spacing: 0.18em; text-transform: uppercase; background: var(--folder-red); color: var(--paper-light); border: none; padding: 0.75rem 2rem; cursor: pointer; transition: filter 0.2s; }
+    .vault-claim-btn:hover { filter: brightness(1.15); }
+    .case-row { display: flex; align-items: center; justify-content: space-between; gap: 0.75rem; margin-bottom: 0.65rem; }
+    .case-mini-number { font-size: 0.68rem; letter-spacing: 0.2em; color: rgba(60,30,10,0.58); text-transform: uppercase; }
+    .case-mini-title { font-family: var(--font-header); font-size: 1rem; letter-spacing: 0.09em; text-transform: uppercase; color: var(--ink); line-height: 1.25; min-height: 2.5em; }
+    .case-mini-meta { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.45rem 0.7rem; margin-top: 0.85rem; }
+    .case-mini-meta .ledger-value { font-size: 0.72rem; }
+    .solved-list, .season-list { display: grid; gap: 0.7rem; }
+    .solved-record, .season-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 1rem; align-items: center; background: rgba(220,195,155,0.45); border: 1px solid rgba(120,80,35,0.22); padding: 0.9rem 1rem; transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease; }
+    .recovery-line { display: flex; flex-wrap: wrap; gap: 0.35rem 0.85rem; color: rgba(60,30,10,0.55); font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; margin-top: 0.35rem; }
+    .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 0.55rem; }
+    .stat-record { background: rgba(0,0,0,0.04); border: 1px solid rgba(60,30,10,0.15); padding: 0.75rem 0.85rem; }
+    .stat-record .ledger-value { font-size: 1rem; }
+    .ledger-empty { border: 1px dashed rgba(60,30,10,0.22); color: rgba(60,30,10,0.55); font-size: 0.8rem; font-style: italic; padding: 1rem; text-align: center; }
+
+    /* -- MORE CASES FOOTER ------------------------------------ */
+    .more-cases {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+      padding: 2rem 0 0.5rem;
+      font-family: var(--font-type);
+      font-size: 0.7rem;
+      letter-spacing: 0.25em;
+      color: rgba(60,30,10,0.45);
+      text-transform: uppercase;
+    }
+
+    .more-cases-rule {
+      flex: 1;
+      max-width: 120px;
+      height: 1px;
+      background: rgba(60,30,10,0.2);
+    }
+
+    /* -- SEASON INDICATOR ------------------------------------- */
+    .season-indicator {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 1.25rem;
+      flex-wrap: wrap;
+    }
+    .season-pill {
+      display: flex;
+      align-items: center;
+      gap: 0.45rem;
+      padding: 0.35rem 0.8rem;
+      border: 1px solid rgba(60,30,10,0.2);
+      background: rgba(60,30,10,0.06);
+      font-family: var(--font-type);
+      font-size: 0.63rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: rgba(60,30,10,0.4);
+      cursor: default;
+    }
+    .season-pill.active {
+      border-color: rgba(60,30,10,0.45);
+      background: rgba(60,30,10,0.12);
+      color: rgba(60,30,10,0.75);
+    }
+    .season-pill.complete {
+      border-color: rgba(74,124,78,0.4);
+      background: rgba(74,124,78,0.08);
+      color: rgba(74,124,78,0.7);
+    }
+    .season-pill-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: currentColor;
+      opacity: 0.7;
+      flex-shrink: 0;
+    }
+    .season-pill-progress {
+      font-size: 0.55rem;
+      opacity: 0.65;
+      margin-left: 0.1rem;
+    }
+    .season-indicator-arrow {
+      font-size: 0.6rem;
+      color: rgba(60,30,10,0.25);
+      flex-shrink: 0;
+    }
+
+    /* -- COUNTDOWN -------------------------------------------- */
+    .countdown-wrap {
+      margin: 1rem 0 1.5rem;
+      padding: 1.75rem 2rem;
+      background: rgba(0,0,0,0.45);
+      border: 1px solid rgba(201,169,122,0.2);
+      border-top: 2px solid rgba(201,169,122,0.35);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.25rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .countdown-wrap::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 80% 60% at 50% 100%, rgba(201,169,122,0.04) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .countdown-header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.35rem;
+    }
+    .countdown-label {
+      font-size: 0.58rem;
+      letter-spacing: 0.35em;
+      text-transform: uppercase;
+      color: rgba(201,169,122,0.4);
+    }
+    .countdown-case {
+      font-family: var(--font-header);
+      font-size: 1.1rem;
+      letter-spacing: 0.12em;
+      color: rgba(201,169,122,0.85);
+      text-align: center;
+    }
+    .countdown-rule {
+      width: 40px;
+      height: 1px;
+      background: rgba(201,169,122,0.2);
+    }
+    .countdown-dials {
+      display: flex;
+      gap: 0;
+      align-items: flex-start;
+    }
+    .countdown-unit {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.4rem;
+      min-width: 72px;
+    }
+    .countdown-num {
+      font-family: var(--font-header);
+      font-size: 3rem;
+      line-height: 1;
+      color: rgba(201,169,122,0.92);
+      text-shadow: 0 0 30px rgba(201,169,122,0.15);
+      min-width: 2ch;
+      text-align: center;
+    }
+    .countdown-unit-label {
+      font-size: 0.52rem;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: rgba(201,169,122,0.35);
+    }
+    .countdown-sep {
+      font-family: var(--font-header);
+      font-size: 2.4rem;
+      color: rgba(201,169,122,0.2);
+      padding: 0 0.1rem;
+      line-height: 1;
+      margin-top: 0.05rem;
+    }
+    .countdown-sub {
+      font-size: 0.6rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: rgba(201,169,122,0.25);
+    }
+    @media (max-width: 500px) {
+      .countdown-num { font-size: 2.2rem; }
+      .countdown-unit { min-width: 54px; }
+      .countdown-sep { font-size: 1.8rem; }
+    }
+
+    /* -- COMPLETED BANNER ------------------------------------- */
+    .completed-banner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.7rem 1rem;
+      margin-bottom: 0.75rem;
+      background: rgba(74,124,78,0.1);
+      border: 1px solid rgba(74,124,78,0.25);
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    .completed-banner:hover { background: rgba(74,124,78,0.18); }
+    .completed-banner-count {
+      font-family: var(--font-type);
+      font-size: 0.72rem;
+      letter-spacing: 0.18em;
+      color: rgba(74,124,78,0.85);
+      text-transform: uppercase;
+    }
+    .completed-banner-link {
+      font-family: var(--font-type);
+      font-size: 0.68rem;
+      letter-spacing: 0.15em;
+      color: rgba(74,124,78,0.7);
+      text-transform: uppercase;
+    }
+
+    /* -- STREAMING BAR ---------------------------------------- */
+    .streaming-bar {
+      background: rgba(10,7,4,0.97);
+      border-top: 1px solid rgba(201,169,122,0.1);
+      border-bottom: 1px solid rgba(201,169,122,0.06);
+      display: flex;
+      align-items: center;
+      padding: 0.85rem 2.5rem;
+      gap: 1.5rem;
+    }
+
+    .streaming-label {
+      font-family: var(--font-type);
+      font-size: 0.65rem;
+      letter-spacing: 0.22em;
+      color: rgba(201,169,122,0.35);
+      text-transform: uppercase;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .streaming-platforms {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      flex: 1;
+    }
+
+    .platform-link {
+      display: flex;
+      align-items: center;
+      gap: 0.45rem;
+      color: rgba(201,169,122,0.55);
+      font-family: var(--font-type);
+      font-size: 0.72rem;
+      letter-spacing: 0.1em;
+      transition: color 0.2s;
+      white-space: nowrap;
+    }
+
+    .platform-link:hover { color: rgba(201,169,122,0.92); }
+
+    .platform-sep {
+      color: rgba(201,169,122,0.2);
+      font-size: 0.8rem;
+      user-select: none;
+    }
+
+    .btn-view-more {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      flex-shrink: 0;
+      background: rgba(201,169,122,0.1);
+      border: 1px solid rgba(201,169,122,0.25);
+      padding: 0.5rem 1rem;
+      font-family: var(--font-type);
+      font-size: 0.68rem;
+      letter-spacing: 0.15em;
+      color: rgba(201,169,122,0.8);
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: background 0.2s, color 0.2s, border-color 0.2s;
+      white-space: nowrap;
+    }
+
+    .btn-view-more:hover {
+      background: rgba(201,169,122,0.18);
+      color: var(--paper);
+      border-color: rgba(201,169,122,0.45);
+    }
+
+    /* -- SITE FOOTER ------------------------------------------ */
+    .site-footer {
+      background: var(--bg);
+      padding: 1.5rem 2.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid rgba(201,169,122,0.08);
+    }
+
+    .footer-motto {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+    }
+
+    .footer-motto svg { opacity: 0.55; flex-shrink: 0; }
+
+    .footer-motto-text {
+      font-family: var(--font-header);
+      font-size: 0.68rem;
+      letter-spacing: 0.18em;
+      color: rgba(201,169,122,0.45);
+      text-transform: uppercase;
+      line-height: 1.4;
+    }
+
+    .footer-copy {
+      font-family: var(--font-type);
+      font-size: 0.65rem;
+      letter-spacing: 0.1em;
+      color: rgba(201,169,122,0.3);
+      text-transform: uppercase;
+    }
+
+    .footer-right {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+    }
+
+    .footer-join {
+      font-family: var(--font-type);
+      font-size: 0.68rem;
+      letter-spacing: 0.15em;
+      color: rgba(201,169,122,0.55);
+      text-transform: uppercase;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      transition: color 0.2s;
+    }
+
+    .footer-join:hover { color: var(--paper); }
+
+    .footer-email svg { opacity: 0.45; }
+
+    /* -- RESPONSIVE ------------------------------------------- */
+    @media (max-width: 640px) {
+      .site-nav { padding: 1rem 1.25rem; }
+      .cases-section-inner { padding: 0 1rem 2rem; }
+      .section-header { flex-direction: column; gap: 1rem; }
+      .btn-progress { align-self: flex-end; }
+      .continue-card, .solved-record, .season-row { grid-template-columns: 1fr; }
+      .continue-action { min-width: 0; width: 100%; }
+      .ledger-fields, .season-record-grid { grid-template-columns: 1fr; }
+      .case-img-placeholder, .case-img { width: 110px; min-width: 110px; height: 100px; }
+      .case-status { width: 90px; min-width: 90px; }
+      .case-file-affordance { align-items: flex-start; flex-direction: column; gap: 0.55rem; }
+      .case-file-status, .case-file-action { font-size: 16px; }
+      .case-file-action { white-space: normal; line-height: 1.15; }
+      .hero-title-main { letter-spacing: 0.02em; font-size: clamp(2rem, 9vw, 3.5rem); }
+      .hero { overflow: hidden; }
+      .streaming-bar { flex-wrap: wrap; gap: 0.75rem; padding: 0.85rem 1.25rem; }
+      .streaming-platforms { flex-wrap: wrap; }
+      .streaming-label { display: none; }
+      .btn-view-more { margin-left: auto; }
+      .site-footer { flex-direction: column; gap: 1rem; text-align: center; }
+      .footer-motto { justify-content: center; }
+    }
+  </style>
+  <link rel="stylesheet" href="css/polish.css">
+</head>
+<body>
+
+  <!-- ââ AUTH GATE (see case.html for the original / fuller comment) ââ -->
+  <div id="authGate" style="position:fixed;inset:0;z-index:99999;background:#0c0a06;display:flex;align-items:center;justify-content:center;font-family:'Courier Prime','Courier New',monospace;color:rgba(201,169,122,0.7);font-size:0.85rem;letter-spacing:0.08em;text-transform:uppercase;">
+    Verifying investigator credentials&hellip;
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+  <script src="js/progress-sync.js"></script>
+  <script>
+  (function () {
+    var gate = document.getElementById('authGate');
+    function unlock() { if (gate) gate.remove(); }
+    if (!window.AVProgressSync) { unlock(); return; }
+    unlock(); /* TEST: gate disabled, continuing as anonymous */
+  })();
+  </script>
+  <!-- ââ END AUTH GATE ââ -->
+
+  <script src="js/game-nav.js"></script>
+
+  <!-- -- HERO ------------------------------------------------ -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-lamp-glow"></div>
+
+    <div class="hero-content">
+      <p class="hero-title-sub">The Asten Vale</p>
+      <h1 class="hero-title-main">Archives</h1>
+      <div class="hero-diamond"></div>
+      <p class="hero-tagline">
+        Uncover the truth.<br>
+        One case at a time.
+      </p>
+    </div>
+  </section>
+
+  <!-- Investigation Ledger -->
+  <section class="cases-section" id="cases">
+    <div class="cases-section-inner">
+      <div class="section-header">
+        <div class="section-title-group">
+          <h2 class="section-title">Investigation Ledger</h2>
+          <div class="section-title-rule"></div>
+          <p class="section-subtitle">Open records, recovered files, and restricted case folders.<br>Return here when you need the next thread.</p>
+        </div>
+        <a href="progress.html" class="btn-progress"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="8" width="3" height="5" fill="currentColor"/><rect x="5.5" y="5" width="3" height="8" fill="currentColor"/><rect x="10" y="2" width="3" height="11" fill="currentColor"/></svg>View Records</a>
+      </div>
+      <div class="archive-ledger">
+        <section class="ledger-section" aria-labelledby="continue-title"><div class="ledger-heading"><div><h3 class="ledger-title" id="continue-title">Continue Investigation</h3><p class="ledger-note">The next open file on the sheriff's desk.</p></div><span class="ledger-stamp">Current File</span></div><div id="continueInvestigation"></div></section>
+        <section class="ledger-section" aria-labelledby="current-season-title"><div class="ledger-heading"><div><h3 class="ledger-title" id="current-season-title">Current Season</h3><p class="ledger-note" id="current-season-note">Recovery progress for the active vault.</p></div></div><div id="currentSeason"><div class="av-loading" aria-live="polite">Loading investigation...</div></div></section>
+        <section class="ledger-section" aria-labelledby="available-cases-title"><div class="ledger-heading"><div><h3 class="ledger-title" id="available-cases-title">Available Case Files</h3><p class="ledger-note">Released files may be opened. Restricted files remain obscured.</p></div></div><div class="available-grid" id="availableCases"></div></section>
+        <div class="countdown-wrap" id="countdownWrap" style="display:none;"><div class="countdown-header"><span class="countdown-label">Recently Scheduled</span><span class="countdown-case" id="countdownCase"></span><div class="countdown-rule"></div></div><div class="countdown-dials"><div class="countdown-unit"><span class="countdown-num" id="cd-d">--</span><span class="countdown-unit-label">Days</span></div><span class="countdown-sep">:</span><div class="countdown-unit"><span class="countdown-num" id="cd-h">--</span><span class="countdown-unit-label">Hours</span></div><span class="countdown-sep">:</span><div class="countdown-unit"><span class="countdown-num" id="cd-m">--</span><span class="countdown-unit-label">Minutes</span></div><span class="countdown-sep">:</span><div class="countdown-unit"><span class="countdown-num" id="cd-s">--</span><span class="countdown-unit-label">Seconds</span></div></div><span class="countdown-sub">The archive has marked the next release in the ledger</span></div>
+      </div>
+    </div>
+  </section>
+  <!-- -- STREAMING BAR ------------------------------------------ -->
+  <div class="streaming-bar">
+    <span class="streaming-label">Listen on</span>
+    <div class="streaming-platforms">
+
+      <!-- Spotify -->
+      <a href="#" class="platform-link" aria-label="Spotify">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.498 17.306a.75.75 0 01-1.032.25c-2.824-1.725-6.38-2.115-10.567-1.158a.75.75 0 01-.334-1.462c4.584-1.047 8.514-.596 11.684 1.338a.75.75 0 01.249 1.032zm1.468-3.261a.937.937 0 01-1.288.308c-3.23-1.985-8.147-2.56-11.97-1.4a.937.937 0 01-.574-1.787c4.363-1.403 9.786-.723 13.524 1.592a.937.937 0 01.308 1.287zm.126-3.396C15.32 8.39 9.316 8.19 5.975 9.215a1.124 1.124 0 01-.69-2.14c3.826-1.233 10.187-1 14.201 1.422a1.125 1.125 0 01-1.394 1.752z"/>
+        </svg>
+        <span>Spotify</span>
+      </a>
+
+      <span class="platform-sep">Ã‚Â·</span>
+
+      <!-- Apple Music -->
+      <a href="#" class="platform-link" aria-label="Apple Music">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path d="M23.994 6.124a9.23 9.23 0 00-.24-2.19c-.317-1.31-1.062-2.31-2.18-3.043a5.022 5.022 0 00-1.877-.726 10.496 10.496 0 00-1.564-.15c-.04-.003-.083-.01-.124-.013H5.986c-.152.01-.303.017-.455.026C4.786.07 4.043.15 3.34.428 2.004.958 1.04 1.88.475 3.208a5.485 5.485 0 00-.36 1.582c-.06.483-.073.97-.074 1.455v9.51c.002.506.015 1.01.085 1.515.138 1.003.502 1.912 1.152 2.69.96 1.14 2.19 1.748 3.668 1.876.396.034.795.045 1.195.047l.164.003h12.11c.524-.003 1.045-.02 1.563-.11 1.333-.235 2.41-.874 3.228-1.95.54-.718.857-1.536.993-2.415.07-.47.09-.946.09-1.42V6.124zm-5.546 9.33c-.002.024-.006.048-.008.072-.084.736-.54 1.184-1.264 1.258-.342.035-.668-.01-.972-.17-.458-.238-.927-.457-1.39-.683-.164-.08-.335-.15-.5-.233-.17-.085-.25-.045-.25.148.002.558.002 1.116 0 1.674-.003.714-.003 1.427-.008 2.14-.003.375-.105.718-.34.992-.356.414-.83.577-1.37.52-.64-.068-1.13-.44-1.345-1.06a1.77 1.77 0 01-.102-.617c-.004-2.085-.002-4.17-.002-6.254v-.14c-.012-.636.424-1.14 1.052-1.246.33-.056.65-.007.956.128.69.305 1.376.615 2.065.923.343.154.686.306 1.03.456.175.077.26.038.26-.158v-4.36c0-.403.142-.734.47-.977.232-.17.498-.232.784-.216.538.03.978.33 1.12.85.05.183.068.374.07.562.003 2.082.002 4.164 0 6.246v.094z"/>
+        </svg>
+        <span>Apple Music</span>
+      </a>
+
+      <span class="platform-sep">Ã‚Â·</span>
+
+      <!-- YouTube Music -->
+      <a href="#" class="platform-link" aria-label="YouTube Music">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 0C5.376 0 0 5.376 0 12s5.376 12 12 12 12-5.376 12-12S18.624 0 12 0zm0 19.2c-3.978 0-7.2-3.222-7.2-7.2S8.022 4.8 12 4.8s7.2 3.222 7.2 7.2-3.222 7.2-7.2 7.2zm0-11.4c-2.32 0-4.2 1.88-4.2 4.2S9.68 16.2 12 16.2s4.2-1.88 4.2-4.2S14.32 7.8 12 7.8zm0 5.9a1.7 1.7 0 110-3.4 1.7 1.7 0 010 3.4z"/>
+          <path d="M9.6 12l5.04-2.91v5.82L9.6 12z"/>
+        </svg>
+        <span>YouTube Music</span>
+      </a>
+
+      <span class="platform-sep">Ã‚Â·</span>
+
+      <!-- Amazon Music -->
+      <a href="#" class="platform-link" aria-label="Amazon Music">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13.958 10.09c0 1.232.03 2.256-.59 3.351-.502.891-1.301 1.438-2.186 1.438-1.214 0-1.922-.924-1.922-2.292 0-2.692 2.415-3.182 4.698-3.182v.685zm3.186 7.705a.66.66 0 01-.745.074c-1.047-.869-1.234-1.271-1.807-2.098-1.728 1.763-2.95 2.288-5.19 2.288-2.652 0-4.715-1.636-4.715-4.909 0-2.557 1.387-4.299 3.362-5.149 1.714-.752 4.11-.886 5.942-1.092v-.406c0-.748.058-1.632-.38-2.276-.381-.576-1.11-.814-1.755-.814-1.193 0-2.253.613-2.514 1.882-.053.282-.261.559-.548.573l-3.069-.33c-.259-.058-.547-.266-.472-.66C5.97 2.516 8.806 1.6 11.348 1.6c1.3 0 2.998.346 4.025 1.33C16.7 4.176 16.57 6.3 16.57 8.596v4.979c0 1.498.622 2.156 1.208 2.964.206.288.251.633-.01.846l-2.622 2.41zM21.4 18.9c-2.522 1.71-6.176 2.62-9.326 2.62-4.41 0-8.377-1.63-11.38-4.342-.236-.213-.025-.504.258-.338 3.24 1.887 7.24 3.02 11.38 3.02 2.79 0 5.862-.578 8.687-1.776.427-.18.786.28.381.816z"/>
+        </svg>
+        <span>Amazon Music</span>
+      </a>
+
+    </div>
+
+    <a href="#cases" class="btn-view-more">
+      View More Cases
+      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M2 6h8M7 3l3 3-3 3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a>
+  </div>
+
+  <!-- -- FOOTER ----------------------------------------------- -->
+  <footer class="site-footer">
+    <div class="footer-motto">
+      <svg width="28" height="28" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="30" cy="30" r="27" stroke="rgba(201,169,122,0.5)" stroke-width="1.2"/>
+        <polygon points="30,10 25,22 35,22" fill="rgba(201,169,122,0.6)"/>
+        <polygon points="30,16 21,30 39,30" fill="rgba(201,169,122,0.6)"/>
+        <rect x="27" y="30" width="6" height="5" fill="rgba(201,169,122,0.55)"/>
+      </svg>
+      <span class="footer-motto-text">
+        Truth is not given.<br>
+        It is discovered.
+      </span>
+    </div>
+
+    <span class="footer-copy">Ã‚Â© 2026 Asten Vale Archives</span>
+
+    <a href="https://buymeacoffee.com/YOUR_USERNAME" target="_blank" rel="noopener" class="footer-copy" style="text-decoration:none;opacity:0.7;transition:opacity 0.2s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.7'">&#9749; Buy Me a Coffee</a>
+
+    <div class="footer-right">
+      <a href="join.html" class="footer-join">Join the Archive</a>
+      <a href="join.html" class="footer-email">
+        <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="1" y="1" width="18" height="14" rx="2" stroke="rgba(201,169,122,0.5)" stroke-width="1.2"/>
+          <path d="M1 3L10 9L19 3" stroke="rgba(201,169,122,0.5)" stroke-width="1.2"/>
+        </svg>
+      </a>
+    </div>
+  </footer>
+
+  <script src="js/vault-config.js"></script>
+  <script src="js/csv-utils.js"></script>
+  <script src="js/sheet-released.js"></script>
+  <script>
+  // Apply hero image from site-settings.json
+  fetch('js/site-settings.json')
+    .then(function(r){ return r.json(); })
+    .then(function(s){
+      var pg = s.pages && s.pages.home;
+      if (!pg || !pg.heroImage) return;
+      var bg = document.querySelector('.hero-bg');
+      if (bg) {
+        bg.style.backgroundImage = 'url("' + pg.heroImage + '")';
+        bg.style.backgroundSize = 'cover';
+        bg.style.backgroundPosition = 'center';
+        bg.style.opacity = pg.heroOverlay != null ? (1 - pg.heroOverlay) : 1;
+      }
+      if (pg.showTitle === false) {
+        var els = document.querySelectorAll('.hero-title-main, .hero-title-sub, .hero-diamond');
+        els.forEach(function(e){ e.style.display='none'; });
+      }
+      if (pg.showSubtitle === false) { var st = document.querySelector('.hero-tagline'); if(st) st.style.display='none'; }
+      if (pg.heroTitleText) { var tm = document.querySelector('.hero-title-main'); if(tm) tm.textContent = pg.heroTitleText; }
+    }).catch(function(){});
+  </script>
+  <script>
+  applySheetReleased(function() {
+  (function () {
+    function esc(value) { return String(value == null ? '' : value).replace(/[&<>"']/g, function(ch) { return ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[ch]; }); }
+    function pad(num) { return String(parseInt(num, 10) || 0).padStart(3, '0'); }
+    function pct(done, total) { return total > 0 ? Math.round((done / total) * 100) : 0; }
+    function isSolved(id, solved) { return solved.indexOf(id) !== -1; }
+    function caseUrl(c) { return c.url || ('case.html?id=' + parseInt(c.id, 10)); }
+    // Backend-enforced: a case counts as released only if the server's
+    // released_cases table (via public_released_cases) says so -- c.released
+    // from the static SEASONS_CONFIG is display metadata only now, same
+    // rule already enforced by case.html's own progression gate.
+    function releasedCases(season, releasedIds) { return season.cases.filter(function(c) { return releasedIds.indexOf(c.id) !== -1; }); }
+    function solvedInSeason(season, solved) { return season.cases.filter(function(c) { return isSolved(c.id, solved); }); }
+    function getPlayerUnlockedSeasonIds(solved) {
+      var ids = [SEASONS_CONFIG[0].id];
+      for (var i = 0; i < SEASONS_CONFIG.length - 1; i++) {
+        var allDone = SEASONS_CONFIG[i].cases.every(function(c){ return isSolved(c.id, solved); });
+        if (allDone) ids.push(SEASONS_CONFIG[i+1].id); else break;
+      }
+      return ids;
+    }
+    function findActiveSeason(solved, unlockedIds) {
+      for (var i = 0; i < SEASONS_CONFIG.length; i++) {
+        var season = SEASONS_CONFIG[i];
+        if (unlockedIds.indexOf(season.id) === -1) continue;
+        var unsolved = season.cases.filter(function(c){ return !isSolved(c.id, solved); });
+        if (unsolved.length) return { season: season, index: i, active: unsolved[0] };
+      }
+      var last = Math.max(SEASONS_CONFIG.length - 1, 0);
+      return { season: SEASONS_CONFIG[last], index: last, active: null };
+    }
+    function renderField(label, value) { return '<div class="ledger-field"><span class="ledger-label">' + esc(label) + '</span><span class="ledger-value">' + esc(value) + '</span></div>'; }
+    function renderContinue(activeSeason, activeCase, solvedCount, totalCases, releasedIds) { var el = document.getElementById('continueInvestigation'); if (!el) return; var firstReleased = releasedCases(activeSeason, releasedIds)[0]; var c = activeCase || firstReleased || activeSeason.cases[0]; var hasActive = !!activeCase && !(solvedCount === 0 && firstReleased && activeCase.id === firstReleased.id); var title = hasActive ? c.title : 'Begin Investigation'; var button = hasActive ? 'Continue Investigation ->' : 'Start Case ' + pad(c.id) + ' ->'; var status = hasActive ? 'Ready to Investigate' : 'Open the first recovered folder'; var isReleased = releasedIds.indexOf(c.id) !== -1; var href = isReleased ? caseUrl(c) : 'classified.html?id=' + esc(c.id); el.innerHTML = '<div class="continue-card"><div><div class="continue-case">Case ' + pad(c.id) + '</div><h3 class="continue-title">' + esc(title) + '</h3><p class="continue-sub">' + (hasActive ? 'Current Investigation' : 'No active investigation is open yet') + '</p><div class="ledger-fields">' + renderField('Status', status) + renderField('Progress', activeSeason.title) + renderField('Record', 'Case ' + parseInt(c.id, 10) + ' of ' + totalCases) + '</div></div><a class="continue-action" href="' + esc(href) + '">' + esc(button) + '</a></div>'; }
+    function renderCurrentSeason(season, solvedCount, totalCases) { var el = document.getElementById('currentSeason'); if (!el) return; var percent = pct(solvedCount, totalCases); var titleEl = document.getElementById('current-season-title'); var noteEl = document.getElementById('current-season-note'); if (titleEl) titleEl.textContent = season.title; if (noteEl) noteEl.textContent = season.subtitle || ''; el.innerHTML = '<div class="season-record"><div class="season-record-grid">' + renderField('Cases Investigated', solvedCount + ' / ' + totalCases) + '</div><div class="archive-progress" aria-label="Cases investigated ' + percent + ' percent"><div class="archive-progress-fill" style="width:' + percent + '%"></div></div></div>'; }
+    function renderAvailable(season, activeCase, solved, releasedIds) {
+      var el = document.getElementById('availableCases');
+      if (!el) return;
+      el.innerHTML = '';
+      season.cases.forEach(function(c, i) {
+        var solvedCase = isSolved(c.id, solved);
+        var isReleased = releasedIds.indexOf(c.id) !== -1;
+        var prevCase = i > 0 ? season.cases[i - 1] : null;
+        var prevSolved = !prevCase || isSolved(prevCase.id, solved);
+        var classifiedByPrev = !solvedCase && !prevSolved;
+        var comingSoon = !solvedCase && prevSolved && !isReleased;
+        var stamp, status, href, completion, progress, availabilityLabel, actionLabel;
+        if (solvedCase) {
+          stamp = 'Recovered';
+          status = 'Solved';
+          href = caseUrl(c);
+          completion = '100%';
+          progress = 'Recovered';
+          availabilityLabel = 'Recovered File';
+          actionLabel = 'Review Case';
+        } else if (classifiedByPrev) {
+          stamp = 'Classified';
+          status = 'Classified';
+          href = '#';
+          completion = 'Restricted';
+          progress = 'Classified';
+          availabilityLabel = 'Restricted';
+          actionLabel = 'Sealed';
+        } else if (comingSoon) {
+          stamp = 'Sealed';
+          status = 'Pending Release';
+          href = '#';
+          completion = 'Pending';
+          progress = 'Pending';
+          availabilityLabel = 'Pending Release';
+          actionLabel = 'Sealed';
+        } else {
+          stamp = 'Open';
+          status = 'Available';
+          href = caseUrl(c);
+          completion = '0%';
+          progress = 'Ready';
+          availabilityLabel = 'Available for Review';
+          actionLabel = 'Open File';
+        }
+        var isUnavailable = classifiedByPrev || comingSoon;
+        var card = document.createElement(isUnavailable ? 'div' : 'a');
+        card.className = 'case-card ledger-case' + (!isUnavailable ? ' is-open-file' : '') + (solvedCase ? ' solved' : '') + (classifiedByPrev ? ' classified-lock' : '') + (comingSoon ? ' coming-soon-lock' : '');
+        if (!isUnavailable) card.href = href;
+        var innerTitle;
+        if (classifiedByPrev) innerTitle = '<div class="classified-stamp">Classified</div>';
+        else if (comingSoon) innerTitle = '<h4 class="case-mini-title">' + esc(c.title) + '</h4><div class="coming-soon-stamp">Pending Release</div>';
+        else innerTitle = '<h4 class="case-mini-title">' + esc(c.title) + '</h4>';
+        card.innerHTML = '<div class="case-row"><span class="case-mini-number">Case ' + pad(c.id) + '</span><span class="ledger-stamp">' + esc(stamp) + '</span></div>' + innerTitle + '<div class="case-mini-meta">' + renderField('Status', status) + renderField('Difficulty', isUnavailable ? 'Pending' : 'Standard') + renderField('Completion', completion) + renderField('Progress', progress) + '</div><div class="case-file-affordance"><span class="case-file-status">Status: ' + esc(availabilityLabel) + '</span><span class="case-file-action">' + esc(actionLabel) + '</span></div>';
+        el.appendChild(card);
+      });
+    }
+
+    // Backend-powered: completed_cases from player_progress (Supabase),
+    // merged with localStorage only as an offline fallback -- same pattern
+    // used on cabinet.html/progress.html. released_cases (via
+    // public_released_cases) is fetched the same way case.html's gate does.
+    function getAuthoritativeSolved() {
+      var local = [];
+      try { var p = JSON.parse(localStorage.getItem('ava_progress') || '{}'); if (Array.isArray(p.solvedCases)) local = p.solvedCases.slice(); } catch(e) {}
+      try { var legacy = JSON.parse(localStorage.getItem('av_solved') || '[]'); if (Array.isArray(legacy)) legacy.forEach(function(id) { if (local.indexOf(id) === -1) local.push(id); }); } catch(e) {}
+      if (!window.AVProgressSync) return Promise.resolve(local);
+      return window.AVProgressSync.getUser().then(function (user) {
+        if (!user) return local;
+        return window.AVProgressSync.getSupabaseProgress(user).then(function (progress) {
+          var serverSolved = (progress && progress.completed_cases) || [];
+          var merged = local.slice();
+          serverSolved.forEach(function (id) { if (merged.indexOf(id) === -1) merged.push(id); });
+          return merged;
+        });
+      }).catch(function () { return local; });
+    }
+    function getReleasedCaseIds() {
+      if (!window.AVProgressSync) return Promise.resolve([]);
+      var client = window.AVProgressSync.getClient();
+      if (!client) return Promise.resolve([]);
+      return client.from('public_released_cases').select('case_id').then(function (res) {
+        if (res.error || !res.data) return [];
+        return res.data.map(function (r) { return r.case_id; });
+      });
+    }
+
+    Promise.all([getAuthoritativeSolved(), getReleasedCaseIds()]).then(function (results) {
+      var solved = results[0], releasedIds = results[1];
+      var unlockedIds = getPlayerUnlockedSeasonIds(solved), found = findActiveSeason(solved, unlockedIds), season = found.season, totalCases = season.cases.length, solvedCount = solvedInSeason(season, solved).length;
+      renderContinue(season, found.active, solvedCount, totalCases, releasedIds); renderCurrentSeason(season, solvedCount, totalCases); renderAvailable(season, found.active, solved, releasedIds);
+    });
+  })();
+  });
+  </script>
+
+  <!-- -- COUNTDOWN -------------------------------------------- -->
+  <script>
+  (function() {
+    function startCountdown(sched) {
+      if (!sched || sched.type === 'off') return;
+
+      // Find next unreleased case title from vault config
+      var nextTitle = '';
+      if (typeof SEASONS_CONFIG !== 'undefined') {
+        for (var si = 0; si < SEASONS_CONFIG.length; si++) {
+          var unreleased = SEASONS_CONFIG[si].cases.filter(function(c) { return !c.released; });
+          if (unreleased.length > 0) { nextTitle = unreleased[0].title; break; }
+        }
+      }
+
+      // Compute target date from schedule type
+      var target = null;
+      var now = new Date();
+      if (sched.type === 'manual' && sched.nextDate) {
+        target = new Date(sched.nextDate);
+      } else if (sched.type === 'weekly' || sched.type === 'biweekly') {
+        var dow  = sched.weekday != null ? parseInt(sched.weekday) : 0;
+        var diff = (dow - now.getDay() + 7) % 7 || 7;
+        if (sched.type === 'biweekly') diff += 7;
+        target = new Date(now);
+        target.setDate(now.getDate() + diff);
+        target.setHours(8, 0, 0, 0);
+      } else if (sched.type === 'monthly') {
+        var mday = parseInt(sched.monthDay) || 1;
+        target = new Date(now.getFullYear(), now.getMonth(), mday, 8, 0, 0);
+        if (target <= now) target = new Date(now.getFullYear(), now.getMonth() + 1, mday, 8, 0, 0);
+      }
+
+      if (!target || isNaN(target.getTime()) || target <= now) return;
+
+      var wrap   = document.getElementById('countdownWrap');
+      var caseEl = document.getElementById('countdownCase');
+      if (!wrap) return;
+      wrap.style.display = 'flex';
+      if (caseEl) caseEl.textContent = nextTitle ? nextTitle : 'Next case file incoming';
+
+      function pad(n) { return n < 10 ? '0' + n : '' + n; }
+      function tick() {
+        var rem = target - new Date();
+        if (rem <= 0) { wrap.style.display = 'none'; return; }
+        var d = Math.floor(rem / 86400000);
+        var h = Math.floor((rem % 86400000) / 3600000);
+        var m = Math.floor((rem % 3600000) / 60000);
+        var s = Math.floor((rem % 60000) / 1000);
+        document.getElementById('cd-d').textContent = pad(d);
+        document.getElementById('cd-h').textContent = pad(h);
+        document.getElementById('cd-m').textContent = pad(m);
+        document.getElementById('cd-s').textContent = pad(s);
+      }
+      tick();
+      setInterval(tick, 1000);
+    }
+
+    // Try fetch first (works on server), fall back to a hardcoded default
+    if (window.location.protocol !== 'file:') {
+      fetch('js/site-settings.json')
+        .then(function(r) { return r.json(); })
+        .then(function(s) { startCountdown(s.releaseSchedule); })
+        .catch(function() {});
+    } else {
+      // file:// Ã¢â‚¬â€ fetch blocked, use weekly Sunday as default so countdown is always visible locally
+      startCountdown({ type: 'weekly', weekday: 0 });
+    }
+  })();
+  </script>
+  <!-- VAULT REWARD MODAL -->
+  <div id="vault-modal" class="hidden" role="dialog" aria-modal="true" aria-label="Vault Unlocked">
+    <div class="vault-box">
+      <button class="vault-close" id="vault-close-btn">&#x2715;</button>
+      <div class="vault-symbol" id="vault-symbol">&#x1F3DB;</div>
+      <div class="vault-eyebrow">Vault Unsealed</div>
+      <div class="vault-title" id="vault-title">Season Complete</div>
+      <div class="vault-lore" id="vault-lore"></div>
+      <div class="vault-rewards">
+        <div class="vault-reward-row"><span class="vault-reward-label">Badge</span><span class="vault-reward-value" id="vault-badge-name"></span></div>
+        <div class="vault-reward-row"><span class="vault-reward-label">Content</span><span class="vault-reward-value" id="vault-content-label">Exclusive Archive Recovered</span></div>
+      </div>
+      <div class="vault-coupon" id="vault-coupon"></div>
+      <button class="vault-claim-btn" id="vault-claim-btn">Claim Vault Reward</button>
+    </div>
+  </div>
+
+  <script src="js/polish.js" defer></script>
+  <script>
+  // Vault modal logic
+  (function() {
+    var claimed = [];
+    try { claimed = JSON.parse(localStorage.getItem('av_vault_claimed') || '[]'); } catch(e) {}
+    var solved = [];
+    try { solved = JSON.parse(localStorage.getItem('av_solved') || '[]'); } catch(e) {}
+    try { var p = JSON.parse(localStorage.getItem('ava_progress') || '{}'); if (Array.isArray(p.solvedCases)) p.solvedCases.forEach(function(id){ if (solved.indexOf(id)===-1) solved.push(id); }); } catch(e) {}
+
+    var pendingVault = null;
+    for (var i = 0; i < SEASONS_CONFIG.length; i++) {
+      var s = SEASONS_CONFIG[i];
+      if (!s.vault) continue;
+      var allSolved = s.cases.every(function(c){ return solved.indexOf(c.id) !== -1; });
+      if (allSolved && claimed.indexOf(s.vault.id) === -1) { pendingVault = s; break; }
+    }
+
+    if (!pendingVault) return;
+    var v = pendingVault.vault;
+    document.getElementById('vault-symbol').textContent = v.badge ? v.badge.symbol : '🏛';
+    document.getElementById('vault-title').textContent = v.name || pendingVault.title;
+    document.getElementById('vault-lore').textContent = v.lore || '';
+    document.getElementById('vault-badge-name').textContent = v.badge ? v.badge.name : '';
+    document.getElementById('vault-coupon').textContent = v.coupon || '';
+
+    var modal = document.getElementById('vault-modal');
+    modal.classList.remove('hidden');
+    setTimeout(function(){ modal.classList.add('visible'); }, 20);
+
+    function close() {
+      modal.classList.remove('visible');
+      setTimeout(function(){ modal.classList.add('hidden'); }, 320);
+    }
+    document.getElementById('vault-close-btn').addEventListener('click', close);
+    modal.addEventListener('click', function(e){ if (e.target === modal) close(); });
+    document.getElementById('vault-claim-btn').addEventListener('click', function() {
+      claimed.push(v.id);
+      localStorage.setItem('av_vault_claimed', JSON.stringify(claimed));
+      close();
+    });
+  })();
+  </script>
+</body>
+</html>
