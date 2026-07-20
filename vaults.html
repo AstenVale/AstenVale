@@ -31,9 +31,11 @@
 
     .wrap{max-width:960px;margin:0 auto;padding:1.5rem 1.25rem 4rem;}
     .vault-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;}
-    .vault-card{background:var(--paper);color:var(--ink);padding:1.25rem;text-align:center;box-shadow:0 4px 20px rgba(0,0,0,0.35);}
-    .vault-card.locked{opacity:0.45;filter:grayscale(0.5);cursor:pointer;}
-    .vault-card.current{opacity:0.75;filter:grayscale(0.25);cursor:pointer;}
+    .vault-card{background:var(--paper);color:var(--ink);padding:1.25rem;text-align:center;box-shadow:0 4px 20px rgba(0,0,0,0.35);position:relative;}
+    .vault-card.locked{cursor:pointer;}
+    .vault-card.locked::after{content:'CLASSIFIED';position:absolute;top:0.6rem;right:0.6rem;font-size:0.6rem;letter-spacing:0.08em;color:var(--ink-faded);border:1px solid rgba(60,30,10,0.3);padding:0.15rem 0.4rem;}
+    .vault-card.current{cursor:pointer;border:2px solid var(--gold);}
+    .vault-card.current::after{content:'IN PROGRESS';position:absolute;top:0.6rem;right:0.6rem;font-size:0.6rem;letter-spacing:0.08em;color:#fff;background:var(--gold);padding:0.15rem 0.4rem;}
     .vault-symbol{font-size:2rem;margin-bottom:0.4rem;}
     .vault-name{font-family:var(--font-header);font-size:0.95rem;letter-spacing:0.05em;text-transform:uppercase;}
     .vault-status{font-size:0.68rem;letter-spacing:0.1em;text-transform:uppercase;margin-top:0.4rem;color:var(--ink-faded);}
