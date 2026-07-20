@@ -5,40 +5,67 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="robots" content="noindex, nofollow" />
   <title>Admin — Asten Vale Archives</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
   <style>
 :root {
-  --ink: #1c120a; --ink-faded: #4a3728; --paper: #c9a97a;
+  --ink: #1c120a; --ink-faded: #4a3728; --paper: #c9a97a; --paper-bg: #c4a472;
   --folder-red: #7a1f1f; --bg: #0c0a06;
   --font-type: 'Courier New', Courier, monospace;
+  --font-header: 'Special Elite', 'Courier New', serif;
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
-body{background:var(--bg);color:var(--paper);font-family:var(--font-type);font-size:14px;line-height:1.6;min-height:100vh;padding:2rem;}
-h1{font-size:1.3rem;letter-spacing:0.08em;margin-bottom:1.5rem;color:var(--paper);}
-h2{font-size:0.95rem;letter-spacing:0.06em;margin:2rem 0 0.75rem;color:var(--paper);border-bottom:1px solid rgba(201,169,122,0.25);padding-bottom:0.4rem;}
-.wrap{max-width:960px;margin:0 auto;}
+body{background:var(--bg);color:var(--ink);font-family:var(--font-type);font-size:14px;line-height:1.6;min-height:100vh;}
+h1{font-size:1.3rem;letter-spacing:0.08em;margin-bottom:1.5rem;color:var(--ink);}
+h2{font-size:0.95rem;letter-spacing:0.06em;margin:2rem 0 0.75rem;color:var(--ink);border-bottom:1px solid rgba(60,30,10,0.25);padding-bottom:0.4rem;}
 
-#loginCard{max-width:380px;margin:4rem auto;background:rgba(201,169,122,0.06);border:1px solid rgba(201,169,122,0.2);padding:2rem;}
-#loginCard p{font-size:0.75rem;color:rgba(201,169,122,0.6);margin-bottom:1rem;line-height:1.5;}
-#loginCard input{width:100%;padding:0.6rem 0.7rem;margin-bottom:0.75rem;background:rgba(0,0,0,0.3);border:1px solid rgba(201,169,122,0.25);color:var(--paper);font-family:var(--font-type);font-size:0.85rem;}
+.page-hero { position: relative; min-height: 22vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 2rem 2rem 3rem; }
+.page-hero::before { content: ""; position: absolute; inset: 0; background: radial-gradient(ellipse 60% 80% at 50% 50%, rgba(245,166,35,0.04) 0%, transparent 70%); pointer-events: none; }
+.page-eyebrow { font-family: var(--font-type); font-size: 0.65rem; letter-spacing: 0.32em; color: rgba(201,169,122,0.4); text-transform: uppercase; margin-bottom: 0.4rem; position: relative; }
+.page-title { font-family: var(--font-header); font-size: clamp(1.6rem, 5vw, 2.4rem); letter-spacing: 0.12em; color: rgba(220,190,140,0.95); text-transform: uppercase; text-shadow: 0 2px 30px rgba(0,0,0,0.8); margin-bottom: 0.75rem; position: relative; }
+.page-rule { width: 40px; height: 1px; background: rgba(201,169,122,0.3); margin: 0 auto 0.75rem; }
+
+.paper-section { background: var(--paper-bg); position: relative; }
+.paper-section::before { content: ""; display: block; height: 28px; background: var(--paper-bg); clip-path: polygon(0% 100%, 1% 20%, 2.5% 90%, 4% 10%, 5.5% 80%, 7% 5%, 8.5% 85%, 10% 15%, 11.5% 75%, 13% 25%, 14.5% 70%, 16% 30%, 17.5% 65%, 19% 20%, 20.5% 80%, 22% 10%, 23.5% 90%, 25% 15%, 26.5% 75%, 28% 35%, 29.5% 60%, 31% 25%, 32.5% 70%, 34% 10%, 35.5% 85%, 37% 20%, 38.5% 75%, 40% 30%, 41.5% 65%, 43% 15%, 44.5% 80%, 46% 20%, 47.5% 70%, 49% 10%, 50.5% 90%, 52% 25%, 53.5% 60%, 55% 15%, 56.5% 80%, 58% 30%, 59.5% 65%, 61% 10%, 62.5% 85%, 64% 20%, 65.5% 75%, 67% 35%, 68.5% 60%, 70% 15%, 71.5% 80%, 73% 25%, 74.5% 70%, 76% 10%, 77.5% 90%, 79% 20%, 80.5% 65%, 82% 30%, 83.5% 75%, 85% 15%, 86.5% 80%, 88% 25%, 89.5% 60%, 91% 10%, 92.5% 85%, 94% 20%, 95.5% 70%, 97% 30%, 98.5% 80%, 100% 0%, 100% 100%); }
+
+.site-footer { background: var(--bg); padding: 1.5rem 2.5rem; display: flex; align-items: center; justify-content: space-between; border-top: 1px solid rgba(201,169,122,0.08); }
+.footer-motto { display: flex; align-items: center; gap: 0.85rem; }
+.footer-motto svg { opacity: 0.55; flex-shrink: 0; }
+.footer-motto-text { font-family: var(--font-header); font-size: 0.68rem; letter-spacing: 0.18em; color: rgba(201,169,122,0.45); text-transform: uppercase; line-height: 1.4; }
+@media (max-width: 640px) { .site-footer { flex-direction: column; gap: 1rem; text-align: center; } .footer-motto { justify-content: center; } }
+
+.wrap{max-width:960px;margin:0 auto;padding:1.5rem 1.25rem 4rem;}
+
+#loginCard{max-width:380px;margin:2rem auto;background:var(--paper);color:var(--ink);box-shadow:0 4px 20px rgba(0,0,0,0.35);padding:2rem;}
+#loginCard p{font-size:0.75rem;color:var(--ink-faded);margin-bottom:1rem;line-height:1.5;}
+#loginCard input{width:100%;padding:0.6rem 0.7rem;margin-bottom:0.75rem;background:rgba(255,255,255,0.4);border:1px solid rgba(60,30,10,0.25);color:var(--ink);font-family:var(--font-type);font-size:0.85rem;}
 #loginCard button{width:100%;padding:0.65rem;background:var(--folder-red);color:#fff;border:none;cursor:pointer;font-family:var(--font-type);font-size:0.8rem;letter-spacing:0.08em;text-transform:uppercase;}
-#loginError{color:#e88;font-size:0.78rem;margin-top:0.5rem;min-height:1.2em;}
-#loginNotice{color:#8c8;font-size:0.78rem;margin-top:0.5rem;min-height:1.2em;}
+#loginError{color:#7a1f1f;font-size:0.78rem;margin-top:0.5rem;min-height:1.2em;}
+#loginNotice{color:#3f6b3f;font-size:0.78rem;margin-top:0.5rem;min-height:1.2em;}
 
 .stat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:0.75rem;}
-.stat-tile{background:rgba(201,169,122,0.06);border:1px solid rgba(201,169,122,0.15);padding:1rem;}
-.stat-tile .num{font-size:1.6rem;color:var(--paper);}
-.stat-tile .label{font-size:0.65rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(201,169,122,0.5);margin-top:0.25rem;}
+.stat-tile{background:var(--paper);color:var(--ink);box-shadow:0 4px 20px rgba(0,0,0,0.35);padding:1rem;}
+.stat-tile .num{font-size:1.6rem;color:var(--folder-red);}
+.stat-tile .label{font-size:0.65rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink-faded);margin-top:0.25rem;}
 
 table{width:100%;border-collapse:collapse;font-size:0.8rem;}
-th{text-align:left;padding:0.45rem 0.5rem;color:rgba(201,169,122,0.55);font-size:0.65rem;letter-spacing:0.08em;text-transform:uppercase;border-bottom:1px solid rgba(201,169,122,0.2);}
-td{padding:0.45rem 0.5rem;border-bottom:1px solid rgba(201,169,122,0.08);}
+th{text-align:left;padding:0.45rem 0.5rem;color:var(--ink-faded);font-size:0.65rem;letter-spacing:0.08em;text-transform:uppercase;border-bottom:1px solid rgba(60,30,10,0.2);}
+td{padding:0.45rem 0.5rem;border-bottom:1px solid rgba(60,30,10,0.08);}
 
 #dashboard{display:none;}
-.signout{float:right;font-size:0.7rem;color:rgba(201,169,122,0.5);cursor:pointer;text-decoration:underline;}
-.empty{color:rgba(201,169,122,0.4);font-style:italic;padding:0.75rem 0;}
+.signout{float:right;font-size:0.7rem;color:var(--ink-faded);cursor:pointer;text-decoration:underline;}
+.empty{color:var(--ink-faded);font-style:italic;padding:0.75rem 0;}
   </style>
 </head>
 <body>
+  <div class="page-hero">
+    <p class="page-eyebrow">Restricted Access</p>
+    <h1 class="page-title" style="margin-bottom:0;">Admin</h1>
+    <div class="page-rule"></div>
+  </div>
+
+ <section class="paper-section">
   <div class="wrap">
 
     <div id="loginCard">
@@ -55,7 +82,7 @@ td{padding:0.45rem 0.5rem;border-bottom:1px solid rgba(201,169,122,0.08);}
       <h1>Player Progress — Admin Stats</h1>
 
       <h2 style="margin-top:0;">Publishing</h2>
-      <p style="font-size:0.75rem;color:rgba(201,169,122,0.6);margin-bottom:0.75rem;line-height:1.5;">
+      <p style="font-size:0.75rem;color:var(--ink-faded);margin-bottom:0.75rem;line-height:1.5;">
         Reads the streaming spreadsheet and marks any case with a published link as
         released. Never un-releases a case. Also reads Sheet 2 of the same
         spreadsheet to sync vault rewards. Run this after publishing a new case
@@ -83,6 +110,19 @@ td{padding:0.45rem 0.5rem;border-bottom:1px solid rgba(201,169,122,0.08);}
     </div>
 
   </div>
+ </section>
+
+ <footer class="site-footer">
+  <div class="footer-motto">
+    <svg width="28" height="28" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="30" cy="30" r="27" stroke="rgba(201,169,122,0.5)" stroke-width="1.2"/>
+      <polygon points="30,10 25,22 35,22" fill="rgba(201,169,122,0.6)"/>
+      <polygon points="30,16 21,30 39,30" fill="rgba(201,169,122,0.6)"/>
+      <rect x="27" y="30" width="6" height="5" fill="rgba(201,169,122,0.55)"/>
+    </svg>
+    <span class="footer-motto-text">Truth is not given.<br>It is discovered.</span>
+  </div>
+ </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
   <script>
