@@ -20,7 +20,7 @@
     .page-hero { position: relative; min-height: 30vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 2rem 2rem 3rem; }
     .page-hero::before { content: ""; position: absolute; inset: 0; background: radial-gradient(ellipse 60% 80% at 50% 50%, rgba(245,166,35,0.04) 0%, transparent 70%); pointer-events: none; }
     .page-eyebrow { font-family: var(--font-type); font-size: 0.65rem; letter-spacing: 0.32em; color: rgba(201,169,122,0.4); text-transform: uppercase; margin-bottom: 0.4rem; position: relative; }
-    .page-title { font-family: var(--font-header); font-size: clamp(1.8rem, 5vw, 3rem); letter-spacing: 0.12em; color: rgba(220,190,140,0.95); text-transform: uppercase; text-shadow: 0 2px 30px rgba(0,0,0,0.8); margin-bottom: 0.75rem; position: relative; }
+    .page-title { font-family: var(--font-header); font-size: clamp(1.3rem, 5vw, 3rem); letter-spacing: 0.12em; color: rgba(220,190,140,0.95); text-transform: uppercase; text-shadow: 0 2px 30px rgba(0,0,0,0.8); margin-bottom: 0.75rem; position: relative; max-width: 100%; overflow-wrap: anywhere; word-break: break-word; }
     .page-rank { font-size: 0.8rem; letter-spacing: 0.15em; color: #f5a623; text-transform: uppercase; margin-top: -0.4rem; margin-bottom: 0.75rem; position: relative; }
     .page-rule { width: 40px; height: 1px; background: rgba(201,169,122,0.3); margin: 0 auto 0.75rem; }
 
@@ -51,7 +51,7 @@
     .card{background:var(--paper);color:var(--ink);padding:1.5rem;box-shadow:0 4px 20px rgba(0,0,0,0.35);}
     .field-row{margin-bottom:1rem;}
     .field-label{font-size:0.65rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--ink-faded);margin-bottom:0.3rem;}
-    .field-value{font-family:var(--font-header);font-size:0.95rem;}
+    .field-value{font-family:var(--font-header);font-size:0.95rem;overflow-wrap:anywhere;word-break:break-word;}
     .toggle-row{display:flex;align-items:center;justify-content:space-between;margin-top:1.25rem;padding-top:1.25rem;border-top:1px solid rgba(60,30,10,0.15);}
     .toggle-btn{font-family:var(--font-header);font-size:0.72rem;letter-spacing:0.08em;color:#fff;background:var(--folder-red);padding:0.55rem 1.2rem;border:none;text-transform:uppercase;cursor:pointer;}
     .toggle-btn:hover{background:#8b1a1a;}
