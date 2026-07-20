@@ -39,8 +39,9 @@ body{background:var(--bg);color:var(--ink);font-family:var(--font-type);font-siz
 .hero-sub{font-size:0.8rem;letter-spacing:0.1em;color:rgba(201,169,122,0.55);margin-top:0.6rem;}
 
 .paper-panel{background:var(--paper);padding:2rem 1.75rem;box-shadow:0 6px 30px rgba(0,0,0,0.5);}
+.table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;}
 
-table{width:100%;border-collapse:collapse;}
+table{width:100%;min-width:480px;border-collapse:collapse;}
 th{font-family:var(--font-type);font-size:0.62rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--ink-faded);text-align:left;padding:0.6rem 0.5rem;border-bottom:2px solid rgba(60,30,10,0.25);}
 td{padding:0.65rem 0.5rem;border-bottom:1px solid rgba(60,30,10,0.12);font-size:0.85rem;}
 tr:first-child td{font-family:var(--font-header);}
@@ -48,6 +49,12 @@ tr:first-child td{font-family:var(--font-header);}
 .empty{padding:2rem 0.5rem;text-align:center;color:var(--ink-faded);font-style:italic;}
 
 .back-link{display:inline-block;font-size:0.7rem;letter-spacing:0.15em;color:rgba(201,169,122,0.6);text-decoration:underline;text-underline-offset:3px;text-transform:uppercase;margin:0 0 1.25rem 2.5rem;}
+
+@media (max-width: 640px) {
+  .site-wrapper{padding:0 0.75rem 3rem;}
+  .paper-panel{padding:1.25rem 1rem;}
+  .back-link{margin-left:1rem;}
+}
   
     
     
@@ -75,6 +82,7 @@ tr:first-child td{font-family:var(--font-header);}
 
   <div class="site-wrapper">
     <div class="paper-panel">
+     <div class="table-scroll">
       <table id="lbTable">
         <thead>
           <tr>
@@ -89,6 +97,7 @@ tr:first-child td{font-family:var(--font-header);}
           <tr><td colspan="5" class="empty">Loading…</td></tr>
         </tbody>
       </table>
+     </div>
     </div>
   </div>
 
