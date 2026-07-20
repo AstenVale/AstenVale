@@ -23,7 +23,7 @@
    cover the first bit of page content -- this replaces the flow-space
    the nav used to occupy, so nothing shifts. An opaque background is
    required so scrolled content doesn't show through underneath it. */
-.site-nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:1.25rem 2.5rem;flex-wrap:wrap;gap:0.75rem;background:var(--bg);}
+.site-nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:1.25rem 2.5rem;background:var(--bg);}
 body{padding-top:84px;}
 .nav-brand{font-family:var(--font-header);font-size:0.75rem;letter-spacing:0.22em;color:rgba(201,169,122,0.75);text-decoration:none;text-transform:uppercase;line-height:1.3;}
 .nav-brand span{display:block;}
@@ -42,3 +42,21 @@ body{padding-top:84px;}
 .nav-dropdown-menu.open{display:block;}
 .nav-dropdown-item{display:block;padding:0.55rem 1.1rem;font-family:var(--font-type);font-size:0.68rem;letter-spacing:0.1em;color:rgba(201,169,122,0.75);text-decoration:none;text-transform:uppercase;cursor:pointer;}
 .nav-dropdown-item:hover{color:var(--paper);background:rgba(201,169,122,0.08);}
+
+/* — Mobile hamburger collapse — */
+.nav-hamburger{display:none;background:none;border:none;padding:0.25rem;cursor:pointer;flex-shrink:0;}
+.nav-hamburger-bar{display:block;width:22px;height:2px;background:rgba(201,169,122,0.85);margin:4px 0;transition:transform 0.2s,opacity 0.2s;}
+.nav-hamburger.open .nav-hamburger-bar:nth-child(1){transform:translateY(6px) rotate(45deg);}
+.nav-hamburger.open .nav-hamburger-bar:nth-child(2){opacity:0;}
+.nav-hamburger.open .nav-hamburger-bar:nth-child(3){transform:translateY(-6px) rotate(-45deg);}
+
+@media (max-width:768px){
+  .site-nav{padding:1.1rem 1.25rem;flex-wrap:nowrap;}
+  .nav-hamburger{display:block;}
+  .nav-links{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;background:var(--bg);padding:0.5rem 1.25rem 1.25rem;border-top:1px solid rgba(201,169,122,0.15);box-shadow:0 12px 30px rgba(0,0,0,0.55);max-height:calc(100vh - 84px);overflow-y:auto;}
+  .nav-links.open{display:flex;}
+  .nav-links .nav-link,.nav-links .nav-dropdown-toggle{padding:0.75rem 0;width:100%;text-align:left;border-bottom:1px solid rgba(201,169,122,0.08);}
+  .nav-dropdown{width:100%;}
+  .nav-dropdown-menu{position:static;box-shadow:none;border:none;min-width:0;width:100%;padding:0 0 0 1rem;background:transparent;}
+  .nav-dropdown-item{padding:0.65rem 0;border-bottom:1px solid rgba(201,169,122,0.06);}
+}

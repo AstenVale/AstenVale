@@ -42,7 +42,10 @@
   var html =
     '<nav class="site-nav">' +
       '<a href="dashboard.html" class="nav-brand">Asten Vale Archives</a>' +
-      '<div class="nav-links">' +
+      '<button type="button" class="nav-hamburger" id="navHamburger" aria-label="Menu" aria-haspopup="true" aria-expanded="false" aria-controls="navLinks">' +
+        '<span class="nav-hamburger-bar"></span><span class="nav-hamburger-bar"></span><span class="nav-hamburger-bar"></span>' +
+      '</button>' +
+      '<div class="nav-links" id="navLinks">' +
         '<a href="archive.html" class="' + activeClass('archive.html') + '">Archive</a>' +
         '<a href="cabinet.html" class="nav-link">Evidence</a>' +
         '<a href="vaults.html" class="nav-link">Vaults</a>' +
@@ -55,6 +58,33 @@
   document.write(html);
 
   document.addEventListener('DOMContentLoaded', function () {
+    var hamburger = document.getElementById('navHamburger');
+    var navLinks = document.getElementById('navLinks');
+    if (hamburger && navLinks) {
+      function closeNavLinks() {
+        navLinks.classList.remove('open');
+        hamburger.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
+      }
+      hamburger.addEventListener('click', function (e) {
+        e.stopPropagation();
+        var isOpen = navLinks.classList.toggle('open');
+        hamburger.classList.toggle('open', isOpen);
+        hamburger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+      navLinks.addEventListener('click', function (e) {
+        // Collapse the mobile menu after choosing a plain link, but not
+        // when the click just opened the Detective sub-dropdown.
+        if (e.target.tagName === 'A' || e.target.id === 'navLogoutLink') closeNavLinks();
+      });
+      document.addEventListener('click', function (e) {
+        if (!navLinks.contains(e.target) && e.target !== hamburger && !hamburger.contains(e.target)) closeNavLinks();
+      });
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') closeNavLinks();
+      });
+    }
+
     var toggle = document.getElementById('detectiveToggle');
     var menu = document.getElementById('detectiveDropdown');
     if (toggle && menu) {
