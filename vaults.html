@@ -10,26 +10,28 @@
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
-      --ink: #1c120a; --ink-faded: #4a3728; --paper: #c9a97a; --paper-dark: #b8935e;
+      --ink: #1c120a; --ink-faded: #4a3728; --paper: #c9a97a; --paper-dark: #b8935e; --paper-bg: #c4a472;
       --gold: #c9960c; --green-pine: #4a7c4e; --folder-red: #7a1f1f; --bg: #0c0a06;
       --font-type: 'Courier Prime', 'Courier New', Courier, monospace;
       --font-header: 'Special Elite', 'Courier New', serif;
     }
-    body { background: var(--bg); color: var(--paper); font-family: var(--font-type); min-height: 100vh; }
+    body { background: var(--bg); color: var(--ink); font-family: var(--font-type); min-height: 100vh; }
 
-    
-    
-    
-    
-    
-    
-    
+    .page-hero { position: relative; min-height: 30vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 2rem 2rem 3rem; }
+    .page-hero::before { content: ""; position: absolute; inset: 0; background: radial-gradient(ellipse 60% 80% at 50% 50%, rgba(245,166,35,0.04) 0%, transparent 70%); pointer-events: none; }
+    .page-eyebrow { font-family: var(--font-type); font-size: 0.65rem; letter-spacing: 0.32em; color: rgba(201,169,122,0.4); text-transform: uppercase; margin-bottom: 0.4rem; position: relative; }
+    .page-title { font-family: var(--font-header); font-size: clamp(1.8rem, 5vw, 3rem); letter-spacing: 0.12em; color: rgba(220,190,140,0.95); text-transform: uppercase; text-shadow: 0 2px 30px rgba(0,0,0,0.8); margin-bottom: 0.75rem; position: relative; }
+    .page-rule { width: 40px; height: 1px; background: rgba(201,169,122,0.3); margin: 0 auto 0.75rem; }
 
-    .hero{text-align:center;padding:2rem 2rem 1rem;}
-    .hero-eyebrow{font-size:0.68rem;letter-spacing:0.3em;color:rgba(201,169,122,0.45);text-transform:uppercase;}
-    .hero-title{font-family:var(--font-header);font-size:clamp(1.8rem,6vw,2.8rem);letter-spacing:0.08em;color:rgba(220,190,140,0.95);text-transform:uppercase;margin-top:0.4rem;}
+    .vaults-paper-section { background: var(--paper-bg); position: relative; }
+    .vaults-paper-section::before { content: ""; display: block; height: 28px; background: var(--paper-bg); clip-path: polygon(0% 100%, 1% 20%, 2.5% 90%, 4% 10%, 5.5% 80%, 7% 5%, 8.5% 85%, 10% 15%, 11.5% 75%, 13% 25%, 14.5% 70%, 16% 30%, 17.5% 65%, 19% 20%, 20.5% 80%, 22% 10%, 23.5% 90%, 25% 15%, 26.5% 75%, 28% 35%, 29.5% 60%, 31% 25%, 32.5% 70%, 34% 10%, 35.5% 85%, 37% 20%, 38.5% 75%, 40% 30%, 41.5% 65%, 43% 15%, 44.5% 80%, 46% 20%, 47.5% 70%, 49% 10%, 50.5% 90%, 52% 25%, 53.5% 60%, 55% 15%, 56.5% 80%, 58% 30%, 59.5% 65%, 61% 10%, 62.5% 85%, 64% 20%, 65.5% 75%, 67% 35%, 68.5% 60%, 70% 15%, 71.5% 80%, 73% 25%, 74.5% 70%, 76% 10%, 77.5% 90%, 79% 20%, 80.5% 65%, 82% 30%, 83.5% 75%, 85% 15%, 86.5% 80%, 88% 25%, 89.5% 60%, 91% 10%, 92.5% 85%, 94% 20%, 95.5% 70%, 97% 30%, 98.5% 80%, 100% 0%, 100% 100%); }
 
-    .wrap{max-width:960px;margin:0 auto;padding:1.5rem 1.25rem 4rem;}
+    .site-footer { background: var(--bg); padding: 1.5rem 2.5rem; display: flex; align-items: center; justify-content: space-between; border-top: 1px solid rgba(201,169,122,0.08); }
+    .footer-motto { display: flex; align-items: center; gap: 0.85rem; }
+    .footer-motto svg { opacity: 0.55; flex-shrink: 0; }
+    .footer-motto-text { font-family: var(--font-header); font-size: 0.68rem; letter-spacing: 0.18em; color: rgba(201,169,122,0.45); text-transform: uppercase; line-height: 1.4; }
+
+    .wrap{max-width:960px;margin:0 auto;padding:1.5rem 1.25rem 4rem;position:relative;}
     .vault-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;}
     .vault-card{background:var(--paper);color:var(--ink);padding:1.25rem;text-align:center;box-shadow:0 4px 20px rgba(0,0,0,0.35);position:relative;}
     .vault-card.locked{cursor:pointer;}
@@ -47,17 +49,17 @@
     .vault-detail-label{color:var(--ink-faded);text-transform:uppercase;letter-spacing:0.06em;font-size:0.62rem;}
     .vault-detail-requirement{margin-top:0.4rem;font-style:italic;color:var(--ink-faded);}
 
-    .empty-note{font-size:0.8rem;color:rgba(201,169,122,0.5);font-style:italic;text-align:center;padding:1rem 0;}
+    .empty-note{font-size:0.8rem;color:var(--ink-faded);font-style:italic;text-align:center;padding:1rem 0;}
     #loadingNote{text-align:center;padding:4rem 1rem;color:rgba(201,169,122,0.5);font-size:0.8rem;}
 
     /* ── Progress summary ─────────────────────────────────────────────── */
-    .progress-summary{background:rgba(201,169,122,0.06);border:1px solid rgba(201,169,122,0.2);border-radius:4px;padding:1.1rem 1.25rem;margin-bottom:2rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:0.9rem;}
-    .progress-summary-item .label{font-size:0.65rem;letter-spacing:0.08em;text-transform:uppercase;color:rgba(201,169,122,0.6);}
-    .progress-summary-item .val{display:block;margin-top:0.25rem;font-family:var(--font-header);font-size:1.1rem;letter-spacing:0.04em;color:var(--gold);text-transform:uppercase;}
+    .progress-summary{background:rgba(0,0,0,0.04);border:1px solid rgba(60,30,10,0.2);border-radius:4px;padding:1.1rem 1.25rem;margin-bottom:2rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:0.9rem;}
+    .progress-summary-item .label{font-size:0.65rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--ink-faded);}
+    .progress-summary-item .val{display:block;margin-top:0.25rem;font-family:var(--font-header);font-size:1.1rem;letter-spacing:0.04em;color:var(--folder-red);text-transform:uppercase;}
 
     /* ── Section headings ─────────────────────────────────────────────── */
     .vault-section{margin-bottom:2.25rem;}
-    .vault-section-heading{font-family:var(--font-header);font-size:0.85rem;letter-spacing:0.15em;color:rgba(201,169,122,0.6);text-transform:uppercase;margin-bottom:0.85rem;padding-bottom:0.4rem;border-bottom:1px solid rgba(201,169,122,0.2);}
+    .vault-section-heading{font-family:var(--font-header);font-size:0.85rem;letter-spacing:0.15em;color:var(--ink-faded);text-transform:uppercase;margin-bottom:0.85rem;padding-bottom:0.4rem;border-bottom:1px solid rgba(60,30,10,0.2);}
 
     /* ── Next vault (medium card) ─────────────────────────────────────── */
     .vault-card.next-vault{max-width:280px;margin:0 auto;padding:1rem;}
@@ -66,26 +68,31 @@
 
     /* ── Compact archive rows (completed + sealed) ────────────────────── */
     .vault-row-list{display:flex;flex-direction:column;}
-    .vault-row{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:0.65rem 0;border-bottom:1px solid rgba(201,169,122,0.15);}
+    .vault-row{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:0.65rem 0;border-bottom:1px solid rgba(60,30,10,0.15);}
     .vault-row-left{display:flex;align-items:center;gap:0.65rem;min-width:0;}
     .vault-row-icon{flex-shrink:0;font-size:0.85rem;}
     .vault-row-name{font-size:0.8rem;letter-spacing:0.05em;overflow-wrap:anywhere;}
-    .vault-row.completed .vault-row-name{color:rgba(220,190,140,0.9);}
-    .vault-row-view-btn{font-size:0.62rem;letter-spacing:0.08em;text-transform:uppercase;color:rgba(201,169,122,0.7);background:none;border:none;padding:0;margin-top:0.2rem;cursor:pointer;font-family:inherit;text-align:left;}
-    .vault-row-view-btn:hover{color:var(--paper);}
-    .vault-row-lore{display:none;font-size:0.7rem;font-style:italic;color:rgba(201,169,122,0.55);margin-top:0.4rem;line-height:1.5;}
+    .vault-row.completed .vault-row-name{color:var(--ink);}
+    .vault-row-view-btn{font-size:0.62rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--ink-faded);background:none;border:none;padding:0;margin-top:0.2rem;cursor:pointer;font-family:inherit;text-align:left;}
+    .vault-row-view-btn:hover{color:var(--folder-red);}
+    .vault-row-lore{display:none;font-size:0.7rem;font-style:italic;color:var(--ink-faded);margin-top:0.4rem;line-height:1.5;}
     .vault-row-lore.open{display:block;}
     .vault-row-body{display:flex;flex-direction:column;min-width:0;}
-    .vault-row-empty{font-size:0.75rem;font-style:italic;color:rgba(201,169,122,0.45);padding:0.5rem 0;}
+    .vault-row-empty{font-size:0.75rem;font-style:italic;color:var(--ink-faded);padding:0.5rem 0;}
     .vault-row-reward{font-size:0.68rem;letter-spacing:0.05em;margin-top:0.3rem;}
-    .vault-row-reward a{color:var(--gold);text-decoration:underline;text-underline-offset:2px;}
-    .vault-row-reward.pending{color:rgba(201,169,122,0.4);font-style:italic;}
-    .vault-footer-note{text-align:center;font-size:0.72rem;font-style:italic;letter-spacing:0.06em;color:rgba(201,169,122,0.4);margin-top:1.5rem;}
+    .vault-row-reward a{color:var(--folder-red);text-decoration:underline;text-underline-offset:2px;}
+    .vault-row-reward.pending{color:var(--ink-faded);font-style:italic;}
+    .vault-footer-note{text-align:center;font-size:0.72rem;font-style:italic;letter-spacing:0.06em;color:var(--ink-faded);margin-top:1.5rem;}
 
     /* ── Current vault progress bar ───────────────────────────────────── */
     .vault-progress-track{background:rgba(60,30,10,0.15);border-radius:3px;height:8px;overflow:hidden;margin-top:0.6rem;}
     .vault-progress-fill{background:var(--folder-red);height:100%;border-radius:3px;transition:width 0.3s;}
     .vault-progress-count{font-size:0.68rem;letter-spacing:0.06em;color:var(--ink-faded);margin-top:0.35rem;}
+
+    @media (max-width: 640px) {
+      .site-footer { flex-direction: column; gap: 1rem; text-align: center; }
+      .footer-motto { justify-content: center; }
+    }
   
     
     
@@ -127,11 +134,13 @@
   <div id="loadingNote">Retrieving vault status&hellip;</div>
 
   <div id="vaultsContent" style="display:none;">
-    <div class="hero">
-      <p class="hero-eyebrow">Sealed Records</p>
-      <h1 class="hero-title">Vaults</h1>
+    <div class="page-hero">
+      <p class="page-eyebrow">Sealed Records</p>
+      <h1 class="page-title">Vaults</h1>
+      <div class="page-rule"></div>
     </div>
 
+   <section class="vaults-paper-section">
     <div class="wrap">
       <div class="progress-summary" id="progressSummary"></div>
 
@@ -154,6 +163,19 @@
 
       <p class="empty-note" id="vaultsEmptyNote" style="display:none;"></p>
     </div>
+   </section>
+
+   <footer class="site-footer">
+    <div class="footer-motto">
+      <svg width="28" height="28" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="30" cy="30" r="27" stroke="rgba(201,169,122,0.5)" stroke-width="1.2"/>
+        <polygon points="30,10 25,22 35,22" fill="rgba(201,169,122,0.6)"/>
+        <polygon points="30,16 21,30 39,30" fill="rgba(201,169,122,0.6)"/>
+        <rect x="27" y="30" width="6" height="5" fill="rgba(201,169,122,0.55)"/>
+      </svg>
+      <span class="footer-motto-text">Truth is not given.<br>It is discovered.</span>
+    </div>
+   </footer>
   </div>
 
   <script src="js/vault-config.js"></script>
