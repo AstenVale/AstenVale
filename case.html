@@ -808,29 +808,29 @@ body.unlocked .archive-player,body.unlocked #fields-container,body.unlocked .pan
       return;
     }
 
-    // If the Sheet has a spotify_track_id for this case, Spotify replaces this
-    // player entirely (same rule as the post-solve Recovered Music section).
-    if (d.spotifyEmbedUrl) {
+    // Case has a video scheduled in the auto-poster but not posted yet --
+    // show a "Coming Soon" placeholder with its release date instead of a
+    // broken/empty player. Only takes over when there's no local audio
+    // fallback to fall back to (see below), keeping already-working cases
+    // that haven't been queued for YouTube at all untouched.
+    if (d.scheduledReleaseAt && !src) {
       audio.style.display = 'none';
-      // js/polish.js may have already wrapped #ap-audio in its own custom UI
-      // (inserted as the next sibling, class "av-audio-player") -- hide that too.
       if (audio.nextElementSibling && audio.nextElementSibling.classList.contains('av-audio-player')) {
         audio.nextElementSibling.style.display = 'none';
       }
-      var apControls = document.querySelector('#archive-player .ap-controls');
-      if (apControls) apControls.style.display = 'none';
-      if (!document.getElementById('ap-spotify-embed')) {
-        var apFrame = document.createElement('iframe');
-        apFrame.id = 'ap-spotify-embed';
-        apFrame.src = d.spotifyEmbedUrl;
-        apFrame.width = '100%';
-        apFrame.height = '152';
-        apFrame.frameBorder = '0';
-        apFrame.allow = 'autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture';
-        apFrame.loading = 'lazy';
-        apFrame.className = 'spotify-embed-frame';
-        var apSub = document.getElementById('ap-sub');
-        if (apSub && apSub.parentNode) apSub.parentNode.insertBefore(apFrame, apSub.nextSibling);
+      var apControlsCs = document.querySelector('#archive-player .ap-controls');
+      if (apControlsCs) apControlsCs.style.display = 'none';
+      if (!document.getElementById('ap-coming-soon')) {
+        var csBox = document.createElement('div');
+        csBox.id = 'ap-coming-soon';
+        csBox.style.cssText = 'padding:1.5rem;text-align:center;border:1px dashed rgba(100,60,20,0.35);background:rgba(0,0,0,0.04);';
+        var dt = new Date(d.scheduledReleaseAt);
+        var dateStr = isNaN(dt.getTime()) ? '' : dt.toLocaleDateString(undefined, { year: 'numeric', month: 'long', day: 'numeric' });
+        csBox.innerHTML =
+          '<div style="font-family:var(--font-header);font-size:0.85rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--ink-faded);">Recording Not Yet Recovered</div>' +
+          (dateStr ? '<div style="font-size:0.78rem;margin-top:0.5rem;color:var(--ink-faded);">Expected in the archive ' + dateStr + '</div>' : '');
+        var apSubCs = document.getElementById('ap-sub');
+        if (apSubCs && apSubCs.parentNode) apSubCs.parentNode.insertBefore(csBox, apSubCs.nextSibling);
       }
       return;
     }
@@ -1001,18 +1001,18 @@ body.unlocked .archive-player,body.unlocked #fields-container,body.unlocked .pan
     var wrap = document.createElement('div');
     wrap.className = 'recovered-player-wrap';
 
-    // If the Sheet has a spotify_track_id for this case, Spotify becomes the player
-    // (replacing the local audio player). No spotify_track_id -> local player, unchanged.
-    if (caseData.spotifyEmbedUrl) {
-      var sframe = document.createElement('iframe');
-      sframe.src = caseData.spotifyEmbedUrl;
-      sframe.width = '100%';
-      sframe.height = '152';
-      sframe.frameBorder = '0';
-      sframe.allow = 'autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture';
-      sframe.loading = 'lazy';
-      sframe.className = 'spotify-embed-frame';
-      wrap.appendChild(sframe);
+    // If this case has an auto-poster-synced YouTube video, that becomes
+    // the player (replacing the local audio player), same as the archive
+    // player above. No youtube_video_id -> local player, unchanged.
+    if (caseData.youtubeEmbedUrl) {
+      var yframe = document.createElement('iframe');
+      yframe.src = caseData.youtubeEmbedUrl;
+      yframe.style.cssText = 'width:100%;aspect-ratio:16/9;border:0;';
+      yframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+      yframe.allowFullscreen = true;
+      yframe.loading = 'lazy';
+      yframe.title = label || 'Case Recording';
+      wrap.appendChild(yframe);
     } else {
       wrap.appendChild(buildRecoveredMusicPlayer(audioSrc, label));
     }
@@ -2451,13 +2451,14 @@ document.title = 'Case File ' + d.caseFile + ' Ã¢â‚¬â€ The Asten Vale
     }
 
     // Merges optional Google Sheet overrides into the per-case SONG_DATA record.
-    // Every override is additive: empty/missing sheet cells leave SONG_DATA untouched.
+    // Only the outbound "Listen On..." Spotify link comes from the sheet now --
+    // the archive player itself is driven by youtube_video_id (see below), not
+    // spotify_track_id.
     function mergeSheetIntoSongData(d, sheetRow) {
       if (!sheetRow || !sheetRow.spotifyTrackId || !window.AssetUrlBuilder) return d;
       var B = window.AssetUrlBuilder;
       d.streamingLinks = d.streamingLinks || {};
       d.streamingLinks.spotify = B.buildSpotifyTrackUrl(sheetRow.spotifyTrackId);
-      d.spotifyEmbedUrl = B.buildSpotifyEmbedUrl(sheetRow.spotifyTrackId);
       return d;
     }
 
@@ -2466,6 +2467,7 @@ document.title = 'Case File ' + d.caseFile + ' Ã¢â‚¬â€ The Asten Vale
     var sheetCaseDataLoaded = false;
     var ytDataLoaded = false;
     var ytVideoId = null;
+    var ytScheduledReleaseAt = null;
 
     function tryApply() {
       if (songDataFailed) return;
@@ -2476,22 +2478,26 @@ document.title = 'Case File ' + d.caseFile + ' Ã¢â‚¬â€ The Asten Vale
       if (ytVideoId && window.AssetUrlBuilder) {
         d.youtubeEmbedUrl = window.AssetUrlBuilder.buildYoutubeEmbedUrl(ytVideoId);
       }
+      d.scheduledReleaseAt = ytScheduledReleaseAt;
       applyMeta(d);
     }
 
-    // Pulls this case's auto-poster-synced YouTube video id straight from
-    // released_cases (via public_released_cases -- see
-    // supabase/functions/case-youtube-sync), the same backend read the
-    // progression gate above already uses. Fails open (no embed, falls
-    // back to Spotify/local audio) on any error so a Supabase hiccup never
-    // blocks the page from rendering.
+    // Pulls this case's auto-poster-synced YouTube video id (and, if not
+    // posted yet, its scheduled release date) straight from released_cases
+    // (via public_released_cases -- see supabase/functions/case-youtube-sync),
+    // the same backend read the progression gate above already uses. Fails
+    // open (no embed, falls back to local audio) on any error so a Supabase
+    // hiccup never blocks the page from rendering.
     (function loadYoutubeVideoId() {
       if (!window.AVProgressSync) { ytDataLoaded = true; tryApply(); return; }
       var client = window.AVProgressSync.getClient();
       if (!client) { ytDataLoaded = true; tryApply(); return; }
-      client.from('public_released_cases').select('youtube_video_id').eq('case_id', padded).maybeSingle()
+      client.from('public_released_cases').select('youtube_video_id, scheduled_release_at').eq('case_id', padded).maybeSingle()
         .then(function(res) {
-          if (!res.error && res.data) ytVideoId = res.data.youtube_video_id || null;
+          if (!res.error && res.data) {
+            ytVideoId = res.data.youtube_video_id || null;
+            ytScheduledReleaseAt = res.data.scheduled_release_at || null;
+          }
         })
         .catch(function() {})
         .then(function() { ytDataLoaded = true; tryApply(); });
