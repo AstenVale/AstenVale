@@ -778,6 +778,36 @@ body.unlocked .archive-player,body.unlocked #fields-container,body.unlocked .pan
     var src = d.audioSrc || getCaseAudioPath(d);
     d.audioSrc = src;
 
+    // YouTube takes priority: it's the auto-poster's authoritative video for
+    // this case (written server-side to released_cases.youtube_video_id the
+    // moment the scheduler posts it -- see case-youtube-sync), so it wins
+    // over a manually-entered Spotify track id when both are present.
+    if (d.youtubeEmbedUrl) {
+      audio.style.display = 'none';
+      if (audio.nextElementSibling && audio.nextElementSibling.classList.contains('av-audio-player')) {
+        audio.nextElementSibling.style.display = 'none';
+      }
+      var apControlsYt = document.querySelector('#archive-player .ap-controls');
+      if (apControlsYt) apControlsYt.style.display = 'none';
+      if (!document.getElementById('ap-youtube-embed')) {
+        var ytWrap = document.createElement('div');
+        ytWrap.id = 'ap-youtube-embed-wrap';
+        ytWrap.style.cssText = 'position:relative;width:100%;aspect-ratio:16/9;';
+        var ytFrame = document.createElement('iframe');
+        ytFrame.id = 'ap-youtube-embed';
+        ytFrame.src = d.youtubeEmbedUrl;
+        ytFrame.style.cssText = 'position:absolute;inset:0;width:100%;height:100%;border:0;';
+        ytFrame.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+        ytFrame.allowFullscreen = true;
+        ytFrame.loading = 'lazy';
+        ytFrame.title = d.title || 'Case Recording';
+        ytWrap.appendChild(ytFrame);
+        var apSubYt = document.getElementById('ap-sub');
+        if (apSubYt && apSubYt.parentNode) apSubYt.parentNode.insertBefore(ytWrap, apSubYt.nextSibling);
+      }
+      return;
+    }
+
     // If the Sheet has a spotify_track_id for this case, Spotify replaces this
     // player entirely (same rule as the post-solve Recovered Music section).
     if (d.spotifyEmbedUrl) {
@@ -2434,14 +2464,38 @@ document.title = 'Case File ' + d.caseFile + ' Ã¢â‚¬â€ The Asten Vale
     var songDataLoaded = false;
     var songDataFailed = false;
     var sheetCaseDataLoaded = false;
+    var ytDataLoaded = false;
+    var ytVideoId = null;
 
     function tryApply() {
       if (songDataFailed) return;
-      if (!songDataLoaded || !sheetCaseDataLoaded) return;
+      if (!songDataLoaded || !sheetCaseDataLoaded || !ytDataLoaded) return;
       var d = window.SONG_DATA;
       var sheetRow = window.SHEET_CASE_DATA && window.SHEET_CASE_DATA[padded];
-      applyMeta(mergeSheetIntoSongData(d, sheetRow));
+      mergeSheetIntoSongData(d, sheetRow);
+      if (ytVideoId && window.AssetUrlBuilder) {
+        d.youtubeEmbedUrl = window.AssetUrlBuilder.buildYoutubeEmbedUrl(ytVideoId);
+      }
+      applyMeta(d);
     }
+
+    // Pulls this case's auto-poster-synced YouTube video id straight from
+    // released_cases (via public_released_cases -- see
+    // supabase/functions/case-youtube-sync), the same backend read the
+    // progression gate above already uses. Fails open (no embed, falls
+    // back to Spotify/local audio) on any error so a Supabase hiccup never
+    // blocks the page from rendering.
+    (function loadYoutubeVideoId() {
+      if (!window.AVProgressSync) { ytDataLoaded = true; tryApply(); return; }
+      var client = window.AVProgressSync.getClient();
+      if (!client) { ytDataLoaded = true; tryApply(); return; }
+      client.from('public_released_cases').select('youtube_video_id').eq('case_id', padded).maybeSingle()
+        .then(function(res) {
+          if (!res.error && res.data) ytVideoId = res.data.youtube_video_id || null;
+        })
+        .catch(function() {})
+        .then(function() { ytDataLoaded = true; tryApply(); });
+    })();
 
     var script   = document.createElement('script');
     script.src   = 'data/songs/song' + padded + '.js';

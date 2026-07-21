@@ -25,6 +25,11 @@ window.AssetUrlBuilder = (function() {
     return 'https://www.youtube.com/watch?v=' + videoId;
   }
 
+  function buildYoutubeEmbedUrl(videoId) {
+    if (!videoId) return '';
+    return 'https://www.youtube.com/embed/' + videoId;
+  }
+
   // category: subfolder under the AstenVale-Images repo, e.g. 'Evidence'
   function buildImageUrl(category, filename) {
     if (!category || !filename) return '';
@@ -36,6 +41,7 @@ window.AssetUrlBuilder = (function() {
     buildSpotifyTrackUrl: buildSpotifyTrackUrl,
     buildSpotifyEmbedUrl: buildSpotifyEmbedUrl,
     buildYoutubeWatchUrl: buildYoutubeWatchUrl,
+    buildYoutubeEmbedUrl: buildYoutubeEmbedUrl,
     buildImageUrl: buildImageUrl
   };
 })();
