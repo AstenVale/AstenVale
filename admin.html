@@ -81,14 +81,14 @@ td{padding:0.45rem 0.5rem;border-bottom:1px solid rgba(60,30,10,0.08);}
       <span class="signout" id="signOutBtn">Sign Out</span>
       <h1>Player Progress — Admin Stats</h1>
 
-      <h2 style="margin-top:0;">Publishing</h2>
+      <h2 style="margin-top:0;">Vault Rewards</h2>
       <p style="font-size:0.75rem;color:var(--ink-faded);margin-bottom:0.75rem;line-height:1.5;">
-        Reads the streaming spreadsheet and marks any case with a published link as
-        released. Never un-releases a case. Also reads Sheet 2 of the same
-        spreadsheet to sync vault rewards. Run this after publishing a new case
-        or updating a vault reward.
+        Reads Sheet 2 of the streaming spreadsheet to sync vault rewards. Run
+        this after updating a vault reward. (Case releases are now automatic
+        the moment a case's video goes live on YouTube -- this no longer
+        controls that, even though it still touches the same underlying sync.)
       </p>
-      <button id="syncReleasesBtn" style="padding:0.6rem 1.2rem;background:var(--folder-red);color:#fff;border:none;cursor:pointer;font-family:var(--font-type);font-size:0.8rem;letter-spacing:0.08em;text-transform:uppercase;">Sync Releases</button>
+      <button id="syncReleasesBtn" style="padding:0.6rem 1.2rem;background:var(--folder-red);color:#fff;border:none;cursor:pointer;font-family:var(--font-type);font-size:0.8rem;letter-spacing:0.08em;text-transform:uppercase;">Sync Vault Rewards</button>
       <div id="syncReleasesResult" style="font-size:0.78rem;margin-top:0.6rem;min-height:1.2em;"></div>
 
       <div class="stat-grid" id="summaryTiles"></div>
@@ -194,13 +194,13 @@ td{padding:0.45rem 0.5rem;border-bottom:1px solid rgba(60,30,10,0.08);}
             return;
           }
           var d = res.data;
-          result.style.color = '#8c8';
-          result.textContent = d.newly_released.length
-            ? 'Released: ' + d.newly_released.join(', ') + ' (' + d.already_released_count + ' already live, ' + d.sheet_released_count + ' total in sheet)'
-            : 'No new cases to release (' + d.already_released_count + ' already live, ' + d.sheet_released_count + ' total in sheet).';
-          result.textContent += d.vault_rewards_error
-            ? ' | Vault rewards sync failed: ' + d.vault_rewards_error
-            : ' | Vault rewards synced: ' + d.vault_rewards_synced;
+          result.style.color = d.vault_rewards_error ? '#e88' : '#8c8';
+          result.textContent = d.vault_rewards_error
+            ? 'Vault rewards sync failed: ' + d.vault_rewards_error
+            : 'Vault rewards synced: ' + d.vault_rewards_synced;
+          if (d.newly_released && d.newly_released.length) {
+            result.textContent += ' | (also released via sheet, now unused: ' + d.newly_released.join(', ') + ')';
+          }
         })
         .catch(function (e) {
           btn.disabled = false;
