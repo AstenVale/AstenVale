@@ -6,14 +6,18 @@
 //                                         publish date but not posted yet
 // from the desktop youtube_drop_scheduler app (core/youtube_sync.py), and
 // writes the corresponding column onto that case's released_cases row.
-// Writing youtube_video_id always clears scheduled_release_at (the case is
-// live now, no more "coming soon" to show). This is the only thing this
-// function ever touches -- it never sets `released`, never creates rows,
-// never writes progress/evidence/vaults/rewards/achievements. A case only
-// gets a YouTube embed on the website once it's already released through
-// the normal Sheet -> sync-released-cases path; this function purely
-// attaches video/schedule info to a row that migration
-// (backend_access_migration.sql) already seeded for all 600 case ids.
+//
+// Writing youtube_video_id ALSO sets released=true -- a case's main video
+// actually going public on YouTube is now the sole release trigger,
+// replacing the old Sheet -> sync-released-cases manual step (that pipeline
+// existed for tracking Spotify/Apple/Amazon links, which case.html no
+// longer uses at all). released is purely additive here, same rule
+// sync-released-cases always followed: never flips a case back to
+// unreleased. Writing youtube_video_id always clears scheduled_release_at
+// (the case is live now, no more "coming soon" to show). This function
+// never creates rows, never writes progress/evidence/vaults/rewards/
+// achievements -- only released_cases, on a row every case id already has
+// (backend_access_migration.sql seeded all 600 as released=false).
 //
 // Auth: two checks, both required.
 //   1. Authorization: Bearer <anon key> -- the platform-level header every
@@ -86,6 +90,10 @@ Deno.serve(async (req) => {
     // A posted video is live now -- any earlier "coming soon" date no
     // longer applies, regardless of whether this call also passed one.
     update.scheduled_release_at = null;
+    // The video going public IS the release trigger now -- additive only,
+    // same as sync-released-cases always was, so this can never take a
+    // case away from players.
+    update.released = true;
   } else if (hasScheduledAt) {
     const parsed = new Date(body.scheduled_release_at as string);
     if (isNaN(parsed.getTime())) {
@@ -103,7 +111,7 @@ Deno.serve(async (req) => {
     .from("released_cases")
     .update(update)
     .eq("case_id", rawCaseId)
-    .select("case_id, youtube_video_id, scheduled_release_at")
+    .select("case_id, youtube_video_id, scheduled_release_at, released")
     .maybeSingle();
 
   if (error) {
