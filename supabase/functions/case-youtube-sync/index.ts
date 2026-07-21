@@ -1,23 +1,35 @@
 // Ashton Vale — case-youtube-sync Edge Function
 //
-// Receives either:
-//   {case_id, youtube_video_id}       -- after a successful YouTube upload
-//   {case_id, scheduled_release_at}   -- when a video is queued for a future
-//                                         publish date but not posted yet
-// from the desktop youtube_drop_scheduler app (core/youtube_sync.py), and
-// writes the corresponding column onto that case's released_cases row.
+// Receives one of three shapes from the desktop youtube_drop_scheduler app
+// (core/youtube_sync.py), and writes the corresponding column(s) onto that
+// case's released_cases row:
 //
-// Writing youtube_video_id ALSO sets released=true -- a case's main video
-// actually going public on YouTube is now the sole release trigger,
-// replacing the old Sheet -> sync-released-cases manual step (that pipeline
-// existed for tracking Spotify/Apple/Amazon links, which case.html no
-// longer uses at all). released is purely additive here, same rule
-// sync-released-cases always followed: never flips a case back to
-// unreleased. Writing youtube_video_id always clears scheduled_release_at
-// (the case is live now, no more "coming soon" to show). This function
-// never creates rows, never writes progress/evidence/vaults/rewards/
-// achievements -- only released_cases, on a row every case id already has
-// (backend_access_migration.sql seeded all 600 as released=false).
+//   {case_id, scheduled_release_at}                     -- video not
+//     uploaded yet, just a planned date. Updates scheduled_release_at only.
+//
+//   {case_id, youtube_video_id, scheduled_release_at}   -- STAGED: video is
+//     already uploaded (private + YouTube's own publishAt -- see
+//     core.youtube_client.build_video_body) but not due to go public yet.
+//     Writes youtube_video_id to pending_youtube_video_id (never exposed by
+//     public_released_cases) and updates scheduled_release_at. A pg_cron
+//     job (see case_scheduled_autopromote_migration.sql) promotes it to the
+//     live youtube_video_id column once scheduled_release_at has actually
+//     passed -- entirely server-side, no dependency on the scheduler's PC
+//     being on at that moment.
+//
+//   {case_id, youtube_video_id}   (no scheduled_release_at)  -- LIVE NOW:
+//     either an unscheduled upload, or the scheduler confirming publishAt
+//     has already passed. Writes the live youtube_video_id column directly
+//     and sets released=true -- a case's video actually being public is now
+//     the sole release trigger, replacing the old Sheet ->
+//     sync-released-cases manual step (that pipeline existed for tracking
+//     Spotify/Apple/Amazon links, which case.html no longer uses at all).
+//     released is purely additive, same rule sync-released-cases always
+//     followed: never flips a case back to unreleased.
+//
+// This function never creates rows, never writes progress/evidence/vaults/
+// rewards/achievements -- only released_cases, on a row every case id
+// already has (backend_access_migration.sql seeded all 600 as released=false).
 //
 // Auth: two checks, both required.
 //   1. Authorization: Bearer <anon key> -- the platform-level header every
@@ -80,26 +92,38 @@ Deno.serve(async (req) => {
     return jsonResponse({ error: "Provide youtube_video_id or scheduled_release_at" }, 400);
   }
 
-  const update: Record<string, unknown> = { updated_at: new Date().toISOString() };
-
+  let validatedVideoId: string | undefined;
   if (hasVideoId) {
     if (typeof body.youtube_video_id !== "string" || !YOUTUBE_ID_RE.test(body.youtube_video_id)) {
       return jsonResponse({ error: "youtube_video_id must be an 11-character YouTube video id" }, 400);
     }
-    update.youtube_video_id = body.youtube_video_id;
-    // A posted video is live now -- any earlier "coming soon" date no
-    // longer applies, regardless of whether this call also passed one.
-    update.scheduled_release_at = null;
-    // The video going public IS the release trigger now -- additive only,
-    // same as sync-released-cases always was, so this can never take a
-    // case away from players.
-    update.released = true;
-  } else if (hasScheduledAt) {
+    validatedVideoId = body.youtube_video_id;
+  }
+
+  let validatedScheduledAt: string | undefined;
+  if (hasScheduledAt) {
     const parsed = new Date(body.scheduled_release_at as string);
     if (isNaN(parsed.getTime())) {
       return jsonResponse({ error: "scheduled_release_at must be a valid ISO 8601 datetime" }, 400);
     }
-    update.scheduled_release_at = parsed.toISOString();
+    validatedScheduledAt = parsed.toISOString();
+  }
+
+  const update: Record<string, unknown> = { updated_at: new Date().toISOString() };
+
+  if (hasVideoId && hasScheduledAt) {
+    // STAGED: uploaded, not due yet -- stash the id, don't expose it.
+    update.pending_youtube_video_id = validatedVideoId;
+    update.scheduled_release_at = validatedScheduledAt;
+  } else if (hasVideoId) {
+    // LIVE NOW.
+    update.youtube_video_id = validatedVideoId;
+    update.pending_youtube_video_id = null;
+    update.scheduled_release_at = null;
+    update.released = true;
+  } else {
+    // Date-only update -- no video id known yet.
+    update.scheduled_release_at = validatedScheduledAt;
   }
 
   const adminClient = createClient(
@@ -111,7 +135,7 @@ Deno.serve(async (req) => {
     .from("released_cases")
     .update(update)
     .eq("case_id", rawCaseId)
-    .select("case_id, youtube_video_id, scheduled_release_at, released")
+    .select("case_id, youtube_video_id, pending_youtube_video_id, scheduled_release_at, released")
     .maybeSingle();
 
   if (error) {
