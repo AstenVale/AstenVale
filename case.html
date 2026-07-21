@@ -335,7 +335,6 @@ body.unlocked .archive-player,body.unlocked #fields-container,body.unlocked .pan
 .streaming-btn:hover{transform:translateX(3px);filter:brightness(1.08);}
 .sb-icon{width:22px;height:22px;flex-shrink:0;display:flex;align-items:center;justify-content:center;}
 .sb-icon svg{width:100%;height:100%;}
-.streaming-btn.spotify{background:#1a3a1a;color:#7dc47d;border-color:rgba(125,196,125,0.2);}
 .streaming-btn.apple{background:#2a1a1a;color:#c47d7d;border-color:rgba(196,125,125,0.2);}
 .streaming-btn.youtube{background:#2a1a1a;color:#c47d7d;border-color:rgba(196,125,125,0.2);}
 .streaming-btn.amazon{background:#1a2a2a;color:#7dc4c4;border-color:rgba(125,196,196,0.2);}
@@ -635,10 +634,6 @@ body.unlocked .archive-player,body.unlocked #fields-container,body.unlocked .pan
           <div class="streaming-title" id="stream-title">Ã¢â‚¬â€</div>
           <div class="streaming-sub">Streaming Links</div>
           <div class="streaming-links">
-            <a class="streaming-btn spotify" id="stream-spotify" href="https://open.spotify.com" target="_blank" rel="noopener">
-              <span class="sb-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.516 17.318c-.22.356-.676.47-1.032.25-2.828-1.727-6.39-2.117-10.586-1.16-.405.094-.808-.16-.9-.564-.094-.405.16-.808.564-.9 4.59-1.05 8.523-.598 11.7 1.342.356.22.47.676.25 1.032zm1.47-3.27c-.275.445-.857.585-1.302.31-3.236-1.988-8.167-2.564-11.99-1.404-.496.15-1.02-.13-1.17-.625-.15-.496.13-1.02.625-1.17 4.37-1.326 9.8-.683 13.528 1.6.445.275.585.857.31 1.302zm.127-3.405c-3.88-2.304-10.28-2.516-13.984-1.392-.593.18-1.22-.154-1.4-.747-.18-.593.154-1.22.747-1.4 4.254-1.29 11.328-1.042 15.798 1.61.534.317.71 1.004.393 1.538-.317.534-1.004.71-1.538.393l-.016-.002z"/></svg></span>
-              Spotify
-            </a>
             <a class="streaming-btn apple" id="stream-apple" href="https://music.apple.com" target="_blank" rel="noopener">
               <span class="sb-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.994 6.124a9.23 9.23 0 0 0-.24-2.19c-.317-1.31-1.062-2.31-2.18-3.043a5.022 5.022 0 0 0-1.877-.726 10.496 10.496 0 0 0-1.564-.15c-.04-.003-.083-.01-.124-.013H5.986c-.152.01-.303.017-.455.026C4.786.07 4.043.15 3.34.428 2.004.958 1.04 1.88.475 3.208A7.37 7.37 0 0 0 .09 4.858a10.278 10.278 0 0 0-.09 1.399v11.486c.01.44.04.88.103 1.316.18 1.28.717 2.37 1.666 3.236a5.098 5.098 0 0 0 2.456 1.166c.48.09.968.13 1.46.15.04.003.082.006.122.006h11.94c.37-.006.742-.022 1.11-.065a5.497 5.497 0 0 0 2.026-.608c1.268-.7 2.1-1.758 2.46-3.17.14-.535.196-1.082.212-1.632.006-.14.01-.28.01-.42V6.124zm-8.056 6.507a3.04 3.04 0 0 1-1.294 2.492 2.83 2.83 0 0 1-1.683.456 2.848 2.848 0 0 1-2.848-2.848 2.848 2.848 0 0 1 2.848-2.847c.568 0 1.095.166 1.537.45l.001-.001V6.26l-5.132 1.167v6.724a2.85 2.85 0 0 1-2.848 2.847 2.848 2.848 0 0 1 0-5.695c.568 0 1.094.166 1.537.45V8.54L15.938 7v5.63z"/></svg></span>
               Apple Music
@@ -778,10 +773,9 @@ body.unlocked .archive-player,body.unlocked #fields-container,body.unlocked .pan
     var src = d.audioSrc || getCaseAudioPath(d);
     d.audioSrc = src;
 
-    // YouTube takes priority: it's the auto-poster's authoritative video for
-    // this case (written server-side to released_cases.youtube_video_id the
-    // moment the scheduler posts it -- see case-youtube-sync), so it wins
-    // over a manually-entered Spotify track id when both are present.
+    // YouTube is the only source for this player now: the auto-poster
+    // writes youtube_video_id to released_cases.youtube_video_id the
+    // moment it posts a case's video (see case-youtube-sync).
     if (d.youtubeEmbedUrl) {
       audio.style.display = 'none';
       if (audio.nextElementSibling && audio.nextElementSibling.classList.contains('av-audio-player')) {
@@ -808,12 +802,11 @@ body.unlocked .archive-player,body.unlocked #fields-container,body.unlocked .pan
       return;
     }
 
-    // Case has a video scheduled in the auto-poster but not posted yet --
-    // show a "Coming Soon" placeholder with its release date instead of a
-    // broken/empty player. Only takes over when there's no local audio
-    // fallback to fall back to (see below), keeping already-working cases
-    // that haven't been queued for YouTube at all untouched.
-    if (d.scheduledReleaseAt && !src) {
+    // No synced YouTube video for this case yet -- YouTube is now the only
+    // real source of truth for the player, so this always shows "Coming
+    // Soon" (with a real date if the auto-poster has one scheduled) rather
+    // than falling back to a local audio file, even if one exists.
+    {
       audio.style.display = 'none';
       if (audio.nextElementSibling && audio.nextElementSibling.classList.contains('av-audio-player')) {
         audio.nextElementSibling.style.display = 'none';
@@ -824,18 +817,18 @@ body.unlocked .archive-player,body.unlocked #fields-container,body.unlocked .pan
         var csBox = document.createElement('div');
         csBox.id = 'ap-coming-soon';
         csBox.style.cssText = 'padding:1.5rem;text-align:center;border:1px dashed rgba(100,60,20,0.35);background:rgba(0,0,0,0.04);';
-        var dt = new Date(d.scheduledReleaseAt);
-        var dateStr = isNaN(dt.getTime()) ? '' : dt.toLocaleDateString(undefined, { year: 'numeric', month: 'long', day: 'numeric' });
+        var dt = d.scheduledReleaseAt ? new Date(d.scheduledReleaseAt) : null;
+        var dateStr = (dt && !isNaN(dt.getTime())) ? dt.toLocaleDateString(undefined, { year: 'numeric', month: 'long', day: 'numeric' }) : '';
         csBox.innerHTML =
           '<div style="font-family:var(--font-header);font-size:0.85rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--ink-faded);">Recording Not Yet Recovered</div>' +
-          (dateStr ? '<div style="font-size:0.78rem;margin-top:0.5rem;color:var(--ink-faded);">Expected in the archive ' + dateStr + '</div>' : '');
+          '<div style="font-size:0.78rem;margin-top:0.5rem;color:var(--ink-faded);">' +
+          (dateStr ? 'Expected in the archive ' + dateStr : 'Archive team is still processing this recording.') +
+          '</div>';
         var apSubCs = document.getElementById('ap-sub');
         if (apSubCs && apSubCs.parentNode) apSubCs.parentNode.insertBefore(csBox, apSubCs.nextSibling);
       }
       return;
     }
-
-    if (src) { window.setAudioSrc ? window.setAudioSrc(audio, src) : (audio.src = src); }
 
     var playing = false;
     var lastVol = 1;
@@ -1002,8 +995,9 @@ body.unlocked .archive-player,body.unlocked #fields-container,body.unlocked .pan
     wrap.className = 'recovered-player-wrap';
 
     // If this case has an auto-poster-synced YouTube video, that becomes
-    // the player (replacing the local audio player), same as the archive
-    // player above. No youtube_video_id -> local player, unchanged.
+    // the player, same as the archive player above. YouTube is the only
+    // real source of truth now -- no youtube_video_id means "Coming Soon"
+    // here too, never the local audio file, even if one exists.
     if (caseData.youtubeEmbedUrl) {
       var yframe = document.createElement('iframe');
       yframe.src = caseData.youtubeEmbedUrl;
@@ -1014,7 +1008,16 @@ body.unlocked .archive-player,body.unlocked #fields-container,body.unlocked .pan
       yframe.title = label || 'Case Recording';
       wrap.appendChild(yframe);
     } else {
-      wrap.appendChild(buildRecoveredMusicPlayer(audioSrc, label));
+      var csBoxRm = document.createElement('div');
+      csBoxRm.style.cssText = 'padding:1.5rem;text-align:center;border:1px dashed rgba(100,60,20,0.35);background:rgba(0,0,0,0.04);';
+      var dtRm = caseData.scheduledReleaseAt ? new Date(caseData.scheduledReleaseAt) : null;
+      var dateStrRm = (dtRm && !isNaN(dtRm.getTime())) ? dtRm.toLocaleDateString(undefined, { year: 'numeric', month: 'long', day: 'numeric' }) : '';
+      csBoxRm.innerHTML =
+        '<div style="font-family:var(--font-header);font-size:0.85rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--ink-faded);">Recording Not Yet Recovered</div>' +
+        '<div style="font-size:0.78rem;margin-top:0.5rem;color:var(--ink-faded);">' +
+        (dateStrRm ? 'Expected in the archive ' + dateStrRm : 'Archive team is still processing this recording.') +
+        '</div>';
+      wrap.appendChild(csBoxRm);
     }
     return wrap;
   }
@@ -1439,7 +1442,6 @@ body.unlocked .archive-player,body.unlocked #fields-container,body.unlocked .pan
   function renderOfficialReleaseLinks(links) {
     links = links || {};
     var order = [
-      ['spotify', 'Spotify', 'S'],
       ['apple', 'Apple Music', 'AM'],
       ['amazon', 'Amazon Music', 'AZ'],
       ['youtube', 'YouTube Music', 'YT']
@@ -2441,7 +2443,6 @@ document.title = 'Case File ' + d.caseFile + ' Ã¢â‚¬â€ The Asten Vale
       document.getElementById('lyr-title').textContent       = d.title;
 
       if (d.streamingLinks) {
-        if (d.streamingLinks.spotify)  document.getElementById('stream-spotify').href  = d.streamingLinks.spotify;
         if (d.streamingLinks.apple)    document.getElementById('stream-apple').href    = d.streamingLinks.apple;
         if (d.streamingLinks.youtube)  document.getElementById('stream-youtube').href  = d.streamingLinks.youtube;
         if (d.streamingLinks.amazon)   document.getElementById('stream-amazon').href   = d.streamingLinks.amazon;
@@ -2451,14 +2452,10 @@ document.title = 'Case File ' + d.caseFile + ' Ã¢â‚¬â€ The Asten Vale
     }
 
     // Merges optional Google Sheet overrides into the per-case SONG_DATA record.
-    // Only the outbound "Listen On..." Spotify link comes from the sheet now --
-    // the archive player itself is driven by youtube_video_id (see below), not
-    // spotify_track_id.
+    // Spotify is no longer used anywhere on this page (player or "Listen
+    // On..." links), so this is currently a no-op reserved for future
+    // sheet-driven overrides.
     function mergeSheetIntoSongData(d, sheetRow) {
-      if (!sheetRow || !sheetRow.spotifyTrackId || !window.AssetUrlBuilder) return d;
-      var B = window.AssetUrlBuilder;
-      d.streamingLinks = d.streamingLinks || {};
-      d.streamingLinks.spotify = B.buildSpotifyTrackUrl(sheetRow.spotifyTrackId);
       return d;
     }
 
@@ -2546,11 +2543,9 @@ document.title = 'Case File ' + d.caseFile + ' Ã¢â‚¬â€ The Asten Vale
           var rows = csv.trim().split('\n').map(function(r){ return r.split(','); });
           var headers = rows[0].map(function(h){ return h.trim().toLowerCase(); });
           var idCol         = headers.indexOf('id');
-          var spotifyCol    = headers.indexOf('spotify');
           var appleCol      = headers.indexOf('apple');
           var ytCol         = headers.indexOf('youtube');
           var amazonCol     = headers.indexOf('amazon');
-          var spotifyIdCol  = headers.indexOf('spotify_track_id');
           var ytIdCol       = headers.indexOf('youtube_video_id');
           var row = rows.slice(1).find(function(r){
             return r[idCol] && r[idCol].trim().padStart(3,'0') === caseId;
@@ -2564,7 +2559,6 @@ document.title = 'Case File ' + d.caseFile + ' Ã¢â‚¬â€ The Asten Vale
             if (val && val !== '#' && !/^https?:\/\//i.test(val)) val = 'https://' + val;
             if (el) { if (val && val !== '#') { el.href = val; el.style.display = ''; } else { el.style.display = 'none'; } }
           }
-          setLink('stream-spotify', spotifyCol, spotifyIdCol, window.AssetUrlBuilder && window.AssetUrlBuilder.buildSpotifyTrackUrl);
           setLink('stream-apple',   appleCol, -1, null);
           setLink('stream-youtube', ytCol, ytIdCol, window.AssetUrlBuilder && window.AssetUrlBuilder.buildYoutubeWatchUrl);
           setLink('stream-amazon',  amazonCol, -1, null);
